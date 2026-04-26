@@ -1,7 +1,10 @@
 const App = (function () {
-  const SESSIONS_PER_QUIZ = 25;
+  const SESSIONS_PER_QUIZ = 30;
 
-  const views = { home: HomeView, quiz: QuizView, results: ResultsView, history: HistoryView };
+  const views = {
+    home: HomeView, subject: SubjectView,
+    quiz: QuizView, results: ResultsView, history: HistoryView
+  };
 
   function navigate(screen) {
     Store.set({ screen });
@@ -18,8 +21,13 @@ const App = (function () {
     });
   }
 
-  function startQuiz(topic) {
-    const qs = QuestionsDB.getRandom(SESSIONS_PER_QUIZ, topic);
+  function selectSubject(subject) {
+    Store.set({ selectedSubject: subject });
+    navigate('subject');
+  }
+
+  function startQuiz(topic, subject) {
+    const qs = QuestionsDB.getRandom(SESSIONS_PER_QUIZ, topic, subject);
     if (qs.length === 0) { alert('Nenhuma pergunta encontrada para este tema.'); return; }
     Store.set({
       selectedTopic: topic,
@@ -37,9 +45,15 @@ const App = (function () {
     const total   = s.questions.length;
     const pct     = Math.round((correct / total) * 100);
 
-    const topicInfo = s.selectedTopic === 'all'
-      ? { name: 'Todos os Temas' }
-      : QuestionsDB.getTopicInfo(s.selectedTopic);
+    let topicName;
+    if (s.selectedTopic === 'all') {
+      const subjectInfo = s.selectedSubject
+        ? QuestionsDB.getSubjectInfo(s.selectedSubject)
+        : { name: 'Todos os Temas' };
+      topicName = subjectInfo.name + ' — Todos os Assuntos';
+    } else {
+      topicName = QuestionsDB.getTopicInfo(s.selectedTopic).name;
+    }
 
     const now  = new Date();
     const date = now.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
@@ -47,7 +61,7 @@ const App = (function () {
 
     Store.addSession({
       date: `${date} ${time}`,
-      topic: topicInfo.name,
+      topic: topicName,
       correct,
       total,
       pct
@@ -65,7 +79,6 @@ const App = (function () {
   }
 
   function init() {
-    // Wire header buttons
     document.getElementById('nav-home').addEventListener('click',    () => navigate('home'));
     document.getElementById('nav-history').addEventListener('click', () => navigate('history'));
     document.getElementById('btn-restart').addEventListener('click', restart);
@@ -73,7 +86,7 @@ const App = (function () {
     navigate('home');
   }
 
-  return { navigate, startQuiz, finishQuiz, restart, init };
+  return { navigate, selectSubject, startQuiz, finishQuiz, restart, init };
 })();
 
 document.addEventListener('DOMContentLoaded', App.init);

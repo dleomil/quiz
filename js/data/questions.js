@@ -1384,6 +1384,15 @@ const QuestionsDB = (function () {
     }
   ];
 
+  const SUBJECT_META = {
+    portugues:  { name: "Português",   icon: "📖", available: true  },
+    matematica: { name: "Matemática",  icon: "🔢", available: false },
+    historia:   { name: "História",    icon: "🏛️", available: false },
+    ciencias:   { name: "Ciências",    icon: "🔬", available: false },
+    ingles:     { name: "Inglês",      icon: "🌍", available: false },
+    geografia:  { name: "Geografia",   icon: "🗺️", available: false }
+  };
+
   const TOPIC_META = {
     interpretacao:        { name: "Interpretação de Texto",            icon: "📖" },
     ca_ce_ci_co_cu:      { name: "Usos do CA, CE, CI, CO e CU",       icon: "🔤" },
@@ -1413,8 +1422,22 @@ const QuestionsDB = (function () {
       ...TOPIC_META[topic],
       count: questions.filter(q => q.topic === topic).length
     }),
-    getRandom: (count, topic) => {
-      const pool = topic === "all" ? questions : questions.filter(q => q.topic === topic);
+    getSubjects: () => Object.keys(SUBJECT_META),
+    getSubjectInfo: (subject) => ({
+      ...SUBJECT_META[subject],
+      count: questions.filter(q => q.subject === subject).length
+    }),
+    getTopicsBySubject: (subject) => {
+      const seen = new Set();
+      return questions
+        .filter(q => q.subject === subject)
+        .map(q => q.topic)
+        .filter(t => seen.has(t) ? false : seen.add(t));
+    },
+    getRandom: (count, topic, subject) => {
+      let pool = questions;
+      if (subject && subject !== 'all') pool = pool.filter(q => q.subject === subject);
+      if (topic   && topic   !== 'all') pool = pool.filter(q => q.topic   === topic);
       return shuffle(pool).slice(0, Math.min(count, pool.length));
     }
   };

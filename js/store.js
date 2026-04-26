@@ -3,6 +3,7 @@ const Store = (function () {
 
   const state = {
     screen: 'home',
+    selectedSubject: 'portugues',
     selectedTopic: 'all',
     questions: [],
     index: 0,
