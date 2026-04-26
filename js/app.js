@@ -12,7 +12,7 @@ const App = (function () {
   }
 
   function navigate(screen, opts = {}) {
-    if (!opts.force && quizInProgress() && screen !== 'quiz') {
+    if (!opts.force && quizInProgress() && screen !== 'quiz' && screen !== 'home') {
       alert(QUIZ_LOCK_MESSAGE);
       return;
     }
@@ -100,7 +100,8 @@ const App = (function () {
   }
 
   function init() {
-    document.getElementById('nav-home').addEventListener('click',    () => navigate('home'));
+    document.getElementById('logo-home').addEventListener('click',   () => navigate('home', { force: true }));
+    document.getElementById('nav-home').addEventListener('click',    () => navigate('home', { force: true }));
     document.getElementById('nav-history').addEventListener('click', () => navigate('history'));
     document.getElementById('btn-restart').addEventListener('click', restart);
 

@@ -1397,6 +1397,225 @@ const QuestionsDB = (function () {
     }));
   }
 
+  function makeEntry(question, correctValue, wrongValues, explanation, formatter = (v) => String(v)) {
+    const formattedCorrect = formatter(correctValue);
+    const wrongs = [];
+
+    wrongValues.forEach(value => {
+      const formatted = formatter(value);
+      if (formatted !== formattedCorrect && !wrongs.includes(formatted)) wrongs.push(formatted);
+    });
+
+    const optionsBase = [formattedCorrect, ...wrongs.slice(0, 3)];
+    const shift = question.length % 4;
+    const options = [];
+    optionsBase.forEach((option, index) => {
+      options[(index + shift) % 4] = option;
+    });
+
+    return [question, options, options.indexOf(formattedCorrect), explanation];
+  }
+
+  function generateMathQuestions() {
+    const mathQuestions = [];
+
+    const subtractionReservePairs = [
+      [432, 158], [705, 278], [864, 397], [931, 486], [620, 185],
+      [540, 267], [812, 439], [703, 258], [950, 476], [684, 295],
+      [761, 384], [843, 567], [904, 458], [670, 286], [725, 348],
+      [810, 456], [963, 579], [742, 368], [880, 497], [651, 274]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "subtracao_reserva", "Subtracao com Reserva", "mat_sr",
+      subtractionReservePairs.map(([a, b]) => {
+        const correct = a - b;
+        return makeEntry(
+          `Quanto e ${a} - ${b}?`,
+          correct,
+          [correct + 10, correct - 10, correct + 100, correct + 1],
+          `Para resolver ${a} - ${b}, e preciso fazer a subtracao com reagrupamento quando falta dezena ou centena.`
+        );
+      })
+    ));
+
+    const thousandPairs = [
+      [1250, 486], [2034, 875], [3400, 1587], [4123, 1968], [5005, 2479],
+      [6200, 3586], [7314, 2897], [8402, 4758], [9001, 3864], [1540, 697],
+      [2603, 1489], [3780, 2596], [4821, 1738], [6104, 2895], [7420, 3567]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "subtracao_milhar", "Subtraindo com Milhar", "mat_sm",
+      thousandPairs.map(([a, b]) => {
+        const correct = a - b;
+        return makeEntry(
+          `Quanto e ${a} - ${b}?`,
+          correct,
+          [correct + 100, correct - 100, correct + 10, correct + 1000],
+          `Nessa conta, alem das centenas, pode ser necessario pedir emprestado tambem no milhar.`
+        );
+      })
+    ));
+
+    const addSubProblems = [
+      ["Lia tinha 245 figurinhas e ganhou mais 128. Com quantas figurinhas ela ficou?", 373, [363, 383, 327], "Somamos as figurinhas que Lia tinha com as que ela ganhou: 245 + 128."],
+      ["Uma biblioteca tinha 560 livros. Depois emprestou 187. Quantos livros ficaram na biblioteca?", 373, [383, 347, 273], "Para saber quantos ficaram, fazemos 560 - 187."],
+      ["No passeio, 318 alunos foram de manha e 206 a tarde. Quantos alunos participaram ao todo?", 524, [514, 534, 424], "Como queremos o total, fazemos 318 + 206."],
+      ["Pedro juntou 450 tampinhas e usou 175 em uma atividade. Quantas tampinhas sobraram?", 275, [265, 285, 375], "Para descobrir o que sobrou, fazemos 450 - 175."],
+      ["Uma escola arrecadou 126 caixas de leite na segunda e 239 na terca. Quantas caixas foram arrecadadas nos dois dias?", 365, [355, 375, 465], "Somamos as caixas dos dois dias: 126 + 239."],
+      ["Ana guardou 704 reais para uma viagem e gastou 286 reais. Quanto ainda restou?", 418, [408, 428, 318], "O valor que restou e 704 - 286."],
+      ["Um mercado vendeu 315 paes pela manha e 184 a tarde. Quantos paes vendeu no dia?", 499, [489, 509, 399], "Somamos as vendas da manha e da tarde."],
+      ["Numa fazenda havia 930 laranjas colhidas. Depois 458 foram vendidas. Quantas laranjas sobraram?", 472, [462, 482, 372], "Para saber o que sobrou, fazemos 930 - 458."],
+      ["Julia leu 128 paginas de um livro e depois mais 147 paginas. Quantas paginas ela leu ao todo?", 275, [265, 285, 175], "Somamos as paginas lidas nas duas partes."],
+      ["Havia 600 litros de agua em uma caixa. Foram usados 238 litros. Quantos litros ainda ficaram?", 362, [352, 372, 262], "Subtraimos os litros usados dos litros que havia antes."],
+      ["Uma loja vendeu 432 brinquedos em abril e 156 em maio. Quantos brinquedos vendeu nesses dois meses?", 588, [578, 598, 488], "Como e o total de dois meses, somamos 432 + 156."],
+      ["Em um album cabem 800 fotos. Ja foram colocadas 467 fotos. Quantos espacos ainda faltam preencher?", 333, [323, 343, 433], "Fazemos 800 - 467 para saber quantos espacos ainda faltam."],
+      ["Um parque recebeu 219 visitantes de manha e 312 a tarde. Quantas pessoas visitaram o parque?", 531, [521, 541, 431], "Somamos os visitantes dos dois periodos."],
+      ["Carlos tinha 980 pontos em um jogo e perdeu 365 pontos. Com quantos pontos ele ficou?", 615, [605, 625, 515], "Para saber a nova pontuacao, fazemos 980 - 365."],
+      ["No deposito havia 155 caixas azuis e 244 caixas vermelhas. Quantas caixas havia no total?", 399, [389, 409, 299], "Somamos as caixas azuis e vermelhas."],
+      ["Uma professora comprou 750 folhas e usou 298 em atividades. Quantas folhas sobraram?", 452, [442, 462, 352], "O numero de folhas que sobraram e 750 - 298."],
+      ["Um onibus levou 186 pessoas pela manha e 207 a tarde. Quantas pessoas foram levadas ao todo?", 393, [383, 403, 293], "Somamos 186 + 207."],
+      ["Numa gincana, a equipe azul fez 640 pontos e perdeu 285 em uma prova. Quantos pontos restaram?", 355, [345, 365, 255], "Subtraimos os pontos perdidos dos pontos que a equipe tinha."],
+      ["Um clube tinha 321 bolas e comprou mais 179. Quantas bolas passou a ter?", 500, [490, 510, 400], "321 + 179 = 500."],
+      ["Marina juntou 1000 pecas de montar e doou 468. Com quantas pecas ela ficou?", 532, [522, 542, 432], "Fazemos 1000 - 468 para descobrir quantas pecas restaram."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "problemas_adicao_subtracao", "Problemas com Adicao e Subtracao", "mat_pas",
+      addSubProblems.map(([question, correct, wrongs, explanation]) => makeEntry(question, correct, wrongs, explanation))
+    ));
+
+    const multiplicationBasicPairs = [
+      [2, 8], [3, 6], [4, 7], [5, 9], [6, 4],
+      [7, 5], [8, 3], [9, 4], [10, 6], [3, 9],
+      [4, 8], [5, 7], [6, 6], [7, 8], [8, 5],
+      [9, 7], [10, 4], [2, 12], [3, 11], [4, 9]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_basica", "Multiplicacao - Operacoes Basicas", "mat_mb",
+      multiplicationBasicPairs.map(([a, b]) => {
+        const correct = a * b;
+        return makeEntry(
+          `Quanto e ${a} x ${b}?`,
+          correct,
+          [correct + a, correct - a, correct + b, correct + 1],
+          `Multiplicar ${a} x ${b} e somar ${a} ${b} vezes, ou ${b} ${a} vezes.`
+        );
+      })
+    ));
+
+    const multiplicationProblems = [
+      ["Cada caixa tem 6 lapis. Quantos lapis ha em 8 caixas?", 48, [42, 54, 56], "Se cada caixa tem 6 lapis, fazemos 6 x 8."],
+      ["Uma professora organizou 7 filas com 5 alunos em cada uma. Quantos alunos estavam nas filas?", 35, [30, 40, 42], "Basta multiplicar 7 filas por 5 alunos."],
+      ["Um pacote tem 4 figurinhas. Quantas figurinhas ha em 9 pacotes?", 36, [32, 40, 45], "Fazemos 4 x 9 para descobrir o total."],
+      ["Joao plantou 3 mudas em cada vaso. Se ele tem 12 vasos, quantas mudas plantou?", 36, [30, 39, 48], "O total e 3 x 12."],
+      ["No teatro, cada fileira tem 8 cadeiras. Quantas cadeiras ha em 6 fileiras?", 48, [42, 54, 46], "Como sao 6 grupos de 8 cadeiras, fazemos 8 x 6."],
+      ["Uma aranha tem 8 patas. Quantas patas tem 5 aranhas?", 40, [32, 45, 48], "Multiplicamos 8 patas por 5 aranhas."],
+      ["Cada semana tem 7 dias. Quantos dias ha em 4 semanas?", 28, [21, 24, 35], "Fazemos 7 x 4."],
+      ["Uma bandeja leva 10 copos. Quantos copos cabem em 3 bandejas?", 30, [20, 33, 40], "Sao 3 grupos de 10 copos."],
+      ["Cada time ganhou 9 medalhas. Quantas medalhas ganharam 4 times?", 36, [27, 40, 45], "Multiplicamos 9 x 4."],
+      ["Uma caixa de ovos tem 12 ovos. Quantos ovos ha em 2 caixas?", 24, [14, 22, 26], "Sao 2 grupos de 12 ovos."],
+      ["Cada aluno recebeu 5 livros. Quantos livros foram entregues a 9 alunos?", 45, [40, 50, 54], "Basta calcular 5 x 9."],
+      ["Em cada mesa ha 4 cadeiras. Quantas cadeiras ha em 11 mesas?", 44, [40, 48, 54], "Temos 11 grupos de 4 cadeiras."],
+      ["Uma loja montou 6 estantes com 7 caixas em cada uma. Quantas caixas foram colocadas?", 42, [36, 48, 49], "Fazemos 6 x 7."],
+      ["Cada pacote tem 3 biscoitos. Quantos biscoitos ha em 15 pacotes?", 45, [30, 42, 48], "Sao 15 grupos de 3 biscoitos."],
+      ["Um jardim tem 9 canteiros com 2 flores em cada um. Quantas flores ha ao todo?", 18, [11, 16, 20], "O total e 9 x 2."],
+      ["Cada album tem 8 paginas. Quantas paginas ha em 7 albuns?", 56, [48, 54, 64], "Fazemos 8 x 7."],
+      ["Uma bicicleta tem 2 rodas. Quantas rodas ha em 13 bicicletas?", 26, [24, 28, 23], "Multiplicamos 2 x 13."],
+      ["Cada caixa guarda 9 bolas. Quantas bolas ha em 5 caixas?", 45, [36, 40, 54], "Sao 5 grupos de 9 bolas."],
+      ["Uma fazenda tem 4 currais com 6 vacas em cada um. Quantas vacas ha?", 24, [20, 28, 30], "Calculamos 4 x 6."],
+      ["Em cada saco ha 7 laranjas. Quantas laranjas ha em 8 sacos?", 56, [49, 54, 63], "Basta multiplicar 7 x 8."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_problemas", "Multiplicacao e Problemas", "mat_mp",
+      multiplicationProblems.map(([question, correct, wrongs, explanation]) => makeEntry(question, correct, wrongs, explanation))
+    ));
+
+    const multiplicationReservePairs = [
+      [124, 3], [215, 4], [306, 5], [418, 2], [527, 3],
+      [638, 4], [749, 2], [856, 3], [912, 4], [135, 6],
+      [247, 3], [359, 2], [468, 5], [574, 4], [683, 3]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_reserva", "Multiplicacao com Reserva", "mat_mr",
+      multiplicationReservePairs.map(([a, b]) => {
+        const correct = a * b;
+        return makeEntry(
+          `Quanto e ${a} x ${b}?`,
+          correct,
+          [correct + b * 10, correct - b * 10, correct + 100, correct + b],
+          `Na multiplicacao ${a} x ${b}, algumas ordens passam valor para a ordem seguinte, por isso ha reserva.`
+        );
+      })
+    ));
+
+    const circleEntries = [
+      ["Qual figura geometrica e redonda por inteiro?", "circulo", ["quadrado", "triangulo", "retangulo"], "O circulo e a figura toda preenchida e redonda."],
+      ["A linha que forma a volta do circulo recebe o nome de:", "circunferencia", ["segmento", "lado", "vertice"], "Circunferencia e a linha curva que contorna o circulo."],
+      ["O centro de um circulo fica:", ["bem no meio da figura", "em um canto", "fora da figura", "na ponta da linha"], 0, "O centro e o ponto que fica no meio do circulo."],
+      ["Qual objeto lembra mais um circulo?", "moeda", ["livro", "lapis", "porta"], "A moeda tem formato redondo, parecido com um circulo."],
+      ["A borda de uma roda lembra mais:", "uma circunferencia", ["um triangulo", "um retangulo", "uma linha reta"], "A borda da roda e uma linha curva fechada, como a circunferencia."],
+      ["Se uma figura e redonda e fechada, ela pode ser um:", "circulo", ["quadrado", "losango", "trapezio"], "O circulo e uma figura fechada e redonda."],
+      ["Qual dos nomes combina com a parte de dentro de uma figura redonda?", "circulo", ["circunferencia", "segmento", "ponto final"], "Circulo e a regiao interna; circunferencia e o contorno."],
+      ["O que e a circunferencia?", "o contorno do circulo", ["o centro da figura", "uma linha reta", "a metade do circulo"], "Circunferencia e a linha curva que contorna o circulo."],
+      ["Em uma pizza inteira vista de cima, o formato se parece mais com:", "circulo", ["triangulo", "retangulo", "cubo"], "A pizza inteira tem forma parecida com um circulo."],
+      ["Qual figura nao tem cantos nem lados retos?", "circulo", ["quadrado", "retangulo", "triangulo"], "O circulo nao possui lados retos nem cantos."],
+      ["O bambole pode lembrar melhor:", "uma circunferencia", ["um quadrado", "um cone", "um cubo"], "O bambole parece um contorno redondo."],
+      ["Quando desenhamos so a volta de uma figura redonda, desenhamos a:", "circunferencia", ["diagonal", "altura", "tabuada"], "A volta da figura redonda recebe o nome de circunferencia."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "circulos_circunferencias", "Circulos e Circunferencias", "mat_cc",
+      circleEntries.map(entry => Array.isArray(entry[1])
+        ? [entry[0], entry[1], entry[2], entry[3]]
+        : makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const segmentEntries = [
+      ["Um segmento de reta e:", "uma parte de reta com comeco e fim", ["uma curva fechada", "uma conta de multiplicar", "um circulo inteiro"], "O segmento de reta tem dois extremos: um inicio e um fim."],
+      ["Qual desenho lembra um segmento de reta?", "uma linha reta curta", ["uma roda", "um arco", "um circulo"], "O segmento de reta parece uma linha reta limitada por dois pontos."],
+      ["Se marcamos os pontos A e B e ligamos com uma linha reta, formamos:", "o segmento AB", ["uma circunferencia", "um triangulo", "um cubo"], "Dois pontos ligados por uma reta formam um segmento."],
+      ["Um segmento de reta pode ser:", "horizontal, vertical ou inclinado", ["somente redondo", "somente curvo", "sempre em zigue-zague"], "Segmentos podem aparecer em varias posicoes, mas continuam retos."],
+      ["O segmento de reta e diferente da linha curva porque:", "ele nao faz curva", ["ele nao tem tamanho", "ele nao pode ser desenhado", "ele sempre e redondo"], "Um segmento de reta segue sempre reto."],
+      ["Ao desenhar a borda de uma folha de caderno, vemos muitos:", "segmentos de reta", ["circulos", "espirais", "ondas"], "Os lados de uma folha sao exemplos de segmentos de reta."],
+      ["Uma regua ajuda a desenhar:", "segmentos de reta", ["circulos perfeitos sem compasso", "ondas do mar", "nuvens"], "A regua ajuda a fazer linhas retas."],
+      ["Quando um segmento liga dois pontos, ele mostra:", "a distancia reta entre eles", ["o nome do caderno", "a cor dos pontos", "uma multiplicacao"], "O segmento representa a ligacao reta entre os pontos."],
+      ["Qual objeto tem bordas que parecem segmentos de reta?", "um livro", ["uma bola", "uma moeda", "um prato"], "As bordas retas do livro lembram segmentos de reta."],
+      ["Um segmento de reta sempre tem:", "dois extremos", ["tres centros", "quatro curvas", "nenhum fim"], "Todo segmento de reta tem um inicio e um fim."],
+      ["Se a linha esta torcida, ela nao e:", "segmento de reta", ["linha", "desenho", "figura"], "Para ser segmento, a linha precisa ser reta."],
+      ["Um lado de um quadrado e um exemplo de:", "segmento de reta", ["circunferencia", "diametro", "curva aberta"], "Cada lado de um quadrado e um segmento de reta."],
+      ["Quando medimos um lado reto de uma figura, estamos medindo um:", "segmento de reta", ["circulo", "angulo redondo", "contorno curvo"], "Lados retos de figuras sao segmentos de reta."],
+      ["Uma cerca feita com hastes retas lembra varios:", "segmentos de reta", ["circulos concentricos", "arcos completos", "ondas fechadas"], "Cada haste reta pode lembrar um segmento de reta."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "segmentos_reta", "Segmentos de Reta", "mat_seg",
+      segmentEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const lengthEntries = [
+      ["O segmento AB mede 5 cm e o segmento CD mede 8 cm. Qual e o maior?", "segmento CD", ["segmento AB", "os dois tem a mesma medida", "nenhum deles"], "Como 8 cm e maior que 5 cm, o segmento CD e maior."],
+      ["Um segmento mede 7 cm. Outro mede 7 cm. O que podemos dizer?", "eles tem o mesmo comprimento", ["o primeiro e maior", "o segundo e menor", "nao da para comparar"], "Se os dois medem 7 cm, tem o mesmo comprimento."],
+      ["Se um segmento mede 9 cm e outro 4 cm, qual e a diferenca entre eles?", "5 cm", ["4 cm", "6 cm", "13 cm"], "A diferenca e 9 - 4 = 5 cm."],
+      ["Qual instrumento usamos para medir um segmento desenhado no caderno?", "regua", ["borracha", "apontador", "compasso de circulo"], "A regua e usada para medir comprimentos retos."],
+      ["Um segmento mede 3 cm. Se ele aumentar 2 cm, passara a medir:", "5 cm", ["4 cm", "6 cm", "1 cm"], "Somamos 3 cm + 2 cm = 5 cm."],
+      ["Um segmento mede 10 cm. Se tirarmos 4 cm, quanto resta?", "6 cm", ["5 cm", "7 cm", "14 cm"], "Subtraimos 10 cm - 4 cm."],
+      ["O segmento EF mede 12 cm. O segmento GH mede 15 cm. Quantos centimetros o GH tem a mais?", "3 cm", ["2 cm", "4 cm", "27 cm"], "Fazemos 15 - 12 = 3 cm."],
+      ["Dois segmentos medem 6 cm e 8 cm. Juntos, medem:", "14 cm", ["12 cm", "13 cm", "15 cm"], "Somamos os dois comprimentos: 6 + 8."],
+      ["Se um lado de um retangulo mede 9 cm, essa medida representa o comprimento de um:", "segmento de reta", ["circulo", "ponto", "curva"], "O lado reto da figura e um segmento de reta."],
+      ["O segmento JK mede 11 cm. Qual opcao mostra essa medida?", "11 cm", ["10 cm", "12 cm", "21 cm"], "A medida informada do segmento JK e 11 cm."],
+      ["Se o segmento LM mede 4 cm e o segmento NO mede o dobro, quanto mede NO?", "8 cm", ["6 cm", "7 cm", "12 cm"], "O dobro de 4 cm e 8 cm."],
+      ["Um segmento de 16 cm foi dividido em 2 partes iguais. Quanto mede cada parte?", "8 cm", ["6 cm", "7 cm", "9 cm"], "Metade de 16 cm e 8 cm."],
+      ["Se um segmento mede 14 cm e outro mede 9 cm, qual e o menor?", "o de 9 cm", ["o de 14 cm", "os dois sao iguais", "nenhum deles"], "Entre 14 e 9, o menor e 9."],
+      ["Para saber se um segmento e maior ou menor que outro, precisamos:", "comparar suas medidas", ["adivinhar", "olhar so a cor", "contar as letras do nome"], "A comparacao correta e feita pelas medidas."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "comprimento_segmentos", "Comprimento dos Segmentos de Reta", "mat_cs",
+      lengthEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    return mathQuestions;
+  }
+
+  const mathQuestions = generateMathQuestions();
+  questions.push(...mathQuestions);
+
   const geographyQuestions = [
     ...buildQuestions("geografia", "povos_espacos", "Os Povos e os Espacos em que Vivem", "geo_pe", [
       ["O que pode influenciar o jeito de viver de um povo?", ["Apenas a cor da roupa", "O lugar onde vive e seus costumes", "Somente a idade das pessoas", "Apenas o nome da cidade"], 1, "O lugar, o clima, a natureza e os costumes ajudam a formar o modo de vida de cada povo."],
@@ -1566,7 +1785,7 @@ const QuestionsDB = (function () {
 
   const SUBJECT_META = {
     portugues:  { name: "Português",   icon: "📖", available: true  },
-    matematica: { name: "Matemática",  icon: "🔢", available: false },
+    matematica: { name: "Matemática",  icon: "🔢", available: true  },
     historia:   { name: "História",    icon: "🏛️", available: false },
     ciencias:   { name: "Ciências",    icon: "🔬", available: false },
     ingles:     { name: "Inglês",      icon: "🌍", available: false },
@@ -1583,6 +1802,15 @@ const QuestionsDB = (function () {
     derivados:            { name: "Substantivos Derivados",            icon: "🌱" },
     maiusculas_cg:        { name: "Maiúsculas e Minúsculas: C e G",    icon: "🔡" },
     genero:               { name: "Substantivos Masculino e Feminino", icon: "👫" },
+    subtracao_reserva:    { name: "Subtração com Reserva", icon: "➖" },
+    subtracao_milhar:     { name: "Subtraindo com Milhar", icon: "🏦" },
+    problemas_adicao_subtracao: { name: "Problemas com Adição e Subtração", icon: "🧠" },
+    multiplicacao_basica: { name: "Multiplicação - Operações Básicas", icon: "✖️" },
+    multiplicacao_problemas: { name: "Multiplicação e Problemas", icon: "📦" },
+    multiplicacao_reserva: { name: "Multiplicação com Reserva", icon: "🔢" },
+    circulos_circunferencias: { name: "Círculos e Circunferências", icon: "⭕" },
+    segmentos_reta:       { name: "Segmentos de Reta", icon: "📏" },
+    comprimento_segmentos:{ name: "Comprimento dos Segmentos de Reta", icon: "📐" },
     povos_espacos:        { name: "Os Povos e os Espaços em que Vivem", icon: "🧭" },
     populacoes_tradicionais: { name: "As Populações Tradicionais", icon: "🏘️" },
     importancia_pop_trad: { name: "A Importância das Populações Tradicionais", icon: "🌱" },

@@ -45,7 +45,19 @@ body {
   gap: 12px;
   flex-wrap: wrap;
 }
-.header-logo { font-size: 1.35rem; font-weight: 800; flex: 1; white-space: nowrap; }
+.header-logo {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  flex: 1;
+  white-space: nowrap;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+.header-logo:hover { opacity: .92; }
 .nav-btn {
   background: rgba(255,255,255,0.2);
   border: 2px solid rgba(255,255,255,0.4);
