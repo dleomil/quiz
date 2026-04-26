@@ -1,12 +1,22 @@
 const App = (function () {
   const SESSIONS_PER_QUIZ = 30;
+  const QUIZ_LOCK_MESSAGE = 'Finalize o quiz atual para voltar ou trocar de materia.';
 
   const views = {
     home: HomeView, subject: SubjectView,
     quiz: QuizView, results: ResultsView, history: HistoryView
   };
 
-  function navigate(screen) {
+  function quizInProgress() {
+    return Store.get().screen === 'quiz';
+  }
+
+  function navigate(screen, opts = {}) {
+    if (!opts.force && quizInProgress() && screen !== 'quiz') {
+      alert(QUIZ_LOCK_MESSAGE);
+      return;
+    }
+
     Store.set({ screen });
     const el = document.getElementById('main-content');
     el.innerHTML = '';
@@ -34,9 +44,15 @@ const App = (function () {
       questions: qs,
       index: 0,
       answers: [],
-      sessionStart: Date.now()
+      sessionStart: Date.now(),
+      quizStarted: false
     });
-    navigate('quiz');
+    navigate('quiz', { force: true });
+  }
+
+  function beginQuiz() {
+    Store.set({ quizStarted: true });
+    navigate('quiz', { force: true });
   }
 
   function finishQuiz() {
@@ -61,19 +77,24 @@ const App = (function () {
 
     Store.addSession({
       date: `${date} ${time}`,
+      subject: s.selectedSubject,
+      topicId: s.selectedTopic,
       topic: topicName,
       correct,
       total,
-      pct
+      pct,
+      durationSec: Math.round((Date.now() - s.sessionStart) / 1000),
+      timedOutCount: s.answers.filter(a => a.isTimeout).length
     });
 
-    navigate('results');
+    navigate('results', { force: true });
   }
 
   function restart() {
     const s = Store.get();
     if (s.screen === 'quiz') {
-      if (!confirm('Quer mesmo recomeçar? O progresso atual será perdido.')) return;
+      alert(QUIZ_LOCK_MESSAGE);
+      return;
     }
     navigate('home');
   }
@@ -86,7 +107,7 @@ const App = (function () {
     navigate('home');
   }
 
-  return { navigate, selectSubject, startQuiz, finishQuiz, restart, init };
+  return { navigate, selectSubject, startQuiz, beginQuiz, finishQuiz, restart, init };
 })();
 
 document.addEventListener('DOMContentLoaded', App.init);
