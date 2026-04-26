@@ -31,7 +31,7 @@ const SubjectView = (function () {
         </div>
 
         <button class="btn btn-primary btn-lg w-full" id="start-btn">
-          ▶️ Começar o Quiz! (30 questões)
+          ▶️ Começar o Quiz!
         </button>
       </div>
     `;

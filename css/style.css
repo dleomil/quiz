@@ -55,6 +55,7 @@ body {
   cursor: pointer;
   font-size: 0.88rem;
   font-weight: 600;
+  white-space: nowrap;
   transition: background .2s;
 }
 .nav-btn:hover { background: rgba(255,255,255,0.35); }
@@ -68,6 +69,7 @@ body {
   cursor: pointer;
   font-size: 0.88rem;
   font-weight: 700;
+  white-space: nowrap;
   transition: transform .15s, background .2s;
 }
 .restart-btn:hover { background: #D97706; transform: scale(1.05); }
@@ -99,6 +101,7 @@ body {
   font-size: 1.05rem;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
   transition: transform .15s, box-shadow .15s;
   text-decoration: none;
 }
@@ -110,6 +113,7 @@ body {
 .btn-amber    { background: var(--secondary); color: #fff; }
 .btn-outline  { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
 .btn-danger   { background: var(--error); color: #fff; }
+.btn-download { background: #0F766E; color: #fff; }
 .btn-lg { font-size: 1.2rem; padding: 16px 32px; border-radius: 14px; }
 .w-full { width: 100%; }
 .text-center { text-align: center; }
@@ -357,10 +361,15 @@ body {
 /* ── Responsive ──────────────────────────────────── */
 @media (max-width: 580px) {
   body { font-size: 16px; }
+  .header-inner { gap: 8px; flex-wrap: nowrap; }
+  .header-logo  { font-size: 1.1rem; }
+  .nav-btn, .restart-btn { font-size: .78rem; padding: 6px 10px; }
   .home-hero h2 { font-size: 1.5rem; }
   .question-text { font-size: 1.05rem; }
   .score-circle { width: 120px; height: 120px; }
   .score-pct { font-size: 2rem; }
   .topic-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .subject-grid { grid-template-columns: repeat(3, 1fr); }
+  .results-actions { gap: 8px; }
+  .results-actions .btn { font-size: .9rem; padding: 10px 14px; }
 }
