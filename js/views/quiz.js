@@ -50,6 +50,7 @@ const QuizView = (function () {
 
   function render(el) {
     clearTimers();
+    delete el.dataset.answered;
     const s = Store.get();
     const total = s.questions.length;
 

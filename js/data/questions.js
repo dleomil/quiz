@@ -1817,6 +1817,185 @@ const QuestionsDB = (function () {
   const scienceQuestions = generateScienceQuestions();
   questions.push(...scienceQuestions);
 
+  function generateEnglishQuestions() {
+    const englishQuestions = [];
+
+    const easterItems = [
+      ["Easter egg", "ovo de Pascoa"],
+      ["Chocolate", "chocolate"],
+      ["Basket", "cesta"],
+      ["Bunny", "coelho"],
+      ["Candy", "doce"],
+      ["Sunday", "domingo"],
+      ["Gift", "presente"],
+      ["Family", "familia"],
+      ["Egg hunt", "caca aos ovos"],
+      ["Happy Easter", "Feliz Pascoa"]
+    ];
+
+    const easterEntries = [
+      ...easterItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, easterItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...easterItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles combina com "${pt}"?`, en, easterItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "easter_eggs", "Celebrations - Easter Eggs", "eng_ea", easterEntries.slice(0, 19)));
+
+    const houseItems = [
+      ["kitchen", "cozinha"],
+      ["bedroom", "quarto"],
+      ["bathroom", "banheiro"],
+      ["living room", "sala"],
+      ["door", "porta"],
+      ["window", "janela"],
+      ["roof", "telhado"],
+      ["garden", "jardim"],
+      ["garage", "garagem"],
+      ["table", "mesa"]
+    ];
+
+    const houseEntries = [
+      ...houseItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, houseItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" quer dizer "${pt}".`, (v) => v)),
+      ...houseItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, houseItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "parts_house", "Parts of House", "eng_ho", houseEntries.slice(0, 19)));
+
+    const thereIsAreSingular = [
+      ["one bed", "There is one bed in the room."],
+      ["one table", "There is one table in the kitchen."],
+      ["one cat", "There is one cat in the garden."],
+      ["one book", "There is one book on the desk."],
+      ["one ball", "There is one ball in the box."],
+      ["one apple", "There is one apple on the plate."],
+      ["one door", "There is one door in the bedroom."],
+      ["one window", "There is one window in the bathroom."],
+      ["one chair", "There is one chair in the classroom."]
+    ];
+
+    const thereIsArePlural = [
+      ["two beds", "There are two beds in the room."],
+      ["three tables", "There are three tables in the kitchen."],
+      ["four cats", "There are four cats in the garden."],
+      ["five books", "There are five books on the desk."],
+      ["six balls", "There are six balls in the box."],
+      ["seven apples", "There are seven apples on the plate."],
+      ["eight doors", "There are eight doors in the school."],
+      ["nine windows", "There are nine windows in the house."],
+      ["ten chairs", "There are ten chairs in the classroom."]
+    ];
+
+    const thereEntries = [
+      ...thereIsAreSingular.map(([desc, sentence]) => makeEntry(`Qual frase correta fala sobre ${desc}?`, sentence, thereIsAreSingular.concat(thereIsArePlural).map(item => item[1]).filter(v => v !== sentence).slice(0, 3), `Usamos "There is" para falar de uma coisa so.`, (v) => v)),
+      ...thereIsArePlural.map(([desc, sentence]) => makeEntry(`Qual frase correta fala sobre ${desc}?`, sentence, thereIsAreSingular.concat(thereIsArePlural).map(item => item[1]).filter(v => v !== sentence).slice(-3), `Usamos "There are" para falar de mais de uma coisa.`, (v) => v)),
+      makeEntry(`Qual opcao completa corretamente: "__ one dog in the yard."`, "There is", ["There are", "Is there", "Are there"], `Com um cachorro so, usamos "There is".`, (v) => v)
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "there_is_are", "There is / There are", "eng_ti", thereEntries.slice(0, 19)));
+
+    const negativeEntries = [
+      makeEntry(`Qual frase significa "Nao ha uma bola na caixa"?`, "There is not a ball in the box.", ["There are not a ball in the box.", "Is there not a ball in the box?", "There is a ball in the box."], `Na forma negativa singular usamos "There is not".`, (v) => v),
+      makeEntry(`Qual frase significa "Nao ha duas cadeiras na sala"?`, "There are not two chairs in the room.", ["There is not two chairs in the room.", "There are two chairs in the room.", "Are there not two chairs in the room?"], `Na forma negativa plural usamos "There are not".`, (v) => v),
+      makeEntry(`Complete: "__ a cat on the sofa."`, "There is not", ["There are not", "Is there", "There is"], `Como a frase e negativa e fala de um gato, usamos "There is not".`, (v) => v),
+      makeEntry(`Complete: "__ three books on the table."`, "There are not", ["There is not", "There are", "Are there"], `Como a frase e negativa e fala de tres livros, usamos "There are not".`, (v) => v),
+      makeEntry(`Qual frase esta na forma negativa correta?`, "There is not one apple in the bag.", ["There are not one apple in the bag.", "There is one apple in the bag.", "Is there one apple in the bag?"], `Para uma unidade na negativa, usamos "There is not".`, (v) => v),
+      makeEntry(`Qual frase esta na forma negativa correta?`, "There are not four pens in the pencil case.", ["There is not four pens in the pencil case.", "There are four pens in the pencil case.", "Are there four pens in the pencil case?"], `Para mais de uma coisa, usamos "There are not".`, (v) => v),
+      makeEntry(`Como dizemos "Nao ha uma mesa na cozinha"?`, "There is not a table in the kitchen.", ["There are not a table in the kitchen.", "There is a table in the kitchen.", "Is there a table in the kitchen?"], `A forma negativa singular correta e "There is not".`, (v) => v),
+      makeEntry(`Como dizemos "Nao ha cinco flores no jardim"?`, "There are not five flowers in the garden.", ["There is not five flowers in the garden.", "There are five flowers in the garden.", "Are there five flowers in the garden?"], `A forma negativa plural correta e "There are not".`, (v) => v),
+      makeEntry(`Se queremos negar a existencia de uma janela, usamos:`, "There is not", ["There are not", "Are there", "There are"], `Para uma janela so, usamos a forma singular negativa.`, (v) => v),
+      makeEntry(`Se queremos negar a existencia de muitas janelas, usamos:`, "There are not", ["There is not", "Is there", "There is"], `Para muitas janelas, usamos a forma plural negativa.`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Nao ha um coelho na cesta"?`, "There is not a bunny in the basket.", ["There are not a bunny in the basket.", "There is a bunny in the basket.", "Are there a bunny in the basket?"], `Com um coelho so, usamos "There is not".`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Nao ha tres ovos na cesta"?`, "There are not three eggs in the basket.", ["There is not three eggs in the basket.", "There are three eggs in the basket.", "Is there three eggs in the basket?"], `Com tres ovos, usamos "There are not".`, (v) => v),
+      makeEntry(`Marque a frase negativa correta:`, "There is not one book in my bag.", ["There are not one book in my bag.", "There is one book in my bag.", "Are there one book in my bag?"], `"There is not" combina com um livro so.`, (v) => v),
+      makeEntry(`Marque a frase negativa correta:`, "There are not six crayons on the desk.", ["There is not six crayons on the desk.", "There are six crayons on the desk.", "Is there six crayons on the desk?"], `"There are not" combina com seis lapis de cor.`, (v) => v),
+      makeEntry(`Complete corretamente: There __ not two cats here.`, "are", ["is", "am", "be"], `Com duas coisas, usamos "are".`, (v) => v),
+      makeEntry(`Complete corretamente: There __ not one dog here.`, "is", ["are", "am", "be"], `Com uma coisa so, usamos "is".`, (v) => v),
+      makeEntry(`Qual frase significa "Nao ha flores na mesa"?`, "There are not flowers on the table.", ["There is not flowers on the table.", "There are flowers on the table.", "Is there flowers on the table?"], `Como flores esta no plural, usamos "There are not".`, (v) => v),
+      makeEntry(`Qual frase significa "Nao ha uma caneta na mochila"?`, "There is not a pen in the backpack.", ["There are not a pen in the backpack.", "There is a pen in the backpack.", "Are there a pen in the backpack?"], `Como caneta esta no singular, usamos "There is not".`, (v) => v),
+      makeEntry(`Na frase negativa plural, usamos:`, "There are not", ["There is not", "Is there", "There is"], `Plural pede "There are not".`, (v) => v)
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "there_negative", "There is / There are / Negative Form", "eng_tn", negativeEntries.slice(0, 19)));
+
+    const interrogativeEntries = [
+      makeEntry(`Como perguntamos "Ha um livro na mesa?"`, "Is there a book on the table?", ["Are there a book on the table?", "There is a book on the table?", "Is there books on the table?"], `Para pergunta com singular usamos "Is there...?"`, (v) => v),
+      makeEntry(`Como perguntamos "Ha tres livros na mesa?"`, "Are there three books on the table?", ["Is there three books on the table?", "There are three books on the table?", "Are there a book on the table?"], `Para pergunta com plural usamos "Are there...?"`, (v) => v),
+      makeEntry(`Complete: "__ there one apple in the bag?"`, "Is", ["Are", "There", "Do"], `Com uma maca, usamos "Is there".`, (v) => v),
+      makeEntry(`Complete: "__ there five apples in the bag?"`, "Are", ["Is", "There", "Do"], `Com cinco macas, usamos "Are there".`, (v) => v),
+      makeEntry(`Qual pergunta esta correta?`, "Is there a chair in the room?", ["Are there a chair in the room?", "There is a chair in the room?", "Is there chairs in the room?"], `Singular pede "Is there".`, (v) => v),
+      makeEntry(`Qual pergunta esta correta?`, "Are there two chairs in the room?", ["Is there two chairs in the room?", "There are two chairs in the room?", "Are there a chair in the room?"], `Plural pede "Are there".`, (v) => v),
+      makeEntry(`A pergunta "Is there a cat in the house?" fala sobre:`, "um gato", ["dois gatos", "muitas casas", "nenhum gato"], `"A cat" indica um gato so.`, (v) => v),
+      makeEntry(`A pergunta "Are there four windows?" fala sobre:`, "quatro janelas", ["uma janela", "uma porta", "um telhado"], `"Four windows" significa quatro janelas.`, (v) => v),
+      makeEntry(`Qual forma usamos para perguntar sobre uma mesa?`, "Is there", ["Are there", "There are", "There is not"], `Com uma mesa, usamos "Is there".`, (v) => v),
+      makeEntry(`Qual forma usamos para perguntar sobre muitas mesas?`, "Are there", ["Is there", "There is", "There is not"], `Com muitas mesas, usamos "Are there".`, (v) => v),
+      makeEntry(`Como perguntamos "Ha um coelho na cesta?"`, "Is there a bunny in the basket?", ["Are there a bunny in the basket?", "There is a bunny in the basket?", "Is there bunnies in the basket?"], `Como e um coelho, usamos o singular interrogativo.`, (v) => v),
+      makeEntry(`Como perguntamos "Ha ovos na cesta?"`, "Are there eggs in the basket?", ["Is there eggs in the basket?", "There are eggs in the basket?", "Are there an egg in the basket?"], `Como e plural, usamos "Are there".`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Ha uma porta na casa?"`, "Is there a door in the house?", ["Are there a door in the house?", "There is a door in the house?", "Is there doors in the house?"], `A traducao correta usa "Is there".`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Ha janelas na casa?"`, "Are there windows in the house?", ["Is there windows in the house?", "There are windows in the house?", "Are there a window in the house?"], `A traducao correta usa "Are there".`, (v) => v),
+      makeEntry(`Qual frase e uma pergunta?`, "Is there a table here?", ["There is a table here.", "There are tables here.", "There is not a table here."], `A pergunta aparece com "Is there...?"`, (v) => v),
+      makeEntry(`Qual frase e uma pergunta no plural?`, "Are there books in your bag?", ["Is there books in your bag?", "There are books in your bag.", "There are not books in your bag."], `Perguntas no plural usam "Are there".`, (v) => v),
+      makeEntry(`Em "Is there a toy?", a resposta curta pode comecar com:`, "Yes, there is.", ["Yes, there are.", "No, are there.", "Yes, is there."], `Se a pergunta usa singular, a resposta curta tambem usa singular.`, (v) => v),
+      makeEntry(`Em "Are there pencils?", a resposta curta pode comecar com:`, "Yes, there are.", ["Yes, there is.", "No, is there.", "Yes, are there."], `Se a pergunta usa plural, a resposta curta tambem usa plural.`, (v) => v)
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "there_interrogative", "There is / There are / Interrogative Form", "eng_tq", interrogativeEntries.slice(0, 18)));
+
+    const mothersItems = [
+      ["Mother", "mae"],
+      ["Flowers", "flores"],
+      ["Card", "cartao"],
+      ["Love", "amor"],
+      ["Breakfast", "cafe da manha"],
+      ["Hug", "abraco"],
+      ["Gift", "presente"],
+      ["Sunday", "domingo"],
+      ["Family", "familia"],
+      ["Happy Mother's Day", "Feliz Dia das Maes"]
+    ];
+
+    const mothersEntries = [
+      ...mothersItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, mothersItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...mothersItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, mothersItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "mothers_day", "Celebrations - Mother's Day", "eng_md", mothersEntries.slice(0, 19)));
+
+    const foodItems = [
+      ["bread", "pao"],
+      ["milk", "leite"],
+      ["apple", "maca"],
+      ["rice", "arroz"],
+      ["beans", "feijao"],
+      ["juice", "suco"],
+      ["cake", "bolo"],
+      ["egg", "ovo"],
+      ["banana", "banana"],
+      ["cheese", "queijo"]
+    ];
+
+    const foodEntries = [
+      ...foodItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, foodItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...foodItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, foodItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "food", "Food", "eng_fo", foodEntries.slice(0, 19)));
+
+    const colorItems = [
+      ["red", "vermelho"],
+      ["blue", "azul"],
+      ["green", "verde"],
+      ["yellow", "amarelo"],
+      ["black", "preto"],
+      ["white", "branco"],
+      ["pink", "rosa"],
+      ["orange", "laranja"],
+      ["purple", "roxo"]
+    ];
+
+    const colorEntries = [
+      ...colorItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, colorItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...colorItems.map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, colorItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "colors", "Colors", "eng_co", colorEntries.slice(0, 18)));
+
+    return englishQuestions;
+  }
+
+  const englishQuestions = generateEnglishQuestions();
+  questions.push(...englishQuestions);
+
   const geographyQuestions = [
     ...buildQuestions("geografia", "povos_espacos", "Os Povos e os Espacos em que Vivem", "geo_pe", [
       ["O que pode influenciar o jeito de viver de um povo?", ["Apenas a cor da roupa", "O lugar onde vive e seus costumes", "Somente a idade das pessoas", "Apenas o nome da cidade"], 1, "O lugar, o clima, a natureza e os costumes ajudam a formar o modo de vida de cada povo."],
@@ -1989,7 +2168,7 @@ const QuestionsDB = (function () {
     matematica: { name: "Matemática",  icon: "🔢", available: true  },
     historia:   { name: "História",    icon: "🏛️", available: false },
     ciencias:   { name: "Ciências",    icon: "🔬", available: true  },
-    ingles:     { name: "Inglês",      icon: "🌍", available: false },
+    ingles:     { name: "Inglês",      icon: "🌍", available: true  },
     geografia:  { name: "Geografia",   icon: "🗺️", available: true  }
   };
 
@@ -2018,6 +2197,14 @@ const QuestionsDB = (function () {
     poriferos:            { name: "Características e Desenvolvimento dos Poríferos", icon: "🧽" },
     cnidarios:            { name: "Características e Desenvolvimento dos Cnidários", icon: "🌊" },
     atividades_animais:   { name: "Atividades Adicionais sobre os Animais", icon: "🔎" },
+    easter_eggs:          { name: "Celebrations - Easter Eggs", icon: "🥚" },
+    parts_house:          { name: "Parts of House", icon: "🏠" },
+    there_is_are:         { name: "There is / There are", icon: "🧩" },
+    there_negative:       { name: "There is / There are / Negative Form", icon: "🚫" },
+    there_interrogative:  { name: "There is / There are / Interrogative Form", icon: "❓" },
+    mothers_day:          { name: "Celebrations - Mother's Day", icon: "💐" },
+    food:                 { name: "Food", icon: "🍎" },
+    colors:               { name: "Colors", icon: "🎨" },
     povos_espacos:        { name: "Os Povos e os Espaços em que Vivem", icon: "🧭" },
     populacoes_tradicionais: { name: "As Populações Tradicionais", icon: "🏘️" },
     importancia_pop_trad: { name: "A Importância das Populações Tradicionais", icon: "🌱" },

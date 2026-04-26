@@ -8,6 +8,7 @@ const Store = (function () {
     questions: [],
     index: 0,
     answers: [],      // [{id, selected, correct, isCorrect}]
+    quizStarted: false,
     sessionStart: null,
     history: []
   };

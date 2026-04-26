@@ -91,12 +91,15 @@ const App = (function () {
   }
 
   function restart() {
-    const s = Store.get();
-    if (s.screen === 'quiz') {
-      alert(QUIZ_LOCK_MESSAGE);
-      return;
-    }
-    navigate('home');
+    Store.set({
+      selectedTopic: 'all',
+      questions: [],
+      index: 0,
+      answers: [],
+      quizStarted: false,
+      sessionStart: null
+    });
+    navigate('home', { force: true });
   }
 
   function init() {
