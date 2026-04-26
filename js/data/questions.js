@@ -1616,6 +1616,207 @@ const QuestionsDB = (function () {
   const mathQuestions = generateMathQuestions();
   questions.push(...mathQuestions);
 
+  function generateScienceQuestions() {
+    const scienceQuestions = [];
+
+    const birdEntries = [
+      ["As aves tem o corpo coberto principalmente por:", "penas", ["pelos", "escamas secas", "casca"], "As aves possuem penas, que ajudam na protecao e, em muitos casos, no voo."],
+      ["Qual destes animais e uma ave?", "galinha", ["cachorro", "sapo", "peixe"], "A galinha e uma ave."],
+      ["As aves nascem, em geral, de:", "ovos", ["sementes", "casulos de pano", "potes"], "A maior parte das aves nasce de ovos."],
+      ["O bico das aves ajuda a:", "pegar alimentos", ["respirar debaixo d'agua", "cavar tuneis profundos", "subir em paredes lisas"], "O bico ajuda a pegar, cortar ou quebrar alimentos."],
+      ["Muitas aves conseguem voar porque tem:", "asas", ["barbatanas", "nadadeiras", "antenas"], "As asas ajudam muitas aves a voar."],
+      ["Nem toda ave voa, mas toda ave tem:", "penas", ["escamas grossas", "barbatana", "casco"], "Mesmo aves que nao voam possuem penas."],
+      ["O filhote da ave se desenvolve primeiro:", "dentro do ovo", ["dentro de uma bolsa", "no solo sem protecao", "num casulo de seda"], "O embriao da ave se desenvolve dentro do ovo."],
+      ["Uma caracteristica das aves e ter:", "duas patas e duas asas", ["quatro patas e chifres", "seis patas", "oito patas"], "As aves costumam ter duas patas e duas asas."],
+      ["A ave usa o ninho principalmente para:", "proteger ovos e filhotes", ["guardar leite", "nadar no rio", "cavar o solo"], "O ninho ajuda a proteger os ovos e os filhotes."],
+      ["Qual destas partes ajuda a ave a se equilibrar durante o voo?", "cauda", ["casco", "barbatana dorsal", "guelras"], "A cauda ajuda no equilibrio e na direcao."],
+      ["O pinguim e uma ave que:", "nao voa, mas nada", ["voa muito alto", "vive so em arvores", "tem pelos"], "O pinguim e uma ave adaptada a nadar."],
+      ["A galinha, o pato e o passarinho sao exemplos de:", "aves", ["mamiferos", "invertebrados", "anfibios"], "Todos eles pertencem ao grupo das aves."],
+      ["A casca do ovo ajuda a:", "proteger o embriao", ["dar leite ao filhote", "fazer o filhote respirar na agua", "virar pena"], "A casca protege o que esta se desenvolvendo."],
+      ["As penas das aves ajudam tambem a:", "manter a temperatura do corpo", ["produzir leite", "substituir os ossos", "virar alimento"], "As penas ajudam a proteger do frio e do calor."],
+      ["Quando o filhote sai do ovo, ocorre a:", "eclosao", ["migracao", "hibernacao", "fermentacao"], "Eclosao e a saida do filhote do ovo."],
+      ["Muitas aves alimentam seus filhotes levando comida ao:", "ninho", ["aquario", "casulo", "buraco no gelo"], "Os adultos levam alimento ate o ninho."],
+      ["Aves respiram por:", "pulmoes", ["guelras", "barbatanas", "poros da esponja"], "As aves respiram por pulmoes."],
+      ["Um ovo de ave precisa, em muitos casos, ficar aquecido para:", "o filhote se desenvolver bem", ["virar pedra", "mudar de cor", "encher de agua"], "O calor ajuda o embriao a crescer."],
+      ["O pato e adaptado a viver perto da agua porque:", "suas patas ajudam a nadar", ["tem guelras", "vive preso ao fundo", "nao precisa respirar"], "As patas do pato ajudam na locomocao na agua."],
+      ["A coruja e uma ave conhecida por:", "ter bico, penas e asas", ["ter barbatanas", "ter casco duro", "ter seis patas"], "A coruja tem as caracteristicas comuns das aves."],
+      ["Uma diferenca entre aves e mamiferos e que as aves:", "tem penas", ["produzem leite", "amam os filhotes com mamas", "tem pelos por todo o corpo"], "Penas sao caracteristicas tipicas das aves."],
+      ["Quando uma ave cuida dos ovos ate o nascimento, ela esta:", "chocando os ovos", ["trocando as penas", "hibernando", "cavando um tunel"], "Chocar e manter os ovos aquecidos e protegidos."],
+      ["O avestruz e uma ave grande que:", "nao voa", ["vive no fundo do mar", "tem pelo", "bota filhotes vivos"], "O avestruz e uma ave que nao voa."],
+      ["As aves fazem parte dos animais:", "vertebrados", ["sem coluna vertebral", "sem esqueleto", "que vivem presos"], "As aves possuem coluna vertebral."],
+      ["Aprender sobre o desenvolvimento das aves mostra que elas:", "crescem desde o ovo ate a fase adulta", ["nascem adultas", "nunca mudam de tamanho", "nao precisam de cuidado"], "As aves passam por etapas de desenvolvimento."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "aves", "Caracteristicas e Desenvolvimento das Aves", "cie_av",
+      birdEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const mammalEntries = [
+      ["Os mamiferos tem o corpo coberto principalmente por:", "pelos", ["penas", "casca", "espinhos de planta"], "Os mamiferos costumam ter pelos no corpo."],
+      ["Qual destes animais e um mamifero?", "gato", ["pombo", "tartaruga", "peixe"], "O gato e um mamifero."],
+      ["Uma caracteristica dos mamiferos e que as maes:", "produzem leite para os filhotes", ["botam ovos em ninhos sempre", "respiram por guelras", "vivem presas em rochas"], "As maes mamiferas alimentam os filhotes com leite."],
+      ["Os filhotes dos mamiferos mamam porque:", "se alimentam do leite da mae", ["precisam quebrar a casca do ovo", "respiram debaixo d'agua", "vivem grudados nas pedras"], "Mamiferos se alimentam do leite materno no inicio da vida."],
+      ["Qual destes animais tambem e mamifero?", "baleia", ["sardinha", "polvo", "galinha"], "A baleia e um mamifero, mesmo vivendo na agua."],
+      ["Os mamiferos respiram por:", "pulmoes", ["guelras", "poros", "penas"], "Mamiferos respiram por pulmoes."],
+      ["A maioria dos mamiferos nasce:", "da barriga da mae", ["de ovos com casca dura", "de sementes", "de casulos"], "A maior parte dos mamiferos e vivipara."],
+      ["O cachorro, o cavalo e o macaco sao exemplos de:", "mamiferos", ["aves", "invertebrados", "cnidarios"], "Todos pertencem ao grupo dos mamiferos."],
+      ["Os mamiferos sao animais:", "vertebrados", ["sem coluna vertebral", "sem ossos", "que vivem presos"], "Mamiferos possuem coluna vertebral."],
+      ["Uma caracteristica dos mamiferos e cuidar dos filhotes por um tempo porque:", "os filhotes precisam de protecao e alimento", ["os filhotes nascem voando", "os filhotes vivem em ovos", "os filhotes nao crescem"], "Em geral, os filhotes precisam de cuidado depois de nascer."],
+      ["O ser humano faz parte do grupo dos:", "mamiferos", ["aves", "poriferos", "cnidarios"], "As pessoas sao mamiferos."],
+      ["Qual animal e mamifero e vive no mar?", "golfinho", ["tubarao", "agua-viva", "estrela-do-mar"], "O golfinho e um mamifero aquatico."],
+      ["Os pelos dos mamiferos podem ajudar a:", "proteger e manter a temperatura do corpo", ["virar asas", "produzir ovos", "respirar na agua"], "Os pelos ajudam na protecao e no controle da temperatura."],
+      ["Um filhote de mamifero cresce e se desenvolve com ajuda:", "da mae e do alimento", ["somente da casca", "de barbatanas", "de rochas"], "O cuidado da mae e a alimentacao ajudam no desenvolvimento."],
+      ["O morcego e um mamifero que:", "voa", ["tem penas", "respira por guelras", "nasce de ovo com casca"], "Mesmo voando, o morcego e mamifero."],
+      ["A vaca e um mamifero porque:", "tem pelos e amamenta o bezerro", ["tem penas e bico", "vive presa a rochas", "tem tentaculos"], "A vaca apresenta caracteristicas tipicas dos mamiferos."],
+      ["Mamiferos e aves se parecem porque ambos:", "sao vertebrados", ["produzem leite", "tem penas", "vivem em ovos sempre"], "Os dois grupos tem coluna vertebral."],
+      ["Qual destes animais nao e mamifero?", "pato", ["coelho", "onca", "cavalo"], "O pato e uma ave."],
+      ["Os mamiferos podem viver:", "na terra, na agua e ate voando", ["somente em arvores", "so no mar", "apenas em cavernas"], "Existem mamiferos terrestres, aquaticos e voadores."],
+      ["Um bebe humano se alimenta primeiro de:", "leite", ["sementes", "algas", "rochas"], "O leite e o primeiro alimento do bebe."],
+      ["O elefante e mamifero e seu filhote nasce:", "da barriga da mae", ["de ovo duro", "de um casulo", "de uma concha"], "Como outros mamiferos, nasce do corpo da mae."],
+      ["Os mamiferos costumam ter temperatura do corpo:", "mais estavel", ["igual a da agua sempre", "sempre fria como gelo", "nula"], "Mamiferos mantem a temperatura corporal mais estavel."],
+      ["Uma das etapas do desenvolvimento dos mamiferos e:", "crescer ate a fase adulta", ["virar planta", "trocar penas", "grudar em rochas"], "Os mamiferos passam por fases de crescimento."],
+      ["Os filhotes de mamiferos dependem muito dos adultos no inicio porque:", "ainda estao aprendendo a viver", ["ja nascem adultos", "voam logo ao nascer", "nao precisam de alimento"], "No inicio, os filhotes precisam de alimento e protecao."],
+      ["Estudar os mamiferos ajuda a perceber que esse grupo:", "tem varias especies com caracteristicas em comum", ["e formado so por animais grandes", "vive so em florestas", "nao cuida dos filhotes"], "Apesar das diferencas, os mamiferos compartilham caracteristicas importantes."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "mamiferos", "Caracteristicas e Desenvolvimento dos Mamiferos", "cie_ma",
+      mammalEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const invertebrateEntries = [
+      ["Os invertebrados sao animais que:", "nao tem coluna vertebral", ["tem pelos", "tem penas", "produzem leite"], "Invertebrados nao possuem coluna vertebral."],
+      ["Qual destes animais e invertebrado?", "borboleta", ["gato", "pombo", "sapo"], "A borboleta nao tem coluna vertebral."],
+      ["Formiga, aranha e minhoca sao exemplos de:", "invertebrados", ["mamiferos", "aves", "repteis grandes"], "Esses animais nao possuem coluna vertebral."],
+      ["Um caracol e um invertebrado porque:", "nao tem coluna vertebral", ["tem pelos", "tem asas com penas", "produz leite"], "Caracois sao invertebrados."],
+      ["Qual destes grupos reune apenas invertebrados?", "polvo, borboleta e minhoca", ["cachorro, gato e cavalo", "pato, arara e coruja", "golfinho, baleia e peixe"], "Polvo, borboleta e minhoca sao invertebrados."],
+      ["A aranha e um invertebrado que tem:", "oito patas", ["duas asas", "penas", "casco de tartaruga"], "Aranhas sao invertebrados e costumam ter oito patas."],
+      ["A minhoca ajuda o solo porque:", "vive e se move na terra", ["voa em bandos", "nada em rios fundos", "produz leite"], "A minhoca vive no solo e pode ajuda-lo a ficar mais aerado."],
+      ["O polvo e um invertebrado que vive:", "na agua", ["somente no deserto", "so em arvores", "somente em ninhos"], "O polvo e um invertebrado marinho."],
+      ["Uma caracteristica comum de muitos invertebrados e:", "ter o corpo sem coluna vertebral", ["ter bico e penas", "ter pelos e mamas", "ter casco osseo interno"], "Essa e a principal caracteristica do grupo."],
+      ["Qual destes animais nao e invertebrado?", "coelho", ["abelha", "aranha", "caracol"], "O coelho e vertebrado, pois tem coluna vertebral."],
+      ["Os insetos fazem parte dos:", "invertebrados", ["mamiferos", "aves", "anfibios"], "Insetos sao animais invertebrados."],
+      ["A borboleta passa por mudancas no crescimento. Isso faz parte do seu:", "desenvolvimento", ["congelamento", "sono profundo eterno", "voo sem asas"], "No desenvolvimento, alguns invertebrados passam por transformacoes."],
+      ["A joaninha e um exemplo de:", "inseto invertebrado", ["mamifero voador", "ave pequena", "peixe colorido"], "A joaninha e um inseto e, portanto, um invertebrado."],
+      ["As conchas podem proteger alguns invertebrados, como:", "caracois", ["gatos", "galinhas", "cavalos"], "Caracois podem viver protegidos por conchas."],
+      ["Muitos invertebrados sao pequenos e vivem:", "em muitos lugares diferentes", ["somente no ceu", "apenas no gelo", "so em telhados"], "Invertebrados vivem em diversos ambientes."],
+      ["A abelha e importante porque:", "ajuda na polinizacao", ["produz leite", "tem penas", "vive grudada em rochas do mar"], "A abelha ajuda as plantas na polinizacao."],
+      ["O corpo mole e uma caracteristica comum em alguns invertebrados como:", "o polvo", ["a galinha", "o cavalo", "o cachorro"], "O polvo e um invertebrado de corpo mole."],
+      ["Insetos, aracnideos e moluscos sao grupos de:", "invertebrados", ["somente mamiferos", "somente aves", "somente vertebrados aquaticos"], "Esses grupos fazem parte dos invertebrados."],
+      ["A minhoca nao tem patas, mas consegue se locomover porque:", "move o corpo pelo solo", ["voa com asas", "nada com barbatanas", "corre com cascos"], "A minhoca se move contraindo e esticando o corpo."],
+      ["Os invertebrados podem ser encontrados:", "na terra e na agua", ["somente no fundo do mar", "so em cidades", "apenas dentro de ovos"], "Invertebrados vivem em muitos ambientes."],
+      ["O desenvolvimento da borboleta comeca como:", "ovo", ["filhote com pelos", "planta", "peixe"], "A borboleta comeca seu ciclo no ovo."],
+      ["Uma lagarta se transforma em borboleta. Isso mostra:", "mudancas no desenvolvimento", ["que e mamifero", "que tem coluna vertebral", "que produz leite"], "A borboleta passa por etapas de desenvolvimento."],
+      ["O caranguejo e um invertebrado que pode viver:", "em areas proximas da agua", ["somente em ninhos de ave", "apenas em florestas altas", "dentro de tocas de mamiferos"], "Caranguejos sao invertebrados ligados a ambientes aquaticos ou umidos."],
+      ["Aprender sobre invertebrados e importante porque eles:", "fazem parte da natureza e dos ecossistemas", ["nao tem funcao nenhuma", "sao todos iguais", "vivem apenas em livros"], "Os invertebrados sao muito importantes para a vida na Terra."],
+      ["Os invertebrados recebem esse nome por causa da:", "falta de coluna vertebral", ["presenca de bico", "quantidade de pelos", "forma do ovo"], "O nome do grupo vem da ausencia de coluna vertebral."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "invertebrados", "Estudo dos Invertebrados", "cie_in",
+      invertebrateEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const poriferaEntries = [
+      ["Os poriferos sao conhecidos popularmente como:", "esponjas-do-mar", ["algas", "corais", "estrelas-do-mar"], "Os poriferos sao chamados de esponjas-do-mar."],
+      ["Os poriferos vivem principalmente:", "na agua", ["somente na terra", "no deserto", "em ninhos de aves"], "As esponjas vivem em ambiente aquatico."],
+      ["O corpo dos poriferos tem muitos:", "poros", ["pelos", "bicos", "asas"], "Poros sao pequenas aberturas por onde a agua passa."],
+      ["Os poriferos sao animais:", "invertebrados", ["mamiferos", "aves", "repteis"], "Esponjas-do-mar nao tem coluna vertebral."],
+      ["A agua entra no corpo das esponjas pelos:", "poros", ["pulmoes", "penas", "mamilos"], "Os poros permitem a entrada da agua."],
+      ["Os poriferos costumam viver:", "presos a rochas ou superficies", ["voando no ceu", "correndo no campo", "saltando em galhos"], "As esponjas vivem fixas em um lugar."],
+      ["Uma esponja-do-mar se alimenta quando:", "a agua passa pelo seu corpo", ["ela mastiga folhas", "ela caça com bico", "ela produz leite"], "A agua leva pequenas particulas de alimento."],
+      ["Os poriferos tem corpo:", "simples", ["cheio de ossos", "com penas", "com casco articulado"], "As esponjas tem organizacao corporal simples."],
+      ["Qual destes animais e um porifero?", "esponja-do-mar", ["golfinho", "galinha", "borboleta"], "A esponja-do-mar pertence ao grupo dos poriferos."],
+      ["Os poriferos respiram e se alimentam com a ajuda:", "da circulacao de agua no corpo", ["de asas", "de patas fortes", "de casca de ovo"], "A agua que passa pelo corpo ajuda em varias funcoes."],
+      ["Os poriferos costumam ser encontrados em:", "mares e outros ambientes aquaticos", ["somente em arvores", "apenas em desertos", "ninhos de mamiferos"], "Sao animais aquaticos."],
+      ["Uma caracteristica marcante dos poriferos e:", "ter muitos poros no corpo", ["ter mamas", "ter bico", "ter pelos longos"], "O proprio nome do grupo lembra a presenca de poros."],
+      ["Os poriferos se desenvolvem em ambiente:", "aquatico", ["aereo", "terrestre seco", "subterraneo"], "O desenvolvimento ocorre na agua."],
+      ["Uma esponja-do-mar pode ficar parada no mesmo lugar porque:", "vive fixa a uma superficie", ["voa para procurar comida", "anda com patas", "salta como sapo"], "Ela costuma ficar presa a rochas ou recifes."],
+      ["Os poriferos sao chamados de animais filtradores porque:", "retiram alimento da agua que passa pelo corpo", ["caçam com dentes", "mastigam folhas", "produzem leite"], "Eles filtram pequenas particulas de alimento."],
+      ["O estudo dos poriferos mostra um tipo de animal:", "simples e aquatico", ["com pelos e mamas", "com penas e bico", "com coluna vertebral grande"], "Esponjas sao animais aquaticos de corpo simples."],
+      ["A agua sai do corpo da esponja por uma abertura maior depois de:", "passar pelos poros", ["virar ovo", "formar penas", "ser mastigada"], "A agua entra pelos poros e sai por uma abertura maior."],
+      ["Os poriferos fazem parte do grupo dos:", "invertebrados", ["mamiferos", "aves", "anfibios"], "Eles nao tem coluna vertebral."],
+      ["Uma crianca que ve uma esponja-do-mar observa um ser vivo que:", "vive na agua", ["vive no telhado", "vive em livro", "vive no ar"], "As esponjas-do-mar sao seres vivos aquaticos."],
+      ["Os poriferos nao se locomovem como muitos outros animais porque:", "ficam fixos", ["tem asas pequenas", "tem pernas quebradas", "vivem dormindo"], "A maioria permanece presa a superficies."],
+      ["Um ambiente favoravel aos poriferos e:", "o mar", ["a copa das arvores", "o deserto quente", "o patio da escola"], "Muitos poriferos vivem no mar."],
+      ["O nome porifero lembra a ideia de:", "poros", ["pelos", "penas", "patas"], "O grupo recebeu esse nome por causa dos poros no corpo."],
+      ["Os poriferos ajudam a mostrar que existem animais:", "bem diferentes uns dos outros", ["todos iguais", "so terrestres", "somente voadores"], "A diversidade animal inclui grupos muito simples e especiais."],
+      ["A esponja-do-mar nao e planta; ela e:", "animal", ["fungo", "pedra", "algodao"], "Apesar de ficar parada, a esponja-do-mar e um animal."],
+      ["Estudar poriferos ajuda a entender melhor os animais que:", "vivem na agua e filtram alimento", ["produzem leite", "tem penas", "tem pelos grossos"], "Os poriferos sao um grupo aquatico com modo de vida proprio."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "poriferos", "Caracteristicas e Desenvolvimento dos Poriferos", "cie_po",
+      poriferaEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const cnidariaEntries = [
+      ["As aguas-vivas e as anemonas-do-mar pertencem ao grupo dos:", "cnidarios", ["mamiferos", "aves", "poriferos"], "Aguas-vivas e anemonas sao cnidarios."],
+      ["Muitos cnidarios vivem:", "na agua", ["somente na terra", "em arvores secas", "em ninhos"], "Cnidarios sao, em geral, aquaticos."],
+      ["Uma caracteristica dos cnidarios e ter:", "tentaculos", ["penas", "pelos", "mamas"], "Tentaculos sao comuns nesse grupo."],
+      ["A agua-viva e um animal:", "invertebrado", ["mamifero", "ave", "reptil com casco"], "Ela nao tem coluna vertebral."],
+      ["Os tentaculos dos cnidarios ajudam a:", "capturar alimento e se defender", ["produzir leite", "voar", "quebrar sementes com bico"], "Os tentaculos ajudam na alimentacao e defesa."],
+      ["Qual destes animais e um cnidario?", "anemona-do-mar", ["cavalo", "pinguim", "minhoca"], "A anemona-do-mar faz parte dos cnidarios."],
+      ["Os cnidarios vivem principalmente em:", "mares", ["desertos", "campos secos", "casas"], "Muitos cnidarios vivem em ambientes marinhos."],
+      ["A agua-viva tem corpo:", "mole", ["com ossos", "com penas", "com casco duro"], "A agua-viva possui corpo mole."],
+      ["Os cnidarios fazem parte dos:", "invertebrados", ["vertebrados", "mamiferos", "aves"], "Eles nao possuem coluna vertebral."],
+      ["Uma anemona-do-mar pode ficar presa em:", "rochas", ["nuvens", "galhos secos", "telhados"], "Muitas anemonas ficam fixas em superficies."],
+      ["Os cnidarios podem usar os tentaculos para:", "levar alimento ate a boca", ["produzir ovos com casca", "correr no campo", "voar em bando"], "Os tentaculos ajudam a capturar e levar alimento."],
+      ["A agua-viva se movimenta na agua com ajuda do seu:", "corpo gelatinoso", ["casco com patas", "bico", "asa com penas"], "O corpo ajuda no deslocamento na agua."],
+      ["Os cnidarios sao animais:", "aquaticos", ["terrestres com pelos", "aereos com penas", "subterraneos com casco"], "Vivem principalmente na agua."],
+      ["Uma diferenca entre poriferos e cnidarios e que os cnidarios:", "tem tentaculos", ["produzem leite", "tem pelos", "voam"], "Tentaculos sao uma marca dos cnidarios."],
+      ["O corpo de muitos cnidarios pode parecer:", "uma bolsa mole com tentaculos", ["um retangulo duro", "um ninho com ovos", "um quadrado com patas"], "Esse formato aparece em varios cnidarios."],
+      ["A anemona-do-mar se alimenta com a ajuda dos:", "tentaculos", ["pelos", "pulmoes", "cascos"], "Os tentaculos ajudam a capturar o alimento."],
+      ["Cnidarios podem causar ardencia ao tocar porque alguns possuem:", "celulas que ajudam na defesa", ["penas quentes", "casca grossa", "mamas"], "Essas celulas ajudam na protecao e captura de alimento."],
+      ["Os corais fazem parte do grupo dos:", "cnidarios", ["mamiferos", "aves", "poriferos"], "Corais tambem pertencem aos cnidarios."],
+      ["Os cnidarios ajudam a mostrar a diversidade da vida:", "nos ambientes aquaticos", ["somente nas florestas", "so nas cidades", "somente nos desertos"], "Ha muitos tipos de animais vivendo na agua."],
+      ["A agua-viva e um exemplo de animal com corpo:", "mole e sem ossos", ["com pelos e mamas", "com penas e bico", "com casco de tartaruga"], "Ela nao tem esqueleto interno osseo."],
+      ["Os cnidarios crescem e se desenvolvem em ambiente:", "aquatico", ["aereo", "terrestre seco", "subterraneo"], "Seu desenvolvimento acontece na agua."],
+      ["Uma caracteristica dos cnidarios e que muitos deles:", "vivem no mar", ["amam os filhotes com leite", "tem penas para voar", "nascem de sementes"], "A maior parte dos cnidarios vive no mar."],
+      ["Os cnidarios sao importantes nos estudos de ciencias porque:", "mostram um tipo diferente de invertebrado", ["sao mamiferos pequenos", "sao aves aquaticas", "nao sao animais"], "Eles ajudam a entender a diversidade dos animais invertebrados."],
+      ["Uma anemona-do-mar nao e planta; ela e:", "animal", ["alga", "pedra", "flor terrestre"], "Apesar da aparencia, a anemona-do-mar e um animal."],
+      ["Estudar cnidarios ajuda a conhecer melhor animais com:", "tentaculos e vida aquatica", ["pelos e leite", "penas e bico", "coluna vertebral e asas"], "Esse grupo tem caracteristicas proprias, como tentaculos e vida aquatica."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "cnidarios", "Caracteristicas e Desenvolvimento dos Cnidarios", "cie_cn",
+      cnidariaEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const extraEntries = [
+      ["Qual grupo tem animais com penas?", "aves", ["mamiferos", "poriferos", "cnidarios"], "As penas sao caracteristicas das aves."],
+      ["Qual grupo alimenta os filhotes com leite?", "mamiferos", ["aves", "cnidarios", "poriferos"], "Mamiferos produzem leite para os filhotes."],
+      ["Qual grupo inclui esponjas-do-mar?", "poriferos", ["aves", "mamiferos", "repteis"], "Esponjas-do-mar sao poriferos."],
+      ["Qual grupo inclui aguas-vivas?", "cnidarios", ["mamiferos", "aves", "poriferos"], "Aguas-vivas fazem parte dos cnidarios."],
+      ["Borboletas, aranhas e minhocas pertencem ao grupo dos:", "invertebrados", ["mamiferos", "aves", "poriferos"], "Eles nao tem coluna vertebral."],
+      ["A galinha bota ovo. Isso mostra uma caracteristica das:", "aves", ["baleias", "vacas", "esponjas"], "Aves, em geral, se desenvolvem a partir de ovos."],
+      ["O cachorro e um mamifero porque:", "mama quando filhote", ["tem tentaculos", "vive preso a rochas", "tem penas"], "O cachorro e mamifero e mama quando pequeno."],
+      ["A esponja-do-mar vive fixa e tem muitos:", "poros", ["bicos", "pelos", "cascos"], "Poriferos possuem muitos poros no corpo."],
+      ["Uma agua-viva usa tentaculos para:", "capturar alimento", ["produzir leite", "quebrar sementes", "voar"], "Os tentaculos ajudam na alimentacao e defesa."],
+      ["O pinguim e classificado como:", "ave", ["mamifero", "cnidario", "porifero"], "Mesmo sem voar, o pinguim e uma ave."],
+      ["A baleia e classificada como:", "mamifero", ["peixe", "ave", "invertebrado"], "A baleia respira por pulmoes e amamenta."],
+      ["A joaninha e um exemplo de:", "invertebrado", ["mamifero", "ave", "cnidario"], "A joaninha nao tem coluna vertebral."],
+      ["Anemona-do-mar e mais parecida com:", "cnidarios", ["mamiferos", "aves", "poriferos terrestres"], "A anemona pertence aos cnidarios."],
+      ["Um ninho com ovos e filhotes lembra mais o estudo de:", "aves", ["mamiferos", "poriferos", "cnidarios"], "Ninhos e ovos sao muito associados ao estudo das aves."],
+      ["Um filhote mamando lembra o grupo dos:", "mamiferos", ["aves", "cnidarios", "poriferos"], "Mamar leite e caracteristica de mamiferos."],
+      ["Se o animal nao tem coluna vertebral, ele pode ser:", "invertebrado", ["ave", "mamifero com pelos", "vertebrado"], "Animais sem coluna vertebral sao invertebrados."],
+      ["Poriferos e cnidarios tem em comum o fato de viverem principalmente:", "na agua", ["no deserto", "em arvores secas", "em telhados"], "Os dois grupos sao basicamente aquaticos."],
+      ["Aves e mamiferos tem em comum o fato de serem:", "vertebrados", ["invertebrados", "sem pulmoes", "sem desenvolvimento"], "Ambos possuem coluna vertebral."],
+      ["Uma borboleta nao pertence ao grupo das aves porque:", "nao tem penas nem bico", ["bota ovo", "voa", "e pequena"], "Voar nao basta para ser ave; e preciso ter caracteristicas do grupo."],
+      ["Um animal com tentaculos e vida marinha pode pertencer aos:", "cnidarios", ["mamiferos", "aves", "animais com pelos"], "Tentaculos sao comuns entre cnidarios."],
+      ["Um animal com corpo poroso, preso a rochas e filtrador lembra os:", "poriferos", ["mamiferos", "aves", "repteis"], "Essas sao caracteristicas das esponjas-do-mar."],
+      ["Uma atividade extra de ciencias importante ao estudar animais e:", "comparar caracteristicas dos grupos", ["decorar sem observar", "misturar grupos sem criterio", "ignorar diferencas"], "Comparar grupos ajuda a aprender melhor."],
+      ["Quando organizamos aves, mamiferos e invertebrados, estamos:", "classificando animais", ["desenhando mapas", "plantando sementes", "medindo segmentos"], "Classificar e separar por caracteristicas."],
+      ["Observar o desenvolvimento dos animais ajuda a entender:", "como eles crescem e mudam", ["que nascem sempre adultos", "que nao precisam de alimento", "que todos vivem iguais"], "Os animais passam por etapas de desenvolvimento."],
+      ["As atividades adicionais desses temas ajudam o aluno a:", "comparar, identificar e explicar caracteristicas", ["apenas copiar palavras", "decorar nomes sem sentido", "esquecer os grupos"], "Atividades bem feitas ajudam a compreender melhor os grupos animais."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "atividades_animais", "Atividades Adicionais sobre os Animais", "cie_at",
+      extraEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    return scienceQuestions;
+  }
+
+  const scienceQuestions = generateScienceQuestions();
+  questions.push(...scienceQuestions);
+
   const geographyQuestions = [
     ...buildQuestions("geografia", "povos_espacos", "Os Povos e os Espacos em que Vivem", "geo_pe", [
       ["O que pode influenciar o jeito de viver de um povo?", ["Apenas a cor da roupa", "O lugar onde vive e seus costumes", "Somente a idade das pessoas", "Apenas o nome da cidade"], 1, "O lugar, o clima, a natureza e os costumes ajudam a formar o modo de vida de cada povo."],
@@ -1787,7 +1988,7 @@ const QuestionsDB = (function () {
     portugues:  { name: "Português",   icon: "📖", available: true  },
     matematica: { name: "Matemática",  icon: "🔢", available: true  },
     historia:   { name: "História",    icon: "🏛️", available: false },
-    ciencias:   { name: "Ciências",    icon: "🔬", available: false },
+    ciencias:   { name: "Ciências",    icon: "🔬", available: true  },
     ingles:     { name: "Inglês",      icon: "🌍", available: false },
     geografia:  { name: "Geografia",   icon: "🗺️", available: true  }
   };
@@ -1811,6 +2012,12 @@ const QuestionsDB = (function () {
     circulos_circunferencias: { name: "Círculos e Circunferências", icon: "⭕" },
     segmentos_reta:       { name: "Segmentos de Reta", icon: "📏" },
     comprimento_segmentos:{ name: "Comprimento dos Segmentos de Reta", icon: "📐" },
+    aves:                 { name: "Características e Desenvolvimento das Aves", icon: "🐦" },
+    mamiferos:            { name: "Características e Desenvolvimento dos Mamíferos", icon: "🐶" },
+    invertebrados:        { name: "Estudo dos Invertebrados", icon: "🪲" },
+    poriferos:            { name: "Características e Desenvolvimento dos Poríferos", icon: "🧽" },
+    cnidarios:            { name: "Características e Desenvolvimento dos Cnidários", icon: "🌊" },
+    atividades_animais:   { name: "Atividades Adicionais sobre os Animais", icon: "🔎" },
     povos_espacos:        { name: "Os Povos e os Espaços em que Vivem", icon: "🧭" },
     populacoes_tradicionais: { name: "As Populações Tradicionais", icon: "🏘️" },
     importancia_pop_trad: { name: "A Importância das Populações Tradicionais", icon: "🌱" },
