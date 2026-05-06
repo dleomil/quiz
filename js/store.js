@@ -5,6 +5,7 @@ const Store = (function () {
   const state = {
     screen: 'home', selectedSubject: 'portugues', selectedTopic: 'all',
     questions: [], index: 0, answers: [],
+    secsPerQuestion: 30,
     quizStarted: false, sessionStart: null, history: []
   };
 

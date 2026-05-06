@@ -1,6 +1,5 @@
 const QuizView = (function () {
   const LETTERS = ['A', 'B', 'C', 'D'];
-  const SECONDS_PER_QUESTION = 30;
   let timerInterval = null;
   let timerTimeout = null;
 
@@ -27,7 +26,8 @@ const QuizView = (function () {
     const fillEl = el.querySelector('#timer-fill');
     if (!timerEl || !fillEl) return;
 
-    const pctLeft = Math.max(0, Math.min(100, (msLeft / (SECONDS_PER_QUESTION * 1000)) * 100));
+    var secsPerQ = Store.get().secsPerQuestion || 30;
+    const pctLeft = Math.max(0, Math.min(100, (msLeft / (secsPerQ * 1000)) * 100));
     timerEl.textContent = formatTimeLeft(msLeft);
     fillEl.style.width = `${pctLeft}%`;
     fillEl.classList.toggle('warning', pctLeft <= 35);
@@ -36,7 +36,8 @@ const QuizView = (function () {
 
   function startTimer(el, q) {
     clearTimers();
-    const deadline = Date.now() + (SECONDS_PER_QUESTION * 1000);
+    var secsPerQ = Store.get().secsPerQuestion || 30;
+    const deadline = Date.now() + (secsPerQ * 1000);
     paintTimer(el, deadline - Date.now());
 
     timerInterval = setInterval(() => {
@@ -45,7 +46,7 @@ const QuizView = (function () {
 
     timerTimeout = setTimeout(() => {
       handleAnswer(el, q, null, true);
-    }, SECONDS_PER_QUESTION * 1000);
+    }, secsPerQ * 1000);
   }
 
   function render(el) {
@@ -57,7 +58,7 @@ const QuizView = (function () {
     if (!s.quizStarted) {
       el.innerHTML = `
         <div class="card quiz-intro">
-          <div class="quiz-intro-badge">Antes de comecar</div>
+          <div class="quiz-intro-badge">Antes de começar</div>
           <h2>Como funciona este quiz</h2>
           <p class="quiz-intro-copy">
             Leia com calma e responda cada pergunta dentro do tempo.
@@ -65,25 +66,44 @@ const QuizView = (function () {
 
           <div class="quiz-intro-grid">
             <div class="quiz-intro-item">
-              <div class="quiz-intro-label">Tempo por pergunta</div>
-              <div class="quiz-intro-value">30 segundos</div>
-            </div>
-            <div class="quiz-intro-item">
               <div class="quiz-intro-label">Total desta rodada</div>
-              <div class="quiz-intro-value">${total} questoes</div>
+              <div class="quiz-intro-value">${total} questões</div>
+            </div>
+            <div class="quiz-intro-item quiz-intro-timer-config">
+              <div class="quiz-intro-label">⏱️ Tempo por questão</div>
+              <div class="timer-config-row">
+                <button class="timer-step" id="timer-dec" aria-label="Diminuir tempo">−</button>
+                <span class="timer-config-val" id="timer-val">30</span>
+                <span class="timer-config-unit">seg</span>
+                <button class="timer-step" id="timer-inc" aria-label="Aumentar tempo">+</button>
+              </div>
             </div>
           </div>
 
           <div class="quiz-intro-notes">
-            <div class="quiz-intro-note">Depois de cada resposta voce vera se acertou ou errou e o motivo.</div>
-            <div class="quiz-intro-note">Nao e possivel voltar ou trocar de materia ate terminar este quiz.</div>
+            <div class="quiz-intro-note">Depois de cada resposta você verá se acertou ou errou e o motivo.</div>
+            <div class="quiz-intro-note">Não é possível voltar ou trocar de matéria até terminar este quiz.</div>
           </div>
 
-          <button class="btn btn-primary btn-lg" id="btn-begin-quiz">▶️ Comecar agora</button>
+          <button class="btn btn-primary btn-lg" id="btn-begin-quiz">▶️ Começar agora</button>
         </div>
       `;
 
       el.querySelector('#btn-begin-quiz').addEventListener('click', () => App.beginQuiz());
+
+      var secsCurrent = Store.get().secsPerQuestion || 30;
+      el.querySelector('#timer-val').textContent = secsCurrent;
+
+      el.querySelector('#timer-dec').addEventListener('click', function() {
+        secsCurrent = Math.max(10, secsCurrent - 5);
+        el.querySelector('#timer-val').textContent = secsCurrent;
+        Store.set({ secsPerQuestion: secsCurrent });
+      });
+      el.querySelector('#timer-inc').addEventListener('click', function() {
+        secsCurrent = Math.min(120, secsCurrent + 5);
+        el.querySelector('#timer-val').textContent = secsCurrent;
+        Store.set({ secsPerQuestion: secsCurrent });
+      });
       return;
     }
 

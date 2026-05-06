@@ -42,6 +42,30 @@ const HistoryView = (function () {
     return { subjects: Array.from(subjectMap.entries()), topics: Array.from(topicMap.entries()) };
   }
 
+  function downloadCSV(history) {
+    var header = 'Data,Matéria,Assunto,Acertos,Total,Nota (%),Duração (s),Timeouts\n';
+    var rows = history.map(function(item) {
+      return [
+        item.date || '',
+        extractSubjectLabel(item),
+        extractTopicLabel(item),
+        item.correct || 0,
+        item.total || 0,
+        item.pct || 0,
+        item.durationSec || 0,
+        item.timedOutCount || 0
+      ].map(function(v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(',');
+    });
+    var csv = '\uFEFF' + header + rows.join('\n');
+    var blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    a.href   = url;
+    a.download = 'historico-quiz-' + new Date().toISOString().slice(0,10) + '.csv';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  }
+
   function render(el) {
     var history = Store.get().history;
 
@@ -62,7 +86,10 @@ const HistoryView = (function () {
       '<div class="card">' +
         '<div class="history-header">' +
           '<h2>📊 Histórico</h2>' +
-          '<button class="btn btn-danger" id="btn-clear-history" aria-label="Limpar histórico">🗑️ Limpar</button>' +
+          '<div class="history-header-actions">' +
+            '<button class="btn btn-outline btn-sm" id="btn-download-csv" aria-label="Baixar histórico em CSV">⬇️ CSV</button>' +
+            '<button class="btn btn-danger btn-sm" id="btn-clear-history" aria-label="Limpar histórico">🗑️ Limpar</button>' +
+          '</div>' +
         '</div>' +
         '<div class="history-filters">' +
           '<input type="search" id="history-search" class="history-search" placeholder="🔍 Buscar..." aria-label="Buscar"/>' +
@@ -195,6 +222,9 @@ const HistoryView = (function () {
       Store.clearHistory();
       render(document.getElementById('main-content'));
     });
+
+    var downloadBtn = el.querySelector('#btn-download-csv');
+    downloadBtn.addEventListener('click', function() { downloadCSV(history); });
 
     applyFilters();
   }

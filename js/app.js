@@ -70,6 +70,24 @@ const App = (function () {
     document.getElementById('nav-home').addEventListener('click', function() { navigate('home', { force: true }); });
     document.getElementById('nav-history').addEventListener('click', function() { navigate('history'); });
     document.getElementById('btn-restart').addEventListener('click', restart);
+    // Theme toggle — persiste em localStorage
+    (function() {
+      var saved = localStorage.getItem('quiz_theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+      if (typeof Chart !== 'undefined' && Chart.defaults) {
+        Chart.defaults.color = getComputedStyle(document.documentElement).getPropertyValue('--text').trim() || '#1E293B';
+      }
+      document.getElementById('btn-theme').addEventListener('click', function() {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('quiz_theme', next);
+        document.getElementById('btn-theme').textContent = next === 'dark' ? '☀️' : '🌙';
+        if (typeof Chart !== 'undefined' && Chart.defaults) {
+          Chart.defaults.color = getComputedStyle(document.documentElement).getPropertyValue('--text').trim() || '#1E293B';
+        }
+      });
+      if (saved === 'dark') document.getElementById('btn-theme').textContent = '☀️';
+    })();
     navigate('home');
   }
 
