@@ -1,0 +1,36 @@
+name: Tech Task
+description: Trabalho tecnico derivado de historia, epico ou necessidade operacional
+title: "[Tech Task] "
+labels:
+  - type: tech-task
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumo
+      description: Descreva a necessidade tecnica
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Justificativa tecnica
+      description: Explique por que esta tarefa e necessaria
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto esperado
+      description: Informe impacto em arquitetura, operacao ou qualidade
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceite
+      placeholder: |
+        - criterio 1
+        - criterio 2
+    validations:
+      required: true

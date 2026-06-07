@@ -1,0 +1,48 @@
+name: Epic
+description: Capacidade maior que agrupa historias relacionadas
+title: "[Epic] "
+labels:
+  - type: epic
+body:
+  - type: input
+    id: objective
+    attributes:
+      label: Objetivo do epico
+      description: Qual capacidade o epico deve entregar
+    validations:
+      required: true
+  - type: textarea
+    id: business_value
+    attributes:
+      label: Valor de negocio
+      description: Qual problema o epico resolve e por que ele importa
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: O que esta dentro e fora do epico
+    validations:
+      required: true
+  - type: textarea
+    id: stories
+    attributes:
+      label: Historias filhas
+      description: Liste as historias previstas para este epico
+      placeholder: |
+        - #123 Historia A
+        - #124 Historia B
+    validations:
+      required: false
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentos de referencia
+      description: Referencie arquivos em docs/
+      placeholder: |
+        - docs/product/...
+        - docs/architecture/...
+        - docs/backlog/...
+    validations:
+      required: true
