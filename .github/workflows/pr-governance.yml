@@ -1,0 +1,67 @@
+name: PR Governance
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  pr-governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate source branch naming
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          case "$HEAD_REF" in
+            feature/*|fix/*|hotfix/*|chore/*|docs/*|refactor/*)
+              echo "Branch naming is valid: $HEAD_REF"
+              ;;
+            *)
+              echo "Invalid branch naming: $HEAD_REF"
+              echo "Use one of: feature/*, fix/*, hotfix/*, chore/*, docs/*, refactor/*"
+              exit 1
+              ;;
+          esac
+
+      - name: Validate target branch policy
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          if [[ "$BASE_REF" == "main" ]]; then
+            case "$HEAD_REF" in
+              develop|hotfix/*|release/*)
+                echo "PR to main is allowed from $HEAD_REF"
+                ;;
+              *)
+                echo "Only develop, hotfix/*, or release/* branches should open PR directly to main."
+                exit 1
+                ;;
+            esac
+          fi
+
+          if [[ "$BASE_REF" == "develop" ]]; then
+            case "$HEAD_REF" in
+              feature/*|fix/*|chore/*|docs/*|refactor/*|hotfix/*)
+                echo "PR to develop is allowed from $HEAD_REF"
+                ;;
+              *)
+                echo "Branch $HEAD_REF is not allowed to target develop."
+                exit 1
+                ;;
+            esac
+          fi
+
+      - name: Validate repository documentation presence
+        run: |
+          test -f docs/README.md
+          test -f docs/github/branching-and-delivery-strategy.md

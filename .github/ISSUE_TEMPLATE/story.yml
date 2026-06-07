@@ -1,0 +1,60 @@
+name: Story
+description: Historia pronta para implementacao incremental
+title: "[Story] "
+labels:
+  - type: story
+body:
+  - type: input
+    id: objective
+    attributes:
+      label: Objetivo
+      description: Qual resultado de negocio ou engenharia esta sendo buscado
+      placeholder: Ex. Separar a logica de selecao de perguntas da view
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Referencie os documentos em docs/ e descreva o contexto minimo necessario
+      placeholder: |
+        Docs relacionados:
+        - docs/architecture/...
+        - docs/backlog/...
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requisitos
+      description: Liste os requisitos funcionais e tecnicos
+      placeholder: |
+        - requisito 1
+        - requisito 2
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceite
+      description: Defina como saberemos que a historia foi concluida
+      placeholder: |
+        - criterio 1
+        - criterio 2
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - architecture
+        - frontend
+        - content
+        - platform
+        - analytics
+        - security
+        - accessibility
+        - product
+    validations:
+      required: true
