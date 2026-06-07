@@ -19,8 +19,14 @@ jobs:
 
       - name: Validate source branch naming
         env:
+          BASE_REF: ${{ github.base_ref }}
           HEAD_REF: ${{ github.head_ref }}
         run: |
+          if [[ "$BASE_REF" == "main" && "$HEAD_REF" == "develop" ]]; then
+            echo "Branch naming is valid for develop promotion: $HEAD_REF"
+            exit 0
+          fi
+
           case "$HEAD_REF" in
             feature/*|fix/*|hotfix/*|chore/*|docs/*|refactor/*)
               echo "Branch naming is valid: $HEAD_REF"
