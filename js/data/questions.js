@@ -1663,8 +1663,603 @@ const QuestionsDB = (function () {
     correctIndex: 0,
     explanation: "'café' é oxítona.",
     wrongExplanations: { 1: "mesa não é a resposta correta.", 2: "amigo não é a resposta correta.", 3: "janela não é a resposta correta." }
-  },
+  }
 ];
+
+  function buildQuestions(subject, topic, topicName, prefix, entries) {
+    return entries.map((entry, index) => ({
+      id: `${prefix}_${String(index + 1).padStart(3, '0')}`,
+      subject,
+      topic,
+      topicName,
+      question: entry[0],
+      options: entry[1],
+      correctIndex: entry[2],
+      explanation: entry[3]
+    }));
+  }
+
+  function makeEntry(question, correctValue, wrongValues, explanation, formatter = (v) => String(v)) {
+    const formattedCorrect = formatter(correctValue);
+    const wrongs = [];
+
+    wrongValues.forEach(value => {
+      const formatted = formatter(value);
+      if (formatted !== formattedCorrect && !wrongs.includes(formatted)) wrongs.push(formatted);
+    });
+
+    const optionsBase = [formattedCorrect, ...wrongs.slice(0, 3)];
+    const shift = question.length % 4;
+    const options = [];
+    optionsBase.forEach((option, index) => {
+      options[(index + shift) % 4] = option;
+    });
+
+    return [question, options, options.indexOf(formattedCorrect), explanation];
+  }
+
+  function generateMathQuestions() {
+    const mathQuestions = [];
+
+    const subtractionReservePairs = [
+      [432, 158], [705, 278], [864, 397], [931, 486], [620, 185],
+      [540, 267], [812, 439], [703, 258], [950, 476], [684, 295],
+      [761, 384], [843, 567], [904, 458], [670, 286], [725, 348],
+      [810, 456], [963, 579], [742, 368], [880, 497], [651, 274]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "subtracao_reserva", "Subtracao com Reserva", "mat_sr",
+      subtractionReservePairs.map(([a, b]) => {
+        const correct = a - b;
+        return makeEntry(
+          `Quanto e ${a} - ${b}?`,
+          correct,
+          [correct + 10, correct - 10, correct + 100, correct + 1],
+          `Para resolver ${a} - ${b}, e preciso fazer a subtracao com reagrupamento quando falta dezena ou centena.`
+        );
+      })
+    ));
+
+    const thousandPairs = [
+      [1250, 486], [2034, 875], [3400, 1587], [4123, 1968], [5005, 2479],
+      [6200, 3586], [7314, 2897], [8402, 4758], [9001, 3864], [1540, 697],
+      [2603, 1489], [3780, 2596], [4821, 1738], [6104, 2895], [7420, 3567]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "subtracao_milhar", "Subtraindo com Milhar", "mat_sm",
+      thousandPairs.map(([a, b]) => {
+        const correct = a - b;
+        return makeEntry(
+          `Quanto e ${a} - ${b}?`,
+          correct,
+          [correct + 100, correct - 100, correct + 10, correct + 1000],
+          `Nessa conta, alem das centenas, pode ser necessario pedir emprestado tambem no milhar.`
+        );
+      })
+    ));
+
+    const addSubProblems = [
+      ["Lia tinha 245 figurinhas e ganhou mais 128. Com quantas figurinhas ela ficou?", 373, [363, 383, 327], "Somamos as figurinhas que Lia tinha com as que ela ganhou: 245 + 128."],
+      ["Uma biblioteca tinha 560 livros. Depois emprestou 187. Quantos livros ficaram na biblioteca?", 373, [383, 347, 273], "Para saber quantos ficaram, fazemos 560 - 187."],
+      ["No passeio, 318 alunos foram de manha e 206 a tarde. Quantos alunos participaram ao todo?", 524, [514, 534, 424], "Como queremos o total, fazemos 318 + 206."],
+      ["Pedro juntou 450 tampinhas e usou 175 em uma atividade. Quantas tampinhas sobraram?", 275, [265, 285, 375], "Para descobrir o que sobrou, fazemos 450 - 175."],
+      ["Uma escola arrecadou 126 caixas de leite na segunda e 239 na terca. Quantas caixas foram arrecadadas nos dois dias?", 365, [355, 375, 465], "Somamos as caixas dos dois dias: 126 + 239."],
+      ["Ana guardou 704 reais para uma viagem e gastou 286 reais. Quanto ainda restou?", 418, [408, 428, 318], "O valor que restou e 704 - 286."],
+      ["Um mercado vendeu 315 paes pela manha e 184 a tarde. Quantos paes vendeu no dia?", 499, [489, 509, 399], "Somamos as vendas da manha e da tarde."],
+      ["Numa fazenda havia 930 laranjas colhidas. Depois 458 foram vendidas. Quantas laranjas sobraram?", 472, [462, 482, 372], "Para saber o que sobrou, fazemos 930 - 458."],
+      ["Julia leu 128 paginas de um livro e depois mais 147 paginas. Quantas paginas ela leu ao todo?", 275, [265, 285, 175], "Somamos as paginas lidas nas duas partes."],
+      ["Havia 600 litros de agua em uma caixa. Foram usados 238 litros. Quantos litros ainda ficaram?", 362, [352, 372, 262], "Subtraimos os litros usados dos litros que havia antes."],
+      ["Uma loja vendeu 432 brinquedos em abril e 156 em maio. Quantos brinquedos vendeu nesses dois meses?", 588, [578, 598, 488], "Como e o total de dois meses, somamos 432 + 156."],
+      ["Em um album cabem 800 fotos. Ja foram colocadas 467 fotos. Quantos espacos ainda faltam preencher?", 333, [323, 343, 433], "Fazemos 800 - 467 para saber quantos espacos ainda faltam."],
+      ["Um parque recebeu 219 visitantes de manha e 312 a tarde. Quantas pessoas visitaram o parque?", 531, [521, 541, 431], "Somamos os visitantes dos dois periodos."],
+      ["Carlos tinha 980 pontos em um jogo e perdeu 365 pontos. Com quantos pontos ele ficou?", 615, [605, 625, 515], "Para saber a nova pontuacao, fazemos 980 - 365."],
+      ["No deposito havia 155 caixas azuis e 244 caixas vermelhas. Quantas caixas havia no total?", 399, [389, 409, 299], "Somamos as caixas azuis e vermelhas."],
+      ["Uma professora comprou 750 folhas e usou 298 em atividades. Quantas folhas sobraram?", 452, [442, 462, 352], "O numero de folhas que sobraram e 750 - 298."],
+      ["Um onibus levou 186 pessoas pela manha e 207 a tarde. Quantas pessoas foram levadas ao todo?", 393, [383, 403, 293], "Somamos 186 + 207."],
+      ["Numa gincana, a equipe azul fez 640 pontos e perdeu 285 em uma prova. Quantos pontos restaram?", 355, [345, 365, 255], "Subtraimos os pontos perdidos dos pontos que a equipe tinha."],
+      ["Um clube tinha 321 bolas e comprou mais 179. Quantas bolas passou a ter?", 500, [490, 510, 400], "321 + 179 = 500."],
+      ["Marina juntou 1000 pecas de montar e doou 468. Com quantas pecas ela ficou?", 532, [522, 542, 432], "Fazemos 1000 - 468 para descobrir quantas pecas restaram."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "problemas_adicao_subtracao", "Problemas com Adicao e Subtracao", "mat_pas",
+      addSubProblems.map(([question, correct, wrongs, explanation]) => makeEntry(question, correct, wrongs, explanation))
+    ));
+
+    const multiplicationBasicPairs = [
+      [2, 8], [3, 6], [4, 7], [5, 9], [6, 4],
+      [7, 5], [8, 3], [9, 4], [10, 6], [3, 9],
+      [4, 8], [5, 7], [6, 6], [7, 8], [8, 5],
+      [9, 7], [10, 4], [2, 12], [3, 11], [4, 9]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_basica", "Multiplicacao - Operacoes Basicas", "mat_mb",
+      multiplicationBasicPairs.map(([a, b]) => {
+        const correct = a * b;
+        return makeEntry(
+          `Quanto e ${a} x ${b}?`,
+          correct,
+          [correct + a, correct - a, correct + b, correct + 1],
+          `Multiplicar ${a} x ${b} e somar ${a} ${b} vezes, ou ${b} ${a} vezes.`
+        );
+      })
+    ));
+
+    const multiplicationProblems = [
+      ["Cada caixa tem 6 lapis. Quantos lapis ha em 8 caixas?", 48, [42, 54, 56], "Se cada caixa tem 6 lapis, fazemos 6 x 8."],
+      ["Uma professora organizou 7 filas com 5 alunos em cada uma. Quantos alunos estavam nas filas?", 35, [30, 40, 42], "Basta multiplicar 7 filas por 5 alunos."],
+      ["Um pacote tem 4 figurinhas. Quantas figurinhas ha em 9 pacotes?", 36, [32, 40, 45], "Fazemos 4 x 9 para descobrir o total."],
+      ["Joao plantou 3 mudas em cada vaso. Se ele tem 12 vasos, quantas mudas plantou?", 36, [30, 39, 48], "O total e 3 x 12."],
+      ["No teatro, cada fileira tem 8 cadeiras. Quantas cadeiras ha em 6 fileiras?", 48, [42, 54, 46], "Como sao 6 grupos de 8 cadeiras, fazemos 8 x 6."],
+      ["Uma aranha tem 8 patas. Quantas patas tem 5 aranhas?", 40, [32, 45, 48], "Multiplicamos 8 patas por 5 aranhas."],
+      ["Cada semana tem 7 dias. Quantos dias ha em 4 semanas?", 28, [21, 24, 35], "Fazemos 7 x 4."],
+      ["Uma bandeja leva 10 copos. Quantos copos cabem em 3 bandejas?", 30, [20, 33, 40], "Sao 3 grupos de 10 copos."],
+      ["Cada time ganhou 9 medalhas. Quantas medalhas ganharam 4 times?", 36, [27, 40, 45], "Multiplicamos 9 x 4."],
+      ["Uma caixa de ovos tem 12 ovos. Quantos ovos ha em 2 caixas?", 24, [14, 22, 26], "Sao 2 grupos de 12 ovos."],
+      ["Cada aluno recebeu 5 livros. Quantos livros foram entregues a 9 alunos?", 45, [40, 50, 54], "Basta calcular 5 x 9."],
+      ["Em cada mesa ha 4 cadeiras. Quantas cadeiras ha em 11 mesas?", 44, [40, 48, 54], "Temos 11 grupos de 4 cadeiras."],
+      ["Uma loja montou 6 estantes com 7 caixas em cada uma. Quantas caixas foram colocadas?", 42, [36, 48, 49], "Fazemos 6 x 7."],
+      ["Cada pacote tem 3 biscoitos. Quantos biscoitos ha em 15 pacotes?", 45, [30, 42, 48], "Sao 15 grupos de 3 biscoitos."],
+      ["Um jardim tem 9 canteiros com 2 flores em cada um. Quantas flores ha ao todo?", 18, [11, 16, 20], "O total e 9 x 2."],
+      ["Cada album tem 8 paginas. Quantas paginas ha em 7 albuns?", 56, [48, 54, 64], "Fazemos 8 x 7."],
+      ["Uma bicicleta tem 2 rodas. Quantas rodas ha em 13 bicicletas?", 26, [24, 28, 23], "Multiplicamos 2 x 13."],
+      ["Cada caixa guarda 9 bolas. Quantas bolas ha em 5 caixas?", 45, [36, 40, 54], "Sao 5 grupos de 9 bolas."],
+      ["Uma fazenda tem 4 currais com 6 vacas em cada um. Quantas vacas ha?", 24, [20, 28, 30], "Calculamos 4 x 6."],
+      ["Em cada saco ha 7 laranjas. Quantas laranjas ha em 8 sacos?", 56, [49, 54, 63], "Basta multiplicar 7 x 8."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_problemas", "Multiplicacao e Problemas", "mat_mp",
+      multiplicationProblems.map(([question, correct, wrongs, explanation]) => makeEntry(question, correct, wrongs, explanation))
+    ));
+
+    const multiplicationReservePairs = [
+      [124, 3], [215, 4], [306, 5], [418, 2], [527, 3],
+      [638, 4], [749, 2], [856, 3], [912, 4], [135, 6],
+      [247, 3], [359, 2], [468, 5], [574, 4], [683, 3]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_reserva", "Multiplicacao com Reserva", "mat_mr",
+      multiplicationReservePairs.map(([a, b]) => {
+        const correct = a * b;
+        return makeEntry(
+          `Quanto e ${a} x ${b}?`,
+          correct,
+          [correct + b * 10, correct - b * 10, correct + 100, correct + b],
+          `Na multiplicacao ${a} x ${b}, algumas ordens passam valor para a ordem seguinte, por isso ha reserva.`
+        );
+      })
+    ));
+
+    const circleEntries = [
+      ["Qual figura geometrica e redonda por inteiro?", "circulo", ["quadrado", "triangulo", "retangulo"], "O circulo e a figura toda preenchida e redonda."],
+      ["A linha que forma a volta do circulo recebe o nome de:", "circunferencia", ["segmento", "lado", "vertice"], "Circunferencia e a linha curva que contorna o circulo."],
+      ["O centro de um circulo fica:", ["bem no meio da figura", "em um canto", "fora da figura", "na ponta da linha"], 0, "O centro e o ponto que fica no meio do circulo."],
+      ["Qual objeto lembra mais um circulo?", "moeda", ["livro", "lapis", "porta"], "A moeda tem formato redondo, parecido com um circulo."],
+      ["A borda de uma roda lembra mais:", "uma circunferencia", ["um triangulo", "um retangulo", "uma linha reta"], "A borda da roda e uma linha curva fechada, como a circunferencia."],
+      ["Se uma figura e redonda e fechada, ela pode ser um:", "circulo", ["quadrado", "losango", "trapezio"], "O circulo e uma figura fechada e redonda."],
+      ["Qual dos nomes combina com a parte de dentro de uma figura redonda?", "circulo", ["circunferencia", "segmento", "ponto final"], "Circulo e a regiao interna; circunferencia e o contorno."],
+      ["O que e a circunferencia?", "o contorno do circulo", ["o centro da figura", "uma linha reta", "a metade do circulo"], "Circunferencia e a linha curva que contorna o circulo."],
+      ["Em uma pizza inteira vista de cima, o formato se parece mais com:", "circulo", ["triangulo", "retangulo", "cubo"], "A pizza inteira tem forma parecida com um circulo."],
+      ["Qual figura nao tem cantos nem lados retos?", "circulo", ["quadrado", "retangulo", "triangulo"], "O circulo nao possui lados retos nem cantos."],
+      ["O bambole pode lembrar melhor:", "uma circunferencia", ["um quadrado", "um cone", "um cubo"], "O bambole parece um contorno redondo."],
+      ["Quando desenhamos so a volta de uma figura redonda, desenhamos a:", "circunferencia", ["diagonal", "altura", "tabuada"], "A volta da figura redonda recebe o nome de circunferencia."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "circulos_circunferencias", "Circulos e Circunferencias", "mat_cc",
+      circleEntries.map(entry => Array.isArray(entry[1])
+        ? [entry[0], entry[1], entry[2], entry[3]]
+        : makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const segmentEntries = [
+      ["Um segmento de reta e:", "uma parte de reta com comeco e fim", ["uma curva fechada", "uma conta de multiplicar", "um circulo inteiro"], "O segmento de reta tem dois extremos: um inicio e um fim."],
+      ["Qual desenho lembra um segmento de reta?", "uma linha reta curta", ["uma roda", "um arco", "um circulo"], "O segmento de reta parece uma linha reta limitada por dois pontos."],
+      ["Se marcamos os pontos A e B e ligamos com uma linha reta, formamos:", "o segmento AB", ["uma circunferencia", "um triangulo", "um cubo"], "Dois pontos ligados por uma reta formam um segmento."],
+      ["Um segmento de reta pode ser:", "horizontal, vertical ou inclinado", ["somente redondo", "somente curvo", "sempre em zigue-zague"], "Segmentos podem aparecer em varias posicoes, mas continuam retos."],
+      ["O segmento de reta e diferente da linha curva porque:", "ele nao faz curva", ["ele nao tem tamanho", "ele nao pode ser desenhado", "ele sempre e redondo"], "Um segmento de reta segue sempre reto."],
+      ["Ao desenhar a borda de uma folha de caderno, vemos muitos:", "segmentos de reta", ["circulos", "espirais", "ondas"], "Os lados de uma folha sao exemplos de segmentos de reta."],
+      ["Uma regua ajuda a desenhar:", "segmentos de reta", ["circulos perfeitos sem compasso", "ondas do mar", "nuvens"], "A regua ajuda a fazer linhas retas."],
+      ["Quando um segmento liga dois pontos, ele mostra:", "a distancia reta entre eles", ["o nome do caderno", "a cor dos pontos", "uma multiplicacao"], "O segmento representa a ligacao reta entre os pontos."],
+      ["Qual objeto tem bordas que parecem segmentos de reta?", "um livro", ["uma bola", "uma moeda", "um prato"], "As bordas retas do livro lembram segmentos de reta."],
+      ["Um segmento de reta sempre tem:", "dois extremos", ["tres centros", "quatro curvas", "nenhum fim"], "Todo segmento de reta tem um inicio e um fim."],
+      ["Se a linha esta torcida, ela nao e:", "segmento de reta", ["linha", "desenho", "figura"], "Para ser segmento, a linha precisa ser reta."],
+      ["Um lado de um quadrado e um exemplo de:", "segmento de reta", ["circunferencia", "diametro", "curva aberta"], "Cada lado de um quadrado e um segmento de reta."],
+      ["Quando medimos um lado reto de uma figura, estamos medindo um:", "segmento de reta", ["circulo", "angulo redondo", "contorno curvo"], "Lados retos de figuras sao segmentos de reta."],
+      ["Uma cerca feita com hastes retas lembra varios:", "segmentos de reta", ["circulos concentricos", "arcos completos", "ondas fechadas"], "Cada haste reta pode lembrar um segmento de reta."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "segmentos_reta", "Segmentos de Reta", "mat_seg",
+      segmentEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const lengthEntries = [
+      ["O segmento AB mede 5 cm e o segmento CD mede 8 cm. Qual e o maior?", "segmento CD", ["segmento AB", "os dois tem a mesma medida", "nenhum deles"], "Como 8 cm e maior que 5 cm, o segmento CD e maior."],
+      ["Um segmento mede 7 cm. Outro mede 7 cm. O que podemos dizer?", "eles tem o mesmo comprimento", ["o primeiro e maior", "o segundo e menor", "nao da para comparar"], "Se os dois medem 7 cm, tem o mesmo comprimento."],
+      ["Se um segmento mede 9 cm e outro 4 cm, qual e a diferenca entre eles?", "5 cm", ["4 cm", "6 cm", "13 cm"], "A diferenca e 9 - 4 = 5 cm."],
+      ["Qual instrumento usamos para medir um segmento desenhado no caderno?", "regua", ["borracha", "apontador", "compasso de circulo"], "A regua e usada para medir comprimentos retos."],
+      ["Um segmento mede 3 cm. Se ele aumentar 2 cm, passara a medir:", "5 cm", ["4 cm", "6 cm", "1 cm"], "Somamos 3 cm + 2 cm = 5 cm."],
+      ["Um segmento mede 10 cm. Se tirarmos 4 cm, quanto resta?", "6 cm", ["5 cm", "7 cm", "14 cm"], "Subtraimos 10 cm - 4 cm."],
+      ["O segmento EF mede 12 cm. O segmento GH mede 15 cm. Quantos centimetros o GH tem a mais?", "3 cm", ["2 cm", "4 cm", "27 cm"], "Fazemos 15 - 12 = 3 cm."],
+      ["Dois segmentos medem 6 cm e 8 cm. Juntos, medem:", "14 cm", ["12 cm", "13 cm", "15 cm"], "Somamos os dois comprimentos: 6 + 8."],
+      ["Se um lado de um retangulo mede 9 cm, essa medida representa o comprimento de um:", "segmento de reta", ["circulo", "ponto", "curva"], "O lado reto da figura e um segmento de reta."],
+      ["O segmento JK mede 11 cm. Qual opcao mostra essa medida?", "11 cm", ["10 cm", "12 cm", "21 cm"], "A medida informada do segmento JK e 11 cm."],
+      ["Se o segmento LM mede 4 cm e o segmento NO mede o dobro, quanto mede NO?", "8 cm", ["6 cm", "7 cm", "12 cm"], "O dobro de 4 cm e 8 cm."],
+      ["Um segmento de 16 cm foi dividido em 2 partes iguais. Quanto mede cada parte?", "8 cm", ["6 cm", "7 cm", "9 cm"], "Metade de 16 cm e 8 cm."],
+      ["Se um segmento mede 14 cm e outro mede 9 cm, qual e o menor?", "o de 9 cm", ["o de 14 cm", "os dois sao iguais", "nenhum deles"], "Entre 14 e 9, o menor e 9."],
+      ["Para saber se um segmento e maior ou menor que outro, precisamos:", "comparar suas medidas", ["adivinhar", "olhar so a cor", "contar as letras do nome"], "A comparacao correta e feita pelas medidas."]
+    ];
+
+    mathQuestions.push(...buildQuestions("matematica", "comprimento_segmentos", "Comprimento dos Segmentos de Reta", "mat_cs",
+      lengthEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    return mathQuestions;
+  }
+
+  const mathQuestions = generateMathQuestions();
+  questions.push(...mathQuestions);
+
+  function generateScienceQuestions() {
+    const scienceQuestions = [];
+
+    const birdEntries = [
+      ["As aves tem o corpo coberto principalmente por:", "penas", ["pelos", "escamas secas", "casca"], "As aves possuem penas, que ajudam na protecao e, em muitos casos, no voo."],
+      ["Qual destes animais e uma ave?", "galinha", ["cachorro", "sapo", "peixe"], "A galinha e uma ave."],
+      ["As aves nascem, em geral, de:", "ovos", ["sementes", "casulos de pano", "potes"], "A maior parte das aves nasce de ovos."],
+      ["O bico das aves ajuda a:", "pegar alimentos", ["respirar debaixo d'agua", "cavar tuneis profundos", "subir em paredes lisas"], "O bico ajuda a pegar, cortar ou quebrar alimentos."],
+      ["Muitas aves conseguem voar porque tem:", "asas", ["barbatanas", "nadadeiras", "antenas"], "As asas ajudam muitas aves a voar."],
+      ["Nem toda ave voa, mas toda ave tem:", "penas", ["escamas grossas", "barbatana", "casco"], "Mesmo aves que nao voam possuem penas."],
+      ["O filhote da ave se desenvolve primeiro:", "dentro do ovo", ["dentro de uma bolsa", "no solo sem protecao", "num casulo de seda"], "O embriao da ave se desenvolve dentro do ovo."],
+      ["Uma caracteristica das aves e ter:", "duas patas e duas asas", ["quatro patas e chifres", "seis patas", "oito patas"], "As aves costumam ter duas patas e duas asas."],
+      ["A ave usa o ninho principalmente para:", "proteger ovos e filhotes", ["guardar leite", "nadar no rio", "cavar o solo"], "O ninho ajuda a proteger os ovos e os filhotes."],
+      ["Qual destas partes ajuda a ave a se equilibrar durante o voo?", "cauda", ["casco", "barbatana dorsal", "guelras"], "A cauda ajuda no equilibrio e na direcao."],
+      ["O pinguim e uma ave que:", "nao voa, mas nada", ["voa muito alto", "vive so em arvores", "tem pelos"], "O pinguim e uma ave adaptada a nadar."],
+      ["A galinha, o pato e o passarinho sao exemplos de:", "aves", ["mamiferos", "invertebrados", "anfibios"], "Todos eles pertencem ao grupo das aves."],
+      ["A casca do ovo ajuda a:", "proteger o embriao", ["dar leite ao filhote", "fazer o filhote respirar na agua", "virar pena"], "A casca protege o que esta se desenvolvendo."],
+      ["As penas das aves ajudam tambem a:", "manter a temperatura do corpo", ["produzir leite", "substituir os ossos", "virar alimento"], "As penas ajudam a proteger do frio e do calor."],
+      ["Quando o filhote sai do ovo, ocorre a:", "eclosao", ["migracao", "hibernacao", "fermentacao"], "Eclosao e a saida do filhote do ovo."],
+      ["Muitas aves alimentam seus filhotes levando comida ao:", "ninho", ["aquario", "casulo", "buraco no gelo"], "Os adultos levam alimento ate o ninho."],
+      ["Aves respiram por:", "pulmoes", ["guelras", "barbatanas", "poros da esponja"], "As aves respiram por pulmoes."],
+      ["Um ovo de ave precisa, em muitos casos, ficar aquecido para:", "o filhote se desenvolver bem", ["virar pedra", "mudar de cor", "encher de agua"], "O calor ajuda o embriao a crescer."],
+      ["O pato e adaptado a viver perto da agua porque:", "suas patas ajudam a nadar", ["tem guelras", "vive preso ao fundo", "nao precisa respirar"], "As patas do pato ajudam na locomocao na agua."],
+      ["A coruja e uma ave conhecida por:", "ter bico, penas e asas", ["ter barbatanas", "ter casco duro", "ter seis patas"], "A coruja tem as caracteristicas comuns das aves."],
+      ["Uma diferenca entre aves e mamiferos e que as aves:", "tem penas", ["produzem leite", "amam os filhotes com mamas", "tem pelos por todo o corpo"], "Penas sao caracteristicas tipicas das aves."],
+      ["Quando uma ave cuida dos ovos ate o nascimento, ela esta:", "chocando os ovos", ["trocando as penas", "hibernando", "cavando um tunel"], "Chocar e manter os ovos aquecidos e protegidos."],
+      ["O avestruz e uma ave grande que:", "nao voa", ["vive no fundo do mar", "tem pelo", "bota filhotes vivos"], "O avestruz e uma ave que nao voa."],
+      ["As aves fazem parte dos animais:", "vertebrados", ["sem coluna vertebral", "sem esqueleto", "que vivem presos"], "As aves possuem coluna vertebral."],
+      ["Aprender sobre o desenvolvimento das aves mostra que elas:", "crescem desde o ovo ate a fase adulta", ["nascem adultas", "nunca mudam de tamanho", "nao precisam de cuidado"], "As aves passam por etapas de desenvolvimento."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "aves", "Caracteristicas e Desenvolvimento das Aves", "cie_av",
+      birdEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const mammalEntries = [
+      ["Os mamiferos tem o corpo coberto principalmente por:", "pelos", ["penas", "casca", "espinhos de planta"], "Os mamiferos costumam ter pelos no corpo."],
+      ["Qual destes animais e um mamifero?", "gato", ["pombo", "tartaruga", "peixe"], "O gato e um mamifero."],
+      ["Uma caracteristica dos mamiferos e que as maes:", "produzem leite para os filhotes", ["botam ovos em ninhos sempre", "respiram por guelras", "vivem presas em rochas"], "As maes mamiferas alimentam os filhotes com leite."],
+      ["Os filhotes dos mamiferos mamam porque:", "se alimentam do leite da mae", ["precisam quebrar a casca do ovo", "respiram debaixo d'agua", "vivem grudados nas pedras"], "Mamiferos se alimentam do leite materno no inicio da vida."],
+      ["Qual destes animais tambem e mamifero?", "baleia", ["sardinha", "polvo", "galinha"], "A baleia e um mamifero, mesmo vivendo na agua."],
+      ["Os mamiferos respiram por:", "pulmoes", ["guelras", "poros", "penas"], "Mamiferos respiram por pulmoes."],
+      ["A maioria dos mamiferos nasce:", "da barriga da mae", ["de ovos com casca dura", "de sementes", "de casulos"], "A maior parte dos mamiferos e vivipara."],
+      ["O cachorro, o cavalo e o macaco sao exemplos de:", "mamiferos", ["aves", "invertebrados", "cnidarios"], "Todos pertencem ao grupo dos mamiferos."],
+      ["Os mamiferos sao animais:", "vertebrados", ["sem coluna vertebral", "sem ossos", "que vivem presos"], "Mamiferos possuem coluna vertebral."],
+      ["Uma caracteristica dos mamiferos e cuidar dos filhotes por um tempo porque:", "os filhotes precisam de protecao e alimento", ["os filhotes nascem voando", "vivem presos em ovos", "nao precisam de alimento"], "Em geral, os filhotes precisam de cuidado depois de nascer."],
+      ["O ser humano faz parte do grupo dos:", "mamiferos", ["aves", "poriferos", "cnidarios"], "As pessoas sao mamiferos."],
+      ["Qual animal e mamifero e vive no mar?", "golfinho", ["tubarao", "agua-viva", "estrela-do-mar"], "O golfinho e um mamifero aquatico."],
+      ["Os pelos dos mamiferos podem ajudar a:", "proteger e manter a temperatura do corpo", ["virar asas", "produzir ovos", "respirar na agua"], "Os pelos ajudam na protecao e no controle da temperatura."],
+      ["Um filhote de mamifero cresce e se desenvolve com ajuda:", "da mae e do alimento", ["somente da casca", "de barbatanas", "de rochas"], "O cuidado da mae e a alimentacao ajudam no desenvolvimento."],
+      ["O morcego e um mamifero que:", "voa", ["tem penas", "respira por guelras", "nasce de ovo com casca"], "Mesmo voando, o morcego e mamifero."],
+      ["A vaca e um mamifero porque:", "tem pelos e amamenta o bezerro", ["tem penas e bico", "vive presa a rochas", "tem tentaculos"], "A vaca apresenta caracteristicas tipicas dos mamiferos."],
+      ["Mamiferos e aves se parecem porque ambos:", "sao vertebrados", ["produzem leite", "tem penas", "vivem em ovos sempre"], "Os dois grupos tem coluna vertebral."],
+      ["Qual destes animais nao e mamifero?", "pato", ["coelho", "onca", "cavalo"], "O pato e uma ave."],
+      ["Os mamiferos podem viver:", "na terra, na agua e ate voando", ["somente em arvores", "so no mar", "apenas em cavernas"], "Existem mamiferos terrestres, aquaticos e voadores."],
+      ["Um bebe humano se alimenta primeiro de:", "leite", ["sementes", "algas", "rochas"], "O leite e o primeiro alimento do bebe."],
+      ["O elefante e mamifero e seu filhote nasce:", "da barriga da mae", ["de ovo duro", "de um casulo", "de uma concha"], "Como outros mamiferos, nasce do corpo da mae."],
+      ["Os mamiferos costumam ter temperatura do corpo:", "mais estavel", ["igual a da agua sempre", "sempre fria como gelo", "nula"], "Mamiferos mantem a temperatura corporal mais estavel."],
+      ["Uma das etapas do desenvolvimento dos mamiferos e:", "crescer ate a fase adulta", ["virar planta", "trocar penas", "grudar em rochas"], "Os mamiferos passam por fases de crescimento."],
+      ["Os filhotes de mamiferos dependem muito dos adultos no inicio porque:", "ainda estao aprendendo a viver", ["ja nascem adultos", "voam logo ao nascer", "nao precisam de alimento"], "No inicio, os filhotes precisam de alimento e protecao."],
+      ["Estudar os mamiferos ajuda a perceber que esse grupo:", "tem varias especies com caracteristicas em comum", ["e formado so por animais grandes", "vive so em florestas", "nao cuida dos filhotes"], "Apesar das diferencas, os mamiferos compartilham caracteristicas importantes."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "mamiferos", "Caracteristicas e Desenvolvimento dos Mamiferos", "cie_ma",
+      mammalEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const invertebrateEntries = [
+      ["Os invertebrados sao animais que:", "nao tem coluna vertebral", ["tem pelos", "tem penas", "produzem leite"], "Invertebrados nao possuem coluna vertebral."],
+      ["Qual destes animais e invertebrado?", "borboleta", ["gato", "pombo", "sapo"], "A borboleta nao tem coluna vertebral."],
+      ["Formiga, aranha e minhoca sao exemplos de:", "invertebrados", ["mamiferos", "aves", "repteis grandes"], "Esses animais nao possuem coluna vertebral."],
+      ["Um caracol e um invertebrado porque:", "nao tem coluna vertebral", ["tem pelos", "tem asas com penas", "produz leite"], "Caracois sao invertebrados."],
+      ["Qual destes grupos reune apenas invertebrados?", "polvo, borboleta e minhoca", ["cachorro, gato e cavalo", "pato, arara e coruja", "golfinho, baleia e peixe"], "Polvo, borboleta e minhoca sao invertebrados."],
+      ["A aranha e um invertebrado que tem:", "oito patas", ["duas asas", "penas", "casco de tartaruga"], "Aranhas sao invertebrados e costumam ter oito patas."],
+      ["A minhoca ajuda o solo porque:", "vive e se move na terra", ["voa em bandos", "nada em rios fundos", "produz leite"], "A minhoca vive no solo e pode ajuda-lo a ficar mais aerado."],
+      ["O polvo e um invertebrado que vive:", "na agua", ["somente no deserto", "so em arvores", "somente em ninhos"], "O polvo e um invertebrado marinho."],
+      ["Uma caracteristica comum de muitos invertebrados e:", "ter o corpo sem coluna vertebral", ["ter bico e penas", "ter pelos e mamas", "ter casco osseo interno"], "Essa e a principal caracteristica do grupo."],
+      ["Qual destes animais nao e invertebrado?", "coelho", ["abelha", "aranha", "caracol"], "O coelho e vertebrado, pois tem coluna vertebral."],
+      ["Os insetos fazem parte dos:", "invertebrados", ["mamiferos", "aves", "anfibios"], "Insetos sao animais invertebrados."],
+      ["A borboleta passa por mudancas no crescimento. Isso faz parte do seu:", "desenvolvimento", ["congelamento", "sono profundo eterno", "voo sem asas"], "No desenvolvimento, alguns invertebrados passam por transformacoes."],
+      ["A joaninha e um exemplo de:", "inseto invertebrado", ["mamifero voador", "ave pequena", "peixe colorido"], "A joaninha e um inseto e, portanto, um invertebrado."],
+      ["As conchas podem proteger alguns invertebrados, como:", "caracois", ["gatos", "galinhas", "cavalos"], "Caracois podem viver protegidos por conchas."],
+      ["Muitos invertebrados sao pequenos e vivem:", "em muitos lugares diferentes", ["somente no ceu", "apenas no gelo", "so em telhados"], "Invertebrados vivem em diversos ambientes."],
+      ["A abelha e importante porque:", "ajuda na polinizacao", ["produz leite", "tem penas", "vive grudada em rochas"], "A abelha ajuda as plantas na polinizacao."],
+      ["O corpo mole e uma caracteristica comum em alguns invertebrados como:", "o polvo", ["a galinha", "o cavalo", "o cachorro"], "O polvo e um invertebrado de corpo mole."],
+      ["Insetos, aracnideos e moluscos sao grupos de:", "invertebrados", ["somente mamiferos", "somente aves", "somente vertebrados aquaticos"], "Esses grupos fazem parte dos invertebrados."],
+      ["A minhoca nao tem patas, mas consegue se locomover porque:", "move o corpo pelo solo", ["voa com asas", "nada com barbatanas", "corre com cascos"], "A minhoca se move contraindo e esticando o corpo."],
+      ["Os invertebrados podem ser encontrados:", "na terra e na agua", ["nao somente no fundo do mar", "so em cidades", "apenas dentro de ovos"], "Invertebrados vivem em muitos ambientes."],
+      ["O desenvolvimento da borboleta comeca como:", "ovo", ["filhote com pelos", "planta", "peixe"], "A borboleta comeca seu ciclo no ovo."],
+      ["Uma lagarta se transforma em borboleta. Isso mostra:", "mudancas no desenvolvimento", ["que e mamifero", "que tem coluna vertebral", "que produz leite"], "A borboleta passa por etapas de desenvolvimento."],
+      ["O caranguejo e um invertebrado que pode viver:", "em areas proximas da agua", ["somente em ninhos de ave", "apenas em florestas altas", "dentro de tocas de mamiferos"], "Caranguejos sao invertebrados ligados a ambientes aquaticos ou umidos."],
+      ["Aprender sobre invertebrados e importante porque eles:", "fazem parte da natureza e dos ecossistemas", ["nao tem funcao nenhuma", "sao todos iguais", "vivem apenas em livros"], "Os invertebrados sao muito importantes para a vida na Terra."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "invertebrados", "Estudo dos Invertebrados", "cie_in",
+      invertebrateEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const poriferaEntries = [
+      ["Os poriferos sao conhecidos popularmente como:", "esponjas-do-mar", ["algas", "corais", "estrelas-do-mar"], "Os poriferos sao chamados de esponjas-do-mar."],
+      ["Os poriferos vivem principalmente:", "na agua", ["somente na terra", "no deserto", "em ninhos de aves"], "As esponjas vivem em ambiente aquatico."],
+      ["O corpo dos poriferos tem muitos:", "poros", ["pelos", "bicos", "asas"], "Poros sao pequenas aberturas por onde a agua passa."],
+      ["Os poriferos sao animais:", "invertebrados", ["mamiferos", "aves", "repteis"], "Esponjas-do-mar nao tem coluna vertebral."],
+      ["A agua entra no corpo das esponjas pelos:", "poros", ["pulmoes", "penas", "mamilos"], "Os poros permitem a entrada da agua."],
+      ["Os poriferos costumam viver:", "presos a rochas ou superficies", ["voando no ceu", "correndo no campo", "saltando em galhos"], "As esponjas vivem fixas em um lugar."],
+      ["Uma esponja-do-mar se alimenta quando:", "a agua passa pelo seu corpo", ["ela mastiga folhas", "ela caca com bico", "ela produz leite"], "A agua leva pequenas particulas de alimento."],
+      ["Os poriferos tem corpo:", "simples", ["cheio de ossos", "com penas", "com casco articulado"], "As esponjas tem organizacao corporal simples."],
+      ["Qual destes animais e um porifero?", "esponja-do-mar", ["golfinho", "galinha", "borboleta"], "A esponja-do-mar pertence ao grupo dos poriferos."],
+      ["Os poriferos respiram e se alimentam com a ajuda:", "da circulacao de agua no corpo", ["de asas", "de patas fortes", "de casca de ovo"], "A agua que passa pelo corpo ajuda em varias funcoes."],
+      ["Os poriferos costumam ser encontrados em:", "mares e outros ambientes aquaticos", ["somente em arvores", "apenas em desertos", "ninhos de mamiferos"], "Sao animais aquaticos."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "poriferos", "Caracteristicas e Desenvolvimento dos Poriferos", "cie_po",
+      poriferaEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const cnidariaEntries = [
+      ["As aguas-vivas e as anemonas-do-mar pertencem ao grupo dos:", "cnidarios", ["mamiferos", "aves", "poriferos"], "Aguas-vivas e anemonas sao cnidarios."],
+      ["Muitos cnidarios vivem:", "na agua", ["somente na terra", "em arvores secas", "em ninhos"], "Cnidarios sao, em geral, aquaticos."],
+      ["Uma caracteristica dos cnidarios e ter:", "tentaculos", ["penas", "pelos", "mamas"], "Tentaculos sao comuns nesse grupo."],
+      ["A agua-viva e um animal:", "invertebrado", ["mamifero", "ave", "reptil com casco"], "Ela nao tem coluna vertebral."],
+      ["Os tentaculos dos cnidarios ajudam a:", "capturar alimento e se defender", ["produzir leite", "voar", "quebrar sementes com bico"], "Os tentaculos ajudam na alimentacao e defesa."],
+      ["Qual destes animais e um cnidario?", "anemona-do-mar", ["cavalo", "pinguim", "minhoca"], "A anemona-do-mar faz parte dos cnidarios."],
+      ["Os cnidarios vivem principalmente em:", "mares", ["desertos", "campos secos", "casas"], "Muitos cnidarios vivem em ambientes marinhos."],
+      ["A agua-viva tem corpo:", "mole", ["com ossos", "com penas", "com casco duro"], "A agua-viva possui corpo mole."],
+      ["Os cnidarios fazem parte dos:", "invertebrados", ["vertebrados", "mamiferos", "aves"], "Eles nao possuem coluna vertebral."],
+      ["Uma anemona-do-mar pode ficar presa em:", "rochas", ["nuvens", "galhos secos", "telhados"], "Muitas anemonas ficam fixas em superficies."],
+      ["Os cnidarios podem usar os tentaculos para:", "levar alimento ate a boca", ["produzir ovos com casca", "correr no campo", "voar em bando"], "Os tentaculos ajudam a capturar e levar alimento."],
+      ["A agua-viva se movimenta na agua com ajuda do seu:", "corpo gelatinoso", ["casco com patas", "bico", "asa com penas"], "O corpo ajuda no deslocamento na agua."],
+      ["Os cnidarios sao animais:", "aquaticos", ["terrestres com pelos", "aereos com penas", "subterraneos com casco"], "Vivem principalmente na agua."],
+      ["Uma diferenca entre poriferos e cnidarios e que os cnidarios:", "tem tentaculos", ["produzem leite", "tem pelos", "voam"], "Tentaculos sao uma marca dos cnidarios."],
+      ["O corpo de muitos cnidarios pode parecer:", "uma bolsa mole com tentaculos", ["um retangulo duro", "um ninho com ovos", "um quadrado com patas"], "Esse formato aparece em varios cnidarios."],
+      ["A anemona-do-mar se alimenta com a ajuda dos:", "tentaculos", ["pelos", "pulmoes", "cascos"], "Os tentaculos ajudam a capturar o alimento."],
+      ["Cnidarios podem causar ardencia ao tocar porque alguns possuem:", "celulas que ajudam na defesa", ["penas quentes", "casca grossa", "mamas"], "Essas celulas ajudam na protecao e captura de alimento."],
+      ["Os corais fazem parte do grupo dos:", "cnidarios", ["mamiferos", "aves", "poriferos"], "Corais tambem pertencem aos cnidarios."],
+      ["Os cnidarios ajudam a mostrar a diversidade da vida:", "nos ambientes aquaticos", ["somente nas florestas", "so nas cidades", "somente nos desertos"], "Ha muitos tipos de animais vivendo na agua."],
+      ["A agua-viva e um exemplo de animal com corpo:", "mole e sem ossos", ["com pelos e mamas", "com penas e bico", "com casco de tartaruga"], "Ela nao tem esqueleto interno osseo."],
+      ["Os cnidarios crescem e se desenvolvem em ambiente:", "aquatico", ["aereo", "terrestre seco", "subterraneo"], "Seu desenvolvimento acontece na agua."],
+      ["Uma anemona-do-mar nao e planta; ela e:", "animal", ["alga", "pedra", "flor terrestre"], "Apesar da aparencia, a anemona-do-mar e um animal."],
+      ["Estudar cnidarios ajuda a conhecer melhor animais com:", "tentaculos e vida aquatica", ["pelos e leite", "penas e bico", "coluna vertebral e asas"], "Esse grupo tem caracteristicas proprias, como tentaculos e vida aquatica."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "cnidarios", "Caracteristicas e Desenvolvimento dos Cnidarios", "cie_cn",
+      cnidariaEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    const extraEntries = [
+      ["Qual grupo tem animais com penas?", "aves", ["mamiferos", "poriferos", "cnidarios"], "As penas sao caracteristicas das aves."],
+      ["Qual grupo alimenta os filhotes com leite?", "mamiferos", ["aves", "cnidarios", "poriferos"], "Mamiferos produzem leite para os filhotes."],
+      ["Qual grupo inclui esponjas-do-mar?", "poriferos", ["aves", "mamiferos", "repteis"], "Esponjas-do-mar sao poriferos."],
+      ["Qual grupo inclui aguas-vivas?", "cnidarios", ["mamiferos", "aves", "poriferos"], "Aguas-vivas fazem parte dos cnidarios."],
+      ["Borboletas, aranhas e minhocas pertencem ao grupo dos:", "invertebrados", ["mamiferos", "aves", "poriferos"], "Eles nao tem coluna vertebral."],
+      ["A galinha bota ovo. Isso mostra uma caracteristica das:", "aves", ["baleias", "vacas", "esponjas"], "Aves, em geral, se desenvolvem a partir de ovos."],
+      ["O cachorro e um mamifero porque:", "mama quando filhote", ["tem tentaculos", "vive preso a rochas", "tem penas"], "O cachorro e mamifero e mama quando pequeno."],
+      ["A esponja-do-mar vive fixa e tem muitos:", "poros", ["bicos", "pelos", "cascos"], "Poriferos possuem muitos poros no corpo."],
+      ["Uma agua-viva usa tentaculos para:", "capturar alimento", ["produzir leite", "quebrar sementes", "voar"], "Os tentaculos ajudam na alimentacao e defesa."],
+      ["O pinguim e classificado como:", "ave", ["mamifero", "cnidario", "porifero"], "Mesmo sem voar, o pinguim e uma ave."],
+      ["A baleia e classificada como:", "mamifero", ["peixe", "ave", "invertebrado"], "A baleia respira por pulmoes e amamenta."],
+      ["A joaninha e um exemplo de:", "invertebrado", ["mamifero", "ave", "cnidario"], "A joaninha nao tem coluna vertebral."],
+      ["Anemona-do-mar e mais parecida com:", "cnidarios", ["mamiferos", "aves", "poriferos terrestres"], "A anemona pertence aos cnidarios."],
+      ["Um ninho com ovos e filhotes lembra mais o estudo de:", "aves", ["mamiferos", "poriferos", "cnidarios"], "Ninhos e ovos sao muito associados ao estudo das aves."],
+      ["Um filhote mamando lembra o grupo dos:", "mamiferos", ["aves", "cnidarios", "poriferos"], "Mamar leite e caracteristica de mamiferos."],
+      ["Se o animal nao tem coluna vertebral, ele pode ser:", "invertebrado", ["ave", "mamifero com pelos", "vertebrado"], "Animais sem coluna vertebral sao invertebrados."],
+      ["Poriferos e cnidarios tem em comum o fato de viverem principalmente:", "na agua", ["no deserto", "em arvores secas", "em telhados"], "Os dois grupos sao basicamente aquaticos."],
+      ["Aves e mamiferos tem em comum o fato de serem:", "vertebrados", ["invertebrados", "sem pulmoes", "sem desenvolvimento"], "Ambos possuem coluna vertebral."],
+      ["Uma borboleta nao pertence ao grupo das aves porque:", "nao tem penas nem bico", ["bota ovo", "voa", "e pequena"], "Voar nao basta para ser ave; e preciso ter caracteristicas do grupo."],
+      ["Um animal com tentaculos e vida marinha pode pertencer aos:", "cnidarios", ["mamiferos", "aves", "animais com pelos"], "Tentaculos sao comuns entre cnidarios."],
+      ["Um animal com corpo poroso, preso a rochas e filtrador lembra os:", "poriferos", ["mamiferos", "aves", "repteis"], "Essas sao caracteristicas das esponjas-do-mar."],
+      ["Uma atividade extra de ciencias importante ao estudar animais e:", "comparar, identificar e explicar caracteristicas", ["apenas copiar palavras", "decorar sem observar", "esquecer os grupos"], "Comparar grupos ajuda a aprender melhor."],
+      ["Quando organizamos aves, mamiferos e invertebrados, estamos:", "classificando animais", ["desenhando mapas", "plantando sementes", "medindo segmentos"], "Classificar e separar por caracteristicas."],
+      ["Observar o desenvolvimento dos animais ajuda a entender:", "como eles crescem e mudam", ["que nascem sempre adultos", "que nao precisam de alimento", "que todos vivem iguais"], "Os animais passam por etapas de desenvolvimento."],
+      ["As atividades adicionais desses temas ajudam o aluno a:", "comparar, identificar e explicar caracteristicas", ["apenas copiar palavras", "decorar nomes sem sentido", "esquecer os grupos"], "Atividades bem feitas ajudam a compreender melhor os grupos animales."]
+    ];
+
+    scienceQuestions.push(...buildQuestions("ciencias", "atividades_animais", "Atividades Adicionais sobre os Animais", "cie_at",
+      extraEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    ));
+
+    return scienceQuestions;
+  }
+
+  const scienceQuestions = generateScienceQuestions();
+  questions.push(...scienceQuestions);
+
+  function generateEnglishQuestions() {
+    const englishQuestions = [];
+
+    const easterItems = [
+      ["Easter egg", "ovo de Pascoa"],
+      ["Chocolate", "chocolate"],
+      ["Basket", "cesta"],
+      ["Bunny", "coelho"],
+      ["Candy", "doce"],
+      ["Sunday", "domingo"],
+      ["Gift", "presente"],
+      ["Family", "familia"],
+      ["Egg hunt", "caca aos ovos"],
+      ["Happy Easter", "Feliz Pascoa"]
+    ];
+
+    const easterEntries = [
+      ...easterItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, easterItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...easterItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles combina com "${pt}"?`, en, easterItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "easter_eggs", "Celebrations - Easter Eggs", "eng_ea", easterEntries.slice(0, 19)));
+
+    const houseItems = [
+      ["kitchen", "cozinha"],
+      ["bedroom", "quarto"],
+      ["bathroom", "banheiro"],
+      ["living room", "sala"],
+      ["door", "porta"],
+      ["window", "janela"],
+      ["roof", "telhado"],
+      ["garden", "jardim"],
+      ["garage", "garagem"],
+      ["table", "mesa"]
+    ];
+
+    const houseEntries = [
+      ...houseItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, houseItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" quer dizer "${pt}".`, (v) => v)),
+      ...houseItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, houseItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "parts_house", "Parts of House", "eng_ho", houseEntries.slice(0, 19)));
+
+    const thereIsAreSingular = [
+      ["one bed", "There is one bed in the room."],
+      ["one table", "There is one table in the kitchen."],
+      ["one cat", "There is one cat in the garden."],
+      ["one book", "There is one book on the desk."],
+      ["one ball", "There is one ball in the box."],
+      ["one apple", "There is one apple on the plate."],
+      ["one door", "There is one door in the bedroom."],
+      ["one window", "There is one window in the bathroom."],
+      ["one chair", "There is one chair in the classroom."]
+    ];
+
+    const thereIsArePlural = [
+      ["two beds", "There are two beds in the room."],
+      ["three tables", "There are three tables in the kitchen."],
+      ["four cats", "There are four cats in the garden."],
+      ["five books", "There are five books on the desk."],
+      ["six balls", "There are six balls in the box."],
+      ["seven apples", "There are seven apples on the plate."],
+      ["eight doors", "There are eight doors in the school."],
+      ["nine windows", "There are nine windows in the house."],
+      ["ten chairs", "There are ten chairs in the classroom."]
+    ];
+
+    const thereEntries = [
+      ...thereIsAreSingular.map(([desc, sentence]) => makeEntry(`Qual frase correta fala sobre ${desc}?`, sentence, thereIsAreSingular.concat(thereIsArePlural).map(item => item[1]).filter(v => v !== sentence).slice(0, 3), `Usamos "There is" para falar de uma coisa so.`, (v) => v)),
+      ...thereIsArePlural.map(([desc, sentence]) => makeEntry(`Qual frase correta fala sobre ${desc}?`, sentence, thereIsAreSingular.concat(thereIsArePlural).map(item => item[1]).filter(v => v !== sentence).slice(-3), `Usamos "There are" para falar de mais de uma coisa.`, (v) => v)),
+      makeEntry(`Qual opcao completa corretamente: "__ one dog in the yard."`, "There is", ["There are", "Is there", "Are there"], `Com um cachorro so, usamos "There is".`, (v) => v)
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "there_is_are", "There is / There are", "eng_ti", thereEntries.slice(0, 19)));
+
+    const negativeEntries = [
+      makeEntry(`Qual frase significa "Nao ha uma bola na caixa"?`, "There is not a ball in the box.", ["There are not a ball in the box.", "Is there not a ball in the box?", "There is a ball in the box."], `Na forma negativa singular usamos "There is not".`, (v) => v),
+      makeEntry(`Qual frase significa "Nao ha duas cadeiras na sala"?`, "There are not two chairs in the room.", ["There is not two chairs in the room.", "There are two chairs in the room.", "Are there not two chairs in the room?"], `Na forma negativa plural usamos "There are not".`, (v) => v),
+      makeEntry(`Complete: "__ a cat on the sofa."`, "There is not", ["There are not", "Is there", "There is"], `Como a frase e negativa e fala de um gato, usamos "There is not".`, (v) => v),
+      makeEntry(`Complete: "__ three books on the table."`, "There are not", ["There is not", "There are", "Are there"], `Como a frase e negativa e fala de tres livros, usamos "There are not".`, (v) => v),
+      makeEntry(`Qual frase esta na forma negativa correta?`, "There is not one apple in the bag.", ["There are not one apple in the bag.", "There is one apple in the bag.", "Is there one apple in the bag?"], `Para uma unidade na negativa, usamos "There is not".`, (v) => v),
+      makeEntry(`Qual frase esta na forma negativa correta?`, "There are not four pens in the pencil case.", ["There is not four pens in the pencil case.", "There are four pens in the pencil case.", "Are there four pens in the pencil case?"], `Para mais de uma coisa, usamos "There are not".`, (v) => v),
+      makeEntry(`Como dizemos "Nao ha uma mesa na cozinha"?`, "There is not a table in the kitchen.", ["There are not a table in the kitchen.", "There is a table in the kitchen.", "Is there a table in the kitchen?"], `A forma negativa singular correta e "There is not".`, (v) => v),
+      makeEntry(`Como dizemos "Nao ha cinco flores no jardim"?`, "There are not five flowers in the garden.", ["There is not five flowers in the garden.", "There are five flowers in the garden.", "Are there five flowers in the garden?"], `A forma negativa plural correta e "There are not".`, (v) => v),
+      makeEntry(`Se queremos negar a existencia de uma janela, usamos:`, "There is not", ["There are not", "Are there", "There are"], `Como uma janela so, usamos a forma singular negativa.`, (v) => v),
+      makeEntry(`Se queremos negar a existencia de muitas janelas, usamos:`, "There are not", ["There is not", "Is there", "There is"], `Para muitas janelas, usamos a forma plural negativa.`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Nao ha um coelho na cesta"?`, "There is not a bunny in the basket.", ["There are not a bunny in the basket.", "There is a bunny in the basket.", "Are there a bunny in the basket?"], `Com um coelho so, usamos "There is not".`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Nao ha tres ovos na cesta"?`, "There are not three eggs in the basket.", ["There is not three eggs in the basket.", "There are three eggs in the basket.", "Is there three eggs in the basket?"], `Com tres ovos, usamos "There are not".`, (v) => v),
+      makeEntry(`Marque a frase negativa correta:`, "There is not one book in my bag.", ["There are not one book in my bag.", "There is one book in my bag.", "Are there one book in my bag?"], `"There is not" combina com um livro so.`, (v) => v),
+      makeEntry(`Marque a frase negativa correta:`, "There are not six crayons on the desk.", ["There is not six crayons on the desk.", "There are six crayons on the desk.", "Is there six crayons on the desk?"], `"There are not" combina com seis lapis de cor.`, (v) => v),
+      makeEntry(`Complete corretamente: There __ not two cats here.`, "are", ["is", "am", "be"], `Com duas coisas, usamos "are".`, (v) => v),
+      makeEntry(`Complete corretamente: There __ not one dog here.`, "is", ["are", "am", "be"], `Com uma coisa so, usamos "is".`, (v) => v),
+      makeEntry(`Qual frase significa "Nao ha flores na mesa"?`, "There are not flowers on the table.", ["There is not flowers on the table.", "There are flowers on the table.", "Is there flowers on the table?"], `Como flores esta no plural, usamos "There are not".`, (v) => v),
+      makeEntry(`Qual frase significa "Nao ha uma caneta na mochila"?`, "There is not a pen in the backpack.", ["There are not a pen in the backpack.", "There is a pen in the backpack.", "Are there a pen in the backpack?"], `Como caneta esta no singular, usamos "There is not".`, (v) => v),
+      makeEntry(`Na frase negativa plural, usamos:`, "There are not", ["There is not", "Is there", "There is"], `Plural pede "There are not".`, (v) => v)
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "there_negative", "There is / There are / Negative Form", "eng_tn", negativeEntries.slice(0, 19)));
+
+    const interrogativeEntries = [
+      makeEntry(`Como perguntamos "Ha um livro na mesa?"`, "Is there a book on the table?", ["Are there a book on the table?", "There is a book on the table?", "Is there books on the table?"], `Para pergunta com singular usamos "Is there...?"`, (v) => v),
+      makeEntry(`Como perguntamos "Ha tres livros na mesa?"`, "Are there three chairs in the room?", ["Is there three chairs in the room?", "There are three chairs in the room?", "Are there a chair in the room?"], `Plural pede "Are there...?"`, (v) => v),
+      makeEntry(`Complete: "__ there one apple in the bag?"`, "Is", ["Are", "There", "Do"], `Com uma maca, usamos "Is there".`, (v) => v),
+      makeEntry(`Complete: "__ there five apples in the bag?"`, "Are", ["Is", "There", "Do"], `Com cinco macas, usamos "Are there".`, (v) => v),
+      makeEntry(`Qual pergunta esta correta?`, "Is there a chair in the room?", ["Are there a chair in the room?", "There are a chair in the room?", "Is there chairs in the room?"], `Singular pede "Is there".`, (v) => v),
+      makeEntry(`Qual pergunta esta correta?`, "Are there two chairs in the room?", ["Is there two chairs in the room?", "There are two chairs in the room?", "Are there a chair in the room?"], `Plural pede "Are there".`, (v) => v),
+      makeEntry(`A pergunta "Is there a cat in the house?" fala sobre:`, "um gato", ["dois gatos", "muitas casas", "nenhum gato"], `"A cat" indica um gato so.`, (v) => v),
+      makeEntry(`A pergunta "Are there four windows?" fala sobre:`, "quatro janelas", ["uma janela", "uma porta", "um telhado"], `"Four windows" significa quatro janelas.`, (v) => v),
+      makeEntry(`Qual forma usamos para perguntar sobre uma mesa?`, "Is there", ["Are there", "There are", "There is not"], `Com uma mesa, usamos "Is there".`, (v) => v),
+      makeEntry(`Qual forma usamos para perguntar sobre muitas mesas?`, "Are there", ["Is there", "There is", "There is not"], `Com muitas mesas, usamos "Are there".`, (v) => v),
+      makeEntry(`Como perguntamos "Ha um coelho na cesta?"`, "Is there a bunny in the basket?", ["Are there a bunny in the basket?", "There is a bunny in the basket?", "Is there bunnies in the basket?"], `Como e um coelho, usamos o singular interrogativo.`, (v) => v),
+      makeEntry(`Como perguntamos "Ha ovos na cesta?"`, "Are there eggs in the basket?", ["Is there eggs in the basket?", "There are eggs in the basket?", "Are there an egg in the basket?"], `Como e plural, usamos "Are there".`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Ha uma porta na casa?"`, "Is there a door in the house?", ["Are there a door in the house?", "There is a door in the house?", "Is there doors in the house?"], `A traducao correta usa "Is there".`, (v) => v),
+      makeEntry(`Qual traducao esta correta para "Ha janelas na casa?"`, "Are there windows in the house?", ["Is there windows in the house?", "There are windows in the house?", "Are there a window in the house?"], `A traducao correta usa "Are there".`, (v) => v),
+      makeEntry(`Qual frase e uma pergunta?`, "Is there a table here?", ["There is a table here.", "There are tables here.", "There is not a table here."], `A pergunta aparece com "Is there...?"`, (v) => v),
+      makeEntry(`Qual frase e uma pergunta no plural?`, "Are there books in your bag?", ["Is there books in your bag?", "There are books in your bag.", "There are not books in your bag."], `Perguntas no plural usam "Are there".`, (v) => v),
+      makeEntry(`Em "Is there a toy?", a resposta curta pode comecar com:`, "Yes, there is.", ["Yes, there are.", "No, are there.", "Yes, is there."], `Se a pergunta usa singular, a resposta curta tambem usa singular.`, (v) => v),
+      makeEntry(`Em "Are there pencils?", a resposta curta pode comecar com:`, "Yes, there are.", ["Yes, there is.", "No, is there.", "Yes, are there."], `Se a pergunta usa plural, a resposta curta tambem usa plural.`, (v) => v)
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "there_interrogative", "There is / There are / Interrogative Form", "eng_tq", interrogativeEntries.slice(0, 18)));
+
+    const mothersItems = [
+      ["Mother", "mae"],
+      ["Flowers", "flores"],
+      ["Card", "cartao"],
+      ["Love", "amor"],
+      ["Breakfast", "cafe da manha"],
+      ["Hug", "abraco"],
+      ["Gift", "presente"],
+      ["Sunday", "domingo"],
+      ["Family", "familia"],
+      ["Happy Mother's Day", "Feliz Dia das Maes"]
+    ];
+
+    const mothersEntries = [
+      ...mothersItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, mothersItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...mothersItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, mothersItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "mothers_day", "Celebrations - Mother's Day", "eng_md", mothersEntries.slice(0, 19)));
+
+    const foodItems = [
+      ["bread", "pao"],
+      ["milk", "leite"],
+      ["apple", "maca"],
+      ["rice", "arroz"],
+      ["beans", "feijao"],
+      ["juice", "suco"],
+      ["cake", "bolo"],
+      ["egg", "ovo"],
+      ["banana", "banana"],
+      ["cheese", "queijo"]
+    ];
+
+    const foodEntries = [
+      ...foodItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, foodItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...foodItems.slice(0, 9).map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, foodItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "food", "Food", "eng_fo", foodEntries.slice(0, 19)));
+
+    const colorItems = [
+      ["red", "vermelho"],
+      ["blue", "azul"],
+      ["green", "verde"],
+      ["yellow", "amarelo"],
+      ["black", "preto"],
+      ["white", "branco"],
+      ["pink", "rosa"],
+      ["orange", "laranja"],
+      ["purple", "roxo"]
+    ];
+
+    const colorEntries = [
+      ...colorItems.map(([en, pt]) => makeEntry(`O que significa "${en}"?`, pt, colorItems.map(item => item[1]).filter(v => v !== pt).slice(0, 3), `Em ingles, "${en}" significa "${pt}".`, (v) => v)),
+      ...colorItems.map(([en, pt]) => makeEntry(`Qual palavra em ingles significa "${pt}"?`, en, colorItems.map(item => item[0]).filter(v => v !== en).slice(-3), `A traducao correta de "${pt}" e "${en}".`, (v) => v))
+    ];
+    englishQuestions.push(...buildQuestions("ingles", "colors", "Colors", "eng_co", colorEntries.slice(0, 18)));
+
+    return englishQuestions;
+  }
+
+  const englishQuestions = generateEnglishQuestions();
+  questions.push(...englishQuestions);
 
 const geographyQuestions = [
     ...buildQuestions("geografia", "povos_espacos", "Os Povos e os Espacos em que Vivem", "geo_pe", [
