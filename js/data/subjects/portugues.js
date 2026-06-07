@@ -1,0 +1,3071 @@
+window.QuestionsDataSources = window.QuestionsDataSources || {};
+
+window.QuestionsDataSources.portugues = {
+  "subjectMeta": {
+    "name": "Português",
+    "icon": "📖",
+    "available": true
+  },
+  "topicMeta": {
+    "interpretacao": {
+      "name": "Interpretação de Texto",
+      "icon": "📖"
+    },
+    "ordem_alfabetica": {
+      "name": "Ordem Alfabética",
+      "icon": "🔤"
+    },
+    "classificacao_silabica": {
+      "name": "Classificação Silábica",
+      "icon": "🔡"
+    },
+    "encontros_vocais": {
+      "name": "Encontros Vocálicos",
+      "icon": "🎶"
+    },
+    "letra_z": {
+      "name": "A letra Z",
+      "icon": "⚡"
+    },
+    "letra_s": {
+      "name": "A letra S",
+      "icon": "🔠"
+    },
+    "substantivos_masculinos": {
+      "name": "Substantivos Masculinos",
+      "icon": "👦"
+    },
+    "substantivos_femininos": {
+      "name": "Substantivos Femininos",
+      "icon": "👧"
+    },
+    "substantivos_simples_compostos": {
+      "name": "Substantivos Simples e Compostos",
+      "icon": "➕"
+    },
+    "substantivos_coletivos": {
+      "name": "Substantivos Coletivos",
+      "icon": "🧩"
+    },
+    "atividades_adicionais": {
+      "name": "Atividades Adicionais",
+      "icon": "✅"
+    }
+  },
+  "questions": [
+    {
+      "id": "int_001",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Pedro e Ana foram ao parque no domingo. Eles brincaram no balanço e no escorregador. Depois, comeram sorvete de chocolate. Foi um dia muito divertido!",
+      "question": "Onde Pedro e Ana foram no domingo?",
+      "options": [
+        "À praia",
+        "Ao parque",
+        "À escola",
+        "Ao shopping"
+      ],
+      "correctIndex": 1,
+      "explanation": "O texto diz claramente: 'Pedro e Ana foram ao parque no domingo.'",
+      "wrongExplanations": {
+        "0": "À praia não é a resposta correta.",
+        "2": "À escola não é a resposta correta.",
+        "3": "Ao shopping não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_002",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Pedro e Ana foram ao parque no domingo. Eles brincaram no balanço e no escorregador. Depois, comeram sorvete de chocolate. Foi um dia muito divertido!",
+      "question": "O que Pedro e Ana fizeram no parque?",
+      "options": [
+        "Nadaram na piscina",
+        "Jogaram futebol",
+        "Brincaram no balanço e no escorregador",
+        "Desenharam"
+      ],
+      "correctIndex": 2,
+      "explanation": "O texto diz: 'Eles brincaram no balanço e no escorregador.'",
+      "wrongExplanations": {
+        "0": "Nadaram na piscina não é a resposta correta.",
+        "1": "Jogaram futebol não é a resposta correta.",
+        "3": "Desenharam não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_003",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Pedro e Ana foram ao parque no domingo. Eles brincaram no balanço e no escorregador. Depois, comeram sorvete de chocolate. Foi um dia muito divertido!",
+      "question": "Qual sabor de sorvete Pedro e Ana comeram?",
+      "options": [
+        "Morango",
+        "Baunilha",
+        "Limão",
+        "Chocolate"
+      ],
+      "correctIndex": 3,
+      "explanation": "O texto diz: 'comeram sorvete de chocolate.'",
+      "wrongExplanations": {
+        "0": "Morango não é a resposta correta.",
+        "1": "Baunilha não é a resposta correta.",
+        "2": "Limão não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_004",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Pedro e Ana foram ao parque no domingo. Eles brincaram no balanço e no escorregador. Depois, comeram sorvete de chocolate. Foi um dia muito divertido!",
+      "question": "Como foi o dia de Pedro e Ana?",
+      "options": [
+        "Chato e triste",
+        "Cansativo",
+        "Muito divertido",
+        "Assustador"
+      ],
+      "correctIndex": 2,
+      "explanation": "O texto termina dizendo: 'Foi um dia muito divertido!'",
+      "wrongExplanations": {
+        "0": "Chato e triste não é a resposta correta.",
+        "1": "Cansativo não é a resposta correta.",
+        "3": "Assustador não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_005",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Pedro e Ana foram ao parque no domingo. Eles brincaram no balanço e no escorregador. Depois, comeram sorvete de chocolate. Foi um dia muito divertido!",
+      "question": "Em que dia da semana foi o passeio?",
+      "options": [
+        "Sábado",
+        "Segunda-feira",
+        "Domingo",
+        "Sexta-feira"
+      ],
+      "correctIndex": 2,
+      "explanation": "O texto começa dizendo 'foram ao parque no domingo'.",
+      "wrongExplanations": {
+        "0": "Sábado não é a resposta correta.",
+        "1": "Segunda-feira não é a resposta correta.",
+        "3": "Sexta-feira não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_006",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "O cachorro Rex estava com fome. Ele latiu para chamar a dona. A dona foi até a cozinha e colocou ração na tigela de Rex. O cachorro abanou o rabo feliz.",
+      "question": "Como se chama o cachorro do texto?",
+      "options": [
+        "Bob",
+        "Rex",
+        "Thor",
+        "Pluto"
+      ],
+      "correctIndex": 1,
+      "explanation": "O texto diz: 'O cachorro Rex estava com fome.'",
+      "wrongExplanations": {
+        "0": "Bob não é a resposta correta.",
+        "2": "Thor não é a resposta correta.",
+        "3": "Pluto não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_007",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "O cachorro Rex estava com fome. Ele latiu para chamar a dona. A dona foi até a cozinha e colocou ração na tigela de Rex. O cachorro abanou o rabo feliz.",
+      "question": "Por que Rex latiu?",
+      "options": [
+        "Para brincar",
+        "Porque estava assustado",
+        "Para chamar a dona",
+        "Porque viu outro cachorro"
+      ],
+      "correctIndex": 2,
+      "explanation": "O texto diz: 'Ele latiu para chamar a dona.'",
+      "wrongExplanations": {
+        "0": "Para brincar não é a resposta correta.",
+        "1": "Porque estava assustado não é a resposta correta.",
+        "3": "Porque viu outro cachorro não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_008",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "O cachorro Rex estava com fome. Ele latiu para chamar a dona. A dona foi até a cozinha e colocou ração na tigela de Rex. O cachorro abanou o rabo feliz.",
+      "question": "O que a dona colocou na tigela de Rex?",
+      "options": [
+        "Água",
+        "Leite",
+        "Osso",
+        "Ração"
+      ],
+      "correctIndex": 3,
+      "explanation": "A dona colocou ração na tigela de Rex.",
+      "wrongExplanations": {
+        "0": "Água não é a resposta correta.",
+        "1": "Leite não é a resposta correta.",
+        "2": "Osso não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_009",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "O cachorro Rex estava com fome. Ele latiu para chamar a dona. A dona foi até a cozinha e colocou ração na tigela de Rex. O cachorro abanou o rabo feliz.",
+      "question": "Como Rex ficou depois de comer?",
+      "options": [
+        "Triste",
+        "Feliz",
+        "Com fome",
+        "Assustado"
+      ],
+      "correctIndex": 1,
+      "explanation": "O texto diz que o cachorro abanou o rabo feliz.",
+      "wrongExplanations": {
+        "0": "Triste não é a resposta correta.",
+        "2": "Com fome não é a resposta correta.",
+        "3": "Assustado não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_010",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "O cachorro Rex estava com fome. Ele latiu para chamar a dona. A dona foi até a cozinha e colocou ração na tigela de Rex. O cachorro abanou o rabo feliz.",
+      "question": "Onde a dona foi buscar a ração?",
+      "options": [
+        "No quarto",
+        "Na cozinha",
+        "No banheiro",
+        "Na sala"
+      ],
+      "correctIndex": 1,
+      "explanation": "O texto diz 'A dona foi até a cozinha e colocou ração'.",
+      "wrongExplanations": {
+        "0": "No quarto não é a resposta correta.",
+        "2": "No banheiro não é a resposta correta.",
+        "3": "Na sala não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_011",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Flora adorava estudar as plantas do jardim. Um dia, ela encontrou uma borboleta azul e resolveu desenhá-la. Quando terminou, mostrou o desenho para a mãe. A mãe elogiou: 'Está muito bonito'.",
+      "question": "O que Flora encontrou no jardim?",
+      "options": [
+        "Uma joaninha",
+        "Uma flor",
+        "Uma borboleta azul",
+        "Um pássaro"
+      ],
+      "correctIndex": 2,
+      "explanation": "O texto diz que Flora encontrou uma borboleta azul.",
+      "wrongExplanations": {
+        "0": "Uma joaninha não é a resposta correta.",
+        "1": "Uma flor não é a resposta correta.",
+        "3": "Um pássaro não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_012",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Flora adorava estudar as plantas do jardim. Um dia, ela encontrou uma borboleta azul e resolveu desenhá-la. Quando terminou, mostrou o desenho para a mãe. A mãe elogiou: 'Está muito bonito'.",
+      "question": "O que Flora fez com a borboleta?",
+      "options": [
+        "Cantou para ela",
+        "Desenhou-a",
+        "Comeu-a",
+        "Pegou-a"
+      ],
+      "correctIndex": 1,
+      "explanation": "O texto diz que ela resolveu desenhá-la.",
+      "wrongExplanations": {
+        "0": "Cantou para ela não é a resposta correta.",
+        "2": "Comeu-a não é a resposta correta.",
+        "3": "Pegou-a não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_013",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Flora adorava estudar as plantas do jardim. Um dia, ela encontrou uma borboleta azul e resolveu desenhá-la. Quando terminou, mostrou o desenho para a mãe. A mãe elogiou: 'Está muito bonito'.",
+      "question": "Quem elogiou o desenho de Flora?",
+      "options": [
+        "O pai",
+        "A irmã",
+        "A mãe",
+        "A amiga"
+      ],
+      "correctIndex": 2,
+      "explanation": "O texto diz: 'A mãe elogiou'.",
+      "wrongExplanations": {
+        "0": "O pai não é a resposta correta.",
+        "1": "A irmã não é a resposta correta.",
+        "3": "A amiga não é a resposta correta."
+      }
+    },
+    {
+      "id": "int_014",
+      "subject": "portugues",
+      "topic": "interpretacao",
+      "topicName": "Interpretação de Texto",
+      "text": "Flora adorava estudar as plantas do jardim. Um dia, ela encontrou uma borboleta azul e resolveu desenhá-la. Quando terminou, mostrou o desenho para a mãe. A mãe elogiou: 'Está muito bonito'.",
+      "question": "Como foi o desenho de Flora?",
+      "options": [
+        "Muito feio",
+        "Muito bonito",
+        "Medíocre",
+        "Não terminou"
+      ],
+      "correctIndex": 1,
+      "explanation": "A mãe elogiou: 'Está muito bonito'.",
+      "wrongExplanations": {
+        "0": "Muito feio não é a resposta correta.",
+        "2": "Medíocre não é a resposta correta.",
+        "3": "Não terminou não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_015",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem primeiro em ordem alfabética?",
+      "options": [
+        "bola",
+        "amigo",
+        "carro",
+        "abacate"
+      ],
+      "correctIndex": 3,
+      "explanation": "'abacate' vem antes das outras no alfabeto.",
+      "wrongExplanations": {
+        "0": "bola não é a resposta correta.",
+        "1": "amigo não é a resposta correta.",
+        "2": "carro não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_016",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem por último em ordem alfabética?",
+      "options": [
+        "uva",
+        "urso",
+        "uma",
+        "unha"
+      ],
+      "correctIndex": 0,
+      "explanation": "'uva' vem por último entre essas opções.",
+      "wrongExplanations": {
+        "1": "urso não é a resposta correta.",
+        "2": "uma não é a resposta correta.",
+        "3": "unha não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_017",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra aparece primeiro no alfabeto?",
+      "options": [
+        "zebra",
+        "xadrez",
+        "xale",
+        "xícara"
+      ],
+      "correctIndex": 1,
+      "explanation": "'xadrez' vem antes de 'xale' e 'xícara'.",
+      "wrongExplanations": {
+        "0": "zebra não é a resposta correta.",
+        "2": "xale não é a resposta correta.",
+        "3": "xícara não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_018",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra aparece antes no dicionário?",
+      "options": [
+        "janela",
+        "laranja",
+        "jardim",
+        "joia"
+      ],
+      "correctIndex": 0,
+      "explanation": "'janela' vem antes de 'jardim', 'joia' e 'laranja'.",
+      "wrongExplanations": {
+        "1": "laranja não é a resposta correta.",
+        "2": "jardim não é a resposta correta.",
+        "3": "joia não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_019",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem primeiro em ordem alfabética?",
+      "options": [
+        "cego",
+        "cebola",
+        "celular",
+        "cedro"
+      ],
+      "correctIndex": 1,
+      "explanation": "'cebola' vem antes de 'cedro', 'cego' e 'celular'.",
+      "wrongExplanations": {
+        "0": "cego não é a resposta correta.",
+        "2": "celular não é a resposta correta.",
+        "3": "cedro não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_020",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem por último em ordem alfabética?",
+      "options": [
+        "manga",
+        "mais",
+        "mala",
+        "maçã"
+      ],
+      "correctIndex": 0,
+      "explanation": "'manga' vem por último entre essas palavras.",
+      "wrongExplanations": {
+        "1": "mais não é a resposta correta.",
+        "2": "mala não é a resposta correta.",
+        "3": "maçã não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_021",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra aparece primeiro?",
+      "options": [
+        "amor",
+        "amigo",
+        "amarelo",
+        "amanhã"
+      ],
+      "correctIndex": 3,
+      "explanation": "'amanhã' vem antes das outras palavras que começam com 'am'.",
+      "wrongExplanations": {
+        "0": "amor não é a resposta correta.",
+        "1": "amigo não é a resposta correta.",
+        "2": "amarelo não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_022",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra aparece primeiro no alfabeto?",
+      "options": [
+        "bola",
+        "balão",
+        "bala",
+        "barco"
+      ],
+      "correctIndex": 2,
+      "explanation": "'bala' vem antes de 'balão', 'bola', e 'barco'.",
+      "wrongExplanations": {
+        "0": "bola não é a resposta correta.",
+        "1": "balão não é a resposta correta.",
+        "3": "barco não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_023",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem primeiro em ordem alfabética?",
+      "options": [
+        "pato",
+        "pata",
+        "paz",
+        "pano"
+      ],
+      "correctIndex": 3,
+      "explanation": "'pano' vem antes de 'pata', 'pato' e 'paz'.",
+      "wrongExplanations": {
+        "0": "pato não é a resposta correta.",
+        "1": "pata não é a resposta correta.",
+        "2": "paz não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_024",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem por último em ordem alfabética?",
+      "options": [
+        "lápis",
+        "lanterna",
+        "laranja",
+        "lago"
+      ],
+      "correctIndex": 2,
+      "explanation": "'laranja' vem por último entre essas palavras.",
+      "wrongExplanations": {
+        "0": "lápis não é a resposta correta.",
+        "1": "lanterna não é a resposta correta.",
+        "3": "lago não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_025",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra aparece antes?",
+      "options": [
+        "rato",
+        "rampa",
+        "raridade",
+        "raio"
+      ],
+      "correctIndex": 3,
+      "explanation": "'raio' vem antes de 'rampa', 'raridade' e 'rato'.",
+      "wrongExplanations": {
+        "0": "rato não é a resposta correta.",
+        "1": "rampa não é a resposta correta.",
+        "2": "raridade não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_026",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem por último em ordem alfabética?",
+      "options": [
+        "sapo",
+        "sala",
+        "saga",
+        "sinal"
+      ],
+      "correctIndex": 3,
+      "explanation": "'sinal' vem por último entre essas opções.",
+      "wrongExplanations": {
+        "0": "sapo não é a resposta correta.",
+        "1": "sala não é a resposta correta.",
+        "2": "saga não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_027",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra vem primeiro no alfabeto?",
+      "options": [
+        "uva",
+        "urso",
+        "umbigo",
+        "uvas"
+      ],
+      "correctIndex": 2,
+      "explanation": "'umbigo' vem antes de 'urso', 'uva', e 'uvas'.",
+      "wrongExplanations": {
+        "0": "uva não é a resposta correta.",
+        "1": "urso não é a resposta correta.",
+        "3": "uvas não é a resposta correta."
+      }
+    },
+    {
+      "id": "ord_028",
+      "subject": "portugues",
+      "topic": "ordem_alfabetica",
+      "topicName": "Ordem Alfabética",
+      "question": "Qual palavra aparece primeiro?",
+      "options": [
+        "foca",
+        "fofo",
+        "fogo",
+        "foge"
+      ],
+      "correctIndex": 0,
+      "explanation": "'foca' vem antes de 'fofo', 'fogo', e 'foge'.",
+      "wrongExplanations": {
+        "1": "fofo não é a resposta correta.",
+        "2": "fogo não é a resposta correta.",
+        "3": "foge não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_029",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem 2 sílabas?",
+      "options": [
+        "casa",
+        "janela",
+        "amigo",
+        "paralelepípedo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'casa' tem duas sílabas: ca-sa.",
+      "wrongExplanations": {
+        "1": "janela não é a resposta correta.",
+        "2": "amigo não é a resposta correta.",
+        "3": "paralelepípedo não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_030",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem 3 sílabas?",
+      "options": [
+        "sol",
+        "flor",
+        "banana",
+        "paz"
+      ],
+      "correctIndex": 2,
+      "explanation": "'banana' tem três sílabas: ba-na-na.",
+      "wrongExplanations": {
+        "0": "sol não é a resposta correta.",
+        "1": "flor não é a resposta correta.",
+        "3": "paz não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_031",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra é dissílaba?",
+      "options": [
+        "livro",
+        "menino",
+        "cadeira",
+        "janela"
+      ],
+      "correctIndex": 0,
+      "explanation": "'livro' tem duas sílabas: li-vro.",
+      "wrongExplanations": {
+        "1": "menino não é a resposta correta.",
+        "2": "cadeira não é a resposta correta.",
+        "3": "janela não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_032",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra é trissílaba?",
+      "options": [
+        "gato",
+        "cachorro",
+        "sol",
+        "cama"
+      ],
+      "correctIndex": 1,
+      "explanation": "'cachorro' tem três sílabas: ca-chor-ro.",
+      "wrongExplanations": {
+        "0": "gato não é a resposta correta.",
+        "2": "sol não é a resposta correta.",
+        "3": "cama não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_033",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem sílaba tônica na última sílaba?",
+      "options": [
+        "café",
+        "mesa",
+        "fácil",
+        "janela"
+      ],
+      "correctIndex": 0,
+      "explanation": "'café' é oxítona e a sílaba tônica é 'fé'.",
+      "wrongExplanations": {
+        "1": "mesa não é a resposta correta.",
+        "2": "fácil não é a resposta correta.",
+        "3": "janela não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_034",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem sílaba tônica na penúltima sílaba?",
+      "options": [
+        "amigo",
+        "café",
+        "papel",
+        "jornal"
+      ],
+      "correctIndex": 0,
+      "explanation": "'amigo' é paroxítona e a sílaba tônica é 'mi'.",
+      "wrongExplanations": {
+        "1": "café não é a resposta correta.",
+        "2": "papel não é a resposta correta.",
+        "3": "jornal não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_035",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra é proparoxítona?",
+      "options": [
+        "música",
+        "casa",
+        "futebol",
+        "samba"
+      ],
+      "correctIndex": 0,
+      "explanation": "'música' é proparoxítona.",
+      "wrongExplanations": {
+        "1": "casa não é a resposta correta.",
+        "2": "futebol não é a resposta correta.",
+        "3": "samba não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_036",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem sílaba tônica na antepenúltima sílaba?",
+      "options": [
+        "médico",
+        "amigo",
+        "cidade",
+        "futebol"
+      ],
+      "correctIndex": 0,
+      "explanation": "'médico' é proparoxítona.",
+      "wrongExplanations": {
+        "1": "amigo não é a resposta correta.",
+        "2": "cidade não é a resposta correta.",
+        "3": "futebol não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_037",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra é monossílaba?",
+      "options": [
+        "mar",
+        "tigre",
+        "cavalo",
+        "verdade"
+      ],
+      "correctIndex": 0,
+      "explanation": "'mar' tem uma sílaba.",
+      "wrongExplanations": {
+        "1": "tigre não é a resposta correta.",
+        "2": "cavalo não é a resposta correta.",
+        "3": "verdade não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_038",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem duas sílabas?",
+      "options": [
+        "sol",
+        "casa",
+        "flor",
+        "paz"
+      ],
+      "correctIndex": 1,
+      "explanation": "'casa' tem duas sílabas: ca-sa.",
+      "wrongExplanations": {
+        "0": "sol não é a resposta correta.",
+        "2": "flor não é a resposta correta.",
+        "3": "paz não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_039",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra é trissílaba?",
+      "options": [
+        "escola",
+        "junho",
+        "pode",
+        "fácil"
+      ],
+      "correctIndex": 0,
+      "explanation": "'escola' tem três sílabas.",
+      "wrongExplanations": {
+        "1": "junho não é a resposta correta.",
+        "2": "pode não é a resposta correta.",
+        "3": "fácil não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_040",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem sílaba tônica na última sílaba?",
+      "options": [
+        "você",
+        "amigo",
+        "mesa",
+        "carro"
+      ],
+      "correctIndex": 0,
+      "explanation": "'você' é oxítona com acento na última sílaba.",
+      "wrongExplanations": {
+        "1": "amigo não é a resposta correta.",
+        "2": "mesa não é a resposta correta.",
+        "3": "carro não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_041",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem sílaba tônica na penúltima sílaba?",
+      "options": [
+        "telefone",
+        "vovó",
+        "papel",
+        "paz"
+      ],
+      "correctIndex": 0,
+      "explanation": "'telefone' é paroxítona.",
+      "wrongExplanations": {
+        "1": "vovó não é a resposta correta.",
+        "2": "papel não é a resposta correta.",
+        "3": "paz não é a resposta correta."
+      }
+    },
+    {
+      "id": "sil_042",
+      "subject": "portugues",
+      "topic": "classificacao_silabica",
+      "topicName": "Classificação Silábica",
+      "question": "Qual palavra tem semivogal?",
+      "options": [
+        "água",
+        "gato",
+        "mesa",
+        "pato"
+      ],
+      "correctIndex": 0,
+      "explanation": "'água' tem semivogal no encontro 'ua'.",
+      "wrongExplanations": {
+        "1": "gato não é a resposta correta.",
+        "2": "mesa não é a resposta correta.",
+        "3": "pato não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_043",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra contém um encontro vocálico?",
+      "options": [
+        "pai",
+        "polo",
+        "mesa",
+        "bom"
+      ],
+      "correctIndex": 0,
+      "explanation": "'pai' contém o encontro vocálico 'ai'.",
+      "wrongExplanations": {
+        "1": "polo não é a resposta correta.",
+        "2": "mesa não é a resposta correta.",
+        "3": "bom não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_044",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual opção mostra um encontro vocálico?",
+      "options": [
+        "ta",
+        "mai",
+        "ca",
+        "pé"
+      ],
+      "correctIndex": 1,
+      "explanation": "'mai' forma um encontro vocálico, como em 'maio'.",
+      "wrongExplanations": {
+        "0": "ta não é a resposta correta.",
+        "2": "ca não é a resposta correta.",
+        "3": "pé não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_045",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra tem ditongo?",
+      "options": [
+        "sai",
+        "casa",
+        "copo",
+        "luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sai' tem ditongo 'ai'.",
+      "wrongExplanations": {
+        "1": "casa não é a resposta correta.",
+        "2": "copo não é a resposta correta.",
+        "3": "luz não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_046",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra tem hiato?",
+      "options": [
+        "saída",
+        "pai",
+        "luz",
+        "mão"
+      ],
+      "correctIndex": 0,
+      "explanation": "'saída' tem hiato entre 'a' e 'í'.",
+      "wrongExplanations": {
+        "1": "pai não é a resposta correta.",
+        "2": "luz não é a resposta correta.",
+        "3": "mão não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_047",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual par de vogais forma encontro vocálico?",
+      "options": [
+        "ta",
+        "pai",
+        "pé",
+        "sol"
+      ],
+      "correctIndex": 1,
+      "explanation": "'pai' tem encontro vocálico 'ai'.",
+      "wrongExplanations": {
+        "0": "ta não é a resposta correta.",
+        "2": "pé não é a resposta correta.",
+        "3": "sol não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_048",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra apresenta ditongo?",
+      "options": [
+        "cai",
+        "cela",
+        "cabo",
+        "cara"
+      ],
+      "correctIndex": 0,
+      "explanation": "'cai' apresenta ditongo 'ai'.",
+      "wrongExplanations": {
+        "1": "cela não é a resposta correta.",
+        "2": "cabo não é a resposta correta.",
+        "3": "cara não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_049",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra apresenta hiato?",
+      "options": [
+        "poesia",
+        "pao",
+        "pato",
+        "pare"
+      ],
+      "correctIndex": 0,
+      "explanation": "'poesia' tem hiato entre 'o' e 'e'.",
+      "wrongExplanations": {
+        "1": "pao não é a resposta correta.",
+        "2": "pato não é a resposta correta.",
+        "3": "pare não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_050",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra contém encontro vocálico?",
+      "options": [
+        "coelho",
+        "carro",
+        "pede",
+        "casa"
+      ],
+      "correctIndex": 0,
+      "explanation": "'coelho' tem encontro vocálico 'oe'.",
+      "wrongExplanations": {
+        "1": "carro não é a resposta correta.",
+        "2": "pede não é a resposta correta.",
+        "3": "casa não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_051",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra contém ditongo crescente?",
+      "options": [
+        "quase",
+        "cama",
+        "vento",
+        "festa"
+      ],
+      "correctIndex": 0,
+      "explanation": "'quase' contém o ditongo crescente 'ua'.",
+      "wrongExplanations": {
+        "1": "cama não é a resposta correta.",
+        "2": "vento não é a resposta correta.",
+        "3": "festa não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_052",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra apresenta hiato?",
+      "options": [
+        "saúde",
+        "mesa",
+        "lobo",
+        "sinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "'saúde' tem hiato entre 'a' e 'ú'.",
+      "wrongExplanations": {
+        "1": "mesa não é a resposta correta.",
+        "2": "lobo não é a resposta correta.",
+        "3": "sinal não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_053",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra tem encontro vocálico?",
+      "options": [
+        "dia",
+        "livro",
+        "pipa",
+        "rato"
+      ],
+      "correctIndex": 0,
+      "explanation": "'dia' tem encontro vocálico 'ia'.",
+      "wrongExplanations": {
+        "1": "livro não é a resposta correta.",
+        "2": "pipa não é a resposta correta.",
+        "3": "rato não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_054",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra usa encontro vocálico?",
+      "options": [
+        "feio",
+        "fato",
+        "feso",
+        "funo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'feio' tem encontro vocálico 'ei'.",
+      "wrongExplanations": {
+        "1": "fato não é a resposta correta.",
+        "2": "feso não é a resposta correta.",
+        "3": "funo não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_055",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra tem encontro vocálico nasal?",
+      "options": [
+        "mãe",
+        "mesa",
+        "bola",
+        "cabo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'mãe' tem encontro vocálico nasal entre 'ã' e 'e'.",
+      "wrongExplanations": {
+        "1": "mesa não é a resposta correta.",
+        "2": "bola não é a resposta correta.",
+        "3": "cabo não é a resposta correta."
+      }
+    },
+    {
+      "id": "enc_056",
+      "subject": "portugues",
+      "topic": "encontros_vocais",
+      "topicName": "Encontros Vocálicos",
+      "question": "Qual palavra tem hiato?",
+      "options": [
+        "cooperar",
+        "copo",
+        "casa",
+        "canto"
+      ],
+      "correctIndex": 0,
+      "explanation": "'cooperar' tem hiato entre 'o' e 'o'.",
+      "wrongExplanations": {
+        "1": "copo não é a resposta correta.",
+        "2": "casa não é a resposta correta.",
+        "3": "canto não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_057",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra usa 'z' corretamente?",
+      "options": [
+        "azul",
+        "asul",
+        "azulh",
+        "azur"
+      ],
+      "correctIndex": 0,
+      "explanation": "'azul' usa 'z' corretamente.",
+      "wrongExplanations": {
+        "1": "asul não é a resposta correta.",
+        "2": "azulh não é a resposta correta.",
+        "3": "azur não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_058",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra é escrita com 'z'?",
+      "options": [
+        "zero",
+        "sero",
+        "zaro",
+        "saro"
+      ],
+      "correctIndex": 0,
+      "explanation": "'zero' é escrita com 'z'.",
+      "wrongExplanations": {
+        "1": "sero não é a resposta correta.",
+        "2": "zaro não é a resposta correta.",
+        "3": "saro não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_059",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual opção contém a letra Z?",
+      "options": [
+        "casa",
+        "zebra",
+        "seda",
+        "nada"
+      ],
+      "correctIndex": 1,
+      "explanation": "'zebra' contém a letra Z.",
+      "wrongExplanations": {
+        "0": "casa não é a resposta correta.",
+        "2": "seda não é a resposta correta.",
+        "3": "nada não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_060",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra não usa a letra Z?",
+      "options": [
+        "zangado",
+        "casa",
+        "azeite",
+        "zona"
+      ],
+      "correctIndex": 1,
+      "explanation": "'casa' não usa a letra Z.",
+      "wrongExplanations": {
+        "0": "zangado não é a resposta correta.",
+        "2": "azeite não é a resposta correta.",
+        "3": "zona não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_061",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra é escrita com Z no final?",
+      "options": [
+        "luz",
+        "luzs",
+        "luze",
+        "lu"
+      ],
+      "correctIndex": 0,
+      "explanation": "'luz' termina com Z.",
+      "wrongExplanations": {
+        "1": "luzs não é a resposta correta.",
+        "2": "luze não é a resposta correta.",
+        "3": "lu não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_062",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra usa Z no meio?",
+      "options": [
+        "arroz",
+        "luz",
+        "casa",
+        "fazer"
+      ],
+      "correctIndex": 3,
+      "explanation": "'fazer' usa Z no meio da palavra.",
+      "wrongExplanations": {
+        "0": "arroz não é a resposta correta.",
+        "1": "luz não é a resposta correta.",
+        "2": "casa não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_063",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra começa com Z?",
+      "options": [
+        "zebra",
+        "cabra",
+        "sabra",
+        "xebra"
+      ],
+      "correctIndex": 0,
+      "explanation": "'zebra' começa com Z.",
+      "wrongExplanations": {
+        "1": "cabra não é a resposta correta.",
+        "2": "sabra não é a resposta correta.",
+        "3": "xebra não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_064",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra é escrita com Z?",
+      "options": [
+        "azeite",
+        "aseite",
+        "azite",
+        "asite"
+      ],
+      "correctIndex": 0,
+      "explanation": "'azeite' é escrita com Z.",
+      "wrongExplanations": {
+        "1": "aseite não é a resposta correta.",
+        "2": "azite não é a resposta correta.",
+        "3": "asite não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_065",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual opção é correta com Z?",
+      "options": [
+        "zero",
+        "xero",
+        "cero",
+        "zaro"
+      ],
+      "correctIndex": 0,
+      "explanation": "'zero' é escrita com Z.",
+      "wrongExplanations": {
+        "1": "xero não é a resposta correta.",
+        "2": "cero não é a resposta correta.",
+        "3": "zaro não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_066",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra termina com Z?",
+      "options": [
+        "luz",
+        "luzs",
+        "lúz",
+        "luzão"
+      ],
+      "correctIndex": 0,
+      "explanation": "'luz' termina com Z.",
+      "wrongExplanations": {
+        "1": "luzs não é a resposta correta.",
+        "2": "lúz não é a resposta correta.",
+        "3": "luzão não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_067",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra usa Z no começo e é comum?",
+      "options": [
+        "zebra",
+        "sera",
+        "xebra",
+        "zuma"
+      ],
+      "correctIndex": 0,
+      "explanation": "'zebra' começa com Z.",
+      "wrongExplanations": {
+        "1": "sera não é a resposta correta.",
+        "2": "xebra não é a resposta correta.",
+        "3": "zuma não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_068",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra contém Z e é um som de Z?",
+      "options": [
+        "zelo",
+        "celo",
+        "xelo",
+        "zalo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'zelo' usa Z e tem som de Z.",
+      "wrongExplanations": {
+        "1": "celo não é a resposta correta.",
+        "2": "xelo não é a resposta correta.",
+        "3": "zalo não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_069",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra com Z está correta?",
+      "options": [
+        "casa",
+        "zara",
+        "zebra",
+        "zic"
+      ],
+      "correctIndex": 2,
+      "explanation": "'zebra' é uma palavra correta com Z.",
+      "wrongExplanations": {
+        "0": "casa não é a resposta correta.",
+        "1": "zara não é a resposta correta.",
+        "3": "zic não é a resposta correta."
+      }
+    },
+    {
+      "id": "lez_070",
+      "subject": "portugues",
+      "topic": "letra_z",
+      "topicName": "A letra Z",
+      "question": "Qual palavra usa Z no meio de 'arroz'?",
+      "options": [
+        "arroz",
+        "aroz",
+        "arozz",
+        "aros"
+      ],
+      "correctIndex": 0,
+      "explanation": "'arroz' usa Z no meio da palavra.",
+      "wrongExplanations": {
+        "1": "aroz não é a resposta correta.",
+        "2": "arozz não é a resposta correta.",
+        "3": "aros não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_071",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra é escrita com S no começo?",
+      "options": [
+        "sapato",
+        "zapato",
+        "xapato",
+        "sopato"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sapato' começa com S.",
+      "wrongExplanations": {
+        "1": "zapato não é a resposta correta.",
+        "2": "xapato não é a resposta correta.",
+        "3": "sopato não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_072",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra usa S no meio?",
+      "options": [
+        "casa",
+        "cata",
+        "canto",
+        "cano"
+      ],
+      "correctIndex": 0,
+      "explanation": "'casa' usa S no meio.",
+      "wrongExplanations": {
+        "1": "cata não é a resposta correta.",
+        "2": "canto não é a resposta correta.",
+        "3": "cano não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_073",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra está correta com S?",
+      "options": [
+        "sapo",
+        "zapo",
+        "xapo",
+        "sappo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sapo' usa S corretamente.",
+      "wrongExplanations": {
+        "1": "zapo não é a resposta correta.",
+        "2": "xapo não é a resposta correta.",
+        "3": "sappo não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_074",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra está escrita corretamente com SS?",
+      "options": [
+        "massa",
+        "masa",
+        "messa",
+        "masso"
+      ],
+      "correctIndex": 0,
+      "explanation": "'massa' é uma palavra escrita corretamente com SS.",
+      "wrongExplanations": {
+        "1": "masa não é a resposta correta.",
+        "2": "messa não é a resposta correta.",
+        "3": "masso não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_075",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra termina com S?",
+      "options": [
+        "lápis",
+        "lapi",
+        "lapiz",
+        "lapiseira"
+      ],
+      "correctIndex": 0,
+      "explanation": "'lápis' termina com S.",
+      "wrongExplanations": {
+        "1": "lapi não é a resposta correta.",
+        "2": "lapiz não é a resposta correta.",
+        "3": "lapiseira não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_076",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra inicia com S?",
+      "options": [
+        "sol",
+        "zol",
+        "xol",
+        "soll"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sol' inicia com S.",
+      "wrongExplanations": {
+        "1": "zol não é a resposta correta.",
+        "2": "xol não é a resposta correta.",
+        "3": "soll não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_077",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra usa S e tem som de Z?",
+      "options": [
+        "mesa",
+        "meza",
+        "meça",
+        "miça"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em 'mesa', a letra S entre vogais tem som de Z.",
+      "wrongExplanations": {
+        "1": "meza não é a resposta correta.",
+        "2": "meça não é a resposta correta.",
+        "3": "miça não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_078",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra é escrita com SS?",
+      "options": [
+        "passo",
+        "paso",
+        "pato",
+        "pase"
+      ],
+      "correctIndex": 0,
+      "explanation": "'passo' é uma palavra escrita corretamente com SS.",
+      "wrongExplanations": {
+        "1": "paso não é a resposta correta.",
+        "2": "pato não é a resposta correta.",
+        "3": "pase não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_079",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra usa S no meio?",
+      "options": [
+        "cas",
+        "caz",
+        "caso",
+        "casz"
+      ],
+      "correctIndex": 2,
+      "explanation": "'caso' usa S no meio da palavra.",
+      "wrongExplanations": {
+        "0": "cas não é a resposta correta.",
+        "1": "caz não é a resposta correta.",
+        "3": "casz não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_080",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra começa com S e é comum?",
+      "options": [
+        "sapo",
+        "zapoo",
+        "xapo",
+        "chapo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sapo' começa com S e é comum.",
+      "wrongExplanations": {
+        "1": "zapoo não é a resposta correta.",
+        "2": "xapo não é a resposta correta.",
+        "3": "chapo não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_081",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra está escrita corretamente com S?",
+      "options": [
+        "sclaro",
+        "escola",
+        "ezcola",
+        "ecola"
+      ],
+      "correctIndex": 1,
+      "explanation": "'escola' é escrita corretamente com S.",
+      "wrongExplanations": {
+        "0": "sclaro não é a resposta correta.",
+        "2": "ezcola não é a resposta correta.",
+        "3": "ecola não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_082",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra tem S no meio de 'ursos'?",
+      "options": [
+        "ursos",
+        "urzos",
+        "urss",
+        "urcos"
+      ],
+      "correctIndex": 0,
+      "explanation": "'ursos' usa S no meio da palavra.",
+      "wrongExplanations": {
+        "1": "urzos não é a resposta correta.",
+        "2": "urss não é a resposta correta.",
+        "3": "urcos não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_083",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra está escrita corretamente com S duplo?",
+      "options": [
+        "passar",
+        "pasar",
+        "pessar",
+        "rassar"
+      ],
+      "correctIndex": 0,
+      "explanation": "'passar' é uma palavra escrita corretamente com S duplo.",
+      "wrongExplanations": {
+        "1": "pasar não é a resposta correta.",
+        "2": "pessar não é a resposta correta.",
+        "3": "rassar não é a resposta correta."
+      }
+    },
+    {
+      "id": "les_084",
+      "subject": "portugues",
+      "topic": "letra_s",
+      "topicName": "A letra S",
+      "question": "Qual palavra usa S e é escrita corretamente?",
+      "options": [
+        "sala",
+        "zala",
+        "xala",
+        "sála"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sala' é escrita corretamente com S.",
+      "wrongExplanations": {
+        "1": "zala não é a resposta correta.",
+        "2": "xala não é a resposta correta.",
+        "3": "sála não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_085",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'menina'?",
+      "options": [
+        "menino",
+        "meninoa",
+        "menininha",
+        "meninão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'menina' é 'menino'.",
+      "wrongExplanations": {
+        "1": "meninoa não é a resposta correta.",
+        "2": "menininha não é a resposta correta.",
+        "3": "meninão não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_086",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'gata'?",
+      "options": [
+        "gato",
+        "gatoo",
+        "gata",
+        "gatal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'gata' é 'gato'.",
+      "wrongExplanations": {
+        "1": "gatoo não é a resposta correta.",
+        "2": "gata não é a resposta correta.",
+        "3": "gatal não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_087",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Escolha o substantivo masculino:",
+      "options": [
+        "menino",
+        "menina",
+        "garota",
+        "menininha"
+      ],
+      "correctIndex": 0,
+      "explanation": "'menino' é um substantivo masculino.",
+      "wrongExplanations": {
+        "1": "menina não é a resposta correta.",
+        "2": "garota não é a resposta correta.",
+        "3": "menininha não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_088",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'rainha'?",
+      "options": [
+        "rei",
+        "reia",
+        "rainho",
+        "rainhão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'rainha' é 'rei'.",
+      "wrongExplanations": {
+        "1": "reia não é a resposta correta.",
+        "2": "rainho não é a resposta correta.",
+        "3": "rainhão não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_089",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'princesa'?",
+      "options": [
+        "príncipe",
+        "princesa",
+        "princesinho",
+        "princeza"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'princesa' é 'príncipe'.",
+      "wrongExplanations": {
+        "1": "princesa não é a resposta correta.",
+        "2": "princesinho não é a resposta correta.",
+        "3": "princeza não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_090",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual palavra é masculina?",
+      "options": [
+        "garoto",
+        "garota",
+        "menina",
+        "garotinha"
+      ],
+      "correctIndex": 0,
+      "explanation": "'garoto' é um substantivo masculino.",
+      "wrongExplanations": {
+        "1": "garota não é a resposta correta.",
+        "2": "menina não é a resposta correta.",
+        "3": "garotinha não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_091",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'duquesa'?",
+      "options": [
+        "duque",
+        "duquesa",
+        "duquinha",
+        "duqueza"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'duquesa' é 'duque'.",
+      "wrongExplanations": {
+        "1": "duquesa não é a resposta correta.",
+        "2": "duquinha não é a resposta correta.",
+        "3": "duqueza não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_092",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'senhora'?",
+      "options": [
+        "senhor",
+        "senhora",
+        "senhorita",
+        "senhoro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'senhora' é 'senhor'.",
+      "wrongExplanations": {
+        "1": "senhora não é a resposta correta.",
+        "2": "senhorita não é a resposta correta.",
+        "3": "senhoro não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_093",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual palavra é o masculino de 'ovelha'?",
+      "options": [
+        "carneiro",
+        "ovelha",
+        "ovelhinha",
+        "ovelhão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'ovelha' é 'carneiro'.",
+      "wrongExplanations": {
+        "1": "ovelha não é a resposta correta.",
+        "2": "ovelhinha não é a resposta correta.",
+        "3": "ovelhão não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_094",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'atriz'?",
+      "options": [
+        "ator",
+        "atriz",
+        "atrice",
+        "atorr"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'atriz' é 'ator'.",
+      "wrongExplanations": {
+        "1": "atriz não é a resposta correta.",
+        "2": "atrice não é a resposta correta.",
+        "3": "atorr não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_095",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'amiga'?",
+      "options": [
+        "amigo",
+        "amiga",
+        "amigoa",
+        "amigal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'amiga' é 'amigo'.",
+      "wrongExplanations": {
+        "1": "amiga não é a resposta correta.",
+        "2": "amigoa não é a resposta correta.",
+        "3": "amigal não é a resposta correta."
+      }
+    },
+    {
+      "id": "mas_096",
+      "subject": "portugues",
+      "topic": "substantivos_masculinos",
+      "topicName": "Substantivos Masculinos",
+      "question": "Qual é o masculino de 'cabeleireira'?",
+      "options": [
+        "cabeleireiro",
+        "cabeleireira",
+        "cabeleireiroa",
+        "cabeleireiral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'cabeleireira' é 'cabeleireiro'.",
+      "wrongExplanations": {
+        "1": "cabeleireira não é a resposta correta.",
+        "2": "cabeleireiroa não é a resposta correta.",
+        "3": "cabeleireiral não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_097",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'menino'?",
+      "options": [
+        "menina",
+        "menino",
+        "meninoa",
+        "meninão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'menino' é 'menina'.",
+      "wrongExplanations": {
+        "1": "menino não é a resposta correta.",
+        "2": "meninoa não é a resposta correta.",
+        "3": "meninão não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_098",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'gato'?",
+      "options": [
+        "gata",
+        "gato",
+        "gatoo",
+        "gatal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'gato' é 'gata'.",
+      "wrongExplanations": {
+        "1": "gato não é a resposta correta.",
+        "2": "gatoo não é a resposta correta.",
+        "3": "gatal não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_099",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Escolha o substantivo feminino:",
+      "options": [
+        "menina",
+        "menino",
+        "meninos",
+        "garoto"
+      ],
+      "correctIndex": 0,
+      "explanation": "'menina' é um substantivo feminino.",
+      "wrongExplanations": {
+        "1": "menino não é a resposta correta.",
+        "2": "meninos não é a resposta correta.",
+        "3": "garoto não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_100",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'rei'?",
+      "options": [
+        "rainha",
+        "reia",
+        "rein",
+        "reino"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'rei' é 'rainha'.",
+      "wrongExplanations": {
+        "1": "reia não é a resposta correta.",
+        "2": "rein não é a resposta correta.",
+        "3": "reino não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_101",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'príncipe'?",
+      "options": [
+        "princesa",
+        "princesinho",
+        "principe",
+        "princeza"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'príncipe' é 'princesa'.",
+      "wrongExplanations": {
+        "1": "princesinho não é a resposta correta.",
+        "2": "principe não é a resposta correta.",
+        "3": "princeza não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_102",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual palavra é feminina?",
+      "options": [
+        "garota",
+        "garoto",
+        "garotão",
+        "menino"
+      ],
+      "correctIndex": 0,
+      "explanation": "'garota' é um substantivo feminino.",
+      "wrongExplanations": {
+        "1": "garoto não é a resposta correta.",
+        "2": "garotão não é a resposta correta.",
+        "3": "menino não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_103",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'duque'?",
+      "options": [
+        "duquesa",
+        "duque",
+        "duqueso",
+        "duquer"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'duque' é 'duquesa'.",
+      "wrongExplanations": {
+        "1": "duque não é a resposta correta.",
+        "2": "duqueso não é a resposta correta.",
+        "3": "duquer não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_104",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'senhor'?",
+      "options": [
+        "senhora",
+        "senhor",
+        "senhoro",
+        "senhorão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'senhor' é 'senhora'.",
+      "wrongExplanations": {
+        "1": "senhor não é a resposta correta.",
+        "2": "senhoro não é a resposta correta.",
+        "3": "senhorão não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_105",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual palavra é o feminino de 'leão'?",
+      "options": [
+        "leoa",
+        "leão",
+        "leoinha",
+        "leonado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'leão' é 'leoa'.",
+      "wrongExplanations": {
+        "1": "leão não é a resposta correta.",
+        "2": "leoinha não é a resposta correta.",
+        "3": "leonado não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_106",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'ator'?",
+      "options": [
+        "atriz",
+        "ator",
+        "atrice",
+        "atorr"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'ator' é 'atriz'.",
+      "wrongExplanations": {
+        "1": "ator não é a resposta correta.",
+        "2": "atrice não é a resposta correta.",
+        "3": "atorr não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_107",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'amigo'?",
+      "options": [
+        "amiga",
+        "amigo",
+        "amigoa",
+        "amigão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'amigo' é 'amiga'.",
+      "wrongExplanations": {
+        "1": "amigo não é a resposta correta.",
+        "2": "amigoa não é a resposta correta.",
+        "3": "amigão não é a resposta correta."
+      }
+    },
+    {
+      "id": "fem_108",
+      "subject": "portugues",
+      "topic": "substantivos_femininos",
+      "topicName": "Substantivos Femininos",
+      "question": "Qual é o feminino de 'cabeleireiro'?",
+      "options": [
+        "cabeleireira",
+        "cabeleireiro",
+        "barbeiro",
+        "cabeleireirão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'cabeleireiro' é 'cabeleireira'.",
+      "wrongExplanations": {
+        "1": "cabeleireiro não é a resposta correta.",
+        "2": "barbeiro não é a resposta correta.",
+        "3": "cabeleireirão não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_109",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é um substantivo simples?",
+      "options": [
+        "casa",
+        "girassol",
+        "pé-de-moleque",
+        "beija-flor"
+      ],
+      "correctIndex": 0,
+      "explanation": "'casa' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "girassol não é a resposta correta.",
+        "2": "pé-de-moleque não é a resposta correta.",
+        "3": "beija-flor não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_110",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é um substantivo composto?",
+      "options": [
+        "girassol",
+        "casa",
+        "gato",
+        "mesa"
+      ],
+      "correctIndex": 0,
+      "explanation": "'girassol' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "casa não é a resposta correta.",
+        "2": "gato não é a resposta correta.",
+        "3": "mesa não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_111",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é composta?",
+      "options": [
+        "beija-flor",
+        "mesa",
+        "caderno",
+        "porta"
+      ],
+      "correctIndex": 0,
+      "explanation": "'beija-flor' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "mesa não é a resposta correta.",
+        "2": "caderno não é a resposta correta.",
+        "3": "porta não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_112",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "janela",
+        "girassol",
+        "pé-de-moleque",
+        "guarda-chuva"
+      ],
+      "correctIndex": 0,
+      "explanation": "'janela' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "girassol não é a resposta correta.",
+        "2": "pé-de-moleque não é a resposta correta.",
+        "3": "guarda-chuva não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_113",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é composta?",
+      "options": [
+        "paraquedas",
+        "casa",
+        "carro",
+        "gato"
+      ],
+      "correctIndex": 0,
+      "explanation": "'paraquedas' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "casa não é a resposta correta.",
+        "2": "carro não é a resposta correta.",
+        "3": "gato não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_114",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "flor",
+        "guarda-chuva",
+        "segunda-feira",
+        "girassol"
+      ],
+      "correctIndex": 0,
+      "explanation": "'flor' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "guarda-chuva não é a resposta correta.",
+        "2": "segunda-feira não é a resposta correta.",
+        "3": "girassol não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_115",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é composta?",
+      "options": [
+        "arco-íris",
+        "amigo",
+        "casa",
+        "mãe"
+      ],
+      "correctIndex": 0,
+      "explanation": "'arco-íris' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "amigo não é a resposta correta.",
+        "2": "casa não é a resposta correta.",
+        "3": "mãe não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_116",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "bolo",
+        "guarda-chuva",
+        "girassol",
+        "pé-de-moleque"
+      ],
+      "correctIndex": 0,
+      "explanation": "'bolo' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "guarda-chuva não é a resposta correta.",
+        "2": "girassol não é a resposta correta.",
+        "3": "pé-de-moleque não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_117",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é composta?",
+      "options": [
+        "segunda-feira",
+        "carro",
+        "sol",
+        "amigo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'segunda-feira' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "carro não é a resposta correta.",
+        "2": "sol não é a resposta correta.",
+        "3": "amigo não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_118",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "mãe",
+        "guarda-chuva",
+        "girassol",
+        "bem-te-vi"
+      ],
+      "correctIndex": 0,
+      "explanation": "'mãe' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "guarda-chuva não é a resposta correta.",
+        "2": "girassol não é a resposta correta.",
+        "3": "bem-te-vi não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_119",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é composta?",
+      "options": [
+        "passatempo",
+        "casa",
+        "rio",
+        "cão"
+      ],
+      "correctIndex": 0,
+      "explanation": "'passatempo' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "casa não é a resposta correta.",
+        "2": "rio não é a resposta correta.",
+        "3": "cão não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_120",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "carro",
+        "girassol",
+        "pé-de-moleque",
+        "guarda-chuva"
+      ],
+      "correctIndex": 0,
+      "explanation": "'carro' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "girassol não é a resposta correta.",
+        "2": "pé-de-moleque não é a resposta correta.",
+        "3": "guarda-chuva não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_121",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é composta?",
+      "options": [
+        "bem-te-vi",
+        "livro",
+        "flor",
+        "casa"
+      ],
+      "correctIndex": 0,
+      "explanation": "'bem-te-vi' é um substantivo composto.",
+      "wrongExplanations": {
+        "1": "livro não é a resposta correta.",
+        "2": "flor não é a resposta correta.",
+        "3": "casa não é a resposta correta."
+      }
+    },
+    {
+      "id": "sim_122",
+      "subject": "portugues",
+      "topic": "substantivos_simples_compostos",
+      "topicName": "Substantivos Simples e Compostos",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "pão",
+        "guarda-chuva",
+        "girassol",
+        "bem-te-vi"
+      ],
+      "correctIndex": 0,
+      "explanation": "'pão' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "guarda-chuva não é a resposta correta.",
+        "2": "girassol não é a resposta correta.",
+        "3": "bem-te-vi não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_123",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de peixes?",
+      "options": [
+        "cardume",
+        "matilha",
+        "bando",
+        "floresta"
+      ],
+      "correctIndex": 0,
+      "explanation": "'cardume' é o coletivo de peixes.",
+      "wrongExplanations": {
+        "1": "matilha não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "floresta não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_124",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de aves?",
+      "options": [
+        "bando",
+        "cardume",
+        "manada",
+        "alcateia"
+      ],
+      "correctIndex": 0,
+      "explanation": "'bando' é o coletivo de aves.",
+      "wrongExplanations": {
+        "1": "cardume não é a resposta correta.",
+        "2": "manada não é a resposta correta.",
+        "3": "alcateia não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_125",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de bois?",
+      "options": [
+        "boiada",
+        "cardume",
+        "bando",
+        "nuvem"
+      ],
+      "correctIndex": 0,
+      "explanation": "'boiada' é o coletivo de bois.",
+      "wrongExplanations": {
+        "1": "cardume não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "nuvem não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_126",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de lobos?",
+      "options": [
+        "alcateia",
+        "cardume",
+        "bando",
+        "manada"
+      ],
+      "correctIndex": 0,
+      "explanation": "'alcateia' é o coletivo de lobos.",
+      "wrongExplanations": {
+        "1": "cardume não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "manada não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_127",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de revistas?",
+      "options": [
+        "banca",
+        "coleção",
+        "revista",
+        "jornal"
+      ],
+      "correctIndex": 1,
+      "explanation": "'coleção' indica um grupo de revistas.",
+      "wrongExplanations": {
+        "0": "banca não é a resposta correta.",
+        "2": "revista não é a resposta correta.",
+        "3": "jornal não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_128",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de árvores?",
+      "options": [
+        "floresta",
+        "cardume",
+        "matilha",
+        "bando"
+      ],
+      "correctIndex": 0,
+      "explanation": "'floresta' é o coletivo de árvores.",
+      "wrongExplanations": {
+        "1": "cardume não é a resposta correta.",
+        "2": "matilha não é a resposta correta.",
+        "3": "bando não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_129",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de livros?",
+      "options": [
+        "biblioteca",
+        "pilha",
+        "prateleira",
+        "livros"
+      ],
+      "correctIndex": 0,
+      "explanation": "'biblioteca' é um conjunto de livros.",
+      "wrongExplanations": {
+        "1": "pilha não é a resposta correta.",
+        "2": "prateleira não é a resposta correta.",
+        "3": "livros não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_130",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de soldados?",
+      "options": [
+        "tropa",
+        "matilha",
+        "bando",
+        "cardume"
+      ],
+      "correctIndex": 0,
+      "explanation": "'tropa' é o coletivo de soldados.",
+      "wrongExplanations": {
+        "1": "matilha não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "cardume não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_131",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de camelos?",
+      "options": [
+        "caravana",
+        "manada",
+        "bando",
+        "cardume"
+      ],
+      "correctIndex": 0,
+      "explanation": "'caravana' é o coletivo de camelos.",
+      "wrongExplanations": {
+        "1": "manada não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "cardume não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_132",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de estrelas?",
+      "options": [
+        "constelação",
+        "floresta",
+        "bando",
+        "manada"
+      ],
+      "correctIndex": 0,
+      "explanation": "'constelação' é o coletivo de estrelas.",
+      "wrongExplanations": {
+        "1": "floresta não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "manada não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_133",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de operários?",
+      "options": [
+        "equipe",
+        "tropa",
+        "bando",
+        "cardume"
+      ],
+      "correctIndex": 0,
+      "explanation": "'equipe' é o coletivo de operários.",
+      "wrongExplanations": {
+        "1": "tropa não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "cardume não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_134",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de músicos?",
+      "options": [
+        "orquestra",
+        "alcateia",
+        "manada",
+        "cardume"
+      ],
+      "correctIndex": 0,
+      "explanation": "'orquestra' é o coletivo de músicos.",
+      "wrongExplanations": {
+        "1": "alcateia não é a resposta correta.",
+        "2": "manada não é a resposta correta.",
+        "3": "cardume não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_135",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de peixes?",
+      "options": [
+        "cardume",
+        "manada",
+        "bando",
+        "alcateia"
+      ],
+      "correctIndex": 0,
+      "explanation": "'cardume' é o coletivo de peixes.",
+      "wrongExplanations": {
+        "1": "manada não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "alcateia não é a resposta correta."
+      }
+    },
+    {
+      "id": "col_136",
+      "subject": "portugues",
+      "topic": "substantivos_coletivos",
+      "topicName": "Substantivos Coletivos",
+      "question": "Qual coletivo indica um grupo de cães?",
+      "options": [
+        "matilha",
+        "cardume",
+        "bando",
+        "floresta"
+      ],
+      "correctIndex": 0,
+      "explanation": "'matilha' é o coletivo de cães.",
+      "wrongExplanations": {
+        "1": "cardume não é a resposta correta.",
+        "2": "bando não é a resposta correta.",
+        "3": "floresta não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_137",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra vem primeiro em ordem alfabética?",
+      "options": [
+        "pato",
+        "pano",
+        "paz",
+        "pata"
+      ],
+      "correctIndex": 1,
+      "explanation": "'pano' vem antes de 'pata', 'pato' e 'paz'.",
+      "wrongExplanations": {
+        "0": "pato não é a resposta correta.",
+        "2": "paz não é a resposta correta.",
+        "3": "pata não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_138",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra contém encontro vocálico?",
+      "options": [
+        "touro",
+        "tora",
+        "teto",
+        "tubo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'touro' contém encontro vocálico 'ou'.",
+      "wrongExplanations": {
+        "1": "tora não é a resposta correta.",
+        "2": "teto não é a resposta correta.",
+        "3": "tubo não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_139",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra usa a letra Z?",
+      "options": [
+        "zebra",
+        "xebra",
+        "casa",
+        "mesa"
+      ],
+      "correctIndex": 0,
+      "explanation": "'zebra' usa a letra Z corretamente.",
+      "wrongExplanations": {
+        "1": "xebra não é a resposta correta.",
+        "2": "casa não é a resposta correta.",
+        "3": "mesa não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_140",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual é o feminino de 'príncipe'?",
+      "options": [
+        "princesa",
+        "príncipe",
+        "princesinho",
+        "principe"
+      ],
+      "correctIndex": 0,
+      "explanation": "O feminino de 'príncipe' é 'princesa'.",
+      "wrongExplanations": {
+        "1": "príncipe não é a resposta correta.",
+        "2": "princesinho não é a resposta correta.",
+        "3": "principe não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_141",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra é substantivo composto?",
+      "options": [
+        "girassol",
+        "gato",
+        "céu",
+        "flor"
+      ],
+      "correctIndex": 0,
+      "explanation": "'girassol' é substantivo composto.",
+      "wrongExplanations": {
+        "1": "gato não é a resposta correta.",
+        "2": "céu não é a resposta correta.",
+        "3": "flor não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_142",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra tem sílaba tônica na penúltima sílaba?",
+      "options": [
+        "caminho",
+        "café",
+        "papel",
+        "você"
+      ],
+      "correctIndex": 0,
+      "explanation": "'caminho' é paroxítona, pois a sílaba tônica é 'mi'.",
+      "wrongExplanations": {
+        "1": "café não é a resposta correta.",
+        "2": "papel não é a resposta correta.",
+        "3": "você não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_143",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual coletivo indica um grupo de peixes?",
+      "options": [
+        "cardume",
+        "bando",
+        "manada",
+        "alcateia"
+      ],
+      "correctIndex": 0,
+      "explanation": "'cardume' é coletivo de peixes.",
+      "wrongExplanations": {
+        "1": "bando não é a resposta correta.",
+        "2": "manada não é a resposta correta.",
+        "3": "alcateia não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_144",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra tem hiato?",
+      "options": [
+        "saída",
+        "sai",
+        "pai",
+        "mão"
+      ],
+      "correctIndex": 0,
+      "explanation": "'saída' tem hiato entre 'a' e 'í'.",
+      "wrongExplanations": {
+        "1": "sai não é a resposta correta.",
+        "2": "pai não é a resposta correta.",
+        "3": "mão não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_145",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra vem por último em ordem alfabética?",
+      "options": [
+        "lago",
+        "lápis",
+        "lanterna",
+        "laranja"
+      ],
+      "correctIndex": 3,
+      "explanation": "'laranja' vem por último entre essas palavras.",
+      "wrongExplanations": {
+        "0": "lago não é a resposta correta.",
+        "1": "lápis não é a resposta correta.",
+        "2": "lanterna não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_146",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra é escrita com S?",
+      "options": [
+        "sapato",
+        "zapato",
+        "xapato",
+        "sopato"
+      ],
+      "correctIndex": 0,
+      "explanation": "'sapato' usa S corretamente.",
+      "wrongExplanations": {
+        "1": "zapato não é a resposta correta.",
+        "2": "xapato não é a resposta correta.",
+        "3": "sopato não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_147",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual é o masculino de 'gata'?",
+      "options": [
+        "gato",
+        "gata",
+        "gatoo",
+        "gatal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O masculino de 'gata' é 'gato'.",
+      "wrongExplanations": {
+        "1": "gata não é a resposta correta.",
+        "2": "gatoo não é a resposta correta.",
+        "3": "gatal não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_148",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra é simples?",
+      "options": [
+        "casa",
+        "girassol",
+        "guarda-chuva",
+        "passatempo"
+      ],
+      "correctIndex": 0,
+      "explanation": "'casa' é um substantivo simples.",
+      "wrongExplanations": {
+        "1": "girassol não é a resposta correta.",
+        "2": "guarda-chuva não é a resposta correta.",
+        "3": "passatempo não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_149",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra tem ditongo?",
+      "options": [
+        "mesa",
+        "casa",
+        "mio",
+        "céu"
+      ],
+      "correctIndex": 3,
+      "explanation": "'céu' tem ditongo 'éu'.",
+      "wrongExplanations": {
+        "0": "mesa não é a resposta correta.",
+        "1": "casa não é a resposta correta.",
+        "2": "mio não é a resposta correta."
+      }
+    },
+    {
+      "id": "add_150",
+      "subject": "portugues",
+      "topic": "atividades_adicionais",
+      "topicName": "Atividades Adicionais",
+      "question": "Qual palavra tem sílaba tônica na última sílaba?",
+      "options": [
+        "café",
+        "mesa",
+        "amigo",
+        "janela"
+      ],
+      "correctIndex": 0,
+      "explanation": "'café' é oxítona.",
+      "wrongExplanations": {
+        "1": "mesa não é a resposta correta.",
+        "2": "amigo não é a resposta correta.",
+        "3": "janela não é a resposta correta."
+      }
+    }
+  ]
+};

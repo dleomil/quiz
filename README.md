@@ -60,7 +60,14 @@ Quiz/
 │   ├── app.js
 │   ├── store.js
 │   ├── data/
-│   │   └── questions.js
+│   │   ├── questions.js
+│   │   └── subjects/
+│   │       ├── portugues.js
+│   │       ├── matematica.js
+│   │       ├── ciencias.js
+│   │       ├── geografia.js
+│   │       ├── historia.js
+│   │       └── ingles.js
 │   └── views/
 │       ├── home.js
 │       ├── subject.js
