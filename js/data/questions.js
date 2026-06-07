@@ -184,7 +184,7 @@ const QuestionsDB = (function () {
     subject: "portugues",
     topic: "ordem_alfabetica",
     topicName: "Ordem Alfabética",
-    question: "Qual palavra vem por último em ordem alfabético?",
+    question: "Qual palavra vem por último em ordem alfabética?",
     options: ["uva", "urso", "uma", "unha"],
     correctIndex: 0,
     explanation: "'uva' vem por último entre essas opções.",
@@ -197,9 +197,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra aparece primeiro no alfabeto?",
     options: ["zebra", "xadrez", "xale", "xícara"],
-    correctIndex: 2,
-    explanation: "'xale' vem antes de 'xadrez' e 'xícara'.",
-    wrongExplanations: { 0: "zebra não é a resposta correta.", 1: "xadrez não é a resposta correta.", 3: "xícara não é a resposta correta." }
+    correctIndex: 1,
+    explanation: "'xadrez' vem antes de 'xale' e 'xícara'.",
+    wrongExplanations: { 0: "zebra não é a resposta correta.", 2: "xale não é a resposta correta.", 3: "xícara não é a resposta correta." }
   },
   {
     id: "ord_018",
@@ -208,9 +208,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra aparece antes no dicionário?",
     options: ["janela", "laranja", "jardim", "joia"],
-    correctIndex: 2,
-    explanation: "'jardim' vem antes de 'janela' no alfabeto.",
-    wrongExplanations: { 0: "janela não é a resposta correta.", 1: "laranja não é a resposta correta.", 3: "joia não é a resposta correta." }
+    correctIndex: 0,
+    explanation: "'janela' vem antes de 'jardim', 'joia' e 'laranja'.",
+    wrongExplanations: { 1: "laranja não é a resposta correta.", 2: "jardim não é a resposta correta.", 3: "joia não é a resposta correta." }
   },
   {
     id: "ord_019",
@@ -219,9 +219,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra vem primeiro em ordem alfabética?",
     options: ["cego", "cebola", "celular", "cedro"],
-    correctIndex: 0,
-    explanation: "'cego' vem antes de 'cedro', 'cebola', e 'celular'.",
-    wrongExplanations: { 1: "cebola não é a resposta correta.", 2: "celular não é a resposta correta.", 3: "cedro não é a resposta correta." }
+    correctIndex: 1,
+    explanation: "'cebola' vem antes de 'cedro', 'cego' e 'celular'.",
+    wrongExplanations: { 0: "cego não é a resposta correta.", 2: "celular não é a resposta correta.", 3: "cedro não é a resposta correta." }
   },
   {
     id: "ord_020",
@@ -230,9 +230,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra vem por último em ordem alfabética?",
     options: ["manga", "mais", "mala", "maçã"],
-    correctIndex: 3,
-    explanation: "'maçã' vem por último entre essas palavras.",
-    wrongExplanations: { 0: "manga não é a resposta correta.", 1: "mais não é a resposta correta.", 2: "mala não é a resposta correta." }
+    correctIndex: 0,
+    explanation: "'manga' vem por último entre essas palavras.",
+    wrongExplanations: { 1: "mais não é a resposta correta.", 2: "mala não é a resposta correta.", 3: "maçã não é a resposta correta." }
   },
   {
     id: "ord_021",
@@ -263,9 +263,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra vem primeiro em ordem alfabética?",
     options: ["pato", "pata", "paz", "pano"],
-    correctIndex: 1,
-    explanation: "'pata' vem antes de 'pano', 'pato', e 'paz'.",
-    wrongExplanations: { 0: "pato não é a resposta correta.", 2: "paz não é a resposta correta.", 3: "pano não é a resposta correta." }
+    correctIndex: 3,
+    explanation: "'pano' vem antes de 'pata', 'pato' e 'paz'.",
+    wrongExplanations: { 0: "pato não é a resposta correta.", 1: "pata não é a resposta correta.", 2: "paz não é a resposta correta." }
   },
   {
     id: "ord_024",
@@ -274,9 +274,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra vem por último em ordem alfabética?",
     options: ["lápis", "lanterna", "laranja", "lago"],
-    correctIndex: 0,
-    explanation: "'lápis' vem por último entre essas palavras.",
-    wrongExplanations: { 1: "lanterna não é a resposta correta.", 2: "laranja não é a resposta correta.", 3: "lago não é a resposta correta." }
+    correctIndex: 2,
+    explanation: "'laranja' vem por último entre essas palavras.",
+    wrongExplanations: { 0: "lápis não é a resposta correta.", 1: "lanterna não é a resposta correta.", 3: "lago não é a resposta correta." }
   },
   {
     id: "ord_025",
@@ -285,9 +285,9 @@ const QuestionsDB = (function () {
     topicName: "Ordem Alfabética",
     question: "Qual palavra aparece antes?",
     options: ["rato", "rampa", "raridade", "raio"],
-    correctIndex: 2,
-    explanation: "'raridade' vem antes de 'raio', 'rampa' e 'rato'.",
-    wrongExplanations: { 0: "rato não é a resposta correta.", 1: "rampa não é a resposta correta.", 3: "raio não é a resposta correta." }
+    correctIndex: 3,
+    explanation: "'raio' vem antes de 'rampa', 'raridade' e 'rato'.",
+    wrongExplanations: { 0: "rato não é a resposta correta.", 1: "rampa não é a resposta correta.", 2: "raridade não é a resposta correta." }
   },
   {
     id: "ord_026",
@@ -361,10 +361,10 @@ const QuestionsDB = (function () {
     topic: "classificacao_silabica",
     topicName: "Classificação Silábica",
     question: "Qual palavra é trissílaba?",
-    options: ["gato", "cachorro", "pássaro", "cama"],
-    correctIndex: 0,
-    explanation: "'gato' tem três sílabas: ga-to.",
-    wrongExplanations: { 1: "cachorro não é a resposta correta.", 2: "pássaro não é a resposta correta.", 3: "cama não é a resposta correta." }
+    options: ["gato", "cachorro", "sol", "cama"],
+    correctIndex: 1,
+    explanation: "'cachorro' tem três sílabas: ca-chor-ro.",
+    wrongExplanations: { 0: "gato não é a resposta correta.", 2: "sol não é a resposta correta.", 3: "cama não é a resposta correta." }
   },
   {
     id: "sil_033",
@@ -383,10 +383,10 @@ const QuestionsDB = (function () {
     topic: "classificacao_silabica",
     topicName: "Classificação Silábica",
     question: "Qual palavra tem sílaba tônica na penúltima sílaba?",
-    options: ["amigo", "café", "papel", "caminho"],
-    correctIndex: 2,
-    explanation: "'papel' é paroxítona e a sílaba tônica é 'pel'.",
-    wrongExplanations: { 0: "amigo não é a resposta correta.", 1: "café não é a resposta correta.", 3: "caminho não é a resposta correta." }
+    options: ["amigo", "café", "papel", "jornal"],
+    correctIndex: 0,
+    explanation: "'amigo' é paroxítona e a sílaba tônica é 'mi'.",
+    wrongExplanations: { 1: "café não é a resposta correta.", 2: "papel não é a resposta correta.", 3: "jornal não é a resposta correta." }
   },
   {
     id: "sil_035",
@@ -394,10 +394,10 @@ const QuestionsDB = (function () {
     topic: "classificacao_silabica",
     topicName: "Classificação Silábica",
     question: "Qual palavra é proparoxítona?",
-    options: ["música", "arvore", "futebol", "samba"],
+    options: ["música", "casa", "futebol", "samba"],
     correctIndex: 0,
     explanation: "'música' é proparoxítona.",
-    wrongExplanations: { 1: "arvore não é a resposta correta.", 2: "futebol não é a resposta correta.", 3: "samba não é a resposta correta." }
+    wrongExplanations: { 1: "casa não é a resposta correta.", 2: "futebol não é a resposta correta.", 3: "samba não é a resposta correta." }
   },
   {
     id: "sil_036",
@@ -427,10 +427,10 @@ const QuestionsDB = (function () {
     topic: "classificacao_silabica",
     topicName: "Classificação Silábica",
     question: "Qual palavra tem duas sílabas?",
-    options: ["pneus", "casa", "carro", "peixe"],
-    correctIndex: 0,
-    explanation: "'pneus' tem duas sílabas: pne-us.",
-    wrongExplanations: { 1: "casa não é a resposta correta.", 2: "carro não é a resposta correta.", 3: "peixe não é a resposta correta." }
+    options: ["sol", "casa", "flor", "paz"],
+    correctIndex: 1,
+    explanation: "'casa' tem duas sílabas: ca-sa.",
+    wrongExplanations: { 0: "sol não é a resposta correta.", 2: "flor não é a resposta correta.", 3: "paz não é a resposta correta." }
   },
   {
     id: "sil_039",
@@ -460,10 +460,10 @@ const QuestionsDB = (function () {
     topic: "classificacao_silabica",
     topicName: "Classificação Silábica",
     question: "Qual palavra tem sílaba tônica na penúltima sílaba?",
-    options: ["telefone", "vovó", "caminho", "paz"],
+    options: ["telefone", "vovó", "papel", "paz"],
     correctIndex: 0,
     explanation: "'telefone' é paroxítona.",
-    wrongExplanations: { 1: "vovó não é a resposta correta.", 2: "caminho não é a resposta correta.", 3: "paz não é a resposta correta." }
+    wrongExplanations: { 1: "vovó não é a resposta correta.", 2: "papel não é a resposta correta.", 3: "paz não é a resposta correta." }
   },
   {
     id: "sil_042",
@@ -471,10 +471,10 @@ const QuestionsDB = (function () {
     topic: "classificacao_silabica",
     topicName: "Classificação Silábica",
     question: "Qual palavra tem semivogal?",
-    options: ["água", "gato", "mesa", "pão"],
+    options: ["água", "gato", "mesa", "pato"],
     correctIndex: 0,
     explanation: "'água' tem semivogal no encontro 'ua'.",
-    wrongExplanations: { 1: "gato não é a resposta correta.", 2: "mesa não é a resposta correta.", 3: "pão não é a resposta correta." }
+    wrongExplanations: { 1: "gato não é a resposta correta.", 2: "mesa não é a resposta correta.", 3: "pato não é a resposta correta." }
   },
   {
     id: "enc_043",
@@ -570,9 +570,9 @@ const QuestionsDB = (function () {
     topic: "encontros_vocais",
     topicName: "Encontros Vocálicos",
     question: "Qual palavra contém ditongo crescente?",
-    options: ["viagem", "cama", "vento", "festa"],
+    options: ["quase", "cama", "vento", "festa"],
     correctIndex: 0,
-    explanation: "'viagem' contém o ditongo crescente 'ia'.",
+    explanation: "'quase' contém o ditongo crescente 'ua'.",
     wrongExplanations: { 1: "cama não é a resposta correta.", 2: "vento não é a resposta correta.", 3: "festa não é a resposta correta." }
   },
   {
@@ -581,9 +581,9 @@ const QuestionsDB = (function () {
     topic: "encontros_vocais",
     topicName: "Encontros Vocálicos",
     question: "Qual palavra apresenta hiato?",
-    options: ["saudade", "mesa", "lobo", "sinal"],
+    options: ["saúde", "mesa", "lobo", "sinal"],
     correctIndex: 0,
-    explanation: "'saudade' tem hiato entre 'a' e 'u'.",
+    explanation: "'saúde' tem hiato entre 'a' e 'ú'.",
     wrongExplanations: { 1: "mesa não é a resposta correta.", 2: "lobo não é a resposta correta.", 3: "sinal não é a resposta correta." }
   },
   {
@@ -592,10 +592,10 @@ const QuestionsDB = (function () {
     topic: "encontros_vocais",
     topicName: "Encontros Vocálicos",
     question: "Qual palavra tem encontro vocálico?",
-    options: ["dia", "lua", "pipa", "rato"],
+    options: ["dia", "livro", "pipa", "rato"],
     correctIndex: 0,
     explanation: "'dia' tem encontro vocálico 'ia'.",
-    wrongExplanations: { 1: "lua não é a resposta correta.", 2: "pipa não é a resposta correta.", 3: "rato não é a resposta correta." }
+    wrongExplanations: { 1: "livro não é a resposta correta.", 2: "pipa não é a resposta correta.", 3: "rato não é a resposta correta." }
   },
   {
     id: "enc_054",
@@ -669,9 +669,9 @@ const QuestionsDB = (function () {
     topic: "letra_z",
     topicName: "A letra Z",
     question: "Qual palavra não usa a letra Z?",
-    options: ["zangado", "paz", "azeite", "zona"],
+    options: ["zangado", "casa", "azeite", "zona"],
     correctIndex: 1,
-    explanation: "'paz' não usa a letra Z.",
+    explanation: "'casa' não usa a letra Z.",
     wrongExplanations: { 0: "zangado não é a resposta correta.", 2: "azeite não é a resposta correta.", 3: "zona não é a resposta correta." }
   },
   {
@@ -691,10 +691,10 @@ const QuestionsDB = (function () {
     topic: "letra_z",
     topicName: "A letra Z",
     question: "Qual palavra usa Z no meio?",
-    options: ["arroz", "azul", "casa", "fazer"],
-    correctIndex: 0,
-    explanation: "'arroz' usa Z no meio da palavra.",
-    wrongExplanations: { 1: "azul não é a resposta correta.", 2: "casa não é a resposta correta.", 3: "fazer não é a resposta correta." }
+    options: ["arroz", "luz", "casa", "fazer"],
+    correctIndex: 3,
+    explanation: "'fazer' usa Z no meio da palavra.",
+    wrongExplanations: { 0: "arroz não é a resposta correta.", 1: "luz não é a resposta correta.", 2: "casa não é a resposta correta." }
   },
   {
     id: "lez_063",
@@ -801,10 +801,10 @@ const QuestionsDB = (function () {
     topic: "letra_s",
     topicName: "A letra S",
     question: "Qual palavra usa S no meio?",
-    options: ["casa", "cata", "canto", "canso"],
+    options: ["casa", "cata", "canto", "cano"],
     correctIndex: 0,
     explanation: "'casa' usa S no meio.",
-    wrongExplanations: { 1: "cata não é a resposta correta.", 2: "canto não é a resposta correta.", 3: "canso não é a resposta correta." }
+    wrongExplanations: { 1: "cata não é a resposta correta.", 2: "canto não é a resposta correta.", 3: "cano não é a resposta correta." }
   },
   {
     id: "les_073",
@@ -822,10 +822,10 @@ const QuestionsDB = (function () {
     subject: "portugues",
     topic: "letra_s",
     topicName: "A letra S",
-    question: "Qual palavra tem SS?",
+    question: "Qual palavra está escrita corretamente com SS?",
     options: ["massa", "masa", "messa", "masso"],
     correctIndex: 0,
-    explanation: "'massa' é escrita com SS.",
+    explanation: "'massa' é uma palavra escrita corretamente com SS.",
     wrongExplanations: { 1: "masa não é a resposta correta.", 2: "messa não é a resposta correta.", 3: "masso não é a resposta correta." }
   },
   {
@@ -834,10 +834,10 @@ const QuestionsDB = (function () {
     topic: "letra_s",
     topicName: "A letra S",
     question: "Qual palavra termina com S?",
-    options: ["lápis", "lapis", "lapiz", "lapi"],
+    options: ["lápis", "lapi", "lapiz", "lapiseira"],
     correctIndex: 0,
     explanation: "'lápis' termina com S.",
-    wrongExplanations: { 1: "lapis não é a resposta correta.", 2: "lapiz não é a resposta correta.", 3: "lapi não é a resposta correta." }
+    wrongExplanations: { 1: "lapi não é a resposta correta.", 2: "lapiz não é a resposta correta.", 3: "lapiseira não é a resposta correta." }
   },
   {
     id: "les_076",
@@ -855,10 +855,10 @@ const QuestionsDB = (function () {
     subject: "portugues",
     topic: "letra_s",
     topicName: "A letra S",
-    question: "Qual palavra usa S e tem som de S?",
+    question: "Qual palavra usa S e tem som de Z?",
     options: ["mesa", "meza", "meça", "miça"],
     correctIndex: 0,
-    explanation: "'mesa' usa S e tem som de S.",
+    explanation: "Em 'mesa', a letra S entre vogais tem som de Z.",
     wrongExplanations: { 1: "meza não é a resposta correta.", 2: "meça não é a resposta correta.", 3: "miça não é a resposta correta." }
   },
   {
@@ -867,20 +867,20 @@ const QuestionsDB = (function () {
     topic: "letra_s",
     topicName: "A letra S",
     question: "Qual palavra é escrita com SS?",
-    options: ["passo", "paso", "passu", "passe"],
+    options: ["passo", "paso", "pato", "pase"],
     correctIndex: 0,
-    explanation: "'passo' é escrita com SS.",
-    wrongExplanations: { 1: "paso não é a resposta correta.", 2: "passu não é a resposta correta.", 3: "passe não é a resposta correta." }
+    explanation: "'passo' é uma palavra escrita corretamente com SS.",
+    wrongExplanations: { 1: "paso não é a resposta correta.", 2: "pato não é a resposta correta.", 3: "pase não é a resposta correta." }
   },
   {
     id: "les_079",
     subject: "portugues",
     topic: "letra_s",
     topicName: "A letra S",
-    question: "Qual palavra usa S no fim?",
+    question: "Qual palavra usa S no meio?",
     options: ["cas", "caz", "caso", "casz"],
     correctIndex: 2,
-    explanation: "'caso' usa S no meio, mas é a opção válida de palavra comum.",
+    explanation: "'caso' usa S no meio da palavra.",
     wrongExplanations: { 0: "cas não é a resposta correta.", 1: "caz não é a resposta correta.", 3: "casz não é a resposta correta." }
   },
   {
@@ -889,21 +889,21 @@ const QuestionsDB = (function () {
     topic: "letra_s",
     topicName: "A letra S",
     question: "Qual palavra começa com S e é comum?",
-    options: ["sapo", "zapoo", "sorvete", "salo"],
+    options: ["sapo", "zapoo", "xapo", "chapo"],
     correctIndex: 0,
     explanation: "'sapo' começa com S e é comum.",
-    wrongExplanations: { 1: "zapoo não é a resposta correta.", 2: "sorvete não é a resposta correta.", 3: "salo não é a resposta correta." }
+    wrongExplanations: { 1: "zapoo não é a resposta correta.", 2: "xapo não é a resposta correta.", 3: "chapo não é a resposta correta." }
   },
   {
     id: "les_081",
     subject: "portugues",
     topic: "letra_s",
     topicName: "A letra S",
-    question: "Qual palavra usa S depois de consoante?",
-    options: ["sclaro", "escola", "escada", "esporte"],
+    question: "Qual palavra está escrita corretamente com S?",
+    options: ["sclaro", "escola", "ezcola", "ecola"],
     correctIndex: 1,
-    explanation: "'escola' usa S depois de consoante 'e'.",
-    wrongExplanations: { 0: "sclaro não é a resposta correta.", 2: "escada não é a resposta correta.", 3: "esporte não é a resposta correta." }
+    explanation: "'escola' é escrita corretamente com S.",
+    wrongExplanations: { 0: "sclaro não é a resposta correta.", 2: "ezcola não é a resposta correta.", 3: "ecola não é a resposta correta." }
   },
   {
     id: "les_082",
@@ -921,10 +921,10 @@ const QuestionsDB = (function () {
     subject: "portugues",
     topic: "letra_s",
     topicName: "A letra S",
-    question: "Qual palavra é escrita com S duplo?",
+    question: "Qual palavra está escrita corretamente com S duplo?",
     options: ["passar", "pasar", "pessar", "rassar"],
     correctIndex: 0,
-    explanation: "'passar' é escrita com S duplo.",
+    explanation: "'passar' é uma palavra escrita corretamente com S duplo.",
     wrongExplanations: { 1: "pasar não é a resposta correta.", 2: "pessar não é a resposta correta.", 3: "rassar não é a resposta correta." }
   },
   {
@@ -955,10 +955,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Qual é o masculino de 'gata'?",
-    options: ["gato", "gatao", "gatinho", "gatal"],
+    options: ["gato", "gatoo", "gata", "gatal"],
     correctIndex: 0,
     explanation: "O masculino de 'gata' é 'gato'.",
-    wrongExplanations: { 1: "gatao não é a resposta correta.", 2: "gatinho não é a resposta correta.", 3: "gatal não é a resposta correta." }
+    wrongExplanations: { 1: "gatoo não é a resposta correta.", 2: "gata não é a resposta correta.", 3: "gatal não é a resposta correta." }
   },
   {
     id: "mas_087",
@@ -966,10 +966,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Escolha o substantivo masculino:",
-    options: ["menino", "menina", "meninos", "menininha"],
+    options: ["menino", "menina", "garota", "menininha"],
     correctIndex: 0,
     explanation: "'menino' é um substantivo masculino.",
-    wrongExplanations: { 1: "menina não é a resposta correta.", 2: "meninos não é a resposta correta.", 3: "menininha não é a resposta correta." }
+    wrongExplanations: { 1: "menina não é a resposta correta.", 2: "garota não é a resposta correta.", 3: "menininha não é a resposta correta." }
   },
   {
     id: "mas_088",
@@ -988,10 +988,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Qual é o masculino de 'princesa'?",
-    options: ["príncipe", "princesa", "princesinho", "principe"],
+    options: ["príncipe", "princesa", "princesinho", "princeza"],
     correctIndex: 0,
     explanation: "O masculino de 'princesa' é 'príncipe'.",
-    wrongExplanations: { 1: "princesa não é a resposta correta.", 2: "princesinho não é a resposta correta.", 3: "principe não é a resposta correta." }
+    wrongExplanations: { 1: "princesa não é a resposta correta.", 2: "princesinho não é a resposta correta.", 3: "princeza não é a resposta correta." }
   },
   {
     id: "mas_090",
@@ -999,10 +999,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Qual palavra é masculina?",
-    options: ["garoto", "garota", "garotão", "garotinha"],
+    options: ["garoto", "garota", "menina", "garotinha"],
     correctIndex: 0,
     explanation: "'garoto' é um substantivo masculino.",
-    wrongExplanations: { 1: "garota não é a resposta correta.", 2: "garotão não é a resposta correta.", 3: "garotinha não é a resposta correta." }
+    wrongExplanations: { 1: "garota não é a resposta correta.", 2: "menina não é a resposta correta.", 3: "garotinha não é a resposta correta." }
   },
   {
     id: "mas_091",
@@ -1032,10 +1032,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Qual palavra é o masculino de 'ovelha'?",
-    options: ["ovelho", "ovelha", "ovelhinho", "ovelhão"],
+    options: ["carneiro", "ovelha", "ovelhinha", "ovelhão"],
     correctIndex: 0,
-    explanation: "O masculino de 'ovelha' é 'ovelho'.",
-    wrongExplanations: { 1: "ovelha não é a resposta correta.", 2: "ovelhinho não é a resposta correta.", 3: "ovelhão não é a resposta correta." }
+    explanation: "O masculino de 'ovelha' é 'carneiro'.",
+    wrongExplanations: { 1: "ovelha não é a resposta correta.", 2: "ovelhinha não é a resposta correta.", 3: "ovelhão não é a resposta correta." }
   },
   {
     id: "mas_094",
@@ -1054,10 +1054,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Qual é o masculino de 'amiga'?",
-    options: ["amigo", "amiga", "amiguinho", "amigão"],
+    options: ["amigo", "amiga", "amigoa", "amigal"],
     correctIndex: 0,
     explanation: "O masculino de 'amiga' é 'amigo'.",
-    wrongExplanations: { 1: "amiga não é a resposta correta.", 2: "amiguinho não é a resposta correta.", 3: "amigão não é a resposta correta." }
+    wrongExplanations: { 1: "amiga não é a resposta correta.", 2: "amigoa não é a resposta correta.", 3: "amigal não é a resposta correta." }
   },
   {
     id: "mas_096",
@@ -1065,10 +1065,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_masculinos",
     topicName: "Substantivos Masculinos",
     question: "Qual é o masculino de 'cabeleireira'?",
-    options: ["cabeleireiro", "cabeleireira", "cabeleireirinho", "cabeleireirão"],
+    options: ["cabeleireiro", "cabeleireira", "cabeleireiroa", "cabeleireiral"],
     correctIndex: 0,
     explanation: "O masculino de 'cabeleireira' é 'cabeleireiro'.",
-    wrongExplanations: { 1: "cabeleireira não é a resposta correta.", 2: "cabeleireirinho não é a resposta correta.", 3: "cabeleireirão não é a resposta correta." }
+    wrongExplanations: { 1: "cabeleireira não é a resposta correta.", 2: "cabeleireiroa não é a resposta correta.", 3: "cabeleireiral não é a resposta correta." }
   },
   {
     id: "fem_097",
@@ -1076,10 +1076,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'menino'?",
-    options: ["menina", "menininha", "meninoa", "meninão"],
+    options: ["menina", "menino", "meninoa", "meninão"],
     correctIndex: 0,
     explanation: "O feminino de 'menino' é 'menina'.",
-    wrongExplanations: { 1: "menininha não é a resposta correta.", 2: "meninoa não é a resposta correta.", 3: "meninão não é a resposta correta." }
+    wrongExplanations: { 1: "menino não é a resposta correta.", 2: "meninoa não é a resposta correta.", 3: "meninão não é a resposta correta." }
   },
   {
     id: "fem_098",
@@ -1087,10 +1087,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'gato'?",
-    options: ["gata", "gatoo", "gatinha", "gatal"],
+    options: ["gata", "gato", "gatoo", "gatal"],
     correctIndex: 0,
     explanation: "O feminino de 'gato' é 'gata'.",
-    wrongExplanations: { 1: "gatoo não é a resposta correta.", 2: "gatinha não é a resposta correta.", 3: "gatal não é a resposta correta." }
+    wrongExplanations: { 1: "gato não é a resposta correta.", 2: "gatoo não é a resposta correta.", 3: "gatal não é a resposta correta." }
   },
   {
     id: "fem_099",
@@ -1098,10 +1098,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Escolha o substantivo feminino:",
-    options: ["menina", "menino", "meninos", "menininha"],
+    options: ["menina", "menino", "meninos", "garoto"],
     correctIndex: 0,
     explanation: "'menina' é um substantivo feminino.",
-    wrongExplanations: { 1: "menino não é a resposta correta.", 2: "meninos não é a resposta correta.", 3: "menininha não é a resposta correta." }
+    wrongExplanations: { 1: "menino não é a resposta correta.", 2: "meninos não é a resposta correta.", 3: "garoto não é a resposta correta." }
   },
   {
     id: "fem_100",
@@ -1109,10 +1109,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'rei'?",
-    options: ["rainha", "reia", "rein", "rainhinha"],
+    options: ["rainha", "reia", "rein", "reino"],
     correctIndex: 0,
     explanation: "O feminino de 'rei' é 'rainha'.",
-    wrongExplanations: { 1: "reia não é a resposta correta.", 2: "rein não é a resposta correta.", 3: "rainhinha não é a resposta correta." }
+    wrongExplanations: { 1: "reia não é a resposta correta.", 2: "rein não é a resposta correta.", 3: "reino não é a resposta correta." }
   },
   {
     id: "fem_101",
@@ -1131,10 +1131,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual palavra é feminina?",
-    options: ["garota", "garoto", "garotão", "garotinha"],
+    options: ["garota", "garoto", "garotão", "menino"],
     correctIndex: 0,
     explanation: "'garota' é um substantivo feminino.",
-    wrongExplanations: { 1: "garoto não é a resposta correta.", 2: "garotão não é a resposta correta.", 3: "garotinha não é a resposta correta." }
+    wrongExplanations: { 1: "garoto não é a resposta correta.", 2: "garotão não é a resposta correta.", 3: "menino não é a resposta correta." }
   },
   {
     id: "fem_103",
@@ -1142,10 +1142,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'duque'?",
-    options: ["duquesa", "duque", "duquinha", "duquer"],
+    options: ["duquesa", "duque", "duqueso", "duquer"],
     correctIndex: 0,
     explanation: "O feminino de 'duque' é 'duquesa'.",
-    wrongExplanations: { 1: "duque não é a resposta correta.", 2: "duquinha não é a resposta correta.", 3: "duquer não é a resposta correta." }
+    wrongExplanations: { 1: "duque não é a resposta correta.", 2: "duqueso não é a resposta correta.", 3: "duquer não é a resposta correta." }
   },
   {
     id: "fem_104",
@@ -1153,10 +1153,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'senhor'?",
-    options: ["senhora", "senhor", "senhorita", "senhorão"],
+    options: ["senhora", "senhor", "senhoro", "senhorão"],
     correctIndex: 0,
     explanation: "O feminino de 'senhor' é 'senhora'.",
-    wrongExplanations: { 1: "senhor não é a resposta correta.", 2: "senhorita não é a resposta correta.", 3: "senhorão não é a resposta correta." }
+    wrongExplanations: { 1: "senhor não é a resposta correta.", 2: "senhoro não é a resposta correta.", 3: "senhorão não é a resposta correta." }
   },
   {
     id: "fem_105",
@@ -1164,10 +1164,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual palavra é o feminino de 'leão'?",
-    options: ["leoa", "leão", "leoinha", "leã"],
+    options: ["leoa", "leão", "leoinha", "leonado"],
     correctIndex: 0,
     explanation: "O feminino de 'leão' é 'leoa'.",
-    wrongExplanations: { 1: "leão não é a resposta correta.", 2: "leoinha não é a resposta correta.", 3: "leã não é a resposta correta." }
+    wrongExplanations: { 1: "leão não é a resposta correta.", 2: "leoinha não é a resposta correta.", 3: "leonado não é a resposta correta." }
   },
   {
     id: "fem_106",
@@ -1175,10 +1175,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'ator'?",
-    options: ["atriz", "ator", "atrice", "atrizinha"],
+    options: ["atriz", "ator", "atrice", "atorr"],
     correctIndex: 0,
     explanation: "O feminino de 'ator' é 'atriz'.",
-    wrongExplanations: { 1: "ator não é a resposta correta.", 2: "atrice não é a resposta correta.", 3: "atrizinha não é a resposta correta." }
+    wrongExplanations: { 1: "ator não é a resposta correta.", 2: "atrice não é a resposta correta.", 3: "atorr não é a resposta correta." }
   },
   {
     id: "fem_107",
@@ -1186,10 +1186,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'amigo'?",
-    options: ["amiga", "amigo", "amiguinha", "amigona"],
+    options: ["amiga", "amigo", "amigoa", "amigão"],
     correctIndex: 0,
     explanation: "O feminino de 'amigo' é 'amiga'.",
-    wrongExplanations: { 1: "amigo não é a resposta correta.", 2: "amiguinha não é a resposta correta.", 3: "amigona não é a resposta correta." }
+    wrongExplanations: { 1: "amigo não é a resposta correta.", 2: "amigoa não é a resposta correta.", 3: "amigão não é a resposta correta." }
   },
   {
     id: "fem_108",
@@ -1197,10 +1197,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_femininos",
     topicName: "Substantivos Femininos",
     question: "Qual é o feminino de 'cabeleireiro'?",
-    options: ["cabeleireira", "cabeleireiro", "cabeleireirinha", "cabeleireirona"],
+    options: ["cabeleireira", "cabeleireiro", "barbeiro", "cabeleireirão"],
     correctIndex: 0,
     explanation: "O feminino de 'cabeleireiro' é 'cabeleireira'.",
-    wrongExplanations: { 1: "cabeleireiro não é a resposta correta.", 2: "cabeleireirinha não é a resposta correta.", 3: "cabeleireirona não é a resposta correta." }
+    wrongExplanations: { 1: "cabeleireiro não é a resposta correta.", 2: "barbeiro não é a resposta correta.", 3: "cabeleireirão não é a resposta correta." }
   },
   {
     id: "sim_109",
@@ -1241,10 +1241,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_simples_compostos",
     topicName: "Substantivos Simples e Compostos",
     question: "Qual palavra é simples?",
-    options: ["janela", "girassol", "pé-de-moleque", "porta"],
+    options: ["janela", "girassol", "pé-de-moleque", "guarda-chuva"],
     correctIndex: 0,
     explanation: "'janela' é um substantivo simples.",
-    wrongExplanations: { 1: "girassol não é a resposta correta.", 2: "pé-de-moleque não é a resposta correta.", 3: "porta não é a resposta correta." }
+    wrongExplanations: { 1: "girassol não é a resposta correta.", 2: "pé-de-moleque não é a resposta correta.", 3: "guarda-chuva não é a resposta correta." }
   },
   {
     id: "sim_113",
@@ -1263,10 +1263,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_simples_compostos",
     topicName: "Substantivos Simples e Compostos",
     question: "Qual palavra é simples?",
-    options: ["flor", "guarda-chuva", "arroz", "girassol"],
+    options: ["flor", "guarda-chuva", "segunda-feira", "girassol"],
     correctIndex: 0,
     explanation: "'flor' é um substantivo simples.",
-    wrongExplanations: { 1: "guarda-chuva não é a resposta correta.", 2: "arroz não é a resposta correta.", 3: "girassol não é a resposta correta." }
+    wrongExplanations: { 1: "guarda-chuva não é a resposta correta.", 2: "segunda-feira não é a resposta correta.", 3: "girassol não é a resposta correta." }
   },
   {
     id: "sim_115",
@@ -1285,10 +1285,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_simples_compostos",
     topicName: "Substantivos Simples e Compostos",
     question: "Qual palavra é simples?",
-    options: ["bolo", "bala", "girassol", "coração"],
+    options: ["bolo", "guarda-chuva", "girassol", "pé-de-moleque"],
     correctIndex: 0,
     explanation: "'bolo' é um substantivo simples.",
-    wrongExplanations: { 1: "bala não é a resposta correta.", 2: "girassol não é a resposta correta.", 3: "coração não é a resposta correta." }
+    wrongExplanations: { 1: "guarda-chuva não é a resposta correta.", 2: "girassol não é a resposta correta.", 3: "pé-de-moleque não é a resposta correta." }
   },
   {
     id: "sim_117",
@@ -1307,10 +1307,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_simples_compostos",
     topicName: "Substantivos Simples e Compostos",
     question: "Qual palavra é simples?",
-    options: ["mãe", "pé", "gato", "sol"],
+    options: ["mãe", "guarda-chuva", "girassol", "bem-te-vi"],
     correctIndex: 0,
     explanation: "'mãe' é um substantivo simples.",
-    wrongExplanations: { 1: "pé não é a resposta correta.", 2: "gato não é a resposta correta.", 3: "sol não é a resposta correta." }
+    wrongExplanations: { 1: "guarda-chuva não é a resposta correta.", 2: "girassol não é a resposta correta.", 3: "bem-te-vi não é a resposta correta." }
   },
   {
     id: "sim_119",
@@ -1329,10 +1329,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_simples_compostos",
     topicName: "Substantivos Simples e Compostos",
     question: "Qual palavra é simples?",
-    options: ["carro", "girassol", "pássaro", "porta"],
+    options: ["carro", "girassol", "pé-de-moleque", "guarda-chuva"],
     correctIndex: 0,
     explanation: "'carro' é um substantivo simples.",
-    wrongExplanations: { 1: "girassol não é a resposta correta.", 2: "pássaro não é a resposta correta.", 3: "porta não é a resposta correta." }
+    wrongExplanations: { 1: "girassol não é a resposta correta.", 2: "pé-de-moleque não é a resposta correta.", 3: "guarda-chuva não é a resposta correta." }
   },
   {
     id: "sim_121",
@@ -1351,10 +1351,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_simples_compostos",
     topicName: "Substantivos Simples e Compostos",
     question: "Qual palavra é simples?",
-    options: ["pão", "porta", "girassol", "azul"],
+    options: ["pão", "guarda-chuva", "girassol", "bem-te-vi"],
     correctIndex: 0,
     explanation: "'pão' é um substantivo simples.",
-    wrongExplanations: { 1: "porta não é a resposta correta.", 2: "girassol não é a resposta correta.", 3: "azul não é a resposta correta." }
+    wrongExplanations: { 1: "guarda-chuva não é a resposta correta.", 2: "girassol não é a resposta correta.", 3: "bem-te-vi não é a resposta correta." }
   },
   {
     id: "col_123",
@@ -1384,9 +1384,9 @@ const QuestionsDB = (function () {
     topic: "substantivos_coletivos",
     topicName: "Substantivos Coletivos",
     question: "Qual coletivo indica um grupo de bois?",
-    options: ["manada", "cardume", "bando", "nuvem"],
+    options: ["boiada", "cardume", "bando", "nuvem"],
     correctIndex: 0,
-    explanation: "'manada' é o coletivo de bois.",
+    explanation: "'boiada' é o coletivo de bois.",
     wrongExplanations: { 1: "cardume não é a resposta correta.", 2: "bando não é a resposta correta.", 3: "nuvem não é a resposta correta." }
   },
   {
@@ -1407,9 +1407,9 @@ const QuestionsDB = (function () {
     topicName: "Substantivos Coletivos",
     question: "Qual coletivo indica um grupo de revistas?",
     options: ["banca", "coleção", "revista", "jornal"],
-    correctIndex: 0,
-    explanation: "'banca' pode indicar um grupo de revistas.",
-    wrongExplanations: { 1: "coleção não é a resposta correta.", 2: "revista não é a resposta correta.", 3: "jornal não é a resposta correta." }
+    correctIndex: 1,
+    explanation: "'coleção' indica um grupo de revistas.",
+    wrongExplanations: { 0: "banca não é a resposta correta.", 2: "revista não é a resposta correta.", 3: "jornal não é a resposta correta." }
   },
   {
     id: "col_128",
@@ -1417,10 +1417,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_coletivos",
     topicName: "Substantivos Coletivos",
     question: "Qual coletivo indica um grupo de árvores?",
-    options: ["floresta", "bosque", "matilha", "bando"],
+    options: ["floresta", "cardume", "matilha", "bando"],
     correctIndex: 0,
     explanation: "'floresta' é o coletivo de árvores.",
-    wrongExplanations: { 1: "bosque não é a resposta correta.", 2: "matilha não é a resposta correta.", 3: "bando não é a resposta correta." }
+    wrongExplanations: { 1: "cardume não é a resposta correta.", 2: "matilha não é a resposta correta.", 3: "bando não é a resposta correta." }
   },
   {
     id: "col_129",
@@ -1483,10 +1483,10 @@ const QuestionsDB = (function () {
     topic: "substantivos_coletivos",
     topicName: "Substantivos Coletivos",
     question: "Qual coletivo indica um grupo de músicos?",
-    options: ["orquestra", "banda", "manada", "cardume"],
+    options: ["orquestra", "alcateia", "manada", "cardume"],
     correctIndex: 0,
     explanation: "'orquestra' é o coletivo de músicos.",
-    wrongExplanations: { 1: "banda não é a resposta correta.", 2: "manada não é a resposta correta.", 3: "cardume não é a resposta correta." }
+    wrongExplanations: { 1: "alcateia não é a resposta correta.", 2: "manada não é a resposta correta.", 3: "cardume não é a resposta correta." }
   },
   {
     id: "col_135",
@@ -1517,9 +1517,9 @@ const QuestionsDB = (function () {
     topicName: "Atividades Adicionais",
     question: "Qual palavra vem primeiro em ordem alfabética?",
     options: ["pato", "pano", "paz", "pata"],
-    correctIndex: 3,
-    explanation: "'pata' vem antes de 'pano', 'pato' e 'paz'.",
-    wrongExplanations: { 0: "pato não é a resposta correta.", 1: "pano não é a resposta correta.", 2: "paz não é a resposta correta." }
+    correctIndex: 1,
+    explanation: "'pano' vem antes de 'pata', 'pato' e 'paz'.",
+    wrongExplanations: { 0: "pato não é a resposta correta.", 2: "paz não é a resposta correta.", 3: "pata não é a resposta correta." }
   },
   {
     id: "add_138",
@@ -1538,10 +1538,10 @@ const QuestionsDB = (function () {
     topic: "atividades_adicionais",
     topicName: "Atividades Adicionais",
     question: "Qual palavra usa a letra Z?",
-    options: ["zebra", "xebra", "zara", "zoro"],
+    options: ["zebra", "xebra", "casa", "mesa"],
     correctIndex: 0,
     explanation: "'zebra' usa a letra Z corretamente.",
-    wrongExplanations: { 1: "xebra não é a resposta correta.", 2: "zara não é a resposta correta.", 3: "zoro não é a resposta correta." }
+    wrongExplanations: { 1: "xebra não é a resposta correta.", 2: "casa não é a resposta correta.", 3: "mesa não é a resposta correta." }
   },
   {
     id: "add_140",
@@ -1572,9 +1572,9 @@ const QuestionsDB = (function () {
     topicName: "Atividades Adicionais",
     question: "Qual palavra tem sílaba tônica na penúltima sílaba?",
     options: ["caminho", "café", "papel", "você"],
-    correctIndex: 2,
-    explanation: "'papel' é paroxítona.",
-    wrongExplanations: { 0: "caminho não é a resposta correta.", 1: "café não é a resposta correta.", 3: "você não é a resposta correta." }
+    correctIndex: 0,
+    explanation: "'caminho' é paroxítona, pois a sílaba tônica é 'mi'.",
+    wrongExplanations: { 1: "café não é a resposta correta.", 2: "papel não é a resposta correta.", 3: "você não é a resposta correta." }
   },
   {
     id: "add_143",
@@ -1605,9 +1605,9 @@ const QuestionsDB = (function () {
     topicName: "Atividades Adicionais",
     question: "Qual palavra vem por último em ordem alfabética?",
     options: ["lago", "lápis", "lanterna", "laranja"],
-    correctIndex: 1,
-    explanation: "'lápis' vem por último entre essas palavras.",
-    wrongExplanations: { 0: "lago não é a resposta correta.", 2: "lanterna não é a resposta correta.", 3: "laranja não é a resposta correta." }
+    correctIndex: 3,
+    explanation: "'laranja' vem por último entre essas palavras.",
+    wrongExplanations: { 0: "lago não é a resposta correta.", 1: "lápis não é a resposta correta.", 2: "lanterna não é a resposta correta." }
   },
   {
     id: "add_146",
@@ -1626,10 +1626,10 @@ const QuestionsDB = (function () {
     topic: "atividades_adicionais",
     topicName: "Atividades Adicionais",
     question: "Qual é o masculino de 'gata'?",
-    options: ["gato", "gata", "gatinho", "gatal"],
+    options: ["gato", "gata", "gatoo", "gatal"],
     correctIndex: 0,
     explanation: "O masculino de 'gata' é 'gato'.",
-    wrongExplanations: { 1: "gata não é a resposta correta.", 2: "gatinho não é a resposta correta.", 3: "gatal não é a resposta correta." }
+    wrongExplanations: { 1: "gata não é a resposta correta.", 2: "gatoo não é a resposta correta.", 3: "gatal não é a resposta correta." }
   },
   {
     id: "add_148",
@@ -1637,10 +1637,10 @@ const QuestionsDB = (function () {
     topic: "atividades_adicionais",
     topicName: "Atividades Adicionais",
     question: "Qual palavra é simples?",
-    options: ["casa", "girassol", "pão", "passatempo"],
+    options: ["casa", "girassol", "guarda-chuva", "passatempo"],
     correctIndex: 0,
     explanation: "'casa' é um substantivo simples.",
-    wrongExplanations: { 1: "girassol não é a resposta correta.", 2: "pão não é a resposta correta.", 3: "passatempo não é a resposta correta." }
+    wrongExplanations: { 1: "girassol não é a resposta correta.", 2: "guarda-chuva não é a resposta correta.", 3: "passatempo não é a resposta correta." }
   },
   {
     id: "add_149",
@@ -1648,10 +1648,10 @@ const QuestionsDB = (function () {
     topic: "atividades_adicionais",
     topicName: "Atividades Adicionais",
     question: "Qual palavra tem ditongo?",
-    options: ["mãe", "mau", "mio", "céu"],
+    options: ["mesa", "casa", "mio", "céu"],
     correctIndex: 3,
     explanation: "'céu' tem ditongo 'éu'.",
-    wrongExplanations: { 0: "mãe não é a resposta correta.", 1: "mau não é a resposta correta.", 2: "mio não é a resposta correta." }
+    wrongExplanations: { 0: "mesa não é a resposta correta.", 1: "casa não é a resposta correta.", 2: "mio não é a resposta correta." }
   },
   {
     id: "add_150",
