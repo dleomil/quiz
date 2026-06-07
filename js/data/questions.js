@@ -1700,196 +1700,214 @@ const QuestionsDB = (function () {
 
   function generateMathQuestions() {
     const mathQuestions = [];
+    const q = function(question, correct, wrongs, explanation) {
+      return [question, correct, wrongs, explanation];
+    };
 
-    const subtractionReservePairs = [
-      [432, 158], [705, 278], [864, 397], [931, 486], [620, 185],
-      [540, 267], [812, 439], [703, 258], [950, 476], [684, 295],
-      [761, 384], [843, 567], [904, 458], [670, 286], [725, 348],
-      [810, 456], [963, 579], [742, 368], [880, 497], [651, 274]
+    const doubleEntries = [
+      q("O dobro de um numero quer dizer:", "multiplicar por 2", ["multiplicar por 3", "dividir por 2", "somar 10"], "Dobro significa multiplicar por 2."),
+      q("O triplo de um numero quer dizer:", "multiplicar por 3", ["multiplicar por 2", "dividir por 3", "somar 3"], "Triplo significa multiplicar por 3."),
+      q("O quadruplo de um numero quer dizer:", "multiplicar por 4", ["multiplicar por 2", "multiplicar por 5", "somar 4"], "Quadruplo significa multiplicar por 4."),
+      q("O quintuplo de um numero quer dizer:", "multiplicar por 5", ["multiplicar por 2", "multiplicar por 4", "dividir por 5"], "Quintuplo significa multiplicar por 5."),
+      q("Qual e o dobro de 2?", 4, [6, 8, 10], "O dobro de 2 e 4."),
+      q("Qual e o dobro de 7?", 14, [12, 16, 18], "O dobro de 7 e 14."),
+      q("Qual e o triplo de 3?", 9, [6, 12, 15], "O triplo de 3 e 9."),
+      q("Qual e o triplo de 6?", 18, [12, 20, 24], "O triplo de 6 e 18."),
+      q("Qual e o quadruplo de 4?", 16, [12, 18, 20], "O quadruplo de 4 e 16."),
+      q("Qual e o quadruplo de 5?", 20, [15, 18, 24], "O quadruplo de 5 e 20."),
+      q("Qual e o quintuplo de 2?", 10, [8, 12, 14], "O quintuplo de 2 e 10."),
+      q("Qual e o quintuplo de 4?", 20, [16, 24, 28], "O quintuplo de 4 e 20."),
+      q("Qual e o dobro de 9?", 18, [16, 20, 22], "O dobro de 9 e 18."),
+      q("Qual e o triplo de 8?", 24, [16, 20, 30], "O triplo de 8 e 24."),
+      q("Qual e o quadruplo de 3?", 12, [9, 15, 18], "O quadruplo de 3 e 12."),
+      q("Qual e o quintuplo de 3?", 15, [12, 18, 20], "O quintuplo de 3 e 15."),
+      q("Qual e o dobro de 12?", 24, [20, 22, 26], "O dobro de 12 e 24."),
+      q("Qual e o triplo de 5?", 15, [10, 18, 20], "O triplo de 5 e 15."),
+      q("Qual e o quintuplo de 6?", 30, [24, 32, 35], "O quintuplo de 6 e 30.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "subtracao_reserva", "Subtracao com Reserva", "mat_sr",
-      subtractionReservePairs.map(([a, b]) => {
-        const correct = a - b;
-        return makeEntry(
-          `Quanto e ${a} - ${b}?`,
-          correct,
-          [correct + 10, correct - 10, correct + 100, correct + 1],
-          `Para resolver ${a} - ${b}, e preciso fazer a subtracao com reagrupamento quando falta dezena ou centena.`
-        );
-      })
+    mathQuestions.push(...buildQuestions("matematica", "dobro_triplo_quadruplo_quintuplo", "Dobro, Triplo, Quadruplo e Quintuplo", "mat_dtq",
+      doubleEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const thousandPairs = [
-      [1250, 486], [2034, 875], [3400, 1587], [4123, 1968], [5005, 2479],
-      [6200, 3586], [7314, 2897], [8402, 4758], [9001, 3864], [1540, 697],
-      [2603, 1489], [3780, 2596], [4821, 1738], [6104, 2895], [7420, 3567]
+    const compareEntries = [
+      q("Qual numero e maior?", 54, [45, 40, 49], "54 e maior do que 45, 40 e 49."),
+      q("Qual numero e menor?", 3, [31, 13, 23], "3 e menor do que 31, 13 e 23."),
+      q("Qual sequencia esta em ordem crescente?", "9, 11, 12, 15", ["15, 12, 11, 9", "12, 9, 15, 11", "11, 15, 9, 12"], "Ordem crescente vai do menor para o maior."),
+      q("Qual sequencia esta em ordem decrescente?", "80, 75, 70, 65", ["65, 70, 75, 80", "75, 80, 65, 70", "70, 65, 80, 75"], "Ordem decrescente vai do maior para o menor."),
+      q("Qual numero fica entre 27 e 29?", 28, [26, 30, 31], "28 fica entre 27 e 29."),
+      q("Qual e o antecessor de 50?", 49, [48, 51, 40], "O numero anterior a 50 e 49."),
+      q("Qual e o sucessor de 99?", 100, [98, 101, 110], "O numero depois de 99 e 100."),
+      q("Entre 62 e 26, qual e o maior?", 62, [26, 52, 16], "62 e maior do que 26."),
+      q("Entre 41 e 14, qual e o menor?", 14, [41, 24, 44], "14 e menor do que 41."),
+      q("Qual numero e maior?", 231, [123, 132, 213], "231 e o maior numero da lista."),
+      q("Qual numero e menor?", 405, [450, 540, 504], "405 e o menor numero da lista."),
+      q("Qual sequencia esta em ordem crescente?", "31, 34, 43", ["43, 34, 31", "34, 31, 43", "31, 43, 34"], "A ordem crescente vai do menor para o maior."),
+      q("Qual sequencia esta em ordem decrescente?", "21, 18, 12", ["12, 18, 21", "18, 12, 21", "21, 12, 18"], "A ordem decrescente vai do maior para o menor."),
+      q("Qual numero fica entre 90 e 92?", 91, [89, 93, 99], "91 fica entre 90 e 92."),
+      q("Qual e o antecessor de 300?", 299, [298, 301, 390], "O numero anterior a 300 e 299."),
+      q("Qual e o sucessor de 499?", 500, [498, 501, 590], "O numero depois de 499 e 500."),
+      q("Entre 78 e 87, qual e o maior?", 87, [78, 68, 97], "87 e maior do que 78."),
+      q("Entre 205 e 250, qual e o menor?", 205, [250, 215, 295], "205 e menor do que 250."),
+      q("Qual sequencia esta em ordem crescente?", "8, 18, 28, 38", ["38, 28, 18, 8", "18, 8, 38, 28", "8, 28, 18, 38"], "A ordem crescente vai do menor para o maior.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "subtracao_milhar", "Subtraindo com Milhar", "mat_sm",
-      thousandPairs.map(([a, b]) => {
-        const correct = a - b;
-        return makeEntry(
-          `Quanto e ${a} - ${b}?`,
-          correct,
-          [correct + 100, correct - 100, correct + 10, correct + 1000],
-          `Nessa conta, alem das centenas, pode ser necessario pedir emprestado tambem no milhar.`
-        );
-      })
+    mathQuestions.push(...buildQuestions("matematica", "comparando_ordenando_numeros", "Comparando e Ordenando Numeros", "mat_con",
+      compareEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const addSubProblems = [
-      ["Lia tinha 245 figurinhas e ganhou mais 128. Com quantas figurinhas ela ficou?", 373, [363, 383, 327], "Somamos as figurinhas que Lia tinha com as que ela ganhou: 245 + 128."],
-      ["Uma biblioteca tinha 560 livros. Depois emprestou 187. Quantos livros ficaram na biblioteca?", 373, [383, 347, 273], "Para saber quantos ficaram, fazemos 560 - 187."],
-      ["No passeio, 318 alunos foram de manha e 206 a tarde. Quantos alunos participaram ao todo?", 524, [514, 534, 424], "Como queremos o total, fazemos 318 + 206."],
-      ["Pedro juntou 450 tampinhas e usou 175 em uma atividade. Quantas tampinhas sobraram?", 275, [265, 285, 375], "Para descobrir o que sobrou, fazemos 450 - 175."],
-      ["Uma escola arrecadou 126 caixas de leite na segunda e 239 na terca. Quantas caixas foram arrecadadas nos dois dias?", 365, [355, 375, 465], "Somamos as caixas dos dois dias: 126 + 239."],
-      ["Ana guardou 704 reais para uma viagem e gastou 286 reais. Quanto ainda restou?", 418, [408, 428, 318], "O valor que restou e 704 - 286."],
-      ["Um mercado vendeu 315 paes pela manha e 184 a tarde. Quantos paes vendeu no dia?", 499, [489, 509, 399], "Somamos as vendas da manha e da tarde."],
-      ["Numa fazenda havia 930 laranjas colhidas. Depois 458 foram vendidas. Quantas laranjas sobraram?", 472, [462, 482, 372], "Para saber o que sobrou, fazemos 930 - 458."],
-      ["Julia leu 128 paginas de um livro e depois mais 147 paginas. Quantas paginas ela leu ao todo?", 275, [265, 285, 175], "Somamos as paginas lidas nas duas partes."],
-      ["Havia 600 litros de agua em uma caixa. Foram usados 238 litros. Quantos litros ainda ficaram?", 362, [352, 372, 262], "Subtraimos os litros usados dos litros que havia antes."],
-      ["Uma loja vendeu 432 brinquedos em abril e 156 em maio. Quantos brinquedos vendeu nesses dois meses?", 588, [578, 598, 488], "Como e o total de dois meses, somamos 432 + 156."],
-      ["Em um album cabem 800 fotos. Ja foram colocadas 467 fotos. Quantos espacos ainda faltam preencher?", 333, [323, 343, 433], "Fazemos 800 - 467 para saber quantos espacos ainda faltam."],
-      ["Um parque recebeu 219 visitantes de manha e 312 a tarde. Quantas pessoas visitaram o parque?", 531, [521, 541, 431], "Somamos os visitantes dos dois periodos."],
-      ["Carlos tinha 980 pontos em um jogo e perdeu 365 pontos. Com quantos pontos ele ficou?", 615, [605, 625, 515], "Para saber a nova pontuacao, fazemos 980 - 365."],
-      ["No deposito havia 155 caixas azuis e 244 caixas vermelhas. Quantas caixas havia no total?", 399, [389, 409, 299], "Somamos as caixas azuis e vermelhas."],
-      ["Uma professora comprou 750 folhas e usou 298 em atividades. Quantas folhas sobraram?", 452, [442, 462, 352], "O numero de folhas que sobraram e 750 - 298."],
-      ["Um onibus levou 186 pessoas pela manha e 207 a tarde. Quantas pessoas foram levadas ao todo?", 393, [383, 403, 293], "Somamos 186 + 207."],
-      ["Numa gincana, a equipe azul fez 640 pontos e perdeu 285 em uma prova. Quantos pontos restaram?", 355, [345, 365, 255], "Subtraimos os pontos perdidos dos pontos que a equipe tinha."],
-      ["Um clube tinha 321 bolas e comprou mais 179. Quantas bolas passou a ter?", 500, [490, 510, 400], "321 + 179 = 500."],
-      ["Marina juntou 1000 pecas de montar e doou 468. Com quantas pecas ela ficou?", 532, [522, 542, 432], "Fazemos 1000 - 468 para descobrir quantas pecas restaram."]
+    const clockEntries = [
+      q("Se o relogio marca 3:00, lemos:", "tres horas", ["tres e quinze", "tres e trinta", "quatro horas"], "Quando os minutos estao no 12, a hora e cheia."),
+      q("Se o relogio marca 7:30, lemos:", "sete horas e trinta minutos", ["sete horas", "sete horas e quinze minutos", "oito horas"], "30 minutos formam meia hora."),
+      q("Se o relogio marca 12:15, lemos:", "doze horas e quinze minutos", ["doze horas", "doze horas e trinta minutos", "uma hora"], "15 minutos formam um quarto de hora."),
+      q("Se o relogio marca 5:45, lemos:", "cinco horas e quarenta e cinco minutos", ["cinco horas", "cinco horas e quinze minutos", "seis horas"], "45 minutos faltam para completar uma hora."),
+      q("Qual horario mostra um relogio com ponteiro das horas no 8 e dos minutos no 12?", "8:00", ["8:30", "7:00", "8:15"], "Com os dois ponteiros no 12, sao horas cheias."),
+      q("Qual horario mostra um relogio com ponteiro das horas entre 2 e 3 e dos minutos no 6?", "2:30", ["2:00", "2:15", "3:30"], "Quando o ponteiro dos minutos esta no 6, sao 30 minutos."),
+      q("Quanto falta para 4:00 quando sao 3:45?", "15 minutos", ["10 minutos", "20 minutos", "30 minutos"], "De 3:45 ate 4:00 faltam 15 minutos."),
+      q("Quanto passou de 6:00 quando sao 6:20?", "20 minutos", ["15 minutos", "30 minutos", "40 minutos"], "De 6:00 ate 6:20 passaram 20 minutos."),
+      q("Se a aula comeca as 9:00 e termina as 10:00, dura:", "1 hora", ["30 minutos", "2 horas", "15 minutos"], "De 9:00 ate 10:00 passa 1 hora."),
+      q("Se sao 1:00 e o relogio avanca 2 horas, fica em:", "3:00", ["2:00", "4:00", "5:00"], "Somamos 2 horas ao horario inicial."),
+      q("Se sao 4:30 e passam 30 minutos, fica em:", "5:00", ["4:45", "5:30", "6:00"], "30 minutos depois de 4:30, sao 5:00."),
+      q("Se o relogio marca 11:00, sao:", "onze horas", ["onze e quinze", "dez horas", "doze horas"], "11:00 e uma hora cheia."),
+      q("Se o relogio marca 6:15, sao:", "seis horas e quinze minutos", ["seis horas", "seis horas e trinta minutos", "sete horas"], "15 minutos formam um quarto de hora."),
+      q("Se o relogio marca 8:30, sao:", "oito horas e trinta minutos", ["oito horas", "oito horas e quinze minutos", "nove horas"], "30 minutos formam meia hora."),
+      q("Se sao 10:45, faltam quantos minutos para 11:00?", "15 minutos", ["10 minutos", "20 minutos", "30 minutos"], "De 10:45 ate 11:00 faltam 15 minutos."),
+      q("Se uma atividade comeca as 14:00 e termina as 15:00, dura:", "1 hora", ["30 minutos", "2 horas", "45 minutos"], "De 14:00 ate 15:00 passa 1 hora."),
+      q("Se o relogio marca 9:30, ele mostra:", "nove horas e trinta minutos", ["nove horas", "nove horas e quinze minutos", "dez horas"], "30 minutos formam meia hora."),
+      q("Se sao 4:00 e passam 1 hora, fica em:", "5:00", ["4:30", "6:00", "5:30"], "Uma hora depois de 4:00 e 5:00."),
+      q("Se o ponteiro dos minutos esta no 12 e o das horas no 5, o horario e:", "5:00", ["5:30", "4:00", "6:00"], "Com os minutos no 12, a hora esta cheia.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "problemas_adicao_subtracao", "Problemas com Adicao e Subtracao", "mat_pas",
-      addSubProblems.map(([question, correct, wrongs, explanation]) => makeEntry(question, correct, wrongs, explanation))
+    mathQuestions.push(...buildQuestions("matematica", "horas_relogios", "As Horas e os Relogios", "mat_hr",
+      clockEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const multiplicationBasicPairs = [
-      [2, 8], [3, 6], [4, 7], [5, 9], [6, 4],
-      [7, 5], [8, 3], [9, 4], [10, 6], [3, 9],
-      [4, 8], [5, 7], [6, 6], [7, 8], [8, 5],
-      [9, 7], [10, 4], [2, 12], [3, 11], [4, 9]
+    const mult10Entries = [
+      q("Quanto e 3 x 10?", 30, [20, 40, 300], "Multiplicar por 10 acrescenta um zero."),
+      q("Quanto e 7 x 10?", 70, [17, 700, 60], "Multiplicar por 10 acrescenta um zero."),
+      q("Quanto e 14 x 10?", 140, [104, 24, 1400], "Multiplicar por 10 acrescenta um zero."),
+      q("Quanto e 5 x 100?", 500, [50, 5000, 600], "Multiplicar por 100 acrescenta dois zeros."),
+      q("Quanto e 9 x 100?", 900, [90, 990, 9000], "Multiplicar por 100 acrescenta dois zeros."),
+      q("Quanto e 12 x 100?", 1200, [1020, 120, 12000], "Multiplicar por 100 acrescenta dois zeros."),
+      q("Quanto e 2 x 1000?", 2000, [200, 20, 20000], "Multiplicar por 1000 acrescenta tres zeros."),
+      q("Quanto e 4 x 1000?", 4000, [400, 40, 40000], "Multiplicar por 1000 acrescenta tres zeros."),
+      q("Quanto e 8 x 1000?", 8000, [800, 80, 80000], "Multiplicar por 1000 acrescenta tres zeros."),
+      q("Quanto e 6 x 0?", 0, [6, 60, 600], "Todo numero multiplicado por zero resulta em zero."),
+      q("Quanto e 15 x 0?", 0, [15, 150, 1500], "Todo numero multiplicado por zero resulta em zero."),
+      q("Quanto e 0 x 10?", 0, [10, 100, 1000], "Zero vezes qualquer numero e zero."),
+      q("Quanto e 23 x 10?", 230, [2300, 223, 240], "Multiplicar por 10 acrescenta um zero."),
+      q("Quanto e 11 x 100?", 1100, [110, 1011, 1110], "Multiplicar por 100 acrescenta dois zeros."),
+      q("Quanto e 7 x 1000?", 7000, [700, 70, 70000], "Multiplicar por 1000 acrescenta tres zeros."),
+      q("Quanto e 19 x 0?", 0, [19, 190, 1900], "Todo numero multiplicado por zero resulta em zero."),
+      q("Quanto e 30 x 10?", 300, [30, 3000, 330], "Multiplicar por 10 acrescenta um zero."),
+      q("Quanto e 1 x 1000?", 1000, [100, 10, 10000], "Multiplicar por 1000 acrescenta tres zeros."),
+      q("Multiplicar por zero da:", 0, [1, 10, 100], "Zero multiplicado por qualquer numero continua sendo zero.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_basica", "Multiplicacao - Operacoes Basicas", "mat_mb",
-      multiplicationBasicPairs.map(([a, b]) => {
-        const correct = a * b;
-        return makeEntry(
-          `Quanto e ${a} x ${b}?`,
-          correct,
-          [correct + a, correct - a, correct + b, correct + 1],
-          `Multiplicar ${a} x ${b} e somar ${a} ${b} vezes, ou ${b} ${a} vezes.`
-        );
-      })
+    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_10_100_1000_zero", "Multiplicacao por 10, 100, 1.000 ou Zero", "mat_m10",
+      mult10Entries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const multiplicationProblems = [
-      ["Cada caixa tem 6 lapis. Quantos lapis ha em 8 caixas?", 48, [42, 54, 56], "Se cada caixa tem 6 lapis, fazemos 6 x 8."],
-      ["Uma professora organizou 7 filas com 5 alunos em cada uma. Quantos alunos estavam nas filas?", 35, [30, 40, 42], "Basta multiplicar 7 filas por 5 alunos."],
-      ["Um pacote tem 4 figurinhas. Quantas figurinhas ha em 9 pacotes?", 36, [32, 40, 45], "Fazemos 4 x 9 para descobrir o total."],
-      ["Joao plantou 3 mudas em cada vaso. Se ele tem 12 vasos, quantas mudas plantou?", 36, [30, 39, 48], "O total e 3 x 12."],
-      ["No teatro, cada fileira tem 8 cadeiras. Quantas cadeiras ha em 6 fileiras?", 48, [42, 54, 46], "Como sao 6 grupos de 8 cadeiras, fazemos 8 x 6."],
-      ["Uma aranha tem 8 patas. Quantas patas tem 5 aranhas?", 40, [32, 45, 48], "Multiplicamos 8 patas por 5 aranhas."],
-      ["Cada semana tem 7 dias. Quantos dias ha em 4 semanas?", 28, [21, 24, 35], "Fazemos 7 x 4."],
-      ["Uma bandeja leva 10 copos. Quantos copos cabem em 3 bandejas?", 30, [20, 33, 40], "Sao 3 grupos de 10 copos."],
-      ["Cada time ganhou 9 medalhas. Quantas medalhas ganharam 4 times?", 36, [27, 40, 45], "Multiplicamos 9 x 4."],
-      ["Uma caixa de ovos tem 12 ovos. Quantos ovos ha em 2 caixas?", 24, [14, 22, 26], "Sao 2 grupos de 12 ovos."],
-      ["Cada aluno recebeu 5 livros. Quantos livros foram entregues a 9 alunos?", 45, [40, 50, 54], "Basta calcular 5 x 9."],
-      ["Em cada mesa ha 4 cadeiras. Quantas cadeiras ha em 11 mesas?", 44, [40, 48, 54], "Temos 11 grupos de 4 cadeiras."],
-      ["Uma loja montou 6 estantes com 7 caixas em cada uma. Quantas caixas foram colocadas?", 42, [36, 48, 49], "Fazemos 6 x 7."],
-      ["Cada pacote tem 3 biscoitos. Quantos biscoitos ha em 15 pacotes?", 45, [30, 42, 48], "Sao 15 grupos de 3 biscoitos."],
-      ["Um jardim tem 9 canteiros com 2 flores em cada um. Quantas flores ha ao todo?", 18, [11, 16, 20], "O total e 9 x 2."],
-      ["Cada album tem 8 paginas. Quantas paginas ha em 7 albuns?", 56, [48, 54, 64], "Fazemos 8 x 7."],
-      ["Uma bicicleta tem 2 rodas. Quantas rodas ha em 13 bicicletas?", 26, [24, 28, 23], "Multiplicamos 2 x 13."],
-      ["Cada caixa guarda 9 bolas. Quantas bolas ha em 5 caixas?", 45, [36, 40, 54], "Sao 5 grupos de 9 bolas."],
-      ["Uma fazenda tem 4 currais com 6 vacas em cada um. Quantas vacas ha?", 24, [20, 28, 30], "Calculamos 4 x 6."],
-      ["Em cada saco ha 7 laranjas. Quantas laranjas ha em 8 sacos?", 56, [49, 54, 63], "Basta multiplicar 7 x 8."]
+    const capacityMassEntries = [
+      q("Qual unidade usamos para medir a capacidade de uma garrafa de agua?", "litro", ["quilograma", "grama", "metro"], "Capacidade de liquidos costuma ser medida em litros ou mililitros."),
+      q("Qual unidade usamos para medir 500 mL de suco?", "mililitro", ["quilograma", "grama", "litro"], "Mililitro e uma unidade de capacidade."),
+      q("1 litro corresponde a:", "1000 mL", ["100 mL", "10 mL", "10 000 mL"], "1 litro equivale a 1000 mililitros."),
+      q("Qual e maior: 1 litro ou 750 mL?", "1 litro", ["750 mL", "500 mL", "250 mL"], "1 litro e maior que 750 mL."),
+      q("Qual objeto costuma ser medido em quilogramas?", "saco de arroz", ["gota de remedio", "xicara de cha", "colher de sopa"], "Sacos maiores costumam ser medidos em quilogramas."),
+      q("Qual objeto costuma ser medido em gramas?", "maca", ["saco de feijao", "garrafa de agua", "cesta de frutas"], "Frutas pequenas costumam ser medidas em gramas."),
+      q("Qual e mais pesado: 2 kg ou 500 g?", "2 kg", ["500 g", "200 g", "100 g"], "2 kg e maior do que 500 g."),
+      q("Qual e mais leve: 1 kg ou 800 g?", "800 g", ["1 kg", "1200 g", "2 kg"], "800 g e menor que 1 kg."),
+      q("500 g + 500 g = ?", "1 kg", ["500 g", "1500 g", "2 kg"], "500 g mais 500 g formam 1 kg."),
+      q("2 litros = ?", "2000 mL", ["200 mL", "20 mL", "20000 mL"], "2 litros correspondem a 2000 mililitros."),
+      q("Uma colher de remedio costuma ser medida em:", "mililitros", ["quilogramas", "gramas", "metros"], "Pequenas quantidades de liquido usam mililitros."),
+      q("Um pacote de farinha de 1 kg tem:", "1000 g", ["100 g", "10 g", "10 000 g"], "1 kg equivale a 1000 gramas."),
+      q("Qual instrumento pode ser usado para medir massa?", "balanca", ["relogio", "regua", "termometro"], "A balanca mede massa."),
+      q("Uma caixa de leite grande geralmente tem:", "1 litro", ["1 quilograma", "100 gramas", "10 litros"], "Caixas de leite costumam indicar capacidade em litros."),
+      q("Qual unidade e usada para medir a massa de uma pessoa?", "quilograma", ["litro", "mililitro", "metro"], "A massa de pessoas e medida em quilogramas."),
+      q("Qual e mais pesado: 3 kg ou 300 g?", "3 kg", ["300 g", "30 g", "3000 g"], "3 kg e maior que 300 g."),
+      q("Qual e mais leve: 750 mL ou 1 L?", "750 mL", ["1 L", "1750 mL", "2 L"], "750 mL e menor que 1 litro."),
+      q("10 pacotinhos de 100 g juntos pesam:", "1 kg", ["100 g", "500 g", "2 kg"], "10 vezes 100 g formam 1000 g, ou 1 kg.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_problemas", "Multiplicacao e Problemas", "mat_mp",
-      multiplicationProblems.map(([question, correct, wrongs, explanation]) => makeEntry(question, correct, wrongs, explanation))
+    mathQuestions.push(...buildQuestions("matematica", "medidas_capacidade_massa", "Medidas de Capacidade e de Massa", "mat_cm",
+      capacityMassEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const multiplicationReservePairs = [
-      [124, 3], [215, 4], [306, 5], [418, 2], [527, 3],
-      [638, 4], [749, 2], [856, 3], [912, 4], [135, 6],
-      [247, 3], [359, 2], [468, 5], [574, 4], [683, 3]
+    const solidsKnownEntries = [
+      q("Qual solido lembra um dado?", "cubo", ["esfera", "cone", "cilindro"], "O dado tem forma de cubo."),
+      q("Qual solido lembra uma bola?", "esfera", ["cubo", "cone", "piramide"], "A bola tem forma de esfera."),
+      q("Qual solido lembra uma lata?", "cilindro", ["cone", "cubo", "esfera"], "A lata tem forma de cilindro."),
+      q("Qual solido lembra um sorvete de casquinha?", "cone", ["cubo", "cilindro", "esfera"], "A casquinha lembra um cone."),
+      q("Qual solido lembra uma caixa de sapato?", "paralelepipedo", ["esfera", "cone", "cilindro"], "A caixa de sapato tem forma de paralelepipedo."),
+      q("Qual solido tem base quadrada e faces triangulares?", "piramide", ["cubo", "esfera", "cilindro"], "A piramide tem faces laterais triangulares."),
+      q("Qual solido tem 6 faces quadradas iguais?", "cubo", ["cilindro", "cone", "esfera"], "O cubo tem 6 faces iguais."),
+      q("Qual solido tem 2 bases circulares?", "cilindro", ["cone", "cubo", "piramide"], "O cilindro tem duas bases circulares."),
+      q("Qual solido tem 1 base circular e 1 vertice?", "cone", ["cubo", "esfera", "cilindro"], "O cone tem uma base circular e uma ponta."),
+      q("Qual solido tem 8 vertices?", "cubo", ["esfera", "cone", "cilindro"], "O cubo possui 8 vertices."),
+      q("Qual solido nao tem faces planas?", "esfera", ["cubo", "piramide", "paralelepipedo"], "A esfera e totalmente redonda."),
+      q("Qual solido pode rolar com facilidade?", "esfera", ["cubo", "paralelepipedo", "piramide"], "A esfera rola em todas as direcoes."),
+      q("Qual solido tem faces retangulares?", "paralelepipedo", ["cone", "esfera", "piramide"], "O paralelepipedo tem faces retangulares."),
+      q("Qual solido parece um tijolo?", "paralelepipedo", ["cone", "esfera", "cilindro"], "Tijolos lembram paralelepipedos."),
+      q("Qual solido parece um chapeu de festa?", "cone", ["cubo", "esfera", "cilindro"], "O chapeu de festa lembra um cone."),
+      q("Qual solido tem uma ponta?", "cone", ["esfera", "cilindro", "cubo"], "O cone termina em uma ponta."),
+      q("Qual solido tem 6 faces planas?", "cubo", ["esfera", "cone", "cilindro"], "O cubo tem 6 faces planas."),
+      q("Qual solido tem forma de caixa retangular?", "paralelepipedo", ["cone", "esfera", "piramide"], "Uma caixa retangular lembra um paralelepipedo."),
+      q("Qual solido tem uma base circular e uma lateral curva?", "cilindro", ["cubo", "esfera", "piramide"], "O cilindro tem base circular e superficie curva.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "multiplicacao_reserva", "Multiplicacao com Reserva", "mat_mr",
-      multiplicationReservePairs.map(([a, b]) => {
-        const correct = a * b;
-        return makeEntry(
-          `Quanto e ${a} x ${b}?`,
-          correct,
-          [correct + b * 10, correct - b * 10, correct + 100, correct + b],
-          `Na multiplicacao ${a} x ${b}, algumas ordens passam valor para a ordem seguinte, por isso ha reserva.`
-        );
-      })
+    mathQuestions.push(...buildQuestions("matematica", "solidos_geometricos_mais_conhecidos", "Solidos Geometricos Mais Conhecidos", "mat_sg",
+      solidsKnownEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const circleEntries = [
-      ["Qual figura geometrica e redonda por inteiro?", "circulo", ["quadrado", "triangulo", "retangulo"], "O circulo e a figura toda preenchida e redonda."],
-      ["A linha que forma a volta do circulo recebe o nome de:", "circunferencia", ["segmento", "lado", "vertice"], "Circunferencia e a linha curva que contorna o circulo."],
-      ["O centro de um circulo fica:", ["bem no meio da figura", "em um canto", "fora da figura", "na ponta da linha"], 0, "O centro e o ponto que fica no meio do circulo."],
-      ["Qual objeto lembra mais um circulo?", "moeda", ["livro", "lapis", "porta"], "A moeda tem formato redondo, parecido com um circulo."],
-      ["A borda de uma roda lembra mais:", "uma circunferencia", ["um triangulo", "um retangulo", "uma linha reta"], "A borda da roda e uma linha curva fechada, como a circunferencia."],
-      ["Se uma figura e redonda e fechada, ela pode ser um:", "circulo", ["quadrado", "losango", "trapezio"], "O circulo e uma figura fechada e redonda."],
-      ["Qual dos nomes combina com a parte de dentro de uma figura redonda?", "circulo", ["circunferencia", "segmento", "ponto final"], "Circulo e a regiao interna; circunferencia e o contorno."],
-      ["O que e a circunferencia?", "o contorno do circulo", ["o centro da figura", "uma linha reta", "a metade do circulo"], "Circunferencia e a linha curva que contorna o circulo."],
-      ["Em uma pizza inteira vista de cima, o formato se parece mais com:", "circulo", ["triangulo", "retangulo", "cubo"], "A pizza inteira tem forma parecida com um circulo."],
-      ["Qual figura nao tem cantos nem lados retos?", "circulo", ["quadrado", "retangulo", "triangulo"], "O circulo nao possui lados retos nem cantos."],
-      ["O bambole pode lembrar melhor:", "uma circunferencia", ["um quadrado", "um cone", "um cubo"], "O bambole parece um contorno redondo."],
-      ["Quando desenhamos so a volta de uma figura redonda, desenhamos a:", "circunferencia", ["diagonal", "altura", "tabuada"], "A volta da figura redonda recebe o nome de circunferencia."]
+    const solidsBuildEntries = [
+      q("Uma planificacao com 6 quadrados monta um:", "cubo", ["cilindro", "cone", "esfera"], "Seis quadrados formam um cubo."),
+      q("Uma planificacao com 6 retangulos monta um:", "paralelepipedo", ["cone", "esfera", "cubo"], "Seis retangulos podem formar um paralelepipedo."),
+      q("Uma planificacao com 2 circulos e 1 retangulo monta um:", "cilindro", ["cone", "cubo", "piramide"], "Dois circulos e um retangulo formam um cilindro."),
+      q("Uma planificacao com 1 circulo e 1 setor circular monta um:", "cone", ["cilindro", "cubo", "esfera"], "Um circulo e um setor circular formam um cone."),
+      q("Uma planificacao com 1 quadrado e 4 triangulos monta uma:", "piramide", ["cubo", "cilindro", "esfera"], "Um quadrado e 4 triangulos formam uma piramide."),
+      q("Quantos quadrados iguais costumam formar um cubo?", 6, [4, 8, 10], "Um cubo tem 6 faces quadradas."),
+      q("Quantos circulos aparecem na planificacao de um cilindro?", 2, [1, 3, 4], "O cilindro tem duas bases circulares."),
+      q("Quantos triangulos costumam aparecer na planificacao de uma piramide de base quadrada?", 4, [3, 5, 6], "A piramide de base quadrada tem 4 faces triangulares."),
+      q("Qual solido pode ser montado com 6 quadrados iguais?", "cubo", ["cone", "cilindro", "esfera"], "Seis quadrados iguais formam um cubo."),
+      q("Qual solido pode ser montado com 6 retangulos iguais?", "paralelepipedo", ["cone", "esfera", "piramide"], "Seis retangulos iguais podem formar uma caixa retangular."),
+      q("Qual solido pode ser montado com 2 circulos e 1 retangulo?", "cilindro", ["cubo", "cone", "piramide"], "Essa planificacao forma um cilindro."),
+      q("Qual solido pode ser montado com 1 circulo e 1 setor circular?", "cone", ["cubo", "cilindro", "esfera"], "Essa planificacao forma um cone."),
+      q("Qual solido pode ser montado com 1 quadrado e 4 triangulos?", "piramide", ["cubo", "cilindro", "esfera"], "Essa planificacao forma uma piramide."),
+      q("Uma planificacao em cruz com 6 quadrados iguais forma um:", "cubo", ["cilindro", "cone", "esfera"], "Essa planificacao forma um cubo."),
+      q("Uma planificacao com 1 quadrado e 4 triangulos forma uma piramide de base:", "quadrada", ["circular", "triangular", "retangular"], "A base e quadrada."),
+      q("Uma planificacao com 2 circulos e 1 retangulo pode formar o solido que parece uma:", "lata", ["bola", "caixa", "piramide"], "Esse conjunto forma um cilindro, como uma lata."),
+      q("Uma planificacao com 6 faces quadradas iguais monta um:", "cubo", ["cilindro", "cone", "esfera"], "Seis quadrados iguais formam um cubo."),
+      q("Uma planificacao com 1 circulo e uma parte lateral em forma de setor forma um:", "cone", ["cubo", "cilindro", "paralelepipedo"], "A lateral em setor forma um cone.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "circulos_circunferencias", "Circulos e Circunferencias", "mat_cc",
-      circleEntries.map(entry => Array.isArray(entry[1])
-        ? [entry[0], entry[1], entry[2], entry[3]]
-        : makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    mathQuestions.push(...buildQuestions("matematica", "solidos_para_montar", "Solidos para Montar", "mat_sm",
+      solidsBuildEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
-    const segmentEntries = [
-      ["Um segmento de reta e:", "uma parte de reta com comeco e fim", ["uma curva fechada", "uma conta de multiplicar", "um circulo inteiro"], "O segmento de reta tem dois extremos: um inicio e um fim."],
-      ["Qual desenho lembra um segmento de reta?", "uma linha reta curta", ["uma roda", "um arco", "um circulo"], "O segmento de reta parece uma linha reta limitada por dois pontos."],
-      ["Se marcamos os pontos A e B e ligamos com uma linha reta, formamos:", "o segmento AB", ["uma circunferencia", "um triangulo", "um cubo"], "Dois pontos ligados por uma reta formam um segmento."],
-      ["Um segmento de reta pode ser:", "horizontal, vertical ou inclinado", ["somente redondo", "somente curvo", "sempre em zigue-zague"], "Segmentos podem aparecer em varias posicoes, mas continuam retos."],
-      ["O segmento de reta e diferente da linha curva porque:", "ele nao faz curva", ["ele nao tem tamanho", "ele nao pode ser desenhado", "ele sempre e redondo"], "Um segmento de reta segue sempre reto."],
-      ["Ao desenhar a borda de uma folha de caderno, vemos muitos:", "segmentos de reta", ["circulos", "espirais", "ondas"], "Os lados de uma folha sao exemplos de segmentos de reta."],
-      ["Uma regua ajuda a desenhar:", "segmentos de reta", ["circulos perfeitos sem compasso", "ondas do mar", "nuvens"], "A regua ajuda a fazer linhas retas."],
-      ["Quando um segmento liga dois pontos, ele mostra:", "a distancia reta entre eles", ["o nome do caderno", "a cor dos pontos", "uma multiplicacao"], "O segmento representa a ligacao reta entre os pontos."],
-      ["Qual objeto tem bordas que parecem segmentos de reta?", "um livro", ["uma bola", "uma moeda", "um prato"], "As bordas retas do livro lembram segmentos de reta."],
-      ["Um segmento de reta sempre tem:", "dois extremos", ["tres centros", "quatro curvas", "nenhum fim"], "Todo segmento de reta tem um inicio e um fim."],
-      ["Se a linha esta torcida, ela nao e:", "segmento de reta", ["linha", "desenho", "figura"], "Para ser segmento, a linha precisa ser reta."],
-      ["Um lado de um quadrado e um exemplo de:", "segmento de reta", ["circunferencia", "diametro", "curva aberta"], "Cada lado de um quadrado e um segmento de reta."],
-      ["Quando medimos um lado reto de uma figura, estamos medindo um:", "segmento de reta", ["circulo", "angulo redondo", "contorno curvo"], "Lados retos de figuras sao segmentos de reta."],
-      ["Uma cerca feita com hastes retas lembra varios:", "segmentos de reta", ["circulos concentricos", "arcos completos", "ondas fechadas"], "Cada haste reta pode lembrar um segmento de reta."]
+    const extraEntries = [
+      q("O dobro de 8 e:", 16, [12, 14, 18], "O dobro de 8 e 16."),
+      q("Qual numero e maior?", 74, [47, 64, 57], "74 e maior que as outras opcoes."),
+      q("Se o relogio marca 2:30, lemos:", "duas horas e trinta minutos", ["duas horas", "duas horas e quinze minutos", "tres horas"], "30 minutos formam meia hora."),
+      q("Quanto e 4 x 100?", 400, [40, 4000, 420], "Multiplicar por 100 acrescenta dois zeros."),
+      q("Qual e maior: 1 litro ou 750 mL?", "1 litro", ["750 mL", "500 mL", "250 mL"], "1 litro e maior."),
+      q("Qual solido lembra um dado?", "cubo", ["esfera", "cone", "cilindro"], "O dado tem forma de cubo."),
+      q("Qual e o resultado de 3 x 0?", 0, [3, 30, 300], "Qualquer numero vezes zero e zero."),
+      q("Qual numero vem antes de 100?", 99, [98, 101, 110], "O antecessor de 100 e 99."),
+      q("Se sao 8:00, os ponteiros do relogio mostram:", "oito horas", ["oito e quinze", "oito e trinta", "nove horas"], "Com os minutos no 12, a hora e cheia."),
+      q("Qual e mais pesado: 2 kg ou 500 g?", "2 kg", ["500 g", "200 g", "100 g"], "2 kg e maior."),
+      q("Qual solido pode ser montado com 2 circulos e 1 retangulo?", "cilindro", ["cone", "cubo", "esfera"], "Essa planificacao forma um cilindro."),
+      q("Quanto e 12 x 10?", 120, [12, 1200, 102], "Multiplicar por 10 acrescenta um zero."),
+      q("Qual e mais leve: 750 mL ou 1 L?", "750 mL", ["1 L", "1500 mL", "2 L"], "750 mL e menor que 1 litro."),
+      q("Qual solido parece uma bola?", "esfera", ["cubo", "cone", "cilindro"], "A bola lembra uma esfera."),
+      q("Quanto e 500 g + 500 g?", "1 kg", ["500 g", "750 g", "2 kg"], "500 g mais 500 g formam 1 kg."),
+      q("Qual numero fica entre 18 e 20?", 19, [17, 21, 29], "19 fica entre 18 e 20."),
+      q("Se o relogio marca 5:45, falta quanto para 6:00?", "15 minutos", ["10 minutos", "20 minutos", "30 minutos"], "De 5:45 ate 6:00 faltam 15 minutos."),
+      q("Quanto e 7 x 1000?", 7000, [700, 70, 70000], "Multiplicar por 1000 acrescenta tres zeros."),
+      q("Qual solido tem 2 bases circulares?", "cilindro", ["cone", "cubo", "piramide"], "O cilindro tem duas bases circulares.")
     ];
 
-    mathQuestions.push(...buildQuestions("matematica", "segmentos_reta", "Segmentos de Reta", "mat_seg",
-      segmentEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
-    ));
-
-    const lengthEntries = [
-      ["O segmento AB mede 5 cm e o segmento CD mede 8 cm. Qual e o maior?", "segmento CD", ["segmento AB", "os dois tem a mesma medida", "nenhum deles"], "Como 8 cm e maior que 5 cm, o segmento CD e maior."],
-      ["Um segmento mede 7 cm. Outro mede 7 cm. O que podemos dizer?", "eles tem o mesmo comprimento", ["o primeiro e maior", "o segundo e menor", "nao da para comparar"], "Se os dois medem 7 cm, tem o mesmo comprimento."],
-      ["Se um segmento mede 9 cm e outro 4 cm, qual e a diferenca entre eles?", "5 cm", ["4 cm", "6 cm", "13 cm"], "A diferenca e 9 - 4 = 5 cm."],
-      ["Qual instrumento usamos para medir um segmento desenhado no caderno?", "regua", ["borracha", "apontador", "compasso de circulo"], "A regua e usada para medir comprimentos retos."],
-      ["Um segmento mede 3 cm. Se ele aumentar 2 cm, passara a medir:", "5 cm", ["4 cm", "6 cm", "1 cm"], "Somamos 3 cm + 2 cm = 5 cm."],
-      ["Um segmento mede 10 cm. Se tirarmos 4 cm, quanto resta?", "6 cm", ["5 cm", "7 cm", "14 cm"], "Subtraimos 10 cm - 4 cm."],
-      ["O segmento EF mede 12 cm. O segmento GH mede 15 cm. Quantos centimetros o GH tem a mais?", "3 cm", ["2 cm", "4 cm", "27 cm"], "Fazemos 15 - 12 = 3 cm."],
-      ["Dois segmentos medem 6 cm e 8 cm. Juntos, medem:", "14 cm", ["12 cm", "13 cm", "15 cm"], "Somamos os dois comprimentos: 6 + 8."],
-      ["Se um lado de um retangulo mede 9 cm, essa medida representa o comprimento de um:", "segmento de reta", ["circulo", "ponto", "curva"], "O lado reto da figura e um segmento de reta."],
-      ["O segmento JK mede 11 cm. Qual opcao mostra essa medida?", "11 cm", ["10 cm", "12 cm", "21 cm"], "A medida informada do segmento JK e 11 cm."],
-      ["Se o segmento LM mede 4 cm e o segmento NO mede o dobro, quanto mede NO?", "8 cm", ["6 cm", "7 cm", "12 cm"], "O dobro de 4 cm e 8 cm."],
-      ["Um segmento de 16 cm foi dividido em 2 partes iguais. Quanto mede cada parte?", "8 cm", ["6 cm", "7 cm", "9 cm"], "Metade de 16 cm e 8 cm."],
-      ["Se um segmento mede 14 cm e outro mede 9 cm, qual e o menor?", "o de 9 cm", ["o de 14 cm", "os dois sao iguais", "nenhum deles"], "Entre 14 e 9, o menor e 9."],
-      ["Para saber se um segmento e maior ou menor que outro, precisamos:", "comparar suas medidas", ["adivinhar", "olhar so a cor", "contar as letras do nome"], "A comparacao correta e feita pelas medidas."]
-    ];
-
-    mathQuestions.push(...buildQuestions("matematica", "comprimento_segmentos", "Comprimento dos Segmentos de Reta", "mat_cs",
-      lengthEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3], (v) => v))
+    mathQuestions.push(...buildQuestions("matematica", "atividades_adicionais_matematica", "Atividades Adicionais de Matemática", "mat_ad",
+      extraEntries.map(entry => makeEntry(entry[0], entry[1], entry[2], entry[3]))
     ));
 
     return mathQuestions;
@@ -2611,15 +2629,15 @@ const geographyQuestions = [
     derivados:            { name: "Substantivos Derivados",            icon: "🌱" },
     maiusculas_cg:        { name: "Maiúsculas e Minúsculas: C e G",    icon: "🔡" },
     genero:               { name: "Substantivos Masculino e Feminino", icon: "👫" },
-    subtracao_reserva:    { name: "Subtração com Reserva", icon: "➖" },
-    subtracao_milhar:     { name: "Subtraindo com Milhar", icon: "🏦" },
-    problemas_adicao_subtracao: { name: "Problemas com Adição e Subtração", icon: "🧠" },
-    multiplicacao_basica: { name: "Multiplicação - Operações Básicas", icon: "✖️" },
-    multiplicacao_problemas: { name: "Multiplicação e Problemas", icon: "📦" },
-    multiplicacao_reserva: { name: "Multiplicação com Reserva", icon: "🔢" },
-    circulos_circunferencias: { name: "Círculos e Circunferências", icon: "⭕" },
-    segmentos_reta:       { name: "Segmentos de Reta", icon: "📏" },
-    comprimento_segmentos:{ name: "Comprimento dos Segmentos de Reta", icon: "📐" },
+    dobro_triplo_quadruplo_quintuplo: { name: "Dobro, Triplo, Quádruplo e Quíntuplo", icon: "2x" },
+    comparando_ordenando_numeros: { name: "Comparando e Ordenando Números", icon: "🔢" },
+    horas_relogios:          { name: "As Horas e os Relógios", icon: "⏰" },
+    multiplicacao_10_100_1000_zero: { name: "Multiplicação por 10, 100, 1.000 ou Zero", icon: "✖️" },
+    medidas_capacidade_massa: { name: "Medidas de Capacidade e de Massa", icon: "⚖️" },
+    solidos_geometricos_mais_conhecidos: { name: "Sólidos Geométricos Mais Conhecidos", icon: "🧊" },
+    solidos_para_montar:      { name: "Sólidos para Montar", icon: "🧩" },
+    atividades_adicionais:    { name: "Atividades Adicionais", icon: "✅" },
+    atividades_adicionais_matematica: { name: "Atividades Adicionais de Matemática", icon: "✅" },
     platelmintos:         { name: "Características e Desenvolvimento dos Platelmintos", icon: "🪱" },
     nematoides:           { name: "Características e Desenvolvimento dos Nematoides", icon: "🔬" },
     moluscos:             { name: "Características e Desenvolvimento dos Moluscos", icon: "🐚" },
