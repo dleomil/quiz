@@ -45,8 +45,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_001",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "O dobro de um numero quer dizer:",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "O dobro de um número quer dizer:",
       "options": [
         "multiplicar por 2",
         "multiplicar por 3",
@@ -60,8 +60,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_002",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "O triplo de um numero quer dizer:",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "O triplo de um número quer dizer:",
       "options": [
         "somar 3",
         "multiplicar por 3",
@@ -75,8 +75,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_003",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "O quadruplo de um numero quer dizer:",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "O quádruplo de um número quer dizer:",
       "options": [
         "multiplicar por 4",
         "multiplicar por 2",
@@ -84,14 +84,14 @@ window.QuestionsDataSources.matematica = {
         "somar 4"
       ],
       "correctIndex": 0,
-      "explanation": "Quadruplo significa multiplicar por 4."
+      "explanation": "Quádruplo significa multiplicar por 4."
     },
     {
       "id": "mat_dtq_004",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "O quintuplo de um numero quer dizer:",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "O quíntuplo de um número quer dizer:",
       "options": [
         "multiplicar por 5",
         "multiplicar por 2",
@@ -99,14 +99,14 @@ window.QuestionsDataSources.matematica = {
         "dividir por 5"
       ],
       "correctIndex": 0,
-      "explanation": "Quintuplo significa multiplicar por 5."
+      "explanation": "Quíntuplo significa multiplicar por 5."
     },
     {
       "id": "mat_dtq_005",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o dobro de 2?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o dobro de 2?",
       "options": [
         "4",
         "6",
@@ -120,8 +120,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_006",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o dobro de 7?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o dobro de 7?",
       "options": [
         "14",
         "12",
@@ -135,8 +135,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_007",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o triplo de 3?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o triplo de 3?",
       "options": [
         "15",
         "9",
@@ -150,8 +150,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_008",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o triplo de 6?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o triplo de 6?",
       "options": [
         "24",
         "18",
@@ -165,8 +165,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_009",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quadruplo de 4?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quádruplo de 4?",
       "options": [
         "16",
         "12",
@@ -174,14 +174,14 @@ window.QuestionsDataSources.matematica = {
         "20"
       ],
       "correctIndex": 0,
-      "explanation": "O quadruplo de 4 e 16."
+      "explanation": "O quádruplo de 4 e 16."
     },
     {
       "id": "mat_dtq_010",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quadruplo de 5?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quádruplo de 5?",
       "options": [
         "20",
         "15",
@@ -189,14 +189,14 @@ window.QuestionsDataSources.matematica = {
         "24"
       ],
       "correctIndex": 0,
-      "explanation": "O quadruplo de 5 e 20."
+      "explanation": "O quádruplo de 5 e 20."
     },
     {
       "id": "mat_dtq_011",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quintuplo de 2?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quíntuplo de 2?",
       "options": [
         "10",
         "8",
@@ -204,14 +204,14 @@ window.QuestionsDataSources.matematica = {
         "14"
       ],
       "correctIndex": 0,
-      "explanation": "O quintuplo de 2 e 10."
+      "explanation": "O quíntuplo de 2 e 10."
     },
     {
       "id": "mat_dtq_012",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quintuplo de 4?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quíntuplo de 4?",
       "options": [
         "20",
         "16",
@@ -219,14 +219,14 @@ window.QuestionsDataSources.matematica = {
         "28"
       ],
       "correctIndex": 0,
-      "explanation": "O quintuplo de 4 e 20."
+      "explanation": "O quíntuplo de 4 e 20."
     },
     {
       "id": "mat_dtq_013",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o dobro de 9?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o dobro de 9?",
       "options": [
         "18",
         "16",
@@ -240,8 +240,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_014",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o triplo de 8?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o triplo de 8?",
       "options": [
         "30",
         "24",
@@ -255,8 +255,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_015",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quadruplo de 3?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quádruplo de 3?",
       "options": [
         "12",
         "9",
@@ -264,14 +264,14 @@ window.QuestionsDataSources.matematica = {
         "18"
       ],
       "correctIndex": 0,
-      "explanation": "O quadruplo de 3 e 12."
+      "explanation": "O quádruplo de 3 e 12."
     },
     {
       "id": "mat_dtq_016",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quintuplo de 3?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quíntuplo de 3?",
       "options": [
         "15",
         "12",
@@ -279,14 +279,14 @@ window.QuestionsDataSources.matematica = {
         "20"
       ],
       "correctIndex": 0,
-      "explanation": "O quintuplo de 3 e 15."
+      "explanation": "O quíntuplo de 3 e 15."
     },
     {
       "id": "mat_dtq_017",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o dobro de 12?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o dobro de 12?",
       "options": [
         "26",
         "24",
@@ -300,8 +300,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_018",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o triplo de 5?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o triplo de 5?",
       "options": [
         "20",
         "15",
@@ -315,8 +315,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_dtq_019",
       "subject": "matematica",
       "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quadruplo e Quintuplo",
-      "question": "Qual e o quintuplo de 6?",
+      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
+      "question": "Qual é o quíntuplo de 6?",
       "options": [
         "30",
         "24",
@@ -324,14 +324,14 @@ window.QuestionsDataSources.matematica = {
         "35"
       ],
       "correctIndex": 0,
-      "explanation": "O quintuplo de 6 e 30."
+      "explanation": "O quíntuplo de 6 e 30."
     },
     {
       "id": "mat_con_001",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual numero e maior?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual número e maior?",
       "options": [
         "54",
         "45",
@@ -345,8 +345,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_002",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual numero e menor?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual número e menor?",
       "options": [
         "3",
         "31",
@@ -360,8 +360,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_003",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual sequencia esta em ordem crescente?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual sequencia está em ordem crescente?",
       "options": [
         "15, 12, 11, 9",
         "12, 9, 15, 11",
@@ -375,8 +375,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_004",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual sequencia esta em ordem decrescente?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual sequencia está em ordem decrescente?",
       "options": [
         "70, 65, 80, 75",
         "80, 75, 70, 65",
@@ -390,8 +390,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_005",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual numero fica entre 27 e 29?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual número fica entre 27 e 29?",
       "options": [
         "26",
         "30",
@@ -405,8 +405,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_006",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual e o antecessor de 50?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual é o antecessor de 50?",
       "options": [
         "51",
         "40",
@@ -414,14 +414,14 @@ window.QuestionsDataSources.matematica = {
         "48"
       ],
       "correctIndex": 2,
-      "explanation": "O numero anterior a 50 e 49."
+      "explanation": "O número anterior a 50 e 49."
     },
     {
       "id": "mat_con_007",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual e o sucessor de 99?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual é o sucessor de 99?",
       "options": [
         "100",
         "98",
@@ -429,13 +429,13 @@ window.QuestionsDataSources.matematica = {
         "110"
       ],
       "correctIndex": 0,
-      "explanation": "O numero depois de 99 e 100."
+      "explanation": "O número depois de 99 e 100."
     },
     {
       "id": "mat_con_008",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
+      "topicName": "Comparando e Ordenando Números",
       "question": "Entre 62 e 26, qual e o maior?",
       "options": [
         "52",
@@ -450,7 +450,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_009",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
+      "topicName": "Comparando e Ordenando Números",
       "question": "Entre 41 e 14, qual e o menor?",
       "options": [
         "24",
@@ -465,8 +465,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_010",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual numero e maior?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual número e maior?",
       "options": [
         "231",
         "123",
@@ -474,14 +474,14 @@ window.QuestionsDataSources.matematica = {
         "213"
       ],
       "correctIndex": 0,
-      "explanation": "231 e o maior numero da lista."
+      "explanation": "231 e o maior número da lista."
     },
     {
       "id": "mat_con_011",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual numero e menor?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual número e menor?",
       "options": [
         "405",
         "450",
@@ -489,14 +489,14 @@ window.QuestionsDataSources.matematica = {
         "504"
       ],
       "correctIndex": 0,
-      "explanation": "405 e o menor numero da lista."
+      "explanation": "405 e o menor número da lista."
     },
     {
       "id": "mat_con_012",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual sequencia esta em ordem crescente?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual sequencia está em ordem crescente?",
       "options": [
         "43, 34, 31",
         "34, 31, 43",
@@ -510,8 +510,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_013",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual sequencia esta em ordem decrescente?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual sequencia está em ordem decrescente?",
       "options": [
         "21, 12, 18",
         "21, 18, 12",
@@ -525,8 +525,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_014",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual numero fica entre 90 e 92?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual número fica entre 90 e 92?",
       "options": [
         "89",
         "93",
@@ -540,8 +540,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_015",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual e o antecessor de 300?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual é o antecessor de 300?",
       "options": [
         "298",
         "301",
@@ -549,14 +549,14 @@ window.QuestionsDataSources.matematica = {
         "299"
       ],
       "correctIndex": 3,
-      "explanation": "O numero anterior a 300 e 299."
+      "explanation": "O número anterior a 300 e 299."
     },
     {
       "id": "mat_con_016",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual e o sucessor de 499?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual é o sucessor de 499?",
       "options": [
         "590",
         "500",
@@ -564,13 +564,13 @@ window.QuestionsDataSources.matematica = {
         "501"
       ],
       "correctIndex": 1,
-      "explanation": "O numero depois de 499 e 500."
+      "explanation": "O número depois de 499 e 500."
     },
     {
       "id": "mat_con_017",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
+      "topicName": "Comparando e Ordenando Números",
       "question": "Entre 78 e 87, qual e o maior?",
       "options": [
         "68",
@@ -585,7 +585,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_018",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
+      "topicName": "Comparando e Ordenando Números",
       "question": "Entre 205 e 250, qual e o menor?",
       "options": [
         "205",
@@ -600,8 +600,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_con_019",
       "subject": "matematica",
       "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Numeros",
-      "question": "Qual sequencia esta em ordem crescente?",
+      "topicName": "Comparando e Ordenando Números",
+      "question": "Qual sequencia está em ordem crescente?",
       "options": [
         "38, 28, 18, 8",
         "18, 8, 38, 28",
@@ -615,23 +615,23 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_001",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 3:00, lemos:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 3:00, lemos:",
       "options": [
-        "tres e quinze",
-        "tres e trinta",
+        "três e quinze",
+        "três e trinta",
         "quatro horas",
-        "tres horas"
+        "três horas"
       ],
       "correctIndex": 3,
-      "explanation": "Quando os minutos estao no 12, a hora e cheia."
+      "explanation": "Quando os minutos estão no 12, a hora e cheia."
     },
     {
       "id": "mat_hr_002",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 7:30, lemos:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 7:30, lemos:",
       "options": [
         "sete horas",
         "sete horas e quinze minutos",
@@ -645,8 +645,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_003",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 12:15, lemos:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 12:15, lemos:",
       "options": [
         "doze horas e quinze minutos",
         "doze horas",
@@ -660,8 +660,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_004",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 5:45, lemos:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 5:45, lemos:",
       "options": [
         "cinco horas",
         "cinco horas e quinze minutos",
@@ -675,8 +675,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_005",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Qual horario mostra um relogio com ponteiro das horas no 8 e dos minutos no 12?",
+      "topicName": "As Horas e os Relógios",
+      "question": "Qual horário mostra um relógio com ponteiro das horas no 8 e dos minutos no 12?",
       "options": [
         "8:30",
         "7:00",
@@ -684,14 +684,14 @@ window.QuestionsDataSources.matematica = {
         "8:00"
       ],
       "correctIndex": 3,
-      "explanation": "Com os dois ponteiros no 12, sao horas cheias."
+      "explanation": "Com os dois ponteiros no 12, são horas cheias."
     },
     {
       "id": "mat_hr_006",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Qual horario mostra um relogio com ponteiro das horas entre 2 e 3 e dos minutos no 6?",
+      "topicName": "As Horas e os Relógios",
+      "question": "Qual horário mostra um relógio com ponteiro das horas entre 2 e 3 e dos minutos no 6?",
       "options": [
         "3:30",
         "2:30",
@@ -699,14 +699,14 @@ window.QuestionsDataSources.matematica = {
         "2:15"
       ],
       "correctIndex": 1,
-      "explanation": "Quando o ponteiro dos minutos esta no 6, sao 30 minutos."
+      "explanation": "Quando o ponteiro dos minutos está no 6, são 30 minutos."
     },
     {
       "id": "mat_hr_007",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Quanto falta para 4:00 quando sao 3:45?",
+      "topicName": "As Horas e os Relógios",
+      "question": "Quanto falta para 4:00 quando são 3:45?",
       "options": [
         "10 minutos",
         "20 minutos",
@@ -720,8 +720,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_008",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Quanto passou de 6:00 quando sao 6:20?",
+      "topicName": "As Horas e os Relógios",
+      "question": "Quanto passou de 6:00 quando são 6:20?",
       "options": [
         "30 minutos",
         "40 minutos",
@@ -735,8 +735,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_009",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se a aula comeca as 9:00 e termina as 10:00, dura:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se a aula começa as 9:00 e termina as 10:00, dura:",
       "options": [
         "2 horas",
         "15 minutos",
@@ -750,8 +750,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_010",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se sao 1:00 e o relogio avanca 2 horas, fica em:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se são 1:00 e o relógio avanca 2 horas, fica em:",
       "options": [
         "3:00",
         "2:00",
@@ -759,14 +759,14 @@ window.QuestionsDataSources.matematica = {
         "5:00"
       ],
       "correctIndex": 0,
-      "explanation": "Somamos 2 horas ao horario inicial."
+      "explanation": "Somamos 2 horas ao horário inicial."
     },
     {
       "id": "mat_hr_011",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se sao 4:30 e passam 30 minutos, fica em:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se são 4:30 e passam 30 minutos, fica em:",
       "options": [
         "6:00",
         "5:00",
@@ -774,14 +774,14 @@ window.QuestionsDataSources.matematica = {
         "5:30"
       ],
       "correctIndex": 1,
-      "explanation": "30 minutos depois de 4:30, sao 5:00."
+      "explanation": "30 minutos depois de 4:30, são 5:00."
     },
     {
       "id": "mat_hr_012",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 11:00, sao:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 11:00, são:",
       "options": [
         "dez horas",
         "doze horas",
@@ -795,8 +795,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_013",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 6:15, sao:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 6:15, são:",
       "options": [
         "sete horas",
         "seis horas e quinze minutos",
@@ -810,8 +810,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_014",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 8:30, sao:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 8:30, são:",
       "options": [
         "nove horas",
         "oito horas e trinta minutos",
@@ -825,8 +825,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_015",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se sao 10:45, faltam quantos minutos para 11:00?",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se são 10:45, faltam quantos minutos para 11:00?",
       "options": [
         "15 minutos",
         "10 minutos",
@@ -840,8 +840,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_016",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se uma atividade comeca as 14:00 e termina as 15:00, dura:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se uma atividade começa as 14:00 e termina as 15:00, dura:",
       "options": [
         "2 horas",
         "45 minutos",
@@ -855,8 +855,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_017",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o relogio marca 9:30, ele mostra:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o relógio marca 9:30, ele mostra:",
       "options": [
         "nove horas e trinta minutos",
         "nove horas",
@@ -870,8 +870,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_018",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se sao 4:00 e passam 1 hora, fica em:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se são 4:00 e passam 1 hora, fica em:",
       "options": [
         "5:30",
         "5:00",
@@ -885,8 +885,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_hr_019",
       "subject": "matematica",
       "topic": "horas_relogios",
-      "topicName": "As Horas e os Relogios",
-      "question": "Se o ponteiro dos minutos esta no 12 e o das horas no 5, o horario e:",
+      "topicName": "As Horas e os Relógios",
+      "question": "Se o ponteiro dos minutos está no 12 e o das horas no 5, o horário e:",
       "options": [
         "6:00",
         "5:00",
@@ -894,14 +894,14 @@ window.QuestionsDataSources.matematica = {
         "4:00"
       ],
       "correctIndex": 1,
-      "explanation": "Com os minutos no 12, a hora esta cheia."
+      "explanation": "Com os minutos no 12, a hora está cheia."
     },
     {
       "id": "mat_m10_001",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 3 x 10?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 3 x 10?",
       "options": [
         "30",
         "20",
@@ -915,8 +915,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_002",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 7 x 10?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 7 x 10?",
       "options": [
         "70",
         "17",
@@ -930,8 +930,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_003",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 14 x 10?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 14 x 10?",
       "options": [
         "1400",
         "140",
@@ -945,8 +945,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_004",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 5 x 100?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 5 x 100?",
       "options": [
         "600",
         "500",
@@ -960,8 +960,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_005",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 9 x 100?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 9 x 100?",
       "options": [
         "9000",
         "900",
@@ -975,8 +975,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_006",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 12 x 100?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 12 x 100?",
       "options": [
         "120",
         "12000",
@@ -990,8 +990,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_007",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 2 x 1000?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 2 x 1000?",
       "options": [
         "20",
         "20000",
@@ -999,14 +999,14 @@ window.QuestionsDataSources.matematica = {
         "200"
       ],
       "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta tres zeros."
+      "explanation": "Multiplicar por 1000 acrescenta três zeros."
     },
     {
       "id": "mat_m10_008",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 4 x 1000?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 4 x 1000?",
       "options": [
         "40",
         "40000",
@@ -1014,14 +1014,14 @@ window.QuestionsDataSources.matematica = {
         "400"
       ],
       "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta tres zeros."
+      "explanation": "Multiplicar por 1000 acrescenta três zeros."
     },
     {
       "id": "mat_m10_009",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 8 x 1000?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 8 x 1000?",
       "options": [
         "80",
         "80000",
@@ -1029,14 +1029,14 @@ window.QuestionsDataSources.matematica = {
         "800"
       ],
       "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta tres zeros."
+      "explanation": "Multiplicar por 1000 acrescenta três zeros."
     },
     {
       "id": "mat_m10_010",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 6 x 0?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 6 x 0?",
       "options": [
         "6",
         "60",
@@ -1044,14 +1044,14 @@ window.QuestionsDataSources.matematica = {
         "0"
       ],
       "correctIndex": 3,
-      "explanation": "Todo numero multiplicado por zero resulta em zero."
+      "explanation": "Todo número multiplicado por zero resulta em zero."
     },
     {
       "id": "mat_m10_011",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 15 x 0?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 15 x 0?",
       "options": [
         "0",
         "15",
@@ -1059,14 +1059,14 @@ window.QuestionsDataSources.matematica = {
         "1500"
       ],
       "correctIndex": 0,
-      "explanation": "Todo numero multiplicado por zero resulta em zero."
+      "explanation": "Todo número multiplicado por zero resulta em zero."
     },
     {
       "id": "mat_m10_012",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 0 x 10?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 0 x 10?",
       "options": [
         "0",
         "10",
@@ -1074,14 +1074,14 @@ window.QuestionsDataSources.matematica = {
         "1000"
       ],
       "correctIndex": 0,
-      "explanation": "Zero vezes qualquer numero e zero."
+      "explanation": "Zero vezes qualquer número é zero."
     },
     {
       "id": "mat_m10_013",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 23 x 10?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 23 x 10?",
       "options": [
         "240",
         "230",
@@ -1095,8 +1095,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_014",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 11 x 100?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 11 x 100?",
       "options": [
         "1011",
         "1110",
@@ -1110,8 +1110,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_015",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 7 x 1000?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 7 x 1000?",
       "options": [
         "70",
         "70000",
@@ -1119,14 +1119,14 @@ window.QuestionsDataSources.matematica = {
         "700"
       ],
       "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta tres zeros."
+      "explanation": "Multiplicar por 1000 acrescenta três zeros."
     },
     {
       "id": "mat_m10_016",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 19 x 0?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 19 x 0?",
       "options": [
         "0",
         "19",
@@ -1134,14 +1134,14 @@ window.QuestionsDataSources.matematica = {
         "1900"
       ],
       "correctIndex": 0,
-      "explanation": "Todo numero multiplicado por zero resulta em zero."
+      "explanation": "Todo número multiplicado por zero resulta em zero."
     },
     {
       "id": "mat_m10_017",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 30 x 10?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 30 x 10?",
       "options": [
         "330",
         "300",
@@ -1155,8 +1155,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_m10_018",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
-      "question": "Quanto e 1 x 1000?",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
+      "question": "Quanto é 1 x 1000?",
       "options": [
         "10",
         "10000",
@@ -1164,13 +1164,13 @@ window.QuestionsDataSources.matematica = {
         "100"
       ],
       "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta tres zeros."
+      "explanation": "Multiplicar por 1000 acrescenta três zeros."
     },
     {
       "id": "mat_m10_019",
       "subject": "matematica",
       "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicacao por 10, 100, 1.000 ou Zero",
+      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
       "question": "Multiplicar por zero da:",
       "options": [
         "0",
@@ -1179,14 +1179,14 @@ window.QuestionsDataSources.matematica = {
         "100"
       ],
       "correctIndex": 0,
-      "explanation": "Zero multiplicado por qualquer numero continua sendo zero."
+      "explanation": "Zero multiplicado por qualquer número continua sendo zero."
     },
     {
       "id": "mat_cm_001",
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual unidade usamos para medir a capacidade de uma garrafa de agua?",
+      "question": "Qual unidade usamos para medir a capacidade de uma garrafa de água?",
       "options": [
         "quilograma",
         "grama",
@@ -1194,7 +1194,7 @@ window.QuestionsDataSources.matematica = {
         "litro"
       ],
       "correctIndex": 3,
-      "explanation": "Capacidade de liquidos costuma ser medida em litros ou mililitros."
+      "explanation": "Capacidade de líquidos costuma ser medida em litros ou mililitros."
     },
     {
       "id": "mat_cm_002",
@@ -1224,14 +1224,14 @@ window.QuestionsDataSources.matematica = {
         "100 mL"
       ],
       "correctIndex": 2,
-      "explanation": "1 litro equivale a 1000 mililitros."
+      "explanation": "1 litro equivale a 1.000 mililitros."
     },
     {
       "id": "mat_cm_004",
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual e maior: 1 litro ou 750 mL?",
+      "question": "Qual é maior: 1 litro ou 750 mL?",
       "options": [
         "1 litro",
         "750 mL",
@@ -1263,10 +1263,10 @@ window.QuestionsDataSources.matematica = {
       "topicName": "Medidas de Capacidade e de Massa",
       "question": "Qual objeto costuma ser medido em gramas?",
       "options": [
-        "cesta de frutas",
+        "cestá de frutas",
         "maca",
         "saco de feijao",
-        "garrafa de agua"
+        "garrafa de água"
       ],
       "correctIndex": 1,
       "explanation": "Frutas pequenas costumam ser medidas em gramas."
@@ -1276,7 +1276,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual e mais pesado: 2 kg ou 500 g?",
+      "question": "Qual é mais pesado: 2 kg ou 500 g?",
       "options": [
         "200 g",
         "100 g",
@@ -1291,7 +1291,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual e mais leve: 1 kg ou 800 g?",
+      "question": "Qual é mais leve: 1 kg ou 800 g?",
       "options": [
         "800 g",
         "1 kg",
@@ -1359,7 +1359,7 @@ window.QuestionsDataSources.matematica = {
         "10 g"
       ],
       "correctIndex": 1,
-      "explanation": "1 kg equivale a 1000 gramas."
+      "explanation": "1 kg equivale a 1.000 gramas."
     },
     {
       "id": "mat_cm_013",
@@ -1369,12 +1369,12 @@ window.QuestionsDataSources.matematica = {
       "question": "Qual instrumento pode ser usado para medir massa?",
       "options": [
         "termometro",
-        "balanca",
-        "relogio",
+        "balança",
+        "relógio",
         "regua"
       ],
       "correctIndex": 1,
-      "explanation": "A balanca mede massa."
+      "explanation": "A balança mede massa."
     },
     {
       "id": "mat_cm_014",
@@ -1396,7 +1396,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual unidade e usada para medir a massa de uma pessoa?",
+      "question": "Qual unidade é usada para medir a massa de uma pessoa?",
       "options": [
         "mililitro",
         "metro",
@@ -1404,14 +1404,14 @@ window.QuestionsDataSources.matematica = {
         "litro"
       ],
       "correctIndex": 2,
-      "explanation": "A massa de pessoas e medida em quilogramas."
+      "explanation": "A massa de pessoas é medida em quilogramas."
     },
     {
       "id": "mat_cm_016",
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual e mais pesado: 3 kg ou 300 g?",
+      "question": "Qual é mais pesado: 3 kg ou 300 g?",
       "options": [
         "30 g",
         "3000 g",
@@ -1426,7 +1426,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "medidas_capacidade_massa",
       "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual e mais leve: 750 mL ou 1 L?",
+      "question": "Qual é mais leve: 750 mL ou 1 L?",
       "options": [
         "750 mL",
         "1 L",
@@ -1455,7 +1455,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_001",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido lembra um dado?",
       "options": [
         "esfera",
@@ -1470,7 +1470,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_002",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido lembra uma bola?",
       "options": [
         "esfera",
@@ -1485,7 +1485,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_003",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido lembra uma lata?",
       "options": [
         "cilindro",
@@ -1500,7 +1500,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_004",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido lembra um sorvete de casquinha?",
       "options": [
         "cubo",
@@ -1515,7 +1515,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_005",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido lembra uma caixa de sapato?",
       "options": [
         "esfera",
@@ -1530,7 +1530,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_006",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem base quadrada e faces triangulares?",
       "options": [
         "cubo",
@@ -1545,7 +1545,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_007",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem 6 faces quadradas iguais?",
       "options": [
         "esfera",
@@ -1560,7 +1560,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_008",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem 2 bases circulares?",
       "options": [
         "cone",
@@ -1575,7 +1575,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_009",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem 1 base circular e 1 vertice?",
       "options": [
         "cone",
@@ -1590,7 +1590,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_010",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem 8 vertices?",
       "options": [
         "esfera",
@@ -1605,8 +1605,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_011",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
-      "question": "Qual solido nao tem faces planas?",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
+      "question": "Qual sólido não tem faces planas?",
       "options": [
         "paralelepipedo",
         "esfera",
@@ -1620,7 +1620,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_012",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido pode rolar com facilidade?",
       "options": [
         "paralelepipedo",
@@ -1635,7 +1635,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_013",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem faces retangulares?",
       "options": [
         "cone",
@@ -1650,7 +1650,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_014",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido parece um tijolo?",
       "options": [
         "cilindro",
@@ -1665,8 +1665,8 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_015",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
-      "question": "Qual solido parece um chapeu de festa?",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
+      "question": "Qual solido parece um chapeu de festá?",
       "options": [
         "esfera",
         "cilindro",
@@ -1674,13 +1674,13 @@ window.QuestionsDataSources.matematica = {
         "cubo"
       ],
       "correctIndex": 2,
-      "explanation": "O chapeu de festa lembra um cone."
+      "explanation": "O chapeu de festá lembra um cone."
     },
     {
       "id": "mat_sg_016",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem uma ponta?",
       "options": [
         "cilindro",
@@ -1695,7 +1695,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_017",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem 6 faces planas?",
       "options": [
         "esfera",
@@ -1710,7 +1710,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_018",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem forma de caixa retangular?",
       "options": [
         "esfera",
@@ -1725,7 +1725,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sg_019",
       "subject": "matematica",
       "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Solidos Geometricos Mais Conhecidos",
+      "topicName": "Sólidos Geométricos Mais Conhecidos",
       "question": "Qual solido tem uma base circular e uma lateral curva?",
       "options": [
         "esfera",
@@ -1740,7 +1740,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_001",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 6 quadrados monta um:",
       "options": [
         "cone",
@@ -1755,7 +1755,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_002",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 6 retangulos monta um:",
       "options": [
         "cone",
@@ -1770,7 +1770,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_003",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 2 circulos e 1 retangulo monta um:",
       "options": [
         "cone",
@@ -1785,7 +1785,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_004",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 1 circulo e 1 setor circular monta um:",
       "options": [
         "cilindro",
@@ -1800,7 +1800,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_005",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 1 quadrado e 4 triangulos monta uma:",
       "options": [
         "esfera",
@@ -1815,7 +1815,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_006",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Quantos quadrados iguais costumam formar um cubo?",
       "options": [
         "10",
@@ -1830,7 +1830,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_007",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Quantos circulos aparecem na planificacao de um cilindro?",
       "options": [
         "4",
@@ -1845,7 +1845,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_008",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Quantos triangulos costumam aparecer na planificacao de uma piramide de base quadrada?",
       "options": [
         "5",
@@ -1860,7 +1860,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_009",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Qual solido pode ser montado com 6 quadrados iguais?",
       "options": [
         "cubo",
@@ -1875,7 +1875,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_010",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Qual solido pode ser montado com 6 retangulos iguais?",
       "options": [
         "piramide",
@@ -1890,7 +1890,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_011",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Qual solido pode ser montado com 2 circulos e 1 retangulo?",
       "options": [
         "cone",
@@ -1905,7 +1905,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_012",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Qual solido pode ser montado com 1 circulo e 1 setor circular?",
       "options": [
         "cilindro",
@@ -1920,7 +1920,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_013",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Qual solido pode ser montado com 1 quadrado e 4 triangulos?",
       "options": [
         "cubo",
@@ -1935,7 +1935,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_014",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao em cruz com 6 quadrados iguais forma um:",
       "options": [
         "esfera",
@@ -1950,7 +1950,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_015",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 1 quadrado e 4 triangulos forma uma piramide de base:",
       "options": [
         "triangular",
@@ -1965,7 +1965,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_016",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 2 circulos e 1 retangulo pode formar o solido que parece uma:",
       "options": [
         "caixa",
@@ -1980,7 +1980,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_017",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 6 faces quadradas iguais monta um:",
       "options": [
         "cilindro",
@@ -1995,7 +1995,7 @@ window.QuestionsDataSources.matematica = {
       "id": "mat_sm_018",
       "subject": "matematica",
       "topic": "solidos_para_montar",
-      "topicName": "Solidos para Montar",
+      "topicName": "Sólidos para Montar",
       "question": "Uma planificacao com 1 circulo e uma parte lateral em forma de setor forma um:",
       "options": [
         "cilindro",
@@ -2026,7 +2026,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual numero e maior?",
+      "question": "Qual número e maior?",
       "options": [
         "74",
         "47",
@@ -2041,11 +2041,11 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Se o relogio marca 2:30, lemos:",
+      "question": "Se o relógio marca 2:30, lemos:",
       "options": [
         "duas horas",
         "duas horas e quinze minutos",
-        "tres horas",
+        "três horas",
         "duas horas e trinta minutos"
       ],
       "correctIndex": 3,
@@ -2056,7 +2056,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto e 4 x 100?",
+      "question": "Quanto é 4 x 100?",
       "options": [
         "420",
         "400",
@@ -2071,7 +2071,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual e maior: 1 litro ou 750 mL?",
+      "question": "Qual é maior: 1 litro ou 750 mL?",
       "options": [
         "1 litro",
         "750 mL",
@@ -2101,7 +2101,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual e o resultado de 3 x 0?",
+      "question": "Qual é o resultado de 3 x 0?",
       "options": [
         "0",
         "3",
@@ -2109,14 +2109,14 @@ window.QuestionsDataSources.matematica = {
         "300"
       ],
       "correctIndex": 0,
-      "explanation": "Qualquer numero vezes zero e zero."
+      "explanation": "Qualquer número vezes zero e zero."
     },
     {
       "id": "mat_ad_008",
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual numero vem antes de 100?",
+      "question": "Qual número vem antes de 100?",
       "options": [
         "110",
         "99",
@@ -2131,7 +2131,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Se sao 8:00, os ponteiros do relogio mostram:",
+      "question": "Se são 8:00, os ponteiros do relógio mostram:",
       "options": [
         "nove horas",
         "oito horas",
@@ -2146,7 +2146,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual e mais pesado: 2 kg ou 500 g?",
+      "question": "Qual é mais pesado: 2 kg ou 500 g?",
       "options": [
         "200 g",
         "100 g",
@@ -2176,7 +2176,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto e 12 x 10?",
+      "question": "Quanto é 12 x 10?",
       "options": [
         "102",
         "120",
@@ -2191,7 +2191,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual e mais leve: 750 mL ou 1 L?",
+      "question": "Qual é mais leve: 750 mL ou 1 L?",
       "options": [
         "750 mL",
         "1 L",
@@ -2221,7 +2221,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto e 500 g + 500 g?",
+      "question": "Quanto é 500 g + 500 g?",
       "options": [
         "500 g",
         "750 g",
@@ -2236,7 +2236,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual numero fica entre 18 e 20?",
+      "question": "Qual número fica entre 18 e 20?",
       "options": [
         "17",
         "21",
@@ -2251,7 +2251,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Se o relogio marca 5:45, falta quanto para 6:00?",
+      "question": "Se o relógio marca 5:45, falta quanto para 6:00?",
       "options": [
         "15 minutos",
         "10 minutos",
@@ -2266,7 +2266,7 @@ window.QuestionsDataSources.matematica = {
       "subject": "matematica",
       "topic": "atividades_adicionais_matematica",
       "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto e 7 x 1000?",
+      "question": "Quanto é 7 x 1000?",
       "options": [
         "70",
         "70000",
@@ -2274,7 +2274,7 @@ window.QuestionsDataSources.matematica = {
         "700"
       ],
       "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta tres zeros."
+      "explanation": "Multiplicar por 1000 acrescenta três zeros."
     },
     {
       "id": "mat_ad_019",

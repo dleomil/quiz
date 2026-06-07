@@ -240,9 +240,9 @@ window.QuestionsDataSources.ingles = (function () {
     { en: "chair", pt: "cadeira" },
     { en: "table", pt: "mesa" },
     { en: "bed", pt: "cama" },
-    { en: "sofa", pt: "sofa" },
+    { en: "sofa", pt: "sofá" },
     { en: "desk", pt: "escrivaninha" },
-    { en: "lamp", pt: "lampada" },
+    { en: "lamp", pt: "lâmpada" },
     { en: "shelf", pt: "prateleira" },
     { en: "wardrobe", pt: "guarda-roupa" },
     { en: "armchair", pt: "poltrona" },
@@ -287,21 +287,21 @@ window.QuestionsDataSources.ingles = (function () {
 
   const prepositionsTopicName = topicMeta.prepositions.name;
   const prepositionItems = [
-    { sentence: "The cat is ___ the table.", preposition: "under", translation: "O gato esta debaixo da mesa." },
-    { sentence: "The book is ___ the desk.", preposition: "on", translation: "O livro esta em cima da mesa." },
-    { sentence: "The toy is ___ the box.", preposition: "in", translation: "O brinquedo esta dentro da caixa." },
-    { sentence: "The lamp is ___ the sofa.", preposition: "next to", translation: "A lampada esta ao lado do sofa." },
-    { sentence: "The ball is ___ the chairs.", preposition: "between", translation: "A bola esta entre as cadeiras." },
-    { sentence: "The picture is ___ the bed.", preposition: "above", translation: "O quadro esta acima da cama." },
-    { sentence: "The bag is ___ the door.", preposition: "behind", translation: "A bolsa esta atras da porta." },
-    { sentence: "The chair is ___ the window.", preposition: "in front of", translation: "A cadeira esta na frente da janela." },
-    { sentence: "The dog is ___ the house.", preposition: "near", translation: "O cachorro esta perto da casa." },
-    { sentence: "The shoes are ___ the bed.", preposition: "under", translation: "Os sapatos estao debaixo da cama." },
-    { sentence: "The bird is ___ the tree.", preposition: "in", translation: "O passaro esta na arvore." },
-    { sentence: "The kite is ___ the sky.", preposition: "in", translation: "A pipa esta no ceu." },
-    { sentence: "The car is ___ the garage.", preposition: "inside", translation: "O carro esta dentro da garagem." },
-    { sentence: "The bicycle is ___ the house.", preposition: "outside", translation: "A bicicleta esta fora da casa." },
-    { sentence: "The plane is ___ the clouds.", preposition: "above", translation: "O aviao esta acima das nuvens." }
+    { sentence: "The cat is ___ the table.", preposition: "under", translation: "O gato está debaixo da mesa." },
+    { sentence: "The book is ___ the desk.", preposition: "on", translation: "O livro está em cima da mesa." },
+    { sentence: "The toy is ___ the box.", preposition: "in", translation: "O brinquedo está dentro da caixa." },
+    { sentence: "The lamp is ___ the sofa.", preposition: "next to", translation: "A lâmpada está ao lado do sofá." },
+    { sentence: "The ball is ___ the chairs.", preposition: "between", translation: "A bola está entre as cadeiras." },
+    { sentence: "The picture is ___ the bed.", preposition: "above", translation: "O quadro está acima da cama." },
+    { sentence: "The bag is ___ the door.", preposition: "behind", translation: "A bolsa está atrás da porta." },
+    { sentence: "The chair is ___ the window.", preposition: "in front of", translation: "A cadeira está na frente da janela." },
+    { sentence: "The dog is ___ the house.", preposition: "near", translation: "O cachorro está perto da casa." },
+    { sentence: "The shoes are ___ the bed.", preposition: "under", translation: "Os sapatos estão debaixo da cama." },
+    { sentence: "The bird is ___ the tree.", preposition: "in", translation: "O pássaro está na árvore." },
+    { sentence: "The kite is ___ the sky.", preposition: "in", translation: "A pipa está no céu." },
+    { sentence: "The car is ___ the garage.", preposition: "inside", translation: "O carro está dentro da garagem." },
+    { sentence: "The bicycle is ___ the house.", preposition: "outside", translation: "A bicicleta está fora da casa." },
+    { sentence: "The plane is ___ the clouds.", preposition: "above", translation: "O avião está acima das nuvens." }
   ];
 
   const prepositionPool = ["in", "on", "under", "behind", "in front of", "next to", "between", "above", "below", "near", "inside", "outside"];
