@@ -82,6 +82,7 @@ Criar um GitHub Project com as seguintes colunas:
 3. Epicos devem representar capacidades, nao tarefas tecnicas isoladas.
 4. Historias devem caber em mudancas pequenas e sustentaveis.
 5. Mudancas em `main` e `develop` devem ocorrer apenas por Pull Request aprovado.
+6. Pull Requests para `main` e `develop` devem satisfazer os checks obrigatorios configurados no repositório.
 
 ## Estrutura recomendada para milestones
 

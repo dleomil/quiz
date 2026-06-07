@@ -11,7 +11,7 @@ permissions:
   pull-requests: read
 
 jobs:
-  validate-branch-strategy:
+  pr-governance:
     runs-on: ubuntu-latest
     steps:
       - name: Validate source branch naming
@@ -36,11 +36,11 @@ jobs:
         run: |
           if [[ "$BASE_REF" == "main" ]]; then
             case "$HEAD_REF" in
-              hotfix/*|release/*)
+              develop|hotfix/*|release/*)
                 echo "PR to main is allowed from $HEAD_REF"
                 ;;
               *)
-                echo "Only hotfix/* or release/* branches should open PR directly to main."
+                echo "Only develop, hotfix/*, or release/* branches should open PR directly to main."
                 exit 1
                 ;;
             esac

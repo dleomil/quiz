@@ -27,6 +27,9 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 - `hotfix/*`
   - correcao urgente com destino preferencial para `main`
 
+- `release/*`
+  - branch opcional para consolidacao e validacao final antes do merge em `main`
+
 - `chore/*`
   - manutencao tecnica
 
@@ -41,7 +44,8 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 1. Criar branch a partir de `develop` para trabalho normal.
 2. Abrir Pull Request da branch temporaria para `develop`.
 3. Exigir aprovacao manual antes do merge.
-4. Promover `develop` para `main` tambem via Pull Request com aprovacao manual.
+4. Promover `develop` para `main` via Pull Request com aprovacao manual.
+5. Quando houver necessidade de estabilizacao antes da publicacao, permitir `release/*` com destino a `main`.
 
 ## Regras de governanca inicial
 
