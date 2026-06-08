@@ -61,6 +61,18 @@ Como time de engenharia, queremos automacao de convencoes para reduzir divergenc
 - alteracoes fora do padrao sao identificadas automaticamente
 - o pipeline falha quando convencoes obrigatorias sao quebradas
 
+**Plano de validacao**
+
+- executar `npm run lint` em ambiente limpo
+- executar `npm run format:check` em ambiente limpo
+- validar que o workflow de PR falha quando uma convencao obrigatoria e quebrada
+
+**Evidencias esperadas**
+
+- saída verde de `npm run lint`
+- saída verde de `npm run format:check`
+- workflow de PR com status de qualidade visivel no GitHub
+
 ### Historia 1.4
 
 **Titulo**

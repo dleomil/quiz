@@ -1,6 +1,6 @@
 name: Story
 description: Historia pronta para implementacao incremental
-title: "[Story] "
+title: '[Story] '
 labels:
   - type: story
 body:

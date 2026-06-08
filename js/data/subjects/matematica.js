@@ -1,2295 +1,1630 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
 window.QuestionsDataSources.matematica = {
-  "subjectMeta": {
-    "name": "Matemática",
-    "icon": "🔢",
-    "available": true
+  subjectMeta: {
+    name: 'Matemática',
+    icon: '🔢',
+    available: true,
   },
-  "topicMeta": {
-    "dobro_triplo_quadruplo_quintuplo": {
-      "name": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "icon": "2x"
+  topicMeta: {
+    dobro_triplo_quadruplo_quintuplo: {
+      name: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      icon: '2x',
     },
-    "comparando_ordenando_numeros": {
-      "name": "Comparando e Ordenando Números",
-      "icon": "🔢"
+    comparando_ordenando_numeros: {
+      name: 'Comparando e Ordenando Números',
+      icon: '🔢',
     },
-    "horas_relogios": {
-      "name": "As Horas e os Relógios",
-      "icon": "⏰"
+    horas_relogios: {
+      name: 'As Horas e os Relógios',
+      icon: '⏰',
     },
-    "multiplicacao_10_100_1000_zero": {
-      "name": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "icon": "✖️"
+    multiplicacao_10_100_1000_zero: {
+      name: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      icon: '✖️',
     },
-    "medidas_capacidade_massa": {
-      "name": "Medidas de Capacidade e de Massa",
-      "icon": "⚖️"
+    medidas_capacidade_massa: {
+      name: 'Medidas de Capacidade e de Massa',
+      icon: '⚖️',
     },
-    "solidos_geometricos_mais_conhecidos": {
-      "name": "Sólidos Geométricos Mais Conhecidos",
-      "icon": "🧊"
+    solidos_geometricos_mais_conhecidos: {
+      name: 'Sólidos Geométricos Mais Conhecidos',
+      icon: '🧊',
     },
-    "solidos_para_montar": {
-      "name": "Sólidos para Montar",
-      "icon": "🧩"
+    solidos_para_montar: {
+      name: 'Sólidos para Montar',
+      icon: '🧩',
     },
-    "atividades_adicionais_matematica": {
-      "name": "Atividades Adicionais de Matemática",
-      "icon": "✅"
-    }
+    atividades_adicionais_matematica: {
+      name: 'Atividades Adicionais de Matemática',
+      icon: '✅',
+    },
   },
-  "questions": [
-    {
-      "id": "mat_dtq_001",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "O dobro de um número quer dizer:",
-      "options": [
-        "multiplicar por 2",
-        "multiplicar por 3",
-        "dividir por 2",
-        "somar 10"
-      ],
-      "correctIndex": 0,
-      "explanation": "Dobro significa multiplicar por 2."
-    },
-    {
-      "id": "mat_dtq_002",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "O triplo de um número quer dizer:",
-      "options": [
-        "somar 3",
-        "multiplicar por 3",
-        "multiplicar por 2",
-        "dividir por 3"
-      ],
-      "correctIndex": 1,
-      "explanation": "Triplo significa multiplicar por 3."
-    },
-    {
-      "id": "mat_dtq_003",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "O quádruplo de um número quer dizer:",
-      "options": [
-        "multiplicar por 4",
-        "multiplicar por 2",
-        "multiplicar por 5",
-        "somar 4"
-      ],
-      "correctIndex": 0,
-      "explanation": "Quádruplo significa multiplicar por 4."
-    },
-    {
-      "id": "mat_dtq_004",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "O quíntuplo de um número quer dizer:",
-      "options": [
-        "multiplicar por 5",
-        "multiplicar por 2",
-        "multiplicar por 4",
-        "dividir por 5"
-      ],
-      "correctIndex": 0,
-      "explanation": "Quíntuplo significa multiplicar por 5."
-    },
-    {
-      "id": "mat_dtq_005",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o dobro de 2?",
-      "options": [
-        "4",
-        "6",
-        "8",
-        "10"
-      ],
-      "correctIndex": 0,
-      "explanation": "O dobro de 2 e 4."
-    },
-    {
-      "id": "mat_dtq_006",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o dobro de 7?",
-      "options": [
-        "14",
-        "12",
-        "16",
-        "18"
-      ],
-      "correctIndex": 0,
-      "explanation": "O dobro de 7 e 14."
-    },
-    {
-      "id": "mat_dtq_007",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o triplo de 3?",
-      "options": [
-        "15",
-        "9",
-        "6",
-        "12"
-      ],
-      "correctIndex": 1,
-      "explanation": "O triplo de 3 e 9."
-    },
-    {
-      "id": "mat_dtq_008",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o triplo de 6?",
-      "options": [
-        "24",
-        "18",
-        "12",
-        "20"
-      ],
-      "correctIndex": 1,
-      "explanation": "O triplo de 6 e 18."
-    },
-    {
-      "id": "mat_dtq_009",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quádruplo de 4?",
-      "options": [
-        "16",
-        "12",
-        "18",
-        "20"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quádruplo de 4 e 16."
-    },
-    {
-      "id": "mat_dtq_010",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quádruplo de 5?",
-      "options": [
-        "20",
-        "15",
-        "18",
-        "24"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quádruplo de 5 e 20."
-    },
-    {
-      "id": "mat_dtq_011",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quíntuplo de 2?",
-      "options": [
-        "10",
-        "8",
-        "12",
-        "14"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quíntuplo de 2 e 10."
-    },
-    {
-      "id": "mat_dtq_012",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quíntuplo de 4?",
-      "options": [
-        "20",
-        "16",
-        "24",
-        "28"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quíntuplo de 4 e 20."
-    },
-    {
-      "id": "mat_dtq_013",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o dobro de 9?",
-      "options": [
-        "18",
-        "16",
-        "20",
-        "22"
-      ],
-      "correctIndex": 0,
-      "explanation": "O dobro de 9 e 18."
-    },
-    {
-      "id": "mat_dtq_014",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o triplo de 8?",
-      "options": [
-        "30",
-        "24",
-        "16",
-        "20"
-      ],
-      "correctIndex": 1,
-      "explanation": "O triplo de 8 e 24."
-    },
-    {
-      "id": "mat_dtq_015",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quádruplo de 3?",
-      "options": [
-        "12",
-        "9",
-        "15",
-        "18"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quádruplo de 3 e 12."
-    },
-    {
-      "id": "mat_dtq_016",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quíntuplo de 3?",
-      "options": [
-        "15",
-        "12",
-        "18",
-        "20"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quíntuplo de 3 e 15."
-    },
-    {
-      "id": "mat_dtq_017",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o dobro de 12?",
-      "options": [
-        "26",
-        "24",
-        "20",
-        "22"
-      ],
-      "correctIndex": 1,
-      "explanation": "O dobro de 12 e 24."
-    },
-    {
-      "id": "mat_dtq_018",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o triplo de 5?",
-      "options": [
-        "20",
-        "15",
-        "10",
-        "18"
-      ],
-      "correctIndex": 1,
-      "explanation": "O triplo de 5 e 15."
-    },
-    {
-      "id": "mat_dtq_019",
-      "subject": "matematica",
-      "topic": "dobro_triplo_quadruplo_quintuplo",
-      "topicName": "Dobro, Triplo, Quádruplo e Quíntuplo",
-      "question": "Qual é o quíntuplo de 6?",
-      "options": [
-        "30",
-        "24",
-        "32",
-        "35"
-      ],
-      "correctIndex": 0,
-      "explanation": "O quíntuplo de 6 e 30."
-    },
-    {
-      "id": "mat_con_001",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual número e maior?",
-      "options": [
-        "54",
-        "45",
-        "40",
-        "49"
-      ],
-      "correctIndex": 0,
-      "explanation": "54 e maior do que 45, 40 e 49."
-    },
-    {
-      "id": "mat_con_002",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual número e menor?",
-      "options": [
-        "3",
-        "31",
-        "13",
-        "23"
-      ],
-      "correctIndex": 0,
-      "explanation": "3 e menor do que 31, 13 e 23."
-    },
-    {
-      "id": "mat_con_003",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual sequencia está em ordem crescente?",
-      "options": [
-        "15, 12, 11, 9",
-        "12, 9, 15, 11",
-        "11, 15, 9, 12",
-        "9, 11, 12, 15"
-      ],
-      "correctIndex": 3,
-      "explanation": "Ordem crescente vai do menor para o maior."
-    },
-    {
-      "id": "mat_con_004",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual sequencia está em ordem decrescente?",
-      "options": [
-        "70, 65, 80, 75",
-        "80, 75, 70, 65",
-        "65, 70, 75, 80",
-        "75, 80, 65, 70"
-      ],
-      "correctIndex": 1,
-      "explanation": "Ordem decrescente vai do maior para o menor."
-    },
-    {
-      "id": "mat_con_005",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual número fica entre 27 e 29?",
-      "options": [
-        "26",
-        "30",
-        "31",
-        "28"
-      ],
-      "correctIndex": 3,
-      "explanation": "28 fica entre 27 e 29."
-    },
-    {
-      "id": "mat_con_006",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual é o antecessor de 50?",
-      "options": [
-        "51",
-        "40",
-        "49",
-        "48"
-      ],
-      "correctIndex": 2,
-      "explanation": "O número anterior a 50 e 49."
-    },
-    {
-      "id": "mat_con_007",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual é o sucessor de 99?",
-      "options": [
-        "100",
-        "98",
-        "101",
-        "110"
-      ],
-      "correctIndex": 0,
-      "explanation": "O número depois de 99 e 100."
-    },
-    {
-      "id": "mat_con_008",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Entre 62 e 26, qual e o maior?",
-      "options": [
-        "52",
-        "16",
-        "62",
-        "26"
-      ],
-      "correctIndex": 2,
-      "explanation": "62 e maior do que 26."
-    },
-    {
-      "id": "mat_con_009",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Entre 41 e 14, qual e o menor?",
-      "options": [
-        "24",
-        "44",
-        "14",
-        "41"
-      ],
-      "correctIndex": 2,
-      "explanation": "14 e menor do que 41."
-    },
-    {
-      "id": "mat_con_010",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual número e maior?",
-      "options": [
-        "231",
-        "123",
-        "132",
-        "213"
-      ],
-      "correctIndex": 0,
-      "explanation": "231 e o maior número da lista."
-    },
-    {
-      "id": "mat_con_011",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual número e menor?",
-      "options": [
-        "405",
-        "450",
-        "540",
-        "504"
-      ],
-      "correctIndex": 0,
-      "explanation": "405 e o menor número da lista."
-    },
-    {
-      "id": "mat_con_012",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual sequencia está em ordem crescente?",
-      "options": [
-        "43, 34, 31",
-        "34, 31, 43",
-        "31, 43, 34",
-        "31, 34, 43"
-      ],
-      "correctIndex": 3,
-      "explanation": "A ordem crescente vai do menor para o maior."
-    },
-    {
-      "id": "mat_con_013",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual sequencia está em ordem decrescente?",
-      "options": [
-        "21, 12, 18",
-        "21, 18, 12",
-        "12, 18, 21",
-        "18, 12, 21"
-      ],
-      "correctIndex": 1,
-      "explanation": "A ordem decrescente vai do maior para o menor."
-    },
-    {
-      "id": "mat_con_014",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual número fica entre 90 e 92?",
-      "options": [
-        "89",
-        "93",
-        "99",
-        "91"
-      ],
-      "correctIndex": 3,
-      "explanation": "91 fica entre 90 e 92."
-    },
-    {
-      "id": "mat_con_015",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual é o antecessor de 300?",
-      "options": [
-        "298",
-        "301",
-        "390",
-        "299"
-      ],
-      "correctIndex": 3,
-      "explanation": "O número anterior a 300 e 299."
-    },
-    {
-      "id": "mat_con_016",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual é o sucessor de 499?",
-      "options": [
-        "590",
-        "500",
-        "498",
-        "501"
-      ],
-      "correctIndex": 1,
-      "explanation": "O número depois de 499 e 500."
-    },
-    {
-      "id": "mat_con_017",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Entre 78 e 87, qual e o maior?",
-      "options": [
-        "68",
-        "97",
-        "87",
-        "78"
-      ],
-      "correctIndex": 2,
-      "explanation": "87 e maior do que 78."
-    },
-    {
-      "id": "mat_con_018",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Entre 205 e 250, qual e o menor?",
-      "options": [
-        "205",
-        "250",
-        "215",
-        "295"
-      ],
-      "correctIndex": 0,
-      "explanation": "205 e menor do que 250."
-    },
-    {
-      "id": "mat_con_019",
-      "subject": "matematica",
-      "topic": "comparando_ordenando_numeros",
-      "topicName": "Comparando e Ordenando Números",
-      "question": "Qual sequencia está em ordem crescente?",
-      "options": [
-        "38, 28, 18, 8",
-        "18, 8, 38, 28",
-        "8, 28, 18, 38",
-        "8, 18, 28, 38"
-      ],
-      "correctIndex": 3,
-      "explanation": "A ordem crescente vai do menor para o maior."
-    },
-    {
-      "id": "mat_hr_001",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 3:00, lemos:",
-      "options": [
-        "três e quinze",
-        "três e trinta",
-        "quatro horas",
-        "três horas"
-      ],
-      "correctIndex": 3,
-      "explanation": "Quando os minutos estão no 12, a hora e cheia."
-    },
-    {
-      "id": "mat_hr_002",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 7:30, lemos:",
-      "options": [
-        "sete horas",
-        "sete horas e quinze minutos",
-        "oito horas",
-        "sete horas e trinta minutos"
-      ],
-      "correctIndex": 3,
-      "explanation": "30 minutos formam meia hora."
-    },
-    {
-      "id": "mat_hr_003",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 12:15, lemos:",
-      "options": [
-        "doze horas e quinze minutos",
-        "doze horas",
-        "doze horas e trinta minutos",
-        "uma hora"
-      ],
-      "correctIndex": 0,
-      "explanation": "15 minutos formam um quarto de hora."
-    },
-    {
-      "id": "mat_hr_004",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 5:45, lemos:",
-      "options": [
-        "cinco horas",
-        "cinco horas e quinze minutos",
-        "seis horas",
-        "cinco horas e quarenta e cinco minutos"
-      ],
-      "correctIndex": 3,
-      "explanation": "45 minutos faltam para completar uma hora."
-    },
-    {
-      "id": "mat_hr_005",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Qual horário mostra um relógio com ponteiro das horas no 8 e dos minutos no 12?",
-      "options": [
-        "8:30",
-        "7:00",
-        "8:15",
-        "8:00"
-      ],
-      "correctIndex": 3,
-      "explanation": "Com os dois ponteiros no 12, são horas cheias."
-    },
-    {
-      "id": "mat_hr_006",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Qual horário mostra um relógio com ponteiro das horas entre 2 e 3 e dos minutos no 6?",
-      "options": [
-        "3:30",
-        "2:30",
-        "2:00",
-        "2:15"
-      ],
-      "correctIndex": 1,
-      "explanation": "Quando o ponteiro dos minutos está no 6, são 30 minutos."
-    },
-    {
-      "id": "mat_hr_007",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Quanto falta para 4:00 quando são 3:45?",
-      "options": [
-        "10 minutos",
-        "20 minutos",
-        "30 minutos",
-        "15 minutos"
-      ],
-      "correctIndex": 3,
-      "explanation": "De 3:45 ate 4:00 faltam 15 minutos."
-    },
-    {
-      "id": "mat_hr_008",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Quanto passou de 6:00 quando são 6:20?",
-      "options": [
-        "30 minutos",
-        "40 minutos",
-        "20 minutos",
-        "15 minutos"
-      ],
-      "correctIndex": 2,
-      "explanation": "De 6:00 ate 6:20 passaram 20 minutos."
-    },
-    {
-      "id": "mat_hr_009",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se a aula começa as 9:00 e termina as 10:00, dura:",
-      "options": [
-        "2 horas",
-        "15 minutos",
-        "1 hora",
-        "30 minutos"
-      ],
-      "correctIndex": 2,
-      "explanation": "De 9:00 ate 10:00 passa 1 hora."
-    },
-    {
-      "id": "mat_hr_010",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se são 1:00 e o relógio avanca 2 horas, fica em:",
-      "options": [
-        "3:00",
-        "2:00",
-        "4:00",
-        "5:00"
-      ],
-      "correctIndex": 0,
-      "explanation": "Somamos 2 horas ao horário inicial."
-    },
-    {
-      "id": "mat_hr_011",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se são 4:30 e passam 30 minutos, fica em:",
-      "options": [
-        "6:00",
-        "5:00",
-        "4:45",
-        "5:30"
-      ],
-      "correctIndex": 1,
-      "explanation": "30 minutos depois de 4:30, são 5:00."
-    },
-    {
-      "id": "mat_hr_012",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 11:00, são:",
-      "options": [
-        "dez horas",
-        "doze horas",
-        "onze horas",
-        "onze e quinze"
-      ],
-      "correctIndex": 2,
-      "explanation": "11:00 e uma hora cheia."
-    },
-    {
-      "id": "mat_hr_013",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 6:15, são:",
-      "options": [
-        "sete horas",
-        "seis horas e quinze minutos",
-        "seis horas",
-        "seis horas e trinta minutos"
-      ],
-      "correctIndex": 1,
-      "explanation": "15 minutos formam um quarto de hora."
-    },
-    {
-      "id": "mat_hr_014",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 8:30, são:",
-      "options": [
-        "nove horas",
-        "oito horas e trinta minutos",
-        "oito horas",
-        "oito horas e quinze minutos"
-      ],
-      "correctIndex": 1,
-      "explanation": "30 minutos formam meia hora."
-    },
-    {
-      "id": "mat_hr_015",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se são 10:45, faltam quantos minutos para 11:00?",
-      "options": [
-        "15 minutos",
-        "10 minutos",
-        "20 minutos",
-        "30 minutos"
-      ],
-      "correctIndex": 0,
-      "explanation": "De 10:45 ate 11:00 faltam 15 minutos."
-    },
-    {
-      "id": "mat_hr_016",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se uma atividade começa as 14:00 e termina as 15:00, dura:",
-      "options": [
-        "2 horas",
-        "45 minutos",
-        "1 hora",
-        "30 minutos"
-      ],
-      "correctIndex": 2,
-      "explanation": "De 14:00 ate 15:00 passa 1 hora."
-    },
-    {
-      "id": "mat_hr_017",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o relógio marca 9:30, ele mostra:",
-      "options": [
-        "nove horas e trinta minutos",
-        "nove horas",
-        "nove horas e quinze minutos",
-        "dez horas"
-      ],
-      "correctIndex": 0,
-      "explanation": "30 minutos formam meia hora."
-    },
-    {
-      "id": "mat_hr_018",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se são 4:00 e passam 1 hora, fica em:",
-      "options": [
-        "5:30",
-        "5:00",
-        "4:30",
-        "6:00"
-      ],
-      "correctIndex": 1,
-      "explanation": "Uma hora depois de 4:00 e 5:00."
-    },
-    {
-      "id": "mat_hr_019",
-      "subject": "matematica",
-      "topic": "horas_relogios",
-      "topicName": "As Horas e os Relógios",
-      "question": "Se o ponteiro dos minutos está no 12 e o das horas no 5, o horário e:",
-      "options": [
-        "6:00",
-        "5:00",
-        "5:30",
-        "4:00"
-      ],
-      "correctIndex": 1,
-      "explanation": "Com os minutos no 12, a hora está cheia."
-    },
-    {
-      "id": "mat_m10_001",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 3 x 10?",
-      "options": [
-        "30",
-        "20",
-        "40",
-        "300"
-      ],
-      "correctIndex": 0,
-      "explanation": "Multiplicar por 10 acrescenta um zero."
-    },
-    {
-      "id": "mat_m10_002",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 7 x 10?",
-      "options": [
-        "70",
-        "17",
-        "700",
-        "60"
-      ],
-      "correctIndex": 0,
-      "explanation": "Multiplicar por 10 acrescenta um zero."
-    },
-    {
-      "id": "mat_m10_003",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 14 x 10?",
-      "options": [
-        "1400",
-        "140",
-        "104",
-        "24"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 10 acrescenta um zero."
-    },
-    {
-      "id": "mat_m10_004",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 5 x 100?",
-      "options": [
-        "600",
-        "500",
-        "50",
-        "5000"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 100 acrescenta dois zeros."
-    },
-    {
-      "id": "mat_m10_005",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 9 x 100?",
-      "options": [
-        "9000",
-        "900",
-        "90",
-        "990"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 100 acrescenta dois zeros."
-    },
-    {
-      "id": "mat_m10_006",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 12 x 100?",
-      "options": [
-        "120",
-        "12000",
-        "1200",
-        "1020"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 100 acrescenta dois zeros."
-    },
-    {
-      "id": "mat_m10_007",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 2 x 1000?",
-      "options": [
-        "20",
-        "20000",
-        "2000",
-        "200"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta três zeros."
-    },
-    {
-      "id": "mat_m10_008",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 4 x 1000?",
-      "options": [
-        "40",
-        "40000",
-        "4000",
-        "400"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta três zeros."
-    },
-    {
-      "id": "mat_m10_009",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 8 x 1000?",
-      "options": [
-        "80",
-        "80000",
-        "8000",
-        "800"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta três zeros."
-    },
-    {
-      "id": "mat_m10_010",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 6 x 0?",
-      "options": [
-        "6",
-        "60",
-        "600",
-        "0"
-      ],
-      "correctIndex": 3,
-      "explanation": "Todo número multiplicado por zero resulta em zero."
-    },
-    {
-      "id": "mat_m10_011",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 15 x 0?",
-      "options": [
-        "0",
-        "15",
-        "150",
-        "1500"
-      ],
-      "correctIndex": 0,
-      "explanation": "Todo número multiplicado por zero resulta em zero."
-    },
-    {
-      "id": "mat_m10_012",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 0 x 10?",
-      "options": [
-        "0",
-        "10",
-        "100",
-        "1000"
-      ],
-      "correctIndex": 0,
-      "explanation": "Zero vezes qualquer número é zero."
-    },
-    {
-      "id": "mat_m10_013",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 23 x 10?",
-      "options": [
-        "240",
-        "230",
-        "2300",
-        "223"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 10 acrescenta um zero."
-    },
-    {
-      "id": "mat_m10_014",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 11 x 100?",
-      "options": [
-        "1011",
-        "1110",
-        "1100",
-        "110"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 100 acrescenta dois zeros."
-    },
-    {
-      "id": "mat_m10_015",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 7 x 1000?",
-      "options": [
-        "70",
-        "70000",
-        "7000",
-        "700"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta três zeros."
-    },
-    {
-      "id": "mat_m10_016",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 19 x 0?",
-      "options": [
-        "0",
-        "19",
-        "190",
-        "1900"
-      ],
-      "correctIndex": 0,
-      "explanation": "Todo número multiplicado por zero resulta em zero."
-    },
-    {
-      "id": "mat_m10_017",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 30 x 10?",
-      "options": [
-        "330",
-        "300",
-        "30",
-        "3000"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 10 acrescenta um zero."
-    },
-    {
-      "id": "mat_m10_018",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Quanto é 1 x 1000?",
-      "options": [
-        "10",
-        "10000",
-        "1000",
-        "100"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta três zeros."
-    },
-    {
-      "id": "mat_m10_019",
-      "subject": "matematica",
-      "topic": "multiplicacao_10_100_1000_zero",
-      "topicName": "Multiplicação por 10, 100, 1.000 ou Zero",
-      "question": "Multiplicar por zero da:",
-      "options": [
-        "0",
-        "1",
-        "10",
-        "100"
-      ],
-      "correctIndex": 0,
-      "explanation": "Zero multiplicado por qualquer número continua sendo zero."
-    },
-    {
-      "id": "mat_cm_001",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual unidade usamos para medir a capacidade de uma garrafa de água?",
-      "options": [
-        "quilograma",
-        "grama",
-        "metro",
-        "litro"
-      ],
-      "correctIndex": 3,
-      "explanation": "Capacidade de líquidos costuma ser medida em litros ou mililitros."
-    },
-    {
-      "id": "mat_cm_002",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual unidade usamos para medir 500 mL de suco?",
-      "options": [
-        "grama",
-        "litro",
-        "mililitro",
-        "quilograma"
-      ],
-      "correctIndex": 2,
-      "explanation": "Mililitro e uma unidade de capacidade."
-    },
-    {
-      "id": "mat_cm_003",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "1 litro corresponde a:",
-      "options": [
-        "10 mL",
-        "10 000 mL",
-        "1000 mL",
-        "100 mL"
-      ],
-      "correctIndex": 2,
-      "explanation": "1 litro equivale a 1.000 mililitros."
-    },
-    {
-      "id": "mat_cm_004",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual é maior: 1 litro ou 750 mL?",
-      "options": [
-        "1 litro",
-        "750 mL",
-        "500 mL",
-        "250 mL"
-      ],
-      "correctIndex": 0,
-      "explanation": "1 litro e maior que 750 mL."
-    },
-    {
-      "id": "mat_cm_005",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual objeto costuma ser medido em quilogramas?",
-      "options": [
-        "xicara de cha",
-        "colher de sopa",
-        "saco de arroz",
-        "gota de remedio"
-      ],
-      "correctIndex": 2,
-      "explanation": "Sacos maiores costumam ser medidos em quilogramas."
-    },
-    {
-      "id": "mat_cm_006",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual objeto costuma ser medido em gramas?",
-      "options": [
-        "cestá de frutas",
-        "maca",
-        "saco de feijao",
-        "garrafa de água"
-      ],
-      "correctIndex": 1,
-      "explanation": "Frutas pequenas costumam ser medidas em gramas."
-    },
-    {
-      "id": "mat_cm_007",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual é mais pesado: 2 kg ou 500 g?",
-      "options": [
-        "200 g",
-        "100 g",
-        "2 kg",
-        "500 g"
-      ],
-      "correctIndex": 2,
-      "explanation": "2 kg e maior do que 500 g."
-    },
-    {
-      "id": "mat_cm_008",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual é mais leve: 1 kg ou 800 g?",
-      "options": [
-        "800 g",
-        "1 kg",
-        "1200 g",
-        "2 kg"
-      ],
-      "correctIndex": 0,
-      "explanation": "800 g e menor que 1 kg."
-    },
-    {
-      "id": "mat_cm_009",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "500 g + 500 g = ?",
-      "options": [
-        "2 kg",
-        "1 kg",
-        "500 g",
-        "1500 g"
-      ],
-      "correctIndex": 1,
-      "explanation": "500 g mais 500 g formam 1 kg."
-    },
-    {
-      "id": "mat_cm_010",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "2 litros = ?",
-      "options": [
-        "2000 mL",
-        "200 mL",
-        "20 mL",
-        "20000 mL"
-      ],
-      "correctIndex": 0,
-      "explanation": "2 litros correspondem a 2000 mililitros."
-    },
-    {
-      "id": "mat_cm_011",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Uma colher de remedio costuma ser medida em:",
-      "options": [
-        "mililitros",
-        "quilogramas",
-        "gramas",
-        "metros"
-      ],
-      "correctIndex": 0,
-      "explanation": "Pequenas quantidades de liquido usam mililitros."
-    },
-    {
-      "id": "mat_cm_012",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Um pacote de farinha de 1 kg tem:",
-      "options": [
-        "10 000 g",
-        "1000 g",
-        "100 g",
-        "10 g"
-      ],
-      "correctIndex": 1,
-      "explanation": "1 kg equivale a 1.000 gramas."
-    },
-    {
-      "id": "mat_cm_013",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual instrumento pode ser usado para medir massa?",
-      "options": [
-        "termometro",
-        "balança",
-        "relógio",
-        "regua"
-      ],
-      "correctIndex": 1,
-      "explanation": "A balança mede massa."
-    },
-    {
-      "id": "mat_cm_014",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Uma caixa de leite grande geralmente tem:",
-      "options": [
-        "10 litros",
-        "1 litro",
-        "1 quilograma",
-        "100 gramas"
-      ],
-      "correctIndex": 1,
-      "explanation": "Caixas de leite costumam indicar capacidade em litros."
-    },
-    {
-      "id": "mat_cm_015",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual unidade é usada para medir a massa de uma pessoa?",
-      "options": [
-        "mililitro",
-        "metro",
-        "quilograma",
-        "litro"
-      ],
-      "correctIndex": 2,
-      "explanation": "A massa de pessoas é medida em quilogramas."
-    },
-    {
-      "id": "mat_cm_016",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual é mais pesado: 3 kg ou 300 g?",
-      "options": [
-        "30 g",
-        "3000 g",
-        "3 kg",
-        "300 g"
-      ],
-      "correctIndex": 2,
-      "explanation": "3 kg e maior que 300 g."
-    },
-    {
-      "id": "mat_cm_017",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "Qual é mais leve: 750 mL ou 1 L?",
-      "options": [
-        "750 mL",
-        "1 L",
-        "1750 mL",
-        "2 L"
-      ],
-      "correctIndex": 0,
-      "explanation": "750 mL e menor que 1 litro."
-    },
-    {
-      "id": "mat_cm_018",
-      "subject": "matematica",
-      "topic": "medidas_capacidade_massa",
-      "topicName": "Medidas de Capacidade e de Massa",
-      "question": "10 pacotinhos de 100 g juntos pesam:",
-      "options": [
-        "1 kg",
-        "100 g",
-        "500 g",
-        "2 kg"
-      ],
-      "correctIndex": 0,
-      "explanation": "10 vezes 100 g formam 1000 g, ou 1 kg."
-    },
-    {
-      "id": "mat_sg_001",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido lembra um dado?",
-      "options": [
-        "esfera",
-        "cone",
-        "cilindro",
-        "cubo"
-      ],
-      "correctIndex": 3,
-      "explanation": "O dado tem forma de cubo."
-    },
-    {
-      "id": "mat_sg_002",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido lembra uma bola?",
-      "options": [
-        "esfera",
-        "cubo",
-        "cone",
-        "piramide"
-      ],
-      "correctIndex": 0,
-      "explanation": "A bola tem forma de esfera."
-    },
-    {
-      "id": "mat_sg_003",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido lembra uma lata?",
-      "options": [
-        "cilindro",
-        "cone",
-        "cubo",
-        "esfera"
-      ],
-      "correctIndex": 0,
-      "explanation": "A lata tem forma de cilindro."
-    },
-    {
-      "id": "mat_sg_004",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido lembra um sorvete de casquinha?",
-      "options": [
-        "cubo",
-        "cilindro",
-        "esfera",
-        "cone"
-      ],
-      "correctIndex": 3,
-      "explanation": "A casquinha lembra um cone."
-    },
-    {
-      "id": "mat_sg_005",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido lembra uma caixa de sapato?",
-      "options": [
-        "esfera",
-        "cone",
-        "cilindro",
-        "paralelepipedo"
-      ],
-      "correctIndex": 3,
-      "explanation": "A caixa de sapato tem forma de paralelepipedo."
-    },
-    {
-      "id": "mat_sg_006",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem base quadrada e faces triangulares?",
-      "options": [
-        "cubo",
-        "esfera",
-        "cilindro",
-        "piramide"
-      ],
-      "correctIndex": 3,
-      "explanation": "A piramide tem faces laterais triangulares."
-    },
-    {
-      "id": "mat_sg_007",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem 6 faces quadradas iguais?",
-      "options": [
-        "esfera",
-        "cubo",
-        "cilindro",
-        "cone"
-      ],
-      "correctIndex": 1,
-      "explanation": "O cubo tem 6 faces iguais."
-    },
-    {
-      "id": "mat_sg_008",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem 2 bases circulares?",
-      "options": [
-        "cone",
-        "cubo",
-        "piramide",
-        "cilindro"
-      ],
-      "correctIndex": 3,
-      "explanation": "O cilindro tem duas bases circulares."
-    },
-    {
-      "id": "mat_sg_009",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem 1 base circular e 1 vertice?",
-      "options": [
-        "cone",
-        "cubo",
-        "esfera",
-        "cilindro"
-      ],
-      "correctIndex": 0,
-      "explanation": "O cone tem uma base circular e uma ponta."
-    },
-    {
-      "id": "mat_sg_010",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem 8 vertices?",
-      "options": [
-        "esfera",
-        "cone",
-        "cilindro",
-        "cubo"
-      ],
-      "correctIndex": 3,
-      "explanation": "O cubo possui 8 vertices."
-    },
-    {
-      "id": "mat_sg_011",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual sólido não tem faces planas?",
-      "options": [
-        "paralelepipedo",
-        "esfera",
-        "cubo",
-        "piramide"
-      ],
-      "correctIndex": 1,
-      "explanation": "A esfera e totalmente redonda."
-    },
-    {
-      "id": "mat_sg_012",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido pode rolar com facilidade?",
-      "options": [
-        "paralelepipedo",
-        "piramide",
-        "esfera",
-        "cubo"
-      ],
-      "correctIndex": 2,
-      "explanation": "A esfera rola em todas as direcoes."
-    },
-    {
-      "id": "mat_sg_013",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem faces retangulares?",
-      "options": [
-        "cone",
-        "esfera",
-        "piramide",
-        "paralelepipedo"
-      ],
-      "correctIndex": 3,
-      "explanation": "O paralelepipedo tem faces retangulares."
-    },
-    {
-      "id": "mat_sg_014",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido parece um tijolo?",
-      "options": [
-        "cilindro",
-        "paralelepipedo",
-        "cone",
-        "esfera"
-      ],
-      "correctIndex": 1,
-      "explanation": "Tijolos lembram paralelepipedos."
-    },
-    {
-      "id": "mat_sg_015",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido parece um chapeu de festá?",
-      "options": [
-        "esfera",
-        "cilindro",
-        "cone",
-        "cubo"
-      ],
-      "correctIndex": 2,
-      "explanation": "O chapeu de festá lembra um cone."
-    },
-    {
-      "id": "mat_sg_016",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem uma ponta?",
-      "options": [
-        "cilindro",
-        "cubo",
-        "cone",
-        "esfera"
-      ],
-      "correctIndex": 2,
-      "explanation": "O cone termina em uma ponta."
-    },
-    {
-      "id": "mat_sg_017",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem 6 faces planas?",
-      "options": [
-        "esfera",
-        "cone",
-        "cilindro",
-        "cubo"
-      ],
-      "correctIndex": 3,
-      "explanation": "O cubo tem 6 faces planas."
-    },
-    {
-      "id": "mat_sg_018",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem forma de caixa retangular?",
-      "options": [
-        "esfera",
-        "piramide",
-        "paralelepipedo",
-        "cone"
-      ],
-      "correctIndex": 2,
-      "explanation": "Uma caixa retangular lembra um paralelepipedo."
-    },
-    {
-      "id": "mat_sg_019",
-      "subject": "matematica",
-      "topic": "solidos_geometricos_mais_conhecidos",
-      "topicName": "Sólidos Geométricos Mais Conhecidos",
-      "question": "Qual solido tem uma base circular e uma lateral curva?",
-      "options": [
-        "esfera",
-        "piramide",
-        "cilindro",
-        "cubo"
-      ],
-      "correctIndex": 2,
-      "explanation": "O cilindro tem base circular e superficie curva."
-    },
-    {
-      "id": "mat_sm_001",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 6 quadrados monta um:",
-      "options": [
-        "cone",
-        "esfera",
-        "cubo",
-        "cilindro"
-      ],
-      "correctIndex": 2,
-      "explanation": "Seis quadrados formam um cubo."
-    },
-    {
-      "id": "mat_sm_002",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 6 retangulos monta um:",
-      "options": [
-        "cone",
-        "esfera",
-        "cubo",
-        "paralelepipedo"
-      ],
-      "correctIndex": 3,
-      "explanation": "Seis retangulos podem formar um paralelepipedo."
-    },
-    {
-      "id": "mat_sm_003",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 2 circulos e 1 retangulo monta um:",
-      "options": [
-        "cone",
-        "cubo",
-        "piramide",
-        "cilindro"
-      ],
-      "correctIndex": 3,
-      "explanation": "Dois circulos e um retangulo formam um cilindro."
-    },
-    {
-      "id": "mat_sm_004",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 1 circulo e 1 setor circular monta um:",
-      "options": [
-        "cilindro",
-        "cubo",
-        "esfera",
-        "cone"
-      ],
-      "correctIndex": 3,
-      "explanation": "Um circulo e um setor circular formam um cone."
-    },
-    {
-      "id": "mat_sm_005",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 1 quadrado e 4 triangulos monta uma:",
-      "options": [
-        "esfera",
-        "piramide",
-        "cubo",
-        "cilindro"
-      ],
-      "correctIndex": 1,
-      "explanation": "Um quadrado e 4 triangulos formam uma piramide."
-    },
-    {
-      "id": "mat_sm_006",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Quantos quadrados iguais costumam formar um cubo?",
-      "options": [
-        "10",
-        "6",
-        "4",
-        "8"
-      ],
-      "correctIndex": 1,
-      "explanation": "Um cubo tem 6 faces quadradas."
-    },
-    {
-      "id": "mat_sm_007",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Quantos circulos aparecem na planificacao de um cilindro?",
-      "options": [
-        "4",
-        "2",
-        "1",
-        "3"
-      ],
-      "correctIndex": 1,
-      "explanation": "O cilindro tem duas bases circulares."
-    },
-    {
-      "id": "mat_sm_008",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Quantos triangulos costumam aparecer na planificacao de uma piramide de base quadrada?",
-      "options": [
-        "5",
-        "6",
-        "4",
-        "3"
-      ],
-      "correctIndex": 2,
-      "explanation": "A piramide de base quadrada tem 4 faces triangulares."
-    },
-    {
-      "id": "mat_sm_009",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Qual solido pode ser montado com 6 quadrados iguais?",
-      "options": [
-        "cubo",
-        "cone",
-        "cilindro",
-        "esfera"
-      ],
-      "correctIndex": 0,
-      "explanation": "Seis quadrados iguais formam um cubo."
-    },
-    {
-      "id": "mat_sm_010",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Qual solido pode ser montado com 6 retangulos iguais?",
-      "options": [
-        "piramide",
-        "paralelepipedo",
-        "cone",
-        "esfera"
-      ],
-      "correctIndex": 1,
-      "explanation": "Seis retangulos iguais podem formar uma caixa retangular."
-    },
-    {
-      "id": "mat_sm_011",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Qual solido pode ser montado com 2 circulos e 1 retangulo?",
-      "options": [
-        "cone",
-        "piramide",
-        "cilindro",
-        "cubo"
-      ],
-      "correctIndex": 2,
-      "explanation": "Essa planificacao forma um cilindro."
-    },
-    {
-      "id": "mat_sm_012",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Qual solido pode ser montado com 1 circulo e 1 setor circular?",
-      "options": [
-        "cilindro",
-        "esfera",
-        "cone",
-        "cubo"
-      ],
-      "correctIndex": 2,
-      "explanation": "Essa planificacao forma um cone."
-    },
-    {
-      "id": "mat_sm_013",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Qual solido pode ser montado com 1 quadrado e 4 triangulos?",
-      "options": [
-        "cubo",
-        "cilindro",
-        "esfera",
-        "piramide"
-      ],
-      "correctIndex": 3,
-      "explanation": "Essa planificacao forma uma piramide."
-    },
-    {
-      "id": "mat_sm_014",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao em cruz com 6 quadrados iguais forma um:",
-      "options": [
-        "esfera",
-        "cubo",
-        "cilindro",
-        "cone"
-      ],
-      "correctIndex": 1,
-      "explanation": "Essa planificacao forma um cubo."
-    },
-    {
-      "id": "mat_sm_015",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 1 quadrado e 4 triangulos forma uma piramide de base:",
-      "options": [
-        "triangular",
-        "retangular",
-        "quadrada",
-        "circular"
-      ],
-      "correctIndex": 2,
-      "explanation": "A base e quadrada."
-    },
-    {
-      "id": "mat_sm_016",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 2 circulos e 1 retangulo pode formar o solido que parece uma:",
-      "options": [
-        "caixa",
-        "piramide",
-        "lata",
-        "bola"
-      ],
-      "correctIndex": 2,
-      "explanation": "Esse conjunto forma um cilindro, como uma lata."
-    },
-    {
-      "id": "mat_sm_017",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 6 faces quadradas iguais monta um:",
-      "options": [
-        "cilindro",
-        "cone",
-        "esfera",
-        "cubo"
-      ],
-      "correctIndex": 3,
-      "explanation": "Seis quadrados iguais formam um cubo."
-    },
-    {
-      "id": "mat_sm_018",
-      "subject": "matematica",
-      "topic": "solidos_para_montar",
-      "topicName": "Sólidos para Montar",
-      "question": "Uma planificacao com 1 circulo e uma parte lateral em forma de setor forma um:",
-      "options": [
-        "cilindro",
-        "paralelepipedo",
-        "cone",
-        "cubo"
-      ],
-      "correctIndex": 2,
-      "explanation": "A lateral em setor forma um cone."
-    },
-    {
-      "id": "mat_ad_001",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "O dobro de 8 e:",
-      "options": [
-        "12",
-        "14",
-        "18",
-        "16"
-      ],
-      "correctIndex": 3,
-      "explanation": "O dobro de 8 e 16."
-    },
-    {
-      "id": "mat_ad_002",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual número e maior?",
-      "options": [
-        "74",
-        "47",
-        "64",
-        "57"
-      ],
-      "correctIndex": 0,
-      "explanation": "74 e maior que as outras opcoes."
-    },
-    {
-      "id": "mat_ad_003",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Se o relógio marca 2:30, lemos:",
-      "options": [
-        "duas horas",
-        "duas horas e quinze minutos",
-        "três horas",
-        "duas horas e trinta minutos"
-      ],
-      "correctIndex": 3,
-      "explanation": "30 minutos formam meia hora."
-    },
-    {
-      "id": "mat_ad_004",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto é 4 x 100?",
-      "options": [
-        "420",
-        "400",
-        "40",
-        "4000"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 100 acrescenta dois zeros."
-    },
-    {
-      "id": "mat_ad_005",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual é maior: 1 litro ou 750 mL?",
-      "options": [
-        "1 litro",
-        "750 mL",
-        "500 mL",
-        "250 mL"
-      ],
-      "correctIndex": 0,
-      "explanation": "1 litro e maior."
-    },
-    {
-      "id": "mat_ad_006",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual solido lembra um dado?",
-      "options": [
-        "esfera",
-        "cone",
-        "cilindro",
-        "cubo"
-      ],
-      "correctIndex": 3,
-      "explanation": "O dado tem forma de cubo."
-    },
-    {
-      "id": "mat_ad_007",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual é o resultado de 3 x 0?",
-      "options": [
-        "0",
-        "3",
-        "30",
-        "300"
-      ],
-      "correctIndex": 0,
-      "explanation": "Qualquer número vezes zero e zero."
-    },
-    {
-      "id": "mat_ad_008",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual número vem antes de 100?",
-      "options": [
-        "110",
-        "99",
-        "98",
-        "101"
-      ],
-      "correctIndex": 1,
-      "explanation": "O antecessor de 100 e 99."
-    },
-    {
-      "id": "mat_ad_009",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Se são 8:00, os ponteiros do relógio mostram:",
-      "options": [
-        "nove horas",
-        "oito horas",
-        "oito e quinze",
-        "oito e trinta"
-      ],
-      "correctIndex": 1,
-      "explanation": "Com os minutos no 12, a hora e cheia."
-    },
-    {
-      "id": "mat_ad_010",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual é mais pesado: 2 kg ou 500 g?",
-      "options": [
-        "200 g",
-        "100 g",
-        "2 kg",
-        "500 g"
-      ],
-      "correctIndex": 2,
-      "explanation": "2 kg e maior."
-    },
-    {
-      "id": "mat_ad_011",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual solido pode ser montado com 2 circulos e 1 retangulo?",
-      "options": [
-        "cubo",
-        "esfera",
-        "cilindro",
-        "cone"
-      ],
-      "correctIndex": 2,
-      "explanation": "Essa planificacao forma um cilindro."
-    },
-    {
-      "id": "mat_ad_012",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto é 12 x 10?",
-      "options": [
-        "102",
-        "120",
-        "12",
-        "1200"
-      ],
-      "correctIndex": 1,
-      "explanation": "Multiplicar por 10 acrescenta um zero."
-    },
-    {
-      "id": "mat_ad_013",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual é mais leve: 750 mL ou 1 L?",
-      "options": [
-        "750 mL",
-        "1 L",
-        "1500 mL",
-        "2 L"
-      ],
-      "correctIndex": 0,
-      "explanation": "750 mL e menor que 1 litro."
-    },
-    {
-      "id": "mat_ad_014",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual solido parece uma bola?",
-      "options": [
-        "esfera",
-        "cubo",
-        "cone",
-        "cilindro"
-      ],
-      "correctIndex": 0,
-      "explanation": "A bola lembra uma esfera."
-    },
-    {
-      "id": "mat_ad_015",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto é 500 g + 500 g?",
-      "options": [
-        "500 g",
-        "750 g",
-        "2 kg",
-        "1 kg"
-      ],
-      "correctIndex": 3,
-      "explanation": "500 g mais 500 g formam 1 kg."
-    },
-    {
-      "id": "mat_ad_016",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual número fica entre 18 e 20?",
-      "options": [
-        "17",
-        "21",
-        "29",
-        "19"
-      ],
-      "correctIndex": 3,
-      "explanation": "19 fica entre 18 e 20."
-    },
-    {
-      "id": "mat_ad_017",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Se o relógio marca 5:45, falta quanto para 6:00?",
-      "options": [
-        "15 minutos",
-        "10 minutos",
-        "20 minutos",
-        "30 minutos"
-      ],
-      "correctIndex": 0,
-      "explanation": "De 5:45 ate 6:00 faltam 15 minutos."
-    },
-    {
-      "id": "mat_ad_018",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Quanto é 7 x 1000?",
-      "options": [
-        "70",
-        "70000",
-        "7000",
-        "700"
-      ],
-      "correctIndex": 2,
-      "explanation": "Multiplicar por 1000 acrescenta três zeros."
-    },
-    {
-      "id": "mat_ad_019",
-      "subject": "matematica",
-      "topic": "atividades_adicionais_matematica",
-      "topicName": "Atividades Adicionais de Matemática",
-      "question": "Qual solido tem 2 bases circulares?",
-      "options": [
-        "cone",
-        "cubo",
-        "piramide",
-        "cilindro"
-      ],
-      "correctIndex": 3,
-      "explanation": "O cilindro tem duas bases circulares."
-    }
-  ]
+  questions: [
+    {
+      id: 'mat_dtq_001',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'O dobro de um número quer dizer:',
+      options: [
+        'multiplicar por 2',
+        'multiplicar por 3',
+        'dividir por 2',
+        'somar 10',
+      ],
+      correctIndex: 0,
+      explanation: 'Dobro significa multiplicar por 2.',
+    },
+    {
+      id: 'mat_dtq_002',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'O triplo de um número quer dizer:',
+      options: [
+        'somar 3',
+        'multiplicar por 3',
+        'multiplicar por 2',
+        'dividir por 3',
+      ],
+      correctIndex: 1,
+      explanation: 'Triplo significa multiplicar por 3.',
+    },
+    {
+      id: 'mat_dtq_003',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'O quádruplo de um número quer dizer:',
+      options: [
+        'multiplicar por 4',
+        'multiplicar por 2',
+        'multiplicar por 5',
+        'somar 4',
+      ],
+      correctIndex: 0,
+      explanation: 'Quádruplo significa multiplicar por 4.',
+    },
+    {
+      id: 'mat_dtq_004',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'O quíntuplo de um número quer dizer:',
+      options: [
+        'multiplicar por 5',
+        'multiplicar por 2',
+        'multiplicar por 4',
+        'dividir por 5',
+      ],
+      correctIndex: 0,
+      explanation: 'Quíntuplo significa multiplicar por 5.',
+    },
+    {
+      id: 'mat_dtq_005',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o dobro de 2?',
+      options: ['4', '6', '8', '10'],
+      correctIndex: 0,
+      explanation: 'O dobro de 2 e 4.',
+    },
+    {
+      id: 'mat_dtq_006',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o dobro de 7?',
+      options: ['14', '12', '16', '18'],
+      correctIndex: 0,
+      explanation: 'O dobro de 7 e 14.',
+    },
+    {
+      id: 'mat_dtq_007',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o triplo de 3?',
+      options: ['15', '9', '6', '12'],
+      correctIndex: 1,
+      explanation: 'O triplo de 3 e 9.',
+    },
+    {
+      id: 'mat_dtq_008',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o triplo de 6?',
+      options: ['24', '18', '12', '20'],
+      correctIndex: 1,
+      explanation: 'O triplo de 6 e 18.',
+    },
+    {
+      id: 'mat_dtq_009',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quádruplo de 4?',
+      options: ['16', '12', '18', '20'],
+      correctIndex: 0,
+      explanation: 'O quádruplo de 4 e 16.',
+    },
+    {
+      id: 'mat_dtq_010',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quádruplo de 5?',
+      options: ['20', '15', '18', '24'],
+      correctIndex: 0,
+      explanation: 'O quádruplo de 5 e 20.',
+    },
+    {
+      id: 'mat_dtq_011',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quíntuplo de 2?',
+      options: ['10', '8', '12', '14'],
+      correctIndex: 0,
+      explanation: 'O quíntuplo de 2 e 10.',
+    },
+    {
+      id: 'mat_dtq_012',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quíntuplo de 4?',
+      options: ['20', '16', '24', '28'],
+      correctIndex: 0,
+      explanation: 'O quíntuplo de 4 e 20.',
+    },
+    {
+      id: 'mat_dtq_013',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o dobro de 9?',
+      options: ['18', '16', '20', '22'],
+      correctIndex: 0,
+      explanation: 'O dobro de 9 e 18.',
+    },
+    {
+      id: 'mat_dtq_014',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o triplo de 8?',
+      options: ['30', '24', '16', '20'],
+      correctIndex: 1,
+      explanation: 'O triplo de 8 e 24.',
+    },
+    {
+      id: 'mat_dtq_015',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quádruplo de 3?',
+      options: ['12', '9', '15', '18'],
+      correctIndex: 0,
+      explanation: 'O quádruplo de 3 e 12.',
+    },
+    {
+      id: 'mat_dtq_016',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quíntuplo de 3?',
+      options: ['15', '12', '18', '20'],
+      correctIndex: 0,
+      explanation: 'O quíntuplo de 3 e 15.',
+    },
+    {
+      id: 'mat_dtq_017',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o dobro de 12?',
+      options: ['26', '24', '20', '22'],
+      correctIndex: 1,
+      explanation: 'O dobro de 12 e 24.',
+    },
+    {
+      id: 'mat_dtq_018',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o triplo de 5?',
+      options: ['20', '15', '10', '18'],
+      correctIndex: 1,
+      explanation: 'O triplo de 5 e 15.',
+    },
+    {
+      id: 'mat_dtq_019',
+      subject: 'matematica',
+      topic: 'dobro_triplo_quadruplo_quintuplo',
+      topicName: 'Dobro, Triplo, Quádruplo e Quíntuplo',
+      question: 'Qual é o quíntuplo de 6?',
+      options: ['30', '24', '32', '35'],
+      correctIndex: 0,
+      explanation: 'O quíntuplo de 6 e 30.',
+    },
+    {
+      id: 'mat_con_001',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual número e maior?',
+      options: ['54', '45', '40', '49'],
+      correctIndex: 0,
+      explanation: '54 e maior do que 45, 40 e 49.',
+    },
+    {
+      id: 'mat_con_002',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual número e menor?',
+      options: ['3', '31', '13', '23'],
+      correctIndex: 0,
+      explanation: '3 e menor do que 31, 13 e 23.',
+    },
+    {
+      id: 'mat_con_003',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual sequencia está em ordem crescente?',
+      options: [
+        '15, 12, 11, 9',
+        '12, 9, 15, 11',
+        '11, 15, 9, 12',
+        '9, 11, 12, 15',
+      ],
+      correctIndex: 3,
+      explanation: 'Ordem crescente vai do menor para o maior.',
+    },
+    {
+      id: 'mat_con_004',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual sequencia está em ordem decrescente?',
+      options: [
+        '70, 65, 80, 75',
+        '80, 75, 70, 65',
+        '65, 70, 75, 80',
+        '75, 80, 65, 70',
+      ],
+      correctIndex: 1,
+      explanation: 'Ordem decrescente vai do maior para o menor.',
+    },
+    {
+      id: 'mat_con_005',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual número fica entre 27 e 29?',
+      options: ['26', '30', '31', '28'],
+      correctIndex: 3,
+      explanation: '28 fica entre 27 e 29.',
+    },
+    {
+      id: 'mat_con_006',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual é o antecessor de 50?',
+      options: ['51', '40', '49', '48'],
+      correctIndex: 2,
+      explanation: 'O número anterior a 50 e 49.',
+    },
+    {
+      id: 'mat_con_007',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual é o sucessor de 99?',
+      options: ['100', '98', '101', '110'],
+      correctIndex: 0,
+      explanation: 'O número depois de 99 e 100.',
+    },
+    {
+      id: 'mat_con_008',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Entre 62 e 26, qual e o maior?',
+      options: ['52', '16', '62', '26'],
+      correctIndex: 2,
+      explanation: '62 e maior do que 26.',
+    },
+    {
+      id: 'mat_con_009',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Entre 41 e 14, qual e o menor?',
+      options: ['24', '44', '14', '41'],
+      correctIndex: 2,
+      explanation: '14 e menor do que 41.',
+    },
+    {
+      id: 'mat_con_010',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual número e maior?',
+      options: ['231', '123', '132', '213'],
+      correctIndex: 0,
+      explanation: '231 e o maior número da lista.',
+    },
+    {
+      id: 'mat_con_011',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual número e menor?',
+      options: ['405', '450', '540', '504'],
+      correctIndex: 0,
+      explanation: '405 e o menor número da lista.',
+    },
+    {
+      id: 'mat_con_012',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual sequencia está em ordem crescente?',
+      options: ['43, 34, 31', '34, 31, 43', '31, 43, 34', '31, 34, 43'],
+      correctIndex: 3,
+      explanation: 'A ordem crescente vai do menor para o maior.',
+    },
+    {
+      id: 'mat_con_013',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual sequencia está em ordem decrescente?',
+      options: ['21, 12, 18', '21, 18, 12', '12, 18, 21', '18, 12, 21'],
+      correctIndex: 1,
+      explanation: 'A ordem decrescente vai do maior para o menor.',
+    },
+    {
+      id: 'mat_con_014',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual número fica entre 90 e 92?',
+      options: ['89', '93', '99', '91'],
+      correctIndex: 3,
+      explanation: '91 fica entre 90 e 92.',
+    },
+    {
+      id: 'mat_con_015',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual é o antecessor de 300?',
+      options: ['298', '301', '390', '299'],
+      correctIndex: 3,
+      explanation: 'O número anterior a 300 e 299.',
+    },
+    {
+      id: 'mat_con_016',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual é o sucessor de 499?',
+      options: ['590', '500', '498', '501'],
+      correctIndex: 1,
+      explanation: 'O número depois de 499 e 500.',
+    },
+    {
+      id: 'mat_con_017',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Entre 78 e 87, qual e o maior?',
+      options: ['68', '97', '87', '78'],
+      correctIndex: 2,
+      explanation: '87 e maior do que 78.',
+    },
+    {
+      id: 'mat_con_018',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Entre 205 e 250, qual e o menor?',
+      options: ['205', '250', '215', '295'],
+      correctIndex: 0,
+      explanation: '205 e menor do que 250.',
+    },
+    {
+      id: 'mat_con_019',
+      subject: 'matematica',
+      topic: 'comparando_ordenando_numeros',
+      topicName: 'Comparando e Ordenando Números',
+      question: 'Qual sequencia está em ordem crescente?',
+      options: [
+        '38, 28, 18, 8',
+        '18, 8, 38, 28',
+        '8, 28, 18, 38',
+        '8, 18, 28, 38',
+      ],
+      correctIndex: 3,
+      explanation: 'A ordem crescente vai do menor para o maior.',
+    },
+    {
+      id: 'mat_hr_001',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 3:00, lemos:',
+      options: ['três e quinze', 'três e trinta', 'quatro horas', 'três horas'],
+      correctIndex: 3,
+      explanation: 'Quando os minutos estão no 12, a hora e cheia.',
+    },
+    {
+      id: 'mat_hr_002',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 7:30, lemos:',
+      options: [
+        'sete horas',
+        'sete horas e quinze minutos',
+        'oito horas',
+        'sete horas e trinta minutos',
+      ],
+      correctIndex: 3,
+      explanation: '30 minutos formam meia hora.',
+    },
+    {
+      id: 'mat_hr_003',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 12:15, lemos:',
+      options: [
+        'doze horas e quinze minutos',
+        'doze horas',
+        'doze horas e trinta minutos',
+        'uma hora',
+      ],
+      correctIndex: 0,
+      explanation: '15 minutos formam um quarto de hora.',
+    },
+    {
+      id: 'mat_hr_004',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 5:45, lemos:',
+      options: [
+        'cinco horas',
+        'cinco horas e quinze minutos',
+        'seis horas',
+        'cinco horas e quarenta e cinco minutos',
+      ],
+      correctIndex: 3,
+      explanation: '45 minutos faltam para completar uma hora.',
+    },
+    {
+      id: 'mat_hr_005',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question:
+        'Qual horário mostra um relógio com ponteiro das horas no 8 e dos minutos no 12?',
+      options: ['8:30', '7:00', '8:15', '8:00'],
+      correctIndex: 3,
+      explanation: 'Com os dois ponteiros no 12, são horas cheias.',
+    },
+    {
+      id: 'mat_hr_006',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question:
+        'Qual horário mostra um relógio com ponteiro das horas entre 2 e 3 e dos minutos no 6?',
+      options: ['3:30', '2:30', '2:00', '2:15'],
+      correctIndex: 1,
+      explanation: 'Quando o ponteiro dos minutos está no 6, são 30 minutos.',
+    },
+    {
+      id: 'mat_hr_007',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Quanto falta para 4:00 quando são 3:45?',
+      options: ['10 minutos', '20 minutos', '30 minutos', '15 minutos'],
+      correctIndex: 3,
+      explanation: 'De 3:45 ate 4:00 faltam 15 minutos.',
+    },
+    {
+      id: 'mat_hr_008',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Quanto passou de 6:00 quando são 6:20?',
+      options: ['30 minutos', '40 minutos', '20 minutos', '15 minutos'],
+      correctIndex: 2,
+      explanation: 'De 6:00 ate 6:20 passaram 20 minutos.',
+    },
+    {
+      id: 'mat_hr_009',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se a aula começa as 9:00 e termina as 10:00, dura:',
+      options: ['2 horas', '15 minutos', '1 hora', '30 minutos'],
+      correctIndex: 2,
+      explanation: 'De 9:00 ate 10:00 passa 1 hora.',
+    },
+    {
+      id: 'mat_hr_010',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se são 1:00 e o relógio avanca 2 horas, fica em:',
+      options: ['3:00', '2:00', '4:00', '5:00'],
+      correctIndex: 0,
+      explanation: 'Somamos 2 horas ao horário inicial.',
+    },
+    {
+      id: 'mat_hr_011',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se são 4:30 e passam 30 minutos, fica em:',
+      options: ['6:00', '5:00', '4:45', '5:30'],
+      correctIndex: 1,
+      explanation: '30 minutos depois de 4:30, são 5:00.',
+    },
+    {
+      id: 'mat_hr_012',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 11:00, são:',
+      options: ['dez horas', 'doze horas', 'onze horas', 'onze e quinze'],
+      correctIndex: 2,
+      explanation: '11:00 e uma hora cheia.',
+    },
+    {
+      id: 'mat_hr_013',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 6:15, são:',
+      options: [
+        'sete horas',
+        'seis horas e quinze minutos',
+        'seis horas',
+        'seis horas e trinta minutos',
+      ],
+      correctIndex: 1,
+      explanation: '15 minutos formam um quarto de hora.',
+    },
+    {
+      id: 'mat_hr_014',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 8:30, são:',
+      options: [
+        'nove horas',
+        'oito horas e trinta minutos',
+        'oito horas',
+        'oito horas e quinze minutos',
+      ],
+      correctIndex: 1,
+      explanation: '30 minutos formam meia hora.',
+    },
+    {
+      id: 'mat_hr_015',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se são 10:45, faltam quantos minutos para 11:00?',
+      options: ['15 minutos', '10 minutos', '20 minutos', '30 minutos'],
+      correctIndex: 0,
+      explanation: 'De 10:45 ate 11:00 faltam 15 minutos.',
+    },
+    {
+      id: 'mat_hr_016',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se uma atividade começa as 14:00 e termina as 15:00, dura:',
+      options: ['2 horas', '45 minutos', '1 hora', '30 minutos'],
+      correctIndex: 2,
+      explanation: 'De 14:00 ate 15:00 passa 1 hora.',
+    },
+    {
+      id: 'mat_hr_017',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se o relógio marca 9:30, ele mostra:',
+      options: [
+        'nove horas e trinta minutos',
+        'nove horas',
+        'nove horas e quinze minutos',
+        'dez horas',
+      ],
+      correctIndex: 0,
+      explanation: '30 minutos formam meia hora.',
+    },
+    {
+      id: 'mat_hr_018',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question: 'Se são 4:00 e passam 1 hora, fica em:',
+      options: ['5:30', '5:00', '4:30', '6:00'],
+      correctIndex: 1,
+      explanation: 'Uma hora depois de 4:00 e 5:00.',
+    },
+    {
+      id: 'mat_hr_019',
+      subject: 'matematica',
+      topic: 'horas_relogios',
+      topicName: 'As Horas e os Relógios',
+      question:
+        'Se o ponteiro dos minutos está no 12 e o das horas no 5, o horário e:',
+      options: ['6:00', '5:00', '5:30', '4:00'],
+      correctIndex: 1,
+      explanation: 'Com os minutos no 12, a hora está cheia.',
+    },
+    {
+      id: 'mat_m10_001',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 3 x 10?',
+      options: ['30', '20', '40', '300'],
+      correctIndex: 0,
+      explanation: 'Multiplicar por 10 acrescenta um zero.',
+    },
+    {
+      id: 'mat_m10_002',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 7 x 10?',
+      options: ['70', '17', '700', '60'],
+      correctIndex: 0,
+      explanation: 'Multiplicar por 10 acrescenta um zero.',
+    },
+    {
+      id: 'mat_m10_003',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 14 x 10?',
+      options: ['1400', '140', '104', '24'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 10 acrescenta um zero.',
+    },
+    {
+      id: 'mat_m10_004',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 5 x 100?',
+      options: ['600', '500', '50', '5000'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 100 acrescenta dois zeros.',
+    },
+    {
+      id: 'mat_m10_005',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 9 x 100?',
+      options: ['9000', '900', '90', '990'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 100 acrescenta dois zeros.',
+    },
+    {
+      id: 'mat_m10_006',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 12 x 100?',
+      options: ['120', '12000', '1200', '1020'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 100 acrescenta dois zeros.',
+    },
+    {
+      id: 'mat_m10_007',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 2 x 1000?',
+      options: ['20', '20000', '2000', '200'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 1000 acrescenta três zeros.',
+    },
+    {
+      id: 'mat_m10_008',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 4 x 1000?',
+      options: ['40', '40000', '4000', '400'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 1000 acrescenta três zeros.',
+    },
+    {
+      id: 'mat_m10_009',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 8 x 1000?',
+      options: ['80', '80000', '8000', '800'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 1000 acrescenta três zeros.',
+    },
+    {
+      id: 'mat_m10_010',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 6 x 0?',
+      options: ['6', '60', '600', '0'],
+      correctIndex: 3,
+      explanation: 'Todo número multiplicado por zero resulta em zero.',
+    },
+    {
+      id: 'mat_m10_011',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 15 x 0?',
+      options: ['0', '15', '150', '1500'],
+      correctIndex: 0,
+      explanation: 'Todo número multiplicado por zero resulta em zero.',
+    },
+    {
+      id: 'mat_m10_012',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 0 x 10?',
+      options: ['0', '10', '100', '1000'],
+      correctIndex: 0,
+      explanation: 'Zero vezes qualquer número é zero.',
+    },
+    {
+      id: 'mat_m10_013',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 23 x 10?',
+      options: ['240', '230', '2300', '223'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 10 acrescenta um zero.',
+    },
+    {
+      id: 'mat_m10_014',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 11 x 100?',
+      options: ['1011', '1110', '1100', '110'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 100 acrescenta dois zeros.',
+    },
+    {
+      id: 'mat_m10_015',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 7 x 1000?',
+      options: ['70', '70000', '7000', '700'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 1000 acrescenta três zeros.',
+    },
+    {
+      id: 'mat_m10_016',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 19 x 0?',
+      options: ['0', '19', '190', '1900'],
+      correctIndex: 0,
+      explanation: 'Todo número multiplicado por zero resulta em zero.',
+    },
+    {
+      id: 'mat_m10_017',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 30 x 10?',
+      options: ['330', '300', '30', '3000'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 10 acrescenta um zero.',
+    },
+    {
+      id: 'mat_m10_018',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Quanto é 1 x 1000?',
+      options: ['10', '10000', '1000', '100'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 1000 acrescenta três zeros.',
+    },
+    {
+      id: 'mat_m10_019',
+      subject: 'matematica',
+      topic: 'multiplicacao_10_100_1000_zero',
+      topicName: 'Multiplicação por 10, 100, 1.000 ou Zero',
+      question: 'Multiplicar por zero da:',
+      options: ['0', '1', '10', '100'],
+      correctIndex: 0,
+      explanation: 'Zero multiplicado por qualquer número continua sendo zero.',
+    },
+    {
+      id: 'mat_cm_001',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question:
+        'Qual unidade usamos para medir a capacidade de uma garrafa de água?',
+      options: ['quilograma', 'grama', 'metro', 'litro'],
+      correctIndex: 3,
+      explanation:
+        'Capacidade de líquidos costuma ser medida em litros ou mililitros.',
+    },
+    {
+      id: 'mat_cm_002',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual unidade usamos para medir 500 mL de suco?',
+      options: ['grama', 'litro', 'mililitro', 'quilograma'],
+      correctIndex: 2,
+      explanation: 'Mililitro e uma unidade de capacidade.',
+    },
+    {
+      id: 'mat_cm_003',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: '1 litro corresponde a:',
+      options: ['10 mL', '10 000 mL', '1000 mL', '100 mL'],
+      correctIndex: 2,
+      explanation: '1 litro equivale a 1.000 mililitros.',
+    },
+    {
+      id: 'mat_cm_004',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual é maior: 1 litro ou 750 mL?',
+      options: ['1 litro', '750 mL', '500 mL', '250 mL'],
+      correctIndex: 0,
+      explanation: '1 litro e maior que 750 mL.',
+    },
+    {
+      id: 'mat_cm_005',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual objeto costuma ser medido em quilogramas?',
+      options: [
+        'xicara de cha',
+        'colher de sopa',
+        'saco de arroz',
+        'gota de remedio',
+      ],
+      correctIndex: 2,
+      explanation: 'Sacos maiores costumam ser medidos em quilogramas.',
+    },
+    {
+      id: 'mat_cm_006',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual objeto costuma ser medido em gramas?',
+      options: ['cestá de frutas', 'maca', 'saco de feijao', 'garrafa de água'],
+      correctIndex: 1,
+      explanation: 'Frutas pequenas costumam ser medidas em gramas.',
+    },
+    {
+      id: 'mat_cm_007',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual é mais pesado: 2 kg ou 500 g?',
+      options: ['200 g', '100 g', '2 kg', '500 g'],
+      correctIndex: 2,
+      explanation: '2 kg e maior do que 500 g.',
+    },
+    {
+      id: 'mat_cm_008',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual é mais leve: 1 kg ou 800 g?',
+      options: ['800 g', '1 kg', '1200 g', '2 kg'],
+      correctIndex: 0,
+      explanation: '800 g e menor que 1 kg.',
+    },
+    {
+      id: 'mat_cm_009',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: '500 g + 500 g = ?',
+      options: ['2 kg', '1 kg', '500 g', '1500 g'],
+      correctIndex: 1,
+      explanation: '500 g mais 500 g formam 1 kg.',
+    },
+    {
+      id: 'mat_cm_010',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: '2 litros = ?',
+      options: ['2000 mL', '200 mL', '20 mL', '20000 mL'],
+      correctIndex: 0,
+      explanation: '2 litros correspondem a 2000 mililitros.',
+    },
+    {
+      id: 'mat_cm_011',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Uma colher de remedio costuma ser medida em:',
+      options: ['mililitros', 'quilogramas', 'gramas', 'metros'],
+      correctIndex: 0,
+      explanation: 'Pequenas quantidades de liquido usam mililitros.',
+    },
+    {
+      id: 'mat_cm_012',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Um pacote de farinha de 1 kg tem:',
+      options: ['10 000 g', '1000 g', '100 g', '10 g'],
+      correctIndex: 1,
+      explanation: '1 kg equivale a 1.000 gramas.',
+    },
+    {
+      id: 'mat_cm_013',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual instrumento pode ser usado para medir massa?',
+      options: ['termometro', 'balança', 'relógio', 'regua'],
+      correctIndex: 1,
+      explanation: 'A balança mede massa.',
+    },
+    {
+      id: 'mat_cm_014',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Uma caixa de leite grande geralmente tem:',
+      options: ['10 litros', '1 litro', '1 quilograma', '100 gramas'],
+      correctIndex: 1,
+      explanation: 'Caixas de leite costumam indicar capacidade em litros.',
+    },
+    {
+      id: 'mat_cm_015',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual unidade é usada para medir a massa de uma pessoa?',
+      options: ['mililitro', 'metro', 'quilograma', 'litro'],
+      correctIndex: 2,
+      explanation: 'A massa de pessoas é medida em quilogramas.',
+    },
+    {
+      id: 'mat_cm_016',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual é mais pesado: 3 kg ou 300 g?',
+      options: ['30 g', '3000 g', '3 kg', '300 g'],
+      correctIndex: 2,
+      explanation: '3 kg e maior que 300 g.',
+    },
+    {
+      id: 'mat_cm_017',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: 'Qual é mais leve: 750 mL ou 1 L?',
+      options: ['750 mL', '1 L', '1750 mL', '2 L'],
+      correctIndex: 0,
+      explanation: '750 mL e menor que 1 litro.',
+    },
+    {
+      id: 'mat_cm_018',
+      subject: 'matematica',
+      topic: 'medidas_capacidade_massa',
+      topicName: 'Medidas de Capacidade e de Massa',
+      question: '10 pacotinhos de 100 g juntos pesam:',
+      options: ['1 kg', '100 g', '500 g', '2 kg'],
+      correctIndex: 0,
+      explanation: '10 vezes 100 g formam 1000 g, ou 1 kg.',
+    },
+    {
+      id: 'mat_sg_001',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido lembra um dado?',
+      options: ['esfera', 'cone', 'cilindro', 'cubo'],
+      correctIndex: 3,
+      explanation: 'O dado tem forma de cubo.',
+    },
+    {
+      id: 'mat_sg_002',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido lembra uma bola?',
+      options: ['esfera', 'cubo', 'cone', 'piramide'],
+      correctIndex: 0,
+      explanation: 'A bola tem forma de esfera.',
+    },
+    {
+      id: 'mat_sg_003',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido lembra uma lata?',
+      options: ['cilindro', 'cone', 'cubo', 'esfera'],
+      correctIndex: 0,
+      explanation: 'A lata tem forma de cilindro.',
+    },
+    {
+      id: 'mat_sg_004',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido lembra um sorvete de casquinha?',
+      options: ['cubo', 'cilindro', 'esfera', 'cone'],
+      correctIndex: 3,
+      explanation: 'A casquinha lembra um cone.',
+    },
+    {
+      id: 'mat_sg_005',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido lembra uma caixa de sapato?',
+      options: ['esfera', 'cone', 'cilindro', 'paralelepipedo'],
+      correctIndex: 3,
+      explanation: 'A caixa de sapato tem forma de paralelepipedo.',
+    },
+    {
+      id: 'mat_sg_006',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem base quadrada e faces triangulares?',
+      options: ['cubo', 'esfera', 'cilindro', 'piramide'],
+      correctIndex: 3,
+      explanation: 'A piramide tem faces laterais triangulares.',
+    },
+    {
+      id: 'mat_sg_007',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem 6 faces quadradas iguais?',
+      options: ['esfera', 'cubo', 'cilindro', 'cone'],
+      correctIndex: 1,
+      explanation: 'O cubo tem 6 faces iguais.',
+    },
+    {
+      id: 'mat_sg_008',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem 2 bases circulares?',
+      options: ['cone', 'cubo', 'piramide', 'cilindro'],
+      correctIndex: 3,
+      explanation: 'O cilindro tem duas bases circulares.',
+    },
+    {
+      id: 'mat_sg_009',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem 1 base circular e 1 vertice?',
+      options: ['cone', 'cubo', 'esfera', 'cilindro'],
+      correctIndex: 0,
+      explanation: 'O cone tem uma base circular e uma ponta.',
+    },
+    {
+      id: 'mat_sg_010',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem 8 vertices?',
+      options: ['esfera', 'cone', 'cilindro', 'cubo'],
+      correctIndex: 3,
+      explanation: 'O cubo possui 8 vertices.',
+    },
+    {
+      id: 'mat_sg_011',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual sólido não tem faces planas?',
+      options: ['paralelepipedo', 'esfera', 'cubo', 'piramide'],
+      correctIndex: 1,
+      explanation: 'A esfera e totalmente redonda.',
+    },
+    {
+      id: 'mat_sg_012',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido pode rolar com facilidade?',
+      options: ['paralelepipedo', 'piramide', 'esfera', 'cubo'],
+      correctIndex: 2,
+      explanation: 'A esfera rola em todas as direcoes.',
+    },
+    {
+      id: 'mat_sg_013',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem faces retangulares?',
+      options: ['cone', 'esfera', 'piramide', 'paralelepipedo'],
+      correctIndex: 3,
+      explanation: 'O paralelepipedo tem faces retangulares.',
+    },
+    {
+      id: 'mat_sg_014',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido parece um tijolo?',
+      options: ['cilindro', 'paralelepipedo', 'cone', 'esfera'],
+      correctIndex: 1,
+      explanation: 'Tijolos lembram paralelepipedos.',
+    },
+    {
+      id: 'mat_sg_015',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido parece um chapeu de festá?',
+      options: ['esfera', 'cilindro', 'cone', 'cubo'],
+      correctIndex: 2,
+      explanation: 'O chapeu de festá lembra um cone.',
+    },
+    {
+      id: 'mat_sg_016',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem uma ponta?',
+      options: ['cilindro', 'cubo', 'cone', 'esfera'],
+      correctIndex: 2,
+      explanation: 'O cone termina em uma ponta.',
+    },
+    {
+      id: 'mat_sg_017',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem 6 faces planas?',
+      options: ['esfera', 'cone', 'cilindro', 'cubo'],
+      correctIndex: 3,
+      explanation: 'O cubo tem 6 faces planas.',
+    },
+    {
+      id: 'mat_sg_018',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem forma de caixa retangular?',
+      options: ['esfera', 'piramide', 'paralelepipedo', 'cone'],
+      correctIndex: 2,
+      explanation: 'Uma caixa retangular lembra um paralelepipedo.',
+    },
+    {
+      id: 'mat_sg_019',
+      subject: 'matematica',
+      topic: 'solidos_geometricos_mais_conhecidos',
+      topicName: 'Sólidos Geométricos Mais Conhecidos',
+      question: 'Qual solido tem uma base circular e uma lateral curva?',
+      options: ['esfera', 'piramide', 'cilindro', 'cubo'],
+      correctIndex: 2,
+      explanation: 'O cilindro tem base circular e superficie curva.',
+    },
+    {
+      id: 'mat_sm_001',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao com 6 quadrados monta um:',
+      options: ['cone', 'esfera', 'cubo', 'cilindro'],
+      correctIndex: 2,
+      explanation: 'Seis quadrados formam um cubo.',
+    },
+    {
+      id: 'mat_sm_002',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao com 6 retangulos monta um:',
+      options: ['cone', 'esfera', 'cubo', 'paralelepipedo'],
+      correctIndex: 3,
+      explanation: 'Seis retangulos podem formar um paralelepipedo.',
+    },
+    {
+      id: 'mat_sm_003',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao com 2 circulos e 1 retangulo monta um:',
+      options: ['cone', 'cubo', 'piramide', 'cilindro'],
+      correctIndex: 3,
+      explanation: 'Dois circulos e um retangulo formam um cilindro.',
+    },
+    {
+      id: 'mat_sm_004',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao com 1 circulo e 1 setor circular monta um:',
+      options: ['cilindro', 'cubo', 'esfera', 'cone'],
+      correctIndex: 3,
+      explanation: 'Um circulo e um setor circular formam um cone.',
+    },
+    {
+      id: 'mat_sm_005',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao com 1 quadrado e 4 triangulos monta uma:',
+      options: ['esfera', 'piramide', 'cubo', 'cilindro'],
+      correctIndex: 1,
+      explanation: 'Um quadrado e 4 triangulos formam uma piramide.',
+    },
+    {
+      id: 'mat_sm_006',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Quantos quadrados iguais costumam formar um cubo?',
+      options: ['10', '6', '4', '8'],
+      correctIndex: 1,
+      explanation: 'Um cubo tem 6 faces quadradas.',
+    },
+    {
+      id: 'mat_sm_007',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Quantos circulos aparecem na planificacao de um cilindro?',
+      options: ['4', '2', '1', '3'],
+      correctIndex: 1,
+      explanation: 'O cilindro tem duas bases circulares.',
+    },
+    {
+      id: 'mat_sm_008',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question:
+        'Quantos triangulos costumam aparecer na planificacao de uma piramide de base quadrada?',
+      options: ['5', '6', '4', '3'],
+      correctIndex: 2,
+      explanation: 'A piramide de base quadrada tem 4 faces triangulares.',
+    },
+    {
+      id: 'mat_sm_009',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Qual solido pode ser montado com 6 quadrados iguais?',
+      options: ['cubo', 'cone', 'cilindro', 'esfera'],
+      correctIndex: 0,
+      explanation: 'Seis quadrados iguais formam um cubo.',
+    },
+    {
+      id: 'mat_sm_010',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Qual solido pode ser montado com 6 retangulos iguais?',
+      options: ['piramide', 'paralelepipedo', 'cone', 'esfera'],
+      correctIndex: 1,
+      explanation: 'Seis retangulos iguais podem formar uma caixa retangular.',
+    },
+    {
+      id: 'mat_sm_011',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Qual solido pode ser montado com 2 circulos e 1 retangulo?',
+      options: ['cone', 'piramide', 'cilindro', 'cubo'],
+      correctIndex: 2,
+      explanation: 'Essa planificacao forma um cilindro.',
+    },
+    {
+      id: 'mat_sm_012',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question:
+        'Qual solido pode ser montado com 1 circulo e 1 setor circular?',
+      options: ['cilindro', 'esfera', 'cone', 'cubo'],
+      correctIndex: 2,
+      explanation: 'Essa planificacao forma um cone.',
+    },
+    {
+      id: 'mat_sm_013',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Qual solido pode ser montado com 1 quadrado e 4 triangulos?',
+      options: ['cubo', 'cilindro', 'esfera', 'piramide'],
+      correctIndex: 3,
+      explanation: 'Essa planificacao forma uma piramide.',
+    },
+    {
+      id: 'mat_sm_014',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao em cruz com 6 quadrados iguais forma um:',
+      options: ['esfera', 'cubo', 'cilindro', 'cone'],
+      correctIndex: 1,
+      explanation: 'Essa planificacao forma um cubo.',
+    },
+    {
+      id: 'mat_sm_015',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question:
+        'Uma planificacao com 1 quadrado e 4 triangulos forma uma piramide de base:',
+      options: ['triangular', 'retangular', 'quadrada', 'circular'],
+      correctIndex: 2,
+      explanation: 'A base e quadrada.',
+    },
+    {
+      id: 'mat_sm_016',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question:
+        'Uma planificacao com 2 circulos e 1 retangulo pode formar o solido que parece uma:',
+      options: ['caixa', 'piramide', 'lata', 'bola'],
+      correctIndex: 2,
+      explanation: 'Esse conjunto forma um cilindro, como uma lata.',
+    },
+    {
+      id: 'mat_sm_017',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question: 'Uma planificacao com 6 faces quadradas iguais monta um:',
+      options: ['cilindro', 'cone', 'esfera', 'cubo'],
+      correctIndex: 3,
+      explanation: 'Seis quadrados iguais formam um cubo.',
+    },
+    {
+      id: 'mat_sm_018',
+      subject: 'matematica',
+      topic: 'solidos_para_montar',
+      topicName: 'Sólidos para Montar',
+      question:
+        'Uma planificacao com 1 circulo e uma parte lateral em forma de setor forma um:',
+      options: ['cilindro', 'paralelepipedo', 'cone', 'cubo'],
+      correctIndex: 2,
+      explanation: 'A lateral em setor forma um cone.',
+    },
+    {
+      id: 'mat_ad_001',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'O dobro de 8 e:',
+      options: ['12', '14', '18', '16'],
+      correctIndex: 3,
+      explanation: 'O dobro de 8 e 16.',
+    },
+    {
+      id: 'mat_ad_002',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual número e maior?',
+      options: ['74', '47', '64', '57'],
+      correctIndex: 0,
+      explanation: '74 e maior que as outras opcoes.',
+    },
+    {
+      id: 'mat_ad_003',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Se o relógio marca 2:30, lemos:',
+      options: [
+        'duas horas',
+        'duas horas e quinze minutos',
+        'três horas',
+        'duas horas e trinta minutos',
+      ],
+      correctIndex: 3,
+      explanation: '30 minutos formam meia hora.',
+    },
+    {
+      id: 'mat_ad_004',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Quanto é 4 x 100?',
+      options: ['420', '400', '40', '4000'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 100 acrescenta dois zeros.',
+    },
+    {
+      id: 'mat_ad_005',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual é maior: 1 litro ou 750 mL?',
+      options: ['1 litro', '750 mL', '500 mL', '250 mL'],
+      correctIndex: 0,
+      explanation: '1 litro e maior.',
+    },
+    {
+      id: 'mat_ad_006',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual solido lembra um dado?',
+      options: ['esfera', 'cone', 'cilindro', 'cubo'],
+      correctIndex: 3,
+      explanation: 'O dado tem forma de cubo.',
+    },
+    {
+      id: 'mat_ad_007',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual é o resultado de 3 x 0?',
+      options: ['0', '3', '30', '300'],
+      correctIndex: 0,
+      explanation: 'Qualquer número vezes zero e zero.',
+    },
+    {
+      id: 'mat_ad_008',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual número vem antes de 100?',
+      options: ['110', '99', '98', '101'],
+      correctIndex: 1,
+      explanation: 'O antecessor de 100 e 99.',
+    },
+    {
+      id: 'mat_ad_009',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Se são 8:00, os ponteiros do relógio mostram:',
+      options: ['nove horas', 'oito horas', 'oito e quinze', 'oito e trinta'],
+      correctIndex: 1,
+      explanation: 'Com os minutos no 12, a hora e cheia.',
+    },
+    {
+      id: 'mat_ad_010',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual é mais pesado: 2 kg ou 500 g?',
+      options: ['200 g', '100 g', '2 kg', '500 g'],
+      correctIndex: 2,
+      explanation: '2 kg e maior.',
+    },
+    {
+      id: 'mat_ad_011',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual solido pode ser montado com 2 circulos e 1 retangulo?',
+      options: ['cubo', 'esfera', 'cilindro', 'cone'],
+      correctIndex: 2,
+      explanation: 'Essa planificacao forma um cilindro.',
+    },
+    {
+      id: 'mat_ad_012',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Quanto é 12 x 10?',
+      options: ['102', '120', '12', '1200'],
+      correctIndex: 1,
+      explanation: 'Multiplicar por 10 acrescenta um zero.',
+    },
+    {
+      id: 'mat_ad_013',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual é mais leve: 750 mL ou 1 L?',
+      options: ['750 mL', '1 L', '1500 mL', '2 L'],
+      correctIndex: 0,
+      explanation: '750 mL e menor que 1 litro.',
+    },
+    {
+      id: 'mat_ad_014',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual solido parece uma bola?',
+      options: ['esfera', 'cubo', 'cone', 'cilindro'],
+      correctIndex: 0,
+      explanation: 'A bola lembra uma esfera.',
+    },
+    {
+      id: 'mat_ad_015',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Quanto é 500 g + 500 g?',
+      options: ['500 g', '750 g', '2 kg', '1 kg'],
+      correctIndex: 3,
+      explanation: '500 g mais 500 g formam 1 kg.',
+    },
+    {
+      id: 'mat_ad_016',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual número fica entre 18 e 20?',
+      options: ['17', '21', '29', '19'],
+      correctIndex: 3,
+      explanation: '19 fica entre 18 e 20.',
+    },
+    {
+      id: 'mat_ad_017',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Se o relógio marca 5:45, falta quanto para 6:00?',
+      options: ['15 minutos', '10 minutos', '20 minutos', '30 minutos'],
+      correctIndex: 0,
+      explanation: 'De 5:45 ate 6:00 faltam 15 minutos.',
+    },
+    {
+      id: 'mat_ad_018',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Quanto é 7 x 1000?',
+      options: ['70', '70000', '7000', '700'],
+      correctIndex: 2,
+      explanation: 'Multiplicar por 1000 acrescenta três zeros.',
+    },
+    {
+      id: 'mat_ad_019',
+      subject: 'matematica',
+      topic: 'atividades_adicionais_matematica',
+      topicName: 'Atividades Adicionais de Matemática',
+      question: 'Qual solido tem 2 bases circulares?',
+      options: ['cone', 'cubo', 'piramide', 'cilindro'],
+      correctIndex: 3,
+      explanation: 'O cilindro tem duas bases circulares.',
+    },
+  ],
 };

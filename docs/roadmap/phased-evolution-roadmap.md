@@ -33,6 +33,8 @@ Criar o baseline de desenvolvimento, qualidade e governanca tecnica.
 - testes automatizados iniciais
 - pipeline de CI para validacao obrigatoria
 - estrutura de documentacao viva
+- status checks obrigatorios para PRs
+- feedback rapido de qualidade em cada alteracao
 
 ### Riscos mitigados
 

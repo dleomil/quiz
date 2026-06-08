@@ -32,7 +32,9 @@ const server = http.createServer((req, res) => {
 
   fs.stat(filePath, (statErr, stats) => {
     if (statErr || !stats.isFile()) {
-      send(res, 404, 'Not found', { 'Content-Type': 'text/plain; charset=utf-8' });
+      send(res, 404, 'Not found', {
+        'Content-Type': 'text/plain; charset=utf-8',
+      });
       return;
     }
 

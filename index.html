@@ -1,48 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz Etapa — 3º Ano</title>
-  <meta name="description" content="Quiz interativo para alunos do 3º ano — método ETAPA" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Etapa — 3º Ano</title>
+    <meta
+      name="description"
+      content="Quiz interativo para alunos do 3º ano — método ETAPA"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>"
+    />
+    <link rel="stylesheet" href="css/style.css?v=4" />
+  </head>
+  <body>
+    <header id="app-header">
+      <div class="header-inner">
+        <button
+          class="header-logo"
+          id="logo-home"
+          type="button"
+          aria-label="Voltar ao início"
+        >
+          📚 Quiz Etapa
+        </button>
+        <button
+          class="nav-btn"
+          id="nav-home"
+          data-screen="home"
+          aria-label="Início"
+        >
+          🏠 Início
+        </button>
+        <button
+          class="nav-btn"
+          id="nav-history"
+          data-screen="history"
+          aria-label="Ver histórico"
+        >
+          📊 Histórico
+        </button>
+        <button
+          class="theme-btn"
+          id="btn-theme"
+          aria-label="Alternar modo escuro"
+        >
+          🌙
+        </button>
+        <button
+          class="restart-btn"
+          id="btn-restart"
+          aria-label="Recomeçar o quiz"
+        >
+          🔄 Recomeçar
+        </button>
+      </div>
+    </header>
 
-  <header id="app-header">
-    <div class="header-inner">
-      <button class="header-logo" id="logo-home" type="button" aria-label="Voltar ao início">📚 Quiz Etapa</button>
-      <button class="nav-btn" id="nav-home"    data-screen="home"    aria-label="Início">🏠 Início</button>
-      <button class="nav-btn" id="nav-history" data-screen="history" aria-label="Ver histórico">📊 Histórico</button>
-      <button class="theme-btn" id="btn-theme" aria-label="Alternar modo escuro">🌙</button>
-      <button class="restart-btn" id="btn-restart" aria-label="Recomeçar o quiz">🔄 Recomeçar</button>
-    </div>
-  </header>
+    <main id="main-content" aria-live="polite"></main>
 
-  <main id="main-content" aria-live="polite"></main>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"
+    ></script>
+    <script defer src="js/data/subjects/portugues.js?v=1"></script>
+    <script defer src="js/data/subjects/matematica.js?v=1"></script>
+    <script defer src="js/data/subjects/ciencias.js?v=1"></script>
+    <script defer src="js/data/subjects/geografia.js?v=1"></script>
+    <script defer src="js/data/subjects/historia.js?v=2"></script>
+    <script defer src="js/data/subjects/ingles.js?v=2"></script>
+    <script defer src="js/data/questions.js?v=6"></script>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-  <script defer src="js/data/subjects/portugues.js?v=1"></script>
-  <script defer src="js/data/subjects/matematica.js?v=1"></script>
-  <script defer src="js/data/subjects/ciencias.js?v=1"></script>
-  <script defer src="js/data/subjects/geografia.js?v=1"></script>
-  <script defer src="js/data/subjects/historia.js?v=2"></script>
-  <script defer src="js/data/subjects/ingles.js?v=2"></script>
-  <script defer src="js/data/questions.js?v=6"></script>
+    <!-- ⚠️ utils.js e store.js ANTES das views -->
+    <script defer src="js/utils.js?v=1"></script>
+    <script defer src="js/store.js?v=4"></script>
 
-  <!-- ⚠️ utils.js e store.js ANTES das views -->
-  <script defer src="js/utils.js?v=1"></script>
-  <script defer src="js/store.js?v=4"></script>
+    <script defer src="js/views/home.js?v=2"></script>
+    <script defer src="js/views/subject.js?v=2"></script>
+    <script defer src="js/views/quiz.js?v=5"></script>
+    <script defer src="js/views/results.js?v=4"></script>
+    <script defer src="js/views/history.js?v=4"></script>
 
-  <script defer src="js/views/home.js?v=2"></script>
-  <script defer src="js/views/subject.js?v=2"></script>
-  <script defer src="js/views/quiz.js?v=5"></script>
-  <script defer src="js/views/results.js?v=4"></script>
-  <script defer src="js/views/history.js?v=4"></script>
-
-  <!-- app.js por último -->
-  <script defer src="js/app.js?v=4"></script>
-
-</body>
+    <!-- app.js por último -->
+    <script defer src="js/app.js?v=4"></script>
+  </body>
 </html>

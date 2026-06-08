@@ -102,6 +102,9 @@ Ou use uma extensao como **Live Server** no VS Code.
 
 - `npm run dev`: sobe um servidor local na porta `3000`
 - `npm start`: alias do `npm run dev`
+- `npm run lint`: valida padroes de codigo com ESLint
+- `npm run format:check`: verifica o formato padrao com Prettier
+- `npm run format`: aplica o formato padrao com Prettier
 - `npm test`: executa a validacao automatizada do modo escuro e feedback
 - `npm run test:ui:dark-mode`: executa apenas o teste de interface do modo escuro
 
