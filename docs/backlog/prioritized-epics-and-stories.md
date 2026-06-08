@@ -475,6 +475,26 @@ Como time de engenharia, queremos um mecanismo automatizado para detectar possiv
 - o resultado da checagem e visivel antes do merge
 - a verificacao nao exige expor dados sensiveis nos cards
 
+### Historia 5.9
+
+**Titulo**
+Planejar atualizacao futura das actions para suporte a Node.js mais recente
+
+**Descricao**
+Como time de engenharia, queremos mapear a depreciação das actions atuais para preparar uma atualização futura sem alterar a estabilidade do fluxo de PR neste momento.
+
+**Requisitos**
+
+- registrar a deprecacao observada nas actions
+- definir quando a atualizacao deve ser priorizada
+- manter o fluxo atual enquanto o aviso nao for bloqueante
+
+**Criterios de aceite**
+
+- existe um registro claro da necessidade de atualizar as actions no futuro
+- a atualizacao nao e tratada como urgente enquanto nao houver impacto funcional
+- o item permanece como divida tecnica de baixo risco no backlog
+
 ## Epic 6: Prontidao comercial
 
 ### Objetivo
