@@ -1,3 +1,5 @@
+/* exported QuizView */
+/* global App, Store, QuestionsDB */
 const QuizView = (function () {
   const LETTERS = ['A', 'B', 'C', 'D'];
   let timerInterval = null;
@@ -27,7 +29,10 @@ const QuizView = (function () {
     if (!timerEl || !fillEl) return;
 
     var secsPerQ = Store.get().secsPerQuestion || 30;
-    const pctLeft = Math.max(0, Math.min(100, (msLeft / (secsPerQ * 1000)) * 100));
+    const pctLeft = Math.max(
+      0,
+      Math.min(100, (msLeft / (secsPerQ * 1000)) * 100),
+    );
     timerEl.textContent = formatTimeLeft(msLeft);
     fillEl.style.width = `${pctLeft}%`;
     fillEl.classList.toggle('warning', pctLeft <= 35);
@@ -37,7 +42,7 @@ const QuizView = (function () {
   function startTimer(el, q) {
     clearTimers();
     var secsPerQ = Store.get().secsPerQuestion || 30;
-    const deadline = Date.now() + (secsPerQ * 1000);
+    const deadline = Date.now() + secsPerQ * 1000;
     paintTimer(el, deadline - Date.now());
 
     timerInterval = setInterval(() => {
@@ -77,31 +82,38 @@ const QuizView = (function () {
     const wrongLabel = isTimeout
       ? 'O tempo acabou'
       : 'Por que a sua resposta não está correta';
-    const chosenText = chosen === null || chosen === undefined || chosen < 0
-      ? 'nenhuma alternativa'
-      : q.options[chosen];
+    const chosenText =
+      chosen === null || chosen === undefined || chosen < 0
+        ? 'nenhuma alternativa'
+        : q.options[chosen];
 
     return `
       <div class="feedback ${isCorrect ? 'ok' : 'fail'}">
         <div class="feedback-title">
-          ${isTimeout
-            ? '⏰ O tempo acabou!'
-            : isCorrect
-              ? '✅ Correto! Muito bem!'
-              : '❌ Ops! Vamos entender juntos'}
+          ${
+            isTimeout
+              ? '⏰ O tempo acabou!'
+              : isCorrect
+                ? '✅ Correto! Muito bem!'
+                : '❌ Ops! Vamos entender juntos'
+          }
         </div>
         <div class="feedback-block">
           <div class="feedback-label">${correctLabel}</div>
           <div class="feedback-explain">${escapeText(q.options[q.correctIndex])}</div>
           <div class="feedback-why">${escapeText(getCorrectReason(q))}</div>
         </div>
-        ${!isCorrect ? `
+        ${
+          !isCorrect
+            ? `
           <div class="feedback-block">
             <div class="feedback-label">${wrongLabel}</div>
             <div class="feedback-why">${escapeText(isTimeout ? 'Você não respondeu a tempo.' : `Você marcou ${chosenText}.`)}</div>
             <div class="feedback-explain">${escapeText(getWrongReason(q, chosen))}</div>
           </div>
-        ` : ''}
+        `
+            : ''
+        }
       </div>
     `;
   }
@@ -146,17 +158,19 @@ const QuizView = (function () {
         </div>
       `;
 
-      el.querySelector('#btn-begin-quiz').addEventListener('click', () => App.beginQuiz());
+      el.querySelector('#btn-begin-quiz').addEventListener('click', () =>
+        App.beginQuiz(),
+      );
 
       var secsCurrent = Store.get().secsPerQuestion || 30;
       el.querySelector('#timer-val').textContent = secsCurrent;
 
-      el.querySelector('#timer-dec').addEventListener('click', function() {
+      el.querySelector('#timer-dec').addEventListener('click', function () {
         secsCurrent = Math.max(10, secsCurrent - 5);
         el.querySelector('#timer-val').textContent = secsCurrent;
         Store.set({ secsPerQuestion: secsCurrent });
       });
-      el.querySelector('#timer-inc').addEventListener('click', function() {
+      el.querySelector('#timer-inc').addEventListener('click', function () {
         secsCurrent = Math.min(120, secsCurrent + 5);
         el.querySelector('#timer-val').textContent = secsCurrent;
         Store.set({ secsPerQuestion: secsCurrent });
@@ -165,7 +179,7 @@ const QuizView = (function () {
     }
 
     const q = s.questions[s.index];
-    const correct = s.answers.filter(a => a.isCorrect).length;
+    const correct = s.answers.filter((a) => a.isCorrect).length;
     const pct = Math.round((s.index / total) * 100);
 
     const topicInfo = QuestionsDB.getTopicInfo(q.topic);
@@ -192,20 +206,28 @@ const QuizView = (function () {
           <div class="progress-fill" style="width:${pct}%"></div>
         </div>
 
-        ${q.text ? `
+        ${
+          q.text
+            ? `
           <div class="text-excerpt">
             <div class="text-excerpt-label">📄 Leia o texto:</div>
             ${q.text}
-          </div>` : ''}
+          </div>`
+            : ''
+        }
 
         <div class="question-text">${s.index + 1}. ${q.question}</div>
 
         <div class="options" id="options">
-          ${q.options.map((opt, i) => `
+          ${q.options
+            .map(
+              (opt, i) => `
             <button class="option-btn" data-index="${i}">
               <span class="option-letter">${LETTERS[i]}</span>
               <span>${opt}</span>
-            </button>`).join('')}
+            </button>`,
+            )
+            .join('')}
         </div>
 
         <div id="feedback"></div>
@@ -213,8 +235,10 @@ const QuizView = (function () {
       </div>
     `;
 
-    el.querySelectorAll('.option-btn').forEach(btn => {
-      btn.addEventListener('click', () => handleAnswer(el, q, parseInt(btn.dataset.index)));
+    el.querySelectorAll('.option-btn').forEach((btn) => {
+      btn.addEventListener('click', () =>
+        handleAnswer(el, q, parseInt(btn.dataset.index)),
+      );
     });
 
     startTimer(el, q);
@@ -227,7 +251,7 @@ const QuizView = (function () {
 
     const isCorrect = chosen === q.correctIndex;
 
-    el.querySelectorAll('.option-btn').forEach(btn => {
+    el.querySelectorAll('.option-btn').forEach((btn) => {
       btn.disabled = true;
       const i = parseInt(btn.dataset.index);
       if (i === q.correctIndex) {
@@ -238,14 +262,20 @@ const QuizView = (function () {
     });
 
     const s = Store.get();
-    s.answers.push({ id: q.id, selected: chosen, correct: q.correctIndex, isCorrect, isTimeout });
+    s.answers.push({
+      id: q.id,
+      selected: chosen,
+      correct: q.correctIndex,
+      isCorrect,
+      isTimeout,
+    });
 
     const fbEl = el.querySelector('#feedback');
     fbEl.innerHTML = buildFeedbackHTML(q, chosen, isCorrect, isTimeout);
 
     const nextArea = el.querySelector('#next-area');
     const isLast = s.index >= s.questions.length - 1;
-    const label  = isLast ? '🏁 Ver Resultado' : 'Próxima ➡️';
+    const label = isLast ? '🏁 Ver Resultado' : 'Próxima ➡️';
     nextArea.innerHTML = `<button class="btn btn-primary" id="next-btn">${label}</button>`;
     nextArea.querySelector('#next-btn').addEventListener('click', () => {
       if (isLast) {

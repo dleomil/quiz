@@ -1,3 +1,5 @@
+/* exported SubjectView */
+/* global App, Store, QuestionsDB */
 const SubjectView = (function () {
   function render(el) {
     const s = Store.get();
@@ -19,22 +21,26 @@ const SubjectView = (function () {
             <div class="topic-name">Todos os Assuntos</div>
             <div class="topic-count">${subjectInfo.count} questões</div>
           </div>
-          ${topics.map(t => {
-            const m = QuestionsDB.getTopicInfo(t);
-            return `
+          ${topics
+            .map((t) => {
+              const m = QuestionsDB.getTopicInfo(t);
+              return `
               <div class="topic-card" data-topic="${t}">
                 <div class="topic-icon">${m.icon}</div>
                 <div class="topic-name">${m.name}</div>
                 <div class="topic-count">${m.count} questões</div>
               </div>`;
-          }).join('')}
+            })
+            .join('')}
         </div>
       </div>
     `;
 
-    el.querySelector('#btn-back').addEventListener('click', () => App.navigate('home'));
+    el.querySelector('#btn-back').addEventListener('click', () =>
+      App.navigate('home'),
+    );
 
-    el.querySelectorAll('.topic-card').forEach(card => {
+    el.querySelectorAll('.topic-card').forEach((card) => {
       card.addEventListener('click', () => {
         App.startQuiz(card.dataset.topic, subject);
       });

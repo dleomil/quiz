@@ -1,6 +1,6 @@
 name: Tech Task
 description: Trabalho tecnico derivado de historia, epico ou necessidade operacional
-title: "[Tech Task] "
+title: '[Tech Task] '
 labels:
   - type: tech-task
 body:
