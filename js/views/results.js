@@ -1,6 +1,29 @@
 const ResultsView = (function () {
   const LETTERS = ['A', 'B', 'C', 'D'];
 
+  function escapeText(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function getCorrectReason(q) {
+    return q.explanation || 'Essa é a resposta certa para esta pergunta.';
+  }
+
+  function getWrongReason(q, chosen) {
+    if (chosen === null || chosen === undefined || chosen < 0) {
+      return 'Não houve resposta dentro do tempo.';
+    }
+    if (q.wrongExplanations && q.wrongExplanations[chosen]) {
+      return q.wrongExplanations[chosen];
+    }
+    return 'Essa alternativa não combina com o enunciado.';
+  }
+
   function buildGabaritoHTML(answers, questions) {
     return answers.map(function(ans, idx) {
       var q         = questions[idx];
@@ -18,19 +41,25 @@ const ResultsView = (function () {
         ? '<span class="tag tag-correct">✅ ' + q.options[q.correctIndex] + '</span>'
         : '';
 
-      var wrongMsg = (!ok && !isTimeout && q.wrongExplanations && q.wrongExplanations[ans.selected])
-        ? '<div class="gab-why-wrong">❌ Você escolheu "' + q.options[ans.selected] + '": ' + q.wrongExplanations[ans.selected] + '</div>'
-        : '';
+      var correctReason = '<div class="gab-block">' +
+        '<div class="gab-label">' + (ok ? 'Você acertou' : 'A resposta certa é') + '</div>' +
+        '<div class="gab-answer">' + escapeText(q.options[q.correctIndex]) + '</div>' +
+        '<div class="gab-explain">' + escapeText(getCorrectReason(q)) + '</div>' +
+      '</div>';
 
-      var explainBlock = (!ok && q.explanation)
-        ? '<div class="gab-explain">' + q.explanation + '</div>'
+      var wrongReason = !ok
+        ? '<div class="gab-block">' +
+            '<div class="gab-label">' + (isTimeout ? 'O tempo acabou' : 'Por que a sua resposta não está correta') + '</div>' +
+            '<div class="gab-why-wrong">' + escapeText(isTimeout ? 'Você não respondeu a tempo.' : 'Você marcou "' + (q.options[ans.selected] || 'nenhuma alternativa') + '".') + '</div>' +
+            '<div class="gab-explain">' + escapeText(getWrongReason(q, ans.selected)) + '</div>' +
+          '</div>'
         : '';
 
       return '<div class="gabarito-item ' + (ok ? 'ok-item' : 'fail-item') + '" role="article">' +
         '<div class="gab-num">' + topicInfo.icon + ' ' + topicInfo.name + ' — Questão ' + (idx + 1) + '</div>' +
         '<div class="gab-q">' + q.question + '</div>' +
         '<div class="gab-tags">' + userTag + correctTag + '</div>' +
-        explainBlock + wrongMsg +
+        correctReason + wrongReason +
         '</div>';
     }).join('');
   }
@@ -44,8 +73,9 @@ const ResultsView = (function () {
       '.fail-item{border-left:4px solid #EF4444;padding:12px;margin-bottom:12px;background:#FEF2F2;border-radius:8px}' +
       '.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-weight:700;margin-right:6px;font-size:.85rem}' +
       '.tag-user-ok{background:#ECFDF5;color:#059669}.tag-user-fail{background:#FEF2F2;color:#DC2626}' +
-      '.tag-correct{background:#ECFDF5;color:#059669}.gab-explain{margin-top:8px;padding:8px;background:#F8FAFC;border-radius:6px;font-size:.88rem}' +
-      '.gab-why-wrong{margin-top:6px;padding:6px;background:#FFF5F5;border-radius:6px;font-size:.84rem;color:#64748B}' +
+      '.tag-correct{background:#ECFDF5;color:#059669}.gab-block{margin-top:10px;padding:10px;background:#F8FAFC;border-radius:8px}' +
+      '.gab-label{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#64748B;margin-bottom:4px}' +
+      '.gab-answer{font-weight:700;margin-bottom:6px}.gab-explain{font-size:.88rem;line-height:1.5}.gab-why-wrong{font-size:.84rem;color:#64748B;line-height:1.5}' +
       'footer{margin-top:32px;font-size:.8rem;color:#94A3B8}</style></head><body>' +
       '<h1>📝 Resultado do Quiz</h1>' +
       '<p><strong>Assunto:</strong> ' + topicLabel + '</p>' +

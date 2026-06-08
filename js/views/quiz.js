@@ -49,6 +49,63 @@ const QuizView = (function () {
     }, secsPerQ * 1000);
   }
 
+  function escapeText(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function getCorrectReason(q) {
+    return q.explanation || 'Essa é a resposta certa para esta pergunta.';
+  }
+
+  function getWrongReason(q, chosen) {
+    if (chosen === null || chosen === undefined || chosen < 0) {
+      return 'Não houve resposta dentro do tempo.';
+    }
+    if (q.wrongExplanations && q.wrongExplanations[chosen]) {
+      return q.wrongExplanations[chosen];
+    }
+    return 'Essa alternativa não combina com o enunciado.';
+  }
+
+  function buildFeedbackHTML(q, chosen, isCorrect, isTimeout) {
+    const correctLabel = isCorrect ? 'Você acertou' : 'A resposta certa é';
+    const wrongLabel = isTimeout
+      ? 'O tempo acabou'
+      : 'Por que a sua resposta não está correta';
+    const chosenText = chosen === null || chosen === undefined || chosen < 0
+      ? 'nenhuma alternativa'
+      : q.options[chosen];
+
+    return `
+      <div class="feedback ${isCorrect ? 'ok' : 'fail'}">
+        <div class="feedback-title">
+          ${isTimeout
+            ? '⏰ O tempo acabou!'
+            : isCorrect
+              ? '✅ Correto! Muito bem!'
+              : '❌ Ops! Vamos entender juntos'}
+        </div>
+        <div class="feedback-block">
+          <div class="feedback-label">${correctLabel}</div>
+          <div class="feedback-explain">${escapeText(q.options[q.correctIndex])}</div>
+          <div class="feedback-why">${escapeText(getCorrectReason(q))}</div>
+        </div>
+        ${!isCorrect ? `
+          <div class="feedback-block">
+            <div class="feedback-label">${wrongLabel}</div>
+            <div class="feedback-why">${escapeText(isTimeout ? 'Você não respondeu a tempo.' : `Você marcou ${chosenText}.`)}</div>
+            <div class="feedback-explain">${escapeText(getWrongReason(q, chosen))}</div>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }
+
   function render(el) {
     clearTimers();
     delete el.dataset.answered;
@@ -184,30 +241,7 @@ const QuizView = (function () {
     s.answers.push({ id: q.id, selected: chosen, correct: q.correctIndex, isCorrect, isTimeout });
 
     const fbEl = el.querySelector('#feedback');
-    if (isTimeout) {
-      fbEl.innerHTML = `
-        <div class="feedback fail">
-          <div class="feedback-title">⏰ O tempo acabou!</div>
-          <div class="feedback-explain">A resposta certa era: ${q.options[q.correctIndex]}</div>
-          <div class="feedback-why-wrong">${q.explanation}</div>
-        </div>`;
-    } else if (isCorrect) {
-      fbEl.innerHTML = `
-        <div class="feedback ok">
-          <div class="feedback-title">✅ Correto! Muito bem!</div>
-          <div class="feedback-explain">${q.explanation}</div>
-        </div>`;
-    } else {
-      const wrongMsg = q.wrongExplanations && q.wrongExplanations[chosen]
-        ? `<div class="feedback-why-wrong">❌ Você escolheu "${q.options[chosen]}": ${q.wrongExplanations[chosen]}</div>`
-        : '';
-      fbEl.innerHTML = `
-        <div class="feedback fail">
-          <div class="feedback-title">❌ Ops! A resposta certa era: ${q.options[q.correctIndex]}</div>
-          <div class="feedback-explain">${q.explanation}</div>
-          ${wrongMsg}
-        </div>`;
-    }
+    fbEl.innerHTML = buildFeedbackHTML(q, chosen, isCorrect, isTimeout);
 
     const nextArea = el.querySelector('#next-area');
     const isLast = s.index >= s.questions.length - 1;
