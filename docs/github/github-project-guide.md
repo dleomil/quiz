@@ -8,6 +8,8 @@ Explicar como o board funciona, qual e o significado de cada tipo de item e como
 
 Use este documento sempre que precisar criar, classificar ou publicar uma nova issue no GitHub Project.
 
+Se quiser uma referencia mais curta para consulta rapida, use o [guia de bolso](./github-project-pocket-guide.md).
+
 ## Contexto do board
 
 O GitHub Project e o quadro oficial de execucao do produto. Ele organiza o trabalho em andamento, mas nao substitui os documentos de backlog, produto e arquitetura.
