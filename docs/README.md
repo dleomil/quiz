@@ -13,6 +13,11 @@ docs/
 │   └── product-scope-and-principles.md
 ├── roadmap/
 │   └── phased-evolution-roadmap.md
+├── github/
+│   ├── github-project-guide.md
+│   ├── github-project-pocket-guide.md
+│   ├── github-project-operating-model.md
+│   └── initial-execution-plan.md
 └── backlog/
     └── prioritized-epics-and-stories.md
 ```
@@ -23,6 +28,7 @@ docs/
 - `docs/architecture/`: definicoes tecnicas, fronteiras arquiteturais e decisoes de engenharia.
 - `docs/roadmap/`: plano evolutivo por fases, com criterio de prioridade e dependencias.
 - `docs/backlog/`: epicos e historias prontas para virar issues no GitHub.
+- `docs/github/`: guia operacional do board, guia de bolso, estrategia de uso e ordem inicial de execucao.
 - `.github/`: configuracoes operacionais do repositorio, incluindo templates e orientacoes de board.
 
 ## Como manter

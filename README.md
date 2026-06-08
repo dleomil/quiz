@@ -49,6 +49,19 @@ Atualmente, o projeto possui foco principal em **Portugues**, com perguntas orga
 - `localStorage`
 - Vercel
 
+## Documentacao
+
+A documentacao viva do projeto fica em `docs/` e o guia operacional do board fica em `docs/github/`.
+
+Leituras principais:
+
+- [Documentacao do Produto](docs/README.md)
+- [Guia do GitHub Project](docs/github/github-project-guide.md)
+- [Guia de bolso do GitHub Project](docs/github/github-project-pocket-guide.md)
+- [Modelo Operacional do GitHub Project](docs/github/github-project-operating-model.md)
+- [Estrategia de Branching e Evolucao Controlada](docs/github/branching-and-delivery-strategy.md)
+- [Plano Inicial de Execucao do Board](docs/github/initial-execution-plan.md)
+
 ## Estrutura do projeto
 
 ```text
@@ -93,10 +106,20 @@ Como o projeto e estatico, voce pode abrir o arquivo `index.html` diretamente no
 Se quiser rodar com um servidor local:
 
 ```bash
-npx serve .
+npm run dev
 ```
 
 Ou use uma extensao como **Live Server** no VS Code.
+
+## Comandos oficiais
+
+- `npm run dev`: sobe um servidor local na porta `3000`
+- `npm start`: alias do `npm run dev`
+- `npm run lint`: valida padroes de codigo com ESLint
+- `npm run format:check`: verifica o formato padrao com Prettier
+- `npm run format`: aplica o formato padrao com Prettier
+- `npm test`: executa a validacao automatizada do modo escuro e feedback
+- `npm run test:ui:dark-mode`: executa apenas o teste de interface do modo escuro
 
 ## Persistencia de dados
 
@@ -126,4 +149,4 @@ O repositorio ja possui `vercel.json`, facilitando a publicacao do projeto na Ve
 
 ## Licenca
 
-Voce pode definir a licenca que fizer mais sentido para o projeto. Uma opcao comum para projetos desse tipo e a **MIT**.
+Este projeto usa a licenca [MIT](LICENSE).

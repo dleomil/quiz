@@ -1,11 +1,12 @@
+/* exported QuestionsDB */
 const QuestionsDB = (function () {
   const sourceOrder = [
-    "portugues",
-    "matematica",
-    "ciencias",
-    "geografia",
-    "historia",
-    "ingles"
+    'portugues',
+    'matematica',
+    'ciencias',
+    'geografia',
+    'historia',
+    'ingles',
   ];
 
   const sources = window.QuestionsDataSources || {};
@@ -20,13 +21,15 @@ const QuestionsDB = (function () {
 
   loadedSubjects.forEach((subject) => {
     const source = sources[subject];
-    const sourceQuestions = Array.isArray(source.questions) ? source.questions : [];
+    const sourceQuestions = Array.isArray(source.questions)
+      ? source.questions
+      : [];
     const sourceTopics = source.topicMeta || {};
 
     SUBJECT_META[subject] = source.subjectMeta || {
       name: subject,
-      icon: "📚",
-      available: true
+      icon: '📚',
+      available: true,
     };
 
     topicsBySubject[subject] = [];
@@ -46,7 +49,7 @@ const QuestionsDB = (function () {
       if (!TOPIC_META[question.topic]) {
         TOPIC_META[question.topic] = {
           name: question.topicName || question.topic,
-          icon: "📝"
+          icon: '📝',
         };
       }
 
@@ -67,23 +70,29 @@ const QuestionsDB = (function () {
 
   return {
     getAll: () => questions,
-    getByTopic: (topic) => topic === "all" ? questions : questions.filter((question) => question.topic === topic),
+    getByTopic: (topic) =>
+      topic === 'all'
+        ? questions
+        : questions.filter((question) => question.topic === topic),
     getTopics: () => Object.keys(TOPIC_META),
     getTopicInfo: (topic) => ({
       ...TOPIC_META[topic],
-      count: topicCounts[topic] || 0
+      count: topicCounts[topic] || 0,
     }),
     getSubjects: () => Object.keys(SUBJECT_META),
     getSubjectInfo: (subject) => ({
       ...SUBJECT_META[subject],
-      count: subjectCounts[subject] || 0
+      count: subjectCounts[subject] || 0,
     }),
-    getTopicsBySubject: (subject) => topicsBySubject[subject] ? [...topicsBySubject[subject]] : [],
+    getTopicsBySubject: (subject) =>
+      topicsBySubject[subject] ? [...topicsBySubject[subject]] : [],
     getRandom: (count, topic, subject) => {
       let pool = questions;
-      if (subject && subject !== "all") pool = pool.filter((question) => question.subject === subject);
-      if (topic && topic !== "all") pool = pool.filter((question) => question.topic === topic);
+      if (subject && subject !== 'all')
+        pool = pool.filter((question) => question.subject === subject);
+      if (topic && topic !== 'all')
+        pool = pool.filter((question) => question.topic === topic);
       return shuffle(pool).slice(0, Math.min(count, pool.length));
-    }
+    },
   };
 })();

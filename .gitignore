@@ -1,3 +1,13 @@
 .DS_Store
 node_modules/
 .env
+.env.*
+!.env.example
+.envrc
+.vercel/
+coverage/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx

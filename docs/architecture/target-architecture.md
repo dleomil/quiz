@@ -20,19 +20,19 @@ O projeto atual possui as seguintes caracteristicas:
 O sistema deve evoluir para cinco camadas explicitas:
 
 1. `domain`
-Responsavel pelas entidades, regras de negocio e invariantes do quiz.
+   Responsavel pelas entidades, regras de negocio e invariantes do quiz.
 
 2. `application`
-Responsavel pelos casos de uso, orquestracao de fluxo e contratos entre UI e dominio.
+   Responsavel pelos casos de uso, orquestracao de fluxo e contratos entre UI e dominio.
 
 3. `infra`
-Responsavel por persistencia, analytics, integracoes externas, carregamento de conteudo e adaptadores.
+   Responsavel por persistencia, analytics, integracoes externas, carregamento de conteudo e adaptadores.
 
 4. `ui`
-Responsavel por renderizacao, eventos, navegacao e apresentacao.
+   Responsavel por renderizacao, eventos, navegacao e apresentacao.
 
 5. `content`
-Responsavel por armazenar e versionar o banco de questoes e seus metadados sob schema validado.
+   Responsavel por armazenar e versionar o banco de questoes e seus metadados sob schema validado.
 
 ## Fronteiras obrigatorias
 
@@ -145,13 +145,13 @@ O historico deve ser versionado e migravel. Nenhum formato persistido deve depen
 ## Decisoes estrategicas
 
 1. Nao reescrever tudo agora.
-Priorizar modularizacao incremental sobre migracao ampla de stack.
+   Priorizar modularizacao incremental sobre migracao ampla de stack.
 
 2. Separar conteudo de regra de negocio o quanto antes.
-Esse ponto reduz o principal risco de escala operacional.
+   Esse ponto reduz o principal risco de escala operacional.
 
 3. Desacoplar persistencia antes de introduzir backend.
-Isso evita reescrever o fluxo funcional quando a camada remota surgir.
+   Isso evita reescrever o fluxo funcional quando a camada remota surgir.
 
 4. Fazer do board um reflexo da arquitetura.
-As issues do GitHub devem nascer a partir de epicos e historias alinhados a essas fronteiras.
+   As issues do GitHub devem nascer a partir de epicos e historias alinhados a essas fronteiras.
