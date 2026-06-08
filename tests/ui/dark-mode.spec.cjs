@@ -9,7 +9,7 @@ const baseUrl = `http://127.0.0.1:${port}`;
 const timeoutMs = 15000;
 
 function wait(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function waitForServer(url) {
@@ -18,7 +18,7 @@ async function waitForServer(url) {
     try {
       const res = await fetch(url);
       if (res.ok) return;
-    } catch (err) {
+    } catch {
       // retry until timeout
     }
     await wait(250);
@@ -35,16 +35,22 @@ async function openQuiz(page) {
 }
 
 async function run() {
-  const server = spawn('python3', ['-m', 'http.server', String(port), '--bind', '127.0.0.1'], {
-    cwd: repoRoot,
-    stdio: 'ignore',
-  });
+  const server = spawn(
+    'python3',
+    ['-m', 'http.server', String(port), '--bind', '127.0.0.1'],
+    {
+      cwd: repoRoot,
+      stdio: 'ignore',
+    },
+  );
 
   try {
     await waitForServer(baseUrl);
 
     const browser = await chromium.launch({ headless: true });
-    const page = await browser.newPage({ viewport: { width: 1280, height: 1600 } });
+    const page = await browser.newPage({
+      viewport: { width: 1280, height: 1600 },
+    });
     await page.addInitScript(() => localStorage.setItem('quiz_theme', 'dark'));
 
     await openQuiz(page);
@@ -64,7 +70,8 @@ async function run() {
     assert.strictEqual(colors.optionBg, 'rgb(30, 41, 59)');
 
     const wrongIndex = await page.evaluate(() => {
-      const correctIndex = Store.get().questions[Store.get().index].correctIndex;
+      const correctIndex =
+        Store.get().questions[Store.get().index].correctIndex;
       return correctIndex === 0 ? 1 : 0;
     });
 
@@ -74,9 +81,12 @@ async function run() {
     const wrongFeedback = await page.evaluate(() => ({
       title: document.querySelector('.feedback-title')?.textContent?.trim(),
       blockCount: document.querySelectorAll('.feedback-block').length,
-      labels: [...document.querySelectorAll('.feedback-label')].map(el => el.textContent.trim()),
-      blocks: [...document.querySelectorAll('.feedback-block')].map(el => ({
-        explain: el.querySelector('.feedback-explain')?.textContent?.trim() || '',
+      labels: [...document.querySelectorAll('.feedback-label')].map((el) =>
+        el.textContent.trim(),
+      ),
+      blocks: [...document.querySelectorAll('.feedback-block')].map((el) => ({
+        explain:
+          el.querySelector('.feedback-explain')?.textContent?.trim() || '',
         why: el.querySelector('.feedback-why')?.textContent?.trim() || '',
       })),
     }));
@@ -90,7 +100,10 @@ async function run() {
     assert.ok(wrongFeedback.blocks[0].why.length > 0);
     assert.ok(wrongFeedback.blocks[1].explain.length > 0);
 
-    await page.screenshot({ path: '/private/tmp/quiz-feedback-wrong.png', fullPage: true });
+    await page.screenshot({
+      path: '/private/tmp/quiz-feedback-wrong.png',
+      fullPage: true,
+    });
 
     await page.goto(baseUrl, { waitUntil: 'networkidle' });
     await page.locator('.subject-card').first().click();
@@ -98,21 +111,28 @@ async function run() {
     await page.locator('#btn-begin-quiz').click();
     await page.locator('.question-text').waitFor({ state: 'visible' });
 
-    const correctIndex = await page.evaluate(() => Store.get().questions[Store.get().index].correctIndex);
+    const correctIndex = await page.evaluate(
+      () => Store.get().questions[Store.get().index].correctIndex,
+    );
     await page.locator('.option-btn').nth(correctIndex).click();
     await page.locator('.feedback-block').waitFor({ state: 'visible' });
 
     const correctFeedback = await page.evaluate(() => ({
       title: document.querySelector('.feedback-title')?.textContent?.trim(),
       blockCount: document.querySelectorAll('.feedback-block').length,
-      labels: [...document.querySelectorAll('.feedback-label')].map(el => el.textContent.trim()),
+      labels: [...document.querySelectorAll('.feedback-label')].map((el) =>
+        el.textContent.trim(),
+      ),
     }));
 
     assert.ok(correctFeedback.title.includes('Correto'));
     assert.strictEqual(correctFeedback.blockCount, 1);
     assert.deepStrictEqual(correctFeedback.labels, ['Você acertou']);
 
-    await page.screenshot({ path: '/private/tmp/quiz-feedback-correct.png', fullPage: true });
+    await page.screenshot({
+      path: '/private/tmp/quiz-feedback-correct.png',
+      fullPage: true,
+    });
 
     await browser.close();
     console.log('dark-mode-ui: ok');
@@ -121,7 +141,7 @@ async function run() {
   }
 }
 
-run().catch(err => {
+run().catch((err) => {
   console.error(err);
   process.exit(1);
 });

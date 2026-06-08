@@ -17,6 +17,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Validate source branch naming
         env:
           BASE_REF: ${{ github.base_ref }}
@@ -71,3 +80,8 @@ jobs:
         run: |
           test -f docs/README.md
           test -f docs/github/branching-and-delivery-strategy.md
+
+      - name: Validate lint and formatting
+        run: |
+          npm run lint
+          npm run format:check

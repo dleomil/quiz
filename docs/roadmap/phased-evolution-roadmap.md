@@ -33,6 +33,8 @@ Criar o baseline de desenvolvimento, qualidade e governanca tecnica.
 - testes automatizados iniciais
 - pipeline de CI para validacao obrigatoria
 - estrutura de documentacao viva
+- status checks obrigatorios para PRs
+- feedback rapido de qualidade em cada alteracao
 
 ### Riscos mitigados
 
@@ -106,10 +108,15 @@ Estabelecer padrao minimo para uso real e crescimento sustentavel.
 ### Entregas esperadas
 
 - revisao de seguranca frontend
+- higiene de arquivos sensiveis e configuracoes locais
+- endurecimento da superficie de renderizacao
+- revisao de dependencias externas e headers
+- varredura automatica de segredos no fluxo de PR
 - baseline de acessibilidade
 - ajuste de legibilidade do modo escuro
 - monitoramento e rastreamento de erros
 - checklist de release
+- atualizacao futura das actions para remover aviso de Node.js 20
 
 ### Riscos mitigados
 

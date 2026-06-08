@@ -1,3 +1,5 @@
+/* exported HomeView */
+/* global App, QuestionsDB */
 const HomeView = (function () {
   function render(el) {
     const subjects = QuestionsDB.getSubjects();
@@ -9,30 +11,34 @@ const HomeView = (function () {
 
         <p class="topic-section-title">Escolha a matéria:</p>
         <div class="subject-grid" id="subject-grid">
-          ${subjects.map(s => {
-            const m = QuestionsDB.getSubjectInfo(s);
-            if (m.available) {
-              return `
+          ${subjects
+            .map((s) => {
+              const m = QuestionsDB.getSubjectInfo(s);
+              if (m.available) {
+                return `
                 <div class="subject-card" data-subject="${s}">
                   <div class="subject-icon">${m.icon}</div>
                   <div class="subject-name">${m.name}</div>
                   <div class="subject-count">${m.count} questões</div>
                 </div>`;
-            } else {
-              return `
+              } else {
+                return `
                 <div class="subject-card disabled">
                   <div class="subject-icon">${m.icon}</div>
                   <div class="subject-name">${m.name}</div>
                   <div class="subject-soon">Em breve</div>
                 </div>`;
-            }
-          }).join('')}
+              }
+            })
+            .join('')}
         </div>
       </div>
     `;
 
-    el.querySelectorAll('.subject-card:not(.disabled)').forEach(card => {
-      card.addEventListener('click', () => App.selectSubject(card.dataset.subject));
+    el.querySelectorAll('.subject-card:not(.disabled)').forEach((card) => {
+      card.addEventListener('click', () =>
+        App.selectSubject(card.dataset.subject),
+      );
     });
   }
 

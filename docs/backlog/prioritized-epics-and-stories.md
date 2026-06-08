@@ -61,6 +61,18 @@ Como time de engenharia, queremos automacao de convencoes para reduzir divergenc
 - alteracoes fora do padrao sao identificadas automaticamente
 - o pipeline falha quando convencoes obrigatorias sao quebradas
 
+**Plano de validacao**
+
+- executar `npm run lint` em ambiente limpo
+- executar `npm run format:check` em ambiente limpo
+- validar que o workflow de PR falha quando uma convencao obrigatoria e quebrada
+
+**Evidencias esperadas**
+
+- saída verde de `npm run lint`
+- saída verde de `npm run format:check`
+- workflow de PR com status de qualidade visivel no GitHub
+
 ### Historia 1.4
 
 **Titulo**
@@ -403,6 +415,86 @@ Como crianca, queremos entender por que uma resposta esta certa ou errada logo a
 - validar compreensao do feedback com leitura simples
 - testar o comportamento em modo claro e escuro
 
+### Historia 5.6
+
+**Titulo**
+Reforcar higiene de arquivos sensiveis e configuracoes locais
+
+**Descricao**
+Como time de engenharia, queremos reduzir a chance de vazamento acidental de segredos, arquivos temporarios e configuracoes locais para manter o repositório seguro e previsivel.
+
+**Requisitos**
+
+- revisar a lista de arquivos ignorados
+- cobrir arquivos de ambiente e configuracoes locais
+- evitar o versionamento acidental de artefatos sensiveis
+
+**Criterios de aceite**
+
+- o repositorio ignora arquivos sensiveis comuns e artefatos locais relevantes
+- existe um padrão claro para arquivos de ambiente nao versionados
+- a revisao nao expõe nenhum segredo real no backlog
+
+### Historia 5.7
+
+**Titulo**
+Endurecer superficie de renderizacao e confiabilidade de terceiros
+
+**Descricao**
+Como arquitetura, queremos reduzir vetores de risco relacionados a renderizacao dinamica, dependencias externas e headers de seguranca para proteger a aplicacao em producao.
+
+**Requisitos**
+
+- revisar pontos de renderizacao dinamica
+- avaliar a necessidade de headers adicionais
+- revisar dependencias externas e a forma de carregamento
+
+**Criterios de aceite**
+
+- existe um plano para reduzir a superficie insegura de renderizacao
+- existe uma recomendacao objetiva para dependencias e carregamento externo
+- a proposta preserva a experiencia atual sem expor detalhes sensiveis
+
+### Historia 5.8
+
+**Titulo**
+Adicionar varredura automatica de segredos no fluxo de PR
+
+**Descricao**
+Como time de engenharia, queremos um mecanismo automatizado para detectar possiveis segredos antes do merge, reduzindo o risco de exposicao acidental no repositório.
+
+**Requisitos**
+
+- definir uma verificacao automatica de segredos no CI
+- integrar a verificacao ao fluxo de PR
+- evitar falsos positivos excessivos sem perder cobertura util
+
+**Criterios de aceite**
+
+- o fluxo de PR possui uma checagem automatica de segredos
+- o resultado da checagem e visivel antes do merge
+- a verificacao nao exige expor dados sensiveis nos cards
+
+### Historia 5.9
+
+**Titulo**
+Planejar atualizacao futura das actions para suporte a Node.js mais recente
+
+**Descricao**
+Como time de engenharia, queremos mapear a depreciação das actions atuais para preparar uma atualização futura sem alterar a estabilidade do fluxo de PR neste momento.
+
+**Requisitos**
+
+- registrar a deprecacao observada nas actions
+- definir quando a atualizacao deve ser priorizada
+- manter o fluxo atual enquanto o aviso nao for bloqueante
+
+**Criterios de aceite**
+
+- existe um registro claro da necessidade de atualizar as actions no futuro
+- a atualizacao nao e tratada como urgente enquanto nao houver impacto funcional
+- o item permanece como divida tecnica de baixo risco no backlog
+
 ## Epic 6: Prontidao comercial
 
 ### Objetivo
@@ -572,6 +664,18 @@ Como plataforma, queremos documentar ate onde a Vercel gratuita sustenta o produ
 - a definicao pode ser revisada sem alterar o app em producao
 - a recomendacao final cabe em uma decisao: manter, monitorar ou reavaliar migracao
 
+**Plano de validacao**
+
+- revisar a lista de limites oficiais da Vercel para o plano atual
+- confrontar cada limite com o uso real esperado do produto
+- validar se a conclusao nao exige alteracao de codigo
+
+**Evidencias esperadas**
+
+- tabela consolidada com limite, fonte, impacto, risco e decisao
+- resumo executivo com a recomendacao final
+- registro de que o trabalho foi concluido sem impacto em producao
+
 ### Historia 8.2
 
 **Titulo**
@@ -601,3 +705,15 @@ Como plataforma, queremos deixar claro quando a infraestrutura precisa mudar e q
 - existe uma sequencia de decisao que preserva producao durante a transicao
 - a proposta nao depende de implementacao imediata para existir
 - o resultado final pode ser usado como base de decisao executiva
+
+**Plano de validacao**
+
+- simular diferentes cenarios de crescimento para identificar gatilhos de saida
+- revisar a ordem de migracao buscando menor impacto operacional
+- validar se a proposta consegue ser usada antes de qualquer mudanca tecnica
+
+**Evidencias esperadas**
+
+- roteiro de migracao por camada ou componente
+- matriz de risco para migracao parcial e total
+- decisao clara sobre permanencia, migracao parcial ou saida

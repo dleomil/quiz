@@ -1,6 +1,6 @@
 name: Epic
 description: Capacidade maior que agrupa historias relacionadas
-title: "[Epic] "
+title: '[Epic] '
 labels:
   - type: epic
 body:
