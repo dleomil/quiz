@@ -1,0 +1,28 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "> Aplicacao web de quiz educativo para criancas do 3o ano do Ensino Fundamental, com foco em pratica, revisao e acompanhamento de desempenho.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npm run test:ui:dark-mode",
+    "test:ui:dark-mode": "node tests/ui/dark-mode.spec.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dleomil/quiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dleomil/quiz/issues"
+  },
+  "homepage": "https://github.com/dleomil/quiz#readme",
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}

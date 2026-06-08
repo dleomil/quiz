@@ -4,6 +4,17 @@
 
 Cada epico abaixo pode virar uma issue do tipo `Epic` no GitHub. As historias associadas devem virar issues menores, vinculadas ao epico correspondente no board.
 
+## Ordem sugerida de refinamento imediato
+
+Para a fase atual, com producao ativa e janela de risco baixa, a sequencia recomendada e:
+
+1. `#33` Mapear limites atuais da Vercel e gatilhos de permanencia
+1. `#34` Definir criterios de migracao e plano de saida da Vercel
+1. `#31` Mapear personas e escopos do painel de controle
+1. `#32` Definir arquitetura funcional do painel de controle
+
+Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
+
 ## Epic 1: Fundacao de engenharia
 
 ### Objetivo
@@ -332,6 +343,66 @@ Como operacao, queremos visibilidade sobre falhas em producao para responder rap
 
 - falhas relevantes sao detectaveis apos deploy
 
+### Historia 5.4
+
+**Titulo**
+Ajustar modo escuro para legibilidade infantil
+
+**Descricao**
+Como crianca, queremos ler perguntas, respostas e feedback com facilidade no modo escuro para que a experiencia fique confortavel e clara em qualquer tema.
+
+**Requisitos**
+
+- garantir contraste adequado para perguntas, respostas e feedback
+- explicitar cores de texto em componentes que hoje herdam cor padrao do navegador
+- revisar tamanhos, espacamento e hierarquia visual das opcoes
+- manter a interface amigavel para criancas sem perder legibilidade
+- prever validacao visual em mobile e desktop antes de publicar
+
+**Criterios de aceite**
+
+- perguntas e respostas ficam legiveis no modo escuro
+- nenhum texto principal aparece preto sobre fundo escuro
+- o layout continua apropriado para criancas e nao fica visualmente pesado
+- existe plano de teste de regressao visual antes do deploy
+
+**Tarefas iniciais**
+
+- ajustar tokens de cor e superficies do dark mode
+- revisar estilos de perguntas, respostas e feedback
+- validar contraste e legibilidade em mobile e desktop
+- executar regressao visual antes de publicar em producao
+
+### Historia 5.5
+
+**Titulo**
+Aprimorar feedback com explicacao de acerto e erro
+
+**Descricao**
+Como crianca, queremos entender por que uma resposta esta certa ou errada logo apos responder para transformar o quiz em aprendizado imediato.
+
+**Requisitos**
+
+- exibir explicacao curta apos a resposta
+- explicar por que a alternativa correta esta certa
+- explicar por que a alternativa escolhida esta errada quando aplicavel
+- manter linguagem simples e adequada para criancas
+- preservar clareza visual no modo claro e no modo escuro
+
+**Criterios de aceite**
+
+- toda resposta mostra feedback pedagogico apos a interacao
+- o motivo do acerto e do erro fica claro para a crianca
+- o feedback nao interrompe o fluxo do quiz
+- a leitura continua adequada em mobile e desktop
+
+**Tarefas iniciais**
+
+- definir padrao de texto para acerto, erro e explicacao
+- ajustar renderizacao do feedback por resposta
+- validar compreensao do feedback com leitura simples
+- testar o comportamento em modo claro e escuro
+
 ## Epic 6: Prontidao comercial
 
 ### Objetivo
@@ -389,3 +460,144 @@ Como produto, queremos preparar planos e restricoes de acesso futuras sem acopla
 **Criterios de aceite**
 
 - o desenho tecnico permite evolucao para planos sem reestruturar o produto inteiro
+
+## Epic 7: Painel de controle e operacao
+
+### Objetivo
+
+Entregar um painel central para clientes gerenciarem a propria operacao e para os donos do produto acompanharem, controlarem e administrarem tudo o que esta sendo executado pelos clientes.
+
+### Contexto
+
+Esta capacidade eh critica para a comercializacao futura porque precisa existir uma forma clara de administrar contas, usos, conteudos, acessos e evolucao por cliente.
+
+### Escopo inicial
+
+- visao consolidada de operacao por cliente
+- gestao de acessos e perfis administrativos
+- visibilidade de conteudo, uso e progresso
+- pontos de controle para administracao do produto
+
+### Critérios de aceite
+
+- existe um desenho funcional claro para o painel
+- o escopo separa o que eh visao do cliente e o que eh visao do dono do produto
+- o painel pode evoluir em historias pequenas sem reescrita estrutural
+
+### Historia 7.1
+
+**Titulo**
+Mapear personas e escopos do painel de controle
+
+**Descricao**
+Como produto, queremos definir com clareza quais pessoas usam o painel e quais permissões cada perfil precisa ter para evitar ambiguidade futura.
+
+**Requisitos**
+
+- identificar perfis principais do painel
+- separar visao do cliente e visao do dono do produto
+- listar permissoes de leitura e acao por perfil
+
+**Criterios de aceite**
+
+- existe um mapa funcional de perfis e responsabilidades
+- o escopo do painel nao mistura operacao do cliente com administracao do produto
+
+### Historia 7.2
+
+**Titulo**
+Definir arquitetura funcional do painel de controle
+
+**Descricao**
+Como produto, queremos desenhar a estrutura de telas, secoes e fluxos do painel antes de qualquer implementacao para minimizar retrabalho.
+
+**Requisitos**
+
+- definir secoes principais do painel
+- definir fluxos de navegacao essenciais
+- listar dados visiveis por area do painel
+
+**Criterios de aceite**
+
+- existe um desenho funcional do painel que pode ser executado em historias pequenas
+- nao existe dependencia de implementacao para validar o escopo
+
+## Epic 8: Estrategia de infraestrutura e migracao
+
+### Objetivo
+
+Mapear ate onde a Vercel gratuita sustenta o produto e quais limites, custos e necessidades operacionais exigem migracao parcial ou total da infraestrutura.
+
+### Contexto
+
+Hoje o app esta hospedado na Vercel no plano gratuito. Isso deve continuar no curto prazo, mas precisa existir um plano claro de saida quando o produto crescer em uso, complexidade ou exigencias comerciais.
+
+### Escopo inicial
+
+- limites da Vercel relevantes para o produto
+- gatilhos objetivos de migracao
+- diferenca entre sustentar na Vercel e sair dela
+- mapa de componentes que podem permanecer ou mudar
+
+### Critérios de aceite
+
+- existe uma lista objetiva de limites e sinais de alerta
+- existe uma definicao clara de quando a Vercel continua suficiente
+- existe um criterio claro de quando a infraestrutura precisa mudar
+
+### Historia 8.1
+
+**Titulo**
+Mapear limites atuais da Vercel e gatilhos de permanencia
+
+**Versao pronta para issue**
+Como plataforma, queremos mapear os limites atuais da Vercel gratuita e definir quais sinais indicam que o produto ainda pode permanecer nela com seguranca operacional.
+
+**Descricao**
+Como plataforma, queremos documentar ate onde a Vercel gratuita sustenta o produto e quais sinais indicam que ainda podemos permanecer nela sem risco relevante.
+
+**Requisitos**
+
+- listar limites relevantes da conta gratuita
+- relacionar limites com o uso esperado do produto
+- separar limites tecnicos, operacionais e comerciais
+- indicar quais limites sao criticos e quais sao apenas de acompanhamento
+- registrar a fonte de cada limite considerado
+- definir qual sinal exige reavaliacao imediata da plataforma
+
+**Criterios de aceite**
+
+- existe uma tabela com limite, impacto, risco e decisao recomendada
+- existe uma conclusao objetiva sobre quando a Vercel ainda e suficiente
+- a definicao pode ser revisada sem alterar o app em producao
+- a recomendacao final cabe em uma decisao: manter, monitorar ou reavaliar migracao
+
+### Historia 8.2
+
+**Titulo**
+Definir criterios de migracao e plano de saida da Vercel
+
+**Versao pronta para issue**
+Como plataforma, queremos definir quando a infraestrutura precisa sair da Vercel e qual seria a ordem de migracao de menor impacto para o produto.
+
+**Descricao**
+Como plataforma, queremos deixar claro quando a infraestrutura precisa mudar e qual ordem de migracao faz menos impacto no produto.
+
+**Requisitos**
+
+- definir gatilhos objetivos de migracao
+- definir o que permanece e o que migra primeiro
+- definir sequencia de migracao por camadas ou componentes
+- apontar o que pode permanecer na Vercel por mais tempo
+- indicar o que seria migrado primeiro caso a saida aconteca
+- registrar os riscos de uma migracao parcial e de uma migracao total
+- estabelecer criterios de decisao para mudar ou nao mudar
+
+**Criterios de aceite**
+
+- existe um criterio de saida da Vercel documentado
+- existe uma ordem preliminar de migracao por camada ou componente
+- existe uma recomendacao de estrategia: permanecer, migrar parcialmente ou sair totalmente
+- existe uma sequencia de decisao que preserva producao durante a transicao
+- a proposta nao depende de implementacao imediata para existir
+- o resultado final pode ser usado como base de decisao executiva
