@@ -415,6 +415,66 @@ Como crianca, queremos entender por que uma resposta esta certa ou errada logo a
 - validar compreensao do feedback com leitura simples
 - testar o comportamento em modo claro e escuro
 
+### Historia 5.6
+
+**Titulo**
+Reforcar higiene de arquivos sensiveis e configuracoes locais
+
+**Descricao**
+Como time de engenharia, queremos reduzir a chance de vazamento acidental de segredos, arquivos temporarios e configuracoes locais para manter o repositório seguro e previsivel.
+
+**Requisitos**
+
+- revisar a lista de arquivos ignorados
+- cobrir arquivos de ambiente e configuracoes locais
+- evitar o versionamento acidental de artefatos sensiveis
+
+**Criterios de aceite**
+
+- o repositorio ignora arquivos sensiveis comuns e artefatos locais relevantes
+- existe um padrão claro para arquivos de ambiente nao versionados
+- a revisao nao expõe nenhum segredo real no backlog
+
+### Historia 5.7
+
+**Titulo**
+Endurecer superficie de renderizacao e confiabilidade de terceiros
+
+**Descricao**
+Como arquitetura, queremos reduzir vetores de risco relacionados a renderizacao dinamica, dependencias externas e headers de seguranca para proteger a aplicacao em producao.
+
+**Requisitos**
+
+- revisar pontos de renderizacao dinamica
+- avaliar a necessidade de headers adicionais
+- revisar dependencias externas e a forma de carregamento
+
+**Criterios de aceite**
+
+- existe um plano para reduzir a superficie insegura de renderizacao
+- existe uma recomendacao objetiva para dependencias e carregamento externo
+- a proposta preserva a experiencia atual sem expor detalhes sensiveis
+
+### Historia 5.8
+
+**Titulo**
+Adicionar varredura automatica de segredos no fluxo de PR
+
+**Descricao**
+Como time de engenharia, queremos um mecanismo automatizado para detectar possiveis segredos antes do merge, reduzindo o risco de exposicao acidental no repositório.
+
+**Requisitos**
+
+- definir uma verificacao automatica de segredos no CI
+- integrar a verificacao ao fluxo de PR
+- evitar falsos positivos excessivos sem perder cobertura util
+
+**Criterios de aceite**
+
+- o fluxo de PR possui uma checagem automatica de segredos
+- o resultado da checagem e visivel antes do merge
+- a verificacao nao exige expor dados sensiveis nos cards
+
 ## Epic 6: Prontidao comercial
 
 ### Objetivo

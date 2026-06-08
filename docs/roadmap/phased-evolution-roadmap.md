@@ -108,6 +108,10 @@ Estabelecer padrao minimo para uso real e crescimento sustentavel.
 ### Entregas esperadas
 
 - revisao de seguranca frontend
+- higiene de arquivos sensiveis e configuracoes locais
+- endurecimento da superficie de renderizacao
+- revisao de dependencias externas e headers
+- varredura automatica de segredos no fluxo de PR
 - baseline de acessibilidade
 - ajuste de legibilidade do modo escuro
 - monitoramento e rastreamento de erros
