@@ -11,6 +11,15 @@ Definir a sequencia recomendada de evolucao para transformar o projeto em um pro
 - separar conteudo, regra de negocio e persistencia cedo
 - adiar complexidade comercial ate existir base operacional confiavel
 
+## Ordem imediata sugerida
+
+No ciclo atual, com o app em producao e sem margem para impacto funcional, a prioridade pratica e:
+
+1. Fase 8: mapear limites da Vercel e definir criterios de migracao
+1. Fase 7: refinar personas e escopo do painel de controle
+
+Essa ordem evita decidir produto sem antes entender a permanencia da infraestrutura atual.
+
 ## Fase 1: Fundamentos de engenharia
 
 ### Resultado esperado
@@ -98,6 +107,7 @@ Estabelecer padrao minimo para uso real e crescimento sustentavel.
 
 - revisao de seguranca frontend
 - baseline de acessibilidade
+- ajuste de legibilidade do modo escuro
 - monitoramento e rastreamento de erros
 - checklist de release
 
@@ -126,6 +136,44 @@ Preparar a base para usuarios, contas, perfis e monetizacao.
 - bloqueio de crescimento comercial
 - arquitetura inadequada para SaaS
 - custo alto de pivote estrutural
+
+## Fase 7: Painel de controle e operacao
+
+### Resultado esperado
+
+Entregar um painel central para clientes gerenciarem a operacao da propria conta e para os donos do produto acompanharem e administrarem tudo o que esta sendo executado pelos clientes.
+
+### Entregas esperadas
+
+- painel administrativo unificado
+- visao de clientes, uso, conteudo e operacao
+- acoes de gerenciamento por perfil e permissao
+- trilha inicial para supervisao do produto e dos clientes
+
+### Riscos mitigados
+
+- falta de controle operacional
+- baixa visibilidade para clientes contratantes
+- dificuldade de administracao em escala
+
+## Fase 8: Estrategia de infraestrutura e migracao
+
+### Resultado esperado
+
+Definir ate onde a Vercel gratuita sustenta o produto e quais limites, custos e necessidades operacionais exigem migracao parcial ou total de infraestrutura.
+
+### Entregas esperadas
+
+- mapa de limites e gatilhos de crescimento
+- criterios objetivos para permanencia ou saida da Vercel
+- plano de migracao por camada, se necessario
+- avaliacao de custo, risco e operacao
+
+### Riscos mitigados
+
+- surpresa com limites de plataforma
+- crescimento sem planejamento de infraestrutura
+- migracao tardia e cara
 
 ## Regra de execucao
 

@@ -3,6 +3,7 @@
   --primary-light: #818CF8;
   --primary-bg: #EEF2FF;
   --secondary: #F59E0B;
+  --secondary-bg: #FFFBEB;
   --success: #10B981;
   --success-bg: #ECFDF5;
   --error: #EF4444;
@@ -12,6 +13,8 @@
   --text: #1E293B;
   --muted: #64748B;
   --border: #E2E8F0;
+  --surface-subtle: #F8FAFC;
+  --surface-neutral: #F3F4F6;
   --radius: 16px;
   --shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
@@ -21,6 +24,7 @@
   --primary-light:#A5B4FC;
   --primary-bg:   #1E1B4B;
   --secondary:    #FCD34D;
+  --secondary-bg: rgba(252, 211, 77, 0.12);
   --success:      #34D399;
   --success-bg:   #064E3B;
   --error:        #F87171;
@@ -30,6 +34,8 @@
   --text:         #F1F5F9;
   --muted:        #94A3B8;
   --border:       #334155;
+  --surface-subtle: #111C33;
+  --surface-neutral: #18233A;
   --shadow:       0 4px 20px rgba(0,0,0,0.4);
 }
 
@@ -37,7 +43,9 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(129, 140, 248, 0.12), transparent 34%),
+    var(--bg);
   color: var(--text);
   min-height: 100vh;
   font-size: 17px;
@@ -405,6 +413,7 @@ body {
 .text-excerpt-label { font-style: normal; font-weight: 700; font-size: .78rem; color: var(--secondary); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
 
 .question-text { font-size: 1.15rem; font-weight: 700; line-height: 1.55; margin-bottom: 22px; }
+.question-text { color: var(--text); }
 
 .options { display: grid; gap: 11px; }
 .option-btn {
@@ -421,6 +430,7 @@ body {
   font-weight: 500;
   transition: border-color .2s, background .2s, transform .15s;
   width: 100%;
+  color: var(--text);
 }
 .option-btn:hover:not(:disabled) { border-color: var(--primary-light); background: var(--primary-bg); transform: translateX(4px); }
 .option-letter {
@@ -429,10 +439,13 @@ body {
   font-weight: 800; font-size: .95rem; flex-shrink: 0; transition: background .2s, color .2s;
 }
 .option-btn.correct  { border-color: var(--success); background: var(--success-bg); }
+.option-btn.correct  { color: var(--text); }
 .option-btn.correct .option-letter  { background: var(--success); color: #fff; }
 .option-btn.wrong    { border-color: var(--error);   background: var(--error-bg); }
+.option-btn.wrong    { color: var(--text); }
 .option-btn.wrong .option-letter    { background: var(--error);   color: #fff; }
 .option-btn.reveal   { border-color: var(--success); background: var(--success-bg); opacity: .7; }
+.option-btn.reveal   { color: var(--text); }
 .option-btn.reveal .option-letter   { background: var(--success); color: #fff; }
 .option-btn:disabled { cursor: not-allowed; }
 
@@ -441,14 +454,30 @@ body {
   padding: 16px;
   border-radius: 12px;
   animation: fadeDown .3s ease;
+  color: var(--text);
 }
 .feedback.ok   { background: var(--success-bg); border: 2px solid var(--success); }
 .feedback.fail { background: var(--error-bg);   border: 2px solid var(--error); }
 .feedback-title { font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; }
 .feedback.ok   .feedback-title { color: var(--success); }
 .feedback.fail .feedback-title { color: var(--error); }
-.feedback-explain { font-size: .93rem; margin-bottom: 6px; line-height: 1.5; }
-.feedback-why-wrong { font-size: .87rem; color: var(--muted); background: var(--surface-subtle); padding: 8px 12px; border-radius: 8px; margin-top: 6px; }
+.feedback-block {
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+.feedback-label {
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.feedback-explain { font-size: .93rem; line-height: 1.55; color: var(--text); }
+.feedback-why { font-size: .87rem; color: var(--muted); line-height: 1.55; margin-bottom: 6px; }
 
 .quiz-next { display: flex; justify-content: flex-end; margin-top: 18px; }
 
@@ -480,18 +509,39 @@ body {
   padding: 14px 16px;
   margin-bottom: 10px;
   border-left: 4px solid var(--border);
+  color: var(--text);
 }
 .gabarito-item.ok-item   { border-left-color: var(--success); }
 .gabarito-item.fail-item { border-left-color: var(--error); }
 .gab-num  { font-size: .82rem; font-weight: 700; color: var(--muted); margin-bottom: 3px; }
-.gab-q    { font-weight: 600; margin-bottom: 8px; font-size: .95rem; }
+.gab-q    { font-weight: 600; margin-bottom: 8px; font-size: .95rem; color: var(--text); }
 .gab-tags { display: flex; gap: 10px; flex-wrap: wrap; font-size: .88rem; }
 .tag      { padding: 3px 10px; border-radius: 6px; font-weight: 700; }
 .tag-user-ok   { background: var(--success-bg); color: #059669; }
 .tag-user-fail { background: var(--error-bg);   color: #DC2626; }
 .tag-correct   { background: var(--success-bg); color: #059669; }
-.gab-explain   { margin-top: 10px; padding: 9px 12px; background: var(--surface-subtle); border-radius: 8px; font-size: .88rem; line-height: 1.5; }
-.gab-why-wrong { margin-top: 6px; padding: 7px 10px; background: var(--surface-subtle); border-radius: 6px; font-size: .84rem; color: var(--muted); }
+.gab-block {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.gab-label {
+  font-size: .76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.gab-answer {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.gab-explain { font-size: .88rem; line-height: 1.5; color: var(--text); }
+.gab-why-wrong { font-size: .84rem; color: var(--muted); line-height: 1.5; margin-bottom: 6px; }
 
 /* ── HISTORY ─────────────────────────────────────── */
 .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
@@ -602,13 +652,6 @@ body {
   border-width: 0;
 }
 
-
-/* ── Variáveis extras ──────────────────────────────────────────── */
-:root {
-  --surface-subtle:   #F8FAFC;
-  --surface-neutral:  #F3F4F6;
-  --btn-download-bg:  #0F766E;
-}
 
 /* ── Toast ─────────────────────────────────────────────────────── */
 #toast-container {
