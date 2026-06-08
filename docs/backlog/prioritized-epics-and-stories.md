@@ -572,6 +572,18 @@ Como plataforma, queremos documentar ate onde a Vercel gratuita sustenta o produ
 - a definicao pode ser revisada sem alterar o app em producao
 - a recomendacao final cabe em uma decisao: manter, monitorar ou reavaliar migracao
 
+**Plano de validacao**
+
+- revisar a lista de limites oficiais da Vercel para o plano atual
+- confrontar cada limite com o uso real esperado do produto
+- validar se a conclusao nao exige alteracao de codigo
+
+**Evidencias esperadas**
+
+- tabela consolidada com limite, fonte, impacto, risco e decisao
+- resumo executivo com a recomendacao final
+- registro de que o trabalho foi concluido sem impacto em producao
+
 ### Historia 8.2
 
 **Titulo**
@@ -601,3 +613,15 @@ Como plataforma, queremos deixar claro quando a infraestrutura precisa mudar e q
 - existe uma sequencia de decisao que preserva producao durante a transicao
 - a proposta nao depende de implementacao imediata para existir
 - o resultado final pode ser usado como base de decisao executiva
+
+**Plano de validacao**
+
+- simular diferentes cenarios de crescimento para identificar gatilhos de saida
+- revisar a ordem de migracao buscando menor impacto operacional
+- validar se a proposta consegue ser usada antes de qualquer mudanca tecnica
+
+**Evidencias esperadas**
+
+- roteiro de migracao por camada ou componente
+- matriz de risco para migracao parcial e total
+- decisao clara sobre permanencia, migracao parcial ou saida

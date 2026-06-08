@@ -93,10 +93,17 @@ Como o projeto e estatico, voce pode abrir o arquivo `index.html` diretamente no
 Se quiser rodar com um servidor local:
 
 ```bash
-npx serve .
+npm run dev
 ```
 
 Ou use uma extensao como **Live Server** no VS Code.
+
+## Comandos oficiais
+
+- `npm run dev`: sobe um servidor local na porta `3000`
+- `npm start`: alias do `npm run dev`
+- `npm test`: executa a validacao automatizada do modo escuro e feedback
+- `npm run test:ui:dark-mode`: executa apenas o teste de interface do modo escuro
 
 ## Persistencia de dados
 
