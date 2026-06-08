@@ -37,12 +37,12 @@ jobs:
           fi
 
           case "$HEAD_REF" in
-            feature/*|fix/*|hotfix/*|chore/*|docs/*|refactor/*)
+            feature/*|fix/*|hotfix/*|chore/*|docs/*|refactor/*|release/*)
               echo "Branch naming is valid: $HEAD_REF"
               ;;
             *)
               echo "Invalid branch naming: $HEAD_REF"
-              echo "Use one of: feature/*, fix/*, hotfix/*, chore/*, docs/*, refactor/*"
+              echo "Use one of: feature/*, fix/*, hotfix/*, chore/*, docs/*, refactor/*, release/*"
               exit 1
               ;;
           esac
