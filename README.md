@@ -49,6 +49,19 @@ Atualmente, o projeto possui foco principal em **Portugues**, com perguntas orga
 - `localStorage`
 - Vercel
 
+## Documentacao
+
+A documentacao viva do projeto fica em `docs/` e o guia operacional do board fica em `docs/github/`.
+
+Leituras principais:
+
+- [Documentacao do Produto](docs/README.md)
+- [Guia do GitHub Project](docs/github/github-project-guide.md)
+- [Guia de bolso do GitHub Project](docs/github/github-project-pocket-guide.md)
+- [Modelo Operacional do GitHub Project](docs/github/github-project-operating-model.md)
+- [Estrategia de Branching e Evolucao Controlada](docs/github/branching-and-delivery-strategy.md)
+- [Plano Inicial de Execucao do Board](docs/github/initial-execution-plan.md)
+
 ## Estrutura do projeto
 
 ```text
@@ -136,4 +149,4 @@ O repositorio ja possui `vercel.json`, facilitando a publicacao do projeto na Ve
 
 ## Licenca
 
-Voce pode definir a licenca que fizer mais sentido para o projeto. Uma opcao comum para projetos desse tipo e a **MIT**.
+Este projeto usa a licenca [MIT](LICENSE).

@@ -116,6 +116,7 @@ Estabelecer padrao minimo para uso real e crescimento sustentavel.
 - ajuste de legibilidade do modo escuro
 - monitoramento e rastreamento de erros
 - checklist de release
+- atualizacao futura das actions para remover aviso de Node.js 20
 
 ### Riscos mitigados
 
