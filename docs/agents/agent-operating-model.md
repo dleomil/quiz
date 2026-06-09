@@ -123,6 +123,36 @@ Atualizar issue, PR, labels, status e evidencias no board.
 - nao altera criterio tecnico
 - nao fecha item sem validacao
 
+### 6. Reviewer Agent
+
+**Responsabilidade**
+
+Revisar Pull Requests com foco em aderencia a spec, qualidade minima, evidencias e risco de merge.
+
+**Entradas**
+
+- PR aberto
+- spec da entrega
+- plano de validacao
+- evidencias anexadas
+
+**Saidas**
+
+- parecer de aprovacao ou ajuste
+- lista objetiva de pendencias
+- confirmacao de alinhamento com a spec
+
+**Limites**
+
+- nao aprova por conta propria se a regra do repo exigir humano
+- nao muda codigo
+- nao inventa evidencia
+- nao decide escopo novo para o PR
+
+## Fluxo de revisao
+
+O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-workflow.md`. O modelo operacional define o papel; o workflow define quando rodar, o que conferir e como registrar o parecer.
+
 ## Fluxo recomendado
 
 1. `Spec Agent` escreve a spec.
@@ -130,6 +160,7 @@ Atualizar issue, PR, labels, status e evidencias no board.
 3. `Implementer Agent` executa o menor passo possivel.
 4. `Verifier Agent` valida contra a spec.
 5. `Release and Board Agent` publica o resultado no board.
+6. `Reviewer Agent` emite parecer de conformidade para PRs antes do merge.
 
 ## Regra de governanca
 

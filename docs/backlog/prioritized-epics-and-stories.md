@@ -124,6 +124,73 @@ Como time, queremos validar o fluxo de especificacao, validacao e board em um it
 - a spec ficou clara o suficiente para guiar a execucao
 - o board refletiu o estado real do trabalho
 
+### Historia 9.6
+
+**Titulo**
+Definir agente revisor de PRs com limites de aprovacao
+
+**Descricao**
+Como operacao, queremos um agente revisor que leia PRs, confronte com a spec e com as evidencias e devolva um parecer objetivo antes do merge, sem assumir aprovacao automatica.
+
+**Requisitos**
+
+- definir o que o revisor deve verificar em cada PR
+- limitar o papel a revisao e recomendacao
+- deixar claro quando o parecer pode ser usado e quando ainda exige revisao humana
+- documentar os artefatos que alimentam a analise
+
+**Criterios de aceite**
+
+- existe uma definicao objetiva do papel do revisor
+- o agente nao tem autonomia para aprovar ou mergear por conta propria
+- o fluxo de revisao fica claro para PRs futuros
+- o papel respeita a politica de branch e revisao do repositorio
+
+**Plano de validacao**
+
+- revisar o comportamento esperado do agente contra PRs reais
+- validar que o papel nao entra em conflito com a governanca atual
+- confirmar que a saida do agente e um parecer, nao um merge
+
+**Evidencias esperadas**
+
+- documento com escopo, limites e saida esperada
+- alinhamento com a politica de aprovacao do repositorio
+- exemplo de parecer padronizado para PRs
+
+### Historia 9.7
+
+**Titulo**
+Definir matriz de decisao do Reviewer Agent
+
+**Descricao**
+Como operacao, queremos uma matriz simples para padronizar quando o Reviewer Agent devolve aprovacao, ajuste necessario ou bloqueio, sempre com base em spec, validacao, evidencia e risco.
+
+**Requisitos**
+
+- definir categorias de decisao
+- definir sinais que levam a cada categoria
+- definir formato padrao do parecer
+- manter o papel sem autonomia de merge
+
+**Criterios de aceite**
+
+- existe uma matriz de decisao objetiva e reutilizavel
+- o parecer do revisor fica curto e rastreavel
+- a matriz respeita a governanca do repositorio
+
+**Plano de validacao**
+
+- testar a matriz contra exemplos de PR reais e hipoteticos
+- verificar se a saida permanece objetiva e util
+- confirmar que a matriz nao conflita com a revisao humana
+
+**Evidencias esperadas**
+
+- tabela de decisao por categoria
+- modelo de comentario do Reviewer Agent
+- referencia do fluxo operacional do revisor
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia
