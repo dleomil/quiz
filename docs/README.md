@@ -2,6 +2,20 @@
 
 Esta pasta concentra a documentacao viva do projeto. A organizacao foi pensada para manter requisitos, definicoes tecnicas e operacao do board no GitHub dentro do proprio repositorio, com versionamento junto ao codigo.
 
+## Mapa da Documentacao
+
+| Pasta                | Papel                                               | Conteudo tipico                                                           |
+| -------------------- | --------------------------------------------------- | ------------------------------------------------------------------------- |
+| `docs/harness/`      | Politicas, guardrails e contratos operacionais      | preflight, fronteiras, politica de formato, controle de fluxo dos agentes |
+| `docs/agents/`       | Modelo operacional dos agentes e seu manual de uso  | papeis, ordem, aplicacao por papel, fluxo do revisor, manual consolidado  |
+| `docs/github/`       | Guias praticos e templates de operacao no GitHub    | board, branching, corpo de PR/issue, guias de uso, formatos operacionais  |
+| `docs/specs/`        | Especificacoes de trabalho e pilotos                | specs de produto, pilotos de baixo risco, criterios de aceite e validacao |
+| `docs/backlog/`      | Fonte do backlog priorizado                         | epicos, historias, requisitos, plano de validacao, evidencias esperadas   |
+| `docs/roadmap/`      | Ordem evolutiva por fases                           | fases, priorizacao, dependencias e sequencia recomendada                  |
+| `docs/product/`      | Visao de produto e principios                       | escopo, principios e diretrizes de produto                                |
+| `docs/architecture/` | Definicoes tecnicas e fronteiras                    | arquitetura alvo, contratos tecnicos e decisoes de engenharia             |
+| `docs/platform/`     | Avaliacoes de infraestrutura e limites operacionais | Vercel, migracao, retention e sinais de reavaliacao                       |
+
 ## Estrutura recomendada
 
 ```text
