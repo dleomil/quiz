@@ -1,3 +1,4 @@
+/* global App */
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
