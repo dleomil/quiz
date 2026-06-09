@@ -4,6 +4,12 @@
 
 Padronizar o texto base usado em PRs e issues para manter a estrutura em Markdown e evitar formatacao quebrada.
 
+## Fonte de verdade
+
+A politica oficial de formatacao vive em `docs/harness/comment-formatting-policy.md`.
+
+Este template e a base operacional para GitHub.
+
 ## Estrutura recomendada
 
 ```markdown

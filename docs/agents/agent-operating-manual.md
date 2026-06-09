@@ -34,6 +34,7 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - [agent-preflight-application.md](agent-preflight-application.md)
 - [../harness/agent-preflight-checklist.md](../harness/agent-preflight-checklist.md)
 - [../harness/agent-operational-guardrails.md](../harness/agent-operational-guardrails.md)
+- [../harness/comment-formatting-policy.md](../harness/comment-formatting-policy.md)
 - [reviewer-agent.md](reviewer-agent.md)
 - [reviewer-agent-workflow.md](reviewer-agent-workflow.md)
 - [reviewer-agent-comment-template.md](reviewer-agent-comment-template.md)

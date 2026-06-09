@@ -4,6 +4,12 @@
 
 Padronizar a escrita de comentarios em PRs, issues e cards para que o Markdown seja renderizado corretamente e a leitura fique consistente.
 
+## Fonte de verdade
+
+A politica oficial vive em `docs/harness/comment-formatting-policy.md`.
+
+Este documento existe como guia pratico de uso no GitHub.
+
 ## Regra principal
 
 Nao enviar comentarios como string inline com `\\n` literal.

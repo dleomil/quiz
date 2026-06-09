@@ -99,3 +99,4 @@ Checklist minimo antes de qualquer acao de escrita:
 - `GitHub Project` organiza o fluxo
 - `docs/harness/agent-operational-guardrails.md` consolida os erros operacionais encontrados e os guardrails de prevencao
 - `docs/harness/agent-preflight-checklist.md` padroniza o preflight obrigatorio antes de qualquer acao dos agentes
+- `docs/harness/comment-formatting-policy.md` centraliza a regra de formatacao para comentarios, PRs e issues
