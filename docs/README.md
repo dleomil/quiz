@@ -45,6 +45,7 @@ docs/
 │   ├── execution-lessons-learned.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
+│   ├── panel-control-phased-plan.md
 │   └── phased-evolution-roadmap.md
 ├── specs/
 │   ├── panel-control-functional-architecture.md

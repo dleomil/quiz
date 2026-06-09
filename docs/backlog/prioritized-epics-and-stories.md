@@ -1022,6 +1022,86 @@ Como produto, queremos desenhar a estrutura funcional do painel em secoes, fluxo
 - lista de dados visiveis por area do painel
 - link da spec `docs/specs/panel-control-functional-architecture.md`
 
+### Historia 7.3
+
+**Titulo**
+Criar a base isolada do painel de controle
+
+**Issue**
+
+- #102
+
+**Descricao**
+Como produto, queremos criar uma superficie inicial do painel separada do quiz atual para validar a experiencia base sem impacto no fluxo principal.
+
+**Versao pronta para issue**
+Como produto, queremos criar uma superficie inicial do painel separada do quiz atual para validar a experiencia base sem impacto no fluxo principal.
+
+**Requisitos**
+
+- criar uma rota ou area isolada para o painel
+- manter o quiz atual intocado
+- expor apenas uma estrutura base navegavel
+- evitar dependencia de dados reais nesta etapa
+
+**Criterios de aceite**
+
+- o painel existe como superficie separada do quiz
+- nao ha impacto no fluxo principal do aluno
+- a base inicial pode ser navegada sem expor administracao sensivel
+
+**Plano de validacao**
+
+- abrir a superficie do painel sem afetar o quiz atual
+- confirmar que o fluxo principal continua operando normalmente
+- verificar que a pagina base do painel carrega de forma isolada
+
+**Evidencias esperadas**
+
+- screenshot ou registro da superficie inicial do painel
+- confirmacao de que o quiz continua funcionando sem alteracao
+- link da rota ou area isolada usada como base
+
+### Historia 7.4
+
+**Titulo**
+Definir a navegacao e os estados iniciais da P1 do painel
+
+**Issue**
+
+- #103
+
+**Descricao**
+Como produto, queremos definir a navegacao minima e os estados vazios da base do painel para que a experiencia inicial fique clara e expansivel.
+
+**Versao pronta para issue**
+Como produto, queremos definir a navegacao minima e os estados vazios da base do painel para que a experiencia inicial fique clara e expansivel.
+
+**Requisitos**
+
+- definir a navegacao minima da base do painel
+- criar estados vazios ou demonstrativos para as secoes iniciais
+- manter a estrutura preparada para evoluir sem reescrita
+- nao introduzir dados reais nesta etapa
+
+**Criterios de aceite**
+
+- a base do painel tem navegacao minima clara
+- os estados iniciais ajudam a entender a estrutura do painel
+- a experiencia inicial nao depende de backend real
+
+**Plano de validacao**
+
+- revisar a navegacao minima e os estados vazios
+- confirmar que a base do painel continua isolada
+- validar que a estrutura pode receber novas secoes sem refatoracao grande
+
+**Evidencias esperadas**
+
+- mapa simples da navegacao minima
+- registro dos estados vazios ou demonstrativos
+- confirmacao de que nao houve impacto no quiz atual
+
 ## Epic 8: Estrategia de infraestrutura e migracao
 
 ### Objetivo

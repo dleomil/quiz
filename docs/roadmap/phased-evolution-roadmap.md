@@ -188,6 +188,16 @@ Entregar um painel central para clientes gerenciarem a operacao da propria conta
 - baixa visibilidade para clientes contratantes
 - dificuldade de administracao em escala
 
+### Plano por fases do painel
+
+O detalhamento operacional desta fase fica em `docs/roadmap/panel-control-phased-plan.md`. O plano separa:
+
+- base isolada do painel
+- identidade e acesso por perfil
+- dados e integracoes
+- operacao e administracao
+- hardening e publicacao
+
 ## Fase 8: Estrategia de infraestrutura e migracao
 
 ### Resultado esperado
