@@ -41,13 +41,13 @@ O painel de controle precisa ser dividido em partes pequenas e sustentaveis para
 
 ### Dados por area
 
-| Area | Dados visiveis | Finalidade |
-| ---- | -------------- | ---------- |
-| Visao geral | status da conta, resumo de uso, alertas principais | leitura rapida da situacao |
-| Acompanhamento | desempenho, progresso, historico resumido | apoiar decisao pedagogica |
-| Conteudo | topicos, disponibilidade, revisao, organizacao | suportar operacao de conteudo |
-| Operacao interna | clientes, suporte, administracao, auditoria | administrar o produto |
-| Ajuda e suporte | instrucoes, contato, orientacoes | resolver duvidas e atendimento |
+| Area             | Dados visiveis                                     | Finalidade                     |
+| ---------------- | -------------------------------------------------- | ------------------------------ |
+| Visao geral      | status da conta, resumo de uso, alertas principais | leitura rapida da situacao     |
+| Acompanhamento   | desempenho, progresso, historico resumido          | apoiar decisao pedagogica      |
+| Conteudo         | topicos, disponibilidade, revisao, organizacao     | suportar operacao de conteudo  |
+| Operacao interna | clientes, suporte, administracao, auditoria        | administrar o produto          |
+| Ajuda e suporte  | instrucoes, contato, orientacoes                   | resolver duvidas e atendimento |
 
 ## Requisitos
 
