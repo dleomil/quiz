@@ -57,6 +57,16 @@ Formato esperado de saida, por exemplo:
 - commit relacionado
 - evidencias anexadas
 
+### 6. Operational preflight
+
+Checklist minimo antes de qualquer acao de escrita:
+
+- confirmar a branch alvo e a politica de nome
+- confirmar labels e taxonomia existentes
+- confirmar o item do Project e seus campos
+- confirmar o endpoint ou comando correto para a acao
+- confirmar como a protecao original sera restaurada
+
 ## Niveis de permissao sugeridos
 
 - leitura de docs e backlog
@@ -86,3 +96,4 @@ Formato esperado de saida, por exemplo:
 - `Pull Request` e o artefato de revisao
 - `GitHub Actions` executa os gates
 - `GitHub Project` organiza o fluxo
+- `docs/harness/agent-operational-guardrails.md` consolida os erros operacionais encontrados e os guardrails de prevencao
