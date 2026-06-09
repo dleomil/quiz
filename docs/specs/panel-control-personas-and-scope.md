@@ -17,12 +17,12 @@ O painel precisa nascer sem ambiguidade entre operacao do cliente, acompanhament
 
 ## Mapa preliminar de perfis
 
-| Perfil | Objetivo principal | Pode ver | Pode alterar |
-| ------ | ------------------ | -------- | ------------ |
-| Cliente | Gerir a propria operacao contratada | dados da propria conta, uso e resultados consolidados | configuracoes permitidas pelo contrato |
-| Professor | Acompanhar desempenho e orientar estudo | progresso, desempenho e historico educacional relacionado | comentarios ou ajustes permitidos no fluxo educacional |
-| Responsavel | Acompanhar evolucao do aluno | progresso, frequencia e relatorios simplificados | preferencialmente sem alteracoes operacionais no produto |
-| Dono do produto | Operar o produto e suportar clientes | tudo que impacta operacao, uso, conteudo e administracao | configuracoes, conteudo, operacao e suporte interno |
+| Perfil          | Objetivo principal                      | Pode ver                                                  | Pode alterar                                             |
+| --------------- | --------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------- |
+| Cliente         | Gerir a propria operacao contratada     | dados da propria conta, uso e resultados consolidados     | configuracoes permitidas pelo contrato                   |
+| Professor       | Acompanhar desempenho e orientar estudo | progresso, desempenho e historico educacional relacionado | comentarios ou ajustes permitidos no fluxo educacional   |
+| Responsavel     | Acompanhar evolucao do aluno            | progresso, frequencia e relatorios simplificados          | preferencialmente sem alteracoes operacionais no produto |
+| Dono do produto | Operar o produto e suportar clientes    | tudo que impacta operacao, uso, conteudo e administracao  | configuracoes, conteudo, operacao e suporte interno      |
 
 ## Nao objetivos
 
