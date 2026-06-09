@@ -255,6 +255,38 @@ Como operacao, queremos um checklist de preflight unico para os agentes do proje
 - referencia do checklist nos documentos dos agentes
 - uso do checklist em pelo menos um fluxo real pequeno
 
+### Historia 9.10
+
+**Titulo**
+Definir ordem de execucao dos agentes
+
+**Descricao**
+Como operacao, queremos uma ordem de execucao explicita para os agentes do projeto para que o fluxo fique previsivel e nao dependa de interpretacao individual.
+
+**Requisitos**
+
+- definir quando cada agente deve ser usado
+- explicitar a sequencia recomendada entre spec, arquitetura, implementacao, validacao, board e revisao
+- evitar que agentes sejam acionados fora de ordem sem necessidade real
+
+**Criterios de aceite**
+
+- existe um documento curto com a ordem de execucao dos agentes
+- o modelo operacional referencia esse documento
+- a ordem reduz ambiguidade entre os papes
+
+**Plano de validacao**
+
+- revisar se a ordem cobre o fluxo completo de ponta a ponta
+- confirmar se o documento nao contradiz o modelo operacional ou o checklist de preflight
+- aplicar a ordem em um fluxo pequeno real
+
+**Evidencias esperadas**
+
+- documento com a ordem de execucao dos agentes
+- referencia no modelo operacional
+- aplicacao em um fluxo real pequeno
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia
