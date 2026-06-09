@@ -9,7 +9,10 @@ docs/
 ├── README.md
 ├── agents/
 │   ├── agent-operating-model.md
-│   └── production-safe-adoption-plan.md
+│   ├── reviewer-agent-decision-matrix.md
+│   ├── production-safe-adoption-plan.md
+│   ├── reviewer-agent.md
+│   └── reviewer-agent-workflow.md
 ├── architecture/
 │   └── target-architecture.md
 ├── product/
