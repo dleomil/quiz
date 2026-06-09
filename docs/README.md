@@ -34,10 +34,12 @@ docs/
 │   ├── spec-driven-development.md
 │   └── vercel-limits-and-retention.md
 ├── github/
+│   ├── comment-formatting-guide.md
 │   ├── github-project-guide.md
 │   ├── github-project-pocket-guide.md
 │   ├── github-project-operating-model.md
-│   └── initial-execution-plan.md
+│   ├── initial-execution-plan.md
+│   └── pr-issue-body-template.md
 └── backlog/
     └── prioritized-epics-and-stories.md
 ```
