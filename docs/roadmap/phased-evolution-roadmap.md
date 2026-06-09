@@ -22,6 +22,7 @@ Definir um modo de trabalho em que toda entrega relevante nasce de uma spec, pas
 - template de spec
 - modelo operacional de agentes
 - limites de permissao por papel
+- template padronizado de comentario do Reviewer Agent
 - gates obrigatorios no fluxo de trabalho
 - evidencia padronizada por entrega
 

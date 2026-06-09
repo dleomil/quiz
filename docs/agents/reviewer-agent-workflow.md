@@ -41,15 +41,7 @@ Nao use o Reviewer Agent para:
 
 ## Saida padrao
 
-O parecer deve seguir este formato:
-
-```text
-Conclusao:
-Risco:
-Pendencias:
-Evidencias verificadas:
-Proxima acao:
-```
+O parecer deve seguir o formato definido em `reviewer-agent-comment-template.md`.
 
 ## Matriz de decisao
 
@@ -77,18 +69,6 @@ Quando o PR for aprovado ou ajustado, o card correspondente deve refletir o esta
 - `In Review` se ainda houver ajuste
 - `Ready` se o trabalho estiver apenas aguardando revisao humana final
 - `Done` quando o merge estiver concluido e as evidencias registradas
-
-## Exemplo de parecer
-
-O parecer deve ser curto, objetivo e sem detalhes desnecessarios. Exemplo:
-
-```text
-Conclusao: Aprovado para merge.
-Risco: Baixo, escopo documental e sem impacto em producao.
-Pendencias: Nenhuma.
-Evidencias verificadas: diff pequeno, validacao local, alinhamento com a spec.
-Proxima acao: Aguardar aprovacao humana final e merge.
-```
 
 ## Limite operacional
 
