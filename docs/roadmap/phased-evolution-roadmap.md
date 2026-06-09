@@ -11,12 +11,33 @@ Definir a sequencia recomendada de evolucao para transformar o projeto em um pro
 - separar conteudo, regra de negocio e persistencia cedo
 - adiar complexidade comercial ate existir base operacional confiavel
 
+## Fase 0: Especificacao e Harness
+
+### Resultado esperado
+
+Definir um modo de trabalho em que toda entrega relevante nasce de uma spec, passa por um harness de validacao e so depois vira implementacao.
+
+### Entregas esperadas
+
+- template de spec
+- modelo operacional de agentes
+- limites de permissao por papel
+- gates obrigatorios no fluxo de trabalho
+- evidencia padronizada por entrega
+
+### Riscos mitigados
+
+- ambiguidade na execucao
+- trabalho sem criterio de aceite
+- automacao sem governanca
+
 ## Ordem imediata sugerida
 
 No ciclo atual, com o app em producao e sem margem para impacto funcional, a prioridade pratica e:
 
 1. Fase 8: mapear limites da Vercel e definir criterios de migracao
 1. Fase 7: refinar personas e escopo do painel de controle
+1. Fase 0: estruturar spec-driven development e harness engineering
 
 Essa ordem evita decidir produto sem antes entender a permanencia da infraestrutura atual.
 

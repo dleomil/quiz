@@ -7,12 +7,24 @@ Esta pasta concentra a documentacao viva do projeto. A organizacao foi pensada p
 ```text
 docs/
 ├── README.md
+├── agents/
+│   ├── agent-operating-model.md
+│   └── production-safe-adoption-plan.md
 ├── architecture/
 │   └── target-architecture.md
 ├── product/
 │   └── product-scope-and-principles.md
+├── platform/
+│   └── vercel-limits-assessment.md
+├── harness/
+│   ├── harness-engineering.md
+│   └── pilot-execution-checklist.md
 ├── roadmap/
 │   └── phased-evolution-roadmap.md
+├── specs/
+│   ├── pilot-low-risk-workflow.md
+│   ├── spec-driven-development.md
+│   └── vercel-limits-and-retention.md
 ├── github/
 │   ├── github-project-guide.md
 │   ├── github-project-pocket-guide.md
@@ -25,7 +37,11 @@ docs/
 ## Regras de uso
 
 - `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.
+- `docs/platform/`: avaliacoes de infraestrutura, limites de plataforma e decisoes operacionais.
 - `docs/architecture/`: definicoes tecnicas, fronteiras arquiteturais e decisoes de engenharia.
+- `docs/specs/`: especificacoes de trabalho, criterios de aceite e formatos de entrega antes da implementacao.
+- `docs/harness/`: regras, guardrails, validacoes e observabilidade dos agentes e do fluxo assistido por IA.
+- `docs/agents/`: papeis, limites e contratos operacionais dos agentes do projeto.
 - `docs/roadmap/`: plano evolutivo por fases, com criterio de prioridade e dependencias.
 - `docs/backlog/`: epicos e historias prontas para virar issues no GitHub.
 - `docs/github/`: guia operacional do board, guia de bolso, estrategia de uso e ordem inicial de execucao.

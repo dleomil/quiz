@@ -13,6 +13,117 @@ Para a fase atual, com producao ativa e janela de risco baixa, a sequencia recom
 1. `#31` Mapear personas e escopos do painel de controle
 1. `#32` Definir arquitetura funcional do painel de controle
 
+## Epic 9: Especificacao e Harness de Agentes
+
+### Objetivo
+
+Criar a camada de especificacao e o harness operacional para que o uso de agentes no projeto aconteca com criterio, rastreabilidade e validacao.
+
+### Historia 9.1
+
+**Titulo**
+Definir template oficial de spec para entregas relevantes
+
+**Descricao**
+Como time, queremos um template oficial de spec para que toda entrega relevante comece com contexto, escopo, criterios de aceite e plano de validacao.
+
+**Requisitos**
+
+- definir formato padrao de spec
+- incluir contexto, escopo, nao objetivos, requisitos, aceite, validacao e evidencia
+- documentar quando a spec e obrigatoria
+
+**Criterios de aceite**
+
+- existe um template oficial versionado no repositorio
+- o template pode ser reutilizado em issues e docs
+- o texto deixa claro quando a spec e obrigatoria
+
+### Historia 9.2
+
+**Titulo**
+Definir harness operacional para uso de agentes
+
+**Descricao**
+Como engenharia, queremos um harness operacional para limitar entradas, saidas e validacoes dos agentes antes de qualquer execucao assistida.
+
+**Requisitos**
+
+- definir context pack minimo
+- definir limites de permissao por papel
+- definir gates obrigatorios de validacao
+- definir formato esperado de saida
+
+**Criterios de aceite**
+
+- existe um documento com regras operacionais do harness
+- o documento deixa claro o que os agentes podem e nao podem fazer
+- existe uma trilha minima de validacao e evidencia
+
+### Historia 9.3
+
+**Titulo**
+Definir papeis e limites dos agentes do projeto
+
+**Descricao**
+Como time, queremos agentes com papeis complementares e limites claros para evitar autonomia excessiva e ambiguidade de responsabilidade.
+
+**Requisitos**
+
+- definir `Spec Agent`
+- definir `Architect Agent`
+- definir `Implementer Agent`
+- definir `Verifier Agent`
+- definir `Release and Board Agent`
+
+**Criterios de aceite**
+
+- cada agente tem entrada, saida e limite documentado
+- o fluxo entre agentes esta descrito
+- o modelo evita sobreposicao desnecessaria de responsabilidade
+
+### Historia 9.4
+
+**Titulo**
+Conectar spec, harness e board ao fluxo de entrega
+
+**Descricao**
+Como operacao, queremos que a spec, o harness e o board trabalhem juntos para que cada entrega tenha rastreabilidade de ponta a ponta.
+
+**Requisitos**
+
+- conectar specs com issues
+- conectar validacoes com PRs
+- conectar evidencias com cards
+- explicitar quando um item pode ir para review ou done
+
+**Criterios de aceite**
+
+- existe uma forma documentada de transformar spec em issue
+- existe uma forma documentada de registrar validacao e evidencia
+- o board reflete o estado real do fluxo
+
+### Historia 9.5
+
+**Titulo**
+Pilotar fluxo spec -> harness em item de baixo risco
+
+**Descricao**
+Como time, queremos validar o fluxo de especificacao, validacao e board em um item pequeno antes de expandir o uso de agentes no projeto.
+
+**Requisitos**
+
+- escolher um item de baixo risco
+- escrever a spec antes da implementacao
+- executar validacao com evidencia
+- registrar o resultado no board
+
+**Criterios de aceite**
+
+- existe um piloto concluido sem impacto em producao
+- a spec ficou clara o suficiente para guiar a execucao
+- o board refletiu o estado real do trabalho
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia
@@ -581,6 +692,9 @@ Esta capacidade eh critica para a comercializacao futura porque precisa existir 
 **Titulo**
 Mapear personas e escopos do painel de controle
 
+**Versao pronta para issue**
+Como produto, queremos definir com clareza quais pessoas usam o painel, quais perfis existem e quais limites cada perfil precisa respeitar para evitar ambiguidade futura.
+
 **Descricao**
 Como produto, queremos definir com clareza quais pessoas usam o painel e quais permissões cada perfil precisa ter para evitar ambiguidade futura.
 
@@ -589,11 +703,24 @@ Como produto, queremos definir com clareza quais pessoas usam o painel e quais p
 - identificar perfis principais do painel
 - separar visao do cliente e visao do dono do produto
 - listar permissoes de leitura e acao por perfil
+- consolidar a decisao em uma spec documentada
 
 **Criterios de aceite**
 
 - existe um mapa funcional de perfis e responsabilidades
 - o escopo do painel nao mistura operacao do cliente com administracao do produto
+- existe uma spec documentada que pode ser usada como base da execucao
+
+**Plano de validacao**
+
+- revisar os perfis propostos e confirmar que nao ha sobreposicao indevida
+- validar se o mapa de responsabilidades separa uso operacional de administracao do produto
+
+**Evidencias esperadas**
+
+- tabela simples de perfis, responsabilidades e acessos
+- decisao clara sobre o que pertence ao cliente e o que pertence ao dono do produto
+- link da spec usada como base
 
 ### Historia 7.2
 
