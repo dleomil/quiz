@@ -40,12 +40,23 @@ Use este checklist antes de:
 - qual validacao precisa ser executada
 - quais evidencias precisam ser registradas
 - qual criterio define sucesso ou bloqueio
+- se a mudanca introduz testes novos, qual e o contrato de lint desses arquivos
+- se a acao usa GitHub CLI, qual e a sintaxe exata do subcomando e do tipo de corpo esperado
+- se o item do Project tem mais de um campo de progresso, quais campos precisam ficar alinhados
+- se a branch exige aprovacao adicional, qual e a regra real de merge
 
 ### 5. Reversao e seguranca
 
 - como a mudanca sera revertida se necessario
 - como a protecao original sera restaurada
 - se ha impacto em producao ou board
+
+### 6. Checklist de escrita
+
+- o arquivo novo passa em lint antes do PR
+- o comentario ou body usa Markdown real, nao escapes de nova linha
+- o comando do GitHub CLI foi conferido antes de executar
+- o board reflete o estado real em todos os campos relevantes
 
 ## Regra operacional
 

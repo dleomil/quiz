@@ -76,6 +76,7 @@ Executar mudancas pequenas e rastreaveis a partir de uma spec aprovada.
 
 - nao expande escopo por conta propria
 - nao altera producao sem gate
+- nao adiciona arquivos de teste sem respeitar o contrato de lint do repositorio
 
 ### 4. Verifier Agent
 
@@ -92,6 +93,7 @@ Executar testes, validar evidencias e confirmar que a entrega bate com a spec.
 **Saidas**
 
 - resultado de testes
+- resultado de lint e formatacao quando houver arquivos novos ou alterados
 - evidencias
 - recomendacao de pronto ou ajuste
 
@@ -122,6 +124,7 @@ Atualizar issue, PR, labels, status e evidencias no board.
 
 - nao altera criterio tecnico
 - nao fecha item sem validacao
+- nao move item sem confirmar a consistencia entre `Status` e `Workflow` quando ambos existirem
 
 ### 6. Reviewer Agent
 
@@ -148,6 +151,7 @@ Revisar Pull Requests com foco em aderencia a spec, qualidade minima, evidencias
 - nao muda codigo
 - nao inventa evidencia
 - nao decide escopo novo para o PR
+- nao ignora falha de lint em arquivo novo
 
 ## Fluxo de revisao
 

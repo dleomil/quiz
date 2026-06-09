@@ -42,6 +42,7 @@ docs/
 │   ├── harness-vs-github-boundaries.md
 │   ├── agent-operational-guardrails.md
 │   ├── agent-preflight-checklist.md
+│   ├── execution-lessons-learned.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
 │   └── phased-evolution-roadmap.md
