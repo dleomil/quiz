@@ -66,6 +66,7 @@ Checklist minimo antes de qualquer acao de escrita:
 - confirmar o item do Project e seus campos
 - confirmar o endpoint ou comando correto para a acao
 - confirmar como a protecao original sera restaurada
+- consultar o checklist dedicado em `agent-preflight-checklist.md`
 
 ## Niveis de permissao sugeridos
 
@@ -97,3 +98,4 @@ Checklist minimo antes de qualquer acao de escrita:
 - `GitHub Actions` executa os gates
 - `GitHub Project` organiza o fluxo
 - `docs/harness/agent-operational-guardrails.md` consolida os erros operacionais encontrados e os guardrails de prevencao
+- `docs/harness/agent-preflight-checklist.md` padroniza o preflight obrigatorio antes de qualquer acao dos agentes

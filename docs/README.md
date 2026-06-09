@@ -23,6 +23,7 @@ docs/
 ├── harness/
 │   ├── harness-engineering.md
 │   ├── agent-operational-guardrails.md
+│   ├── agent-preflight-checklist.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
 │   └── phased-evolution-roadmap.md

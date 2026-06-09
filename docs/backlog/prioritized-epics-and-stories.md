@@ -223,6 +223,38 @@ Como operacao, queremos um template reutilizavel para o comentario do Reviewer A
 - referencia de uso no workflow do Reviewer Agent
 - comentario real em PR seguindo o template
 
+### Historia 9.9
+
+**Titulo**
+Padronizar checklist de preflight dos agentes
+
+**Descricao**
+Como operacao, queremos um checklist de preflight unico para os agentes do projeto para que nenhuma acao de escrita, revisao ou publicacao comece sem confirmar contexto, permissao e destino corretos.
+
+**Requisitos**
+
+- definir checklist minimo antes de acao de escrita
+- incluir fonte da verdade, taxonomia, branch, validacao e reversao
+- tornar o checklist referencia obrigatoria para os agentes principais
+
+**Criterios de aceite**
+
+- existe um checklist unico e reutilizavel de preflight
+- os agentes consultam o checklist antes de agir
+- o checklist reduz erros operacionais repetidos
+
+**Plano de validacao**
+
+- revisar se o checklist cobre branch, labels, Project e restauracao de protecao
+- validar se os agentes documentados apontam para o checklist
+- aplicar o checklist em uma tarefa real pequena
+
+**Evidencias esperadas**
+
+- documento do checklist de preflight
+- referencia do checklist nos documentos dos agentes
+- uso do checklist em pelo menos um fluxo real pequeno
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia
