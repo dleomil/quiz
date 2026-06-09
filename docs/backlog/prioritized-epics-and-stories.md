@@ -991,16 +991,36 @@ Definir arquitetura funcional do painel de controle
 **Descricao**
 Como produto, queremos desenhar a estrutura de telas, secoes e fluxos do painel antes de qualquer implementacao para minimizar retrabalho.
 
+**Versao pronta para issue**
+Como produto, queremos desenhar a estrutura funcional do painel em secoes, fluxos e areas de dados antes de qualquer implementacao.
+
 **Requisitos**
 
 - definir secoes principais do painel
 - definir fluxos de navegacao essenciais
 - listar dados visiveis por area do painel
+- organizar o painel em areas que possam virar historias pequenas
+- separar visoes de administracao, acompanhamento e uso operacional
 
 **Criterios de aceite**
 
-- existe um desenho funcional do painel que pode ser executado em historias pequenas
-- nao existe dependencia de implementacao para validar o escopo
+- existe um mapa funcional de secoes do painel
+- existe um fluxo basico de navegacao entre visoes principais
+- existe uma lista de dados visiveis por area do painel
+- o desenho funcional pode ser usado como base para historias pequenas
+
+**Plano de validacao**
+
+- revisar se as secoes cobrem a necessidade do produto
+- validar se os fluxos essenciais ficam claros sem implementar telas
+- conferir se a separacao entre administracao e operacao e coerente com a spec de perfis
+
+**Evidencias esperadas**
+
+- mapa funcional das secoes do painel
+- fluxo basico de navegacao entre visoes principais
+- lista de dados visiveis por area do painel
+- link da spec `docs/specs/panel-control-functional-architecture.md`
 
 ## Epic 8: Estrategia de infraestrutura e migracao
 

@@ -47,6 +47,7 @@ docs/
 ├── roadmap/
 │   └── phased-evolution-roadmap.md
 ├── specs/
+│   ├── panel-control-functional-architecture.md
 │   ├── pilot-low-risk-workflow.md
 │   ├── spec-driven-development.md
 │   └── vercel-limits-and-retention.md
