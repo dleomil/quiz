@@ -191,6 +191,38 @@ Como operacao, queremos uma matriz simples para padronizar quando o Reviewer Age
 - modelo de comentario do Reviewer Agent
 - referencia do fluxo operacional do revisor
 
+### Historia 9.8
+
+**Titulo**
+Padronizar template de comentario do Reviewer Agent
+
+**Descricao**
+Como operacao, queremos um template reutilizavel para o comentario do Reviewer Agent para que o parecer seja curto, consistente e facil de registrar no PR e no board.
+
+**Requisitos**
+
+- definir formato curto e consistente do comentario
+- manter conclusao, risco, pendencias, evidencias e proxima acao
+- evitar duplicacao entre workflow e exemplo
+
+**Criterios de aceite**
+
+- existe um template unico e reutilizavel para parecer
+- o formato facilita leitura e registro no PR
+- o template permanece alinhado ao workflow do Reviewer Agent
+
+**Plano de validacao**
+
+- revisar consistencia entre template, workflow e decision matrix
+- aplicar o template em pelo menos um PR real pequeno
+- confirmar que o formato permanece curto e objetivo
+
+**Evidencias esperadas**
+
+- documento de template do comentario
+- referencia de uso no workflow do Reviewer Agent
+- comentario real em PR seguindo o template
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia
