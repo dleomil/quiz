@@ -35,6 +35,7 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - [../harness/agent-preflight-checklist.md](../harness/agent-preflight-checklist.md)
 - [../harness/agent-operational-guardrails.md](../harness/agent-operational-guardrails.md)
 - [../harness/comment-formatting-policy.md](../harness/comment-formatting-policy.md)
+- [../harness/harness-vs-github-boundaries.md](../harness/harness-vs-github-boundaries.md)
 - [reviewer-agent.md](reviewer-agent.md)
 - [reviewer-agent-workflow.md](reviewer-agent-workflow.md)
 - [reviewer-agent-comment-template.md](reviewer-agent-comment-template.md)

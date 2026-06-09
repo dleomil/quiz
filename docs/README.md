@@ -25,6 +25,7 @@ docs/
 │   └── vercel-limits-assessment.md
 ├── harness/
 │   ├── harness-engineering.md
+│   ├── harness-vs-github-boundaries.md
 │   ├── agent-operational-guardrails.md
 │   ├── agent-preflight-checklist.md
 │   └── pilot-execution-checklist.md
