@@ -48,6 +48,11 @@ Criar uma superficie inicial do painel sem alterar o quiz existente.
 - painel navegavel com estrutura base
 - separacao clara do app atual
 
+**Historias executaveis no backlog**
+
+- `#102` / `7.3` Criar a base isolada do painel de controle
+- `#103` / `7.4` Definir a navegacao e os estados iniciais da P1 do painel
+
 ### Fase P2: Identidade e acesso
 
 **Objetivo**
