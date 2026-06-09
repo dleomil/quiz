@@ -352,6 +352,39 @@ Como operacao, queremos transformar os erros reais observados na ultima execucao
 - referencias atualizadas nos docs dos agentes e do harness
 - comprovacao de que os bloqueios aprendidos viraram regra
 
+### Historia 9.12
+
+**Titulo**
+Consolidar aprendizados operacionais da ultima execucao
+
+**Descricao**
+Como operacao, queremos transformar os erros reais observados na ultima execucao em guardrails permanentes para que o fluxo dos agentes fique mais robusto e previsivel.
+
+**Requisitos**
+
+- reforcar o contrato de lint para arquivos novos de teste
+- reforcar a verificacao da sintaxe dos comandos do GitHub CLI
+- reforcar a coerencia entre `Status` e `Workflow` no Project
+- reforcar a leitura da governanca de merge antes de tentar publicar
+
+**Criterios de aceite**
+
+- os erros concretos viram regras documentadas no harness
+- o modelo operacional dos agentes referencia essas regras
+- o fluxo futuro fica menos sujeito a repeticao dos mesmos bloqueios
+
+**Plano de validacao**
+
+- revisar se os novos guardrails cobrem os erros observados
+- confirmar se o modelo dos agentes aponta para as regras novas
+- aplicar as regras em um fluxo pequeno futuro para confirmar utilidade
+
+**Evidencias esperadas**
+
+- documento de lições operacionais publicado no harness
+- referencias atualizadas nos docs dos agentes e do harness
+- comprovacao de que os bloqueios aprendidos viraram regra
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia

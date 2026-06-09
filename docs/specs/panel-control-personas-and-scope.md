@@ -15,6 +15,15 @@ O painel precisa nascer sem ambiguidade entre operacao do cliente, acompanhament
 - listar permissoes de leitura e acao por perfil
 - registrar quais dados cada perfil pode visualizar ou alterar
 
+## Mapa preliminar de perfis
+
+| Perfil          | Objetivo principal                      | Pode ver                                                  | Pode alterar                                             |
+| --------------- | --------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------- |
+| Cliente         | Gerir a propria operacao contratada     | dados da propria conta, uso e resultados consolidados     | configuracoes permitidas pelo contrato                   |
+| Professor       | Acompanhar desempenho e orientar estudo | progresso, desempenho e historico educacional relacionado | comentarios ou ajustes permitidos no fluxo educacional   |
+| Responsavel     | Acompanhar evolucao do aluno            | progresso, frequencia e relatorios simplificados          | preferencialmente sem alteracoes operacionais no produto |
+| Dono do produto | Operar o produto e suportar clientes    | tudo que impacta operacao, uso, conteudo e administracao  | configuracoes, conteudo, operacao e suporte interno      |
+
 ## Nao objetivos
 
 - nao desenhar a implementacao das telas ainda
@@ -27,6 +36,8 @@ O painel precisa nascer sem ambiguidade entre operacao do cliente, acompanhament
 - o cliente nao deve ver dados que pertencem a administracao interna do produto
 - o dono do produto precisa enxergar operacao, uso e administracao sem misturar dominios
 - cada perfil precisa ter limite explicito de leitura e acao
+- o mapa de perfis deve caber em uma tabela simples e reutilizavel
+- a separacao entre cliente e dono do produto deve ser inequívoca
 
 ## Criterios de aceite
 
