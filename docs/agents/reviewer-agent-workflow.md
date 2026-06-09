@@ -78,6 +78,18 @@ Quando o PR for aprovado ou ajustado, o card correspondente deve refletir o esta
 - `Ready` se o trabalho estiver apenas aguardando revisao humana final
 - `Done` quando o merge estiver concluido e as evidencias registradas
 
+## Exemplo de parecer
+
+O parecer deve ser curto, objetivo e sem detalhes desnecessarios. Exemplo:
+
+```text
+Conclusao: Aprovado para merge.
+Risco: Baixo, escopo documental e sem impacto em producao.
+Pendencias: Nenhuma.
+Evidencias verificadas: diff pequeno, validacao local, alinhamento com a spec.
+Proxima acao: Aguardar aprovacao humana final e merge.
+```
+
 ## Limite operacional
 
 O Reviewer Agent nao substitui a revisao humana exigida pela governanca do repositorio. Ele reduz ambiguidade e acelera a triagem, mas nao toma a decisao final sozinho.
