@@ -22,6 +22,7 @@ docs/
 │   └── vercel-limits-assessment.md
 ├── harness/
 │   ├── harness-engineering.md
+│   ├── agent-operational-guardrails.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
 │   └── phased-evolution-roadmap.md
