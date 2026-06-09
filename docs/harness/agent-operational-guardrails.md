@@ -11,6 +11,10 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 - parametros incompletos ao atualizar o Project
 - uso de endpoint errado para ajustes temporarios de branch protection
 - ausencia de preflight antes de criar ou mover itens
+- novo arquivo de teste sem declaracao de globals exigida pelo lint do repositorio
+- uso de flags incorretas em comandos do GitHub CLI
+- divergencia entre os campos `Status` e `Workflow` do Project
+- merge bloqueado por regra de aprovacao sem segundo revisor disponivel
 
 ## Guardrails
 
@@ -47,6 +51,24 @@ Antes de qualquer acao de escrita, o agente deve confirmar:
 - qual issue ou PR e a fonte da verdade
 - qual item do Project sera atualizado
 - qual validacao precisa ser executada
+
+### 6. Validar o contrato de lint de arquivos novos
+
+- todo novo teste que use globals do browser ou do app deve declarar esses nomes explicitamente ou seguir a configuracao de lint do projeto
+- o agente deve rodar lint local antes de abrir PR quando adicionar ou alterar testes
+- falha de lint em arquivo novo nunca deve ser tratada como detalhe menor
+
+### 7. Validar sintaxe exata das ferramentas
+
+- confirmar a sintaxe do subcomando antes de escrever comentario, issue, PR ou acao de board
+- usar `--help` ou a documentacao oficial do comando quando houver duvida
+- preferir arquivos Markdown reais para corpos longos e evitar strings com escapes que quebram a formatacao
+
+### 8. Validar paridade do board e da governanca de merge
+
+- quando o Project usar mais de um campo de estado, atualizar todos os campos relevantes de forma coerente
+- antes do merge, revisar a regra real de aprovacao e last push approval da branch alvo
+- se for necessario ajuste temporario de branch protection, reduzir apenas o minimo necessario e restaurar imediatamente apos o merge
 
 ## Regra de operacao
 
