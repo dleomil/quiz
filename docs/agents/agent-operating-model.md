@@ -168,6 +168,7 @@ O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-w
 - cada agente existe para reduzir ambiguidade de um trecho especifico do fluxo
 - o harness define quais agentes podem agir em cada fase
 - cada agente deve executar o preflight definido em `docs/harness/agent-preflight-checklist.md` antes de agir
+- a aplicacao por papel esta detalhada em `docs/agents/agent-preflight-application.md`
 
 ## Resultado esperado
 
