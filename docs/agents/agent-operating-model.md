@@ -162,6 +162,10 @@ O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-w
 5. `Release and Board Agent` publica o resultado no board.
 6. `Reviewer Agent` emite parecer de conformidade para PRs antes do merge.
 
+## Ordem de execucao
+
+A ordem detalhada de quando cada agente deve ser usado esta descrita em `docs/agents/agent-execution-order.md`.
+
 ## Regra de governanca
 
 - uma tarefa relevante nao deve passar por todos os agentes ao mesmo tempo

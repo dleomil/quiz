@@ -9,6 +9,7 @@ docs/
 ├── README.md
 ├── agents/
 │   ├── agent-operating-model.md
+│   ├── agent-execution-order.md
 │   ├── agent-preflight-application.md
 │   ├── reviewer-agent-comment-template.md
 │   ├── reviewer-agent-decision-matrix.md
