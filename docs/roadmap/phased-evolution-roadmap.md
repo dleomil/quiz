@@ -24,6 +24,7 @@ Definir um modo de trabalho em que toda entrega relevante nasce de uma spec, pas
 - limites de permissao por papel
 - checklist padronizado de preflight dos agentes
 - ordem de execucao dos agentes
+- manual operacional consolidado dos agentes
 - template padronizado de comentario do Reviewer Agent
 - gates obrigatorios no fluxo de trabalho
 - evidencia padronizada por entrega

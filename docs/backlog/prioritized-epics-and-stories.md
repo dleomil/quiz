@@ -287,6 +287,38 @@ Como operacao, queremos uma ordem de execucao explicita para os agentes do proje
 - referencia no modelo operacional
 - aplicacao em um fluxo real pequeno
 
+### Historia 9.11
+
+**Titulo**
+Consolidar manual operacional dos agentes
+
+**Descricao**
+Como operacao, queremos um manual unico de entrada para os agentes do projeto para que onboarding e consulta rapida fiquem simples sem substituir os documentos detalhados existentes.
+
+**Requisitos**
+
+- consolidar os pontos principais em um unico manual
+- apontar para os documentos detalhados como fonte de verdade
+- simplificar a navegacao entre spec, harness, preflight e revisao
+
+**Criterios de aceite**
+
+- existe um manual consolidado de entrada
+- o manual nao substitui os documentos detalhados
+- a leitura inicial do fluxo dos agentes fica mais simples
+
+**Plano de validacao**
+
+- revisar se o manual referencia todos os documentos relevantes
+- confirmar se a consolidacao nao remove detalhes importantes
+- aplicar o manual como ponto de entrada em um fluxo real pequeno
+
+**Evidencias esperadas**
+
+- documento consolidado do manual operacional
+- referencia para os documentos detalhados
+- uso do manual em um fluxo real pequeno
+
 Essa ordem prioriza definicao de infraestrutura e reduz chance de retrabalho antes de detalhar o painel.
 
 ## Epic 1: Fundacao de engenharia

@@ -173,6 +173,7 @@ A ordem detalhada de quando cada agente deve ser usado esta descrita em `docs/ag
 - o harness define quais agentes podem agir em cada fase
 - cada agente deve executar o preflight definido em `docs/harness/agent-preflight-checklist.md` antes de agir
 - a aplicacao por papel esta detalhada em `docs/agents/agent-preflight-application.md`
+- a entrada consolidada fica em `docs/agents/agent-operating-manual.md`
 
 ## Resultado esperado
 
