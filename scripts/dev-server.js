@@ -34,20 +34,6 @@ function resolveFile(requestPath) {
   return filePath;
 }
 
-function resolveDirectoryIndex(filePath) {
-  const indexPath = path.join(filePath, 'index.html');
-  const relativeIndexPath = path.relative(rootDir, indexPath);
-
-  if (
-    relativeIndexPath.startsWith('..') ||
-    path.isAbsolute(relativeIndexPath)
-  ) {
-    return null;
-  }
-
-  return indexPath;
-}
-
 const server = http.createServer((req, res) => {
   const filePath = resolveFile(req.url.split('?')[0]);
 
@@ -58,34 +44,27 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  fs.stat(filePath, (statErr, stats) => {
-    if (statErr) {
-      if (statErr.code === 'ENOENT') {
-        send(res, 404, 'Not found', {
-          'Content-Type': 'text/plain; charset=utf-8',
-        });
-        return;
-      }
-
-      send(res, 500, 'Internal server error', {
-        'Content-Type': 'text/plain; charset=utf-8',
-      });
-      return;
-    }
-
-    const readTarget = stats.isDirectory()
-      ? resolveDirectoryIndex(filePath)
-      : filePath;
-
-    if (!readTarget) {
-      send(res, 404, 'Not found', {
-        'Content-Type': 'text/plain; charset=utf-8',
-      });
-      return;
-    }
-
-    fs.readFile(readTarget, (readErr, data) => {
+  const readTarget = (targetPath) => {
+    fs.readFile(targetPath, (readErr, data) => {
       if (readErr) {
+        if (readErr.code === 'EISDIR') {
+          const indexPath = path.join(targetPath, 'index.html');
+          const relativeIndexPath = path.relative(rootDir, indexPath);
+
+          if (
+            relativeIndexPath.startsWith('..') ||
+            path.isAbsolute(relativeIndexPath)
+          ) {
+            send(res, 404, 'Not found', {
+              'Content-Type': 'text/plain; charset=utf-8',
+            });
+            return;
+          }
+
+          readTarget(indexPath);
+          return;
+        }
+
         if (readErr.code === 'ENOENT') {
           send(res, 404, 'Not found', {
             'Content-Type': 'text/plain; charset=utf-8',
@@ -104,7 +83,9 @@ const server = http.createServer((req, res) => {
         'Content-Type': contentTypes[ext] || 'application/octet-stream',
       });
     });
-  });
+  };
+
+  readTarget(filePath);
 });
 
 server.listen(port, host, () => {
