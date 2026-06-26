@@ -34,6 +34,20 @@ function resolveFile(requestPath) {
   return filePath;
 }
 
+function resolveDirectoryIndex(filePath) {
+  const indexPath = path.join(filePath, 'index.html');
+  const relativeIndexPath = path.relative(rootDir, indexPath);
+
+  if (
+    relativeIndexPath.startsWith('..') ||
+    path.isAbsolute(relativeIndexPath)
+  ) {
+    return null;
+  }
+
+  return indexPath;
+}
+
 const server = http.createServer((req, res) => {
   const filePath = resolveFile(req.url.split('?')[0]);
 
@@ -44,9 +58,9 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  fs.readFile(filePath, (readErr, data) => {
-    if (readErr) {
-      if (readErr.code === 'ENOENT') {
+  fs.stat(filePath, (statErr, stats) => {
+    if (statErr) {
+      if (statErr.code === 'ENOENT') {
         send(res, 404, 'Not found', {
           'Content-Type': 'text/plain; charset=utf-8',
         });
@@ -59,9 +73,36 @@ const server = http.createServer((req, res) => {
       return;
     }
 
-    const ext = path.extname(filePath).toLowerCase();
-    send(res, 200, data, {
-      'Content-Type': contentTypes[ext] || 'application/octet-stream',
+    const readTarget = stats.isDirectory()
+      ? resolveDirectoryIndex(filePath)
+      : filePath;
+
+    if (!readTarget) {
+      send(res, 404, 'Not found', {
+        'Content-Type': 'text/plain; charset=utf-8',
+      });
+      return;
+    }
+
+    fs.readFile(readTarget, (readErr, data) => {
+      if (readErr) {
+        if (readErr.code === 'ENOENT') {
+          send(res, 404, 'Not found', {
+            'Content-Type': 'text/plain; charset=utf-8',
+          });
+          return;
+        }
+
+        send(res, 500, 'Internal server error', {
+          'Content-Type': 'text/plain; charset=utf-8',
+        });
+        return;
+      }
+
+      const ext = path.extname(readTarget).toLowerCase();
+      send(res, 200, data, {
+        'Content-Type': contentTypes[ext] || 'application/octet-stream',
+      });
     });
   });
 });
