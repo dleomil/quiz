@@ -12,9 +12,10 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "npm run test:ui:dark-mode && npm run test:ui:critical-rules",
+    "test": "npm run test:ui:dark-mode && npm run test:ui:critical-rules && npm run test:ui:panel-base",
     "test:ui:dark-mode": "node tests/ui/dark-mode.spec.cjs",
-    "test:ui:critical-rules": "node tests/ui/critical-rules.spec.cjs"
+    "test:ui:critical-rules": "node tests/ui/critical-rules.spec.cjs",
+    "test:ui:panel-base": "node tests/ui/panel-base.spec.cjs"
   },
   "repository": {
     "type": "git",
