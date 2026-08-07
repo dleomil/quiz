@@ -25,6 +25,21 @@ O lote nao pode seguir para implementacao se qualquer ponto abaixo falhar:
 - identificador da questao e versao nao estao definidos
 - nao existe aprovacao humana pedagogica registrada para o lote
 
+## Gate de cobertura curricular
+
+Antes de publicar um novo `contentSetId`, o Verifier Agent deve confirmar a
+spec de cobertura curricular e bloquear a publicacao quando qualquer regra
+abaixo falhar:
+
+- algum tema de `Objetos de Conhecimento` nao esta declarado na spec;
+- um tema declarado possui menos ou mais de 20 questoes aprovadas;
+- uma questao nao pertence a um tema declarado para o acervo;
+- o total por materia foi usado como substituto da cobertura por tema.
+
+Este gate vale para todos os anos e trimestres futuros. A validacao automatica
+deve evoluir para ler um manifesto de cobertura versionado; ate isso existir, a
+evidencia de contagem por tema e obrigatoria no PR.
+
 ## Revisao editorial e pedagogica
 
 Cada questao deve ser verificada para:
