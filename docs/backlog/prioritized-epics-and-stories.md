@@ -569,6 +569,8 @@ Como operacao editorial, queremos um contrato de conteudo para impedir inconsist
 
 - conteudo invalido e rejeitado automaticamente
 - o contrato e versionado e documentado
+- o contrato preserva acervo e historico legados sem inferir trimestre
+- a especificacao `docs/specs/content-schema-v1.md` define campos, compatibilidade e fixtures de referencia
 
 ### Historia 3.2
 
