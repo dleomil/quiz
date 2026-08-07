@@ -13,6 +13,17 @@ const ContentCatalog = (function () {
       displayName: 'Acervo anterior',
       isCurrent: false,
     },
+    {
+      schemaVersion: 'content-v1',
+      contentSetId: '2026-t2-v1',
+      academicYear: 2026,
+      term: 't2',
+      version: 1,
+      status: 'draft',
+      grade: '3-ano',
+      displayName: '2o trimestre de 2026',
+      isCurrent: true,
+    },
   ];
 
   function getPublished() {
