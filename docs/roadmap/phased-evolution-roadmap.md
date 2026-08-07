@@ -98,12 +98,15 @@ Transformar o banco de questoes em ativo operavel com validacao e rastreabilidad
 - validacao automatica de questoes
 - padrao editorial
 - metadados pedagogicos e de revisao
+- agentes de curadoria e qualidade pedagogica com aprovacao humana obrigatoria
+- protecao do material-fonte e rastreabilidade por lote curricular
 
 ### Riscos mitigados
 
 - inconsistencias no conteudo
 - erro humano em expansao curricular
 - baixa auditabilidade
+- publicacao acidental de fonte escolar ou de questao sem revisao pedagogica
 
 ## Fase 4: Persistencia e dados de produto
 
