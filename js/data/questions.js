@@ -75,6 +75,15 @@ const QuestionsDB = (function () {
     return a;
   }
 
+  function countQuestions(subject, topic, contentSetId) {
+    return questions.filter(
+      (question) =>
+        (!subject || question.subject === subject) &&
+        (!topic || question.topic === topic) &&
+        (!contentSetId || question.contentSetId === contentSetId),
+    ).length;
+  }
+
   return {
     getAll: () => questions,
     getByTopic: (topic, contentSetId) =>
@@ -84,17 +93,24 @@ const QuestionsDB = (function () {
           (!contentSetId || question.contentSetId === contentSetId),
       ),
     getTopics: () => Object.keys(TOPIC_META),
-    getTopicInfo: (topic) => ({
+    getTopicInfo: (topic, contentSetId) => ({
       ...TOPIC_META[topic],
-      count: topicCounts[topic] || 0,
+      count: contentSetId
+        ? countQuestions(null, topic, contentSetId)
+        : topicCounts[topic] || 0,
     }),
     getSubjects: () => Object.keys(SUBJECT_META),
-    getSubjectInfo: (subject) => ({
+    getSubjectInfo: (subject, contentSetId) => ({
       ...SUBJECT_META[subject],
-      count: subjectCounts[subject] || 0,
+      count: contentSetId
+        ? countQuestions(subject, null, contentSetId)
+        : subjectCounts[subject] || 0,
     }),
-    getTopicsBySubject: (subject) =>
-      topicsBySubject[subject] ? [...topicsBySubject[subject]] : [],
+    getTopicsBySubject: (subject, contentSetId) =>
+      (topicsBySubject[subject] || []).filter(
+        (topic) =>
+          !contentSetId || countQuestions(subject, topic, contentSetId),
+      ),
     getContentSets: () => ContentCatalog.getPublished(),
     getContentSet: (contentSetId) => ContentCatalog.getById(contentSetId),
     getDefaultContentSet: () => ContentCatalog.getDefault(),
