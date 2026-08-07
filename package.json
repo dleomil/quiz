@@ -12,9 +12,10 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "npm run validate:content && npm run test:content && npm run test:ui:dark-mode && npm run test:ui:critical-rules && npm run test:ui:panel-base",
+    "test": "npm run validate:content && npm run test:content && npm run test:ui:content-session && npm run test:ui:dark-mode && npm run test:ui:critical-rules && npm run test:ui:panel-base",
     "validate:content": "node scripts/validate-content.cjs",
     "test:content": "node tests/content/content-validator.spec.cjs",
+    "test:ui:content-session": "node tests/ui/content-session.spec.cjs",
     "test:ui:dark-mode": "node tests/ui/dark-mode.spec.cjs",
     "test:ui:critical-rules": "node tests/ui/critical-rules.spec.cjs",
     "test:ui:panel-base": "node tests/ui/panel-base.spec.cjs"

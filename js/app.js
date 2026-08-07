@@ -58,7 +58,13 @@ const App = (function () {
   }
 
   function startQuiz(topic, subject) {
-    var qs = QuestionsDB.getRandom(SESSIONS_PER_QUIZ, topic, subject);
+    var contentSetId = Store.get().selectedContentSet;
+    var qs = QuestionsDB.getRandom(
+      SESSIONS_PER_QUIZ,
+      topic,
+      subject,
+      contentSetId,
+    );
     if (qs.length === 0) {
       showToast('Nenhuma pergunta encontrada para este tema.', 'warning');
       return;
@@ -87,7 +93,28 @@ const App = (function () {
     var total = s.questions.length;
     var pct = Math.round((correct / total) * 100);
     var now = new Date();
+    var startedAt = new Date(s.sessionStart).toISOString();
+    var finishedAt = now.toISOString();
+    var contentSet = QuestionsDB.getContentSet(s.selectedContentSet);
     Store.addSession({
+      schemaVersion: 'session-v2',
+      sessionId: createSessionId(),
+      startedAt: startedAt,
+      finishedAt: finishedAt,
+      contentSetId: s.selectedContentSet,
+      contentVersion: contentSet ? contentSet.version : 0,
+      questionIds: s.questions.map(function (question) {
+        return question.id;
+      }),
+      answers: s.answers.map(function (answer) {
+        return {
+          questionId: answer.id,
+          selectedIndex: answer.selected,
+          isCorrect: answer.isCorrect,
+          isTimeout: answer.isTimeout,
+        };
+      }),
+      score: { correct: correct, total: total, pct: pct },
       date:
         now.toLocaleDateString('pt-BR', {
           day: '2-digit',
@@ -108,6 +135,28 @@ const App = (function () {
       }).length,
     });
     navigate('results', { force: true });
+  }
+
+  function createSessionId() {
+    if (typeof crypto.randomUUID === 'function') return crypto.randomUUID();
+
+    var bytes = crypto.getRandomValues(new Uint8Array(16));
+    bytes[6] = (bytes[6] & 0x0f) | 0x40;
+    bytes[8] = (bytes[8] & 0x3f) | 0x80;
+    var hex = Array.from(bytes, function (byte) {
+      return byte.toString(16).padStart(2, '0');
+    }).join('');
+    return (
+      hex.slice(0, 8) +
+      '-' +
+      hex.slice(8, 12) +
+      '-' +
+      hex.slice(12, 16) +
+      '-' +
+      hex.slice(16, 20) +
+      '-' +
+      hex.slice(20)
+    );
   }
 
   function restart() {
