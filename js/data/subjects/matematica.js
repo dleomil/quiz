@@ -1,5 +1,31 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+function buildMonetaryCompletionQuestion(question) {
+  const wrongExplanations = {};
+  const { wrong, ...content } = question;
+  wrong.forEach(function (explanation, index) {
+    if (index !== question.correctIndex) wrongExplanations[index] = explanation;
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'sistema_monetario',
+    topicName: 'Sistema Monetário',
+    skill: question.skill,
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '81',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -1792,5 +1818,225 @@ window.QuestionsDataSources.matematica = {
       reviewStatus: 'pedagogical-approved',
       version: 1,
     },
+    ...[
+      {
+        id: 'mat_t2_mon_007',
+        question:
+          'Um brinquedo custa R$ 18,00. Ao pagar com R$ 20,00, qual é o troco?',
+        options: ['R$ 1,00', 'R$ 2,00', 'R$ 18,00', 'R$ 38,00'],
+        correctIndex: 1,
+        explanation: 'R$ 20,00 menos R$ 18,00 é R$ 2,00.',
+        wrong: [
+          'R$ 1,00 não é a diferença.',
+          '',
+          'R$ 18,00 é o preço.',
+          'R$ 38,00 soma preço e pagamento.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_008',
+        question:
+          'Uma criança tem R$ 4,00, R$ 3,00 e R$ 2,00. Quanto ela tem ao todo?',
+        options: ['R$ 5,00', 'R$ 7,00', 'R$ 9,00', 'R$ 12,00'],
+        correctIndex: 2,
+        explanation: 'R$ 4,00 mais R$ 3,00 mais R$ 2,00 forma R$ 9,00.',
+        wrong: [
+          'R$ 5,00 deixa valores de fora.',
+          'R$ 7,00 deixa R$ 2,00 de fora.',
+          '',
+          'R$ 12,00 não é a soma dos três valores.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_009',
+        question:
+          'Um caderno custa R$ 9,00. Se a criança paga com R$ 15,00, qual é o troco?',
+        options: ['R$ 4,00', 'R$ 6,00', 'R$ 9,00', 'R$ 24,00'],
+        correctIndex: 1,
+        explanation: 'R$ 15,00 menos R$ 9,00 deixa R$ 6,00.',
+        wrong: [
+          'R$ 4,00 não é a diferença.',
+          '',
+          'R$ 9,00 é o preço.',
+          'R$ 24,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_010',
+        question:
+          'Uma nota de R$ 5,00 e duas moedas de R$ 1,00 formam qual valor?',
+        options: ['R$ 5,00', 'R$ 6,00', 'R$ 7,00', 'R$ 10,00'],
+        correctIndex: 2,
+        explanation: 'R$ 5,00 mais R$ 1,00 mais R$ 1,00 é R$ 7,00.',
+        wrong: [
+          'R$ 5,00 ignora as moedas.',
+          'R$ 6,00 conta somente uma moeda.',
+          '',
+          'R$ 10,00 é maior que a soma.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_011',
+        question:
+          'Ana tem R$ 12,00 e Bia tem R$ 17,00. Quanto Bia tem a mais que Ana?',
+        options: ['R$ 3,00', 'R$ 5,00', 'R$ 12,00', 'R$ 29,00'],
+        correctIndex: 1,
+        explanation: 'R$ 17,00 menos R$ 12,00 é R$ 5,00.',
+        wrong: [
+          'R$ 3,00 não é a diferença.',
+          '',
+          'R$ 12,00 é a quantia de Ana.',
+          'R$ 29,00 soma as quantias.',
+        ],
+        skill: 'comparar-quantias-em-reais',
+      },
+      {
+        id: 'mat_t2_mon_012',
+        question: 'Quais notas formam exatamente R$ 20,00?',
+        options: [
+          'R$ 10,00 e R$ 10,00',
+          'R$ 10,00 e R$ 5,00',
+          'R$ 5,00 e R$ 5,00',
+          'R$ 20,00 e R$ 5,00',
+        ],
+        correctIndex: 0,
+        explanation: 'Duas notas de R$ 10,00 formam R$ 20,00.',
+        wrong: [
+          '',
+          'R$ 10,00 mais R$ 5,00 forma R$ 15,00.',
+          'Duas notas de R$ 5,00 formam R$ 10,00.',
+          'R$ 20,00 mais R$ 5,00 forma R$ 25,00.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_013',
+        question:
+          'Uma revista custa R$ 14,00. Se a criança paga com R$ 20,00, qual é o troco?',
+        options: ['R$ 4,00', 'R$ 6,00', 'R$ 14,00', 'R$ 34,00'],
+        correctIndex: 1,
+        explanation: 'R$ 20,00 menos R$ 14,00 deixa R$ 6,00.',
+        wrong: [
+          'R$ 4,00 não é a diferença.',
+          '',
+          'R$ 14,00 é o preço.',
+          'R$ 34,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_014',
+        question: 'Qual valor está entre R$ 15,00 e R$ 17,00?',
+        options: ['R$ 14,00', 'R$ 16,00', 'R$ 18,00', 'R$ 20,00'],
+        correctIndex: 1,
+        explanation: 'R$ 16,00 é maior que R$ 15,00 e menor que R$ 17,00.',
+        wrong: [
+          'R$ 14,00 é menor que R$ 15,00.',
+          '',
+          'R$ 18,00 é maior que R$ 17,00.',
+          'R$ 20,00 é maior que R$ 17,00.',
+        ],
+        skill: 'comparar-quantias-em-reais',
+      },
+      {
+        id: 'mat_t2_mon_015',
+        question:
+          'Uma borracha custa R$ 4,00 e um lápis custa R$ 6,00. Qual é o total?',
+        options: ['R$ 2,00', 'R$ 10,00', 'R$ 12,00', 'R$ 24,00'],
+        correctIndex: 1,
+        explanation: 'R$ 4,00 mais R$ 6,00 é R$ 10,00.',
+        wrong: [
+          'R$ 2,00 é a diferença, não o total.',
+          '',
+          'R$ 12,00 não é a soma.',
+          'R$ 24,00 não é a soma.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_016',
+        question:
+          'Uma fruta custa R$ 7,00. Se a criança paga com R$ 10,00, qual é o troco?',
+        options: ['R$ 2,00', 'R$ 3,00', 'R$ 7,00', 'R$ 17,00'],
+        correctIndex: 1,
+        explanation: 'R$ 10,00 menos R$ 7,00 deixa R$ 3,00.',
+        wrong: [
+          'R$ 2,00 não é a diferença.',
+          '',
+          'R$ 7,00 é o preço.',
+          'R$ 17,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_017',
+        question:
+          'Uma criança tem R$ 10,00, R$ 5,00 e R$ 2,00. Quanto ela tem?',
+        options: ['R$ 12,00', 'R$ 15,00', 'R$ 17,00', 'R$ 20,00'],
+        correctIndex: 2,
+        explanation: 'R$ 10,00 mais R$ 5,00 mais R$ 2,00 forma R$ 17,00.',
+        wrong: [
+          'R$ 12,00 deixa valores de fora.',
+          'R$ 15,00 deixa R$ 2,00 de fora.',
+          '',
+          'R$ 20,00 é maior que a soma.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_018',
+        question:
+          'Um livro custa R$ 19,00. Se a criança paga com R$ 20,00, qual é o troco?',
+        options: ['R$ 1,00', 'R$ 2,00', 'R$ 19,00', 'R$ 39,00'],
+        correctIndex: 0,
+        explanation: 'R$ 20,00 menos R$ 19,00 deixa R$ 1,00.',
+        wrong: [
+          '',
+          'R$ 2,00 não é a diferença.',
+          'R$ 19,00 é o preço.',
+          'R$ 39,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_019',
+        question: 'Qual destas quantias é maior?',
+        options: [
+          'R$ 25,00',
+          'R$ 52,00',
+          'Os dois são iguais',
+          'Não é possível saber',
+        ],
+        correctIndex: 1,
+        explanation:
+          '52 é maior que 25, então R$ 52,00 representa o maior valor.',
+        wrong: [
+          'R$ 25,00 é menor que R$ 52,00.',
+          '',
+          'As quantias não são iguais.',
+          'Há informação suficiente para comparar os valores.',
+        ],
+        skill: 'comparar-quantias-em-reais',
+      },
+      {
+        id: 'mat_t2_mon_020',
+        question:
+          'Uma criança recebeu R$ 8,00 e depois R$ 9,00. Quanto ela recebeu ao todo?',
+        options: ['R$ 1,00', 'R$ 16,00', 'R$ 17,00', 'R$ 89,00'],
+        correctIndex: 2,
+        explanation: 'R$ 8,00 mais R$ 9,00 é R$ 17,00.',
+        wrong: [
+          'R$ 1,00 não é a soma.',
+          'R$ 16,00 fica um real a menos.',
+          '',
+          'R$ 89,00 apenas junta os algarismos.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+    ].map(buildMonetaryCompletionQuestion),
   ],
 };
