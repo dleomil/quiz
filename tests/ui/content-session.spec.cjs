@@ -64,14 +64,11 @@ async function run() {
         3,
         'all',
         'portugues',
-        'legacy-unclassified',
+        '2026-t1-v1',
       ).map((question) => question.contentSetId),
     }));
 
-    assert.strictEqual(
-      legacySnapshot.selectedContentSet,
-      'legacy-unclassified',
-    );
+    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
     assert.strictEqual(
       legacySnapshot.history[0].schemaVersion,
       'legacy-session-v1',
@@ -83,7 +80,7 @@ async function run() {
     assert.strictEqual(legacySnapshot.persisted[0].schemaVersion, undefined);
     assert.ok(
       legacySnapshot.questionContentSets.every(
-        (contentSetId) => contentSetId === 'legacy-unclassified',
+        (contentSetId) => contentSetId === '2026-t1-v1',
       ),
     );
 
@@ -92,12 +89,12 @@ async function run() {
         1,
         'all',
         'portugues',
-        'legacy-unclassified',
+        '2026-t1-v1',
       )[0];
       Store.set({
         selectedSubject: question.subject,
         selectedTopic: question.topic,
-        selectedContentSet: 'legacy-unclassified',
+        selectedContentSet: '2026-t1-v1',
         questions: [question],
         answers: [
           {
@@ -115,8 +112,8 @@ async function run() {
     });
 
     assert.strictEqual(newSession.schemaVersion, 'session-v2');
-    assert.strictEqual(newSession.contentSetId, 'legacy-unclassified');
-    assert.strictEqual(newSession.contentVersion, 0);
+    assert.strictEqual(newSession.contentSetId, '2026-t1-v1');
+    assert.strictEqual(newSession.contentVersion, 1);
     assert.strictEqual(newSession.questionIds.length, 1);
     assert.strictEqual(
       newSession.answers[0].questionId,
