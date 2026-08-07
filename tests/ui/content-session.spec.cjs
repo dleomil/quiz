@@ -66,6 +66,18 @@ async function run() {
         'portugues',
         '2026-t1-v1',
       ).map((question) => question.contentSetId),
+      publishedContentSets: QuestionsDB.getContentSets().map(
+        (contentSet) => contentSet.contentSetId,
+      ),
+      hasContentSetSelector: Boolean(
+        document.querySelector('#content-set-select'),
+      ),
+      draftQuestionIds: QuestionsDB.getRandom(
+        10,
+        'sistema_monetario',
+        'matematica',
+        '2026-t2-v1',
+      ).map((question) => question.id),
     }));
 
     assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
@@ -83,6 +95,16 @@ async function run() {
         (contentSetId) => contentSetId === '2026-t1-v1',
       ),
     );
+    assert.deepStrictEqual(legacySnapshot.publishedContentSets, ['2026-t1-v1']);
+    assert.strictEqual(legacySnapshot.hasContentSetSelector, false);
+    assert.deepStrictEqual(legacySnapshot.draftQuestionIds.sort(), [
+      'mat_t2_mon_001',
+      'mat_t2_mon_002',
+      'mat_t2_mon_003',
+      'mat_t2_mon_004',
+      'mat_t2_mon_005',
+      'mat_t2_mon_006',
+    ]);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(
