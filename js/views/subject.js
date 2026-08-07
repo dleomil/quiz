@@ -4,8 +4,14 @@ const SubjectView = (function () {
   function render(el) {
     const s = Store.get();
     const subject = s.selectedSubject;
-    const subjectInfo = QuestionsDB.getSubjectInfo(subject);
-    const topics = QuestionsDB.getTopicsBySubject(subject);
+    const subjectInfo = QuestionsDB.getSubjectInfo(
+      subject,
+      s.selectedContentSet,
+    );
+    const topics = QuestionsDB.getTopicsBySubject(
+      subject,
+      s.selectedContentSet,
+    );
 
     el.innerHTML = `
       <div class="card">
@@ -23,7 +29,7 @@ const SubjectView = (function () {
           </div>
           ${topics
             .map((t) => {
-              const m = QuestionsDB.getTopicInfo(t);
+              const m = QuestionsDB.getTopicInfo(t, s.selectedContentSet);
               return `
               <div class="topic-card" data-topic="${t}">
                 <div class="topic-icon">${m.icon}</div>
