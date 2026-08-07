@@ -20,6 +20,16 @@ informacao pode ser usada somente como referencia minima de rastreabilidade:
 
 O arquivo-fonte local continua em `SchoolContent/` e permanece fora do Git.
 
+## Regra de capacidade
+
+A unidade de planejamento e completude do segundo trimestre e cada tema da
+coluna `Objetos de Conhecimento` do roteiro. Cada tema deve possuir exatamente
+20 questoes originais e aprovadas no acervo `2026-t2-v1`.
+
+O total por disciplina nao e uma meta fixa: ele resulta da quantidade de temas
+do roteiro. Um acervo so pode ser publicado quando todos os temas previstos
+para o trimestre atingirem 20 questoes e passarem pelos gates de qualidade.
+
 ## Cobertura identificada
 
 | Disciplina | Referencia de estudo                  | Escopo para curadoria                                                                                            |
@@ -37,8 +47,8 @@ definido e avaliacao de direitos de uso.
 
 ## Sequencia segura de entrega
 
-1. Selecionar uma disciplina e um objetivo do mapa para um lote de ate dez
-   questoes.
+1. Selecionar uma disciplina e um tema do mapa para lotes que, somados,
+   atinjam 20 questoes.
 2. O Content Curator Agent prepara questoes originais com referencias minimas
    de apostila e pagina.
 3. O Pedagogical Quality Agent valida linguagem, ortografia, ausencia de
@@ -48,9 +58,11 @@ definido e avaliacao de direitos de uso.
 5. O PR do lote executa `npm run validate:content` e `npm test`; o catalogo
    `2026-t2-v1` so pode ser publicado junto de um lote aprovado e testado.
 
-## Criterios de aceite do primeiro lote
+## Criterios de aceite por tema
 
-- no maximo uma disciplina e um objetivo por lote;
+- cada tema do roteiro possui exatamente 20 questoes aprovadas;
+- um lote pode ter no maximo dez questoes, mas nao encerra o tema sozinho se
+  o total ainda for inferior a 20;
 - cada questao usa `content-v1`, `contentSetId: 2026-t2-v1` e `sourceRef`
   limitado a identificador, disciplina e pagina;
 - nenhuma questao depende de trecho transcrito da apostila;

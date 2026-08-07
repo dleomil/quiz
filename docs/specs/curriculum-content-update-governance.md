@@ -26,6 +26,27 @@ A escola forneceu material curricular local para orientar novas provas. O quiz a
 - cada lote deve ter aprovacao humana pedagogica antes da implementacao
 - um validador automatizado futuro deve rejeitar inconsistencias estruturais
 
+## Spec obrigatoria de cobertura curricular
+
+Toda atualizacao de conteudo, para qualquer ano letivo ou trimestre, deve criar
+uma spec de cobertura antes da curadoria. A spec e o contrato de completude do
+acervo e deve registrar:
+
+- ano, trimestre, serie e `contentSetId` pretendido;
+- cada tema da coluna `Objetos de Conhecimento` da fonte autorizada;
+- referencia minima de apostila, pagina ou secao para cada tema;
+- meta de **20 questoes originais por tema**;
+- lotes planejados e quantidade acumulada por tema;
+- criterio de publicacao e plano de rollback.
+
+A meta de 20 e aplicada por tema, nao por materia. O total da disciplina e a
+soma dos seus temas e pode ser maior ou menor que 150.
+
+Um acervo novo so pode mudar para `published` quando todos os temas declarados
+na sua spec tiverem exatamente 20 questoes aprovadas. Lotes parciais podem ser
+mantidos em `draft`, mas nao podem ser apresentados ao aluno como trimestre
+completo.
+
 ## Criterios de aceite
 
 - existem agentes documentados para curadoria e qualidade pedagogica
@@ -33,6 +54,7 @@ A escola forneceu material curricular local para orientar novas provas. O quiz a
 - existe fluxo claro da fonte ate a publicacao
 - o material em `SchoolContent/` esta protegido contra commit acidental
 - a proxima alteracao de conteudo pode nascer de uma spec rastreavel
+- existe uma spec de cobertura para todo novo ano ou trimestre
 
 ## Plano de validacao
 

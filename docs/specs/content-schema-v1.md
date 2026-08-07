@@ -25,6 +25,10 @@ Definir um contrato versionado para questoes, catalogos curriculares e sessoes d
 
 `contentSetId` e imutavel. Se uma questao ou explicacao publicada precisar ser corrigida, deve ser criado um novo acervo, por exemplo, `2026-t2-v2`.
 
+Todo novo acervo deve ter uma spec de cobertura curricular conforme
+`docs/specs/curriculum-content-update-governance.md`. A spec declara os temas
+e exige 20 questoes aprovadas por tema antes de `status: published`.
+
 ## Catalogo curricular
 
 O catalogo declara quais acervos podem ser apresentados ao aluno. O seletor de periodo usa somente catalogos com `status: published`.
