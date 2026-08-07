@@ -57,6 +57,11 @@ const App = (function () {
     navigate('subject');
   }
 
+  function selectContentSet(contentSetId) {
+    Store.set({ selectedContentSet: contentSetId });
+    navigate('home', { force: true });
+  }
+
   function startQuiz(topic, subject) {
     var contentSetId = Store.get().selectedContentSet;
     var qs = QuestionsDB.getRandom(
@@ -221,6 +226,7 @@ const App = (function () {
   return {
     navigate: navigate,
     selectSubject: selectSubject,
+    selectContentSet: selectContentSet,
     startQuiz: startQuiz,
     beginQuiz: beginQuiz,
     finishQuiz: finishQuiz,
