@@ -3,7 +3,7 @@ window.QuestionsDataSources = window.QuestionsDataSources || {};
 function buildMonetaryCompletionQuestion(question) {
   const wrongExplanations = {};
   const { wrong, ...content } = question;
-  question.wrong.forEach(function (explanation, index) {
+  wrong.forEach(function (explanation, index) {
     if (index !== question.correctIndex) wrongExplanations[index] = explanation;
   });
 
