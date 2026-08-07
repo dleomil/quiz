@@ -1,5 +1,9 @@
 # Proposta de Lote: Multiplicacao por Dezenas
 
+> **Substituida.** Esta proposta parcial de seis questoes foi substituida pela
+> [proposta completa de 20 questoes](second-trimester-math-tens-multiplication-completion-draft.md),
+> em conformidade com a regra permanente de cobertura curricular.
+
 ## Estado da proposta
 
 | Campo                | Valor                                               |
