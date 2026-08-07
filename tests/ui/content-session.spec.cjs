@@ -76,6 +76,10 @@ async function run() {
         'sistema_monetario',
         '2026-t2-v1',
       ).map((question) => question.id),
+      multiplicationDraftQuestionIds: QuestionsDB.getByTopic(
+        'multiplicacao_por_dezenas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -102,10 +106,23 @@ async function run() {
     assert.strictEqual(legacySnapshot.draftQuestionIds.length, 20);
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_001'));
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_020'));
+    assert.strictEqual(
+      legacySnapshot.multiplicationDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.multiplicationDraftQuestionIds.includes('mat_t2_md_001'),
+    );
+    assert.ok(
+      legacySnapshot.multiplicationDraftQuestionIds.includes('mat_t2_md_020'),
+    );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
     assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));
-    assert.deepStrictEqual(legacySnapshot.mathT2Topics, ['sistema_monetario']);
-    assert.strictEqual(legacySnapshot.mathT2Count, 20);
+    assert.deepStrictEqual(legacySnapshot.mathT2Topics, [
+      'sistema_monetario',
+      'multiplicacao_por_dezenas',
+    ]);
+    assert.strictEqual(legacySnapshot.mathT2Count, 40);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(
