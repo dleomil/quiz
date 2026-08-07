@@ -42,7 +42,7 @@ dezenas previstas no objeto de conhecimento.
 | `015` | 4 grupos de 50 formam 200.     | 150 sao 3 grupos; 180 nao e multiplo de 50; 500 sao 10 grupos.                       |
 | `016` | 5 grupos de 50 formam 250.     | 200 sao 4 grupos; 300 sao 6 grupos; 500 sao 10 grupos.                               |
 | `017` | 2 grupos de 60 formam 120.     | 100 fica 20 a menos; 140 passa 20; 600 trata 60 como 300.                            |
-| `018` | 3 grupos de 60 formam 180.     | 150 fica 30 a menos; 200 passa 20; 600 sao 10 grupos.                                |
+| `018` | 2 grupos de 70 formam 140.     | 120 fica 20 a menos; 160 passa 20; 700 sao 10 grupos de 70.                          |
 | `019` | 2 grupos de 80 formam 160.     | 140 fica 20 a menos; 180 passa 20; 800 trata 80 como 400.                            |
 | `020` | 3 grupos de 90 formam 270.     | 180 sao 2 grupos de 90; 240 fica 30 a menos; 900 trata 90 como 300.                  |
 

@@ -2292,15 +2292,15 @@ window.QuestionsDataSources.matematica = {
       },
       {
         id: 'mat_t2_md_018',
-        question: 'Quanto é 3 x 60?',
-        options: ['150', '180', '200', '600'],
+        question: 'Quanto é 2 x 70?',
+        options: ['120', '140', '160', '700'],
         correctIndex: 1,
-        explanation: '3 grupos de 60 formam 180.',
+        explanation: '2 grupos de 70 formam 140.',
         wrong: [
-          '150 fica 30 a menos que 3 grupos de 60.',
+          '120 fica 20 a menos que 2 grupos de 70.',
           '',
-          '200 passa 20 de 3 grupos de 60.',
-          '600 são 10 grupos de 60.',
+          '160 passa 20 de 2 grupos de 70.',
+          '700 são 10 grupos de 70.',
         ],
       },
       {
