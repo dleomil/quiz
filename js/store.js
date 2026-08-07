@@ -1,4 +1,5 @@
 /* exported Store */
+/* global ContentCatalog */
 const Store = (function () {
   const KEY = 'quiz_etapa_v1';
   const MAX_HISTORY = 60;
@@ -7,6 +8,7 @@ const Store = (function () {
     screen: 'home',
     selectedSubject: 'portugues',
     selectedTopic: 'all',
+    selectedContentSet: ContentCatalog.getDefault().contentSetId,
     questions: [],
     index: 0,
     answers: [],
@@ -45,6 +47,15 @@ const Store = (function () {
     saveHistory();
   }
 
+  function normalizeHistorySession(session) {
+    if (session && session.schemaVersion === 'session-v2') return session;
+    return Object.assign({}, session, {
+      schemaVersion: 'legacy-session-v1',
+      contentSetId: ContentCatalog.LEGACY_CONTENT_SET_ID,
+      contentVersion: 0,
+    });
+  }
+
   function clearHistory() {
     state.history = [];
     saveHistory();
@@ -54,7 +65,9 @@ const Store = (function () {
 
   return {
     get: function () {
-      return Object.assign({}, state, { history: state.history.slice() });
+      return Object.assign({}, state, {
+        history: state.history.map(normalizeHistorySession),
+      });
     },
     _raw: function () {
       return state;

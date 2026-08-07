@@ -77,6 +77,8 @@ Deve apenas consumir estado e emitir acoes. Nenhuma regra critica de negocio dev
 
 ### Contrato de questao
 
+O contrato operacional, incluindo catalogo trimestral, compatibilidade do acervo legado e sessoes versionadas, esta definido em `docs/specs/content-schema-v1.md`.
+
 Cada questao deve possuir no minimo:
 
 - `id`
@@ -114,6 +116,8 @@ Cada sessao deve possuir no minimo:
 ### Contrato de historico
 
 O historico deve ser versionado e migravel. Nenhum formato persistido deve depender implicitamente de labels de interface.
+
+Sessoes novas devem referenciar `contentSetId`, versao do acervo e `questionIds`. Sessoes existentes sem essa evidencia permanecem como acervo legado, sem trimestre inferido.
 
 ## Requisitos nao funcionais
 

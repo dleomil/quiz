@@ -11,3 +11,6 @@ coverage/
 *.crt
 *.p12
 *.pfx
+
+# Material-fonte da escola: manter local ate haver autorizacao explicita para versionamento.
+SchoolContent/
