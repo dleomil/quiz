@@ -28,8 +28,12 @@ const HomeView = (function () {
         <p class="topic-section-title">Escolha a matéria:</p>
         <div class="subject-grid" id="subject-grid">
           ${subjects
+            .filter(
+              (subject) =>
+                QuestionsDB.getSubjectInfo(subject, selectedContentSet).count,
+            )
             .map((s) => {
-              const m = QuestionsDB.getSubjectInfo(s);
+              const m = QuestionsDB.getSubjectInfo(s, selectedContentSet);
               if (m.available) {
                 return `
                 <div class="subject-card" data-subject="${s}">
