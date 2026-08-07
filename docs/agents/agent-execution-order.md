@@ -61,6 +61,20 @@ Use antes do merge final do PR.
 - nao usar Release and Board Agent antes de existir evidencia
 - nao executar varios agentes fora de ordem sem necessidade real
 
+## Fluxo adicional para atualizacao curricular
+
+Use este fluxo sempre que uma entrega alterar materias, topicos, questoes ou explicacoes:
+
+1. `Spec Agent`: delimita o lote e os criterios de qualidade.
+2. `Content Curator Agent`: mapeia a fonte curricular e prepara propostas rastreaveis.
+3. `Pedagogical Quality Agent`: revisa ortografia, clareza, adequacao etaria, resposta unica e explicacoes.
+4. `Architect Agent`: participa somente se o formato de dados ou a carga de conteudo mudar.
+5. `Implementer Agent`: aplica apenas itens aprovados.
+6. `Verifier Agent`: executa validacao automatica e regressao do quiz.
+7. `Reviewer Agent`: confirma a trilha de evidencia e a aprovacao humana antes do merge.
+
+Nenhum lote curricular pode ser publicado somente com parecer automatizado.
+
 ## Resultado esperado
 
 - menos interpretacao improvisada

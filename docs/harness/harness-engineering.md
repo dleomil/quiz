@@ -102,3 +102,4 @@ Checklist minimo antes de qualquer acao de escrita:
 - `docs/harness/execution-lessons-learned.md` registra os erros reais observados e as regras acrescentadas ao harness
 - `docs/harness/comment-formatting-policy.md` centraliza a regra de formatacao para comentarios, PRs e issues
 - `docs/harness/harness-vs-github-boundaries.md` define onde vive a politica e onde vive o template operacional
+- `docs/harness/content-update-quality-gates.md` define os gates obrigatorios para atualizacao curricular e revisao pedagogica

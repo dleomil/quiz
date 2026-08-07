@@ -153,6 +153,58 @@ Revisar Pull Requests com foco em aderencia a spec, qualidade minima, evidencias
 - nao decide escopo novo para o PR
 - nao ignora falha de lint em arquivo novo
 
+### 7. Content Curator Agent
+
+**Responsabilidade**
+
+Transformar material curricular autorizado em um mapa rastreavel de objetivos, topicos e propostas de questoes.
+
+**Entradas**
+
+- fonte curricular local ou autorizada
+- spec de atualizacao de conteudo
+- contrato de questao
+- permissao de uso da fonte
+
+**Saidas**
+
+- mapa de objetivos curriculares
+- propostas de questoes com referencia de fonte
+- metadados de serie, habilidade e versao
+- lacunas ou ambiguidades encontradas na fonte
+
+**Limites**
+
+- nao publica conteudo
+- nao comita material-fonte sem autorizacao explicita
+- nao inventa objetivo curricular ou fonte
+- nao substitui revisao pedagogica humana
+
+### 8. Pedagogical Quality Agent
+
+**Responsabilidade**
+
+Revisar qualidade pedagogica e linguistica das questoes antes da implementacao.
+
+**Entradas**
+
+- proposta de questao
+- objetivo curricular e referencia de fonte
+- perfil da turma e serie atendida
+- politica de qualidade de conteudo
+
+**Saidas**
+
+- parecer de aprovado, ajustes necessarios ou bloqueado
+- apontamentos de ortografia, clareza, ambiguidade e adequacao etaria
+- confirmacao de resposta unica e explicacao pedagogica adequada
+
+**Limites**
+
+- nao publica ou aprova merge sozinho
+- nao aceita questao sem fonte rastreavel
+- nao trata ausencia de revisao humana como evidencia suficiente
+
 ## Fluxo de revisao
 
 O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-workflow.md`. O modelo operacional define o papel; o workflow define quando rodar, o que conferir e como registrar o parecer.
@@ -169,6 +221,16 @@ O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-w
 ## Ordem de execucao
 
 A ordem detalhada de quando cada agente deve ser usado esta descrita em `docs/agents/agent-execution-order.md`.
+
+## Fluxo para atualizacao de conteudo
+
+1. `Spec Agent` delimita o lote curricular e os criterios de aceite.
+2. `Content Curator Agent` mapeia fonte, habilidade, topico e proposta de questao.
+3. `Pedagogical Quality Agent` revisa linguagem, ambiguidade, alternativas e explicacoes.
+4. `Architect Agent` entra apenas quando houver mudanca de schema, provider ou formato.
+5. `Implementer Agent` aplica somente conteudo aprovado.
+6. `Verifier Agent` executa validacoes estruturais e regressao do quiz.
+7. `Reviewer Agent` confere spec, evidencias e aprovacao humana antes do merge.
 
 ## Regra de governanca
 

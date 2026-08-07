@@ -26,6 +26,8 @@ docs/
 │   ├── agent-operating-manual.md
 │   ├── agent-execution-order.md
 │   ├── agent-preflight-application.md
+│   ├── content-curator-agent.md
+│   ├── pedagogical-quality-agent.md
 │   ├── reviewer-agent-comment-template.md
 │   ├── reviewer-agent-decision-matrix.md
 │   ├── production-safe-adoption-plan.md
@@ -43,12 +45,14 @@ docs/
 │   ├── agent-operational-guardrails.md
 │   ├── agent-preflight-checklist.md
 │   ├── execution-lessons-learned.md
+│   ├── content-update-quality-gates.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
 │   ├── panel-control-phased-plan.md
 │   └── phased-evolution-roadmap.md
 ├── specs/
 │   ├── panel-control-functional-architecture.md
+│   ├── curriculum-content-update-governance.md
 │   ├── pilot-low-risk-workflow.md
 │   ├── spec-driven-development.md
 │   └── vercel-limits-and-retention.md

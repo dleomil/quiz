@@ -606,6 +606,107 @@ Como negocio, queremos qualificar o conteudo por dificuldade, habilidade e estad
 
 - o conteudo pode ser filtrado e auditado por metadados
 
+### Historia 3.4
+
+**Titulo**
+Definir governanca editorial para atualizacao curricular
+
+**Descricao**
+Como produto educacional, queremos um fluxo de curadoria e revisao pedagogica para atualizar o conteudo com rastreabilidade, linguagem correta e uma resposta inequivoca para cada questao.
+
+**Requisitos**
+
+- definir agentes de curadoria e qualidade pedagogica
+- proteger o material-fonte da escola contra versionamento ou publicacao acidental
+- exigir referencia de fonte, objetivo curricular, serie, materia, topico e versao por lote
+- bloquear implementacao sem parecer pedagogico e aprovacao humana registrada
+
+**Criterios de aceite**
+
+- existem papeis, limites e saidas documentados para curadoria e revisao pedagogica
+- existe uma politica de gates bloqueantes no harness
+- nenhum fluxo permite publicar questao baseada apenas em inferencia automatizada
+- a proxima atualizacao curricular pode ser especificada e auditada sem expor a fonte
+
+**Plano de validacao**
+
+- verificar a consistencia entre agentes, harness e fluxo de entrega
+- confirmar que o diretorio de material-fonte e ignorado pelo Git
+- revisar que a aprovacao humana e obrigatoria antes da implementacao
+
+**Evidencias esperadas**
+
+- spec de governanca curricular
+- documentos dos agentes especializados
+- politica de gates de qualidade
+- registro de validacao de protecao do material-fonte
+
+### Historia 3.5
+
+**Titulo**
+Implementar validador automatizado de conteudo
+
+**Descricao**
+Como engenharia, queremos validar a estrutura das questoes antes do merge para impedir que erros mecanicos cheguem ao quiz em producao.
+
+**Requisitos**
+
+- validar IDs unicos, campos obrigatorios, alternativas e `correctIndex`
+- validar metadados de origem, revisao e versao definidos no schema formal
+- bloquear opcoes vazias ou duplicadas apos normalizacao
+- executar a verificacao localmente e no CI
+
+**Criterios de aceite**
+
+- um lote estruturalmente invalido falha antes do merge
+- a validacao informa qual regra e qual questao falharam
+- o validador nao substitui a aprovacao pedagogica humana
+
+**Plano de validacao**
+
+- criar fixtures validas e invalidas para cada regra bloqueante
+- executar o validador no CI e localmente
+- executar regressao do quiz com um lote valido
+
+**Evidencias esperadas**
+
+- teste automatizado do schema de conteudo
+- resultado verde no CI para lote valido
+- resultado bloqueante demonstravel para lote invalido
+
+### Historia 3.6
+
+**Titulo**
+Pilotar atualizacao curricular com revisao humana
+
+**Descricao**
+Como produto, queremos testar o fluxo completo em um lote pequeno e aprovado pela escola para confirmar que a nova governanca protege o aprendizado sem afetar o quiz em producao.
+
+**Requisitos**
+
+- selecionar um objetivo curricular autorizado e um lote pequeno
+- criar spec, mapa de rastreabilidade e parecer pedagogico
+- registrar aprovacao humana antes da implementacao
+- executar validacao estrutural e regressao visual e funcional
+
+**Criterios de aceite**
+
+- cada questao do piloto tem fonte, objetivo e aprovacao rastreaveis
+- nao ha erro ortografico, ambiguidade conhecida ou explicacao contraditoria
+- o lote entra por PR pequeno com plano de rollback
+
+**Plano de validacao**
+
+- aplicar todos os gates de qualidade curricular
+- executar a suite automatizada e teste manual do fluxo do quiz
+- revisar o conteudo exibido em modo claro e escuro, mobile e desktop
+
+**Evidencias esperadas**
+
+- mapa de rastreabilidade sem reproduzir a fonte protegida
+- parecer e aprovacao humana registrados
+- resultados da validacao automatica e regressao do quiz
+
 ## Epic 4: Persistencia e analytics
 
 ### Objetivo

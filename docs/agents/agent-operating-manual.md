@@ -39,8 +39,11 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - [reviewer-agent.md](reviewer-agent.md)
 - [reviewer-agent-workflow.md](reviewer-agent-workflow.md)
 - [reviewer-agent-comment-template.md](reviewer-agent-comment-template.md)
+- [content-curator-agent.md](content-curator-agent.md)
+- [pedagogical-quality-agent.md](pedagogical-quality-agent.md)
 - [../github/comment-formatting-guide.md](../github/comment-formatting-guide.md)
 - [../github/pr-issue-body-template.md](../github/pr-issue-body-template.md)
+- [../harness/content-update-quality-gates.md](../harness/content-update-quality-gates.md)
 
 ## Como usar no dia a dia
 
@@ -63,6 +66,13 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - atualizar o board
 - aplicar o parecer do Reviewer Agent
 - preservar a trilha no PR e na issue
+
+### Para atualizar conteudo curricular
+
+- confirmar se a fonte pode ser usada e versionada
+- criar ou revisar a spec do lote
+- usar Content Curator Agent e Pedagogical Quality Agent antes de editar questoes
+- exigir aprovacao humana pedagogica antes de publicar
 
 ## Resultado esperado
 
