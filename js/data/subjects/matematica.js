@@ -26,6 +26,32 @@ function buildMonetaryCompletionQuestion(question) {
   };
 }
 
+function buildTensMultiplicationQuestion(question) {
+  const wrongExplanations = {};
+  const { wrong, ...content } = question;
+  wrong.forEach(function (explanation, index) {
+    if (index !== question.correctIndex) wrongExplanations[index] = explanation;
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'multiplicacao_por_dezenas',
+    topicName: 'Multiplicação por Dezenas',
+    skill: 'calcular-multiplicacoes-por-dezenas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '84',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -68,6 +94,10 @@ window.QuestionsDataSources.matematica = {
     sistema_monetario: {
       name: 'Sistema Monetário',
       icon: '💰',
+    },
+    multiplicacao_por_dezenas: {
+      name: 'Multiplicação por Dezenas',
+      icon: '✖️',
     },
   },
   questions: [
@@ -2038,5 +2068,267 @@ window.QuestionsDataSources.matematica = {
         skill: 'compor-valores-do-sistema-monetario',
       },
     ].map(buildMonetaryCompletionQuestion),
+    ...[
+      {
+        id: 'mat_t2_md_001',
+        question: 'Quanto é 2 x 20?',
+        options: ['22', '40', '200', '60'],
+        correctIndex: 1,
+        explanation: '2 grupos de 20 formam 40.',
+        wrong: [
+          '22 soma os números, mas aqui precisamos multiplicar.',
+          '',
+          '200 seria 10 grupos de 20.',
+          '60 seriam 3 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_002',
+        question: 'Quanto é 3 x 20?',
+        options: ['40', '60', '80', '600'],
+        correctIndex: 1,
+        explanation: '3 grupos de 20 formam 60.',
+        wrong: [
+          '40 são 2 grupos de 20.',
+          '',
+          '80 são 4 grupos de 20.',
+          '600 seria 30 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_003',
+        question: 'Quanto é 4 x 20?',
+        options: ['60', '80', '100', '800'],
+        correctIndex: 1,
+        explanation: '4 grupos de 20 formam 80.',
+        wrong: [
+          '60 são 3 grupos de 20.',
+          '',
+          '100 são 5 grupos de 20.',
+          '800 seria 40 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_004',
+        question: 'Quanto é 5 x 20?',
+        options: ['80', '90', '100', '200'],
+        correctIndex: 2,
+        explanation: '5 grupos de 20 formam 100.',
+        wrong: [
+          '80 são 4 grupos de 20.',
+          '90 não completa 5 grupos de 20.',
+          '',
+          '200 são 10 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_005',
+        question: 'Quanto é 2 x 30?',
+        options: ['50', '60', '90', '600'],
+        correctIndex: 1,
+        explanation: '2 grupos de 30 formam 60.',
+        wrong: [
+          '50 fica 10 a menos que 2 grupos de 30.',
+          '',
+          '90 são 3 grupos de 30.',
+          '600 seriam 20 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_006',
+        question: 'Quanto é 3 x 30?',
+        options: ['60', '90', '120', '900'],
+        correctIndex: 1,
+        explanation: '3 grupos de 30 formam 90.',
+        wrong: [
+          '60 são 2 grupos de 30.',
+          '',
+          '120 são 4 grupos de 30.',
+          '900 seriam 30 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_007',
+        question: 'Quanto é 4 x 30?',
+        options: ['90', '100', '120', '300'],
+        correctIndex: 2,
+        explanation: '4 grupos de 30 formam 120.',
+        wrong: [
+          '90 são 3 grupos de 30.',
+          '100 não completa 4 grupos de 30.',
+          '',
+          '300 são 10 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_008',
+        question: 'Quanto é 5 x 30?',
+        options: ['120', '150', '180', '300'],
+        correctIndex: 1,
+        explanation: '5 grupos de 30 formam 150.',
+        wrong: [
+          '120 são 4 grupos de 30.',
+          '',
+          '180 são 6 grupos de 30.',
+          '300 são 10 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_009',
+        question: 'Quanto é 2 x 40?',
+        options: ['60', '80', '100', '800'],
+        correctIndex: 1,
+        explanation: '2 grupos de 40 formam 80.',
+        wrong: [
+          '60 fica 20 a menos que 2 grupos de 40.',
+          '',
+          '100 passa 20 de 2 grupos de 40.',
+          '800 seriam 20 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_010',
+        question: 'Quanto é 3 x 40?',
+        options: ['100', '120', '140', '400'],
+        correctIndex: 1,
+        explanation: '3 grupos de 40 formam 120.',
+        wrong: [
+          '100 fica 20 a menos que 3 grupos de 40.',
+          '',
+          '140 não é múltiplo de 40.',
+          '400 são 10 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_011',
+        question: 'Quanto é 4 x 40?',
+        options: ['120', '140', '160', '400'],
+        correctIndex: 2,
+        explanation: '4 grupos de 40 formam 160.',
+        wrong: [
+          '120 são 3 grupos de 40.',
+          '140 não completa 4 grupos de 40.',
+          '',
+          '400 são 10 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_012',
+        question: 'Quanto é 5 x 40?',
+        options: ['180', '200', '220', '400'],
+        correctIndex: 1,
+        explanation: '5 grupos de 40 formam 200.',
+        wrong: [
+          '180 fica 20 a menos que 5 grupos de 40.',
+          '',
+          '220 passa 20 de 5 grupos de 40.',
+          '400 são 10 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_013',
+        question: 'Quanto é 2 x 50?',
+        options: ['80', '100', '120', '500'],
+        correctIndex: 1,
+        explanation: '2 grupos de 50 formam 100.',
+        wrong: [
+          '80 fica 20 a menos que 2 grupos de 50.',
+          '',
+          '120 passa 20 de 2 grupos de 50.',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_014',
+        question: 'Quanto é 3 x 50?',
+        options: ['100', '150', '200', '500'],
+        correctIndex: 1,
+        explanation: '3 grupos de 50 formam 150.',
+        wrong: [
+          '100 são 2 grupos de 50.',
+          '',
+          '200 são 4 grupos de 50.',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_015',
+        question: 'Quanto é 4 x 50?',
+        options: ['150', '180', '200', '500'],
+        correctIndex: 2,
+        explanation: '4 grupos de 50 formam 200.',
+        wrong: [
+          '150 são 3 grupos de 50.',
+          '180 não é múltiplo de 50.',
+          '',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_016',
+        question: 'Quanto é 5 x 50?',
+        options: ['200', '250', '300', '500'],
+        correctIndex: 1,
+        explanation: '5 grupos de 50 formam 250.',
+        wrong: [
+          '200 são 4 grupos de 50.',
+          '',
+          '300 são 6 grupos de 50.',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_017',
+        question: 'Quanto é 2 x 60?',
+        options: ['100', '120', '140', '600'],
+        correctIndex: 1,
+        explanation: '2 grupos de 60 formam 120.',
+        wrong: [
+          '100 fica 20 a menos que 2 grupos de 60.',
+          '',
+          '140 passa 20 de 2 grupos de 60.',
+          '600 são 10 grupos de 60.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_018',
+        question: 'Quanto é 2 x 70?',
+        options: ['120', '140', '160', '700'],
+        correctIndex: 1,
+        explanation: '2 grupos de 70 formam 140.',
+        wrong: [
+          '120 fica 20 a menos que 2 grupos de 70.',
+          '',
+          '160 passa 20 de 2 grupos de 70.',
+          '700 são 10 grupos de 70.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_019',
+        question: 'Quanto é 2 x 80?',
+        options: ['140', '160', '180', '800'],
+        correctIndex: 1,
+        explanation: '2 grupos de 80 formam 160.',
+        wrong: [
+          '140 fica 20 a menos que 2 grupos de 80.',
+          '',
+          '180 passa 20 de 2 grupos de 80.',
+          '800 são 10 grupos de 80.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_020',
+        question: 'Quanto é 3 x 90?',
+        options: ['180', '240', '270', '900'],
+        correctIndex: 2,
+        explanation: '3 grupos de 90 formam 270.',
+        wrong: [
+          '180 são 2 grupos de 90.',
+          '240 fica 30 a menos que 3 grupos de 90.',
+          '',
+          '900 são 10 grupos de 90.',
+        ],
+      },
+    ].map(buildTensMultiplicationQuestion),
   ],
 };

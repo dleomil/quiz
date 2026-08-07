@@ -35,7 +35,7 @@ As questoes sao originais e praticam multiplicacoes por 20, 30, 40, 50, 60,
 | `MAT-T2-MD-015` | Quanto e 4 x 50? | 150; 180; 200; 500 | 200     |
 | `MAT-T2-MD-016` | Quanto e 5 x 50? | 200; 250; 300; 500 | 250     |
 | `MAT-T2-MD-017` | Quanto e 2 x 60? | 100; 120; 140; 600 | 120     |
-| `MAT-T2-MD-018` | Quanto e 3 x 60? | 150; 180; 200; 600 | 180     |
+| `MAT-T2-MD-018` | Quanto e 2 x 70? | 120; 140; 160; 700 | 140     |
 | `MAT-T2-MD-019` | Quanto e 2 x 80? | 140; 160; 180; 800 | 160     |
 | `MAT-T2-MD-020` | Quanto e 3 x 90? | 180; 240; 270; 900 | 270     |
 
