@@ -22,7 +22,7 @@ const ContentCatalog = (function () {
       status: 'published',
       grade: '3-ano',
       displayName: '1o trimestre de 2026',
-      isCurrent: true,
+      isCurrent: false,
     },
     {
       schemaVersion: 'content-v1',
@@ -30,7 +30,7 @@ const ContentCatalog = (function () {
       academicYear: 2026,
       term: 't2',
       version: 1,
-      status: 'draft',
+      status: 'published',
       grade: '3-ano',
       displayName: '2o trimestre de 2026',
       isCurrent: true,
