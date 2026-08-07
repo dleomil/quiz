@@ -68,10 +68,7 @@ async function run() {
       ).map((question) => question.contentSetId),
     }));
 
-    assert.strictEqual(
-      legacySnapshot.selectedContentSet,
-      '2026-t1-v1',
-    );
+    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
     assert.strictEqual(
       legacySnapshot.history[0].schemaVersion,
       'legacy-session-v1',
