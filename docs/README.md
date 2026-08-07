@@ -52,6 +52,7 @@ docs/
 │   └── phased-evolution-roadmap.md
 ├── specs/
 │   ├── panel-control-functional-architecture.md
+│   ├── content-schema-v1.md
 │   ├── curriculum-content-update-governance.md
 │   ├── pilot-low-risk-workflow.md
 │   ├── spec-driven-development.md
