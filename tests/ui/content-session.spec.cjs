@@ -80,7 +80,7 @@ async function run() {
       ).map((question) => question.id),
     }));
 
-    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
+    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t2-v1');
     assert.strictEqual(
       legacySnapshot.history[0].schemaVersion,
       'legacy-session-v1',
@@ -95,8 +95,11 @@ async function run() {
         (contentSetId) => contentSetId === '2026-t1-v1',
       ),
     );
-    assert.deepStrictEqual(legacySnapshot.publishedContentSets, ['2026-t1-v1']);
-    assert.strictEqual(legacySnapshot.hasContentSetSelector, false);
+    assert.deepStrictEqual(legacySnapshot.publishedContentSets, [
+      '2026-t1-v1',
+      '2026-t2-v1',
+    ]);
+    assert.strictEqual(legacySnapshot.hasContentSetSelector, true);
     assert.deepStrictEqual(legacySnapshot.draftQuestionIds.sort(), [
       'mat_t2_mon_001',
       'mat_t2_mon_002',
