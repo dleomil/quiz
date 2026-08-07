@@ -11,12 +11,37 @@ Definir a sequencia recomendada de evolucao para transformar o projeto em um pro
 - separar conteudo, regra de negocio e persistencia cedo
 - adiar complexidade comercial ate existir base operacional confiavel
 
+## Fase 0: Especificacao e Harness
+
+### Resultado esperado
+
+Definir um modo de trabalho em que toda entrega relevante nasce de uma spec, passa por um harness de validacao e so depois vira implementacao.
+
+### Entregas esperadas
+
+- template de spec
+- modelo operacional de agentes
+- limites de permissao por papel
+- checklist padronizado de preflight dos agentes
+- ordem de execucao dos agentes
+- manual operacional consolidado dos agentes
+- template padronizado de comentario do Reviewer Agent
+- gates obrigatorios no fluxo de trabalho
+- evidencia padronizada por entrega
+
+### Riscos mitigados
+
+- ambiguidade na execucao
+- trabalho sem criterio de aceite
+- automacao sem governanca
+
 ## Ordem imediata sugerida
 
 No ciclo atual, com o app em producao e sem margem para impacto funcional, a prioridade pratica e:
 
 1. Fase 8: mapear limites da Vercel e definir criterios de migracao
 1. Fase 7: refinar personas e escopo do painel de controle
+1. Fase 0: estruturar spec-driven development e harness engineering
 
 Essa ordem evita decidir produto sem antes entender a permanencia da infraestrutura atual.
 
@@ -73,12 +98,15 @@ Transformar o banco de questoes em ativo operavel com validacao e rastreabilidad
 - validacao automatica de questoes
 - padrao editorial
 - metadados pedagogicos e de revisao
+- agentes de curadoria e qualidade pedagogica com aprovacao humana obrigatoria
+- protecao do material-fonte e rastreabilidade por lote curricular
 
 ### Riscos mitigados
 
 - inconsistencias no conteudo
 - erro humano em expansao curricular
 - baixa auditabilidade
+- publicacao acidental de fonte escolar ou de questao sem revisao pedagogica
 
 ## Fase 4: Persistencia e dados de produto
 
@@ -162,6 +190,16 @@ Entregar um painel central para clientes gerenciarem a operacao da propria conta
 - falta de controle operacional
 - baixa visibilidade para clientes contratantes
 - dificuldade de administracao em escala
+
+### Plano por fases do painel
+
+O detalhamento operacional desta fase fica em `docs/roadmap/panel-control-phased-plan.md`. O plano separa:
+
+- base isolada do painel
+- identidade e acesso por perfil
+- dados e integracoes
+- operacao e administracao
+- hardening e publicacao
 
 ## Fase 8: Estrategia de infraestrutura e migracao
 

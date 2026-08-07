@@ -1,4 +1,5 @@
 /* exported QuestionsDB */
+/* global ContentCatalog */
 const QuestionsDB = (function () {
   const sourceOrder = [
     'portugues',
@@ -40,10 +41,16 @@ const QuestionsDB = (function () {
       topicsBySubject[subject].push(topic);
     });
 
-    subjectCounts[subject] = sourceQuestions.length;
-    questions.push(...sourceQuestions);
+    const normalizedQuestions = sourceQuestions.map((question) => ({
+      ...question,
+      schemaVersion: question.schemaVersion || 'legacy-content-v0',
+      contentSetId: question.contentSetId || '2026-t1-v1',
+    }));
 
-    sourceQuestions.forEach((question) => {
+    subjectCounts[subject] = normalizedQuestions.length;
+    questions.push(...normalizedQuestions);
+
+    normalizedQuestions.forEach((question) => {
       topicCounts[question.topic] = (topicCounts[question.topic] || 0) + 1;
 
       if (!TOPIC_META[question.topic]) {
@@ -70,10 +77,12 @@ const QuestionsDB = (function () {
 
   return {
     getAll: () => questions,
-    getByTopic: (topic) =>
-      topic === 'all'
-        ? questions
-        : questions.filter((question) => question.topic === topic),
+    getByTopic: (topic, contentSetId) =>
+      questions.filter(
+        (question) =>
+          (topic === 'all' || question.topic === topic) &&
+          (!contentSetId || question.contentSetId === contentSetId),
+      ),
     getTopics: () => Object.keys(TOPIC_META),
     getTopicInfo: (topic) => ({
       ...TOPIC_META[topic],
@@ -86,12 +95,19 @@ const QuestionsDB = (function () {
     }),
     getTopicsBySubject: (subject) =>
       topicsBySubject[subject] ? [...topicsBySubject[subject]] : [],
-    getRandom: (count, topic, subject) => {
+    getContentSets: () => ContentCatalog.getPublished(),
+    getContentSet: (contentSetId) => ContentCatalog.getById(contentSetId),
+    getDefaultContentSet: () => ContentCatalog.getDefault(),
+    getRandom: (count, topic, subject, contentSetId) => {
       let pool = questions;
       if (subject && subject !== 'all')
         pool = pool.filter((question) => question.subject === subject);
       if (topic && topic !== 'all')
         pool = pool.filter((question) => question.topic === topic);
+      if (contentSetId)
+        pool = pool.filter(
+          (question) => question.contentSetId === contentSetId,
+        );
       return shuffle(pool).slice(0, Math.min(count, pool.length));
     },
   };

@@ -34,6 +34,11 @@ const HistoryView = (function () {
     return 'Tema não informado';
   }
 
+  function extractContentSetLabel(item) {
+    var contentSet = QuestionsDB.getContentSet(item.contentSetId);
+    return contentSet ? contentSet.displayName : 'Acervo anterior';
+  }
+
   function buildFilterOptions(history) {
     var subjectMap = new Map();
     var topicMap = new Map();
@@ -51,10 +56,11 @@ const HistoryView = (function () {
 
   function downloadCSV(history) {
     var header =
-      'Data,Matéria,Assunto,Acertos,Total,Nota (%),Duração (s),Timeouts\n';
+      'Data,Período,Matéria,Assunto,Acertos,Total,Nota (%),Duração (s),Timeouts\n';
     var rows = history.map(function (item) {
       return [
         item.date || '',
+        extractContentSetLabel(item),
         extractSubjectLabel(item),
         extractTopicLabel(item),
         item.correct || 0,
@@ -94,6 +100,18 @@ const HistoryView = (function () {
     }
 
     var opts = buildFilterOptions(history);
+    var contentSets = QuestionsDB.getContentSets();
+    var contentSetsHTML = contentSets
+      .map(function (contentSet) {
+        return (
+          '<option value="' +
+          contentSet.contentSetId +
+          '">' +
+          contentSet.displayName +
+          '</option>'
+        );
+      })
+      .join('');
     var subjectsHTML = opts.subjects
       .map(function (e) {
         return '<option value="' + e[0] + '">' + e[1] + '</option>';
@@ -116,6 +134,11 @@ const HistoryView = (function () {
       '</div>' +
       '<div class="history-filters">' +
       '<input type="search" id="history-search" class="history-search" placeholder="🔍 Buscar..." aria-label="Buscar"/>' +
+      (contentSets.length > 1
+        ? '<select id="filter-content-set" class="history-select" aria-label="Período"><option value="">Todos os períodos</option>' +
+          contentSetsHTML +
+          '</select>'
+        : '') +
       '<select id="filter-subject" class="history-select" aria-label="Matéria"><option value="">Todas as matérias</option>' +
       subjectsHTML +
       '</select>' +
@@ -137,6 +160,7 @@ const HistoryView = (function () {
 
     var searchEl = el.querySelector('#history-search');
     var subjectEl = el.querySelector('#filter-subject');
+    var contentSetEl = el.querySelector('#filter-content-set');
     var topicEl = el.querySelector('#filter-topic');
     var sortEl = el.querySelector('#filter-sort');
     var clearBtn = el.querySelector('#btn-clear-history');
@@ -145,6 +169,7 @@ const HistoryView = (function () {
     function applyFilters() {
       var q = normalize(searchEl.value);
       var subject = subjectEl.value;
+      var contentSet = contentSetEl ? contentSetEl.value : '';
       var topic = topicEl.value;
       var sort = sortEl.value;
 
@@ -152,6 +177,7 @@ const HistoryView = (function () {
         if (subject && (item.subject || extractSubjectLabel(item)) !== subject)
           return false;
         if (topic && (item.topicId || item.topic) !== topic) return false;
+        if (contentSet && item.contentSetId !== contentSet) return false;
         if (q) {
           var hay = normalize(
             extractTopicLabel(item) +
@@ -327,9 +353,11 @@ const HistoryView = (function () {
         .join('');
     }
 
-    [searchEl, subjectEl, topicEl, sortEl].forEach(function (input) {
-      input.addEventListener('input', applyFilters);
-    });
+    [searchEl, contentSetEl, subjectEl, topicEl, sortEl]
+      .filter(Boolean)
+      .forEach(function (input) {
+        input.addEventListener('input', applyFilters);
+      });
 
     clearBtn.addEventListener('click', function () {
       if (

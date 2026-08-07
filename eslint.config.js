@@ -13,6 +13,7 @@ const commonGlobals = {
   clearTimeout: 'readonly',
   setInterval: 'readonly',
   clearInterval: 'readonly',
+  crypto: 'readonly',
   document: 'readonly',
   window: 'readonly',
   Chart: 'readonly',
@@ -49,7 +50,7 @@ module.exports = [
     },
   },
   {
-    files: ['scripts/**/*.js', 'tests/**/*.cjs'],
+    files: ['scripts/**/*.js', 'scripts/**/*.cjs', 'tests/**/*.cjs'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'commonjs',

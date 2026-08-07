@@ -44,26 +44,48 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  fs.readFile(filePath, (readErr, data) => {
-    if (readErr) {
-      if (readErr.code === 'ENOENT') {
-        send(res, 404, 'Not found', {
+  const readTarget = (targetPath) => {
+    fs.readFile(targetPath, (readErr, data) => {
+      if (readErr) {
+        if (readErr.code === 'EISDIR') {
+          const indexPath = path.join(targetPath, 'index.html');
+          const relativeIndexPath = path.relative(rootDir, indexPath);
+
+          if (
+            relativeIndexPath.startsWith('..') ||
+            path.isAbsolute(relativeIndexPath)
+          ) {
+            send(res, 404, 'Not found', {
+              'Content-Type': 'text/plain; charset=utf-8',
+            });
+            return;
+          }
+
+          readTarget(indexPath);
+          return;
+        }
+
+        if (readErr.code === 'ENOENT') {
+          send(res, 404, 'Not found', {
+            'Content-Type': 'text/plain; charset=utf-8',
+          });
+          return;
+        }
+
+        send(res, 500, 'Internal server error', {
           'Content-Type': 'text/plain; charset=utf-8',
         });
         return;
       }
 
-      send(res, 500, 'Internal server error', {
-        'Content-Type': 'text/plain; charset=utf-8',
+      const ext = path.extname(readTarget).toLowerCase();
+      send(res, 200, data, {
+        'Content-Type': contentTypes[ext] || 'application/octet-stream',
       });
-      return;
-    }
-
-    const ext = path.extname(filePath).toLowerCase();
-    send(res, 200, data, {
-      'Content-Type': contentTypes[ext] || 'application/octet-stream',
     });
-  });
+  };
+
+  readTarget(filePath);
 });
 
 server.listen(port, host, () => {
