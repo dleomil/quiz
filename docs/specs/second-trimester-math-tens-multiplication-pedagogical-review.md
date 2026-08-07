@@ -14,12 +14,12 @@
 
 O lote contem 20 questoes originais, com uma unica resposta correta e
 enunciados curtos adequados ao calculo mental e ao registro no caderno. A
-cobertura percorre multiplicacoes por 20, 30, 40, 50, 60 e 70, sem introduzir
-procedimentos ou conceitos fora do tema.
+cobertura percorre multiplicacoes por 20, 30, 40, 50, 60, 70, 80 e 90, sem
+introduzir procedimentos ou conceitos fora do tema.
 
-A revisao corrigiu a ultima questao para `3 x 70 = 210`. Assim, o lote segue a
-referencia declarada e nao inclui a dezena 90, que nao fazia parte do objetivo
-do recorte original.
+A revisao corrigiu a cobertura inicialmente incompleta: os dois ultimos itens
+praticam `2 x 80 = 160` e `3 x 90 = 270`. Assim, o lote contempla todas as
+dezenas previstas no objeto de conhecimento.
 
 ## Explicacoes validadas
 
@@ -43,8 +43,8 @@ do recorte original.
 | `016` | 5 grupos de 50 formam 250.     | 200 sao 4 grupos; 300 sao 6 grupos; 500 sao 10 grupos.                               |
 | `017` | 2 grupos de 60 formam 120.     | 100 fica 20 a menos; 140 passa 20; 600 trata 60 como 300.                            |
 | `018` | 3 grupos de 60 formam 180.     | 150 fica 30 a menos; 200 passa 20; 600 sao 10 grupos.                                |
-| `019` | 2 grupos de 70 formam 140.     | 120 fica 20 a menos; 160 passa 20; 700 trata 70 como 350.                            |
-| `020` | 3 grupos de 70 formam 210.     | 180 fica 30 a menos; 200 fica 10 a menos; 700 nao representa 3 grupos de 70.         |
+| `019` | 2 grupos de 80 formam 160.     | 140 fica 20 a menos; 180 passa 20; 800 trata 80 como 400.                            |
+| `020` | 3 grupos de 90 formam 270.     | 180 sao 2 grupos de 90; 240 fica 30 a menos; 900 trata 90 como 300.                  |
 
 ## Requisitos de implementacao
 
