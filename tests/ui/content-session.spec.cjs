@@ -72,10 +72,8 @@ async function run() {
       hasContentSetSelector: Boolean(
         document.querySelector('#content-set-select'),
       ),
-      draftQuestionIds: QuestionsDB.getRandom(
-        10,
+      draftQuestionIds: QuestionsDB.getByTopic(
         'sistema_monetario',
-        'matematica',
         '2026-t2-v1',
       ).map((question) => question.id),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
@@ -101,18 +99,13 @@ async function run() {
     );
     assert.deepStrictEqual(legacySnapshot.publishedContentSets, ['2026-t1-v1']);
     assert.strictEqual(legacySnapshot.hasContentSetSelector, false);
-    assert.deepStrictEqual(legacySnapshot.draftQuestionIds.sort(), [
-      'mat_t2_mon_001',
-      'mat_t2_mon_002',
-      'mat_t2_mon_003',
-      'mat_t2_mon_004',
-      'mat_t2_mon_005',
-      'mat_t2_mon_006',
-    ]);
+    assert.strictEqual(legacySnapshot.draftQuestionIds.length, 20);
+    assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_001'));
+    assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_020'));
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
     assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));
     assert.deepStrictEqual(legacySnapshot.mathT2Topics, ['sistema_monetario']);
-    assert.strictEqual(legacySnapshot.mathT2Count, 6);
+    assert.strictEqual(legacySnapshot.mathT2Count, 20);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(
