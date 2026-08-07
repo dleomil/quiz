@@ -78,6 +78,10 @@ async function run() {
         'matematica',
         '2026-t2-v1',
       ).map((question) => question.id),
+      mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
+      mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
+      mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
+      mathT2Count: QuestionsDB.getSubjectInfo('matematica', '2026-t2-v1').count,
     }));
 
     assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
@@ -105,6 +109,10 @@ async function run() {
       'mat_t2_mon_005',
       'mat_t2_mon_006',
     ]);
+    assert.strictEqual(legacySnapshot.mathT1Count, 150);
+    assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));
+    assert.deepStrictEqual(legacySnapshot.mathT2Topics, ['sistema_monetario']);
+    assert.strictEqual(legacySnapshot.mathT2Count, 6);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(
