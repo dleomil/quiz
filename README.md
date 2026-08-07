@@ -121,6 +121,7 @@ Ou use uma extensao como **Live Server** no VS Code.
 - `npm test`: executa validacao de conteudo e testes de regressao do quiz
 - `npm run validate:content`: valida a estrutura de todas as fontes de questoes
 - `npm run test:content`: executa fixtures do contrato de conteudo v1
+- `npm run test:ui:content-session`: valida catalogo e persistencia de sessoes v2
 - `npm run test:ui:dark-mode`: executa apenas o teste de interface do modo escuro
 
 ## Persistencia de dados

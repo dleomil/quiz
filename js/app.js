@@ -58,7 +58,13 @@ const App = (function () {
   }
 
   function startQuiz(topic, subject) {
-    var qs = QuestionsDB.getRandom(SESSIONS_PER_QUIZ, topic, subject);
+    var contentSetId = Store.get().selectedContentSet;
+    var qs = QuestionsDB.getRandom(
+      SESSIONS_PER_QUIZ,
+      topic,
+      subject,
+      contentSetId,
+    );
     if (qs.length === 0) {
       showToast('Nenhuma pergunta encontrada para este tema.', 'warning');
       return;
@@ -87,7 +93,28 @@ const App = (function () {
     var total = s.questions.length;
     var pct = Math.round((correct / total) * 100);
     var now = new Date();
+    var startedAt = new Date(s.sessionStart).toISOString();
+    var finishedAt = now.toISOString();
+    var contentSet = QuestionsDB.getContentSet(s.selectedContentSet);
     Store.addSession({
+      schemaVersion: 'session-v2',
+      sessionId: createSessionId(),
+      startedAt: startedAt,
+      finishedAt: finishedAt,
+      contentSetId: s.selectedContentSet,
+      contentVersion: contentSet ? contentSet.version : 0,
+      questionIds: s.questions.map(function (question) {
+        return question.id;
+      }),
+      answers: s.answers.map(function (answer) {
+        return {
+          questionId: answer.id,
+          selectedIndex: answer.selected,
+          isCorrect: answer.isCorrect,
+          isTimeout: answer.isTimeout,
+        };
+      }),
+      score: { correct: correct, total: total, pct: pct },
       date:
         now.toLocaleDateString('pt-BR', {
           day: '2-digit',
@@ -108,6 +135,13 @@ const App = (function () {
       }).length,
     });
     navigate('results', { force: true });
+  }
+
+  function createSessionId() {
+    if (crypto && typeof crypto.randomUUID === 'function') {
+      return crypto.randomUUID();
+    }
+    return 'session-' + Date.now() + '-' + Math.random().toString(16).slice(2);
   }
 
   function restart() {

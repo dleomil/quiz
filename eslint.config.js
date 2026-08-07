@@ -13,6 +13,7 @@ const commonGlobals = {
   clearTimeout: 'readonly',
   setInterval: 'readonly',
   clearInterval: 'readonly',
+  crypto: 'readonly',
   document: 'readonly',
   window: 'readonly',
   Chart: 'readonly',
