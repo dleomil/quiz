@@ -44,8 +44,7 @@ const QuestionsDB = (function () {
     const normalizedQuestions = sourceQuestions.map((question) => ({
       ...question,
       schemaVersion: question.schemaVersion || 'legacy-content-v0',
-      contentSetId:
-        question.contentSetId || ContentCatalog.LEGACY_CONTENT_SET_ID,
+      contentSetId: question.contentSetId || '2026-t1-v1',
     }));
 
     subjectCounts[subject] = normalizedQuestions.length;

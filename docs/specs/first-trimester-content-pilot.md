@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Preparar um piloto pequeno e reversivel para o acervo `2026-t2-v1`, sem publicar conteudo antes da revisao humana.
+Preparar um piloto pequeno e reversivel para o acervo `2026-t2-v1`, sucessor do acervo ativo `2026-t1-v1`, sem publicar conteudo antes da revisao humana.
 
 ## Escopo
 
