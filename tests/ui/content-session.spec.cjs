@@ -84,6 +84,75 @@ async function run() {
         'graficos_barras_colunas',
         '2026-t2-v1',
       ).map((question) => question.id),
+      doubleEntryDraftQuestionIds: QuestionsDB.getByTopic(
+        'tabelas_graficos_dupla_entrada',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      doubleEntryCorrectIndexCounts: QuestionsDB.getByTopic(
+        'tabelas_graficos_dupla_entrada',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      prismDraftQuestionIds: QuestionsDB.getByTopic('prisma', '2026-t2-v1').map(
+        (question) => question.id,
+      ),
+      prismCorrectIndexCounts: QuestionsDB.getByTopic(
+        'prisma',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      planarFigureDraftQuestionIds: QuestionsDB.getByTopic(
+        'figuras_geometricas_planas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      planarFigureCorrectIndexCounts: QuestionsDB.getByTopic(
+        'figuras_geometricas_planas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      measurementDraftQuestionIds: QuestionsDB.getByTopic(
+        'medidas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      measurementCorrectIndexCounts: QuestionsDB.getByTopic(
+        'medidas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      parallelLinesDraftQuestionIds: QuestionsDB.getByTopic(
+        'retas_paralelas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      parallelLinesCorrectIndexCounts: QuestionsDB.getByTopic(
+        'retas_paralelas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -123,14 +192,70 @@ async function run() {
     assert.strictEqual(legacySnapshot.graphDraftQuestionIds.length, 20);
     assert.ok(legacySnapshot.graphDraftQuestionIds.includes('mat_t2_gr_001'));
     assert.ok(legacySnapshot.graphDraftQuestionIds.includes('mat_t2_gr_020'));
+    assert.strictEqual(legacySnapshot.doubleEntryDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.doubleEntryDraftQuestionIds.includes('mat_t2_de_001'),
+    );
+    assert.ok(
+      legacySnapshot.doubleEntryDraftQuestionIds.includes('mat_t2_de_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.doubleEntryCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.prismDraftQuestionIds.length, 20);
+    assert.ok(legacySnapshot.prismDraftQuestionIds.includes('mat_t2_pr_001'));
+    assert.ok(legacySnapshot.prismDraftQuestionIds.includes('mat_t2_pr_020'));
+    assert.deepStrictEqual(
+      legacySnapshot.prismCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.planarFigureDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.planarFigureDraftQuestionIds.includes('mat_t2_fp_001'),
+    );
+    assert.ok(
+      legacySnapshot.planarFigureDraftQuestionIds.includes('mat_t2_fp_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.planarFigureCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.measurementDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.measurementDraftQuestionIds.includes('mat_t2_me_001'),
+    );
+    assert.ok(
+      legacySnapshot.measurementDraftQuestionIds.includes('mat_t2_me_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.measurementCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.parallelLinesDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.parallelLinesDraftQuestionIds.includes('mat_t2_rp_001'),
+    );
+    assert.ok(
+      legacySnapshot.parallelLinesDraftQuestionIds.includes('mat_t2_rp_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.parallelLinesCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
     assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));
     assert.deepStrictEqual(legacySnapshot.mathT2Topics, [
       'sistema_monetario',
       'multiplicacao_por_dezenas',
       'graficos_barras_colunas',
+      'tabelas_graficos_dupla_entrada',
+      'prisma',
+      'figuras_geometricas_planas',
+      'medidas',
+      'retas_paralelas',
     ]);
-    assert.strictEqual(legacySnapshot.mathT2Count, 60);
+    assert.strictEqual(legacySnapshot.mathT2Count, 160);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(
