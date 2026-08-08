@@ -153,6 +153,20 @@ async function run() {
         },
         [0, 0, 0, 0],
       ),
+      portugueseLAndUDraftQuestionIds: QuestionsDB.getByTopic(
+        'usos_de_l_e_u',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseLAndUCorrectIndexCounts: QuestionsDB.getByTopic(
+        'usos_de_l_e_u',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -241,6 +255,20 @@ async function run() {
     );
     assert.deepStrictEqual(
       legacySnapshot.parallelLinesCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseLAndUDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseLAndUDraftQuestionIds.includes('pt_t2_lu_001'),
+    );
+    assert.ok(
+      legacySnapshot.portugueseLAndUDraftQuestionIds.includes('pt_t2_lu_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseLAndUCorrectIndexCounts,
       [5, 5, 5, 5],
     );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
