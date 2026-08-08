@@ -1,5 +1,46 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+function buildPortugueseLAndUQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'usos_de_l_e_u',
+    topicName: 'Usos de L e U',
+    skill: 'distinguir-usos-de-l-e-u',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '8-9',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -50,6 +91,10 @@ window.QuestionsDataSources.portugues = {
     atividades_adicionais: {
       name: 'Atividades Adicionais',
       icon: '✅',
+    },
+    usos_de_l_e_u: {
+      name: 'Usos de L e U',
+      icon: '🔤',
     },
   },
   questions: [
@@ -2335,5 +2380,247 @@ window.QuestionsDataSources.portugues = {
         3: 'janela não é a resposta correta.',
       },
     },
+    ...[
+      {
+        id: 'pt_t2_lu_001',
+        question: 'Complete: O menino come__ toda a fruta ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Comeu é uma forma do verbo comer no passado.',
+        wrong: [
+          'Comel não é palavra.',
+          'Comeo não é a forma verbal usada nessa frase.',
+          'Comea não é a forma verbal usada nessa frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_002',
+        question: 'Complete: O céu estava azu__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Azul termina com a letra L.',
+        wrong: [
+          'Azuu não é palavra.',
+          'Azuo não é a grafia de azul.',
+          'Azua não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_003',
+        question: 'Complete: A bola cai__ no chão.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Caiu é uma forma do verbo cair no passado.',
+        wrong: [
+          'Cail não é palavra.',
+          'Caio tem outro uso e não completa a frase no passado.',
+          'Caia não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_004',
+        question: 'Complete: O gato dorme ao so__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Sol é o nome da estrela que ilumina o dia.',
+        wrong: [
+          'Sou não indica a estrela que ilumina o dia.',
+          'Soo não é a palavra usada nessa frase.',
+          'Soa não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_005',
+        question: 'Complete: Maria sai__ cedo da escola ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Saiu é uma forma do verbo sair no passado.',
+        wrong: [
+          'Sail não é palavra.',
+          'Saio não é a forma verbal usada nessa frase.',
+          'Saia tem outro uso e não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_006',
+        question: 'Complete: Ganhei um anel de present__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Anel termina com a letra L.',
+        wrong: [
+          'Aneu não é palavra.',
+          'Aneo não é palavra.',
+          'Anea não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_007',
+        question: 'Complete: O cachorro lati__ quando ouviu um barulho.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Latiu é uma forma do verbo latir no passado.',
+        wrong: [
+          'Latil não é palavra.',
+          'Latio não é a forma verbal usada nessa frase.',
+          'Latia indica outra situação e não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_008',
+        question: 'Complete: O barco navegou pe__ rio.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pelo é a união de por e o nesta frase.',
+        wrong: [
+          'Peu não completa a frase.',
+          'Peo não é palavra.',
+          'Pea não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_009',
+        question: 'Complete: Pedro viu um passarinho no quint__.',
+        options: ['al', 'au', 'el', 'eu'],
+        correctIndex: 0,
+        explanation: 'Quintal termina com AL.',
+        wrong: [
+          'Quintau não é palavra.',
+          'Quintel não é palavra.',
+          'Quinteu não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_010',
+        question: 'Complete: A menina bebe__ água depois da corrida.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Bebeu é uma forma do verbo beber no passado.',
+        wrong: [
+          'Bebel não é palavra.',
+          'Bebeo não é a forma verbal usada nessa frase.',
+          'Beba não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_011',
+        question: 'Complete: O menino ouvi__ a história com atenção.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Ouviu é uma forma do verbo ouvir no passado.',
+        wrong: [
+          'Ouvil não é palavra.',
+          'Ouvuo não é palavra.',
+          'Ouvia indica outra situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_012',
+        question: 'Complete: O pintor usou um pince__ novo.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pincel termina com a letra L.',
+        wrong: [
+          'Pinceu não é palavra.',
+          'Pinceo não é palavra.',
+          'Pincea não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_013',
+        question: 'Complete: O bebê sorri__ para a avó.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Sorriu é uma forma do verbo sorrir no passado.',
+        wrong: [
+          'Sorriel não é palavra.',
+          'Sorrio tem outro uso e não completa a frase no passado.',
+          'Sorria indica outra situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_014',
+        question: 'Complete: O mel é doce. A palavra mel termina com:',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Mel termina com a letra L.',
+        wrong: [
+          'Mel não termina em U.',
+          'Mel não termina em O.',
+          'Mel não termina em A.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_015',
+        question: 'Complete: O avião pouso__ cedo.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pousou é uma forma do verbo pousar no passado.',
+        wrong: [
+          'Pousol não é palavra.',
+          'Pousoo não é palavra.',
+          'Pousoa não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_016',
+        question: 'Complete: O aluno escrev__ uma frase ontem.',
+        options: ['eu', 'el', 'au', 'al'],
+        correctIndex: 0,
+        explanation: 'Escreveu é uma forma do verbo escrever no passado.',
+        wrong: [
+          'Escrevel não é palavra.',
+          'Escrevau não é palavra.',
+          'Escreval não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_017',
+        question: 'Complete: O menino pulo__ a corda ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pulou é uma forma do verbo pular no passado.',
+        wrong: [
+          'Pulol não é palavra.',
+          'Puloo não é palavra.',
+          'Puloa não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_018',
+        question: 'Complete: O menino corre__ para casa.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Correu é uma forma do verbo correr no passado.',
+        wrong: [
+          'Correl não é palavra.',
+          'Correo não é palavra.',
+          'Correa não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_019',
+        question: 'Complete: A menina abriu o ba__.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Baú é escrito com U no final e recebe acento agudo.',
+        wrong: [
+          'Bal é outra palavra e não nomeia o objeto da frase.',
+          'Bao não é a grafia correta.',
+          'Baa não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_020',
+        question: 'Qual palavra está escrita corretamente?',
+        options: ['farol', 'farou', 'faro', 'faral'],
+        correctIndex: 0,
+        explanation: 'Farol é escrito com L no final.',
+        wrong: [
+          'Farou não é a grafia correta de farol.',
+          'Faro é outra palavra e não tem o mesmo significado de farol.',
+          'Faral não é a grafia correta de farol.',
+        ],
+      },
+    ].map(buildPortugueseLAndUQuestion),
   ],
 };
