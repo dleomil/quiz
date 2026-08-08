@@ -52,6 +52,36 @@ function buildTensMultiplicationQuestion(question) {
   };
 }
 
+function buildGraphQuestion(question) {
+  const wrongExplanations = {};
+  const { wrong, ...content } = question;
+  let wrongIndex = 0;
+  question.options.forEach(function (_, index) {
+    if (index !== question.correctIndex) {
+      wrongExplanations[index] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'graficos_barras_colunas',
+    topicName: 'Graficos de Barras e Colunas',
+    skill: 'ler-e-interpretar-graficos-simples',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matematica',
+      page: '86',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -98,6 +128,10 @@ window.QuestionsDataSources.matematica = {
     multiplicacao_por_dezenas: {
       name: 'Multiplicação por Dezenas',
       icon: '✖️',
+    },
+    graficos_barras_colunas: {
+      name: 'Graficos de Barras e Colunas',
+      icon: '📊',
     },
   },
   questions: [
@@ -2330,5 +2364,247 @@ window.QuestionsDataSources.matematica = {
         ],
       },
     ].map(buildTensMultiplicationQuestion),
+    ...[
+      [
+        '001',
+        'Em um grafico de colunas, banana tem 8 votos, maca tem 5 e uva tem 3. Qual fruta tem mais votos?',
+        ['banana', 'maca', 'uva', 'empate'],
+        0,
+        'Banana tem 8 votos, mais que 5 e 3.',
+        [
+          'Maca tem 5 votos.',
+          'Uva tem 3 votos.',
+          'As quantidades sao diferentes.',
+        ],
+      ],
+      [
+        '002',
+        'No grafico sobre frutas, qual fruta tem menos votos: banana 8, maca 5 ou uva 3?',
+        ['banana', 'maca', 'uva', 'empate'],
+        2,
+        'Uva tem 3 votos, a menor quantidade.',
+        [
+          'Banana tem a maior quantidade.',
+          'Maca tem 5 votos.',
+          'Nao ha empate.',
+        ],
+      ],
+      [
+        '003',
+        'No grafico sobre frutas, banana tem 8 votos e maca tem 5. Quantos votos elas somam?',
+        ['3', '8', '13', '40'],
+        2,
+        '8 mais 5 e igual a 13.',
+        ['3 e a diferenca.', '8 e so a banana.', '40 nao representa a soma.'],
+      ],
+      [
+        '004',
+        'No grafico sobre frutas, banana tem 8 votos e uva tem 3. Quantos votos a banana tem a mais?',
+        ['5', '8', '11', '24'],
+        0,
+        '8 menos 3 e igual a 5.',
+        [
+          '8 e a quantidade da banana.',
+          '11 seria uma soma.',
+          '24 nao representa a diferenca.',
+        ],
+      ],
+      [
+        '005',
+        'Um grafico de barras mostra livros lidos: segunda 6, terca 9, quarta 7 e quinta 4. Em qual dia foram lidos mais livros?',
+        ['segunda', 'terca', 'quarta', 'quinta'],
+        1,
+        'Terca tem 9 livros, a maior quantidade.',
+        ['Segunda tem 6.', 'Quarta tem 7.', 'Quinta tem 4.'],
+      ],
+      [
+        '006',
+        'No grafico de livros lidos, quantos livros foram lidos na quinta-feira: segunda 6, terca 9, quarta 7 e quinta 4?',
+        ['4', '5', '7', '9'],
+        0,
+        'A quinta-feira corresponde a 4 livros.',
+        ['5 nao aparece.', '7 e quarta.', '9 e terca.'],
+      ],
+      [
+        '007',
+        'No grafico de livros lidos, terca tem 9 e quinta tem 4. Qual e a diferenca?',
+        ['4', '5', '9', '13'],
+        1,
+        '9 menos 4 e igual a 5.',
+        [
+          '4 e a quantidade de quinta.',
+          '9 e a quantidade de terca.',
+          '13 seria uma soma.',
+        ],
+      ],
+      [
+        '008',
+        'No grafico de livros lidos, segunda 6, terca 9, quarta 7 e quinta 4. Qual e o total?',
+        ['13', '22', '26', '64'],
+        2,
+        '6 mais 9 mais 7 mais 4 e igual a 26.',
+        [
+          '13 e soma parcial.',
+          '22 nao inclui todos os dias.',
+          '64 nao representa o total.',
+        ],
+      ],
+      [
+        '009',
+        'Um grafico de barras mostra animais preferidos: cachorros 10, gatos 7 e passaros 4. Qual barra representa 10?',
+        ['cachorros', 'gatos', 'passaros', 'nenhuma'],
+        0,
+        'Cachorros tem 10 preferencias.',
+        ['Gatos tem 7.', 'Passaros tem 4.', 'Existe uma barra com 10.'],
+      ],
+      [
+        '010',
+        'No grafico de animais, cachorros tem 10 votos e gatos tem 7. Quantos votos os gatos tem a menos?',
+        ['2', '3', '7', '17'],
+        1,
+        '10 menos 7 e igual a 3.',
+        [
+          '2 nao e a diferenca.',
+          '7 e a quantidade dos gatos.',
+          '17 seria uma soma.',
+        ],
+      ],
+      [
+        '011',
+        'No grafico de animais, cachorros tem 10, gatos 7 e passaros 4. Qual e o total?',
+        ['14', '17', '21', '70'],
+        2,
+        '10 mais 7 mais 4 e igual a 21.',
+        [
+          '14 e soma parcial.',
+          '17 nao inclui todos.',
+          '70 nao representa o total.',
+        ],
+      ],
+      [
+        '012',
+        'No grafico de animais, cachorros tem 10, gatos 7 e passaros 4. Qual frase esta correta?',
+        [
+          'Gatos tem mais que cachorros.',
+          'Passaros tem mais que gatos.',
+          'Gatos tem mais que passaros.',
+          'Todos sao iguais.',
+        ],
+        2,
+        'Gatos tem 7 votos e passaros tem 4.',
+        [
+          'Cachorros tem mais que gatos.',
+          'Passaros tem menos que gatos.',
+          'As quantidades sao diferentes.',
+        ],
+      ],
+      [
+        '013',
+        'Um grafico de colunas mostra bolas: vermelha 12, azul 8 e verde 10. Qual quantidade pertence a bola vermelha?',
+        ['8', '10', '12', '30'],
+        2,
+        'A bola vermelha tem 12 escolhas.',
+        ['8 e azul.', '10 e verde.', '30 e a soma das tres cores.'],
+      ],
+      [
+        '014',
+        'No grafico de bolas, azul tem 8 e verde tem 10. Qual cor tem 2 escolhas a mais que a azul?',
+        ['vermelha', 'azul', 'verde', 'nenhuma'],
+        2,
+        'Verde tem 10, que e 2 a mais que 8.',
+        [
+          'Vermelha tem 12.',
+          'Azul e a referencia.',
+          'Existe uma cor com 2 a mais.',
+        ],
+      ],
+      [
+        '015',
+        'No grafico de bolas, azul tem 8 e verde tem 10. Quantas escolhas elas somam?',
+        ['2', '10', '18', '80'],
+        2,
+        '8 mais 10 e igual a 18.',
+        ['2 e a diferenca.', '10 e so a verde.', '80 nao representa a soma.'],
+      ],
+      [
+        '016',
+        'No grafico de bolas, vermelha tem 12, azul 8 e verde 10. Qual coluna deve ser a mais alta?',
+        ['vermelha', 'azul', 'verde', 'todas iguais'],
+        0,
+        'Vermelha tem 12, a maior quantidade.',
+        ['Azul tem 8.', 'Verde tem 10.', 'As colunas nao tem a mesma altura.'],
+      ],
+      [
+        '017',
+        'Um grafico de colunas mostra lanches: maca 9, queijo 6 e biscoito 9. Quais lanches empataram?',
+        ['maca e queijo', 'queijo e biscoito', 'maca e biscoito', 'os tres'],
+        2,
+        'Maca e biscoito tem 9 escolhas cada.',
+        [
+          'Essas quantidades sao 9 e 6.',
+          'Essas quantidades sao 6 e 9.',
+          'Queijo tem 6.',
+        ],
+      ],
+      [
+        '018',
+        'No grafico de lanches, a maior quantidade e 9 e queijo tem 6. Quantas escolhas a maior quantidade tem a mais?',
+        ['3', '6', '9', '15'],
+        0,
+        '9 menos 6 e igual a 3.',
+        [
+          '6 e a quantidade de queijo.',
+          '9 e a maior quantidade.',
+          '15 seria uma soma.',
+        ],
+      ],
+      [
+        '019',
+        'No grafico de lanches, maca tem 9, queijo 6 e biscoito 9. Qual e o total?',
+        ['15', '18', '24', '96'],
+        2,
+        '9 mais 6 mais 9 e igual a 24.',
+        [
+          '15 e soma parcial.',
+          '18 soma as duas quantidades de 9.',
+          '96 nao representa o total.',
+        ],
+      ],
+      [
+        '020',
+        'Um grafico tem o titulo Lanches escolhidos pela turma. O que esse titulo ajuda a entender?',
+        [
+          'O assunto mostrado no grafico.',
+          'A cor de cada coluna.',
+          'O nome de quem desenhou.',
+          'A resposta correta.',
+        ],
+        0,
+        'O titulo informa o assunto do grafico.',
+        [
+          'O titulo nao define cores.',
+          'O titulo nao informa o autor.',
+          'O titulo nao mostra uma resposta.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_gr_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildGraphQuestion),
   ],
 };
