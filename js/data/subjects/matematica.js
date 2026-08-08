@@ -2431,7 +2431,11 @@ window.QuestionsDataSources.matematica = {
         ['4', '5', '9', '13'],
         1,
         '9 menos 4 e igual a 5.',
-        ['4 e a quantidade de quinta.', '9 e a quantidade de terca.', '13 seria uma soma.'],
+        [
+          '4 e a quantidade de quinta.',
+          '9 e a quantidade de terca.',
+          '13 seria uma soma.',
+        ],
       ],
       [
         '008',
@@ -2459,7 +2463,11 @@ window.QuestionsDataSources.matematica = {
         ['2', '3', '7', '17'],
         1,
         '10 menos 7 e igual a 3.',
-        ['2 nao e a diferenca.', '7 e a quantidade dos gatos.', '17 seria uma soma.'],
+        [
+          '2 nao e a diferenca.',
+          '7 e a quantidade dos gatos.',
+          '17 seria uma soma.',
+        ],
       ],
       [
         '011',
