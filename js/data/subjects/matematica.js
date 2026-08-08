@@ -119,6 +119,47 @@ function buildDoubleEntryQuestion(question) {
   };
 }
 
+function buildPrismQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'prisma',
+    topicName: 'Prisma',
+    skill: 'reconhecer-prismas-faces-e-bases',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '91',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -173,6 +214,10 @@ window.QuestionsDataSources.matematica = {
     tabelas_graficos_dupla_entrada: {
       name: 'Tabelas e Graficos de Dupla Entrada',
       icon: '🗂️',
+    },
+    prisma: {
+      name: 'Prisma',
+      icon: '🧊',
     },
   },
   questions: [
@@ -2905,5 +2950,270 @@ window.QuestionsDataSources.matematica = {
         };
       })
       .map(buildDoubleEntryQuestion),
+    ...[
+      [
+        '001',
+        'Qual objeto pode ter a forma de um prisma retangular?',
+        ['caixa de sapato', 'bola', 'chapéu de festa', 'bola de gude'],
+        0,
+        'Uma caixa de sapato tem faces planas retangulares, como um prisma retangular.',
+        [
+          'A bola tem superfície curva.',
+          'O chapéu de festa lembra um cone, com uma ponta.',
+          'A bola de gude é redonda e tem superfície curva.',
+        ],
+      ],
+      [
+        '002',
+        'Qual sólido tem duas bases iguais e faces planas nas laterais?',
+        ['prisma', 'esfera', 'cone', 'círculo'],
+        0,
+        'Um prisma tem duas bases iguais e faces laterais planas.',
+        [
+          'A esfera não tem bases nem faces planas.',
+          'O cone tem uma base e uma ponta.',
+          'O círculo é uma figura plana, não um sólido.',
+        ],
+      ],
+      [
+        '003',
+        'Qual destes não é um prisma?',
+        ['caixa', 'bloco retangular', 'esfera', 'embalagem retangular'],
+        2,
+        'A esfera tem somente superfície curva, por isso não é um prisma.',
+        [
+          'Uma caixa retangular pode ser um prisma.',
+          'O bloco retangular tem faces planas e bases iguais.',
+          'Uma embalagem retangular pode ter forma de prisma retangular.',
+        ],
+      ],
+      [
+        '004',
+        'Qual objeto tem forma parecida com um cubo?',
+        ['dado', 'bola', 'lata', 'chapéu de festa'],
+        0,
+        'Um dado tem seis faces planas quadradas, como um cubo.',
+        [
+          'A bola é redonda e tem superfície curva.',
+          'A lata tem partes circulares e superfície curva.',
+          'O chapéu de festa tem uma ponta e uma base circular.',
+        ],
+      ],
+      [
+        '005',
+        'O que uma esfera não possui?',
+        ['faces planas', 'superfície curva', 'forma redonda', 'volume'],
+        0,
+        'A esfera é redonda e tem somente superfície curva.',
+        [
+          'A superfície curva é uma característica da esfera.',
+          'A esfera tem forma redonda.',
+          'A esfera ocupa espaço e, por isso, tem volume.',
+        ],
+      ],
+      [
+        '006',
+        'Como são as faces de um prisma?',
+        ['planas', 'redondas', 'invisíveis', 'feitas de linhas'],
+        0,
+        'As faces de um prisma são superfícies planas.',
+        [
+          'Uma face de prisma não é curva.',
+          'As faces podem ser vistas no objeto.',
+          'As linhas formam contornos, mas a face é uma superfície.',
+        ],
+      ],
+      [
+        '007',
+        'Como chamamos as duas faces iguais de um prisma?',
+        ['bases', 'pontas', 'círculos', 'retas'],
+        0,
+        'As duas faces iguais e paralelas de um prisma são as bases.',
+        [
+          'Um prisma não é definido por uma ponta.',
+          'As bases podem ter formatos diferentes de círculos.',
+          'Retas são linhas, não faces.',
+        ],
+      ],
+      [
+        '008',
+        'Um prisma retangular tem superfície curva?',
+        ['não', 'sim', 'somente na base', 'somente nas laterais'],
+        0,
+        'Um prisma retangular é formado por faces planas.',
+        [
+          'As superfícies do prisma retangular são planas.',
+          'As bases também são planas.',
+          'As faces laterais também são planas.',
+        ],
+      ],
+      [
+        '009',
+        'Como chamamos as faces que ligam uma base a outra em um prisma?',
+        ['faces laterais', 'círculos', 'vértices redondos', 'linhas curvas'],
+        0,
+        'As faces laterais ficam entre as duas bases.',
+        [
+          'Um círculo é uma figura plana.',
+          'Vértices são encontros de arestas, não faces.',
+          'Prismas têm faces planas, não linhas curvas como faces.',
+        ],
+      ],
+      [
+        '010',
+        'Qual figura plana pode ser uma face de um cubo?',
+        ['quadrado', 'círculo', 'linha', 'ponto'],
+        0,
+        'Todas as faces de um cubo têm forma de quadrado.',
+        [
+          'Um cubo não tem face circular.',
+          'Uma linha não é uma superfície.',
+          'Um ponto não forma uma face.',
+        ],
+      ],
+      [
+        '011',
+        'Qual sólido lembra uma caixa de cereal retangular?',
+        ['prisma retangular', 'esfera', 'cone', 'círculo'],
+        0,
+        'A caixa tem faces planas retangulares e lembra um prisma retangular.',
+        [
+          'A esfera é curva e redonda.',
+          'O cone tem uma ponta e uma base circular.',
+          'O círculo é plano, enquanto a caixa ocupa espaço.',
+        ],
+      ],
+      [
+        '012',
+        'Qual prisma pode ter duas bases em forma de triângulo?',
+        ['prisma triangular', 'cubo', 'esfera', 'cone'],
+        0,
+        'Um prisma triangular tem duas bases triangulares iguais.',
+        [
+          'As faces de um cubo são quadradas.',
+          'A esfera não tem faces planas.',
+          'O cone tem uma base e uma ponta.',
+        ],
+      ],
+      [
+        '013',
+        'Um dado tem seis faces planas. Qual é o formato de cada face?',
+        ['quadrado', 'círculo', 'triângulo', 'reta'],
+        0,
+        'Um dado comum tem formato de cubo, com faces quadradas.',
+        [
+          'Um dado não tem faces redondas.',
+          'As faces de um cubo não são triangulares.',
+          'Uma reta é uma linha, não uma face.',
+        ],
+      ],
+      [
+        '014',
+        'O que um cubo e um prisma retangular têm em comum?',
+        ['faces planas', 'superfície curva', 'uma ponta', 'forma redonda'],
+        0,
+        'Os dois são sólidos formados por faces planas.',
+        [
+          'Nenhum dos dois tem superfície curva.',
+          'Prismas e cubos não são definidos por uma ponta.',
+          'Ambos têm faces planas, não forma redonda.',
+        ],
+      ],
+      [
+        '015',
+        'Qual objeto não tem forma de prisma?',
+        ['bola', 'caixa', 'tijolo', 'embalagem retangular'],
+        0,
+        'A bola é redonda e tem superfície curva.',
+        [
+          'Uma caixa retangular pode ter forma de prisma.',
+          'Um tijolo lembra um prisma retangular.',
+          'Uma embalagem retangular pode ter faces planas e bases iguais.',
+        ],
+      ],
+      [
+        '016',
+        'Uma caixa de presente retangular lembra qual sólido?',
+        ['prisma retangular', 'esfera', 'cone', 'círculo'],
+        0,
+        'A caixa tem faces planas retangulares, como um prisma retangular.',
+        [
+          'A esfera é redonda e tem superfície curva.',
+          'O cone tem uma ponta.',
+          'O círculo é uma figura plana.',
+        ],
+      ],
+      [
+        '017',
+        'Uma barra de sabão em formato de bloco lembra qual sólido?',
+        ['prisma retangular', 'esfera', 'pirâmide', 'círculo'],
+        0,
+        'Um bloco de sabão tem faces planas retangulares.',
+        [
+          'A esfera tem superfície curva.',
+          'A pirâmide tem uma ponta.',
+          'O círculo é plano e não ocupa espaço como o bloco.',
+        ],
+      ],
+      [
+        '018',
+        'Um dado tem quantas faces planas?',
+        ['6', '1', '2', 'nenhuma'],
+        0,
+        'Um dado em formato de cubo tem seis faces planas.',
+        [
+          'Uma face seria apenas uma parte do cubo.',
+          'Duas faces ainda não representam as seis faces do cubo.',
+          'Um dado possui faces planas.',
+        ],
+      ],
+      [
+        '019',
+        'Uma embalagem tem duas faces triangulares iguais e três faces laterais retangulares. Que sólido ela lembra?',
+        ['prisma triangular', 'esfera', 'lata', 'cone'],
+        0,
+        'Duas bases triangulares iguais e faces laterais planas formam um prisma triangular.',
+        [
+          'A esfera não tem faces planas.',
+          'A lata tem superfície lateral curva.',
+          'O cone tem uma base e uma ponta.',
+        ],
+      ],
+      [
+        '020',
+        'Por que uma caixa retangular pode ser classificada como prisma?',
+        [
+          'tem duas bases iguais e faces planas',
+          'é redonda',
+          'tem superfície curva',
+          'é uma figura plana',
+        ],
+        0,
+        'Prismas têm duas bases iguais e faces planas.',
+        [
+          'Uma caixa retangular não é redonda.',
+          'As superfícies de uma caixa retangular são planas.',
+          'Uma caixa é um sólido, pois ocupa espaço.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_pr_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildPrismQuestion),
   ],
 };
