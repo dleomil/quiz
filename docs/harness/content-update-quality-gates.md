@@ -51,6 +51,26 @@ Cada questao deve ser verificada para:
 - objetivo de aprendizagem coerente com o programa curricular
 - explicacao curta, respeitosa e orientada ao aprendizado
 
+## Pacote pedagogico completo
+
+Uma spec so pode seguir para PR de revisao quando cada uma das 20 propostas
+contiver enunciado, quatro alternativas, `correctIndex`, explicacao correta e
+tres justificativas das alternativas incorretas. A revisao valida esse pacote;
+ela nao deve completar informacoes ausentes.
+
+## Capacidade paralela
+
+O trabalho curricular pode ocorrer em trilhas independentes, sem pular gates:
+
+- Curadoria: no maximo dois temas com spec em preparacao.
+- Revisao pedagogica: no maximo um tema com pacote completo em revisao.
+- Implementacao: no maximo um tema aprovado pedagogicamente.
+- Verificacao e release: no maximo um PR aguardando evidencias e merge.
+
+Cada tema usa card e branch proprios. Um tema so avanca quando satisfaz os
+criterios da trilha anterior; o acervo continua `draft` ate a decisao de
+publicacao controlada.
+
 ## Validacao automatica prevista
 
 O validador de conteudo deve bloquear, no minimo:
