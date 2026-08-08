@@ -201,6 +201,47 @@ function buildPlanarFigureQuestion(question) {
   };
 }
 
+function buildMeasurementQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'medidas',
+    topicName: 'Vamos Medir?',
+    skill: 'reconhecer-e-comparar-medidas-cotidianas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '94',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -263,6 +304,10 @@ window.QuestionsDataSources.matematica = {
     figuras_geometricas_planas: {
       name: 'Figuras Geométricas Planas',
       icon: '🔷',
+    },
+    medidas: {
+      name: 'Vamos Medir?',
+      icon: '📏',
     },
   },
   questions: [
@@ -3535,5 +3580,278 @@ window.QuestionsDataSources.matematica = {
         };
       })
       .map(buildPlanarFigureQuestion),
+    ...[
+      [
+        '001',
+        'Qual unidade é mais adequada para medir o comprimento de um lápis?',
+        ['centímetro', 'litro', 'quilo', 'hora'],
+        0,
+        'Centímetros servem para medir objetos pequenos, como um lápis.',
+        ['Litro mede capacidade.', 'Quilo mede massa.', 'Hora mede tempo.'],
+      ],
+      [
+        '002',
+        'Qual unidade é mais adequada para medir a distância entre duas cidades?',
+        ['quilômetro', 'centímetro', 'litro', 'minuto'],
+        0,
+        'Quilômetros medem distâncias grandes.',
+        [
+          'Centímetro serve para distâncias pequenas.',
+          'Litro mede capacidade.',
+          'Minuto mede tempo.',
+        ],
+      ],
+      [
+        '003',
+        'Qual item pode ter sua capacidade medida em litros?',
+        ['garrafa de água', 'caderno', 'mochila', 'relógio'],
+        0,
+        'Litro pode medir a quantidade de líquido que cabe em uma garrafa.',
+        [
+          'Um caderno pode ter seu comprimento medido.',
+          'Uma mochila pode ter sua massa medida.',
+          'Um relógio ajuda a medir o tempo.',
+        ],
+      ],
+      [
+        '004',
+        'Qual unidade usamos para medir a massa de uma melancia?',
+        ['quilo', 'litro', 'metro', 'minuto'],
+        0,
+        'Quilo é uma unidade usada para medir massa.',
+        [
+          'Litro mede capacidade.',
+          'Metro mede comprimento.',
+          'Minuto mede tempo.',
+        ],
+      ],
+      [
+        '005',
+        'Qual instrumento ajuda a medir o comprimento de uma mesa?',
+        ['fita métrica', 'balança', 'copo medidor', 'relógio'],
+        0,
+        'A fita métrica mede comprimentos.',
+        [
+          'A balança mede massa.',
+          'O copo medidor mede capacidade.',
+          'O relógio mede tempo.',
+        ],
+      ],
+      [
+        '006',
+        'Ana tem uma fita de 30 cm e Bia tem uma de 45 cm. Qual é mais comprida?',
+        ['a de Bia', 'a de Ana', 'são iguais', 'não dá para saber'],
+        0,
+        'A fita de Bia mede 45 cm, que é maior que 30 cm.',
+        [
+          'A fita de Ana mede 30 cm, que é menor que 45 cm.',
+          'As medidas são diferentes.',
+          'As duas medidas foram informadas e podem ser comparadas.',
+        ],
+      ],
+      [
+        '007',
+        'Uma garrafa tem 2 litros de suco e outra tem 1 litro. Qual tem mais suco?',
+        [
+          'a de 2 litros',
+          'a de 1 litro',
+          'as duas têm a mesma quantidade',
+          'nenhuma',
+        ],
+        0,
+        'A garrafa de 2 litros tem mais suco que a de 1 litro.',
+        [
+          'Um litro é menor que 2 litros.',
+          'As quantidades são diferentes.',
+          'As duas garrafas têm suco.',
+        ],
+      ],
+      [
+        '008',
+        'Um pacote pesa 3 kg e outro pesa 5 kg. Qual é mais pesado?',
+        ['o de 5 kg', 'o de 3 kg', 'são iguais', 'não dá para saber'],
+        0,
+        'Cinco quilogramas representam uma massa maior que 3 quilogramas.',
+        [
+          'Três quilogramas são menos que 5 quilogramas.',
+          'As massas são diferentes.',
+          'As duas massas foram informadas e podem ser comparadas.',
+        ],
+      ],
+      [
+        '009',
+        'Quantos minutos há em uma hora?',
+        ['60', '30', '24', '100'],
+        0,
+        'Uma hora tem 60 minutos.',
+        [
+          'Trinta minutos correspondem a meia hora.',
+          'Vinte e quatro é a quantidade de horas de um dia.',
+          'Uma hora não tem 100 minutos.',
+        ],
+      ],
+      [
+        '010',
+        'Qual atividade pode durar cerca de 10 minutos?',
+        [
+          'organizar a mochila',
+          'uma viagem entre cidades',
+          'um ano escolar',
+          'o crescimento de uma árvore',
+        ],
+        0,
+        'Organizar a mochila pode durar cerca de 10 minutos.',
+        [
+          'Uma viagem entre cidades costuma durar mais.',
+          'Um ano escolar dura muitos meses.',
+          'O crescimento de uma árvore leva muito mais tempo.',
+        ],
+      ],
+      [
+        '011',
+        'João leu por 20 minutos e Lia por 35 minutos. Quem leu por mais tempo?',
+        ['Lia', 'João', 'os dois leram pelo mesmo tempo', 'não dá para saber'],
+        0,
+        'Lia leu por 35 minutos, que é mais tempo que 20 minutos.',
+        [
+          'João leu por 20 minutos, que é menos que 35 minutos.',
+          'Os tempos de leitura são diferentes.',
+          'Os dois tempos foram informados e podem ser comparados.',
+        ],
+      ],
+      [
+        '012',
+        'Qual medida combina com a altura de uma porta?',
+        ['metro', 'litro', 'quilo', 'segundo'],
+        0,
+        'Metros ajudam a medir a altura de objetos grandes, como uma porta.',
+        ['Litro mede capacidade.', 'Quilo mede massa.', 'Segundo mede tempo.'],
+      ],
+      [
+        '013',
+        'Uma receita pede 1 litro de leite. O que está sendo medido?',
+        ['capacidade', 'comprimento', 'massa', 'tempo'],
+        0,
+        'Litro indica uma medida de capacidade.',
+        [
+          'Comprimento pode ser medido em centímetros ou metros.',
+          'Massa pode ser medida em quilogramas.',
+          'Tempo pode ser medido em minutos ou horas.',
+        ],
+      ],
+      [
+        '014',
+        'Uma caixa tem 40 cm de comprimento. Que medida ela informa?',
+        ['comprimento', 'capacidade', 'massa', 'tempo'],
+        0,
+        'Centímetro é uma unidade de comprimento.',
+        [
+          'Capacidade pode ser medida em litros.',
+          'Massa pode ser medida em quilogramas.',
+          'Tempo pode ser medido em minutos ou horas.',
+        ],
+      ],
+      [
+        '015',
+        'Qual objeto é mais adequado para uma balança medir?',
+        [
+          'saco de arroz',
+          'quantidade de água',
+          'altura da parede',
+          'duração da aula',
+        ],
+        0,
+        'A balança mede a massa de objetos, como um saco de arroz.',
+        [
+          'A quantidade de água pode ser medida em litros.',
+          'A altura da parede pode ser medida em metros.',
+          'A duração da aula é uma medida de tempo.',
+        ],
+      ],
+      [
+        '016',
+        'Uma aula começa às 8 horas e termina às 9 horas. Quanto tempo ela dura?',
+        ['1 hora', '2 horas', '8 horas', '9 horas'],
+        0,
+        'Das 8 horas às 9 horas passa uma hora.',
+        [
+          'Duas horas seriam dois intervalos de uma hora.',
+          'Oito horas é o horário de início.',
+          'Nove horas é o horário de término.',
+        ],
+      ],
+      [
+        '017',
+        'Qual medida é menor: 20 cm ou 40 cm?',
+        ['20 cm', '40 cm', 'são iguais', 'não dá para comparar'],
+        0,
+        'Vinte centímetros é menor que 40 centímetros.',
+        [
+          'Quarenta centímetros é maior que 20 centímetros.',
+          'Os números são diferentes.',
+          'As duas medidas usam centímetros e podem ser comparadas.',
+        ],
+      ],
+      [
+        '018',
+        'Para saber quanto cabe em um balde, qual unidade é mais adequada?',
+        ['litro', 'metro', 'quilo', 'minuto'],
+        0,
+        'Litro mede a capacidade de recipientes.',
+        ['Metro mede comprimento.', 'Quilo mede massa.', 'Minuto mede tempo.'],
+      ],
+      [
+        '019',
+        'Qual situação usa minutos como unidade?',
+        [
+          'tempo de recreio',
+          'massa de uma fruta',
+          'altura de uma planta',
+          'suco em uma jarra',
+        ],
+        0,
+        'Minutos medem a duração do recreio.',
+        [
+          'A massa de uma fruta pode ser medida em gramas ou quilogramas.',
+          'A altura de uma planta pode ser medida em centímetros.',
+          'O suco em uma jarra pode ser medido em litros.',
+        ],
+      ],
+      [
+        '020',
+        'Pedro percorreu 4 km e Sara percorreu 6 km. Quem percorreu a maior distância?',
+        [
+          'Sara',
+          'Pedro',
+          'os dois percorreram a mesma distância',
+          'não dá para saber',
+        ],
+        0,
+        'Sara percorreu 6 km, que é uma distância maior que 4 km.',
+        [
+          'Pedro percorreu 4 km, que é menos que 6 km.',
+          'As distâncias são diferentes.',
+          'As duas distâncias foram informadas e podem ser comparadas.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_me_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildMeasurementQuestion),
   ],
 };
