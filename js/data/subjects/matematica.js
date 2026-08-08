@@ -242,6 +242,47 @@ function buildMeasurementQuestion(question) {
   };
 }
 
+function buildParallelLinesQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'retas_paralelas',
+    topicName: 'Retas Paralelas',
+    skill: 'reconhecer-retas-paralelas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '95',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -308,6 +349,10 @@ window.QuestionsDataSources.matematica = {
     medidas: {
       name: 'Vamos Medir?',
       icon: '📏',
+    },
+    retas_paralelas: {
+      name: 'Retas Paralelas',
+      icon: '〰️',
     },
   },
   questions: [
@@ -3853,5 +3898,290 @@ window.QuestionsDataSources.matematica = {
         };
       })
       .map(buildMeasurementQuestion),
+    ...[
+      [
+        '001',
+        'O que acontece com retas paralelas?',
+        ['não se cruzam', 'se cruzam', 'formam círculo', 'têm ponta'],
+        0,
+        'Retas paralelas seguem lado a lado sem se encontrar.',
+        [
+          'Retas que se cruzam não são paralelas.',
+          'Um círculo não é formado por retas.',
+          'Uma reta não é definida por ter uma ponta.',
+        ],
+      ],
+      [
+        '002',
+        'Qual exemplo mostra retas paralelas?',
+        ['trilhos retos de trem', 'tesoura aberta', 'letra X', 'cruzamento'],
+        0,
+        'Trilhos retos seguem lado a lado e não se cruzam.',
+        [
+          'As partes da tesoura aberta se encontram.',
+          'As linhas da letra X se cruzam.',
+          'Em um cruzamento, as ruas se encontram.',
+        ],
+      ],
+      [
+        '003',
+        'Duas retas se cruzam em um ponto. Elas são paralelas?',
+        ['não', 'sim', 'sempre', 'somente se forem curtas'],
+        0,
+        'Retas paralelas não se cruzam.',
+        [
+          'Cruzar impede que as retas sejam paralelas.',
+          'Ser paralelo depende de não se cruzar.',
+          'O tamanho não muda o fato de as retas se cruzarem.',
+        ],
+      ],
+      [
+        '004',
+        'Qual par de lados de uma folha retangular é paralelo?',
+        [
+          'lados de cima e de baixo',
+          'lados que se encontram no canto',
+          'diagonal e lado',
+          'nenhum',
+        ],
+        0,
+        'Os lados de cima e de baixo seguem lado a lado sem se encontrar.',
+        [
+          'Os lados que formam um canto se encontram.',
+          'A diagonal e o lado não seguem lado a lado.',
+          'O retângulo tem lados paralelos.',
+        ],
+      ],
+      [
+        '005',
+        'Retas paralelas mantêm qual característica?',
+        ['mesma distância', 'mesma cor', 'mesmo tamanho', 'mesma ponta'],
+        0,
+        'A distância entre retas paralelas permanece igual.',
+        [
+          'A cor não define uma reta.',
+          'O tamanho não define o paralelismo.',
+          'Retas não precisam ter uma ponta.',
+        ],
+      ],
+      [
+        '006',
+        'A letra X tem retas paralelas?',
+        ['não', 'sim', 'duas', 'quatro'],
+        0,
+        'As duas retas principais da letra X se cruzam.',
+        [
+          'Retas paralelas não se encontram.',
+          'A quantidade de retas não muda o cruzamento.',
+          'A letra X tem duas retas principais.',
+        ],
+      ],
+      [
+        '007',
+        'Qual desenho pode representar retas paralelas?',
+        [
+          'duas linhas horizontais lado a lado',
+          'duas linhas em X',
+          'uma linha curva',
+          'um círculo',
+        ],
+        0,
+        'Duas linhas que não se cruzam e mantêm a mesma distância são paralelas.',
+        [
+          'As linhas em X se cruzam.',
+          'Uma linha curva não é uma reta.',
+          'Um círculo não é formado por retas.',
+        ],
+      ],
+      [
+        '008',
+        'Os lados esquerdo e direito de uma porta retangular são como?',
+        ['paralelos', 'cruzados', 'curvos', 'circulares'],
+        0,
+        'Eles seguem lado a lado e não se encontram.',
+        [
+          'Os lados não se cruzam.',
+          'Os lados da porta são retos.',
+          'Eles não formam um círculo.',
+        ],
+      ],
+      [
+        '009',
+        'Duas ruas retas nunca se encontram. Como podem ser chamadas?',
+        ['paralelas', 'cruzadas', 'circulares', 'triangulares'],
+        0,
+        'Retas que não se encontram e mantêm distância podem ser paralelas.',
+        [
+          'Ruas cruzadas se encontram.',
+          'Uma rua não precisa ser um círculo.',
+          'Triangular não descreve duas retas que não se encontram.',
+        ],
+      ],
+      [
+        '010',
+        'Qual figura tem pares de lados paralelos?',
+        ['retângulo', 'triângulo', 'círculo', 'letra X'],
+        0,
+        'Os lados opostos do retângulo são paralelos.',
+        [
+          'Os lados do triângulo se encontram.',
+          'O círculo não tem lados retos.',
+          'As retas da letra X se cruzam.',
+        ],
+      ],
+      [
+        '011',
+        'Se duas retas têm a mesma distância entre si, elas podem ser?',
+        ['paralelas', 'cruzadas', 'curvas', 'pontos'],
+        0,
+        'Manter a mesma distância é uma característica de retas paralelas.',
+        [
+          'Retas cruzadas se encontram.',
+          'Retas curvas não são retas.',
+          'Pontos não são retas.',
+        ],
+      ],
+      [
+        '012',
+        'Qual objeto pode mostrar retas paralelas?',
+        ['caderno pautado', 'bola', 'relógio redondo', 'cone'],
+        0,
+        'As linhas da pauta seguem lado a lado e podem ser paralelas.',
+        [
+          'A bola tem superfície curva.',
+          'Um relógio redondo lembra um círculo.',
+          'Um cone não mostra duas retas paralelas.',
+        ],
+      ],
+      [
+        '013',
+        'Linhas que se encontram no meio são?',
+        ['não paralelas', 'paralelas', 'iguais', 'circulares'],
+        0,
+        'Ao se encontrarem, as linhas deixam de ser paralelas.',
+        [
+          'Retas paralelas não se encontram.',
+          'Linhas iguais ainda podem ter direções diferentes.',
+          'Linhas retas não formam um círculo.',
+        ],
+      ],
+      [
+        '014',
+        'Os lados de cima e de baixo de um quadro retangular são?',
+        ['paralelos', 'cruzados', 'curvos', 'pontos'],
+        0,
+        'Eles mantêm distância e não se cruzam.',
+        [
+          'Os lados não se encontram.',
+          'Os lados do quadro são retos.',
+          'Os lados são segmentos, não pontos.',
+        ],
+      ],
+      [
+        '015',
+        'Qual dupla não mostra retas paralelas?',
+        [
+          'linhas de uma tesoura aberta',
+          'linhas de um caderno',
+          'trilhos retos',
+          'lados opostos de um retângulo',
+        ],
+        0,
+        'As linhas da tesoura aberta se encontram.',
+        [
+          'As pautas de um caderno podem ser paralelas.',
+          'Trilhos retos seguem lado a lado.',
+          'Lados opostos de um retângulo não se cruzam.',
+        ],
+      ],
+      [
+        '016',
+        'Retas paralelas podem se encontrar se forem prolongadas?',
+        ['não', 'sim', 'sempre', 'somente no final'],
+        0,
+        'Mesmo prolongadas, retas paralelas não se cruzam.',
+        [
+          'Encontrar-se seria um cruzamento.',
+          'Retas paralelas nunca se encontram.',
+          'Retas não têm um ponto final que mude o paralelismo.',
+        ],
+      ],
+      [
+        '017',
+        'Qual afirmação é verdadeira?',
+        [
+          'paralelas não se cruzam',
+          'paralelas formam X',
+          'paralelas são curvas',
+          'paralelas têm uma ponta',
+        ],
+        0,
+        'Retas paralelas não se cruzam.',
+        [
+          'A letra X mostra um cruzamento.',
+          'Retas paralelas são retas, não curvas.',
+          'Ter uma ponta não define uma reta paralela.',
+        ],
+      ],
+      [
+        '018',
+        'Uma grade tem barras verticais lado a lado que não se encontram. Elas são?',
+        ['paralelas', 'cruzadas', 'redondas', 'triangulares'],
+        0,
+        'As barras mantêm distância e não se cruzam.',
+        [
+          'Não há encontro entre as barras.',
+          'As barras são retas, não redondas.',
+          'As barras não formam triângulos.',
+        ],
+      ],
+      [
+        '019',
+        'Em um retângulo, quais lados são paralelos?',
+        ['os lados opostos', 'lados vizinhos', 'todos se cruzam', 'nenhum'],
+        0,
+        'Lados opostos seguem lado a lado e não se encontram.',
+        [
+          'Lados vizinhos se encontram no canto.',
+          'Somente lados vizinhos se encontram.',
+          'Há dois pares de lados opostos paralelos.',
+        ],
+      ],
+      [
+        '020',
+        'Por que trilhos retos podem ser paralelos?',
+        [
+          'não se cruzam e mantêm distância',
+          'formam círculo',
+          'têm uma ponta',
+          'se encontram no meio',
+        ],
+        0,
+        'Não se cruzar e manter distância são características de retas paralelas.',
+        [
+          'Trilhos retos não formam um círculo.',
+          'Ter uma ponta não define o paralelismo.',
+          'Retas paralelas não se encontram.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_rp_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildParallelLinesQuestion),
   ],
 };
