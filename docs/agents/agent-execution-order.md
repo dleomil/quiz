@@ -75,6 +75,13 @@ Use este fluxo sempre que uma entrega alterar materias, topicos, questoes ou exp
 
 Nenhum lote curricular pode ser publicado somente com parecer automatizado.
 
+## Paralelismo controlado
+
+As quatro trilhas curriculares podem executar em paralelo: Curadoria, Revisao
+Pedagogica, Implementacao e Verificacao/Release. Cada uma respeita o limite de
+capacidade definido em `content-update-quality-gates.md`; nao e permitido usar
+o paralelismo para implementar lote sem aprovacao humana.
+
 ## Resultado esperado
 
 - menos interpretacao improvisada
