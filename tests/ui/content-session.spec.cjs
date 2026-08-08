@@ -111,6 +111,20 @@ async function run() {
         },
         [0, 0, 0, 0],
       ),
+      planarFigureDraftQuestionIds: QuestionsDB.getByTopic(
+        'figuras_geometricas_planas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      planarFigureCorrectIndexCounts: QuestionsDB.getByTopic(
+        'figuras_geometricas_planas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -168,6 +182,17 @@ async function run() {
       legacySnapshot.prismCorrectIndexCounts,
       [5, 5, 5, 5],
     );
+    assert.strictEqual(legacySnapshot.planarFigureDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.planarFigureDraftQuestionIds.includes('mat_t2_fp_001'),
+    );
+    assert.ok(
+      legacySnapshot.planarFigureDraftQuestionIds.includes('mat_t2_fp_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.planarFigureCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
     assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));
     assert.deepStrictEqual(legacySnapshot.mathT2Topics, [
@@ -176,8 +201,9 @@ async function run() {
       'graficos_barras_colunas',
       'tabelas_graficos_dupla_entrada',
       'prisma',
+      'figuras_geometricas_planas',
     ]);
-    assert.strictEqual(legacySnapshot.mathT2Count, 100);
+    assert.strictEqual(legacySnapshot.mathT2Count, 120);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(
