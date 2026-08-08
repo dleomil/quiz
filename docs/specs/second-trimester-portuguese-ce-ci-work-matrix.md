@@ -9,13 +9,13 @@
 
 ## Distribuicao
 
-| Itens         | Foco                                                |
-| ------------- | --------------------------------------------------- |
-| `001` a `005` | completar palavras frequentes com CE                |
-| `006` a `008` | completar palavras frequentes com CI                |
-| `009` a `012` | distinguir CE e CI em palavras de uso escolar       |
-| `013` a `016` | distinguir CE e CI pelo sentido da palavra          |
-| `017` a `020` | revisar grafia em frases curtas                     |
+| Itens         | Foco                                          |
+| ------------- | --------------------------------------------- |
+| `001` a `005` | completar palavras frequentes com CE          |
+| `006` a `008` | completar palavras frequentes com CI          |
+| `009` a `012` | distinguir CE e CI em palavras de uso escolar |
+| `013` a `016` | distinguir CE e CI pelo sentido da palavra    |
+| `017` a `020` | revisar grafia em frases curtas               |
 
 ## Guardrails
 
