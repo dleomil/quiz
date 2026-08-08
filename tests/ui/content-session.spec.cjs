@@ -88,6 +88,16 @@ async function run() {
         'tabelas_graficos_dupla_entrada',
         '2026-t2-v1',
       ).map((question) => question.id),
+      doubleEntryCorrectIndexCounts: QuestionsDB.getByTopic(
+        'tabelas_graficos_dupla_entrada',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -133,6 +143,10 @@ async function run() {
     );
     assert.ok(
       legacySnapshot.doubleEntryDraftQuestionIds.includes('mat_t2_de_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.doubleEntryCorrectIndexCounts,
+      [5, 5, 5, 5],
     );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
     assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));

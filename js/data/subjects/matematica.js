@@ -83,11 +83,16 @@ function buildGraphQuestion(question) {
 }
 
 function buildDoubleEntryQuestion(question) {
+  const { wrong, ...content } = question;
+  const optionOffset = Number(question.id.slice(-3)) % question.options.length;
+  const options = new Array(question.options.length);
   const wrongExplanations = {};
   let wrongIndex = 0;
-  question.options.forEach(function (_, index) {
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
     if (index !== question.correctIndex) {
-      wrongExplanations[index] = question.wrong[wrongIndex];
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
       wrongIndex += 1;
     }
   });
@@ -106,7 +111,10 @@ function buildDoubleEntryQuestion(question) {
     },
     reviewStatus: 'pedagogical-approved',
     version: 1,
-    ...question,
+    ...content,
+    options,
+    correctIndex:
+      (question.correctIndex + optionOffset) % question.options.length,
     wrongExplanations,
   };
 }
