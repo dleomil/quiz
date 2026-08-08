@@ -32,14 +32,14 @@ para o trimestre atingirem 20 questoes e passarem pelos gates de qualidade.
 
 ## Cobertura identificada
 
-| Disciplina | Referencia de estudo                  | Escopo para curadoria                                                                                            |
-| ---------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Historia   | Apostilas 4 (67-77) e 5 (77-79)       | origens africanas, grupos linguisticos, escravizacao, afrodescendentes e formacao do povo brasileiro             |
-| Ciencias   | Apostilas 4 (35-47) e 5 (41-43)       | artropodes, seus grupos, equinodermos e visao relacionada a luz                                                  |
+| Disciplina | Referencia de estudo                       | Escopo para curadoria                                                                                                                                  |
+| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Historia   | Apostilas 4 (67-77) e 5 (77-79)            | origens africanas, grupos linguisticos, escravizacao, afrodescendentes e formacao do povo brasileiro                                                   |
+| Ciencias   | Apostilas 4 (35-47) e 5 (41-43)            | artropodes, seus grupos, equinodermos e visao relacionada a luz                                                                                        |
 | Matematica | Apostila 4 (81, 84, 86, 88, 91, 92, 94-95) | sistema monetario, multiplicacao, graficos de barras e colunas, tabelas e graficos de dupla entrada, prisma, figuras planas, medidas e retas paralelas |
-| Geografia  | Apostilas 4 (53-62) e 5 (63-64)       | cartografia, representacoes do espaco e agua como recurso                                                        |
-| Ingles     | Material indicado pela escola (49-62) | preposicoes, vocabulario de esportes, verbos de acao e contexto de Dia dos Pais                                  |
-| Portugues  | Apostilas 4 (8-32) e 5 (8-10)         | usos de letras, pronomes, verbos, palavras semelhantes, onomatopeias, interjeicoes e cedilha                     |
+| Geografia  | Apostilas 4 (53-62) e 5 (63-64)            | cartografia, representacoes do espaco e agua como recurso                                                                                              |
+| Ingles     | Material indicado pela escola (49-62)      | preposicoes, vocabulario de esportes, verbos de acao e contexto de Dia dos Pais                                                                        |
+| Portugues  | Apostilas 4 (8-32) e 5 (8-10)              | usos de letras, pronomes, verbos, palavras semelhantes, onomatopeias, interjeicoes e cedilha                                                           |
 
 O livro paradidatico indicado no roteiro nao entra automaticamente no quiz.
 Qualquer lote baseado nele exige uma historia propria, objetivo de aprendizagem
