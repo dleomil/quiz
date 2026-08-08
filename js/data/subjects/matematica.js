@@ -160,6 +160,47 @@ function buildPrismQuestion(question) {
   };
 }
 
+function buildPlanarFigureQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'figuras_geometricas_planas',
+    topicName: 'Figuras Geométricas Planas',
+    skill: 'reconhecer-e-comparar-figuras-planas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '92',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -218,6 +259,10 @@ window.QuestionsDataSources.matematica = {
     prisma: {
       name: 'Prisma',
       icon: '🧊',
+    },
+    figuras_geometricas_planas: {
+      name: 'Figuras Geométricas Planas',
+      icon: '🔷',
     },
   },
   questions: [
@@ -3215,5 +3260,280 @@ window.QuestionsDataSources.matematica = {
         };
       })
       .map(buildPrismQuestion),
+    ...[
+      [
+        '001',
+        'Qual figura plana tem três lados?',
+        ['triângulo', 'quadrado', 'círculo', 'retângulo'],
+        0,
+        'Um triângulo é uma figura plana com três lados.',
+        [
+          'O quadrado tem quatro lados.',
+          'O círculo não tem lados retos.',
+          'O retângulo tem quatro lados.',
+        ],
+      ],
+      [
+        '002',
+        'Qual figura plana tem quatro lados iguais?',
+        ['quadrado', 'triângulo', 'círculo', 'retângulo'],
+        0,
+        'Um quadrado tem quatro lados com o mesmo comprimento.',
+        [
+          'O triângulo tem três lados.',
+          'O círculo não tem lados retos.',
+          'O retângulo pode ter lados de comprimentos diferentes.',
+        ],
+      ],
+      [
+        '003',
+        'Qual figura é redonda e não tem vértices?',
+        ['círculo', 'triângulo', 'quadrado', 'retângulo'],
+        0,
+        'O círculo é redondo e não tem cantos nem vértices.',
+        [
+          'O triângulo tem três vértices.',
+          'O quadrado tem quatro vértices.',
+          'O retângulo tem quatro vértices.',
+        ],
+      ],
+      [
+        '004',
+        'Qual figura tem quatro lados e quatro vértices, com dois lados maiores e dois menores?',
+        ['retângulo', 'quadrado', 'triângulo', 'círculo'],
+        0,
+        'Um retângulo tem quatro lados e pode ter dois lados maiores que os outros dois.',
+        [
+          'Os quatro lados do quadrado têm o mesmo comprimento.',
+          'O triângulo tem três lados.',
+          'O círculo não tem lados nem vértices.',
+        ],
+      ],
+      [
+        '005',
+        'Quantos vértices tem um triângulo?',
+        ['3', '2', '4', 'nenhum'],
+        0,
+        'Os três encontros dos lados de um triângulo são seus vértices.',
+        [
+          'Com dois vértices, faltaria um encontro entre os lados.',
+          'Quatro vértices aparecem em figuras de quatro lados.',
+          'O triângulo tem três cantos, chamados vértices.',
+        ],
+      ],
+      [
+        '006',
+        'Quantos lados tem um quadrado?',
+        ['4', '3', '2', 'nenhum'],
+        0,
+        'Um quadrado tem quatro lados.',
+        [
+          'Três lados formam um triângulo.',
+          'Dois segmentos não fecham um quadrado.',
+          'O quadrado tem lados retos.',
+        ],
+      ],
+      [
+        '007',
+        'Qual objeto lembra mais um círculo?',
+        ['moeda', 'porta', 'dado', 'fatia triangular de pizza'],
+        0,
+        'A face de uma moeda é redonda como um círculo.',
+        [
+          'Uma porta lembra um retângulo.',
+          'Um dado é um sólido com faces quadradas.',
+          'Uma fatia triangular de pizza lembra um triângulo.',
+        ],
+      ],
+      [
+        '008',
+        'Qual objeto lembra mais um retângulo?',
+        ['porta', 'relógio redondo', 'placa triangular', 'bola'],
+        0,
+        'Uma porta vista de frente geralmente tem forma retangular.',
+        [
+          'Um relógio redondo lembra um círculo.',
+          'Uma placa triangular lembra um triângulo.',
+          'Uma bola é um objeto redondo, não uma figura plana.',
+        ],
+      ],
+      [
+        '009',
+        'Qual figura tem quatro lados, todos do mesmo tamanho?',
+        ['quadrado', 'retângulo', 'triângulo', 'círculo'],
+        0,
+        'Os quatro lados do quadrado têm o mesmo comprimento.',
+        [
+          'O retângulo pode ter dois lados maiores e dois menores.',
+          'O triângulo tem três lados.',
+          'O círculo não tem lados retos.',
+        ],
+      ],
+      [
+        '010',
+        'O que um quadrado e um retângulo têm em comum?',
+        ['quatro lados', 'três lados', 'nenhum vértice', 'forma redonda'],
+        0,
+        'Os dois são figuras planas com quatro lados e quatro vértices.',
+        [
+          'Três lados descrevem um triângulo.',
+          'Quadrado e retângulo têm quatro vértices.',
+          'Quadrado e retângulo têm lados retos, não forma redonda.',
+        ],
+      ],
+      [
+        '011',
+        'Qual figura tem exatamente três vértices?',
+        ['triângulo', 'quadrado', 'retângulo', 'círculo'],
+        0,
+        'Um triângulo tem três vértices.',
+        [
+          'O quadrado tem quatro vértices.',
+          'O retângulo tem quatro vértices.',
+          'O círculo não tem vértices.',
+        ],
+      ],
+      [
+        '012',
+        'Qual figura não tem lados retos?',
+        ['círculo', 'triângulo', 'quadrado', 'retângulo'],
+        0,
+        'O contorno do círculo é curvo, sem lados retos.',
+        [
+          'O triângulo tem três lados retos.',
+          'O quadrado tem quatro lados retos.',
+          'O retângulo tem quatro lados retos.',
+        ],
+      ],
+      [
+        '013',
+        'Uma figura tem quatro lados iguais e quatro vértices. Qual é ela?',
+        ['quadrado', 'retângulo', 'triângulo', 'círculo'],
+        0,
+        'Quatro lados iguais e quatro vértices formam um quadrado.',
+        [
+          'O retângulo pode ter lados de tamanhos diferentes.',
+          'O triângulo tem três lados.',
+          'O círculo não tem vértices.',
+        ],
+      ],
+      [
+        '014',
+        'Uma figura tem três lados retos. Qual é ela?',
+        ['triângulo', 'círculo', 'quadrado', 'retângulo'],
+        0,
+        'Uma figura com três lados retos é um triângulo.',
+        [
+          'O contorno do círculo é curvo.',
+          'O quadrado tem quatro lados.',
+          'O retângulo tem quatro lados.',
+        ],
+      ],
+      [
+        '015',
+        'Em qual figura podemos contar quatro vértices?',
+        ['retângulo', 'triângulo', 'círculo', 'linha'],
+        0,
+        'Um retângulo tem quatro vértices, um em cada canto.',
+        [
+          'O triângulo tem três vértices.',
+          'O círculo não tem vértices.',
+          'Uma linha não é uma figura fechada com vértices.',
+        ],
+      ],
+      [
+        '016',
+        'Qual figura é plana, fechada e tem forma redonda?',
+        ['círculo', 'bola', 'quadrado', 'triângulo'],
+        0,
+        'O círculo é uma figura plana e fechada com contorno redondo.',
+        [
+          'A bola é um sólido, não uma figura plana.',
+          'O quadrado tem lados retos.',
+          'O triângulo tem três lados retos.',
+        ],
+      ],
+      [
+        '017',
+        'Qual dupla tem apenas figuras com quatro lados?',
+        [
+          'quadrado e retângulo',
+          'triângulo e círculo',
+          'círculo e quadrado',
+          'triângulo e retângulo',
+        ],
+        0,
+        'Quadrado e retângulo têm quatro lados cada um.',
+        [
+          'O triângulo tem três lados e o círculo não tem lados retos.',
+          'O círculo não tem quatro lados.',
+          'O triângulo tem três lados.',
+        ],
+      ],
+      [
+        '018',
+        'Qual figura tem lados retos e três cantos?',
+        ['triângulo', 'círculo', 'quadrado', 'bola'],
+        0,
+        'Os três cantos do triângulo são seus três vértices.',
+        [
+          'O círculo não tem lados retos nem cantos.',
+          'O quadrado tem quatro cantos.',
+          'A bola é um sólido redondo.',
+        ],
+      ],
+      [
+        '019',
+        'Por que uma placa quadrada não é um círculo?',
+        [
+          'tem quatro lados retos',
+          'é redonda',
+          'não tem vértices',
+          'tem contorno curvo',
+        ],
+        0,
+        'O quadrado tem quatro lados retos e quatro vértices.',
+        [
+          'A forma redonda descreve um círculo.',
+          'O quadrado tem quatro vértices.',
+          'Os lados do quadrado são retos, não curvos.',
+        ],
+      ],
+      [
+        '020',
+        'Qual descrição corresponde a um retângulo?',
+        [
+          'quatro lados e quatro vértices',
+          'três lados e três vértices',
+          'contorno redondo sem vértices',
+          'apenas um lado curvo',
+        ],
+        0,
+        'Um retângulo é uma figura plana com quatro lados e quatro vértices.',
+        [
+          'Três lados e três vértices descrevem um triângulo.',
+          'Um contorno redondo sem vértices descreve um círculo.',
+          'O retângulo tem quatro lados retos.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_fp_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildPlanarFigureQuestion),
   ],
 };
