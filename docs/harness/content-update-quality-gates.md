@@ -62,14 +62,15 @@ ela nao deve completar informacoes ausentes.
 
 O trabalho curricular pode ocorrer em trilhas independentes, sem pular gates:
 
-- Curadoria: no maximo dois temas com spec em preparacao.
-- Revisao pedagogica: no maximo um tema com pacote completo em revisao.
+- Curadoria e revisao pedagogica: no maximo dez temas no total, cada um com
+  card, branch e estado de gate explicitos.
 - Implementacao: no maximo um tema aprovado pedagogicamente.
 - Verificacao e release: no maximo um PR aguardando evidencias e merge.
 
-Cada tema usa card e branch proprios. Um tema so avanca quando satisfaz os
-criterios da trilha anterior; o acervo continua `draft` ate a decisao de
-publicacao controlada.
+O limite de dez permite paralelismo editorial sem misturar escopos. Cada tema
+usa card e branch proprios. Um tema so avanca quando satisfaz os criterios da
+trilha anterior; o acervo continua `draft` ate a decisao de publicacao
+controlada.
 
 ## Validacao automatica prevista
 
