@@ -82,6 +82,47 @@ function buildPortugueseCeCiQuestion(question) {
   };
 }
 
+function buildPortugueseVerbsIQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'verbos_i',
+    topicName: 'Verbos I',
+    skill: 'identificar-e-usar-verbos-em-frases-simples',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '18',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -140,6 +181,10 @@ window.QuestionsDataSources.portugues = {
     palavras_com_ce_e_ci: {
       name: 'Palavras com CE e CI',
       icon: '🔤',
+    },
+    verbos_i: {
+      name: 'Verbos I',
+      icon: '🏃',
     },
   },
   questions: [
@@ -2909,5 +2954,247 @@ window.QuestionsDataSources.portugues = {
         ],
       },
     ].map(buildPortugueseCeCiQuestion),
+    ...[
+      {
+        id: 'pt_t2_vi_001',
+        question: 'Em “Lia corre no pátio”, qual palavra indica uma ação?',
+        options: ['corre', 'Lia', 'no', 'pátio'],
+        correctIndex: 0,
+        explanation: 'Corre indica o que Lia faz.',
+        wrong: [
+          'Lia é o nome da pessoa.',
+          'No liga palavras na frase.',
+          'Pátio indica o lugar da ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_002',
+        question: 'Em “O cachorro late”, qual palavra indica uma ação?',
+        options: ['late', 'cachorro', 'o', 'qual'],
+        correctIndex: 0,
+        explanation: 'Late indica a ação do cachorro.',
+        wrong: [
+          'Cachorro nomeia o animal.',
+          'O acompanha o nome cachorro.',
+          'Qual não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_003',
+        question: 'Em “As crianças brincam”, qual palavra indica uma ação?',
+        options: ['brincam', 'crianças', 'as', 'uma'],
+        correctIndex: 0,
+        explanation: 'Brincam indica o que as crianças fazem.',
+        wrong: [
+          'Crianças nomeia as pessoas.',
+          'As acompanha o nome crianças.',
+          'Uma não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_004',
+        question: 'Em “Pedro lê um livro”, qual palavra indica uma ação?',
+        options: ['lê', 'Pedro', 'livro', 'um'],
+        correctIndex: 0,
+        explanation: 'Lê indica a ação de Pedro.',
+        wrong: [
+          'Pedro é o nome da pessoa.',
+          'Livro é o objeto lido.',
+          'Um acompanha o nome livro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_005',
+        question: 'Em “A professora ensina”, qual palavra indica uma ação?',
+        options: ['ensina', 'professora', 'a', 'escola'],
+        correctIndex: 0,
+        explanation: 'Ensina indica o que a professora faz.',
+        wrong: [
+          'Professora nomeia a pessoa.',
+          'A acompanha o nome professora.',
+          'Escola não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_006',
+        question: 'Complete: O pássaro __ no céu.',
+        options: ['voa', 'come', 'dorme', 'nada'],
+        correctIndex: 0,
+        explanation: 'Voa é a ação adequada para o pássaro no céu.',
+        wrong: [
+          'Come não completa a situação apresentada.',
+          'Dorme não indica voo.',
+          'Nada é uma ação realizada na água.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_007',
+        question: 'Complete: A menina __ água quando sente sede.',
+        options: ['bebe', 'pula', 'desenha', 'dorme'],
+        correctIndex: 0,
+        explanation: 'Beber água ajuda a matar a sede.',
+        wrong: [
+          'Pula não completa a ação relacionada à água e à sede.',
+          'Desenha não completa a ideia da frase.',
+          'Dorme não indica a ação esperada quando se sente sede.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_008',
+        question: 'Complete: O aluno __ a lição no caderno.',
+        options: ['escreve', 'corre', 'nada', 'canta'],
+        correctIndex: 0,
+        explanation: 'Escrever é a ação feita no caderno.',
+        wrong: [
+          'Corre não é uma ação feita no caderno.',
+          'Nada é uma ação realizada na água.',
+          'Canta não completa a situação apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_009',
+        question: 'Complete: O peixe __ no aquário.',
+        options: ['nada', 'lê', 'voa', 'pinta'],
+        correctIndex: 0,
+        explanation: 'Nadar é a ação esperada para o peixe na água.',
+        wrong: [
+          'Lê não completa a situação apresentada.',
+          'Voa não é a ação esperada para um peixe.',
+          'Pinta não é a ação indicada pela frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_010',
+        question: 'Complete: A turma __ uma música na festa.',
+        options: ['canta', 'dorme', 'bebe', 'corre'],
+        correctIndex: 0,
+        explanation: 'Cantar uma música completa a frase.',
+        wrong: [
+          'Dorme não completa a situação da festa.',
+          'Bebe não combina com o complemento uma música.',
+          'Corre não completa a ideia da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_011',
+        question: 'Ontem, João __ um livro.',
+        options: ['leu', 'lê', 'ler', 'livro'],
+        correctIndex: 0,
+        explanation: 'Ontem indica uma ação que já aconteceu: leu.',
+        wrong: [
+          'Lê indica uma ação atual e não combina com ontem.',
+          'Ler não completa a frase nessa forma.',
+          'Livro é um nome, não uma ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_012',
+        question: 'Agora, Ana __ um desenho.',
+        options: ['faz', 'fez', 'faça', 'desenho'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento: faz.',
+        wrong: [
+          'Fez indica uma ação passada.',
+          'Faça não completa essa frase afirmativa.',
+          'Desenho é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_013',
+        question: 'Ontem, o cachorro __ no quintal.',
+        options: ['correu', 'corre', 'correr', 'cachorro'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a corrida já aconteceu.',
+        wrong: [
+          'Corre indica uma ação atual e não combina com ontem.',
+          'Correr não completa a frase nessa forma.',
+          'Cachorro é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_014',
+        question: 'Agora, Pedro __ com os amigos.',
+        options: ['brinca', 'brincou', 'brincar', 'amigos'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento.',
+        wrong: [
+          'Brincou indica uma ação passada.',
+          'Brincar não completa a frase nessa forma.',
+          'Amigos é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_015',
+        question: 'Ontem, a turma __ uma música.',
+        options: ['cantou', 'canta', 'cantar', 'música'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação de cantar já aconteceu.',
+        wrong: [
+          'Canta indica uma ação atual e não combina com ontem.',
+          'Cantar não completa a frase nessa forma.',
+          'Música é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_016',
+        question: 'Complete: Eu __ uma carta.',
+        options: ['escrevo', 'escreve', 'escrevem', 'carta'],
+        correctIndex: 0,
+        explanation: 'Eu combina com escrevo nesta frase.',
+        wrong: [
+          'Escreve combina com ele ou ela.',
+          'Escrevem combina com mais de uma pessoa.',
+          'Carta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_017',
+        question: 'Complete: Ela __ no jardim.',
+        options: ['brinca', 'brincam', 'brinco', 'jardim'],
+        correctIndex: 0,
+        explanation: 'Ela combina com brinca.',
+        wrong: [
+          'Brincam combina com várias pessoas.',
+          'Brinco combina com eu.',
+          'Jardim é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_018',
+        question: 'Complete: Nós __ juntos.',
+        options: ['estudamos', 'estuda', 'estudam', 'escola'],
+        correctIndex: 0,
+        explanation: 'Nós combina com estudamos.',
+        wrong: [
+          'Estuda combina com uma pessoa.',
+          'Estudam combina com várias pessoas indicadas por eles ou elas.',
+          'Escola é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_019',
+        question: 'Complete: Eles __ bola no pátio.',
+        options: ['jogam', 'joga', 'jogo', 'bola'],
+        correctIndex: 0,
+        explanation: 'Eles combina com jogam.',
+        wrong: [
+          'Joga combina com uma pessoa.',
+          'Jogo combina com eu nesta frase.',
+          'Bola é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_020',
+        question: 'Complete: Você __ muito bem.',
+        options: ['desenha', 'desenham', 'desenho', 'desenhar'],
+        correctIndex: 0,
+        explanation: 'Você combina com desenha nesta frase.',
+        wrong: [
+          'Desenham combina com várias pessoas.',
+          'Desenho não combina com você nessa frase.',
+          'Desenhar não completa a frase nessa forma.',
+        ],
+      },
+    ].map(buildPortugueseVerbsIQuestion),
   ],
 };

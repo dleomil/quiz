@@ -181,6 +181,20 @@ async function run() {
         },
         [0, 0, 0, 0],
       ),
+      portugueseVerbsIDraftQuestionIds: QuestionsDB.getByTopic(
+        'verbos_i',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseVerbsICorrectIndexCounts: QuestionsDB.getByTopic(
+        'verbos_i',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -297,6 +311,20 @@ async function run() {
     );
     assert.deepStrictEqual(
       legacySnapshot.portugueseCeCiCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseVerbsIDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIDraftQuestionIds.includes('pt_t2_vi_001'),
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIDraftQuestionIds.includes('pt_t2_vi_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseVerbsICorrectIndexCounts,
       [5, 5, 5, 5],
     );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
