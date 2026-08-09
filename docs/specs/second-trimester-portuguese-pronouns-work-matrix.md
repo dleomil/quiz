@@ -14,13 +14,13 @@ antes da redacao de alternativas e retornos individualizados.
 
 ## Distribuicao
 
-| Itens         | Habilidade                            | Situacao prevista                              |
-| ------------- | ------------------------------------- | ---------------------------------------------- |
-| `001` a `004` | reconhecer eu, voce, ele e ela        | substituicao de um nome em frase curta         |
-| `005` a `008` | reconhecer nos, eles e elas           | grupo de pessoas em frase curta                |
-| `009` a `012` | escolher pronome coerente             | quem fala, com quem se fala ou de quem se fala |
-| `013` a `016` | reconhecer senhor e senhora           | conversa respeitosa com adulto                 |
-| `017` a `020` | escolher forma de tratamento adequada | escola, atendimento e carta curta              |
+| Itens         | Habilidade                             | Situacao prevista                      |
+| ------------- | -------------------------------------- | -------------------------------------- |
+| `001` a `004` | reconhecer ele, ela, eles e elas       | substituicao de nomes em frases curtas |
+| `005` a `010` | reconhecer eu, voce e nos              | quem fala, com quem se fala e grupos   |
+| `011` a `015` | reconhecer senhor e senhora            | conversa respeitosa com adulto         |
+| `016`         | distinguir falar com e falar sobre     | referente apresentado em frase curta   |
+| `017` a `020` | retomar pronomes pessoais e tratamento | grupos e conversa direta               |
 
 ## Regras de redacao
 
