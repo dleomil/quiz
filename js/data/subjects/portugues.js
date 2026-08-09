@@ -1,5 +1,128 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+function buildPortugueseLAndUQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'usos_de_l_e_u',
+    topicName: 'Usos de L e U',
+    skill: 'distinguir-usos-de-l-e-u',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '8-9',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortugueseCeCiQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'palavras_com_ce_e_ci',
+    topicName: 'Palavras com CE e CI',
+    skill: 'distinguir-grafias-com-ce-e-ci',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '16',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortugueseVerbsIQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'verbos_i',
+    topicName: 'Verbos I',
+    skill: 'identificar-e-usar-verbos-em-frases-simples',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '18',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -50,6 +173,18 @@ window.QuestionsDataSources.portugues = {
     atividades_adicionais: {
       name: 'Atividades Adicionais',
       icon: '✅',
+    },
+    usos_de_l_e_u: {
+      name: 'Usos de L e U',
+      icon: '🔤',
+    },
+    palavras_com_ce_e_ci: {
+      name: 'Palavras com CE e CI',
+      icon: '🔤',
+    },
+    verbos_i: {
+      name: 'Verbos I',
+      icon: '🏃',
     },
   },
   questions: [
@@ -2335,5 +2470,731 @@ window.QuestionsDataSources.portugues = {
         3: 'janela não é a resposta correta.',
       },
     },
+    ...[
+      {
+        id: 'pt_t2_lu_001',
+        question: 'Complete: O menino come__ toda a fruta ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Comeu é uma forma do verbo comer no passado.',
+        wrong: [
+          'Comel não é palavra.',
+          'Comeo não é a forma verbal usada nessa frase.',
+          'Comea não é a forma verbal usada nessa frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_002',
+        question: 'Complete: O céu estava azu__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Azul termina com a letra L.',
+        wrong: [
+          'Azuu não é palavra.',
+          'Azuo não é a grafia de azul.',
+          'Azua não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_003',
+        question: 'Complete: A bola cai__ no chão.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Caiu é uma forma do verbo cair no passado.',
+        wrong: [
+          'Cail não é palavra.',
+          'Caio tem outro uso e não completa a frase no passado.',
+          'Caia não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_004',
+        question: 'Complete: O gato dorme ao so__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Sol é o nome da estrela que ilumina o dia.',
+        wrong: [
+          'Sou não indica a estrela que ilumina o dia.',
+          'Soo não é a palavra usada nessa frase.',
+          'Soa não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_005',
+        question: 'Complete: Maria sai__ cedo da escola ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Saiu é uma forma do verbo sair no passado.',
+        wrong: [
+          'Sail não é palavra.',
+          'Saio não é a forma verbal usada nessa frase.',
+          'Saia tem outro uso e não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_006',
+        question: 'Complete: Ganhei um anel de present__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Anel termina com a letra L.',
+        wrong: [
+          'Aneu não é palavra.',
+          'Aneo não é palavra.',
+          'Anea não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_007',
+        question: 'Complete: O cachorro lati__ quando ouviu um barulho.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Latiu é uma forma do verbo latir no passado.',
+        wrong: [
+          'Latil não é palavra.',
+          'Latio não é a forma verbal usada nessa frase.',
+          'Latia indica outra situação e não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_008',
+        question: 'Complete: O barco navegou pe__ rio.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pelo é a união de por e o nesta frase.',
+        wrong: [
+          'Peu não completa a frase.',
+          'Peo não é palavra.',
+          'Pea não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_009',
+        question: 'Complete: Pedro viu um passarinho no quint__.',
+        options: ['al', 'au', 'el', 'eu'],
+        correctIndex: 0,
+        explanation: 'Quintal termina com AL.',
+        wrong: [
+          'Quintau não é palavra.',
+          'Quintel não é palavra.',
+          'Quinteu não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_010',
+        question: 'Complete: A menina bebe__ água depois da corrida.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Bebeu é uma forma do verbo beber no passado.',
+        wrong: [
+          'Bebel não é palavra.',
+          'Bebeo não é a forma verbal usada nessa frase.',
+          'Beba não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_011',
+        question: 'Complete: O menino ouvi__ a história com atenção.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Ouviu é uma forma do verbo ouvir no passado.',
+        wrong: [
+          'Ouvil não é palavra.',
+          'Ouvuo não é palavra.',
+          'Ouvia indica outra situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_012',
+        question: 'Complete: O pintor usou um pince__ novo.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pincel termina com a letra L.',
+        wrong: [
+          'Pinceu não é palavra.',
+          'Pinceo não é palavra.',
+          'Pincea não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_013',
+        question: 'Complete: O bebê sorri__ para a avó.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Sorriu é uma forma do verbo sorrir no passado.',
+        wrong: [
+          'Sorriel não é palavra.',
+          'Sorrio tem outro uso e não completa a frase no passado.',
+          'Sorria indica outra situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_014',
+        question: 'Complete: O mel é doce. A palavra mel termina com:',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Mel termina com a letra L.',
+        wrong: [
+          'Mel não termina em U.',
+          'Mel não termina em O.',
+          'Mel não termina em A.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_015',
+        question: 'Complete: O avião pouso__ cedo.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pousou é uma forma do verbo pousar no passado.',
+        wrong: [
+          'Pousol não é palavra.',
+          'Pousoo não é palavra.',
+          'Pousoa não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_016',
+        question: 'Complete: O aluno escrev__ uma frase ontem.',
+        options: ['eu', 'el', 'au', 'al'],
+        correctIndex: 0,
+        explanation: 'Escreveu é uma forma do verbo escrever no passado.',
+        wrong: [
+          'Escrevel não é palavra.',
+          'Escrevau não é palavra.',
+          'Escreval não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_017',
+        question: 'Complete: O menino pulo__ a corda ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pulou é uma forma do verbo pular no passado.',
+        wrong: [
+          'Pulol não é palavra.',
+          'Puloo não é palavra.',
+          'Puloa não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_018',
+        question: 'Complete: O menino corre__ para casa.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Correu é uma forma do verbo correr no passado.',
+        wrong: [
+          'Correl não é palavra.',
+          'Correo não é palavra.',
+          'Correa não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_019',
+        question: 'Complete: A menina abriu o ba__.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Baú é escrito com U no final e recebe acento agudo.',
+        wrong: [
+          'Bal é outra palavra e não nomeia o objeto da frase.',
+          'Bao não é a grafia correta.',
+          'Baa não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_020',
+        question: 'Qual palavra está escrita corretamente?',
+        options: ['farol', 'farou', 'faro', 'faral'],
+        correctIndex: 0,
+        explanation: 'Farol é escrito com L no final.',
+        wrong: [
+          'Farou não é a grafia correta de farol.',
+          'Faro é outra palavra e não tem o mesmo significado de farol.',
+          'Faral não é a grafia correta de farol.',
+        ],
+      },
+    ].map(buildPortugueseLAndUQuestion),
+    ...[
+      {
+        id: 'pt_t2_ceci_001',
+        question: 'Complete: A __na do filme foi engraçada.',
+        options: ['cena', 'cina', 'sena', 'sina'],
+        correctIndex: 0,
+        explanation: 'Cena se escreve com CE.',
+        wrong: [
+          'Cina troca CE por CI.',
+          'Sena troca C por S e não completa a frase no sentido de filme.',
+          'Sina não é a palavra usada nessa frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_002',
+        question: 'Complete: A __dade fica cheia de luzes à noite.',
+        options: ['cidade', 'cedade', 'sidade', 'cidada'],
+        correctIndex: 0,
+        explanation: 'Cidade se escreve com CI.',
+        wrong: [
+          'Cedade troca CI por CE.',
+          'Sidade troca C por S.',
+          'Cidada não é a palavra completa usada na frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_003',
+        question: 'Complete: A __bola tem cheiro gostoso.',
+        options: ['cebola', 'cibola', 'sebolla', 'sibola'],
+        correctIndex: 0,
+        explanation: 'Cebola se escreve com CE.',
+        wrong: [
+          'Cibola troca CE por CI.',
+          'Sebolla não é a grafia correta.',
+          'Sibola troca CE por SI.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_004',
+        question: 'Complete: O __real é usado no café da manhã.',
+        options: ['cereal', 'cerial', 'serial', 'sireal'],
+        correctIndex: 0,
+        explanation: 'Cereal se escreve com CE.',
+        wrong: [
+          'Cerial troca a vogal da segunda sílaba.',
+          'Serial troca C por S.',
+          'Sireal não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_005',
+        question: 'Complete: A __noura é laranja.',
+        options: ['cenoura', 'cinoura', 'senoura', 'sinoura'],
+        correctIndex: 0,
+        explanation: 'Cenoura se escreve com CE.',
+        wrong: [
+          'Cinoura troca CE por CI.',
+          'Senoura troca C por S.',
+          'Sinoura não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_006',
+        question: 'Complete: A __garra canta alto no verão.',
+        options: ['cigarra', 'cegarra', 'sigarra', 'segarra'],
+        correctIndex: 0,
+        explanation: 'Cigarra se escreve com CI.',
+        wrong: [
+          'Cegarra troca CI por CE.',
+          'Sigarra troca C por S.',
+          'Segarra não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_007',
+        question: 'Complete: A __ tem duas rodas.',
+        options: ['bicicleta', 'becicleta', 'bisicleta', 'bisicreta'],
+        correctIndex: 0,
+        explanation: 'Bicicleta se escreve com CI.',
+        wrong: [
+          'Becicleta altera a primeira sílaba.',
+          'Bisicleta troca C por S.',
+          'Bisicreta troca L por R.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_008',
+        question: 'Complete: A família foi ao __ para assistir a um filme.',
+        options: ['cinema', 'cenema', 'sinema', 'cinima'],
+        correctIndex: 0,
+        explanation: 'Cinema se escreve com CI no início.',
+        wrong: [
+          'Cenema troca CI por CE.',
+          'Sinema troca C por S.',
+          'Cinima altera a vogal da segunda sílaba.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_009',
+        question: 'Complete: O menino recebeu um __ de parabéns.',
+        options: ['certificado', 'sertificado', 'cirteficado', 'certeficado'],
+        correctIndex: 0,
+        explanation: 'Certificado se escreve com CE no início.',
+        wrong: [
+          'Sertificado troca C por S.',
+          'Cirteficado troca CE por CI.',
+          'Certeficado altera a vogal da sílaba seguinte.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_010',
+        question: 'Complete: A __ncia estuda os seres vivos.',
+        options: ['ciência', 'ceência', 'siencia', 'ciensia'],
+        correctIndex: 0,
+        explanation: 'Ciência se escreve com CI no início.',
+        wrong: [
+          'Ceência troca CI por CE.',
+          'Siencia troca C por S.',
+          'Ciensia altera a grafia da palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_011',
+        question: 'Complete: A __reja fica perto da praça.',
+        options: ['cereja', 'cireja', 'sereja', 'sireja'],
+        correctIndex: 0,
+        explanation: 'Cereja se escreve com CE.',
+        wrong: [
+          'Cireja troca CE por CI.',
+          'Sereja troca C por S.',
+          'Sireja não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_012',
+        question: 'Complete: O pedreiro usou __mento na obra.',
+        options: ['cimento', 'cemente', 'simento', 'ciminto'],
+        correctIndex: 0,
+        explanation: 'Cimento se escreve com CI.',
+        wrong: [
+          'Cemente troca CI por CE.',
+          'Simento troca C por S.',
+          'Ciminto altera a vogal da segunda sílaba.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_013',
+        question: 'Complete: O __rco tem lona e palhaços.',
+        options: ['circo', 'cerco', 'sirco', 'serco'],
+        correctIndex: 0,
+        explanation: 'Circo se escreve com CI.',
+        wrong: [
+          'Cerco é outra palavra e não nomeia o lugar da frase.',
+          'Sirco troca C por S.',
+          'Serco não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_014',
+        question: 'Complete: A __sta guarda frutas.',
+        options: ['cesta', 'cista', 'sesta', 'sista'],
+        correctIndex: 0,
+        explanation: 'Cesta se escreve com CE.',
+        wrong: [
+          'Cista troca CE por CI.',
+          'Sesta troca C por S.',
+          'Sista não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_015',
+        question: 'Complete: A __gonha fez um ninho alto.',
+        options: ['cegonha', 'cigonha', 'segonha', 'sigonha'],
+        correctIndex: 0,
+        explanation: 'Cegonha se escreve com CE.',
+        wrong: [
+          'Cigonha troca CE por CI.',
+          'Segonha troca C por S.',
+          'Sigonha não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_016',
+        question: 'Complete: O __ntavo é uma moeda pequena.',
+        options: ['centavo', 'cintavo', 'sentavo', 'sintavo'],
+        correctIndex: 0,
+        explanation: 'Centavo se escreve com CE.',
+        wrong: [
+          'Cintavo troca CE por CI.',
+          'Sentavo troca C por S.',
+          'Sintavo não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_017',
+        question: 'Complete: A __cada da casa estava fechada.',
+        options: ['cerca', 'circo', 'serca', 'sirca'],
+        correctIndex: 0,
+        explanation: 'Cerca se escreve com CE.',
+        wrong: [
+          'Circo é outra palavra e não completa a frase.',
+          'Serca troca C por S.',
+          'Sirca não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_018',
+        question: 'Complete: O __rne é uma ave grande.',
+        options: ['cisne', 'cesne', 'sisne', 'cizne'],
+        correctIndex: 0,
+        explanation: 'Cisne se escreve com CI.',
+        wrong: [
+          'Cesne troca CI por CE.',
+          'Sisne troca C por S.',
+          'Cizne troca S por Z.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_019',
+        question: 'Complete: O __ntro da cidade tem muitas lojas.',
+        options: ['centro', 'cintro', 'sentro', 'sintro'],
+        correctIndex: 0,
+        explanation: 'Centro se escreve com CE.',
+        wrong: [
+          'Cintro troca CE por CI.',
+          'Sentro troca C por S.',
+          'Sintro não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_020',
+        question: 'Complete: O __rvo correu pelo campo.',
+        options: ['cervo', 'cirvo', 'servo', 'sirvo'],
+        correctIndex: 0,
+        explanation: 'Cervo se escreve com CE.',
+        wrong: [
+          'Cirvo troca CE por CI.',
+          'Servo é outra palavra e não nomeia o animal da frase.',
+          'Sirvo é uma forma do verbo servir.',
+        ],
+      },
+    ].map(buildPortugueseCeCiQuestion),
+    ...[
+      {
+        id: 'pt_t2_vi_001',
+        question: 'Em “Lia corre no pátio”, qual palavra indica uma ação?',
+        options: ['corre', 'Lia', 'no', 'pátio'],
+        correctIndex: 0,
+        explanation: 'Corre indica o que Lia faz.',
+        wrong: [
+          'Lia é o nome da pessoa.',
+          'No liga palavras na frase.',
+          'Pátio indica o lugar da ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_002',
+        question: 'Em “O cachorro late”, qual palavra indica uma ação?',
+        options: ['late', 'cachorro', 'o', 'qual'],
+        correctIndex: 0,
+        explanation: 'Late indica a ação do cachorro.',
+        wrong: [
+          'Cachorro nomeia o animal.',
+          'O acompanha o nome cachorro.',
+          'Qual não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_003',
+        question: 'Em “As crianças brincam”, qual palavra indica uma ação?',
+        options: ['brincam', 'crianças', 'as', 'uma'],
+        correctIndex: 0,
+        explanation: 'Brincam indica o que as crianças fazem.',
+        wrong: [
+          'Crianças nomeia as pessoas.',
+          'As acompanha o nome crianças.',
+          'Uma não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_004',
+        question: 'Em “Pedro lê um livro”, qual palavra indica uma ação?',
+        options: ['lê', 'Pedro', 'livro', 'um'],
+        correctIndex: 0,
+        explanation: 'Lê indica a ação de Pedro.',
+        wrong: [
+          'Pedro é o nome da pessoa.',
+          'Livro é o objeto lido.',
+          'Um acompanha o nome livro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_005',
+        question: 'Em “A professora ensina”, qual palavra indica uma ação?',
+        options: ['ensina', 'professora', 'a', 'escola'],
+        correctIndex: 0,
+        explanation: 'Ensina indica o que a professora faz.',
+        wrong: [
+          'Professora nomeia a pessoa.',
+          'A acompanha o nome professora.',
+          'Escola não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_006',
+        question: 'Complete: O pássaro __ no céu.',
+        options: ['voa', 'come', 'dorme', 'nada'],
+        correctIndex: 0,
+        explanation: 'Voa é a ação adequada para o pássaro no céu.',
+        wrong: [
+          'Come não completa a situação apresentada.',
+          'Dorme não indica voo.',
+          'Nada é uma ação realizada na água.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_007',
+        question: 'Complete: A menina __ água quando sente sede.',
+        options: ['bebe', 'pula', 'desenha', 'dorme'],
+        correctIndex: 0,
+        explanation: 'Beber água ajuda a matar a sede.',
+        wrong: [
+          'Pula não completa a ação relacionada à água e à sede.',
+          'Desenha não completa a ideia da frase.',
+          'Dorme não indica a ação esperada quando se sente sede.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_008',
+        question: 'Complete: O aluno __ a lição no caderno.',
+        options: ['escreve', 'corre', 'nada', 'canta'],
+        correctIndex: 0,
+        explanation: 'Escrever é a ação feita no caderno.',
+        wrong: [
+          'Corre não é uma ação feita no caderno.',
+          'Nada é uma ação realizada na água.',
+          'Canta não completa a situação apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_009',
+        question: 'Complete: O peixe __ no aquário.',
+        options: ['nada', 'lê', 'voa', 'pinta'],
+        correctIndex: 0,
+        explanation: 'Nadar é a ação esperada para o peixe na água.',
+        wrong: [
+          'Lê não completa a situação apresentada.',
+          'Voa não é a ação esperada para um peixe.',
+          'Pinta não é a ação indicada pela frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_010',
+        question: 'Complete: A turma __ uma música na festa.',
+        options: ['canta', 'dorme', 'bebe', 'corre'],
+        correctIndex: 0,
+        explanation: 'Cantar uma música completa a frase.',
+        wrong: [
+          'Dorme não completa a situação da festa.',
+          'Bebe não combina com o complemento uma música.',
+          'Corre não completa a ideia da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_011',
+        question: 'Ontem, João __ um livro.',
+        options: ['leu', 'lê', 'ler', 'livro'],
+        correctIndex: 0,
+        explanation: 'Ontem indica uma ação que já aconteceu: leu.',
+        wrong: [
+          'Lê indica uma ação atual e não combina com ontem.',
+          'Ler não completa a frase nessa forma.',
+          'Livro é um nome, não uma ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_012',
+        question: 'Agora, Ana __ um desenho.',
+        options: ['faz', 'fez', 'faça', 'desenho'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento: faz.',
+        wrong: [
+          'Fez indica uma ação passada.',
+          'Faça não completa essa frase afirmativa.',
+          'Desenho é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_013',
+        question: 'Ontem, o cachorro __ no quintal.',
+        options: ['correu', 'corre', 'correr', 'cachorro'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a corrida já aconteceu.',
+        wrong: [
+          'Corre indica uma ação atual e não combina com ontem.',
+          'Correr não completa a frase nessa forma.',
+          'Cachorro é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_014',
+        question: 'Agora, Pedro __ com os amigos.',
+        options: ['brinca', 'brincou', 'brincar', 'amigos'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento.',
+        wrong: [
+          'Brincou indica uma ação passada.',
+          'Brincar não completa a frase nessa forma.',
+          'Amigos é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_015',
+        question: 'Ontem, a turma __ uma música.',
+        options: ['cantou', 'canta', 'cantar', 'música'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação de cantar já aconteceu.',
+        wrong: [
+          'Canta indica uma ação atual e não combina com ontem.',
+          'Cantar não completa a frase nessa forma.',
+          'Música é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_016',
+        question: 'Complete: Eu __ uma carta.',
+        options: ['escrevo', 'escreve', 'escrevem', 'carta'],
+        correctIndex: 0,
+        explanation: 'Eu combina com escrevo nesta frase.',
+        wrong: [
+          'Escreve combina com ele ou ela.',
+          'Escrevem combina com mais de uma pessoa.',
+          'Carta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_017',
+        question: 'Complete: Ela __ no jardim.',
+        options: ['brinca', 'brincam', 'brinco', 'jardim'],
+        correctIndex: 0,
+        explanation: 'Ela combina com brinca.',
+        wrong: [
+          'Brincam combina com várias pessoas.',
+          'Brinco combina com eu.',
+          'Jardim é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_018',
+        question: 'Complete: Nós __ juntos.',
+        options: ['estudamos', 'estuda', 'estudam', 'escola'],
+        correctIndex: 0,
+        explanation: 'Nós combina com estudamos.',
+        wrong: [
+          'Estuda combina com uma pessoa.',
+          'Estudam combina com várias pessoas indicadas por eles ou elas.',
+          'Escola é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_019',
+        question: 'Complete: Eles __ bola no pátio.',
+        options: ['jogam', 'joga', 'jogo', 'bola'],
+        correctIndex: 0,
+        explanation: 'Eles combina com jogam.',
+        wrong: [
+          'Joga combina com uma pessoa.',
+          'Jogo combina com eu nesta frase.',
+          'Bola é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_020',
+        question: 'Complete: Você __ muito bem.',
+        options: ['desenha', 'desenham', 'desenho', 'desenhar'],
+        correctIndex: 0,
+        explanation: 'Você combina com desenha nesta frase.',
+        wrong: [
+          'Desenham combina com várias pessoas.',
+          'Desenho não combina com você nessa frase.',
+          'Desenhar não completa a frase nessa forma.',
+        ],
+      },
+    ].map(buildPortugueseVerbsIQuestion),
   ],
 };
