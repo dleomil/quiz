@@ -41,6 +41,47 @@ function buildPortugueseLAndUQuestion(question) {
   };
 }
 
+function buildPortugueseCeCiQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'palavras_com_ce_e_ci',
+    topicName: 'Palavras com CE e CI',
+    skill: 'distinguir-grafias-com-ce-e-ci',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '16',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -94,6 +135,10 @@ window.QuestionsDataSources.portugues = {
     },
     usos_de_l_e_u: {
       name: 'Usos de L e U',
+      icon: '🔤',
+    },
+    palavras_com_ce_e_ci: {
+      name: 'Palavras com CE e CI',
       icon: '🔤',
     },
   },
@@ -2622,5 +2667,247 @@ window.QuestionsDataSources.portugues = {
         ],
       },
     ].map(buildPortugueseLAndUQuestion),
+    ...[
+      {
+        id: 'pt_t2_ceci_001',
+        question: 'Complete: A __na do filme foi engraçada.',
+        options: ['cena', 'cina', 'sena', 'sina'],
+        correctIndex: 0,
+        explanation: 'Cena se escreve com CE.',
+        wrong: [
+          'Cina troca CE por CI.',
+          'Sena troca C por S e não completa a frase no sentido de filme.',
+          'Sina não é a palavra usada nessa frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_002',
+        question: 'Complete: A __dade fica cheia de luzes à noite.',
+        options: ['cidade', 'cedade', 'sidade', 'cidada'],
+        correctIndex: 0,
+        explanation: 'Cidade se escreve com CI.',
+        wrong: [
+          'Cedade troca CI por CE.',
+          'Sidade troca C por S.',
+          'Cidada não é a palavra completa usada na frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_003',
+        question: 'Complete: A __bola tem cheiro gostoso.',
+        options: ['cebola', 'cibola', 'sebolla', 'sibola'],
+        correctIndex: 0,
+        explanation: 'Cebola se escreve com CE.',
+        wrong: [
+          'Cibola troca CE por CI.',
+          'Sebolla não é a grafia correta.',
+          'Sibola troca CE por SI.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_004',
+        question: 'Complete: O __real é usado no café da manhã.',
+        options: ['cereal', 'cerial', 'serial', 'sireal'],
+        correctIndex: 0,
+        explanation: 'Cereal se escreve com CE.',
+        wrong: [
+          'Cerial troca a vogal da segunda sílaba.',
+          'Serial troca C por S.',
+          'Sireal não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_005',
+        question: 'Complete: A __noura é laranja.',
+        options: ['cenoura', 'cinoura', 'senoura', 'sinoura'],
+        correctIndex: 0,
+        explanation: 'Cenoura se escreve com CE.',
+        wrong: [
+          'Cinoura troca CE por CI.',
+          'Senoura troca C por S.',
+          'Sinoura não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_006',
+        question: 'Complete: A __garra canta alto no verão.',
+        options: ['cigarra', 'cegarra', 'sigarra', 'segarra'],
+        correctIndex: 0,
+        explanation: 'Cigarra se escreve com CI.',
+        wrong: [
+          'Cegarra troca CI por CE.',
+          'Sigarra troca C por S.',
+          'Segarra não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_007',
+        question: 'Complete: A __ tem duas rodas.',
+        options: ['bicicleta', 'becicleta', 'bisicleta', 'bisicreta'],
+        correctIndex: 0,
+        explanation: 'Bicicleta se escreve com CI.',
+        wrong: [
+          'Becicleta altera a primeira sílaba.',
+          'Bisicleta troca C por S.',
+          'Bisicreta troca L por R.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_008',
+        question: 'Complete: A família foi ao __ para assistir a um filme.',
+        options: ['cinema', 'cenema', 'sinema', 'cinima'],
+        correctIndex: 0,
+        explanation: 'Cinema se escreve com CI no início.',
+        wrong: [
+          'Cenema troca CI por CE.',
+          'Sinema troca C por S.',
+          'Cinima altera a vogal da segunda sílaba.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_009',
+        question: 'Complete: O menino recebeu um __ de parabéns.',
+        options: ['certificado', 'sertificado', 'cirteficado', 'certeficado'],
+        correctIndex: 0,
+        explanation: 'Certificado se escreve com CE no início.',
+        wrong: [
+          'Sertificado troca C por S.',
+          'Cirteficado troca CE por CI.',
+          'Certeficado altera a vogal da sílaba seguinte.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_010',
+        question: 'Complete: A __ncia estuda os seres vivos.',
+        options: ['ciência', 'ceência', 'siencia', 'ciensia'],
+        correctIndex: 0,
+        explanation: 'Ciência se escreve com CI no início.',
+        wrong: [
+          'Ceência troca CI por CE.',
+          'Siencia troca C por S.',
+          'Ciensia altera a grafia da palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_011',
+        question: 'Complete: A __reja fica perto da praça.',
+        options: ['cereja', 'cireja', 'sereja', 'sireja'],
+        correctIndex: 0,
+        explanation: 'Cereja se escreve com CE.',
+        wrong: [
+          'Cireja troca CE por CI.',
+          'Sereja troca C por S.',
+          'Sireja não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_012',
+        question: 'Complete: O pedreiro usou __mento na obra.',
+        options: ['cimento', 'cemente', 'simento', 'ciminto'],
+        correctIndex: 0,
+        explanation: 'Cimento se escreve com CI.',
+        wrong: [
+          'Cemente troca CI por CE.',
+          'Simento troca C por S.',
+          'Ciminto altera a vogal da segunda sílaba.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_013',
+        question: 'Complete: O __rco tem lona e palhaços.',
+        options: ['circo', 'cerco', 'sirco', 'serco'],
+        correctIndex: 0,
+        explanation: 'Circo se escreve com CI.',
+        wrong: [
+          'Cerco é outra palavra e não nomeia o lugar da frase.',
+          'Sirco troca C por S.',
+          'Serco não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_014',
+        question: 'Complete: A __sta guarda frutas.',
+        options: ['cesta', 'cista', 'sesta', 'sista'],
+        correctIndex: 0,
+        explanation: 'Cesta se escreve com CE.',
+        wrong: [
+          'Cista troca CE por CI.',
+          'Sesta troca C por S.',
+          'Sista não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_015',
+        question: 'Complete: A __gonha fez um ninho alto.',
+        options: ['cegonha', 'cigonha', 'segonha', 'sigonha'],
+        correctIndex: 0,
+        explanation: 'Cegonha se escreve com CE.',
+        wrong: [
+          'Cigonha troca CE por CI.',
+          'Segonha troca C por S.',
+          'Sigonha não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_016',
+        question: 'Complete: O __ntavo é uma moeda pequena.',
+        options: ['centavo', 'cintavo', 'sentavo', 'sintavo'],
+        correctIndex: 0,
+        explanation: 'Centavo se escreve com CE.',
+        wrong: [
+          'Cintavo troca CE por CI.',
+          'Sentavo troca C por S.',
+          'Sintavo não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_017',
+        question: 'Complete: A __cada da casa estava fechada.',
+        options: ['cerca', 'circo', 'serca', 'sirca'],
+        correctIndex: 0,
+        explanation: 'Cerca se escreve com CE.',
+        wrong: [
+          'Circo é outra palavra e não completa a frase.',
+          'Serca troca C por S.',
+          'Sirca não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_018',
+        question: 'Complete: O __rne é uma ave grande.',
+        options: ['cisne', 'cesne', 'sisne', 'cizne'],
+        correctIndex: 0,
+        explanation: 'Cisne se escreve com CI.',
+        wrong: [
+          'Cesne troca CI por CE.',
+          'Sisne troca C por S.',
+          'Cizne troca S por Z.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_019',
+        question: 'Complete: O __ntro da cidade tem muitas lojas.',
+        options: ['centro', 'cintro', 'sentro', 'sintro'],
+        correctIndex: 0,
+        explanation: 'Centro se escreve com CE.',
+        wrong: [
+          'Cintro troca CE por CI.',
+          'Sentro troca C por S.',
+          'Sintro não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_020',
+        question: 'Complete: O __rvo correu pelo campo.',
+        options: ['cervo', 'cirvo', 'servo', 'sirvo'],
+        correctIndex: 0,
+        explanation: 'Cervo se escreve com CE.',
+        wrong: [
+          'Cirvo troca CE por CI.',
+          'Servo é outra palavra e não nomeia o animal da frase.',
+          'Sirvo é uma forma do verbo servir.',
+        ],
+      },
+    ].map(buildPortugueseCeCiQuestion),
   ],
 };

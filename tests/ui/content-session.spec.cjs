@@ -167,6 +167,20 @@ async function run() {
         },
         [0, 0, 0, 0],
       ),
+      portugueseCeCiDraftQuestionIds: QuestionsDB.getByTopic(
+        'palavras_com_ce_e_ci',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseCeCiCorrectIndexCounts: QuestionsDB.getByTopic(
+        'palavras_com_ce_e_ci',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -269,6 +283,20 @@ async function run() {
     );
     assert.deepStrictEqual(
       legacySnapshot.portugueseLAndUCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseCeCiDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseCeCiDraftQuestionIds.includes('pt_t2_ceci_001'),
+    );
+    assert.ok(
+      legacySnapshot.portugueseCeCiDraftQuestionIds.includes('pt_t2_ceci_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseCeCiCorrectIndexCounts,
       [5, 5, 5, 5],
     );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
