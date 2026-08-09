@@ -11,10 +11,10 @@
 
 | Itens         | Foco                                                   |
 | ------------- | ------------------------------------------------------ |
-| `001` a `006` | identificar palavra que indica acao                    |
-| `007` a `012` | completar frases com verbo coerente                    |
-| `013` a `016` | distinguir acao presente e passada em contexto simples |
-| `017` a `020` | relacionar pessoa indicada e forma verbal frequente    |
+| `001` a `005` | identificar palavra que indica acao                    |
+| `006` a `010` | completar frases com verbo coerente                    |
+| `011` a `015` | distinguir acao presente e passada em contexto simples |
+| `016` a `020` | relacionar pessoa indicada e forma verbal frequente    |
 
 ## Guardrails
 
