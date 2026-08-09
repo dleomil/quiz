@@ -195,6 +195,20 @@ async function run() {
         },
         [0, 0, 0, 0],
       ),
+      portuguesePronounsDraftQuestionIds: QuestionsDB.getByTopic(
+        'pronomes_pessoais_tratamento',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portuguesePronounsCorrectIndexCounts: QuestionsDB.getByTopic(
+        'pronomes_pessoais_tratamento',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
@@ -325,6 +339,24 @@ async function run() {
     );
     assert.deepStrictEqual(
       legacySnapshot.portugueseVerbsICorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portuguesePronounsDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portuguesePronounsDraftQuestionIds.includes(
+        'pt_t2_pron_001',
+      ),
+    );
+    assert.ok(
+      legacySnapshot.portuguesePronounsDraftQuestionIds.includes(
+        'pt_t2_pron_020',
+      ),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portuguesePronounsCorrectIndexCounts,
       [5, 5, 5, 5],
     );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
