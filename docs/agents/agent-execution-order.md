@@ -66,7 +66,7 @@ Use antes do merge final do PR.
 Use este fluxo sempre que uma entrega alterar materias, topicos, questoes ou explicacoes:
 
 1. `Spec Agent`: delimita o lote e os criterios de qualidade.
-2. `Content Curator Agent`: mapeia a fonte curricular e prepara propostas rastreaveis.
+2. `Content Curator Agent`: mapeia os temas curriculares e prepara propostas rastreaveis.
 3. `Pedagogical Quality Agent`: revisa ortografia, clareza, adequacao etaria, resposta unica e explicacoes.
 4. `Architect Agent`: participa somente se o formato de dados ou a carga de conteudo mudar.
 5. `Implementer Agent`: aplica apenas itens aprovados.

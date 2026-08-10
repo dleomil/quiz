@@ -26,7 +26,7 @@ function validContentV1Question(overrides) {
       sourceRef: {
         referenceId: 'escola-2026-t2',
         section: 'Matematica',
-        page: '12',
+        topic: 'medidas-capacidade-massa',
       },
       reviewStatus: 'pedagogical-approved',
       version: 1,
@@ -77,7 +77,11 @@ function run() {
     validContentV1Question({
       options: ['Litro', ' metro ', 'Metro', 'Grama'],
       correctIndex: 4,
-      sourceRef: { referenceId: '', section: 'Matematica', page: '12' },
+      sourceRef: {
+        referenceId: '',
+        section: 'Matematica',
+        topic: 'medidas-capacidade-massa',
+      },
       wrongExplanations: { 1: 'Metro mede comprimento.' },
     }),
   ]);
@@ -91,6 +95,20 @@ function run() {
     ),
   );
   assert.ok(invalidErrors.some((error) => error.includes('indice 2')));
+
+  const missingTopicErrors = validateQuestions([
+    validContentV1Question({
+      sourceRef: {
+        referenceId: 'escola-2026-t2',
+        section: 'Matematica',
+      },
+    }),
+  ]);
+  assert.ok(
+    missingTopicErrors.some((error) =>
+      error.includes('sourceRef exige topic (ou page legado)'),
+    ),
+  );
 
   const duplicateErrors = validateQuestions([
     validContentV1Question(),
@@ -131,6 +149,7 @@ function run() {
   });
 
   const geographyQuestions = loadSubjectQuestions('geografia');
+  // Confirma compatibilidade temporaria com referencias legadas por pagina.
   [
     { topic: 'cartografia', page: '53' },
     { topic: 'representacoes_cartograficas', page: '54' },

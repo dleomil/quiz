@@ -8,14 +8,16 @@ Definir os controles obrigatorios para atualizar conteudo escolar sem introduzir
 
 - material recebido da escola permanece local por padrao
 - o arquivo-fonte nao deve ser commitado, publicado ou anexado a issue sem autorizacao explicita do titular
-- a rastreabilidade registra titulo, pagina ou secao e objetivo curricular; nao precisa reproduzir o documento inteiro
+- a rastreabilidade registra ano, trimestre, materia, tema e objetivo curricular
+- pagina de apostila nao e requisito, metadado obrigatorio nem motivo isolado
+  para bloquear uma curadoria
 - conteudo derivado deve respeitar direitos autorais e restricoes da escola
 
 ## Gates bloqueantes
 
 O lote nao pode seguir para implementacao se qualquer ponto abaixo falhar:
 
-- fonte, pagina ou secao e objetivo curricular nao estao registrados
+- ano, trimestre, materia, tema ou objetivo curricular nao estao registrados
 - serie, materia e topico nao estao definidos
 - a questao nao possui uma unica resposta correta defensavel
 - existem alternativas vazias, duplicadas ou equivalentes no contexto da pergunta
@@ -89,7 +91,7 @@ O validador de conteudo deve bloquear, no minimo:
 - opcoes duplicadas apos normalizacao de espacos e caixa
 - `correctIndex` invalido
 - ausencia de explicacao e metadados obrigatorios
-- referencia de fonte, status de revisao ou versao ausentes
+- referencia de tema, status de revisao ou versao ausentes
 
 Automacao estrutural nao substitui revisao de linguagem, ambiguidade ou adequacao pedagogica.
 

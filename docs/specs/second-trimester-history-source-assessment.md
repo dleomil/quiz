@@ -1,24 +1,23 @@
-# Avaliação de Fontes e Guardrails: História do 2º Trimestre
+# Avaliação de Escopo e Guardrails: História do 2º Trimestre
 
 ## Objetivo
 
-Definir quais temas de História podem seguir para curadoria com as informações
-disponíveis e quais dependem de material adicional. Este documento não contém
-questões e não autoriza implementação ou publicação.
+Definir como os temas de História devem seguir para curadoria sem depender de
+páginas de apostila. Este documento não contém questões e não autoriza
+implementação ou publicação.
 
-## Fonte escolar disponível
+## Temas curriculares autorizados
 
-O roteiro escolar local informa quatro objetos de conhecimento e suas páginas:
+| Tema                                        | Card | Estado editorial              |
+| ------------------------------------------- | ---- | ----------------------------- |
+| Nossas origens: a África                    | #245 | apto para curadoria geral     |
+| Os principais grupos linguísticos africanos | #246 | apto com revisão antirracista |
+| Os africanos e a escravidão                 | #247 | apto com revisão antirracista |
+| Os afrodescendentes na atualidade           | #244 | apto com revisão antirracista |
 
-| Tema                                        | Página | Card | Estado editorial                 |
-| ------------------------------------------- | -----: | ---- | -------------------------------- |
-| Nossas origens: a África                    |     67 | #245 | apto para curadoria geral        |
-| Os principais grupos linguísticos africanos |     69 | #246 | bloqueado por recorte indefinido |
-| Os africanos e a escravidão                 |     72 | #247 | apto com revisão antirracista    |
-| Os afrodescendentes na atualidade           |     76 | #244 | apto com revisão antirracista    |
-
-As páginas da apostila não estão disponíveis no repositório. A indicação de
-página será mantida em `sourceRef`, sem copiar ou publicar o material escolar.
+Cada lote deve criar conteúdo original a partir do tema, com conceitos gerais
+verificáveis e linguagem adequada ao 3º ano. Nenhuma página de apostila será
+usada como requisito, referência de resposta ou bloqueio editorial.
 
 ## Referências institucionais para checagem
 
@@ -31,18 +30,12 @@ curricular específico da escola:
 - [Memória e verdade da escravidão - MDHC](https://www.gov.br/mdh/pt-br/navegue-por-temas/memoria-e-verdade-da-escravidao);
 - [Educação Escolar Quilombola - MEC](https://www.gov.br/mec/pt-br/etnico-racial/educacao-escolar-quilombola).
 
-## Bloqueio dos grupos linguísticos
+## Limite para grupos linguísticos
 
-O título da página 69 não informa quais famílias, grupos ou termos foram
-ensinados. A grande diversidade linguística africana permite classificações e
-níveis de detalhe diferentes. A curadoria de #246 só pode começar quando uma
-das condições abaixo for atendida:
-
-- página 69 disponibilizada localmente; ou
-- lista de grupos e conceitos autorizados pela escola.
-
-Nenhum agente deve inferir que língua, povo, etnia e país são sinônimos nem
-escolher uma classificação apenas por ser frequente em outros livros.
+O lote de #246 deve explicar a diversidade linguística e apresentar exemplos
+introdutórios amplamente verificáveis. Não deve tentar reproduzir uma
+classificação escolar desconhecida, exigir memorização extensa nem inferir que
+língua, povo, etnia e país são sinônimos.
 
 ## Guardrails antirracistas
 
