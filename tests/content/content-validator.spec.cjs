@@ -39,6 +39,22 @@ function validateQuestions(questions) {
   return validateContentSources({ matematica: { questions } });
 }
 
+function loadScienceQuestions() {
+  const scienceModulePath = path.join(
+    __dirname,
+    '..',
+    '..',
+    'js',
+    'data',
+    'subjects',
+    'ciencias.js',
+  );
+  global.window = {};
+  delete require.cache[require.resolve(scienceModulePath)];
+  require(scienceModulePath);
+  return global.window.QuestionsDataSources.ciencias.questions;
+}
+
 function run() {
   assert.deepStrictEqual(validateQuestions([validContentV1Question()]), []);
 
@@ -86,6 +102,46 @@ function run() {
     validateRepositoryContent(path.join(__dirname, '..', '..')),
     [],
   );
+
+  const platyhelminthQuestions = loadScienceQuestions().filter(
+    (question) => question.topic === 'platelmintos',
+  );
+  const platyhelminthText = JSON.stringify(platyhelminthQuestions);
+  const forbiddenSpellings = [
+    'achátado',
+    'conchá',
+    'rochás',
+    'chámado',
+    'chámada',
+    'folhás',
+    'semelhántes',
+    'caracteristica',
+    'Planarias',
+    'condicoes',
+    'reproducao',
+    'doenca',
+    'basico',
+    'descalco',
+    'osseo',
+    'cabeca',
+    'regiao',
+    'mamifero',
+    'biologico',
+    'cilios',
+    'superficies',
+    'umidas',
+    'cilindrico',
+    'pulmao',
+    'substancias',
+    'parasitaria',
+  ];
+  assert.strictEqual(platyhelminthQuestions.length, 33);
+  forbiddenSpellings.forEach((spelling) => {
+    assert.ok(
+      !platyhelminthText.includes(spelling),
+      `grafia incorreta em Platelmintos: ${spelling}`,
+    );
+  });
   console.log('content-validator: ok');
 }
 
