@@ -6,6 +6,11 @@ const geographyT2TopicConfig = {
     skill: 'compreender-fundamentos-da-cartografia',
     page: '53',
   },
+  representacoes_cartograficas: {
+    name: 'Diferentes representações cartográficas',
+    skill: 'diferenciar-representacoes-cartograficas',
+    page: '54',
+  },
 };
 
 function normalizeGeographyFeedback(feedback) {
@@ -367,9 +372,297 @@ const geographyT2QuestionSpecs = [
   ],
 ];
 
-const geographyT2Questions = geographyT2QuestionSpecs.map(
-  buildGeographyT2Question,
-);
+const geographyT2RepresentationQuestionSpecs = [
+  [
+    'GEO-T2-REP-001',
+    'representacoes_cartograficas',
+    'Qual representação mostra a Terra com forma semelhante a uma esfera?',
+    'globo terrestre',
+    ['planta de sala', 'croqui de caminho', 'mapa de uma rua'],
+    'O globo representa a forma aproximadamente esférica da Terra.',
+    [
+      'mostra uma área pequena vista de cima',
+      'é um desenho simples',
+      'é uma representação plana.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-002',
+    'representacoes_cartograficas',
+    'Para mostrar com detalhes a posição das salas de uma escola, qual representação é adequada?',
+    'planta da escola',
+    ['globo terrestre', 'mapa-múndi', 'imagem de todo um continente'],
+    'A planta representa de cima e com detalhes uma construção ou área pequena.',
+    [
+      'representa o planeta',
+      'mostra o mundo',
+      'é uma área grande demais para esse detalhe.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-003',
+    'representacoes_cartograficas',
+    'O que é um croqui?',
+    'um desenho simples que ajuda a localizar ou indicar um caminho',
+    [
+      'uma fotografia obrigatoriamente tirada do espaço',
+      'um globo em tamanho pequeno',
+      'uma lista de endereços sem desenho',
+    ],
+    'O croqui registra elementos principais sem exigir todos os detalhes e medidas exatas.',
+    [
+      'é imagem de satélite',
+      'tem forma esférica',
+      'não é uma representação desenhada.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-004',
+    'representacoes_cartograficas',
+    'Qual representação é produzida por equipamentos que registram a superfície a partir do espaço?',
+    'imagem de satélite',
+    ['planta baixa', 'croqui feito à mão', 'globo de sala'],
+    'Satélites podem registrar imagens da superfície terrestre vista do espaço.',
+    [
+      'é desenhada para detalhar uma área',
+      'é um esboço',
+      'é um modelo do planeta.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-005',
+    'representacoes_cartograficas',
+    'Para localizar ruas de uma cidade, qual opção costuma ser mais útil?',
+    'mapa de ruas',
+    [
+      'globo sem detalhes urbanos',
+      'planta de uma única sala',
+      'retrato de uma pessoa',
+    ],
+    'Um mapa de ruas apresenta vias e referências urbanas.',
+    [
+      'não mostra esse nível de detalhe',
+      'cobre uma área muito pequena',
+      'não representa ruas.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-006',
+    'representacoes_cartograficas',
+    'Para indicar onde ficam as carteiras e a porta de uma sala, podemos usar:',
+    'uma planta da sala',
+    ['um mapa do país', 'um globo terrestre', 'uma imagem de outro bairro'],
+    'A planta vista de cima permite organizar os elementos da sala.',
+    ['tem outra escala', 'representa a Terra', 'não contém a sala.'],
+  ],
+  [
+    'GEO-T2-REP-007',
+    'representacoes_cartograficas',
+    'Qual representação ajuda a observar a posição dos continentes e oceanos na Terra sem tornar o planeta plano?',
+    'globo terrestre',
+    ['croqui da escola', 'planta da casa', 'mapa de uma praça'],
+    'O globo mantém uma forma semelhante à do planeta.',
+    [
+      'mostra um caminho simples',
+      'detalha construção',
+      'representa área local e plana.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-008',
+    'representacoes_cartograficas',
+    'Para explicar a um colega um caminho curto no bairro com poucos pontos de referência, pode ser suficiente fazer:',
+    'um croqui',
+    ['um globo', 'uma planta do planeta', 'uma lista de continentes'],
+    'Um croqui pode destacar ruas e referências importantes para o trajeto.',
+    [
+      'não detalha o bairro',
+      'não é adequada',
+      'não orientam um caminho local.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-009',
+    'representacoes_cartograficas',
+    'Para observar a posição de grandes nuvens em certo momento, é útil consultar:',
+    'uma imagem de satélite',
+    ['uma planta da escola', 'um croqui antigo', 'um mapa sem data nem tema'],
+    'Imagens de satélite podem registrar nuvens sobre grandes áreas.',
+    [
+      'mostra uma construção',
+      'não registra nuvens',
+      'não oferece a informação necessária.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-010',
+    'representacoes_cartograficas',
+    'Qual representação mostra toda a superfície terrestre em uma folha plana?',
+    'mapa-múndi',
+    ['planta de apartamento', 'croqui de quarteirão', 'fotografia de uma sala'],
+    'O mapa-múndi representa o mundo em uma superfície plana.',
+    [
+      'detalha construção',
+      'representa área local',
+      'registra uma cena, não todo o mundo.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-011',
+    'representacoes_cartograficas',
+    'Como escolher entre mapa, planta, globo, croqui e imagem de satélite?',
+    'considerar a informação e o uso desejados',
+    [
+      'escolher sempre o globo',
+      'escolher sempre o desenho mais colorido',
+      'usar qualquer um sem observar o objetivo',
+    ],
+    'Cada representação atende melhor a determinadas necessidades.',
+    [
+      'ele não oferece todos os detalhes',
+      'cor não define adequação',
+      'o objetivo orienta a escolha.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-012',
+    'representacoes_cartograficas',
+    'Qual característica é comum a uma planta de construção?',
+    'mostrar uma área pequena vista de cima e com detalhes',
+    [
+      'mostrar sempre o planeta inteiro',
+      'não possuir organização espacial',
+      'registrar somente nuvens',
+    ],
+    'Plantas ajudam a compreender a disposição de cômodos e elementos.',
+    [
+      'é representado por globo ou mapa-múndi',
+      'a planta organiza posições',
+      'podem aparecer em imagens meteorológicas.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-013',
+    'representacoes_cartograficas',
+    'Um croqui precisa apresentar todas as medidas exatas do espaço?',
+    'não, ele pode ser um desenho simples com referências principais',
+    [
+      'sim, sempre com precisão de construção',
+      'sim, e deve mostrar o planeta',
+      'não, porque não pode indicar caminhos',
+    ],
+    'O croqui prioriza a compreensão de um local ou trajeto.',
+    [
+      'é exigência de representações técnicas, não de todo croqui',
+      'foge do uso local',
+      'essa é uma de suas funções.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-014',
+    'representacoes_cartograficas',
+    'Para comparar mudanças recentes em uma área extensa, qual material pode ajudar?',
+    'imagens de satélite de datas diferentes',
+    [
+      'uma única planta de sala',
+      'um globo sem data',
+      'um croqui sem identificação',
+    ],
+    'Comparar registros de datas diferentes pode revelar mudanças na superfície.',
+    [
+      'não cobre área extensa',
+      'não mostra mudança recente',
+      'não permite comparação confiável.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-015',
+    'representacoes_cartograficas',
+    'O mapa e a planta podem usar símbolos. O que deve explicar esses símbolos?',
+    'a legenda',
+    ['o tamanho da folha', 'a dobra do papel', 'a cor da mesa'],
+    'A legenda informa o significado dos símbolos da representação.',
+    ['não explica códigos', 'pode esconder dados', 'não faz parte da leitura.'],
+  ],
+  [
+    'GEO-T2-REP-016',
+    'representacoes_cartograficas',
+    'Por que um globo geralmente não é a melhor escolha para localizar uma rua?',
+    'porque mostra o planeta com pouco detalhe urbano',
+    [
+      'porque não representa a Terra',
+      'porque é sempre plano',
+      'porque mostra apenas uma sala',
+    ],
+    'O globo é útil para a visão geral da Terra, não para detalhes de ruas.',
+    ['essa é sua função', 'ele tem forma esférica', 'não é seu foco.'],
+  ],
+  [
+    'GEO-T2-REP-017',
+    'representacoes_cartograficas',
+    'Para apresentar uma rota de saída dentro da escola, qual representação pode mostrar salas e corredores?',
+    'planta da escola',
+    ['mapa-múndi', 'globo terrestre', 'imagem de um oceano'],
+    'A planta detalha a organização interna do prédio e pode apoiar uma rota.',
+    ['não mostra o prédio', 'não detalha corredores', 'não contém a escola.'],
+  ],
+  [
+    'GEO-T2-REP-018',
+    'representacoes_cartograficas',
+    'Duas representações do mesmo lugar podem mostrar informações diferentes?',
+    'sim, porque podem ter objetivos diferentes',
+    [
+      'não, todas devem ser idênticas',
+      'não, somente uma pode existir',
+      'sim, porque uma delas precisa estar errada',
+    ],
+    'Um mapa de ruas e uma imagem de satélite podem representar o mesmo lugar com informações distintas.',
+    [
+      'o objetivo muda a seleção',
+      'várias são possíveis',
+      'diferença de foco não significa erro.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-019',
+    'representacoes_cartograficas',
+    'Um aplicativo que mostra ruas e calcula rotas apresenta uma forma de:',
+    'mapa digital',
+    [
+      'globo sem informação',
+      'planta de uma única casa',
+      'imagem sem localização',
+    ],
+    'Mapas digitais podem apresentar ruas, posição e trajetos.',
+    [
+      'não detalha rotas urbanas',
+      'tem outro alcance',
+      'não oferece a função descrita.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-020',
+    'representacoes_cartograficas',
+    'Qual frase está correta sobre representações cartográficas?',
+    'a melhor escolha depende do que precisamos observar',
+    [
+      'o globo é sempre a melhor opção',
+      'o croqui substitui todos os mapas',
+      'a planta mostra melhor qualquer país',
+    ],
+    'Mapas, plantas, globos, croquis e imagens atendem a finalidades diferentes.',
+    [
+      'faltam detalhes locais',
+      'ele tem usos específicos',
+      'plantas são mais adequadas a áreas pequenas.',
+    ],
+  ],
+];
+
+const geographyT2Questions = [
+  ...geographyT2QuestionSpecs,
+  ...geographyT2RepresentationQuestionSpecs,
+].map(buildGeographyT2Question);
 
 window.QuestionsDataSources.geografia = {
   subjectMeta: {
@@ -381,6 +674,10 @@ window.QuestionsDataSources.geografia = {
     cartografia: {
       name: 'O que é Cartografia?',
       icon: '🧭',
+    },
+    representacoes_cartograficas: {
+      name: 'Diferentes representações cartográficas',
+      icon: '🛰️',
     },
     o_que_e_lixo_rejeito_residuo: {
       name: 'O que é lixo, rejeito e resíduo',

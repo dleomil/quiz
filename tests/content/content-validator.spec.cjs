@@ -131,36 +131,42 @@ function run() {
   });
 
   const geographyQuestions = loadSubjectQuestions('geografia');
-  const cartographyQuestions = geographyQuestions.filter(
-    (question) =>
-      question.contentSetId === '2026-t2-v1' &&
-      question.topic === 'cartografia',
-  );
-  const cartographyCorrectIndexDistribution = [0, 0, 0, 0];
+  [
+    { topic: 'cartografia', page: '53' },
+    { topic: 'representacoes_cartograficas', page: '54' },
+  ].forEach(({ topic, page }) => {
+    const topicQuestions = geographyQuestions.filter(
+      (question) =>
+        question.contentSetId === '2026-t2-v1' && question.topic === topic,
+    );
+    const correctIndexDistribution = [0, 0, 0, 0];
 
-  assert.strictEqual(cartographyQuestions.length, 20);
-  cartographyQuestions.forEach((question) => {
-    assert.strictEqual(question.schemaVersion, 'content-v1');
-    assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
-    assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
-    assert.strictEqual(question.sourceRef.section, 'Geografia');
-    assert.strictEqual(question.sourceRef.page, '53');
-    assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
-    Object.values(question.wrongExplanations).forEach((feedback) => {
-      assert.match(feedback, /^[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/);
-      assert.match(feedback, /[.!?]$/);
+    assert.strictEqual(topicQuestions.length, 20);
+    topicQuestions.forEach((question) => {
+      assert.strictEqual(question.schemaVersion, 'content-v1');
+      assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
+      assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
+      assert.strictEqual(question.sourceRef.section, 'Geografia');
+      assert.strictEqual(question.sourceRef.page, page);
+      assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
+      Object.values(question.wrongExplanations).forEach((feedback) => {
+        assert.match(feedback, /^[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/);
+        assert.match(feedback, /[.!?]$/);
+      });
+      correctIndexDistribution[question.correctIndex] += 1;
     });
-    cartographyCorrectIndexDistribution[question.correctIndex] += 1;
+    assert.deepStrictEqual(correctIndexDistribution, [5, 5, 5, 5]);
   });
-  assert.deepStrictEqual(cartographyCorrectIndexDistribution, [5, 5, 5, 5]);
 
-  const cartographyVisibleText = JSON.stringify(
-    cartographyQuestions.flatMap((question) => [
-      question.question,
-      ...question.options,
-      question.explanation,
-      ...Object.values(question.wrongExplanations),
-    ]),
+  const geographyT2VisibleText = JSON.stringify(
+    geographyQuestions
+      .filter((question) => question.contentSetId === '2026-t2-v1')
+      .flatMap((question) => [
+        question.question,
+        ...question.options,
+        question.explanation,
+        ...Object.values(question.wrongExplanations),
+      ]),
   );
   [
     'representacao',
@@ -178,8 +184,8 @@ function run() {
     'distancia',
   ].forEach((spelling) => {
     assert.ok(
-      !cartographyVisibleText.includes(spelling),
-      `grafia incorreta em Cartografia: ${spelling}`,
+      !geographyT2VisibleText.includes(spelling),
+      `grafia incorreta em Geografia: ${spelling}`,
     );
   });
 
