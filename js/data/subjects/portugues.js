@@ -1,5 +1,535 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+function buildPortugueseLAndUQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'usos_de_l_e_u',
+    topicName: 'Usos de L e U',
+    skill: 'distinguir-usos-de-l-e-u',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '8-9',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortugueseCeCiQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'palavras_com_ce_e_ci',
+    topicName: 'Palavras com CE e CI',
+    skill: 'distinguir-grafias-com-ce-e-ci',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '16',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortugueseVerbsIQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'verbos_i',
+    topicName: 'Verbos I',
+    skill: 'identificar-e-usar-verbos-em-frases-simples',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '18',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortuguesePronounsQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'pronomes_pessoais_tratamento',
+    topicName: 'Pronomes Pessoais e de Tratamento',
+    skill: 'usar-pronomes-pessoais-e-de-tratamento',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '9',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortugueseVerbsIIQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'verbos_ii',
+    topicName: 'Verbos II',
+    skill: 'identificar-e-usar-verbos-em-novos-contextos',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '27',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPortugueseSimilarWordsQuestion(question) {
+  const correctIndex = question.options.indexOf(question.correct);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (_, index) {
+    if (index !== correctIndex) {
+      wrongExplanations[index] = question.wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'palavras_semelhantes',
+    topicName: 'Palavras semelhantes',
+    skill: 'identificar-palavras-de-sentido-semelhante-em-contexto',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Portugues',
+      topic: 'palavras-semelhantes',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    id: question.id,
+    question: question.question,
+    options: question.options,
+    correctIndex,
+    explanation: question.explanation,
+    wrongExplanations,
+  };
+}
+
+const portugueseSimilarWordsQuestionSpecs = [
+  {
+    id: 'PT-T2-SEM-001',
+    question:
+      'Na frase "Lia ficou feliz com a visita", qual palavra pode substituir "feliz" sem mudar o sentido principal?',
+    options: ['contente', 'cansada', 'distante', 'vazia'],
+    correct: 'contente',
+    explanation:
+      'Nesse contexto, "contente" e "feliz" apresentam sentidos próximos.',
+    wrong: [
+      'indica falta de energia',
+      'indica afastamento',
+      'indica ausência de conteúdo.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-002',
+    question:
+      'Em "O corredor foi veloz", qual palavra tem sentido semelhante a "veloz"?',
+    options: ['silencioso', 'rápido', 'cuidadoso', 'pequeno'],
+    correct: 'rápido',
+    explanation:
+      '"Rápido" preserva a ideia de que o corredor se movimentou com velocidade.',
+    wrong: ['fala de som', 'fala de atenção', 'fala de tamanho.'],
+  },
+  {
+    id: 'PT-T2-SEM-003',
+    question:
+      'Em "A professora iniciou a leitura", qual palavra pode substituir "iniciou"?',
+    options: ['apagou', 'esqueceu', 'começou', 'interrompeu'],
+    correct: 'começou',
+    explanation: '"Começou" e "iniciou" indicam o início da ação nessa frase.',
+    wrong: [
+      'significa eliminar ou desligar',
+      'significa não lembrar',
+      'significa parar uma ação em andamento.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-004',
+    question:
+      'Em "O filme terminou cedo", qual palavra mantém o sentido de "terminou"?',
+    options: ['apareceu', 'continuou', 'começou', 'finalizou'],
+    correct: 'finalizou',
+    explanation: '"Finalizou" indica que o filme chegou ao fim.',
+    wrong: [
+      'indica que algo passou a ser visto',
+      'indica permanência',
+      'indica início.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-005',
+    question:
+      'Na frase "O jardim era belo", qual palavra tem sentido semelhante a "belo"?',
+    options: ['bonito', 'barulhento', 'vazio', 'distante'],
+    correct: 'bonito',
+    explanation:
+      '"Bonito" preserva a característica positiva indicada por "belo".',
+    wrong: [
+      'descreve muito som',
+      'indica ausência',
+      'indica que algo está longe.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-006',
+    question:
+      'Em "A sala ficou silenciosa", qual palavra pode substituir "silenciosa"?',
+    options: ['lotada', 'quieta', 'colorida', 'aberta'],
+    correct: 'quieta',
+    explanation:
+      'Nesse contexto, "quieta" mantém a ideia de pouco ou nenhum barulho.',
+    wrong: [
+      'indica muitas pessoas',
+      'fala de cores',
+      'indica que não está fechada.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-007',
+    question:
+      'Na frase "Pedro auxiliou o colega", qual palavra tem sentido próximo de "auxiliou"?',
+    options: ['chamou', 'observou', 'ajudou', 'encontrou'],
+    correct: 'ajudou',
+    explanation:
+      '"Ajudou" e "auxiliou" indicam que Pedro ofereceu apoio ao colega.',
+    wrong: [
+      'indica convidar ou dizer um nome',
+      'indica olhar com atenção',
+      'indica achar alguém ou algo.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-008',
+    question:
+      'Em "A biblioteca fica próxima da escola", qual palavra pode substituir "próxima"?',
+    options: ['fechada', 'acima', 'vazia', 'perto'],
+    correct: 'perto',
+    explanation:
+      '"Perto" mantém a ideia de pequena distância entre os lugares.',
+    wrong: [
+      'indica que não está aberta',
+      'indica posição superior',
+      'indica ausência de pessoas ou objetos.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-009',
+    question:
+      'Na frase "A cidade fica distante daqui", qual palavra tem sentido semelhante a "distante"?',
+    options: ['longe', 'limpa', 'antiga', 'movimentada'],
+    correct: 'longe',
+    explanation: '"Longe" preserva a ideia de grande distância.',
+    wrong: [
+      'indica ausência de sujeira',
+      'fala de tempo',
+      'indica muita atividade.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-010',
+    question:
+      'Em "A sopa estava saborosa", qual palavra pode substituir "saborosa"?',
+    options: ['fria', 'gostosa', 'líquida', 'pronta'],
+    correct: 'gostosa',
+    explanation:
+      'Nesse contexto, "gostosa" mantém a avaliação positiva do sabor.',
+    wrong: [
+      'indica temperatura',
+      'descreve o estado da sopa',
+      'indica que o preparo terminou.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-011',
+    question:
+      'Na frase "O menino recordou o recado", qual palavra tem sentido próximo de "recordou"?',
+    options: ['escreveu', 'apagou', 'lembrou', 'perdeu'],
+    correct: 'lembrou',
+    explanation:
+      '"Lembrou" e "recordou" indicam que o recado voltou à memória.',
+    wrong: [
+      'indica registrar por escrito',
+      'indica eliminar',
+      'indica deixar de ter ou não encontrar.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-012',
+    question:
+      'Em "A família escolheu o caminho mais curto", qual expressão pode substituir "escolheu"?',
+    options: ['esqueceu do', 'afastou-se do', 'desenhou o', 'optou pelo'],
+    correct: 'optou pelo',
+    explanation: '"Optou pelo" mantém a ideia de selecionar uma possibilidade.',
+    wrong: [
+      'indica não lembrar',
+      'indica aumentar a distância',
+      'indica representar com traços.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-013',
+    question:
+      'Na frase "Aquela moradia tem duas janelas", qual palavra tem sentido semelhante a "moradia"?',
+    options: ['residência', 'brincadeira', 'ferramenta', 'paisagem'],
+    correct: 'residência',
+    explanation:
+      '"Residência" e "moradia" podem indicar o lugar onde alguém vive.',
+    wrong: [
+      'é uma atividade de diversão',
+      'é usada para realizar um trabalho',
+      'é o conjunto de elementos vistos em um lugar.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-014',
+    question:
+      'Em "Bia sentiu receio da tempestade", qual palavra tem sentido próximo de "receio"?',
+    options: ['coragem', 'medo', 'alegria', 'pressa'],
+    correct: 'medo',
+    explanation:
+      'Nesse contexto, "medo" e "receio" indicam preocupação diante da tempestade.',
+    wrong: [
+      'indica disposição para enfrentar uma situação',
+      'é um sentimento positivo',
+      'indica urgência.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-015',
+    question:
+      'Na frase "O ruído acordou o bebê", qual palavra pode substituir "ruído"?',
+    options: ['silêncio', 'perfume', 'barulho', 'cobertor'],
+    correct: 'barulho',
+    explanation: '"Barulho" preserva a ideia de um som que acordou o bebê.',
+    wrong: [
+      'é ausência de som',
+      'é um cheiro',
+      'é um objeto usado para aquecer.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-016',
+    question:
+      'Em "A criança tranquila esperou sua vez", qual palavra tem sentido semelhante a "tranquila"?',
+    options: ['apressada', 'zangada', 'distraída', 'calma'],
+    correct: 'calma',
+    explanation:
+      '"Calma" mantém a ideia de que a criança esperou sem agitação.',
+    wrong: ['indica urgência', 'indica irritação', 'indica falta de atenção.'],
+  },
+  {
+    id: 'PT-T2-SEM-017',
+    question:
+      'Quando não conhecemos bem o significado de uma palavra, o que podemos fazer?',
+    options: [
+      'consultar um dicionário',
+      'escolher qualquer palavra',
+      'olhar apenas o tamanho',
+      'trocar todas as letras',
+    ],
+    correct: 'consultar um dicionário',
+    explanation:
+      'O dicionário ajuda a conhecer significados e usos das palavras.',
+    wrong: [
+      'pode produzir uma resposta errada',
+      'não revela o significado',
+      'mudar a grafia não explica o sentido.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-018',
+    question:
+      'Por que devemos ler a frase inteira antes de trocar uma palavra por outra semelhante?',
+    options: [
+      'porque toda frase precisa rimar',
+      'porque o contexto ajuda a confirmar o sentido',
+      'porque palavras longas têm sempre o mesmo sentido',
+      'porque a primeira opção é sempre correta',
+    ],
+    correct: 'porque o contexto ajuda a confirmar o sentido',
+    explanation:
+      'A mesma palavra pode ter usos diferentes, e a frase mostra qual sentido está sendo usado.',
+    wrong: [
+      'semelhança de sentido não depende de rima',
+      'tamanho não define significado',
+      'a posição não garante correção.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-019',
+    question:
+      'Palavras de sentido semelhante podem ser trocadas em qualquer frase?',
+    options: [
+      'sim, sem precisar reler',
+      'sim, porque têm a mesma grafia',
+      'não, pois o contexto pode mudar o melhor uso',
+      'não, porque nunca possuem relação',
+    ],
+    correct: 'não, pois o contexto pode mudar o melhor uso',
+    explanation:
+      'Palavras próximas podem apresentar diferenças de uso, intensidade ou combinação com outras palavras.',
+    wrong: [
+      'é preciso conferir a frase',
+      'grafia não define a relação',
+      'palavras semelhantes possuem relação de sentido em determinados contextos.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-020',
+    question:
+      'Qual sequência ajuda a verificar se uma palavra semelhante pode substituir outra?',
+    options: [
+      'olhar apenas a primeira letra',
+      'escolher a palavra mais longa',
+      'ignorar o restante da frase',
+      'trocar a palavra e reler a frase inteira',
+    ],
+    correct: 'trocar a palavra e reler a frase inteira',
+    explanation:
+      'A releitura permite verificar se a frase continua clara e mantém o sentido principal.',
+    wrong: [
+      'uma letra não confirma o significado',
+      'tamanho não garante adequação',
+      'o contexto é necessário para decidir.',
+    ],
+  },
+];
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -50,6 +580,30 @@ window.QuestionsDataSources.portugues = {
     atividades_adicionais: {
       name: 'Atividades Adicionais',
       icon: '✅',
+    },
+    usos_de_l_e_u: {
+      name: 'Usos de L e U',
+      icon: '🔤',
+    },
+    palavras_com_ce_e_ci: {
+      name: 'Palavras com CE e CI',
+      icon: '🔤',
+    },
+    verbos_i: {
+      name: 'Verbos I',
+      icon: '🏃',
+    },
+    pronomes_pessoais_tratamento: {
+      name: 'Pronomes Pessoais e de Tratamento',
+      icon: '👥',
+    },
+    verbos_ii: {
+      name: 'Verbos II',
+      icon: '✍️',
+    },
+    palavras_semelhantes: {
+      name: 'Palavras semelhantes',
+      icon: '🔁',
     },
   },
   questions: [
@@ -2335,5 +2889,1241 @@ window.QuestionsDataSources.portugues = {
         3: 'janela não é a resposta correta.',
       },
     },
+    ...[
+      {
+        id: 'pt_t2_lu_001',
+        question: 'Complete: O menino come__ toda a fruta ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Comeu é uma forma do verbo comer no passado.',
+        wrong: [
+          'Comel não é palavra.',
+          'Comeo não é a forma verbal usada nessa frase.',
+          'Comea não é a forma verbal usada nessa frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_002',
+        question: 'Complete: O céu estava azu__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Azul termina com a letra L.',
+        wrong: [
+          'Azuu não é palavra.',
+          'Azuo não é a grafia de azul.',
+          'Azua não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_003',
+        question: 'Complete: A bola cai__ no chão.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Caiu é uma forma do verbo cair no passado.',
+        wrong: [
+          'Cail não é palavra.',
+          'Caio tem outro uso e não completa a frase no passado.',
+          'Caia não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_004',
+        question: 'Complete: O gato dorme ao so__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Sol é o nome da estrela que ilumina o dia.',
+        wrong: [
+          'Sou não indica a estrela que ilumina o dia.',
+          'Soo não é a palavra usada nessa frase.',
+          'Soa não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_005',
+        question: 'Complete: Maria sai__ cedo da escola ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Saiu é uma forma do verbo sair no passado.',
+        wrong: [
+          'Sail não é palavra.',
+          'Saio não é a forma verbal usada nessa frase.',
+          'Saia tem outro uso e não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_006',
+        question: 'Complete: Ganhei um anel de present__.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Anel termina com a letra L.',
+        wrong: [
+          'Aneu não é palavra.',
+          'Aneo não é palavra.',
+          'Anea não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_007',
+        question: 'Complete: O cachorro lati__ quando ouviu um barulho.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Latiu é uma forma do verbo latir no passado.',
+        wrong: [
+          'Latil não é palavra.',
+          'Latio não é a forma verbal usada nessa frase.',
+          'Latia indica outra situação e não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_008',
+        question: 'Complete: O barco navegou pe__ rio.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pelo é a união de por e o nesta frase.',
+        wrong: [
+          'Peu não completa a frase.',
+          'Peo não é palavra.',
+          'Pea não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_009',
+        question: 'Complete: Pedro viu um passarinho no quint__.',
+        options: ['al', 'au', 'el', 'eu'],
+        correctIndex: 0,
+        explanation: 'Quintal termina com AL.',
+        wrong: [
+          'Quintau não é palavra.',
+          'Quintel não é palavra.',
+          'Quinteu não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_010',
+        question: 'Complete: A menina bebe__ água depois da corrida.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Bebeu é uma forma do verbo beber no passado.',
+        wrong: [
+          'Bebel não é palavra.',
+          'Bebeo não é a forma verbal usada nessa frase.',
+          'Beba não completa a frase no passado.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_011',
+        question: 'Complete: O menino ouvi__ a história com atenção.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Ouviu é uma forma do verbo ouvir no passado.',
+        wrong: [
+          'Ouvil não é palavra.',
+          'Ouvuo não é palavra.',
+          'Ouvia indica outra situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_012',
+        question: 'Complete: O pintor usou um pince__ novo.',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pincel termina com a letra L.',
+        wrong: [
+          'Pinceu não é palavra.',
+          'Pinceo não é palavra.',
+          'Pincea não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_013',
+        question: 'Complete: O bebê sorri__ para a avó.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Sorriu é uma forma do verbo sorrir no passado.',
+        wrong: [
+          'Sorriel não é palavra.',
+          'Sorrio tem outro uso e não completa a frase no passado.',
+          'Sorria indica outra situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_014',
+        question: 'Complete: O mel é doce. A palavra mel termina com:',
+        options: ['l', 'u', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Mel termina com a letra L.',
+        wrong: [
+          'Mel não termina em U.',
+          'Mel não termina em O.',
+          'Mel não termina em A.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_015',
+        question: 'Complete: O avião pouso__ cedo.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pousou é uma forma do verbo pousar no passado.',
+        wrong: [
+          'Pousol não é palavra.',
+          'Pousoo não é palavra.',
+          'Pousoa não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_016',
+        question: 'Complete: O aluno escrev__ uma frase ontem.',
+        options: ['eu', 'el', 'au', 'al'],
+        correctIndex: 0,
+        explanation: 'Escreveu é uma forma do verbo escrever no passado.',
+        wrong: [
+          'Escrevel não é palavra.',
+          'Escrevau não é palavra.',
+          'Escreval não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_017',
+        question: 'Complete: O menino pulo__ a corda ontem.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Pulou é uma forma do verbo pular no passado.',
+        wrong: [
+          'Pulol não é palavra.',
+          'Puloo não é palavra.',
+          'Puloa não é palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_018',
+        question: 'Complete: O menino corre__ para casa.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Correu é uma forma do verbo correr no passado.',
+        wrong: [
+          'Correl não é palavra.',
+          'Correo não é palavra.',
+          'Correa não completa a frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_019',
+        question: 'Complete: A menina abriu o ba__.',
+        options: ['u', 'l', 'o', 'a'],
+        correctIndex: 0,
+        explanation: 'Baú é escrito com U no final e recebe acento agudo.',
+        wrong: [
+          'Bal é outra palavra e não nomeia o objeto da frase.',
+          'Bao não é a grafia correta.',
+          'Baa não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_lu_020',
+        question: 'Qual palavra está escrita corretamente?',
+        options: ['farol', 'farou', 'faro', 'faral'],
+        correctIndex: 0,
+        explanation: 'Farol é escrito com L no final.',
+        wrong: [
+          'Farou não é a grafia correta de farol.',
+          'Faro é outra palavra e não tem o mesmo significado de farol.',
+          'Faral não é a grafia correta de farol.',
+        ],
+      },
+    ].map(buildPortugueseLAndUQuestion),
+    ...[
+      {
+        id: 'pt_t2_ceci_001',
+        question: 'Complete: A __na do filme foi engraçada.',
+        options: ['cena', 'cina', 'sena', 'sina'],
+        correctIndex: 0,
+        explanation: 'Cena se escreve com CE.',
+        wrong: [
+          'Cina troca CE por CI.',
+          'Sena troca C por S e não completa a frase no sentido de filme.',
+          'Sina não é a palavra usada nessa frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_002',
+        question: 'Complete: A __dade fica cheia de luzes à noite.',
+        options: ['cidade', 'cedade', 'sidade', 'cidada'],
+        correctIndex: 0,
+        explanation: 'Cidade se escreve com CI.',
+        wrong: [
+          'Cedade troca CI por CE.',
+          'Sidade troca C por S.',
+          'Cidada não é a palavra completa usada na frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_003',
+        question: 'Complete: A __bola tem cheiro gostoso.',
+        options: ['cebola', 'cibola', 'sebolla', 'sibola'],
+        correctIndex: 0,
+        explanation: 'Cebola se escreve com CE.',
+        wrong: [
+          'Cibola troca CE por CI.',
+          'Sebolla não é a grafia correta.',
+          'Sibola troca CE por SI.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_004',
+        question: 'Complete: O __real é usado no café da manhã.',
+        options: ['cereal', 'cerial', 'serial', 'sireal'],
+        correctIndex: 0,
+        explanation: 'Cereal se escreve com CE.',
+        wrong: [
+          'Cerial troca a vogal da segunda sílaba.',
+          'Serial troca C por S.',
+          'Sireal não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_005',
+        question: 'Complete: A __noura é laranja.',
+        options: ['cenoura', 'cinoura', 'senoura', 'sinoura'],
+        correctIndex: 0,
+        explanation: 'Cenoura se escreve com CE.',
+        wrong: [
+          'Cinoura troca CE por CI.',
+          'Senoura troca C por S.',
+          'Sinoura não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_006',
+        question: 'Complete: A __garra canta alto no verão.',
+        options: ['cigarra', 'cegarra', 'sigarra', 'segarra'],
+        correctIndex: 0,
+        explanation: 'Cigarra se escreve com CI.',
+        wrong: [
+          'Cegarra troca CI por CE.',
+          'Sigarra troca C por S.',
+          'Segarra não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_007',
+        question: 'Complete: A __ tem duas rodas.',
+        options: ['bicicleta', 'becicleta', 'bisicleta', 'bisicreta'],
+        correctIndex: 0,
+        explanation: 'Bicicleta se escreve com CI.',
+        wrong: [
+          'Becicleta altera a primeira sílaba.',
+          'Bisicleta troca C por S.',
+          'Bisicreta troca L por R.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_008',
+        question: 'Complete: A família foi ao __ para assistir a um filme.',
+        options: ['cinema', 'cenema', 'sinema', 'cinima'],
+        correctIndex: 0,
+        explanation: 'Cinema se escreve com CI no início.',
+        wrong: [
+          'Cenema troca CI por CE.',
+          'Sinema troca C por S.',
+          'Cinima altera a vogal da segunda sílaba.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_009',
+        question: 'Complete: O menino recebeu um __ de parabéns.',
+        options: ['certificado', 'sertificado', 'cirteficado', 'certeficado'],
+        correctIndex: 0,
+        explanation: 'Certificado se escreve com CE no início.',
+        wrong: [
+          'Sertificado troca C por S.',
+          'Cirteficado troca CE por CI.',
+          'Certeficado altera a vogal da sílaba seguinte.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_010',
+        question: 'Complete: A __ncia estuda os seres vivos.',
+        options: ['ciência', 'ceência', 'siencia', 'ciensia'],
+        correctIndex: 0,
+        explanation: 'Ciência se escreve com CI no início.',
+        wrong: [
+          'Ceência troca CI por CE.',
+          'Siencia troca C por S.',
+          'Ciensia altera a grafia da palavra.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_011',
+        question: 'Complete: A __reja fica perto da praça.',
+        options: ['cereja', 'cireja', 'sereja', 'sireja'],
+        correctIndex: 0,
+        explanation: 'Cereja se escreve com CE.',
+        wrong: [
+          'Cireja troca CE por CI.',
+          'Sereja troca C por S.',
+          'Sireja não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_012',
+        question: 'Complete: O pedreiro usou __mento na obra.',
+        options: ['cimento', 'cemente', 'simento', 'ciminto'],
+        correctIndex: 0,
+        explanation: 'Cimento se escreve com CI.',
+        wrong: [
+          'Cemente troca CI por CE.',
+          'Simento troca C por S.',
+          'Ciminto altera a vogal da segunda sílaba.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_013',
+        question: 'Complete: O __rco tem lona e palhaços.',
+        options: ['circo', 'cerco', 'sirco', 'serco'],
+        correctIndex: 0,
+        explanation: 'Circo se escreve com CI.',
+        wrong: [
+          'Cerco é outra palavra e não nomeia o lugar da frase.',
+          'Sirco troca C por S.',
+          'Serco não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_014',
+        question: 'Complete: A __sta guarda frutas.',
+        options: ['cesta', 'cista', 'sesta', 'sista'],
+        correctIndex: 0,
+        explanation: 'Cesta se escreve com CE.',
+        wrong: [
+          'Cista troca CE por CI.',
+          'Sesta troca C por S.',
+          'Sista não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_015',
+        question: 'Complete: A __gonha fez um ninho alto.',
+        options: ['cegonha', 'cigonha', 'segonha', 'sigonha'],
+        correctIndex: 0,
+        explanation: 'Cegonha se escreve com CE.',
+        wrong: [
+          'Cigonha troca CE por CI.',
+          'Segonha troca C por S.',
+          'Sigonha não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_016',
+        question: 'Complete: O __ntavo é uma moeda pequena.',
+        options: ['centavo', 'cintavo', 'sentavo', 'sintavo'],
+        correctIndex: 0,
+        explanation: 'Centavo se escreve com CE.',
+        wrong: [
+          'Cintavo troca CE por CI.',
+          'Sentavo troca C por S.',
+          'Sintavo não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_017',
+        question: 'Complete: A __cada da casa estava fechada.',
+        options: ['cerca', 'circo', 'serca', 'sirca'],
+        correctIndex: 0,
+        explanation: 'Cerca se escreve com CE.',
+        wrong: [
+          'Circo é outra palavra e não completa a frase.',
+          'Serca troca C por S.',
+          'Sirca não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_018',
+        question: 'Complete: O __rne é uma ave grande.',
+        options: ['cisne', 'cesne', 'sisne', 'cizne'],
+        correctIndex: 0,
+        explanation: 'Cisne se escreve com CI.',
+        wrong: [
+          'Cesne troca CI por CE.',
+          'Sisne troca C por S.',
+          'Cizne troca S por Z.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_019',
+        question: 'Complete: O __ntro da cidade tem muitas lojas.',
+        options: ['centro', 'cintro', 'sentro', 'sintro'],
+        correctIndex: 0,
+        explanation: 'Centro se escreve com CE.',
+        wrong: [
+          'Cintro troca CE por CI.',
+          'Sentro troca C por S.',
+          'Sintro não é a grafia correta.',
+        ],
+      },
+      {
+        id: 'pt_t2_ceci_020',
+        question: 'Complete: O __rvo correu pelo campo.',
+        options: ['cervo', 'cirvo', 'servo', 'sirvo'],
+        correctIndex: 0,
+        explanation: 'Cervo se escreve com CE.',
+        wrong: [
+          'Cirvo troca CE por CI.',
+          'Servo é outra palavra e não nomeia o animal da frase.',
+          'Sirvo é uma forma do verbo servir.',
+        ],
+      },
+    ].map(buildPortugueseCeCiQuestion),
+    ...[
+      {
+        id: 'pt_t2_vi_001',
+        question: 'Em “Lia corre no pátio”, qual palavra indica uma ação?',
+        options: ['corre', 'Lia', 'no', 'pátio'],
+        correctIndex: 0,
+        explanation: 'Corre indica o que Lia faz.',
+        wrong: [
+          'Lia é o nome da pessoa.',
+          'No liga palavras na frase.',
+          'Pátio indica o lugar da ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_002',
+        question: 'Em “O cachorro late”, qual palavra indica uma ação?',
+        options: ['late', 'cachorro', 'o', 'qual'],
+        correctIndex: 0,
+        explanation: 'Late indica a ação do cachorro.',
+        wrong: [
+          'Cachorro nomeia o animal.',
+          'O acompanha o nome cachorro.',
+          'Qual não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_003',
+        question: 'Em “As crianças brincam”, qual palavra indica uma ação?',
+        options: ['brincam', 'crianças', 'as', 'uma'],
+        correctIndex: 0,
+        explanation: 'Brincam indica o que as crianças fazem.',
+        wrong: [
+          'Crianças nomeia as pessoas.',
+          'As acompanha o nome crianças.',
+          'Uma não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_004',
+        question: 'Em “Pedro lê um livro”, qual palavra indica uma ação?',
+        options: ['lê', 'Pedro', 'livro', 'um'],
+        correctIndex: 0,
+        explanation: 'Lê indica a ação de Pedro.',
+        wrong: [
+          'Pedro é o nome da pessoa.',
+          'Livro é o objeto lido.',
+          'Um acompanha o nome livro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_005',
+        question: 'Em “A professora ensina”, qual palavra indica uma ação?',
+        options: ['ensina', 'professora', 'a', 'escola'],
+        correctIndex: 0,
+        explanation: 'Ensina indica o que a professora faz.',
+        wrong: [
+          'Professora nomeia a pessoa.',
+          'A acompanha o nome professora.',
+          'Escola não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_006',
+        question: 'Complete: O pássaro __ no céu.',
+        options: ['voa', 'come', 'dorme', 'nada'],
+        correctIndex: 0,
+        explanation: 'Voa é a ação adequada para o pássaro no céu.',
+        wrong: [
+          'Come não completa a situação apresentada.',
+          'Dorme não indica voo.',
+          'Nada é uma ação realizada na água.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_007',
+        question: 'Complete: A menina __ água quando sente sede.',
+        options: ['bebe', 'pula', 'desenha', 'dorme'],
+        correctIndex: 0,
+        explanation: 'Beber água ajuda a matar a sede.',
+        wrong: [
+          'Pula não completa a ação relacionada à água e à sede.',
+          'Desenha não completa a ideia da frase.',
+          'Dorme não indica a ação esperada quando se sente sede.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_008',
+        question: 'Complete: O aluno __ a lição no caderno.',
+        options: ['escreve', 'corre', 'nada', 'canta'],
+        correctIndex: 0,
+        explanation: 'Escrever é a ação feita no caderno.',
+        wrong: [
+          'Corre não é uma ação feita no caderno.',
+          'Nada é uma ação realizada na água.',
+          'Canta não completa a situação apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_009',
+        question: 'Complete: O peixe __ no aquário.',
+        options: ['nada', 'lê', 'voa', 'pinta'],
+        correctIndex: 0,
+        explanation: 'Nadar é a ação esperada para o peixe na água.',
+        wrong: [
+          'Lê não completa a situação apresentada.',
+          'Voa não é a ação esperada para um peixe.',
+          'Pinta não é a ação indicada pela frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_010',
+        question: 'Complete: A turma __ uma música na festa.',
+        options: ['canta', 'dorme', 'bebe', 'corre'],
+        correctIndex: 0,
+        explanation: 'Cantar uma música completa a frase.',
+        wrong: [
+          'Dorme não completa a situação da festa.',
+          'Bebe não combina com o complemento uma música.',
+          'Corre não completa a ideia da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_011',
+        question: 'Ontem, João __ um livro.',
+        options: ['leu', 'lê', 'ler', 'livro'],
+        correctIndex: 0,
+        explanation: 'Ontem indica uma ação que já aconteceu: leu.',
+        wrong: [
+          'Lê indica uma ação atual e não combina com ontem.',
+          'Ler não completa a frase nessa forma.',
+          'Livro é um nome, não uma ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_012',
+        question: 'Agora, Ana __ um desenho.',
+        options: ['faz', 'fez', 'faça', 'desenho'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento: faz.',
+        wrong: [
+          'Fez indica uma ação passada.',
+          'Faça não completa essa frase afirmativa.',
+          'Desenho é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_013',
+        question: 'Ontem, o cachorro __ no quintal.',
+        options: ['correu', 'corre', 'correr', 'cachorro'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a corrida já aconteceu.',
+        wrong: [
+          'Corre indica uma ação atual e não combina com ontem.',
+          'Correr não completa a frase nessa forma.',
+          'Cachorro é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_014',
+        question: 'Agora, Pedro __ com os amigos.',
+        options: ['brinca', 'brincou', 'brincar', 'amigos'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento.',
+        wrong: [
+          'Brincou indica uma ação passada.',
+          'Brincar não completa a frase nessa forma.',
+          'Amigos é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_015',
+        question: 'Ontem, a turma __ uma música.',
+        options: ['cantou', 'canta', 'cantar', 'música'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação de cantar já aconteceu.',
+        wrong: [
+          'Canta indica uma ação atual e não combina com ontem.',
+          'Cantar não completa a frase nessa forma.',
+          'Música é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_016',
+        question: 'Complete: Eu __ uma carta.',
+        options: ['escrevo', 'escreve', 'escrevem', 'carta'],
+        correctIndex: 0,
+        explanation: 'O pronome eu combina com escrevo nesta frase.',
+        wrong: [
+          'A forma escreve é usada com os pronomes ele ou ela.',
+          'A forma escrevem é usada com os pronomes eles ou elas.',
+          'Carta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_017',
+        question: 'Complete: Ela __ no jardim.',
+        options: ['brinca', 'brincam', 'brinco', 'jardim'],
+        correctIndex: 0,
+        explanation: 'O pronome ela combina com brinca.',
+        wrong: [
+          'A forma brincam é usada com os pronomes eles ou elas.',
+          'A forma brinco é usada com o pronome eu.',
+          'Jardim é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_018',
+        question: 'Complete: Nós __ juntos.',
+        options: ['estudamos', 'estuda', 'estudam', 'escola'],
+        correctIndex: 0,
+        explanation: 'O pronome nós combina com estudamos.',
+        wrong: [
+          'A forma estuda é usada com os pronomes ele ou ela.',
+          'A forma estudam é usada com os pronomes eles ou elas.',
+          'Escola é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_019',
+        question: 'Complete: Eles __ bola no pátio.',
+        options: ['jogam', 'joga', 'jogo', 'bola'],
+        correctIndex: 0,
+        explanation: 'O pronome eles combina com jogam.',
+        wrong: [
+          'A forma joga é usada com os pronomes ele ou ela.',
+          'A forma jogo é usada com o pronome eu nesta frase.',
+          'Bola é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vi_020',
+        question: 'Complete: Você __ muito bem.',
+        options: ['desenha', 'desenham', 'desenho', 'desenhar'],
+        correctIndex: 0,
+        explanation: 'O pronome você combina com desenha nesta frase.',
+        wrong: [
+          'A forma desenham é usada com os pronomes eles ou elas.',
+          'A forma desenho é usada com o pronome eu.',
+          'Desenhar não completa a frase nessa forma.',
+        ],
+      },
+    ].map(buildPortugueseVerbsIQuestion),
+    ...[
+      {
+        id: 'pt_t2_pron_001',
+        question: 'Marina chegou cedo. Qual palavra pode substituir Marina?',
+        options: ['ela', 'ele', 'eles', 'nós'],
+        correctIndex: 0,
+        explanation: 'Ela substitui o nome de uma menina.',
+        wrong: [
+          'O pronome ele é usado para um menino.',
+          'O pronome eles é usado para mais de uma pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_002',
+        question: 'Pedro trouxe um livro. Qual palavra pode substituir Pedro?',
+        options: ['ele', 'ela', 'elas', 'nós'],
+        correctIndex: 0,
+        explanation: 'Ele substitui o nome de um menino.',
+        wrong: [
+          'O pronome ela é usado para uma menina.',
+          'O pronome elas é usado para mais de uma menina.',
+          'Nós indica um grupo que inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_003',
+        question:
+          'Ana e Bia brincam juntas. Qual palavra pode substituir Ana e Bia?',
+        options: ['elas', 'eles', 'ela', 'eu'],
+        correctIndex: 0,
+        explanation: 'Elas substituem duas meninas.',
+        wrong: [
+          'O pronome eles é usado para um grupo masculino ou misto.',
+          'Ela indica uma pessoa.',
+          'Eu indica quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_004',
+        question:
+          'João e Caio jogam bola. Qual palavra pode substituir João e Caio?',
+        options: ['eles', 'elas', 'ele', 'você'],
+        correctIndex: 0,
+        explanation: 'Eles substituem dois meninos.',
+        wrong: [
+          'O pronome elas é usado para um grupo de meninas.',
+          'Ele indica uma pessoa.',
+          'Você indica a pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_005',
+        question: 'Eu conto uma história. Quem está falando na frase?',
+        options: ['eu', 'você', 'ele', 'elas'],
+        correctIndex: 0,
+        explanation: 'Eu indica a pessoa que fala.',
+        wrong: [
+          'Você indica a pessoa com quem se fala.',
+          'Ele indica outra pessoa.',
+          'O pronome elas indica mais de uma menina.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_006',
+        question:
+          'Eu e Luiza fazemos a tarefa. Qual palavra pode substituir eu e Luiza?',
+        options: ['nós', 'eles', 'elas', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui quem fala e outra pessoa.',
+        wrong: [
+          'Eles não incluem quem fala.',
+          'Elas não incluem quem fala.',
+          'Você indica uma pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_007',
+        question: 'Ao falar com Pedro, eu digo: “__ trouxe seu caderno?”',
+        options: ['você', 'eu', 'ele', 'nós'],
+        correctIndex: 0,
+        explanation: 'Você indica a pessoa com quem se fala.',
+        wrong: [
+          'Eu indica quem fala.',
+          'Ele fala de outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_008',
+        question: 'Eu e meus amigos vamos ao parque. Quem vai ao parque?',
+        options: ['nós', 'eles', 'ela', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui a pessoa que fala e seus amigos.',
+        wrong: [
+          'Eles não incluem quem fala.',
+          'Ela indica uma pessoa.',
+          'Você indica a pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_009',
+        question:
+          'Ao falar diretamente com uma colega, qual pronome pode ser usado?',
+        options: ['você', 'eu', 'ele', 'eles'],
+        correctIndex: 0,
+        explanation: 'Você indica a pessoa com quem se conversa.',
+        wrong: [
+          'Eu indica quem fala.',
+          'Ele fala de um menino.',
+          'Eles indicam mais de uma pessoa.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_010',
+        question: '“__ vamos ler juntos”, diz Ana para Bia.',
+        options: ['nós', 'elas', 'ele', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui Ana, que fala, e Bia.',
+        wrong: [
+          'Elas falam de duas meninas sem incluir quem fala.',
+          'Ele indica um menino.',
+          'Você indica apenas Bia.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_011',
+        question: 'Ao falar com a diretora, uma forma respeitosa é:',
+        options: ['senhora', 'ela', 'nós', 'eles'],
+        correctIndex: 0,
+        explanation:
+          'Senhora é uma forma respeitosa para falar com uma mulher adulta.',
+        wrong: [
+          'Ela fala sobre a diretora, não com ela.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles indicam várias pessoas.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_012',
+        question: 'Ao falar com um avô, uma forma respeitosa é:',
+        options: ['senhor', 'ele', 'eu', 'elas'],
+        correctIndex: 0,
+        explanation:
+          'Senhor é uma forma respeitosa para falar com um homem adulto.',
+        wrong: [
+          'Ele fala sobre o avô, não com ele.',
+          'Eu indica quem fala.',
+          'Elas indicam várias mulheres.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_013',
+        question: 'Complete: “__ precisa de ajuda, professora?”',
+        options: ['A senhora', 'Ela', 'Nós', 'Eles'],
+        correctIndex: 0,
+        explanation:
+          'A senhora é uma forma respeitosa para falar diretamente com a professora.',
+        wrong: [
+          'Ela fala sobre outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles indicam várias pessoas.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_014',
+        question: 'Complete: “Bom dia, __ Carlos”, disse o aluno.',
+        options: ['senhor', 'ele', 'nós', 'vocês'],
+        correctIndex: 0,
+        explanation:
+          'Senhor é usado de forma respeitosa antes do nome de um homem adulto.',
+        wrong: [
+          'Ele fala sobre outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Vocês indicam mais de uma pessoa.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_015',
+        question:
+          'Qual frase fala diretamente com uma mulher adulta de modo respeitoso?',
+        options: [
+          'A senhora chegou cedo.',
+          'Ela chegou cedo.',
+          'Elas chegaram cedo.',
+          'Nós chegamos cedo.',
+        ],
+        correctIndex: 0,
+        explanation: 'A senhora fala diretamente com a pessoa.',
+        wrong: [
+          'Ela: a frase fala sobre a pessoa.',
+          'Elas: a frase fala sobre várias pessoas.',
+          'Nós: a frase inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_016',
+        question: 'Qual frase fala sobre Pedro, e não diretamente com ele?',
+        options: [
+          'Ele chegou cedo.',
+          'Você chegou cedo.',
+          'Senhor, chegou cedo?',
+          'Nós chegamos cedo.',
+        ],
+        correctIndex: 0,
+        explanation: 'Ele fala sobre Pedro.',
+        wrong: [
+          'Você fala diretamente com Pedro.',
+          'Senhor fala diretamente com ele.',
+          'Nós: a frase inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_017',
+        question:
+          'Maria e eu fazemos o trabalho. Qual pronome pode substituir Maria e eu?',
+        options: ['nós', 'elas', 'ela', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui quem fala e Maria.',
+        wrong: [
+          'Elas não incluem quem fala.',
+          'Ela indica uma pessoa.',
+          'Você indica a pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_018',
+        question:
+          'Complete: “__ podem entrar”, disse a professora a dois alunos.',
+        options: ['Vocês', 'Nós', 'Eles', 'Ela'],
+        correctIndex: 0,
+        explanation: 'O pronome vocês indica as pessoas com quem se fala.',
+        wrong: [
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles se referem aos alunos sem falar diretamente com eles.',
+          'Ela indica uma pessoa.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_019',
+        question: 'Complete a fala dirigida à diretora: “__ gostaria de água?”',
+        options: ['A senhora', 'Ela', 'Nós', 'Eles'],
+        correctIndex: 0,
+        explanation:
+          'A senhora fala diretamente, com respeito, com uma mulher adulta.',
+        wrong: [
+          'Ela fala sobre outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles se referem a várias pessoas.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_020',
+        question: 'Qual pronome pode substituir “o menino e a menina”?',
+        options: ['eles', 'elas', 'ele', 'ela'],
+        correctIndex: 0,
+        explanation:
+          'O pronome eles pode substituir um grupo com menino e menina.',
+        wrong: [
+          'O pronome elas é usado apenas para um grupo de meninas.',
+          'Ele indica uma pessoa.',
+          'Ela indica uma pessoa.',
+        ],
+      },
+    ].map(buildPortuguesePronounsQuestion),
+    ...[
+      {
+        id: 'pt_t2_vii_001',
+        question: 'Em “A chuva molha a rua”, qual palavra indica uma ação?',
+        options: ['molha', 'chuva', 'a', 'rua'],
+        correctIndex: 0,
+        explanation: 'Molha indica o que a chuva faz.',
+        wrong: [
+          'Chuva nomeia o fenômeno.',
+          'A acompanha o nome rua.',
+          'Rua indica o lugar da ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_002',
+        question: 'Em “O bebê sorri”, qual palavra indica uma ação?',
+        options: ['sorri', 'bebê', 'o', 'alegria'],
+        correctIndex: 0,
+        explanation: 'Sorri indica o que o bebê faz.',
+        wrong: [
+          'Bebê nomeia a criança.',
+          'O acompanha o nome bebê.',
+          'Alegria não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_003',
+        question: 'Complete: A mãe __ o jantar.',
+        options: ['prepara', 'nada', 'voa', 'late'],
+        correctIndex: 0,
+        explanation: 'Preparar completa a situação do jantar.',
+        wrong: [
+          'Nada é uma ação realizada na água.',
+          'Voa é uma ação realizada no ar.',
+          'Late é uma ação de cachorro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_004',
+        question: 'Complete: O médico __ o paciente.',
+        options: ['cuida', 'canta', 'pula', 'desenha'],
+        correctIndex: 0,
+        explanation: 'Cuidar completa a situação do médico e do paciente.',
+        wrong: [
+          'Canta não indica o atendimento apresentado.',
+          'Pula não completa a ideia da frase.',
+          'Desenha não é a ação esperada nesse contexto.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_005',
+        question: 'Complete: A planta __ no jardim.',
+        options: ['cresce', 'lê', 'corre', 'cozinha'],
+        correctIndex: 0,
+        explanation: 'Crescer é a ação esperada para uma planta.',
+        wrong: [
+          'Lê não é a ação indicada.',
+          'Corre não é uma ação realizada por uma planta.',
+          'Cozinha não completa a situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_006',
+        question: 'Ontem, a família __ um bolo.',
+        options: ['fez', 'faz', 'fazer', 'bolo'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação já aconteceu.',
+        wrong: [
+          'Faz indica uma ação atual e não combina com ontem.',
+          'Fazer não completa a frase nessa forma.',
+          'Bolo é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_007',
+        question: 'Agora, o jardineiro __ as flores.',
+        options: ['rega', 'regou', 'regar', 'flores'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento.',
+        wrong: [
+          'Regou indica uma ação passada.',
+          'Regar não completa a frase nessa forma.',
+          'Flores é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_008',
+        question: 'Ontem, Lucas __ a janela.',
+        options: ['abriu', 'abre', 'abrir', 'janela'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação de abrir já aconteceu.',
+        wrong: [
+          'Abre indica uma ação atual e não combina com ontem.',
+          'Abrir não completa a frase nessa forma.',
+          'Janela é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_009',
+        question: 'Agora, a avó __ uma história.',
+        options: ['conta', 'contou', 'contar', 'avó'],
+        correctIndex: 0,
+        explanation: 'Agora indica que a ação acontece neste momento.',
+        wrong: [
+          'Contou indica uma ação passada.',
+          'Contar não completa a frase nessa forma.',
+          'Avó é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_010',
+        question: 'Ontem, o menino __ o brinquedo.',
+        options: ['perdeu', 'perde', 'perder', 'brinquedo'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a perda já aconteceu.',
+        wrong: [
+          'Perde indica uma ação atual e não combina com ontem.',
+          'Perder não completa a frase nessa forma.',
+          'Brinquedo é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_011',
+        question: 'Complete: Eu __ a porta.',
+        options: ['fecho', 'fecha', 'fecham', 'porta'],
+        correctIndex: 0,
+        explanation: 'O pronome eu combina com fecho.',
+        wrong: [
+          'Fecha combina com ele ou ela.',
+          'Fecham combina com várias pessoas.',
+          'Porta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_012',
+        question: 'Complete: Ela __ as mãos.',
+        options: ['lava', 'lavam', 'lavo', 'mãos'],
+        correctIndex: 0,
+        explanation: 'O pronome ela combina com lava.',
+        wrong: [
+          'Lavam combina com várias pessoas.',
+          'Lavo combina com eu.',
+          'Mãos é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_013',
+        question: 'Complete: Nós __ a sala.',
+        options: ['limpamos', 'limpa', 'limpam', 'sala'],
+        correctIndex: 0,
+        explanation: 'O pronome nós combina com limpamos.',
+        wrong: [
+          'Limpa combina com uma pessoa.',
+          'Limpam combina com várias pessoas indicadas por eles ou elas.',
+          'Sala é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_014',
+        question: 'Complete: Eles __ a bicicleta.',
+        options: ['consertam', 'conserta', 'conserto', 'bicicleta'],
+        correctIndex: 0,
+        explanation: 'O pronome eles combina com consertam.',
+        wrong: [
+          'Conserta combina com uma pessoa.',
+          'Conserto combina com eu: eu conserto.',
+          'Bicicleta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_015',
+        question: 'Complete: Você __ a luz.',
+        options: ['apaga', 'apagam', 'apago', 'luz'],
+        correctIndex: 0,
+        explanation: 'O pronome você combina com apaga nesta frase.',
+        wrong: [
+          'Apagam combina com várias pessoas.',
+          'Apago combina com eu.',
+          'Luz é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_016',
+        question: 'Complete: O padeiro __ pães pela manhã.',
+        options: ['assa', 'nada', 'pinta', 'dorme'],
+        correctIndex: 0,
+        explanation: 'Assar pães completa a situação do padeiro.',
+        wrong: [
+          'Nada é uma ação realizada na água.',
+          'Pinta não completa a ideia da frase.',
+          'Dorme não combina com o complemento pães.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_017',
+        question: 'Complete: A abelha __ na flor.',
+        options: ['pousa', 'cozinha', 'escreve', 'varre'],
+        correctIndex: 0,
+        explanation: 'Pousar na flor completa a situação da abelha.',
+        wrong: [
+          'Cozinha não é a ação esperada nesse contexto.',
+          'Escreve não completa a ideia da frase.',
+          'Varre não indica uma ação da abelha.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_018',
+        question: 'Complete: O bombeiro __ as pessoas em perigo.',
+        options: ['socorre', 'planta', 'desenha', 'estuda'],
+        correctIndex: 0,
+        explanation: 'Socorrer pessoas completa a situação do bombeiro.',
+        wrong: [
+          'Planta não completa a ideia da frase.',
+          'Desenha não é a ação indicada nesse contexto.',
+          'Estuda não descreve a ação principal apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_019',
+        question: 'Complete: A costureira __ uma roupa.',
+        options: ['costura', 'salta', 'dirige', 'late'],
+        correctIndex: 0,
+        explanation: 'Costurar uma roupa completa a situação.',
+        wrong: [
+          'Salta não é a ação indicada.',
+          'Dirige não combina com o complemento uma roupa.',
+          'Late é uma ação de cachorro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_020',
+        question: 'Complete: O fotógrafo __ uma imagem.',
+        options: ['fotografa', 'cozinha', 'mergulha', 'rega'],
+        correctIndex: 0,
+        explanation: 'Fotografar uma imagem completa a situação.',
+        wrong: [
+          'Cozinha não é a ação indicada.',
+          'Mergulha é uma ação realizada na água.',
+          'Rega é uma ação usada com plantas.',
+        ],
+      },
+    ].map(buildPortugueseVerbsIIQuestion),
+    ...portugueseSimilarWordsQuestionSpecs.map(
+      buildPortugueseSimilarWordsQuestion,
+    ),
   ],
 };

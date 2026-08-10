@@ -11,7 +11,7 @@ Use antes de qualquer alteracao no banco de questoes e sempre que uma explicacao
 ## Context pack obrigatorio
 
 - proposta preparada pelo Content Curator Agent
-- objetivo curricular e referencia de fonte
+- tema e objetivo curricular
 - serie atendida pelo lote
 - `docs/harness/content-update-quality-gates.md`
 
@@ -36,7 +36,7 @@ O parecer deve registrar o criterio avaliado e a correcao solicitada, sem reescr
 
 - nao publica conteudo
 - nao substitui a aprovacao humana pedagogica
-- nao aceita falta de fonte rastreavel
+- nao aceita falta de materia, tema ou objetivo rastreavel
 - nao aprova questao ambigua apenas porque uma alternativa parece mais provavel
 
 ## Criterio de pronto

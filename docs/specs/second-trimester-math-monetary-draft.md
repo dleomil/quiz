@@ -10,7 +10,7 @@
 | Objetivo             | compor valores, comparar quantias e calcular troco simples com reais |
 | Referencia de estudo | Apostila 4, Matematica, pagina 81                                    |
 | Estado               | `draft`                                                              |
-| Quantidade           | 6 questoes                                                           |
+| Quantidade           | 6 de 20 questoes                                                     |
 
 Esta e uma proposta de conteudo original. A referencia de apostila indica onde
 o aluno deve estudar; ela nao foi transcrita, anexada ou usada como texto de
@@ -103,5 +103,6 @@ Status: `Pronto para revisao pedagogica`.
 - Nao foi encontrada ambiguidade de fonte no roteiro, pois a proposta nao
   depende de texto ou exercicio especifico da apostila.
 
-O proximo gate e o parecer do Pedagogical Quality Agent. A aprovacao humana
-pedagogica continua pendente.
+Este e um lote parcial: faltam 14 questoes para concluir o tema Sistema
+Monetario. O proximo gate e o parecer do Pedagogical Quality Agent. A
+aprovacao humana pedagogica continua pendente.

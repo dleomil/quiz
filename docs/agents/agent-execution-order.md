@@ -66,7 +66,7 @@ Use antes do merge final do PR.
 Use este fluxo sempre que uma entrega alterar materias, topicos, questoes ou explicacoes:
 
 1. `Spec Agent`: delimita o lote e os criterios de qualidade.
-2. `Content Curator Agent`: mapeia a fonte curricular e prepara propostas rastreaveis.
+2. `Content Curator Agent`: mapeia os temas curriculares e prepara propostas rastreaveis.
 3. `Pedagogical Quality Agent`: revisa ortografia, clareza, adequacao etaria, resposta unica e explicacoes.
 4. `Architect Agent`: participa somente se o formato de dados ou a carga de conteudo mudar.
 5. `Implementer Agent`: aplica apenas itens aprovados.
@@ -74,6 +74,13 @@ Use este fluxo sempre que uma entrega alterar materias, topicos, questoes ou exp
 7. `Reviewer Agent`: confirma a trilha de evidencia e a aprovacao humana antes do merge.
 
 Nenhum lote curricular pode ser publicado somente com parecer automatizado.
+
+## Paralelismo controlado
+
+As quatro trilhas curriculares podem executar em paralelo: Curadoria, Revisao
+Pedagogica, Implementacao e Verificacao/Release. Cada uma respeita o limite de
+capacidade definido em `content-update-quality-gates.md`; nao e permitido usar
+o paralelismo para implementar lote sem aprovacao humana.
 
 ## Resultado esperado
 
