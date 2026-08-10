@@ -186,6 +186,103 @@ function run() {
       `grafia incorreta em Nematoides: ${spelling}`,
     );
   });
+
+  const molluskQuestions = scienceQuestions.filter(
+    (question) => question.topic === 'moluscos',
+  );
+  const molluskText = JSON.stringify(molluskQuestions);
+  const forbiddenMolluskSpellings = [
+    'achátado',
+    'chámada',
+    'conchá',
+    'galinhá',
+    'aneis',
+    'anelideos',
+    'cefalopodes',
+    'mexilháo',
+    'mexilhoes',
+    'pulmoes',
+    'mamiferos',
+    'Caracois',
+    'umido',
+    'Branquias',
+    'semelhánte',
+    'pulmao',
+    'respiratoria',
+    'rochás',
+    'mantem',
+    'acompanhá',
+    'caracteristica',
+    'situacoes',
+    'folhás',
+    'trilhá',
+    'locomocao',
+    'bracos',
+    'cefalopode',
+    'protecao',
+    'destáca',
+    'cilindrico',
+    'segmentado em aneis',
+  ];
+  assert.strictEqual(molluskQuestions.length, 33);
+  forbiddenMolluskSpellings.forEach((spelling) => {
+    assert.ok(
+      !molluskText.includes(spelling),
+      `grafia incorreta em Moluscos: ${spelling}`,
+    );
+  });
+
+  const annelidQuestions = scienceQuestions.filter(
+    (question) => question.topic === 'anelideos',
+  );
+  const annelidText = JSON.stringify(
+    annelidQuestions.flatMap((question) => [
+      question.question,
+      ...question.options,
+      question.explanation,
+    ]),
+  );
+  const forbiddenAnnelidSpellings = [
+    'anelideos',
+    'aneis',
+    'conchá',
+    'mamiferos',
+    'dao aparencia',
+    'umido',
+    'respiracao',
+    'conchás',
+    'chámados',
+    'anelideo',
+    'cilindrico',
+    'lisó',
+    'rigidas',
+    'contracao',
+    'formacao',
+    'fotossintese',
+    'locomocao',
+    'producao',
+    'fertil',
+    'residuos',
+    'issó',
+    'chámado',
+    'amamentacao',
+    'reproducao',
+    'fechádo',
+    'marinhás',
+    'movimentacao',
+    'segmentacao',
+    'tambem',
+    'cutanea',
+    'ferteis',
+    'achátado',
+  ];
+  assert.strictEqual(annelidQuestions.length, 34);
+  forbiddenAnnelidSpellings.forEach((spelling) => {
+    assert.ok(
+      !annelidText.includes(spelling),
+      `grafia incorreta em Anelídeos: ${spelling}`,
+    );
+  });
   console.log('content-validator: ok');
 }
 
