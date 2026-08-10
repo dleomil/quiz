@@ -39,20 +39,20 @@ function validateQuestions(questions) {
   return validateContentSources({ matematica: { questions } });
 }
 
-function loadScienceQuestions() {
-  const scienceModulePath = path.join(
+function loadSubjectQuestions(subject) {
+  const subjectModulePath = path.join(
     __dirname,
     '..',
     '..',
     'js',
     'data',
     'subjects',
-    'ciencias.js',
+    `${subject}.js`,
   );
   global.window = {};
-  delete require.cache[require.resolve(scienceModulePath)];
-  require(scienceModulePath);
-  return global.window.QuestionsDataSources.ciencias.questions;
+  delete require.cache[require.resolve(subjectModulePath)];
+  require(subjectModulePath);
+  return global.window.QuestionsDataSources[subject].questions;
 }
 
 function run() {
@@ -103,7 +103,7 @@ function run() {
     [],
   );
 
-  const scienceQuestions = loadScienceQuestions();
+  const scienceQuestions = loadSubjectQuestions('ciencias');
   [
     'artropodes',
     'insetos',
@@ -128,6 +128,59 @@ function run() {
       correctIndexDistribution[question.correctIndex] += 1;
     });
     assert.deepStrictEqual(correctIndexDistribution, [5, 5, 5, 5]);
+  });
+
+  const geographyQuestions = loadSubjectQuestions('geografia');
+  const cartographyQuestions = geographyQuestions.filter(
+    (question) =>
+      question.contentSetId === '2026-t2-v1' &&
+      question.topic === 'cartografia',
+  );
+  const cartographyCorrectIndexDistribution = [0, 0, 0, 0];
+
+  assert.strictEqual(cartographyQuestions.length, 20);
+  cartographyQuestions.forEach((question) => {
+    assert.strictEqual(question.schemaVersion, 'content-v1');
+    assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
+    assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
+    assert.strictEqual(question.sourceRef.section, 'Geografia');
+    assert.strictEqual(question.sourceRef.page, '53');
+    assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
+    Object.values(question.wrongExplanations).forEach((feedback) => {
+      assert.match(feedback, /^[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/);
+      assert.match(feedback, /[.!?]$/);
+    });
+    cartographyCorrectIndexDistribution[question.correctIndex] += 1;
+  });
+  assert.deepStrictEqual(cartographyCorrectIndexDistribution, [5, 5, 5, 5]);
+
+  const cartographyVisibleText = JSON.stringify(
+    cartographyQuestions.flatMap((question) => [
+      question.question,
+      ...question.options,
+      question.explanation,
+      ...Object.values(question.wrongExplanations),
+    ]),
+  );
+  [
+    'representacao',
+    'representacoes',
+    'informacao',
+    'informacoes',
+    'simbolo',
+    'simbolos',
+    'cartografo',
+    'titulo',
+    'funcao',
+    'relacao',
+    'territorio',
+    'tematico',
+    'distancia',
+  ].forEach((spelling) => {
+    assert.ok(
+      !cartographyVisibleText.includes(spelling),
+      `grafia incorreta em Cartografia: ${spelling}`,
+    );
   });
 
   const secondBatchScienceText = JSON.stringify(
