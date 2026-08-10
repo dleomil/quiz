@@ -30,16 +30,67 @@ O total por disciplina nao e uma meta fixa: ele resulta da quantidade de temas
 do roteiro. Um acervo so pode ser publicado quando todos os temas previstos
 para o trimestre atingirem 20 questoes e passarem pelos gates de qualidade.
 
-## Cobertura identificada
+## Matriz de cobertura auditada
 
-| Disciplina | Referencia de estudo                       | Escopo para curadoria                                                                                                                                  |
-| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Historia   | Apostilas 4 (67-77) e 5 (77-79)            | origens africanas, grupos linguisticos, escravizacao, afrodescendentes e formacao do povo brasileiro                                                   |
-| Ciencias   | Apostilas 4 (35-47) e 5 (41-43)            | artropodes, seus grupos, equinodermos e visao relacionada a luz                                                                                        |
-| Matematica | Apostila 4 (81, 84, 86, 88, 91, 92, 94-95) | sistema monetario, multiplicacao, graficos de barras e colunas, tabelas e graficos de dupla entrada, prisma, figuras planas, medidas e retas paralelas |
-| Geografia  | Apostilas 4 (53-62) e 5 (63-64)            | cartografia, representacoes do espaco e agua como recurso                                                                                              |
-| Ingles     | Material indicado pela escola (49-62)      | preposicoes, vocabulario de esportes, verbos de acao e contexto de Dia dos Pais                                                                        |
-| Portugues  | Apostilas 4 (8-32) e 5 (8-10)              | usos de letras, pronomes, verbos, palavras semelhantes, onomatopeias, interjeicoes e cedilha                                                           |
+Auditoria realizada em 9 de agosto de 2026 a partir do roteiro escolar local e
+das questoes executaveis de `develop`. A coluna `Atual` conta somente questoes
+com `contentSetId: 2026-t2-v1`.
+
+| Disciplina | Objeto de conhecimento                             | Referencia       | Atual | Meta | Card           |
+| ---------- | -------------------------------------------------- | ---------------- | ----: | ---: | -------------- |
+| Historia   | Nossas origens: a Africa                           | pagina 67        |     0 |   20 | #230           |
+| Historia   | Os principais grupos linguisticos africanos        | pagina 69        |     0 |   20 | #230           |
+| Historia   | Os africanos e a escravidao                        | pagina 72        |     0 |   20 | #230           |
+| Historia   | Os afrodescendentes na atualidade                  | pagina 76        |     0 |   20 | #230           |
+| Ciencias   | Caracteristicas e desenvolvimento dos artropodes   | pagina 35        |    20 |   20 | #206 (Done)    |
+| Ciencias   | Introducao ao estudo dos insetos                   | pagina 36        |    20 |   20 | #206 (Done)    |
+| Ciencias   | Introducao ao estudo dos aracnideos                | pagina 39        |    20 |   20 | #206 (Done)    |
+| Ciencias   | Introducao ao estudo dos crustaceos                | pagina 40        |    20 |   20 | #206 (Done)    |
+| Ciencias   | Introducao ao estudo dos miriapodes                | pagina 43        |    20 |   20 | #206 (Done)    |
+| Ciencias   | Caracteristicas e desenvolvimento dos equinodermos | pagina 45        |    20 |   20 | #206 (Done)    |
+| Matematica | Lidando com moedas e notas                         | pagina 81        |    20 |   20 | concluido      |
+| Matematica | Multiplicacao por 20, 30, 40, 50, 60, 70, 80 e 90  | pagina 84        |    20 |   20 | concluido      |
+| Matematica | Explorando graficos de barras e de colunas         | pagina 86        |    20 |   20 | concluido      |
+| Matematica | Explorando tabelas e graficos de dupla entrada     | pagina 88        |    20 |   20 | concluido      |
+| Matematica | Prisma                                             | pagina 91        |    20 |   20 | concluido      |
+| Matematica | Figuras geometricas planas                         | pagina 92        |    20 |   20 | concluido      |
+| Matematica | Vamos medir?                                       | pagina 94        |    20 |   20 | concluido      |
+| Matematica | Retas paralelas                                    | pagina 95        |    20 |   20 | concluido      |
+| Geografia  | O que e Cartografia?                               | pagina 53        |     0 |   20 | #228           |
+| Geografia  | Diferentes representacoes cartograficas            | pagina 54        |     0 |   20 | #228           |
+| Geografia  | Os mapas e a representacao do espaco               | pagina 58        |     0 |   20 | #228           |
+| Ingles     | Prepositions                                       | material escolar |     0 |   20 | #231           |
+| Ingles     | Father's Day                                       | material escolar |     0 |   20 | #231           |
+| Ingles     | Sports                                             | material escolar |     0 |   20 | #231           |
+| Ingles     | Action verbs                                       | material escolar |     0 |   20 | #231           |
+| Portugues  | Usos de L e U                                      | pagina 8         |    20 |   20 | #137           |
+| Portugues  | Pronomes pessoais e pronomes de tratamento         | pagina 9         |    20 |   20 | #137           |
+| Portugues  | Palavras com ce e ci                               | pagina 16        |    20 |   20 | #137           |
+| Portugues  | Verbos I                                           | pagina 18        |    20 |   20 | #137           |
+| Portugues  | Palavras semelhantes                               | pagina 25        |     0 |   20 | #174 bloqueado |
+| Portugues  | Verbos II                                          | pagina 27        |    20 |   20 | #137           |
+
+### Resumo da auditoria
+
+| Disciplina | Temas completos | Temas previstos | Questoes atuais |    Meta |
+| ---------- | --------------: | --------------: | --------------: | ------: |
+| Historia   |               0 |               4 |               0 |      80 |
+| Ciencias   |               6 |               6 |             120 |     120 |
+| Matematica |               8 |               8 |             160 |     160 |
+| Geografia  |               0 |               3 |               0 |      60 |
+| Ingles     |               0 |               4 |               0 |      80 |
+| Portugues  |               5 |               6 |             100 |     120 |
+| **Total**  |          **19** |          **31** |         **380** | **620** |
+
+As 240 questoes restantes pertencem a 12 temas. `Palavras semelhantes`
+permanece bloqueado no card #174 ate que as paginas da apostila ou uma lista de
+pares autorizados permita validar respostas unicas. Historia, Geografia e
+Ingles devem seguir, respectivamente, pelas historias #230, #228 e #231.
+
+`Atividades adicionais` e uma secao de exercicios, nao um objeto avaliavel
+autonomo no roteiro. Ela nao cria uma meta adicional. Se uma atividade revelar
+um novo objeto curricular, o mapa deve ser alterado por uma decisao pedagogica
+registrada antes da curadoria.
 
 O livro paradidatico indicado no roteiro nao entra automaticamente no quiz.
 Qualquer lote baseado nele exige uma historia propria, objetivo de aprendizagem
