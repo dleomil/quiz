@@ -9,10 +9,19 @@
 
 ## Escopo inicial
 
-Como o roteiro informa apenas o titulo Verbos II, o pacote deve reutilizar o
-nivel seguro de Verbos I: acao em frases curtas, contexto presente/passado e
-concordancia frequente. Nenhuma habilidade adicional sera introduzida sem a
-pagina da apostila.
+Como o roteiro informa o titulo Verbos II e referencia a pagina 27, o pacote
+reutiliza o nivel seguro de Verbos I: acao em frases curtas, contexto
+presente/passado e concordancia frequente. Nenhuma habilidade adicional sera
+introduzida sem detalhamento explicito na fonte escolar.
+
+## Distribuicao
+
+| Itens         | Foco                                                  |
+| ------------- | ----------------------------------------------------- |
+| `001` a `005` | identificar ou completar acoes em frases curtas       |
+| `006` a `010` | distinguir acao presente e passada por marcador claro |
+| `011` a `015` | relacionar pronome e forma verbal frequente           |
+| `016` a `020` | completar acoes de pessoas, animais e profissoes      |
 
 ## Guardrails
 
