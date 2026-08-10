@@ -195,6 +195,12 @@ async function run() {
         },
         [0, 0, 0, 0],
       ),
+      portugueseVerbsIFeedback: QuestionsDB.getByTopic('verbos_i', '2026-t2-v1')
+        .filter((question) => Number(question.id.slice(-3)) >= 16)
+        .flatMap((question) => [
+          question.explanation,
+          ...Object.values(question.wrongExplanations),
+        ]),
       portuguesePronounsDraftQuestionIds: QuestionsDB.getByTopic(
         'pronomes_pessoais_tratamento',
         '2026-t2-v1',
@@ -354,6 +360,18 @@ async function run() {
     assert.deepStrictEqual(
       legacySnapshot.portugueseVerbsICorrectIndexCounts,
       [5, 5, 5, 5],
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIFeedback.every(
+        (feedback) =>
+          !/\b(?:Eu|Ela|Nós|Eles|Você|Brinco|Jogo) combina\b/.test(feedback),
+      ),
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseVerbsIFeedback.filter((feedback) =>
+        feedback.startsWith('O pronome '),
+      ).length,
+      5,
     );
     assert.strictEqual(
       legacySnapshot.portuguesePronounsDraftQuestionIds.length,
