@@ -103,7 +103,8 @@ function run() {
     [],
   );
 
-  const platyhelminthQuestions = loadScienceQuestions().filter(
+  const scienceQuestions = loadScienceQuestions();
+  const platyhelminthQuestions = scienceQuestions.filter(
     (question) => question.topic === 'platelmintos',
   );
   const platyhelminthText = JSON.stringify(platyhelminthQuestions);
@@ -140,6 +141,49 @@ function run() {
     assert.ok(
       !platyhelminthText.includes(spelling),
       `grafia incorreta em Platelmintos: ${spelling}`,
+    );
+  });
+
+  const nematodeQuestions = scienceQuestions.filter(
+    (question) => question.topic === 'nematoides',
+  );
+  const nematodeText = JSON.stringify(nematodeQuestions);
+  const forbiddenNematodeSpellings = [
+    'achátado',
+    'conchá',
+    'cilindrico',
+    'mamiferos',
+    'folhá',
+    'decomposicao',
+    'producao',
+    'formacao',
+    'construcao',
+    'oxiuro',
+    'rochás',
+    'chámado',
+    'anelideos',
+    'aneis',
+    'ancilostomo',
+    'amarelao',
+    'doenca',
+    'calcados',
+    'penetracao',
+    'funcao',
+    'diferenca',
+    'cuticula',
+    'fotossintese',
+    'amamentacao',
+    'acompanhá',
+    'proprias',
+    'pontuacao',
+    'estár',
+    'tambem',
+  ];
+  assert.strictEqual(nematodeQuestions.length, 33);
+  forbiddenNematodeSpellings.forEach((spelling) => {
+    assert.ok(
+      !nematodeText.includes(spelling),
+      `grafia incorreta em Nematoides: ${spelling}`,
     );
   });
   console.log('content-validator: ok');
