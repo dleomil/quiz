@@ -104,7 +104,14 @@ function run() {
   );
 
   const scienceQuestions = loadScienceQuestions();
-  ['artropodes', 'insetos', 'crustaceos', 'miriapodes'].forEach((topic) => {
+  [
+    'artropodes',
+    'insetos',
+    'crustaceos',
+    'miriapodes',
+    'aracnideos',
+    'equinodermos',
+  ].forEach((topic) => {
     const topicQuestions = scienceQuestions.filter(
       (question) =>
         question.contentSetId === '2026-t2-v1' && question.topic === topic,
@@ -150,6 +157,40 @@ function run() {
     assert.ok(
       !secondBatchScienceText.includes(spelling),
       `grafia incorreta no segundo lote de Ciências: ${spelling}`,
+    );
+  });
+
+  const thirdBatchScienceText = JSON.stringify(
+    scienceQuestions
+      .filter((question) =>
+        ['aracnideos', 'equinodermos'].includes(question.topic),
+      )
+      .flatMap((question) => [
+        question.question,
+        ...question.options,
+        question.explanation,
+        ...Object.values(question.wrongExplanations),
+      ]),
+  );
+  [
+    'aracnideo',
+    'artropode',
+    'crustaceo',
+    'escorpiao',
+    'ferrao',
+    'cefalotorax',
+    'abdomen',
+    'ourico',
+    'bracos',
+    'aquifero',
+    'regeneracao',
+    'poluicao',
+    'não e um',
+    'porque e uma',
+  ].forEach((spelling) => {
+    assert.ok(
+      !thirdBatchScienceText.includes(spelling),
+      `grafia incorreta no terceiro lote de Ciências: ${spelling}`,
     );
   });
 
