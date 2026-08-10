@@ -2,20 +2,19 @@
 
 ## Identificação
 
-| Campo      | Valor                                |
-| ---------- | ------------------------------------ |
-| Acervo     | `2026-t2-v1`                         |
-| Ano        | 3º ano                               |
-| Disciplina | História                             |
-| Tema       | Nossas origens: a África             |
-| Referência | Roteiro escolar, História, página 67 |
-| Quantidade | 20 questões                          |
-| Card       | `#245`                               |
+| Campo      | Valor                               |
+| ---------- | ----------------------------------- |
+| Acervo     | `2026-t2-v1`                        |
+| Ano        | 3º ano                              |
+| Disciplina | História                            |
+| Tema       | Nossas origens: a África            |
+| Referência | Programa curricular do 2º trimestre |
+| Quantidade | 20 questões                         |
+| Card       | `#245`                              |
 
-As questões são originais. A apostila é uma referência de estudo; nenhum
-trecho, exercício ou imagem do material escolar foi reproduzido. A
+As questões são originais e foram criadas a partir do tema curricular. A
 [História Geral da África - UNESCO](https://www.unesco.org/en/general-history-africa)
-foi consultada como referência institucional complementar.
+foi consultada para verificação factual complementar.
 
 ## Questões propostas
 

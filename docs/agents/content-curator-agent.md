@@ -13,18 +13,18 @@ Use para inclusao, revisao ou retirada de materias, topicos, questoes, alternati
 - spec do lote curricular
 - `docs/architecture/target-architecture.md`
 - `docs/harness/content-update-quality-gates.md`
-- material-fonte autorizado
+- lista autorizada de temas curriculares
 
 ## Entradas
 
-- identificacao da fonte e permissao de uso
-- serie, materia e periodo curricular
-- objetivo de aprendizagem ou habilidade
+- ano, trimestre, serie e materia
+- tema curricular autorizado
+- objetivo de aprendizagem ou habilidade verificavel
 - restricoes de linguagem e quantidade do lote
 
 ## Saidas obrigatorias
 
-- mapa de fonte, pagina ou secao e objetivo curricular
+- mapa de materia, trimestre, tema e objetivo curricular
 - proposta de questao com alternativa correta identificada
 - metadados de serie, materia, topico, habilidade e versao
 - indicacao clara de qualquer ambiguidade encontrada na fonte
@@ -33,7 +33,7 @@ Use para inclusao, revisao ou retirada de materias, topicos, questoes, alternati
 
 - nao commitar arquivo-fonte local sem autorizacao explicita
 - nao copiar trechos extensos de material protegido sem permissao
-- nao inventar referencia, habilidade ou resposta correta
+- nao inventar tema, habilidade ou resposta correta
 - nao alterar arquivos de questoes antes do parecer do Pedagogical Quality Agent
 
 ## Criterio de pronto

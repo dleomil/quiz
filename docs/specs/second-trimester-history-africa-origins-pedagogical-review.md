@@ -4,7 +4,7 @@
 
 - 20 questoes sobre `Nossas origens: a Africa`;
 - publico: criancas do 3o ano;
-- referencia curricular: Historia, pagina 67 do roteiro escolar;
+- referencia curricular: tema de Historia do 2o trimestre;
 - acervo de destino futuro: `2026-t2-v1`, mantido como `draft`;
 - card: `#245`.
 
@@ -18,8 +18,8 @@ europeus e evita reduzir o continente a escravizacao.
 Os enunciados usam conceitos introdutorios e exemplos concretos adequados ao
 3o ano. Cada item possui uma resposta defensavel, quatro alternativas,
 explicacao da resposta correta e retorno especifico para as tres incorretas.
-As alternativas evitam sinonimos concorrentes e nao exigem a memorizacao de
-informacoes que dependam da pagina da apostila indisponivel no repositorio.
+As alternativas evitam sinonimos concorrentes e nao exigem memorizacao
+desnecessaria ao objetivo curricular.
 
 ## Revisao antirracista
 
@@ -41,10 +41,10 @@ informacoes que dependam da pagina da apostila indisponivel no repositorio.
 | ------------------------------------------------- | -------------------------------------------------------- |
 | generalizacao de povos, linguas ou costumes       | mitigado pelo uso de diversidade e pluralidade           |
 | historia africana iniciada pela presenca europeia | negado explicitamente                                    |
-| sobreposicao com grupos linguisticos da pagina 69 | evitada; nenhuma classificacao de grupos foi introduzida |
-| sobreposicao com escravizacao da pagina 72        | evitada; o tema nao e desenvolvido neste lote            |
+| sobreposicao com grupos linguisticos              | evitada; nenhuma classificacao de grupos foi introduzida |
+| sobreposicao com escravizacao                     | evitada; o tema nao e desenvolvido neste lote            |
 | resposta ambigua                                  | nenhuma ambiguidade conhecida apos a revisao tecnica     |
-| reproducao da apostila                            | nenhum trecho, exercicio ou imagem foi copiado           |
+| reproducao de material de terceiros               | nenhum trecho, exercicio ou imagem foi copiado           |
 | linguagem inadequada ao 3o ano                    | nenhuma inadequacao conhecida apos a revisao editorial   |
 
 ## Validacoes exigidas antes da implementacao

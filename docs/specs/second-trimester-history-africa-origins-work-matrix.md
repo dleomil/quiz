@@ -2,19 +2,18 @@
 
 ## Identificacao
 
-| Campo      | Valor                                |
-| ---------- | ------------------------------------ |
-| Acervo     | `2026-t2-v1`                         |
-| Ano        | 3o ano                               |
-| Disciplina | Historia                             |
-| Tema       | Nossas origens: a Africa             |
-| Referencia | Roteiro escolar, Historia, pagina 67 |
-| Quantidade | 20 questoes                          |
-| Card       | `#245`                               |
+| Campo      | Valor                               |
+| ---------- | ----------------------------------- |
+| Acervo     | `2026-t2-v1`                        |
+| Ano        | 3o ano                              |
+| Disciplina | Historia                            |
+| Tema       | Nossas origens: a Africa            |
+| Referencia | Programa curricular do 2o trimestre |
+| Quantidade | 20 questoes                         |
+| Card       | `#245`                              |
 
-A pagina da apostila nao esta armazenada no repositorio. O roteiro escolar
-define o tema e a pagina de estudo; a Historia Geral da Africa, da UNESCO, e
-usada somente como referencia institucional complementar para checagem geral.
+O tema curricular define o escopo. A Historia Geral da Africa, da UNESCO, e
+usada somente como referencia institucional para checagem geral.
 
 ## Distribuicao dos objetivos
 
@@ -29,8 +28,8 @@ usada somente como referencia institucional complementar para checagem geral.
 ## Limites do lote
 
 - apresentar conhecimentos introdutorios adequados ao 3o ano;
-- evitar nomes, classificacoes e detalhes que dependam da pagina 67 da apostila;
-- nao antecipar a classificacao dos grupos linguisticos da pagina 69;
+- evitar nomes e classificacoes que nao sejam necessarios ao objetivo do tema;
+- nao antecipar o tema especifico dos grupos linguisticos;
 - nao transformar escravizacao no centro deste tema, pois ela possui lote proprio;
 - nao afirmar que todos os povos africanos compartilham uma unica historia,
   lingua, religiao, aparencia ou costume;
@@ -50,8 +49,8 @@ usada somente como referencia institucional complementar para checagem geral.
 | generalizar povos e culturas                     | usar termos como `muitos`, `diversos` e `diferentes`           |
 | reduzir a historia africana a escravizacao       | incluir sociedades, conhecimentos, cidades, memoria e trocas   |
 | apresentar diferencas como desigualdade de valor | afirmar respeito e ausencia de hierarquia entre culturas       |
-| inventar conteudo especifico da apostila         | restringir o lote a conceitos gerais verificaveis              |
-| reproduzir material escolar protegido            | criar enunciados e alternativas originais                      |
+| inventar recorte curricular nao declarado        | restringir o lote a conceitos gerais verificaveis              |
+| reproduzir material de terceiros                 | criar enunciados e alternativas originais                      |
 | introduzir conceitos abstratos demais            | usar frases curtas, exemplos concretos e vocabulario acessivel |
 
 ## Gate

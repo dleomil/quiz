@@ -157,19 +157,19 @@ Revisar Pull Requests com foco em aderencia a spec, qualidade minima, evidencias
 
 **Responsabilidade**
 
-Transformar material curricular autorizado em um mapa rastreavel de objetivos, topicos e propostas de questoes.
+Transformar temas curriculares autorizados em um mapa rastreavel de objetivos e propostas de questoes.
 
 **Entradas**
 
-- fonte curricular local ou autorizada
+- lista autorizada de temas por materia e trimestre
 - spec de atualizacao de conteudo
 - contrato de questao
-- permissao de uso da fonte
+- objetivo de aprendizagem de cada tema
 
 **Saidas**
 
 - mapa de objetivos curriculares
-- propostas de questoes com referencia de fonte
+- propostas de questoes com referencia de materia e tema
 - metadados de serie, habilidade e versao
 - lacunas ou ambiguidades encontradas na fonte
 
@@ -177,7 +177,7 @@ Transformar material curricular autorizado em um mapa rastreavel de objetivos, t
 
 - nao publica conteudo
 - nao comita material-fonte sem autorizacao explicita
-- nao inventa objetivo curricular ou fonte
+- nao inventa tema, objetivo curricular ou resposta
 - nao substitui revisao pedagogica humana
 
 ### 8. Pedagogical Quality Agent
@@ -189,7 +189,7 @@ Revisar qualidade pedagogica e linguistica das questoes antes da implementacao.
 **Entradas**
 
 - proposta de questao
-- objetivo curricular e referencia de fonte
+- tema e objetivo curricular
 - perfil da turma e serie atendida
 - politica de qualidade de conteudo
 
@@ -202,7 +202,7 @@ Revisar qualidade pedagogica e linguistica das questoes antes da implementacao.
 **Limites**
 
 - nao publica ou aprova merge sozinho
-- nao aceita questao sem fonte rastreavel
+- nao aceita questao sem materia, tema e objetivo rastreaveis
 - nao trata ausencia de revisao humana como evidencia suficiente
 
 ## Fluxo de revisao
