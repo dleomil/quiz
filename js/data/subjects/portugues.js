@@ -164,6 +164,47 @@ function buildPortuguesePronounsQuestion(question) {
   };
 }
 
+function buildPortugueseVerbsIIQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'verbos_ii',
+    topicName: 'Verbos II',
+    skill: 'identificar-e-usar-verbos-em-novos-contextos',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '27',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -230,6 +271,10 @@ window.QuestionsDataSources.portugues = {
     pronomes_pessoais_tratamento: {
       name: 'Pronomes Pessoais e de Tratamento',
       icon: '👥',
+    },
+    verbos_ii: {
+      name: 'Verbos II',
+      icon: '✍️',
     },
   },
   questions: [
@@ -3506,5 +3551,247 @@ window.QuestionsDataSources.portugues = {
         ],
       },
     ].map(buildPortuguesePronounsQuestion),
+    ...[
+      {
+        id: 'pt_t2_vii_001',
+        question: 'Em “A chuva molha a rua”, qual palavra indica uma ação?',
+        options: ['molha', 'chuva', 'a', 'rua'],
+        correctIndex: 0,
+        explanation: 'Molha indica o que a chuva faz.',
+        wrong: [
+          'Chuva nomeia o fenômeno.',
+          'A acompanha o nome rua.',
+          'Rua indica o lugar da ação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_002',
+        question: 'Em “O bebê sorri”, qual palavra indica uma ação?',
+        options: ['sorri', 'bebê', 'o', 'alegria'],
+        correctIndex: 0,
+        explanation: 'Sorri indica o que o bebê faz.',
+        wrong: [
+          'Bebê nomeia a criança.',
+          'O acompanha o nome bebê.',
+          'Alegria não aparece na frase apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_003',
+        question: 'Complete: A mãe __ o jantar.',
+        options: ['prepara', 'nada', 'voa', 'late'],
+        correctIndex: 0,
+        explanation: 'Preparar completa a situação do jantar.',
+        wrong: [
+          'Nada é uma ação realizada na água.',
+          'Voa é uma ação realizada no ar.',
+          'Late é uma ação de cachorro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_004',
+        question: 'Complete: O médico __ o paciente.',
+        options: ['cuida', 'canta', 'pula', 'desenha'],
+        correctIndex: 0,
+        explanation: 'Cuidar completa a situação do médico e do paciente.',
+        wrong: [
+          'Canta não indica o atendimento apresentado.',
+          'Pula não completa a ideia da frase.',
+          'Desenha não é a ação esperada nesse contexto.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_005',
+        question: 'Complete: A planta __ no jardim.',
+        options: ['cresce', 'lê', 'corre', 'cozinha'],
+        correctIndex: 0,
+        explanation: 'Crescer é a ação esperada para uma planta.',
+        wrong: [
+          'Lê não é a ação indicada.',
+          'Corre não é uma ação realizada por uma planta.',
+          'Cozinha não completa a situação.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_006',
+        question: 'Ontem, a família __ um bolo.',
+        options: ['fez', 'faz', 'fazer', 'bolo'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação já aconteceu.',
+        wrong: [
+          'Faz indica uma ação atual e não combina com ontem.',
+          'Fazer não completa a frase nessa forma.',
+          'Bolo é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_007',
+        question: 'Agora, o jardineiro __ as flores.',
+        options: ['rega', 'regou', 'regar', 'flores'],
+        correctIndex: 0,
+        explanation: 'Agora indica uma ação que acontece neste momento.',
+        wrong: [
+          'Regou indica uma ação passada.',
+          'Regar não completa a frase nessa forma.',
+          'Flores é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_008',
+        question: 'Ontem, Lucas __ a janela.',
+        options: ['abriu', 'abre', 'abrir', 'janela'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a ação de abrir já aconteceu.',
+        wrong: [
+          'Abre indica uma ação atual e não combina com ontem.',
+          'Abrir não completa a frase nessa forma.',
+          'Janela é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_009',
+        question: 'Agora, a avó __ uma história.',
+        options: ['conta', 'contou', 'contar', 'avó'],
+        correctIndex: 0,
+        explanation: 'Agora indica que a ação acontece neste momento.',
+        wrong: [
+          'Contou indica uma ação passada.',
+          'Contar não completa a frase nessa forma.',
+          'Avó é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_010',
+        question: 'Ontem, o menino __ o brinquedo.',
+        options: ['perdeu', 'perde', 'perder', 'brinquedo'],
+        correctIndex: 0,
+        explanation: 'Ontem indica que a perda já aconteceu.',
+        wrong: [
+          'Perde indica uma ação atual e não combina com ontem.',
+          'Perder não completa a frase nessa forma.',
+          'Brinquedo é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_011',
+        question: 'Complete: Eu __ a porta.',
+        options: ['fecho', 'fecha', 'fecham', 'porta'],
+        correctIndex: 0,
+        explanation: 'O pronome eu combina com fecho.',
+        wrong: [
+          'Fecha combina com ele ou ela.',
+          'Fecham combina com várias pessoas.',
+          'Porta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_012',
+        question: 'Complete: Ela __ as mãos.',
+        options: ['lava', 'lavam', 'lavo', 'mãos'],
+        correctIndex: 0,
+        explanation: 'O pronome ela combina com lava.',
+        wrong: [
+          'Lavam combina com várias pessoas.',
+          'Lavo combina com eu.',
+          'Mãos é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_013',
+        question: 'Complete: Nós __ a sala.',
+        options: ['limpamos', 'limpa', 'limpam', 'sala'],
+        correctIndex: 0,
+        explanation: 'O pronome nós combina com limpamos.',
+        wrong: [
+          'Limpa combina com uma pessoa.',
+          'Limpam combina com várias pessoas indicadas por eles ou elas.',
+          'Sala é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_014',
+        question: 'Complete: Eles __ a bicicleta.',
+        options: ['consertam', 'conserta', 'conserto', 'bicicleta'],
+        correctIndex: 0,
+        explanation: 'O pronome eles combina com consertam.',
+        wrong: [
+          'Conserta combina com uma pessoa.',
+          'Conserto combina com eu: eu conserto.',
+          'Bicicleta é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_015',
+        question: 'Complete: Você __ a luz.',
+        options: ['apaga', 'apagam', 'apago', 'luz'],
+        correctIndex: 0,
+        explanation: 'O pronome você combina com apaga nesta frase.',
+        wrong: [
+          'Apagam combina com várias pessoas.',
+          'Apago combina com eu.',
+          'Luz é um nome, não a ação da frase.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_016',
+        question: 'Complete: O padeiro __ pães pela manhã.',
+        options: ['assa', 'nada', 'pinta', 'dorme'],
+        correctIndex: 0,
+        explanation: 'Assar pães completa a situação do padeiro.',
+        wrong: [
+          'Nada é uma ação realizada na água.',
+          'Pinta não completa a ideia da frase.',
+          'Dorme não combina com o complemento pães.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_017',
+        question: 'Complete: A abelha __ na flor.',
+        options: ['pousa', 'cozinha', 'escreve', 'varre'],
+        correctIndex: 0,
+        explanation: 'Pousar na flor completa a situação da abelha.',
+        wrong: [
+          'Cozinha não é a ação esperada nesse contexto.',
+          'Escreve não completa a ideia da frase.',
+          'Varre não indica uma ação da abelha.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_018',
+        question: 'Complete: O bombeiro __ as pessoas em perigo.',
+        options: ['socorre', 'planta', 'desenha', 'estuda'],
+        correctIndex: 0,
+        explanation: 'Socorrer pessoas completa a situação do bombeiro.',
+        wrong: [
+          'Planta não completa a ideia da frase.',
+          'Desenha não é a ação indicada nesse contexto.',
+          'Estuda não descreve a ação principal apresentada.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_019',
+        question: 'Complete: A costureira __ uma roupa.',
+        options: ['costura', 'salta', 'dirige', 'late'],
+        correctIndex: 0,
+        explanation: 'Costurar uma roupa completa a situação.',
+        wrong: [
+          'Salta não é a ação indicada.',
+          'Dirige não combina com o complemento uma roupa.',
+          'Late é uma ação de cachorro.',
+        ],
+      },
+      {
+        id: 'pt_t2_vii_020',
+        question: 'Complete: O fotógrafo __ uma imagem.',
+        options: ['fotografa', 'cozinha', 'mergulha', 'rega'],
+        correctIndex: 0,
+        explanation: 'Fotografar uma imagem completa a situação.',
+        wrong: [
+          'Cozinha não é a ação indicada.',
+          'Mergulha é uma ação realizada na água.',
+          'Rega é uma ação usada com plantas.',
+        ],
+      },
+    ].map(buildPortugueseVerbsIIQuestion),
   ],
 };
