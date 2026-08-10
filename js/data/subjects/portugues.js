@@ -205,6 +205,331 @@ function buildPortugueseVerbsIIQuestion(question) {
   };
 }
 
+function buildPortugueseSimilarWordsQuestion(question) {
+  const correctIndex = question.options.indexOf(question.correct);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (_, index) {
+    if (index !== correctIndex) {
+      wrongExplanations[index] = question.wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'palavras_semelhantes',
+    topicName: 'Palavras semelhantes',
+    skill: 'identificar-palavras-de-sentido-semelhante-em-contexto',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Portugues',
+      topic: 'palavras-semelhantes',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    id: question.id,
+    question: question.question,
+    options: question.options,
+    correctIndex,
+    explanation: question.explanation,
+    wrongExplanations,
+  };
+}
+
+const portugueseSimilarWordsQuestionSpecs = [
+  {
+    id: 'PT-T2-SEM-001',
+    question:
+      'Na frase "Lia ficou feliz com a visita", qual palavra pode substituir "feliz" sem mudar o sentido principal?',
+    options: ['contente', 'cansada', 'distante', 'vazia'],
+    correct: 'contente',
+    explanation:
+      'Nesse contexto, "contente" e "feliz" apresentam sentidos próximos.',
+    wrong: [
+      'indica falta de energia',
+      'indica afastamento',
+      'indica ausência de conteúdo.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-002',
+    question:
+      'Em "O corredor foi veloz", qual palavra tem sentido semelhante a "veloz"?',
+    options: ['silencioso', 'rápido', 'cuidadoso', 'pequeno'],
+    correct: 'rápido',
+    explanation:
+      '"Rápido" preserva a ideia de que o corredor se movimentou com velocidade.',
+    wrong: ['fala de som', 'fala de atenção', 'fala de tamanho.'],
+  },
+  {
+    id: 'PT-T2-SEM-003',
+    question:
+      'Em "A professora iniciou a leitura", qual palavra pode substituir "iniciou"?',
+    options: ['apagou', 'esqueceu', 'começou', 'interrompeu'],
+    correct: 'começou',
+    explanation: '"Começou" e "iniciou" indicam o início da ação nessa frase.',
+    wrong: [
+      'significa eliminar ou desligar',
+      'significa não lembrar',
+      'significa parar uma ação em andamento.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-004',
+    question:
+      'Em "O filme terminou cedo", qual palavra mantém o sentido de "terminou"?',
+    options: ['apareceu', 'continuou', 'começou', 'finalizou'],
+    correct: 'finalizou',
+    explanation: '"Finalizou" indica que o filme chegou ao fim.',
+    wrong: [
+      'indica que algo passou a ser visto',
+      'indica permanência',
+      'indica início.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-005',
+    question:
+      'Na frase "O jardim era belo", qual palavra tem sentido semelhante a "belo"?',
+    options: ['bonito', 'barulhento', 'vazio', 'distante'],
+    correct: 'bonito',
+    explanation:
+      '"Bonito" preserva a característica positiva indicada por "belo".',
+    wrong: [
+      'descreve muito som',
+      'indica ausência',
+      'indica que algo está longe.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-006',
+    question:
+      'Em "A sala ficou silenciosa", qual palavra pode substituir "silenciosa"?',
+    options: ['lotada', 'quieta', 'colorida', 'aberta'],
+    correct: 'quieta',
+    explanation:
+      'Nesse contexto, "quieta" mantém a ideia de pouco ou nenhum barulho.',
+    wrong: [
+      'indica muitas pessoas',
+      'fala de cores',
+      'indica que não está fechada.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-007',
+    question:
+      'Na frase "Pedro auxiliou o colega", qual palavra tem sentido próximo de "auxiliou"?',
+    options: ['chamou', 'observou', 'ajudou', 'encontrou'],
+    correct: 'ajudou',
+    explanation:
+      '"Ajudou" e "auxiliou" indicam que Pedro ofereceu apoio ao colega.',
+    wrong: [
+      'indica convidar ou dizer um nome',
+      'indica olhar com atenção',
+      'indica achar alguém ou algo.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-008',
+    question:
+      'Em "A biblioteca fica próxima da escola", qual palavra pode substituir "próxima"?',
+    options: ['fechada', 'acima', 'vazia', 'perto'],
+    correct: 'perto',
+    explanation:
+      '"Perto" mantém a ideia de pequena distância entre os lugares.',
+    wrong: [
+      'indica que não está aberta',
+      'indica posição superior',
+      'indica ausência de pessoas ou objetos.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-009',
+    question:
+      'Na frase "A cidade fica distante daqui", qual palavra tem sentido semelhante a "distante"?',
+    options: ['longe', 'limpa', 'antiga', 'movimentada'],
+    correct: 'longe',
+    explanation: '"Longe" preserva a ideia de grande distância.',
+    wrong: [
+      'indica ausência de sujeira',
+      'fala de tempo',
+      'indica muita atividade.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-010',
+    question:
+      'Em "A sopa estava saborosa", qual palavra pode substituir "saborosa"?',
+    options: ['fria', 'gostosa', 'líquida', 'pronta'],
+    correct: 'gostosa',
+    explanation:
+      'Nesse contexto, "gostosa" mantém a avaliação positiva do sabor.',
+    wrong: [
+      'indica temperatura',
+      'descreve o estado da sopa',
+      'indica que o preparo terminou.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-011',
+    question:
+      'Na frase "O menino recordou o recado", qual palavra tem sentido próximo de "recordou"?',
+    options: ['escreveu', 'apagou', 'lembrou', 'perdeu'],
+    correct: 'lembrou',
+    explanation:
+      '"Lembrou" e "recordou" indicam que o recado voltou à memória.',
+    wrong: [
+      'indica registrar por escrito',
+      'indica eliminar',
+      'indica deixar de ter ou não encontrar.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-012',
+    question:
+      'Em "A família escolheu o caminho mais curto", qual expressão pode substituir "escolheu"?',
+    options: ['esqueceu do', 'afastou-se do', 'desenhou o', 'optou pelo'],
+    correct: 'optou pelo',
+    explanation: '"Optou pelo" mantém a ideia de selecionar uma possibilidade.',
+    wrong: [
+      'indica não lembrar',
+      'indica aumentar a distância',
+      'indica representar com traços.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-013',
+    question:
+      'Na frase "Aquela moradia tem duas janelas", qual palavra tem sentido semelhante a "moradia"?',
+    options: ['residência', 'brincadeira', 'ferramenta', 'paisagem'],
+    correct: 'residência',
+    explanation:
+      '"Residência" e "moradia" podem indicar o lugar onde alguém vive.',
+    wrong: [
+      'é uma atividade de diversão',
+      'é usada para realizar um trabalho',
+      'é o conjunto de elementos vistos em um lugar.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-014',
+    question:
+      'Em "Bia sentiu receio da tempestade", qual palavra tem sentido próximo de "receio"?',
+    options: ['coragem', 'medo', 'alegria', 'pressa'],
+    correct: 'medo',
+    explanation:
+      'Nesse contexto, "medo" e "receio" indicam preocupação diante da tempestade.',
+    wrong: [
+      'indica disposição para enfrentar uma situação',
+      'é um sentimento positivo',
+      'indica urgência.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-015',
+    question:
+      'Na frase "O ruído acordou o bebê", qual palavra pode substituir "ruído"?',
+    options: ['silêncio', 'perfume', 'barulho', 'cobertor'],
+    correct: 'barulho',
+    explanation: '"Barulho" preserva a ideia de um som que acordou o bebê.',
+    wrong: [
+      'é ausência de som',
+      'é um cheiro',
+      'é um objeto usado para aquecer.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-016',
+    question:
+      'Em "A criança tranquila esperou sua vez", qual palavra tem sentido semelhante a "tranquila"?',
+    options: ['apressada', 'zangada', 'distraída', 'calma'],
+    correct: 'calma',
+    explanation:
+      '"Calma" mantém a ideia de que a criança esperou sem agitação.',
+    wrong: ['indica urgência', 'indica irritação', 'indica falta de atenção.'],
+  },
+  {
+    id: 'PT-T2-SEM-017',
+    question:
+      'Quando não conhecemos bem o significado de uma palavra, o que podemos fazer?',
+    options: [
+      'consultar um dicionário',
+      'escolher qualquer palavra',
+      'olhar apenas o tamanho',
+      'trocar todas as letras',
+    ],
+    correct: 'consultar um dicionário',
+    explanation:
+      'O dicionário ajuda a conhecer significados e usos das palavras.',
+    wrong: [
+      'pode produzir uma resposta errada',
+      'não revela o significado',
+      'mudar a grafia não explica o sentido.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-018',
+    question:
+      'Por que devemos ler a frase inteira antes de trocar uma palavra por outra semelhante?',
+    options: [
+      'porque toda frase precisa rimar',
+      'porque o contexto ajuda a confirmar o sentido',
+      'porque palavras longas têm sempre o mesmo sentido',
+      'porque a primeira opção é sempre correta',
+    ],
+    correct: 'porque o contexto ajuda a confirmar o sentido',
+    explanation:
+      'A mesma palavra pode ter usos diferentes, e a frase mostra qual sentido está sendo usado.',
+    wrong: [
+      'semelhança de sentido não depende de rima',
+      'tamanho não define significado',
+      'a posição não garante correção.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-019',
+    question:
+      'Palavras de sentido semelhante podem ser trocadas em qualquer frase?',
+    options: [
+      'sim, sem precisar reler',
+      'sim, porque têm a mesma grafia',
+      'não, pois o contexto pode mudar o melhor uso',
+      'não, porque nunca possuem relação',
+    ],
+    correct: 'não, pois o contexto pode mudar o melhor uso',
+    explanation:
+      'Palavras próximas podem apresentar diferenças de uso, intensidade ou combinação com outras palavras.',
+    wrong: [
+      'é preciso conferir a frase',
+      'grafia não define a relação',
+      'palavras semelhantes possuem relação de sentido em determinados contextos.',
+    ],
+  },
+  {
+    id: 'PT-T2-SEM-020',
+    question:
+      'Qual sequência ajuda a verificar se uma palavra semelhante pode substituir outra?',
+    options: [
+      'olhar apenas a primeira letra',
+      'escolher a palavra mais longa',
+      'ignorar o restante da frase',
+      'trocar a palavra e reler a frase inteira',
+    ],
+    correct: 'trocar a palavra e reler a frase inteira',
+    explanation:
+      'A releitura permite verificar se a frase continua clara e mantém o sentido principal.',
+    wrong: [
+      'uma letra não confirma o significado',
+      'tamanho não garante adequação',
+      'o contexto é necessário para decidir.',
+    ],
+  },
+];
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -275,6 +600,10 @@ window.QuestionsDataSources.portugues = {
     verbos_ii: {
       name: 'Verbos II',
       icon: '✍️',
+    },
+    palavras_semelhantes: {
+      name: 'Palavras semelhantes',
+      icon: '🔁',
     },
   },
   questions: [
@@ -3793,5 +4122,8 @@ window.QuestionsDataSources.portugues = {
         ],
       },
     ].map(buildPortugueseVerbsIIQuestion),
+    ...portugueseSimilarWordsQuestionSpecs.map(
+      buildPortugueseSimilarWordsQuestion,
+    ),
   ],
 };

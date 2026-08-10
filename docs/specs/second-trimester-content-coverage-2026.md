@@ -34,10 +34,10 @@ com `contentSetId: 2026-t2-v1`.
 
 | Disciplina | Objeto de conhecimento                             | Atual | Meta | Card        |
 | ---------- | -------------------------------------------------- | ----: | ---: | ----------- |
-| Historia   | Nossas origens: a Africa                           |     0 |   20 | #245        |
-| Historia   | Os principais grupos linguisticos africanos        |     0 |   20 | #246        |
-| Historia   | Os africanos e a escravidao                        |     0 |   20 | #247        |
-| Historia   | Os afrodescendentes na atualidade                  |     0 |   20 | #244        |
+| Historia   | Nossas origens: a Africa                           |    20 |   20 | #245        |
+| Historia   | Os principais grupos linguisticos africanos        |    20 |   20 | #246        |
+| Historia   | Os africanos e a escravidao                        |    20 |   20 | #247        |
+| Historia   | Os afrodescendentes na atualidade                  |    20 |   20 | #244        |
 | Ciencias   | Caracteristicas e desenvolvimento dos artropodes   |    20 |   20 | #206 (Done) |
 | Ciencias   | Introducao ao estudo dos insetos                   |    20 |   20 | #206 (Done) |
 | Ciencias   | Introducao ao estudo dos aracnideos                |    20 |   20 | #206 (Done) |
@@ -55,32 +55,32 @@ com `contentSetId: 2026-t2-v1`.
 | Geografia  | O que e Cartografia?                               |    20 |   20 | #228 (Done) |
 | Geografia  | Diferentes representacoes cartograficas            |    20 |   20 | #228 (Done) |
 | Geografia  | Os mapas e a representacao do espaco               |    20 |   20 | #228 (Done) |
-| Ingles     | Prepositions                                       |     0 |   20 | #231        |
-| Ingles     | Father's Day                                       |     0 |   20 | #231        |
-| Ingles     | Sports                                             |     0 |   20 | #231        |
-| Ingles     | Action verbs                                       |     0 |   20 | #231        |
+| Ingles     | Prepositions                                       |    20 |   20 | #231        |
+| Ingles     | Father's Day                                       |    20 |   20 | #231        |
+| Ingles     | Sports                                             |    20 |   20 | #231        |
+| Ingles     | Action verbs                                       |    20 |   20 | #231        |
 | Portugues  | Usos de L e U                                      |    20 |   20 | #137        |
 | Portugues  | Pronomes pessoais e pronomes de tratamento         |    20 |   20 | #137        |
 | Portugues  | Palavras com ce e ci                               |    20 |   20 | #137        |
 | Portugues  | Verbos I                                           |    20 |   20 | #137        |
-| Portugues  | Palavras semelhantes                               |     0 |   20 | #174        |
+| Portugues  | Palavras semelhantes                               |    20 |   20 | #174        |
 | Portugues  | Verbos II                                          |    20 |   20 | #137        |
 
 ### Resumo da auditoria
 
 | Disciplina | Temas completos | Temas previstos | Questoes atuais |    Meta |
 | ---------- | --------------: | --------------: | --------------: | ------: |
-| Historia   |               0 |               4 |               0 |      80 |
+| Historia   |               4 |               4 |              80 |      80 |
 | Ciencias   |               6 |               6 |             120 |     120 |
 | Matematica |               8 |               8 |             160 |     160 |
 | Geografia  |               3 |               3 |              60 |      60 |
-| Ingles     |               0 |               4 |               0 |      80 |
-| Portugues  |               5 |               6 |             100 |     120 |
-| **Total**  |          **22** |          **31** |         **440** | **620** |
+| Ingles     |               4 |               4 |              80 |      80 |
+| Portugues  |               6 |               6 |             120 |     120 |
+| **Total**  |          **31** |          **31** |         **620** | **620** |
 
-As 180 questoes restantes pertencem a nove temas. `Palavras semelhantes` segue
-pelo card #174 sem depender de material escolar. Historia, Ingles e Portugues
-devem seguir, respectivamente, pelas historias #230, #231 e pelo card #174.
+Todos os temas previstos no mapa possuem 20 questoes executaveis no acervo
+`2026-t2-v1`. A publicacao do acervo ainda depende de revisao final, PR
+aprovado e decisao explicita de disponibilizacao.
 
 `Atividades adicionais` e uma secao de exercicios, nao um objeto avaliavel
 autonomo no roteiro. Ela nao cria uma meta adicional. Se uma atividade revelar
