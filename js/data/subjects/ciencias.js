@@ -1,5 +1,625 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+const scienceT2TopicConfig = {
+  artropodes: {
+    name: 'Características e Desenvolvimento dos Artrópodes',
+    skill: 'reconhecer-caracteristicas-e-desenvolvimento-dos-artropodes',
+    page: '35',
+  },
+  insetos: {
+    name: 'Introdução ao Estudo dos Insetos',
+    skill: 'reconhecer-caracteristicas-basicas-dos-insetos',
+    page: '36',
+  },
+};
+
+function buildScienceT2Question(specification) {
+  const [id, topic, question, correct, wrong, explanation, wrongFeedback] =
+    specification;
+  const config = scienceT2TopicConfig[topic];
+  const targetCorrectIndex = (Number(id.slice(-3)) - 1) % 4;
+  const baseOptions = [correct, ...wrong];
+  const options = new Array(4);
+  const wrongExplanations = {};
+
+  baseOptions.forEach(function (option, index) {
+    const rotatedIndex = (index + targetCorrectIndex) % 4;
+    options[rotatedIndex] = option;
+    if (index > 0) wrongExplanations[rotatedIndex] = wrongFeedback[index - 1];
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    id,
+    contentSetId: '2026-t2-v1',
+    subject: 'ciencias',
+    topic,
+    topicName: config.name,
+    question,
+    options,
+    correctIndex: targetCorrectIndex,
+    explanation,
+    wrongExplanations,
+    skill: config.skill,
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Ciências',
+      page: config.page,
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+  };
+}
+
+const scienceT2QuestionSpecs = [
+  [
+    'CIE-T2-ART-001',
+    'artropodes',
+    'Os artrópodes fazem parte de qual grupo de animais?',
+    'invertebrados',
+    ['vertebrados', 'mamíferos', 'aves'],
+    'Artrópodes não possuem coluna vertebral, por isso são invertebrados.',
+    [
+      'Vertebrados possuem coluna vertebral.',
+      'Mamíferos são vertebrados.',
+      'Aves também possuem coluna vertebral.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-002',
+    'artropodes',
+    'Como se chama a cobertura resistente que fica do lado de fora do corpo de um artrópode?',
+    'exoesqueleto',
+    ['pele com pelos', 'coluna vertebral', 'concha interna'],
+    'O exoesqueleto reveste e ajuda a proteger o corpo do artrópode.',
+    [
+      'Pelos não formam a cobertura comum do grupo.',
+      'Artrópodes não possuem coluna vertebral.',
+      'O revestimento fica do lado de fora.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-003',
+    'artropodes',
+    'Qual característica das pernas ajuda muitos artrópodes a se movimentarem?',
+    'serem articuladas',
+    ['serem feitas de penas', 'não dobrarem', 'serem raízes'],
+    'As articulações permitem que as pernas dobrem durante o movimento.',
+    [
+      'Penas não formam as pernas.',
+      'Pernas que não dobram não são articuladas.',
+      'Raízes pertencem às plantas.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-004',
+    'artropodes',
+    'O corpo dos artrópodes é formado por partes chamadas:',
+    'segmentos',
+    ['folhas', 'ossos', 'barbatanas'],
+    'O corpo dos artrópodes apresenta partes ou segmentos.',
+    [
+      'Folhas pertencem às plantas.',
+      'Ossos não formam esses segmentos.',
+      'Barbatanas não são comuns a todo o grupo.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-005',
+    'artropodes',
+    'Para crescer, muitos artrópodes precisam trocar periodicamente o:',
+    'exoesqueleto',
+    ['coração', 'alimento', 'ambiente'],
+    'O exoesqueleto não cresce junto com o animal e precisa ser trocado.',
+    [
+      'O coração não é trocado para crescer.',
+      'Alimento é consumido, não trocado como cobertura.',
+      'Mudar de ambiente não substitui a muda.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-006',
+    'artropodes',
+    'Como é chamada a troca do exoesqueleto durante o crescimento?',
+    'muda',
+    ['voo', 'germinação', 'respiração'],
+    'A muda permite que o artrópode aumente de tamanho antes do novo revestimento endurecer.',
+    [
+      'Voo é uma forma de locomoção.',
+      'Germinação ocorre com sementes.',
+      'Respiração é a troca de gases.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-007',
+    'artropodes',
+    'Logo depois da muda, o novo exoesqueleto costuma estar:',
+    'mais macio',
+    ['feito de penas', 'ausente para sempre', 'transformado em osso'],
+    'O novo exoesqueleto fica mais macio por um tempo e depois endurece.',
+    [
+      'Penas não formam o revestimento.',
+      'Um novo revestimento está presente.',
+      'Exoesqueleto não vira osso.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-008',
+    'artropodes',
+    'Qual é uma função do exoesqueleto?',
+    'proteger e sustentar o corpo',
+    ['produzir alimento', 'formar flores', 'criar coluna vertebral'],
+    'O exoesqueleto ajuda na proteção e na sustentação do animal.',
+    [
+      'Animais precisam obter alimento.',
+      'Flores são estruturas de plantas.',
+      'Artrópodes continuam invertebrados.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-009',
+    'artropodes',
+    'Qual destes grupos pertence aos artrópodes?',
+    'insetos',
+    ['moluscos', 'anelídeos', 'peixes'],
+    'Insetos são um dos grupos de artrópodes.',
+    [
+      'Moluscos formam outro grupo.',
+      'Anelídeos também formam outro grupo.',
+      'Peixes são vertebrados.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-010',
+    'artropodes',
+    'A aranha é um artrópode do grupo dos:',
+    'aracnídeos',
+    ['insetos', 'crustáceos', 'moluscos'],
+    'Aranhas são aracnídeos e fazem parte dos artrópodes.',
+    [
+      'Insetos possuem características diferentes.',
+      'Crustáceos incluem animais como caranguejos.',
+      'Moluscos não são artrópodes.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-011',
+    'artropodes',
+    'O caranguejo pertence a qual grupo de artrópodes?',
+    'crustáceos',
+    ['aracnídeos', 'insetos', 'anelídeos'],
+    'Caranguejos são crustáceos.',
+    [
+      'Aracnídeos incluem aranhas e escorpiões.',
+      'Insetos adultos possuem seis pernas.',
+      'Anelídeos não são artrópodes.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-012',
+    'artropodes',
+    'A centopeia pertence ao grupo dos:',
+    'miriápodes',
+    ['insetos', 'moluscos', 'peixes'],
+    'Centopeias são miriápodes, artrópodes com muitos segmentos corporais.',
+    [
+      'Insetos adultos possuem seis pernas.',
+      'Moluscos não são artrópodes.',
+      'Peixes possuem coluna vertebral.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-013',
+    'artropodes',
+    'Qual destes animais não é um artrópode?',
+    'minhoca',
+    ['borboleta', 'aranha', 'camarão'],
+    'A minhoca é um anelídeo, não um artrópode.',
+    [
+      'Borboleta é um inseto.',
+      'Aranha é um aracnídeo.',
+      'Camarão é um crustáceo.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-014',
+    'artropodes',
+    'Onde os artrópodes podem ser encontrados?',
+    'em muitos ambientes terrestres e aquáticos',
+    ['somente no mar', 'somente em desertos', 'apenas dentro de casas'],
+    'O grupo possui espécies adaptadas a muitos ambientes.',
+    [
+      'Muitos artrópodes vivem em terra.',
+      'Há espécies em outros locais.',
+      'A maioria vive em ambientes naturais.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-015',
+    'artropodes',
+    'Pernas e outras estruturas articuladas ajudam os artrópodes principalmente a:',
+    'se movimentar e realizar tarefas',
+    ['produzir sementes', 'formar pelos', 'criar ossos'],
+    'As articulações ajudam na locomoção e em ações como capturar alimento.',
+    [
+      'Sementes são produzidas por plantas.',
+      'Pelos não são formados pelas articulações.',
+      'Artrópodes não possuem esqueleto interno ósseo.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-016',
+    'artropodes',
+    'O exoesqueleto fica localizado:',
+    'do lado de fora do corpo',
+    ['dentro da coluna', 'somente nas asas', 'apenas na cabeça'],
+    'A palavra exoesqueleto indica um revestimento externo.',
+    [
+      'Artrópodes não possuem coluna.',
+      'O revestimento cobre outras partes do corpo.',
+      'O revestimento não fica apenas na cabeça.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-017',
+    'artropodes',
+    'O desenvolvimento de muitos artrópodes começa em:',
+    'ovos',
+    ['sementes', 'flores', 'pedras'],
+    'Muitos artrópodes iniciam o ciclo de vida em ovos.',
+    [
+      'Sementes originam plantas.',
+      'Flores são estruturas vegetais.',
+      'Pedras não originam animais.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-018',
+    'artropodes',
+    'Por que um artrópode realiza várias mudas enquanto cresce?',
+    'porque o exoesqueleto antigo fica pequeno',
+    [
+      'porque perde a coluna vertebral',
+      'porque vira planta',
+      'porque suas pernas deixam de existir',
+    ],
+    'A muda cria espaço para o corpo continuar crescendo.',
+    [
+      'O animal nunca possuiu coluna vertebral.',
+      'O artrópode continua sendo animal.',
+      'As pernas não deixam de existir durante o crescimento.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-019',
+    'artropodes',
+    'Todos os artrópodes possuem a mesma quantidade de pernas?',
+    'não, a quantidade varia entre os grupos',
+    [
+      'sim, todos possuem seis',
+      'sim, todos possuem oito',
+      'não, porque nenhum possui pernas',
+    ],
+    'Insetos, aracnídeos, crustáceos e miriápodes podem ter quantidades diferentes.',
+    [
+      'Seis vale para insetos adultos, não para todo artrópode.',
+      'Oito vale para aracnídeos adultos, não para todos.',
+      'Muitos artrópodes possuem pernas.',
+    ],
+  ],
+  [
+    'CIE-T2-ART-020',
+    'artropodes',
+    'Qual é a atitude mais cuidadosa ao observar um artrópode desconhecido?',
+    'observar sem tocar e chamar um adulto',
+    [
+      'apertar o animal',
+      'colocar a mão perto da boca dele',
+      'levar o animal para casa',
+    ],
+    'Observar à distância protege a criança e o animal.',
+    [
+      'Apertar pode machucar e provocar defesa.',
+      'Aproximar a mão pode causar acidente.',
+      'Levar para casa pode ser arriscado.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-001',
+    'insetos',
+    'Quantas pernas possui um inseto adulto?',
+    'seis',
+    ['oito', 'dez', 'duas'],
+    'Insetos adultos possuem três pares, totalizando seis pernas.',
+    [
+      'Oito é comum em aracnídeos adultos.',
+      'Dez não caracteriza os insetos.',
+      'Duas é a quantidade de pernas das aves.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-002',
+    'insetos',
+    'Em quantas regiões principais o corpo de um inseto é dividido?',
+    'três',
+    ['duas', 'quatro', 'uma'],
+    'O corpo do inseto possui cabeça, tórax e abdômen.',
+    [
+      'Duas não inclui as três regiões.',
+      'Quatro acrescenta uma região inexistente.',
+      'O corpo apresenta divisões.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-003',
+    'insetos',
+    'Quais são as três regiões do corpo de um inseto?',
+    'cabeça, tórax e abdômen',
+    ['cabeça, cauda e nadadeira', 'raiz, caule e folha', 'tórax, concha e pé'],
+    'Essas são as três regiões corporais dos insetos.',
+    [
+      'Cauda e nadadeira não formam o corpo do inseto.',
+      'Raiz, caule e folha pertencem às plantas.',
+      'Concha e pé são termos ligados a moluscos.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-004',
+    'insetos',
+    'Em qual região do corpo ficam presas as pernas do inseto?',
+    'tórax',
+    ['cabeça', 'abdômen', 'antena'],
+    'Os três pares de pernas ficam ligados ao tórax.',
+    [
+      'A cabeça abriga olhos, boca e antenas.',
+      'O abdômen não sustenta as pernas.',
+      'Antena é uma estrutura, não uma região.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-005',
+    'insetos',
+    'Quantas antenas possui um inseto?',
+    'duas',
+    ['nenhuma', 'quatro', 'oito'],
+    'Insetos possuem um par de antenas.',
+    [
+      'Antenas são características do grupo.',
+      'Quatro seriam dois pares.',
+      'Oito confunde antenas com pernas.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-006',
+    'insetos',
+    'Para que as antenas ajudam o inseto?',
+    'perceber o ambiente',
+    [
+      'produzir flores',
+      'formar coluna vertebral',
+      'respirar debaixo da água em todos os casos',
+    ],
+    'As antenas captam sinais como cheiros e toques.',
+    [
+      'Flores são produzidas por plantas.',
+      'Insetos são invertebrados.',
+      'Respirar sempre na água não é função geral das antenas.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-007',
+    'insetos',
+    'Qual afirmação sobre asas de insetos está correta?',
+    'muitos possuem asas, mas nem todos voam',
+    [
+      'todos possuem asas e voam',
+      'nenhum inseto possui asas',
+      'asas ficam no abdômen de todos',
+    ],
+    'Há insetos com asas, sem asas e com asas que não são usadas para voar.',
+    [
+      'Há exceções entre os insetos.',
+      'Muitos insetos possuem asas.',
+      'Quando presentes, as asas ligam-se ao tórax.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-008',
+    'insetos',
+    'Qual destes animais é um inseto?',
+    'borboleta',
+    ['aranha', 'centopeia', 'caranguejo'],
+    'A borboleta adulta possui seis pernas e três regiões corporais.',
+    [
+      'Aranha é aracnídeo.',
+      'Centopeia é miriápode.',
+      'Caranguejo é crustáceo.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-009',
+    'insetos',
+    'A formiga pertence ao grupo dos:',
+    'insetos',
+    ['aracnídeos', 'moluscos', 'peixes'],
+    'Formigas possuem as características básicas dos insetos.',
+    [
+      'Aracnídeos adultos possuem oito pernas.',
+      'Moluscos possuem corpo mole.',
+      'Peixes são vertebrados aquáticos.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-010',
+    'insetos',
+    'A abelha é importante para muitas plantas porque ajuda na:',
+    'polinização',
+    ['formação de pedras', 'produção de penas', 'criação de coluna vertebral'],
+    'Ao visitar flores, muitas abelhas transportam pólen e ajudam na polinização.',
+    [
+      'Pedras não são formadas por abelhas.',
+      'Penas pertencem às aves.',
+      'Plantas não possuem coluna vertebral.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-011',
+    'insetos',
+    'Por que a aranha não é um inseto?',
+    'porque é aracnídeo e possui oito pernas quando adulta',
+    [
+      'porque possui seis pernas',
+      'porque tem três pares de asas',
+      'porque é uma planta',
+    ],
+    'A aranha pertence aos aracnídeos, não aos insetos.',
+    [
+      'Seis pernas caracterizam insetos adultos.',
+      'Três pares de asas não descrevem aranhas.',
+      'Aranha é animal.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-012',
+    'insetos',
+    'Por que a centopeia não é um inseto?',
+    'porque é miriápode e possui muitos segmentos',
+    [
+      'porque possui exatamente seis pernas',
+      'porque tem apenas três regiões corporais',
+      'porque é vertebrada',
+    ],
+    'Centopeias pertencem aos miriápodes.',
+    [
+      'Seis pernas caracterizam insetos adultos.',
+      'Três regiões são típicas dos insetos.',
+      'Centopeia é invertebrada.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-013',
+    'insetos',
+    'Qual destes insetos pode ter uma lagarta como fase jovem?',
+    'borboleta',
+    ['formiga adulta', 'gafanhoto adulto', 'libélula adulta'],
+    'A lagarta é a larva da borboleta ou da mariposa.',
+    [
+      'Formiga adulta não é lagarta.',
+      'Gafanhoto adulto possui outra forma.',
+      'Libélula adulta não corresponde à lagarta.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-014',
+    'insetos',
+    'Qual sequência representa a metamorfose completa da borboleta?',
+    'ovo, larva, pupa e adulto',
+    ['semente, muda e árvore', 'ovo, adulto e pupa', 'larva, planta e adulto'],
+    'A borboleta passa por ovo, lagarta, pupa e adulto.',
+    [
+      'A sequência de planta não descreve animal.',
+      'O adulto não vem antes da pupa.',
+      'Inseto não vira planta.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-015',
+    'insetos',
+    'O que acontece na fase de pupa da borboleta?',
+    'ocorre uma grande transformação antes da fase adulta',
+    [
+      'o inseto vira semente',
+      'aparecem raízes',
+      'o animal se transforma em peixe',
+    ],
+    'Na pupa, o corpo passa por mudanças que formam o adulto.',
+    [
+      'Semente pertence ao ciclo de plantas.',
+      'Raízes não fazem parte do inseto.',
+      'O animal continua sendo inseto.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-016',
+    'insetos',
+    'No desenvolvimento do gafanhoto, a ninfa é:',
+    'uma fase jovem parecida com o adulto, mas menor',
+    ['uma semente', 'uma pupa igual à da borboleta', 'um peixe jovem'],
+    'A ninfa cresce por mudas até chegar à fase adulta.',
+    [
+      'Semente não pertence ao ciclo.',
+      'Gafanhotos não passam pela fase de pupa.',
+      'Gafanhoto continua sendo inseto.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-017',
+    'insetos',
+    'O besouro pode ser reconhecido como inseto porque possui:',
+    'seis pernas e corpo dividido em três regiões',
+    [
+      'oito pernas e duas regiões',
+      'coluna vertebral',
+      'corpo sem nenhuma divisão',
+    ],
+    'Besouros apresentam as características corporais dos insetos.',
+    [
+      'Oito pernas são comuns em aracnídeos.',
+      'Insetos são invertebrados.',
+      'O corpo possui cabeça, tórax e abdômen.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-018',
+    'insetos',
+    'O corpo do inseto é protegido externamente por:',
+    'exoesqueleto',
+    ['coluna vertebral', 'pelos de mamífero', 'escamas de peixe'],
+    'Insetos são artrópodes e possuem exoesqueleto.',
+    [
+      'Insetos não possuem coluna.',
+      'Pelos não formam seu revestimento principal.',
+      'Escamas de peixe pertencem a outro grupo.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-019',
+    'insetos',
+    'Onde os insetos podem viver?',
+    'em muitos ambientes, como solo, plantas e água doce',
+    [
+      'somente dentro de casas',
+      'apenas no mar profundo',
+      'somente em lugares secos',
+    ],
+    'Existem insetos adaptados a diferentes ambientes.',
+    [
+      'Muitos vivem na natureza.',
+      'O mar profundo não representa o grupo.',
+      'Muitos dependem de ambientes úmidos ou aquáticos em alguma fase.',
+    ],
+  ],
+  [
+    'CIE-T2-INS-020',
+    'insetos',
+    'Como observar um inseto sem prejudicá-lo?',
+    'observar à distância, sem tocar nem retirar do ambiente',
+    [
+      'arrancar suas asas',
+      'fechar o animal sem ar',
+      'levar todos os insetos para casa',
+    ],
+    'A observação cuidadosa protege o inseto e a criança.',
+    [
+      'Arrancar asas machuca o animal.',
+      'Fechar sem ar pode matar o animal.',
+      'Levar para casa retira o animal de seu ambiente.',
+    ],
+  ],
+];
+
+const scienceT2Questions = scienceT2QuestionSpecs.map(buildScienceT2Question);
+
 window.QuestionsDataSources.ciencias = {
   subjectMeta: {
     name: 'Ciências',
@@ -7,6 +627,14 @@ window.QuestionsDataSources.ciencias = {
     available: true,
   },
   topicMeta: {
+    artropodes: {
+      name: 'Características e Desenvolvimento dos Artrópodes',
+      icon: '🦀',
+    },
+    insetos: {
+      name: 'Introdução ao Estudo dos Insetos',
+      icon: '🦋',
+    },
     platelmintos: {
       name: 'Características e Desenvolvimento dos Platelmintos',
       icon: '🪱',
@@ -25,6 +653,7 @@ window.QuestionsDataSources.ciencias = {
     },
   },
   questions: [
+    ...scienceT2Questions,
     {
       id: 'cie_pl_001',
       subject: 'ciencias',

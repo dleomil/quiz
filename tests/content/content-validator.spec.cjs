@@ -104,6 +104,25 @@ function run() {
   );
 
   const scienceQuestions = loadScienceQuestions();
+  ['artropodes', 'insetos'].forEach((topic) => {
+    const topicQuestions = scienceQuestions.filter(
+      (question) =>
+        question.contentSetId === '2026-t2-v1' && question.topic === topic,
+    );
+    const correctIndexDistribution = [0, 0, 0, 0];
+
+    assert.strictEqual(topicQuestions.length, 20);
+    topicQuestions.forEach((question) => {
+      assert.strictEqual(question.schemaVersion, 'content-v1');
+      assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
+      assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
+      assert.strictEqual(question.sourceRef.section, 'Ciências');
+      assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
+      correctIndexDistribution[question.correctIndex] += 1;
+    });
+    assert.deepStrictEqual(correctIndexDistribution, [5, 5, 5, 5]);
+  });
+
   const platyhelminthQuestions = scienceQuestions.filter(
     (question) => question.topic === 'platelmintos',
   );
