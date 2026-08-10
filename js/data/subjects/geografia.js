@@ -11,6 +11,11 @@ const geographyT2TopicConfig = {
     skill: 'diferenciar-representacoes-cartograficas',
     page: '54',
   },
+  mapas_representacao_espaco: {
+    name: 'Os mapas e a representação do espaço',
+    skill: 'interpretar-mapas-e-relacoes-espaciais',
+    page: '58',
+  },
 };
 
 function normalizeGeographyFeedback(feedback) {
@@ -659,9 +664,269 @@ const geographyT2RepresentationQuestionSpecs = [
   ],
 ];
 
+const geographyT2MapQuestionSpecs = [
+  [
+    'GEO-T2-MAP-001',
+    'mapas_representacao_espaco',
+    'Ao abrir um mapa, qual elemento deve ser lido para descobrir o assunto?',
+    'título',
+    ['margem', 'dobra', 'número de páginas do caderno'],
+    'O título informa o tema ou o lugar representado.',
+    [
+      'apenas delimita a folha',
+      'não identifica o assunto',
+      'não explicam o mapa.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-002',
+    'mapas_representacao_espaco',
+    'Em um mapa, onde encontramos o significado de cada símbolo?',
+    'na legenda',
+    ['somente no título', 'fora do mapa', 'em uma receita'],
+    'A legenda relaciona símbolos e cores aos elementos representados.',
+    [
+      'apresenta o assunto geral',
+      'a explicação deve acompanhar a representação',
+      'pertence a outro tipo de texto.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-003',
+    'mapas_representacao_espaco',
+    'A legenda informa que uma linha azul representa um rio. O que significa uma linha azul nesse mapa?',
+    'um rio',
+    ['uma estrada', 'uma escola', 'uma montanha'],
+    'O significado foi definido de modo explícito pela legenda desse mapa.',
+    [
+      'teria outro símbolo',
+      'costuma ser indicada por ponto ou desenho',
+      'não corresponde à legenda fornecida.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-004',
+    'mapas_representacao_espaco',
+    'Na rosa dos ventos, qual letra costuma indicar o norte?',
+    'N',
+    ['S', 'L', 'O'],
+    'A letra N representa o ponto cardeal norte.',
+    ['indica sul', 'indica leste', 'indica oeste.'],
+  ],
+  [
+    'GEO-T2-MAP-005',
+    'mapas_representacao_espaco',
+    'Qual ponto cardeal fica oposto ao norte?',
+    'sul',
+    ['leste', 'oeste', 'nordeste'],
+    'Norte e sul são direções opostas.',
+    ['é oposto ao oeste', 'é oposto ao leste', 'é uma direção intermediária.'],
+  ],
+  [
+    'GEO-T2-MAP-006',
+    'mapas_representacao_espaco',
+    'O que é um ponto de referência?',
+    'um elemento conhecido que ajuda a localizar um lugar',
+    [
+      'uma cor escolhida sem legenda',
+      'um mapa sem título',
+      'uma direção inventada',
+    ],
+    'Escola, praça ou mercado podem servir como referências de localização.',
+    ['não orienta com clareza', 'falta contexto', 'não é referência espacial.'],
+  ],
+  [
+    'GEO-T2-MAP-007',
+    'mapas_representacao_espaco',
+    'A legenda mostra uma cruz vermelha para hospital. Ao encontrar esse símbolo, o leitor identifica:',
+    'um hospital',
+    ['uma ponte', 'uma floresta', 'uma escola'],
+    'A legenda definiu a cruz vermelha como símbolo de hospital nesse mapa.',
+    [
+      'exigiria outro símbolo',
+      'teria outra indicação',
+      'não corresponde ao código fornecido.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-008',
+    'mapas_representacao_espaco',
+    'Em um mapa com o norte na parte de cima, a biblioteca está ao norte da escola. Onde ela aparece?',
+    'acima da escola',
+    ['abaixo da escola', 'sempre fora do mapa', 'no mesmo ponto da escola'],
+    'Com o norte para cima, um lugar ao norte aparece acima do outro.',
+    [
+      'indicaria sul',
+      'não decorre da informação',
+      'os locais têm posições diferentes.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-009',
+    'mapas_representacao_espaco',
+    'Em um mapa com o norte para cima, a praça está a leste do mercado. Onde ela aparece?',
+    'à direita do mercado',
+    ['à esquerda do mercado', 'acima do mercado', 'no mesmo lugar'],
+    'Quando o norte está para cima, o leste fica à direita.',
+    [
+      'corresponde ao oeste',
+      'corresponde ao norte',
+      'não representa a posição informada.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-010',
+    'mapas_representacao_espaco',
+    'Um trajeto diz: saia da escola e siga ao norte até a praça. Qual elemento ajuda a saber a direção?',
+    'rosa dos ventos',
+    ['título sozinho', 'cor do papel', 'tamanho das letras'],
+    'A rosa dos ventos permite identificar para onde fica o norte.',
+    [
+      'não indica necessariamente a direção',
+      'não orienta',
+      'tamanho não define direção.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-011',
+    'mapas_representacao_espaco',
+    'Em um mapa com o norte para cima, o parque está ao sul da escola. Onde ele aparece?',
+    'abaixo da escola',
+    ['acima da escola', 'à direita da escola', 'no mesmo ponto'],
+    'Com essa orientação, o sul aparece na parte inferior do mapa.',
+    ['indica norte', 'indica leste', 'não representa locais distintos.'],
+  ],
+  [
+    'GEO-T2-MAP-012',
+    'mapas_representacao_espaco',
+    'Por que muitos mapas representam os lugares vistos de cima?',
+    'para mostrar a organização dos elementos no espaço',
+    [
+      'para esconder ruas',
+      'para tornar todos os prédios iguais',
+      'para eliminar a necessidade de legenda',
+    ],
+    'A visão de cima facilita perceber posições, caminhos e distâncias.',
+    [
+      'o objetivo é comunicar',
+      'símbolos não mudam a realidade',
+      'códigos ainda precisam de explicação.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-013',
+    'mapas_representacao_espaco',
+    'Qual informação ajuda a encontrar uma casa em um mapa de ruas?',
+    'nome da rua e número do endereço',
+    ['cor favorita do morador', 'nome de um oceano distante', 'estação do ano'],
+    'Rua e número identificam a posição do endereço.',
+    ['não localiza', 'não identifica a casa', 'não informa endereço.'],
+  ],
+  [
+    'GEO-T2-MAP-014',
+    'mapas_representacao_espaco',
+    'A legenda indica verde para parques e azul para rios. O que uma área verde representa nesse mapa?',
+    'um parque',
+    ['um rio', 'uma escola', 'qualquer elemento azul'],
+    'A interpretação segue a legenda específica apresentada.',
+    ['foi indicado em azul', 'não foi associada ao verde', 'é outra cor.'],
+  ],
+  [
+    'GEO-T2-MAP-015',
+    'mapas_representacao_espaco',
+    'Por que é útil verificar a fonte e a data de um mapa?',
+    'para saber de onde vieram os dados e quando foram registrados',
+    [
+      'para mudar o norte',
+      'para escolher o papel mais bonito',
+      'para apagar símbolos antigos',
+    ],
+    'Fonte e data ajudam a avaliar a origem e a atualidade das informações.',
+    [
+      'os pontos cardeais não dependem disso',
+      'aparência não valida dados',
+      'a leitura não modifica o mapa.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-016',
+    'mapas_representacao_espaco',
+    'Em um mapa, duas cidades parecem próximas. O que ajuda a estimar a distância real entre elas?',
+    'escala',
+    ['título', 'desenho da moldura', 'cor das letras'],
+    'A escala relaciona medidas do mapa às distâncias no espaço real.',
+    ['informa tema ou lugar', 'delimita a imagem', 'não mede distância.'],
+  ],
+  [
+    'GEO-T2-MAP-017',
+    'mapas_representacao_espaco',
+    'O mercado fica entre a escola e a praça em uma mesma rua. Qual afirmação está correta?',
+    'ao ir da escola à praça, passamos pelo mercado',
+    [
+      'o mercado fica fora dessa rua',
+      'escola e praça são o mesmo lugar',
+      'não existe caminho entre os locais',
+    ],
+    'A palavra “entre” informa que o mercado está no caminho entre os dois pontos.',
+    [
+      'contradiz o enunciado',
+      'são locais diferentes',
+      'os três estão na mesma rua.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-018',
+    'mapas_representacao_espaco',
+    'O que pode acontecer quando um mapa usa símbolos, mas não apresenta legenda?',
+    'o leitor pode não compreender seus significados',
+    [
+      'o mapa fica automaticamente mais preciso',
+      'todos entendem os símbolos do mesmo jeito',
+      'os lugares mudam de posição',
+    ],
+    'Sem legenda, símbolos podem ser interpretados de formas diferentes.',
+    [
+      'falta explicação',
+      'códigos podem variar',
+      'a ausência da legenda não move locais.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-019',
+    'mapas_representacao_espaco',
+    'Para que serve a orientação em um mapa?',
+    'ajudar a relacionar posições e direções',
+    [
+      'definir o assunto principal',
+      'explicar somente as cores',
+      'aumentar o território',
+    ],
+    'A orientação permite identificar norte, sul, leste, oeste e posições relativas.',
+    [
+      'é indicado pelo título',
+      'são explicadas na legenda',
+      'não altera o espaço real.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-020',
+    'mapas_representacao_espaco',
+    'Qual sequência ajuda a interpretar um mapa com cuidado?',
+    'ler título, legenda e orientação antes de responder',
+    [
+      'olhar apenas uma cor',
+      'ignorar símbolos',
+      'escolher um caminho sem observar referências',
+    ],
+    'Esses elementos fornecem contexto, códigos e direções para a leitura.',
+    ['é informação insuficiente', 'perde dados', 'aumenta a chance de erro.'],
+  ],
+];
+
 const geographyT2Questions = [
   ...geographyT2QuestionSpecs,
   ...geographyT2RepresentationQuestionSpecs,
+  ...geographyT2MapQuestionSpecs,
 ].map(buildGeographyT2Question);
 
 window.QuestionsDataSources.geografia = {
@@ -678,6 +943,10 @@ window.QuestionsDataSources.geografia = {
     representacoes_cartograficas: {
       name: 'Diferentes representações cartográficas',
       icon: '🛰️',
+    },
+    mapas_representacao_espaco: {
+      name: 'Os mapas e a representação do espaço',
+      icon: '🗺️',
     },
     o_que_e_lixo_rejeito_residuo: {
       name: 'O que é lixo, rejeito e resíduo',

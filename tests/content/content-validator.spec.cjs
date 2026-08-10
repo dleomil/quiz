@@ -134,6 +134,7 @@ function run() {
   [
     { topic: 'cartografia', page: '53' },
     { topic: 'representacoes_cartograficas', page: '54' },
+    { topic: 'mapas_representacao_espaco', page: '58' },
   ].forEach(({ topic, page }) => {
     const topicQuestions = geographyQuestions.filter(
       (question) =>
