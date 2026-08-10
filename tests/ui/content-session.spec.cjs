@@ -235,7 +235,7 @@ async function run() {
       mathT2Count: QuestionsDB.getSubjectInfo('matematica', '2026-t2-v1').count,
     }));
 
-    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
+    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t2-v1');
     assert.strictEqual(
       legacySnapshot.history[0].schemaVersion,
       'legacy-session-v1',
@@ -250,8 +250,11 @@ async function run() {
         (contentSetId) => contentSetId === '2026-t1-v1',
       ),
     );
-    assert.deepStrictEqual(legacySnapshot.publishedContentSets, ['2026-t1-v1']);
-    assert.strictEqual(legacySnapshot.hasContentSetSelector, false);
+    assert.deepStrictEqual(legacySnapshot.publishedContentSets, [
+      '2026-t1-v1',
+      '2026-t2-v1',
+    ]);
+    assert.strictEqual(legacySnapshot.hasContentSetSelector, true);
     assert.strictEqual(legacySnapshot.draftQuestionIds.length, 20);
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_001'));
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_020'));
