@@ -55,10 +55,10 @@ com `contentSetId: 2026-t2-v1`.
 | Geografia  | O que e Cartografia?                               |    20 |   20 | #228 (Done) |
 | Geografia  | Diferentes representacoes cartograficas            |    20 |   20 | #228 (Done) |
 | Geografia  | Os mapas e a representacao do espaco               |    20 |   20 | #228 (Done) |
-| Ingles     | Prepositions                                       |     0 |   20 | #231        |
-| Ingles     | Father's Day                                       |     0 |   20 | #231        |
-| Ingles     | Sports                                             |     0 |   20 | #231        |
-| Ingles     | Action verbs                                       |     0 |   20 | #231        |
+| Ingles     | Prepositions                                       |    20 |   20 | #231        |
+| Ingles     | Father's Day                                       |    20 |   20 | #231        |
+| Ingles     | Sports                                             |    20 |   20 | #231        |
+| Ingles     | Action verbs                                       |    20 |   20 | #231        |
 | Portugues  | Usos de L e U                                      |    20 |   20 | #137        |
 | Portugues  | Pronomes pessoais e pronomes de tratamento         |    20 |   20 | #137        |
 | Portugues  | Palavras com ce e ci                               |    20 |   20 | #137        |
@@ -74,11 +74,11 @@ com `contentSetId: 2026-t2-v1`.
 | Ciencias   |               6 |               6 |             120 |     120 |
 | Matematica |               8 |               8 |             160 |     160 |
 | Geografia  |               3 |               3 |              60 |      60 |
-| Ingles     |               0 |               4 |               0 |      80 |
+| Ingles     |               4 |               4 |              80 |      80 |
 | Portugues  |               5 |               6 |             100 |     120 |
-| **Total**  |          **22** |          **31** |         **440** | **620** |
+| **Total**  |          **26** |          **31** |         **520** | **620** |
 
-As 180 questoes restantes pertencem a nove temas. `Palavras semelhantes` segue
+As 100 questoes restantes pertencem a cinco temas. `Palavras semelhantes` segue
 pelo card #174 sem depender de material escolar. Historia, Ingles e Portugues
 devem seguir, respectivamente, pelas historias #230, #231 e pelo card #174.
 
