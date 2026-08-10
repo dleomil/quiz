@@ -62,14 +62,22 @@ ela nao deve completar informacoes ausentes.
 
 O trabalho curricular pode ocorrer em trilhas independentes, sem pular gates:
 
-- Curadoria: no maximo dois temas com spec em preparacao.
-- Revisao pedagogica: no maximo um tema com pacote completo em revisao.
+- Pipeline editorial: no maximo dez temas somados entre curadoria e revisao
+  pedagogica.
 - Implementacao: no maximo um tema aprovado pedagogicamente.
 - Verificacao e release: no maximo um PR aguardando evidencias e merge.
 
-Cada tema usa card e branch proprios. Um tema so avanca quando satisfaz os
-criterios da trilha anterior; o acervo continua `draft` ate a decisao de
-publicacao controlada.
+O WIP editorial e contado por tema curricular, mesmo quando um tema possui mais
+de um documento ou card auxiliar. Um tema bloqueado continua consumindo
+capacidade enquanto permanecer em `In Progress`; para liberar a vaga, o card
+deve voltar para `Todo`/`Backlog` e manter a label `blocked` com o impedimento
+registrado.
+
+Cada tema usa card e branch proprios. Curadoria e revisao podem avancar em
+paralelo, mas implementacao, verificacao e release permanecem serializados em
+suas respectivas trilhas. Um tema so avanca quando satisfaz os criterios da
+trilha anterior; o acervo continua `draft` ate a decisao de publicacao
+controlada.
 
 ## Validacao automatica prevista
 
