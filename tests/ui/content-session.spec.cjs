@@ -72,19 +72,170 @@ async function run() {
       hasContentSetSelector: Boolean(
         document.querySelector('#content-set-select'),
       ),
-      draftQuestionIds: QuestionsDB.getRandom(
-        10,
+      draftQuestionIds: QuestionsDB.getByTopic(
         'sistema_monetario',
-        'matematica',
         '2026-t2-v1',
       ).map((question) => question.id),
+      multiplicationDraftQuestionIds: QuestionsDB.getByTopic(
+        'multiplicacao_por_dezenas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      graphDraftQuestionIds: QuestionsDB.getByTopic(
+        'graficos_barras_colunas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      doubleEntryDraftQuestionIds: QuestionsDB.getByTopic(
+        'tabelas_graficos_dupla_entrada',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      doubleEntryCorrectIndexCounts: QuestionsDB.getByTopic(
+        'tabelas_graficos_dupla_entrada',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      prismDraftQuestionIds: QuestionsDB.getByTopic('prisma', '2026-t2-v1').map(
+        (question) => question.id,
+      ),
+      prismCorrectIndexCounts: QuestionsDB.getByTopic(
+        'prisma',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      planarFigureDraftQuestionIds: QuestionsDB.getByTopic(
+        'figuras_geometricas_planas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      planarFigureCorrectIndexCounts: QuestionsDB.getByTopic(
+        'figuras_geometricas_planas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      measurementDraftQuestionIds: QuestionsDB.getByTopic(
+        'medidas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      measurementCorrectIndexCounts: QuestionsDB.getByTopic(
+        'medidas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      parallelLinesDraftQuestionIds: QuestionsDB.getByTopic(
+        'retas_paralelas',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      parallelLinesCorrectIndexCounts: QuestionsDB.getByTopic(
+        'retas_paralelas',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      portugueseLAndUDraftQuestionIds: QuestionsDB.getByTopic(
+        'usos_de_l_e_u',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseLAndUCorrectIndexCounts: QuestionsDB.getByTopic(
+        'usos_de_l_e_u',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      portugueseCeCiDraftQuestionIds: QuestionsDB.getByTopic(
+        'palavras_com_ce_e_ci',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseCeCiCorrectIndexCounts: QuestionsDB.getByTopic(
+        'palavras_com_ce_e_ci',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      portugueseVerbsIDraftQuestionIds: QuestionsDB.getByTopic(
+        'verbos_i',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseVerbsICorrectIndexCounts: QuestionsDB.getByTopic(
+        'verbos_i',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      portugueseVerbsIFeedback: QuestionsDB.getByTopic('verbos_i', '2026-t2-v1')
+        .filter((question) => Number(question.id.slice(-3)) >= 16)
+        .flatMap((question) => [
+          question.explanation,
+          ...Object.values(question.wrongExplanations),
+        ]),
+      portuguesePronounsDraftQuestionIds: QuestionsDB.getByTopic(
+        'pronomes_pessoais_tratamento',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portuguesePronounsCorrectIndexCounts: QuestionsDB.getByTopic(
+        'pronomes_pessoais_tratamento',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
+      portugueseVerbsIIDraftQuestionIds: QuestionsDB.getByTopic(
+        'verbos_ii',
+        '2026-t2-v1',
+      ).map((question) => question.id),
+      portugueseVerbsIICorrectIndexCounts: QuestionsDB.getByTopic(
+        'verbos_ii',
+        '2026-t2-v1',
+      ).reduce(
+        (counts, question) => {
+          counts[question.correctIndex] += 1;
+          return counts;
+        },
+        [0, 0, 0, 0],
+      ),
       mathT1Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t1-v1'),
       mathT1Count: QuestionsDB.getSubjectInfo('matematica', '2026-t1-v1').count,
       mathT2Topics: QuestionsDB.getTopicsBySubject('matematica', '2026-t2-v1'),
       mathT2Count: QuestionsDB.getSubjectInfo('matematica', '2026-t2-v1').count,
     }));
 
-    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t1-v1');
+    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t2-v1');
     assert.strictEqual(
       legacySnapshot.history[0].schemaVersion,
       'legacy-session-v1',
@@ -99,20 +250,181 @@ async function run() {
         (contentSetId) => contentSetId === '2026-t1-v1',
       ),
     );
-    assert.deepStrictEqual(legacySnapshot.publishedContentSets, ['2026-t1-v1']);
-    assert.strictEqual(legacySnapshot.hasContentSetSelector, false);
-    assert.deepStrictEqual(legacySnapshot.draftQuestionIds.sort(), [
-      'mat_t2_mon_001',
-      'mat_t2_mon_002',
-      'mat_t2_mon_003',
-      'mat_t2_mon_004',
-      'mat_t2_mon_005',
-      'mat_t2_mon_006',
+    assert.deepStrictEqual(legacySnapshot.publishedContentSets, [
+      '2026-t1-v1',
+      '2026-t2-v1',
     ]);
+    assert.strictEqual(legacySnapshot.hasContentSetSelector, true);
+    assert.strictEqual(legacySnapshot.draftQuestionIds.length, 20);
+    assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_001'));
+    assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_020'));
+    assert.strictEqual(
+      legacySnapshot.multiplicationDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.multiplicationDraftQuestionIds.includes('mat_t2_md_001'),
+    );
+    assert.ok(
+      legacySnapshot.multiplicationDraftQuestionIds.includes('mat_t2_md_020'),
+    );
+    assert.strictEqual(legacySnapshot.graphDraftQuestionIds.length, 20);
+    assert.ok(legacySnapshot.graphDraftQuestionIds.includes('mat_t2_gr_001'));
+    assert.ok(legacySnapshot.graphDraftQuestionIds.includes('mat_t2_gr_020'));
+    assert.strictEqual(legacySnapshot.doubleEntryDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.doubleEntryDraftQuestionIds.includes('mat_t2_de_001'),
+    );
+    assert.ok(
+      legacySnapshot.doubleEntryDraftQuestionIds.includes('mat_t2_de_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.doubleEntryCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.prismDraftQuestionIds.length, 20);
+    assert.ok(legacySnapshot.prismDraftQuestionIds.includes('mat_t2_pr_001'));
+    assert.ok(legacySnapshot.prismDraftQuestionIds.includes('mat_t2_pr_020'));
+    assert.deepStrictEqual(
+      legacySnapshot.prismCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.planarFigureDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.planarFigureDraftQuestionIds.includes('mat_t2_fp_001'),
+    );
+    assert.ok(
+      legacySnapshot.planarFigureDraftQuestionIds.includes('mat_t2_fp_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.planarFigureCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.measurementDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.measurementDraftQuestionIds.includes('mat_t2_me_001'),
+    );
+    assert.ok(
+      legacySnapshot.measurementDraftQuestionIds.includes('mat_t2_me_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.measurementCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(legacySnapshot.parallelLinesDraftQuestionIds.length, 20);
+    assert.ok(
+      legacySnapshot.parallelLinesDraftQuestionIds.includes('mat_t2_rp_001'),
+    );
+    assert.ok(
+      legacySnapshot.parallelLinesDraftQuestionIds.includes('mat_t2_rp_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.parallelLinesCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseLAndUDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseLAndUDraftQuestionIds.includes('pt_t2_lu_001'),
+    );
+    assert.ok(
+      legacySnapshot.portugueseLAndUDraftQuestionIds.includes('pt_t2_lu_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseLAndUCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseCeCiDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseCeCiDraftQuestionIds.includes('pt_t2_ceci_001'),
+    );
+    assert.ok(
+      legacySnapshot.portugueseCeCiDraftQuestionIds.includes('pt_t2_ceci_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseCeCiCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseVerbsIDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIDraftQuestionIds.includes('pt_t2_vi_001'),
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIDraftQuestionIds.includes('pt_t2_vi_020'),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseVerbsICorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIFeedback.every(
+        (feedback) =>
+          !/\b(?:Eu|Ela|Nós|Eles|Você|Brinco|Jogo) combina\b/.test(feedback),
+      ),
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseVerbsIFeedback.filter((feedback) =>
+        feedback.startsWith('O pronome '),
+      ).length,
+      5,
+    );
+    assert.strictEqual(
+      legacySnapshot.portuguesePronounsDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portuguesePronounsDraftQuestionIds.includes(
+        'pt_t2_pron_001',
+      ),
+    );
+    assert.ok(
+      legacySnapshot.portuguesePronounsDraftQuestionIds.includes(
+        'pt_t2_pron_020',
+      ),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portuguesePronounsCorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
+    assert.strictEqual(
+      legacySnapshot.portugueseVerbsIIDraftQuestionIds.length,
+      20,
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIIDraftQuestionIds.includes(
+        'pt_t2_vii_001',
+      ),
+    );
+    assert.ok(
+      legacySnapshot.portugueseVerbsIIDraftQuestionIds.includes(
+        'pt_t2_vii_020',
+      ),
+    );
+    assert.deepStrictEqual(
+      legacySnapshot.portugueseVerbsIICorrectIndexCounts,
+      [5, 5, 5, 5],
+    );
     assert.strictEqual(legacySnapshot.mathT1Count, 150);
     assert.ok(!legacySnapshot.mathT1Topics.includes('sistema_monetario'));
-    assert.deepStrictEqual(legacySnapshot.mathT2Topics, ['sistema_monetario']);
-    assert.strictEqual(legacySnapshot.mathT2Count, 6);
+    assert.deepStrictEqual(legacySnapshot.mathT2Topics, [
+      'sistema_monetario',
+      'multiplicacao_por_dezenas',
+      'graficos_barras_colunas',
+      'tabelas_graficos_dupla_entrada',
+      'prisma',
+      'figuras_geometricas_planas',
+      'medidas',
+      'retas_paralelas',
+    ]);
+    assert.strictEqual(legacySnapshot.mathT2Count, 160);
 
     const newSession = await page.evaluate(() => {
       const question = QuestionsDB.getRandom(

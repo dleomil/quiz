@@ -25,6 +25,10 @@ Definir um contrato versionado para questoes, catalogos curriculares e sessoes d
 
 `contentSetId` e imutavel. Se uma questao ou explicacao publicada precisar ser corrigida, deve ser criado um novo acervo, por exemplo, `2026-t2-v2`.
 
+Todo novo acervo deve ter uma spec de cobertura curricular conforme
+`docs/specs/curriculum-content-update-governance.md`. A spec declara os temas
+e exige 20 questoes aprovadas por tema antes de `status: published`.
+
 ## Catalogo curricular
 
 O catalogo declara quais acervos podem ser apresentados ao aluno. O seletor de periodo usa somente catalogos com `status: published`.
@@ -42,12 +46,14 @@ O catalogo declara quais acervos podem ser apresentados ao aluno. O seletor de p
   "sourceRef": {
     "referenceId": "escola-2026-t2",
     "section": "Matematica",
-    "page": "12"
+    "topic": "medidas-capacidade-massa"
   }
 }
 ```
 
-`sourceRef` registra uma referencia minima para auditoria. Ele nao deve copiar trechos protegidos nem anexar o arquivo recebido da escola.
+`sourceRef` registra o programa, a materia e o tema para auditoria. Novos
+conteudos nao devem registrar pagina de apostila. O campo legado `page` pode
+ser lido durante a transicao, mas nao deve ser criado em novos lotes.
 
 ## Contrato de questao nova
 
@@ -65,7 +71,7 @@ Toda questao criada ou alterada apos a adocao do contrato deve possuir os campos
 | `explanation`       | explica por que a correta atende ao enunciado                           |
 | `wrongExplanations` | explicacao para cada indice incorreto quando houver feedback individual |
 | `skill`             | habilidade ou objetivo de aprendizagem rastreavel                       |
-| `sourceRef`         | referencia minima da fonte e de sua secao ou pagina                     |
+| `sourceRef`         | referencia do programa, da materia e do tema curricular                 |
 | `reviewStatus`      | `draft`, `pedagogical-approved`, `published` ou `retired`               |
 | `version`           | inteiro positivo da questao dentro do acervo                            |
 
@@ -91,7 +97,7 @@ Toda questao criada ou alterada apos a adocao do contrato deve possuir os campos
   "sourceRef": {
     "referenceId": "escola-2026-t2",
     "section": "Matematica",
-    "page": "12"
+    "topic": "medidas-capacidade-massa"
   },
   "reviewStatus": "pedagogical-approved",
   "version": 1

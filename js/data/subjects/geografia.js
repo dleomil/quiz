@@ -1,5 +1,934 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+const geographyT2TopicConfig = {
+  cartografia: {
+    name: 'O que é Cartografia?',
+    skill: 'compreender-fundamentos-da-cartografia',
+    page: '53',
+  },
+  representacoes_cartograficas: {
+    name: 'Diferentes representações cartográficas',
+    skill: 'diferenciar-representacoes-cartograficas',
+    page: '54',
+  },
+  mapas_representacao_espaco: {
+    name: 'Os mapas e a representação do espaço',
+    skill: 'interpretar-mapas-e-relacoes-espaciais',
+    page: '58',
+  },
+};
+
+function normalizeGeographyFeedback(feedback) {
+  const trimmedFeedback = feedback.trim();
+  const capitalizedFeedback =
+    trimmedFeedback.charAt(0).toUpperCase() + trimmedFeedback.slice(1);
+
+  return /[.!?]$/.test(capitalizedFeedback)
+    ? capitalizedFeedback
+    : `${capitalizedFeedback}.`;
+}
+
+function buildGeographyT2Question(specification) {
+  const [id, topic, question, correct, wrong, explanation, wrongFeedback] =
+    specification;
+  const config = geographyT2TopicConfig[topic];
+  const targetCorrectIndex = (Number(id.slice(-3)) - 1) % 4;
+  const baseOptions = [correct, ...wrong];
+  const options = new Array(4);
+  const wrongExplanations = {};
+
+  baseOptions.forEach(function (option, index) {
+    const rotatedIndex = (index + targetCorrectIndex) % 4;
+    options[rotatedIndex] = option;
+    if (index > 0) {
+      wrongExplanations[rotatedIndex] = normalizeGeographyFeedback(
+        wrongFeedback[index - 1],
+      );
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    id,
+    contentSetId: '2026-t2-v1',
+    subject: 'geografia',
+    topic,
+    topicName: config.name,
+    question,
+    options,
+    correctIndex: targetCorrectIndex,
+    explanation,
+    wrongExplanations,
+    skill: config.skill,
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Geografia',
+      page: config.page,
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+  };
+}
+
+const geographyT2QuestionSpecs = [
+  [
+    'GEO-T2-CAR-001',
+    'cartografia',
+    'O que a Cartografia estuda e produz?',
+    'representações de lugares e espaços',
+    [
+      'receitas de alimentos',
+      'histórias de personagens',
+      'sons de instrumentos',
+    ],
+    'A Cartografia cria e estuda representações do espaço, como mapas.',
+    [
+      'pertencem à culinária',
+      'pertencem à literatura',
+      'são estudados em música.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-002',
+    'cartografia',
+    'Qual é uma função de um mapa?',
+    'ajudar a localizar e compreender lugares',
+    [
+      'substituir todos os lugares reais',
+      'mostrar apenas animais',
+      'servir somente como decoração',
+    ],
+    'Mapas organizam informações que ajudam a conhecer e localizar lugares.',
+    [
+      'o mapa representa o lugar, mas não é o lugar',
+      'mapas podem mostrar muitos tipos de informação',
+      'mapas têm função informativa.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-003',
+    'cartografia',
+    'Como se chama o profissional que elabora mapas?',
+    'cartógrafo',
+    ['cozinheiro', 'músico', 'veterinário'],
+    'O cartógrafo trabalha com a produção e o estudo de mapas.',
+    ['prepara alimentos', 'trabalha com música', 'cuida da saúde dos animais.'],
+  ],
+  [
+    'GEO-T2-CAR-004',
+    'cartografia',
+    'Em muitos mapas, o espaço é representado como se fosse observado:',
+    'de cima',
+    [
+      'somente debaixo da terra',
+      'de olhos fechados',
+      'sempre de dentro de um veículo',
+    ],
+    'A visão de cima ajuda a organizar ruas, construções e outros elementos no mapa.',
+    [
+      'não é a visão usada na maioria dos mapas',
+      'é preciso observar ou obter dados',
+      'não é o único ponto de vista.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-005',
+    'cartografia',
+    'Por que uma cidade cabe em uma folha de mapa?',
+    'porque é representada em tamanho reduzido',
+    [
+      'porque a cidade encolhe',
+      'porque só uma rua existe',
+      'porque o papel vira uma cidade',
+    ],
+    'O mapa reduz o espaço real para que ele possa ser representado.',
+    [
+      'o lugar real mantém seu tamanho',
+      'cidades possuem muitos elementos',
+      'o mapa apenas representa o lugar.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-006',
+    'cartografia',
+    'Qual elemento do mapa informa o assunto ou o lugar representado?',
+    'título',
+    ['moldura', 'dobra', 'tipo de papel'],
+    'O título indica o tema ou o espaço mostrado no mapa.',
+    [
+      'apenas contorna a imagem',
+      'não explica o conteúdo',
+      'não informa o assunto.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-007',
+    'cartografia',
+    'Para que serve a legenda de um mapa?',
+    'explicar cores e símbolos',
+    [
+      'aumentar o tamanho do lugar',
+      'apagar as ruas',
+      'escolher o nome da cidade',
+    ],
+    'A legenda mostra o significado dos sinais usados no mapa.',
+    [
+      'a legenda não muda o lugar',
+      'ela ajuda a ler os elementos',
+      'os nomes vêm dos lugares representados.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-008',
+    'cartografia',
+    'Por que os mapas usam símbolos?',
+    'para representar elementos de forma organizada',
+    [
+      'para esconder toda informação',
+      'para transformar ruas em desenhos reais',
+      'para dispensar qualquer explicação',
+    ],
+    'Símbolos permitem mostrar lugares e informações de maneira simples.',
+    [
+      'símbolos comunicam informações',
+      'o símbolo não altera o espaço real',
+      'a legenda costuma explicar os símbolos.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-009',
+    'cartografia',
+    'Qual elemento ajuda a identificar direções em um mapa?',
+    'rosa dos ventos',
+    ['lista de compras', 'calendário', 'régua escolar sem marcações'],
+    'A rosa dos ventos apresenta direções como norte, sul, leste e oeste.',
+    ['organiza compras', 'organiza datas', 'não informa direções.'],
+  ],
+  [
+    'GEO-T2-CAR-010',
+    'cartografia',
+    'Norte, sul, leste e oeste são chamados de:',
+    'pontos cardeais',
+    ['tipos de papel', 'nomes de oceanos', 'estações do ano'],
+    'Os quatro pontos cardeais ajudam na orientação.',
+    [
+      'não são materiais',
+      'têm outros nomes',
+      'são verão, outono, inverno e primavera.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-011',
+    'cartografia',
+    'Um mapa é exatamente igual ao lugar real?',
+    'não, ele é uma representação',
+    [
+      'sim, porque tem o mesmo tamanho',
+      'sim, porque contém tudo',
+      'não, porque não apresenta informação alguma',
+    ],
+    'O mapa seleciona e organiza informações sobre um espaço real.',
+    [
+      'mapas geralmente reduzem o espaço',
+      'nenhum mapa mostra todos os detalhes',
+      'mapas comunicam informações.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-012',
+    'cartografia',
+    'O que a escala de um mapa ajuda a compreender?',
+    'a relação entre a medida no mapa e no espaço real',
+    [
+      'o significado das cores',
+      'o nome do autor de um livro',
+      'a previsão do tempo',
+    ],
+    'A escala indica quanto o espaço real foi reduzido na representação.',
+    [
+      'são explicadas pela legenda',
+      'não é função da escala',
+      'exige informações meteorológicas.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-013',
+    'cartografia',
+    'Se duas cores aparecem em um mapa, onde devemos verificar o significado delas?',
+    'na legenda',
+    ['apenas no título', 'na borda da folha', 'em qualquer outro mapa'],
+    'A legenda explica o significado das cores usadas naquele mapa.',
+    [
+      'informa o assunto, não todos os códigos',
+      'não explica cores',
+      'cada mapa pode usar convenções diferentes.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-014',
+    'cartografia',
+    'O que pode ser representado por mapas?',
+    'um bairro, uma cidade, um país ou o mundo',
+    [
+      'apenas países',
+      'somente o planeta inteiro',
+      'apenas o interior de uma casa',
+    ],
+    'Mapas podem representar espaços de diferentes tamanhos.',
+    [
+      'bairros e cidades também podem aparecer',
+      'existem mapas de áreas menores',
+      'costuma ser melhor detalhado por uma planta.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-015',
+    'cartografia',
+    'Para procurar ruas e planejar um caminho pela cidade, é útil consultar:',
+    'um mapa de ruas',
+    ['uma partitura', 'uma receita', 'um dicionário sem mapas'],
+    'O mapa de ruas mostra vias e ajuda a planejar deslocamentos.',
+    [
+      'registra música',
+      'orienta um preparo',
+      'explica palavras, mas não substitui o mapa de ruas.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-016',
+    'cartografia',
+    'Por que existem mapas com assuntos diferentes?',
+    'porque cada mapa seleciona informações conforme seu objetivo',
+    [
+      'porque todos os lugares mudam de nome',
+      'porque mapas não podem mostrar locais',
+      'porque cada folha aceita uma única cor',
+    ],
+    'Um mapa pode destacar ruas, relevo, população ou outro tema.',
+    [
+      'não precisam mudar',
+      'mapas representam espaços',
+      'mapas podem usar várias cores.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-017',
+    'cartografia',
+    'Um mapa que destaca apenas um assunto, como a distribuição das chuvas, é chamado de:',
+    'mapa temático',
+    ['planta de uma casa', 'lista alfabética', 'retrato'],
+    'O mapa temático representa a distribuição de um tema no espaço.',
+    [
+      'detalha uma construção ou área pequena',
+      'organiza palavras',
+      'mostra uma pessoa ou objeto.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-018',
+    'cartografia',
+    'Por que a data de um mapa pode ser importante?',
+    'porque algumas informações mudam com o tempo',
+    [
+      'porque muda os pontos cardeais',
+      'porque apaga a legenda',
+      'porque aumenta o tamanho do papel',
+    ],
+    'Ruas, limites e outros dados podem mudar, por isso a data ajuda a avaliar a informação.',
+    [
+      'não mudam por causa da data',
+      'continua necessária',
+      'a data não altera seu tamanho.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-019',
+    'cartografia',
+    'Qual frase diferencia corretamente mapa e território?',
+    'o mapa representa o território',
+    [
+      'o mapa é o próprio território',
+      'o território cabe dentro da folha',
+      'mapa e território sempre têm o mesmo tamanho',
+    ],
+    'O território é o espaço real, enquanto o mapa é uma representação dele.',
+    [
+      'são coisas diferentes',
+      'apenas sua representação cabe',
+      'mapas usam redução.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-020',
+    'cartografia',
+    'Antes de usar um mapa, qual atitude ajuda a entendê-lo?',
+    'ler o título e a legenda',
+    [
+      'ignorar todos os símbolos',
+      'dobrar sobre as informações',
+      'escolher uma cor sem verificar seu significado',
+    ],
+    'Título e legenda apresentam o assunto e os códigos necessários para a leitura.',
+    [
+      'símbolos carregam informações',
+      'pode esconder dados',
+      'o significado deve ser conferido na legenda.',
+    ],
+  ],
+];
+
+const geographyT2RepresentationQuestionSpecs = [
+  [
+    'GEO-T2-REP-001',
+    'representacoes_cartograficas',
+    'Qual representação mostra a Terra com forma semelhante a uma esfera?',
+    'globo terrestre',
+    ['planta de sala', 'croqui de caminho', 'mapa de uma rua'],
+    'O globo representa a forma aproximadamente esférica da Terra.',
+    [
+      'mostra uma área pequena vista de cima',
+      'é um desenho simples',
+      'é uma representação plana.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-002',
+    'representacoes_cartograficas',
+    'Para mostrar com detalhes a posição das salas de uma escola, qual representação é adequada?',
+    'planta da escola',
+    ['globo terrestre', 'mapa-múndi', 'imagem de todo um continente'],
+    'A planta representa de cima e com detalhes uma construção ou área pequena.',
+    [
+      'representa o planeta',
+      'mostra o mundo',
+      'é uma área grande demais para esse detalhe.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-003',
+    'representacoes_cartograficas',
+    'O que é um croqui?',
+    'um desenho simples que ajuda a localizar ou indicar um caminho',
+    [
+      'uma fotografia obrigatoriamente tirada do espaço',
+      'um globo em tamanho pequeno',
+      'uma lista de endereços sem desenho',
+    ],
+    'O croqui registra elementos principais sem exigir todos os detalhes e medidas exatas.',
+    [
+      'é imagem de satélite',
+      'tem forma esférica',
+      'não é uma representação desenhada.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-004',
+    'representacoes_cartograficas',
+    'Qual representação é produzida por equipamentos que registram a superfície a partir do espaço?',
+    'imagem de satélite',
+    ['planta baixa', 'croqui feito à mão', 'globo de sala'],
+    'Satélites podem registrar imagens da superfície terrestre vista do espaço.',
+    [
+      'é desenhada para detalhar uma área',
+      'é um esboço',
+      'é um modelo do planeta.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-005',
+    'representacoes_cartograficas',
+    'Para localizar ruas de uma cidade, qual opção costuma ser mais útil?',
+    'mapa de ruas',
+    [
+      'globo sem detalhes urbanos',
+      'planta de uma única sala',
+      'retrato de uma pessoa',
+    ],
+    'Um mapa de ruas apresenta vias e referências urbanas.',
+    [
+      'não mostra esse nível de detalhe',
+      'cobre uma área muito pequena',
+      'não representa ruas.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-006',
+    'representacoes_cartograficas',
+    'Para indicar onde ficam as carteiras e a porta de uma sala, podemos usar:',
+    'uma planta da sala',
+    ['um mapa do país', 'um globo terrestre', 'uma imagem de outro bairro'],
+    'A planta vista de cima permite organizar os elementos da sala.',
+    ['tem outra escala', 'representa a Terra', 'não contém a sala.'],
+  ],
+  [
+    'GEO-T2-REP-007',
+    'representacoes_cartograficas',
+    'Qual representação ajuda a observar a posição dos continentes e oceanos na Terra sem tornar o planeta plano?',
+    'globo terrestre',
+    ['croqui da escola', 'planta da casa', 'mapa de uma praça'],
+    'O globo mantém uma forma semelhante à do planeta.',
+    [
+      'mostra um caminho simples',
+      'detalha construção',
+      'representa área local e plana.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-008',
+    'representacoes_cartograficas',
+    'Para explicar a um colega um caminho curto no bairro com poucos pontos de referência, pode ser suficiente fazer:',
+    'um croqui',
+    ['um globo', 'uma planta do planeta', 'uma lista de continentes'],
+    'Um croqui pode destacar ruas e referências importantes para o trajeto.',
+    [
+      'não detalha o bairro',
+      'não é adequada',
+      'não orientam um caminho local.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-009',
+    'representacoes_cartograficas',
+    'Para observar a posição de grandes nuvens em certo momento, é útil consultar:',
+    'uma imagem de satélite',
+    ['uma planta da escola', 'um croqui antigo', 'um mapa sem data nem tema'],
+    'Imagens de satélite podem registrar nuvens sobre grandes áreas.',
+    [
+      'mostra uma construção',
+      'não registra nuvens',
+      'não oferece a informação necessária.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-010',
+    'representacoes_cartograficas',
+    'Qual representação mostra toda a superfície terrestre em uma folha plana?',
+    'mapa-múndi',
+    ['planta de apartamento', 'croqui de quarteirão', 'fotografia de uma sala'],
+    'O mapa-múndi representa o mundo em uma superfície plana.',
+    [
+      'detalha construção',
+      'representa área local',
+      'registra uma cena, não todo o mundo.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-011',
+    'representacoes_cartograficas',
+    'Como escolher entre mapa, planta, globo, croqui e imagem de satélite?',
+    'considerar a informação e o uso desejados',
+    [
+      'escolher sempre o globo',
+      'escolher sempre o desenho mais colorido',
+      'usar qualquer um sem observar o objetivo',
+    ],
+    'Cada representação atende melhor a determinadas necessidades.',
+    [
+      'ele não oferece todos os detalhes',
+      'cor não define adequação',
+      'o objetivo orienta a escolha.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-012',
+    'representacoes_cartograficas',
+    'Qual característica é comum a uma planta de construção?',
+    'mostrar uma área pequena vista de cima e com detalhes',
+    [
+      'mostrar sempre o planeta inteiro',
+      'não possuir organização espacial',
+      'registrar somente nuvens',
+    ],
+    'Plantas ajudam a compreender a disposição de cômodos e elementos.',
+    [
+      'é representado por globo ou mapa-múndi',
+      'a planta organiza posições',
+      'podem aparecer em imagens meteorológicas.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-013',
+    'representacoes_cartograficas',
+    'Um croqui precisa apresentar todas as medidas exatas do espaço?',
+    'não, ele pode ser um desenho simples com referências principais',
+    [
+      'sim, sempre com precisão de construção',
+      'sim, e deve mostrar o planeta',
+      'não, porque não pode indicar caminhos',
+    ],
+    'O croqui prioriza a compreensão de um local ou trajeto.',
+    [
+      'é exigência de representações técnicas, não de todo croqui',
+      'foge do uso local',
+      'essa é uma de suas funções.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-014',
+    'representacoes_cartograficas',
+    'Para comparar mudanças recentes em uma área extensa, qual material pode ajudar?',
+    'imagens de satélite de datas diferentes',
+    [
+      'uma única planta de sala',
+      'um globo sem data',
+      'um croqui sem identificação',
+    ],
+    'Comparar registros de datas diferentes pode revelar mudanças na superfície.',
+    [
+      'não cobre área extensa',
+      'não mostra mudança recente',
+      'não permite comparação confiável.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-015',
+    'representacoes_cartograficas',
+    'O mapa e a planta podem usar símbolos. O que deve explicar esses símbolos?',
+    'a legenda',
+    ['o tamanho da folha', 'a dobra do papel', 'a cor da mesa'],
+    'A legenda informa o significado dos símbolos da representação.',
+    ['não explica códigos', 'pode esconder dados', 'não faz parte da leitura.'],
+  ],
+  [
+    'GEO-T2-REP-016',
+    'representacoes_cartograficas',
+    'Por que um globo geralmente não é a melhor escolha para localizar uma rua?',
+    'porque mostra o planeta com pouco detalhe urbano',
+    [
+      'porque não representa a Terra',
+      'porque é sempre plano',
+      'porque mostra apenas uma sala',
+    ],
+    'O globo é útil para a visão geral da Terra, não para detalhes de ruas.',
+    ['essa é sua função', 'ele tem forma esférica', 'não é seu foco.'],
+  ],
+  [
+    'GEO-T2-REP-017',
+    'representacoes_cartograficas',
+    'Para apresentar uma rota de saída dentro da escola, qual representação pode mostrar salas e corredores?',
+    'planta da escola',
+    ['mapa-múndi', 'globo terrestre', 'imagem de um oceano'],
+    'A planta detalha a organização interna do prédio e pode apoiar uma rota.',
+    ['não mostra o prédio', 'não detalha corredores', 'não contém a escola.'],
+  ],
+  [
+    'GEO-T2-REP-018',
+    'representacoes_cartograficas',
+    'Duas representações do mesmo lugar podem mostrar informações diferentes?',
+    'sim, porque podem ter objetivos diferentes',
+    [
+      'não, todas devem ser idênticas',
+      'não, somente uma pode existir',
+      'sim, porque uma delas precisa estar errada',
+    ],
+    'Um mapa de ruas e uma imagem de satélite podem representar o mesmo lugar com informações distintas.',
+    [
+      'o objetivo muda a seleção',
+      'várias são possíveis',
+      'diferença de foco não significa erro.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-019',
+    'representacoes_cartograficas',
+    'Um aplicativo que mostra ruas e calcula rotas apresenta uma forma de:',
+    'mapa digital',
+    [
+      'globo sem informação',
+      'planta de uma única casa',
+      'imagem sem localização',
+    ],
+    'Mapas digitais podem apresentar ruas, posição e trajetos.',
+    [
+      'não detalha rotas urbanas',
+      'tem outro alcance',
+      'não oferece a função descrita.',
+    ],
+  ],
+  [
+    'GEO-T2-REP-020',
+    'representacoes_cartograficas',
+    'Qual frase está correta sobre representações cartográficas?',
+    'a melhor escolha depende do que precisamos observar',
+    [
+      'o globo é sempre a melhor opção',
+      'o croqui substitui todos os mapas',
+      'a planta mostra melhor qualquer país',
+    ],
+    'Mapas, plantas, globos, croquis e imagens atendem a finalidades diferentes.',
+    [
+      'faltam detalhes locais',
+      'ele tem usos específicos',
+      'plantas são mais adequadas a áreas pequenas.',
+    ],
+  ],
+];
+
+const geographyT2MapQuestionSpecs = [
+  [
+    'GEO-T2-MAP-001',
+    'mapas_representacao_espaco',
+    'Ao abrir um mapa, qual elemento deve ser lido para descobrir o assunto?',
+    'título',
+    ['margem', 'dobra', 'número de páginas do caderno'],
+    'O título informa o tema ou o lugar representado.',
+    [
+      'apenas delimita a folha',
+      'não identifica o assunto',
+      'não explicam o mapa.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-002',
+    'mapas_representacao_espaco',
+    'Em um mapa, onde encontramos o significado de cada símbolo?',
+    'na legenda',
+    ['somente no título', 'fora do mapa', 'em uma receita'],
+    'A legenda relaciona símbolos e cores aos elementos representados.',
+    [
+      'apresenta o assunto geral',
+      'a explicação deve acompanhar a representação',
+      'pertence a outro tipo de texto.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-003',
+    'mapas_representacao_espaco',
+    'A legenda informa que uma linha azul representa um rio. O que significa uma linha azul nesse mapa?',
+    'um rio',
+    ['uma estrada', 'uma escola', 'uma montanha'],
+    'O significado foi definido de modo explícito pela legenda desse mapa.',
+    [
+      'teria outro símbolo',
+      'costuma ser indicada por ponto ou desenho',
+      'não corresponde à legenda fornecida.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-004',
+    'mapas_representacao_espaco',
+    'Na rosa dos ventos, qual letra costuma indicar o norte?',
+    'N',
+    ['S', 'L', 'O'],
+    'A letra N representa o ponto cardeal norte.',
+    ['indica sul', 'indica leste', 'indica oeste.'],
+  ],
+  [
+    'GEO-T2-MAP-005',
+    'mapas_representacao_espaco',
+    'Qual ponto cardeal fica oposto ao norte?',
+    'sul',
+    ['leste', 'oeste', 'nordeste'],
+    'Norte e sul são direções opostas.',
+    ['é oposto ao oeste', 'é oposto ao leste', 'é uma direção intermediária.'],
+  ],
+  [
+    'GEO-T2-MAP-006',
+    'mapas_representacao_espaco',
+    'O que é um ponto de referência?',
+    'um elemento conhecido que ajuda a localizar um lugar',
+    [
+      'uma cor escolhida sem legenda',
+      'um mapa sem título',
+      'uma direção inventada',
+    ],
+    'Escola, praça ou mercado podem servir como referências de localização.',
+    ['não orienta com clareza', 'falta contexto', 'não é referência espacial.'],
+  ],
+  [
+    'GEO-T2-MAP-007',
+    'mapas_representacao_espaco',
+    'A legenda mostra uma cruz vermelha para hospital. Ao encontrar esse símbolo, o leitor identifica:',
+    'um hospital',
+    ['uma ponte', 'uma floresta', 'uma escola'],
+    'A legenda definiu a cruz vermelha como símbolo de hospital nesse mapa.',
+    [
+      'exigiria outro símbolo',
+      'teria outra indicação',
+      'não corresponde ao código fornecido.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-008',
+    'mapas_representacao_espaco',
+    'Em um mapa com o norte na parte de cima, a biblioteca está ao norte da escola. Onde ela aparece?',
+    'acima da escola',
+    ['abaixo da escola', 'sempre fora do mapa', 'no mesmo ponto da escola'],
+    'Com o norte para cima, um lugar ao norte aparece acima do outro.',
+    [
+      'indicaria sul',
+      'não decorre da informação',
+      'os locais têm posições diferentes.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-009',
+    'mapas_representacao_espaco',
+    'Em um mapa com o norte para cima, a praça está a leste do mercado. Onde ela aparece?',
+    'à direita do mercado',
+    ['à esquerda do mercado', 'acima do mercado', 'no mesmo lugar'],
+    'Quando o norte está para cima, o leste fica à direita.',
+    [
+      'corresponde ao oeste',
+      'corresponde ao norte',
+      'não representa a posição informada.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-010',
+    'mapas_representacao_espaco',
+    'Um trajeto diz: saia da escola e siga ao norte até a praça. Qual elemento ajuda a saber a direção?',
+    'rosa dos ventos',
+    ['título sozinho', 'cor do papel', 'tamanho das letras'],
+    'A rosa dos ventos permite identificar para onde fica o norte.',
+    [
+      'não indica necessariamente a direção',
+      'não orienta',
+      'tamanho não define direção.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-011',
+    'mapas_representacao_espaco',
+    'Em um mapa com o norte para cima, o parque está ao sul da escola. Onde ele aparece?',
+    'abaixo da escola',
+    ['acima da escola', 'à direita da escola', 'no mesmo ponto'],
+    'Com essa orientação, o sul aparece na parte inferior do mapa.',
+    ['indica norte', 'indica leste', 'não representa locais distintos.'],
+  ],
+  [
+    'GEO-T2-MAP-012',
+    'mapas_representacao_espaco',
+    'Por que muitos mapas representam os lugares vistos de cima?',
+    'para mostrar a organização dos elementos no espaço',
+    [
+      'para esconder ruas',
+      'para tornar todos os prédios iguais',
+      'para eliminar a necessidade de legenda',
+    ],
+    'A visão de cima facilita perceber posições, caminhos e distâncias.',
+    [
+      'o objetivo é comunicar',
+      'símbolos não mudam a realidade',
+      'códigos ainda precisam de explicação.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-013',
+    'mapas_representacao_espaco',
+    'Qual informação ajuda a encontrar uma casa em um mapa de ruas?',
+    'nome da rua e número do endereço',
+    ['cor favorita do morador', 'nome de um oceano distante', 'estação do ano'],
+    'Rua e número identificam a posição do endereço.',
+    ['não localiza', 'não identifica a casa', 'não informa endereço.'],
+  ],
+  [
+    'GEO-T2-MAP-014',
+    'mapas_representacao_espaco',
+    'A legenda indica verde para parques e azul para rios. O que uma área verde representa nesse mapa?',
+    'um parque',
+    ['um rio', 'uma escola', 'qualquer elemento azul'],
+    'A interpretação segue a legenda específica apresentada.',
+    ['foi indicado em azul', 'não foi associada ao verde', 'é outra cor.'],
+  ],
+  [
+    'GEO-T2-MAP-015',
+    'mapas_representacao_espaco',
+    'Por que é útil verificar a fonte e a data de um mapa?',
+    'para saber de onde vieram os dados e quando foram registrados',
+    [
+      'para mudar o norte',
+      'para escolher o papel mais bonito',
+      'para apagar símbolos antigos',
+    ],
+    'Fonte e data ajudam a avaliar a origem e a atualidade das informações.',
+    [
+      'os pontos cardeais não dependem disso',
+      'aparência não valida dados',
+      'a leitura não modifica o mapa.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-016',
+    'mapas_representacao_espaco',
+    'Em um mapa, duas cidades parecem próximas. O que ajuda a estimar a distância real entre elas?',
+    'escala',
+    ['título', 'desenho da moldura', 'cor das letras'],
+    'A escala relaciona medidas do mapa às distâncias no espaço real.',
+    ['informa tema ou lugar', 'delimita a imagem', 'não mede distância.'],
+  ],
+  [
+    'GEO-T2-MAP-017',
+    'mapas_representacao_espaco',
+    'O mercado fica entre a escola e a praça em uma mesma rua. Qual afirmação está correta?',
+    'ao ir da escola à praça, passamos pelo mercado',
+    [
+      'o mercado fica fora dessa rua',
+      'escola e praça são o mesmo lugar',
+      'não existe caminho entre os locais',
+    ],
+    'A palavra “entre” informa que o mercado está no caminho entre os dois pontos.',
+    [
+      'contradiz o enunciado',
+      'são locais diferentes',
+      'os três estão na mesma rua.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-018',
+    'mapas_representacao_espaco',
+    'O que pode acontecer quando um mapa usa símbolos, mas não apresenta legenda?',
+    'o leitor pode não compreender seus significados',
+    [
+      'o mapa fica automaticamente mais preciso',
+      'todos entendem os símbolos do mesmo jeito',
+      'os lugares mudam de posição',
+    ],
+    'Sem legenda, símbolos podem ser interpretados de formas diferentes.',
+    [
+      'falta explicação',
+      'códigos podem variar',
+      'a ausência da legenda não move locais.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-019',
+    'mapas_representacao_espaco',
+    'Para que serve a orientação em um mapa?',
+    'ajudar a relacionar posições e direções',
+    [
+      'definir o assunto principal',
+      'explicar somente as cores',
+      'aumentar o território',
+    ],
+    'A orientação permite identificar norte, sul, leste, oeste e posições relativas.',
+    [
+      'é indicado pelo título',
+      'são explicadas na legenda',
+      'não altera o espaço real.',
+    ],
+  ],
+  [
+    'GEO-T2-MAP-020',
+    'mapas_representacao_espaco',
+    'Qual sequência ajuda a interpretar um mapa com cuidado?',
+    'ler título, legenda e orientação antes de responder',
+    [
+      'olhar apenas uma cor',
+      'ignorar símbolos',
+      'escolher um caminho sem observar referências',
+    ],
+    'Esses elementos fornecem contexto, códigos e direções para a leitura.',
+    ['é informação insuficiente', 'perde dados', 'aumenta a chance de erro.'],
+  ],
+];
+
+const geographyT2Questions = [
+  ...geographyT2QuestionSpecs,
+  ...geographyT2RepresentationQuestionSpecs,
+  ...geographyT2MapQuestionSpecs,
+].map(buildGeographyT2Question);
+
 window.QuestionsDataSources.geografia = {
   subjectMeta: {
     name: 'Geografia',
@@ -7,6 +936,18 @@ window.QuestionsDataSources.geografia = {
     available: true,
   },
   topicMeta: {
+    cartografia: {
+      name: 'O que é Cartografia?',
+      icon: '🧭',
+    },
+    representacoes_cartograficas: {
+      name: 'Diferentes representações cartográficas',
+      icon: '🛰️',
+    },
+    mapas_representacao_espaco: {
+      name: 'Os mapas e a representação do espaço',
+      icon: '🗺️',
+    },
     o_que_e_lixo_rejeito_residuo: {
       name: 'O que é lixo, rejeito e resíduo',
       icon: '🗑️',
@@ -33,6 +974,7 @@ window.QuestionsDataSources.geografia = {
     },
   },
   questions: [
+    ...geographyT2Questions,
     {
       id: 'geo_lr_001',
       subject: 'geografia',

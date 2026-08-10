@@ -1,5 +1,288 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+function buildMonetaryCompletionQuestion(question) {
+  const wrongExplanations = {};
+  const { wrong, ...content } = question;
+  wrong.forEach(function (explanation, index) {
+    if (index !== question.correctIndex) wrongExplanations[index] = explanation;
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'sistema_monetario',
+    topicName: 'Sistema Monetário',
+    skill: question.skill,
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '81',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    wrongExplanations,
+  };
+}
+
+function buildTensMultiplicationQuestion(question) {
+  const wrongExplanations = {};
+  const { wrong, ...content } = question;
+  wrong.forEach(function (explanation, index) {
+    if (index !== question.correctIndex) wrongExplanations[index] = explanation;
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'multiplicacao_por_dezenas',
+    topicName: 'Multiplicação por Dezenas',
+    skill: 'calcular-multiplicacoes-por-dezenas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '84',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    wrongExplanations,
+  };
+}
+
+function buildGraphQuestion(question) {
+  const wrongExplanations = {};
+  const { wrong, ...content } = question;
+  let wrongIndex = 0;
+  question.options.forEach(function (_, index) {
+    if (index !== question.correctIndex) {
+      wrongExplanations[index] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'graficos_barras_colunas',
+    topicName: 'Graficos de Barras e Colunas',
+    skill: 'ler-e-interpretar-graficos-simples',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matematica',
+      page: '86',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    wrongExplanations,
+  };
+}
+
+function buildDoubleEntryQuestion(question) {
+  const { wrong, ...content } = question;
+  const optionOffset = Number(question.id.slice(-3)) % question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'tabelas_graficos_dupla_entrada',
+    topicName: 'Tabelas e Graficos de Dupla Entrada',
+    skill: 'ler-e-interpretar-tabelas-de-dupla-entrada',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matematica',
+      page: '88',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex:
+      (question.correctIndex + optionOffset) % question.options.length,
+    wrongExplanations,
+  };
+}
+
+function buildPrismQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'prisma',
+    topicName: 'Prisma',
+    skill: 'reconhecer-prismas-faces-e-bases',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '91',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildPlanarFigureQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'figuras_geometricas_planas',
+    topicName: 'Figuras Geométricas Planas',
+    skill: 'reconhecer-e-comparar-figuras-planas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '92',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildMeasurementQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'medidas',
+    topicName: 'Vamos Medir?',
+    skill: 'reconhecer-e-comparar-medidas-cotidianas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '94',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
+function buildParallelLinesQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'matematica',
+    topic: 'retas_paralelas',
+    topicName: 'Retas Paralelas',
+    skill: 'reconhecer-retas-paralelas',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Matemática',
+      page: '95',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.matematica = {
   subjectMeta: {
     name: 'Matemática',
@@ -42,6 +325,34 @@ window.QuestionsDataSources.matematica = {
     sistema_monetario: {
       name: 'Sistema Monetário',
       icon: '💰',
+    },
+    multiplicacao_por_dezenas: {
+      name: 'Multiplicação por Dezenas',
+      icon: '✖️',
+    },
+    graficos_barras_colunas: {
+      name: 'Graficos de Barras e Colunas',
+      icon: '📊',
+    },
+    tabelas_graficos_dupla_entrada: {
+      name: 'Tabelas e Graficos de Dupla Entrada',
+      icon: '🗂️',
+    },
+    prisma: {
+      name: 'Prisma',
+      icon: '🧊',
+    },
+    figuras_geometricas_planas: {
+      name: 'Figuras Geométricas Planas',
+      icon: '🔷',
+    },
+    medidas: {
+      name: 'Vamos Medir?',
+      icon: '📏',
+    },
+    retas_paralelas: {
+      name: 'Retas Paralelas',
+      icon: '〰️',
     },
   },
   questions: [
@@ -1792,5 +2103,2085 @@ window.QuestionsDataSources.matematica = {
       reviewStatus: 'pedagogical-approved',
       version: 1,
     },
+    ...[
+      {
+        id: 'mat_t2_mon_007',
+        question:
+          'Um brinquedo custa R$ 18,00. Ao pagar com R$ 20,00, qual é o troco?',
+        options: ['R$ 1,00', 'R$ 2,00', 'R$ 18,00', 'R$ 38,00'],
+        correctIndex: 1,
+        explanation: 'R$ 20,00 menos R$ 18,00 é R$ 2,00.',
+        wrong: [
+          'R$ 1,00 não é a diferença.',
+          '',
+          'R$ 18,00 é o preço.',
+          'R$ 38,00 soma preço e pagamento.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_008',
+        question:
+          'Uma criança tem R$ 4,00, R$ 3,00 e R$ 2,00. Quanto ela tem ao todo?',
+        options: ['R$ 5,00', 'R$ 7,00', 'R$ 9,00', 'R$ 12,00'],
+        correctIndex: 2,
+        explanation: 'R$ 4,00 mais R$ 3,00 mais R$ 2,00 forma R$ 9,00.',
+        wrong: [
+          'R$ 5,00 deixa valores de fora.',
+          'R$ 7,00 deixa R$ 2,00 de fora.',
+          '',
+          'R$ 12,00 não é a soma dos três valores.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_009',
+        question:
+          'Um caderno custa R$ 9,00. Se a criança paga com R$ 15,00, qual é o troco?',
+        options: ['R$ 4,00', 'R$ 6,00', 'R$ 9,00', 'R$ 24,00'],
+        correctIndex: 1,
+        explanation: 'R$ 15,00 menos R$ 9,00 deixa R$ 6,00.',
+        wrong: [
+          'R$ 4,00 não é a diferença.',
+          '',
+          'R$ 9,00 é o preço.',
+          'R$ 24,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_010',
+        question:
+          'Uma nota de R$ 5,00 e duas moedas de R$ 1,00 formam qual valor?',
+        options: ['R$ 5,00', 'R$ 6,00', 'R$ 7,00', 'R$ 10,00'],
+        correctIndex: 2,
+        explanation: 'R$ 5,00 mais R$ 1,00 mais R$ 1,00 é R$ 7,00.',
+        wrong: [
+          'R$ 5,00 ignora as moedas.',
+          'R$ 6,00 conta somente uma moeda.',
+          '',
+          'R$ 10,00 é maior que a soma.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_011',
+        question:
+          'Ana tem R$ 12,00 e Bia tem R$ 17,00. Quanto Bia tem a mais que Ana?',
+        options: ['R$ 3,00', 'R$ 5,00', 'R$ 12,00', 'R$ 29,00'],
+        correctIndex: 1,
+        explanation: 'R$ 17,00 menos R$ 12,00 é R$ 5,00.',
+        wrong: [
+          'R$ 3,00 não é a diferença.',
+          '',
+          'R$ 12,00 é a quantia de Ana.',
+          'R$ 29,00 soma as quantias.',
+        ],
+        skill: 'comparar-quantias-em-reais',
+      },
+      {
+        id: 'mat_t2_mon_012',
+        question: 'Quais notas formam exatamente R$ 20,00?',
+        options: [
+          'R$ 10,00 e R$ 10,00',
+          'R$ 10,00 e R$ 5,00',
+          'R$ 5,00 e R$ 5,00',
+          'R$ 20,00 e R$ 5,00',
+        ],
+        correctIndex: 0,
+        explanation: 'Duas notas de R$ 10,00 formam R$ 20,00.',
+        wrong: [
+          '',
+          'R$ 10,00 mais R$ 5,00 forma R$ 15,00.',
+          'Duas notas de R$ 5,00 formam R$ 10,00.',
+          'R$ 20,00 mais R$ 5,00 forma R$ 25,00.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_013',
+        question:
+          'Uma revista custa R$ 14,00. Se a criança paga com R$ 20,00, qual é o troco?',
+        options: ['R$ 4,00', 'R$ 6,00', 'R$ 14,00', 'R$ 34,00'],
+        correctIndex: 1,
+        explanation: 'R$ 20,00 menos R$ 14,00 deixa R$ 6,00.',
+        wrong: [
+          'R$ 4,00 não é a diferença.',
+          '',
+          'R$ 14,00 é o preço.',
+          'R$ 34,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_014',
+        question: 'Qual valor está entre R$ 15,00 e R$ 17,00?',
+        options: ['R$ 14,00', 'R$ 16,00', 'R$ 18,00', 'R$ 20,00'],
+        correctIndex: 1,
+        explanation: 'R$ 16,00 é maior que R$ 15,00 e menor que R$ 17,00.',
+        wrong: [
+          'R$ 14,00 é menor que R$ 15,00.',
+          '',
+          'R$ 18,00 é maior que R$ 17,00.',
+          'R$ 20,00 é maior que R$ 17,00.',
+        ],
+        skill: 'comparar-quantias-em-reais',
+      },
+      {
+        id: 'mat_t2_mon_015',
+        question:
+          'Uma borracha custa R$ 4,00 e um lápis custa R$ 6,00. Qual é o total?',
+        options: ['R$ 2,00', 'R$ 10,00', 'R$ 12,00', 'R$ 24,00'],
+        correctIndex: 1,
+        explanation: 'R$ 4,00 mais R$ 6,00 é R$ 10,00.',
+        wrong: [
+          'R$ 2,00 é a diferença, não o total.',
+          '',
+          'R$ 12,00 não é a soma.',
+          'R$ 24,00 não é a soma.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_016',
+        question:
+          'Uma fruta custa R$ 7,00. Se a criança paga com R$ 10,00, qual é o troco?',
+        options: ['R$ 2,00', 'R$ 3,00', 'R$ 7,00', 'R$ 17,00'],
+        correctIndex: 1,
+        explanation: 'R$ 10,00 menos R$ 7,00 deixa R$ 3,00.',
+        wrong: [
+          'R$ 2,00 não é a diferença.',
+          '',
+          'R$ 7,00 é o preço.',
+          'R$ 17,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_017',
+        question:
+          'Uma criança tem R$ 10,00, R$ 5,00 e R$ 2,00. Quanto ela tem?',
+        options: ['R$ 12,00', 'R$ 15,00', 'R$ 17,00', 'R$ 20,00'],
+        correctIndex: 2,
+        explanation: 'R$ 10,00 mais R$ 5,00 mais R$ 2,00 forma R$ 17,00.',
+        wrong: [
+          'R$ 12,00 deixa valores de fora.',
+          'R$ 15,00 deixa R$ 2,00 de fora.',
+          '',
+          'R$ 20,00 é maior que a soma.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+      {
+        id: 'mat_t2_mon_018',
+        question:
+          'Um livro custa R$ 19,00. Se a criança paga com R$ 20,00, qual é o troco?',
+        options: ['R$ 1,00', 'R$ 2,00', 'R$ 19,00', 'R$ 39,00'],
+        correctIndex: 0,
+        explanation: 'R$ 20,00 menos R$ 19,00 deixa R$ 1,00.',
+        wrong: [
+          '',
+          'R$ 2,00 não é a diferença.',
+          'R$ 19,00 é o preço.',
+          'R$ 39,00 soma os valores.',
+        ],
+        skill: 'calcular-troco-simples',
+      },
+      {
+        id: 'mat_t2_mon_019',
+        question: 'Qual destas quantias é maior?',
+        options: [
+          'R$ 25,00',
+          'R$ 52,00',
+          'Os dois são iguais',
+          'Não é possível saber',
+        ],
+        correctIndex: 1,
+        explanation:
+          '52 é maior que 25, então R$ 52,00 representa o maior valor.',
+        wrong: [
+          'R$ 25,00 é menor que R$ 52,00.',
+          '',
+          'As quantias não são iguais.',
+          'Há informação suficiente para comparar os valores.',
+        ],
+        skill: 'comparar-quantias-em-reais',
+      },
+      {
+        id: 'mat_t2_mon_020',
+        question:
+          'Uma criança recebeu R$ 8,00 e depois R$ 9,00. Quanto ela recebeu ao todo?',
+        options: ['R$ 1,00', 'R$ 16,00', 'R$ 17,00', 'R$ 89,00'],
+        correctIndex: 2,
+        explanation: 'R$ 8,00 mais R$ 9,00 é R$ 17,00.',
+        wrong: [
+          'R$ 1,00 não é a soma.',
+          'R$ 16,00 fica um real a menos.',
+          '',
+          'R$ 89,00 apenas junta os algarismos.',
+        ],
+        skill: 'compor-valores-do-sistema-monetario',
+      },
+    ].map(buildMonetaryCompletionQuestion),
+    ...[
+      {
+        id: 'mat_t2_md_001',
+        question: 'Quanto é 2 x 20?',
+        options: ['22', '40', '200', '60'],
+        correctIndex: 1,
+        explanation: '2 grupos de 20 formam 40.',
+        wrong: [
+          '22 soma os números, mas aqui precisamos multiplicar.',
+          '',
+          '200 seria 10 grupos de 20.',
+          '60 seriam 3 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_002',
+        question: 'Quanto é 3 x 20?',
+        options: ['40', '60', '80', '600'],
+        correctIndex: 1,
+        explanation: '3 grupos de 20 formam 60.',
+        wrong: [
+          '40 são 2 grupos de 20.',
+          '',
+          '80 são 4 grupos de 20.',
+          '600 seria 30 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_003',
+        question: 'Quanto é 4 x 20?',
+        options: ['60', '80', '100', '800'],
+        correctIndex: 1,
+        explanation: '4 grupos de 20 formam 80.',
+        wrong: [
+          '60 são 3 grupos de 20.',
+          '',
+          '100 são 5 grupos de 20.',
+          '800 seria 40 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_004',
+        question: 'Quanto é 5 x 20?',
+        options: ['80', '90', '100', '200'],
+        correctIndex: 2,
+        explanation: '5 grupos de 20 formam 100.',
+        wrong: [
+          '80 são 4 grupos de 20.',
+          '90 não completa 5 grupos de 20.',
+          '',
+          '200 são 10 grupos de 20.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_005',
+        question: 'Quanto é 2 x 30?',
+        options: ['50', '60', '90', '600'],
+        correctIndex: 1,
+        explanation: '2 grupos de 30 formam 60.',
+        wrong: [
+          '50 fica 10 a menos que 2 grupos de 30.',
+          '',
+          '90 são 3 grupos de 30.',
+          '600 seriam 20 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_006',
+        question: 'Quanto é 3 x 30?',
+        options: ['60', '90', '120', '900'],
+        correctIndex: 1,
+        explanation: '3 grupos de 30 formam 90.',
+        wrong: [
+          '60 são 2 grupos de 30.',
+          '',
+          '120 são 4 grupos de 30.',
+          '900 seriam 30 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_007',
+        question: 'Quanto é 4 x 30?',
+        options: ['90', '100', '120', '300'],
+        correctIndex: 2,
+        explanation: '4 grupos de 30 formam 120.',
+        wrong: [
+          '90 são 3 grupos de 30.',
+          '100 não completa 4 grupos de 30.',
+          '',
+          '300 são 10 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_008',
+        question: 'Quanto é 5 x 30?',
+        options: ['120', '150', '180', '300'],
+        correctIndex: 1,
+        explanation: '5 grupos de 30 formam 150.',
+        wrong: [
+          '120 são 4 grupos de 30.',
+          '',
+          '180 são 6 grupos de 30.',
+          '300 são 10 grupos de 30.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_009',
+        question: 'Quanto é 2 x 40?',
+        options: ['60', '80', '100', '800'],
+        correctIndex: 1,
+        explanation: '2 grupos de 40 formam 80.',
+        wrong: [
+          '60 fica 20 a menos que 2 grupos de 40.',
+          '',
+          '100 passa 20 de 2 grupos de 40.',
+          '800 seriam 20 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_010',
+        question: 'Quanto é 3 x 40?',
+        options: ['100', '120', '140', '400'],
+        correctIndex: 1,
+        explanation: '3 grupos de 40 formam 120.',
+        wrong: [
+          '100 fica 20 a menos que 3 grupos de 40.',
+          '',
+          '140 não é múltiplo de 40.',
+          '400 são 10 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_011',
+        question: 'Quanto é 4 x 40?',
+        options: ['120', '140', '160', '400'],
+        correctIndex: 2,
+        explanation: '4 grupos de 40 formam 160.',
+        wrong: [
+          '120 são 3 grupos de 40.',
+          '140 não completa 4 grupos de 40.',
+          '',
+          '400 são 10 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_012',
+        question: 'Quanto é 5 x 40?',
+        options: ['180', '200', '220', '400'],
+        correctIndex: 1,
+        explanation: '5 grupos de 40 formam 200.',
+        wrong: [
+          '180 fica 20 a menos que 5 grupos de 40.',
+          '',
+          '220 passa 20 de 5 grupos de 40.',
+          '400 são 10 grupos de 40.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_013',
+        question: 'Quanto é 2 x 50?',
+        options: ['80', '100', '120', '500'],
+        correctIndex: 1,
+        explanation: '2 grupos de 50 formam 100.',
+        wrong: [
+          '80 fica 20 a menos que 2 grupos de 50.',
+          '',
+          '120 passa 20 de 2 grupos de 50.',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_014',
+        question: 'Quanto é 3 x 50?',
+        options: ['100', '150', '200', '500'],
+        correctIndex: 1,
+        explanation: '3 grupos de 50 formam 150.',
+        wrong: [
+          '100 são 2 grupos de 50.',
+          '',
+          '200 são 4 grupos de 50.',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_015',
+        question: 'Quanto é 4 x 50?',
+        options: ['150', '180', '200', '500'],
+        correctIndex: 2,
+        explanation: '4 grupos de 50 formam 200.',
+        wrong: [
+          '150 são 3 grupos de 50.',
+          '180 não é múltiplo de 50.',
+          '',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_016',
+        question: 'Quanto é 5 x 50?',
+        options: ['200', '250', '300', '500'],
+        correctIndex: 1,
+        explanation: '5 grupos de 50 formam 250.',
+        wrong: [
+          '200 são 4 grupos de 50.',
+          '',
+          '300 são 6 grupos de 50.',
+          '500 são 10 grupos de 50.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_017',
+        question: 'Quanto é 2 x 60?',
+        options: ['100', '120', '140', '600'],
+        correctIndex: 1,
+        explanation: '2 grupos de 60 formam 120.',
+        wrong: [
+          '100 fica 20 a menos que 2 grupos de 60.',
+          '',
+          '140 passa 20 de 2 grupos de 60.',
+          '600 são 10 grupos de 60.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_018',
+        question: 'Quanto é 2 x 70?',
+        options: ['120', '140', '160', '700'],
+        correctIndex: 1,
+        explanation: '2 grupos de 70 formam 140.',
+        wrong: [
+          '120 fica 20 a menos que 2 grupos de 70.',
+          '',
+          '160 passa 20 de 2 grupos de 70.',
+          '700 são 10 grupos de 70.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_019',
+        question: 'Quanto é 2 x 80?',
+        options: ['140', '160', '180', '800'],
+        correctIndex: 1,
+        explanation: '2 grupos de 80 formam 160.',
+        wrong: [
+          '140 fica 20 a menos que 2 grupos de 80.',
+          '',
+          '180 passa 20 de 2 grupos de 80.',
+          '800 são 10 grupos de 80.',
+        ],
+      },
+      {
+        id: 'mat_t2_md_020',
+        question: 'Quanto é 3 x 90?',
+        options: ['180', '240', '270', '900'],
+        correctIndex: 2,
+        explanation: '3 grupos de 90 formam 270.',
+        wrong: [
+          '180 são 2 grupos de 90.',
+          '240 fica 30 a menos que 3 grupos de 90.',
+          '',
+          '900 são 10 grupos de 90.',
+        ],
+      },
+    ].map(buildTensMultiplicationQuestion),
+    ...[
+      [
+        '001',
+        'Em um grafico de colunas, banana tem 8 votos, maca tem 5 e uva tem 3. Qual fruta tem mais votos?',
+        ['banana', 'maca', 'uva', 'empate'],
+        0,
+        'Banana tem 8 votos, mais que 5 e 3.',
+        [
+          'Maca tem 5 votos.',
+          'Uva tem 3 votos.',
+          'As quantidades sao diferentes.',
+        ],
+      ],
+      [
+        '002',
+        'No grafico sobre frutas, qual fruta tem menos votos: banana 8, maca 5 ou uva 3?',
+        ['banana', 'maca', 'uva', 'empate'],
+        2,
+        'Uva tem 3 votos, a menor quantidade.',
+        [
+          'Banana tem a maior quantidade.',
+          'Maca tem 5 votos.',
+          'Nao ha empate.',
+        ],
+      ],
+      [
+        '003',
+        'No grafico sobre frutas, banana tem 8 votos e maca tem 5. Quantos votos elas somam?',
+        ['3', '8', '13', '40'],
+        2,
+        '8 mais 5 e igual a 13.',
+        ['3 e a diferenca.', '8 e so a banana.', '40 nao representa a soma.'],
+      ],
+      [
+        '004',
+        'No grafico sobre frutas, banana tem 8 votos e uva tem 3. Quantos votos a banana tem a mais?',
+        ['5', '8', '11', '24'],
+        0,
+        '8 menos 3 e igual a 5.',
+        [
+          '8 e a quantidade da banana.',
+          '11 seria uma soma.',
+          '24 nao representa a diferenca.',
+        ],
+      ],
+      [
+        '005',
+        'Um grafico de barras mostra livros lidos: segunda 6, terca 9, quarta 7 e quinta 4. Em qual dia foram lidos mais livros?',
+        ['segunda', 'terca', 'quarta', 'quinta'],
+        1,
+        'Terca tem 9 livros, a maior quantidade.',
+        ['Segunda tem 6.', 'Quarta tem 7.', 'Quinta tem 4.'],
+      ],
+      [
+        '006',
+        'No grafico de livros lidos, quantos livros foram lidos na quinta-feira: segunda 6, terca 9, quarta 7 e quinta 4?',
+        ['4', '5', '7', '9'],
+        0,
+        'A quinta-feira corresponde a 4 livros.',
+        ['5 nao aparece.', '7 e quarta.', '9 e terca.'],
+      ],
+      [
+        '007',
+        'No grafico de livros lidos, terca tem 9 e quinta tem 4. Qual e a diferenca?',
+        ['4', '5', '9', '13'],
+        1,
+        '9 menos 4 e igual a 5.',
+        [
+          '4 e a quantidade de quinta.',
+          '9 e a quantidade de terca.',
+          '13 seria uma soma.',
+        ],
+      ],
+      [
+        '008',
+        'No grafico de livros lidos, segunda 6, terca 9, quarta 7 e quinta 4. Qual e o total?',
+        ['13', '22', '26', '64'],
+        2,
+        '6 mais 9 mais 7 mais 4 e igual a 26.',
+        [
+          '13 e soma parcial.',
+          '22 nao inclui todos os dias.',
+          '64 nao representa o total.',
+        ],
+      ],
+      [
+        '009',
+        'Um grafico de barras mostra animais preferidos: cachorros 10, gatos 7 e passaros 4. Qual barra representa 10?',
+        ['cachorros', 'gatos', 'passaros', 'nenhuma'],
+        0,
+        'Cachorros tem 10 preferencias.',
+        ['Gatos tem 7.', 'Passaros tem 4.', 'Existe uma barra com 10.'],
+      ],
+      [
+        '010',
+        'No grafico de animais, cachorros tem 10 votos e gatos tem 7. Quantos votos os gatos tem a menos?',
+        ['2', '3', '7', '17'],
+        1,
+        '10 menos 7 e igual a 3.',
+        [
+          '2 nao e a diferenca.',
+          '7 e a quantidade dos gatos.',
+          '17 seria uma soma.',
+        ],
+      ],
+      [
+        '011',
+        'No grafico de animais, cachorros tem 10, gatos 7 e passaros 4. Qual e o total?',
+        ['14', '17', '21', '70'],
+        2,
+        '10 mais 7 mais 4 e igual a 21.',
+        [
+          '14 e soma parcial.',
+          '17 nao inclui todos.',
+          '70 nao representa o total.',
+        ],
+      ],
+      [
+        '012',
+        'No grafico de animais, cachorros tem 10, gatos 7 e passaros 4. Qual frase esta correta?',
+        [
+          'Gatos tem mais que cachorros.',
+          'Passaros tem mais que gatos.',
+          'Gatos tem mais que passaros.',
+          'Todos sao iguais.',
+        ],
+        2,
+        'Gatos tem 7 votos e passaros tem 4.',
+        [
+          'Cachorros tem mais que gatos.',
+          'Passaros tem menos que gatos.',
+          'As quantidades sao diferentes.',
+        ],
+      ],
+      [
+        '013',
+        'Um grafico de colunas mostra bolas: vermelha 12, azul 8 e verde 10. Qual quantidade pertence a bola vermelha?',
+        ['8', '10', '12', '30'],
+        2,
+        'A bola vermelha tem 12 escolhas.',
+        ['8 e azul.', '10 e verde.', '30 e a soma das tres cores.'],
+      ],
+      [
+        '014',
+        'No grafico de bolas, azul tem 8 e verde tem 10. Qual cor tem 2 escolhas a mais que a azul?',
+        ['vermelha', 'azul', 'verde', 'nenhuma'],
+        2,
+        'Verde tem 10, que e 2 a mais que 8.',
+        [
+          'Vermelha tem 12.',
+          'Azul e a referencia.',
+          'Existe uma cor com 2 a mais.',
+        ],
+      ],
+      [
+        '015',
+        'No grafico de bolas, azul tem 8 e verde tem 10. Quantas escolhas elas somam?',
+        ['2', '10', '18', '80'],
+        2,
+        '8 mais 10 e igual a 18.',
+        ['2 e a diferenca.', '10 e so a verde.', '80 nao representa a soma.'],
+      ],
+      [
+        '016',
+        'No grafico de bolas, vermelha tem 12, azul 8 e verde 10. Qual coluna deve ser a mais alta?',
+        ['vermelha', 'azul', 'verde', 'todas iguais'],
+        0,
+        'Vermelha tem 12, a maior quantidade.',
+        ['Azul tem 8.', 'Verde tem 10.', 'As colunas nao tem a mesma altura.'],
+      ],
+      [
+        '017',
+        'Um grafico de colunas mostra lanches: maca 9, queijo 6 e biscoito 9. Quais lanches empataram?',
+        ['maca e queijo', 'queijo e biscoito', 'maca e biscoito', 'os tres'],
+        2,
+        'Maca e biscoito tem 9 escolhas cada.',
+        [
+          'Essas quantidades sao 9 e 6.',
+          'Essas quantidades sao 6 e 9.',
+          'Queijo tem 6.',
+        ],
+      ],
+      [
+        '018',
+        'No grafico de lanches, a maior quantidade e 9 e queijo tem 6. Quantas escolhas a maior quantidade tem a mais?',
+        ['3', '6', '9', '15'],
+        0,
+        '9 menos 6 e igual a 3.',
+        [
+          '6 e a quantidade de queijo.',
+          '9 e a maior quantidade.',
+          '15 seria uma soma.',
+        ],
+      ],
+      [
+        '019',
+        'No grafico de lanches, maca tem 9, queijo 6 e biscoito 9. Qual e o total?',
+        ['15', '18', '24', '96'],
+        2,
+        '9 mais 6 mais 9 e igual a 24.',
+        [
+          '15 e soma parcial.',
+          '18 soma as duas quantidades de 9.',
+          '96 nao representa o total.',
+        ],
+      ],
+      [
+        '020',
+        'Um grafico tem o titulo Lanches escolhidos pela turma. O que esse titulo ajuda a entender?',
+        [
+          'O assunto mostrado no grafico.',
+          'A cor de cada coluna.',
+          'O nome de quem desenhou.',
+          'A resposta correta.',
+        ],
+        0,
+        'O titulo informa o assunto do grafico.',
+        [
+          'O titulo nao define cores.',
+          'O titulo nao informa o autor.',
+          'O titulo nao mostra uma resposta.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_gr_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildGraphQuestion),
+    ...[
+      [
+        '001',
+        'Na tabela de lanches, segunda teve maca 4 e queijo 2. Quantas macas foram escolhidas na segunda?',
+        ['4', '2', '6', '3'],
+        0,
+        'Na linha de segunda e coluna maca aparece 4.',
+        [
+          '2 e a quantidade de queijo.',
+          '6 e a soma de maca e queijo.',
+          'Confira a celula da maca na segunda.',
+        ],
+      ],
+      [
+        '002',
+        'Na tabela de lanches, terca teve maca 3 e queijo 5. Quantos queijos foram escolhidos na terca?',
+        ['5', '3', '8', '4'],
+        0,
+        'Na linha de terca e coluna queijo aparece 5.',
+        [
+          '3 e a quantidade de maca.',
+          '8 e a soma dos lanches de terca.',
+          'Confira a coluna queijo na terca.',
+        ],
+      ],
+      [
+        '003',
+        'Macas escolhidas: segunda 4, terca 3 e quarta 6. Em qual dia houve mais macas?',
+        ['quarta', 'segunda', 'terca', 'todos os dias'],
+        0,
+        '6, na quarta, e maior que 4 e 3.',
+        ['Segunda tem 4.', 'Terca tem 3.', 'As quantidades sao diferentes.'],
+      ],
+      [
+        '004',
+        'Macas escolhidas: segunda 4 e terca 3. Quantas macas foram escolhidas nesses dois dias juntos?',
+        ['7', '4', '3', '1'],
+        0,
+        '4 mais 3 e igual a 7.',
+        [
+          '4 e apenas o valor de segunda.',
+          '3 e apenas o valor de terca.',
+          '1 e a diferenca, nao o total.',
+        ],
+      ],
+      [
+        '005',
+        'Na quarta, foram escolhidas 6 macas e 1 queijo. Qual foi o total de lanches desse dia?',
+        ['7', '6', '1', '5'],
+        0,
+        '6 mais 1 e igual a 7.',
+        [
+          '6 e apenas a quantidade de macas.',
+          '1 e apenas a quantidade de queijo.',
+          '5 nao corresponde a soma.',
+        ],
+      ],
+      [
+        '006',
+        'Na tabela de brincadeiras, a turma A escolheu bola 7 e corda 4. Quantas escolhas de bola teve a turma A?',
+        ['7', '4', '11', '3'],
+        0,
+        'No cruzamento de turma A e bola aparece 7.',
+        [
+          '4 e a quantidade de corda.',
+          '11 e o total das duas brincadeiras.',
+          'Confira a coluna bola.',
+        ],
+      ],
+      [
+        '007',
+        'Escolhas de corda: turma A 4, turma B 8 e turma C 3. Qual turma escolheu mais corda?',
+        ['B', 'A', 'C', 'todas'],
+        0,
+        '8, da turma B, e a maior quantidade.',
+        ['A tem 4.', 'C tem 3.', 'As quantidades nao sao iguais.'],
+      ],
+      [
+        '008',
+        'A turma B escolheu bola 5 e corda 8. Quantas escolhas de bola teve a turma B?',
+        ['5', '8', '13', '3'],
+        0,
+        'Na linha B e coluna bola aparece 5.',
+        [
+          '8 e a quantidade de corda.',
+          '13 e a soma das duas brincadeiras.',
+          'Confira a celula de bola da turma B.',
+        ],
+      ],
+      [
+        '009',
+        'A turma A escolheu bola 7 e a turma B escolheu bola 5. Quantas escolhas a mais de bola teve a turma A?',
+        ['2', '7', '5', '12'],
+        0,
+        '7 menos 5 e igual a 2.',
+        [
+          '7 e apenas o valor da turma A.',
+          '5 e apenas o valor da turma B.',
+          '12 seria uma soma.',
+        ],
+      ],
+      [
+        '010',
+        'Escolhas de corda: turma A 4, turma B 8 e turma C 3. Quantas escolhas de corda houve ao todo?',
+        ['15', '8', '12', '5'],
+        0,
+        '4 mais 8 mais 3 e igual a 15.',
+        [
+          '8 e apenas o maior valor.',
+          '12 soma somente A e B.',
+          '5 nao corresponde ao total.',
+        ],
+      ],
+      [
+        '011',
+        'Livros de aventura emprestados: Ana 3 e Bia 5. Quantos livros de aventura Bia emprestou?',
+        ['5', '3', '8', '2'],
+        0,
+        'No cruzamento de Bia e aventura aparece 5.',
+        [
+          '3 e o valor de Ana.',
+          '8 e a soma das duas pessoas.',
+          'Confira a linha de Bia.',
+        ],
+      ],
+      [
+        '012',
+        'Livros de ciencia emprestados: Ana 4 e Bia 2. Quantos livros de ciencia Ana emprestou?',
+        ['4', '2', '6', '3'],
+        0,
+        'No cruzamento de Ana e ciencia aparece 4.',
+        [
+          '2 e o valor de Bia.',
+          '6 e o total das duas.',
+          'Confira a coluna ciencia de Ana.',
+        ],
+      ],
+      [
+        '013',
+        'Ana emprestou aventura 3, ciencia 4 e poesia 1. Quantos livros Ana emprestou ao todo?',
+        ['8', '4', '7', '1'],
+        0,
+        '3 mais 4 mais 1 e igual a 8.',
+        [
+          '4 e somente ciencia.',
+          '7 deixa poesia de fora.',
+          '1 e somente poesia.',
+        ],
+      ],
+      [
+        '014',
+        'Livros de poesia emprestados: Ana 1 e Bia 3. Quem emprestou mais livros de poesia?',
+        ['Bia', 'Ana', 'as duas', 'ninguem'],
+        0,
+        'Bia emprestou 3, que e maior que 1.',
+        [
+          'Ana emprestou 1.',
+          'As quantidades sao diferentes.',
+          'As duas emprestaram livros.',
+        ],
+      ],
+      [
+        '015',
+        'Livros de aventura: Ana 3 e Bia 5. Quantos livros de aventura elas emprestaram juntas?',
+        ['8', '5', '3', '2'],
+        0,
+        '3 mais 5 e igual a 8.',
+        [
+          '5 e apenas o valor de Bia.',
+          '3 e apenas o valor de Ana.',
+          '2 e a diferenca, nao o total.',
+        ],
+      ],
+      [
+        '016',
+        'Na tabela de plantas, pela manha foram cuidadas flores 5 e ervas 2. Quantas flores foram cuidadas pela manha?',
+        ['5', '2', '7', '3'],
+        0,
+        'Na linha manha e coluna flores aparece 5.',
+        [
+          '2 e a quantidade de ervas.',
+          '7 e a soma das duas categorias.',
+          'Confira a celula de flores.',
+        ],
+      ],
+      [
+        '017',
+        'Ervas cuidadas: manha 2, tarde 6 e sexta 4. Em qual periodo houve mais ervas?',
+        ['tarde', 'manha', 'sexta', 'em todos'],
+        0,
+        '6, no periodo da tarde, e o maior valor.',
+        ['Manha tem 2.', 'Sexta tem 4.', 'Os valores sao diferentes.'],
+      ],
+      [
+        '018',
+        'Na sexta foram cuidadas flores 4 e ervas 4. O que aconteceu nesse periodo?',
+        [
+          'as quantidades foram iguais',
+          'houve mais flores',
+          'houve mais ervas',
+          'nao houve plantas',
+        ],
+        0,
+        'Flores e ervas tem o mesmo valor: 4.',
+        [
+          'As duas quantidades sao 4.',
+          'As duas quantidades sao 4.',
+          'Houve 4 de cada categoria.',
+        ],
+      ],
+      [
+        '019',
+        'Na tarde foram cuidadas flores 3 e ervas 6. Quantas plantas foram cuidadas nesse periodo?',
+        ['9', '6', '3', '12'],
+        0,
+        '3 mais 6 e igual a 9.',
+        [
+          '6 e apenas a quantidade de ervas.',
+          '3 e apenas a quantidade de flores.',
+          'Confira a soma das duas categorias.',
+        ],
+      ],
+      [
+        '020',
+        'Uma tabela tem o titulo Plantas cuidadas. O que esse titulo ajuda a entender?',
+        [
+          'o assunto da tabela',
+          'a resposta de todas as linhas',
+          'o maior numero',
+          'o nome de uma coluna',
+        ],
+        0,
+        'O titulo informa o assunto da tabela.',
+        [
+          'Cada linha tem informacoes proprias.',
+          'Titulo nao indica uma quantidade.',
+          'O titulo descreve a tabela inteira.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_de_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildDoubleEntryQuestion),
+    ...[
+      [
+        '001',
+        'Qual objeto pode ter a forma de um prisma retangular?',
+        ['caixa de sapato', 'bola', 'chapéu de festa', 'bola de gude'],
+        0,
+        'Uma caixa de sapato tem faces planas retangulares, como um prisma retangular.',
+        [
+          'A bola tem superfície curva.',
+          'O chapéu de festa lembra um cone, com uma ponta.',
+          'A bola de gude é redonda e tem superfície curva.',
+        ],
+      ],
+      [
+        '002',
+        'Qual sólido tem duas bases iguais e faces planas nas laterais?',
+        ['prisma', 'esfera', 'cone', 'círculo'],
+        0,
+        'Um prisma tem duas bases iguais e faces laterais planas.',
+        [
+          'A esfera não tem bases nem faces planas.',
+          'O cone tem uma base e uma ponta.',
+          'O círculo é uma figura plana, não um sólido.',
+        ],
+      ],
+      [
+        '003',
+        'Qual destes não é um prisma?',
+        ['caixa', 'bloco retangular', 'esfera', 'embalagem retangular'],
+        2,
+        'A esfera tem somente superfície curva, por isso não é um prisma.',
+        [
+          'Uma caixa retangular pode ser um prisma.',
+          'O bloco retangular tem faces planas e bases iguais.',
+          'Uma embalagem retangular pode ter forma de prisma retangular.',
+        ],
+      ],
+      [
+        '004',
+        'Qual objeto tem forma parecida com um cubo?',
+        ['dado', 'bola', 'lata', 'chapéu de festa'],
+        0,
+        'Um dado tem seis faces planas quadradas, como um cubo.',
+        [
+          'A bola é redonda e tem superfície curva.',
+          'A lata tem partes circulares e superfície curva.',
+          'O chapéu de festa tem uma ponta e uma base circular.',
+        ],
+      ],
+      [
+        '005',
+        'O que uma esfera não possui?',
+        ['faces planas', 'superfície curva', 'forma redonda', 'volume'],
+        0,
+        'A esfera é redonda e tem somente superfície curva.',
+        [
+          'A superfície curva é uma característica da esfera.',
+          'A esfera tem forma redonda.',
+          'A esfera ocupa espaço e, por isso, tem volume.',
+        ],
+      ],
+      [
+        '006',
+        'Como são as faces de um prisma?',
+        ['planas', 'redondas', 'invisíveis', 'feitas de linhas'],
+        0,
+        'As faces de um prisma são superfícies planas.',
+        [
+          'Uma face de prisma não é curva.',
+          'As faces podem ser vistas no objeto.',
+          'As linhas formam contornos, mas a face é uma superfície.',
+        ],
+      ],
+      [
+        '007',
+        'Como chamamos as duas faces iguais de um prisma?',
+        ['bases', 'pontas', 'círculos', 'retas'],
+        0,
+        'As duas faces iguais e paralelas de um prisma são as bases.',
+        [
+          'Um prisma não é definido por uma ponta.',
+          'As bases podem ter formatos diferentes de círculos.',
+          'Retas são linhas, não faces.',
+        ],
+      ],
+      [
+        '008',
+        'Um prisma retangular tem superfície curva?',
+        ['não', 'sim', 'somente na base', 'somente nas laterais'],
+        0,
+        'Um prisma retangular é formado por faces planas.',
+        [
+          'As superfícies do prisma retangular são planas.',
+          'As bases também são planas.',
+          'As faces laterais também são planas.',
+        ],
+      ],
+      [
+        '009',
+        'Como chamamos as faces que ligam uma base a outra em um prisma?',
+        ['faces laterais', 'círculos', 'vértices redondos', 'linhas curvas'],
+        0,
+        'As faces laterais ficam entre as duas bases.',
+        [
+          'Um círculo é uma figura plana.',
+          'Vértices são encontros de arestas, não faces.',
+          'Prismas têm faces planas, não linhas curvas como faces.',
+        ],
+      ],
+      [
+        '010',
+        'Qual figura plana pode ser uma face de um cubo?',
+        ['quadrado', 'círculo', 'linha', 'ponto'],
+        0,
+        'Todas as faces de um cubo têm forma de quadrado.',
+        [
+          'Um cubo não tem face circular.',
+          'Uma linha não é uma superfície.',
+          'Um ponto não forma uma face.',
+        ],
+      ],
+      [
+        '011',
+        'Qual sólido lembra uma caixa de cereal retangular?',
+        ['prisma retangular', 'esfera', 'cone', 'círculo'],
+        0,
+        'A caixa tem faces planas retangulares e lembra um prisma retangular.',
+        [
+          'A esfera é curva e redonda.',
+          'O cone tem uma ponta e uma base circular.',
+          'O círculo é plano, enquanto a caixa ocupa espaço.',
+        ],
+      ],
+      [
+        '012',
+        'Qual prisma pode ter duas bases em forma de triângulo?',
+        ['prisma triangular', 'cubo', 'esfera', 'cone'],
+        0,
+        'Um prisma triangular tem duas bases triangulares iguais.',
+        [
+          'As faces de um cubo são quadradas.',
+          'A esfera não tem faces planas.',
+          'O cone tem uma base e uma ponta.',
+        ],
+      ],
+      [
+        '013',
+        'Um dado tem seis faces planas. Qual é o formato de cada face?',
+        ['quadrado', 'círculo', 'triângulo', 'reta'],
+        0,
+        'Um dado comum tem formato de cubo, com faces quadradas.',
+        [
+          'Um dado não tem faces redondas.',
+          'As faces de um cubo não são triangulares.',
+          'Uma reta é uma linha, não uma face.',
+        ],
+      ],
+      [
+        '014',
+        'O que um cubo e um prisma retangular têm em comum?',
+        ['faces planas', 'superfície curva', 'uma ponta', 'forma redonda'],
+        0,
+        'Os dois são sólidos formados por faces planas.',
+        [
+          'Nenhum dos dois tem superfície curva.',
+          'Prismas e cubos não são definidos por uma ponta.',
+          'Ambos têm faces planas, não forma redonda.',
+        ],
+      ],
+      [
+        '015',
+        'Qual objeto não tem forma de prisma?',
+        ['bola', 'caixa', 'tijolo', 'embalagem retangular'],
+        0,
+        'A bola é redonda e tem superfície curva.',
+        [
+          'Uma caixa retangular pode ter forma de prisma.',
+          'Um tijolo lembra um prisma retangular.',
+          'Uma embalagem retangular pode ter faces planas e bases iguais.',
+        ],
+      ],
+      [
+        '016',
+        'Uma caixa de presente retangular lembra qual sólido?',
+        ['prisma retangular', 'esfera', 'cone', 'círculo'],
+        0,
+        'A caixa tem faces planas retangulares, como um prisma retangular.',
+        [
+          'A esfera é redonda e tem superfície curva.',
+          'O cone tem uma ponta.',
+          'O círculo é uma figura plana.',
+        ],
+      ],
+      [
+        '017',
+        'Uma barra de sabão em formato de bloco lembra qual sólido?',
+        ['prisma retangular', 'esfera', 'pirâmide', 'círculo'],
+        0,
+        'Um bloco de sabão tem faces planas retangulares.',
+        [
+          'A esfera tem superfície curva.',
+          'A pirâmide tem uma ponta.',
+          'O círculo é plano e não ocupa espaço como o bloco.',
+        ],
+      ],
+      [
+        '018',
+        'Um dado tem quantas faces planas?',
+        ['6', '1', '2', 'nenhuma'],
+        0,
+        'Um dado em formato de cubo tem seis faces planas.',
+        [
+          'Uma face seria apenas uma parte do cubo.',
+          'Duas faces ainda não representam as seis faces do cubo.',
+          'Um dado possui faces planas.',
+        ],
+      ],
+      [
+        '019',
+        'Uma embalagem tem duas faces triangulares iguais e três faces laterais retangulares. Que sólido ela lembra?',
+        ['prisma triangular', 'esfera', 'lata', 'cone'],
+        0,
+        'Duas bases triangulares iguais e faces laterais planas formam um prisma triangular.',
+        [
+          'A esfera não tem faces planas.',
+          'A lata tem superfície lateral curva.',
+          'O cone tem uma base e uma ponta.',
+        ],
+      ],
+      [
+        '020',
+        'Por que uma caixa retangular pode ser classificada como prisma?',
+        [
+          'tem duas bases iguais e faces planas',
+          'é redonda',
+          'tem superfície curva',
+          'é uma figura plana',
+        ],
+        0,
+        'Prismas têm duas bases iguais e faces planas.',
+        [
+          'Uma caixa retangular não é redonda.',
+          'As superfícies de uma caixa retangular são planas.',
+          'Uma caixa é um sólido, pois ocupa espaço.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_pr_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildPrismQuestion),
+    ...[
+      [
+        '001',
+        'Qual figura plana tem três lados?',
+        ['triângulo', 'quadrado', 'círculo', 'retângulo'],
+        0,
+        'Um triângulo é uma figura plana com três lados.',
+        [
+          'O quadrado tem quatro lados.',
+          'O círculo não tem lados retos.',
+          'O retângulo tem quatro lados.',
+        ],
+      ],
+      [
+        '002',
+        'Qual figura plana tem quatro lados iguais?',
+        ['quadrado', 'triângulo', 'círculo', 'retângulo'],
+        0,
+        'Um quadrado tem quatro lados com o mesmo comprimento.',
+        [
+          'O triângulo tem três lados.',
+          'O círculo não tem lados retos.',
+          'O retângulo pode ter lados de comprimentos diferentes.',
+        ],
+      ],
+      [
+        '003',
+        'Qual figura é redonda e não tem vértices?',
+        ['círculo', 'triângulo', 'quadrado', 'retângulo'],
+        0,
+        'O círculo é redondo e não tem cantos nem vértices.',
+        [
+          'O triângulo tem três vértices.',
+          'O quadrado tem quatro vértices.',
+          'O retângulo tem quatro vértices.',
+        ],
+      ],
+      [
+        '004',
+        'Qual figura tem quatro lados e quatro vértices, com dois lados maiores e dois menores?',
+        ['retângulo', 'quadrado', 'triângulo', 'círculo'],
+        0,
+        'Um retângulo tem quatro lados e pode ter dois lados maiores que os outros dois.',
+        [
+          'Os quatro lados do quadrado têm o mesmo comprimento.',
+          'O triângulo tem três lados.',
+          'O círculo não tem lados nem vértices.',
+        ],
+      ],
+      [
+        '005',
+        'Quantos vértices tem um triângulo?',
+        ['3', '2', '4', 'nenhum'],
+        0,
+        'Os três encontros dos lados de um triângulo são seus vértices.',
+        [
+          'Com dois vértices, faltaria um encontro entre os lados.',
+          'Quatro vértices aparecem em figuras de quatro lados.',
+          'O triângulo tem três cantos, chamados vértices.',
+        ],
+      ],
+      [
+        '006',
+        'Quantos lados tem um quadrado?',
+        ['4', '3', '2', 'nenhum'],
+        0,
+        'Um quadrado tem quatro lados.',
+        [
+          'Três lados formam um triângulo.',
+          'Dois segmentos não fecham um quadrado.',
+          'O quadrado tem lados retos.',
+        ],
+      ],
+      [
+        '007',
+        'Qual objeto lembra mais um círculo?',
+        ['moeda', 'porta', 'dado', 'fatia triangular de pizza'],
+        0,
+        'A face de uma moeda é redonda como um círculo.',
+        [
+          'Uma porta lembra um retângulo.',
+          'Um dado é um sólido com faces quadradas.',
+          'Uma fatia triangular de pizza lembra um triângulo.',
+        ],
+      ],
+      [
+        '008',
+        'Qual objeto lembra mais um retângulo?',
+        ['porta', 'relógio redondo', 'placa triangular', 'bola'],
+        0,
+        'Uma porta vista de frente geralmente tem forma retangular.',
+        [
+          'Um relógio redondo lembra um círculo.',
+          'Uma placa triangular lembra um triângulo.',
+          'Uma bola é um objeto redondo, não uma figura plana.',
+        ],
+      ],
+      [
+        '009',
+        'Qual figura tem quatro lados, todos do mesmo tamanho?',
+        ['quadrado', 'retângulo', 'triângulo', 'círculo'],
+        0,
+        'Os quatro lados do quadrado têm o mesmo comprimento.',
+        [
+          'O retângulo pode ter dois lados maiores e dois menores.',
+          'O triângulo tem três lados.',
+          'O círculo não tem lados retos.',
+        ],
+      ],
+      [
+        '010',
+        'O que um quadrado e um retângulo têm em comum?',
+        ['quatro lados', 'três lados', 'nenhum vértice', 'forma redonda'],
+        0,
+        'Os dois são figuras planas com quatro lados e quatro vértices.',
+        [
+          'Três lados descrevem um triângulo.',
+          'Quadrado e retângulo têm quatro vértices.',
+          'Quadrado e retângulo têm lados retos, não forma redonda.',
+        ],
+      ],
+      [
+        '011',
+        'Qual figura tem exatamente três vértices?',
+        ['triângulo', 'quadrado', 'retângulo', 'círculo'],
+        0,
+        'Um triângulo tem três vértices.',
+        [
+          'O quadrado tem quatro vértices.',
+          'O retângulo tem quatro vértices.',
+          'O círculo não tem vértices.',
+        ],
+      ],
+      [
+        '012',
+        'Qual figura não tem lados retos?',
+        ['círculo', 'triângulo', 'quadrado', 'retângulo'],
+        0,
+        'O contorno do círculo é curvo, sem lados retos.',
+        [
+          'O triângulo tem três lados retos.',
+          'O quadrado tem quatro lados retos.',
+          'O retângulo tem quatro lados retos.',
+        ],
+      ],
+      [
+        '013',
+        'Uma figura tem quatro lados iguais e quatro vértices. Qual é ela?',
+        ['quadrado', 'retângulo', 'triângulo', 'círculo'],
+        0,
+        'Quatro lados iguais e quatro vértices formam um quadrado.',
+        [
+          'O retângulo pode ter lados de tamanhos diferentes.',
+          'O triângulo tem três lados.',
+          'O círculo não tem vértices.',
+        ],
+      ],
+      [
+        '014',
+        'Uma figura tem três lados retos. Qual é ela?',
+        ['triângulo', 'círculo', 'quadrado', 'retângulo'],
+        0,
+        'Uma figura com três lados retos é um triângulo.',
+        [
+          'O contorno do círculo é curvo.',
+          'O quadrado tem quatro lados.',
+          'O retângulo tem quatro lados.',
+        ],
+      ],
+      [
+        '015',
+        'Em qual figura podemos contar quatro vértices?',
+        ['retângulo', 'triângulo', 'círculo', 'linha'],
+        0,
+        'Um retângulo tem quatro vértices, um em cada canto.',
+        [
+          'O triângulo tem três vértices.',
+          'O círculo não tem vértices.',
+          'Uma linha não é uma figura fechada com vértices.',
+        ],
+      ],
+      [
+        '016',
+        'Qual figura é plana, fechada e tem forma redonda?',
+        ['círculo', 'bola', 'quadrado', 'triângulo'],
+        0,
+        'O círculo é uma figura plana e fechada com contorno redondo.',
+        [
+          'A bola é um sólido, não uma figura plana.',
+          'O quadrado tem lados retos.',
+          'O triângulo tem três lados retos.',
+        ],
+      ],
+      [
+        '017',
+        'Qual dupla tem apenas figuras com quatro lados?',
+        [
+          'quadrado e retângulo',
+          'triângulo e círculo',
+          'círculo e quadrado',
+          'triângulo e retângulo',
+        ],
+        0,
+        'Quadrado e retângulo têm quatro lados cada um.',
+        [
+          'O triângulo tem três lados e o círculo não tem lados retos.',
+          'O círculo não tem quatro lados.',
+          'O triângulo tem três lados.',
+        ],
+      ],
+      [
+        '018',
+        'Qual figura tem lados retos e três cantos?',
+        ['triângulo', 'círculo', 'quadrado', 'bola'],
+        0,
+        'Os três cantos do triângulo são seus três vértices.',
+        [
+          'O círculo não tem lados retos nem cantos.',
+          'O quadrado tem quatro cantos.',
+          'A bola é um sólido redondo.',
+        ],
+      ],
+      [
+        '019',
+        'Por que uma placa quadrada não é um círculo?',
+        [
+          'tem quatro lados retos',
+          'é redonda',
+          'não tem vértices',
+          'tem contorno curvo',
+        ],
+        0,
+        'O quadrado tem quatro lados retos e quatro vértices.',
+        [
+          'A forma redonda descreve um círculo.',
+          'O quadrado tem quatro vértices.',
+          'Os lados do quadrado são retos, não curvos.',
+        ],
+      ],
+      [
+        '020',
+        'Qual descrição corresponde a um retângulo?',
+        [
+          'quatro lados e quatro vértices',
+          'três lados e três vértices',
+          'contorno redondo sem vértices',
+          'apenas um lado curvo',
+        ],
+        0,
+        'Um retângulo é uma figura plana com quatro lados e quatro vértices.',
+        [
+          'Três lados e três vértices descrevem um triângulo.',
+          'Um contorno redondo sem vértices descreve um círculo.',
+          'O retângulo tem quatro lados retos.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_fp_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildPlanarFigureQuestion),
+    ...[
+      [
+        '001',
+        'Qual unidade é mais adequada para medir o comprimento de um lápis?',
+        ['centímetro', 'litro', 'quilo', 'hora'],
+        0,
+        'Centímetros servem para medir objetos pequenos, como um lápis.',
+        ['Litro mede capacidade.', 'Quilo mede massa.', 'Hora mede tempo.'],
+      ],
+      [
+        '002',
+        'Qual unidade é mais adequada para medir a distância entre duas cidades?',
+        ['quilômetro', 'centímetro', 'litro', 'minuto'],
+        0,
+        'Quilômetros medem distâncias grandes.',
+        [
+          'Centímetro serve para distâncias pequenas.',
+          'Litro mede capacidade.',
+          'Minuto mede tempo.',
+        ],
+      ],
+      [
+        '003',
+        'Qual item pode ter sua capacidade medida em litros?',
+        ['garrafa de água', 'caderno', 'mochila', 'relógio'],
+        0,
+        'Litro pode medir a quantidade de líquido que cabe em uma garrafa.',
+        [
+          'Um caderno pode ter seu comprimento medido.',
+          'Uma mochila pode ter sua massa medida.',
+          'Um relógio ajuda a medir o tempo.',
+        ],
+      ],
+      [
+        '004',
+        'Qual unidade usamos para medir a massa de uma melancia?',
+        ['quilo', 'litro', 'metro', 'minuto'],
+        0,
+        'Quilo é uma unidade usada para medir massa.',
+        [
+          'Litro mede capacidade.',
+          'Metro mede comprimento.',
+          'Minuto mede tempo.',
+        ],
+      ],
+      [
+        '005',
+        'Qual instrumento ajuda a medir o comprimento de uma mesa?',
+        ['fita métrica', 'balança', 'copo medidor', 'relógio'],
+        0,
+        'A fita métrica mede comprimentos.',
+        [
+          'A balança mede massa.',
+          'O copo medidor mede capacidade.',
+          'O relógio mede tempo.',
+        ],
+      ],
+      [
+        '006',
+        'Ana tem uma fita de 30 cm e Bia tem uma de 45 cm. Qual é mais comprida?',
+        ['a de Bia', 'a de Ana', 'são iguais', 'não dá para saber'],
+        0,
+        'A fita de Bia mede 45 cm, que é maior que 30 cm.',
+        [
+          'A fita de Ana mede 30 cm, que é menor que 45 cm.',
+          'As medidas são diferentes.',
+          'As duas medidas foram informadas e podem ser comparadas.',
+        ],
+      ],
+      [
+        '007',
+        'Uma garrafa tem 2 litros de suco e outra tem 1 litro. Qual tem mais suco?',
+        [
+          'a de 2 litros',
+          'a de 1 litro',
+          'as duas têm a mesma quantidade',
+          'nenhuma',
+        ],
+        0,
+        'A garrafa de 2 litros tem mais suco que a de 1 litro.',
+        [
+          'Um litro é menor que 2 litros.',
+          'As quantidades são diferentes.',
+          'As duas garrafas têm suco.',
+        ],
+      ],
+      [
+        '008',
+        'Um pacote pesa 3 kg e outro pesa 5 kg. Qual é mais pesado?',
+        ['o de 5 kg', 'o de 3 kg', 'são iguais', 'não dá para saber'],
+        0,
+        'Cinco quilogramas representam uma massa maior que 3 quilogramas.',
+        [
+          'Três quilogramas são menos que 5 quilogramas.',
+          'As massas são diferentes.',
+          'As duas massas foram informadas e podem ser comparadas.',
+        ],
+      ],
+      [
+        '009',
+        'Quantos minutos há em uma hora?',
+        ['60', '30', '24', '100'],
+        0,
+        'Uma hora tem 60 minutos.',
+        [
+          'Trinta minutos correspondem a meia hora.',
+          'Vinte e quatro é a quantidade de horas de um dia.',
+          'Uma hora não tem 100 minutos.',
+        ],
+      ],
+      [
+        '010',
+        'Qual atividade pode durar cerca de 10 minutos?',
+        [
+          'organizar a mochila',
+          'uma viagem entre cidades',
+          'um ano escolar',
+          'o crescimento de uma árvore',
+        ],
+        0,
+        'Organizar a mochila pode durar cerca de 10 minutos.',
+        [
+          'Uma viagem entre cidades costuma durar mais.',
+          'Um ano escolar dura muitos meses.',
+          'O crescimento de uma árvore leva muito mais tempo.',
+        ],
+      ],
+      [
+        '011',
+        'João leu por 20 minutos e Lia por 35 minutos. Quem leu por mais tempo?',
+        ['Lia', 'João', 'os dois leram pelo mesmo tempo', 'não dá para saber'],
+        0,
+        'Lia leu por 35 minutos, que é mais tempo que 20 minutos.',
+        [
+          'João leu por 20 minutos, que é menos que 35 minutos.',
+          'Os tempos de leitura são diferentes.',
+          'Os dois tempos foram informados e podem ser comparados.',
+        ],
+      ],
+      [
+        '012',
+        'Qual medida combina com a altura de uma porta?',
+        ['metro', 'litro', 'quilo', 'segundo'],
+        0,
+        'Metros ajudam a medir a altura de objetos grandes, como uma porta.',
+        ['Litro mede capacidade.', 'Quilo mede massa.', 'Segundo mede tempo.'],
+      ],
+      [
+        '013',
+        'Uma receita pede 1 litro de leite. O que está sendo medido?',
+        ['capacidade', 'comprimento', 'massa', 'tempo'],
+        0,
+        'Litro indica uma medida de capacidade.',
+        [
+          'Comprimento pode ser medido em centímetros ou metros.',
+          'Massa pode ser medida em quilogramas.',
+          'Tempo pode ser medido em minutos ou horas.',
+        ],
+      ],
+      [
+        '014',
+        'Uma caixa tem 40 cm de comprimento. Que medida ela informa?',
+        ['comprimento', 'capacidade', 'massa', 'tempo'],
+        0,
+        'Centímetro é uma unidade de comprimento.',
+        [
+          'Capacidade pode ser medida em litros.',
+          'Massa pode ser medida em quilogramas.',
+          'Tempo pode ser medido em minutos ou horas.',
+        ],
+      ],
+      [
+        '015',
+        'Qual objeto é mais adequado para uma balança medir?',
+        [
+          'saco de arroz',
+          'quantidade de água',
+          'altura da parede',
+          'duração da aula',
+        ],
+        0,
+        'A balança mede a massa de objetos, como um saco de arroz.',
+        [
+          'A quantidade de água pode ser medida em litros.',
+          'A altura da parede pode ser medida em metros.',
+          'A duração da aula é uma medida de tempo.',
+        ],
+      ],
+      [
+        '016',
+        'Uma aula começa às 8 horas e termina às 9 horas. Quanto tempo ela dura?',
+        ['1 hora', '2 horas', '8 horas', '9 horas'],
+        0,
+        'Das 8 horas às 9 horas passa uma hora.',
+        [
+          'Duas horas seriam dois intervalos de uma hora.',
+          'Oito horas é o horário de início.',
+          'Nove horas é o horário de término.',
+        ],
+      ],
+      [
+        '017',
+        'Qual medida é menor: 20 cm ou 40 cm?',
+        ['20 cm', '40 cm', 'são iguais', 'não dá para comparar'],
+        0,
+        'Vinte centímetros é menor que 40 centímetros.',
+        [
+          'Quarenta centímetros é maior que 20 centímetros.',
+          'Os números são diferentes.',
+          'As duas medidas usam centímetros e podem ser comparadas.',
+        ],
+      ],
+      [
+        '018',
+        'Para saber quanto cabe em um balde, qual unidade é mais adequada?',
+        ['litro', 'metro', 'quilo', 'minuto'],
+        0,
+        'Litro mede a capacidade de recipientes.',
+        ['Metro mede comprimento.', 'Quilo mede massa.', 'Minuto mede tempo.'],
+      ],
+      [
+        '019',
+        'Qual situação usa minutos como unidade?',
+        [
+          'tempo de recreio',
+          'massa de uma fruta',
+          'altura de uma planta',
+          'suco em uma jarra',
+        ],
+        0,
+        'Minutos medem a duração do recreio.',
+        [
+          'A massa de uma fruta pode ser medida em gramas ou quilogramas.',
+          'A altura de uma planta pode ser medida em centímetros.',
+          'O suco em uma jarra pode ser medido em litros.',
+        ],
+      ],
+      [
+        '020',
+        'Pedro percorreu 4 km e Sara percorreu 6 km. Quem percorreu a maior distância?',
+        [
+          'Sara',
+          'Pedro',
+          'os dois percorreram a mesma distância',
+          'não dá para saber',
+        ],
+        0,
+        'Sara percorreu 6 km, que é uma distância maior que 4 km.',
+        [
+          'Pedro percorreu 4 km, que é menos que 6 km.',
+          'As distâncias são diferentes.',
+          'As duas distâncias foram informadas e podem ser comparadas.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_me_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildMeasurementQuestion),
+    ...[
+      [
+        '001',
+        'O que acontece com retas paralelas?',
+        ['não se cruzam', 'se cruzam', 'formam círculo', 'têm ponta'],
+        0,
+        'Retas paralelas seguem lado a lado sem se encontrar.',
+        [
+          'Retas que se cruzam não são paralelas.',
+          'Um círculo não é formado por retas.',
+          'Uma reta não é definida por ter uma ponta.',
+        ],
+      ],
+      [
+        '002',
+        'Qual exemplo mostra retas paralelas?',
+        ['trilhos retos de trem', 'tesoura aberta', 'letra X', 'cruzamento'],
+        0,
+        'Trilhos retos seguem lado a lado e não se cruzam.',
+        [
+          'As partes da tesoura aberta se encontram.',
+          'As linhas da letra X se cruzam.',
+          'Em um cruzamento, as ruas se encontram.',
+        ],
+      ],
+      [
+        '003',
+        'Duas retas se cruzam em um ponto. Elas são paralelas?',
+        ['não', 'sim', 'sempre', 'somente se forem curtas'],
+        0,
+        'Retas paralelas não se cruzam.',
+        [
+          'Cruzar impede que as retas sejam paralelas.',
+          'Ser paralelo depende de não se cruzar.',
+          'O tamanho não muda o fato de as retas se cruzarem.',
+        ],
+      ],
+      [
+        '004',
+        'Qual par de lados de uma folha retangular é paralelo?',
+        [
+          'lados de cima e de baixo',
+          'lados que se encontram no canto',
+          'diagonal e lado',
+          'nenhum',
+        ],
+        0,
+        'Os lados de cima e de baixo seguem lado a lado sem se encontrar.',
+        [
+          'Os lados que formam um canto se encontram.',
+          'A diagonal e o lado não seguem lado a lado.',
+          'O retângulo tem lados paralelos.',
+        ],
+      ],
+      [
+        '005',
+        'Retas paralelas mantêm qual característica?',
+        ['mesma distância', 'mesma cor', 'mesmo tamanho', 'mesma ponta'],
+        0,
+        'A distância entre retas paralelas permanece igual.',
+        [
+          'A cor não define uma reta.',
+          'O tamanho não define o paralelismo.',
+          'Retas não precisam ter uma ponta.',
+        ],
+      ],
+      [
+        '006',
+        'A letra X tem retas paralelas?',
+        ['não', 'sim', 'duas', 'quatro'],
+        0,
+        'As duas retas principais da letra X se cruzam.',
+        [
+          'Retas paralelas não se encontram.',
+          'A quantidade de retas não muda o cruzamento.',
+          'A letra X tem duas retas principais.',
+        ],
+      ],
+      [
+        '007',
+        'Qual desenho pode representar retas paralelas?',
+        [
+          'duas linhas horizontais lado a lado',
+          'duas linhas em X',
+          'uma linha curva',
+          'um círculo',
+        ],
+        0,
+        'Duas linhas que não se cruzam e mantêm a mesma distância são paralelas.',
+        [
+          'As linhas em X se cruzam.',
+          'Uma linha curva não é uma reta.',
+          'Um círculo não é formado por retas.',
+        ],
+      ],
+      [
+        '008',
+        'Os lados esquerdo e direito de uma porta retangular são como?',
+        ['paralelos', 'cruzados', 'curvos', 'circulares'],
+        0,
+        'Eles seguem lado a lado e não se encontram.',
+        [
+          'Os lados não se cruzam.',
+          'Os lados da porta são retos.',
+          'Eles não formam um círculo.',
+        ],
+      ],
+      [
+        '009',
+        'Duas ruas retas nunca se encontram. Como podem ser chamadas?',
+        ['paralelas', 'cruzadas', 'circulares', 'triangulares'],
+        0,
+        'Retas que não se encontram e mantêm distância podem ser paralelas.',
+        [
+          'Ruas cruzadas se encontram.',
+          'Uma rua não precisa ser um círculo.',
+          'Triangular não descreve duas retas que não se encontram.',
+        ],
+      ],
+      [
+        '010',
+        'Qual figura tem pares de lados paralelos?',
+        ['retângulo', 'triângulo', 'círculo', 'letra X'],
+        0,
+        'Os lados opostos do retângulo são paralelos.',
+        [
+          'Os lados do triângulo se encontram.',
+          'O círculo não tem lados retos.',
+          'As retas da letra X se cruzam.',
+        ],
+      ],
+      [
+        '011',
+        'Se duas retas têm a mesma distância entre si, elas podem ser?',
+        ['paralelas', 'cruzadas', 'curvas', 'pontos'],
+        0,
+        'Manter a mesma distância é uma característica de retas paralelas.',
+        [
+          'Retas cruzadas se encontram.',
+          'Retas curvas não são retas.',
+          'Pontos não são retas.',
+        ],
+      ],
+      [
+        '012',
+        'Qual objeto pode mostrar retas paralelas?',
+        ['caderno pautado', 'bola', 'relógio redondo', 'cone'],
+        0,
+        'As linhas da pauta seguem lado a lado e podem ser paralelas.',
+        [
+          'A bola tem superfície curva.',
+          'Um relógio redondo lembra um círculo.',
+          'Um cone não mostra duas retas paralelas.',
+        ],
+      ],
+      [
+        '013',
+        'Linhas que se encontram no meio são?',
+        ['não paralelas', 'paralelas', 'iguais', 'circulares'],
+        0,
+        'Ao se encontrarem, as linhas deixam de ser paralelas.',
+        [
+          'Retas paralelas não se encontram.',
+          'Linhas iguais ainda podem ter direções diferentes.',
+          'Linhas retas não formam um círculo.',
+        ],
+      ],
+      [
+        '014',
+        'Os lados de cima e de baixo de um quadro retangular são?',
+        ['paralelos', 'cruzados', 'curvos', 'pontos'],
+        0,
+        'Eles mantêm distância e não se cruzam.',
+        [
+          'Os lados não se encontram.',
+          'Os lados do quadro são retos.',
+          'Os lados são segmentos, não pontos.',
+        ],
+      ],
+      [
+        '015',
+        'Qual dupla não mostra retas paralelas?',
+        [
+          'linhas de uma tesoura aberta',
+          'linhas de um caderno',
+          'trilhos retos',
+          'lados opostos de um retângulo',
+        ],
+        0,
+        'As linhas da tesoura aberta se encontram.',
+        [
+          'As pautas de um caderno podem ser paralelas.',
+          'Trilhos retos seguem lado a lado.',
+          'Lados opostos de um retângulo não se cruzam.',
+        ],
+      ],
+      [
+        '016',
+        'Retas paralelas podem se encontrar se forem prolongadas?',
+        ['não', 'sim', 'sempre', 'somente no final'],
+        0,
+        'Mesmo prolongadas, retas paralelas não se cruzam.',
+        [
+          'Encontrar-se seria um cruzamento.',
+          'Retas paralelas nunca se encontram.',
+          'Retas não têm um ponto final que mude o paralelismo.',
+        ],
+      ],
+      [
+        '017',
+        'Qual afirmação é verdadeira?',
+        [
+          'paralelas não se cruzam',
+          'paralelas formam X',
+          'paralelas são curvas',
+          'paralelas têm uma ponta',
+        ],
+        0,
+        'Retas paralelas não se cruzam.',
+        [
+          'A letra X mostra um cruzamento.',
+          'Retas paralelas são retas, não curvas.',
+          'Ter uma ponta não define uma reta paralela.',
+        ],
+      ],
+      [
+        '018',
+        'Uma grade tem barras verticais lado a lado que não se encontram. Elas são?',
+        ['paralelas', 'cruzadas', 'redondas', 'triangulares'],
+        0,
+        'As barras mantêm distância e não se cruzam.',
+        [
+          'Não há encontro entre as barras.',
+          'As barras são retas, não redondas.',
+          'As barras não formam triângulos.',
+        ],
+      ],
+      [
+        '019',
+        'Em um retângulo, quais lados são paralelos?',
+        ['os lados opostos', 'lados vizinhos', 'todos se cruzam', 'nenhum'],
+        0,
+        'Lados opostos seguem lado a lado e não se encontram.',
+        [
+          'Lados vizinhos se encontram no canto.',
+          'Somente lados vizinhos se encontram.',
+          'Há dois pares de lados opostos paralelos.',
+        ],
+      ],
+      [
+        '020',
+        'Por que trilhos retos podem ser paralelos?',
+        [
+          'não se cruzam e mantêm distância',
+          'formam círculo',
+          'têm uma ponta',
+          'se encontram no meio',
+        ],
+        0,
+        'Não se cruzar e manter distância são características de retas paralelas.',
+        [
+          'Trilhos retos não formam um círculo.',
+          'Ter uma ponta não define o paralelismo.',
+          'Retas paralelas não se encontram.',
+        ],
+      ],
+    ]
+      .map(function ([
+        number,
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrong,
+      ]) {
+        return {
+          id: `mat_t2_rp_${number}`,
+          question,
+          options,
+          correctIndex,
+          explanation,
+          wrong,
+        };
+      })
+      .map(buildParallelLinesQuestion),
   ],
 };

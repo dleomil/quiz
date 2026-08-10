@@ -109,11 +109,17 @@ function validateQuestion(question, sourceName) {
   if (!question.sourceRef || typeof question.sourceRef !== 'object') {
     errors.push('[' + label + '] content-v1 exige sourceRef');
   } else {
-    ['referenceId', 'section', 'page'].forEach(function (field) {
+    ['referenceId', 'section'].forEach(function (field) {
       if (!isNonEmptyString(question.sourceRef[field])) {
         errors.push('[' + label + '] sourceRef exige ' + field);
       }
     });
+    if (
+      !isNonEmptyString(question.sourceRef.topic) &&
+      !isNonEmptyString(question.sourceRef.page)
+    ) {
+      errors.push('[' + label + '] sourceRef exige topic (ou page legado)');
+    }
   }
 
   if (
