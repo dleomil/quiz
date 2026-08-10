@@ -123,6 +123,47 @@ function buildPortugueseVerbsIQuestion(question) {
   };
 }
 
+function buildPortuguesePronounsQuestion(question) {
+  const { wrong, ...content } = question;
+  const targetCorrectIndex =
+    (Number(question.id.slice(-3)) - 1) % question.options.length;
+  const optionOffset =
+    (targetCorrectIndex - question.correctIndex + question.options.length) %
+    question.options.length;
+  const options = new Array(question.options.length);
+  const wrongExplanations = {};
+  let wrongIndex = 0;
+
+  question.options.forEach(function (option, index) {
+    const rotatedIndex = (index + optionOffset) % question.options.length;
+    options[rotatedIndex] = option;
+    if (index !== question.correctIndex) {
+      wrongExplanations[rotatedIndex] = wrong[wrongIndex];
+      wrongIndex += 1;
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    contentSetId: '2026-t2-v1',
+    subject: 'portugues',
+    topic: 'pronomes_pessoais_tratamento',
+    topicName: 'Pronomes Pessoais e de Tratamento',
+    skill: 'usar-pronomes-pessoais-e-de-tratamento',
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Português',
+      page: '9',
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+    ...content,
+    options,
+    correctIndex: targetCorrectIndex,
+    wrongExplanations,
+  };
+}
+
 window.QuestionsDataSources.portugues = {
   subjectMeta: {
     name: 'Português',
@@ -185,6 +226,10 @@ window.QuestionsDataSources.portugues = {
     verbos_i: {
       name: 'Verbos I',
       icon: '🏃',
+    },
+    pronomes_pessoais_tratamento: {
+      name: 'Pronomes Pessoais e de Tratamento',
+      icon: '👥',
     },
   },
   questions: [
@@ -3196,5 +3241,270 @@ window.QuestionsDataSources.portugues = {
         ],
       },
     ].map(buildPortugueseVerbsIQuestion),
+    ...[
+      {
+        id: 'pt_t2_pron_001',
+        question: 'Marina chegou cedo. Qual palavra pode substituir Marina?',
+        options: ['ela', 'ele', 'eles', 'nós'],
+        correctIndex: 0,
+        explanation: 'Ela substitui o nome de uma menina.',
+        wrong: [
+          'O pronome ele é usado para um menino.',
+          'O pronome eles é usado para mais de uma pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_002',
+        question: 'Pedro trouxe um livro. Qual palavra pode substituir Pedro?',
+        options: ['ele', 'ela', 'elas', 'nós'],
+        correctIndex: 0,
+        explanation: 'Ele substitui o nome de um menino.',
+        wrong: [
+          'O pronome ela é usado para uma menina.',
+          'O pronome elas é usado para mais de uma menina.',
+          'Nós indica um grupo que inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_003',
+        question:
+          'Ana e Bia brincam juntas. Qual palavra pode substituir Ana e Bia?',
+        options: ['elas', 'eles', 'ela', 'eu'],
+        correctIndex: 0,
+        explanation: 'Elas substituem duas meninas.',
+        wrong: [
+          'O pronome eles é usado para um grupo masculino ou misto.',
+          'Ela indica uma pessoa.',
+          'Eu indica quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_004',
+        question:
+          'João e Caio jogam bola. Qual palavra pode substituir João e Caio?',
+        options: ['eles', 'elas', 'ele', 'você'],
+        correctIndex: 0,
+        explanation: 'Eles substituem dois meninos.',
+        wrong: [
+          'O pronome elas é usado para um grupo de meninas.',
+          'Ele indica uma pessoa.',
+          'Você indica a pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_005',
+        question: 'Eu conto uma história. Quem está falando na frase?',
+        options: ['eu', 'você', 'ele', 'elas'],
+        correctIndex: 0,
+        explanation: 'Eu indica a pessoa que fala.',
+        wrong: [
+          'Você indica a pessoa com quem se fala.',
+          'Ele indica outra pessoa.',
+          'O pronome elas indica mais de uma menina.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_006',
+        question:
+          'Eu e Luiza fazemos a tarefa. Qual palavra pode substituir eu e Luiza?',
+        options: ['nós', 'eles', 'elas', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui quem fala e outra pessoa.',
+        wrong: [
+          'Eles não incluem quem fala.',
+          'Elas não incluem quem fala.',
+          'Você indica uma pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_007',
+        question: 'Ao falar com Pedro, eu digo: “__ trouxe seu caderno?”',
+        options: ['você', 'eu', 'ele', 'nós'],
+        correctIndex: 0,
+        explanation: 'Você indica a pessoa com quem se fala.',
+        wrong: [
+          'Eu indica quem fala.',
+          'Ele fala de outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_008',
+        question: 'Eu e meus amigos vamos ao parque. Quem vai ao parque?',
+        options: ['nós', 'eles', 'ela', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui a pessoa que fala e seus amigos.',
+        wrong: [
+          'Eles não incluem quem fala.',
+          'Ela indica uma pessoa.',
+          'Você indica a pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_009',
+        question:
+          'Ao falar diretamente com uma colega, qual pronome pode ser usado?',
+        options: ['você', 'eu', 'ele', 'eles'],
+        correctIndex: 0,
+        explanation: 'Você indica a pessoa com quem se conversa.',
+        wrong: [
+          'Eu indica quem fala.',
+          'Ele fala de um menino.',
+          'Eles indicam mais de uma pessoa.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_010',
+        question: '“__ vamos ler juntos”, diz Ana para Bia.',
+        options: ['nós', 'elas', 'ele', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui Ana, que fala, e Bia.',
+        wrong: [
+          'Elas falam de duas meninas sem incluir quem fala.',
+          'Ele indica um menino.',
+          'Você indica apenas Bia.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_011',
+        question: 'Ao falar com a diretora, uma forma respeitosa é:',
+        options: ['senhora', 'ela', 'nós', 'eles'],
+        correctIndex: 0,
+        explanation:
+          'Senhora é uma forma respeitosa para falar com uma mulher adulta.',
+        wrong: [
+          'Ela fala sobre a diretora, não com ela.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles indicam várias pessoas.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_012',
+        question: 'Ao falar com um avô, uma forma respeitosa é:',
+        options: ['senhor', 'ele', 'eu', 'elas'],
+        correctIndex: 0,
+        explanation:
+          'Senhor é uma forma respeitosa para falar com um homem adulto.',
+        wrong: [
+          'Ele fala sobre o avô, não com ele.',
+          'Eu indica quem fala.',
+          'Elas indicam várias mulheres.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_013',
+        question: 'Complete: “__ precisa de ajuda, professora?”',
+        options: ['A senhora', 'Ela', 'Nós', 'Eles'],
+        correctIndex: 0,
+        explanation:
+          'A senhora é uma forma respeitosa para falar diretamente com a professora.',
+        wrong: [
+          'Ela fala sobre outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles indicam várias pessoas.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_014',
+        question: 'Complete: “Bom dia, __ Carlos”, disse o aluno.',
+        options: ['senhor', 'ele', 'nós', 'vocês'],
+        correctIndex: 0,
+        explanation:
+          'Senhor é usado de forma respeitosa antes do nome de um homem adulto.',
+        wrong: [
+          'Ele fala sobre outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Vocês indicam mais de uma pessoa.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_015',
+        question:
+          'Qual frase fala diretamente com uma mulher adulta de modo respeitoso?',
+        options: [
+          'A senhora chegou cedo.',
+          'Ela chegou cedo.',
+          'Elas chegaram cedo.',
+          'Nós chegamos cedo.',
+        ],
+        correctIndex: 0,
+        explanation: 'A senhora fala diretamente com a pessoa.',
+        wrong: [
+          'Ela: a frase fala sobre a pessoa.',
+          'Elas: a frase fala sobre várias pessoas.',
+          'Nós: a frase inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_016',
+        question: 'Qual frase fala sobre Pedro, e não diretamente com ele?',
+        options: [
+          'Ele chegou cedo.',
+          'Você chegou cedo.',
+          'Senhor, chegou cedo?',
+          'Nós chegamos cedo.',
+        ],
+        correctIndex: 0,
+        explanation: 'Ele fala sobre Pedro.',
+        wrong: [
+          'Você fala diretamente com Pedro.',
+          'Senhor fala diretamente com ele.',
+          'Nós: a frase inclui quem fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_017',
+        question:
+          'Maria e eu fazemos o trabalho. Qual pronome pode substituir Maria e eu?',
+        options: ['nós', 'elas', 'ela', 'você'],
+        correctIndex: 0,
+        explanation: 'O pronome nós inclui quem fala e Maria.',
+        wrong: [
+          'Elas não incluem quem fala.',
+          'Ela indica uma pessoa.',
+          'Você indica a pessoa com quem se fala.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_018',
+        question:
+          'Complete: “__ podem entrar”, disse a professora a dois alunos.',
+        options: ['Vocês', 'Nós', 'Eles', 'Ela'],
+        correctIndex: 0,
+        explanation: 'O pronome vocês indica as pessoas com quem se fala.',
+        wrong: [
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles se referem aos alunos sem falar diretamente com eles.',
+          'Ela indica uma pessoa.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_019',
+        question: 'Complete a fala dirigida à diretora: “__ gostaria de água?”',
+        options: ['A senhora', 'Ela', 'Nós', 'Eles'],
+        correctIndex: 0,
+        explanation:
+          'A senhora fala diretamente, com respeito, com uma mulher adulta.',
+        wrong: [
+          'Ela fala sobre outra pessoa.',
+          'Nós indica um grupo que inclui quem fala.',
+          'Eles se referem a várias pessoas.',
+        ],
+      },
+      {
+        id: 'pt_t2_pron_020',
+        question: 'Qual pronome pode substituir “o menino e a menina”?',
+        options: ['eles', 'elas', 'ele', 'ela'],
+        correctIndex: 0,
+        explanation:
+          'O pronome eles pode substituir um grupo com menino e menina.',
+        wrong: [
+          'O pronome elas é usado apenas para um grupo de meninas.',
+          'Ele indica uma pessoa.',
+          'Ela indica uma pessoa.',
+        ],
+      },
+    ].map(buildPortuguesePronounsQuestion),
   ],
 };
