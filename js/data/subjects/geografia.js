@@ -1,5 +1,376 @@
 window.QuestionsDataSources = window.QuestionsDataSources || {};
 
+const geographyT2TopicConfig = {
+  cartografia: {
+    name: 'O que é Cartografia?',
+    skill: 'compreender-fundamentos-da-cartografia',
+    page: '53',
+  },
+};
+
+function normalizeGeographyFeedback(feedback) {
+  const trimmedFeedback = feedback.trim();
+  const capitalizedFeedback =
+    trimmedFeedback.charAt(0).toUpperCase() + trimmedFeedback.slice(1);
+
+  return /[.!?]$/.test(capitalizedFeedback)
+    ? capitalizedFeedback
+    : `${capitalizedFeedback}.`;
+}
+
+function buildGeographyT2Question(specification) {
+  const [id, topic, question, correct, wrong, explanation, wrongFeedback] =
+    specification;
+  const config = geographyT2TopicConfig[topic];
+  const targetCorrectIndex = (Number(id.slice(-3)) - 1) % 4;
+  const baseOptions = [correct, ...wrong];
+  const options = new Array(4);
+  const wrongExplanations = {};
+
+  baseOptions.forEach(function (option, index) {
+    const rotatedIndex = (index + targetCorrectIndex) % 4;
+    options[rotatedIndex] = option;
+    if (index > 0) {
+      wrongExplanations[rotatedIndex] = normalizeGeographyFeedback(
+        wrongFeedback[index - 1],
+      );
+    }
+  });
+
+  return {
+    schemaVersion: 'content-v1',
+    id,
+    contentSetId: '2026-t2-v1',
+    subject: 'geografia',
+    topic,
+    topicName: config.name,
+    question,
+    options,
+    correctIndex: targetCorrectIndex,
+    explanation,
+    wrongExplanations,
+    skill: config.skill,
+    sourceRef: {
+      referenceId: 'escola-2026-t2',
+      section: 'Geografia',
+      page: config.page,
+    },
+    reviewStatus: 'pedagogical-approved',
+    version: 1,
+  };
+}
+
+const geographyT2QuestionSpecs = [
+  [
+    'GEO-T2-CAR-001',
+    'cartografia',
+    'O que a Cartografia estuda e produz?',
+    'representações de lugares e espaços',
+    [
+      'receitas de alimentos',
+      'histórias de personagens',
+      'sons de instrumentos',
+    ],
+    'A Cartografia cria e estuda representações do espaço, como mapas.',
+    [
+      'pertencem à culinária',
+      'pertencem à literatura',
+      'são estudados em música.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-002',
+    'cartografia',
+    'Qual é uma função de um mapa?',
+    'ajudar a localizar e compreender lugares',
+    [
+      'substituir todos os lugares reais',
+      'mostrar apenas animais',
+      'servir somente como decoração',
+    ],
+    'Mapas organizam informações que ajudam a conhecer e localizar lugares.',
+    [
+      'o mapa representa o lugar, mas não é o lugar',
+      'mapas podem mostrar muitos tipos de informação',
+      'mapas têm função informativa.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-003',
+    'cartografia',
+    'Como se chama o profissional que elabora mapas?',
+    'cartógrafo',
+    ['cozinheiro', 'músico', 'veterinário'],
+    'O cartógrafo trabalha com a produção e o estudo de mapas.',
+    ['prepara alimentos', 'trabalha com música', 'cuida da saúde dos animais.'],
+  ],
+  [
+    'GEO-T2-CAR-004',
+    'cartografia',
+    'Em muitos mapas, o espaço é representado como se fosse observado:',
+    'de cima',
+    [
+      'somente debaixo da terra',
+      'de olhos fechados',
+      'sempre de dentro de um veículo',
+    ],
+    'A visão de cima ajuda a organizar ruas, construções e outros elementos no mapa.',
+    [
+      'não é a visão usada na maioria dos mapas',
+      'é preciso observar ou obter dados',
+      'não é o único ponto de vista.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-005',
+    'cartografia',
+    'Por que uma cidade cabe em uma folha de mapa?',
+    'porque é representada em tamanho reduzido',
+    [
+      'porque a cidade encolhe',
+      'porque só uma rua existe',
+      'porque o papel vira uma cidade',
+    ],
+    'O mapa reduz o espaço real para que ele possa ser representado.',
+    [
+      'o lugar real mantém seu tamanho',
+      'cidades possuem muitos elementos',
+      'o mapa apenas representa o lugar.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-006',
+    'cartografia',
+    'Qual elemento do mapa informa o assunto ou o lugar representado?',
+    'título',
+    ['moldura', 'dobra', 'tipo de papel'],
+    'O título indica o tema ou o espaço mostrado no mapa.',
+    [
+      'apenas contorna a imagem',
+      'não explica o conteúdo',
+      'não informa o assunto.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-007',
+    'cartografia',
+    'Para que serve a legenda de um mapa?',
+    'explicar cores e símbolos',
+    [
+      'aumentar o tamanho do lugar',
+      'apagar as ruas',
+      'escolher o nome da cidade',
+    ],
+    'A legenda mostra o significado dos sinais usados no mapa.',
+    [
+      'a legenda não muda o lugar',
+      'ela ajuda a ler os elementos',
+      'os nomes vêm dos lugares representados.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-008',
+    'cartografia',
+    'Por que os mapas usam símbolos?',
+    'para representar elementos de forma organizada',
+    [
+      'para esconder toda informação',
+      'para transformar ruas em desenhos reais',
+      'para dispensar qualquer explicação',
+    ],
+    'Símbolos permitem mostrar lugares e informações de maneira simples.',
+    [
+      'símbolos comunicam informações',
+      'o símbolo não altera o espaço real',
+      'a legenda costuma explicar os símbolos.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-009',
+    'cartografia',
+    'Qual elemento ajuda a identificar direções em um mapa?',
+    'rosa dos ventos',
+    ['lista de compras', 'calendário', 'régua escolar sem marcações'],
+    'A rosa dos ventos apresenta direções como norte, sul, leste e oeste.',
+    ['organiza compras', 'organiza datas', 'não informa direções.'],
+  ],
+  [
+    'GEO-T2-CAR-010',
+    'cartografia',
+    'Norte, sul, leste e oeste são chamados de:',
+    'pontos cardeais',
+    ['tipos de papel', 'nomes de oceanos', 'estações do ano'],
+    'Os quatro pontos cardeais ajudam na orientação.',
+    [
+      'não são materiais',
+      'têm outros nomes',
+      'são verão, outono, inverno e primavera.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-011',
+    'cartografia',
+    'Um mapa é exatamente igual ao lugar real?',
+    'não, ele é uma representação',
+    [
+      'sim, porque tem o mesmo tamanho',
+      'sim, porque contém tudo',
+      'não, porque não apresenta informação alguma',
+    ],
+    'O mapa seleciona e organiza informações sobre um espaço real.',
+    [
+      'mapas geralmente reduzem o espaço',
+      'nenhum mapa mostra todos os detalhes',
+      'mapas comunicam informações.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-012',
+    'cartografia',
+    'O que a escala de um mapa ajuda a compreender?',
+    'a relação entre a medida no mapa e no espaço real',
+    [
+      'o significado das cores',
+      'o nome do autor de um livro',
+      'a previsão do tempo',
+    ],
+    'A escala indica quanto o espaço real foi reduzido na representação.',
+    [
+      'são explicadas pela legenda',
+      'não é função da escala',
+      'exige informações meteorológicas.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-013',
+    'cartografia',
+    'Se duas cores aparecem em um mapa, onde devemos verificar o significado delas?',
+    'na legenda',
+    ['apenas no título', 'na borda da folha', 'em qualquer outro mapa'],
+    'A legenda explica o significado das cores usadas naquele mapa.',
+    [
+      'informa o assunto, não todos os códigos',
+      'não explica cores',
+      'cada mapa pode usar convenções diferentes.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-014',
+    'cartografia',
+    'O que pode ser representado por mapas?',
+    'um bairro, uma cidade, um país ou o mundo',
+    [
+      'apenas países',
+      'somente o planeta inteiro',
+      'apenas o interior de uma casa',
+    ],
+    'Mapas podem representar espaços de diferentes tamanhos.',
+    [
+      'bairros e cidades também podem aparecer',
+      'existem mapas de áreas menores',
+      'costuma ser melhor detalhado por uma planta.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-015',
+    'cartografia',
+    'Para procurar ruas e planejar um caminho pela cidade, é útil consultar:',
+    'um mapa de ruas',
+    ['uma partitura', 'uma receita', 'um dicionário sem mapas'],
+    'O mapa de ruas mostra vias e ajuda a planejar deslocamentos.',
+    [
+      'registra música',
+      'orienta um preparo',
+      'explica palavras, mas não substitui o mapa de ruas.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-016',
+    'cartografia',
+    'Por que existem mapas com assuntos diferentes?',
+    'porque cada mapa seleciona informações conforme seu objetivo',
+    [
+      'porque todos os lugares mudam de nome',
+      'porque mapas não podem mostrar locais',
+      'porque cada folha aceita uma única cor',
+    ],
+    'Um mapa pode destacar ruas, relevo, população ou outro tema.',
+    [
+      'não precisam mudar',
+      'mapas representam espaços',
+      'mapas podem usar várias cores.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-017',
+    'cartografia',
+    'Um mapa que destaca apenas um assunto, como a distribuição das chuvas, é chamado de:',
+    'mapa temático',
+    ['planta de uma casa', 'lista alfabética', 'retrato'],
+    'O mapa temático representa a distribuição de um tema no espaço.',
+    [
+      'detalha uma construção ou área pequena',
+      'organiza palavras',
+      'mostra uma pessoa ou objeto.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-018',
+    'cartografia',
+    'Por que a data de um mapa pode ser importante?',
+    'porque algumas informações mudam com o tempo',
+    [
+      'porque muda os pontos cardeais',
+      'porque apaga a legenda',
+      'porque aumenta o tamanho do papel',
+    ],
+    'Ruas, limites e outros dados podem mudar, por isso a data ajuda a avaliar a informação.',
+    [
+      'não mudam por causa da data',
+      'continua necessária',
+      'a data não altera seu tamanho.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-019',
+    'cartografia',
+    'Qual frase diferencia corretamente mapa e território?',
+    'o mapa representa o território',
+    [
+      'o mapa é o próprio território',
+      'o território cabe dentro da folha',
+      'mapa e território sempre têm o mesmo tamanho',
+    ],
+    'O território é o espaço real, enquanto o mapa é uma representação dele.',
+    [
+      'são coisas diferentes',
+      'apenas sua representação cabe',
+      'mapas usam redução.',
+    ],
+  ],
+  [
+    'GEO-T2-CAR-020',
+    'cartografia',
+    'Antes de usar um mapa, qual atitude ajuda a entendê-lo?',
+    'ler o título e a legenda',
+    [
+      'ignorar todos os símbolos',
+      'dobrar sobre as informações',
+      'escolher uma cor sem verificar seu significado',
+    ],
+    'Título e legenda apresentam o assunto e os códigos necessários para a leitura.',
+    [
+      'símbolos carregam informações',
+      'pode esconder dados',
+      'o significado deve ser conferido na legenda.',
+    ],
+  ],
+];
+
+const geographyT2Questions = geographyT2QuestionSpecs.map(
+  buildGeographyT2Question,
+);
+
 window.QuestionsDataSources.geografia = {
   subjectMeta: {
     name: 'Geografia',
@@ -7,6 +378,10 @@ window.QuestionsDataSources.geografia = {
     available: true,
   },
   topicMeta: {
+    cartografia: {
+      name: 'O que é Cartografia?',
+      icon: '🧭',
+    },
     o_que_e_lixo_rejeito_residuo: {
       name: 'O que é lixo, rejeito e resíduo',
       icon: '🗑️',
@@ -33,6 +408,7 @@ window.QuestionsDataSources.geografia = {
     },
   },
   questions: [
+    ...geographyT2Questions,
     {
       id: 'geo_lr_001',
       subject: 'geografia',
