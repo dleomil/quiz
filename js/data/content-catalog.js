@@ -21,7 +21,7 @@ const ContentCatalog = (function () {
       version: 1,
       status: 'published',
       grade: '3-ano',
-      displayName: '1o trimestre de 2026',
+      displayName: '1º trimestre de 2026',
       isCurrent: false,
     },
     {
@@ -32,7 +32,7 @@ const ContentCatalog = (function () {
       version: 1,
       status: 'published',
       grade: '3-ano',
-      displayName: '2o trimestre de 2026',
+      displayName: '2º trimestre de 2026',
       isCurrent: true,
     },
   ];
