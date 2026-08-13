@@ -69,9 +69,12 @@ async function run() {
       publishedContentSets: QuestionsDB.getContentSets().map(
         (contentSet) => contentSet.contentSetId,
       ),
-      hasContentSetSelector: Boolean(
-        document.querySelector('#content-set-select'),
-      ),
+      contentSetOptions: [
+        ...document.querySelectorAll('.content-set-option'),
+      ].map((option) => ({
+        id: option.dataset.contentSet,
+        selected: option.getAttribute('aria-pressed'),
+      })),
       draftQuestionIds: QuestionsDB.getByTopic(
         'sistema_monetario',
         '2026-t2-v1',
@@ -254,7 +257,10 @@ async function run() {
       '2026-t1-v1',
       '2026-t2-v1',
     ]);
-    assert.strictEqual(legacySnapshot.hasContentSetSelector, true);
+    assert.deepStrictEqual(legacySnapshot.contentSetOptions, [
+      { id: '2026-t1-v1', selected: 'false' },
+      { id: '2026-t2-v1', selected: 'true' },
+    ]);
     assert.strictEqual(legacySnapshot.draftQuestionIds.length, 20);
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_001'));
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_020'));

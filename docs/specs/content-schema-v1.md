@@ -42,7 +42,7 @@ O catalogo declara quais acervos podem ser apresentados ao aluno. O seletor de p
   "version": 1,
   "status": "published",
   "grade": "3-ano",
-  "displayName": "2o trimestre de 2026",
+  "displayName": "2º trimestre de 2026",
   "sourceRef": {
     "referenceId": "escola-2026-t2",
     "section": "Matematica",

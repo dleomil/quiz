@@ -238,6 +238,72 @@ body {
   color: var(--muted);
   margin-bottom: 28px;
 }
+.content-set-picker {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  padding: 18px;
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface-subtle);
+  text-align: left;
+}
+.home-hero .content-set-title {
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-align: center;
+}
+.content-set-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.content-set-option {
+  min-height: 82px;
+  padding: 14px 16px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s,
+    transform 0.15s;
+}
+.content-set-option:hover {
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+.content-set-option:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
+.content-set-option.selected {
+  border-color: var(--primary);
+  background: var(--primary-bg);
+  box-shadow: 0 5px 14px rgba(79, 70, 229, 0.16);
+}
+.content-set-option-name,
+.content-set-option-state {
+  display: block;
+}
+.content-set-option-name {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.content-set-option-state {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.content-set-option.selected .content-set-option-name,
+.content-set-option.selected .content-set-option-state {
+  color: var(--primary);
+}
 
 .topic-section-title {
   font-size: 1rem;
@@ -916,6 +982,21 @@ body {
   gap: 12px;
   margin-bottom: 20px;
 }
+.history-period-filter {
+  display: grid;
+  grid-template-columns: minmax(190px, auto) minmax(220px, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+  border: 2px solid var(--primary-light);
+  border-radius: 14px;
+  background: var(--primary-bg);
+}
+.history-period-filter label {
+  color: var(--text);
+  font-weight: 800;
+}
 .history-search,
 .history-select {
   width: 100%;
@@ -937,6 +1018,16 @@ body {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 600;
+}
+.session-period {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--primary-bg);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 800;
 }
 .chart-wrap {
   position: relative;
@@ -1059,7 +1150,7 @@ body {
   }
   .header-inner {
     gap: 8px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   .header-logo {
     font-size: 1.1rem;
@@ -1071,6 +1162,17 @@ body {
   }
   .home-hero h2 {
     font-size: 1.5rem;
+  }
+  .content-set-picker {
+    padding: 14px;
+  }
+  .content-set-options,
+  .history-period-filter {
+    grid-template-columns: 1fr;
+  }
+  .content-set-option {
+    min-height: 72px;
+    text-align: center;
   }
   .question-text {
     font-size: 1.05rem;
@@ -1110,7 +1212,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 581px) and (max-width: 768px) {
   .subject-grid {
     grid-template-columns: repeat(3, 1fr);
   }
