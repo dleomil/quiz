@@ -88,7 +88,9 @@ const HistoryView = (function () {
   }
 
   function render(el) {
-    var history = Store.get().history;
+    var state = Store.get();
+    var history = state.history;
+    var selectedContentSet = state.selectedContentSet;
 
     if (history.length === 0) {
       el.innerHTML =
@@ -106,7 +108,9 @@ const HistoryView = (function () {
         return (
           '<option value="' +
           contentSet.contentSetId +
-          '">' +
+          '"' +
+          (contentSet.contentSetId === selectedContentSet ? ' selected' : '') +
+          '>' +
           contentSet.displayName +
           '</option>'
         );
@@ -132,13 +136,14 @@ const HistoryView = (function () {
       '<button class="btn btn-danger btn-sm" id="btn-clear-history" aria-label="Limpar histórico">🗑️ Limpar</button>' +
       '</div>' +
       '</div>' +
+      (contentSets.length > 1
+        ? '<div class="history-period-filter"><label for="filter-content-set">📚 Qual histórico você quer ver?</label>' +
+          '<select id="filter-content-set" class="history-select"><option value="">Todos os trimestres</option>' +
+          contentSetsHTML +
+          '</select></div>'
+        : '') +
       '<div class="history-filters">' +
       '<input type="search" id="history-search" class="history-search" placeholder="🔍 Buscar..." aria-label="Buscar"/>' +
-      (contentSets.length > 1
-        ? '<select id="filter-content-set" class="history-select" aria-label="Período"><option value="">Todos os períodos</option>' +
-          contentSetsHTML +
-          '</select>'
-        : '') +
       '<select id="filter-subject" class="history-select" aria-label="Matéria"><option value="">Todas as matérias</option>' +
       subjectsHTML +
       '</select>' +
@@ -320,6 +325,9 @@ const HistoryView = (function () {
             item.pct +
             '%</div>' +
             '<div class="session-info">' +
+            '<div class="session-period">' +
+            extractContentSetLabel(item) +
+            '</div>' +
             '<div class="session-date">' +
             (item.date || '') +
             ' · ' +

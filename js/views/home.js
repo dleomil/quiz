@@ -7,16 +7,26 @@ const HomeView = (function () {
     const selectedContentSet = Store.get().selectedContentSet;
     const contentSetSelector =
       contentSets.length > 1
-        ? `<label class="content-set-picker">O que você quer estudar?
-            <select id="content-set-select" aria-label="Período de estudo">
+        ? `<section class="content-set-picker" aria-labelledby="content-set-title">
+            <p class="content-set-title" id="content-set-title">📅 Qual trimestre você quer estudar?</p>
+            <div class="content-set-options" role="group" aria-label="Escolha o trimestre">
               ${contentSets
-                .map(
-                  (contentSet) =>
-                    `<option value="${contentSet.contentSetId}" ${contentSet.contentSetId === selectedContentSet ? 'selected' : ''}>${contentSet.displayName}</option>`,
-                )
+                .map((contentSet) => {
+                  const isSelected =
+                    contentSet.contentSetId === selectedContentSet;
+                  return `<button
+                    type="button"
+                    class="content-set-option${isSelected ? ' selected' : ''}"
+                    data-content-set="${contentSet.contentSetId}"
+                    aria-pressed="${isSelected}"
+                  >
+                    <span class="content-set-option-name">${contentSet.displayName}</span>
+                    <span class="content-set-option-state">${isSelected ? '✓ Estudando agora' : 'Escolher este trimestre'}</span>
+                  </button>`;
+                })
                 .join('')}
-            </select>
-          </label>`
+            </div>
+          </section>`
         : '';
 
     el.innerHTML = `
@@ -60,12 +70,12 @@ const HomeView = (function () {
         App.selectSubject(card.dataset.subject),
       );
     });
-    var contentSetSelect = el.querySelector('#content-set-select');
-    if (contentSetSelect) {
-      contentSetSelect.addEventListener('change', () =>
-        App.selectContentSet(contentSetSelect.value),
-      );
-    }
+    el.querySelectorAll('.content-set-option').forEach((option) => {
+      option.addEventListener('click', () => {
+        if (option.getAttribute('aria-pressed') === 'true') return;
+        App.selectContentSet(option.dataset.contentSet);
+      });
+    });
   }
 
   return { render };
