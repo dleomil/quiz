@@ -70,6 +70,16 @@ Antes de qualquer acao de escrita, o agente deve confirmar:
 - antes do merge, revisar a regra real de aprovacao e last push approval da branch alvo
 - se for necessario ajuste temporario de branch protection, reduzir apenas o minimo necessario e restaurar imediatamente apos o merge
 
+### 9. Controlar descoberta de produto assistida
+
+- iniciar pesquisa somente com pergunta, publico e decisao delimitados
+- pesquisar novamente qualquer informacao que possa ter mudado
+- registrar fonte e data de consulta para cada fato relevante
+- separar fato, inferencia, hipotese e recomendacao
+- bloquear contextos que contenham dados identificaveis de criancas
+- nao copiar conteudo ou propriedade intelectual de alternativas analisadas
+- exigir decisao do Product Owner antes de criar ou priorizar backlog
+
 ## Regra de operacao
 
 Se qualquer uma dessas verificacoes falhar, o agente deve parar e pedir esclarecimento ou buscar a informacao correta antes de seguir.

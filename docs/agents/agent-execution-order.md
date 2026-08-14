@@ -61,6 +61,19 @@ Use antes do merge final do PR.
 - nao usar Release and Board Agent antes de existir evidencia
 - nao executar varios agentes fora de ordem sem necessidade real
 
+## Fluxo anterior a uma demanda de mercado
+
+Quando uma demanda nascer de tendencia, concorrente ou feedback ainda nao
+validado, use o `Product Discovery Agent` antes do `Spec Agent`:
+
+1. Product Owner define a pergunta e o recorte.
+2. `Product Discovery Agent` pesquisa e classifica evidencias.
+3. Product Owner decide se a oportunidade deve ser descartada, observada,
+   aprofundada ou proposta ao backlog.
+4. `Spec Agent` transforma somente oportunidades autorizadas em requisitos.
+
+O Product Discovery Agent nao cria cards nem define prioridade sozinho.
+
 ## Fluxo adicional para atualizacao curricular
 
 Use este fluxo sempre que uma entrega alterar materias, topicos, questoes ou explicacoes:
