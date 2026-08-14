@@ -101,10 +101,24 @@ Toda recomendacao deve avaliar:
 - impacto operacional e dependencia tecnica;
 - menor experimento reversivel possivel.
 
+### RF-07: Cadencia e validade
+
+O agente nao executa monitoramento autonomo em segundo plano. A pesquisa pode
+ser iniciada por uma pergunta aprovada ou por um ciclo trimestral autorizado
+pelo Product Owner. Antes de reutilizar uma conclusao, informacoes mutaveis como
+preco, funcionalidades, termos e posicionamento devem ser pesquisadas novamente.
+
+### RF-08: Armazenamento
+
+Resultados aprovados para preservacao devem ser versionados em
+`docs/product/discovery/` com data e assunto no nome do arquivo. Rascunhos que
+contenham dados nao aprovados ou feedback bruto nao devem ser commitados.
+
 ## Requisitos nao funcionais
 
 - documentos devem ser versionados e reproduziveis;
 - pesquisas devem informar a validade temporal das conclusoes;
+- nenhuma pesquisa recorrente ocorre sem ciclo autorizado pelo Product Owner;
 - ausencia de evidencia deve ser declarada, nunca preenchida por suposicao;
 - comparacoes nao devem produzir ranking absoluto sem criterios explicitos;
 - nenhuma execucao pode alterar o aplicativo ou producao.

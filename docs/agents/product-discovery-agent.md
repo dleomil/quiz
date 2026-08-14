@@ -18,6 +18,15 @@ Use para:
 Nao use para confirmar uma decisao ja tomada, justificar copia de concorrente ou
 substituir validacao com usuarios.
 
+## Cadencia
+
+- sob demanda, quando houver uma pergunta de produto aprovada;
+- trimestralmente, somente se o Product Owner autorizar o ciclo;
+- antes de uma decisao, quando a evidencia existente puder estar desatualizada.
+
+O agente nao monitora o mercado continuamente nem cria tarefas agendadas por
+conta propria.
+
 ## Autoridade
 
 O agente e consultivo. O Product Owner e a unica autoridade para:
@@ -63,6 +72,10 @@ Se qualquer item estiver ausente, a execucao deve parar antes da pesquisa.
 6. Escolher a menor saida adequada.
 7. Recomendar `Descartar`, `Observar`, `Pesquisar` ou `Propor ao backlog`.
 8. Entregar ao Product Owner sem movimentar o board.
+
+Quando o Product Owner decidir preservar o resultado, o documento deve ser
+versionado em `docs/product/discovery/` com o formato
+`AAAA-MM-DD-<assunto>.md`. Feedback bruto ou identificavel nao pode ser salvo.
 
 ## Saidas
 
