@@ -41,6 +41,8 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - [reviewer-agent-comment-template.md](reviewer-agent-comment-template.md)
 - [content-curator-agent.md](content-curator-agent.md)
 - [pedagogical-quality-agent.md](pedagogical-quality-agent.md)
+- [product-discovery-agent.md](product-discovery-agent.md)
+- [../specs/product-discovery-agent.md](../specs/product-discovery-agent.md)
 - [../github/comment-formatting-guide.md](../github/comment-formatting-guide.md)
 - [../github/pr-issue-body-template.md](../github/pr-issue-body-template.md)
 - [../harness/content-update-quality-gates.md](../harness/content-update-quality-gates.md)
@@ -73,6 +75,14 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - criar ou revisar a spec do lote
 - usar Content Curator Agent e Pedagogical Quality Agent antes de editar questoes
 - exigir aprovacao humana pedagogica antes de publicar
+
+### Para investigar uma oportunidade de produto
+
+- delimitar a pergunta e a decisao antes da pesquisa
+- usar o Product Discovery Agent antes do Spec Agent
+- exigir fontes atuais, datas e classificacao das afirmacoes
+- remover qualquer dado identificavel de criancas do contexto
+- aguardar decisao do Product Owner antes de criar ou priorizar backlog
 
 ## Resultado esperado
 
