@@ -1308,3 +1308,55 @@ Como plataforma, queremos deixar claro quando a infraestrutura precisa mudar e q
 - roteiro de migracao por camada ou componente
 - matriz de risco para migracao parcial e total
 - decisao clara sobre permanencia, migracao parcial ou saida
+
+## Epic 9: Descoberta e inteligencia de produto
+
+### Objetivo
+
+Criar um processo rastreavel para observar mercado e feedback seguro, identificar
+oportunidades e apoiar a evolucao comercial sem transformar tendencias em
+requisitos automaticamente.
+
+### Historia 9.1
+
+**Titulo**
+Definir Product Discovery Agent e fluxo de inteligencia de mercado
+
+**Issue**
+
+- #267
+
+**Descricao**
+Como Product Owner, queremos um agente consultivo de descoberta para receber
+evidencias atuais e recomendacoes comparaveis sem delegar prioridade ou decisao
+de produto.
+
+**Requisitos**
+
+- definir responsabilidades, entradas, saidas e limites do agente
+- exigir fontes atuais e classificacao das afirmacoes
+- padronizar radar de mercado, matriz comparativa e opportunity brief
+- proteger dados infantis e propriedade intelectual
+- exigir aprovacao do Product Owner antes de criar ou priorizar backlog
+- integrar o agente ao harness e ao modelo operacional
+
+**Criterios de aceite**
+
+- existe spec versionada para descoberta de produto
+- existe documento operacional e preflight do agente
+- fatos, inferencias, hipoteses e recomendacoes ficam separados
+- nenhuma oportunidade entra no backlog sem decisao humana
+- a entrega nao altera o aplicativo em producao
+
+**Plano de validacao**
+
+- revisar consistencia entre spec, agente e harness
+- validar referencias e formatacao dos documentos
+- confirmar que o diff esta restrito a documentacao
+
+**Evidencias esperadas**
+
+- links dos documentos versionados
+- resultado das verificacoes de documentacao
+- card alinhado no Project
+- confirmacao de impacto zero em producao

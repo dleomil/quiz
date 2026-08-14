@@ -205,6 +205,35 @@ Revisar qualidade pedagogica e linguistica das questoes antes da implementacao.
 - nao aceita questao sem materia, tema e objetivo rastreaveis
 - nao trata ausencia de revisao humana como evidencia suficiente
 
+### 9. Product Discovery Agent
+
+**Responsabilidade**
+
+Transformar sinais de mercado e feedback seguro em oportunidades de produto
+rastreaveis para decisao do Product Owner.
+
+**Entradas**
+
+- pergunta de descoberta
+- visao e principios do produto
+- fontes atuais e publicamente verificaveis
+- feedback agregado ou anonimizado
+
+**Saidas**
+
+- radar de mercado
+- matriz comparativa
+- opportunity brief
+- recomendacao para descartar, observar, pesquisar ou propor ao backlog
+
+**Limites**
+
+- nao coleta dados identificaveis de criancas
+- nao cria ou prioriza backlog autonomamente
+- nao assume compromisso comercial
+- nao substitui decisao do Product Owner
+- nao transforma inferencia em fato
+
 ## Fluxo de revisao
 
 O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-workflow.md`. O modelo operacional define o papel; o workflow define quando rodar, o que conferir e como registrar o parecer.
@@ -217,6 +246,13 @@ O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-w
 4. `Verifier Agent` valida contra a spec.
 5. `Release and Board Agent` publica o resultado no board.
 6. `Reviewer Agent` emite parecer de conformidade para PRs antes do merge.
+
+## Fluxo para descoberta de produto
+
+1. Product Owner delimita a pergunta e a decisao a ser informada.
+2. `Product Discovery Agent` pesquisa e entrega evidencias classificadas.
+3. Product Owner decide descartar, observar, aprofundar ou propor ao backlog.
+4. `Spec Agent` atua somente depois da autorizacao para levar a oportunidade ao backlog.
 
 ## Ordem de execucao
 

@@ -28,6 +28,7 @@ docs/
 │   ├── agent-preflight-application.md
 │   ├── content-curator-agent.md
 │   ├── pedagogical-quality-agent.md
+│   ├── product-discovery-agent.md
 │   ├── reviewer-agent-comment-template.md
 │   ├── reviewer-agent-decision-matrix.md
 │   ├── production-safe-adoption-plan.md
@@ -54,6 +55,7 @@ docs/
 │   ├── panel-control-functional-architecture.md
 │   ├── content-schema-v1.md
 │   ├── curriculum-content-update-governance.md
+│   ├── product-discovery-agent.md
 │   ├── pilot-low-risk-workflow.md
 │   ├── spec-driven-development.md
 │   └── vercel-limits-and-retention.md
