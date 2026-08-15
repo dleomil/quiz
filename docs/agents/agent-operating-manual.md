@@ -49,6 +49,14 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 
 ## Como usar no dia a dia
 
+### Para usar os agentes executaveis do Codex
+
+- consultar `docs/specs/executable-codex-agents.md`
+- delegar explicitamente para `reviewer`, `verifier` ou `product_discovery`
+- manter os subagentes em `read-only`
+- inspecionar as threads antes de aceitar o resultado consolidado
+- nunca tratar o parecer de um subagente como aprovacao humana
+
 ### Para iniciar uma entrega
 
 - localizar a issue ou spec

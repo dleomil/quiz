@@ -55,6 +55,7 @@ docs/
 │   ├── panel-control-functional-architecture.md
 │   ├── content-schema-v1.md
 │   ├── curriculum-content-update-governance.md
+│   ├── executable-codex-agents.md
 │   ├── product-discovery-agent.md
 │   ├── pilot-low-risk-workflow.md
 │   ├── spec-driven-development.md
