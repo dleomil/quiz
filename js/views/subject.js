@@ -112,8 +112,18 @@ const SubjectView = (function () {
       updateControls();
     }
 
-    decrease.addEventListener('click', () => setCount(currentValue() - 1));
-    increase.addEventListener('click', () => setCount(currentValue() + 1));
+    function adjustCount(direction) {
+      const value = currentValue();
+      const adjusted = Number.isInteger(value)
+        ? value + direction
+        : direction < 0
+          ? Math.floor(value)
+          : Math.ceil(value);
+      setCount(adjusted);
+    }
+
+    decrease.addEventListener('click', () => adjustCount(-1));
+    increase.addEventListener('click', () => adjustCount(1));
     shortcuts.forEach((shortcut) => {
       shortcut.addEventListener('click', () =>
         setCount(Number(shortcut.dataset.count)),

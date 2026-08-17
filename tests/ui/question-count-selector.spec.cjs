@@ -110,6 +110,13 @@ async function run() {
 
     await input.fill('2.5');
     assert.strictEqual(await start.isDisabled(), true);
+    await page.locator('#count-inc').click();
+    assert.strictEqual(await input.inputValue(), '3');
+    assert.strictEqual(await start.isEnabled(), true);
+    await input.fill('40.5');
+    await page.locator('#count-dec').click();
+    assert.strictEqual(await input.inputValue(), '40');
+    assert.strictEqual(await start.isEnabled(), true);
 
     await page.evaluate(() => App.startQuiz('all', 'historia', 81));
     assert.strictEqual(
