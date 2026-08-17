@@ -111,6 +111,12 @@ const QuestionsDB = (function () {
         (topic) =>
           !contentSetId || countQuestions(subject, topic, contentSetId),
       ),
+    getAvailableCount: (topic, subject, contentSetId) =>
+      countQuestions(
+        subject && subject !== 'all' ? subject : null,
+        topic && topic !== 'all' ? topic : null,
+        contentSetId,
+      ),
     getContentSets: () => ContentCatalog.getPublished(),
     getContentSet: (contentSetId) => ContentCatalog.getById(contentSetId),
     getDefaultContentSet: () => ContentCatalog.getDefault(),
