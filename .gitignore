@@ -14,3 +14,9 @@ coverage/
 
 # Material-fonte da escola: manter local ate haver autorizacao explicita para versionamento.
 SchoolContent/
+
+# Codex: preserve local settings and version only reviewed project agents.
+.codex/*
+!.codex/agents/
+.codex/agents/*
+!.codex/agents/*.toml

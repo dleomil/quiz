@@ -1360,3 +1360,48 @@ de produto.
 - resultado das verificacoes de documentacao
 - card alinhado no Project
 - confirmacao de impacto zero em producao
+
+### Historia 9.2
+
+**Titulo**
+Tornar Reviewer, Verifier e Product Discovery agentes executaveis
+
+**Issue**
+
+- #269
+
+**Descricao**
+Como engenharia, queremos configurar os tres primeiros agentes executaveis do
+Codex com modelos e permissoes por papel para validar o uso real do modelo
+operacional sem introduzir autonomia ou risco de escrita.
+
+**Requisitos**
+
+- criar os agentes em `.codex/agents/`
+- fixar modelo, esforco e sandbox por papel
+- preservar configuracoes pessoais fora do Git
+- validar automaticamente campos, modelos, permissoes e segredos
+- integrar o gate a suite do repositorio
+- documentar uso, precedencia, custo e fallback
+
+**Criterios de aceite**
+
+- Reviewer, Verifier e Product Discovery podem ser descobertos pelo Codex
+- todos operam inicialmente em `read-only`
+- o gate possui cenarios positivos e negativos
+- nenhum agente e executado automaticamente na CI
+- nao ha impacto funcional ou de producao
+
+**Plano de validacao**
+
+- executar `npm run validate:agents`
+- executar formatacao, lint e suite completa
+- confirmar que configuracao pessoal nao foi versionada
+- revisar os limites de cada TOML contra os contratos documentais
+
+**Evidencias esperadas**
+
+- tres TOMLs versionados
+- spec e manual atualizados
+- testes do validador
+- checks locais e de CI aprovados
