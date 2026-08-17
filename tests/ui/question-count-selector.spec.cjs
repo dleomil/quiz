@@ -89,6 +89,11 @@ async function run() {
     assert.strictEqual(await input.getAttribute('max'), '80');
     assert.strictEqual(await input.inputValue(), '30');
 
+    await input.fill('');
+    assert.strictEqual(await start.isDisabled(), true);
+    await page.locator('#count-inc').click();
+    assert.strictEqual(await input.inputValue(), '2');
+
     await input.fill('1');
     assert.strictEqual(await start.isDisabled(), true);
     assert.ok(
@@ -96,6 +101,13 @@ async function run() {
         '2 até 80',
       ),
     );
+    await page.locator('#count-inc').click();
+    assert.strictEqual(await input.inputValue(), '2');
+
+    await input.fill('81');
+    await page.locator('#count-dec').click();
+    assert.strictEqual(await input.inputValue(), '80');
+
     await input.fill('2.5');
     assert.strictEqual(await start.isDisabled(), true);
 
@@ -138,12 +150,44 @@ async function run() {
       .locator('.topic-card:not([data-topic="all"])')
       .first();
     const topicId = await specificTopic.getAttribute('data-topic');
+    await specificTopic.click();
+    assert.strictEqual(await input.getAttribute('max'), '20');
+    await page.locator('[data-count-choice="all"]').click();
+    await start.click();
+    const completeTopicSnapshot = await quizSnapshot(page);
+    assert.strictEqual(completeTopicSnapshot.count, 20);
+    assert.strictEqual(completeTopicSnapshot.uniqueIds, 20);
+    assert.deepStrictEqual(completeTopicSnapshot.topics, [topicId]);
+    assert.strictEqual(completeTopicSnapshot.intro, '20 questões');
+
+    await openHistoryTopics(page);
     await selectCountAndStart(page, specificTopic, 7);
     const topicSnapshot = await quizSnapshot(page);
     assert.strictEqual(topicSnapshot.count, 7);
     assert.strictEqual(topicSnapshot.uniqueIds, 7);
     assert.deepStrictEqual(topicSnapshot.topics, [topicId]);
     assert.strictEqual(topicSnapshot.intro, '7 questões');
+
+    await openHistoryTopics(page);
+    await allTopics.focus();
+    await page.keyboard.press('Enter');
+    assert.strictEqual(
+      await page.locator('#question-count-panel').isVisible(),
+      true,
+    );
+    await input.fill('4');
+    await page.locator('#count-inc').focus();
+    await page.keyboard.press('Enter');
+    assert.strictEqual(await input.inputValue(), '5');
+    await input.focus();
+    await page.keyboard.press('Enter');
+    assert.strictEqual((await quizSnapshot(page)).count, 5);
+    await page.locator('#btn-begin-quiz').focus();
+    await page.keyboard.press('Enter');
+    assert.strictEqual(
+      await page.locator('.counter').textContent(),
+      'Pergunta 1 de 5',
+    );
 
     await openHistoryTopics(page);
     await allTopics.click();

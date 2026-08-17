@@ -91,8 +91,8 @@ const SubjectView = (function () {
       const valid = isValid(value);
       input.setAttribute('aria-invalid', String(!valid));
       start.disabled = !valid;
-      decrease.disabled = !valid || value <= minimum;
-      increase.disabled = !valid || value >= available;
+      decrease.disabled = value <= minimum;
+      increase.disabled = value >= available;
       error.textContent = valid
         ? ''
         : `Digite um número inteiro de ${minimum} até ${available}.`;
