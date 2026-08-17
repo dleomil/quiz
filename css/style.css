@@ -321,12 +321,15 @@ body {
 }
 
 .topic-card {
+  width: 100%;
   background: var(--card);
   border: 2.5px solid var(--border);
   border-radius: 12px;
   padding: 16px 14px;
   cursor: pointer;
   text-align: center;
+  font: inherit;
+  color: inherit;
   transition:
     border-color 0.2s,
     transform 0.2s,
@@ -357,6 +360,115 @@ body {
   font-size: 0.8rem;
   color: var(--muted);
   margin-top: 3px;
+}
+
+.question-count-panel {
+  background: linear-gradient(145deg, var(--primary-bg), var(--card));
+  border: 2px solid var(--primary-light);
+  border-radius: 18px;
+  padding: 22px;
+  scroll-margin-top: 92px;
+}
+.question-count-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+}
+.question-count-icon {
+  font-size: 2.25rem;
+}
+.question-count-eyebrow {
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.question-count-heading h3 {
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+.question-count-help {
+  color: var(--muted);
+  font-weight: 650;
+  margin: 12px 0 16px;
+  text-align: center;
+}
+.question-count-picker {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 10px;
+}
+.count-step {
+  width: 54px;
+  min-height: 54px;
+  border: 2px solid var(--primary);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.count-step:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.question-count-input {
+  width: 110px;
+  min-height: 54px;
+  border: 3px solid var(--primary);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 1.55rem;
+  font-weight: 900;
+  text-align: center;
+}
+.question-count-input[aria-invalid='true'] {
+  border-color: var(--error);
+  background: var(--error-bg);
+}
+.question-count-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+.count-shortcut {
+  min-height: 44px;
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 8px 16px;
+}
+.count-shortcut[aria-pressed='true'] {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+.question-count-error {
+  min-height: 24px;
+  color: var(--error);
+  font-size: 0.88rem;
+  font-weight: 750;
+  margin: 10px 0 4px;
+  text-align: center;
+}
+.question-count-start {
+  display: flex;
+  margin: 0 auto;
 }
 
 /* ── SUBJECT CARDS ───────────────────────────────── */
@@ -1276,6 +1388,9 @@ body {
 .btn:focus-visible,
 .option-btn:focus-visible,
 .topic-card:focus-visible,
+.count-step:focus-visible,
+.count-shortcut:focus-visible,
+.question-count-input:focus-visible,
 .subject-card:focus-visible,
 .nav-btn:focus-visible,
 .restart-btn:focus-visible,
@@ -1295,6 +1410,19 @@ body {
 }
 
 @media (max-width: 580px) {
+  .question-count-panel {
+    padding: 18px 14px;
+  }
+  .question-count-heading {
+    align-items: flex-start;
+  }
+  .question-count-heading h3 {
+    font-size: 1.15rem;
+  }
+  .question-count-start {
+    width: 100%;
+    white-space: normal;
+  }
   #toast-container {
     bottom: 12px;
     right: 12px;

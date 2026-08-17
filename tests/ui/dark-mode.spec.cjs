@@ -30,6 +30,7 @@ async function openQuiz(page) {
   await page.goto(baseUrl, { waitUntil: 'networkidle' });
   await page.locator('.subject-card').first().click();
   await page.locator('.topic-card').first().click();
+  await page.locator('#btn-start-selected-count').click();
   await page.locator('#btn-begin-quiz').click();
   await page.locator('.question-text').waitFor({ state: 'visible' });
 }
@@ -108,6 +109,7 @@ async function run() {
     await page.goto(baseUrl, { waitUntil: 'networkidle' });
     await page.locator('.subject-card').first().click();
     await page.locator('.topic-card').first().click();
+    await page.locator('#btn-start-selected-count').click();
     await page.locator('#btn-begin-quiz').click();
     await page.locator('.question-text').waitFor({ state: 'visible' });
 
