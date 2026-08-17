@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
 const port = 4185;
-const baseUrl = `http://127.0.0.1:${port}`;
+const baseUrl = process.env.BASE_URL || `http://127.0.0.1:${port}`;
 const timeoutMs = 15000;
 
 function wait(ms) {
@@ -63,11 +63,13 @@ async function quizSnapshot(page) {
 }
 
 async function run() {
-  const server = spawn(
-    'python3',
-    ['-m', 'http.server', String(port), '--bind', '127.0.0.1'],
-    { cwd: repoRoot, stdio: 'ignore' },
-  );
+  const server = process.env.BASE_URL
+    ? null
+    : spawn(
+        'python3',
+        ['-m', 'http.server', String(port), '--bind', '127.0.0.1'],
+        { cwd: repoRoot, stdio: 'ignore' },
+      );
 
   try {
     await waitForServer(baseUrl);
@@ -178,7 +180,7 @@ async function run() {
     await browser.close();
     console.log('question-count-selector-ui: ok');
   } finally {
-    server.kill('SIGTERM');
+    server?.kill('SIGTERM');
   }
 }
 
