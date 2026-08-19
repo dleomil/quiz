@@ -209,6 +209,40 @@ function run() {
     );
   });
 
+  const geographyT2ById = new Map(
+    geographyQuestions
+      .filter((question) => question.contentSetId === '2026-t2-v1')
+      .map((question) => [question.id, question]),
+  );
+  assert.strictEqual(
+    geographyT2ById.get('GEO-T2-REP-013').question,
+    'Qual afirmação sobre as medidas de um croqui está correta?',
+  );
+  assert.strictEqual(
+    geographyT2ById.get('GEO-T2-MAP-008').question,
+    'Em um mapa com o norte na parte de cima, a biblioteca está ao norte da escola. Onde a biblioteca aparece?',
+  );
+  assert.strictEqual(
+    geographyT2ById.get('GEO-T2-MAP-017').options[
+      geographyT2ById.get('GEO-T2-MAP-017').correctIndex
+    ],
+    'seguindo por essa mesma rua da escola até a praça, passamos pelo mercado',
+  );
+
+  [
+    'não são materiais',
+    'têm outros nomes',
+    'não orientam um caminho local',
+    'não explicam o mapa',
+    'sem tornar o planeta plano',
+    'posições, caminhos e distâncias',
+  ].forEach((outdatedText) => {
+    assert.ok(
+      !geographyT2VisibleText.includes(outdatedText),
+      `texto inadequado em Geografia: ${outdatedText}`,
+    );
+  });
+
   const secondBatchScienceText = JSON.stringify(
     scienceQuestions
       .filter((question) =>
