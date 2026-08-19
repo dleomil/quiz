@@ -29,6 +29,14 @@ async function waitForServer(url) {
 
 async function openQuestion(page, questionId) {
   await page.goto(baseUrl, { waitUntil: 'networkidle' });
+  const applicationLoaded = await page.evaluate(
+    () => typeof QuestionsDB !== 'undefined' && typeof App !== 'undefined',
+  );
+  if (!applicationLoaded) {
+    throw new Error(
+      `Quiz unavailable at ${page.url()}. The preview may require authentication.`,
+    );
+  }
   await page.evaluate((id) => {
     const question = QuestionsDB.getAll().find((item) => item.id === id);
     if (!question) throw new Error(`Question not found: ${id}`);
