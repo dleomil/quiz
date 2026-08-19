@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "npm run validate:agents && npm run validate:content && npm run test:content && npm run test:ui:content-session && npm run test:ui:dark-mode && npm run test:ui:critical-rules && npm run test:ui:trimester-history-selector && npm run test:ui:question-count-selector && npm run test:ui:panel-base",
+    "test": "npm run validate:agents && npm run validate:content && npm run test:content && npm run test:ui:content-session && npm run test:ui:dark-mode && npm run test:ui:critical-rules && npm run test:ui:trimester-history-selector && npm run test:ui:question-count-selector && npm run test:ui:geography-language-audit && npm run test:ui:panel-base",
     "validate:agents": "node scripts/validate-codex-agents.cjs && node tests/agents/codex-agent-validator.spec.cjs",
     "validate:content": "node scripts/validate-content.cjs",
     "test:content": "node tests/content/content-validator.spec.cjs",
@@ -21,6 +21,7 @@
     "test:ui:critical-rules": "node tests/ui/critical-rules.spec.cjs",
     "test:ui:trimester-history-selector": "node tests/ui/trimester-history-selector.spec.cjs",
     "test:ui:question-count-selector": "node tests/ui/question-count-selector.spec.cjs",
+    "test:ui:geography-language-audit": "node tests/ui/geography-language-audit.spec.cjs",
     "test:ui:panel-base": "node tests/ui/panel-base.spec.cjs"
   },
   "repository": {
