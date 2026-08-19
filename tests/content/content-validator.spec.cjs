@@ -209,6 +209,145 @@ function run() {
     );
   });
 
+  const portugueseQuestions = loadSubjectQuestions('portugues');
+  const portugueseT2Questions = portugueseQuestions.filter(
+    (question) => question.contentSetId === '2026-t2-v1',
+  );
+  [
+    'usos_de_l_e_u',
+    'palavras_com_ce_e_ci',
+    'verbos_i',
+    'pronomes_pessoais_tratamento',
+    'verbos_ii',
+    'palavras_semelhantes',
+  ].forEach((topic) => {
+    const topicQuestions = portugueseT2Questions.filter(
+      (question) => question.topic === topic,
+    );
+    assert.strictEqual(topicQuestions.length, 20);
+    topicQuestions.forEach((question) => {
+      assert.strictEqual(question.schemaVersion, 'content-v1');
+      assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
+      assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
+      assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
+    });
+  });
+
+  const portugueseT2ById = new Map(
+    portugueseT2Questions.map((question) => [question.id, question]),
+  );
+  [
+    ['pt_t2_lu_006', 'Complete: Ganhei um ane__ de presente.'],
+    ['pt_t2_lu_008', 'Complete: O barco navegou pe__o rio.'],
+    ['pt_t2_ceci_001', 'Complete: A ____ do filme foi engraçada.'],
+    ['pt_t2_ceci_006', 'Complete: A ____ canta alto no verão.'],
+    ['pt_t2_ceci_010', 'Complete: A ____ estuda os seres vivos.'],
+    ['pt_t2_ceci_020', 'Complete: O ____ correu pelo campo.'],
+    [
+      'pt_t2_pron_015',
+      'Qual frase pergunta diretamente a uma mulher adulta, de modo respeitoso, se ela chegou cedo?',
+    ],
+    [
+      'pt_t2_pron_018',
+      'Ao autorizar dois alunos a entrar, a professora disse diretamente a eles: “__ podem entrar.”',
+    ],
+    [
+      'pt_t2_pron_019',
+      'Ao oferecer água diretamente à própria diretora, complete a fala: “__ gostaria de água?”',
+    ],
+    ['pt_t2_vii_004', 'Complete: O médico __ do paciente.'],
+    [
+      'pt_t2_vii_018',
+      'Complete: Durante um resgate, o bombeiro __ as pessoas em perigo.',
+    ],
+    ['pt_t2_vii_020', 'Complete: O fotógrafo __ uma paisagem.'],
+    [
+      'PT-T2-SEM-002',
+      'Em "O atleta foi veloz durante a corrida", qual palavra tem sentido semelhante a "veloz"?',
+    ],
+    [
+      'PT-T2-SEM-012',
+      'Em "A família escolheu o caminho mais curto", qual expressão pode substituir "escolheu o" sem repetir o artigo?',
+    ],
+  ].forEach(([id, expectedQuestion]) => {
+    assert.strictEqual(portugueseT2ById.get(id).question, expectedQuestion);
+  });
+
+  assert.ok(
+    !portugueseT2ById.get('pt_t2_lu_007').options.includes('a'),
+    'latiu nao pode ter uma segunda resposta defensavel',
+  );
+  assert.ok(
+    !portugueseT2ById.get('pt_t2_lu_011').options.includes('a'),
+    'ouviu nao pode ter uma segunda resposta defensavel',
+  );
+  assert.ok(
+    !portugueseT2ById.get('pt_t2_lu_013').options.includes('a'),
+    'sorriu nao pode ter uma segunda resposta defensavel',
+  );
+  assert.strictEqual(
+    portugueseT2ById.get('pt_t2_lu_019').options[
+      portugueseT2ById.get('pt_t2_lu_019').correctIndex
+    ],
+    'ú',
+  );
+  assert.ok(
+    portugueseT2ById
+      .get('pt_t2_pron_016')
+      .options.includes('O senhor chegou cedo?'),
+    'a forma de tratamento deve incluir o artigo',
+  );
+  assert.ok(
+    portugueseT2ById
+      .get('pt_t2_ceci_010')
+      .explanation.includes('C-I-Ê-N-C-I-A'),
+    'a explicacao deve diferenciar toda a grafia de ciencia',
+  );
+
+  portugueseT2Questions
+    .filter((question) => question.topic === 'palavras_semelhantes')
+    .flatMap((question) => Object.values(question.wrongExplanations))
+    .forEach((feedback) => {
+      assert.match(feedback, /^["A-ZÁÉÍÓÚÂÊÔÃÕÇ“]/);
+      assert.match(feedback, /[.!?]$/);
+    });
+
+  const portugueseT2VisibleText = JSON.stringify(
+    portugueseT2Questions.flatMap((question) => [
+      question.question,
+      ...question.options,
+      question.explanation,
+      ...Object.values(question.wrongExplanations),
+    ]),
+  );
+  [
+    'present__',
+    'pe__ rio',
+    'A __na',
+    'A __dade',
+    'A __bola',
+    'O __real',
+    'A __noura',
+    'A __garra',
+    'A __ncia',
+    'A __reja',
+    'usou __mento',
+    'certificado de parabéns',
+    'O médico __ o paciente',
+    'fotografa uma imagem',
+    'O corredor foi veloz',
+    'Ouvuo',
+    'Sorriel',
+    'Senhor, chegou cedo?',
+    'Complete: O bombeiro __ as pessoas em perigo.',
+    'optou pelo o caminho',
+  ].forEach((outdatedText) => {
+    assert.ok(
+      !portugueseT2VisibleText.includes(outdatedText),
+      `texto inadequado em Portugues: ${outdatedText}`,
+    );
+  });
+
   const secondBatchScienceText = JSON.stringify(
     scienceQuestions
       .filter((question) =>
