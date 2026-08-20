@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "coverage-v1",
+  "contentSets": {
+    "2026-t2-v1": {
+      "subjects": {
+        "portugues": {
+          "usos_de_l_e_u": 20,
+          "palavras_com_ce_e_ci": 20,
+          "verbos_i": 20,
+          "pronomes_pessoais_tratamento": 20,
+          "verbos_ii": 20,
+          "palavras_semelhantes": 20
+        },
+        "matematica": {
+          "sistema_monetario": 20,
+          "multiplicacao_por_dezenas": 20,
+          "graficos_barras_colunas": 20,
+          "tabelas_graficos_dupla_entrada": 20,
+          "prisma": 20,
+          "figuras_geometricas_planas": 20,
+          "medidas": 20,
+          "retas_paralelas": 20
+        },
+        "ciencias": {
+          "artropodes": 20,
+          "insetos": 20,
+          "crustaceos": 20,
+          "miriapodes": 20,
+          "aracnideos": 20,
+          "equinodermos": 20
+        },
+        "geografia": {
+          "cartografia": 20,
+          "representacoes_cartograficas": 20,
+          "mapas_representacao_espaco": 20
+        },
+        "historia": {
+          "africa_origens": 20,
+          "grupos_linguisticos_africanos": 20,
+          "africanos_escravidao": 20,
+          "afrodescendentes_atualidade": 20
+        },
+        "ingles": {
+          "prepositions": 20,
+          "fathers_day": 20,
+          "sports": 20,
+          "action_verbs": 20
+        }
+      }
+    }
+  }
+}

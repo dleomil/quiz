@@ -39,8 +39,9 @@ abaixo falhar:
 - o total por materia foi usado como substituto da cobertura por tema.
 
 Este gate vale para todos os anos e trimestres futuros. A validacao automatica
-deve evoluir para ler um manifesto de cobertura versionado; ate isso existir, a
-evidencia de contagem por tema e obrigatoria no PR.
+le `config/content-coverage-manifest.json` e bloqueia tema ausente, excedente ou
+nao declarado. Todo acervo `content-v1` publicado deve possuir uma entrada no
+manifesto; acervos `draft` podem permanecer abaixo da meta durante a curadoria.
 
 ## Revisao editorial e pedagogica
 
