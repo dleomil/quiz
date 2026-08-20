@@ -209,6 +209,149 @@ function run() {
     );
   });
 
+  const geographyT2ById = new Map(
+    geographyQuestions
+      .filter((question) => question.contentSetId === '2026-t2-v1')
+      .map((question) => [question.id, question]),
+  );
+  assert.strictEqual(
+    geographyT2ById.get('GEO-T2-REP-013').question,
+    'Qual afirmação sobre as medidas de um croqui está correta?',
+  );
+  assert.strictEqual(
+    geographyT2ById.get('GEO-T2-MAP-008').question,
+    'Em um mapa com o norte na parte de cima, a biblioteca está ao norte da escola. Onde a biblioteca aparece?',
+  );
+  assert.strictEqual(
+    geographyT2ById.get('GEO-T2-MAP-017').options[
+      geographyT2ById.get('GEO-T2-MAP-017').correctIndex
+    ],
+    'seguindo por essa mesma rua da escola até a praça, passamos pelo mercado',
+  );
+
+  [
+    'não são materiais',
+    'têm outros nomes',
+    'não orientam um caminho local',
+    'não explicam o mapa',
+    'sem tornar o planeta plano',
+    'posições, caminhos e distâncias',
+  ].forEach((outdatedText) => {
+    assert.ok(
+      !geographyT2VisibleText.includes(outdatedText),
+      `texto inadequado em Geografia: ${outdatedText}`,
+    );
+  });
+
+  const englishQuestions = loadSubjectQuestions('ingles');
+  const englishT2Questions = englishQuestions.filter(
+    (question) => question.contentSetId === '2026-t2-v1',
+  );
+  ['prepositions', 'fathers_day', 'sports', 'action_verbs'].forEach((topic) => {
+    const topicQuestions = englishT2Questions.filter(
+      (question) => question.topic === topic,
+    );
+    const correctIndexDistribution = [0, 0, 0, 0];
+
+    assert.strictEqual(topicQuestions.length, 20);
+    topicQuestions.forEach((question) => {
+      assert.strictEqual(question.schemaVersion, 'content-v1');
+      assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
+      assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
+      assert.strictEqual(question.sourceRef.section, 'Ingles');
+      assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
+      correctIndexDistribution[question.correctIndex] += 1;
+    });
+    assert.deepStrictEqual(correctIndexDistribution, [5, 5, 5, 5]);
+  });
+
+  const englishT2ById = new Map(
+    englishT2Questions.map((question) => [question.id, question]),
+  );
+  [
+    [
+      'ING-T2-PRE-001',
+      'Complete with the word that means "dentro": The pencil is ___ the pencil case.',
+    ],
+    [
+      'ING-T2-PRE-019',
+      'Which sentence means "A biblioteca fica perto da escola"?',
+    ],
+    [
+      'ING-T2-PRE-020',
+      'Which sentence means "As crianças estão fora da sala de aula"?',
+    ],
+    ['ING-T2-FAD-003', "Complete the Father's Day message: Happy ___ Day!"],
+    ['ING-T2-FAD-011', 'Which word names a caring gesture?'],
+    ['ING-T2-FAD-015', 'Choose the family word: My ___ helps me.'],
+    ['ING-T2-SPO-016', 'Which sentence is about a sport?'],
+    ['ING-T2-ACT-011', 'Choose the verb that means "ler": I ___ a book.'],
+    ['ING-T2-ACT-019', 'Which word shows the action in "I swim in the pool"?'],
+  ].forEach(([id, expectedQuestion]) => {
+    assert.strictEqual(englishT2ById.get(id).question, expectedQuestion);
+  });
+
+  assert.ok(
+    englishT2ById.get('ING-T2-FAD-002').options.includes('avô'),
+    'traducao de grandfather deve estar acentuada',
+  );
+  assert.strictEqual(
+    englishT2ById.get('ING-T2-SPO-008').options[
+      englishT2ById.get('ING-T2-SPO-008').correctIndex
+    ],
+    'andar de skate',
+  );
+  assert.ok(
+    englishT2ById.get('ING-T2-SPO-004').options.includes('andar de skate'),
+    'skateboarding deve ser traduzido como andar de skate',
+  );
+  assert.deepStrictEqual(
+    [...englishT2ById.get('ING-T2-PRE-020').options].sort(),
+    [
+      'The children are behind the classroom.',
+      'The children are inside the classroom.',
+      'The children are near the classroom.',
+      'The children are outside the classroom.',
+    ].sort(),
+  );
+
+  const englishT2VisibleText = JSON.stringify(
+    englishT2Questions.flatMap((question) => [
+      question.question,
+      ...question.options,
+      question.explanation,
+      ...Object.values(question.wrongExplanations),
+    ]),
+  ).toLowerCase();
+  [
+    ' esta ',
+    ' atras ',
+    '"atras de"',
+    'mae',
+    'irma',
+    'vovo',
+    'cartao',
+    'familia',
+    'abraco',
+    'chapeu',
+    'lapis',
+    'voce',
+    'natacao',
+    'tenis',
+    'volei',
+    'dancar',
+    'before the door',
+    'an apple is fruit',
+    'the usual action with a book',
+    'outside the pencil case',
+    '"skate" is "skateboarding"',
+  ].forEach((outdatedText) => {
+    assert.ok(
+      !englishT2VisibleText.includes(outdatedText),
+      `texto inadequado em Ingles: ${outdatedText}`,
+    );
+  });
+
   const portugueseQuestions = loadSubjectQuestions('portugues');
   const portugueseT2Questions = portugueseQuestions.filter(
     (question) => question.contentSetId === '2026-t2-v1',
