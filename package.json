@@ -15,7 +15,7 @@
     "test": "npm run validate:agents && npm run validate:content && npm run test:content && npm run test:ui:content-session && npm run test:ui:dark-mode && npm run test:ui:critical-rules && npm run test:ui:trimester-history-selector && npm run test:ui:question-count-selector && npm run test:ui:geography-language-audit && npm run test:ui:english-language-audit && npm run test:ui:portuguese-language-audit && npm run test:ui:panel-base",
     "validate:agents": "node scripts/validate-codex-agents.cjs && node tests/agents/codex-agent-validator.spec.cjs",
     "validate:content": "node scripts/validate-content.cjs",
-    "test:content": "node tests/content/content-validator.spec.cjs",
+    "test:content": "node tests/content/content-validator.spec.cjs && node tests/content/content-coverage-validator.spec.cjs",
     "test:ui:content-session": "node tests/ui/content-session.spec.cjs",
     "test:ui:dark-mode": "node tests/ui/dark-mode.spec.cjs",
     "test:ui:critical-rules": "node tests/ui/critical-rules.spec.cjs",
