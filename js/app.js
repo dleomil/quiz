@@ -1,7 +1,8 @@
 /* exported App */
 /* global HomeView, SubjectView, QuizView, ResultsView, HistoryView, Store, QuestionsDB, showToast, resolveTopicLabel */
 const App = (function () {
-  const SESSIONS_PER_QUIZ = 30;
+  const DEFAULT_QUESTIONS_PER_QUIZ = 30;
+  const MIN_QUESTIONS_PER_QUIZ = 2;
   const QUIZ_LOCK_MESSAGE =
     'Finalize o quiz atual para voltar ou trocar de matéria.';
 
@@ -62,18 +63,34 @@ const App = (function () {
     navigate('home', { force: true });
   }
 
-  function startQuiz(topic, subject) {
+  function startQuiz(topic, subject, requestedCount) {
     var contentSetId = Store.get().selectedContentSet;
-    var qs = QuestionsDB.getRandom(
-      SESSIONS_PER_QUIZ,
+    var availableCount = QuestionsDB.getAvailableCount(
       topic,
       subject,
       contentSetId,
     );
-    if (qs.length === 0) {
+    if (availableCount === 0) {
       showToast('Nenhuma pergunta encontrada para este tema.', 'warning');
       return;
     }
+    var minimumCount = Math.min(MIN_QUESTIONS_PER_QUIZ, availableCount);
+    var questionCount =
+      requestedCount === undefined
+        ? Math.min(DEFAULT_QUESTIONS_PER_QUIZ, availableCount)
+        : Number(requestedCount);
+    if (
+      !Number.isInteger(questionCount) ||
+      questionCount < minimumCount ||
+      questionCount > availableCount
+    ) {
+      showToast(
+        `Escolha entre ${minimumCount} e ${availableCount} questões.`,
+        'warning',
+      );
+      return;
+    }
+    var qs = QuestionsDB.getRandom(questionCount, topic, subject, contentSetId);
     Store.set({
       selectedTopic: topic,
       questions: qs,
