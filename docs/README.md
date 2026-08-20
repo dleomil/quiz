@@ -15,6 +15,7 @@ Esta pasta concentra a documentacao viva do projeto. A organizacao foi pensada p
 | `docs/product/`      | Visao de produto e principios                       | escopo, principios e diretrizes de produto                                |
 | `docs/architecture/` | Definicoes tecnicas e fronteiras                    | arquitetura alvo, contratos tecnicos e decisoes de engenharia             |
 | `docs/platform/`     | Avaliacoes de infraestrutura e limites operacionais | Vercel, migracao, retention e sinais de reavaliacao                       |
+| `docs/security/`     | Avaliacoes e requisitos de seguranca                | superficies de risco, controles, prioridades, rollout e rollback          |
 
 ## Estrutura recomendada
 
@@ -40,6 +41,8 @@ docs/
 │   └── product-scope-and-principles.md
 ├── platform/
 │   └── vercel-limits-assessment.md
+├── security/
+│   └── frontend-security-assessment.md
 ├── harness/
 │   ├── harness-engineering.md
 │   ├── harness-vs-github-boundaries.md
@@ -75,6 +78,7 @@ docs/
 
 - `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.
 - `docs/platform/`: avaliacoes de infraestrutura, limites de plataforma e decisoes operacionais.
+- `docs/security/`: avaliacoes de risco, controles existentes e planos graduais de endurecimento.
 - `docs/architecture/`: definicoes tecnicas, fronteiras arquiteturais e decisoes de engenharia.
 - `docs/specs/`: especificacoes de trabalho, criterios de aceite e formatos de entrega antes da implementacao.
 - `docs/harness/`: regras, guardrails, validacoes e observabilidade dos agentes e do fluxo assistido por IA.
