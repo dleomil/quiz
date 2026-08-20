@@ -32,6 +32,7 @@ Antes de implementar, confirmar:
 
 - qual spec foi aprovada
 - qual branch deve receber a mudanca
+- se `npm run validate:branch -- <branch> <base>` aprovou a origem e o destino
 - qual validacao precisa ser executada
 - como a reversao ocorrera se necessario
 
@@ -49,6 +50,7 @@ Antes de validar, confirmar:
 Antes de atualizar board, issue ou PR, confirmar:
 
 - qual item sera movido
+- se a branch e a base do PR passam em `npm run validate:branch`
 - qual estado real da entrega deve ser refletido
 - quais labels, campos e comentarios precisam ser atualizados
 - se o estado final corresponde ao que foi entregue

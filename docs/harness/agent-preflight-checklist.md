@@ -32,8 +32,17 @@ Use este checklist antes de:
 ### 3. Branch e destino
 
 - qual e a branch alvo
-- qual politica de nome se aplica
+- qual politica de nome se aplica, conforme
+  `scripts/validate-branch-policy.cjs`
 - qual base branch deve receber a mudanca
+- o comando abaixo passa antes do primeiro push:
+
+```bash
+npm run validate:branch -- "$(git branch --show-current)" develop
+```
+
+Substitua `develop` por `main` somente em uma promocao, hotfix ou release
+permitida. `feat/*` nao e valido; para funcionalidades, use `feature/*`.
 
 ### 4. Validacao
 
