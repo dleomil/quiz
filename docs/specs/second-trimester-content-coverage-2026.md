@@ -79,8 +79,9 @@ com `contentSetId: 2026-t2-v1`.
 | **Total**  |          **31** |          **31** |         **620** | **620** |
 
 Todos os temas previstos no mapa possuem 20 questoes executaveis no acervo
-`2026-t2-v1`. A publicacao do acervo ainda depende de revisao final, PR
-aprovado e decisao explicita de disponibilizacao.
+`2026-t2-v1`, atualmente publicado. O manifesto executavel correspondente fica
+em `config/content-coverage-manifest.json`; qualquer divergencia entre ele e as
+questoes bloqueia `npm run validate:content`.
 
 `Atividades adicionais` e uma secao de exercicios, nao um objeto avaliavel
 autonomo no roteiro. Ela nao cria uma meta adicional. Se uma atividade revelar
@@ -103,6 +104,12 @@ definido e avaliacao de direitos de uso.
    questoes.
 5. O PR do lote executa `npm run validate:content` e `npm test`; o catalogo
    `2026-t2-v1` so pode ser publicado junto de um lote aprovado e testado.
+
+Para um novo trimestre, o manifesto deve ser atualizado no mesmo PR que cria o
+catalogo. Acervos `draft` podem ter menos questoes que a meta enquanto estao em
+construcao; temas desconhecidos e quantidades acima da meta sempre bloqueiam. Ao
+alterar o status para `published`, todos os temas declarados devem atingir
+exatamente a quantidade esperada.
 
 ## Criterios de aceite por tema
 

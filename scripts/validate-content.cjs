@@ -16,6 +16,10 @@ const REVIEW_STATUSES = new Set([
   'published',
   'retired',
 ]);
+const COVERAGE_MANIFEST_PATH = path.join(
+  'config',
+  'content-coverage-manifest.json',
+);
 
 function isNonEmptyString(value) {
   return typeof value === 'string' && value.trim().length > 0;
@@ -172,6 +176,141 @@ function validateContentSources(sources) {
   return errors;
 }
 
+function countQuestionsByTopic(sources, contentSetId) {
+  const counts = new Map();
+
+  Object.values(sources).forEach(function (source) {
+    if (!source || !Array.isArray(source.questions)) return;
+    source.questions.forEach(function (question) {
+      if (question.contentSetId !== contentSetId) return;
+      const key = question.subject + ':' + question.topic;
+      counts.set(key, (counts.get(key) || 0) + 1);
+    });
+  });
+
+  return counts;
+}
+
+function coverageLabel(contentSetId, subject, topic) {
+  return '[coverage:' + contentSetId + ':' + subject + ':' + topic + ']';
+}
+
+function validateCoverageManifest(sources, manifest, contentSets) {
+  const errors = [];
+  const catalogById = new Map(
+    contentSets.map(function (contentSet) {
+      return [contentSet.contentSetId, contentSet];
+    }),
+  );
+
+  if (!manifest || manifest.schemaVersion !== 'coverage-v1') {
+    return ['[coverage] schemaVersion deve ser coverage-v1'];
+  }
+  if (!manifest.contentSets || typeof manifest.contentSets !== 'object') {
+    return ['[coverage] contentSets deve ser um objeto'];
+  }
+
+  const declaredContentSets = new Set(Object.keys(manifest.contentSets));
+  const contentV1SetIds = new Set();
+  Object.values(sources).forEach(function (source) {
+    if (!source || !Array.isArray(source.questions)) return;
+    source.questions.forEach(function (question) {
+      if (question.schemaVersion === 'content-v1') {
+        contentV1SetIds.add(question.contentSetId);
+      }
+    });
+  });
+
+  contentV1SetIds.forEach(function (contentSetId) {
+    const catalog = catalogById.get(contentSetId);
+    if (
+      catalog &&
+      catalog.status === 'published' &&
+      !declaredContentSets.has(contentSetId)
+    ) {
+      errors.push(
+        '[coverage:' +
+          contentSetId +
+          '] acervo published exige manifesto de cobertura',
+      );
+    }
+  });
+
+  Object.entries(manifest.contentSets).forEach(function ([
+    contentSetId,
+    entry,
+  ]) {
+    const catalog = catalogById.get(contentSetId);
+    if (!catalog) {
+      errors.push('[coverage:' + contentSetId + '] acervo ausente no catalogo');
+      return;
+    }
+    if (!entry || !entry.subjects || typeof entry.subjects !== 'object') {
+      errors.push(
+        '[coverage:' + contentSetId + '] subjects deve ser um objeto',
+      );
+      return;
+    }
+
+    const expectedByTopic = new Map();
+    Object.entries(entry.subjects).forEach(function ([subject, topics]) {
+      if (!topics || typeof topics !== 'object') {
+        errors.push(
+          '[coverage:' +
+            contentSetId +
+            ':' +
+            subject +
+            '] temas devem ser um objeto',
+        );
+        return;
+      }
+      Object.entries(topics).forEach(function ([topic, expected]) {
+        const label = coverageLabel(contentSetId, subject, topic);
+        if (!Number.isInteger(expected) || expected < 1) {
+          errors.push(label + ' esperado deve ser inteiro positivo');
+          return;
+        }
+        expectedByTopic.set(subject + ':' + topic, expected);
+      });
+    });
+
+    const actualByTopic = countQuestionsByTopic(sources, contentSetId);
+    actualByTopic.forEach(function (actual, key) {
+      if (expectedByTopic.has(key)) return;
+      const separator = key.indexOf(':');
+      const subject = key.slice(0, separator);
+      const topic = key.slice(separator + 1);
+      errors.push(
+        coverageLabel(contentSetId, subject, topic) +
+          ' atual=' +
+          actual +
+          ' esperado=nao-declarado',
+      );
+    });
+
+    expectedByTopic.forEach(function (expected, key) {
+      const actual = actualByTopic.get(key) || 0;
+      const separator = key.indexOf(':');
+      const subject = key.slice(0, separator);
+      const topic = key.slice(separator + 1);
+      const mustBeComplete = catalog.status === 'published';
+      if (actual > expected || (mustBeComplete && actual !== expected)) {
+        errors.push(
+          coverageLabel(contentSetId, subject, topic) +
+            ' atual=' +
+            actual +
+            ' esperado=' +
+            expected +
+            ' status=' +
+            catalog.status,
+        );
+      }
+    });
+  });
+
+  return errors;
+}
+
 function loadContentSources(rootDir) {
   const context = vm.createContext({ window: {} });
   const dataDirectory = path.join(rootDir, 'js', 'data', 'subjects');
@@ -186,8 +325,32 @@ function loadContentSources(rootDir) {
   return context.window.QuestionsDataSources || {};
 }
 
+function loadContentCatalog(rootDir) {
+  const context = vm.createContext({});
+  const catalogPath = path.join(rootDir, 'js', 'data', 'content-catalog.js');
+  const source = fs.readFileSync(catalogPath, 'utf8');
+  vm.runInContext(
+    source + '\nthis.__contentSets = ContentCatalog.getAll();',
+    context,
+    { filename: catalogPath },
+  );
+  return context.__contentSets;
+}
+
+function loadCoverageManifest(rootDir) {
+  const manifestPath = path.join(rootDir, COVERAGE_MANIFEST_PATH);
+  return JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+}
+
 function validateRepositoryContent(rootDir) {
-  return validateContentSources(loadContentSources(rootDir));
+  const sources = loadContentSources(rootDir);
+  return validateContentSources(sources).concat(
+    validateCoverageManifest(
+      sources,
+      loadCoverageManifest(rootDir),
+      loadContentCatalog(rootDir),
+    ),
+  );
 }
 
 if (require.main === module) {
@@ -201,8 +364,11 @@ if (require.main === module) {
 }
 
 module.exports = {
+  loadContentCatalog,
   loadContentSources,
+  loadCoverageManifest,
   validateContentSources,
+  validateCoverageManifest,
   validateQuestion,
   validateRepositoryContent,
 };
