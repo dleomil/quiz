@@ -212,8 +212,8 @@ const geographyT2QuestionSpecs = [
     ['tipos de papel', 'nomes de oceanos', 'estações do ano'],
     'Os quatro pontos cardeais ajudam na orientação.',
     [
-      'não são materiais',
-      'têm outros nomes',
+      'norte, sul, leste e oeste não são tipos de papel',
+      'norte, sul, leste e oeste não são nomes de oceanos',
       'são verão, outono, inverno e primavera.',
     ],
   ],
@@ -416,7 +416,7 @@ const geographyT2RepresentationQuestionSpecs = [
     ],
     'O croqui registra elementos principais sem exigir todos os detalhes e medidas exatas.',
     [
-      'é imagem de satélite',
+      'essa descrição corresponde a uma imagem de satélite',
       'tem forma esférica',
       'não é uma representação desenhada.',
     ],
@@ -463,14 +463,14 @@ const geographyT2RepresentationQuestionSpecs = [
   [
     'GEO-T2-REP-007',
     'representacoes_cartograficas',
-    'Qual representação ajuda a observar a posição dos continentes e oceanos na Terra sem tornar o planeta plano?',
+    'Qual representação ajuda a observar a posição dos continentes e oceanos na Terra sem representá-la em uma superfície plana?',
     'globo terrestre',
     ['croqui da escola', 'planta da casa', 'mapa de uma praça'],
     'O globo mantém uma forma semelhante à do planeta.',
     [
       'mostra um caminho simples',
-      'detalha construção',
-      'representa área local e plana.',
+      'detalha uma construção',
+      'representa uma área local em uma superfície plana.',
     ],
   ],
   [
@@ -483,7 +483,7 @@ const geographyT2RepresentationQuestionSpecs = [
     [
       'não detalha o bairro',
       'não é adequada',
-      'não orientam um caminho local.',
+      'uma lista de continentes não orienta um caminho local.',
     ],
   ],
   [
@@ -507,8 +507,8 @@ const geographyT2RepresentationQuestionSpecs = [
     ['planta de apartamento', 'croqui de quarteirão', 'fotografia de uma sala'],
     'O mapa-múndi representa o mundo em uma superfície plana.',
     [
-      'detalha construção',
-      'representa área local',
+      'detalha uma construção',
+      'representa uma área local',
       'registra uma cena, não todo o mundo.',
     ],
   ],
@@ -541,7 +541,7 @@ const geographyT2RepresentationQuestionSpecs = [
     ],
     'Plantas ajudam a compreender a disposição de cômodos e elementos.',
     [
-      'é representado por globo ou mapa-múndi',
+      'é representado por um globo ou um mapa-múndi',
       'a planta organiza posições',
       'podem aparecer em imagens meteorológicas.',
     ],
@@ -549,12 +549,12 @@ const geographyT2RepresentationQuestionSpecs = [
   [
     'GEO-T2-REP-013',
     'representacoes_cartograficas',
-    'Um croqui precisa apresentar todas as medidas exatas do espaço?',
-    'não, ele pode ser um desenho simples com referências principais',
+    'Qual afirmação sobre as medidas de um croqui está correta?',
+    'ele pode ser um desenho simples, sem todas as medidas exatas',
     [
-      'sim, sempre com precisão de construção',
-      'sim, e deve mostrar o planeta',
-      'não, porque não pode indicar caminhos',
+      'ele sempre exige medidas exatas de uma construção',
+      'ele deve apresentar as medidas de todo o planeta',
+      'ele não pode ser usado para indicar caminhos',
     ],
     'O croqui prioriza a compreensão de um local ou trajeto.',
     [
@@ -675,7 +675,7 @@ const geographyT2MapQuestionSpecs = [
     [
       'apenas delimita a folha',
       'não identifica o assunto',
-      'não explicam o mapa.',
+      'o número de páginas do caderno não explica o assunto do mapa.',
     ],
   ],
   [
@@ -699,8 +699,8 @@ const geographyT2MapQuestionSpecs = [
     ['uma estrada', 'uma escola', 'uma montanha'],
     'O significado foi definido de modo explícito pela legenda desse mapa.',
     [
-      'teria outro símbolo',
-      'costuma ser indicada por ponto ou desenho',
+      'não corresponde à legenda informada',
+      'não corresponde à legenda informada',
       'não corresponde à legenda fornecida.',
     ],
   ],
@@ -743,15 +743,15 @@ const geographyT2MapQuestionSpecs = [
     ['uma ponte', 'uma floresta', 'uma escola'],
     'A legenda definiu a cruz vermelha como símbolo de hospital nesse mapa.',
     [
-      'exigiria outro símbolo',
-      'teria outra indicação',
-      'não corresponde ao código fornecido.',
+      'não corresponde ao código fornecido pela legenda',
+      'não corresponde ao código fornecido pela legenda',
+      'não corresponde ao código fornecido pela legenda.',
     ],
   ],
   [
     'GEO-T2-MAP-008',
     'mapas_representacao_espaco',
-    'Em um mapa com o norte na parte de cima, a biblioteca está ao norte da escola. Onde ela aparece?',
+    'Em um mapa com o norte na parte de cima, a biblioteca está ao norte da escola. Onde a biblioteca aparece?',
     'acima da escola',
     ['abaixo da escola', 'sempre fora do mapa', 'no mesmo ponto da escola'],
     'Com o norte para cima, um lugar ao norte aparece acima do outro.',
@@ -806,7 +806,7 @@ const geographyT2MapQuestionSpecs = [
       'para tornar todos os prédios iguais',
       'para eliminar a necessidade de legenda',
     ],
-    'A visão de cima facilita perceber posições, caminhos e distâncias.',
+    'A visão de cima facilita perceber posições e caminhos.',
     [
       'o objetivo é comunicar',
       'símbolos não mudam a realidade',
@@ -861,7 +861,7 @@ const geographyT2MapQuestionSpecs = [
     'GEO-T2-MAP-017',
     'mapas_representacao_espaco',
     'O mercado fica entre a escola e a praça em uma mesma rua. Qual afirmação está correta?',
-    'ao ir da escola à praça, passamos pelo mercado',
+    'seguindo por essa mesma rua da escola até a praça, passamos pelo mercado',
     [
       'o mercado fica fora dessa rua',
       'escola e praça são o mesmo lugar',
