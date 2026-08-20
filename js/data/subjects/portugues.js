@@ -250,20 +250,24 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'Nesse contexto, "contente" e "feliz" apresentam sentidos próximos.',
     wrong: [
-      'indica falta de energia',
-      'indica afastamento',
-      'indica ausência de conteúdo.',
+      'Indica falta de energia.',
+      'Indica afastamento.',
+      'Indica ausência de conteúdo.',
     ],
   },
   {
     id: 'PT-T2-SEM-002',
     question:
-      'Em "O corredor foi veloz", qual palavra tem sentido semelhante a "veloz"?',
+      'Em "O atleta foi veloz durante a corrida", qual palavra tem sentido semelhante a "veloz"?',
     options: ['silencioso', 'rápido', 'cuidadoso', 'pequeno'],
     correct: 'rápido',
     explanation:
-      '"Rápido" preserva a ideia de que o corredor se movimentou com velocidade.',
-    wrong: ['fala de som', 'fala de atenção', 'fala de tamanho.'],
+      '"Rápido" preserva a ideia de que o atleta se movimentou com velocidade.',
+    wrong: [
+      'Refere-se ao som, não à velocidade.',
+      'Refere-se à atenção, não à velocidade.',
+      'Refere-se ao tamanho, não à velocidade.',
+    ],
   },
   {
     id: 'PT-T2-SEM-003',
@@ -273,9 +277,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     correct: 'começou',
     explanation: '"Começou" e "iniciou" indicam o início da ação nessa frase.',
     wrong: [
-      'significa eliminar ou desligar',
-      'significa não lembrar',
-      'significa parar uma ação em andamento.',
+      'Significa eliminar ou desligar.',
+      'Significa não lembrar.',
+      'Significa parar uma ação em andamento.',
     ],
   },
   {
@@ -286,9 +290,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     correct: 'finalizou',
     explanation: '"Finalizou" indica que o filme chegou ao fim.',
     wrong: [
-      'indica que algo passou a ser visto',
-      'indica permanência',
-      'indica início.',
+      'Indica que algo passou a ser visto.',
+      'Indica permanência.',
+      'Indica início.',
     ],
   },
   {
@@ -300,9 +304,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       '"Bonito" preserva a característica positiva indicada por "belo".',
     wrong: [
-      'descreve muito som',
-      'indica ausência',
-      'indica que algo está longe.',
+      'Descreve algo com muito barulho.',
+      'Indica ausência.',
+      'Indica que algo está longe.',
     ],
   },
   {
@@ -314,9 +318,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'Nesse contexto, "quieta" mantém a ideia de pouco ou nenhum barulho.',
     wrong: [
-      'indica muitas pessoas',
-      'fala de cores',
-      'indica que não está fechada.',
+      'Indica a presença de muitas pessoas.',
+      'Refere-se às cores da sala.',
+      'Indica que a sala não está fechada.',
     ],
   },
   {
@@ -328,9 +332,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       '"Ajudou" e "auxiliou" indicam que Pedro ofereceu apoio ao colega.',
     wrong: [
-      'indica convidar ou dizer um nome',
-      'indica olhar com atenção',
-      'indica achar alguém ou algo.',
+      'Indica convidar ou dizer um nome.',
+      'Indica olhar com atenção.',
+      'Indica achar alguém ou algo.',
     ],
   },
   {
@@ -342,9 +346,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       '"Perto" mantém a ideia de pequena distância entre os lugares.',
     wrong: [
-      'indica que não está aberta',
-      'indica posição superior',
-      'indica ausência de pessoas ou objetos.',
+      'Indica que a biblioteca não está aberta.',
+      'Indica uma posição superior.',
+      'Indica ausência de pessoas ou objetos.',
     ],
   },
   {
@@ -355,9 +359,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     correct: 'longe',
     explanation: '"Longe" preserva a ideia de grande distância.',
     wrong: [
-      'indica ausência de sujeira',
-      'fala de tempo',
-      'indica muita atividade.',
+      'Indica ausência de sujeira.',
+      'Refere-se ao tempo de existência, não à distância.',
+      'Indica muita atividade.',
     ],
   },
   {
@@ -369,9 +373,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'Nesse contexto, "gostosa" mantém a avaliação positiva do sabor.',
     wrong: [
-      'indica temperatura',
-      'descreve o estado da sopa',
-      'indica que o preparo terminou.',
+      'Indica a temperatura da sopa, não seu sabor.',
+      'Descreve a consistência da sopa, não seu sabor.',
+      'Indica que o preparo terminou, não como está o sabor.',
     ],
   },
   {
@@ -383,22 +387,23 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       '"Lembrou" e "recordou" indicam que o recado voltou à memória.',
     wrong: [
-      'indica registrar por escrito',
-      'indica eliminar',
-      'indica deixar de ter ou não encontrar.',
+      'Indica registrar por escrito.',
+      'Indica eliminar.',
+      'Indica deixar de ter ou não encontrar.',
     ],
   },
   {
     id: 'PT-T2-SEM-012',
     question:
-      'Em "A família escolheu o caminho mais curto", qual expressão pode substituir "escolheu"?',
-    options: ['esqueceu do', 'afastou-se do', 'desenhou o', 'optou pelo'],
+      'Em "A família escolheu o caminho mais curto", qual expressão pode substituir "escolheu o" sem repetir o artigo?',
+    options: ['esqueceu-se do', 'afastou-se do', 'desenhou o', 'optou pelo'],
     correct: 'optou pelo',
-    explanation: '"Optou pelo" mantém a ideia de selecionar uma possibilidade.',
+    explanation:
+      '"Optou pelo" substitui "escolheu o" e mantém a ideia de selecionar uma possibilidade, sem repetir o artigo.',
     wrong: [
-      'indica não lembrar',
-      'indica aumentar a distância',
-      'indica representar com traços.',
+      '"Esqueceu-se do" indica que a família não se lembrou do caminho.',
+      '"Afastou-se do" indica aumento da distância em relação ao caminho.',
+      '"Desenhou o" indica que a família representou o caminho com traços.',
     ],
   },
   {
@@ -410,9 +415,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       '"Residência" e "moradia" podem indicar o lugar onde alguém vive.',
     wrong: [
-      'é uma atividade de diversão',
-      'é usada para realizar um trabalho',
-      'é o conjunto de elementos vistos em um lugar.',
+      'É uma atividade de diversão.',
+      'É usada para realizar um trabalho.',
+      'É o conjunto de elementos vistos em um lugar.',
     ],
   },
   {
@@ -424,9 +429,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'Nesse contexto, "medo" e "receio" indicam preocupação diante da tempestade.',
     wrong: [
-      'indica disposição para enfrentar uma situação',
-      'é um sentimento positivo',
-      'indica urgência.',
+      'Indica disposição para enfrentar uma situação.',
+      'É um sentimento positivo.',
+      'Indica urgência.',
     ],
   },
   {
@@ -437,9 +442,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     correct: 'barulho',
     explanation: '"Barulho" preserva a ideia de um som que acordou o bebê.',
     wrong: [
-      'é ausência de som',
-      'é um cheiro',
-      'é um objeto usado para aquecer.',
+      'É a ausência de som.',
+      'É um cheiro, não um som.',
+      'É um objeto usado para aquecer.',
     ],
   },
   {
@@ -450,7 +455,11 @@ const portugueseSimilarWordsQuestionSpecs = [
     correct: 'calma',
     explanation:
       '"Calma" mantém a ideia de que a criança esperou sem agitação.',
-    wrong: ['indica urgência', 'indica irritação', 'indica falta de atenção.'],
+    wrong: [
+      'Indica urgência.',
+      'Indica irritação.',
+      'Indica falta de atenção.',
+    ],
   },
   {
     id: 'PT-T2-SEM-017',
@@ -466,9 +475,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'O dicionário ajuda a conhecer significados e usos das palavras.',
     wrong: [
-      'pode produzir uma resposta errada',
-      'não revela o significado',
-      'mudar a grafia não explica o sentido.',
+      'Pode produzir uma resposta errada.',
+      'Não revela o significado.',
+      'Mudar a grafia não explica o sentido.',
     ],
   },
   {
@@ -485,9 +494,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'A mesma palavra pode ter usos diferentes, e a frase mostra qual sentido está sendo usado.',
     wrong: [
-      'semelhança de sentido não depende de rima',
-      'tamanho não define significado',
-      'a posição não garante correção.',
+      'A semelhança de sentido não depende de rima.',
+      'O tamanho não define o significado.',
+      'A posição não garante que a resposta esteja correta.',
     ],
   },
   {
@@ -497,16 +506,16 @@ const portugueseSimilarWordsQuestionSpecs = [
     options: [
       'sim, sem precisar reler',
       'sim, porque têm a mesma grafia',
-      'não, pois o contexto pode mudar o melhor uso',
+      'não, pois o contexto mostra qual palavra é mais adequada',
       'não, porque nunca possuem relação',
     ],
-    correct: 'não, pois o contexto pode mudar o melhor uso',
+    correct: 'não, pois o contexto mostra qual palavra é mais adequada',
     explanation:
       'Palavras próximas podem apresentar diferenças de uso, intensidade ou combinação com outras palavras.',
     wrong: [
-      'é preciso conferir a frase',
-      'grafia não define a relação',
-      'palavras semelhantes possuem relação de sentido em determinados contextos.',
+      'É preciso conferir a frase antes de fazer a troca.',
+      'A grafia não define a relação de sentido.',
+      'Palavras semelhantes possuem relação de sentido em determinados contextos.',
     ],
   },
   {
@@ -523,9 +532,9 @@ const portugueseSimilarWordsQuestionSpecs = [
     explanation:
       'A releitura permite verificar se a frase continua clara e mantém o sentido principal.',
     wrong: [
-      'uma letra não confirma o significado',
-      'tamanho não garante adequação',
-      'o contexto é necessário para decidir.',
+      'Uma letra não confirma o significado.',
+      'O tamanho não garante que a palavra seja adequada.',
+      'O contexto é necessário para decidir.',
     ],
   },
 ];
@@ -2952,7 +2961,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_lu_006',
-        question: 'Complete: Ganhei um anel de present__.',
+        question: 'Complete: Ganhei um ane__ de presente.',
         options: ['l', 'u', 'o', 'a'],
         correctIndex: 0,
         explanation: 'Anel termina com a letra L.',
@@ -2965,25 +2974,25 @@ window.QuestionsDataSources.portugues = {
       {
         id: 'pt_t2_lu_007',
         question: 'Complete: O cachorro lati__ quando ouviu um barulho.',
-        options: ['u', 'l', 'o', 'a'],
+        options: ['u', 'l', 'o', 'e'],
         correctIndex: 0,
         explanation: 'Latiu é uma forma do verbo latir no passado.',
         wrong: [
           'Latil não é palavra.',
           'Latio não é a forma verbal usada nessa frase.',
-          'Latia indica outra situação e não completa a frase no passado.',
+          'Latie não é uma forma do verbo latir.',
         ],
       },
       {
         id: 'pt_t2_lu_008',
-        question: 'Complete: O barco navegou pe__ rio.',
+        question: 'Complete: O barco navegou pe__o rio.',
         options: ['l', 'u', 'o', 'a'],
         correctIndex: 0,
         explanation: 'Pelo é a união de por e o nesta frase.',
         wrong: [
-          'Peu não completa a frase.',
-          'Peo não é palavra.',
-          'Pea não completa a frase.',
+          'Peuo não é palavra.',
+          'Peoo não é palavra.',
+          'Peao não completa a frase.',
         ],
       },
       {
@@ -3013,13 +3022,13 @@ window.QuestionsDataSources.portugues = {
       {
         id: 'pt_t2_lu_011',
         question: 'Complete: O menino ouvi__ a história com atenção.',
-        options: ['u', 'l', 'o', 'a'],
+        options: ['u', 'l', 'o', 'e'],
         correctIndex: 0,
         explanation: 'Ouviu é uma forma do verbo ouvir no passado.',
         wrong: [
           'Ouvil não é palavra.',
-          'Ouvuo não é palavra.',
-          'Ouvia indica outra situação.',
+          'Ouvio não é palavra.',
+          'Ouvie não é uma forma do verbo ouvir.',
         ],
       },
       {
@@ -3037,13 +3046,13 @@ window.QuestionsDataSources.portugues = {
       {
         id: 'pt_t2_lu_013',
         question: 'Complete: O bebê sorri__ para a avó.',
-        options: ['u', 'l', 'o', 'a'],
+        options: ['u', 'l', 'o', 'e'],
         correctIndex: 0,
         explanation: 'Sorriu é uma forma do verbo sorrir no passado.',
         wrong: [
-          'Sorriel não é palavra.',
+          'Sorril não é palavra.',
           'Sorrio tem outro uso e não completa a frase no passado.',
-          'Sorria indica outra situação.',
+          'Sorrie não é uma forma do verbo sorrir.',
         ],
       },
       {
@@ -3109,7 +3118,7 @@ window.QuestionsDataSources.portugues = {
       {
         id: 'pt_t2_lu_019',
         question: 'Complete: A menina abriu o ba__.',
-        options: ['u', 'l', 'o', 'a'],
+        options: ['ú', 'l', 'o', 'a'],
         correctIndex: 0,
         explanation: 'Baú é escrito com U no final e recebe acento agudo.',
         wrong: [
@@ -3134,7 +3143,7 @@ window.QuestionsDataSources.portugues = {
     ...[
       {
         id: 'pt_t2_ceci_001',
-        question: 'Complete: A __na do filme foi engraçada.',
+        question: 'Complete: A ____ do filme foi engraçada.',
         options: ['cena', 'cina', 'sena', 'sina'],
         correctIndex: 0,
         explanation: 'Cena se escreve com CE.',
@@ -3146,19 +3155,20 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_002',
-        question: 'Complete: A __dade fica cheia de luzes à noite.',
+        question: 'Complete: A ____ fica cheia de luzes à noite.',
         options: ['cidade', 'cedade', 'sidade', 'cidada'],
         correctIndex: 0,
-        explanation: 'Cidade se escreve com CI.',
+        explanation:
+          'Cidade se escreve C-I-D-A-D-E, com C seguido de I no início.',
         wrong: [
           'Cedade troca CI por CE.',
           'Sidade troca C por S.',
-          'Cidada não é a palavra completa usada na frase.',
+          'Cidada termina com A, mas cidade termina com E.',
         ],
       },
       {
         id: 'pt_t2_ceci_003',
-        question: 'Complete: A __bola tem cheiro gostoso.',
+        question: 'Complete: A ____ foi usada na receita.',
         options: ['cebola', 'cibola', 'sebolla', 'sibola'],
         correctIndex: 0,
         explanation: 'Cebola se escreve com CE.',
@@ -3170,19 +3180,19 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_004',
-        question: 'Complete: O __real é usado no café da manhã.',
+        question: 'Complete: O ____ é usado no café da manhã.',
         options: ['cereal', 'cerial', 'serial', 'sireal'],
         correctIndex: 0,
-        explanation: 'Cereal se escreve com CE.',
+        explanation: 'Cereal se escreve C-E-R-E-A-L.',
         wrong: [
           'Cerial troca a vogal da segunda sílaba.',
-          'Serial troca C por S.',
-          'Sireal não é a grafia correta.',
+          'Serial é outra palavra e troca o C por S e o segundo E por I.',
+          'Sireal começa com SI, enquanto cereal começa com CE e tem E na segunda sílaba.',
         ],
       },
       {
         id: 'pt_t2_ceci_005',
-        question: 'Complete: A __noura é laranja.',
+        question: 'Complete: A ____ é laranja.',
         options: ['cenoura', 'cinoura', 'senoura', 'sinoura'],
         correctIndex: 0,
         explanation: 'Cenoura se escreve com CE.',
@@ -3194,7 +3204,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_006',
-        question: 'Complete: A __garra canta alto no verão.',
+        question: 'Complete: A ____ canta alto no verão.',
         options: ['cigarra', 'cegarra', 'sigarra', 'segarra'],
         correctIndex: 0,
         explanation: 'Cigarra se escreve com CI.',
@@ -3209,11 +3219,11 @@ window.QuestionsDataSources.portugues = {
         question: 'Complete: A __ tem duas rodas.',
         options: ['bicicleta', 'becicleta', 'bisicleta', 'bisicreta'],
         correctIndex: 0,
-        explanation: 'Bicicleta se escreve com CI.',
+        explanation: 'Bicicleta se escreve B-I-C-I-C-L-E-T-A.',
         wrong: [
           'Becicleta altera a primeira sílaba.',
           'Bisicleta troca C por S.',
-          'Bisicreta troca L por R.',
+          'Bisicreta troca o primeiro C por S e o L por R.',
         ],
       },
       {
@@ -3221,40 +3231,42 @@ window.QuestionsDataSources.portugues = {
         question: 'Complete: A família foi ao __ para assistir a um filme.',
         options: ['cinema', 'cenema', 'sinema', 'cinima'],
         correctIndex: 0,
-        explanation: 'Cinema se escreve com CI no início.',
+        explanation:
+          'Cinema se escreve C-I-N-E-M-A, com CI no início e E na segunda sílaba.',
         wrong: [
           'Cenema troca CI por CE.',
           'Sinema troca C por S.',
-          'Cinima altera a vogal da segunda sílaba.',
+          'Cinima troca o E da segunda sílaba por I.',
         ],
       },
       {
         id: 'pt_t2_ceci_009',
-        question: 'Complete: O menino recebeu um __ de parabéns.',
+        question: 'Complete: O menino recebeu um ____ de participação.',
         options: ['certificado', 'sertificado', 'cirteficado', 'certeficado'],
         correctIndex: 0,
-        explanation: 'Certificado se escreve com CE no início.',
+        explanation: 'Certificado se escreve CER-TI-FI-CA-DO.',
         wrong: [
           'Sertificado troca C por S.',
-          'Cirteficado troca CE por CI.',
-          'Certeficado altera a vogal da sílaba seguinte.',
+          'Cirteficado troca o E da primeira sílaba por I e o I da segunda sílaba por E.',
+          'Certeficado troca o I da segunda sílaba por E.',
         ],
       },
       {
         id: 'pt_t2_ceci_010',
-        question: 'Complete: A __ncia estuda os seres vivos.',
+        question: 'Complete: A ____ estuda os seres vivos.',
         options: ['ciência', 'ceência', 'siencia', 'ciensia'],
         correctIndex: 0,
-        explanation: 'Ciência se escreve com CI no início.',
+        explanation:
+          'Ciência se escreve C-I-Ê-N-C-I-A, com acento circunflexo no Ê e um segundo C antes do I.',
         wrong: [
-          'Ceência troca CI por CE.',
-          'Siencia troca C por S.',
-          'Ciensia altera a grafia da palavra.',
+          'Ceência troca o I depois do primeiro C por E.',
+          'Siencia troca o primeiro C por S e não usa o acento circunflexo no Ê.',
+          'Ciensia não usa o acento circunflexo no Ê e troca o segundo C por S.',
         ],
       },
       {
         id: 'pt_t2_ceci_011',
-        question: 'Complete: A __reja fica perto da praça.',
+        question: 'Complete: A ____ fica perto da praça.',
         options: ['cereja', 'cireja', 'sereja', 'sireja'],
         correctIndex: 0,
         explanation: 'Cereja se escreve com CE.',
@@ -3266,19 +3278,19 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_012',
-        question: 'Complete: O pedreiro usou __mento na obra.',
+        question: 'Complete: O pedreiro usou ____ na obra.',
         options: ['cimento', 'cemente', 'simento', 'ciminto'],
         correctIndex: 0,
-        explanation: 'Cimento se escreve com CI.',
+        explanation: 'Cimento se escreve C-I-M-E-N-T-O.',
         wrong: [
-          'Cemente troca CI por CE.',
+          'Cemente troca o I da primeira sílaba por E e o O final por E.',
           'Simento troca C por S.',
           'Ciminto altera a vogal da segunda sílaba.',
         ],
       },
       {
         id: 'pt_t2_ceci_013',
-        question: 'Complete: O __rco tem lona e palhaços.',
+        question: 'Complete: O ____ tem lona e palhaços.',
         options: ['circo', 'cerco', 'sirco', 'serco'],
         correctIndex: 0,
         explanation: 'Circo se escreve com CI.',
@@ -3290,7 +3302,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_014',
-        question: 'Complete: A __sta guarda frutas.',
+        question: 'Complete: A ____ guarda frutas.',
         options: ['cesta', 'cista', 'sesta', 'sista'],
         correctIndex: 0,
         explanation: 'Cesta se escreve com CE.',
@@ -3302,7 +3314,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_015',
-        question: 'Complete: A __gonha fez um ninho alto.',
+        question: 'Complete: A ____ fez um ninho alto.',
         options: ['cegonha', 'cigonha', 'segonha', 'sigonha'],
         correctIndex: 0,
         explanation: 'Cegonha se escreve com CE.',
@@ -3314,7 +3326,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_016',
-        question: 'Complete: O __ntavo é uma moeda pequena.',
+        question: 'Complete: O ____ é uma moeda pequena.',
         options: ['centavo', 'cintavo', 'sentavo', 'sintavo'],
         correctIndex: 0,
         explanation: 'Centavo se escreve com CE.',
@@ -3326,7 +3338,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_017',
-        question: 'Complete: A __cada da casa estava fechada.',
+        question: 'Complete: A ____ da casa estava fechada.',
         options: ['cerca', 'circo', 'serca', 'sirca'],
         correctIndex: 0,
         explanation: 'Cerca se escreve com CE.',
@@ -3338,10 +3350,10 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_018',
-        question: 'Complete: O __rne é uma ave grande.',
+        question: 'Complete: O ____ é uma ave grande.',
         options: ['cisne', 'cesne', 'sisne', 'cizne'],
         correctIndex: 0,
-        explanation: 'Cisne se escreve com CI.',
+        explanation: 'Cisne se escreve C-I-S-N-E, com S depois do I.',
         wrong: [
           'Cesne troca CI por CE.',
           'Sisne troca C por S.',
@@ -3350,7 +3362,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_019',
-        question: 'Complete: O __ntro da cidade tem muitas lojas.',
+        question: 'Complete: O ____ da cidade tem muitas lojas.',
         options: ['centro', 'cintro', 'sentro', 'sintro'],
         correctIndex: 0,
         explanation: 'Centro se escreve com CE.',
@@ -3362,7 +3374,7 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_ceci_020',
-        question: 'Complete: O __rvo correu pelo campo.',
+        question: 'Complete: O ____ correu pelo campo.',
         options: ['cervo', 'cirvo', 'servo', 'sirvo'],
         correctIndex: 0,
         explanation: 'Cervo se escreve com CE.',
@@ -3795,17 +3807,18 @@ window.QuestionsDataSources.portugues = {
       {
         id: 'pt_t2_pron_015',
         question:
-          'Qual frase fala diretamente com uma mulher adulta de modo respeitoso?',
+          'Qual frase pergunta diretamente a uma mulher adulta, de modo respeitoso, se ela chegou cedo?',
         options: [
-          'A senhora chegou cedo.',
-          'Ela chegou cedo.',
-          'Elas chegaram cedo.',
-          'Nós chegamos cedo.',
+          'A senhora chegou cedo?',
+          'Ela chegou cedo?',
+          'Elas chegaram cedo?',
+          'Nós chegamos cedo?',
         ],
         correctIndex: 0,
-        explanation: 'A senhora fala diretamente com a pessoa.',
+        explanation:
+          'A senhora é uma forma respeitosa de falar diretamente com uma mulher adulta.',
         wrong: [
-          'Ela: a frase fala sobre a pessoa.',
+          'Ela pergunta sobre outra mulher e não se dirige à própria mulher adulta.',
           'Elas: a frase fala sobre várias pessoas.',
           'Nós: a frase inclui quem fala.',
         ],
@@ -3816,14 +3829,14 @@ window.QuestionsDataSources.portugues = {
         options: [
           'Ele chegou cedo.',
           'Você chegou cedo.',
-          'Senhor, chegou cedo?',
+          'O senhor chegou cedo?',
           'Nós chegamos cedo.',
         ],
         correctIndex: 0,
         explanation: 'Ele fala sobre Pedro.',
         wrong: [
           'Você fala diretamente com Pedro.',
-          'Senhor fala diretamente com ele.',
+          'O senhor fala diretamente com Pedro.',
           'Nós: a frase inclui quem fala.',
         ],
       },
@@ -3843,7 +3856,7 @@ window.QuestionsDataSources.portugues = {
       {
         id: 'pt_t2_pron_018',
         question:
-          'Complete: “__ podem entrar”, disse a professora a dois alunos.',
+          'Ao autorizar dois alunos a entrar, a professora disse diretamente a eles: “__ podem entrar.”',
         options: ['Vocês', 'Nós', 'Eles', 'Ela'],
         correctIndex: 0,
         explanation: 'O pronome vocês indica as pessoas com quem se fala.',
@@ -3855,7 +3868,8 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_pron_019',
-        question: 'Complete a fala dirigida à diretora: “__ gostaria de água?”',
+        question:
+          'Ao oferecer água diretamente à própria diretora, complete a fala: “__ gostaria de água?”',
         options: ['A senhora', 'Ela', 'Nós', 'Eles'],
         correctIndex: 0,
         explanation:
@@ -3919,10 +3933,10 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_vii_004',
-        question: 'Complete: O médico __ o paciente.',
+        question: 'Complete: O médico __ do paciente.',
         options: ['cuida', 'canta', 'pula', 'desenha'],
         correctIndex: 0,
-        explanation: 'Cuidar completa a situação do médico e do paciente.',
+        explanation: 'Cuidar do paciente completa corretamente a frase.',
         wrong: [
           'Canta não indica o atendimento apresentado.',
           'Pula não completa a ideia da frase.',
@@ -4087,10 +4101,12 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_vii_018',
-        question: 'Complete: O bombeiro __ as pessoas em perigo.',
+        question:
+          'Complete: Durante um resgate, o bombeiro __ as pessoas em perigo.',
         options: ['socorre', 'planta', 'desenha', 'estuda'],
         correctIndex: 0,
-        explanation: 'Socorrer pessoas completa a situação do bombeiro.',
+        explanation:
+          'Durante um resgate, socorrer pessoas completa a situação do bombeiro.',
         wrong: [
           'Planta não completa a ideia da frase.',
           'Desenha não é a ação indicada nesse contexto.',
@@ -4111,10 +4127,10 @@ window.QuestionsDataSources.portugues = {
       },
       {
         id: 'pt_t2_vii_020',
-        question: 'Complete: O fotógrafo __ uma imagem.',
+        question: 'Complete: O fotógrafo __ uma paisagem.',
         options: ['fotografa', 'cozinha', 'mergulha', 'rega'],
         correctIndex: 0,
-        explanation: 'Fotografar uma imagem completa a situação.',
+        explanation: 'Fotografar uma paisagem completa a situação.',
         wrong: [
           'Cozinha não é a ação indicada.',
           'Mergulha é uma ação realizada na água.',
