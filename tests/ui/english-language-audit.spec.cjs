@@ -75,6 +75,11 @@ async function run() {
 
     await openQuestion(page, 'ING-T2-PRE-001');
     assert.ok(
+      (await page.locator('.question-support').textContent()).includes(
+        'Complete com a palavra',
+      ),
+    );
+    assert.ok(
       (await page.locator('.question-text').textContent()).includes(
         'word that means "dentro"',
       ),
@@ -85,6 +90,11 @@ async function run() {
     );
 
     await openQuestion(page, 'ING-T2-FAD-011');
+    assert.ok(
+      (await page.locator('.question-support').textContent()).includes(
+        'gesto de carinho',
+      ),
+    );
     assert.ok(
       (await page.locator('.question-text').textContent()).includes(
         'caring gesture',
@@ -99,6 +109,11 @@ async function run() {
     );
 
     await openQuestion(page, 'ING-T2-SPO-016');
+    assert.ok(
+      (await page.locator('.question-support').textContent()).includes(
+        'sobre um esporte',
+      ),
+    );
     assert.strictEqual(
       await page
         .locator('.option-btn', { hasText: 'I like swimming.' })
@@ -107,6 +122,11 @@ async function run() {
     );
 
     await openQuestion(page, 'ING-T2-ACT-011');
+    assert.ok(
+      (await page.locator('.question-support').textContent()).includes(
+        'Escolha o verbo',
+      ),
+    );
     assert.ok(
       (await page.locator('.question-text').textContent()).includes(
         'verb that means "ler"',
@@ -117,6 +137,30 @@ async function run() {
       fullPage: true,
     });
 
+    await page.locator('#btn-theme').click();
+    assert.strictEqual(
+      await page.locator('html').getAttribute('data-theme'),
+      'dark',
+    );
+    await page.locator('.question-support').waitFor({ state: 'visible' });
+    await page.waitForTimeout(250);
+    const darkSupportColors = await page.evaluate(() => {
+      const support = document.querySelector('.question-support');
+      const option = document.querySelector('.option-btn');
+      return {
+        supportColor: getComputedStyle(support).color,
+        supportBackground: getComputedStyle(support).backgroundColor,
+        optionColor: getComputedStyle(option).color,
+        optionBackground: getComputedStyle(option).backgroundColor,
+      };
+    });
+    assert.deepStrictEqual(darkSupportColors, {
+      supportColor: 'rgb(241, 245, 249)',
+      supportBackground: 'rgb(30, 27, 75)',
+      optionColor: 'rgb(241, 245, 249)',
+      optionBackground: 'rgb(30, 41, 59)',
+    });
+
     await page.setViewportSize({ width: 375, height: 812 });
     const viewport = await page.evaluate(() => ({
       scrollWidth: document.documentElement.scrollWidth,
@@ -125,6 +169,23 @@ async function run() {
     assert.ok(viewport.scrollWidth <= viewport.clientWidth);
     await page.screenshot({
       path: '/private/tmp/quiz-english-language-audit-mobile.png',
+      fullPage: true,
+    });
+
+    const actionCorrectIndex = await page.evaluate(
+      () => Store.get().questions[0].correctIndex,
+    );
+    await page.locator('.option-btn').nth(actionCorrectIndex).click();
+    await page.locator('#next-btn').click();
+    await page.locator('.gab-question-support').waitFor({ state: 'visible' });
+    assert.ok(
+      (await page.locator('.gab-question-support').textContent()).includes(
+        'Escolha o verbo',
+      ),
+    );
+    await page.waitForTimeout(500);
+    await page.screenshot({
+      path: '/private/tmp/quiz-english-bilingual-result-mobile.png',
       fullPage: true,
     });
 
