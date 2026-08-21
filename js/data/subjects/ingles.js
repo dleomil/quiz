@@ -63,6 +63,107 @@ window.QuestionsDataSources.ingles = (function () {
     },
   };
 
+  const englishT2PortugueseSupport = {
+    'ING-T2-PRE-001':
+      'Complete com a palavra que significa "dentro": The pencil is ___ the pencil case.',
+    'ING-T2-PRE-002':
+      'Complete com a palavra que significa "em cima de": The book is ___ the table.',
+    'ING-T2-PRE-003':
+      'Complete com a palavra que significa "debaixo de": The shoes are ___ the bed.',
+    'ING-T2-PRE-004':
+      'Complete com a palavra que significa "atrás de": The dog is ___ the door.',
+    'ING-T2-PRE-005':
+      'Complete com a expressão que significa "ao lado de": The chair is ___ the desk.',
+    'ING-T2-PRE-006':
+      'Complete com a palavra que significa "entre": The ball is ___ the boxes.',
+    'ING-T2-PRE-007':
+      'Complete com a palavra que significa "acima de": The picture is ___ the sofa.',
+    'ING-T2-PRE-008':
+      'Complete com a palavra que significa "perto de": The school is ___ the park.',
+    'ING-T2-PRE-009': 'Qual frase significa "O gato está em cima da cadeira"?',
+    'ING-T2-PRE-010': 'Qual frase significa "A bola está debaixo da mesa"?',
+    'ING-T2-PRE-011':
+      'Qual frase significa "O brinquedo está dentro da caixa"?',
+    'ING-T2-PRE-012': 'Qual frase significa "A mochila está atrás da porta"?',
+    'ING-T2-PRE-013':
+      'Qual frase significa "A menina está na frente da escola"?',
+    'ING-T2-PRE-014': 'Qual frase significa "O livro está ao lado do caderno"?',
+    'ING-T2-PRE-015': 'Qual frase significa "O lápis está entre os livros"?',
+    'ING-T2-PRE-016': 'O que "behind" significa em português?',
+    'ING-T2-PRE-017': 'O que "between" significa em português?',
+    'ING-T2-PRE-018': 'O que "next to" significa em português?',
+    'ING-T2-PRE-019':
+      'Qual frase significa "A biblioteca fica perto da escola"?',
+    'ING-T2-PRE-020':
+      'Qual frase significa "As crianças estão fora da sala de aula"?',
+    'ING-T2-FAD-001': 'O que "father" significa em português?',
+    'ING-T2-FAD-002': 'O que "dad" significa em português?',
+    'ING-T2-FAD-003':
+      'Complete a mensagem em inglês usando o tema indicado no enunciado principal: Happy ___ Day!',
+    'ING-T2-FAD-004': 'Qual frase é uma mensagem de Dia dos Pais?',
+    'ING-T2-FAD-005': 'O que "gift" significa em português?',
+    'ING-T2-FAD-006':
+      'Escolha a palavra que completa a frase sobre uma mensagem escrita: I made a ___ for Dad.',
+    'ING-T2-FAD-007': 'O que "card" significa em português?',
+    'ING-T2-FAD-008': 'Escolha a melhor palavra: Thank you, ___.',
+    'ING-T2-FAD-009': 'O que "family" significa em português?',
+    'ING-T2-FAD-010': 'Qual palavra significa "abraço" em inglês?',
+    'ING-T2-FAD-011': 'Qual palavra nomeia um gesto de carinho?',
+    'ING-T2-FAD-012': 'O que "love" significa em português?',
+    'ING-T2-FAD-013': 'Qual frase significa "Eu amo você, papai"?',
+    'ING-T2-FAD-014': 'Qual frase significa "Obrigado, papai"?',
+    'ING-T2-FAD-015':
+      'Escolha a palavra que nomeia um familiar: My ___ helps me.',
+    'ING-T2-FAD-016': 'O que "grandfather" significa em português?',
+    'ING-T2-FAD-017':
+      'Qual palavra pode nomear alguém da família que também pode cuidar como um pai?',
+    'ING-T2-FAD-018':
+      'Escolha a palavra que melhor completa a frase: This ___ is for my dad.',
+    'ING-T2-FAD-019': 'Qual frase é educada e carinhosa?',
+    'ING-T2-FAD-020': 'Escolha o melhor título para um cartão de Dia dos Pais.',
+    'ING-T2-SPO-001': 'O que "soccer" significa em português?',
+    'ING-T2-SPO-002': 'O que "basketball" significa em português?',
+    'ING-T2-SPO-003': 'O que "volleyball" significa em português?',
+    'ING-T2-SPO-004': 'O que "swimming" significa em português?',
+    'ING-T2-SPO-005': 'O que "running" significa em português?',
+    'ING-T2-SPO-006': 'O que "tennis" significa em português?',
+    'ING-T2-SPO-007': 'O que "cycling" significa em português?',
+    'ING-T2-SPO-008': 'O que "skateboarding" significa em português?',
+    'ING-T2-SPO-009': 'Qual esporte é jogado com bola e tem gols?',
+    'ING-T2-SPO-010': 'Qual esporte usa uma cesta?',
+    'ING-T2-SPO-011':
+      'Em qual esporte as equipes passam a bola por cima da rede com as mãos e os braços?',
+    'ING-T2-SPO-012': 'Qual esporte pode ser praticado em uma piscina?',
+    'ING-T2-SPO-013': 'Qual esporte usa uma bicicleta?',
+    'ING-T2-SPO-014': 'Escolha a frase correta.',
+    'ING-T2-SPO-015': 'Escolha a frase correta.',
+    'ING-T2-SPO-016': 'Qual frase é sobre um esporte?',
+    'ING-T2-SPO-017': 'Qual palavra nomeia um esporte?',
+    'ING-T2-SPO-018': 'Qual palavra nomeia um esporte?',
+    'ING-T2-SPO-019': 'Qual frase significa "Eu gosto de vôlei"?',
+    'ING-T2-SPO-020': 'Qual frase significa "Eu jogo tênis"?',
+    'ING-T2-ACT-001': 'O que "run" significa em português?',
+    'ING-T2-ACT-002': 'O que "jump" significa em português?',
+    'ING-T2-ACT-003': 'O que "read" significa em português?',
+    'ING-T2-ACT-004': 'O que "write" significa em português?',
+    'ING-T2-ACT-005': 'O que "draw" significa em português?',
+    'ING-T2-ACT-006': 'O que "sing" significa em português?',
+    'ING-T2-ACT-007': 'O que "dance" significa em português?',
+    'ING-T2-ACT-008': 'O que "eat" significa em português?',
+    'ING-T2-ACT-009': 'O que "drink" significa em português?',
+    'ING-T2-ACT-010': 'O que "sleep" significa em português?',
+    'ING-T2-ACT-011': 'Escolha o verbo que significa "ler": I ___ a book.',
+    'ING-T2-ACT-012': 'Escolha o melhor verbo: I ___ water.',
+    'ING-T2-ACT-013': 'Escolha o melhor verbo: I ___ a picture.',
+    'ING-T2-ACT-014': 'Escolha o melhor verbo: I ___ the door.',
+    'ING-T2-ACT-015': 'Escolha o melhor verbo: I ___ to music.',
+    'ING-T2-ACT-016': 'Qual frase significa "Eu escrevo meu nome"?',
+    'ING-T2-ACT-017': 'Qual frase significa "Eu pulo"?',
+    'ING-T2-ACT-018': 'Qual frase significa "Eu canto"?',
+    'ING-T2-ACT-019': 'Qual palavra mostra a ação em "I swim in the pool"?',
+    'ING-T2-ACT-020': 'Qual palavra é um verbo de ação?',
+  };
+
   function addQuestion(
     id,
     topic,
@@ -114,6 +215,7 @@ window.QuestionsDataSources.ingles = (function () {
       topic,
       topicName: topicMeta[topic].name,
       question,
+      questionPt: englishT2PortugueseSupport[id],
       options,
       correctIndex: targetCorrectIndex,
       explanation,

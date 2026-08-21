@@ -97,6 +97,11 @@ const ResultsView = (function () {
           '<div class="gab-q">' +
           q.question +
           '</div>' +
+          (q.subject === 'ingles' && q.questionPt
+            ? '<div class="gab-question-support"><span>Em português:</span> ' +
+              escapeText(q.questionPt) +
+              '</div>'
+            : '') +
           '<div class="gab-tags">' +
           userTag +
           correctTag +

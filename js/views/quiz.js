@@ -217,6 +217,11 @@ const QuizView = (function () {
         }
 
         <div class="question-text">${s.index + 1}. ${q.question}</div>
+        ${
+          q.subject === 'ingles' && q.questionPt
+            ? `<div class="question-support"><span>Em português:</span> ${q.questionPt}</div>`
+            : ''
+        }
 
         <div class="options" id="options">
           ${q.options
