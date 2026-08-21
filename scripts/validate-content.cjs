@@ -93,6 +93,10 @@ function validateQuestion(question, sourceName) {
     return errors;
   }
 
+  if (question.subject === 'ingles' && !isNonEmptyString(question.questionPt)) {
+    errors.push('[' + label + '] Ingles content-v1 exige questionPt');
+  }
+
   ['contentSetId', 'skill', 'reviewStatus'].forEach(function (field) {
     if (!isNonEmptyString(question[field])) {
       errors.push('[' + label + '] content-v1 exige ' + field);
