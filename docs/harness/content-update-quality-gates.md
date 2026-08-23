@@ -4,6 +4,17 @@
 
 Definir os controles obrigatorios para atualizar conteudo escolar sem introduzir erro, ambiguidade ou material sem origem verificavel no quiz.
 
+## Escopo ativo de manutencao
+
+- o acervo do primeiro trimestre e legado congelado e permanece disponivel
+  somente para consulta historica;
+- T1 nao recebe correcoes, auditorias, migracoes, novos requisitos ou cards;
+- os gates deste documento se aplicam ao segundo trimestre e aos acervos futuros;
+- nenhuma entrega ativa pode ampliar o escopo para T1 ou ser bloqueada por divida
+  conhecida nesse acervo;
+- uma mudanca dessa decisao exige nova definicao explicita de produto antes de
+  qualquer refinamento ou implementacao.
+
 ## Protecao da fonte
 
 - material recebido da escola permanece local por padrao
