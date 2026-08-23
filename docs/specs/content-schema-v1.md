@@ -59,23 +59,28 @@ ser lido durante a transicao, mas nao deve ser criado em novos lotes.
 
 Toda questao criada ou alterada apos a adocao do contrato deve possuir os campos abaixo.
 
-| Campo               | Regra                                                                   |
-| ------------------- | ----------------------------------------------------------------------- |
-| `schemaVersion`     | deve ser `content-v1`                                                   |
-| `id`                | string unica e imutavel entre todas as fontes carregadas                |
-| `contentSetId`      | deve referenciar um catalogo publicado ou em revisao                    |
-| `subject` e `topic` | IDs estaveis existentes no catalogo de materia e topico                 |
-| `question`          | texto nao vazio, adequado a serie e com resposta unica defensavel       |
-| `options`           | quatro alternativas nao vazias e distintas apos normalizacao            |
-| `correctIndex`      | inteiro que aponta para uma alternativa valida                          |
-| `explanation`       | explica por que a correta atende ao enunciado                           |
-| `wrongExplanations` | explicacao para cada indice incorreto quando houver feedback individual |
-| `skill`             | habilidade ou objetivo de aprendizagem rastreavel                       |
-| `sourceRef`         | referencia do programa, da materia e do tema curricular                 |
-| `reviewStatus`      | `draft`, `pedagogical-approved`, `published` ou `retired`               |
-| `version`           | inteiro positivo da questao dentro do acervo                            |
+| Campo               | Regra                                                                     |
+| ------------------- | ------------------------------------------------------------------------- |
+| `schemaVersion`     | deve ser `content-v1`                                                     |
+| `id`                | string unica e imutavel entre todas as fontes carregadas                  |
+| `contentSetId`      | deve referenciar um catalogo publicado ou em revisao                      |
+| `subject` e `topic` | IDs estaveis existentes no catalogo de materia e topico                   |
+| `question`          | texto nao vazio, adequado a serie e com resposta unica defensavel         |
+| `questionPt`        | obrigatorio em Ingles `content-v1`; apoio em portugues sem dar a resposta |
+| `options`           | quatro alternativas nao vazias e distintas apos normalizacao              |
+| `correctIndex`      | inteiro que aponta para uma alternativa valida                            |
+| `explanation`       | explica por que a correta atende ao enunciado                             |
+| `wrongExplanations` | explicacao para cada indice incorreto quando houver feedback individual   |
+| `skill`             | habilidade ou objetivo de aprendizagem rastreavel                         |
+| `sourceRef`         | referencia do programa, da materia e do tema curricular                   |
+| `reviewStatus`      | `draft`, `pedagogical-approved`, `published` ou `retired`                 |
+| `version`           | inteiro positivo da questao dentro do acervo                              |
 
 `text` e opcional e representa material de apoio, como um texto de interpretacao. `topicName`, `subjectMeta` e labels similares sao apenas apresentacao; filtros e historico nao podem depender deles.
+
+Para a materia `ingles`, `question` permanece como enunciado principal e
+`questionPt` registra a instrucao equivalente em portugues. Palavras, frases e
+lacunas avaliadas devem permanecer em ingles quando a traducao revelar a resposta.
 
 ```json
 {

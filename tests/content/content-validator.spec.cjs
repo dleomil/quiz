@@ -39,6 +39,10 @@ function validateQuestions(questions) {
   return validateContentSources({ matematica: { questions } });
 }
 
+function validateEnglishQuestions(questions) {
+  return validateContentSources({ ingles: { questions } });
+}
+
 function loadSubjectQuestions(subject) {
   const subjectModulePath = path.join(
     __dirname,
@@ -115,6 +119,26 @@ function run() {
     validContentV1Question(),
   ]);
   assert.ok(duplicateErrors.some((error) => error.includes('id duplicado')));
+
+  const missingPortugueseSupportErrors = validateEnglishQuestions([
+    validContentV1Question({
+      id: 'ING-T2-TEST-001',
+      subject: 'ingles',
+      topic: 'action_verbs',
+      question: 'What does "run" mean in Portuguese?',
+      skill: 'reconhecer-verbos-de-acao-em-ingles',
+      sourceRef: {
+        referenceId: 'escola-2026-t2',
+        section: 'Ingles',
+        topic: 'action-verbs',
+      },
+    }),
+  ]);
+  assert.ok(
+    missingPortugueseSupportErrors.some((error) =>
+      error.includes('Ingles content-v1 exige questionPt'),
+    ),
+  );
 
   assert.deepStrictEqual(
     validateRepositoryContent(path.join(__dirname, '..', '..')),
@@ -259,6 +283,10 @@ function run() {
       assert.strictEqual(question.reviewStatus, 'pedagogical-approved');
       assert.strictEqual(question.sourceRef.referenceId, 'escola-2026-t2');
       assert.strictEqual(question.sourceRef.section, 'Ingles');
+      assert.ok(
+        typeof question.questionPt === 'string' && question.questionPt.trim(),
+        `${question.id} deve possuir apoio em portugues`,
+      );
       assert.strictEqual(Object.keys(question.wrongExplanations).length, 3);
       correctIndexDistribution[question.correctIndex] += 1;
     });
@@ -267,6 +295,10 @@ function run() {
 
   const englishT2ById = new Map(
     englishT2Questions.map((question) => [question.id, question]),
+  );
+  assert.strictEqual(
+    englishT2Questions.filter((question) => question.questionPt).length,
+    80,
   );
   [
     [

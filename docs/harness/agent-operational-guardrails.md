@@ -20,8 +20,10 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 
 ### 1. Validar politica de branch antes de criar PR
 
-- verificar se o nome da branch respeita o workflow existente
-- usar apenas prefixos aceitos pelo repositório
+- executar `npm run validate:branch -- "$(git branch --show-current)" develop`
+  antes do primeiro push, ajustando a base somente quando necessario
+- usar apenas os prefixos aceitos por `scripts/validate-branch-policy.cjs`
+- usar `feature/*`, nunca `feat/*`, para funcionalidades
 - evitar criar branches sem referencia ao tipo de trabalho
 
 ### 2. Validar taxonomia antes de criar issue
