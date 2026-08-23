@@ -20,7 +20,9 @@ portugues, sem traduzir o elemento que esta sendo avaliado nem revelar a respost
 - contrato e validacao automatica de conteudo
 - desktop, mobile e modo escuro
 
-O primeiro trimestre pertence a issue #289 e nao pode ser alterado nesta entrega.
+O primeiro trimestre e acervo legado congelado. Ele permanece disponivel para
+consulta historica, mas nao recebe correcoes, auditorias, migracoes ou novos
+requisitos. A issue #289 foi encerrada como nao planejada.
 
 ## Contrato
 
@@ -52,7 +54,7 @@ traducao quando essa traducao for a resposta esperada.
 - quiz e gabarito exibem os dois textos
 - materias diferentes de Ingles nao exibem o bloco bilingue
 - nenhum apoio entrega diretamente a resposta correta
-- regressao de conteudo e interface passa nos dois trimestres
+- regressao de conteudo e interface passa no acervo T2
 - desktop, mobile e modo escuro permanecem legiveis
 
 ## Validacao
