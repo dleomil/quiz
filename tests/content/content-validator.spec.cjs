@@ -313,10 +313,16 @@ function run() {
       'ING-T2-PRE-020',
       'Which sentence means "As crianças estão fora da sala de aula"?',
     ],
-    ['ING-T2-FAD-003', "Complete the Father's Day message: Happy ___ Day!"],
+    ['ING-T2-FAD-003', 'Complete the greeting for a dad: Happy ___ Day!'],
+    [
+      'ING-T2-FAD-006',
+      'Choose the object made to present a written message: I made a ___ for Dad.',
+    ],
     ['ING-T2-FAD-011', 'Which word names a caring gesture?'],
     ['ING-T2-FAD-015', 'Choose the family word: My ___ helps me.'],
     ['ING-T2-SPO-016', 'Which sentence is about a sport?'],
+    ['ING-T2-SPO-014', 'Which sentence means "Eu jogo futebol"?'],
+    ['ING-T2-SPO-015', 'Which sentence means "Eu jogo basquete"?'],
     ['ING-T2-ACT-011', 'Choose the verb that means "ler": I ___ a book.'],
     ['ING-T2-ACT-019', 'Which word shows the action in "I swim in the pool"?'],
   ].forEach(([id, expectedQuestion]) => {
@@ -346,10 +352,70 @@ function run() {
       'The children are outside the classroom.',
     ].sort(),
   );
+  assert.strictEqual(
+    englishT2ById.get('ING-T2-PRE-011').questionPt,
+    'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
+  );
+  assert.deepStrictEqual(
+    [...englishT2ById.get('ING-T2-PRE-011').options].sort(),
+    [
+      'The toy is in the box.',
+      'The toy is on the box.',
+      'The toy is behind the box.',
+      'The toy is next to the box.',
+    ].sort(),
+  );
+  assert.deepStrictEqual(
+    [...englishT2ById.get('ING-T2-ACT-012').options].sort(),
+    [
+      'I drink water.',
+      'I carry water.',
+      'I look at water.',
+      'I pour water.',
+    ].sort(),
+  );
+  assert.deepStrictEqual(
+    [...englishT2ById.get('ING-T2-ACT-015').options].sort(),
+    [
+      'I listen to music.',
+      'I play music.',
+      'I write music.',
+      'I like music.',
+    ].sort(),
+  );
+  assert.deepStrictEqual(
+    [...englishT2ById.get('ING-T2-ACT-020').options].sort(),
+    ['help', 'I', 'my', 'friend'].sort(),
+  );
+
+  const prohibitedEnglishDistractors = [
+    'The toy is between the box.',
+    'The book is between the table.',
+    'The picture is in the sofa.',
+    'The school is between the park.',
+    'I swim soccer.',
+    'I read soccer.',
+    'I eat soccer.',
+    'I drink basketball.',
+    'I sleep basketball.',
+    'I draw basketball.',
+    'I run my name.',
+    'I drink my name.',
+    'I sleep my name.',
+  ];
+  englishT2Questions.forEach((question) => {
+    prohibitedEnglishDistractors.forEach((distractor) => {
+      assert.ok(
+        !question.options.includes(distractor),
+        `${question.id} nao deve usar o distrator malformado: ${distractor}`,
+      );
+    });
+  });
 
   const englishT2VisibleText = JSON.stringify(
     englishT2Questions.flatMap((question) => [
       question.question,
+      question.questionPt,
       ...question.options,
       question.explanation,
       ...Object.values(question.wrongExplanations),
@@ -363,7 +429,6 @@ function run() {
     'irma',
     'vovo',
     'cartao',
-    'familia',
     'abraco',
     'chapeu',
     'lapis',
@@ -383,6 +448,11 @@ function run() {
       `texto inadequado em Ingles: ${outdatedText}`,
     );
   });
+  assert.doesNotMatch(
+    englishT2VisibleText,
+    /\bfamilia\b/,
+    'grafia sem acento em Ingles: familia',
+  );
 
   const portugueseQuestions = loadSubjectQuestions('portugues');
   const portugueseT2Questions = portugueseQuestions.filter(

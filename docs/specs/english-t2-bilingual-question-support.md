@@ -29,14 +29,18 @@ Toda questao `content-v1` de Ingles deve possuir `questionPt` como texto nao vaz
 - `question`: enunciado principal em ingles
 - `questionPt`: instrucao de apoio em portugues
 
-O apoio pode repetir a frase-alvo em ingles, mas nao pode apresentar sua traducao
-quando essa traducao for a resposta esperada.
+O apoio deve complementar o enunciado e esclarecer em portugues qual acao o aluno
+deve executar. Ele nao deve apenas repetir o mesmo conteudo nem apresentar uma
+traducao quando essa traducao for a resposta esperada.
 
 ## Regras Pedagogicas
 
 - usar linguagem curta e adequada ao terceiro ano
 - traduzir a instrucao, nao a resposta
 - preservar palavras entre aspas, lacunas e frases-alvo quando forem avaliadas
+- usar somente construcoes gramaticais e naturais tambem nas alternativas erradas
+- diferenciar distratores pelo significado, sem fabricar frases malformadas
+- garantir que contexto, alternativas e polissemia nao criem uma segunda resposta defensavel
 - manter IDs, alternativas, `correctIndex`, habilidade e objetivo curricular
 - mostrar claramente qual texto esta em ingles e qual e o apoio em portugues
 - exigir revisao humana das 80 correspondencias antes do release
