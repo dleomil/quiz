@@ -65,45 +65,53 @@ window.QuestionsDataSources.ingles = (function () {
 
   const englishT2PortugueseSupport = {
     'ING-T2-PRE-001':
-      'Complete com a palavra que significa "dentro": The pencil is ___ the pencil case.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-002':
-      'Complete com a palavra que significa "em cima de": The book is ___ the table.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-003':
-      'Complete com a palavra que significa "debaixo de": The shoes are ___ the bed.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-004':
-      'Complete com a palavra que significa "atrás de": The dog is ___ the door.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-005':
-      'Complete com a expressão que significa "ao lado de": The chair is ___ the desk.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-006':
-      'Complete com a palavra que significa "entre": The ball is ___ the boxes.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-007':
-      'Complete com a palavra que significa "acima de": The picture is ___ the sofa.',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
     'ING-T2-PRE-008':
-      'Complete com a palavra que significa "perto de": The school is ___ the park.',
-    'ING-T2-PRE-009': 'Qual frase significa "O gato está em cima da cadeira"?',
-    'ING-T2-PRE-010': 'Qual frase significa "A bola está debaixo da mesa"?',
+      'Complete a frase em inglês com a preposição indicada no enunciado.',
+    'ING-T2-PRE-009':
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
+    'ING-T2-PRE-010':
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
     'ING-T2-PRE-011':
-      'Qual frase significa "O brinquedo está dentro da caixa"?',
-    'ING-T2-PRE-012': 'Qual frase significa "A mochila está atrás da porta"?',
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
+    'ING-T2-PRE-012':
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
     'ING-T2-PRE-013':
-      'Qual frase significa "A menina está na frente da escola"?',
-    'ING-T2-PRE-014': 'Qual frase significa "O livro está ao lado do caderno"?',
-    'ING-T2-PRE-015': 'Qual frase significa "O lápis está entre os livros"?',
-    'ING-T2-PRE-016': 'O que "behind" significa em português?',
-    'ING-T2-PRE-017': 'O que "between" significa em português?',
-    'ING-T2-PRE-018': 'O que "next to" significa em português?',
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
+    'ING-T2-PRE-014':
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
+    'ING-T2-PRE-015':
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
+    'ING-T2-PRE-016':
+      'Escolha o significado em português da preposição inglesa apresentada.',
+    'ING-T2-PRE-017':
+      'Escolha o significado em português da preposição inglesa apresentada.',
+    'ING-T2-PRE-018':
+      'Escolha o significado em português da preposição inglesa apresentada.',
     'ING-T2-PRE-019':
-      'Qual frase significa "A biblioteca fica perto da escola"?',
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
     'ING-T2-PRE-020':
-      'Qual frase significa "As crianças estão fora da sala de aula"?',
+      'Escolha a alternativa em inglês que corresponde à frase em português apresentada acima.',
     'ING-T2-FAD-001': 'O que "father" significa em português?',
     'ING-T2-FAD-002': 'O que "dad" significa em português?',
     'ING-T2-FAD-003':
-      'Complete a mensagem em inglês usando o tema indicado no enunciado principal: Happy ___ Day!',
+      'Complete em inglês a mensagem de Dia dos Pais: Happy ___ Day!',
     'ING-T2-FAD-004': 'Qual frase é uma mensagem de Dia dos Pais?',
     'ING-T2-FAD-005': 'O que "gift" significa em português?',
     'ING-T2-FAD-006':
-      'Escolha a palavra que completa a frase sobre uma mensagem escrita: I made a ___ for Dad.',
+      'Escolha o objeto feito para apresentar uma mensagem escrita ao papai.',
     'ING-T2-FAD-007': 'O que "card" significa em português?',
     'ING-T2-FAD-008': 'Escolha a melhor palavra: Thank you, ___.',
     'ING-T2-FAD-009': 'O que "family" significa em português?',
@@ -118,7 +126,7 @@ window.QuestionsDataSources.ingles = (function () {
     'ING-T2-FAD-017':
       'Qual palavra pode nomear alguém da família que também pode cuidar como um pai?',
     'ING-T2-FAD-018':
-      'Escolha a palavra que melhor completa a frase: This ___ is for my dad.',
+      'Escolha o objeto feito para guardar uma mensagem escrita para o papai.',
     'ING-T2-FAD-019': 'Qual frase é educada e carinhosa?',
     'ING-T2-FAD-020': 'Escolha o melhor título para um cartão de Dia dos Pais.',
     'ING-T2-SPO-001': 'O que "soccer" significa em português?',
@@ -135,8 +143,10 @@ window.QuestionsDataSources.ingles = (function () {
       'Em qual esporte as equipes passam a bola por cima da rede com as mãos e os braços?',
     'ING-T2-SPO-012': 'Qual esporte pode ser praticado em uma piscina?',
     'ING-T2-SPO-013': 'Qual esporte usa uma bicicleta?',
-    'ING-T2-SPO-014': 'Escolha a frase correta.',
-    'ING-T2-SPO-015': 'Escolha a frase correta.',
+    'ING-T2-SPO-014':
+      'Escolha a alternativa em inglês que significa "Eu jogo futebol".',
+    'ING-T2-SPO-015':
+      'Escolha a alternativa em inglês que significa "Eu jogo basquete".',
     'ING-T2-SPO-016': 'Qual frase é sobre um esporte?',
     'ING-T2-SPO-017': 'Qual palavra nomeia um esporte?',
     'ING-T2-SPO-018': 'Qual palavra nomeia um esporte?',
@@ -153,15 +163,20 @@ window.QuestionsDataSources.ingles = (function () {
     'ING-T2-ACT-009': 'O que "drink" significa em português?',
     'ING-T2-ACT-010': 'O que "sleep" significa em português?',
     'ING-T2-ACT-011': 'Escolha o verbo que significa "ler": I ___ a book.',
-    'ING-T2-ACT-012': 'Escolha o melhor verbo: I ___ water.',
-    'ING-T2-ACT-013': 'Escolha o melhor verbo: I ___ a picture.',
-    'ING-T2-ACT-014': 'Escolha o melhor verbo: I ___ the door.',
-    'ING-T2-ACT-015': 'Escolha o melhor verbo: I ___ to music.',
+    'ING-T2-ACT-012':
+      'Escolha a alternativa em inglês que significa "Eu bebo água".',
+    'ING-T2-ACT-013':
+      'Escolha a alternativa em inglês que significa "Eu desenho uma figura".',
+    'ING-T2-ACT-014':
+      'Escolha a alternativa em inglês que significa "Eu abro a porta".',
+    'ING-T2-ACT-015':
+      'Escolha a alternativa em inglês que significa "Eu escuto música".',
     'ING-T2-ACT-016': 'Qual frase significa "Eu escrevo meu nome"?',
     'ING-T2-ACT-017': 'Qual frase significa "Eu pulo"?',
     'ING-T2-ACT-018': 'Qual frase significa "Eu canto"?',
     'ING-T2-ACT-019': 'Qual palavra mostra a ação em "I swim in the pool"?',
-    'ING-T2-ACT-020': 'Qual palavra é um verbo de ação?',
+    'ING-T2-ACT-020':
+      'Na frase "I help my friend", escolha a palavra que indica a ação.',
   };
 
   function addQuestion(
@@ -655,12 +670,12 @@ window.QuestionsDataSources.ingles = (function () {
       'prepositions',
       'Complete with the word that means "em cima de": The book is ___ the table.',
       'on',
-      ['in', 'under', 'between'],
+      ['in', 'under', 'behind'],
       'We use "on" when something is on the surface of another thing.',
       [
         '"In" means inside something.',
         '"Under" means below something.',
-        '"Between" means in the middle of two things.',
+        '"Behind" means at the back of something.',
       ],
     ],
     [
@@ -681,12 +696,12 @@ window.QuestionsDataSources.ingles = (function () {
       'prepositions',
       'Complete with the word that means "atrás de": The dog is ___ the door.',
       'behind',
-      ['above', 'between', 'in'],
+      ['above', 'in front of', 'next to'],
       'We use "behind" when something is at the back of another thing.',
       [
         '"Above" means higher than something.',
-        '"Between" means in the middle of two things.',
-        '"In" means inside something.',
+        '"In front of" means at the front of something.',
+        '"Next to" means beside something.',
       ],
     ],
     [
@@ -694,12 +709,12 @@ window.QuestionsDataSources.ingles = (function () {
       'prepositions',
       'Complete with the expression that means "ao lado de": The chair is ___ the desk.',
       'next to',
-      ['under', 'above', 'inside'],
+      ['under', 'above', 'in front of'],
       'We use "next to" when something is beside another thing.',
       [
         '"Under" means below something.',
         '"Above" means higher than something.',
-        '"Inside" means in something.',
+        '"In front of" means at the front of something.',
       ],
     ],
     [
@@ -720,11 +735,11 @@ window.QuestionsDataSources.ingles = (function () {
       'prepositions',
       'Complete with the word that means "acima de": The picture is ___ the sofa.',
       'above',
-      ['under', 'in', 'near'],
+      ['under', 'behind', 'near'],
       'We use "above" when something is higher than another thing.',
       [
         '"Under" means below something.',
-        '"In" means inside something.',
+        '"Behind" means at the back of something.',
         '"Near" means close to something.',
       ],
     ],
@@ -733,12 +748,12 @@ window.QuestionsDataSources.ingles = (function () {
       'prepositions',
       'Complete with the word that means "perto de": The school is ___ the park.',
       'near',
-      ['inside', 'under', 'between'],
+      ['inside', 'under', 'in front of'],
       'We use "near" when something is close to another place or thing.',
       [
         '"Inside" means in something.',
         '"Under" means below something.',
-        '"Between" means in the middle of two things.',
+        '"In front of" means at the front of something.',
       ],
     ],
     [
@@ -749,13 +764,13 @@ window.QuestionsDataSources.ingles = (function () {
       [
         'The cat is under the chair.',
         'The cat is behind the chair.',
-        'The cat is in the chair.',
+        'The cat is next to the chair.',
       ],
       'The sentence uses "on" to show that the cat is on top of the chair.',
       [
         '"Under" means below the chair.',
         '"Behind" means at the back of the chair.',
-        '"In" means inside the chair, which is not the idea here.',
+        '"Next to" means beside the chair.',
       ],
     ],
     [
@@ -783,13 +798,13 @@ window.QuestionsDataSources.ingles = (function () {
       [
         'The toy is on the box.',
         'The toy is behind the box.',
-        'The toy is between the box.',
+        'The toy is next to the box.',
       ],
       'The sentence uses "in" because the toy is inside the box.',
       [
         '"On" means on top of the box.',
         '"Behind" means at the back of the box.',
-        '"Between" needs two things around the toy.',
+        '"Next to" means beside the box.',
       ],
     ],
     [
@@ -802,7 +817,7 @@ window.QuestionsDataSources.ingles = (function () {
         'The backpack is in front of the door.',
         'The backpack is under the door.',
       ],
-      'The sentence uses "behind" because the backpack is at the back of the door.',
+      '"Behind" shows that the door is in front of the backpack.',
       [
         '"Above" means higher than the door.',
         '"In front of" means "na frente da porta", not "atrás da porta".',
@@ -816,14 +831,14 @@ window.QuestionsDataSources.ingles = (function () {
       'The girl is in front of the school.',
       [
         'The girl is behind the school.',
-        'The girl is under the school.',
-        'The girl is in the school bag.',
+        'The girl is inside the school.',
+        'The girl is next to the school.',
       ],
       'The sentence uses "in front of" because the girl is at the front of the school.',
       [
         '"Behind" means at the back of the school.',
-        '"Under" means below something.',
-        'The sentence about a school bag changes the place.',
+        '"Inside" means in the school building.',
+        '"Next to" means beside the school.',
       ],
     ],
     [
@@ -833,13 +848,13 @@ window.QuestionsDataSources.ingles = (function () {
       'The book is next to the notebook.',
       [
         'The book is above the notebook.',
-        'The book is inside the notebook.',
+        'The book is behind the notebook.',
         'The book is under the notebook.',
       ],
       'The sentence uses "next to" because the book is beside the notebook.',
       [
         '"Above" means higher than the notebook.',
-        '"Inside" means in something.',
+        '"Behind" means at the back of the notebook.',
         '"Under" means below the notebook.',
       ],
     ],
@@ -850,13 +865,13 @@ window.QuestionsDataSources.ingles = (function () {
       'The pencil is between the books.',
       [
         'The pencil is behind the books.',
-        'The pencil is outside the books.',
+        'The pencil is next to the books.',
         'The pencil is on the books.',
       ],
       'The sentence uses "between" because the pencil is in the middle of the books.',
       [
         '"Behind" means at the back of the books.',
-        '"Outside" means not inside something.',
+        '"Next to" means beside the books.',
         '"On" means on top of the books.',
       ],
     ],
@@ -868,7 +883,7 @@ window.QuestionsDataSources.ingles = (function () {
       ['em cima de', 'dentro de', 'ao lado de'],
       '"Behind" means "atrás de".',
       [
-        '"Em cima de" is "on" or "above".',
+        '"On" is used when something touches a surface. "Above" means higher without touching.',
         '"Dentro de" is "in" or "inside".',
         '"Ao lado de" is "next to".',
       ],
@@ -895,7 +910,7 @@ window.QuestionsDataSources.ingles = (function () {
       '"Next to" means "ao lado de".',
       [
         '"Atrás de" is "behind".',
-        '"Em cima de" is "on".',
+        '"On" means touching a surface. "Above" means higher without touching.',
         '"Dentro de" is "in" or "inside".',
       ],
     ],
@@ -905,15 +920,15 @@ window.QuestionsDataSources.ingles = (function () {
       'Which sentence means "A biblioteca fica perto da escola"?',
       'The library is near the school.',
       [
-        'The pencil is near the pencil case, inside it.',
-        'The ball is near the table, under it.',
-        'The picture is near the wall, above it.',
+        'The library is behind the school.',
+        'The library is inside the school.',
+        'The library is in front of the school.',
       ],
       '"Near" shows that the library is close to the school.',
       [
-        'This sentence talks about a pencil and a pencil case.',
-        'This sentence talks about a ball and a table.',
-        'This sentence talks about a picture and a wall.',
+        '"Behind" means at the back of the school.',
+        '"Inside" means in the school building.',
+        '"In front of" means at the front of the school.',
       ],
     ],
     [
@@ -955,7 +970,7 @@ window.QuestionsDataSources.ingles = (function () {
       'What does "dad" mean in Portuguese?',
       'papai',
       ['avô', 'amigo', 'caderno'],
-      '"Dad" is an affectionate way to say "pai" or "papai".',
+      '"Dad" means "papai" and is another way to say "father".',
       [
         '"Avô" is "grandfather".',
         '"Amigo" is "friend".',
@@ -965,7 +980,7 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-FAD-003',
       'fathers_day',
-      "Complete the Father's Day message: Happy ___ Day!",
+      'Complete the greeting for a dad: Happy ___ Day!',
       "Father's",
       ["Mother's", "Teacher's", "Children's"],
       'The expression is "Happy Father\'s Day!"',
@@ -1000,10 +1015,10 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-FAD-006',
       'fathers_day',
-      'Choose the word that names a written message: I made a ___ for Dad.',
+      'Choose the object made to present a written message: I made a ___ for Dad.',
       'card',
       ['shoe', 'river', 'cloud'],
-      'A "card" is a common handmade message for Father\'s Day.',
+      'A "card" is made to present a written message for Father\'s Day.',
       [
         'A shoe is something we wear.',
         'A river is a natural place with water.',
@@ -1025,7 +1040,7 @@ window.QuestionsDataSources.ingles = (function () {
       'Choose the best word: Thank you, ___.',
       'Dad',
       ['desk', 'apple', 'chair'],
-      '"Dad" completes a message to a father or father figure.',
+      '"Dad" names the person thanked in this message.',
       ['"Desk" is furniture.', 'An apple is a fruit.', '"Chair" is furniture.'],
     ],
     [
@@ -1100,7 +1115,7 @@ window.QuestionsDataSources.ingles = (function () {
       'Choose the family word: My ___ helps me.',
       'father',
       ['ruler', 'window', 'juice'],
-      '"Father" can be used in a sentence about a person who helps.',
+      '"Father" names a family member and completes the sentence.',
       [
         'A ruler is a school object.',
         'A window is part of a room.',
@@ -1119,10 +1134,10 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-FAD-017',
       'fathers_day',
-      'Which word can name a father figure in a family?',
+      'Which family member can care for a child like a father?',
       'grandfather',
       ['pencil case', 'rainbow', 'sandwich'],
-      'A grandfather can be a father figure in a family.',
+      'A grandfather can care for a child like a father.',
       [
         'A pencil case is a school object.',
         'A rainbow is seen in the sky.',
@@ -1132,14 +1147,14 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-FAD-018',
       'fathers_day',
-      'Choose the word used to write a message: This ___ is for my dad.',
+      'Choose the object made to carry a written message: This ___ is for my dad.',
       'card',
-      ['cloud', 'river', 'sock'],
+      ['ball', 'plate', 'sock'],
       "A card can carry a Father's Day message.",
       [
-        'A cloud is in the sky.',
-        'A river is a natural place with water.',
-        'A sock is clothing.',
+        'A ball is used in games, not made to carry a written message.',
+        'A plate holds food, not a written message.',
+        'A sock is clothing, not an object made to carry a written message.',
       ],
     ],
     [
@@ -1150,9 +1165,9 @@ window.QuestionsDataSources.ingles = (function () {
       ['Close the book.', 'It is under the bed.', 'The apple is red.'],
       '"Thank you, Dad" is a polite and caring phrase.',
       [
-        'This is an instruction.',
-        'This sentence uses a preposition of place.',
-        'This sentence describes a fruit color.',
+        'This instruction does not thank anyone or show affection.',
+        'This sentence indicates a place; it does not thank anyone or show affection.',
+        'This sentence describes a color; it does not thank anyone or show affection.',
       ],
     ],
     [
@@ -1278,7 +1293,7 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-SPO-009',
       'sports',
-      'Which sport uses a ball and a goal?',
+      'Which sport is played with a ball and has goals?',
       'soccer',
       ['swimming', 'cycling', 'running'],
       'Soccer uses a ball and goals.',
@@ -1343,27 +1358,27 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-SPO-014',
       'sports',
-      'Choose the correct sentence.',
+      'Which sentence means "Eu jogo futebol"?',
       'I play soccer.',
-      ['I swim soccer.', 'I read soccer.', 'I eat soccer.'],
-      '"I play soccer" is the correct sentence for this sport.',
+      ['I watch soccer.', 'I like soccer.', 'I talk about soccer.'],
+      '"I play soccer" means "Eu jogo futebol".',
       [
-        '"Swim" is used for swimming.',
-        '"Read" is not the action for soccer.',
-        '"Eat" is not the action for soccer.',
+        '"I watch soccer" means that I see a game, not that I practice it.',
+        '"I like soccer" shows a preference, not that I practice it.',
+        '"I talk about soccer" means that I discuss the sport.',
       ],
     ],
     [
       'ING-T2-SPO-015',
       'sports',
-      'Choose the correct sentence.',
+      'Which sentence means "Eu jogo basquete"?',
       'I play basketball.',
-      ['I drink basketball.', 'I sleep basketball.', 'I draw basketball.'],
-      '"I play basketball" is the correct sentence for this sport.',
+      ['I watch basketball.', 'I like basketball.', 'I talk about basketball.'],
+      '"I play basketball" means "Eu jogo basquete".',
       [
-        '"Drink" is not the action for basketball.',
-        '"Sleep" is not the action for basketball.',
-        '"Draw" is not the action for basketball.',
+        '"I watch basketball" means that I see a game, not that I practice it.',
+        '"I like basketball" shows a preference, not that I practice it.',
+        '"I talk about basketball" means that I discuss the sport.',
       ],
     ],
     [
@@ -1382,7 +1397,7 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-SPO-017',
       'sports',
-      'Which word is a sport?',
+      'Which word names a sport?',
       'tennis',
       ['notebook', 'juice', 'door'],
       '"Tennis" is a sport.',
@@ -1395,7 +1410,7 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-SPO-018',
       'sports',
-      'Which word is a sport?',
+      'Which word names a sport?',
       'running',
       ['table', 'apple', 'lamp'],
       '"Running" is a sport and a physical activity.',
@@ -1536,45 +1551,53 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-ACT-012',
       'action_verbs',
-      'Choose the best verb: I ___ water.',
-      'drink',
-      ['draw', 'sleep', 'open'],
-      'We use "drink" with water.',
+      'Which sentence means "Eu bebo água"?',
+      'I drink water.',
+      ['I carry water.', 'I look at water.', 'I pour water.'],
+      '"I drink water" means "Eu bebo água".',
       [
-        'We draw pictures.',
-        'We sleep when resting.',
-        'We open objects like doors or books.',
+        '"I carry water" means "Eu carrego água".',
+        '"I look at water" means "Eu olho para a água".',
+        '"I pour water" means "Eu despejo água".',
       ],
     ],
     [
       'ING-T2-ACT-013',
       'action_verbs',
-      'Choose the best verb: I ___ a picture.',
-      'draw',
-      ['eat', 'listen', 'stand'],
-      'We use "draw" with a picture.',
-      ['We eat food.', 'We listen to sounds.', 'We stand with the body.'],
+      'Which sentence means "Eu desenho uma figura"?',
+      'I draw a picture.',
+      ['I look at a picture.', 'I carry a picture.', 'I describe a picture.'],
+      '"I draw a picture" means "Eu desenho uma figura".',
+      [
+        '"I look at a picture" means "Eu olho para uma figura".',
+        '"I carry a picture" means "Eu carrego uma figura".',
+        '"I describe a picture" means "Eu descrevo uma figura".',
+      ],
     ],
     [
       'ING-T2-ACT-014',
       'action_verbs',
-      'Choose the best verb: I ___ the door.',
-      'open',
-      ['sing', 'drink', 'run'],
-      'We can "open" a door.',
-      ['We sing songs.', 'We drink liquids.', 'We run with the body.'],
+      'Which sentence means "Eu abro a porta"?',
+      'I open the door.',
+      ['I close the door.', 'I paint the door.', 'I clean the door.'],
+      '"I open the door" means "Eu abro a porta".',
+      [
+        '"I close the door" means "Eu fecho a porta".',
+        '"I paint the door" means "Eu pinto a porta".',
+        '"I clean the door" means "Eu limpo a porta".',
+      ],
     ],
     [
       'ING-T2-ACT-015',
       'action_verbs',
-      'Choose the best verb: I ___ to music.',
-      'listen',
-      ['eat', 'write', 'close'],
-      'We use "listen" with music.',
+      'Which sentence means "Eu escuto música"?',
+      'I listen to music.',
+      ['I play music.', 'I write music.', 'I like music.'],
+      '"I listen to music" means "Eu escuto música".',
       [
-        'We eat food.',
-        'We write words or sentences.',
-        'We close objects like doors or books.',
+        '"I play music" means "Eu toco música".',
+        '"I write music" means "Eu escrevo música".',
+        '"I like music" means "Eu gosto de música".',
       ],
     ],
     [
@@ -1582,12 +1605,12 @@ window.QuestionsDataSources.ingles = (function () {
       'action_verbs',
       'Which sentence means "Eu escrevo meu nome"?',
       'I write my name.',
-      ['I run my name.', 'I drink my name.', 'I sleep my name.'],
+      ['I read my name.', 'I say my name.', 'I hear my name.'],
       '"I write my name" means "Eu escrevo meu nome".',
       [
-        '"Run" means "correr".',
-        '"Drink" means "beber".',
-        '"Sleep" means "dormir".',
+        '"I read my name" means "Eu leio meu nome".',
+        '"I say my name" means "Eu digo meu nome".',
+        '"I hear my name" means "Eu ouço meu nome".',
       ],
     ],
     [
@@ -1632,14 +1655,14 @@ window.QuestionsDataSources.ingles = (function () {
     [
       'ING-T2-ACT-020',
       'action_verbs',
-      'Which word is an action verb?',
+      'Which word shows the action in "I help my friend"?',
       'help',
-      ['chair', 'window', 'milk'],
-      '"Help" is an action verb.',
+      ['I', 'my', 'friend'],
+      '"Help" shows the action in the sentence.',
       [
-        'A chair is furniture.',
-        'A window is part of a room.',
-        'Milk is a drink.',
+        '"I" names who performs the action.',
+        '"My" shows who the friend is related to.',
+        '"Friend" names the person who receives the help.',
       ],
     ],
   ];

@@ -76,7 +76,7 @@ async function run() {
     await openQuestion(page, 'ING-T2-PRE-001');
     assert.ok(
       (await page.locator('.question-support').textContent()).includes(
-        'Complete com a palavra',
+        'Complete a frase em inglês',
       ),
     );
     assert.ok(
@@ -87,6 +87,30 @@ async function run() {
     await page.locator('.option-btn', { hasText: 'under' }).click();
     assert.ok(
       (await page.locator('.feedback-title').textContent()).includes('Ops'),
+    );
+
+    await openQuestion(page, 'ING-T2-PRE-011');
+    assert.ok(
+      (await page.locator('.question-support').textContent()).includes(
+        'alternativa em inglês',
+      ),
+    );
+    assert.ok(
+      (await page.locator('.question-text').textContent()).includes(
+        'O brinquedo está dentro da caixa',
+      ),
+    );
+    assert.strictEqual(
+      await page
+        .locator('.option-btn', { hasText: 'The toy is between the box.' })
+        .count(),
+      0,
+    );
+    assert.strictEqual(
+      await page
+        .locator('.option-btn', { hasText: 'The toy is next to the box.' })
+        .count(),
+      1,
     );
 
     await openQuestion(page, 'ING-T2-FAD-011');
