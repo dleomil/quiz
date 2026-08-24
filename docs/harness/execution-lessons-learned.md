@@ -36,6 +36,14 @@ Registrar os erros concretos observados na execucao recente e transformar cada u
 - comentarios longos devem ir por `--body-file` ou equivalente
 - o formato final deve ser legivel no GitHub sem dependencias de escape
 
+### 6. Crases Markdown nao podem atravessar o shell em corpo inline
+
+- crases usadas para codigo inline podem ser interpretadas como substituicao de
+  comando pelo shell e remover trechos do requisito
+- todo corpo multilinha ou com crases deve ser enviado por `--body-file`
+- apos criar ou editar issue, PR ou comentario, o agente deve reler o texto
+  publicado antes de executar a proxima acao
+
 ## Uso esperado
 
 Este documento nao substitui `agent-operational-guardrails.md` nem o modelo operacional dos agentes. Ele existe para manter os erros reais visiveis e para orientar ajustes futuros no harness.

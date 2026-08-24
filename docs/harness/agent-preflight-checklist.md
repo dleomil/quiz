@@ -64,7 +64,10 @@ permitida. `feat/*` nao e valido; para funcionalidades, use `feature/*`.
 
 - o arquivo novo passa em lint antes do PR
 - o comentario ou body usa Markdown real, nao escapes de nova linha
+- corpos Markdown multilinha ou com crases usam arquivo e `--body-file`, nunca
+  string inline do shell
 - o comando do GitHub CLI foi conferido antes de executar
+- o corpo publicado foi relido antes de qualquer acao dependente
 - o board reflete o estado real em todos os campos relevantes
 
 ## Regra operacional

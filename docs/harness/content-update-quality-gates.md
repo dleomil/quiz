@@ -38,6 +38,20 @@ O lote nao pode seguir para implementacao se qualquer ponto abaixo falhar:
 - identificador da questao e versao nao estao definidos
 - nao existe aprovacao humana pedagogica registrada para o lote
 
+## Gate de prontidao do ciclo
+
+Antes de produzir questoes de um novo trimestre, o ciclo deve possuir:
+
+- manifesto curricular completo, revisado e congelado;
+- identificador do acervo criado como `draft` e invisivel;
+- Definition of Ready e Definition of Done aplicaveis a cada tema;
+- lote piloto de um tema submetido ao fluxo completo;
+- decisao explicita de `go` antes da producao paralela.
+
+Recebimento de material escolar, prazo curto ou disponibilidade de agentes nao
+substituem este gate. Mudanca do manifesto depois do inicio exige registro da
+decisao e analise dos lotes impactados.
+
 ## Gate de cobertura curricular
 
 Antes de publicar um novo `contentSetId`, o Verifier Agent deve confirmar a
@@ -64,6 +78,12 @@ Cada questao deve ser verificada para:
 - alternativas plausiveis, mas nao concorrentes com a resposta correta
 - objetivo de aprendizagem coerente com o programa curricular
 - explicacao curta, respeitosa e orientada ao aprendizado
+
+A revisao deve ocorrer em duas passagens independentes. A primeira verifica
+corretude factual, objetivo de aprendizagem, resposta unica e explicacoes. A
+segunda verifica ortografia, naturalidade, ambiguidade e adequacao infantil. Um
+mesmo agente pode apoiar as duas passagens apenas quando outra revisao
+independente e a aprovacao humana estiverem registradas.
 
 ## Pacote pedagogico completo
 
@@ -92,6 +112,11 @@ paralelo, mas implementacao, verificacao e release permanecem serializados em
 suas respectivas trilhas. Um tema so avanca quando satisfaz os criterios da
 trilha anterior; o acervo continua `draft` ate a decisao de publicacao
 controlada.
+
+O card do tema e a unidade padrao de fluxo. Ajustes editoriais encontrados
+antes da publicacao permanecem no checklist do tema e nao geram cards
+individuais, salvo quando houver dependencia, risco, mudanca de codigo ou
+release independente.
 
 ## Validacao automatica prevista
 

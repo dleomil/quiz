@@ -13,6 +13,7 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 - ausencia de preflight antes de criar ou mover itens
 - novo arquivo de teste sem declaracao de globals exigida pelo lint do repositorio
 - uso de flags incorretas em comandos do GitHub CLI
+- interpretacao de crases Markdown pelo shell em corpos inline de issues
 - divergencia entre os campos `Status` e `Workflow` do Project
 - merge bloqueado por regra de aprovacao sem segundo revisor disponivel
 
@@ -64,7 +65,9 @@ Antes de qualquer acao de escrita, o agente deve confirmar:
 
 - confirmar a sintaxe do subcomando antes de escrever comentario, issue, PR ou acao de board
 - usar `--help` ou a documentacao oficial do comando quando houver duvida
-- preferir arquivos Markdown reais para corpos longos e evitar strings com escapes que quebram a formatacao
+- usar arquivo Markdown real e `--body-file` para todo corpo multilinha ou com
+  crases; nao passar esse conteudo em string inline do shell
+- reler o corpo publicado antes de movimentar o card ou criar dependencias
 
 ### 8. Validar paridade do board e da governanca de merge
 
