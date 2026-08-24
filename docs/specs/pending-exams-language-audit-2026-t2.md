@@ -20,8 +20,8 @@ que ainda nao ocorreram:
 3. Portugues - 24/08/2026.
 
 Historia, Ciencias, Matematica e todo o acervo do primeiro trimestre estao fora
-do escopo. Qualquer problema encontrado nesses conteudos deve ser tratado em
-outro ciclo, sem ampliar esta liberacao urgente.
+do escopo. O primeiro trimestre e legado congelado e nao deve gerar outro ciclo,
+novo card, auditoria, correcao ou migracao.
 
 ## Textos obrigatorios
 
