@@ -100,6 +100,14 @@ publicacao.
 
 ## Fase 5 - Publicacao controlada
 
+**Modo operacional inicial**
+
+Enquanto nao houver preparacao ou realizacao de provas, o T3 pode ser promovido
+em lotes menores e mais frequentes no modo continuo. Ao entrar em uma janela de
+provas, a operacao muda para o modo protegido definido em
+`docs/github/branching-and-delivery-strategy.md`. A mudanca de modo deve ser
+registrada pelo Product Owner e nao dispensa nenhum gate deste plano.
+
 **Sequencia**
 
 1. Abrir PR exclusivo de release.
@@ -108,6 +116,10 @@ publicacao.
 4. Promover de `develop` para `main`.
 5. Executar smoke test de producao.
 6. Monitorar feedback sem misturar correcoes pontuais ao release original.
+
+No modo continuo, repetir essa sequencia para cada lote pequeno aprovado. No
+modo protegido, consolidar apenas mudancas essenciais e reduzir a frequencia de
+promocao.
 
 **Rollback**
 

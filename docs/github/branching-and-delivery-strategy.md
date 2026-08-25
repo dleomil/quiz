@@ -47,6 +47,32 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 4. Promover `develop` para `main` via Pull Request com aprovacao manual.
 5. Quando houver necessidade de estabilizacao antes da publicacao, permitir `release/*` com destino a `main`.
 
+## Modos de operacao por calendario escolar
+
+O Product Owner deve declarar no epic ou PR de promocao qual modo esta ativo.
+Na ausencia dessa declaracao, aplica-se o modo protegido.
+
+### Modo continuo - fora de epoca de provas
+
+- promover lotes pequenos de `develop` para `main` com maior frequencia;
+- manter PR exclusivo de promocao, aprovacao manual, checks obrigatorios,
+  preview, rollback e smoke test em producao;
+- preferir mudancas reversiveis e independentes, sem acumular um grande release;
+- interromper novas promocoes se houver regressao ou evidencia insuficiente.
+
+### Modo protegido - preparacao e realizacao de provas
+
+- congelar evolucoes nao essenciais em producao;
+- permitir apenas correcoes bloqueantes, seguranca ou conteudo indispensavel para
+  a prova, sempre com escopo minimo;
+- exigir regressao completa das jornadas afetadas e evidencia no card ou PR;
+- evitar promocoes durante o horario de estudo definido pelo Product Owner;
+- monitorar o deploy e manter rollback imediato disponivel.
+
+A mudanca de modo altera a frequencia permitida, nao reduz os gates de
+qualidade. Conteudo educacional continua sujeito aos gates pedagogicos,
+linguisticos e humanos em ambos os modos.
+
 ## Regras de governanca inicial
 
 - nao fazer push direto em `main`
@@ -54,6 +80,7 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 - toda evolucao deve passar por Pull Request
 - neste inicio, exigir ao menos uma aprovacao manual
 - usar GitHub Actions como gate minimo de governanca nos PRs
+- registrar o modo operacional vigente em toda promocao para `main`
 
 ## Motivacao arquitetural
 

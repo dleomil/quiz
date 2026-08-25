@@ -59,6 +59,8 @@ permitida. `feat/*` nao e valido; para funcionalidades, use `feature/*`.
 - como a mudanca sera revertida se necessario
 - como a protecao original sera restaurada
 - se ha impacto em producao ou board
+- qual modo operacional foi declarado pelo Product Owner: continuo ou protegido
+- se o calendario escolar permite promocao para producao neste momento
 
 ### 6. Checklist de escrita
 
