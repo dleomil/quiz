@@ -59,7 +59,9 @@ docs/
 ├── specs/
 │   ├── panel-control-functional-architecture.md
 │   ├── content-schema-v1.md
+│   ├── curriculum-intake-template.md
 │   ├── curriculum-content-update-governance.md
+│   ├── third-trimester-curriculum-manifest-2026.md
 │   ├── executable-codex-agents.md
 │   ├── product-discovery-agent.md
 │   ├── pilot-low-risk-workflow.md
