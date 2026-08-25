@@ -4,6 +4,54 @@
 
 Cada epico abaixo pode virar uma issue do tipo `Epic` no GitHub. As historias associadas devem virar issues menores, vinculadas ao epico correspondente no board.
 
+## Epic 10: Prontidao do Pipeline Curricular T3
+
+**Issue:** `#299`
+
+**Objetivo**
+
+Preparar o processo curricular antes da producao do T3, aplicando as licoes do
+T2 com gates antecipados, menos handoffs e evidencias mensuraveis.
+
+### Historia 10.1 - Congelar contrato de intake curricular
+
+Definir e aprovar materias, temas, objetivos, meta por tema e identificador do
+acervo antes da curadoria. O aceite exige manifesto completo, ausencia de
+dependencia de paginas e registro de mudancas posteriores.
+
+### Historia 10.2 - Executar agentes editoriais com guardrails
+
+Tornar Content Curator e Pedagogical Quality Agent executaveis em modo
+restrito. O aceite exige configuracao validada, saida padronizada, preflight e
+proibicao de publicar ou substituir aprovacao humana.
+
+### Historia 10.3 - Criar regressao pedagogica e linguistica
+
+Criar corpus de exemplos ruins conhecidos e checks reutilizaveis para
+estrutura, linguagem e alternativas. O aceite exige testes de falsos positivos
+e documentacao explicita de que automacao nao comprova qualidade pedagogica.
+
+### Historia 10.4 - Pilotar um tema completo do T3
+
+Executar 20 questoes de um tema por todo o fluxo, incluindo duas revisoes,
+aprovacao humana, implementacao `draft`, navegador e rollback. O aceite exige
+decisao explicita de `go/no-go` antes de paralelizar.
+
+**Plano de validacao**
+
+- confrontar cada controle com a retrospectiva do T2;
+- executar o pipeline com lote ficticio antes do conteudo real;
+- confirmar que nenhum passo altera o catalogo publicado;
+- revisar metricas e capacidade depois do piloto.
+
+**Evidencias esperadas**
+
+- `docs/harness/t2-content-cycle-retrospective.md`;
+- `docs/roadmap/t3-content-readiness-plan.md`;
+- resultados dos validadores e do piloto;
+- cards `#300` a `#303` vinculados ao epic e mantidos no Backlog ate o
+  refinamento de cada capacidade.
+
 ## Ordem sugerida de refinamento imediato
 
 Para a fase atual, com producao ativa e janela de risco baixa, a sequencia recomendada e:

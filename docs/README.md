@@ -50,10 +50,12 @@ docs/
 │   ├── agent-preflight-checklist.md
 │   ├── execution-lessons-learned.md
 │   ├── content-update-quality-gates.md
+│   ├── t2-content-cycle-retrospective.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
 │   ├── panel-control-phased-plan.md
-│   └── phased-evolution-roadmap.md
+│   ├── phased-evolution-roadmap.md
+│   └── t3-content-readiness-plan.md
 ├── specs/
 │   ├── panel-control-functional-architecture.md
 │   ├── content-schema-v1.md
