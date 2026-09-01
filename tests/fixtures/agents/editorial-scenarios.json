@@ -9,7 +9,10 @@
       "topicId": "ciclo-da-agua",
       "grade": "3-ano",
       "authorizedObjective": "Reconhecer etapas basicas do ciclo da agua.",
-      "sourceState": "authorized"
+      "manifestState": "frozen",
+      "humanFreezeApproval": true,
+      "requestedPass": "curation",
+      "sourceStatus": "authorized"
     },
     "output": {
       "agent": "content_curator",
@@ -40,7 +43,27 @@
       "topicId": "pontuacao",
       "grade": "3-ano",
       "authorizedObjective": "Usar pontuacao em frases interrogativas.",
-      "sourceState": "authorized"
+      "manifestState": "frozen",
+      "humanFreezeApproval": true,
+      "requestedPass": "linguistic",
+      "sourceStatus": "authorized",
+      "proposal": {
+        "questionId": "FIX-PT-001",
+        "prompt": "Qual frase faz uma pergunta",
+        "options": [
+          "Onde voce mora?",
+          "Eu moro perto.",
+          "A casa e azul.",
+          "Hoje esta quente."
+        ],
+        "correctIndex": 0,
+        "explanation": "A primeira frase usa uma palavra interrogativa e pergunta algo.",
+        "incorrectFeedback": [
+          "A segunda frase informa um lugar.",
+          "A terceira frase descreve uma casa.",
+          "A quarta frase informa como esta o dia."
+        ]
+      }
     },
     "output": {
       "agent": "pedagogical_quality",
@@ -77,7 +100,22 @@
       "topicId": "operacoes",
       "grade": "3-ano",
       "authorizedObjective": "Resolver uma operacao com resposta unica.",
-      "sourceState": "ambiguous"
+      "manifestState": "frozen",
+      "humanFreezeApproval": true,
+      "requestedPass": "pedagogical",
+      "sourceStatus": "ambiguous",
+      "proposal": {
+        "questionId": "FIX-MAT-001",
+        "prompt": "Qual alternativa mostra o resultado de 2 + 2?",
+        "options": ["4", "quatro", "5", "6"],
+        "correctIndex": 0,
+        "explanation": "Somar duas unidades a outras duas resulta em quatro.",
+        "incorrectFeedback": [
+          "Quatro tambem representa o resultado correto, causando duplicidade.",
+          "Cinco possui uma unidade a mais.",
+          "Seis possui duas unidades a mais."
+        ]
+      }
     },
     "output": {
       "agent": "pedagogical_quality",
@@ -113,7 +151,10 @@
       "subjectId": "geografia",
       "topicId": "paisagem",
       "grade": "3-ano",
-      "sourceState": "authorized"
+      "manifestState": "frozen",
+      "humanFreezeApproval": true,
+      "requestedPass": "curation",
+      "sourceStatus": "authorized"
     },
     "output": {
       "agent": "content_curator",

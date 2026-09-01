@@ -119,7 +119,7 @@ function run() {
   ambiguousApproval[2].output.decision = 'approved';
   assert.ok(
     validateEditorialScenarios(ambiguousApproval).some((error) =>
-      error.includes('contexto incompleto ou ambiguo nao pode aprovar'),
+      error.includes('contexto incompleto ou ambiguo deve bloquear'),
     ),
   );
 
@@ -143,7 +143,7 @@ function run() {
   adjustmentWithoutFinding[1].output.findings = [];
   assert.ok(
     validateEditorialScenarios(adjustmentWithoutFinding).some((error) =>
-      error.includes('ajustes exigem ao menos um achado'),
+      error.includes('ajustes exigem achado nao bloqueante'),
     ),
   );
 
@@ -152,6 +152,79 @@ function run() {
   assert.ok(
     validateEditorialScenarios(inconsistentInputState).some((error) =>
       error.includes('inputState invalido'),
+    ),
+  );
+
+  const approvalWithDoubt = cloneEditorialScenarios();
+  approvalWithDoubt[0].output.doubts = ['Duvida ainda aberta.'];
+  assert.ok(
+    validateEditorialScenarios(approvalWithDoubt).some((error) =>
+      error.includes('aprovacao nao pode conter duvida ou achado'),
+    ),
+  );
+
+  const approvalWithBlockingFinding = cloneEditorialScenarios();
+  approvalWithBlockingFinding[0].output.findings = [
+    {
+      questionId: 'FIX-CIE-001',
+      criterion: 'corretude',
+      severity: 'blocking',
+      evidence: 'Erro ficticio bloqueante.',
+      recommendation: 'Corrigir antes de aprovar.',
+    },
+  ];
+  assert.ok(
+    validateEditorialScenarios(approvalWithBlockingFinding).some((error) =>
+      error.includes('aprovacao nao pode conter duvida ou achado'),
+    ),
+  );
+
+  const blockedWithMinorFinding = cloneEditorialScenarios();
+  blockedWithMinorFinding[0].output.decision = 'blocked';
+  blockedWithMinorFinding[0].output.findings = [
+    {
+      questionId: 'FIX-CIE-001',
+      criterion: 'estilo',
+      severity: 'minor',
+      evidence: 'Preferencia ficticia de estilo.',
+      recommendation: 'Avaliar ajuste opcional.',
+    },
+  ];
+  assert.ok(
+    validateEditorialScenarios(blockedWithMinorFinding).some((error) =>
+      error.includes('bloqueio exige contexto invalido'),
+    ),
+  );
+
+  const sourceExcerptLeak = cloneEditorialScenarios();
+  sourceExcerptLeak[0].output.sourceExcerpt = 'Trecho escolar nao autorizado.';
+  assert.ok(
+    validateEditorialScenarios(sourceExcerptLeak).some((error) =>
+      error.includes('campo nao autorizado: output.sourceExcerpt'),
+    ),
+  );
+
+  const draftManifestApproval = cloneEditorialScenarios();
+  draftManifestApproval[0].input.manifestState = 'draft';
+  assert.ok(
+    validateEditorialScenarios(draftManifestApproval).some((error) =>
+      error.includes('contexto incompleto ou ambiguo deve bloquear'),
+    ),
+  );
+
+  const missingProposal = cloneEditorialScenarios();
+  delete missingProposal[1].input.proposal;
+  assert.ok(
+    validateEditorialScenarios(missingProposal).some((error) =>
+      error.includes('proposta pedagogica incompleta'),
+    ),
+  );
+
+  const mismatchedRequestedPass = cloneEditorialScenarios();
+  mismatchedRequestedPass[1].input.requestedPass = 'pedagogical';
+  assert.ok(
+    validateEditorialScenarios(mismatchedRequestedPass).some((error) =>
+      error.includes('reviewPass diverge da passagem solicitada'),
     ),
   );
 

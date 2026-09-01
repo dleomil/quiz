@@ -163,16 +163,19 @@ function validateEditorialScenario(scenario) {
   const scenarioId = scenario?.scenarioId || 'cenario-sem-id';
   const input = scenario?.input || {};
   const output = scenario?.output || {};
-  const requiredInputStrings = [
+  const commonInputFields = [
     'workItemId',
     'contentSetId',
     'subjectId',
     'topicId',
     'grade',
     'authorizedObjective',
-    'sourceState',
+    'manifestState',
+    'humanFreezeApproval',
+    'requestedPass',
+    'sourceStatus',
   ];
-  const requiredStrings = [
+  const outputFields = [
     'agent',
     'workItemId',
     'contentSetId',
@@ -180,27 +183,109 @@ function validateEditorialScenario(scenario) {
     'topicId',
     'reviewPass',
     'decision',
+    'facts',
+    'doubts',
+    'findings',
+    'recommendations',
+    'humanApprovalRequired',
+  ];
+  const findingFields = [
+    'questionId',
+    'criterion',
+    'severity',
+    'evidence',
+    'recommendation',
+  ];
+  const proposalFields = [
+    'questionId',
+    'prompt',
+    'options',
+    'correctIndex',
+    'explanation',
+    'incorrectFeedback',
   ];
 
+  function unexpectedKeys(value, allowedFields, pathName) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return;
+    Object.keys(value)
+      .filter((field) => !allowedFields.includes(field))
+      .forEach((field) => {
+        errors.push(
+          `[${scenarioId}] campo nao autorizado: ${pathName}.${field}`,
+        );
+      });
+  }
+
+  function isFilledText(value) {
+    return typeof value === 'string' && Boolean(value.trim());
+  }
+
+  function isFilledTextList(value, expectedLength) {
+    return (
+      Array.isArray(value) &&
+      (expectedLength === undefined || value.length === expectedLength) &&
+      value.every(isFilledText)
+    );
+  }
+
   if (!scenario?.scenarioId) errors.push('[cenario-sem-id] scenarioId ausente');
-  const missingInputFields = requiredInputStrings.filter(
-    (field) => typeof input[field] !== 'string' || !input[field].trim(),
+  unexpectedKeys(
+    scenario,
+    ['scenarioId', 'inputState', 'input', 'output'],
+    'scenario',
   );
-  const derivedInputState = missingInputFields.length
+  const allowedInputFields =
+    output.agent === 'pedagogical_quality'
+      ? [...commonInputFields, 'proposal']
+      : commonInputFields;
+  unexpectedKeys(input, allowedInputFields, 'input');
+  unexpectedKeys(output, outputFields, 'output');
+
+  const requiredInputStrings = commonInputFields.filter(
+    (field) => field !== 'humanFreezeApproval',
+  );
+  const missingInputFields = requiredInputStrings.filter(
+    (field) => !isFilledText(input[field]),
+  );
+  const proposal = input.proposal;
+  let proposalValid = output.agent !== 'pedagogical_quality';
+  if (output.agent === 'pedagogical_quality') {
+    unexpectedKeys(proposal, proposalFields, 'input.proposal');
+    proposalValid =
+      proposal &&
+      isFilledText(proposal.questionId) &&
+      isFilledText(proposal.prompt) &&
+      isFilledTextList(proposal.options, 4) &&
+      Number.isInteger(proposal.correctIndex) &&
+      proposal.correctIndex >= 0 &&
+      proposal.correctIndex < 4 &&
+      isFilledText(proposal.explanation) &&
+      isFilledTextList(proposal.incorrectFeedback, 3);
+    if (!proposalValid) {
+      errors.push(`[${scenarioId}] proposta pedagogica incompleta`);
+    }
+  }
+
+  const preflightComplete =
+    missingInputFields.length === 0 &&
+    input.manifestState === 'frozen' &&
+    input.humanFreezeApproval === true &&
+    proposalValid;
+  const derivedInputState = !preflightComplete
     ? 'incomplete'
-    : input.sourceState === 'ambiguous'
+    : input.sourceStatus === 'ambiguous'
       ? 'ambiguous'
       : 'complete';
 
-  if (!['authorized', 'ambiguous'].includes(input.sourceState)) {
-    errors.push(`[${scenarioId}] input.sourceState invalido`);
+  if (!['authorized', 'ambiguous'].includes(input.sourceStatus)) {
+    errors.push(`[${scenarioId}] input.sourceStatus invalido`);
   }
   if (scenario?.inputState !== derivedInputState) {
     errors.push(`[${scenarioId}] inputState invalido`);
   }
 
-  requiredStrings.forEach((field) => {
-    if (typeof output[field] !== 'string' || !output[field].trim()) {
+  outputFields.slice(0, 7).forEach((field) => {
+    if (!isFilledText(output[field])) {
       errors.push(`[${scenarioId}] output.${field} deve ser texto preenchido`);
     }
   });
@@ -211,7 +296,12 @@ function validateEditorialScenario(scenario) {
     }
   });
 
-  ['facts', 'doubts', 'findings', 'recommendations'].forEach((field) => {
+  ['facts', 'doubts', 'recommendations'].forEach((field) => {
+    if (!isFilledTextList(output[field])) {
+      errors.push(`[${scenarioId}] output.${field} deve ser lista de textos`);
+    }
+  });
+  ['findings'].forEach((field) => {
     if (!Array.isArray(output[field])) {
       errors.push(`[${scenarioId}] output.${field} deve ser lista`);
     }
@@ -220,10 +310,20 @@ function validateEditorialScenario(scenario) {
   const allowedPasses = EDITORIAL_PASSES[output.agent];
   if (!allowedPasses) {
     errors.push(`[${scenarioId}] agente editorial invalido: ${output.agent}`);
-  } else if (!allowedPasses.includes(output.reviewPass)) {
-    errors.push(
-      `[${scenarioId}] reviewPass ${output.reviewPass} invalido para ${output.agent}`,
-    );
+  } else {
+    if (!allowedPasses.includes(output.reviewPass)) {
+      errors.push(
+        `[${scenarioId}] reviewPass ${output.reviewPass} invalido para ${output.agent}`,
+      );
+    }
+    if (!allowedPasses.includes(input.requestedPass)) {
+      errors.push(
+        `[${scenarioId}] requestedPass ${input.requestedPass} invalido para ${output.agent}`,
+      );
+    }
+    if (input.requestedPass !== output.reviewPass) {
+      errors.push(`[${scenarioId}] reviewPass diverge da passagem solicitada`);
+    }
   }
 
   if (!EDITORIAL_DECISIONS.includes(output.decision)) {
@@ -232,34 +332,43 @@ function validateEditorialScenario(scenario) {
   if (output.humanApprovalRequired !== true) {
     errors.push(`[${scenarioId}] aprovacao humana deve permanecer obrigatoria`);
   }
-  if (scenario?.inputState !== 'complete' && output.decision === 'approved') {
-    errors.push(
-      `[${scenarioId}] contexto incompleto ou ambiguo nao pode aprovar`,
-    );
+  const findings = Array.isArray(output.findings) ? output.findings : [];
+  const doubts = Array.isArray(output.doubts) ? output.doubts : [];
+  const blockingFindings = findings.filter(
+    (finding) => finding?.severity === 'blocking',
+  );
+
+  if (derivedInputState !== 'complete' && output.decision !== 'blocked') {
+    errors.push(`[${scenarioId}] contexto incompleto ou ambiguo deve bloquear`);
+  }
+  if (
+    output.decision === 'approved' &&
+    (doubts.length > 0 || findings.length > 0)
+  ) {
+    errors.push(`[${scenarioId}] aprovacao nao pode conter duvida ou achado`);
   }
   if (
     output.decision === 'adjustments_required' &&
-    (!Array.isArray(output.findings) || output.findings.length === 0)
+    (findings.length === 0 || blockingFindings.length > 0)
   ) {
-    errors.push(`[${scenarioId}] ajustes exigem ao menos um achado`);
+    errors.push(
+      `[${scenarioId}] ajustes exigem achado nao bloqueante e contexto completo`,
+    );
   }
   if (
     output.decision === 'blocked' &&
-    (!Array.isArray(output.doubts) || output.doubts.length === 0) &&
-    (!Array.isArray(output.findings) || output.findings.length === 0)
+    blockingFindings.length === 0 &&
+    !(derivedInputState !== 'complete' && doubts.length > 0)
   ) {
-    errors.push(`[${scenarioId}] bloqueio exige duvida ou achado`);
+    errors.push(
+      `[${scenarioId}] bloqueio exige contexto invalido com duvida ou achado blocking`,
+    );
   }
 
-  if (Array.isArray(output.findings)) {
-    output.findings.forEach((finding, index) => {
-      [
-        'questionId',
-        'criterion',
-        'severity',
-        'evidence',
-        'recommendation',
-      ].forEach((field) => {
+  if (findings.length) {
+    findings.forEach((finding, index) => {
+      unexpectedKeys(finding, findingFields, `output.findings[${index}]`);
+      findingFields.forEach((field) => {
         if (typeof finding?.[field] !== 'string' || !finding[field].trim()) {
           errors.push(
             `[${scenarioId}] findings[${index}].${field} deve ser texto preenchido`,

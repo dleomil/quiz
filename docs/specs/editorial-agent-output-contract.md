@@ -8,6 +8,14 @@ sem decisao humana.
 
 ## Campos obrigatorios
 
+Antes da saida, a entrada deve declarar `workItemId`, `contentSetId`,
+`subjectId`, `topicId`, `grade`, `authorizedObjective`, `manifestState`,
+`humanFreezeApproval`, `requestedPass` e `sourceStatus`. O manifesto deve estar
+`frozen`, o congelamento deve possuir aprovacao humana e a passagem solicitada
+deve corresponder ao agente. A revisao pedagogica ou linguistica tambem exige a
+proposta completa da questao, com quatro alternativas, resposta, explicacao e
+tres feedbacks incorretos.
+
 | Campo                   | Regra                                                  |
 | ----------------------- | ------------------------------------------------------ |
 | `agent`                 | `content_curator` ou `pedagogical_quality`             |
@@ -32,8 +40,9 @@ Cada achado informa `questionId`, `criterion`, `severity`, `evidence` e
 - `pedagogical_quality` usa uma passagem `pedagogical` ou `linguistic` por
   invocacao;
 - contexto incompleto ou ambiguo nunca pode resultar em `approved`;
-- `adjustments_required` deve conter pelo menos um achado acionavel;
-- `blocked` deve registrar pelo menos uma duvida ou achado bloqueante;
+- `approved` nao pode conter duvida ou achado aberto;
+- `adjustments_required` exige contexto completo e achado nao bloqueante;
+- `blocked` exige contexto invalido com duvida ou achado `blocking`;
 - nenhuma decisao substitui revisao ou aprovacao pedagogica humana.
 
 ## Seguranca
@@ -41,3 +50,7 @@ Cada achado informa `questionId`, `criterion`, `severity`, `evidence` e
 O resultado nao reproduz fonte escolar protegida, dado identificavel de
 crianca, segredo ou credencial. Os agentes operam em `read-only` e nao alteram
 conteudo executavel, Git, GitHub, catalogo ou producao.
+
+O contrato e fechado: entrada, proposta, saida e achados rejeitam campos nao
+declarados. Texto da fonte nao pode ser transportado em campos adicionais como
+`sourceExcerpt`, `sourceText` ou equivalentes.
