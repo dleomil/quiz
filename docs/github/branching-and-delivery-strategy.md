@@ -43,7 +43,8 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 
 1. Criar branch a partir de `develop` para trabalho normal.
 2. Abrir Pull Request da branch temporaria para `develop`.
-3. Exigir aprovacao manual e concluir branches temporarias com squash.
+3. Exigir aprovacao manual e concluir com squash as branches temporarias que
+   entram em `develop`, exceto a reconciliacao pos-release.
 4. Promover `develop` para `main` via Pull Request com aprovacao manual.
 5. Quando houver necessidade de estabilizacao antes da publicacao, permitir `release/*` com destino a `main`.
 
@@ -69,6 +70,12 @@ permitir esses merge commits controlados. As demais protecoes continuam
 obrigatorias. O gate de ancestralidade bloqueia uma promocao ou reconciliacao
 quando o historico esperado nao estiver presente; a escolha do metodo de merge
 continua sendo uma verificacao manual do Product Owner.
+
+Imediatamente antes do merge, o operador deve buscar novamente `origin/main` e
+executar `npm run validate:branch-sync` contra o SHA atual do PR. Se `main`
+tiver avancado desde o check da esteira, a integracao deve ser interrompida e o
+head atualizado. Essa verificacao just-in-time cobre a janela que os eventos
+nativos de Pull Request nao invalidam automaticamente.
 
 ## Modos de operacao por calendario escolar
 

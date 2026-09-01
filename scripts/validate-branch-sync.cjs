@@ -1,11 +1,14 @@
 const { spawnSync } = require('node:child_process');
 
-function resolveSyncRequirement(headRef, baseRef) {
-  if (headRef === 'develop' && baseRef === 'main') {
+function resolveSyncRequirement(headRef, baseRef, headRevision) {
+  if (
+    baseRef === 'main' &&
+    (headRef === 'develop' || /^(?:hotfix|release)\/.+/.test(headRef))
+  ) {
     return {
       ancestor: 'origin/main',
-      descendant: 'origin/develop',
-      operation: 'promocao develop -> main',
+      descendant: headRevision,
+      operation: `integracao ${headRef} -> main`,
     };
   }
 
@@ -15,7 +18,7 @@ function resolveSyncRequirement(headRef, baseRef) {
   ) {
     return {
       ancestor: 'origin/main',
-      descendant: `origin/${headRef}`,
+      descendant: headRevision,
       operation: 'reconciliacao main -> develop',
     };
   }
@@ -23,10 +26,12 @@ function resolveSyncRequirement(headRef, baseRef) {
   return null;
 }
 
-function validateBranchSync(headRef, baseRef, isAncestor) {
-  if (!headRef || !baseRef) return ['head e base sao obrigatorios'];
+function validateBranchSync(headRef, baseRef, headRevision, isAncestor) {
+  if (!headRef || !baseRef || !headRevision) {
+    return ['head, base e revisao do head sao obrigatorios'];
+  }
 
-  const requirement = resolveSyncRequirement(headRef, baseRef);
+  const requirement = resolveSyncRequirement(headRef, baseRef, headRevision);
   if (!requirement) return [];
   if (isAncestor(requirement.ancestor, requirement.descendant)) return [];
 
@@ -52,13 +57,19 @@ function gitIsAncestor(ancestor, descendant) {
 if (require.main === module) {
   const headRef = process.argv[2] || process.env.HEAD_REF;
   const baseRef = process.argv[3] || process.env.BASE_REF;
-  const errors = validateBranchSync(headRef, baseRef, gitIsAncestor);
+  const headRevision = process.argv[4] || process.env.HEAD_REVISION || 'HEAD';
+  const errors = validateBranchSync(
+    headRef,
+    baseRef,
+    headRevision,
+    gitIsAncestor,
+  );
 
   if (errors.length) {
     process.stderr.write(`${errors.join('\n')}\n`);
     process.exitCode = 1;
   } else {
-    const requirement = resolveSyncRequirement(headRef, baseRef);
+    const requirement = resolveSyncRequirement(headRef, baseRef, headRevision);
     const result = requirement ? 'ok' : 'nao aplicavel';
     process.stdout.write(`branch-sync: ${result} (${headRef} -> ${baseRef})\n`);
   }
