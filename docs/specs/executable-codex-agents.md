@@ -2,9 +2,9 @@
 
 ## Objetivo
 
-Configurar Reviewer, Verifier e Product Discovery como agentes customizados do
-Codex, com modelos e limites adequados a cada papel e sem ampliar sua autoridade
-operacional.
+Configurar Reviewer, Verifier, Product Discovery, Content Curator e Pedagogical
+Quality como agentes customizados do Codex, com modelos e limites adequados a
+cada papel e sem ampliar sua autoridade operacional.
 
 ## Decisao
 
@@ -14,15 +14,18 @@ esses contratos e definem modelo, esforco e sandbox.
 
 ## Configuracao inicial
 
-| Agente            | Arquivo                  | Modelo          | Esforco  | Sandbox   |
-| ----------------- | ------------------------ | --------------- | -------- | --------- |
-| Reviewer          | `reviewer.toml`          | `gpt-5.6-sol`   | `high`   | read-only |
-| Verifier          | `verifier.toml`          | `gpt-5.6-terra` | `medium` | read-only |
-| Product Discovery | `product-discovery.toml` | `gpt-5.6-sol`   | `high`   | read-only |
+| Agente              | Arquivo                    | Modelo          | Esforco  | Sandbox   |
+| ------------------- | -------------------------- | --------------- | -------- | --------- |
+| Reviewer            | `reviewer.toml`            | `gpt-5.6-sol`   | `high`   | read-only |
+| Verifier            | `verifier.toml`            | `gpt-5.6-terra` | `medium` | read-only |
+| Product Discovery   | `product-discovery.toml`   | `gpt-5.6-sol`   | `high`   | read-only |
+| Content Curator     | `content-curator.toml`     | `gpt-5.6-sol`   | `high`   | read-only |
+| Pedagogical Quality | `pedagogical-quality.toml` | `gpt-5.6-sol`   | `high`   | read-only |
 
-O Reviewer e o Product Discovery exigem raciocinio mais profundo por lidarem
-com ambiguidade, risco e recomendacao. O Verifier usa um modelo mais eficiente
-para leitura, execucao de checks e consolidacao de evidencias.
+Reviewer, Product Discovery e os agentes editoriais exigem raciocinio mais
+profundo por lidarem com ambiguidade, risco, linguagem e recomendacao. O
+Verifier usa um modelo mais eficiente para leitura, execucao de checks e
+consolidacao de evidencias.
 
 ## Precedencia
 
@@ -38,6 +41,11 @@ O agente principal pode delegar explicitamente:
 Use o agente reviewer para revisar este PR contra a spec. Aguarde o resultado e
 consolide os achados antes de propor qualquer acao.
 ```
+
+No fluxo curricular, delegue primeiro para `content_curator`. Depois da
+proposta, execute `pedagogical_quality` separadamente com `reviewPass`
+`pedagogical` e `linguistic`. As saidas seguem
+`editorial-agent-output-contract.md` e continuam pendentes de aprovacao humana.
 
 Na CLI, `/agent` permite inspecionar as threads ativas. A delegacao deve ocorrer
 somente quando o trabalho for independente e delimitado.
@@ -84,13 +92,16 @@ Cada subagente consome seu proprio contexto e tokens. Nesta fase:
 - sandbox exclusivamente `read-only`;
 - referencias obrigatorias aos contratos;
 - padroes comuns de credenciais e chaves privadas.
+- contrato de saida dos agentes editoriais;
+- cenarios de aprovacao, ajuste e bloqueio;
+- proibicao de aprovar contexto incompleto ou ambiguo.
 
 O gate roda em `npm test`. Ele valida configuracao e seguranca estrutural, mas
 nao consome tokens nem invoca os modelos.
 
 ## Criterios de aceite
 
-- os tres TOMLs atendem ao schema aceito pelo Codex;
+- os cinco TOMLs atendem ao schema aceito pelo Codex;
 - cada agente esta vinculado ao contrato correto;
 - configuracoes pessoais permanecem fora do Git;
 - casos validos e invalidos do gate possuem testes;

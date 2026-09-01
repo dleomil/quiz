@@ -5,7 +5,25 @@ const path = require('node:path');
 const {
   AGENT_CONTRACTS,
   validateAgentDirectory,
+  validateEditorialScenarios,
 } = require('../../scripts/validate-codex-agents.cjs');
+
+const editorialScenarios = JSON.parse(
+  fs.readFileSync(
+    path.join(
+      __dirname,
+      '..',
+      'fixtures',
+      'agents',
+      'editorial-scenarios.json',
+    ),
+    'utf8',
+  ),
+);
+
+function cloneEditorialScenarios() {
+  return JSON.parse(JSON.stringify(editorialScenarios));
+}
 
 function validAgentSource(contract) {
   return [
@@ -59,6 +77,22 @@ function run() {
   withFixture((directory) => {
     replaceInFile(
       directory,
+      'content-curator.toml',
+      'docs/specs/editorial-agent-output-contract.md',
+      'docs/specs/contrato-ausente.md',
+    );
+    assert.ok(
+      validateAgentDirectory(directory).some((error) =>
+        error.includes(
+          'instrucao deve referenciar docs/specs/editorial-agent-output-contract.md',
+        ),
+      ),
+    );
+  });
+
+  withFixture((directory) => {
+    replaceInFile(
+      directory,
       'reviewer.toml',
       'description = "Agente de teste"\n',
       '',
@@ -69,6 +103,57 @@ function run() {
       ),
     );
   });
+
+  assert.deepStrictEqual(validateEditorialScenarios(editorialScenarios), []);
+  assert.ok(
+    editorialScenarios.some((scenario) => scenario.inputState === 'complete'),
+  );
+  assert.ok(
+    editorialScenarios.some((scenario) => scenario.inputState === 'incomplete'),
+  );
+  assert.ok(
+    editorialScenarios.some((scenario) => scenario.inputState === 'ambiguous'),
+  );
+
+  const ambiguousApproval = cloneEditorialScenarios();
+  ambiguousApproval[2].output.decision = 'approved';
+  assert.ok(
+    validateEditorialScenarios(ambiguousApproval).some((error) =>
+      error.includes('contexto incompleto ou ambiguo nao pode aprovar'),
+    ),
+  );
+
+  const missingHumanApproval = cloneEditorialScenarios();
+  missingHumanApproval[0].output.humanApprovalRequired = false;
+  assert.ok(
+    validateEditorialScenarios(missingHumanApproval).some((error) =>
+      error.includes('aprovacao humana deve permanecer obrigatoria'),
+    ),
+  );
+
+  const invalidPass = cloneEditorialScenarios();
+  invalidPass[0].output.reviewPass = 'linguistic';
+  assert.ok(
+    validateEditorialScenarios(invalidPass).some((error) =>
+      error.includes('reviewPass linguistic invalido para content_curator'),
+    ),
+  );
+
+  const adjustmentWithoutFinding = cloneEditorialScenarios();
+  adjustmentWithoutFinding[1].output.findings = [];
+  assert.ok(
+    validateEditorialScenarios(adjustmentWithoutFinding).some((error) =>
+      error.includes('ajustes exigem ao menos um achado'),
+    ),
+  );
+
+  const inconsistentInputState = cloneEditorialScenarios();
+  inconsistentInputState[3].input.authorizedObjective = 'Objetivo preenchido.';
+  assert.ok(
+    validateEditorialScenarios(inconsistentInputState).some((error) =>
+      error.includes('inputState invalido'),
+    ),
+  );
 
   withFixture((directory) => {
     replaceInFile(

@@ -62,6 +62,7 @@ docs/
 │   ├── curriculum-intake-template.md
 │   ├── curriculum-content-update-governance.md
 │   ├── third-trimester-curriculum-manifest-2026.md
+│   ├── editorial-agent-output-contract.md
 │   ├── executable-codex-agents.md
 │   ├── product-discovery-agent.md
 │   ├── pilot-low-risk-workflow.md

@@ -1,0 +1,133 @@
+[
+  {
+    "scenarioId": "curation-approved",
+    "inputState": "complete",
+    "input": {
+      "workItemId": "fixture-001",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "ciencias",
+      "topicId": "ciclo-da-agua",
+      "grade": "3-ano",
+      "authorizedObjective": "Reconhecer etapas basicas do ciclo da agua.",
+      "sourceState": "authorized"
+    },
+    "output": {
+      "agent": "content_curator",
+      "workItemId": "fixture-001",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "ciencias",
+      "topicId": "ciclo-da-agua",
+      "reviewPass": "curation",
+      "decision": "approved",
+      "facts": [
+        "Tema e objetivo ficticios estao declarados no contexto de teste."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Encaminhar a proposta ficticia para revisao pedagogica."
+      ],
+      "humanApprovalRequired": true
+    }
+  },
+  {
+    "scenarioId": "language-adjustments-required",
+    "inputState": "complete",
+    "input": {
+      "workItemId": "fixture-002",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "portugues",
+      "topicId": "pontuacao",
+      "grade": "3-ano",
+      "authorizedObjective": "Usar pontuacao em frases interrogativas.",
+      "sourceState": "authorized"
+    },
+    "output": {
+      "agent": "pedagogical_quality",
+      "workItemId": "fixture-002",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "portugues",
+      "topicId": "pontuacao",
+      "reviewPass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": ["A proposta ficticia contem uma pergunta identificada."],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "FIX-PT-001",
+          "criterion": "pontuacao",
+          "severity": "major",
+          "evidence": "O enunciado ficticio termina sem sinal de interrogacao.",
+          "recommendation": "Adicionar o sinal de interrogacao ao enunciado."
+        }
+      ],
+      "recommendations": [
+        "Corrigir e submeter novamente a passagem linguistica."
+      ],
+      "humanApprovalRequired": true
+    }
+  },
+  {
+    "scenarioId": "pedagogical-context-blocked",
+    "inputState": "ambiguous",
+    "input": {
+      "workItemId": "fixture-003",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "matematica",
+      "topicId": "operacoes",
+      "grade": "3-ano",
+      "authorizedObjective": "Resolver uma operacao com resposta unica.",
+      "sourceState": "ambiguous"
+    },
+    "output": {
+      "agent": "pedagogical_quality",
+      "workItemId": "fixture-003",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "matematica",
+      "topicId": "operacoes",
+      "reviewPass": "pedagogical",
+      "decision": "blocked",
+      "facts": ["A proposta ficticia declara duas respostas como corretas."],
+      "doubts": [
+        "O objetivo curricular ficticio nao permite decidir qual resposta deve ser unica."
+      ],
+      "findings": [
+        {
+          "questionId": "FIX-MAT-001",
+          "criterion": "resposta-unica",
+          "severity": "blocking",
+          "evidence": "Duas alternativas ficticias atendem ao enunciado.",
+          "recommendation": "Esclarecer o objetivo e reescrever a questao antes de nova revisao."
+        }
+      ],
+      "recommendations": ["Obter esclarecimento curricular humano."],
+      "humanApprovalRequired": true
+    }
+  },
+  {
+    "scenarioId": "curation-input-incomplete",
+    "inputState": "incomplete",
+    "input": {
+      "workItemId": "fixture-004",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "geografia",
+      "topicId": "paisagem",
+      "grade": "3-ano",
+      "sourceState": "authorized"
+    },
+    "output": {
+      "agent": "content_curator",
+      "workItemId": "fixture-004",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "geografia",
+      "topicId": "paisagem",
+      "reviewPass": "curation",
+      "decision": "blocked",
+      "facts": ["O tema ficticio foi informado sem objetivo autorizado."],
+      "doubts": ["O objetivo curricular obrigatorio esta ausente."],
+      "findings": [],
+      "recommendations": ["Obter o objetivo autorizado antes da curadoria."],
+      "humanApprovalRequired": true
+    }
+  }
+]
