@@ -47,6 +47,22 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 4. Promover `develop` para `main` via Pull Request com aprovacao manual.
 5. Quando houver necessidade de estabilizacao antes da publicacao, permitir `release/*` com destino a `main`.
 
+### Reconciliacao obrigatoria apos release
+
+- concluir promocoes de `develop` para `main` com merge commit; nao usar squash
+  ou rebase nesse fluxo;
+- depois de cada promocao, incorporar `main` novamente em `develop` por uma
+  branch `chore/*` e Pull Request exclusivo;
+- preservar em `develop` qualquer trabalho posterior ao corte do release e
+  revisar conflitos sem escolher um lado inteiro de forma automatica;
+- confirmar que `main` faz parte do historico reconciliado antes de iniciar a
+  proxima entrega;
+- se houver hotfix direto em `main`, reconciliar o hotfix em `develop` antes de
+  retomar o desenvolvimento normal.
+
+A reconciliacao registra a ancestralidade do release e nao autoriza nova
+promocao, deploy ou alteracao funcional.
+
 ## Modos de operacao por calendario escolar
 
 O Product Owner deve declarar no epic ou PR de promocao qual modo esta ativo.
