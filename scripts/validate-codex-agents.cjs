@@ -193,6 +193,11 @@ function validateEditorialScenario(scenario) {
     'subjectId',
     'topicId',
     'grade',
+    'academicYear',
+    'term',
+    'authorizedSkill',
+    'sourceRef',
+    'questionVersion',
     'authorizedObjective',
     'manifestState',
     'humanFreezeApproval',
@@ -221,17 +226,21 @@ function validateEditorialScenario(scenario) {
     'recommendation',
   ];
   const proposalFields = [
-    'questionId',
-    'prompt',
+    'schemaVersion',
+    'id',
+    'contentSetId',
+    'subject',
+    'topic',
+    'question',
+    'questionPt',
     'options',
     'correctIndex',
     'explanation',
-    'incorrectFeedback',
-    'academicYear',
-    'term',
+    'wrongExplanations',
     'version',
     'skill',
     'sourceRef',
+    'reviewStatus',
   ];
   const sourceRefFields = ['referenceId', 'section', 'topic'];
   const approvalFields = ['approvedBy', 'approvedAt', 'evidenceRef'];
@@ -274,39 +283,41 @@ function validateEditorialScenario(scenario) {
           .map(String)
       : [];
     const feedbackKeys =
-      proposal?.incorrectFeedback &&
-      typeof proposal.incorrectFeedback === 'object' &&
-      !Array.isArray(proposal.incorrectFeedback)
-        ? Object.keys(proposal.incorrectFeedback)
+      proposal?.wrongExplanations &&
+      typeof proposal.wrongExplanations === 'object' &&
+      !Array.isArray(proposal.wrongExplanations)
+        ? Object.keys(proposal.wrongExplanations)
         : [];
     const feedbackValid =
       wrongIndices.length === 3 &&
       feedbackKeys.length === wrongIndices.length &&
       feedbackKeys.every((key) => wrongIndices.includes(key)) &&
       wrongIndices.every((key) =>
-        isFilledText(proposal.incorrectFeedback[key]),
+        isFilledText(proposal.wrongExplanations[key]),
       );
     const valid =
       proposal &&
-      isFilledText(proposal.questionId) &&
-      isFilledText(proposal.prompt) &&
+      proposal.schemaVersion === 'content-v1' &&
+      isFilledText(proposal.id) &&
+      isFilledText(proposal.contentSetId) &&
+      isFilledText(proposal.subject) &&
+      isFilledText(proposal.topic) &&
+      isFilledText(proposal.question) &&
       isFilledTextList(proposal.options, 4) &&
       Number.isInteger(proposal.correctIndex) &&
       proposal.correctIndex >= 0 &&
       proposal.correctIndex < 4 &&
       isFilledText(proposal.explanation) &&
       feedbackValid &&
-      Number.isInteger(proposal.academicYear) &&
-      proposal.academicYear >= 2000 &&
-      proposal.academicYear <= 9999 &&
-      ['t1', 't2', 't3'].includes(proposal.term) &&
       Number.isInteger(proposal.version) &&
       proposal.version > 0 &&
       isFilledText(proposal.skill) &&
       proposal.sourceRef &&
       isFilledText(proposal.sourceRef.referenceId) &&
       isFilledText(proposal.sourceRef.section) &&
-      isFilledText(proposal.sourceRef.topic);
+      isFilledText(proposal.sourceRef.topic) &&
+      proposal.reviewStatus === 'draft' &&
+      (proposal.subject !== 'ingles' || isFilledText(proposal.questionPt));
     if (!valid) errors.push(`[${scenarioId}] ${pathName} incompleta`);
     return valid;
   }
@@ -317,6 +328,7 @@ function validateEditorialScenario(scenario) {
     ['scenarioId', 'inputState', 'input', 'output'],
     'scenario',
   );
+  unexpectedKeys(input.sourceRef, sourceRefFields, 'input.sourceRef');
   const allowedInputFields =
     output.agent === 'pedagogical_quality'
       ? [...commonInputFields, 'proposal']
@@ -336,9 +348,25 @@ function validateEditorialScenario(scenario) {
   const requiredInputStrings = commonInputFields.filter(
     (field) => field !== 'humanFreezeApproval',
   );
-  const missingInputFields = requiredInputStrings.filter(
-    (field) => !isFilledText(input[field]),
-  );
+  const missingInputFields = requiredInputStrings.filter((field) => {
+    if (field === 'academicYear' || field === 'questionVersion') {
+      return !Number.isInteger(input[field]);
+    }
+    if (field === 'sourceRef') return !input.sourceRef;
+    return !isFilledText(input[field]);
+  });
+  const inputMetadataValid =
+    Number.isInteger(input.academicYear) &&
+    input.academicYear >= 2000 &&
+    input.academicYear <= 9999 &&
+    ['t1', 't2', 't3'].includes(input.term) &&
+    Number.isInteger(input.questionVersion) &&
+    input.questionVersion > 0 &&
+    isFilledText(input.authorizedSkill) &&
+    input.sourceRef &&
+    isFilledText(input.sourceRef.referenceId) &&
+    isFilledText(input.sourceRef.section) &&
+    isFilledText(input.sourceRef.topic);
   const inputProposalValid = validateProposal(
     input.proposal,
     'input.proposal',
@@ -359,6 +387,7 @@ function validateEditorialScenario(scenario) {
 
   const preflightComplete =
     missingInputFields.length === 0 &&
+    inputMetadataValid &&
     input.manifestState === 'frozen' &&
     approvalValid &&
     inputProposalValid;
@@ -385,6 +414,35 @@ function validateEditorialScenario(scenario) {
     if (input[field] && output[field] !== input[field]) {
       errors.push(`[${scenarioId}] output.${field} diverge da entrada`);
     }
+  });
+
+  const proposals = [
+    ['input.proposal', input.proposal],
+    ['output.proposal', output.proposal],
+  ].filter(([, proposal]) => proposal);
+  proposals.forEach(([prefix, proposal]) => {
+    const expected = {
+      contentSetId: input.contentSetId,
+      subject: input.subjectId,
+      topic: input.topicId,
+      skill: input.authorizedSkill,
+      version: input.questionVersion,
+    };
+    Object.entries(expected).forEach(([field, value]) => {
+      if (proposal[field] !== value) {
+        errors.push(`[${scenarioId}] ${prefix}.${field} diverge da entrada`);
+      }
+    });
+    if (proposal.academicYear !== undefined || proposal.term !== undefined) {
+      errors.push(
+        `[${scenarioId}] proposta nao deve duplicar metadados do catalogo`,
+      );
+    }
+    sourceRefFields.forEach((field) => {
+      if (proposal.sourceRef?.[field] !== input.sourceRef?.[field]) {
+        errors.push(`[${scenarioId}] ${prefix}.sourceRef diverge da entrada`);
+      }
+    });
   });
 
   ['facts', 'doubts', 'recommendations'].forEach((field) => {
@@ -474,8 +532,8 @@ function validateEditorialScenario(scenario) {
         );
       }
       if (
-        !reviewedProposal?.questionId ||
-        finding?.questionId !== reviewedProposal.questionId
+        !reviewedProposal?.id ||
+        finding?.questionId !== reviewedProposal.id
       ) {
         errors.push(
           `[${scenarioId}] findings[${index}].questionId diverge da proposta`,
@@ -510,6 +568,81 @@ function validateEditorialScenarios(scenarios) {
     }
   });
 
+  return errors;
+}
+
+function validateEditorialInputDocument(document, agent) {
+  const scenarioId = document?.scenarioId || 'cenario-sem-id';
+  const input = document?.input || {};
+  const errors = [];
+  const required = [
+    'workItemId',
+    'contentSetId',
+    'subjectId',
+    'topicId',
+    'grade',
+    'academicYear',
+    'term',
+    'authorizedSkill',
+    'sourceRef',
+    'questionVersion',
+    'authorizedObjective',
+    'manifestState',
+    'humanFreezeApproval',
+    'requestedPass',
+    'sourceStatus',
+  ];
+  const allowed =
+    agent === 'pedagogical_quality' ? [...required, 'proposal'] : required;
+  Object.keys(input).forEach((key) => {
+    if (!allowed.includes(key))
+      errors.push(`[${scenarioId}] campo nao autorizado: input.${key}`);
+  });
+  required.forEach((field) => {
+    const numeric = ['academicYear', 'questionVersion'].includes(field);
+    if (numeric ? !Number.isInteger(input[field]) : !input[field]) {
+      errors.push(`[${scenarioId}] input.${field} ausente`);
+    }
+  });
+  if (input.manifestState !== 'frozen')
+    errors.push(`[${scenarioId}] manifesto nao esta frozen`);
+  if (!['t1', 't2', 't3'].includes(input.term))
+    errors.push(`[${scenarioId}] input.term invalido`);
+  if (!['authorized', 'ambiguous'].includes(input.sourceStatus)) {
+    errors.push(`[${scenarioId}] input.sourceStatus invalido`);
+  }
+  const sourceRef = input.sourceRef;
+  if (!sourceRef || typeof sourceRef !== 'object' || Array.isArray(sourceRef)) {
+    errors.push(`[${scenarioId}] input.sourceRef invalido`);
+  } else {
+    ['referenceId', 'section', 'topic'].forEach((field) => {
+      if (typeof sourceRef[field] !== 'string' || !sourceRef[field].trim()) {
+        errors.push(`[${scenarioId}] input.sourceRef.${field} ausente`);
+      }
+    });
+    if (
+      Object.keys(sourceRef).some(
+        (field) => !['referenceId', 'section', 'topic'].includes(field),
+      )
+    ) {
+      errors.push(
+        `[${scenarioId}] input.sourceRef possui campo nao autorizado`,
+      );
+    }
+  }
+  const approval = input.humanFreezeApproval;
+  if (
+    !approval ||
+    typeof approval !== 'object' ||
+    !approval.approvedBy ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(approval.approvedAt || '') ||
+    !approval.evidenceRef
+  ) {
+    errors.push(`[${scenarioId}] aprovacao do congelamento incompleta`);
+  }
+  if (agent === 'pedagogical_quality' && !input.proposal) {
+    errors.push(`[${scenarioId}] input.proposal ausente`);
+  }
   return errors;
 }
 
@@ -555,5 +688,6 @@ module.exports = {
   validateAgentSource,
   validateEditorialScenario,
   validateEditorialScenarios,
+  validateEditorialInputDocument,
   validateRepositoryAgents,
 };

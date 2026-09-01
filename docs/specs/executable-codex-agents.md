@@ -22,11 +22,11 @@ esses contratos e definem modelo, esforco e sandbox.
 | Content Curator     | `content-curator.toml`     | `gpt-5.6-sol`   | `high`   | read-only |
 | Pedagogical Quality | `pedagogical-quality.toml` | `gpt-5.6-sol`   | `high`   | read-only |
 
-Os agentes editoriais declaram uma tabela `mcp_servers` vazia. Isso impede a
-heranca de servidores MCP configurados no projeto. A delegacao ainda exige o
-preflight da sessao principal: `codex mcp list --json` deve retornar zero
-servidores, pois ferramentas e connectors fornecidos pela sessao pai nao sao
-controlados somente pelo arquivo do agente.
+Os agentes editoriais declaram uma tabela `mcp_servers` vazia. A execucao
+protegida deve ocorrer por `scripts/run-editorial-agent.cjs`, que inicia um
+processo Codex separado com `CODEX_HOME` temporario e nao herda ferramentas ou
+connectors da sessao pai. O runner tambem exige `codex mcp list --json` vazio e
+falha fechado quando qualquer preflight ou validacao falhar.
 
 Reviewer, Product Discovery e os agentes editoriais exigem raciocinio mais
 profundo por lidarem com ambiguidade, risco, linguagem e recomendacao. O

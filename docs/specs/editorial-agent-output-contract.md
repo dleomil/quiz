@@ -9,7 +9,8 @@ sem decisao humana.
 ## Campos obrigatorios
 
 Antes da saida, a entrada deve declarar `workItemId`, `contentSetId`,
-`subjectId`, `topicId`, `grade`, `authorizedObjective`, `manifestState`,
+`subjectId`, `topicId`, `grade`, `academicYear`, `term`, `authorizedSkill`,
+`sourceRef`, `questionVersion`, `authorizedObjective`, `manifestState`,
 `humanFreezeApproval`, `requestedPass` e `sourceStatus`. O manifesto deve estar
 `frozen`, o congelamento deve possuir aprovacao humana e a passagem solicitada
 deve corresponder ao agente. A revisao pedagogica ou linguistica tambem exige a
@@ -37,14 +38,16 @@ ao preflight.
 
 Quando `content_curator` retorna `approved` ou `adjustments_required`, a saida
 tambem inclui `proposal` completa. Essa mesma estrutura entra na passagem
-pedagogica ou linguistica seguinte. Achados devem usar exatamente o
-`questionId` da proposta avaliada.
+pedagogica ou linguistica seguinte. Achados devem usar exatamente o `id` da
+proposta avaliada.
 
-A proposta tambem deve declarar `academicYear`, `term`, `version`, `skill` e
-`sourceRef`. O `sourceRef` possui somente `referenceId`, `section` e `topic`; a
-proposta nao pode transportar pagina, trecho ou texto da fonte escolar.
+A proposta deve ser diretamente compativel com `content-v1`, sem envelope
+alternativo. O `sourceRef` possui somente `referenceId`, `section` e `topic`; a
+proposta nao pode transportar pagina, trecho ou texto da fonte escolar. Os
+metadados de ano e trimestre pertencem ao contexto autorizado de entrada e nao
+sao duplicados dentro da questao.
 
-O campo `incorrectFeedback` e um objeto com exatamente uma mensagem para cada
+O campo `wrongExplanations` e um objeto com exatamente uma mensagem para cada
 indice incorreto. A chave deve ser o indice da alternativa, nunca a posicao de
 uma lista de feedbacks.
 
@@ -73,6 +76,12 @@ declarados. Texto da fonte nao pode ser transportado em campos adicionais como
 `sourceExcerpt`, `sourceText` ou equivalentes.
 
 Os agentes editoriais declaram uma tabela `mcp_servers` vazia no proprio
-adaptador. Antes da delegacao, o agente principal deve executar
-`codex mcp list --json`; qualquer servidor MCP ou connector fora da politica
-deve bloquear a execucao editorial.
+adaptador. A execucao protegida ocorre por `scripts/run-editorial-agent.cjs`,
+que inicia processo Codex separado com `CODEX_HOME` temporario, sem heranca de
+ferramentas ou connectors da sessao pai. Antes da execucao, o runner exige
+`codex mcp list --json` vazio e bloqueia qualquer preflight invalido.
+
+O runner recebe `--agent`, `--input` e `--output`. A entrada e um documento
+com `scenarioId`, `inputState` e `input`; a saida gravada inclui o mesmo
+contexto e o parecer validado em `output`. O runner somente grava a saida apos
+validar o contrato completo.

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "agent",
+    "workItemId",
+    "contentSetId",
+    "subjectId",
+    "topicId",
+    "reviewPass",
+    "decision",
+    "facts",
+    "doubts",
+    "findings",
+    "recommendations",
+    "humanApprovalRequired"
+  ],
+  "properties": {
+    "agent": { "enum": ["content_curator", "pedagogical_quality"] },
+    "workItemId": { "type": "string", "minLength": 1 },
+    "contentSetId": { "type": "string", "minLength": 1 },
+    "subjectId": { "type": "string", "minLength": 1 },
+    "topicId": { "type": "string", "minLength": 1 },
+    "reviewPass": { "enum": ["curation", "pedagogical", "linguistic"] },
+    "decision": { "enum": ["approved", "adjustments_required", "blocked"] },
+    "facts": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "doubts": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "findings": { "type": "array" },
+    "recommendations": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "humanApprovalRequired": { "const": true },
+    "proposal": { "$ref": "#/$defs/proposal" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "agent": { "const": "content_curator" } } },
+      "then": { "required": ["proposal"] },
+      "else": { "not": { "required": ["proposal"] } }
+    }
+  ],
+  "$defs": {
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["referenceId", "section", "topic"],
+      "properties": {
+        "referenceId": { "type": "string", "minLength": 1 },
+        "section": { "type": "string", "minLength": 1 },
+        "topic": { "type": "string", "minLength": 1 }
+      }
+    },
+    "proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "id",
+        "contentSetId",
+        "subject",
+        "topic",
+        "question",
+        "options",
+        "correctIndex",
+        "explanation",
+        "wrongExplanations",
+        "skill",
+        "sourceRef",
+        "reviewStatus",
+        "version"
+      ],
+      "properties": {
+        "schemaVersion": { "const": "content-v1" },
+        "id": { "type": "string", "minLength": 1 },
+        "contentSetId": { "type": "string", "minLength": 1 },
+        "subject": { "type": "string", "minLength": 1 },
+        "topic": { "type": "string", "minLength": 1 },
+        "question": { "type": "string", "minLength": 1 },
+        "questionPt": { "type": "string", "minLength": 1 },
+        "options": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "correctIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "explanation": { "type": "string", "minLength": 1 },
+        "wrongExplanations": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-3]$": { "type": "string", "minLength": 1 }
+          }
+        },
+        "skill": { "type": "string", "minLength": 1 },
+        "sourceRef": { "$ref": "#/$defs/sourceRef" },
+        "reviewStatus": { "const": "draft" },
+        "version": { "type": "integer", "minimum": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "subject": { "const": "ingles" } } },
+          "then": { "required": ["questionPt"] }
+        }
+      ]
+    }
+  }
+}

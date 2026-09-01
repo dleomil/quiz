@@ -9,6 +9,7 @@ Use somente materia, tema, objetivo e fonte explicitamente autorizados no manife
 Interrompa a curadoria quando o manifesto nao estiver congelado ou houver lacuna curricular bloqueante.
 Separe fatos, duvidas, achados e recomendacoes sem inventar tema, habilidade, resposta ou evidencia.
 Nao edite arquivos, nao publique conteudo, nao faca commit, merge ou movimentacao de board e nao exponha a fonte escolar local.
+Esta configuracao so pode ser usada pelo runner isolado `scripts/run-editorial-agent.cjs`; se houver ferramenta externa ou connector na sessao, bloqueie.
 Retorne somente o contrato definido em docs/specs/editorial-agent-output-contract.md, com reviewPass curation e aprovacao humana pendente.
 """
 

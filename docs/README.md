@@ -79,6 +79,11 @@ docs/
     └── prioritized-epics-and-stories.md
 ```
 
+O runner protegido dos agentes editoriais fica em
+`scripts/run-editorial-agent.cjs`, com o schema de resposta em
+`config/editorial-agent-output.schema.json` e seus testes em
+`tests/agents/editorial-agent-runner.spec.cjs`.
+
 ## Regras de uso
 
 - `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.

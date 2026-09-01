@@ -8,6 +8,15 @@
       "subjectId": "ciencias",
       "topicId": "ciclo-da-agua",
       "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "etapas-do-ciclo-da-agua",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Ciencias",
+        "topic": "ciclo-da-agua"
+      },
+      "questionVersion": 1,
       "authorizedObjective": "Reconhecer etapas basicas do ciclo da agua.",
       "manifestState": "frozen",
       "humanFreezeApproval": {
@@ -27,8 +36,12 @@
       "reviewPass": "curation",
       "decision": "approved",
       "proposal": {
-        "questionId": "FIX-CIE-001",
-        "prompt": "O que acontece com a agua aquecida pelo Sol?",
+        "schemaVersion": "content-v1",
+        "id": "FIX-CIE-001",
+        "contentSetId": "fixture-editorial-draft",
+        "subject": "ciencias",
+        "topic": "ciclo-da-agua",
+        "question": "O que acontece com a agua aquecida pelo Sol?",
         "options": [
           "Pode evaporar e subir para o ar.",
           "Transforma-se imediatamente em gelo.",
@@ -37,20 +50,19 @@
         ],
         "correctIndex": 0,
         "explanation": "O calor pode transformar a agua liquida em vapor.",
-        "incorrectFeedback": {
+        "wrongExplanations": {
           "1": "O aquecimento nao forma gelo.",
           "2": "A agua muda de estado e continua no ambiente.",
           "3": "A agua nao se transforma em solo."
         },
-        "academicYear": 2026,
-        "term": "t2",
         "version": 1,
         "skill": "etapas-do-ciclo-da-agua",
         "sourceRef": {
           "referenceId": "escola-2026-t2",
           "section": "Ciencias",
           "topic": "ciclo-da-agua"
-        }
+        },
+        "reviewStatus": "draft"
       },
       "facts": [
         "Tema e objetivo ficticios estao declarados no contexto de teste."
@@ -72,6 +84,15 @@
       "subjectId": "portugues",
       "topicId": "pontuacao",
       "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "pontuacao-em-frases-interrogativas",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Portugues",
+        "topic": "pontuacao"
+      },
+      "questionVersion": 1,
       "authorizedObjective": "Usar pontuacao em frases interrogativas.",
       "manifestState": "frozen",
       "humanFreezeApproval": {
@@ -82,8 +103,12 @@
       "requestedPass": "linguistic",
       "sourceStatus": "authorized",
       "proposal": {
-        "questionId": "FIX-PT-001",
-        "prompt": "Qual frase faz uma pergunta",
+        "schemaVersion": "content-v1",
+        "id": "FIX-PT-001",
+        "contentSetId": "fixture-editorial-draft",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual frase faz uma pergunta",
         "options": [
           "Eu moro perto.",
           "Onde voce mora?",
@@ -91,21 +116,20 @@
           "Hoje esta quente."
         ],
         "correctIndex": 1,
-        "explanation": "A primeira frase usa uma palavra interrogativa e pergunta algo.",
-        "incorrectFeedback": {
+        "explanation": "A segunda frase usa uma palavra interrogativa e pergunta algo.",
+        "wrongExplanations": {
           "0": "Essa frase informa um lugar, mas nao faz uma pergunta.",
           "2": "Essa frase descreve uma casa, mas nao faz uma pergunta.",
           "3": "Essa frase informa como esta o dia, mas nao faz uma pergunta."
         },
-        "academicYear": 2026,
-        "term": "t2",
         "version": 1,
         "skill": "pontuacao-em-frases-interrogativas",
         "sourceRef": {
           "referenceId": "escola-2026-t2",
           "section": "Portugues",
           "topic": "pontuacao"
-        }
+        },
+        "reviewStatus": "draft"
       }
     },
     "output": {
@@ -142,6 +166,15 @@
       "subjectId": "matematica",
       "topicId": "operacoes",
       "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "adicao-com-resultado-unico",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Matematica",
+        "topic": "operacoes"
+      },
+      "questionVersion": 1,
       "authorizedObjective": "Resolver uma operacao com resposta unica.",
       "manifestState": "frozen",
       "humanFreezeApproval": {
@@ -152,25 +185,28 @@
       "requestedPass": "pedagogical",
       "sourceStatus": "ambiguous",
       "proposal": {
-        "questionId": "FIX-MAT-001",
-        "prompt": "Qual alternativa mostra o resultado de 2 + 2?",
+        "schemaVersion": "content-v1",
+        "id": "FIX-MAT-001",
+        "contentSetId": "fixture-editorial-draft",
+        "subject": "matematica",
+        "topic": "operacoes",
+        "question": "Qual alternativa mostra o resultado de 2 + 2?",
         "options": ["5", "6", "4", "quatro"],
         "correctIndex": 2,
         "explanation": "Somar duas unidades a outras duas resulta em quatro.",
-        "incorrectFeedback": {
+        "wrongExplanations": {
           "0": "Cinco possui uma unidade a mais.",
           "1": "Seis possui duas unidades a mais.",
           "3": "A escrita por extenso tambem representa quatro, causando duplicidade."
         },
-        "academicYear": 2026,
-        "term": "t2",
         "version": 1,
         "skill": "adicao-com-resultado-unico",
         "sourceRef": {
           "referenceId": "escola-2026-t2",
           "section": "Matematica",
           "topic": "operacoes"
-        }
+        },
+        "reviewStatus": "draft"
       }
     },
     "output": {
@@ -207,6 +243,15 @@
       "subjectId": "geografia",
       "topicId": "paisagem",
       "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "paisagem-natural-e-cultural",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Geografia",
+        "topic": "paisagem"
+      },
+      "questionVersion": 1,
       "manifestState": "frozen",
       "humanFreezeApproval": {
         "approvedBy": "product-owner-fixture",

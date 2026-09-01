@@ -296,7 +296,7 @@ function run() {
   );
 
   const feedbackAsList = cloneEditorialScenarios();
-  feedbackAsList[0].output.proposal.incorrectFeedback = [
+  feedbackAsList[0].output.proposal.wrongExplanations = [
     'Feedback 1.',
     'Feedback 2.',
     'Feedback 3.',
@@ -308,8 +308,8 @@ function run() {
   );
 
   const feedbackWithWrongIndex = cloneEditorialScenarios();
-  delete feedbackWithWrongIndex[1].input.proposal.incorrectFeedback['0'];
-  feedbackWithWrongIndex[1].input.proposal.incorrectFeedback['1'] =
+  delete feedbackWithWrongIndex[1].input.proposal.wrongExplanations['0'];
+  feedbackWithWrongIndex[1].input.proposal.wrongExplanations['1'] =
     'Feedback indevido para a alternativa correta.';
   assert.ok(
     validateEditorialScenarios(feedbackWithWrongIndex).some((error) =>
@@ -318,10 +318,10 @@ function run() {
   );
 
   const proposalPageLeak = cloneEditorialScenarios();
-  proposalPageLeak[0].output.proposal.page = '10';
+  proposalPageLeak[0].output.proposal.sourceRef.page = '10';
   assert.ok(
     validateEditorialScenarios(proposalPageLeak).some((error) =>
-      error.includes('campo nao autorizado: output.proposal.page'),
+      error.includes('campo nao autorizado: output.proposal.sourceRef.page'),
     ),
   );
 
@@ -337,6 +337,23 @@ function run() {
   delete missingProposalSource[0].output.proposal.sourceRef;
   assert.ok(
     validateEditorialScenarios(missingProposalSource).some((error) =>
+      error.includes('output.proposal incompleta'),
+    ),
+  );
+
+  const divergentProposalMetadata = cloneEditorialScenarios();
+  divergentProposalMetadata[0].output.proposal.skill =
+    'habilidade-nao-autorizada';
+  assert.ok(
+    validateEditorialScenarios(divergentProposalMetadata).some((error) =>
+      error.includes('output.proposal.skill diverge da entrada'),
+    ),
+  );
+
+  const nonContentV1Proposal = cloneEditorialScenarios();
+  delete nonContentV1Proposal[0].output.proposal.schemaVersion;
+  assert.ok(
+    validateEditorialScenarios(nonContentV1Proposal).some((error) =>
       error.includes('output.proposal incompleta'),
     ),
   );
