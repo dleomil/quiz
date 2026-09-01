@@ -5,6 +5,7 @@ const path = require('node:path');
 const {
   AGENT_CONTRACTS,
   validateAgentDirectory,
+  validateEditorialInputDocument,
   validateEditorialScenarios,
 } = require('../../scripts/validate-codex-agents.cjs');
 
@@ -355,6 +356,36 @@ function run() {
   assert.ok(
     validateEditorialScenarios(nonContentV1Proposal).some((error) =>
       error.includes('output.proposal incompleta'),
+    ),
+  );
+
+  const duplicateOptions = cloneEditorialScenarios();
+  duplicateOptions[0].output.proposal.options[3] =
+    duplicateOptions[0].output.proposal.options[0];
+  assert.ok(
+    validateEditorialScenarios(duplicateOptions).some((error) =>
+      error.includes('output.proposal.options duplicadas'),
+    ),
+  );
+
+  const inputDocument = {
+    scenarioId: editorialScenarios[0].scenarioId,
+    inputState: editorialScenarios[0].inputState,
+    input: editorialScenarios[0].input,
+  };
+  const inputWithExtra = JSON.parse(JSON.stringify(inputDocument));
+  inputWithExtra.input.connectorPayload = 'nao autorizado';
+  assert.ok(
+    validateEditorialInputDocument(inputWithExtra, 'content_curator').some(
+      (error) => error.includes('campo nao autorizado: input.connectorPayload'),
+    ),
+  );
+
+  const inputWithWrongPass = JSON.parse(JSON.stringify(inputDocument));
+  inputWithWrongPass.input.requestedPass = 'linguistic';
+  assert.ok(
+    validateEditorialInputDocument(inputWithWrongPass, 'content_curator').some(
+      (error) => error.includes('requestedPass invalido para content_curator'),
     ),
   );
 

@@ -268,6 +268,10 @@ function validateEditorialScenario(scenario) {
     );
   }
 
+  function normalizeEditorialText(value) {
+    return String(value).trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
+  }
+
   function validateProposal(proposal, pathName, required) {
     if (!proposal && !required) return true;
     unexpectedKeys(proposal, proposalFields, pathName);
@@ -276,6 +280,17 @@ function validateEditorialScenario(scenario) {
       sourceRefFields,
       `${pathName}.sourceRef`,
     );
+    if (Array.isArray(proposal?.options)) {
+      const normalizedOptions = proposal.options.map(normalizeEditorialText);
+      if (
+        normalizedOptions.some(
+          (option, index) =>
+            option && normalizedOptions.indexOf(option) !== index,
+        )
+      ) {
+        errors.push(`[${scenarioId}] ${pathName}.options duplicadas`);
+      }
+    }
     const wrongIndices = Array.isArray(proposal?.options)
       ? proposal.options
           .map((_, index) => index)
@@ -575,6 +590,19 @@ function validateEditorialInputDocument(document, agent) {
   const scenarioId = document?.scenarioId || 'cenario-sem-id';
   const input = document?.input || {};
   const errors = [];
+  if (!document || typeof document !== 'object' || Array.isArray(document)) {
+    return [`[${scenarioId}] documento de entrada invalido`];
+  }
+  ['scenarioId', 'inputState', 'input'].forEach((field) => {
+    if (!Object.prototype.hasOwnProperty.call(document, field)) {
+      errors.push(`[${scenarioId}] campo ausente: ${field}`);
+    }
+  });
+  Object.keys(document).forEach((field) => {
+    if (!['scenarioId', 'inputState', 'input'].includes(field)) {
+      errors.push(`[${scenarioId}] campo nao autorizado: document.${field}`);
+    }
+  });
   const required = [
     'workItemId',
     'contentSetId',
@@ -611,6 +639,13 @@ function validateEditorialInputDocument(document, agent) {
   if (!['authorized', 'ambiguous'].includes(input.sourceStatus)) {
     errors.push(`[${scenarioId}] input.sourceStatus invalido`);
   }
+  if (!['complete', 'ambiguous', 'incomplete'].includes(document.inputState)) {
+    errors.push(`[${scenarioId}] inputState invalido`);
+  }
+  const allowedPasses = EDITORIAL_PASSES[agent] || [];
+  if (!allowedPasses.includes(input.requestedPass)) {
+    errors.push(`[${scenarioId}] requestedPass invalido para ${agent}`);
+  }
   const sourceRef = input.sourceRef;
   if (!sourceRef || typeof sourceRef !== 'object' || Array.isArray(sourceRef)) {
     errors.push(`[${scenarioId}] input.sourceRef invalido`);
@@ -642,6 +677,51 @@ function validateEditorialInputDocument(document, agent) {
   }
   if (agent === 'pedagogical_quality' && !input.proposal) {
     errors.push(`[${scenarioId}] input.proposal ausente`);
+  }
+  if (agent === 'pedagogical_quality' && input.proposal) {
+    validateEditorialScenario({
+      scenarioId,
+      inputState: 'complete',
+      input,
+      output: {
+        agent,
+        workItemId: input.workItemId,
+        contentSetId: input.contentSetId,
+        subjectId: input.subjectId,
+        topicId: input.topicId,
+        reviewPass: input.requestedPass,
+        decision: 'blocked',
+        facts: [],
+        doubts: ['preflight'],
+        findings: [],
+        recommendations: ['preflight'],
+        humanApprovalRequired: true,
+      },
+    })
+      .filter((error) => error.includes('input.proposal'))
+      .forEach((error) => errors.push(error));
+    const proposal = input.proposal;
+    const metadata = {
+      contentSetId: input.contentSetId,
+      subject: input.subjectId,
+      topic: input.topicId,
+      skill: input.authorizedSkill,
+      version: input.questionVersion,
+    };
+    Object.entries(metadata).forEach(([field, value]) => {
+      if (proposal[field] !== value) {
+        errors.push(
+          `[${scenarioId}] input.proposal.${field} diverge da entrada`,
+        );
+      }
+    });
+    ['referenceId', 'section', 'topic'].forEach((field) => {
+      if (proposal.sourceRef?.[field] !== input.sourceRef?.[field]) {
+        errors.push(
+          `[${scenarioId}] input.proposal.sourceRef diverge da entrada`,
+        );
+      }
+    });
   }
   return errors;
 }

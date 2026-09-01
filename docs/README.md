@@ -81,7 +81,8 @@ docs/
 
 O runner protegido dos agentes editoriais fica em
 `scripts/run-editorial-agent.cjs`, com o schema de resposta em
-`config/editorial-agent-output.schema.json` e seus testes em
+`config/editorial-agent-output.schema.json`, o schema de entrada em
+`config/editorial-agent-input.schema.json` e seus testes em
 `tests/agents/editorial-agent-runner.spec.cjs`.
 
 ## Regras de uso

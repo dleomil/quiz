@@ -17,22 +17,43 @@ function run() {
     path.join(os.tmpdir(), 'quiz-editorial-runner-'),
   );
   const fakeCodex = path.join(directory, 'fake-codex.js');
+  const fakeMcpCodex = path.join(directory, 'fake-mcp-codex.js');
   const inputPath = path.join(directory, 'input.json');
   const outputPath = path.join(directory, 'output.json');
+  const recordPath = path.join(directory, 'record.json');
+  const source = scenarios[0];
+  const pedagogicalSource = scenarios[1];
   fs.writeFileSync(
     fakeCodex,
     `#!/usr/bin/env node
 const fs = require('node:fs');
 if (process.argv.includes('mcp')) {
-  process.stdout.write(process.env.FAKE_MCP || '[]');
+  process.stdout.write('[]');
   process.exit(0);
 }
+fs.writeFileSync(${JSON.stringify(recordPath)}, JSON.stringify({
+    argv: process.argv.slice(2),
+    cwd: process.cwd(),
+    env: process.env,
+  }));
 const output = process.argv[process.argv.indexOf('--output-last-message') + 1];
-fs.writeFileSync(output, process.env.FAKE_OUTPUT);
+const response = process.argv.some((argument) => argument.includes('pedagogical_quality'))
+  ? ${JSON.stringify(JSON.stringify(pedagogicalSource.output))}
+  : ${JSON.stringify(JSON.stringify(source.output))};
+fs.writeFileSync(output, response);
 `,
     { mode: 0o755 },
   );
-  const source = scenarios[0];
+  fs.writeFileSync(
+    fakeMcpCodex,
+    fs
+      .readFileSync(fakeCodex, 'utf8')
+      .replace(
+        "process.stdout.write('[]');",
+        'process.stdout.write(\'[{\\"name\\":\\"github\\"}]\');',
+      ),
+    { mode: 0o755 },
+  );
   writeJson(inputPath, {
     scenarioId: source.scenarioId,
     inputState: source.inputState,
@@ -56,14 +77,66 @@ fs.writeFileSync(output, process.env.FAKE_OUTPUT);
       {
         cwd: root,
         encoding: 'utf8',
-        env: { ...process.env, FAKE_OUTPUT: JSON.stringify(source.output) },
+        env: {
+          PATH: process.env.PATH,
+          OPENAI_API_KEY: 'test-only-not-a-secret',
+          INHERITED_CONNECTOR_TOKEN: 'must-not-reach-child',
+        },
       },
     );
-    assert.equal(success.status, 0, success.stderr);
+    assert.equal(
+      success.status,
+      0,
+      success.stderr || success.error?.message || JSON.stringify(success),
+    );
     assert.deepEqual(
       JSON.parse(fs.readFileSync(outputPath, 'utf8')).output,
       source.output,
     );
+    const record = JSON.parse(fs.readFileSync(recordPath, 'utf8'));
+    assert.ok(record.argv.includes('--model'));
+    assert.ok(record.argv.includes('gpt-5.6-sol'));
+    assert.ok(record.argv.includes('--sandbox'));
+    assert.ok(record.argv.includes('read-only'));
+    assert.ok(record.argv.includes('--skip-git-repo-check'));
+    assert.ok(record.argv.includes('--ignore-user-config'));
+    assert.notEqual(record.cwd, root);
+    assert.equal(record.env.INHERITED_CONNECTOR_TOKEN, undefined);
+    assert.equal(record.env.HOME, record.env.CODEX_HOME);
+
+    const pedagogicalInputPath = path.join(directory, 'pedagogical-input.json');
+    const pedagogicalOutputPath = path.join(
+      directory,
+      'pedagogical-output.json',
+    );
+    writeJson(pedagogicalInputPath, {
+      scenarioId: scenarios[1].scenarioId,
+      inputState: scenarios[1].inputState,
+      input: scenarios[1].input,
+    });
+    const pedagogical = spawnSync(
+      process.execPath,
+      [
+        runner,
+        '--agent',
+        'pedagogical_quality',
+        '--input',
+        pedagogicalInputPath,
+        '--output',
+        pedagogicalOutputPath,
+        '--codex-bin',
+        fakeCodex,
+      ],
+      {
+        cwd: root,
+        encoding: 'utf8',
+        env: {
+          PATH: process.env.PATH,
+          OPENAI_API_KEY: 'test-only-not-a-secret',
+        },
+      },
+    );
+    assert.equal(pedagogical.status, 0, pedagogical.stderr);
 
     const blocked = spawnSync(
       process.execPath,
@@ -76,15 +149,14 @@ fs.writeFileSync(output, process.env.FAKE_OUTPUT);
         '--output',
         outputPath,
         '--codex-bin',
-        fakeCodex,
+        fakeMcpCodex,
       ],
       {
         cwd: root,
         encoding: 'utf8',
         env: {
-          ...process.env,
-          FAKE_MCP: '[{"name":"github"}]',
-          FAKE_OUTPUT: JSON.stringify(source.output),
+          PATH: process.env.PATH,
+          OPENAI_API_KEY: 'test-only-not-a-secret',
         },
       },
     );

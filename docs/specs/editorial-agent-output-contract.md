@@ -81,7 +81,8 @@ que inicia processo Codex separado com `CODEX_HOME` temporario, sem heranca de
 ferramentas ou connectors da sessao pai. Antes da execucao, o runner exige
 `codex mcp list --json` vazio e bloqueia qualquer preflight invalido.
 
-O runner recebe `--agent`, `--input` e `--output`. A entrada e um documento
-com `scenarioId`, `inputState` e `input`; a saida gravada inclui o mesmo
+O runner recebe `--agent`, `--input` e `--output`. A entrada segue
+`config/editorial-agent-input.schema.json` e e um documento com `scenarioId`,
+`inputState` e `input`; a saida gravada inclui o mesmo
 contexto e o parecer validado em `output`. O runner somente grava a saida apos
 validar o contrato completo.

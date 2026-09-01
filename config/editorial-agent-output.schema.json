@@ -39,9 +39,19 @@
   },
   "allOf": [
     {
-      "if": { "properties": { "agent": { "const": "content_curator" } } },
-      "then": { "required": ["proposal"] },
-      "else": { "not": { "required": ["proposal"] } }
+      "if": {
+        "properties": {
+          "agent": { "const": "content_curator" },
+          "decision": { "enum": ["approved", "adjustments_required"] }
+        }
+      },
+      "then": { "required": ["proposal"] }
+    },
+    {
+      "if": {
+        "properties": { "decision": { "const": "blocked" } }
+      },
+      "then": { "not": { "required": ["proposal"] } }
     }
   ],
   "$defs": {
