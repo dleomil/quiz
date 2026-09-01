@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,7 +33,12 @@ jobs:
           BASE_REF: ${{ github.base_ref }}
           HEAD_REF: ${{ github.head_ref }}
         run: |
+          git fetch --no-tags origin \
+            "+refs/heads/main:refs/remotes/origin/main" \
+            "+refs/heads/develop:refs/remotes/origin/develop" \
+            "+refs/heads/${HEAD_REF}:refs/remotes/origin/${HEAD_REF}"
           npm run validate:branch -- "$HEAD_REF" "$BASE_REF"
+          npm run validate:branch-sync -- "$HEAD_REF" "$BASE_REF"
           npm run test:branch-policy
 
       - name: Validate repository documentation presence
