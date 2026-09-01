@@ -204,6 +204,7 @@ function validateEditorialScenario(scenario) {
     'explanation',
     'incorrectFeedback',
   ];
+  const approvalFields = ['approvedBy', 'approvedAt', 'evidenceRef'];
 
   function unexpectedKeys(value, allowedFields, pathName) {
     if (!value || typeof value !== 'object' || Array.isArray(value)) return;
@@ -228,6 +229,23 @@ function validateEditorialScenario(scenario) {
     );
   }
 
+  function validateProposal(proposal, pathName, required) {
+    if (!proposal && !required) return true;
+    unexpectedKeys(proposal, proposalFields, pathName);
+    const valid =
+      proposal &&
+      isFilledText(proposal.questionId) &&
+      isFilledText(proposal.prompt) &&
+      isFilledTextList(proposal.options, 4) &&
+      Number.isInteger(proposal.correctIndex) &&
+      proposal.correctIndex >= 0 &&
+      proposal.correctIndex < 4 &&
+      isFilledText(proposal.explanation) &&
+      isFilledTextList(proposal.incorrectFeedback, 3);
+    if (!valid) errors.push(`[${scenarioId}] ${pathName} incompleta`);
+    return valid;
+  }
+
   if (!scenario?.scenarioId) errors.push('[cenario-sem-id] scenarioId ausente');
   unexpectedKeys(
     scenario,
@@ -238,8 +256,17 @@ function validateEditorialScenario(scenario) {
     output.agent === 'pedagogical_quality'
       ? [...commonInputFields, 'proposal']
       : commonInputFields;
+  const allowedOutputFields =
+    output.agent === 'content_curator'
+      ? [...outputFields, 'proposal']
+      : outputFields;
   unexpectedKeys(input, allowedInputFields, 'input');
-  unexpectedKeys(output, outputFields, 'output');
+  unexpectedKeys(output, allowedOutputFields, 'output');
+  unexpectedKeys(
+    input.humanFreezeApproval,
+    approvalFields,
+    'input.humanFreezeApproval',
+  );
 
   const requiredInputStrings = commonInputFields.filter(
     (field) => field !== 'humanFreezeApproval',
@@ -247,30 +274,29 @@ function validateEditorialScenario(scenario) {
   const missingInputFields = requiredInputStrings.filter(
     (field) => !isFilledText(input[field]),
   );
-  const proposal = input.proposal;
-  let proposalValid = output.agent !== 'pedagogical_quality';
-  if (output.agent === 'pedagogical_quality') {
-    unexpectedKeys(proposal, proposalFields, 'input.proposal');
-    proposalValid =
-      proposal &&
-      isFilledText(proposal.questionId) &&
-      isFilledText(proposal.prompt) &&
-      isFilledTextList(proposal.options, 4) &&
-      Number.isInteger(proposal.correctIndex) &&
-      proposal.correctIndex >= 0 &&
-      proposal.correctIndex < 4 &&
-      isFilledText(proposal.explanation) &&
-      isFilledTextList(proposal.incorrectFeedback, 3);
-    if (!proposalValid) {
-      errors.push(`[${scenarioId}] proposta pedagogica incompleta`);
-    }
+  const inputProposalValid = validateProposal(
+    input.proposal,
+    'input.proposal',
+    output.agent === 'pedagogical_quality',
+  );
+  const outputProposalRequired =
+    output.agent === 'content_curator' && output.decision !== 'blocked';
+  validateProposal(output.proposal, 'output.proposal', outputProposalRequired);
+  const approval = input.humanFreezeApproval;
+  const approvalValid =
+    approval &&
+    isFilledText(approval.approvedBy) &&
+    /^\d{4}-\d{2}-\d{2}$/.test(approval.approvedAt) &&
+    isFilledText(approval.evidenceRef);
+  if (!approvalValid) {
+    errors.push(`[${scenarioId}] aprovacao do congelamento incompleta`);
   }
 
   const preflightComplete =
     missingInputFields.length === 0 &&
     input.manifestState === 'frozen' &&
-    input.humanFreezeApproval === true &&
-    proposalValid;
+    approvalValid &&
+    inputProposalValid;
   const derivedInputState = !preflightComplete
     ? 'incomplete'
     : input.sourceStatus === 'ambiguous'
@@ -366,6 +392,8 @@ function validateEditorialScenario(scenario) {
   }
 
   if (findings.length) {
+    const reviewedProposal =
+      output.agent === 'pedagogical_quality' ? input.proposal : output.proposal;
     findings.forEach((finding, index) => {
       unexpectedKeys(finding, findingFields, `output.findings[${index}]`);
       findingFields.forEach((field) => {
@@ -378,6 +406,14 @@ function validateEditorialScenario(scenario) {
       if (!FINDING_SEVERITIES.includes(finding?.severity)) {
         errors.push(
           `[${scenarioId}] findings[${index}].severity invalida: ${finding?.severity}`,
+        );
+      }
+      if (
+        !reviewedProposal?.questionId ||
+        finding?.questionId !== reviewedProposal.questionId
+      ) {
+        errors.push(
+          `[${scenarioId}] findings[${index}].questionId diverge da proposta`,
         );
       }
     });

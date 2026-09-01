@@ -16,6 +16,10 @@ deve corresponder ao agente. A revisao pedagogica ou linguistica tambem exige a
 proposta completa da questao, com quatro alternativas, resposta, explicacao e
 tres feedbacks incorretos.
 
+`humanFreezeApproval` registra `approvedBy`, `approvedAt` no formato
+`AAAA-MM-DD` e `evidenceRef`. Um booleano sem responsavel e evidencia nao atende
+ao preflight.
+
 | Campo                   | Regra                                                  |
 | ----------------------- | ------------------------------------------------------ |
 | `agent`                 | `content_curator` ou `pedagogical_quality`             |
@@ -30,6 +34,11 @@ tres feedbacks incorretos.
 | `findings`              | achados rastreaveis por questao e criterio             |
 | `recommendations`       | proximas acoes propostas, sem executa-las              |
 | `humanApprovalRequired` | sempre `true`                                          |
+
+Quando `content_curator` retorna `approved` ou `adjustments_required`, a saida
+tambem inclui `proposal` completa. Essa mesma estrutura entra na passagem
+pedagogica ou linguistica seguinte. Achados devem usar exatamente o
+`questionId` da proposta avaliada.
 
 Cada achado informa `questionId`, `criterion`, `severity`, `evidence` e
 `recommendation`. Severidades permitidas: `blocking`, `major` e `minor`.

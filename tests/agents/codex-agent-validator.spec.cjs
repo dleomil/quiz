@@ -131,6 +131,14 @@ function run() {
     ),
   );
 
+  const missingFreezeApprovalEvidence = cloneEditorialScenarios();
+  delete missingFreezeApprovalEvidence[0].input.humanFreezeApproval.evidenceRef;
+  assert.ok(
+    validateEditorialScenarios(missingFreezeApprovalEvidence).some((error) =>
+      error.includes('aprovacao do congelamento incompleta'),
+    ),
+  );
+
   const invalidPass = cloneEditorialScenarios();
   invalidPass[0].output.reviewPass = 'linguistic';
   assert.ok(
@@ -204,6 +212,33 @@ function run() {
     ),
   );
 
+  const inputSourceExcerptLeak = cloneEditorialScenarios();
+  inputSourceExcerptLeak[0].input.sourceExcerpt =
+    'Trecho escolar nao autorizado.';
+  assert.ok(
+    validateEditorialScenarios(inputSourceExcerptLeak).some((error) =>
+      error.includes('campo nao autorizado: input.sourceExcerpt'),
+    ),
+  );
+
+  const proposalSourceExcerptLeak = cloneEditorialScenarios();
+  proposalSourceExcerptLeak[1].input.proposal.sourceExcerpt =
+    'Trecho escolar nao autorizado.';
+  assert.ok(
+    validateEditorialScenarios(proposalSourceExcerptLeak).some((error) =>
+      error.includes('campo nao autorizado: input.proposal.sourceExcerpt'),
+    ),
+  );
+
+  const findingSourceExcerptLeak = cloneEditorialScenarios();
+  findingSourceExcerptLeak[1].output.findings[0].sourceExcerpt =
+    'Trecho escolar nao autorizado.';
+  assert.ok(
+    validateEditorialScenarios(findingSourceExcerptLeak).some((error) =>
+      error.includes('campo nao autorizado: output.findings[0].sourceExcerpt'),
+    ),
+  );
+
   const draftManifestApproval = cloneEditorialScenarios();
   draftManifestApproval[0].input.manifestState = 'draft';
   assert.ok(
@@ -216,7 +251,7 @@ function run() {
   delete missingProposal[1].input.proposal;
   assert.ok(
     validateEditorialScenarios(missingProposal).some((error) =>
-      error.includes('proposta pedagogica incompleta'),
+      error.includes('input.proposal incompleta'),
     ),
   );
 
@@ -225,6 +260,30 @@ function run() {
   assert.ok(
     validateEditorialScenarios(mismatchedRequestedPass).some((error) =>
       error.includes('reviewPass diverge da passagem solicitada'),
+    ),
+  );
+
+  const blockingAdjustment = cloneEditorialScenarios();
+  blockingAdjustment[1].output.findings[0].severity = 'blocking';
+  assert.ok(
+    validateEditorialScenarios(blockingAdjustment).some((error) =>
+      error.includes('ajustes exigem achado nao bloqueante'),
+    ),
+  );
+
+  const mismatchedQuestionId = cloneEditorialScenarios();
+  mismatchedQuestionId[1].output.findings[0].questionId = 'OUTRA-QUESTAO';
+  assert.ok(
+    validateEditorialScenarios(mismatchedQuestionId).some((error) =>
+      error.includes('questionId diverge da proposta'),
+    ),
+  );
+
+  const curatorWithoutProposal = cloneEditorialScenarios();
+  delete curatorWithoutProposal[0].output.proposal;
+  assert.ok(
+    validateEditorialScenarios(curatorWithoutProposal).some((error) =>
+      error.includes('output.proposal incompleta'),
     ),
   );
 

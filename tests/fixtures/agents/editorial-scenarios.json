@@ -10,7 +10,11 @@
       "grade": "3-ano",
       "authorizedObjective": "Reconhecer etapas basicas do ciclo da agua.",
       "manifestState": "frozen",
-      "humanFreezeApproval": true,
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/001"
+      },
       "requestedPass": "curation",
       "sourceStatus": "authorized"
     },
@@ -22,6 +26,23 @@
       "topicId": "ciclo-da-agua",
       "reviewPass": "curation",
       "decision": "approved",
+      "proposal": {
+        "questionId": "FIX-CIE-001",
+        "prompt": "O que acontece com a agua aquecida pelo Sol?",
+        "options": [
+          "Pode evaporar e subir para o ar.",
+          "Transforma-se imediatamente em gelo.",
+          "Desaparece sem mudar de estado.",
+          "Passa a ser um tipo de solo."
+        ],
+        "correctIndex": 0,
+        "explanation": "O calor pode transformar a agua liquida em vapor.",
+        "incorrectFeedback": [
+          "O aquecimento nao forma gelo.",
+          "A agua muda de estado e continua no ambiente.",
+          "A agua nao se transforma em solo."
+        ]
+      },
       "facts": [
         "Tema e objetivo ficticios estao declarados no contexto de teste."
       ],
@@ -44,7 +65,11 @@
       "grade": "3-ano",
       "authorizedObjective": "Usar pontuacao em frases interrogativas.",
       "manifestState": "frozen",
-      "humanFreezeApproval": true,
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/002"
+      },
       "requestedPass": "linguistic",
       "sourceStatus": "authorized",
       "proposal": {
@@ -101,7 +126,11 @@
       "grade": "3-ano",
       "authorizedObjective": "Resolver uma operacao com resposta unica.",
       "manifestState": "frozen",
-      "humanFreezeApproval": true,
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/003"
+      },
       "requestedPass": "pedagogical",
       "sourceStatus": "ambiguous",
       "proposal": {
@@ -152,7 +181,11 @@
       "topicId": "paisagem",
       "grade": "3-ano",
       "manifestState": "frozen",
-      "humanFreezeApproval": true,
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/004"
+      },
       "requestedPass": "curation",
       "sourceStatus": "authorized"
     },
