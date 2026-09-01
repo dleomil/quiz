@@ -26,7 +26,7 @@ function cloneEditorialScenarios() {
 }
 
 function validAgentSource(contract) {
-  return [
+  const lines = [
     `name = "${contract.name}"`,
     'description = "Agente de teste"',
     `model = "${contract.model}"`,
@@ -36,8 +36,9 @@ function validAgentSource(contract) {
     ...contract.requiredReferences,
     'Nao altere arquivos nem publique resultados.',
     '"""',
-    '',
-  ].join('\n');
+  ];
+  if (contract.mcpPolicy === 'none') lines.push('', '[mcp_servers]');
+  return lines.join('\n') + '\n';
 }
 
 function createFixture() {
@@ -72,6 +73,29 @@ function replaceInFile(directory, fileName, currentValue, nextValue) {
 function run() {
   withFixture((directory) => {
     assert.deepStrictEqual(validateAgentDirectory(directory), []);
+  });
+
+  withFixture((directory) => {
+    replaceInFile(directory, 'content-curator.toml', '\n[mcp_servers]', '');
+    assert.ok(
+      validateAgentDirectory(directory).some((error) =>
+        error.includes('politica MCP explicita ausente'),
+      ),
+    );
+  });
+
+  withFixture((directory) => {
+    replaceInFile(
+      directory,
+      'pedagogical-quality.toml',
+      '[mcp_servers]',
+      '[mcp_servers]\ngithub = {}',
+    );
+    assert.ok(
+      validateAgentDirectory(directory).some((error) =>
+        error.includes('nenhum servidor MCP e permitido'),
+      ),
+    );
   });
 
   withFixture((directory) => {
@@ -268,6 +292,52 @@ function run() {
   assert.ok(
     validateEditorialScenarios(blockingAdjustment).some((error) =>
       error.includes('ajustes exigem achado nao bloqueante'),
+    ),
+  );
+
+  const feedbackAsList = cloneEditorialScenarios();
+  feedbackAsList[0].output.proposal.incorrectFeedback = [
+    'Feedback 1.',
+    'Feedback 2.',
+    'Feedback 3.',
+  ];
+  assert.ok(
+    validateEditorialScenarios(feedbackAsList).some((error) =>
+      error.includes('output.proposal incompleta'),
+    ),
+  );
+
+  const feedbackWithWrongIndex = cloneEditorialScenarios();
+  delete feedbackWithWrongIndex[1].input.proposal.incorrectFeedback['0'];
+  feedbackWithWrongIndex[1].input.proposal.incorrectFeedback['1'] =
+    'Feedback indevido para a alternativa correta.';
+  assert.ok(
+    validateEditorialScenarios(feedbackWithWrongIndex).some((error) =>
+      error.includes('input.proposal incompleta'),
+    ),
+  );
+
+  const proposalPageLeak = cloneEditorialScenarios();
+  proposalPageLeak[0].output.proposal.page = '10';
+  assert.ok(
+    validateEditorialScenarios(proposalPageLeak).some((error) =>
+      error.includes('campo nao autorizado: output.proposal.page'),
+    ),
+  );
+
+  const missingProposalSkill = cloneEditorialScenarios();
+  delete missingProposalSkill[0].output.proposal.skill;
+  assert.ok(
+    validateEditorialScenarios(missingProposalSkill).some((error) =>
+      error.includes('output.proposal incompleta'),
+    ),
+  );
+
+  const missingProposalSource = cloneEditorialScenarios();
+  delete missingProposalSource[0].output.proposal.sourceRef;
+  assert.ok(
+    validateEditorialScenarios(missingProposalSource).some((error) =>
+      error.includes('output.proposal incompleta'),
     ),
   );
 

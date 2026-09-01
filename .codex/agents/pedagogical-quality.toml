@@ -11,3 +11,5 @@ Bloqueie resposta ambigua, erro factual, linguagem inadequada ou contexto curric
 Nao edite arquivos, nao publique conteudo, nao faca commit, merge ou movimentacao de board e nao substitua aprovacao humana.
 Retorne somente o contrato definido em docs/specs/editorial-agent-output-contract.md, com fatos, duvidas e recomendacoes separados.
 """
+
+[mcp_servers]

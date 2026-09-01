@@ -37,11 +37,20 @@
         ],
         "correctIndex": 0,
         "explanation": "O calor pode transformar a agua liquida em vapor.",
-        "incorrectFeedback": [
-          "O aquecimento nao forma gelo.",
-          "A agua muda de estado e continua no ambiente.",
-          "A agua nao se transforma em solo."
-        ]
+        "incorrectFeedback": {
+          "1": "O aquecimento nao forma gelo.",
+          "2": "A agua muda de estado e continua no ambiente.",
+          "3": "A agua nao se transforma em solo."
+        },
+        "academicYear": 2026,
+        "term": "t2",
+        "version": 1,
+        "skill": "etapas-do-ciclo-da-agua",
+        "sourceRef": {
+          "referenceId": "escola-2026-t2",
+          "section": "Ciencias",
+          "topic": "ciclo-da-agua"
+        }
       },
       "facts": [
         "Tema e objetivo ficticios estao declarados no contexto de teste."
@@ -76,18 +85,27 @@
         "questionId": "FIX-PT-001",
         "prompt": "Qual frase faz uma pergunta",
         "options": [
-          "Onde voce mora?",
           "Eu moro perto.",
+          "Onde voce mora?",
           "A casa e azul.",
           "Hoje esta quente."
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "A primeira frase usa uma palavra interrogativa e pergunta algo.",
-        "incorrectFeedback": [
-          "A segunda frase informa um lugar.",
-          "A terceira frase descreve uma casa.",
-          "A quarta frase informa como esta o dia."
-        ]
+        "incorrectFeedback": {
+          "0": "Essa frase informa um lugar, mas nao faz uma pergunta.",
+          "2": "Essa frase descreve uma casa, mas nao faz uma pergunta.",
+          "3": "Essa frase informa como esta o dia, mas nao faz uma pergunta."
+        },
+        "academicYear": 2026,
+        "term": "t2",
+        "version": 1,
+        "skill": "pontuacao-em-frases-interrogativas",
+        "sourceRef": {
+          "referenceId": "escola-2026-t2",
+          "section": "Portugues",
+          "topic": "pontuacao"
+        }
       }
     },
     "output": {
@@ -136,14 +154,23 @@
       "proposal": {
         "questionId": "FIX-MAT-001",
         "prompt": "Qual alternativa mostra o resultado de 2 + 2?",
-        "options": ["4", "quatro", "5", "6"],
-        "correctIndex": 0,
+        "options": ["5", "6", "4", "quatro"],
+        "correctIndex": 2,
         "explanation": "Somar duas unidades a outras duas resulta em quatro.",
-        "incorrectFeedback": [
-          "Quatro tambem representa o resultado correto, causando duplicidade.",
-          "Cinco possui uma unidade a mais.",
-          "Seis possui duas unidades a mais."
-        ]
+        "incorrectFeedback": {
+          "0": "Cinco possui uma unidade a mais.",
+          "1": "Seis possui duas unidades a mais.",
+          "3": "A escrita por extenso tambem representa quatro, causando duplicidade."
+        },
+        "academicYear": 2026,
+        "term": "t2",
+        "version": 1,
+        "skill": "adicao-com-resultado-unico",
+        "sourceRef": {
+          "referenceId": "escola-2026-t2",
+          "section": "Matematica",
+          "topic": "operacoes"
+        }
       }
     },
     "output": {

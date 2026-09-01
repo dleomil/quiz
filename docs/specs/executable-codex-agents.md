@@ -22,6 +22,12 @@ esses contratos e definem modelo, esforco e sandbox.
 | Content Curator     | `content-curator.toml`     | `gpt-5.6-sol`   | `high`   | read-only |
 | Pedagogical Quality | `pedagogical-quality.toml` | `gpt-5.6-sol`   | `high`   | read-only |
 
+Os agentes editoriais declaram uma tabela `mcp_servers` vazia. Isso impede a
+heranca de servidores MCP configurados no projeto. A delegacao ainda exige o
+preflight da sessao principal: `codex mcp list --json` deve retornar zero
+servidores, pois ferramentas e connectors fornecidos pela sessao pai nao sao
+controlados somente pelo arquivo do agente.
+
 Reviewer, Product Discovery e os agentes editoriais exigem raciocinio mais
 profundo por lidarem com ambiguidade, risco, linguagem e recomendacao. O
 Verifier usa um modelo mais eficiente para leitura, execucao de checks e
@@ -56,6 +62,9 @@ somente quando o trabalho for independente e delimitado.
 - subagentes nao fazem commit, merge, deploy ou alteracao de board;
 - `.codex/config.toml` e pessoal e nao pode ser versionado;
 - arquivos TOML nao podem conter token, chave, segredo ou permissao ampla;
+- agentes editoriais nao podem declarar servidor MCP;
+- qualquer connector ou ferramenta externa ativa na sessao principal bloqueia
+  a delegacao editorial;
 - instrucoes executaveis devem referenciar os contratos versionados;
 - mudanca de modelo ou permissao exige issue, validacao e PR proprio;
 - o agente principal continua responsavel por consolidar resultados;

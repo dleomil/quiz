@@ -11,6 +11,7 @@ const AGENT_CONTRACTS = {
       'docs/harness/content-update-quality-gates.md',
       'docs/specs/editorial-agent-output-contract.md',
     ],
+    mcpPolicy: 'none',
   },
   'pedagogical-quality.toml': {
     name: 'pedagogical_quality',
@@ -21,6 +22,7 @@ const AGENT_CONTRACTS = {
       'docs/harness/content-update-quality-gates.md',
       'docs/specs/editorial-agent-output-contract.md',
     ],
+    mcpPolicy: 'none',
   },
   'product-discovery.toml': {
     name: 'product_discovery',
@@ -116,6 +118,28 @@ function validateAgentSource(fileName, source, contract) {
     }
   });
 
+  if (contract.mcpPolicy === 'none') {
+    if (!/^\[mcp_servers\]\s*$/m.test(source)) {
+      errors.push(`[${fileName}] politica MCP explicita ausente`);
+    }
+    if (/^\[mcp_servers\.[^\]]+\]\s*$/m.test(source)) {
+      errors.push(`[${fileName}] nenhum servidor MCP e permitido`);
+    }
+    let inMcpSection = false;
+    source.split(/\r?\n/).forEach((line) => {
+      const section = line.match(/^\[([^\]]+)\]\s*$/)?.[1];
+      if (section) inMcpSection = section === 'mcp_servers';
+      if (
+        inMcpSection &&
+        line.trim() &&
+        !line.trim().startsWith('#') &&
+        !/^\[mcp_servers\]\s*$/.test(line)
+      ) {
+        errors.push(`[${fileName}] nenhum servidor MCP e permitido`);
+      }
+    });
+  }
+
   SECRET_PATTERNS.forEach((pattern) => {
     if (pattern.test(source)) {
       errors.push(`[${fileName}] possivel segredo detectado`);
@@ -203,7 +227,13 @@ function validateEditorialScenario(scenario) {
     'correctIndex',
     'explanation',
     'incorrectFeedback',
+    'academicYear',
+    'term',
+    'version',
+    'skill',
+    'sourceRef',
   ];
+  const sourceRefFields = ['referenceId', 'section', 'topic'];
   const approvalFields = ['approvedBy', 'approvedAt', 'evidenceRef'];
 
   function unexpectedKeys(value, allowedFields, pathName) {
@@ -232,6 +262,30 @@ function validateEditorialScenario(scenario) {
   function validateProposal(proposal, pathName, required) {
     if (!proposal && !required) return true;
     unexpectedKeys(proposal, proposalFields, pathName);
+    unexpectedKeys(
+      proposal?.sourceRef,
+      sourceRefFields,
+      `${pathName}.sourceRef`,
+    );
+    const wrongIndices = Array.isArray(proposal?.options)
+      ? proposal.options
+          .map((_, index) => index)
+          .filter((index) => index !== proposal?.correctIndex)
+          .map(String)
+      : [];
+    const feedbackKeys =
+      proposal?.incorrectFeedback &&
+      typeof proposal.incorrectFeedback === 'object' &&
+      !Array.isArray(proposal.incorrectFeedback)
+        ? Object.keys(proposal.incorrectFeedback)
+        : [];
+    const feedbackValid =
+      wrongIndices.length === 3 &&
+      feedbackKeys.length === wrongIndices.length &&
+      feedbackKeys.every((key) => wrongIndices.includes(key)) &&
+      wrongIndices.every((key) =>
+        isFilledText(proposal.incorrectFeedback[key]),
+      );
     const valid =
       proposal &&
       isFilledText(proposal.questionId) &&
@@ -241,7 +295,18 @@ function validateEditorialScenario(scenario) {
       proposal.correctIndex >= 0 &&
       proposal.correctIndex < 4 &&
       isFilledText(proposal.explanation) &&
-      isFilledTextList(proposal.incorrectFeedback, 3);
+      feedbackValid &&
+      Number.isInteger(proposal.academicYear) &&
+      proposal.academicYear >= 2000 &&
+      proposal.academicYear <= 9999 &&
+      ['t1', 't2', 't3'].includes(proposal.term) &&
+      Number.isInteger(proposal.version) &&
+      proposal.version > 0 &&
+      isFilledText(proposal.skill) &&
+      proposal.sourceRef &&
+      isFilledText(proposal.sourceRef.referenceId) &&
+      isFilledText(proposal.sourceRef.section) &&
+      isFilledText(proposal.sourceRef.topic);
     if (!valid) errors.push(`[${scenarioId}] ${pathName} incompleta`);
     return valid;
   }

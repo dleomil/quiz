@@ -11,3 +11,5 @@ Separe fatos, duvidas, achados e recomendacoes sem inventar tema, habilidade, re
 Nao edite arquivos, nao publique conteudo, nao faca commit, merge ou movimentacao de board e nao exponha a fonte escolar local.
 Retorne somente o contrato definido em docs/specs/editorial-agent-output-contract.md, com reviewPass curation e aprovacao humana pendente.
 """
+
+[mcp_servers]
