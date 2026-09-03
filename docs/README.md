@@ -62,6 +62,7 @@ docs/
 │   ├── curriculum-intake-template.md
 │   ├── curriculum-content-update-governance.md
 │   ├── third-trimester-curriculum-manifest-2026.md
+│   ├── editorial-agent-output-contract.md
 │   ├── executable-codex-agents.md
 │   ├── product-discovery-agent.md
 │   ├── pilot-low-risk-workflow.md
@@ -77,6 +78,12 @@ docs/
 └── backlog/
     └── prioritized-epics-and-stories.md
 ```
+
+O runner protegido dos agentes editoriais fica em
+`scripts/run-editorial-agent.cjs`, com o schema de resposta em
+`config/editorial-agent-output.schema.json`, o schema de entrada em
+`config/editorial-agent-input.schema.json` e seus testes em
+`tests/agents/editorial-agent-runner.spec.cjs`.
 
 ## Regras de uso
 

@@ -24,6 +24,16 @@ Definir os controles obrigatorios para atualizar conteudo escolar sem introduzir
   para bloquear uma curadoria
 - conteudo derivado deve respeitar direitos autorais e restricoes da escola
 
+## Superficie de ferramentas dos agentes editoriais
+
+- os adaptadores dos agentes editoriais devem declarar `sandbox_mode =
+"read-only"` e uma tabela `mcp_servers` vazia;
+- antes de delegar, o agente principal deve executar `codex mcp list --json`;
+- qualquer servidor MCP, connector, navegador ou ferramenta externa ativa fora
+  da politica deve bloquear a execucao editorial;
+- nenhum resultado editorial pode conter pagina, trecho ou texto da fonte
+  escolar.
+
 ## Gates bloqueantes
 
 O lote nao pode seguir para implementacao se qualquer ponto abaixo falhar:
