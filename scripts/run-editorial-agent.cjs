@@ -67,6 +67,32 @@ function isolatedEnvironment(tempHome) {
   return environment;
 }
 
+function buildMcpArguments() {
+  return ['mcp', 'list', '--json'];
+}
+
+function buildExecArguments(agentConfig, tempMessage, tempWorkspace, prompt) {
+  return [
+    'exec',
+    '--ignore-user-config',
+    '--ephemeral',
+    '--model',
+    agentConfig.model,
+    '--config',
+    `model_reasoning_effort=${JSON.stringify(agentConfig.model_reasoning_effort)}`,
+    '--sandbox',
+    'read-only',
+    '--skip-git-repo-check',
+    '--output-schema',
+    OUTPUT_SCHEMA,
+    '--output-last-message',
+    tempMessage,
+    '--cd',
+    tempWorkspace,
+    prompt,
+  ];
+}
+
 function run() {
   const agent = argument('--agent');
   const inputPath = argument('--input');
@@ -107,15 +133,11 @@ function run() {
   };
   try {
     if (!env.OPENAI_API_KEY) return fail('OPENAI_API_KEY nao configurada');
-    const mcpCheck = spawnSync(
-      codexBin,
-      ['--ignore-user-config', 'mcp', 'list', '--json'],
-      {
-        cwd: tempWorkspace,
-        env,
-        encoding: 'utf8',
-      },
-    );
+    const mcpCheck = spawnSync(codexBin, buildMcpArguments(), {
+      cwd: tempWorkspace,
+      env,
+      encoding: 'utf8',
+    });
     if (mcpCheck.status !== 0) return fail('preflight MCP falhou');
     let configuredServers;
     try {
@@ -138,25 +160,7 @@ function run() {
     ].join('\n\n');
     const result = spawnSync(
       codexBin,
-      [
-        '--ignore-user-config',
-        '--ephemeral',
-        '--model',
-        agentConfig.model,
-        '--config',
-        `model_reasoning_effort=${JSON.stringify(agentConfig.model_reasoning_effort)}`,
-        'exec',
-        '--sandbox',
-        'read-only',
-        '--skip-git-repo-check',
-        '--output-schema',
-        OUTPUT_SCHEMA,
-        '--output-last-message',
-        tempMessage,
-        '--cd',
-        tempWorkspace,
-        prompt,
-      ],
+      buildExecArguments(agentConfig, tempMessage, tempWorkspace, prompt),
       { cwd: tempWorkspace, env, encoding: 'utf8' },
     );
     if (result.status !== 0) return fail('execucao do agente falhou');
@@ -189,4 +193,4 @@ function run() {
 
 if (require.main === module) run();
 
-module.exports = { run };
+module.exports = { buildExecArguments, buildMcpArguments, run };

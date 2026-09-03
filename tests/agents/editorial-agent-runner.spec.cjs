@@ -27,12 +27,15 @@ function run() {
     fakeCodex,
     `#!/usr/bin/env node
 const fs = require('node:fs');
-if (process.argv.includes('mcp')) {
+const args = process.argv.slice(2);
+if (args[0] === 'mcp') {
+  if (args.join(' ') !== 'mcp list --json') process.exit(2);
   process.stdout.write('[]');
   process.exit(0);
 }
+if (args[0] !== 'exec') process.exit(2);
 fs.writeFileSync(${JSON.stringify(recordPath)}, JSON.stringify({
-    argv: process.argv.slice(2),
+    argv: args,
     cwd: process.cwd(),
     env: process.env,
   }));
@@ -100,6 +103,7 @@ fs.writeFileSync(output, response);
     assert.ok(record.argv.includes('read-only'));
     assert.ok(record.argv.includes('--skip-git-repo-check'));
     assert.ok(record.argv.includes('--ignore-user-config'));
+    assert.equal(record.argv[0], 'exec');
     assert.notEqual(record.cwd, root);
     assert.equal(record.env.INHERITED_CONNECTOR_TOKEN, undefined);
     assert.equal(record.env.HOME, record.env.CODEX_HOME);
