@@ -50,3 +50,6 @@ jobs:
         run: |
           npm run lint
           npm run format:check
+
+      - name: Validate pedagogical regression corpus
+        run: npm run test:pedagogical-regression

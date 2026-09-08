@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "pedagogical-regression-v1",
+  "description": "Fixtures sinteticas e anonimizadas para regressao editorial.",
+  "cases": [
+    {
+      "id": "synthetic-clean-001",
+      "category": "clean",
+      "expectedOutcome": "pass",
+      "expectedRules": [],
+      "question": {
+        "id": "SYN-CLEAN-001",
+        "subject": "portugues",
+        "topic": "leitura",
+        "question": "Qual palavra indica uma acao?",
+        "options": ["Correr", "Azul", "Mesa", "Sete"],
+        "correctIndex": 0,
+        "explanation": "Correr indica uma acao realizada por alguem.",
+        "wrongExplanations": {
+          "1": "Azul indica uma cor.",
+          "2": "Mesa nomeia um objeto.",
+          "3": "Sete indica uma quantidade."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "identificar-acoes",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "leitura"
+        }
+      }
+    },
+    {
+      "id": "synthetic-orthography-001",
+      "category": "orthography",
+      "expectedOutcome": "fail",
+      "expectedRules": ["linguistic.common-orthography"],
+      "question": {
+        "id": "SYN-ORTH-001",
+        "subject": "portugues",
+        "topic": "ortografia",
+        "question": "Voce conhece esta palavra?",
+        "options": ["Sim", "Nao", "Talvez", "Ainda nao"],
+        "correctIndex": 0,
+        "explanation": "A frase pergunta se a pessoa conhece a palavra.",
+        "wrongExplanations": {
+          "1": "Nao indica resposta negativa.",
+          "2": "Talvez indica incerteza.",
+          "3": "Ainda nao indica que nao aconteceu."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-acentuacao",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "ortografia"
+        }
+      }
+    },
+    {
+      "id": "synthetic-agreement-001",
+      "category": "agreement",
+      "expectedOutcome": "fail",
+      "expectedRules": ["linguistic.subject-agreement"],
+      "question": {
+        "id": "SYN-AGREE-001",
+        "subject": "portugues",
+        "topic": "concordancia",
+        "question": "As criança brinca no patio.",
+        "options": [
+          "A frase esta correta.",
+          "A frase tem erro.",
+          "A frase e uma pergunta.",
+          "A frase nao tem verbo."
+        ],
+        "correctIndex": 1,
+        "explanation": "A frase tem erro de concordancia entre artigo e substantivo.",
+        "wrongExplanations": {
+          "0": "O artigo deve concordar com o substantivo.",
+          "2": "A frase nao termina com interrogacao.",
+          "3": "A frase possui o verbo brinca."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-concordancia",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "concordancia"
+        }
+      }
+    },
+    {
+      "id": "synthetic-repeated-token-001",
+      "category": "unnatural-option",
+      "expectedOutcome": "fail",
+      "expectedRules": ["linguistic.repeated-token"],
+      "question": {
+        "id": "SYN-NATURAL-001",
+        "subject": "portugues",
+        "topic": "clareza",
+        "question": "Qual frase esta escrita de forma natural?",
+        "options": [
+          "A turma leu o texto.",
+          "A turma muito muito leu.",
+          "Texto turma o leu.",
+          "Leu turma texto a."
+        ],
+        "correctIndex": 0,
+        "explanation": "A primeira frase apresenta as palavras em ordem clara.",
+        "wrongExplanations": {
+          "1": "A repeticao torna a frase antinatural.",
+          "2": "A ordem dificulta o entendimento.",
+          "3": "A ordem dificulta o entendimento."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-clareza",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "clareza"
+        }
+      }
+    },
+    {
+      "id": "synthetic-explanation-001",
+      "category": "insufficient-explanation",
+      "expectedOutcome": "fail",
+      "expectedRules": ["pedagogical.explanation-too-short"],
+      "question": {
+        "id": "SYN-EXPLAIN-001",
+        "subject": "ciencias",
+        "topic": "observacao",
+        "question": "O que devemos fazer antes de registrar uma observacao?",
+        "options": [
+          "Observar com atencao",
+          "Apagar os dados",
+          "Inventar um resultado",
+          "Ignorar o objeto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Porque esta certo.",
+        "wrongExplanations": {
+          "1": "Apagar os dados impede o registro.",
+          "2": "Inventar resultado nao e observar.",
+          "3": "Ignorar o objeto impede a observacao."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "registrar-observacoes",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "observacao"
+        }
+      }
+    },
+    {
+      "id": "synthetic-ambiguity-001",
+      "category": "ambiguity",
+      "expectedOutcome": "not_evaluable",
+      "expectedRules": ["semantic.ambiguity-requires-human-review"],
+      "question": {
+        "id": "SYN-AMBIG-001",
+        "subject": "historia",
+        "topic": "fontes",
+        "question": "Qual fonte e mais importante?",
+        "options": [
+          "A fotografia",
+          "A carta",
+          "O relato",
+          "Depende do objetivo"
+        ],
+        "correctIndex": 3,
+        "explanation": "A importancia depende do objetivo da investigacao.",
+        "wrongExplanations": {
+          "0": "Pode ser importante, mas nao em toda investigacao.",
+          "1": "Pode ser importante, mas nao em toda investigacao.",
+          "2": "Pode ser importante, mas nao em toda investigacao."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "analisar-fontes",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "fontes"
+        }
+      }
+    }
+  ]
+}
