@@ -30,49 +30,95 @@ function normalize(value) {
   return String(value).trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
 }
 
-function allQuestionText(question) {
+function questionTextFields(question) {
   return [
-    question.question,
-    ...(question.options || []),
-    question.explanation,
-    ...Object.values(question.wrongExplanations || {}),
-  ].join(' ');
+    ['question', question.question],
+    ['questionPt', question.questionPt],
+    ...(question.options || []).map((value, index) => [
+      `options[${index}]`,
+      value,
+    ]),
+    ['explanation', question.explanation],
+    ...Object.entries(question.wrongExplanations || {}).map(
+      ([index, value]) => [`wrongExplanations[${index}]`, value],
+    ),
+  ].filter(([, value]) => typeof value === 'string' && value.trim());
 }
 
-function evaluateCase(regressionCase) {
+function finding(field, rule, evidence) {
+  return { field, rule, evidence: normalize(evidence).slice(0, 80) };
+}
+
+function evaluateCaseFindings(regressionCase) {
   const question = regressionCase.question;
   const findings = [];
-  const text = allQuestionText(question);
-  const normalizedText = normalize(text);
 
-  if (question.subject === 'portugues') {
-    for (const [incorrect, correct] of ORTHOGRAPHY_REPLACEMENTS) {
-      if (new RegExp(`\\b${incorrect}\\b`, 'i').test(text)) {
-        findings.push('linguistic.common-orthography');
+  questionTextFields(question).forEach(([field, text]) => {
+    const normalizedText = normalize(text);
+
+    if (question.subject === 'portugues') {
+      for (const [incorrect] of ORTHOGRAPHY_REPLACEMENTS) {
+        const match = text.match(new RegExp(`\\b${incorrect}\\b`, 'iu'));
+        if (match) {
+          findings.push(
+            finding(field, 'linguistic.common-orthography', match[0]),
+          );
+        }
       }
-      if (new RegExp(`\\b${correct}\\b`, 'i').test(text)) break;
     }
-  }
-  if (
-    /\bas\s+criança\s+\w+\b/i.test(text) ||
-    /\ba\s+crianças\s+\w+\b/i.test(text)
-  ) {
-    findings.push('linguistic.subject-agreement');
-  }
-  if (/\b(\w+)\s+\1\b/i.test(normalizedText)) {
-    findings.push('linguistic.repeated-token');
-  }
+
+    const nominalAgreement = /\b(?:as\s+criança|a\s+crianças)\b/iu.exec(text);
+    const verbAgreement =
+      /\b(?:as\s+crianças\s+(?:brinca|corre|estuda|joga|canta|pula)|a\s+criança\s+(?:brincam|correm|estudam|jogam|cantam|pulam))\b/iu.exec(
+        text,
+      );
+    const agreementMatch = nominalAgreement || verbAgreement;
+    if (agreementMatch) {
+      findings.push(
+        finding(field, 'linguistic.subject-agreement', agreementMatch[0]),
+      );
+    }
+
+    const repeatedToken =
+      /(?<![\p{L}\p{N}_])([\p{L}\p{N}_]+)\s+\1(?![\p{L}\p{N}_])/iu.exec(
+        normalizedText,
+      );
+    if (repeatedToken) {
+      findings.push(
+        finding(field, 'linguistic.repeated-token', repeatedToken[0]),
+      );
+    }
+  });
+
   if (
     typeof question.explanation !== 'string' ||
     question.explanation.trim().length < 25 ||
     /^porque esta certo\.?$/i.test(question.explanation.trim())
   ) {
-    findings.push('pedagogical.explanation-too-short');
+    findings.push(
+      finding(
+        'explanation',
+        'pedagogical.explanation-too-short',
+        question.explanation || '<ausente>',
+      ),
+    );
   }
   if (regressionCase.category === 'ambiguity') {
-    findings.push('semantic.ambiguity-requires-human-review');
+    findings.push(
+      finding(
+        'question',
+        'semantic.ambiguity-requires-human-review',
+        question.question,
+      ),
+    );
   }
-  return [...new Set(findings)];
+  return findings;
+}
+
+function evaluateCase(regressionCase) {
+  return [
+    ...new Set(evaluateCaseFindings(regressionCase).map(({ rule }) => rule)),
+  ];
 }
 
 function validateCorpus(corpus) {
@@ -133,17 +179,28 @@ function validateCorpus(corpus) {
 
 function scanPublishedT2(rootDirectory) {
   const sources = loadContentSources(rootDirectory);
-  const counts = new Map();
+  const candidates = [];
   Object.values(sources).forEach((source) => {
     source.questions
       .filter((question) => question.contentSetId === '2026-t2-v1')
       .forEach((question) => {
-        evaluateCase({ category: 'published', question }).forEach((rule) => {
-          counts.set(rule, (counts.get(rule) || 0) + 1);
-        });
+        evaluateCaseFindings({ category: 'published', question }).forEach(
+          ({ field, rule, evidence }) => {
+            candidates.push({
+              questionId: question.id,
+              field,
+              rule,
+              evidence,
+            });
+          },
+        );
       });
   });
-  return Object.fromEntries([...counts.entries()].sort());
+  return {
+    schemaVersion: 't2-diagnostic-v1',
+    blocking: false,
+    candidates,
+  };
 }
 
 function main() {
@@ -164,4 +221,9 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { evaluateCase, scanPublishedT2, validateCorpus };
+module.exports = {
+  evaluateCase,
+  evaluateCaseFindings,
+  scanPublishedT2,
+  validateCorpus,
+};

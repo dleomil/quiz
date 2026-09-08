@@ -11,10 +11,10 @@
         "id": "SYN-CLEAN-001",
         "subject": "portugues",
         "topic": "leitura",
-        "question": "Qual palavra indica uma acao?",
+        "question": "Qual palavra indica uma ação?",
         "options": ["Correr", "Azul", "Mesa", "Sete"],
         "correctIndex": 0,
-        "explanation": "Correr indica uma acao realizada por alguem.",
+        "explanation": "Correr indica uma ação realizada por alguém.",
         "wrongExplanations": {
           "1": "Azul indica uma cor.",
           "2": "Mesa nomeia um objeto.",
@@ -71,18 +71,18 @@
         "id": "SYN-AGREE-001",
         "subject": "portugues",
         "topic": "concordancia",
-        "question": "As criança brinca no patio.",
+        "question": "As criança brincam no pátio.",
         "options": [
-          "A frase esta correta.",
+          "A frase está correta.",
           "A frase tem erro.",
-          "A frase e uma pergunta.",
-          "A frase nao tem verbo."
+          "A frase é uma pergunta.",
+          "A frase não tem verbo."
         ],
         "correctIndex": 1,
-        "explanation": "A frase tem erro de concordancia entre artigo e substantivo.",
+        "explanation": "A frase tem erro de concordância entre artigo e substantivo.",
         "wrongExplanations": {
           "0": "O artigo deve concordar com o substantivo.",
-          "2": "A frase nao termina com interrogacao.",
+          "2": "A frase não termina com interrogação.",
           "3": "A frase possui o verbo brinca."
         },
         "schemaVersion": "content-v1",
@@ -106,17 +106,17 @@
         "id": "SYN-NATURAL-001",
         "subject": "portugues",
         "topic": "clareza",
-        "question": "Qual frase esta escrita de forma natural?",
+        "question": "Qual frase está escrita de forma natural?",
         "options": [
           "A turma leu o texto.",
-          "A turma muito muito leu.",
+          "A turma lê lê o texto.",
           "Texto turma o leu.",
           "Leu turma texto a."
         ],
         "correctIndex": 0,
         "explanation": "A primeira frase apresenta as palavras em ordem clara.",
         "wrongExplanations": {
-          "1": "A repeticao torna a frase antinatural.",
+          "1": "A repetição torna a frase antinatural.",
           "2": "A ordem dificulta o entendimento.",
           "3": "A ordem dificulta o entendimento."
         },
@@ -199,6 +199,136 @@
           "referenceId": "synthetic-regression",
           "section": "fixtures",
           "topic": "fontes"
+        }
+      }
+    },
+    {
+      "id": "synthetic-orthography-after-correct-001",
+      "category": "orthography",
+      "expectedOutcome": "fail",
+      "expectedRules": ["linguistic.common-orthography"],
+      "question": {
+        "id": "SYN-ORTH-AFTER-001",
+        "subject": "portugues",
+        "topic": "ortografia",
+        "question": "Você sabe que a crianca nao chegou tambem?",
+        "options": ["Sim", "Ainda não", "Talvez", "Não sei"],
+        "correctIndex": 0,
+        "explanation": "A frase contém erros depois de uma palavra acentuada corretamente.",
+        "wrongExplanations": {
+          "1": "A alternativa não responde afirmativamente.",
+          "2": "Talvez indica incerteza.",
+          "3": "A alternativa indica desconhecimento."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-acentuacao",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "ortografia"
+        }
+      }
+    },
+    {
+      "id": "synthetic-orthography-before-correct-001",
+      "category": "orthography",
+      "expectedOutcome": "fail",
+      "expectedRules": ["linguistic.common-orthography"],
+      "question": {
+        "id": "SYN-ORTH-BEFORE-001",
+        "subject": "portugues",
+        "topic": "ortografia",
+        "question": "Voce conhece a palavra criança e a forma não?",
+        "options": ["Sim", "Ainda não", "Talvez", "Não sei"],
+        "correctIndex": 0,
+        "explanation": "A frase contém um erro antes de palavras acentuadas corretamente.",
+        "wrongExplanations": {
+          "1": "A alternativa não responde afirmativamente.",
+          "2": "Talvez indica incerteza.",
+          "3": "A alternativa indica desconhecimento."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-acentuacao",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "ortografia"
+        }
+      }
+    },
+    {
+      "id": "synthetic-subject-verb-agreement-001",
+      "category": "agreement",
+      "expectedOutcome": "fail",
+      "expectedRules": ["linguistic.subject-agreement"],
+      "question": {
+        "id": "SYN-AGREE-VERB-001",
+        "subject": "portugues",
+        "topic": "concordancia",
+        "question": "As crianças brinca no pátio.",
+        "options": [
+          "A frase está correta.",
+          "A frase tem erro.",
+          "A frase é uma pergunta.",
+          "A frase não tem sujeito."
+        ],
+        "correctIndex": 1,
+        "explanation": "O verbo deve concordar com o sujeito no plural.",
+        "wrongExplanations": {
+          "0": "O verbo está no singular.",
+          "2": "A frase não termina com interrogação.",
+          "3": "As crianças formam o sujeito da frase."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-concordancia",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "concordancia"
+        }
+      }
+    },
+    {
+      "id": "synthetic-cross-field-repetition-001",
+      "category": "clean",
+      "expectedOutcome": "pass",
+      "expectedRules": [],
+      "question": {
+        "id": "SYN-CROSS-FIELD-001",
+        "subject": "portugues",
+        "topic": "clareza",
+        "question": "Leia a palavra sol",
+        "options": [
+          "Sol ilumina o dia.",
+          "Lua aparece à noite.",
+          "Chuva molha o chão.",
+          "Vento move as folhas."
+        ],
+        "correctIndex": 0,
+        "explanation": "A repetição ocorre em campos separados e não forma um erro textual.",
+        "wrongExplanations": {
+          "1": "A frase apresenta outra palavra.",
+          "2": "A frase apresenta outra palavra.",
+          "3": "A frase apresenta outra palavra."
+        },
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-regression-v1",
+        "skill": "reconhecer-clareza",
+        "reviewStatus": "draft",
+        "version": 1,
+        "sourceRef": {
+          "referenceId": "synthetic-regression",
+          "section": "fixtures",
+          "topic": "clareza"
         }
       }
     }
