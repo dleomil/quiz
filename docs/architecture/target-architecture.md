@@ -13,7 +13,8 @@ O projeto atual possui as seguintes caracteristicas:
 - logica de negocio misturada com renderizacao e eventos de interface
 - conteudo acoplado ao codigo fonte
 - persistencia restrita a `localStorage`
-- ausencia de toolchain formal, testes automatizados e CI
+- toolchain incremental com npm, lint, formatter, testes automatizados e CI,
+  ainda sem build empacotado ou separacao completa de camadas
 
 ## Arquitetura alvo
 

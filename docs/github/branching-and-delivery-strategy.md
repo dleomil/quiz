@@ -2,7 +2,9 @@
 
 ## Objetivo
 
-Definir uma estrategia simples de branching para o inicio da evolucao do produto, reduzindo risco operacional e impondo governanca leve com aprovacoes manuais.
+Definir uma estrategia simples de branching para o inicio da evolucao do
+produto, reduzindo risco operacional e impondo governanca leve com checks e
+decisoes humanas rastreaveis.
 
 ## Estrategia recomendada
 
@@ -43,9 +45,10 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 
 1. Criar branch a partir de `develop` para trabalho normal.
 2. Abrir Pull Request da branch temporaria para `develop`.
-3. Exigir aprovacao manual e concluir com squash as branches temporarias que
-   entram em `develop`, exceto a reconciliacao pos-release.
-4. Promover `develop` para `main` via Pull Request com aprovacao manual.
+3. Exigir a revisao permitida pelo modo de manutencao vigente e concluir com
+   squash as branches temporarias que entram em `develop`, exceto a
+   reconciliacao pos-release.
+4. Promover `develop` para `main` via Pull Request com autorizacao de release.
 5. Quando houver necessidade de estabilizacao antes da publicacao, permitir `release/*` com destino a `main`.
 
 ### Reconciliacao obrigatoria apos release
@@ -76,6 +79,31 @@ executar `npm run validate:branch-sync` contra o SHA atual do PR. Se `main`
 tiver avancado desde o check da esteira, a integracao deve ser interrompida e o
 head atualizado. Essa verificacao just-in-time cobre a janela que os eventos
 nativos de Pull Request nao invalidam automaticamente.
+
+### Modo temporario de mantenedor unico
+
+Enquanto `dleomil` for o unico colaborador humano elegivel, `main` e `develop`
+nao exigem aprovacao de outro usuario no GitHub, pois o autor nao pode aprovar o
+proprio Pull Request. A excecao remove somente `required_pull_request_reviews`.
+
+Continuam obrigatorios:
+
+- Pull Request e proibicao de push direto;
+- checks remotos configurados e branch atualizada;
+- resolucao de conversas e protecao aplicada a administradores;
+- evidencia tecnica no PR e decisao final do mantenedor unico;
+- autorizacao explicita de release para `main`;
+- aprovacoes humanas pedagogicas, editoriais ou de produto aplicaveis.
+
+Parecer automatizado ou de agente nao deve ser descrito como aprovacao humana
+independente. A excecao e rastreada pela Tech Task #310.
+
+Quando existir um segundo colaborador humano com permissao `write`, `maintain`
+ou `admin`, antes do proximo merge devem ser restauradas em ambas as branches:
+
+- uma aprovacao obrigatoria;
+- descarte de aprovacoes obsoletas apos novos pushes;
+- aprovacao por outro usuario depois do ultimo push.
 
 ## Modos de operacao por calendario escolar
 
@@ -108,7 +136,9 @@ linguisticos e humanos em ambos os modos.
 - nao fazer push direto em `main`
 - nao fazer push direto em `develop`
 - toda evolucao deve passar por Pull Request
-- neste inicio, exigir ao menos uma aprovacao manual
+- exigir aprovacao independente quando houver ao menos dois mantenedores
+  elegiveis; durante a fase de mantenedor unico, aplicar a excecao rastreada em
+  #310
 - usar GitHub Actions como gate minimo de governanca nos PRs
 - registrar o modo operacional vigente em toda promocao para `main`
 
