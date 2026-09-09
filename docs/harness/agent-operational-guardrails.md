@@ -43,7 +43,10 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 
 - usar o endpoint correto do GitHub
 - alterar o minimo necessario
-- restaurar a protecao imediatamente apos o merge
+- restaurar a protecao imediatamente apos o merge, exceto quando estiver ativo
+  o modo documentado de mantenedor unico
+- no modo de mantenedor unico, preservar todos os demais gates e manter a
+  restauracao da aprovacao independente rastreada na Tech Task #310
 
 ### 5. Exigir preflight do agente
 
@@ -73,7 +76,10 @@ Antes de qualquer acao de escrita, o agente deve confirmar:
 
 - quando o Project usar mais de um campo de estado, atualizar todos os campos relevantes de forma coerente
 - antes do merge, revisar a regra real de aprovacao e last push approval da branch alvo
-- se for necessario ajuste temporario de branch protection, reduzir apenas o minimo necessario e restaurar imediatamente apos o merge
+- se for necessario ajuste temporario de branch protection, reduzir apenas o
+  minimo necessario e restaurar imediatamente apos o merge; a unica excecao
+  persistente permitida e o modo de mantenedor unico definido na estrategia de
+  branching e rastreado em #310
 
 ### 9. Controlar descoberta de produto assistida
 

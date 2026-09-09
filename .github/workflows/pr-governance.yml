@@ -46,6 +46,11 @@ jobs:
           test -f docs/README.md
           test -f docs/github/branching-and-delivery-strategy.md
 
+      - name: Validate versioned governance guidelines
+        run: |
+          npm run validate:guidelines
+          npm run test:guidelines
+
       - name: Validate lint and formatting
         run: |
           npm run lint

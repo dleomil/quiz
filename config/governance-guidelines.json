@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "governance-guidelines-v1",
+  "guidelines": [
+    {
+      "id": "agent-preflight",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "architecture",
+      "sourcePath": "docs/harness/agent-preflight-checklist.md",
+      "sha256": "c8c3dca05d21ef510fa6f6d8901cd0ad9fbca882504c8bd531568597fefbe675",
+      "appliesTo": ["agent-workflows", "repository-mutations"],
+      "enforcement": "manual-blocking",
+      "evidence": ["preflight checklist completed before mutation"]
+    },
+    {
+      "id": "branching-and-delivery",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "architecture",
+      "sourcePath": "docs/github/branching-and-delivery-strategy.md",
+      "sha256": "20f6b84d955c96f4612560b99b7b51b82bd8affee8edd18730481b2288faff4b",
+      "appliesTo": ["pull-requests", "releases", "repository-mutations"],
+      "enforcement": "manual-blocking",
+      "evidence": [
+        "required checks",
+        "branch sync validation",
+        "merge authorization"
+      ]
+    },
+    {
+      "id": "curriculum-content-quality",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "content",
+      "sourcePath": "docs/harness/content-update-quality-gates.md",
+      "sha256": "45484f3f045ea506b016dcd37999477cd1649327cabdd66d1bbe9171e5272b80",
+      "appliesTo": ["content-updates", "editorial-workflows"],
+      "enforcement": "manual-blocking",
+      "evidence": ["pedagogical review", "linguistic review", "human approval"]
+    },
+    {
+      "id": "editorial-agent-output",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "content",
+      "sourcePath": "docs/specs/editorial-agent-output-contract.md",
+      "sha256": "f150dc26b1cfe911521f2cf6207f70e6bfd75b7d5b8019e95e7830224fd4c274",
+      "appliesTo": ["editorial-agents", "editorial-workflows"],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated editorial agent output"]
+    },
+    {
+      "id": "executable-codex-agents",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "standard",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/executable-codex-agents.md",
+      "sha256": "ec64d92461162c2920e0783ece42c9074dd9e0b1044e835bacadc6e5a2cf6d02",
+      "appliesTo": ["agent-configuration", "agent-workflows"],
+      "enforcement": "automated-blocking",
+      "evidence": ["agent configuration validation"]
+    },
+    {
+      "id": "harness-engineering",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "guideline",
+      "owner": "architecture",
+      "sourcePath": "docs/harness/harness-engineering.md",
+      "sha256": "78f8dbc325da8786a2449f346801274a0a682749b3e3634b3598fc5e4103f517",
+      "appliesTo": ["agent-workflows", "delivery-workflows"],
+      "enforcement": "advisory",
+      "evidence": ["execution record linked to issue and pull request"]
+    },
+    {
+      "id": "pedagogical-regression-corpus",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "standard",
+      "owner": "content",
+      "sourcePath": "docs/harness/pedagogical-regression-corpus.md",
+      "sha256": "afd400c459b6d3d774db56df0346e87f57dba04f1ec561a648fa0aa957c1c5f8",
+      "appliesTo": ["content-updates", "pull-requests"],
+      "enforcement": "automated-diagnostic",
+      "evidence": ["pedagogical regression report"],
+      "metrics": [
+        {
+          "id": "diagnostic-candidates",
+          "definition": "Candidates emitted by the read-only T2 diagnostic scan.",
+          "target": "tracked without blocking publication",
+          "source": "npm run test:pedagogical-regression"
+        }
+      ]
+    },
+    {
+      "id": "product-discovery",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "product",
+      "sourcePath": "docs/specs/product-discovery-agent.md",
+      "sha256": "9e09b2f5062288a7d79331d8c87e32f826d22418d0003a2ca3ae0ab350f375d0",
+      "appliesTo": ["product-discovery", "backlog-management"],
+      "enforcement": "manual-blocking",
+      "evidence": ["product owner decision", "dated source record"]
+    },
+    {
+      "id": "spec-driven-development",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "guideline",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/spec-driven-development.md",
+      "sha256": "94e0239573eb4947c2f9cd8d2649b9e2bf68c224dff8a6d92dcce94cce3201fb",
+      "appliesTo": ["implementation", "pull-requests", "specification"],
+      "enforcement": "manual-blocking",
+      "evidence": ["approved implementation plan", "linked pull request"]
+    }
+  ]
+}

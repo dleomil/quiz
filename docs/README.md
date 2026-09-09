@@ -85,6 +85,12 @@ O runner protegido dos agentes editoriais fica em
 `config/editorial-agent-input.schema.json` e seus testes em
 `tests/agents/editorial-agent-runner.spec.cjs`.
 
+O indice validavel das policies fica em
+`config/governance-guidelines.json`. Seu contrato, manutencao e bundle
+deterministico estao descritos em
+`docs/harness/versioned-governance-guidelines.md`; os documentos referenciados
+continuam sendo as fontes normativas.
+
 ## Regras de uso
 
 - `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.
