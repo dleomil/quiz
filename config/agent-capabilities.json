@@ -124,7 +124,8 @@
         "agentName": "product_discovery",
         "model": "gpt-5.6-sol",
         "reasoningEffort": "high",
-        "sandboxMode": "read-only"
+        "sandboxMode": "read-only",
+        "mcpPolicy": "none"
       }
     },
     {
@@ -142,14 +143,17 @@
       "capabilities": ["pull-request-review"],
       "contractPaths": [
         "docs/agents/reviewer-agent.md",
-        "docs/agents/reviewer-agent-workflow.md"
+        "docs/agents/reviewer-agent-workflow.md",
+        "docs/agents/reviewer-agent-decision-matrix.md",
+        "docs/agents/reviewer-agent-comment-template.md"
       ],
       "adapter": {
         "configPath": ".codex/agents/reviewer.toml",
         "agentName": "reviewer",
         "model": "gpt-5.6-sol",
         "reasoningEffort": "high",
-        "sandboxMode": "read-only"
+        "sandboxMode": "read-only",
+        "mcpPolicy": "none"
       }
     },
     {
@@ -174,7 +178,8 @@
         "agentName": "verifier",
         "model": "gpt-5.6-terra",
         "reasoningEffort": "medium",
-        "sandboxMode": "read-only"
+        "sandboxMode": "read-only",
+        "mcpPolicy": "none"
       }
     }
   ],

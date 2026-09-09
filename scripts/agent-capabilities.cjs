@@ -174,8 +174,8 @@ function validateAdapter(adapter, label, errors) {
   if (adapter.sandboxMode !== 'read-only') {
     errors.push(`${label}.sandboxMode deve ser read-only`);
   }
-  if (adapter.mcpPolicy !== undefined && adapter.mcpPolicy !== 'none') {
-    errors.push(`${label}.mcpPolicy invalida`);
+  if (adapter.mcpPolicy !== 'none') {
+    errors.push(`${label}.mcpPolicy deve ser none`);
   }
 }
 
@@ -377,9 +377,7 @@ function deriveAgentContracts(model) {
           model: role.adapter.model,
           model_reasoning_effort: role.adapter.reasoningEffort,
           requiredReferences: role.contractPaths,
-          ...(role.adapter.mcpPolicy
-            ? { mcpPolicy: role.adapter.mcpPolicy }
-            : {}),
+          mcpPolicy: role.adapter.mcpPolicy,
         },
       ]),
   );

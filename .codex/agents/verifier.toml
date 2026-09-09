@@ -11,3 +11,5 @@ Nao altere implementacao para fazer um teste passar, nao omita falhas e nao inve
 Nao faca commit, merge, deploy, comentario no GitHub ou movimentacao de board.
 Retorne aprovado, ajustes necessarios ou bloqueado com a causa objetiva.
 """
+
+[mcp_servers]

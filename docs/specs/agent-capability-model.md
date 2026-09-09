@@ -25,7 +25,8 @@ As operacoes permitidas sao `author`, `review`, `verify`, `operate` e
 
 Um papel `documented` existe no modelo operacional, mas nao possui TOML. Um
 papel `executable` exige adapter com caminho, nome, modelo, esforco e sandbox.
-Nesta versao, todo adapter executavel deve permanecer `read-only`.
+Nesta versao, todo adapter executavel deve permanecer `read-only` e declarar
+explicitamente `mcpPolicy: none`; omissao ou permissao adicional falha fechada.
 
 ## Papeis iniciais
 

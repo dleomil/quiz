@@ -1,6 +1,8 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
+const os = require('node:os');
 const path = require('node:path');
+const { execFileSync } = require('node:child_process');
 const {
   ROOT,
   deriveAgentContracts,
@@ -43,6 +45,20 @@ assert.deepEqual(Object.keys(deriveAgentContracts(model)).sort(), [
   'reviewer.toml',
   'verifier.toml',
 ]);
+assert.ok(
+  Object.values(deriveAgentContracts(model)).every(
+    (contract) => contract.mcpPolicy === 'none',
+  ),
+);
+assert.deepEqual(
+  model.roles.find((role) => role.id === 'reviewer').contractPaths,
+  [
+    'docs/agents/reviewer-agent.md',
+    'docs/agents/reviewer-agent-workflow.md',
+    'docs/agents/reviewer-agent-decision-matrix.md',
+    'docs/agents/reviewer-agent-comment-template.md',
+  ],
+);
 
 const unknownField = clone(model);
 unknownField.roles[0].authority = 'unbounded';
@@ -111,6 +127,11 @@ unsafeAdapter.roles.find(
 ).adapter.configPath = '../agent.toml';
 expectError(unsafeAdapter, 'configPath deve ficar em .codex/agents');
 
+const missingMcpPolicy = clone(model);
+delete missingMcpPolicy.roles.find((role) => role.status === 'executable')
+  .adapter.mcpPolicy;
+expectError(missingMcpPolicy, 'mcpPolicy deve ser none');
+
 const invalidRuleReference = clone(model);
 invalidRuleReference.separationRules[0].checkerCapability = 'not-declared';
 expectError(invalidRuleReference, 'checkerCapability inexistente');
@@ -125,27 +146,25 @@ combinedRole.roles
   .capabilities.push('pull-request-review');
 expectError(combinedRole, 'acumula producao e verificacao');
 
-const untrackedPath = path.join(
-  ROOT,
-  'docs',
-  'agents',
-  '.agent-capability-untracked-test.md',
+const untrackedRoot = fs.mkdtempSync(
+  path.join(os.tmpdir(), 'agent-capability-model-'),
 );
 try {
+  const untrackedPath = path.join(untrackedRoot, 'docs', 'agents', 'test.md');
+  fs.mkdirSync(path.dirname(untrackedPath), { recursive: true });
   fs.writeFileSync(untrackedPath, '# Untracked test fixture\n');
+  execFileSync('git', ['init', '--quiet'], { cwd: untrackedRoot });
   const untrackedContract = clone(model);
-  untrackedContract.roles[0].contractPaths = [
-    'docs/agents/.agent-capability-untracked-test.md',
-  ];
+  untrackedContract.roles[0].contractPaths = ['docs/agents/test.md'];
   const errors = validateCapabilityModel(untrackedContract, {
-    rootDirectory: ROOT,
+    rootDirectory: untrackedRoot,
   });
   assert.ok(
     errors.some((error) => error.includes('nao esta versionado no Git')),
     errors.join('\n'),
   );
 } finally {
-  fs.rmSync(untrackedPath, { force: true });
+  fs.rmSync(untrackedRoot, { recursive: true, force: true });
 }
 
 process.stdout.write('agent-capability-model: ok\n');

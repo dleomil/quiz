@@ -102,6 +102,20 @@ function run() {
   withFixture((directory) => {
     replaceInFile(
       directory,
+      'reviewer.toml',
+      '[mcp_servers]',
+      '[mcp_servers.github]',
+    );
+    assert.ok(
+      validateAgentDirectory(directory).some((error) =>
+        error.includes('nenhum servidor MCP e permitido'),
+      ),
+    );
+  });
+
+  withFixture((directory) => {
+    replaceInFile(
+      directory,
       'content-curator.toml',
       'docs/specs/editorial-agent-output-contract.md',
       'docs/specs/contrato-ausente.md',

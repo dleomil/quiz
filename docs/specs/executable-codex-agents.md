@@ -33,6 +33,9 @@ processo Codex separado com `CODEX_HOME` temporario e nao herda ferramentas ou
 connectors da sessao pai. O runner tambem exige `codex mcp list --json` vazio e
 falha fechado quando qualquer preflight ou validacao falhar.
 
+O modelo central exige `mcpPolicy: none` explicitamente para todos os adapters.
+O validador rejeita a omissao da politica e qualquer servidor MCP configurado.
+
 Reviewer, Product Discovery e os agentes editoriais exigem raciocinio mais
 profundo por lidarem com ambiguidade, risco, linguagem e recomendacao. O
 Verifier usa um modelo mais eficiente para leitura, execucao de checks e

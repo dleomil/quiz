@@ -20,7 +20,7 @@
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-capability-model.md",
-      "sha256": "bb09d9fd2fc0d04f4d8162bf8b7aa538828154763d7824ac7cf0f0a53b412ea8",
+      "sha256": "67d7f9f90f3a3b193b1c9d03e9345acec7a5136ed90f7be1d9a566faafc9fa45",
       "appliesTo": ["agent-configuration", "agent-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": ["agent capability validation", "distinct actor record"]
@@ -72,7 +72,7 @@
       "type": "standard",
       "owner": "architecture",
       "sourcePath": "docs/specs/executable-codex-agents.md",
-      "sha256": "dfcc5209b263afa8a8d8d842eb0327eee61bc336b829dc4b99f2818c0c1176cf",
+      "sha256": "13d44cccb57d27810e02090757b375657243274a3b6872e9a338db6154096474",
       "appliesTo": ["agent-configuration", "agent-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["agent configuration validation"]
