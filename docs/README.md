@@ -85,6 +85,11 @@ O runner protegido dos agentes editoriais fica em
 `config/editorial-agent-input.schema.json` e seus testes em
 `tests/agents/editorial-agent-runner.spec.cjs`.
 
+O modelo estrutural dos nove papeis e suas separacoes fica em
+`config/agent-capabilities.json`, com contrato em
+`docs/specs/agent-capability-model.md`. Os cinco TOMLs executaveis continuam
+como adapters read-only desse modelo.
+
 O indice validavel das policies fica em
 `config/governance-guidelines.json`. Seu contrato, manutencao e bundle
 deterministico estao descritos em

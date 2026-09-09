@@ -22,6 +22,8 @@ Use este checklist antes de:
 - qual issue, spec ou PR esta guiando a acao
 - qual item do board sera afetado
 - qual documento eh o contexto oficial
+- quais papeis e identificadores de ator ou thread produzem e verificam o mesmo
+  artefato, sempre distintos quando o modelo de capabilities exigir
 
 ### 2. Taxonomia e permissao
 

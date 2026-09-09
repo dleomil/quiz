@@ -46,6 +46,9 @@ jobs:
           test -f docs/README.md
           test -f docs/github/branching-and-delivery-strategy.md
 
+      - name: Validate agent capabilities
+        run: npm run validate:agents
+
       - name: Validate versioned governance guidelines
         run: |
           npm run validate:guidelines

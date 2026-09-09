@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "agent-capabilities-v1",
+  "capabilities": [
+    {
+      "id": "architecture-review",
+      "artifactType": "specification",
+      "operation": "review",
+      "repositoryEffect": "read-only"
+    },
+    {
+      "id": "content-author",
+      "artifactType": "content-proposal",
+      "operation": "author",
+      "repositoryEffect": "read-only"
+    },
+    {
+      "id": "content-review",
+      "artifactType": "content-proposal",
+      "operation": "review",
+      "repositoryEffect": "read-only"
+    },
+    {
+      "id": "implementation-author",
+      "artifactType": "change",
+      "operation": "author",
+      "repositoryEffect": "workspace-write"
+    },
+    {
+      "id": "product-research",
+      "artifactType": "product-opportunity",
+      "operation": "research",
+      "repositoryEffect": "read-only"
+    },
+    {
+      "id": "pull-request-review",
+      "artifactType": "change",
+      "operation": "review",
+      "repositoryEffect": "read-only"
+    },
+    {
+      "id": "repository-operation",
+      "artifactType": "repository",
+      "operation": "operate",
+      "repositoryEffect": "external-write"
+    },
+    {
+      "id": "specification-author",
+      "artifactType": "specification",
+      "operation": "author",
+      "repositoryEffect": "workspace-write"
+    },
+    {
+      "id": "verification",
+      "artifactType": "change",
+      "operation": "verify",
+      "repositoryEffect": "read-only"
+    }
+  ],
+  "roles": [
+    {
+      "id": "architect",
+      "status": "documented",
+      "capabilities": ["architecture-review"],
+      "contractPaths": [
+        "docs/agents/agent-operating-model.md",
+        "docs/agents/agent-preflight-application.md"
+      ]
+    },
+    {
+      "id": "content-curator",
+      "status": "executable",
+      "capabilities": ["content-author"],
+      "contractPaths": [
+        "docs/agents/content-curator-agent.md",
+        "docs/harness/content-update-quality-gates.md",
+        "docs/specs/editorial-agent-output-contract.md"
+      ],
+      "adapter": {
+        "configPath": ".codex/agents/content-curator.toml",
+        "agentName": "content_curator",
+        "model": "gpt-5.6-sol",
+        "reasoningEffort": "high",
+        "sandboxMode": "read-only",
+        "mcpPolicy": "none"
+      }
+    },
+    {
+      "id": "implementer",
+      "status": "documented",
+      "capabilities": ["implementation-author"],
+      "contractPaths": [
+        "docs/agents/agent-operating-model.md",
+        "docs/agents/agent-preflight-application.md"
+      ]
+    },
+    {
+      "id": "pedagogical-quality",
+      "status": "executable",
+      "capabilities": ["content-review"],
+      "contractPaths": [
+        "docs/agents/pedagogical-quality-agent.md",
+        "docs/harness/content-update-quality-gates.md",
+        "docs/specs/editorial-agent-output-contract.md"
+      ],
+      "adapter": {
+        "configPath": ".codex/agents/pedagogical-quality.toml",
+        "agentName": "pedagogical_quality",
+        "model": "gpt-5.6-sol",
+        "reasoningEffort": "high",
+        "sandboxMode": "read-only",
+        "mcpPolicy": "none"
+      }
+    },
+    {
+      "id": "product-discovery",
+      "status": "executable",
+      "capabilities": ["product-research"],
+      "contractPaths": [
+        "docs/agents/product-discovery-agent.md",
+        "docs/specs/product-discovery-agent.md"
+      ],
+      "adapter": {
+        "configPath": ".codex/agents/product-discovery.toml",
+        "agentName": "product_discovery",
+        "model": "gpt-5.6-sol",
+        "reasoningEffort": "high",
+        "sandboxMode": "read-only"
+      }
+    },
+    {
+      "id": "release-board",
+      "status": "documented",
+      "capabilities": ["repository-operation"],
+      "contractPaths": [
+        "docs/agents/agent-operating-model.md",
+        "docs/agents/agent-preflight-application.md"
+      ]
+    },
+    {
+      "id": "reviewer",
+      "status": "executable",
+      "capabilities": ["pull-request-review"],
+      "contractPaths": [
+        "docs/agents/reviewer-agent.md",
+        "docs/agents/reviewer-agent-workflow.md"
+      ],
+      "adapter": {
+        "configPath": ".codex/agents/reviewer.toml",
+        "agentName": "reviewer",
+        "model": "gpt-5.6-sol",
+        "reasoningEffort": "high",
+        "sandboxMode": "read-only"
+      }
+    },
+    {
+      "id": "spec",
+      "status": "documented",
+      "capabilities": ["specification-author"],
+      "contractPaths": [
+        "docs/agents/agent-operating-model.md",
+        "docs/agents/agent-preflight-application.md"
+      ]
+    },
+    {
+      "id": "verifier",
+      "status": "executable",
+      "capabilities": ["verification"],
+      "contractPaths": [
+        "docs/agents/agent-operating-model.md",
+        "docs/harness/agent-preflight-checklist.md"
+      ],
+      "adapter": {
+        "configPath": ".codex/agents/verifier.toml",
+        "agentName": "verifier",
+        "model": "gpt-5.6-terra",
+        "reasoningEffort": "medium",
+        "sandboxMode": "read-only"
+      }
+    }
+  ],
+  "separationRules": [
+    {
+      "id": "content-author-reviewer",
+      "artifactType": "content-proposal",
+      "producerCapability": "content-author",
+      "checkerCapability": "content-review",
+      "enforcement": "manual-blocking",
+      "requiresDistinctActor": true
+    },
+    {
+      "id": "implementation-reviewer",
+      "artifactType": "change",
+      "producerCapability": "implementation-author",
+      "checkerCapability": "pull-request-review",
+      "enforcement": "manual-blocking",
+      "requiresDistinctActor": true
+    },
+    {
+      "id": "implementation-verifier",
+      "artifactType": "change",
+      "producerCapability": "implementation-author",
+      "checkerCapability": "verification",
+      "enforcement": "manual-blocking",
+      "requiresDistinctActor": true
+    },
+    {
+      "id": "specification-architecture-reviewer",
+      "artifactType": "specification",
+      "producerCapability": "specification-author",
+      "checkerCapability": "architecture-review",
+      "enforcement": "manual-blocking",
+      "requiresDistinctActor": true
+    }
+  ]
+}

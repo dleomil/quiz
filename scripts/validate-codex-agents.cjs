@@ -1,57 +1,13 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const {
+  deriveAgentContracts,
+  loadCapabilityModel,
+  validateCapabilityModel,
+} = require('./agent-capabilities.cjs');
 
-const AGENT_CONTRACTS = {
-  'content-curator.toml': {
-    name: 'content_curator',
-    model: 'gpt-5.6-sol',
-    model_reasoning_effort: 'high',
-    requiredReferences: [
-      'docs/agents/content-curator-agent.md',
-      'docs/harness/content-update-quality-gates.md',
-      'docs/specs/editorial-agent-output-contract.md',
-    ],
-    mcpPolicy: 'none',
-  },
-  'pedagogical-quality.toml': {
-    name: 'pedagogical_quality',
-    model: 'gpt-5.6-sol',
-    model_reasoning_effort: 'high',
-    requiredReferences: [
-      'docs/agents/pedagogical-quality-agent.md',
-      'docs/harness/content-update-quality-gates.md',
-      'docs/specs/editorial-agent-output-contract.md',
-    ],
-    mcpPolicy: 'none',
-  },
-  'product-discovery.toml': {
-    name: 'product_discovery',
-    model: 'gpt-5.6-sol',
-    model_reasoning_effort: 'high',
-    requiredReferences: [
-      'docs/agents/product-discovery-agent.md',
-      'docs/specs/product-discovery-agent.md',
-    ],
-  },
-  'reviewer.toml': {
-    name: 'reviewer',
-    model: 'gpt-5.6-sol',
-    model_reasoning_effort: 'high',
-    requiredReferences: [
-      'docs/agents/reviewer-agent.md',
-      'docs/agents/reviewer-agent-workflow.md',
-    ],
-  },
-  'verifier.toml': {
-    name: 'verifier',
-    model: 'gpt-5.6-terra',
-    model_reasoning_effort: 'medium',
-    requiredReferences: [
-      'docs/agents/agent-operating-model.md',
-      'docs/harness/',
-    ],
-  },
-};
+const CAPABILITY_MODEL = loadCapabilityModel(path.join(__dirname, '..'));
+const AGENT_CONTRACTS = deriveAgentContracts(CAPABILITY_MODEL);
 
 const REQUIRED_FIELDS = [
   'name',
@@ -149,9 +105,9 @@ function validateAgentSource(fileName, source, contract) {
   return errors;
 }
 
-function validateAgentDirectory(agentDirectory) {
+function validateAgentDirectory(agentDirectory, contracts = AGENT_CONTRACTS) {
   const errors = [];
-  const expectedFiles = Object.keys(AGENT_CONTRACTS).sort();
+  const expectedFiles = Object.keys(contracts).sort();
   const actualFiles = fs
     .readdirSync(agentDirectory, { withFileTypes: true })
     .filter((entry) => entry.isFile() && entry.name.endsWith('.toml'))
@@ -159,7 +115,7 @@ function validateAgentDirectory(agentDirectory) {
     .sort();
 
   actualFiles
-    .filter((fileName) => !AGENT_CONTRACTS[fileName])
+    .filter((fileName) => !contracts[fileName])
     .forEach((fileName) => {
       errors.push(`[${fileName}] agente nao declarado no contrato`);
     });
@@ -174,7 +130,7 @@ function validateAgentDirectory(agentDirectory) {
       ...validateAgentSource(
         fileName,
         fs.readFileSync(filePath, 'utf8'),
-        AGENT_CONTRACTS[fileName],
+        contracts[fileName],
       ),
     );
   });
@@ -727,8 +683,25 @@ function validateEditorialInputDocument(document, agent) {
 }
 
 function validateRepositoryAgents(rootDirectory) {
-  const errors = validateAgentDirectory(
-    path.join(rootDirectory, '.codex', 'agents'),
+  const errors = [];
+  let contracts = AGENT_CONTRACTS;
+  try {
+    const capabilityModel = loadCapabilityModel(rootDirectory);
+    const capabilityErrors = validateCapabilityModel(capabilityModel, {
+      rootDirectory,
+    });
+    errors.push(...capabilityErrors);
+    if (capabilityErrors.length === 0) {
+      contracts = deriveAgentContracts(capabilityModel);
+    }
+  } catch (error) {
+    errors.push(`falha ao ler modelo de capacidades: ${error.message}`);
+  }
+  errors.push(
+    ...validateAgentDirectory(
+      path.join(rootDirectory, '.codex', 'agents'),
+      contracts,
+    ),
   );
   const scenariosPath = path.join(
     rootDirectory,
@@ -763,6 +736,7 @@ if (require.main === module) {
 
 module.exports = {
   AGENT_CONTRACTS,
+  CAPABILITY_MODEL,
   parseAgentToml,
   validateAgentDirectory,
   validateAgentSource,

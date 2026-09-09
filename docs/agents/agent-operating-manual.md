@@ -44,6 +44,7 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - [product-discovery-agent.md](product-discovery-agent.md)
 - [../specs/product-discovery-agent.md](../specs/product-discovery-agent.md)
 - [../specs/editorial-agent-output-contract.md](../specs/editorial-agent-output-contract.md)
+- [../specs/agent-capability-model.md](../specs/agent-capability-model.md)
 - [../github/comment-formatting-guide.md](../github/comment-formatting-guide.md)
 - [../github/pr-issue-body-template.md](../github/pr-issue-body-template.md)
 - [../harness/content-update-quality-gates.md](../harness/content-update-quality-gates.md)
@@ -57,6 +58,8 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
   `content_curator` ou `pedagogical_quality`
 - manter os subagentes em `read-only`
 - inspecionar as threads antes de aceitar o resultado consolidado
+- registrar atores ou threads distintos para producao e revisao do mesmo
+  artefato
 - nunca tratar o parecer de um subagente como aprovacao humana
 - executar revisao pedagogica e linguistica em passagens separadas
 
