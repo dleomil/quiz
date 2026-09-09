@@ -49,6 +49,9 @@ jobs:
       - name: Validate agent capabilities
         run: npm run validate:agents
 
+      - name: Validate agent execution record contract
+        run: npm run test:agent-records
+
       - name: Validate versioned governance guidelines
         run: |
           npm run validate:guidelines

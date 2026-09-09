@@ -8,9 +8,10 @@ Definir como o checklist de preflight deve ser aplicado por cada agente principa
 
 Todo agente que executar uma acao de escrita, revisao ou publicacao deve consultar o preflight antes de agir.
 
-Quando o fluxo possuir producao e verificacao do mesmo artefato, registrar o
-papel e o identificador do ator ou thread de cada lado. Os identificadores devem
-ser distintos conforme `docs/specs/agent-capability-model.md`.
+Quando o fluxo possuir producao e verificacao do mesmo artefato, criar um
+conjunto conforme `docs/specs/agent-execution-records.md`. O registro deve
+identificar as duas execucoes, e os identificadores de ator devem ser distintos
+conforme `docs/specs/agent-capability-model.md`.
 
 ## 1. Spec Agent
 
@@ -49,6 +50,7 @@ Antes de validar, confirmar:
 - quais evidencias sao obrigatorias
 - qual resultado bloqueia a entrega
 - qual ator ou thread produziu a implementacao que sera verificada
+- se a execucao produtora consta no mesmo conjunto estruturado
 
 ## 5. Release and Board Agent
 
@@ -69,6 +71,7 @@ Antes de registrar parecer, confirmar:
 - quais evidencias foram verificadas
 - qual a decisao operacional a ser registrada
 - qual ator ou thread produziu a mudanca, que deve ser distinto do Reviewer
+- se artefato, versao e work item coincidem no conjunto estruturado
 
 ## 7. Product Discovery Agent
 
@@ -80,6 +83,7 @@ Antes de pesquisar ou recomendar, confirmar:
 - se o contexto esta livre de dados identificaveis de criancas
 - como fatos, inferencias, hipoteses e recomendacoes serao separados
 - quem e o Product Owner responsavel pela decisao final
+- qual conjunto estruturado registrara fontes, afirmacoes e recomendacao
 
 ## 8. Content Curator Agent
 

@@ -57,8 +57,10 @@ verificadora:
 - proposta curricular e revisao pedagogica usam atores distintos.
 
 O CI impede que um unico papel acumule as duas capabilities de qualquer regra.
-Ate existir o registro estruturado por execucao, o preflight e o PR devem
-registrar manualmente papel e identificador do ator ou thread em cada lado.
+Cada avaliacao ou verificacao deve usar um conjunto conforme
+`docs/specs/agent-execution-records.md`. O conjunto registra as execucoes dos
+dois lados, e o validador confere capability, artefato, versao e identidade
+distinta.
 
 A excecao de mantenedor unico registrada em #310 trata somente a aprovacao
 humana do GitHub. Ela nao permite que a mesma execucao de agente produza e
@@ -76,12 +78,13 @@ humana.
 - nome, modelo, esforco, sandbox, referencias e politica MCP;
 - ausencia de papel com capabilities incompativeis.
 
-## Evolucao
+## Registros por execucao
 
-O modelo desta versao declara incompatibilidades estaticas e um gate manual por
-artefato. A entrega seguinte adicionara registros estruturados com identidade
-de ator e execucao, permitindo validar a separacao em cada avaliacao ou
-pesquisa.
+O modelo declara as incompatibilidades estaticas. O contrato
+`agent-execution-record-set-v1` aplica essas regras a cada artefato avaliado ou
+pesquisado. A identidade informada continua declaratoria ate existir uma camada
+de identidade confiavel; parecer de agente permanece diferente de aprovacao
+humana.
 
 ## Rollback
 

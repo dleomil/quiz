@@ -15,15 +15,32 @@
     },
     {
       "id": "agent-capability-model",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-capability-model.md",
-      "sha256": "67d7f9f90f3a3b193b1c9d03e9345acec7a5136ed90f7be1d9a566faafc9fa45",
+      "sha256": "0c6f6b768fdaea0b1951f9f08b96e87a802f7c75b6b1d5fc2fd04b77006f581c",
       "appliesTo": ["agent-configuration", "agent-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": ["agent capability validation", "distinct actor record"]
+    },
+    {
+      "id": "agent-execution-records",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/agent-execution-records.md",
+      "sha256": "51c826176ac3a62d1a43f4bb768e63e9043ed62303c4035cc08d25ef1bb0526a",
+      "appliesTo": [
+        "agent-workflows",
+        "editorial-workflows",
+        "product-discovery",
+        "pull-requests"
+      ],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated agent execution record set"]
     },
     {
       "id": "branching-and-delivery",
@@ -79,12 +96,12 @@
     },
     {
       "id": "harness-engineering",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "guideline",
       "owner": "architecture",
       "sourcePath": "docs/harness/harness-engineering.md",
-      "sha256": "78f8dbc325da8786a2449f346801274a0a682749b3e3634b3598fc5e4103f517",
+      "sha256": "ebee5a881141aa1706a732df443a0d3a7e822072e86c0ae8769919b6a87d4319",
       "appliesTo": ["agent-workflows", "delivery-workflows"],
       "enforcement": "advisory",
       "evidence": ["execution record linked to issue and pull request"]
