@@ -12,6 +12,11 @@ Os contratos em `docs/agents/` continuam sendo a fonte de comportamento. Os
 arquivos `.codex/agents/*.toml` sao adaptadores executaveis que apontam para
 esses contratos e definem modelo, esforco e sandbox.
 
+O conjunto de papeis, capabilities e adapters permitidos fica centralizado em
+`config/agent-capabilities.json`, conforme
+`docs/specs/agent-capability-model.md`. O validador deriva desse catalogo os
+contratos esperados dos TOMLs; nao existe uma segunda lista hardcoded.
+
 ## Configuracao inicial
 
 | Agente              | Arquivo                    | Modelo          | Esforco  | Sandbox   |
@@ -27,6 +32,9 @@ protegida deve ocorrer por `scripts/run-editorial-agent.cjs`, que inicia um
 processo Codex separado com `CODEX_HOME` temporario e nao herda ferramentas ou
 connectors da sessao pai. O runner tambem exige `codex mcp list --json` vazio e
 falha fechado quando qualquer preflight ou validacao falhar.
+
+O modelo central exige `mcpPolicy: none` explicitamente para todos os adapters.
+O validador rejeita a omissao da politica e qualquer servidor MCP configurado.
 
 Reviewer, Product Discovery e os agentes editoriais exigem raciocinio mais
 profundo por lidarem com ambiguidade, risco, linguagem e recomendacao. O
@@ -96,6 +104,7 @@ Cada subagente consome seu proprio contexto e tokens. Nesta fase:
 `npm run validate:agents` valida:
 
 - conjunto exato de agentes autorizados;
+- nove papeis, cinco adapters e separacoes de capabilities validas;
 - campos obrigatorios;
 - nome, modelo e esforco esperados;
 - sandbox exclusivamente `read-only`;

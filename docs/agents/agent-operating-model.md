@@ -4,6 +4,11 @@
 
 Definir papeis simples e complementares para trabalhar com spec-driven development e harness engineering sem criar autonomia excessiva.
 
+O contrato estrutural dos nove papeis, suas capabilities e adapters fica em
+`config/agent-capabilities.json`, conforme
+`docs/specs/agent-capability-model.md`. Este documento continua definindo o
+comportamento de cada papel.
+
 ## Agentes propostos
 
 ### 1. Spec Agent
@@ -272,6 +277,10 @@ A ordem detalhada de quando cada agente deve ser usado esta descrita em `docs/ag
 
 - uma tarefa relevante nao deve passar por todos os agentes ao mesmo tempo
 - cada agente existe para reduzir ambiguidade de um trecho especifico do fluxo
+- quem produz um artefato nao pode verificar ou revisar o mesmo artefato na
+  mesma identidade ou thread
+- enquanto nao houver registro estruturado por execucao, o PR ou preflight deve
+  identificar manualmente os atores de producao e verificacao
 - o harness define quais agentes podem agir em cada fase
 - cada agente deve executar o preflight definido em `docs/harness/agent-preflight-checklist.md` antes de agir
 - a aplicacao por papel esta detalhada em `docs/agents/agent-preflight-application.md`

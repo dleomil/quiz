@@ -3,15 +3,27 @@
   "guidelines": [
     {
       "id": "agent-preflight",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "policy",
       "owner": "architecture",
       "sourcePath": "docs/harness/agent-preflight-checklist.md",
-      "sha256": "c8c3dca05d21ef510fa6f6d8901cd0ad9fbca882504c8bd531568597fefbe675",
+      "sha256": "420305eeed67e430fb57c3dba1ea1132301616208716b9a62b4cd974bdc26328",
       "appliesTo": ["agent-workflows", "repository-mutations"],
       "enforcement": "manual-blocking",
       "evidence": ["preflight checklist completed before mutation"]
+    },
+    {
+      "id": "agent-capability-model",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/agent-capability-model.md",
+      "sha256": "67d7f9f90f3a3b193b1c9d03e9345acec7a5136ed90f7be1d9a566faafc9fa45",
+      "appliesTo": ["agent-configuration", "agent-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": ["agent capability validation", "distinct actor record"]
     },
     {
       "id": "branching-and-delivery",
@@ -55,12 +67,12 @@
     },
     {
       "id": "executable-codex-agents",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "standard",
       "owner": "architecture",
       "sourcePath": "docs/specs/executable-codex-agents.md",
-      "sha256": "ec64d92461162c2920e0783ece42c9074dd9e0b1044e835bacadc6e5a2cf6d02",
+      "sha256": "13d44cccb57d27810e02090757b375657243274a3b6872e9a338db6154096474",
       "appliesTo": ["agent-configuration", "agent-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["agent configuration validation"]
