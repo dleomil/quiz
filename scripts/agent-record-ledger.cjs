@@ -133,10 +133,6 @@ function assertExternalDirectory(
 }
 
 function readRegularFile(filePath, label) {
-  const stat = fs.lstatSync(filePath);
-  if (stat.isSymbolicLink()) throw new Error(`${label} nao pode ser symlink`);
-  if (!stat.isFile()) throw new Error(`${label} deve ser arquivo regular`);
-  if (stat.size > MAX_INPUT_BYTES) throw new Error(`${label} excede limite`);
   let descriptor;
   try {
     descriptor = fs.openSync(
@@ -147,7 +143,10 @@ function readRegularFile(filePath, label) {
     if (!opened.isFile()) throw new Error(`${label} deve ser arquivo regular`);
     if (opened.size > MAX_INPUT_BYTES)
       throw new Error(`${label} excede limite`);
-    return fs.readFileSync(descriptor, 'utf8');
+    const content = fs.readFileSync(descriptor);
+    if (content.length > MAX_INPUT_BYTES)
+      throw new Error(`${label} excede limite`);
+    return content.toString('utf8');
   } finally {
     if (descriptor !== undefined) fs.closeSync(descriptor);
   }
@@ -267,7 +266,6 @@ function assertNewExternalFile(outputPath, ledgerDirectory) {
     throw new Error('arquivo de saida obrigatorio');
   }
   const absolute = path.resolve(outputPath);
-  if (fs.existsSync(absolute)) throw new Error('arquivo de saida ja existe');
   const parent = path.dirname(absolute);
   const parentStat = fs.lstatSync(parent);
   if (parentStat.isSymbolicLink())
@@ -284,7 +282,7 @@ function assertNewExternalFile(outputPath, ledgerDirectory) {
   ) {
     throw new Error('arquivo de saida nao pode ficar no ledger-dir');
   }
-  return absolute;
+  return path.join(realParent, path.basename(absolute));
 }
 
 function writeNewFile(filePath, content) {
@@ -309,6 +307,9 @@ function writeNewFile(filePath, content) {
       !fs.lstatSync(filePath).isSymbolicLink()
     ) {
       fs.unlinkSync(filePath);
+    }
+    if (error.code === 'EEXIST') {
+      throw new Error('arquivo de saida ja existe', { cause: error });
     }
     throw error;
   } finally {

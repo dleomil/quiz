@@ -236,11 +236,8 @@ assert.equal(AUDIT_SCHEMA, 'agent-execution-audit-report-v1');
     syncBundle(second.ledger, firstExport.bundle);
 
     const secondBundle = path.join(second.root, 'bundle.json');
-    exportBundle(second.ledger, secondBundle);
-    assert.equal(
-      fs.readFileSync(bundleOne, 'utf8'),
-      fs.readFileSync(secondBundle, 'utf8'),
-    );
+    const secondExport = exportBundle(second.ledger, secondBundle);
+    assert.equal(serialize(firstExport.bundle), serialize(secondExport.bundle));
 
     const divergentBundle = clone(firstExport.bundle);
     divergentBundle.recordSet.records[0].outcome.summary = 'changed';
@@ -254,6 +251,44 @@ assert.equal(AUDIT_SCHEMA, 'agent-execution-audit-report-v1');
       () => exportBundle(first.ledger, path.join(first.ledger, 'bundle.json')),
       /ledger-dir/,
     );
+
+    const safeParent = path.join(first.root, 'safe-parent');
+    const redirectedParent = path.join(first.root, 'redirected-parent');
+    const aliasParent = path.join(first.root, 'alias-parent');
+    fs.mkdirSync(safeParent);
+    fs.mkdirSync(redirectedParent);
+    fs.mkdirSync(path.join(safeParent, 'sub'));
+    fs.mkdirSync(path.join(redirectedParent, 'sub'));
+    fs.symlinkSync(safeParent, aliasParent);
+    const aliasedOutput = path.join(aliasParent, 'sub', 'aliased-bundle.json');
+    const canonicalOutput = path.join(
+      fs.realpathSync(path.join(safeParent, 'sub')),
+      'aliased-bundle.json',
+    );
+    const redirectedOutput = path.join(
+      redirectedParent,
+      'sub',
+      'aliased-bundle.json',
+    );
+    const open = fs.openSync;
+    let redirected = false;
+    fs.openSync = (filePath, ...args) => {
+      if (!redirected && filePath === canonicalOutput) {
+        fs.unlinkSync(aliasParent);
+        fs.symlinkSync(redirectedParent, aliasParent);
+        redirected = true;
+      }
+      return open(filePath, ...args);
+    };
+    try {
+      exportBundle(first.ledger, aliasedOutput);
+    } finally {
+      fs.openSync = open;
+    }
+    assert.equal(redirected, true);
+    assert.equal(fs.existsSync(canonicalOutput), true);
+    assert.equal(fs.existsSync(redirectedOutput), false);
+
     const failedOutput = path.join(first.root, 'failed-output.json');
     const write = fs.writeFileSync;
     fs.writeFileSync = () => {

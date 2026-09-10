@@ -78,8 +78,10 @@ concorrente falham fechados e exigem verificacao humana antes de qualquer
 limpeza.
 
 Arquivos de entrada e saida sao limitados a 16 MiB. O utilitario nao acessa
-rede, nao segue symlinks e nao escreve dentro do repositorio. Erros da CLI nao
-reproduzem o conteudo recebido nem caminhos absolutos.
+rede, rejeita symlinks como arquivo de entrada, ledger ou pai imediato da
+saida, e canonicaliza os ancestrais do destino antes de escrever. Ele nao
+escreve dentro do repositorio. Erros da CLI nao reproduzem o conteudo recebido
+nem caminhos absolutos.
 
 A cadeia detecta alteracao interna enquanto a cabeca esperada for conhecida,
 mas nao autentica o autor e nao prova sozinha que a ultima revisao nao foi
