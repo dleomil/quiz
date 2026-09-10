@@ -81,6 +81,16 @@ const sameActor = clone();
 sameActor.records[1].actor.id = sameActor.records[0].actor.id;
 expectError(sameActor, 'ator distinto');
 
+const sameActorWithWhitespace = clone();
+sameActorWithWhitespace.records[1].actor.id = `${sameActorWithWhitespace.records[0].actor.id} `;
+expectError(sameActorWithWhitespace, 'identificador canonico');
+expectError(sameActorWithWhitespace, 'ator distinto');
+
+const sameActorWithDifferentCase = clone();
+sameActorWithDifferentCase.records[1].actor.id =
+  sameActorWithDifferentCase.records[0].actor.id.toUpperCase();
+expectError(sameActorWithDifferentCase, 'ator distinto');
+
 const artifactMismatch = clone();
 artifactMismatch.records[1].artifact.version = '2.0.0';
 expectError(artifactMismatch, 'diverge do artefato ou versao');
@@ -181,12 +191,25 @@ invalidConsultedAt.records[researchIndex].research.sources[0].consultedAt =
   '2026-02-30';
 expectError(invalidConsultedAt, 'consultedAt invalido');
 
+const impossibleDateTime = clone();
+impossibleDateTime.records[0].recordedAt = '2026-02-30T20:00:00-03:00';
+expectError(impossibleDateTime, 'recordedAt invalido');
+
+const impossibleHour = clone();
+impossibleHour.records[0].recordedAt = '2026-09-09T24:00:00-03:00';
+expectError(impossibleHour, 'recordedAt invalido');
+
+const invalidSourceUrl = clone();
+invalidSourceUrl.records[researchIndex].research.sources[0].url =
+  'https://not a valid url';
+expectError(invalidSourceUrl, 'url deve usar https');
+
 const tempDirectory = fs.mkdtempSync(
   path.join(os.tmpdir(), 'agent-execution-records-'),
 );
 try {
   const invalidJson = path.join(tempDirectory, 'invalid.json');
-  fs.writeFileSync(invalidJson, '{ invalid json');
+  fs.writeFileSync(invalidJson, '{ "value": "SECRET-CONTENT", }');
   const before = fs.readdirSync(tempDirectory);
   const invalidResult = spawnSync(
     process.execPath,
@@ -198,8 +221,28 @@ try {
     { encoding: 'utf8' },
   );
   assert.notEqual(invalidResult.status, 0);
-  assert.match(invalidResult.stderr, /entrada invalida/);
+  assert.match(invalidResult.stderr, /nao foi possivel ler ou interpretar/);
+  assert.doesNotMatch(invalidResult.stderr, /SECRET-CONTENT/);
+  assert.doesNotMatch(invalidResult.stdout, /SECRET-CONTENT/);
   assert.deepEqual(fs.readdirSync(tempDirectory), before);
+
+  const rejectedJson = path.join(tempDirectory, 'rejected.json');
+  const rejectedDocument = clone();
+  rejectedDocument.records[0].recordId = 'SECRET-CONTENT ';
+  fs.writeFileSync(rejectedJson, JSON.stringify(rejectedDocument));
+  const rejectedResult = spawnSync(
+    process.execPath,
+    [
+      path.join(ROOT, 'scripts', 'agent-execution-records.cjs'),
+      '--input',
+      rejectedJson,
+    ],
+    { encoding: 'utf8' },
+  );
+  assert.notEqual(rejectedResult.status, 0);
+  assert.match(rejectedResult.stderr, /entrada rejeitada/);
+  assert.doesNotMatch(rejectedResult.stderr, /SECRET-CONTENT/);
+  assert.doesNotMatch(rejectedResult.stdout, /SECRET-CONTENT/);
 
   const missingArgument = spawnSync(
     process.execPath,

@@ -34,6 +34,9 @@ const RECOMMENDATIONS = new Set([
 const CONFIDENCE = new Set(['low', 'medium', 'high']);
 const SHA256 = /^[a-f0-9]{64}$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
+const DATE_TIME =
+  /^(\d{4}-\d{2}-\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d+)?(Z|[+-](\d{2}):(\d{2}))$/;
+const IDENTIFIER = /^[A-Za-z0-9/][A-Za-z0-9._:/@-]*$/;
 
 const TOP_KEYS = new Set(['schemaVersion', 'records']);
 const RECORD_KEYS = new Set([
@@ -108,10 +111,24 @@ function requireText(value, label, errors) {
   if (!isText(value)) errors.push(`${label} deve ser texto nao vazio`);
 }
 
+function requireIdentifier(value, label, errors) {
+  if (!isText(value) || !IDENTIFIER.test(value)) {
+    errors.push(`${label} deve ser identificador canonico`);
+  }
+}
+
 function isDateTime(value) {
-  if (!isText(value) || !/^\d{4}-\d{2}-\d{2}T/.test(value)) return false;
-  const timestamp = Date.parse(value);
-  return Number.isFinite(timestamp) && /(?:Z|[+-]\d{2}:\d{2})$/.test(value);
+  if (!isText(value)) return false;
+  const match = DATE_TIME.exec(value);
+  if (!match || !isDate(match[1])) return false;
+  const [, , hour, minute, second, zone, offsetHour, offsetMinute] = match;
+  if (Number(hour) > 23 || Number(minute) > 59 || Number(second) > 59) {
+    return false;
+  }
+  if (zone !== 'Z' && (Number(offsetHour) > 23 || Number(offsetMinute) > 59)) {
+    return false;
+  }
+  return true;
 }
 
 function isDate(value) {
@@ -129,7 +146,7 @@ function validateUniqueIds(items, label, errors) {
   const ids = new Set();
   items.forEach((item, index) => {
     if (!isObject(item)) return;
-    requireText(item.id, `${label}[${index}].id`, errors);
+    requireIdentifier(item.id, `${label}[${index}].id`, errors);
     if (ids.has(item.id))
       errors.push(`${label}[${index}].id duplicado: ${item.id}`);
     ids.add(item.id);
@@ -207,7 +224,19 @@ function validateResearch(value, label, errors) {
     if (!isObject(source)) return;
     requireText(source.title, `${sourceLabel}.title`, errors);
     requireText(source.origin, `${sourceLabel}.origin`, errors);
-    if (!isText(source.url) || !source.url.startsWith('https://')) {
+    let sourceUrl;
+    try {
+      sourceUrl = new URL(source.url);
+    } catch {
+      sourceUrl = undefined;
+    }
+    if (
+      !sourceUrl ||
+      sourceUrl.protocol !== 'https:' ||
+      !sourceUrl.hostname ||
+      sourceUrl.username ||
+      sourceUrl.password
+    ) {
       errors.push(`${sourceLabel}.url deve usar https`);
     }
     if (!isDate(source.consultedAt))
@@ -247,7 +276,7 @@ function validateRecordShape(record, index, context, errors) {
   errors.push(...unknownKeys(record, RECORD_KEYS, label));
   if (!isObject(record)) return;
   ['recordId', 'executionId', 'workItemId', 'capabilityId'].forEach((field) =>
-    requireText(record[field], `${label}.${field}`, errors),
+    requireIdentifier(record[field], `${label}.${field}`, errors),
   );
   if (!isDateTime(record.recordedAt))
     errors.push(`${label}.recordedAt invalido`);
@@ -257,15 +286,24 @@ function validateRecordShape(record, index, context, errors) {
 
   errors.push(...unknownKeys(record.actor, ACTOR_KEYS, `${label}.actor`));
   if (isObject(record.actor)) {
-    requireText(record.actor.id, `${label}.actor.id`, errors);
-    requireText(record.actor.roleId, `${label}.actor.roleId`, errors);
+    requireIdentifier(record.actor.id, `${label}.actor.id`, errors);
+    requireIdentifier(record.actor.roleId, `${label}.actor.roleId`, errors);
   }
   errors.push(
     ...unknownKeys(record.artifact, ARTIFACT_KEYS, `${label}.artifact`),
   );
   if (isObject(record.artifact)) {
-    ['type', 'id', 'version', 'reference'].forEach((field) =>
-      requireText(record.artifact[field], `${label}.artifact.${field}`, errors),
+    ['type', 'id', 'version'].forEach((field) =>
+      requireIdentifier(
+        record.artifact[field],
+        `${label}.artifact.${field}`,
+        errors,
+      ),
+    );
+    requireText(
+      record.artifact.reference,
+      `${label}.artifact.reference`,
+      errors,
     );
   }
   errors.push(...unknownKeys(record.outcome, OUTCOME_KEYS, `${label}.outcome`));
@@ -332,6 +370,12 @@ function validateRecordShape(record, index, context, errors) {
   const isChecker = ['review', 'verify'].includes(capability.operation);
   if (isChecker && !isText(record.subjectExecutionId)) {
     errors.push(`${label}.subjectExecutionId obrigatorio para checker`);
+  } else if (isChecker) {
+    requireIdentifier(
+      record.subjectExecutionId,
+      `${label}.subjectExecutionId`,
+      errors,
+    );
   }
   if (!isChecker && record.subjectExecutionId !== undefined) {
     errors.push(
@@ -424,7 +468,12 @@ function validateRecordSet(document, options = {}) {
         `${label} diverge do artefato ou versao da execucao produtora`,
       );
     }
-    if (record.actor?.id === subject.actor?.id) {
+    if (
+      isText(record.actor?.id) &&
+      isText(subject.actor?.id) &&
+      record.actor.id.trim().toLowerCase() ===
+        subject.actor.id.trim().toLowerCase()
+    ) {
       errors.push(`${label} deve usar ator distinto da execucao produtora`);
     }
     if (record.workItemId !== subject.workItemId) {
@@ -449,16 +498,18 @@ function run() {
   let document;
   try {
     document = JSON.parse(fs.readFileSync(path.resolve(input), 'utf8'));
-  } catch (error) {
+  } catch {
     process.stderr.write(
-      `agent-execution-records: entrada invalida: ${error.message}\n`,
+      'agent-execution-records: nao foi possivel ler ou interpretar a entrada\n',
     );
     process.exitCode = 1;
     return;
   }
   const errors = validateRecordSet(document);
   if (errors.length) {
-    errors.forEach((error) => process.stderr.write(`- ${error}\n`));
+    process.stderr.write(
+      `agent-execution-records: entrada rejeitada (${errors.length} erros)\n`,
+    );
     process.exitCode = 1;
     return;
   }

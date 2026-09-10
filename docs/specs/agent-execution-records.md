@@ -25,6 +25,11 @@ IDs de registro e execucao sao unicos no conjunto. Datas de execucao e de
 evidencia usam RFC 3339 com fuso horario. O contrato e fechado: campos nao
 declarados sao rejeitados.
 
+Identificadores usam somente caracteres ASCII seguros e nao aceitam espaco no
+inicio, no fim ou entre componentes. A comparacao de atores tambem ignora
+diferenca entre maiusculas e minusculas. Datas impossiveis e URLs que nao sejam
+HTTPS validas sao rejeitadas.
+
 ## Producao e verificacao
 
 Registros com operacao `author` representam a execucao produtora. Registros com
@@ -76,8 +81,9 @@ npm run validate:agent-records -- --input <arquivo>
 ```
 
 O utilitario aceita caminho explicito interno ou externo, le somente o arquivo,
-nao grava dados e nao reproduz seu conteudo na saida. Registros com a capability
-externa `repository-operation` sao rejeitados.
+nao grava dados e nao reproduz seu conteudo nem detalhes do parser na saida de
+sucesso ou erro. Registros com a capability externa `repository-operation` sao
+rejeitados.
 
 ## Persistencia e seguranca
 

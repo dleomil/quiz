@@ -32,7 +32,7 @@
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-execution-records.md",
-      "sha256": "51c826176ac3a62d1a43f4bb768e63e9043ed62303c4035cc08d25ef1bb0526a",
+      "sha256": "1b45755aa8fadc94fd9277f98b7aa95cd32d8c6b10a3d5c7e2f19d6f1c8e66be",
       "appliesTo": [
         "agent-workflows",
         "editorial-workflows",
