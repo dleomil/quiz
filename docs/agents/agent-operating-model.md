@@ -279,8 +279,8 @@ A ordem detalhada de quando cada agente deve ser usado esta descrita em `docs/ag
 - cada agente existe para reduzir ambiguidade de um trecho especifico do fluxo
 - quem produz um artefato nao pode verificar ou revisar o mesmo artefato na
   mesma identidade ou thread
-- enquanto nao houver registro estruturado por execucao, o PR ou preflight deve
-  identificar manualmente os atores de producao e verificacao
+- o conjunto estruturado deve identificar as execucoes de producao e
+  verificacao, mantendo atores distintos para o mesmo artefato e versao
 - o harness define quais agentes podem agir em cada fase
 - cada agente deve executar o preflight definido em `docs/harness/agent-preflight-checklist.md` antes de agir
 - a aplicacao por papel esta detalhada em `docs/agents/agent-preflight-application.md`

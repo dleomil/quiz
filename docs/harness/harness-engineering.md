@@ -56,6 +56,8 @@ Formato esperado de saida, por exemplo:
 - PR correspondente
 - commit relacionado
 - evidencias anexadas
+- conjunto `agent-execution-record-set-v1` validado quando houver autoria,
+  avaliacao, verificacao ou pesquisa assistida
 
 ### 6. Operational preflight
 
