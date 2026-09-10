@@ -15,8 +15,9 @@ O servidor `quiz-governance` e um piloto local por STDIO. O catalogo em
 O servidor suporta MCP `2025-11-25` e `2025-06-18` e implementa `initialize`,
 `ping`, `tools/list` e `tools/call`. Quando o cliente propoe outra versao, a
 resposta oferece `2025-11-25`, a mais recente suportada, para que o cliente
-decida se pode continuar. Prompts, resources, HTTP, OAuth e metodos
-desconhecidos nao fazem parte do piloto.
+decida se pode continuar. `ping` responde inclusive antes da inicializacao;
+as ferramentas so ficam disponiveis depois do handshake. Prompts, resources,
+HTTP, OAuth e metodos desconhecidos nao fazem parte do piloto.
 
 Tres ferramentas sao expostas:
 

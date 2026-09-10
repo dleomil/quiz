@@ -201,6 +201,10 @@ withFixture(({ policyContent, root }) => {
       .code,
     -32002,
   );
+  assert.deepEqual(
+    handler({ jsonrpc: '2.0', id: 'pre-init', method: 'ping' }).result,
+    {},
+  );
   const unsupported = initialize(handler, '2099-01-01');
   assert.equal(unsupported.result.protocolVersion, '2025-11-25');
   const initialized = initialize(handler);
@@ -346,6 +350,19 @@ withFixture(({ root }) => {
       id: 1,
       method: 'initialize',
       params: { protocolVersion: '2025-11-25' },
+    }).error.code,
+    -32602,
+  );
+  assert.equal(
+    handler({
+      jsonrpc: '2.0',
+      id: 2,
+      method: 'initialize',
+      params: {
+        protocolVersion: '2025-11-25',
+        capabilities: {},
+        clientInfo: {},
+      },
     }).error.code,
     -32602,
   );

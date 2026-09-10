@@ -426,7 +426,11 @@ function createProtocolHandler(service = createService()) {
         !isPlainObject(message.params) ||
         typeof message.params.protocolVersion !== 'string' ||
         !isPlainObject(message.params.capabilities) ||
-        !isPlainObject(message.params.clientInfo)
+        !isPlainObject(message.params.clientInfo) ||
+        typeof message.params.clientInfo.name !== 'string' ||
+        !message.params.clientInfo.name.trim() ||
+        typeof message.params.clientInfo.version !== 'string' ||
+        !message.params.clientInfo.version.trim()
       ) {
         return failure(message.id, -32602, 'Invalid params');
       }
@@ -450,14 +454,14 @@ function createProtocolHandler(service = createService()) {
       });
     }
     if (isNotification) return undefined;
-    if (!initialized) {
-      return failure(message.id, -32002, 'Server not initialized');
-    }
     if (message.method === 'ping') {
       if (!hasValidEmptyParams(message.params)) {
         return failure(message.id, -32602, 'Invalid params');
       }
       return success(message.id, {});
+    }
+    if (!initialized) {
+      return failure(message.id, -32002, 'Server not initialized');
     }
     if (message.method === 'tools/list') {
       if (!hasValidListParams(message.params)) {
