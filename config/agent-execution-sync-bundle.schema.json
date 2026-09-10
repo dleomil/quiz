@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "recordSet", "sha256"],
+  "properties": {
+    "schemaVersion": { "const": "agent-execution-sync-bundle-v1" },
+    "recordSet": { "$ref": "agent-execution-record-set.schema.json" },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

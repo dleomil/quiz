@@ -27,12 +27,12 @@
     },
     {
       "id": "agent-execution-records",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-execution-records.md",
-      "sha256": "1b45755aa8fadc94fd9277f98b7aa95cd32d8c6b10a3d5c7e2f19d6f1c8e66be",
+      "sha256": "75dcbbe51fd6ec2a1bd4abb75ce9879fc7d5a7e82ed4d2e34a8b4bca1ee15c3f",
       "appliesTo": [
         "agent-workflows",
         "editorial-workflows",
@@ -41,6 +41,18 @@
       ],
       "enforcement": "automated-blocking",
       "evidence": ["validated agent execution record set"]
+    },
+    {
+      "id": "agent-record-ledger",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/local-first-agent-record-ledger.md",
+      "sha256": "e7bf06fee9816c5986c983ae83ef8eb754d85299d32249dac4ffd5de2e53257a",
+      "appliesTo": ["agent-workflows", "governance-audit", "local-sync"],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated append-only ledger", "deterministic audit report"]
     },
     {
       "id": "branching-and-delivery",

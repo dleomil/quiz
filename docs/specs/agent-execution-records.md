@@ -87,18 +87,19 @@ rejeitados.
 
 ## Persistencia e seguranca
 
-Nesta versao, somente contrato, utilitario e fixtures ficticias sao
-versionados. Registros reais devem ser validados antes de serem registrados no
-card ou PR e nao formam ainda um ledger permanente.
+Somente contrato, utilitario e fixtures ficticias sao versionados. Registros
+reais devem ser validados antes de serem registrados no card ou PR. Quando
+precisarem de persistencia local, usam o ledger externo, append-only e
+auditavel definido em `local-first-agent-record-ledger.md`.
 
 Evidencias carregam referencias, nunca texto-fonte escolar, feedback bruto,
 dado identificavel de crianca, segredo ou credencial. O schema fechado bloqueia
 campos adicionais, mas a revisao humana continua responsavel por impedir dados
 sensiveis dentro dos campos textuais permitidos.
 
-Persistencia, exportacao, auditoria e sincronizacao local-first pertencem a uma
-entrega posterior. MCP, REST, RBAC, runners e runtime do quiz ficam fora desta
-versao.
+O ledger adiciona persistencia, exportacao, auditoria e sincronizacao manual
+sem mudar este contrato. MCP, REST, RBAC, runners e runtime do quiz continuam
+fora desta versao.
 
 ## Rollback
 

@@ -102,6 +102,11 @@ somente leitura. O contrato e a ativacao opt-in estao em
 `docs/specs/read-only-governance-mcp-pilot.md`; configuracoes pessoais do Codex
 continuam ignoradas pelo Git.
 
+Registros reais de execucao podem ser persistidos fora do repositorio no
+ledger local-first append-only descrito em
+`docs/specs/local-first-agent-record-ledger.md`. Exportacao, auditoria e
+sincronizacao usam bundles manuais deterministas, sem rede ou backend.
+
 ## Regras de uso
 
 - `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.
