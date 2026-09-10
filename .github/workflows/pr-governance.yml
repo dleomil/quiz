@@ -50,7 +50,9 @@ jobs:
         run: npm run validate:agents
 
       - name: Validate agent execution record contract
-        run: npm run test:agent-records
+        run: |
+          npm run test:agent-records
+          npm run test:record-ledger
 
       - name: Validate versioned governance guidelines
         run: |
