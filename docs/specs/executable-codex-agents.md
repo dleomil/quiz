@@ -36,6 +36,11 @@ falha fechado quando qualquer preflight ou validacao falhar.
 O modelo central exige `mcpPolicy: none` explicitamente para todos os adapters.
 O validador rejeita a omissao da politica e qualquer servidor MCP configurado.
 
+O servidor local de governanca descrito em
+`read-only-governance-mcp-pilot.md` pode ser habilitado apenas pela sessao
+principal. Essa configuracao opt-in nao e herdada pelos runners isolados e nao
+autoriza adicionar MCP aos adapters deste documento.
+
 Reviewer, Product Discovery e os agentes editoriais exigem raciocinio mais
 profundo por lidarem com ambiguidade, risco, linguagem e recomendacao. O
 Verifier usa um modelo mais eficiente para leitura, execucao de checks e

@@ -57,6 +57,11 @@ jobs:
           npm run validate:guidelines
           npm run test:guidelines
 
+      - name: Validate read-only governance MCP
+        run: |
+          npm run validate:mcp-governance
+          npm run test:mcp-governance
+
       - name: Validate lint and formatting
         run: |
           npm run lint
