@@ -204,6 +204,16 @@ invalidSourceUrl.records[researchIndex].research.sources[0].url =
   'https://not a valid url';
 expectError(invalidSourceUrl, 'url deve usar https');
 
+for (const url of [
+  ' https://example.com/fixture-source',
+  'https://example.com/fixture-source ',
+  'HTTPS://example.com/fixture-source',
+]) {
+  const nonCanonicalSourceUrl = clone();
+  nonCanonicalSourceUrl.records[researchIndex].research.sources[0].url = url;
+  expectError(nonCanonicalSourceUrl, 'url deve usar https');
+}
+
 const tempDirectory = fs.mkdtempSync(
   path.join(os.tmpdir(), 'agent-execution-records-'),
 );

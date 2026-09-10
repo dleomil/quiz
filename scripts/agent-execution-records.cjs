@@ -232,6 +232,8 @@ function validateResearch(value, label, errors) {
     }
     if (
       !sourceUrl ||
+      source.url !== source.url.trim() ||
+      !source.url.startsWith('https://') ||
       sourceUrl.protocol !== 'https:' ||
       !sourceUrl.hostname ||
       sourceUrl.username ||
