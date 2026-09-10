@@ -202,7 +202,7 @@ withFixture(({ policyContent, root }) => {
     -32002,
   );
   const unsupported = initialize(handler, '2099-01-01');
-  assert.equal(unsupported.error.message, 'Unsupported protocol version');
+  assert.equal(unsupported.result.protocolVersion, '2025-11-25');
   const initialized = initialize(handler);
   assert.equal(initialized.result.serverInfo.name, 'quiz-governance');
   assert.equal(initialized.result.protocolVersion, '2025-11-25');
@@ -264,6 +264,24 @@ withFixture(({ policyContent, root }) => {
     1,
   );
   assert.equal(
+    handler({
+      jsonrpc: '2.0',
+      id: 42,
+      method: 'tools/call',
+      params: { name: 'list_guidelines', arguments: null },
+    }).error.code,
+    -32602,
+  );
+  assert.equal(
+    handler({
+      jsonrpc: '2.0',
+      id: 43,
+      method: 'tools/call',
+      params: { name: 'unknown_tool', arguments: {} },
+    }).error.code,
+    -32602,
+  );
+  assert.equal(
     handler({ jsonrpc: '2.0', id: 5, method: 'prompts/list', params: {} }).error
       .code,
     -32601,
@@ -279,6 +297,58 @@ withFixture(({ policyContent, root }) => {
   });
   assert.equal(badCall.result.isError, true);
   assert.equal(badCall.result.content[0].text, 'invalid tool arguments');
+});
+
+withFixture(({ root }) => {
+  const handler = createProtocolHandler(createService({ rootDirectory: root }));
+  assert.equal(
+    handler({
+      jsonrpc: '2.0',
+      method: 'initialize',
+      params: {
+        protocolVersion: '2025-11-25',
+        capabilities: {},
+        clientInfo: { name: 'notification', version: '1.0.0' },
+      },
+    }),
+    undefined,
+  );
+  assert.equal(
+    handler({ jsonrpc: '2.0', id: 9, method: 'tools/list', params: {} }).error
+      .code,
+    -32002,
+  );
+  assert.equal(
+    handler({
+      jsonrpc: '2.0',
+      id: { invalid: true },
+      method: 'initialize',
+      params: {
+        protocolVersion: '2025-11-25',
+        capabilities: {},
+        clientInfo: { name: 'invalid-id', version: '1.0.0' },
+      },
+    }).error.code,
+    -32600,
+  );
+  assert.equal(
+    handler({
+      jsonrpc: '1.0',
+      id: { invalid: true },
+      method: 'initialize',
+      params: {},
+    }).id,
+    null,
+  );
+  assert.equal(
+    handler({
+      jsonrpc: '2.0',
+      id: 1,
+      method: 'initialize',
+      params: { protocolVersion: '2025-11-25' },
+    }).error.code,
+    -32602,
+  );
 });
 
 withFixture(({ policyPath, root }) => {
@@ -313,9 +383,37 @@ withFixture(({ root }) => {
 });
 
 withFixture(({ root }) => {
+  const wildcardPath = path.join(root, 'docs', 'specs', '*.md');
+  const wildcardContent = '# Untracked literal wildcard\n';
+  writeText(wildcardPath, wildcardContent);
+  const catalogPath = path.join(root, 'config', 'governance-guidelines.json');
+  const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+  catalog.guidelines[0].sourcePath = 'docs/specs/*.md';
+  catalog.guidelines[0].sha256 = sha256(wildcardContent);
+  writeJson(catalogPath, catalog);
+  assert.throws(
+    () => createService({ rootDirectory: root }).validate(),
+    /sourcePath nao esta versionado no Git/,
+  );
+});
+
+withFixture(({ root }) => {
   const modelPath = path.join(root, 'config', 'agent-capabilities.json');
   const model = JSON.parse(fs.readFileSync(modelPath, 'utf8'));
   model.roles[0].capabilities = ['missing-capability'];
+  writeJson(modelPath, model);
+  assert.throws(
+    () => createService({ rootDirectory: root }).validate(),
+    /agent capability model is invalid/,
+  );
+});
+
+withFixture(({ root }) => {
+  const wildcardPath = path.join(root, 'docs', 'agents', '*.md');
+  writeText(wildcardPath, '# Untracked literal wildcard\n');
+  const modelPath = path.join(root, 'config', 'agent-capabilities.json');
+  const model = JSON.parse(fs.readFileSync(modelPath, 'utf8'));
+  model.roles[0].contractPaths = ['docs/agents/*.md'];
   writeJson(modelPath, model);
   assert.throws(
     () => createService({ rootDirectory: root }).validate(),

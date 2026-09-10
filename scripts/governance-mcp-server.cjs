@@ -11,6 +11,7 @@ const SERVER_NAME = 'quiz-governance';
 const SERVER_VERSION = '1.0.0';
 const MAX_MESSAGE_BYTES = 1024 * 1024;
 const SUPPORTED_PROTOCOL_VERSIONS = new Set(['2025-11-25', '2025-06-18']);
+const LATEST_PROTOCOL_VERSION = '2025-11-25';
 const CATALOG_PATH = 'config/governance-guidelines.json';
 const CAPABILITY_MODEL_PATH = 'config/agent-capabilities.json';
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -220,6 +221,13 @@ function isPlainObject(value) {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
 }
 
+function isRequestId(value) {
+  return (
+    typeof value === 'string' ||
+    (typeof value === 'number' && Number.isInteger(value))
+  );
+}
+
 function hasOnlyKeys(value, allowed) {
   return (
     isPlainObject(value) &&
@@ -272,10 +280,20 @@ function readTrustedFile(rootDirectory, relativePath, requireTracked) {
       throw new Error('trusted source is not a regular file');
     }
     if (requireTracked) {
-      execFileSync('git', ['ls-files', '--error-unmatch', '--', relativePath], {
-        cwd: rootDirectory,
-        stdio: 'ignore',
-      });
+      execFileSync(
+        'git',
+        [
+          '--literal-pathspecs',
+          'ls-files',
+          '--error-unmatch',
+          '--',
+          relativePath,
+        ],
+        {
+          cwd: rootDirectory,
+          stdio: 'ignore',
+        },
+      );
     }
     return fs.readFileSync(descriptor, 'utf8');
   } finally {
@@ -386,9 +404,14 @@ function createProtocolHandler(service = createService()) {
   let initialized = false;
   return function handle(message) {
     if (!isPlainObject(message) || message.jsonrpc !== '2.0') {
-      return failure(message?.id, -32600, 'Invalid Request');
+      const readableId = isRequestId(message?.id) ? message.id : null;
+      return failure(readableId, -32600, 'Invalid Request');
     }
-    const isNotification = message.id === undefined;
+    const hasId = Object.prototype.hasOwnProperty.call(message, 'id');
+    const isNotification = !hasId;
+    if (hasId && !isRequestId(message.id)) {
+      return failure(null, -32600, 'Invalid Request');
+    }
     if (typeof message.method !== 'string') {
       return isNotification
         ? undefined
@@ -398,13 +421,20 @@ function createProtocolHandler(service = createService()) {
       return undefined;
     }
     if (message.method === 'initialize') {
-      if (isNotification || !isPlainObject(message.params)) {
+      if (isNotification) return undefined;
+      if (
+        !isPlainObject(message.params) ||
+        typeof message.params.protocolVersion !== 'string' ||
+        !isPlainObject(message.params.capabilities) ||
+        !isPlainObject(message.params.clientInfo)
+      ) {
         return failure(message.id, -32602, 'Invalid params');
       }
-      const protocolVersion = message.params.protocolVersion;
-      if (!SUPPORTED_PROTOCOL_VERSIONS.has(protocolVersion)) {
-        return failure(message.id, -32602, 'Unsupported protocol version');
-      }
+      const protocolVersion = SUPPORTED_PROTOCOL_VERSIONS.has(
+        message.params.protocolVersion,
+      )
+        ? message.params.protocolVersion
+        : LATEST_PROTOCOL_VERSION;
       try {
         service.validate();
       } catch {
@@ -436,7 +466,8 @@ function createProtocolHandler(service = createService()) {
       return success(message.id, { tools: TOOLS });
     }
     if (message.method === 'tools/call') {
-      const toolArguments = message.params?.arguments ?? {};
+      const toolArguments =
+        message.params?.arguments === undefined ? {} : message.params.arguments;
       if (
         !hasOnlyKeys(message.params, ['name', 'arguments', '_meta']) ||
         typeof message.params.name !== 'string' ||
@@ -445,6 +476,9 @@ function createProtocolHandler(service = createService()) {
           !isPlainObject(message.params._meta))
       ) {
         return failure(message.id, -32602, 'Invalid params');
+      }
+      if (!TOOLS.some((tool) => tool.name === message.params.name)) {
+        return failure(message.id, -32602, 'Unknown tool');
       }
       try {
         return success(
@@ -455,7 +489,6 @@ function createProtocolHandler(service = createService()) {
         const safeMessage = [
           'invalid tool arguments',
           'guideline id not found',
-          'tool not found',
         ].includes(error.message)
           ? error.message
           : 'governance source validation failed';

@@ -12,9 +12,11 @@ O servidor `quiz-governance` e um piloto local por STDIO. O catalogo em
 
 ## Interface `quiz-governance` v1
 
-O servidor negocia somente MCP `2025-11-25` e `2025-06-18` e implementa
-`initialize`, `ping`, `tools/list` e `tools/call`. Prompts, resources, HTTP,
-OAuth e metodos desconhecidos nao fazem parte do piloto.
+O servidor suporta MCP `2025-11-25` e `2025-06-18` e implementa `initialize`,
+`ping`, `tools/list` e `tools/call`. Quando o cliente propoe outra versao, a
+resposta oferece `2025-11-25`, a mais recente suportada, para que o cliente
+decida se pode continuar. Prompts, resources, HTTP, OAuth e metodos
+desconhecidos nao fazem parte do piloto.
 
 Tres ferramentas sao expostas:
 
@@ -40,6 +42,13 @@ O processo nao possui ferramenta de escrita, transporte de rede, credencial ou
 integracao com GitHub. `stdout` fica reservado ao protocolo; erros devolvidos
 ao cliente e escritos em `stderr` nao reproduzem conteudo, caminho absoluto ou
 detalhe interno do parser. Mensagens maiores que 1 MiB sao rejeitadas.
+
+O piloto nao adiciona rate limit com estado ou relogio ao processo STDIO. Esse
+risco residual e aceito porque o servidor e um subprocesso local de um unico
+cliente, sem rede, e pode ser encerrado pelo proprio cliente; o limite de 1 MiB
+reduz abuso por mensagem. Se o uso deixar de ser local ou passar a ser
+compartilhado, quota, timeout e isolamento de recursos tornam-se requisitos
+antes da ampliacao.
 
 Ler um documento pelo MCP nao cria uma segunda fonte normativa. A resposta e o
 conteudo do proprio `sourcePath`, validado contra a versao e o hash existentes

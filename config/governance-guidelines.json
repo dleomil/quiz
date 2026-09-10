@@ -145,7 +145,7 @@
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/read-only-governance-mcp-pilot.md",
-      "sha256": "5e53bbe7153b98f8d349f61f76f6e6e8ec07338e7f74a73828858fb1d61b20d6",
+      "sha256": "2a8725bca5d1e93c8878ed155a24a236aac79ca611c043ba5786b198d34ff264",
       "appliesTo": ["agent-workflows", "governance-consumption"],
       "enforcement": "automated-blocking",
       "evidence": ["MCP contract validation", "read-only protocol tests"]
