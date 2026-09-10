@@ -141,7 +141,13 @@ function validateContractFile(contractPath, options, label, errors) {
       try {
         execFileSync(
           'git',
-          ['ls-files', '--error-unmatch', '--', contractPath],
+          [
+            '--literal-pathspecs',
+            'ls-files',
+            '--error-unmatch',
+            '--',
+            contractPath,
+          ],
           {
             cwd: rootDirectory,
             stdio: 'ignore',

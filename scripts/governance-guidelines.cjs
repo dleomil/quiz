@@ -325,7 +325,13 @@ function validateCatalog(catalog, options = {}) {
         try {
           execFileSync(
             'git',
-            ['ls-files', '--error-unmatch', '--', guideline.sourcePath],
+            [
+              '--literal-pathspecs',
+              'ls-files',
+              '--error-unmatch',
+              '--',
+              guideline.sourcePath,
+            ],
             {
               cwd: rootDirectory,
               stdio: 'ignore',

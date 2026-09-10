@@ -96,6 +96,12 @@ deterministico estao descritos em
 `docs/harness/versioned-governance-guidelines.md`; os documentos referenciados
 continuam sendo as fontes normativas.
 
+O piloto local `quiz-governance` disponibiliza esse indice, os documentos
+validados por hash e o modelo central de capacidades por tres ferramentas MCP
+somente leitura. O contrato e a ativacao opt-in estao em
+`docs/specs/read-only-governance-mcp-pilot.md`; configuracoes pessoais do Codex
+continuam ignoradas pelo Git.
+
 ## Regras de uso
 
 - `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.

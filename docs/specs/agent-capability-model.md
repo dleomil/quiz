@@ -28,6 +28,10 @@ papel `executable` exige adapter com caminho, nome, modelo, esforco e sandbox.
 Nesta versao, todo adapter executavel deve permanecer `read-only` e declarar
 explicitamente `mcpPolicy: none`; omissao ou permissao adicional falha fechada.
 
+O piloto descrito em `docs/specs/read-only-governance-mcp-pilot.md` e uma
+ferramenta opt-in da sessao principal e nao pertence a um adapter. Ele nao muda
+capabilities, papeis, separacoes ou a politica MCP dos agentes executaveis.
+
 ## Papeis iniciais
 
 O baseline possui nove papeis:
