@@ -34,7 +34,7 @@ function questionLabel(question) {
 }
 
 function containsHtmlTag(value) {
-  return typeof value === 'string' && /<\s*\/?\s*[a-z][^>]*>/i.test(value);
+  return typeof value === 'string' && /<\/?[a-z][^>]*>/i.test(value);
 }
 
 function validateRenderableText(question, label) {

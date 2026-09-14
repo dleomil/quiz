@@ -63,10 +63,46 @@ const Store = (function () {
   }
 
   function isIsoDateTime(value) {
-    return (
-      /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?(?:Z|[+-]\d{2}:\d{2})$/.test(
+    var match =
+      /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d{1,3})?(?:Z|([+-])(\d{2}):(\d{2}))$/.exec(
         value,
-      ) && !Number.isNaN(Date.parse(value))
+      );
+    if (!match || Number.isNaN(Date.parse(value))) return false;
+
+    var year = Number(match[1]);
+    var month = Number(match[2]);
+    var day = Number(match[3]);
+    var hour = Number(match[4]);
+    var minute = Number(match[5]);
+    var second = Number(match[6]);
+    var offsetHour = match[8] === undefined ? 0 : Number(match[8]);
+    var offsetMinute = match[9] === undefined ? 0 : Number(match[9]);
+    var leapYear = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+    var daysInMonth = [
+      31,
+      leapYear ? 29 : 28,
+      31,
+      30,
+      31,
+      30,
+      31,
+      31,
+      30,
+      31,
+      30,
+      31,
+    ];
+
+    return (
+      month >= 1 &&
+      month <= 12 &&
+      day >= 1 &&
+      day <= daysInMonth[month - 1] &&
+      hour <= 23 &&
+      minute <= 59 &&
+      second <= 59 &&
+      offsetHour <= 23 &&
+      offsetMinute <= 59
     );
   }
 

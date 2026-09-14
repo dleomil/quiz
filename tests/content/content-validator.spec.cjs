@@ -125,6 +125,10 @@ function run() {
       validContentV1Question({
         question: 'Qual comparação mostra que 2 < 3?',
       }),
+      validContentV1Question({
+        id: 'mat_t2_test_002',
+        question: 'Compare as letras em A < B > C.',
+      }),
     ]),
     [],
   );

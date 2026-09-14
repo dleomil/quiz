@@ -109,10 +109,15 @@ function legacySession(index) {
     sessionId: 'invalid-date',
     startedAt: '09/14/2026 12:00',
   });
+  const impossibleDate = currentSession({
+    sessionId: 'impossible-date',
+    startedAt: '2026-02-30T12:00:00.000Z',
+  });
   const raw = JSON.stringify([
     currentSession(),
     invalidScore,
     invalidDate,
+    impossibleDate,
     legacySession(1),
     null,
     [],

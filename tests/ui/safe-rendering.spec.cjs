@@ -8,7 +8,13 @@ const repoRoot = path.resolve(__dirname, '..', '..');
 const port = 4187;
 const baseUrl = `http://127.0.0.1:${port}`;
 const timeoutMs = 15000;
-const payload = '<img src=x onerror="window.__xss=1">';
+const payload =
+  '<img src=x onerror=__xss=1>' +
+  '<script>__xss=2</script>' +
+  '<svg onload=__xss=3></svg>' +
+  '<iframe srcdoc="<script>parent.__xss=4</script>"></iframe>';
+const unsafeSelector =
+  'script,img,svg,iframe,[onerror],[onload],[onclick],[srcdoc]';
 
 function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -48,7 +54,7 @@ function historySession(topic, invalid) {
     score: invalid
       ? { correct: 0, total: 1, pct: 0 }
       : { correct: 1, total: 1, pct: 100 },
-    date: `14/09/2026 ${topic}`,
+    date: '14/09/2026 09:01',
     subject: 'portugues',
     topicId: 'unknown-safe-rendering-topic',
     topic,
@@ -62,7 +68,7 @@ function historySession(topic, invalid) {
 
 function legacySession(topic) {
   return {
-    date: `01/09/2026 ${topic}`,
+    date: '01/09/2026 10:01',
     subject: 'portugues',
     topicId: 'unknown-legacy-topic',
     topic,
@@ -124,21 +130,27 @@ async function run() {
     assert.ok(
       (await page.locator('.question-support').textContent()).includes(payload),
     );
-    assert.equal(await page.locator('#main-content img').count(), 0);
+    assert.equal(
+      await page.locator(`#main-content ${unsafeSelector}`).count(),
+      0,
+    );
     assert.equal(await page.evaluate(() => window.__xss), 0);
 
     await page.locator(`.option-btn[data-index="${wrongIndex}"]`).click();
     assert.ok(
       (await page.locator('#feedback').textContent()).includes(payload),
     );
-    assert.equal(await page.locator('#feedback img').count(), 0);
+    assert.equal(await page.locator(`#feedback ${unsafeSelector}`).count(), 0);
     assert.equal(await page.evaluate(() => window.__xss), 0);
 
     await page.locator('#next-btn').click();
     assert.ok(
       (await page.locator('.gabarito-item').textContent()).includes(payload),
     );
-    assert.equal(await page.locator('#main-content img').count(), 0);
+    assert.equal(
+      await page.locator(`#main-content ${unsafeSelector}`).count(),
+      0,
+    );
     assert.equal(await page.locator('[onclick]').count(), 0);
     assert.equal(await page.evaluate(() => window.__xss), 0);
 
@@ -156,7 +168,7 @@ async function run() {
       const parsed = new DOMParser().parseFromString(html, 'text/html');
       return {
         unsafeElements: parsed.querySelectorAll(
-          'script,img,svg,iframe,[onerror],[onload],[onclick]',
+          'script,img,svg,iframe,[onerror],[onload],[onclick],[srcdoc]',
         ).length,
         containsLiteralPayload: parsed.body.textContent.includes(unsafe),
       };
@@ -191,7 +203,10 @@ async function run() {
     assert.ok(
       (await page.locator('#session-list').textContent()).includes(payload),
     );
-    assert.equal(await page.locator('#session-list img').count(), 0);
+    assert.equal(
+      await page.locator(`#session-list ${unsafeSelector}`).count(),
+      0,
+    );
     assert.equal(await page.evaluate(() => window.__xss), 0);
     assert.deepEqual(
       await page.evaluate(() =>
