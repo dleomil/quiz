@@ -69,5 +69,11 @@ jobs:
           npm run lint
           npm run format:check
 
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Validate safe frontend rendering
+        run: npm run test:frontend-security
+
       - name: Validate pedagogical regression corpus
         run: npm run test:pedagogical-regression

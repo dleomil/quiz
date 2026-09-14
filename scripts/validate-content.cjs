@@ -33,6 +33,44 @@ function questionLabel(question) {
   return isNonEmptyString(question && question.id) ? question.id : '<sem-id>';
 }
 
+function containsHtmlTag(value) {
+  return typeof value === 'string' && /<\/?[a-z][^>]*>/i.test(value);
+}
+
+function validateRenderableText(question, label) {
+  const errors = [];
+  const fields = [
+    ['question', question.question],
+    ['questionPt', question.questionPt],
+    ['text', question.text],
+    ['explanation', question.explanation],
+  ];
+  if (Array.isArray(question.options)) {
+    question.options.forEach(function (option, index) {
+      fields.push(['options[' + index + ']', option]);
+    });
+  }
+  if (
+    question.wrongExplanations &&
+    typeof question.wrongExplanations === 'object'
+  ) {
+    Object.entries(question.wrongExplanations).forEach(function ([
+      index,
+      value,
+    ]) {
+      fields.push(['wrongExplanations[' + index + ']', value]);
+    });
+  }
+  fields.forEach(function ([field, value]) {
+    if (containsHtmlTag(value)) {
+      errors.push(
+        '[' + label + '] ' + field + ' nao pode conter marcacao HTML',
+      );
+    }
+  });
+  return errors;
+}
+
 function validateQuestion(question, sourceName) {
   const errors = [];
   const label = questionLabel(question);
@@ -40,6 +78,8 @@ function validateQuestion(question, sourceName) {
   if (!question || typeof question !== 'object') {
     return ['[' + sourceName + '] questao invalida: objeto ausente'];
   }
+
+  errors.push.apply(errors, validateRenderableText(question, label));
 
   ['id', 'subject', 'topic', 'question', 'explanation'].forEach(
     function (field) {
