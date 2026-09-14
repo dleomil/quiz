@@ -1,5 +1,5 @@
 /* exported HistoryView */
-/* global Store, QuestionsDB, getGrade */
+/* global Store, QuestionsDB, escapeHTML, getGrade */
 const HistoryView = (function () {
   function normalize(str) {
     return (str || '')
@@ -107,23 +107,35 @@ const HistoryView = (function () {
       .map(function (contentSet) {
         return (
           '<option value="' +
-          contentSet.contentSetId +
+          escapeHTML(contentSet.contentSetId) +
           '"' +
           (contentSet.contentSetId === selectedContentSet ? ' selected' : '') +
           '>' +
-          contentSet.displayName +
+          escapeHTML(contentSet.displayName) +
           '</option>'
         );
       })
       .join('');
     var subjectsHTML = opts.subjects
       .map(function (e) {
-        return '<option value="' + e[0] + '">' + e[1] + '</option>';
+        return (
+          '<option value="' +
+          escapeHTML(e[0]) +
+          '">' +
+          escapeHTML(e[1]) +
+          '</option>'
+        );
       })
       .join('');
     var topicsHTML = opts.topics
       .map(function (e) {
-        return '<option value="' + e[0] + '">' + e[1] + '</option>';
+        return (
+          '<option value="' +
+          escapeHTML(e[0]) +
+          '">' +
+          escapeHTML(e[1]) +
+          '</option>'
+        );
       })
       .join('');
 
@@ -320,21 +332,21 @@ const HistoryView = (function () {
           return (
             '<div class="session-card" role="article">' +
             '<div class="session-badge ' +
-            g.cls +
+            escapeHTML(g.cls) +
             '">' +
             item.pct +
             '%</div>' +
             '<div class="session-info">' +
             '<div class="session-period">' +
-            extractContentSetLabel(item) +
+            escapeHTML(extractContentSetLabel(item)) +
             '</div>' +
             '<div class="session-date">' +
-            (item.date || '') +
+            escapeHTML(item.date || '') +
             ' · ' +
-            extractSubjectLabel(item) +
+            escapeHTML(extractSubjectLabel(item)) +
             '</div>' +
             '<div class="session-topic">' +
-            extractTopicLabel(item) +
+            escapeHTML(extractTopicLabel(item)) +
             '</div>' +
             '<div class="session-meta">' +
             item.correct +
@@ -349,10 +361,10 @@ const HistoryView = (function () {
             '</div>' +
             '<div class="session-side">' +
             '<div class="session-stars">' +
-            g.stars +
+            escapeHTML(g.stars) +
             '</div>' +
             '<div class="session-level">' +
-            g.label +
+            escapeHTML(g.label) +
             '</div>' +
             '</div>' +
             '</div>'

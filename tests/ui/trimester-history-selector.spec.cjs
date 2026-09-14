@@ -27,22 +27,35 @@ async function waitForServer(url) {
 }
 
 function session(contentSetId, date, pct) {
+  const correct = pct / 10;
+  const questionIds = Array.from(
+    { length: 10 },
+    (_, index) => `question-${contentSetId}-${index}`,
+  );
   return {
     schemaVersion: 'session-v2',
     sessionId: `session-${contentSetId}`,
+    startedAt: '2026-08-12T12:00:00.000Z',
+    finishedAt: '2026-08-12T12:02:00.000Z',
     contentSetId,
     contentVersion: 1,
     date,
     subject: 'portugues',
     topicId: 'all',
     topic: 'Português',
-    correct: pct / 10,
+    correct,
     total: 10,
     pct,
     durationSec: 120,
     timedOutCount: 0,
-    questionIds: [],
-    answers: [],
+    questionIds,
+    answers: questionIds.map((questionId, index) => ({
+      questionId,
+      selectedIndex: 0,
+      isCorrect: index < correct,
+      isTimeout: false,
+    })),
+    score: { correct, total: 10, pct },
   };
 }
 

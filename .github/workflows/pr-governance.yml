@@ -69,5 +69,8 @@ jobs:
           npm run lint
           npm run format:check
 
+      - name: Validate safe frontend rendering
+        run: npm run test:frontend-security
+
       - name: Validate pedagogical regression corpus
         run: npm run test:pedagogical-regression

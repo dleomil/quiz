@@ -1,5 +1,5 @@
 /* exported HomeView */
-/* global App, Store, QuestionsDB */
+/* global App, Store, QuestionsDB, escapeHTML */
 const HomeView = (function () {
   function render(el) {
     const subjects = QuestionsDB.getSubjects();
@@ -17,10 +17,10 @@ const HomeView = (function () {
                   return `<button
                     type="button"
                     class="content-set-option${isSelected ? ' selected' : ''}"
-                    data-content-set="${contentSet.contentSetId}"
+                    data-content-set="${escapeHTML(contentSet.contentSetId)}"
                     aria-pressed="${isSelected}"
                   >
-                    <span class="content-set-option-name">${contentSet.displayName}</span>
+                    <span class="content-set-option-name">${escapeHTML(contentSet.displayName)}</span>
                     <span class="content-set-option-state">${isSelected ? '✓ Estudando agora' : 'Escolher este trimestre'}</span>
                   </button>`;
                 })
@@ -46,16 +46,16 @@ const HomeView = (function () {
               const m = QuestionsDB.getSubjectInfo(s, selectedContentSet);
               if (m.available) {
                 return `
-                <div class="subject-card" data-subject="${s}">
-                  <div class="subject-icon">${m.icon}</div>
-                  <div class="subject-name">${m.name}</div>
+                <div class="subject-card" data-subject="${escapeHTML(s)}">
+                  <div class="subject-icon">${escapeHTML(m.icon)}</div>
+                  <div class="subject-name">${escapeHTML(m.name)}</div>
                   <div class="subject-count">${m.count} questões</div>
                 </div>`;
               } else {
                 return `
                 <div class="subject-card disabled">
-                  <div class="subject-icon">${m.icon}</div>
-                  <div class="subject-name">${m.name}</div>
+                  <div class="subject-icon">${escapeHTML(m.icon)}</div>
+                  <div class="subject-name">${escapeHTML(m.name)}</div>
                   <div class="subject-soon">Em breve</div>
                 </div>`;
               }
