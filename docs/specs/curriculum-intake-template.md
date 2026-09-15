@@ -81,6 +81,8 @@ aberto.
 - [ ] IDs sao estaveis, unicos e seguem o padrao do produto;
 - [ ] cada tema possui objetivo observavel e meta 20;
 - [ ] totais por materia e geral foram recalculados;
+- [ ] cada tema completo de 20 questoes distribui cinco respostas corretas em
+      cada posicao;
 - [ ] nao ha referencias de pagina ou transcricoes protegidas;
 - [ ] restricoes de idioma e adequacao infantil estao registradas;
 - [ ] lacunas e ambiguidades bloqueantes foram resolvidas;

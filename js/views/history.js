@@ -102,7 +102,7 @@ const HistoryView = (function () {
     }
 
     var opts = buildFilterOptions(history);
-    var contentSets = QuestionsDB.getContentSets();
+    var contentSets = QuestionsDB.getAllContentSets();
     var contentSetsHTML = contentSets
       .map(function (contentSet) {
         return (
