@@ -31,7 +31,7 @@ async function openHistoryTopics(page) {
   await page.goto(baseUrl, { waitUntil: 'networkidle' });
   assert.strictEqual(
     await page.evaluate(() => Store.get().selectedContentSet),
-    '2026-t2-v1',
+    '2026-t2-v2',
   );
   await page.locator('.subject-card[data-subject="historia"]').click();
 }
@@ -132,12 +132,12 @@ async function run() {
     assert.strictEqual(await start.isEnabled(), true);
     await start.click();
     const minimumSnapshot = await quizSnapshot(page);
-    assert.strictEqual(minimumSnapshot.contentSetId, '2026-t2-v1');
+    assert.strictEqual(minimumSnapshot.contentSetId, '2026-t2-v2');
     assert.strictEqual(minimumSnapshot.selectedTopic, 'all');
     assert.strictEqual(minimumSnapshot.count, 2);
     assert.strictEqual(minimumSnapshot.uniqueIds, 2);
     assert.deepStrictEqual(minimumSnapshot.subjects, ['historia']);
-    assert.deepStrictEqual(minimumSnapshot.contentSets, ['2026-t2-v1']);
+    assert.deepStrictEqual(minimumSnapshot.contentSets, ['2026-t2-v2']);
     assert.strictEqual(minimumSnapshot.intro, '2 questões');
 
     await openHistoryTopics(page);
@@ -148,7 +148,7 @@ async function run() {
     assert.strictEqual(allSnapshot.count, 80);
     assert.strictEqual(allSnapshot.uniqueIds, 80);
     assert.deepStrictEqual(allSnapshot.subjects, ['historia']);
-    assert.deepStrictEqual(allSnapshot.contentSets, ['2026-t2-v1']);
+    assert.deepStrictEqual(allSnapshot.contentSets, ['2026-t2-v2']);
     assert.strictEqual(allSnapshot.topics.length, 4);
     assert.strictEqual(allSnapshot.intro, '80 questões');
 

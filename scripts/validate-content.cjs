@@ -355,6 +355,77 @@ function validateCoverageManifest(sources, manifest, contentSets) {
   return errors;
 }
 
+function validateAnswerDistribution(sources, contentSets) {
+  const errors = [];
+  const policies = new Set(['balanced-five-v1', 'grandfathered']);
+  const byContentSet = new Map();
+
+  Object.values(sources).forEach(function (source) {
+    if (!source || !Array.isArray(source.questions)) return;
+    source.questions.forEach(function (question) {
+      if (!question || !question.contentSetId) return;
+      const group = byContentSet.get(question.contentSetId) || new Map();
+      const key = question.subject + ':' + question.topic;
+      const entries = group.get(key) || [];
+      entries.push(question);
+      group.set(key, entries);
+      byContentSet.set(question.contentSetId, group);
+    });
+  });
+
+  contentSets.forEach(function (contentSet) {
+    if (contentSet.term === 'legacy') return;
+    const policy = contentSet.answerDistributionPolicy;
+    if (!policies.has(policy)) {
+      errors.push(
+        '[distribution:' +
+          contentSet.contentSetId +
+          '] answerDistributionPolicy ausente ou invalida',
+      );
+      return;
+    }
+    if (policy === 'grandfathered' || contentSet.status === 'retired') return;
+
+    const topics = byContentSet.get(contentSet.contentSetId) || new Map();
+    topics.forEach(function (questions, key) {
+      if (questions.length !== 20) return;
+      const counts = [0, 0, 0, 0];
+      questions.forEach(function (question) {
+        if (
+          Number.isInteger(question.correctIndex) &&
+          question.correctIndex >= 0 &&
+          question.correctIndex < 4
+        ) {
+          counts[question.correctIndex] += 1;
+        }
+      });
+      if (
+        counts.some(function (count) {
+          return count !== 5;
+        })
+      ) {
+        errors.push(
+          '[distribution:' +
+            contentSet.contentSetId +
+            ':' +
+            key +
+            '] correctIndex deve distribuir 5/5/5/5; atual=' +
+            counts.join('/'),
+        );
+      }
+    });
+
+    if (contentSet.status === 'published' && topics.size === 0) {
+      errors.push(
+        '[distribution:' +
+          contentSet.contentSetId +
+          '] acervo publicado sem questoes avaliaveis',
+      );
+    }
+  });
+  return errors;
+}
+
 function loadContentSources(rootDir) {
   const context = vm.createContext({ window: {} });
   const dataDirectory = path.join(rootDir, 'js', 'data', 'subjects');
@@ -364,6 +435,16 @@ function loadContentSources(rootDir) {
     vm.runInContext(fs.readFileSync(sourcePath, 'utf8'), context, {
       filename: sourcePath,
     });
+  });
+
+  const remediationPath = path.join(
+    rootDir,
+    'js',
+    'data',
+    'content-set-t2-v2.js',
+  );
+  vm.runInContext(fs.readFileSync(remediationPath, 'utf8'), context, {
+    filename: remediationPath,
   });
 
   return context.window.QuestionsDataSources || {};
@@ -388,12 +469,14 @@ function loadCoverageManifest(rootDir) {
 
 function validateRepositoryContent(rootDir) {
   const sources = loadContentSources(rootDir);
+  const contentSets = loadContentCatalog(rootDir);
   return validateContentSources(sources).concat(
     validateCoverageManifest(
       sources,
       loadCoverageManifest(rootDir),
-      loadContentCatalog(rootDir),
+      contentSets,
     ),
+    validateAnswerDistribution(sources, contentSets),
   );
 }
 
@@ -413,6 +496,7 @@ module.exports = {
   loadCoverageManifest,
   validateContentSources,
   validateCoverageManifest,
+  validateAnswerDistribution,
   validateQuestion,
   validateRepositoryContent,
 };

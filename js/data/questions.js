@@ -117,7 +117,8 @@ const QuestionsDB = (function () {
         topic && topic !== 'all' ? topic : null,
         contentSetId,
       ),
-    getContentSets: () => ContentCatalog.getPublished(),
+    getContentSets: () => ContentCatalog.getQuizSelectable(),
+    getAllContentSets: () => ContentCatalog.getAll(),
     getContentSet: (contentSetId) => ContentCatalog.getById(contentSetId),
     getDefaultContentSet: () => ContentCatalog.getDefault(),
     getRandom: (count, topic, subject, contentSetId) => {

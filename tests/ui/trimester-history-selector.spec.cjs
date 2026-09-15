@@ -106,8 +106,10 @@ async function run() {
     await page.locator('#nav-history').click();
     assert.strictEqual(
       await page.locator('#filter-content-set').inputValue(),
-      '2026-t2-v1',
+      '2026-t2-v2',
     );
+    assert.strictEqual(await page.locator('.session-card').count(), 0);
+    await page.locator('#filter-content-set').selectOption('2026-t2-v1');
     assert.strictEqual(await page.locator('.session-card').count(), 1);
     assert.ok(
       (await page.locator('.session-period').textContent()).includes(
@@ -119,7 +121,11 @@ async function run() {
     assert.strictEqual(await page.locator('.session-card').count(), 3);
     assert.deepStrictEqual(
       await page.locator('.session-period').allTextContents(),
-      ['2º trimestre de 2026', '1º trimestre de 2026', 'Acervo anterior'],
+      [
+        '2º trimestre de 2026 (versão anterior)',
+        '1º trimestre de 2026',
+        'Acervo anterior',
+      ],
     );
     assert.deepStrictEqual(
       await page.evaluate(() =>

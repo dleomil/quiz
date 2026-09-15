@@ -59,6 +59,7 @@ docs/
 ├── specs/
 │   ├── panel-control-functional-architecture.md
 │   ├── content-schema-v1.md
+│   ├── content-quality-audit-v1.md
 │   ├── curriculum-intake-template.md
 │   ├── curriculum-content-update-governance.md
 │   ├── third-trimester-curriculum-manifest-2026.md

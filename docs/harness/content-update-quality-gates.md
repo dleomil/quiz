@@ -6,8 +6,8 @@ Definir os controles obrigatorios para atualizar conteudo escolar sem introduzir
 
 ## Escopo ativo de manutencao
 
-- o acervo do primeiro trimestre e legado congelado e permanece disponivel
-  somente para consulta historica;
+- o acervo T1 permanece publicado e selecionavel enquanto 2026 for o ano letivo
+  corrente, mas continua congelado para correcoes e auditorias;
 - T1 nao recebe correcoes, auditorias, migracoes, novos requisitos ou cards;
 - os gates deste documento se aplicam ao segundo trimestre e aos acervos futuros;
 - nenhuma entrega ativa pode ampliar o escopo para T1 ou ser bloqueada por divida
@@ -20,6 +20,8 @@ Definir os controles obrigatorios para atualizar conteudo escolar sem introduzir
 - material recebido da escola permanece local por padrao
 - o arquivo-fonte nao deve ser commitado, publicado ou anexado a issue sem autorizacao explicita do titular
 - a rastreabilidade registra ano, trimestre, materia, tema e objetivo curricular
+- afirmacoes factuais devem corresponder ao programa curricular; quando ele nao
+  resolver a verificacao, usar fonte institucional ou primaria independente
 - pagina de apostila nao e requisito, metadado obrigatorio nem motivo isolado
   para bloquear uma curadoria
 - conteudo derivado deve respeitar direitos autorais e restricoes da escola
@@ -41,6 +43,8 @@ O lote nao pode seguir para implementacao se qualquer ponto abaixo falhar:
 - ano, trimestre, materia, tema ou objetivo curricular nao estao registrados
 - serie, materia e topico nao estao definidos
 - a questao nao possui uma unica resposta correta defensavel
+- afirmacao factual relevante nao possui referencia rastreavel ou contradiz a
+  fonte curricular ou institucional validada
 - existem alternativas vazias, duplicadas ou equivalentes no contexto da pergunta
 - `correctIndex` esta fora do intervalo de alternativas
 - explicacao da resposta correta esta ausente ou contradiz a fonte
@@ -78,6 +82,12 @@ le `config/content-coverage-manifest.json` e bloqueia tema ausente, excedente ou
 nao declarado. Todo acervo `content-v1` publicado deve possuir uma entrada no
 manifesto; acervos `draft` podem permanecer abaixo da meta durante a curadoria.
 
+Cada tema completo de 20 questoes deve distribuir `correctIndex` em cinco
+respostas por posicao. A regra se aplica a novos acervos e novas versoes; um
+acervo publicado anterior a este gate pode permanecer temporariamente em
+diagnostico ate ser corrigido em nova versao. O diagnostico nao autoriza
+reescrever uma versao publicada.
+
 ## Revisao editorial e pedagogica
 
 Cada questao deve ser verificada para:
@@ -89,11 +99,13 @@ Cada questao deve ser verificada para:
 - objetivo de aprendizagem coerente com o programa curricular
 - explicacao curta, respeitosa e orientada ao aprendizado
 
-A revisao deve ocorrer em duas passagens independentes. A primeira verifica
-corretude factual, objetivo de aprendizagem, resposta unica e explicacoes. A
-segunda verifica ortografia, naturalidade, ambiguidade e adequacao infantil. Um
-mesmo agente pode apoiar as duas passagens apenas quando outra revisao
-independente e a aprovacao humana estiverem registradas.
+A revisao deve separar duas passagens. A primeira verifica corretude factual,
+objetivo de aprendizagem, resposta unica e explicacoes. A segunda verifica
+ortografia, naturalidade, ambiguidade e adequacao infantil. Na fase atual, o
+mesmo agente pode executar ambas sequencialmente, sem que sejam descritas como
+independentes; a limitacao deve constar no relatorio e a aprovacao humana deve
+ser registrada. A exigencia de outra pessoa sera reavaliada quando a equipe
+crescer.
 
 ## Pacote pedagogico completo
 
@@ -127,6 +139,26 @@ O card do tema e a unidade padrao de fluxo. Ajustes editoriais encontrados
 antes da publicacao permanecem no checklist do tema e nao geram cards
 individuais, salvo quando houver dependencia, risco, mudanca de codigo ou
 release independente.
+
+## Auditoria integral e versionamento
+
+Uma auditoria integral identifica cada questao por ID e cobre duas passagens
+sequenciais: alinhamento curricular/verificacao factual e corretude
+pedagogica/linguistica. Na fase atual, ambas sao realizadas pelo mesmo agente e
+nao sao descritas como independentes; essa limitacao fica registrada no
+relatorio. Cada passagem registra papel, decisao, achados, severidade e
+referencias sem reproduzir texto da fonte escolar. Rascunhos podem ser parciais
+e conter achados pendentes; a auditoria final exige cobertura integral, hashes
+validos, achados resolvidos e aprovacao humana do responsavel atual. A aprovacao
+por outra pessoa sera reconsiderada quando a equipe crescer.
+
+Correcoes em acervo publicado criam novo `contentSetId`. Para o T2 de 2026,
+`2026-t2-v1` permanece intacto e aposentado para novos quizzes, e
+`2026-t2-v2` e a versao corrente apos a aprovacao humana. As sessoes anteriores
+permanecem identificadas no historico. O catalogo define explicitamente o ano
+letivo corrente; todos os trimestres publicados desse ano ficam disponiveis
+para novos quizzes. Acervos de outros anos nao aparecem na selecao de novos
+quizzes.
 
 ## Validacao automatica prevista
 

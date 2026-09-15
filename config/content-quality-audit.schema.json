@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "reviewMode",
+    "reportStatus",
+    "contentSetId",
+    "sourceSha256",
+    "reviews"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "content-quality-audit-v1" },
+    "reviewMode": { "const": "single-agent-sequential" },
+    "reportStatus": { "enum": ["draft", "final"] },
+    "contentSetId": { "const": "2026-t2-v1" },
+    "sourceSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "remediationContentSetId": { "const": "2026-t2-v2" },
+    "remediationSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "questionId",
+          "pass",
+          "actorId",
+          "actorRole",
+          "evidenceRefs",
+          "decision",
+          "findings"
+        ],
+        "properties": {
+          "questionId": { "type": "string", "minLength": 1 },
+          "pass": {
+            "enum": ["curriculum-factual", "pedagogical-linguistic"]
+          },
+          "actorId": { "type": "string", "minLength": 1 },
+          "actorRole": { "enum": ["content_curator", "pedagogical_quality"] },
+          "evidenceRefs": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "decision": { "enum": ["clear", "findings"] },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "findingId",
+                "category",
+                "severity",
+                "field",
+                "evidenceRef",
+                "resolution"
+              ],
+              "properties": {
+                "findingId": { "type": "string", "minLength": 1 },
+                "category": {
+                  "enum": [
+                    "factual-correctness",
+                    "curriculum-alignment",
+                    "single-defensible-answer",
+                    "language",
+                    "age-appropriateness",
+                    "distractor-quality",
+                    "explanation-quality",
+                    "inclusion-safety",
+                    "answer-distribution"
+                  ]
+                },
+                "severity": { "enum": ["blocking", "major", "minor"] },
+                "field": { "type": "string", "minLength": 1 },
+                "evidenceRef": { "type": "string", "minLength": 1 },
+                "resolution": {
+                  "enum": ["pending", "corrected", "dismissed"]
+                },
+                "resolutionQuestionId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "resolutionRef": { "type": "string", "minLength": 1 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "humanApproval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actorId", "decision", "approvedAt", "evidenceRef"],
+      "properties": {
+        "actorId": { "type": "string", "minLength": 1 },
+        "decision": { "const": "approved" },
+        "approvedAt": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "evidenceRef": { "type": "string", "minLength": 1 }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "reportStatus": { "const": "final" } } },
+      "then": {
+        "required": [
+          "remediationContentSetId",
+          "remediationSha256",
+          "humanApproval"
+        ]
+      }
+    }
+  ]
+}

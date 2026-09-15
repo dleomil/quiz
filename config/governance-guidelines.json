@@ -77,10 +77,26 @@
       "type": "policy",
       "owner": "content",
       "sourcePath": "docs/harness/content-update-quality-gates.md",
-      "sha256": "45484f3f045ea506b016dcd37999477cd1649327cabdd66d1bbe9171e5272b80",
+      "sha256": "dd2753a217d29c98112988a53b693b4f7de5f5c7900dfd8d86d2ce90f9919c8a",
       "appliesTo": ["content-updates", "editorial-workflows"],
       "enforcement": "manual-blocking",
       "evidence": ["pedagogical review", "linguistic review", "human approval"]
+    },
+    {
+      "id": "content-quality-audit",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "content",
+      "sourcePath": "docs/specs/content-quality-audit-v1.md",
+      "sha256": "d5471137d103eb5c52246bcbfc00376d11befc36b7af8f2ebb4bfd97a676f7db",
+      "appliesTo": [
+        "content-audits",
+        "editorial-workflows",
+        "content-releases"
+      ],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated audit report", "human approval"]
     },
     {
       "id": "editorial-agent-output",

@@ -64,6 +64,16 @@ jobs:
           npm run validate:mcp-governance
           npm run test:mcp-governance
 
+      - name: Validate content quality contracts
+        run: |
+          npm run test:content-catalog
+          npm run test:content-audit
+          npm run test:record-content-audit-batch
+          npm run test:content-set-t2-v2
+          npm run test:answer-distribution
+          npm run validate:content
+          npm run validate:content-audit -- --input docs/audits/2026-t2-v1-quality-audit.json --require-final
+
       - name: Validate lint and formatting
         run: |
           npm run lint
