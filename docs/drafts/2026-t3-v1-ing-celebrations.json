@@ -1,0 +1,571 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What is a birthday?",
+      "options": [
+        "a day that celebrates a person being born",
+        "a kind of vehicle",
+        "a place to study",
+        "a type of weather"
+      ],
+      "correctIndex": 0,
+      "explanation": "A birthday is a celebration of the day a person was born.",
+      "wrongExplanations": {
+        "1": "This option does not match the celebration context: a day that celebrates a person being born",
+        "2": "This option does not match the celebration context: a day that celebrates a person being born",
+        "3": "This option does not match the celebration context: a day that celebrates a person being born"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What do people often use on a birthday cake?",
+      "options": ["shoes", "candles", "umbrellas", "books"],
+      "correctIndex": 1,
+      "explanation": "Candles are often placed on a birthday cake.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: candles",
+        "2": "This option does not match the celebration context: candles",
+        "3": "This option does not match the celebration context: candles"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What do people sing at a birthday party?",
+      "options": [
+        "The bus song",
+        "School rules",
+        "Happy Birthday",
+        "Good morning"
+      ],
+      "correctIndex": 2,
+      "explanation": "Happy Birthday is a traditional birthday song.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: Happy Birthday",
+        "1": "This option does not match the celebration context: Happy Birthday",
+        "3": "This option does not match the celebration context: Happy Birthday"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What is a present?",
+      "options": ["a classroom", "a street", "a meal time", "a gift"],
+      "correctIndex": 3,
+      "explanation": "A present is another word for a gift.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: a gift",
+        "1": "This option does not match the celebration context: a gift",
+        "2": "This option does not match the celebration context: a gift"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What can people give at a celebration?",
+      "options": ["a card", "a traffic light", "a sidewalk", "a textbook only"],
+      "correctIndex": 0,
+      "explanation": "A card can carry a celebration message.",
+      "wrongExplanations": {
+        "1": "This option does not match the celebration context: a card",
+        "2": "This option does not match the celebration context: a card",
+        "3": "This option does not match the celebration context: a card"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What is a party?",
+      "options": [
+        "a city building",
+        "a gathering to celebrate something",
+        "a type of homework",
+        "a weather event"
+      ],
+      "correctIndex": 1,
+      "explanation": "A party is a social gathering for celebration.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: a gathering to celebrate something",
+        "2": "This option does not match the celebration context: a gathering to celebrate something",
+        "3": "This option does not match the celebration context: a gathering to celebrate something"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "80"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "Which word means a special day off or celebration?",
+      "options": ["window", "backpack", "holiday", "pencil"],
+      "correctIndex": 2,
+      "explanation": "Holiday can describe a special day or period of celebration.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: holiday",
+        "1": "This option does not match the celebration context: holiday",
+        "3": "This option does not match the celebration context: holiday"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "81"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What do people often do at a celebration?",
+      "options": [
+        "repair roads",
+        "take a math test",
+        "paint every wall",
+        "share food"
+      ],
+      "correctIndex": 3,
+      "explanation": "Sharing food is a common celebration activity.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: share food",
+        "1": "This option does not match the celebration context: share food",
+        "2": "This option does not match the celebration context: share food"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "82"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What can people do with music at a party?",
+      "options": ["dance", "sleep in class", "cross a road", "read a map"],
+      "correctIndex": 0,
+      "explanation": "People often dance to music at parties.",
+      "wrongExplanations": {
+        "1": "This option does not match the celebration context: dance",
+        "2": "This option does not match the celebration context: dance",
+        "3": "This option does not match the celebration context: dance"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "83"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "Which decoration can appear at a party?",
+      "options": ["school desks", "balloons", "bricks", "traffic signs"],
+      "correctIndex": 1,
+      "explanation": "Balloons are common party decorations.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: balloons",
+        "2": "This option does not match the celebration context: balloons",
+        "3": "This option does not match the celebration context: balloons"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "84"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What do people say to congratulate someone?",
+      "options": [
+        "Where is the bus?",
+        "Be quiet in class!",
+        "Congratulations!",
+        "Close the window!"
+      ],
+      "correctIndex": 2,
+      "explanation": "Congratulations is used to celebrate someone's achievement.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: Congratulations!",
+        "1": "This option does not match the celebration context: Congratulations!",
+        "3": "This option does not match the celebration context: Congratulations!"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "85"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What is a family celebration?",
+      "options": [
+        "a road sign",
+        "a science tool",
+        "a school subject",
+        "an event shared by family members"
+      ],
+      "correctIndex": 3,
+      "explanation": "Family celebrations bring relatives together.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: an event shared by family members",
+        "1": "This option does not match the celebration context: an event shared by family members",
+        "2": "This option does not match the celebration context: an event shared by family members"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "86"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "Which event can be a celebration at school?",
+      "options": [
+        "a school festival",
+        "a broken pencil",
+        "a traffic jam",
+        "a closed notebook"
+      ],
+      "correctIndex": 0,
+      "explanation": "A school festival can bring students together to celebrate.",
+      "wrongExplanations": {
+        "1": "This option does not match the celebration context: a school festival",
+        "2": "This option does not match the celebration context: a school festival",
+        "3": "This option does not match the celebration context: a school festival"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "87"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What can people do before a party?",
+      "options": [
+        "remove all music",
+        "decorate the room",
+        "erase the street",
+        "close every shop"
+      ],
+      "correctIndex": 1,
+      "explanation": "Decorating prepares the space for a celebration.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: decorate the room",
+        "2": "This option does not match the celebration context: decorate the room",
+        "3": "This option does not match the celebration context: decorate the room"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "88"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What can guests do when they arrive at a party?",
+      "options": [
+        "leave immediately every time",
+        "hide all decorations",
+        "say hello and join the celebration",
+        "turn off the city"
+      ],
+      "correctIndex": 2,
+      "explanation": "Guests can greet others and participate.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: say hello and join the celebration",
+        "1": "This option does not match the celebration context: say hello and join the celebration",
+        "3": "This option does not match the celebration context: say hello and join the celebration"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "89"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What does “celebrate” mean?",
+      "options": [
+        "to forget an event",
+        "to repair a bicycle",
+        "to study a map",
+        "to do something special for an event"
+      ],
+      "correctIndex": 3,
+      "explanation": "To celebrate is to mark an event with a special activity.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: to do something special for an event",
+        "1": "This option does not match the celebration context: to do something special for an event",
+        "2": "This option does not match the celebration context: to do something special for an event"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "Which item can hold a birthday gift?",
+      "options": ["a gift bag", "a street lamp", "a school bell", "a bus lane"],
+      "correctIndex": 0,
+      "explanation": "A gift bag can be used to carry a present.",
+      "wrongExplanations": {
+        "1": "This option does not match the celebration context: a gift bag",
+        "2": "This option does not match the celebration context: a gift bag",
+        "3": "This option does not match the celebration context: a gift bag"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "What can friends write in a birthday card?",
+      "options": [
+        "a weather report only",
+        "a kind message",
+        "a bus route only",
+        "a shopping list only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cards often contain kind celebration messages.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: a kind message",
+        "2": "This option does not match the celebration context: a kind message",
+        "3": "This option does not match the celebration context: a kind message"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "Why do people celebrate special days?",
+      "options": [
+        "to stop people talking",
+        "to avoid being together",
+        "to share happiness and remember an event",
+        "to make all days identical"
+      ],
+      "correctIndex": 2,
+      "explanation": "Celebrations help people share happiness and mark important events.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: to share happiness and remember an event",
+        "1": "This option does not match the celebration context: to share happiness and remember an event",
+        "3": "This option does not match the celebration context: to share happiness and remember an event"
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_celebrations_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "celebrations",
+      "topicName": "Celebrations",
+      "question": "Which sentence describes a celebration?",
+      "options": [
+        "The pencil is under the desk.",
+        "The bus is at the station.",
+        "The book is on the shelf.",
+        "We are having a party with our friends."
+      ],
+      "correctIndex": 3,
+      "explanation": "A party with friends is a celebration context.",
+      "wrongExplanations": {
+        "0": "This option does not match the celebration context: We are having a party with our friends.",
+        "1": "This option does not match the celebration context: We are having a party with our friends.",
+        "2": "This option does not match the celebration context: We are having a party with our friends."
+      },
+      "skill": "reconhecer-vocabulario-e-contextos-de-celebracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
