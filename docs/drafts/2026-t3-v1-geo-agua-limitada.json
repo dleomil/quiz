@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Por que precisamos preservar a água?",
+      "options": [
+        "porque ela é necessária para a vida",
+        "porque ela nunca acaba",
+        "porque só serve para brincar",
+        "porque não é usada pelas plantas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A água é necessária para pessoas, animais e plantas.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de porque ela é necessária para a vida.",
+        "2": "A alternativa não corresponde ao conceito de porque ela é necessária para a vida.",
+        "3": "A alternativa não corresponde ao conceito de porque ela é necessária para a vida."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "O que significa usar a água com responsabilidade?",
+      "options": [
+        "deixar torneiras abertas",
+        "evitar desperdício e poluição",
+        "usar o máximo possível",
+        "jogar resíduos nos rios"
+      ],
+      "correctIndex": 1,
+      "explanation": "Uso responsável combina economia, cuidado e prevenção da poluição.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de evitar desperdício e poluição.",
+        "2": "A alternativa não corresponde ao conceito de evitar desperdício e poluição.",
+        "3": "A alternativa não corresponde ao conceito de evitar desperdício e poluição."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual situação mostra desperdício de água?",
+      "options": [
+        "um banho curto",
+        "um balde usado com cuidado",
+        "uma torneira aberta sem necessidade",
+        "uma torneira fechada"
+      ],
+      "correctIndex": 2,
+      "explanation": "Água correndo sem finalidade é desperdício.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma torneira aberta sem necessidade.",
+        "1": "A alternativa não corresponde ao conceito de uma torneira aberta sem necessidade.",
+        "3": "A alternativa não corresponde ao conceito de uma torneira aberta sem necessidade."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Por que a água disponível para consumo precisa de cuidado?",
+      "options": [
+        "porque ela se transforma em alimento sozinha",
+        "porque não é usada por ninguém",
+        "porque toda água é sempre potável",
+        "porque sua quantidade e qualidade podem ser limitadas"
+      ],
+      "correctIndex": 3,
+      "explanation": "A disponibilidade de água limpa pode ser limitada e precisa ser protegida.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque sua quantidade e qualidade podem ser limitadas.",
+        "1": "A alternativa não corresponde ao conceito de porque sua quantidade e qualidade podem ser limitadas.",
+        "2": "A alternativa não corresponde ao conceito de porque sua quantidade e qualidade podem ser limitadas."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual atitude ajuda a economizar água em casa?",
+      "options": [
+        "fechar a torneira durante a escovação",
+        "deixar a torneira aberta",
+        "lavar a calçada por horas",
+        "encher recipientes sem necessidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fechar a torneira quando ela não é necessária evita desperdício.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de fechar a torneira durante a escovação.",
+        "2": "A alternativa não corresponde ao conceito de fechar a torneira durante a escovação.",
+        "3": "A alternativa não corresponde ao conceito de fechar a torneira durante a escovação."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "71"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "O que pode diminuir a quantidade de água disponível?",
+      "options": [
+        "o uso de um copo para escovar os dentes",
+        "o uso exagerado e o desperdício",
+        "o cuidado com os rios",
+        "o conserto de vazamentos"
+      ],
+      "correctIndex": 1,
+      "explanation": "O consumo exagerado e o desperdício reduzem a água disponível para outros usos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o uso exagerado e o desperdício.",
+        "2": "A alternativa não corresponde ao conceito de o uso exagerado e o desperdício.",
+        "3": "A alternativa não corresponde ao conceito de o uso exagerado e o desperdício."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual ação ajuda a manter a água limpa?",
+      "options": [
+        "lavar tinta no córrego",
+        "deixar plástico nas margens",
+        "não jogar lixo e óleo na água",
+        "jogar entulho no rio"
+      ],
+      "correctIndex": 2,
+      "explanation": "Evitar resíduos protege a qualidade da água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de não jogar lixo e óleo na água.",
+        "1": "A alternativa não corresponde ao conceito de não jogar lixo e óleo na água.",
+        "3": "A alternativa não corresponde ao conceito de não jogar lixo e óleo na água."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Por que a poluição é um problema para a água?",
+      "options": [
+        "porque aumenta sempre a água potável",
+        "porque transforma lixo em alimento",
+        "porque limpa rios rapidamente",
+        "porque pode prejudicar a saúde e os seres vivos"
+      ],
+      "correctIndex": 3,
+      "explanation": "A poluição pode tornar a água imprópria e prejudicar os seres vivos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque pode prejudicar a saúde e os seres vivos.",
+        "1": "A alternativa não corresponde ao conceito de porque pode prejudicar a saúde e os seres vivos.",
+        "2": "A alternativa não corresponde ao conceito de porque pode prejudicar a saúde e os seres vivos."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual exemplo mostra economia de água na cozinha?",
+      "options": [
+        "ensaboar a louça com a torneira fechada",
+        "deixar a torneira aberta todo o tempo",
+        "lavar uma colher com mangueira",
+        "deixar a pia transbordar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fechar a torneira enquanto ensaboa reduz o desperdício.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ensaboar a louça com a torneira fechada.",
+        "2": "A alternativa não corresponde ao conceito de ensaboar a louça com a torneira fechada.",
+        "3": "A alternativa não corresponde ao conceito de ensaboar a louça com a torneira fechada."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Como um vazamento pode afetar a água disponível?",
+      "options": [
+        "pode fazer a água ficar infinita",
+        "pode desperdiçar água continuamente",
+        "pode criar água potável",
+        "pode limpar a torneira"
+      ],
+      "correctIndex": 1,
+      "explanation": "Um vazamento desperdiça água enquanto não é consertado.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de pode desperdiçar água continuamente.",
+        "2": "A alternativa não corresponde ao conceito de pode desperdiçar água continuamente.",
+        "3": "A alternativa não corresponde ao conceito de pode desperdiçar água continuamente."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual atitude ajuda a preservar a água em um espaço público?",
+      "options": [
+        "deixar bebedouros vazando",
+        "lavar calçadas sem controle",
+        "usar lixeiras e avisar sobre vazamentos",
+        "jogar lixo no córrego"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cuidado coletivo reduz poluição e desperdício.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usar lixeiras e avisar sobre vazamentos.",
+        "1": "A alternativa não corresponde ao conceito de usar lixeiras e avisar sobre vazamentos.",
+        "3": "A alternativa não corresponde ao conceito de usar lixeiras e avisar sobre vazamentos."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "A água da chuva pode ser reaproveitada com cuidado para:",
+      "options": [
+        "ser bebida sem tratamento",
+        "substituir toda água potável",
+        "ser guardada em recipiente sujo",
+        "regar plantas"
+      ],
+      "correctIndex": 3,
+      "explanation": "A água da chuva pode ser usada em atividades que não exigem consumo, com orientação.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de regar plantas.",
+        "1": "A alternativa não corresponde ao conceito de regar plantas.",
+        "2": "A alternativa não corresponde ao conceito de regar plantas."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual afirmação sobre água potável está correta?",
+      "options": [
+        "ela deve estar própria para o consumo",
+        "ela pode receber qualquer lixo",
+        "ela é sempre salgada",
+        "ela não precisa ser preservada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Água potável é própria para beber e deve ser protegida.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ela deve estar própria para o consumo.",
+        "2": "A alternativa não corresponde ao conceito de ela deve estar própria para o consumo.",
+        "3": "A alternativa não corresponde ao conceito de ela deve estar própria para o consumo."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "71"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Por que não devemos desperdiçar água durante o banho?",
+      "options": [
+        "porque todo banho seca um rio",
+        "porque outras pessoas e seres vivos também precisam dela",
+        "porque o chuveiro produz lixo",
+        "porque a água não pode molhar o corpo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Economizar água ajuda a garantir disponibilidade para diferentes necessidades.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque outras pessoas e seres vivos também precisam dela.",
+        "2": "A alternativa não corresponde ao conceito de porque outras pessoas e seres vivos também precisam dela.",
+        "3": "A alternativa não corresponde ao conceito de porque outras pessoas e seres vivos também precisam dela."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual ação protege uma nascente?",
+      "options": [
+        "jogar óleo no solo",
+        "deixar animais e resíduos contaminarem a água",
+        "evitar lixo e poluição perto dela",
+        "retirar toda a vegetação"
+      ],
+      "correctIndex": 2,
+      "explanation": "Proteger a nascente ajuda a conservar a origem da água do rio.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de evitar lixo e poluição perto dela.",
+        "1": "A alternativa não corresponde ao conceito de evitar lixo e poluição perto dela.",
+        "3": "A alternativa não corresponde ao conceito de evitar lixo e poluição perto dela."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "O que uma comunidade pode fazer para preservar a água?",
+      "options": [
+        "ignorar rios poluídos",
+        "aumentar todos os desperdícios",
+        "impedir qualquer cuidado coletivo",
+        "organizar ações de limpeza e uso consciente"
+      ],
+      "correctIndex": 3,
+      "explanation": "A preservação também depende de ações compartilhadas pela comunidade.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de organizar ações de limpeza e uso consciente.",
+        "1": "A alternativa não corresponde ao conceito de organizar ações de limpeza e uso consciente.",
+        "2": "A alternativa não corresponde ao conceito de organizar ações de limpeza e uso consciente."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual hábito reduz o consumo de água ao lavar uma bicicleta?",
+      "options": [
+        "usar balde e pouca água",
+        "usar mangueira aberta por muito tempo",
+        "lavar dentro do rio",
+        "deixar a água correndo sem motivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O balde ajuda a controlar a quantidade utilizada.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de usar balde e pouca água.",
+        "2": "A alternativa não corresponde ao conceito de usar balde e pouca água.",
+        "3": "A alternativa não corresponde ao conceito de usar balde e pouca água."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "O que pode acontecer quando uma fonte de água é poluída?",
+      "options": [
+        "ela passa a ser infinita",
+        "ela pode deixar de ser adequada para alguns usos",
+        "ela sempre fica mais limpa",
+        "ela vira água potável"
+      ],
+      "correctIndex": 1,
+      "explanation": "A poluição pode impedir o uso seguro da água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de ela pode deixar de ser adequada para alguns usos.",
+        "2": "A alternativa não corresponde ao conceito de ela pode deixar de ser adequada para alguns usos.",
+        "3": "A alternativa não corresponde ao conceito de ela pode deixar de ser adequada para alguns usos."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual frase mostra cuidado com a água?",
+      "options": [
+        "A torneira deve ficar aberta sempre.",
+        "A água limpa não precisa de proteção.",
+        "A água deve ser usada sem desperdício.",
+        "A água pode receber todo tipo de lixo."
+      ],
+      "correctIndex": 2,
+      "explanation": "Evitar desperdício e poluição é uma forma de preservar a água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a água deve ser usada sem desperdício..",
+        "1": "A alternativa não corresponde ao conceito de a água deve ser usada sem desperdício..",
+        "3": "A alternativa não corresponde ao conceito de a água deve ser usada sem desperdício.."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_limitada_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-limitada",
+      "topicName": "Água renovável e limitada",
+      "question": "Qual combinação está correta?",
+      "options": [
+        "desperdiçar, poluir e ignorar vazamentos",
+        "usar sem limite e jogar lixo nos rios",
+        "retirar plantas e deixar torneiras abertas",
+        "economizar, não poluir e cuidar das fontes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Essas três atitudes ajudam a conservar a água e suas fontes.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de economizar, não poluir e cuidar das fontes.",
+        "1": "A alternativa não corresponde ao conceito de economizar, não poluir e cuidar das fontes.",
+        "2": "A alternativa não corresponde ao conceito de economizar, não poluir e cuidar das fontes."
+      },
+      "skill": "compreender-necessidade-de-preservacao-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
