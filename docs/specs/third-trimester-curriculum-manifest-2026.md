@@ -81,7 +81,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | em-curadoria |
-| Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | proposto     |
+| Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | em-curadoria |
 | Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | proposto     |
 | Português  | preterito-perfeito               | pretérito perfeito                             |                             reconhecer ações concluídas |   20 | proposto     |
 | Português  | prefixo-des                      | palavras iniciadas por des-                    |                           reconhecer formação e sentido |   20 | proposto     |
