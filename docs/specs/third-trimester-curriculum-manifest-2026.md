@@ -69,7 +69,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Geografia  | agua-recurso                     | água como recurso                              |                reconhecer importância e uso responsável |   20 | em-curadoria |
 | Geografia  | nascente-rio                     | nascimento e percurso dos rios                 |                       identificar nascente, curso e foz |   20 | em-curadoria |
 | Geografia  | agua-limitada                    | água renovável e limitada                      |                  compreender necessidade de preservação |   20 | em-curadoria |
-| Geografia  | agua-brasil                      | situação da água no Brasil                     |               reconhecer distribuição e desafios de uso |   20 | proposto     |
+| Geografia  | agua-brasil                      | situação da água no Brasil                     |               reconhecer distribuição e desafios de uso |   20 | em-curadoria |
 | Geografia  | usos-agua                        | usos da água                                   |      relacionar usos domésticos, produtivos e coletivos |   20 | proposto     |
 | Inglês     | present-continuous               | present continuous                             |                           reconhecer ações em andamento |   20 | proposto     |
 | Inglês     | places-city                      | places in the city                             |                       reconhecer vocabulário de lugares |   20 | proposto     |
