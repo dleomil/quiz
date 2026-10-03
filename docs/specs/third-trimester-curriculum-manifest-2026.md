@@ -72,7 +72,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Geografia  | agua-brasil                      | situação da água no Brasil                     |               reconhecer distribuição e desafios de uso |   20 | em-curadoria |
 | Geografia  | usos-agua                        | usos da água                                   |      relacionar usos domésticos, produtivos e coletivos |   20 | em-curadoria |
 | Inglês     | present-continuous               | present continuous                             |                           reconhecer ações em andamento |   20 | em-curadoria |
-| Inglês     | places-city                      | places in the city                             |                       reconhecer vocabulário de lugares |   20 | proposto     |
+| Inglês     | places-city                      | places in the city                             |                       reconhecer vocabulário de lugares |   20 | em-curadoria |
 | Inglês     | celebrations                     | celebrations                                   |       reconhecer vocabulário e contextos de celebrações |   20 | proposto     |
 | Inglês     | means-transport                  | means of transport                             |                          reconhecer meios de transporte |   20 | proposto     |
 | História   | povo-brasileiro                  | formação do povo brasileiro                    |                        reconhecer diversidade histórica |   20 | proposto     |

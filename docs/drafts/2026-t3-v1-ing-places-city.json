@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you borrow books?",
+      "options": [
+        "At the library.",
+        "At the hospital.",
+        "At the bakery.",
+        "At the bus stop."
+      ],
+      "correctIndex": 0,
+      "explanation": "A library is a place where people can borrow books.",
+      "wrongExplanations": {
+        "1": "This option is not the place described: At the library.",
+        "2": "This option is not the place described: At the library.",
+        "3": "This option is not the place described: At the library."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you see a doctor?",
+      "options": [
+        "At the bakery.",
+        "At the hospital.",
+        "At the park.",
+        "At the cinema."
+      ],
+      "correctIndex": 1,
+      "explanation": "A hospital is a place for medical care.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the hospital.",
+        "2": "This option is not the place described: At the hospital.",
+        "3": "This option is not the place described: At the hospital."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you buy bread?",
+      "options": [
+        "At the school.",
+        "At the bank.",
+        "At the bakery.",
+        "At the museum."
+      ],
+      "correctIndex": 2,
+      "explanation": "A bakery sells bread and other baked foods.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the bakery.",
+        "1": "This option is not the place described: At the bakery.",
+        "3": "This option is not the place described: At the bakery."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you watch a movie?",
+      "options": [
+        "At the library.",
+        "At the pharmacy.",
+        "At the post office.",
+        "At the cinema."
+      ],
+      "correctIndex": 3,
+      "explanation": "A cinema is a place to watch movies.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the cinema.",
+        "1": "This option is not the place described: At the cinema.",
+        "2": "This option is not the place described: At the cinema."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can children study?",
+      "options": [
+        "At the school.",
+        "At the supermarket.",
+        "At the station.",
+        "At the fire station."
+      ],
+      "correctIndex": 0,
+      "explanation": "A school is a place for learning.",
+      "wrongExplanations": {
+        "1": "This option is not the place described: At the school.",
+        "2": "This option is not the place described: At the school.",
+        "3": "This option is not the place described: At the school."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you buy medicine?",
+      "options": [
+        "At the restaurant.",
+        "At the pharmacy.",
+        "At the museum.",
+        "At the park."
+      ],
+      "correctIndex": 1,
+      "explanation": "A pharmacy sells medicine and health products.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the pharmacy.",
+        "2": "This option is not the place described: At the pharmacy.",
+        "3": "This option is not the place described: At the pharmacy."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "80"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you send a letter?",
+      "options": [
+        "At the bakery.",
+        "At the playground.",
+        "At the post office.",
+        "At the zoo."
+      ],
+      "correctIndex": 2,
+      "explanation": "A post office provides mail services.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the post office.",
+        "1": "This option is not the place described: At the post office.",
+        "3": "This option is not the place described: At the post office."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "81"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you see old objects and art?",
+      "options": [
+        "At the bank.",
+        "At the bus stop.",
+        "At the supermarket.",
+        "At the museum."
+      ],
+      "correctIndex": 3,
+      "explanation": "A museum displays objects, art, and history.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the museum.",
+        "1": "This option is not the place described: At the museum.",
+        "2": "This option is not the place described: At the museum."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "82"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you play outside?",
+      "options": [
+        "At the park.",
+        "At the hospital.",
+        "At the bank.",
+        "At the post office."
+      ],
+      "correctIndex": 0,
+      "explanation": "A park is a public outdoor place for leisure.",
+      "wrongExplanations": {
+        "1": "This option is not the place described: At the park.",
+        "2": "This option is not the place described: At the park.",
+        "3": "This option is not the place described: At the park."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "83"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you buy food and household items?",
+      "options": [
+        "At the school.",
+        "At the supermarket.",
+        "At the cinema.",
+        "At the library."
+      ],
+      "correctIndex": 1,
+      "explanation": "A supermarket sells many food and household products.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the supermarket.",
+        "2": "This option is not the place described: At the supermarket.",
+        "3": "This option is not the place described: At the supermarket."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "84"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you take a bus?",
+      "options": [
+        "At the museum.",
+        "At the pharmacy.",
+        "At the bus stop.",
+        "At the bakery."
+      ],
+      "correctIndex": 2,
+      "explanation": "People wait for buses at a bus stop.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the bus stop.",
+        "1": "This option is not the place described: At the bus stop.",
+        "3": "This option is not the place described: At the bus stop."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "85"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you catch a train?",
+      "options": [
+        "At the restaurant.",
+        "At the library.",
+        "At the park.",
+        "At the train station."
+      ],
+      "correctIndex": 3,
+      "explanation": "A train station is where passengers board trains.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the train station.",
+        "1": "This option is not the place described: At the train station.",
+        "2": "This option is not the place described: At the train station."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "86"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you eat a meal?",
+      "options": [
+        "At the restaurant.",
+        "At the hospital.",
+        "At the bank.",
+        "At the fire station."
+      ],
+      "correctIndex": 0,
+      "explanation": "A restaurant serves meals.",
+      "wrongExplanations": {
+        "1": "This option is not the place described: At the restaurant.",
+        "2": "This option is not the place described: At the restaurant.",
+        "3": "This option is not the place described: At the restaurant."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "87"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you keep money and use banking services?",
+      "options": [
+        "At the school.",
+        "At the bank.",
+        "At the zoo.",
+        "At the cinema."
+      ],
+      "correctIndex": 1,
+      "explanation": "A bank provides banking services.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the bank.",
+        "2": "This option is not the place described: At the bank.",
+        "3": "This option is not the place described: At the bank."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "88"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where can you see animals?",
+      "options": [
+        "At the bakery.",
+        "At the station.",
+        "At the zoo.",
+        "At the post office."
+      ],
+      "correctIndex": 2,
+      "explanation": "A zoo is a place where visitors can see animals.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the zoo.",
+        "1": "This option is not the place described: At the zoo.",
+        "3": "This option is not the place described: At the zoo."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "89"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Where do firefighters work?",
+      "options": [
+        "At the library.",
+        "At the supermarket.",
+        "At the museum.",
+        "At the fire station."
+      ],
+      "correctIndex": 3,
+      "explanation": "Firefighters work at a fire station.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: At the fire station.",
+        "1": "This option is not the place described: At the fire station.",
+        "2": "This option is not the place described: At the fire station."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Which place has swings and slides for children?",
+      "options": [
+        "The playground.",
+        "The pharmacy.",
+        "The bank.",
+        "The hospital."
+      ],
+      "correctIndex": 0,
+      "explanation": "A playground has equipment for children to play.",
+      "wrongExplanations": {
+        "1": "This option is not the place described: The playground.",
+        "2": "This option is not the place described: The playground.",
+        "3": "This option is not the place described: The playground."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Which place helps people cross a road safely?",
+      "options": [
+        "The museum.",
+        "The crosswalk.",
+        "The bakery.",
+        "The cinema."
+      ],
+      "correctIndex": 1,
+      "explanation": "A crosswalk is a marked place for crossing a road.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: The crosswalk.",
+        "2": "This option is not the place described: The crosswalk.",
+        "3": "This option is not the place described: The crosswalk."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "Which place is usually next to streets and cars?",
+      "options": [
+        "The zoo.",
+        "The restaurant.",
+        "The sidewalk.",
+        "The library."
+      ],
+      "correctIndex": 2,
+      "explanation": "People walk on the sidewalk beside a street.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: The sidewalk.",
+        "1": "This option is not the place described: The sidewalk.",
+        "3": "This option is not the place described: The sidewalk."
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_places_city_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "places-city",
+      "topicName": "Places in the city",
+      "question": "What does “places in the city” mean?",
+      "options": [
+        "only colors in a city",
+        "actions happening at home",
+        "names of animals",
+        "locations found in a city"
+      ],
+      "correctIndex": 3,
+      "explanation": "The phrase refers to common city locations and buildings.",
+      "wrongExplanations": {
+        "0": "This option is not the place described: locations found in a city",
+        "1": "This option is not the place described: locations found in a city",
+        "2": "This option is not the place described: locations found in a city"
+      },
+      "skill": "reconhecer-vocabulario-de-lugares",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
