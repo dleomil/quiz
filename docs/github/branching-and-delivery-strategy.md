@@ -80,21 +80,20 @@ tiver avancado desde o check da esteira, a integracao deve ser interrompida e o
 head atualizado. Essa verificacao just-in-time cobre a janela que os eventos
 nativos de Pull Request nao invalidam automaticamente.
 
-### Modo temporario de mantenedor unico
+### Modo permanente de mantenedor unico
 
 #### Estado vigente em 2026-10-02
 
-O modo de mantenedor unico esta ativo para este repositorio enquanto `dleomil`
-for o unico colaborador humano elegivel. A ativacao e temporaria, vale para
-`main` e `develop` e esta registrada na Tech Task #310. Ela permite que o
-mantenedor conclua um Pull Request depois de todos os checks e gates aplicaveis
-passarem, mas nao transforma parecer de agente em revisao humana independente.
+O modo de mantenedor unico e a regra operacional permanente deste repositorio
+enquanto `dleomil` for o unico colaborador humano elegivel. Ele vale para `main`
+e `develop` e esta registrado na Tech Task #310. Permite que o mantenedor
+conclua um Pull Request depois de todos os checks e gates aplicaveis passarem,
+mas nao transforma parecer de agente em revisao humana independente.
 
-O mantenedor deve registrar no PR a decisao, os checks, as evidencias e a
-limitacao de nao haver segundo revisor. Quando surgir outro colaborador humano
-com permissao `write`, `maintain` ou `admin`, a excecao deixa de valer antes do
-proximo merge e a aprovacao independente deve ser restaurada em ambas as
-branches.
+O mantenedor deve registrar no PR a decisao, os checks e as evidencias. A
+aprovacao independente somente sera reativada se surgir outro colaborador
+humano com permissao `write`, `maintain` ou `admin`; ate la, a ausencia de um
+segundo revisor nao bloqueia o fluxo.
 
 Enquanto `dleomil` for o unico colaborador humano elegivel, `main` e `develop`
 nao exigem aprovacao de outro usuario no GitHub, pois o autor nao pode aprovar o
@@ -110,7 +109,7 @@ Continuam obrigatorios:
 - aprovacoes humanas pedagogicas, editoriais ou de produto aplicaveis.
 
 Parecer automatizado ou de agente nao deve ser descrito como aprovacao humana
-independente. A excecao e rastreada pela Tech Task #310.
+independente. A regra permanente e rastreada pela Tech Task #310.
 
 Quando existir um segundo colaborador humano com permissao `write`, `maintain`
 ou `admin`, antes do proximo merge devem ser restauradas em ambas as branches:
