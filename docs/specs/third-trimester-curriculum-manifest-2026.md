@@ -61,7 +61,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | ---------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------: | ---: | ------------ |
 | Ciências   | luz-visao                        | luz, visão e saúde visual                      |       reconhecer fontes, propriedades e cuidados da luz |   20 | proposto     |
 | Ciências   | corpos-luz                       | corpos luminosos e iluminados                  |                   diferenciar emissão e recepção de luz |   20 | proposto     |
-| Ciências   | materiais-transparentes          | materiais transparentes, translúcidos e opacos |              classificar materiais pela passagem da luz |   20 | proposto     |
+| Ciências   | materiais-transparentes          | materiais transparentes, translúcidos e opacos |              classificar materiais pela passagem da luz |   20 | em-curadoria |
 | Ciências   | propriedades-luz                 | propriedades da luz                            |                 reconhecer reflexão, sombra e percepção |   20 | proposto     |
 | Ciências   | espelhos                         | espelhos e reflexão                            |               identificar situações simples de reflexão |   20 | proposto     |
 | Ciências   | luz-cores                        | luz e cores                                    |       reconhecer relação introdutória entre luz e cores |   20 | proposto     |

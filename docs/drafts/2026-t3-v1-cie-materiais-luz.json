@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "O que é um material transparente?",
+      "options": [
+        "aquele que deixa a luz passar e permite ver através dele",
+        "aquele que não deixa nenhuma luz passar",
+        "aquele que produz som",
+        "aquele que sempre reflete toda luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Materiais transparentes deixam a luz passar com bastante facilidade.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de aquele que deixa a luz passar e permite ver através dele.",
+        "2": "A alternativa não corresponde ao conceito de aquele que deixa a luz passar e permite ver através dele.",
+        "3": "A alternativa não corresponde ao conceito de aquele que deixa a luz passar e permite ver através dele."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual objeto costuma ser transparente?",
+      "options": [
+        "uma placa de madeira",
+        "um vidro limpo de janela",
+        "uma parede de tijolos",
+        "uma caixa de papelão fechada"
+      ],
+      "correctIndex": 1,
+      "explanation": "O vidro limpo permite a passagem da luz e a visão através dele.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um vidro limpo de janela.",
+        "2": "A alternativa não corresponde ao conceito de um vidro limpo de janela.",
+        "3": "A alternativa não corresponde ao conceito de um vidro limpo de janela."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "O que é um material translúcido?",
+      "options": [
+        "aquele que transforma luz em som",
+        "aquele que é sempre totalmente transparente",
+        "aquele que deixa passar parte da luz, mas não permite ver nitidamente",
+        "aquele que não deixa luz alguma passar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Materiais translúcidos deixam passar luz, porém espalham parte dela.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de aquele que deixa passar parte da luz, mas não permite ver nitidamente.",
+        "1": "A alternativa não corresponde ao conceito de aquele que deixa passar parte da luz, mas não permite ver nitidamente.",
+        "3": "A alternativa não corresponde ao conceito de aquele que deixa passar parte da luz, mas não permite ver nitidamente."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual exemplo pode ser translúcido?",
+      "options": [
+        "um espelho perfeito",
+        "uma parede de concreto",
+        "uma janela de vidro totalmente limpa",
+        "um papel vegetal"
+      ],
+      "correctIndex": 3,
+      "explanation": "O papel vegetal deixa passar alguma luz, mas dificulta enxergar detalhes.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um papel vegetal.",
+        "1": "A alternativa não corresponde ao conceito de um papel vegetal.",
+        "2": "A alternativa não corresponde ao conceito de um papel vegetal."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "O que é um material opaco?",
+      "options": [
+        "aquele que não deixa a luz atravessá-lo",
+        "aquele que deixa ver tudo através dele",
+        "aquele que deixa passar parte da luz",
+        "aquele que só funciona à noite"
+      ],
+      "correctIndex": 0,
+      "explanation": "Materiais opacos bloqueiam a passagem da luz.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de aquele que não deixa a luz atravessá-lo.",
+        "2": "A alternativa não corresponde ao conceito de aquele que não deixa a luz atravessá-lo.",
+        "3": "A alternativa não corresponde ao conceito de aquele que não deixa a luz atravessá-lo."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual objeto é geralmente opaco?",
+      "options": [
+        "uma lente transparente",
+        "uma porta de madeira",
+        "um vidro limpo",
+        "um papel vegetal"
+      ],
+      "correctIndex": 1,
+      "explanation": "A madeira da porta impede que a luz atravesse.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma porta de madeira.",
+        "2": "A alternativa não corresponde ao conceito de uma porta de madeira.",
+        "3": "A alternativa não corresponde ao conceito de uma porta de madeira."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "50"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Como classificar uma cortina fina que deixa a claridade passar, mas esconde detalhes?",
+      "options": ["opaca", "sonora", "translúcida", "transparente"],
+      "correctIndex": 2,
+      "explanation": "Ela permite passagem parcial da luz e não mostra a imagem com nitidez.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de translúcida.",
+        "1": "A alternativa não corresponde ao conceito de translúcida.",
+        "3": "A alternativa não corresponde ao conceito de translúcida."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Como classificar uma parede de concreto?",
+      "options": [
+        "transparente",
+        "translúcida",
+        "brilhante e transparente",
+        "opaca"
+      ],
+      "correctIndex": 3,
+      "explanation": "A parede de concreto bloqueia a luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de opaca.",
+        "1": "A alternativa não corresponde ao conceito de opaca.",
+        "2": "A alternativa não corresponde ao conceito de opaca."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "52"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Como classificar um aquário de vidro limpo?",
+      "options": [
+        "transparente",
+        "opaco",
+        "translúcido",
+        "sem relação com a luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vidro limpo do aquário permite observar o interior.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de transparente.",
+        "2": "A alternativa não corresponde ao conceito de transparente.",
+        "3": "A alternativa não corresponde ao conceito de transparente."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "53"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "O que acontece quando a luz encontra um material opaco?",
+      "options": [
+        "ela vira água",
+        "ela não atravessa o material",
+        "ela sempre atravessa sem mudar",
+        "ela desaparece do ambiente inteiro"
+      ],
+      "correctIndex": 1,
+      "explanation": "O material opaco bloqueia a passagem da luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de ela não atravessa o material.",
+        "2": "A alternativa não corresponde ao conceito de ela não atravessa o material.",
+        "3": "A alternativa não corresponde ao conceito de ela não atravessa o material."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "O que pode ser visto através de um material transparente?",
+      "options": [
+        "nada em nenhuma situação",
+        "apenas objetos que produzem calor",
+        "objetos do outro lado",
+        "somente o próprio material"
+      ],
+      "correctIndex": 2,
+      "explanation": "A passagem da luz permite enxergar objetos atrás dele.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de objetos do outro lado.",
+        "1": "A alternativa não corresponde ao conceito de objetos do outro lado.",
+        "3": "A alternativa não corresponde ao conceito de objetos do outro lado."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "55"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Por que não vemos detalhes nítidos através de um material translúcido?",
+      "options": [
+        "porque ele não recebe luz",
+        "porque ele produz escuridão total",
+        "porque ele é sempre um espelho",
+        "porque a luz se espalha ao passar"
+      ],
+      "correctIndex": 3,
+      "explanation": "A luz espalhada dificulta a formação de uma imagem nítida.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque a luz se espalha ao passar.",
+        "1": "A alternativa não corresponde ao conceito de porque a luz se espalha ao passar.",
+        "2": "A alternativa não corresponde ao conceito de porque a luz se espalha ao passar."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "56"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual grupo apresenta um exemplo de cada tipo?",
+      "options": [
+        "vidro limpo, papel vegetal e madeira",
+        "madeira, concreto e parede",
+        "vidro limpo, lente e aquário",
+        "papel vegetal, cortina fina e plástico leitoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sequência reúne exemplos transparente, translúcido e opaco.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de vidro limpo, papel vegetal e madeira.",
+        "2": "A alternativa não corresponde ao conceito de vidro limpo, papel vegetal e madeira.",
+        "3": "A alternativa não corresponde ao conceito de vidro limpo, papel vegetal e madeira."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual material ajuda a iluminar um ambiente sem mostrar claramente o interior?",
+      "options": [
+        "um vidro totalmente limpo",
+        "um plástico leitoso",
+        "uma placa de metal",
+        "uma parede de concreto"
+      ],
+      "correctIndex": 1,
+      "explanation": "O plástico leitoso é um exemplo de material translúcido.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um plástico leitoso.",
+        "2": "A alternativa não corresponde ao conceito de um plástico leitoso.",
+        "3": "A alternativa não corresponde ao conceito de um plástico leitoso."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "58"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual material pode formar uma sombra bem definida?",
+      "options": [
+        "o ar limpo",
+        "uma lente sem sujeira",
+        "um objeto opaco",
+        "um vidro totalmente transparente"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ao bloquear a luz, um objeto opaco pode formar sombra.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um objeto opaco.",
+        "1": "A alternativa não corresponde ao conceito de um objeto opaco.",
+        "3": "A alternativa não corresponde ao conceito de um objeto opaco."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Por que uma janela transparente é útil?",
+      "options": [
+        "porque bloqueia toda luz",
+        "porque produz água",
+        "porque impede qualquer visão",
+        "porque permite a entrada de luz e a visão do exterior"
+      ],
+      "correctIndex": 3,
+      "explanation": "A transparência permite luz e visão através da janela.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque permite a entrada de luz e a visão do exterior.",
+        "1": "A alternativa não corresponde ao conceito de porque permite a entrada de luz e a visão do exterior.",
+        "2": "A alternativa não corresponde ao conceito de porque permite a entrada de luz e a visão do exterior."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual característica diferencia um material opaco de um transparente?",
+      "options": [
+        "o opaco bloqueia a luz e o transparente deixa a luz passar",
+        "o opaco sempre brilha e o transparente faz som",
+        "ambos bloqueiam toda luz",
+        "ambos deixam ver tudo com nitidez"
+      ],
+      "correctIndex": 0,
+      "explanation": "A passagem da luz é o critério principal da classificação.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de o opaco bloqueia a luz e o transparente deixa a luz passar.",
+        "2": "A alternativa não corresponde ao conceito de o opaco bloqueia a luz e o transparente deixa a luz passar.",
+        "3": "A alternativa não corresponde ao conceito de o opaco bloqueia a luz e o transparente deixa a luz passar."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual situação mostra um material translúcido?",
+      "options": [
+        "um quarto sem nenhuma fonte de luz",
+        "uma luz acesa atrás de uma cortina fina",
+        "um objeto atrás de uma parede",
+        "uma paisagem vista por vidro limpo"
+      ],
+      "correctIndex": 1,
+      "explanation": "A cortina deixa passar claridade, mas espalha a luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma luz acesa atrás de uma cortina fina.",
+        "2": "A alternativa não corresponde ao conceito de uma luz acesa atrás de uma cortina fina.",
+        "3": "A alternativa não corresponde ao conceito de uma luz acesa atrás de uma cortina fina."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "A classificação transparente, translúcido ou opaco depende principalmente de quê?",
+      "options": [
+        "do som que ele produz",
+        "da cor do céu",
+        "da quantidade de luz que atravessa o material",
+        "do tamanho do objeto"
+      ],
+      "correctIndex": 2,
+      "explanation": "A passagem da luz orienta essa classificação.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de da quantidade de luz que atravessa o material.",
+        "1": "A alternativa não corresponde ao conceito de da quantidade de luz que atravessa o material.",
+        "3": "A alternativa não corresponde ao conceito de da quantidade de luz que atravessa o material."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_materiais_luz_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "materiais-transparentes",
+      "topicName": "Materiais transparentes, translúcidos e opacos",
+      "question": "Qual frase resume os três tipos de materiais?",
+      "options": [
+        "todos deixam passar a mesma quantidade de luz",
+        "opacos deixam passar mais luz que transparentes",
+        "translúcidos não têm relação com a luz",
+        "transparentes deixam passar muita luz, translúcidos parte dela e opacos bloqueiam a luz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Os três tipos se diferenciam pela passagem da luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de transparentes deixam passar muita luz, translúcidos parte dela e opacos bloqueiam a luz.",
+        "1": "A alternativa não corresponde ao conceito de transparentes deixam passar muita luz, translúcidos parte dela e opacos bloqueiam a luz.",
+        "2": "A alternativa não corresponde ao conceito de transparentes deixam passar muita luz, translúcidos parte dela e opacos bloqueiam a luz."
+      },
+      "skill": "classificar-materiais-pela-passagem-da-luz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
