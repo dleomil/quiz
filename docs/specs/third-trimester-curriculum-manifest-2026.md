@@ -57,48 +57,48 @@ somente pacotes completos aprovados ou manter o acervo anterior como padrao.
 Cada linha representa um objeto de conhecimento para refinamento. A meta e de
 exatamente 20 questões originais por linha. Os IDs sao provisórios.
 
-| Materia    | Tema ID                          | Objeto de conhecimento                         |                                    Objetivo verificavel | Meta | Estado    |
-| ---------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------: | ---: | --------- |
-| Ciências   | luz-visao                        | luz, visão e saúde visual                      |       reconhecer fontes, propriedades e cuidados da luz |   20 | proposto  |
-| Ciências   | corpos-luz                       | corpos luminosos e iluminados                  |                   diferenciar emissão e recepção de luz |   20 | proposto  |
-| Ciências   | materiais-transparentes          | materiais transparentes, translúcidos e opacos |              classificar materiais pela passagem da luz |   20 | proposto  |
-| Ciências   | propriedades-luz                 | propriedades da luz                            |                 reconhecer reflexão, sombra e percepção |   20 | proposto  |
-| Ciências   | espelhos                         | espelhos e reflexão                            |               identificar situações simples de reflexão |   20 | proposto  |
-| Ciências   | luz-cores                        | luz e cores                                    |       reconhecer relação introdutória entre luz e cores |   20 | proposto  |
-| Ciências   | som-audicao                      | som, audição e cuidado auditivo                |     reconhecer produção do som e cuidados com a audição |   20 | proposto  |
-| Geografia  | agua-recurso                     | água como recurso                              |                reconhecer importância e uso responsável |   20 | proposto  |
-| Geografia  | nascente-rio                     | nascimento e percurso dos rios                 |                       identificar nascente, curso e foz |   20 | proposto  |
-| Geografia  | agua-limitada                    | água renovável e limitada                      |                  compreender necessidade de preservação |   20 | proposto  |
-| Geografia  | agua-brasil                      | situação da água no Brasil                     |               reconhecer distribuição e desafios de uso |   20 | proposto  |
-| Geografia  | usos-agua                        | usos da água                                   |      relacionar usos domésticos, produtivos e coletivos |   20 | proposto  |
-| Inglês     | present-continuous               | present continuous                             |                           reconhecer ações em andamento |   20 | proposto  |
-| Inglês     | places-city                      | places in the city                             |                       reconhecer vocabulário de lugares |   20 | proposto  |
-| Inglês     | celebrations                     | celebrations                                   |       reconhecer vocabulário e contextos de celebrações |   20 | proposto  |
-| Inglês     | means-transport                  | means of transport                             |                          reconhecer meios de transporte |   20 | proposto  |
-| História   | povo-brasileiro                  | formação do povo brasileiro                    |                        reconhecer diversidade histórica |   20 | proposto  |
-| História   | imigrantes-portugueses-espanhois | imigrantes portugueses e espanhóis             | identificar presença e contribuições sem generalizações |   20 | proposto  |
-| História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | proposto  |
-| História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | proposto  |
-| História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | proposto  |
-| Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | proposto  |
-| Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | proposto  |
-| Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | proposto  |
-| Português  | preterito-perfeito               | pretérito perfeito                             |                             reconhecer ações concluídas |   20 | proposto  |
-| Português  | prefixo-des                      | palavras iniciadas por des-                    |                           reconhecer formação e sentido |   20 | proposto  |
-| Português  | futuro                           | futuro do presente                             |                                reconhecer ações futuras |   20 | proposto  |
-| Português  | usos-ge-gi                       | usos de ge e gi                                |                        aplicar grafias contextualizadas |   20 | proposto  |
-| Português  | adjetivos                        | adjetivos                                      |                  identificar características atribuídas |   20 | proposto  |
-| Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | proposto  |
-| Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | proposto  |
-| Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | proposto  |
-| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | bloqueado |
-| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | bloqueado |
-| Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | proposto  |
-| Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | proposto  |
-| Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | proposto  |
-| Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | proposto  |
-| Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | proposto  |
-| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | bloqueado |
+| Materia    | Tema ID                          | Objeto de conhecimento                         |                                    Objetivo verificavel | Meta | Estado       |
+| ---------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------: | ---: | ------------ |
+| Ciências   | luz-visao                        | luz, visão e saúde visual                      |       reconhecer fontes, propriedades e cuidados da luz |   20 | proposto     |
+| Ciências   | corpos-luz                       | corpos luminosos e iluminados                  |                   diferenciar emissão e recepção de luz |   20 | proposto     |
+| Ciências   | materiais-transparentes          | materiais transparentes, translúcidos e opacos |              classificar materiais pela passagem da luz |   20 | proposto     |
+| Ciências   | propriedades-luz                 | propriedades da luz                            |                 reconhecer reflexão, sombra e percepção |   20 | proposto     |
+| Ciências   | espelhos                         | espelhos e reflexão                            |               identificar situações simples de reflexão |   20 | proposto     |
+| Ciências   | luz-cores                        | luz e cores                                    |       reconhecer relação introdutória entre luz e cores |   20 | proposto     |
+| Ciências   | som-audicao                      | som, audição e cuidado auditivo                |     reconhecer produção do som e cuidados com a audição |   20 | proposto     |
+| Geografia  | agua-recurso                     | água como recurso                              |                reconhecer importância e uso responsável |   20 | em-curadoria |
+| Geografia  | nascente-rio                     | nascimento e percurso dos rios                 |                       identificar nascente, curso e foz |   20 | proposto     |
+| Geografia  | agua-limitada                    | água renovável e limitada                      |                  compreender necessidade de preservação |   20 | proposto     |
+| Geografia  | agua-brasil                      | situação da água no Brasil                     |               reconhecer distribuição e desafios de uso |   20 | proposto     |
+| Geografia  | usos-agua                        | usos da água                                   |      relacionar usos domésticos, produtivos e coletivos |   20 | proposto     |
+| Inglês     | present-continuous               | present continuous                             |                           reconhecer ações em andamento |   20 | proposto     |
+| Inglês     | places-city                      | places in the city                             |                       reconhecer vocabulário de lugares |   20 | proposto     |
+| Inglês     | celebrations                     | celebrations                                   |       reconhecer vocabulário e contextos de celebrações |   20 | proposto     |
+| Inglês     | means-transport                  | means of transport                             |                          reconhecer meios de transporte |   20 | proposto     |
+| História   | povo-brasileiro                  | formação do povo brasileiro                    |                        reconhecer diversidade histórica |   20 | proposto     |
+| História   | imigrantes-portugueses-espanhois | imigrantes portugueses e espanhóis             | identificar presença e contribuições sem generalizações |   20 | proposto     |
+| História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | proposto     |
+| História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | proposto     |
+| História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | proposto     |
+| Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | proposto     |
+| Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | proposto     |
+| Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | proposto     |
+| Português  | preterito-perfeito               | pretérito perfeito                             |                             reconhecer ações concluídas |   20 | proposto     |
+| Português  | prefixo-des                      | palavras iniciadas por des-                    |                           reconhecer formação e sentido |   20 | proposto     |
+| Português  | futuro                           | futuro do presente                             |                                reconhecer ações futuras |   20 | proposto     |
+| Português  | usos-ge-gi                       | usos de ge e gi                                |                        aplicar grafias contextualizadas |   20 | proposto     |
+| Português  | adjetivos                        | adjetivos                                      |                  identificar características atribuídas |   20 | proposto     |
+| Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | proposto     |
+| Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | proposto     |
+| Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | proposto     |
+| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | bloqueado    |
+| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | bloqueado    |
+| Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | proposto     |
+| Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | proposto     |
+| Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | proposto     |
+| Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | proposto     |
+| Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | proposto     |
+| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | bloqueado    |
 
 Atividades adicionais nao criam tema independente. A segunda menção a
 multiplicação e os métodos de divisão precisam ser reconciliados antes do

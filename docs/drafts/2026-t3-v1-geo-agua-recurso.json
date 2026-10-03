@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Por que a água é importante para as pessoas?",
+      "options": [
+        "porque precisamos dela para viver",
+        "porque serve apenas para encher piscinas",
+        "porque substitui todos os alimentos",
+        "porque não participa do nosso corpo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A água participa do funcionamento do corpo e é necessária à vida.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de porque precisamos dela para viver.",
+        "2": "A alternativa não corresponde ao conceito de porque precisamos dela para viver.",
+        "3": "A alternativa não corresponde ao conceito de porque precisamos dela para viver."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual atitude ajuda a economizar água ao escovar os dentes?",
+      "options": [
+        "escovar sem usar água nenhuma para sempre",
+        "fechar a torneira enquanto escova",
+        "deixar a torneira aberta",
+        "usar uma mangueira"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fechar a torneira durante a escovação evita desperdício.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de fechar a torneira enquanto escova.",
+        "2": "A alternativa não corresponde ao conceito de fechar a torneira enquanto escova.",
+        "3": "A alternativa não corresponde ao conceito de fechar a torneira enquanto escova."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual é um uso responsável da água em casa?",
+      "options": [
+        "lavar a calçada com mangueira por horas",
+        "brincar com a torneira aberta",
+        "usar somente a quantidade necessária",
+        "deixar a água correndo sem motivo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Usar apenas o necessário ajuda a preservar a água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usar somente a quantidade necessária.",
+        "1": "A alternativa não corresponde ao conceito de usar somente a quantidade necessária.",
+        "3": "A alternativa não corresponde ao conceito de usar somente a quantidade necessária."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "O que fazer ao perceber uma torneira pingando?",
+      "options": [
+        "aumentar o vazamento",
+        "ignorar sempre",
+        "deixar um balde transbordar",
+        "avisar um adulto para consertá-la"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um vazamento pode desperdiçar água e deve ser comunicado para ser consertado.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de avisar um adulto para consertá-la.",
+        "1": "A alternativa não corresponde ao conceito de avisar um adulto para consertá-la.",
+        "2": "A alternativa não corresponde ao conceito de avisar um adulto para consertá-la."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual ação reduz o desperdício durante o banho?",
+      "options": [
+        "diminuir o tempo do banho",
+        "deixar o chuveiro ligado sem estar no banho",
+        "brincar até a água acabar",
+        "abrir todas as torneiras"
+      ],
+      "correctIndex": 0,
+      "explanation": "Banhos mais curtos usam menos água.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de diminuir o tempo do banho.",
+        "2": "A alternativa não corresponde ao conceito de diminuir o tempo do banho.",
+        "3": "A alternativa não corresponde ao conceito de diminuir o tempo do banho."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "71"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Água potável é a água que:",
+      "options": [
+        "não precisa de cuidado algum",
+        "pode ser consumida com segurança",
+        "tem sempre gosto de refrigerante",
+        "serve somente para lavar carros"
+      ],
+      "correctIndex": 1,
+      "explanation": "Água potável é própria para beber, conforme os cuidados de tratamento e saúde.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de pode ser consumida com segurança.",
+        "2": "A alternativa não corresponde ao conceito de pode ser consumida com segurança.",
+        "3": "A alternativa não corresponde ao conceito de pode ser consumida com segurança."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Por que não devemos jogar lixo nos rios?",
+      "options": [
+        "porque o lixo transforma água salgada em doce",
+        "porque todo lixo desaparece na água",
+        "porque o lixo pode poluir a água e prejudicar os seres vivos",
+        "porque o rio fica mais rápido"
+      ],
+      "correctIndex": 2,
+      "explanation": "O lixo pode contaminar a água e causar problemas para pessoas, plantas e animais.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque o lixo pode poluir a água e prejudicar os seres vivos.",
+        "1": "A alternativa não corresponde ao conceito de porque o lixo pode poluir a água e prejudicar os seres vivos.",
+        "3": "A alternativa não corresponde ao conceito de porque o lixo pode poluir a água e prejudicar os seres vivos."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual atividade usa água para produzir alimentos?",
+      "options": [
+        "pintar uma parede seca sem limpar",
+        "ler um livro",
+        "guardar lápis",
+        "irrigar uma plantação"
+      ],
+      "correctIndex": 3,
+      "explanation": "A irrigação fornece água para o crescimento das plantas cultivadas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de irrigar uma plantação.",
+        "1": "A alternativa não corresponde ao conceito de irrigar uma plantação.",
+        "2": "A alternativa não corresponde ao conceito de irrigar uma plantação."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual é um exemplo de uso coletivo da água?",
+      "options": [
+        "abastecer uma escola",
+        "encher somente um brinquedo",
+        "molhar uma fotografia",
+        "lavar uma única colher"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escola é um espaço usado por muitas pessoas, por isso seu abastecimento é coletivo.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de abastecer uma escola.",
+        "2": "A alternativa não corresponde ao conceito de abastecer uma escola.",
+        "3": "A alternativa não corresponde ao conceito de abastecer uma escola."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "O que pode acontecer quando falta água em uma comunidade?",
+      "options": [
+        "as plantas deixam de precisar de água",
+        "algumas atividades e cuidados ficam prejudicados",
+        "todos os rios aumentam",
+        "a água passa a ser infinita"
+      ],
+      "correctIndex": 1,
+      "explanation": "A falta de água dificulta beber, cozinhar, higienizar e realizar outras atividades.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de algumas atividades e cuidados ficam prejudicados.",
+        "2": "A alternativa não corresponde ao conceito de algumas atividades e cuidados ficam prejudicados.",
+        "3": "A alternativa não corresponde ao conceito de algumas atividades e cuidados ficam prejudicados."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual atitude ajuda a proteger a água?",
+      "options": [
+        "lavar objetos dentro do rio",
+        "deixar embalagens na margem",
+        "não jogar óleo e lixo na pia ou no rio",
+        "jogar resíduos em qualquer lugar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Evitar resíduos na água reduz a poluição e protege os ambientes.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de não jogar óleo e lixo na pia ou no rio.",
+        "1": "A alternativa não corresponde ao conceito de não jogar óleo e lixo na pia ou no rio.",
+        "3": "A alternativa não corresponde ao conceito de não jogar óleo e lixo na pia ou no rio."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Para que a água da chuva pode ser aproveitada, com orientação e cuidado?",
+      "options": [
+        "ser bebida diretamente sem tratamento",
+        "substituir todos os cuidados de higiene",
+        "ser colocada em qualquer recipiente sujo",
+        "regar plantas ou limpar áreas"
+      ],
+      "correctIndex": 3,
+      "explanation": "A água da chuva pode ser reutilizada em atividades que não exigem consumo, com cuidado.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de regar plantas ou limpar áreas.",
+        "1": "A alternativa não corresponde ao conceito de regar plantas ou limpar áreas.",
+        "2": "A alternativa não corresponde ao conceito de regar plantas ou limpar áreas."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual atitude é adequada ao lavar uma bicicleta?",
+      "options": [
+        "usar um balde e pouca água",
+        "usar uma mangueira aberta por muito tempo",
+        "deixar a água correndo sem lavar",
+        "lavar dentro de um rio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O balde ajuda a controlar a quantidade de água usada.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de usar um balde e pouca água.",
+        "2": "A alternativa não corresponde ao conceito de usar um balde e pouca água.",
+        "3": "A alternativa não corresponde ao conceito de usar um balde e pouca água."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "71"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Por que a água limpa deve ser preservada?",
+      "options": [
+        "porque se renova instantaneamente em qualquer lugar",
+        "porque é necessária para a vida e não deve ser desperdiçada",
+        "porque só serve para fazer desenhos",
+        "porque nunca pode ser usada"
+      ],
+      "correctIndex": 1,
+      "explanation": "Preservar a água limpa protege a saúde, os seres vivos e as atividades humanas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque é necessária para a vida e não deve ser desperdiçada.",
+        "2": "A alternativa não corresponde ao conceito de porque é necessária para a vida e não deve ser desperdiçada.",
+        "3": "A alternativa não corresponde ao conceito de porque é necessária para a vida e não deve ser desperdiçada."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual comportamento ajuda a evitar desperdício na cozinha?",
+      "options": [
+        "lavar uma colher usando uma mangueira",
+        "encher a pia e deixá-la transbordar",
+        "ensaboar a louça com a torneira fechada",
+        "deixar a torneira aberta todo o tempo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Fechar a torneira enquanto ensaboa reduz o uso desnecessário.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de ensaboar a louça com a torneira fechada.",
+        "1": "A alternativa não corresponde ao conceito de ensaboar a louça com a torneira fechada.",
+        "3": "A alternativa não corresponde ao conceito de ensaboar a louça com a torneira fechada."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Quem pode ajudar a cuidar da água?",
+      "options": [
+        "somente os peixes",
+        "somente quem mora perto de um rio",
+        "ninguém",
+        "todas as pessoas"
+      ],
+      "correctIndex": 3,
+      "explanation": "O cuidado com a água é uma responsabilidade compartilhada.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de todas as pessoas.",
+        "1": "A alternativa não corresponde ao conceito de todas as pessoas.",
+        "2": "A alternativa não corresponde ao conceito de todas as pessoas."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual situação mostra desperdício de água?",
+      "options": [
+        "uma mangueira aberta sem ninguém usando",
+        "uma torneira fechada",
+        "um banho curto",
+        "um balde usado com cuidado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Água correndo sem finalidade é desperdício.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de uma mangueira aberta sem ninguém usando.",
+        "2": "A alternativa não corresponde ao conceito de uma mangueira aberta sem ninguém usando.",
+        "3": "A alternativa não corresponde ao conceito de uma mangueira aberta sem ninguém usando."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "O que devemos fazer com uma garrafa reutilizável?",
+      "options": [
+        "usá-la para desperdiçar água",
+        "usá-la novamente quando estiver limpa",
+        "jogá-la no rio",
+        "deixá-la aberta na rua"
+      ],
+      "correctIndex": 1,
+      "explanation": "Reutilizar objetos limpos pode reduzir resíduos e o consumo de materiais.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usá-la novamente quando estiver limpa.",
+        "2": "A alternativa não corresponde ao conceito de usá-la novamente quando estiver limpa.",
+        "3": "A alternativa não corresponde ao conceito de usá-la novamente quando estiver limpa."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual frase mostra uma atitude responsável?",
+      "options": [
+        "Vou jogar lixo no córrego.",
+        "Vou ignorar um vazamento.",
+        "Vou fechar a torneira quando não estiver usando.",
+        "Vou deixar a água correr para ninguém usar."
+      ],
+      "correctIndex": 2,
+      "explanation": "Fechar a torneira quando ela não é necessária evita desperdício.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de vou fechar a torneira quando não estiver usando..",
+        "1": "A alternativa não corresponde ao conceito de vou fechar a torneira quando não estiver usando..",
+        "3": "A alternativa não corresponde ao conceito de vou fechar a torneira quando não estiver usando.."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_recurso_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-recurso",
+      "topicName": "Água como recurso",
+      "question": "Qual combinação está correta?",
+      "options": [
+        "água limpa pode receber lixo",
+        "torneira aberta sempre economiza água",
+        "rios não fazem parte do ambiente",
+        "água deve ser usada com cuidado e preservada"
+      ],
+      "correctIndex": 3,
+      "explanation": "Usar com cuidado e preservar a água são atitudes responsáveis.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de água deve ser usada com cuidado e preservada.",
+        "1": "A alternativa não corresponde ao conceito de água deve ser usada com cuidado e preservada.",
+        "2": "A alternativa não corresponde ao conceito de água deve ser usada com cuidado e preservada."
+      },
+      "skill": "reconhecer-importancia-e-uso-responsavel-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
