@@ -77,7 +77,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Inglês     | means-transport                  | means of transport                             |                          reconhecer meios de transporte |   20 | em-curadoria |
 | História   | povo-brasileiro                  | formação do povo brasileiro                    |                        reconhecer diversidade histórica |   20 | em-curadoria |
 | História   | imigrantes-portugueses-espanhois | imigrantes portugueses e espanhóis             | identificar presença e contribuições sem generalizações |   20 | em-curadoria |
-| História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | proposto     |
+| História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | proposto     |
 | História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | proposto     |
 | Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | proposto     |
