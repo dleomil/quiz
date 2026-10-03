@@ -67,7 +67,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Ciências   | luz-cores                        | luz e cores                                    |       reconhecer relação introdutória entre luz e cores |   20 | proposto     |
 | Ciências   | som-audicao                      | som, audição e cuidado auditivo                |     reconhecer produção do som e cuidados com a audição |   20 | proposto     |
 | Geografia  | agua-recurso                     | água como recurso                              |                reconhecer importância e uso responsável |   20 | em-curadoria |
-| Geografia  | nascente-rio                     | nascimento e percurso dos rios                 |                       identificar nascente, curso e foz |   20 | proposto     |
+| Geografia  | nascente-rio                     | nascimento e percurso dos rios                 |                       identificar nascente, curso e foz |   20 | em-curadoria |
 | Geografia  | agua-limitada                    | água renovável e limitada                      |                  compreender necessidade de preservação |   20 | proposto     |
 | Geografia  | agua-brasil                      | situação da água no Brasil                     |               reconhecer distribuição e desafios de uso |   20 | proposto     |
 | Geografia  | usos-agua                        | usos da água                                   |      relacionar usos domésticos, produtivos e coletivos |   20 | proposto     |
