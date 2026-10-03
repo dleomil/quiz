@@ -1,0 +1,531 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A crian____a brincou no quintal.",
+      "options": ["criança", "crianca", "criansa", "criançaa"],
+      "correctIndex": 0,
+      "explanation": "A palavra criança é escrita com ç antes de a.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: criança.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: criança.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: criança."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra completa: O palhaço fez uma ____ engraçada?",
+      "options": ["dansaç", "dança", "dansa", "danca"],
+      "correctIndex": 1,
+      "explanation": "A palavra dança é escrita com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: dança.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: dança.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: dança."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A professora pediu silên____io na leitura.",
+      "options": ["silencio", "silênsio", "silêncio", "silensio"],
+      "correctIndex": 2,
+      "explanation": "Silêncio é escrito com c cedilhado antes de i.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: silêncio.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: silêncio.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: silêncio."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": ["asúcar", "acúcar", "açucar", "açúcar"],
+      "correctIndex": 3,
+      "explanation": "A grafia correta é açúcar, com ç e acento.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: açúcar.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: açúcar.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: açúcar."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: O menino sentiu emo____ão ao receber o presente.",
+      "options": ["emoção", "emosão", "emocão", "emoçom"],
+      "correctIndex": 0,
+      "explanation": "A palavra emoção é escrita com ç.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: emoção.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: emoção.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: emoção."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra completa a frase: A ____ ficou pronta?",
+      "options": ["refeiçãoo", "refeição", "refeisão", "refeicão"],
+      "correctIndex": 1,
+      "explanation": "A grafia correta é refeição, com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: refeição.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: refeição.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: refeição."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A praça tem uma bonita ilumina____ão.",
+      "options": ["iluminacão", "iluminaçom", "iluminação", "iluminasão"],
+      "correctIndex": 2,
+      "explanation": "Iluminação é escrita com ç na sílaba ção.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: iluminação.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: iluminação.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: iluminação."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": ["corasão", "coracão", "coraçom", "coração"],
+      "correctIndex": 3,
+      "explanation": "A palavra coração é escrita com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: coração.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: coração.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: coração."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A inven____ão ajudou muitas pessoas.",
+      "options": ["invenção", "invensão", "invencão", "invençom"],
+      "correctIndex": 0,
+      "explanation": "Invenção é escrita com ç na terminação ção.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: invenção.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: invenção.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: invenção."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra completa: A criança fez uma observa____ão?",
+      "options": ["observaçom", "observação", "observasão", "observacão"],
+      "correctIndex": 1,
+      "explanation": "A forma correta é observação, com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: observação.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: observação.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: observação."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: O músico tocou uma can____ão conhecida.",
+      "options": ["cancão", "cançom", "canção", "cansão"],
+      "correctIndex": 2,
+      "explanation": "A palavra canção é escrita com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: canção.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: canção.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: canção."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": ["lisão", "licão", "liçom", "lição"],
+      "correctIndex": 3,
+      "explanation": "A grafia correta é lição, com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: lição.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: lição.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: lição."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A solu____ão do problema foi encontrada.",
+      "options": ["solução", "solusão", "solucão", "soluçom"],
+      "correctIndex": 0,
+      "explanation": "Solução é escrita com ç na terminação ção.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: solução.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: solução.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: solução."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra completa: A criança recebeu uma explica____ão?",
+      "options": ["explicaçom", "explicação", "explicasão", "explicacão"],
+      "correctIndex": 1,
+      "explanation": "A forma correta é explicação, com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: explicação.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: explicação.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: explicação."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A organiza____ão da sala ficou bonita.",
+      "options": ["organizacão", "organizaçom", "organização", "organisasão"],
+      "correctIndex": 2,
+      "explanation": "Organização é escrita com ç na terminação ção.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: organização.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: organização.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: organização."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": ["protesão", "protecão", "proteçom", "proteção"],
+      "correctIndex": 3,
+      "explanation": "A grafia correta é proteção, com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: proteção.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: proteção.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: proteção."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A informa____ão estava no cartaz.",
+      "options": ["informação", "informasão", "informacão", "informaçom"],
+      "correctIndex": 0,
+      "explanation": "Informação é escrita com ç na terminação ção.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: informação.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: informação.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: informação."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual palavra completa: A popula____ão cresceu?",
+      "options": ["populaçom", "população", "populasão", "populacão"],
+      "correctIndex": 1,
+      "explanation": "A palavra população é escrita com ç.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: população.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: população.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: população."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Complete: A conversa____ão foi respeitosa.",
+      "options": ["conversacão", "conversaçom", "conversação", "conversasão"],
+      "correctIndex": 2,
+      "explanation": "Conversação é escrita com ç na terminação ção.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: conversação.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: conversação.",
+        "3": "Esta alternativa não apresenta a grafia adequada para a palavra: conversação."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_c_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-c",
+      "topicName": "Usos de ç",
+      "question": "Qual resumo está correto sobre o uso de ç?",
+      "options": [
+        "toda letra c recebe ç",
+        "ç pode aparecer antes de qualquer vogal",
+        "a pronúncia sozinha sempre resolve a grafia",
+        "a grafia deve ser conferida na palavra e no contexto"
+      ],
+      "correctIndex": 3,
+      "explanation": "A escrita correta depende da palavra estudada e de seu contexto.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não apresenta a grafia adequada para a palavra: a grafia deve ser conferida na palavra e no contexto.",
+        "1": "Esta alternativa não apresenta a grafia adequada para a palavra: a grafia deve ser conferida na palavra e no contexto.",
+        "2": "Esta alternativa não apresenta a grafia adequada para a palavra: a grafia deve ser conferida na palavra e no contexto."
+      },
+      "skill": "aplicar-grafia-de-c",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "9"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
