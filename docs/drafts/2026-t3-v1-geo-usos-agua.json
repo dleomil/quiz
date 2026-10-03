@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual é um uso doméstico da água?",
+      "options": [
+        "beber",
+        "produzir vento",
+        "iluminar o Sol",
+        "fabricar nuvens"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beber é um uso da água no dia a dia das casas.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de beber.",
+        "2": "A alternativa não corresponde ao conceito de beber.",
+        "3": "A alternativa não corresponde ao conceito de beber."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual atividade de casa usa água?",
+      "options": [
+        "medir o tempo",
+        "lavar roupas",
+        "desenhar sombras",
+        "escutar música"
+      ],
+      "correctIndex": 1,
+      "explanation": "A lavagem de roupas é um uso doméstico da água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de lavar roupas.",
+        "2": "A alternativa não corresponde ao conceito de lavar roupas.",
+        "3": "A alternativa não corresponde ao conceito de lavar roupas."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Como a água pode ser usada na cozinha?",
+      "options": [
+        "produzir papel sozinho",
+        "fazer o ar desaparecer",
+        "lavar alimentos",
+        "criar eletricidade no celular"
+      ],
+      "correctIndex": 2,
+      "explanation": "A água pode ajudar a higienizar alimentos e utensílios.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de lavar alimentos.",
+        "1": "A alternativa não corresponde ao conceito de lavar alimentos.",
+        "3": "A alternativa não corresponde ao conceito de lavar alimentos."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual uso da água ajuda no cuidado pessoal?",
+      "options": [
+        "pintar o céu",
+        "mover montanhas",
+        "produzir areia",
+        "tomar banho"
+      ],
+      "correctIndex": 3,
+      "explanation": "O banho é um uso doméstico relacionado à higiene.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de tomar banho.",
+        "1": "A alternativa não corresponde ao conceito de tomar banho.",
+        "2": "A alternativa não corresponde ao conceito de tomar banho."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Por que a agricultura precisa de água?",
+      "options": [
+        "para ajudar as plantas a crescer",
+        "para transformar sementes em pedras",
+        "para impedir a luz do Sol",
+        "para eliminar todo solo"
+      ],
+      "correctIndex": 0,
+      "explanation": "As plantas precisam de água para se desenvolver.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de para ajudar as plantas a crescer.",
+        "2": "A alternativa não corresponde ao conceito de para ajudar as plantas a crescer.",
+        "3": "A alternativa não corresponde ao conceito de para ajudar as plantas a crescer."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual é um uso da água na criação de animais?",
+      "options": [
+        "produzir brinquedos",
+        "dar água aos animais",
+        "retirar o ar do ambiente",
+        "apagar todas as plantações"
+      ],
+      "correctIndex": 1,
+      "explanation": "Animais também precisam de água para viver.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de dar água aos animais.",
+        "2": "A alternativa não corresponde ao conceito de dar água aos animais.",
+        "3": "A alternativa não corresponde ao conceito de dar água aos animais."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "68"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Como a água pode participar da produção de alimentos?",
+      "options": [
+        "na troca do solo por vidro",
+        "na retirada da chuva",
+        "na irrigação das plantações",
+        "na produção de sombras"
+      ],
+      "correctIndex": 2,
+      "explanation": "A irrigação leva água às plantas quando necessário.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de na irrigação das plantações.",
+        "1": "A alternativa não corresponde ao conceito de na irrigação das plantações.",
+        "3": "A alternativa não corresponde ao conceito de na irrigação das plantações."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual atividade produtiva pode usar água?",
+      "options": [
+        "a formação da Lua",
+        "a produção de silêncio",
+        "a mudança das estações",
+        "a fabricação de produtos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Diversas atividades produtivas usam água em etapas de trabalho.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a fabricação de produtos.",
+        "1": "A alternativa não corresponde ao conceito de a fabricação de produtos.",
+        "2": "A alternativa não corresponde ao conceito de a fabricação de produtos."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "70"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual uso coletivo da água beneficia uma comunidade?",
+      "options": [
+        "abastecer casas e serviços",
+        "deixar rios poluídos",
+        "aumentar vazamentos",
+        "impedir o tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O abastecimento atende necessidades compartilhadas.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de abastecer casas e serviços.",
+        "2": "A alternativa não corresponde ao conceito de abastecer casas e serviços.",
+        "3": "A alternativa não corresponde ao conceito de abastecer casas e serviços."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "71"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Por que hospitais precisam de água?",
+      "options": [
+        "para impedir a limpeza",
+        "para higiene e atendimento seguro",
+        "para substituir medicamentos",
+        "para produzir vento"
+      ],
+      "correctIndex": 1,
+      "explanation": "A água é importante para limpeza e cuidados de saúde.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de para higiene e atendimento seguro.",
+        "2": "A alternativa não corresponde ao conceito de para higiene e atendimento seguro.",
+        "3": "A alternativa não corresponde ao conceito de para higiene e atendimento seguro."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "72"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Como escolas usam água?",
+      "options": [
+        "para apagar livros",
+        "para impedir a higiene",
+        "em bebedouros, banheiros e limpeza",
+        "somente para decorar salas"
+      ],
+      "correctIndex": 2,
+      "explanation": "A escola usa água em diferentes atividades coletivas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de em bebedouros, banheiros e limpeza.",
+        "1": "A alternativa não corresponde ao conceito de em bebedouros, banheiros e limpeza.",
+        "3": "A alternativa não corresponde ao conceito de em bebedouros, banheiros e limpeza."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual exemplo mostra uso da água no transporte?",
+      "options": [
+        "andar sobre nuvens",
+        "viajar dentro de uma pedra",
+        "substituir todas as estradas",
+        "navegação em rios e mares"
+      ],
+      "correctIndex": 3,
+      "explanation": "Rios e mares podem ser caminhos para embarcações.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de navegação em rios e mares.",
+        "1": "A alternativa não corresponde ao conceito de navegação em rios e mares.",
+        "2": "A alternativa não corresponde ao conceito de navegação em rios e mares."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "74"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Como a água pode ajudar a produzir energia?",
+      "options": [
+        "movendo turbinas em usinas hidrelétricas",
+        "criando papel sem máquinas",
+        "fazendo plantas desaparecerem",
+        "eliminando a luz solar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em usinas hidrelétricas, o movimento da água pode mover turbinas.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de movendo turbinas em usinas hidrelétricas.",
+        "2": "A alternativa não corresponde ao conceito de movendo turbinas em usinas hidrelétricas.",
+        "3": "A alternativa não corresponde ao conceito de movendo turbinas em usinas hidrelétricas."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Por que diferentes usos da água precisam ser planejados?",
+      "options": [
+        "para poluir as fontes",
+        "para evitar conflitos e desperdício",
+        "para gastar tudo de uma vez",
+        "para impedir o acesso de todos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Planejamento ajuda a conciliar necessidades e conservar a água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de para evitar conflitos e desperdício.",
+        "2": "A alternativa não corresponde ao conceito de para evitar conflitos e desperdício.",
+        "3": "A alternativa não corresponde ao conceito de para evitar conflitos e desperdício."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "58"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual situação representa uso consciente da água?",
+      "options": [
+        "lavar a calçada por horas",
+        "ignorar vazamentos",
+        "usar somente o necessário",
+        "deixar torneiras abertas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Usar somente o necessário reduz desperdícios.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usar somente o necessário.",
+        "1": "A alternativa não corresponde ao conceito de usar somente o necessário.",
+        "3": "A alternativa não corresponde ao conceito de usar somente o necessário."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "O que deve acontecer depois de usar água que pode estar contaminada?",
+      "options": [
+        "ser lançada diretamente no rio",
+        "ser misturada ao lixo",
+        "ser guardada em qualquer lugar",
+        "ela deve ser tratada antes de voltar ao ambiente"
+      ],
+      "correctIndex": 3,
+      "explanation": "O tratamento reduz impactos e protege as fontes.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de ela deve ser tratada antes de voltar ao ambiente.",
+        "1": "A alternativa não corresponde ao conceito de ela deve ser tratada antes de voltar ao ambiente.",
+        "2": "A alternativa não corresponde ao conceito de ela deve ser tratada antes de voltar ao ambiente."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Por que a água usada na agricultura deve ser bem administrada?",
+      "options": [
+        "para atender a produção sem desperdício",
+        "para molhar tudo sem controle",
+        "para impedir qualquer colheita",
+        "para retirar a proteção do solo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Boa administração evita desperdício e favorece a produção.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de para atender a produção sem desperdício.",
+        "2": "A alternativa não corresponde ao conceito de para atender a produção sem desperdício.",
+        "3": "A alternativa não corresponde ao conceito de para atender a produção sem desperdício."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual atitude ajuda a conciliar usos domésticos e coletivos?",
+      "options": [
+        "usar água sem limite",
+        "economizar água e comunicar vazamentos",
+        "aumentar o desperdício",
+        "jogar resíduos nas fontes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cuidado individual também protege a disponibilidade coletiva.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de economizar água e comunicar vazamentos.",
+        "2": "A alternativa não corresponde ao conceito de economizar água e comunicar vazamentos.",
+        "3": "A alternativa não corresponde ao conceito de economizar água e comunicar vazamentos."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "O que pode acontecer quando muitos usos competem pela mesma água?",
+      "options": [
+        "todos deixam de precisar dela",
+        "a poluição deixa de existir",
+        "é preciso organizar prioridades e cuidados",
+        "a água se multiplica sozinha"
+      ],
+      "correctIndex": 2,
+      "explanation": "Organização ajuda a distribuir a água de modo responsável.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de é preciso organizar prioridades e cuidados.",
+        "1": "A alternativa não corresponde ao conceito de é preciso organizar prioridades e cuidados.",
+        "3": "A alternativa não corresponde ao conceito de é preciso organizar prioridades e cuidados."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_usos_agua_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "usos-agua",
+      "topicName": "Usos da água",
+      "question": "Qual frase resume os usos da água?",
+      "options": [
+        "a água só serve para beber",
+        "a água não é usada por comunidades",
+        "a água pode ser desperdiçada sem consequência",
+        "a água atende pessoas, produção e serviços, por isso deve ser cuidada"
+      ],
+      "correctIndex": 3,
+      "explanation": "A água tem usos diversos e precisa de proteção em todos eles.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a água atende pessoas, produção e serviços, por isso deve ser cuidada.",
+        "1": "A alternativa não corresponde ao conceito de a água atende pessoas, produção e serviços, por isso deve ser cuidada.",
+        "2": "A alternativa não corresponde ao conceito de a água atende pessoas, produção e serviços, por isso deve ser cuidada."
+      },
+      "skill": "relacionar-usos-domesticos-produtivos-e-coletivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
