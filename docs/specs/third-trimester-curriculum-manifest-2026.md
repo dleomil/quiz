@@ -75,7 +75,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Inglês     | places-city                      | places in the city                             |                       reconhecer vocabulário de lugares |   20 | em-curadoria |
 | Inglês     | celebrations                     | celebrations                                   |       reconhecer vocabulário e contextos de celebrações |   20 | em-curadoria |
 | Inglês     | means-transport                  | means of transport                             |                          reconhecer meios de transporte |   20 | em-curadoria |
-| História   | povo-brasileiro                  | formação do povo brasileiro                    |                        reconhecer diversidade histórica |   20 | proposto     |
+| História   | povo-brasileiro                  | formação do povo brasileiro                    |                        reconhecer diversidade histórica |   20 | em-curadoria |
 | História   | imigrantes-portugueses-espanhois | imigrantes portugueses e espanhóis             | identificar presença e contribuições sem generalizações |   20 | proposto     |
 | História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | proposto     |
 | História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | proposto     |
