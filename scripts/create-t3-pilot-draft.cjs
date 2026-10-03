@@ -76,7 +76,7 @@ const SPECS = [
     'A sombra aparece na região que recebe menos luz porque o objeto a bloqueou.',
   ],
   [
-    'Em um caminho uniforme, a luz costuma se propagar:',
+    'Em situações simples, a luz costuma se propagar:',
     'em linha reta',
     ['em zigue-zague obrigatório', 'somente para baixo', 'sem direção'],
     'Em situações simples, representamos a propagação da luz por linhas retas.',
