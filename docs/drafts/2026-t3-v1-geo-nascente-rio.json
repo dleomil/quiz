@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "O que é a nascente de um rio?",
+      "options": [
+        "o lugar onde o rio começa",
+        "o lugar onde o rio termina",
+        "uma ponte sobre o rio",
+        "a margem mais distante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A nascente é o local de origem do rio.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de o lugar onde o rio começa.",
+        "2": "A alternativa não corresponde ao conceito de o lugar onde o rio começa.",
+        "3": "A alternativa não corresponde ao conceito de o lugar onde o rio começa."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "O que chamamos de curso do rio?",
+      "options": [
+        "uma estrada ao lado do rio",
+        "o caminho que a água percorre",
+        "somente a água da chuva",
+        "o lugar onde o rio termina"
+      ],
+      "correctIndex": 1,
+      "explanation": "O curso é o percurso feito pela água desde a nascente até a foz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o caminho que a água percorre.",
+        "2": "A alternativa não corresponde ao conceito de o caminho que a água percorre.",
+        "3": "A alternativa não corresponde ao conceito de o caminho que a água percorre."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "O que é a foz de um rio?",
+      "options": [
+        "a parte mais estreita da nascente",
+        "uma montanha sem água",
+        "o lugar onde o rio deságua",
+        "o local onde o rio começa"
+      ],
+      "correctIndex": 2,
+      "explanation": "A foz é o local onde o rio termina seu percurso e deságua em outro corpo de água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o lugar onde o rio deságua.",
+        "1": "A alternativa não corresponde ao conceito de o lugar onde o rio deságua.",
+        "3": "A alternativa não corresponde ao conceito de o lugar onde o rio deságua."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual sequência mostra o percurso básico de um rio?",
+      "options": [
+        "foz, nascente e curso",
+        "curso, foz e nascente",
+        "nascente, foz e curso",
+        "nascente, curso e foz"
+      ],
+      "correctIndex": 3,
+      "explanation": "A água começa na nascente, percorre o curso e chega à foz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de nascente, curso e foz.",
+        "1": "A alternativa não corresponde ao conceito de nascente, curso e foz.",
+        "2": "A alternativa não corresponde ao conceito de nascente, curso e foz."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "68"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Em geral, a água de um rio corre:",
+      "options": [
+        "de áreas mais altas para áreas mais baixas",
+        "sempre de baixo para cima",
+        "somente em círculos",
+        "sem seguir nenhum caminho"
+      ],
+      "correctIndex": 0,
+      "explanation": "A diferença de altura ajuda a água a seguir para áreas mais baixas.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de de áreas mais altas para áreas mais baixas.",
+        "2": "A alternativa não corresponde ao conceito de de áreas mais altas para áreas mais baixas.",
+        "3": "A alternativa não corresponde ao conceito de de áreas mais altas para áreas mais baixas."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "70"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual parte fica mais perto da origem do rio?",
+      "options": ["o oceano", "a nascente", "a foz", "a margem final"],
+      "correctIndex": 1,
+      "explanation": "A nascente é a origem do rio.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a nascente.",
+        "2": "A alternativa não corresponde ao conceito de a nascente.",
+        "3": "A alternativa não corresponde ao conceito de a nascente."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "72"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual parte fica mais perto do local onde o rio termina?",
+      "options": [
+        "o início do curso",
+        "a montanha de origem",
+        "a foz",
+        "a nascente"
+      ],
+      "correctIndex": 2,
+      "explanation": "A foz é o final do percurso do rio.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a foz.",
+        "1": "A alternativa não corresponde ao conceito de a foz.",
+        "3": "A alternativa não corresponde ao conceito de a foz."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Um rio pode desaguar em:",
+      "options": [
+        "somente em uma rua",
+        "somente em uma montanha",
+        "apenas em uma ponte",
+        "outro rio, lago ou mar"
+      ],
+      "correctIndex": 3,
+      "explanation": "A foz pode estar em outro rio, lago, mar ou oceano.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de outro rio, lago ou mar.",
+        "1": "A alternativa não corresponde ao conceito de outro rio, lago ou mar.",
+        "2": "A alternativa não corresponde ao conceito de outro rio, lago ou mar."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "O que é um afluente?",
+      "options": [
+        "um rio menor que deságua em outro rio",
+        "a nascente de qualquer rio",
+        "uma estrada que acompanha o rio",
+        "uma ponte muito comprida"
+      ],
+      "correctIndex": 0,
+      "explanation": "O afluente contribui com suas águas para outro rio.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de um rio menor que deságua em outro rio.",
+        "2": "A alternativa não corresponde ao conceito de um rio menor que deságua em outro rio.",
+        "3": "A alternativa não corresponde ao conceito de um rio menor que deságua em outro rio."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Se uma seta em um desenho aponta da nascente para a foz, ela indica:",
+      "options": [
+        "a quantidade de peixes",
+        "a direção do percurso da água",
+        "o tamanho das margens",
+        "a profundidade da ponte"
+      ],
+      "correctIndex": 1,
+      "explanation": "A seta pode representar a direção em que a água percorre o rio.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a direção do percurso da água.",
+        "2": "A alternativa não corresponde ao conceito de a direção do percurso da água.",
+        "3": "A alternativa não corresponde ao conceito de a direção do percurso da água."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Por que é importante proteger a nascente?",
+      "options": [
+        "porque ela é sempre uma piscina",
+        "porque impede toda chuva",
+        "porque ela dá origem ao rio",
+        "porque nela passam carros"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cuidar da nascente ajuda a proteger o começo do rio e suas águas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque ela dá origem ao rio.",
+        "1": "A alternativa não corresponde ao conceito de porque ela dá origem ao rio.",
+        "3": "A alternativa não corresponde ao conceito de porque ela dá origem ao rio."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "68"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual atitude ajuda a conservar as margens de um rio?",
+      "options": [
+        "jogar entulho na margem",
+        "retirar todas as plantas",
+        "lavar produtos químicos no rio",
+        "evitar jogar lixo e retirar a vegetação"
+      ],
+      "correctIndex": 3,
+      "explanation": "Lixo e retirada da vegetação podem prejudicar as margens e a água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de evitar jogar lixo e retirar a vegetação.",
+        "1": "A alternativa não corresponde ao conceito de evitar jogar lixo e retirar a vegetação.",
+        "2": "A alternativa não corresponde ao conceito de evitar jogar lixo e retirar a vegetação."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "70"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Se uma substância polui o rio perto da nascente, o que pode acontecer?",
+      "options": [
+        "a poluição pode seguir pelo curso do rio",
+        "a poluição desaparece imediatamente",
+        "o rio muda para uma estrada",
+        "a foz deixa de existir na hora"
+      ],
+      "correctIndex": 0,
+      "explanation": "A água em movimento pode levar a poluição para outras partes do curso.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de a poluição pode seguir pelo curso do rio.",
+        "2": "A alternativa não corresponde ao conceito de a poluição pode seguir pelo curso do rio.",
+        "3": "A alternativa não corresponde ao conceito de a poluição pode seguir pelo curso do rio."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "72"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "A chuva pode contribuir para:",
+      "options": [
+        "transformar rio em ponte",
+        "aumentar a água de córregos e rios",
+        "secar todos os rios automaticamente",
+        "impedir qualquer nascente"
+      ],
+      "correctIndex": 1,
+      "explanation": "A água da chuva pode alimentar córregos e rios.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de aumentar a água de córregos e rios.",
+        "2": "A alternativa não corresponde ao conceito de aumentar a água de córregos e rios.",
+        "3": "A alternativa não corresponde ao conceito de aumentar a água de córregos e rios."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual opção apresenta corretamente as partes de um rio?",
+      "options": [
+        "chuva, casa e escola",
+        "oceano, montanha e rua",
+        "nascente, curso e foz",
+        "margem, ponte e estrada"
+      ],
+      "correctIndex": 2,
+      "explanation": "Nascente, curso e foz são partes relacionadas ao percurso do rio.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de nascente, curso e foz.",
+        "1": "A alternativa não corresponde ao conceito de nascente, curso e foz.",
+        "3": "A alternativa não corresponde ao conceito de nascente, curso e foz."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "O que podemos observar no curso de um rio?",
+      "options": [
+        "a água parada sempre no mesmo ponto",
+        "somente areia sem água",
+        "uma estrada sem margens",
+        "a água seguindo por um leito"
+      ],
+      "correctIndex": 3,
+      "explanation": "O leito é o espaço por onde as águas do rio escoam.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a água seguindo por um leito.",
+        "1": "A alternativa não corresponde ao conceito de a água seguindo por um leito.",
+        "2": "A alternativa não corresponde ao conceito de a água seguindo por um leito."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual situação mostra cuidado com um rio?",
+      "options": [
+        "guardar o lixo e descartá-lo corretamente",
+        "jogar plástico na água",
+        "lavar tinta no rio",
+        "deixar óleo escorrer para a margem"
+      ],
+      "correctIndex": 0,
+      "explanation": "O descarte correto evita poluir o curso do rio.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de guardar o lixo e descartá-lo corretamente.",
+        "2": "A alternativa não corresponde ao conceito de guardar o lixo e descartá-lo corretamente.",
+        "3": "A alternativa não corresponde ao conceito de guardar o lixo e descartá-lo corretamente."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Uma ponte construída sobre um rio fica:",
+      "options": [
+        "fora de qualquer margem",
+        "sobre uma parte do curso do rio",
+        "sempre dentro da nascente",
+        "no lugar da foz"
+      ],
+      "correctIndex": 1,
+      "explanation": "A ponte pode atravessar o curso do rio para permitir a passagem.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de sobre uma parte do curso do rio.",
+        "2": "A alternativa não corresponde ao conceito de sobre uma parte do curso do rio.",
+        "3": "A alternativa não corresponde ao conceito de sobre uma parte do curso do rio."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "68"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual afirmação está correta sobre a foz?",
+      "options": [
+        "ela não faz parte do rio",
+        "ela é uma estrada de terra",
+        "ela é o local onde o rio deságua",
+        "ela é sempre o local onde o rio nasce"
+      ],
+      "correctIndex": 2,
+      "explanation": "A foz marca o final do percurso do rio.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de ela é o local onde o rio deságua.",
+        "1": "A alternativa não corresponde ao conceito de ela é o local onde o rio deságua.",
+        "3": "A alternativa não corresponde ao conceito de ela é o local onde o rio deságua."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "70"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_nascente_rio_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "nascente-rio",
+      "topicName": "Nascimento e percurso dos rios",
+      "question": "Qual combinação ajuda a cuidar dos rios?",
+      "options": [
+        "jogar lixo e retirar plantas",
+        "poluir a nascente e limpar a ponte",
+        "desperdiçar água e ocupar o leito",
+        "proteger nascentes, margens e água"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cuidar de diferentes partes do rio ajuda a preservar o ambiente e a água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de proteger nascentes, margens e água.",
+        "1": "A alternativa não corresponde ao conceito de proteger nascentes, margens e água.",
+        "2": "A alternativa não corresponde ao conceito de proteger nascentes, margens e água."
+      },
+      "skill": "identificar-nascente-curso-e-foz",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "72"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
