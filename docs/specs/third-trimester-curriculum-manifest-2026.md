@@ -2,23 +2,24 @@
 
 ## Estado do intake
 
-| Campo                    | Valor               |
-| ------------------------ | ------------------- |
-| Ano letivo               | 2026                |
-| Trimestre                | `t3`                |
-| Serie                    | `3-ano`             |
-| `contentSetId`           | `2026-t3-v1`        |
-| Versao do manifesto      | 2                   |
-| Estado do manifesto      | `under-review`      |
-| Estado inicial do acervo | `draft` e invisivel |
-| Responsavel pelo aceite  | Product Owner       |
-| Data de recebimento      | 2026-10-02          |
-| Primeira prova           | 2026-10-14          |
-| Ultima prova regular     | 2026-10-21          |
+| Campo                    | Valor                     |
+| ------------------------ | ------------------------- |
+| Ano letivo               | 2026                      |
+| Trimestre                | `t3`                      |
+| Serie                    | `3-ano`                   |
+| `contentSetId`           | `2026-t3-v1`              |
+| Versao do manifesto      | 2                         |
+| Estado do manifesto      | `frozen`                  |
+| Estado inicial do acervo | `draft` e invisivel       |
+| Responsavel pelo aceite  | Product Owner (`dleomil`) |
+| Data de recebimento      | 2026-10-02                |
+| Primeira prova           | 2026-10-14                |
+| Ultima prova regular     | 2026-10-21                |
 
-O intake foi aberto a partir do roteiro mensal recebido. A matriz abaixo e uma
-proposta de escopo extraida da fonte e ainda precisa do aceite humano antes de
-qualquer curadoria. O documento escolar nao e reproduzido neste manifesto.
+O intake foi aberto a partir do roteiro mensal recebido. A matriz foi congelada
+com as decisões registradas abaixo; ela autoriza o piloto, mas não publica o
+acervo nem substitui as revisões de conteúdo. O documento escolar nao e
+reproduzido neste manifesto.
 
 ## Fonte curricular
 
@@ -120,13 +121,13 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 
 ## Lacunas e decisões pendentes
 
-| ID         | Tipo        | Descrição                                                        | Impacto    | Decisão                                   | Estado |
-| ---------- | ----------- | ---------------------------------------------------------------- | ---------- | ----------------------------------------- | ------ |
-| T3-INT-001 | ambiguidade | confirmar se divisão e métodos da divisão são um ou dois objetos | Matemática | revisar antes do piloto                   | aberto |
-| T3-INT-002 | ambiguidade | confirmar escopo de expressões e convenção ensinada              | Matemática | validar antes da curadoria                | aberto |
-| T3-INT-003 | ambiguidade | confirmar se divisão euclidiana é tema próprio                   | Matemática | validar objetivo e exemplos               | aberto |
-| T3-INT-004 | prazo       | janela até a primeira prova é curta                              | todos      | priorizar sem liberar conteúdo incompleto | aberto |
-| T3-INT-005 | fonte       | confirmar que o DOCX é a versão final                            | todos      | aceite do Product Owner                   | aberto |
+| ID         | Tipo        | Descrição                                                        | Impacto    | Decisão                                                       | Estado    |
+| ---------- | ----------- | ---------------------------------------------------------------- | ---------- | ------------------------------------------------------------- | --------- |
+| T3-INT-001 | ambiguidade | confirmar se divisão e métodos da divisão são um ou dois objetos | Matemática | manter divisão como conceito e métodos como tema separado     | resolvido |
+| T3-INT-002 | ambiguidade | confirmar escopo de expressões e convenção ensinada              | Matemática | manter expressões simples e a convenção coberta pela apostila | resolvido |
+| T3-INT-003 | ambiguidade | confirmar se divisão euclidiana é tema próprio                   | Matemática | manter tema próprio por possuir seção e objetivo distintos    | resolvido |
+| T3-INT-004 | prazo       | janela até a primeira prova é curta                              | todos      | priorizar por data sem publicar pacote incompleto             | resolvido |
+| T3-INT-005 | fonte       | confirmar que o DOCX é a versão final                            | todos      | Product Owner confirmou prosseguimento com este arquivo       | resolvido |
 
 ## Gates
 
@@ -134,19 +135,20 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 - [x] arquivo permanece fora do Git;
 - [x] matérias e datas foram identificadas;
 - [x] matriz preliminar foi extraída sem reproduzir texto protegido;
-- [ ] Product Owner confirmou completude da fonte;
-- [ ] ambiguidades de Matemática foram resolvidas;
-- [ ] matriz foi congelada;
+- [x] Product Owner confirmou completude da fonte;
+- [x] ambiguidades de Matemática foram resolvidas;
+- [x] matriz foi congelada;
 - [ ] piloto de um tema foi aprovado;
 - [ ] `2026-t3-v1` foi implementado em `draft` e validado;
 - [ ] aprovação humana de publicação foi registrada.
 
 ## Controle de alterações
 
-| Versão | Data       | Estado          | Descrição                                                | Aprovação |
-| -----: | ---------- | --------------- | -------------------------------------------------------- | --------- |
-|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                        | pendente  |
-|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos | pendente  |
+| Versão | Data       | Estado          | Descrição                                                | Aprovação                              |
+| -----: | ---------- | --------------- | -------------------------------------------------------- | -------------------------------------- |
+|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                        | pendente                               |
+|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos | Product Owner confirmou prosseguimento |
+|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado        | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.
