@@ -79,7 +79,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | História   | imigrantes-portugueses-espanhois | imigrantes portugueses e espanhóis             | identificar presença e contribuições sem generalizações |   20 | em-curadoria |
 | História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | em-curadoria |
-| História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | proposto     |
+| História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | proposto     |
 | Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | proposto     |
 | Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | proposto     |
