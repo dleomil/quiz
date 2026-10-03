@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que é necessário para enxergar um objeto?",
+      "options": [
+        "luz chegando aos nossos olhos",
+        "som alto",
+        "água em movimento",
+        "vento forte"
+      ],
+      "correctIndex": 0,
+      "explanation": "A visão acontece quando a luz chega aos olhos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de luz chegando aos nossos olhos.",
+        "2": "A alternativa não corresponde ao conceito de luz chegando aos nossos olhos.",
+        "3": "A alternativa não corresponde ao conceito de luz chegando aos nossos olhos."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que uma fonte de luz faz?",
+      "options": [
+        "impede qualquer sombra",
+        "emite luz",
+        "absorve todo som",
+        "produz apenas água"
+      ],
+      "correctIndex": 1,
+      "explanation": "Uma fonte de luz é um corpo que emite luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de emite luz.",
+        "2": "A alternativa não corresponde ao conceito de emite luz.",
+        "3": "A alternativa não corresponde ao conceito de emite luz."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual é uma fonte natural de luz?",
+      "options": ["um caderno", "uma parede", "o Sol", "uma cadeira"],
+      "correctIndex": 2,
+      "explanation": "O Sol é uma fonte natural de luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o sol.",
+        "1": "A alternativa não corresponde ao conceito de o sol.",
+        "3": "A alternativa não corresponde ao conceito de o sol."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual é uma fonte artificial de luz?",
+      "options": [
+        "uma pedra",
+        "uma folha seca",
+        "um copo vazio",
+        "uma lâmpada acesa"
+      ],
+      "correctIndex": 3,
+      "explanation": "A lâmpada é produzida pelas pessoas e emite luz quando acesa.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma lâmpada acesa.",
+        "1": "A alternativa não corresponde ao conceito de uma lâmpada acesa.",
+        "2": "A alternativa não corresponde ao conceito de uma lâmpada acesa."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que acontece quando um objeto opaco bloqueia a luz?",
+      "options": [
+        "pode surgir uma sombra",
+        "a luz atravessa sem mudança",
+        "o objeto vira transparente",
+        "a sombra ilumina o objeto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sombra aparece na região que recebe menos luz por causa do bloqueio.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de pode surgir uma sombra.",
+        "2": "A alternativa não corresponde ao conceito de pode surgir uma sombra.",
+        "3": "A alternativa não corresponde ao conceito de pode surgir uma sombra."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Como mudar a posição da lâmpada pode mudar a sombra?",
+      "options": [
+        "a luz vira som",
+        "a direção e o tamanho da sombra podem mudar",
+        "a sombra deixa de depender da luz",
+        "o objeto fica transparente"
+      ],
+      "correctIndex": 1,
+      "explanation": "A posição da fonte altera a forma como a luz é bloqueada.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a direção e o tamanho da sombra podem mudar.",
+        "2": "A alternativa não corresponde ao conceito de a direção e o tamanho da sombra podem mudar.",
+        "3": "A alternativa não corresponde ao conceito de a direção e o tamanho da sombra podem mudar."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "50"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que é reflexão da luz?",
+      "options": [
+        "a passagem de água pela parede",
+        "o desaparecimento de toda luz",
+        "o retorno da luz ao encontrar uma superfície",
+        "a produção de som pela luz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reflexão é o retorno da luz após encontrar uma superfície.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o retorno da luz ao encontrar uma superfície.",
+        "1": "A alternativa não corresponde ao conceito de o retorno da luz ao encontrar uma superfície.",
+        "3": "A alternativa não corresponde ao conceito de o retorno da luz ao encontrar uma superfície."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual superfície reflete bem a luz?",
+      "options": [
+        "um tecido escuro e áspero",
+        "uma esponja",
+        "um papel amassado",
+        "um espelho"
+      ],
+      "correctIndex": 3,
+      "explanation": "O espelho tem superfície adequada para refletir a luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um espelho.",
+        "1": "A alternativa não corresponde ao conceito de um espelho.",
+        "2": "A alternativa não corresponde ao conceito de um espelho."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "52"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Por que vemos nosso rosto no espelho?",
+      "options": [
+        "porque a luz refletida chega aos nossos olhos",
+        "porque o espelho produz nosso rosto",
+        "porque não há luz no ambiente",
+        "porque o som forma imagens"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imagem é percebida pela luz refletida pelo espelho.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de porque a luz refletida chega aos nossos olhos.",
+        "2": "A alternativa não corresponde ao conceito de porque a luz refletida chega aos nossos olhos.",
+        "3": "A alternativa não corresponde ao conceito de porque a luz refletida chega aos nossos olhos."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "53"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que pode acontecer quando a luz encontra uma superfície clara?",
+      "options": [
+        "a luz deixa de existir",
+        "parte da luz pode ser refletida",
+        "toda luz obrigatoriamente desaparece",
+        "a superfície vira fonte natural"
+      ],
+      "correctIndex": 1,
+      "explanation": "Superfícies claras podem refletir parte da luz que recebem.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de parte da luz pode ser refletida.",
+        "2": "A alternativa não corresponde ao conceito de parte da luz pode ser refletida.",
+        "3": "A alternativa não corresponde ao conceito de parte da luz pode ser refletida."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Por que uma sala escura dificulta enxergar?",
+      "options": [
+        "as sombras produzem imagens",
+        "os objetos deixam de existir",
+        "há pouca luz chegando aos olhos",
+        "há luz demais nos olhos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Com pouca luz, os olhos recebem menos informação dos objetos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de há pouca luz chegando aos olhos.",
+        "1": "A alternativa não corresponde ao conceito de há pouca luz chegando aos olhos.",
+        "3": "A alternativa não corresponde ao conceito de há pouca luz chegando aos olhos."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "55"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Como percebemos as cores dos objetos?",
+      "options": [
+        "pelo som produzido pelo objeto",
+        "pela temperatura do ar",
+        "pela força da gravidade",
+        "pela luz que chega aos olhos após interagir com eles"
+      ],
+      "correctIndex": 3,
+      "explanation": "A percepção das cores depende da luz que chega aos olhos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de pela luz que chega aos olhos após interagir com eles.",
+        "1": "A alternativa não corresponde ao conceito de pela luz que chega aos olhos após interagir com eles.",
+        "2": "A alternativa não corresponde ao conceito de pela luz que chega aos olhos após interagir com eles."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "56"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual situação mostra reflexão da luz?",
+      "options": [
+        "ver uma janela refletida em um espelho",
+        "ouvir uma campainha",
+        "sentir o vento",
+        "beber água"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imagem refletida é um exemplo de reflexão da luz.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ver uma janela refletida em um espelho.",
+        "2": "A alternativa não corresponde ao conceito de ver uma janela refletida em um espelho.",
+        "3": "A alternativa não corresponde ao conceito de ver uma janela refletida em um espelho."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual situação mostra formação de sombra?",
+      "options": [
+        "um som atravessando uma parede",
+        "uma pessoa bloqueando a luz de uma lanterna",
+        "uma lanterna apontada para o céu sem objeto",
+        "um objeto transparente diante da luz"
+      ],
+      "correctIndex": 1,
+      "explanation": "A pessoa bloqueia a luz e cria uma região de sombra.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma pessoa bloqueando a luz de uma lanterna.",
+        "2": "A alternativa não corresponde ao conceito de uma pessoa bloqueando a luz de uma lanterna.",
+        "3": "A alternativa não corresponde ao conceito de uma pessoa bloqueando a luz de uma lanterna."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "58"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que pode alterar o tamanho de uma sombra?",
+      "options": [
+        "o sabor do objeto",
+        "a quantidade de água no ar",
+        "a distância entre a fonte, o objeto e a superfície",
+        "a cor do som"
+      ],
+      "correctIndex": 2,
+      "explanation": "As posições relativas mudam a projeção da sombra.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a distância entre a fonte, o objeto e a superfície.",
+        "1": "A alternativa não corresponde ao conceito de a distância entre a fonte, o objeto e a superfície.",
+        "3": "A alternativa não corresponde ao conceito de a distância entre a fonte, o objeto e a superfície."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Por que uma lanterna ilumina uma parte do caminho?",
+      "options": [
+        "porque transforma o caminho em espelho",
+        "porque apaga todas as sombras",
+        "porque produz luz natural",
+        "porque emite luz que se espalha pelo ambiente"
+      ],
+      "correctIndex": 3,
+      "explanation": "A lanterna é uma fonte artificial que emite luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque emite luz que se espalha pelo ambiente.",
+        "1": "A alternativa não corresponde ao conceito de porque emite luz que se espalha pelo ambiente.",
+        "2": "A alternativa não corresponde ao conceito de porque emite luz que se espalha pelo ambiente."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "O que ocorre quando a luz é refletida por uma superfície?",
+      "options": [
+        "ela muda de direção",
+        "ela sempre vira matéria",
+        "ela deixa de poder ser vista",
+        "ela transforma o objeto em som"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reflexão muda a direção de propagação da luz.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ela muda de direção.",
+        "2": "A alternativa não corresponde ao conceito de ela muda de direção.",
+        "3": "A alternativa não corresponde ao conceito de ela muda de direção."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual afirmação sobre sombra está correta?",
+      "options": [
+        "a sombra é uma fonte de luz",
+        "a sombra depende da presença de uma fonte de luz e de um bloqueio",
+        "a sombra existe sem luz",
+        "todo material produz a mesma sombra"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sombra resulta da luz bloqueada por um objeto.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a sombra depende da presença de uma fonte de luz e de um bloqueio.",
+        "2": "A alternativa não corresponde ao conceito de a sombra depende da presença de uma fonte de luz e de um bloqueio.",
+        "3": "A alternativa não corresponde ao conceito de a sombra depende da presença de uma fonte de luz e de um bloqueio."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Como observar uma propriedade da luz em uma atividade?",
+      "options": [
+        "usar somente sons",
+        "fechar os olhos durante tudo",
+        "usar uma lanterna, objetos diferentes e observar o que acontece",
+        "evitar qualquer fonte de luz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Uma observação simples permite comparar luz, reflexão e sombra.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usar uma lanterna, objetos diferentes e observar o que acontece.",
+        "1": "A alternativa não corresponde ao conceito de usar uma lanterna, objetos diferentes e observar o que acontece.",
+        "3": "A alternativa não corresponde ao conceito de usar uma lanterna, objetos diferentes e observar o que acontece."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_propriedades_luz_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "propriedades-luz",
+      "topicName": "Propriedades da luz",
+      "question": "Qual frase resume propriedades estudadas da luz?",
+      "options": [
+        "a luz só produz som",
+        "a luz não interage com objetos",
+        "a luz existe apenas em espelhos",
+        "a luz pode ser emitida, refletida e bloqueada, formando sombras"
+      ],
+      "correctIndex": 3,
+      "explanation": "A luz apresenta diferentes comportamentos ao interagir com materiais.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a luz pode ser emitida, refletida e bloqueada, formando sombras.",
+        "1": "A alternativa não corresponde ao conceito de a luz pode ser emitida, refletida e bloqueada, formando sombras.",
+        "2": "A alternativa não corresponde ao conceito de a luz pode ser emitida, refletida e bloqueada, formando sombras."
+      },
+      "skill": "reconhecer-reflexao-sombra-e-percepcao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
