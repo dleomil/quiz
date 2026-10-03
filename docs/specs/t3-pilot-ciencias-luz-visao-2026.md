@@ -31,9 +31,9 @@ primária adequada.
 - [x] objetivo verificável e meta 20 definidos;
 - [x] ano, série, trimestre e prova relacionados;
 - [x] fonte sob custódia local e fora do Git;
-- [ ] formato final das questões confirmado;
-- [ ] referências de evidência por lote registradas;
-- [ ] responsável humano pelo aceite do piloto confirmado.
+- [x] formato final das questões confirmado;
+- [x] referências de evidência por lote registradas;
+- [x] responsável humano pelo aceite do piloto confirmado.
 
 ## Definition of Done
 
@@ -46,8 +46,8 @@ primária adequada.
   configuração da fase atual;
 - relatório sem achado bloqueante pendente;
 - distribuição 5/5/5/5;
-- validador estrutural e testes de navegador executados em ambiente `draft`;
-- aprovação humana do piloto e decisão explícita `go/no-go`.
+- validador estrutural e testes de navegador executados em harness isolado;
+- aprovação humana do piloto e decisão explícita `go` para produção editorial.
 
 ## Sequência e calendário
 
@@ -70,3 +70,9 @@ T2 V2 continua sendo o acervo padrão.
 - resultados de validação e regressão;
 - evidência de seletor, sessão e histórico isolados;
 - decisão humana de `go/no-go` no card #300.
+
+## Decisão do piloto
+
+Em 2026-10-03, o Product Owner registrou `go` para iniciar a curadoria dos
+demais temas do T3. O acervo `2026-t3-v1` permanece `draft` e invisível; esta
+decisão não autoriza publicação nem alteração do runtime.

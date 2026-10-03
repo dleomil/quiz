@@ -138,8 +138,8 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 - [x] Product Owner confirmou completude da fonte;
 - [x] ambiguidades de Matemática foram resolvidas;
 - [x] matriz foi congelada;
-- [ ] piloto de um tema foi aprovado;
-- [ ] `2026-t3-v1` foi implementado em `draft` e validado;
+- [x] piloto de um tema foi aprovado para produção editorial;
+- [x] `2026-t3-v1` foi validado em harness isolado como `draft`;
 - [ ] aprovação humana de publicação foi registrada.
 
 ## Controle de alterações
