@@ -1,0 +1,581 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "A luz do Sol é um exemplo de:",
+      "options": ["fonte luminosa", "corpo iluminado", "sombra", "espelho"],
+      "correctIndex": 0,
+      "explanation": "A luz do Sol é produzida pelo próprio Sol.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de fonte luminosa.",
+        "2": "A alternativa não corresponde ao conceito de fonte luminosa.",
+        "3": "A alternativa não corresponde ao conceito de fonte luminosa."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "41"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual objeto produz luz quando está ligado?",
+      "options": ["mesa", "lâmpada", "lua", "caderno"],
+      "correctIndex": 1,
+      "explanation": "A lâmpada ligada produz luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de lâmpada.",
+        "2": "A alternativa não corresponde ao conceito de lâmpada.",
+        "3": "A alternativa não corresponde ao conceito de lâmpada."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "43"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "A Lua é um corpo:",
+      "options": [
+        "transparente",
+        "opaco que produz luz",
+        "iluminado",
+        "luminoso"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Lua é iluminada pela luz do Sol e não produz sua própria luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de iluminado.",
+        "1": "A alternativa não corresponde ao conceito de iluminado.",
+        "3": "A alternativa não corresponde ao conceito de iluminado."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual órgão usamos para enxergar?",
+      "options": ["ouvidos", "nariz", "mãos", "olhos"],
+      "correctIndex": 3,
+      "explanation": "Usamos os olhos para perceber a luz e enxergar.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de olhos.",
+        "1": "A alternativa não corresponde ao conceito de olhos.",
+        "2": "A alternativa não corresponde ao conceito de olhos."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "O que devemos fazer diante de uma luz muito forte?",
+      "options": [
+        "não olhar diretamente para ela",
+        "aproximar o rosto",
+        "fechar os olhos e olhar mais perto",
+        "colocar a luz nos olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evitar olhar diretamente para luz intensa ajuda a proteger a visão.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de não olhar diretamente para ela.",
+        "2": "A alternativa não corresponde ao conceito de não olhar diretamente para ela.",
+        "3": "A alternativa não corresponde ao conceito de não olhar diretamente para ela."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual material costuma deixar a luz passar quase totalmente?",
+      "options": ["pedra", "vidro transparente", "madeira", "papelão"],
+      "correctIndex": 1,
+      "explanation": "O vidro transparente permite a passagem de grande parte da luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de vidro transparente.",
+        "2": "A alternativa não corresponde ao conceito de vidro transparente.",
+        "3": "A alternativa não corresponde ao conceito de vidro transparente."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual material deixa passar apenas parte da luz?",
+      "options": [
+        "tábua de madeira",
+        "parede de concreto",
+        "papel vegetal",
+        "metal"
+      ],
+      "correctIndex": 2,
+      "explanation": "O papel vegetal é translúcido e deixa passar parte da luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de papel vegetal.",
+        "1": "A alternativa não corresponde ao conceito de papel vegetal.",
+        "3": "A alternativa não corresponde ao conceito de papel vegetal."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual objeto é opaco?",
+      "options": [
+        "vidro transparente",
+        "água limpa",
+        "janela de vidro",
+        "livro"
+      ],
+      "correctIndex": 3,
+      "explanation": "O livro não permite a passagem da luz e é opaco.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de livro.",
+        "1": "A alternativa não corresponde ao conceito de livro.",
+        "2": "A alternativa não corresponde ao conceito de livro."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "41"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Quando um objeto opaco bloqueia a luz, pode aparecer:",
+      "options": [
+        "uma sombra",
+        "um som",
+        "uma cor nova no ouvido",
+        "uma corrente de ar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sombra aparece na região que recebe menos luz porque o objeto a bloqueou.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de uma sombra.",
+        "2": "A alternativa não corresponde ao conceito de uma sombra.",
+        "3": "A alternativa não corresponde ao conceito de uma sombra."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "43"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Em situações simples, a luz costuma se propagar:",
+      "options": [
+        "sem direção",
+        "em linha reta",
+        "em zigue-zague obrigatório",
+        "somente para baixo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Em situações simples, representamos a propagação da luz por linhas retas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de em linha reta.",
+        "2": "A alternativa não corresponde ao conceito de em linha reta.",
+        "3": "A alternativa não corresponde ao conceito de em linha reta."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "O que um espelho faz com parte da luz que recebe?",
+      "options": [
+        "transforma a luz em som",
+        "faz a luz desaparecer",
+        "reflete a luz",
+        "apaga a luz"
+      ],
+      "correctIndex": 2,
+      "explanation": "O espelho reflete parte da luz, permitindo observar imagens.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de reflete a luz.",
+        "1": "A alternativa não corresponde ao conceito de reflete a luz.",
+        "3": "A alternativa não corresponde ao conceito de reflete a luz."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Por que conseguimos ver nosso rosto no espelho?",
+      "options": [
+        "porque o espelho produz o rosto",
+        "porque o espelho faz som",
+        "porque não precisamos de luz",
+        "porque a luz refletida chega aos nossos olhos"
+      ],
+      "correctIndex": 3,
+      "explanation": "A imagem é percebida quando a luz refletida pelo espelho chega aos olhos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque a luz refletida chega aos nossos olhos.",
+        "1": "A alternativa não corresponde ao conceito de porque a luz refletida chega aos nossos olhos.",
+        "2": "A alternativa não corresponde ao conceito de porque a luz refletida chega aos nossos olhos."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Uma camiseta vermelha iluminada com luz branca parece vermelha porque:",
+      "options": [
+        "reflete principalmente a luz vermelha",
+        "produz todas as cores sozinha",
+        "absorve toda a luz",
+        "não precisa de luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cor percebida depende da luz que o objeto reflete até nossos olhos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de reflete principalmente a luz vermelha.",
+        "2": "A alternativa não corresponde ao conceito de reflete principalmente a luz vermelha.",
+        "3": "A alternativa não corresponde ao conceito de reflete principalmente a luz vermelha."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "O que acontece quando apagamos a luz de um quarto?",
+      "options": [
+        "a parede fica transparente",
+        "fica mais difícil enxergar os objetos",
+        "os objetos deixam de existir",
+        "os objetos viram sons"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sem luz suficiente, os olhos recebem menos informação para formar imagens.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de fica mais difícil enxergar os objetos.",
+        "2": "A alternativa não corresponde ao conceito de fica mais difícil enxergar os objetos.",
+        "3": "A alternativa não corresponde ao conceito de fica mais difícil enxergar os objetos."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Uma cortina fina que deixa a claridade passar é um exemplo de material:",
+      "options": ["opaco absoluto", "sonoro", "translúcido", "luminoso"],
+      "correctIndex": 2,
+      "explanation": "A cortina fina deixa passar parte da luz e é translúcida.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de translúcido.",
+        "1": "A alternativa não corresponde ao conceito de translúcido.",
+        "3": "A alternativa não corresponde ao conceito de translúcido."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "41"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual situação mostra uma fonte luminosa natural?",
+      "options": [
+        "um espelho",
+        "uma cadeira",
+        "uma folha de papel",
+        "uma estrela brilhando"
+      ],
+      "correctIndex": 3,
+      "explanation": "As estrelas produzem luz naturalmente.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma estrela brilhando.",
+        "1": "A alternativa não corresponde ao conceito de uma estrela brilhando.",
+        "2": "A alternativa não corresponde ao conceito de uma estrela brilhando."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "43"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual situação mostra um corpo iluminado?",
+      "options": [
+        "uma parede recebendo luz de uma lâmpada",
+        "uma lâmpada acesa",
+        "o Sol",
+        "uma vela acesa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A parede fica visível ao receber luz, mas não produz a própria luz.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de uma parede recebendo luz de uma lâmpada.",
+        "2": "A alternativa não corresponde ao conceito de uma parede recebendo luz de uma lâmpada.",
+        "3": "A alternativa não corresponde ao conceito de uma parede recebendo luz de uma lâmpada."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Para enxergar um livro, é necessário que:",
+      "options": [
+        "os olhos fiquem fechados",
+        "a luz chegue do livro aos nossos olhos",
+        "o livro faça barulho",
+        "o livro seja sempre luminoso"
+      ],
+      "correctIndex": 1,
+      "explanation": "A visão acontece quando a luz refletida pelo livro chega aos olhos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a luz chegue do livro aos nossos olhos.",
+        "2": "A alternativa não corresponde ao conceito de a luz chegue do livro aos nossos olhos.",
+        "3": "A alternativa não corresponde ao conceito de a luz chegue do livro aos nossos olhos."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual atitude ajuda a cuidar da saúde visual?",
+      "options": [
+        "olhar diretamente para o Sol",
+        "aproximar sempre a tela do rosto",
+        "fazer pausas ao usar telas",
+        "usar tela no escuro por muitas horas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pausas e hábitos seguros ajudam a reduzir o esforço visual.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de fazer pausas ao usar telas.",
+        "1": "A alternativa não corresponde ao conceito de fazer pausas ao usar telas.",
+        "3": "A alternativa não corresponde ao conceito de fazer pausas ao usar telas."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_visao_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-visao",
+      "topicName": "Luz e Visão",
+      "question": "Qual combinação está correta?",
+      "options": [
+        "madeira é fonte luminosa",
+        "espelho não recebe luz",
+        "parede opaca deixa toda a luz passar",
+        "vidro transparente deixa muita luz passar"
+      ],
+      "correctIndex": 3,
+      "explanation": "Materiais transparentes deixam passar grande parte da luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de vidro transparente deixa muita luz passar.",
+        "1": "A alternativa não corresponde ao conceito de vidro transparente deixa muita luz passar.",
+        "2": "A alternativa não corresponde ao conceito de vidro transparente deixa muita luz passar."
+      },
+      "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
