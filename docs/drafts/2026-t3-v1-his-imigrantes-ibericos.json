@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What does immigration mean?",
+      "options": [
+        "moving from one place to another to live",
+        "visiting a museum for one hour",
+        "changing the weather",
+        "staying in the same home forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Immigration involves moving to another place to live.",
+      "wrongExplanations": {
+        "1": "This option does not match the historical idea: moving from one place to another to live.",
+        "2": "This option does not match the historical idea: moving from one place to another to live.",
+        "3": "This option does not match the historical idea: moving from one place to another to live."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Which groups are named in this history topic?",
+      "options": [
+        "only scientists",
+        "Portuguese and Spanish immigrants",
+        "only astronauts",
+        "only athletes"
+      ],
+      "correctIndex": 1,
+      "explanation": "The topic studies Portuguese and Spanish immigrants.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: Portuguese and Spanish immigrants.",
+        "2": "This option does not match the historical idea: Portuguese and Spanish immigrants.",
+        "3": "This option does not match the historical idea: Portuguese and Spanish immigrants."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Why did some Portuguese and Spanish people come to Brazil?",
+      "options": [
+        "to change the seasons",
+        "to build only airports",
+        "to look for work and new opportunities",
+        "to avoid every contact with others"
+      ],
+      "correctIndex": 2,
+      "explanation": "People may migrate for work, family, safety, or other opportunities.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: to look for work and new opportunities.",
+        "1": "This option does not match the historical idea: to look for work and new opportunities.",
+        "3": "This option does not match the historical idea: to look for work and new opportunities."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What can immigrants bring to a new country?",
+      "options": [
+        "only one type of clothing",
+        "nothing from their experiences",
+        "a new ocean",
+        "languages, foods, customs and knowledge"
+      ],
+      "correctIndex": 3,
+      "explanation": "Immigrants carry experiences and cultural practices that can become part of society.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: languages, foods, customs and knowledge.",
+        "1": "This option does not match the historical idea: languages, foods, customs and knowledge.",
+        "2": "This option does not match the historical idea: languages, foods, customs and knowledge."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Why is it important to avoid saying all immigrants had the same experience?",
+      "options": [
+        "because people had different lives, reasons and places of origin",
+        "because history has no people",
+        "because every trip was identical",
+        "because cultures never change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Individual and group experiences are varied.",
+      "wrongExplanations": {
+        "1": "This option does not match the historical idea: because people had different lives, reasons and places of origin.",
+        "2": "This option does not match the historical idea: because people had different lives, reasons and places of origin.",
+        "3": "This option does not match the historical idea: because people had different lives, reasons and places of origin."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What is a cultural contribution?",
+      "options": [
+        "an empty building",
+        "a practice or knowledge shared with a community",
+        "a traffic signal",
+        "a weather forecast only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cultural contributions can include practices, knowledge and expressions.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: a practice or knowledge shared with a community.",
+        "2": "This option does not match the historical idea: a practice or knowledge shared with a community.",
+        "3": "This option does not match the historical idea: a practice or knowledge shared with a community."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "95"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Which can be a contribution of immigrant communities?",
+      "options": [
+        "only school uniforms",
+        "no cultural practice",
+        "recipes, celebrations and words used in daily life",
+        "only road signs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Food, celebrations and language can circulate between communities.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: recipes, celebrations and words used in daily life.",
+        "1": "This option does not match the historical idea: recipes, celebrations and words used in daily life.",
+        "3": "This option does not match the historical idea: recipes, celebrations and words used in daily life."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "96"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "How can immigrants participate in work in Brazil?",
+      "options": [
+        "only in one occupation",
+        "without learning anything",
+        "only in government",
+        "in different jobs and activities"
+      ],
+      "correctIndex": 3,
+      "explanation": "Immigrants have worked in varied activities and occupations.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: in different jobs and activities.",
+        "1": "This option does not match the historical idea: in different jobs and activities.",
+        "2": "This option does not match the historical idea: in different jobs and activities."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "97"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Why should contributions not be attributed to every Portuguese or Spanish person?",
+      "options": [
+        "because contributions come from particular people and communities",
+        "because nobody contributes",
+        "because all histories are equal in detail",
+        "because groups have no identities"
+      ],
+      "correctIndex": 0,
+      "explanation": "Careful history identifies particular groups and experiences.",
+      "wrongExplanations": {
+        "1": "This option does not match the historical idea: because contributions come from particular people and communities.",
+        "2": "This option does not match the historical idea: because contributions come from particular people and communities.",
+        "3": "This option does not match the historical idea: because contributions come from particular people and communities."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "98"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What can happen when groups meet?",
+      "options": [
+        "only one group acts",
+        "there can be exchanges as well as conflicts",
+        "there are never changes",
+        "all differences disappear immediately"
+      ],
+      "correctIndex": 1,
+      "explanation": "Historical encounters include exchanges and conflicts.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: there can be exchanges as well as conflicts.",
+        "2": "This option does not match the historical idea: there can be exchanges as well as conflicts.",
+        "3": "This option does not match the historical idea: there can be exchanges as well as conflicts."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "99"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What is a community?",
+      "options": [
+        "a type of vehicle",
+        "an empty map",
+        "a group of people who share relationships or spaces",
+        "a single object"
+      ],
+      "correctIndex": 2,
+      "explanation": "Communities are formed by people connected in different ways.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: a group of people who share relationships or spaces.",
+        "1": "This option does not match the historical idea: a group of people who share relationships or spaces.",
+        "3": "This option does not match the historical idea: a group of people who share relationships or spaces."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "100"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "How can descendants keep a community history alive?",
+      "options": [
+        "by forgetting every event",
+        "by removing names",
+        "by refusing to teach children",
+        "through memories, stories, celebrations and records"
+      ],
+      "correctIndex": 3,
+      "explanation": "Memories, stories, celebrations and records preserve histories.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: through memories, stories, celebrations and records.",
+        "1": "This option does not match the historical idea: through memories, stories, celebrations and records.",
+        "2": "This option does not match the historical idea: through memories, stories, celebrations and records."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "101"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Which source can show immigrant history?",
+      "options": [
+        "letters, photographs, documents and oral accounts",
+        "only a guess",
+        "a blank page",
+        "a random number"
+      ],
+      "correctIndex": 0,
+      "explanation": "Different historical sources help study immigrant experiences.",
+      "wrongExplanations": {
+        "1": "This option does not match the historical idea: letters, photographs, documents and oral accounts.",
+        "2": "This option does not match the historical idea: letters, photographs, documents and oral accounts.",
+        "3": "This option does not match the historical idea: letters, photographs, documents and oral accounts."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "102"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Why can family names appear in the history of migration?",
+      "options": [
+        "names cannot be studied",
+        "they may preserve memories of family origins",
+        "all names have the same origin",
+        "names never change"
+      ],
+      "correctIndex": 1,
+      "explanation": "Names can be clues, but they need context and other sources.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: they may preserve memories of family origins.",
+        "2": "This option does not match the historical idea: they may preserve memories of family origins.",
+        "3": "This option does not match the historical idea: they may preserve memories of family origins."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "103"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What does integration mean in a community?",
+      "options": [
+        "living without relationships",
+        "rejecting all exchange",
+        "participating in social life while maintaining identities",
+        "erasing every difference"
+      ],
+      "correctIndex": 2,
+      "explanation": "Integration can involve participation and continued cultural identities.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: participating in social life while maintaining identities.",
+        "1": "This option does not match the historical idea: participating in social life while maintaining identities.",
+        "3": "This option does not match the historical idea: participating in social life while maintaining identities."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "104"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Which attitude respects immigrant histories?",
+      "options": [
+        "make fun of accents",
+        "say one story represents everyone",
+        "erase cultural practices",
+        "listen to stories and avoid stereotypes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Respect requires listening and avoiding stereotypes.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: listen to stories and avoid stereotypes.",
+        "1": "This option does not match the historical idea: listen to stories and avoid stereotypes.",
+        "2": "This option does not match the historical idea: listen to stories and avoid stereotypes."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Why can food be a historical clue?",
+      "options": [
+        "recipes can show exchanges and family memories",
+        "food has no history",
+        "all recipes are identical",
+        "recipes explain only weather"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recipes can carry memories and reveal cultural exchanges.",
+      "wrongExplanations": {
+        "1": "This option does not match the historical idea: recipes can show exchanges and family memories.",
+        "2": "This option does not match the historical idea: recipes can show exchanges and family memories.",
+        "3": "This option does not match the historical idea: recipes can show exchanges and family memories."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "What should a history question about immigrants avoid?",
+      "options": [
+        "specific experiences",
+        "generalizations about an entire group",
+        "careful context",
+        "different sources"
+      ],
+      "correctIndex": 1,
+      "explanation": "Generalizations hide differences and should be avoided.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: generalizations about an entire group.",
+        "2": "This option does not match the historical idea: generalizations about an entire group.",
+        "3": "This option does not match the historical idea: generalizations about an entire group."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "How did Portuguese and Spanish presence become part of Brazilian history?",
+      "options": [
+        "without any contact",
+        "only through modern technology",
+        "through the experiences and interactions of different people and communities",
+        "through one identical story"
+      ],
+      "correctIndex": 2,
+      "explanation": "Historical presence was built through varied experiences and interactions.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: through the experiences and interactions of different people and communities.",
+        "1": "This option does not match the historical idea: through the experiences and interactions of different people and communities.",
+        "3": "This option does not match the historical idea: through the experiences and interactions of different people and communities."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Which summary is correct?",
+      "options": [
+        "all immigrants lived the same life",
+        "immigration changed nothing",
+        "only one person made every contribution",
+        "Portuguese and Spanish immigrants had diverse experiences and contributions"
+      ],
+      "correctIndex": 3,
+      "explanation": "The historical record should recognize diversity and specific contributions.",
+      "wrongExplanations": {
+        "0": "This option does not match the historical idea: Portuguese and Spanish immigrants had diverse experiences and contributions.",
+        "1": "This option does not match the historical idea: Portuguese and Spanish immigrants had diverse experiences and contributions.",
+        "2": "This option does not match the historical idea: Portuguese and Spanish immigrants had diverse experiences and contributions."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
