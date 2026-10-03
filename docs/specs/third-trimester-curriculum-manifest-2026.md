@@ -64,7 +64,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Ciências   | materiais-transparentes          | materiais transparentes, translúcidos e opacos |              classificar materiais pela passagem da luz |   20 | em-curadoria |
 | Ciências   | propriedades-luz                 | propriedades da luz                            |                 reconhecer reflexão, sombra e percepção |   20 | em-curadoria |
 | Ciências   | espelhos                         | espelhos e reflexão                            |               identificar situações simples de reflexão |   20 | em-curadoria |
-| Ciências   | luz-cores                        | luz e cores                                    |       reconhecer relação introdutória entre luz e cores |   20 | proposto     |
+| Ciências   | luz-cores                        | luz e cores                                    |       reconhecer relação introdutória entre luz e cores |   20 | em-curadoria |
 | Ciências   | som-audicao                      | som, audição e cuidado auditivo                |     reconhecer produção do som e cuidados com a audição |   20 | proposto     |
 | Geografia  | agua-recurso                     | água como recurso                              |                reconhecer importância e uso responsável |   20 | em-curadoria |
 | Geografia  | nascente-rio                     | nascimento e percurso dos rios                 |                       identificar nascente, curso e foz |   20 | em-curadoria |
