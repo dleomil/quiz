@@ -46,7 +46,8 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 - restaurar a protecao imediatamente apos o merge, exceto quando estiver ativo
   o modo documentado de mantenedor unico
 - no modo de mantenedor unico, preservar todos os demais gates e manter a
-  restauracao da aprovacao independente rastreada na Tech Task #310
+  restauracao da aprovacao independente rastreada na Tech Task #310; o estado
+  ativo em 2026-10-02 e o registro da decisao devem constar no PR
 
 ### 5. Exigir preflight do agente
 
@@ -79,7 +80,8 @@ Antes de qualquer acao de escrita, o agente deve confirmar:
 - se for necessario ajuste temporario de branch protection, reduzir apenas o
   minimo necessario e restaurar imediatamente apos o merge; a unica excecao
   persistente permitida e o modo de mantenedor unico definido na estrategia de
-  branching e rastreado em #310
+  branching, ativo em 2026-10-02 e rastreado em #310. Essa excecao vale para a
+  aprovacao do Pull Request, nao para os gates pedagogicos ou editoriais.
 
 ### 9. Controlar descoberta de produto assistida
 

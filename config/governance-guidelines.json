@@ -61,7 +61,7 @@
       "type": "policy",
       "owner": "architecture",
       "sourcePath": "docs/github/branching-and-delivery-strategy.md",
-      "sha256": "20f6b84d955c96f4612560b99b7b51b82bd8affee8edd18730481b2288faff4b",
+      "sha256": "93ab328e12c6ca0d1047daf6409281ce46add08f008797c6f0e0c72730295ebc",
       "appliesTo": ["pull-requests", "releases", "repository-mutations"],
       "enforcement": "manual-blocking",
       "evidence": [

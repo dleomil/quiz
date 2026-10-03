@@ -82,6 +82,20 @@ nativos de Pull Request nao invalidam automaticamente.
 
 ### Modo temporario de mantenedor unico
 
+#### Estado vigente em 2026-10-02
+
+O modo de mantenedor unico esta ativo para este repositorio enquanto `dleomil`
+for o unico colaborador humano elegivel. A ativacao e temporaria, vale para
+`main` e `develop` e esta registrada na Tech Task #310. Ela permite que o
+mantenedor conclua um Pull Request depois de todos os checks e gates aplicaveis
+passarem, mas nao transforma parecer de agente em revisao humana independente.
+
+O mantenedor deve registrar no PR a decisao, os checks, as evidencias e a
+limitacao de nao haver segundo revisor. Quando surgir outro colaborador humano
+com permissao `write`, `maintain` ou `admin`, a excecao deixa de valer antes do
+proximo merge e a aprovacao independente deve ser restaurada em ambas as
+branches.
+
 Enquanto `dleomil` for o unico colaborador humano elegivel, `main` e `develop`
 nao exigem aprovacao de outro usuario no GitHub, pois o autor nao pode aprovar o
 proprio Pull Request. A excecao remove somente `required_pull_request_reviews`.
