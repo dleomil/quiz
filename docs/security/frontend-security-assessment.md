@@ -64,6 +64,23 @@ existem handlers e estilos inline que precisam ser removidos ou tratados antes.
 - rejeitar marcacao executavel no gate de conteudo
 - remover handlers `onclick` inline
 
+**Contrato de implementacao**
+
+- todo valor dinamico inserido em template passa pelo escape HTML compartilhado;
+- templates dinamicos nao recebem URL, JavaScript ou CSS vindo de conteudo;
+- o historico e normalizado para uma copia com campos permitidos antes da
+  exibicao;
+- entradas invalidas sao omitidas individualmente, sem apagar ou regravar o
+  `localStorage`;
+- sessoes legadas validas continuam como `legacy-session-v1` e sem trimestre
+  inferido;
+- o arquivo HTML de resultado aplica as mesmas regras da tela;
+- eventos de navegacao usam listeners, sem atributos de evento inline.
+
+O gate curricular rejeita tags HTML nos campos renderizaveis. Operadores de
+texto comuns, como `2 < 3`, permanecem validos. O escape no navegador continua
+obrigatorio porque o historico local nao passa pelo gate curricular.
+
 ### Fase 2: dependencia confiavel
 
 - preferir Chart.js versionado e servido pelo proprio projeto

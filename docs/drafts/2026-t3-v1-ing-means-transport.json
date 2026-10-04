@@ -1,0 +1,546 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle travels on rails?",
+      "options": ["A train.", "A bicycle.", "A boat.", "An airplane."],
+      "correctIndex": 0,
+      "explanation": "A train travels on railway tracks.",
+      "wrongExplanations": {
+        "1": "This option is not the transport or place described: A train.",
+        "2": "This option is not the transport or place described: A train.",
+        "3": "This option is not the transport or place described: A train."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle flies in the sky?",
+      "options": ["A bicycle.", "An airplane.", "A bus.", "A ship."],
+      "correctIndex": 1,
+      "explanation": "An airplane flies through the air.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: An airplane.",
+        "2": "This option is not the transport or place described: An airplane.",
+        "3": "This option is not the transport or place described: An airplane."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle travels on water?",
+      "options": ["A taxi.", "A motorcycle.", "A boat.", "A train."],
+      "correctIndex": 2,
+      "explanation": "A boat travels on water.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: A boat.",
+        "1": "This option is not the transport or place described: A boat.",
+        "3": "This option is not the transport or place described: A boat."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle has two wheels and pedals?",
+      "options": ["A bus.", "A ship.", "An airplane.", "A bicycle."],
+      "correctIndex": 3,
+      "explanation": "A bicycle has two wheels and pedals.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: A bicycle.",
+        "1": "This option is not the transport or place described: A bicycle.",
+        "2": "This option is not the transport or place described: A bicycle."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle carries many passengers in a city?",
+      "options": ["A bus.", "A skateboard.", "A canoe.", "A bicycle."],
+      "correctIndex": 0,
+      "explanation": "A bus can carry many passengers on city roads.",
+      "wrongExplanations": {
+        "1": "This option is not the transport or place described: A bus.",
+        "2": "This option is not the transport or place described: A bus.",
+        "3": "This option is not the transport or place described: A bus."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle can take one passenger by road?",
+      "options": ["An airport.", "A taxi.", "A train station.", "A boat."],
+      "correctIndex": 1,
+      "explanation": "A taxi is a car service for passengers.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: A taxi.",
+        "2": "This option is not the transport or place described: A taxi.",
+        "3": "This option is not the transport or place described: A taxi."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "80"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which vehicle has two wheels and an engine?",
+      "options": ["A ship.", "A bus stop.", "A motorcycle.", "A train."],
+      "correctIndex": 2,
+      "explanation": "A motorcycle has two wheels and an engine.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: A motorcycle.",
+        "1": "This option is not the transport or place described: A motorcycle.",
+        "3": "This option is not the transport or place described: A motorcycle."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "81"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Where do people board an airplane?",
+      "options": [
+        "At the bakery.",
+        "At the library.",
+        "At the playground.",
+        "At the airport."
+      ],
+      "correctIndex": 3,
+      "explanation": "Passengers board airplanes at an airport.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: At the airport.",
+        "1": "This option is not the transport or place described: At the airport.",
+        "2": "This option is not the transport or place described: At the airport."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "82"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Where do people wait for a bus?",
+      "options": [
+        "At the bus stop.",
+        "At the museum.",
+        "At the cinema.",
+        "At the pharmacy."
+      ],
+      "correctIndex": 0,
+      "explanation": "A bus stop is where passengers wait for a bus.",
+      "wrongExplanations": {
+        "1": "This option is not the transport or place described: At the bus stop.",
+        "2": "This option is not the transport or place described: At the bus stop.",
+        "3": "This option is not the transport or place described: At the bus stop."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "83"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Where do people board a train?",
+      "options": [
+        "At the hospital.",
+        "At the train station.",
+        "At the restaurant.",
+        "At the park."
+      ],
+      "correctIndex": 1,
+      "explanation": "Passengers board trains at a train station.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: At the train station.",
+        "2": "This option is not the transport or place described: At the train station.",
+        "3": "This option is not the transport or place described: At the train station."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "84"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "What does a driver do?",
+      "options": [
+        "cooks a meal",
+        "writes a book",
+        "drives a vehicle",
+        "flies a kite"
+      ],
+      "correctIndex": 2,
+      "explanation": "A driver controls a vehicle on the road.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: drives a vehicle",
+        "1": "This option is not the transport or place described: drives a vehicle",
+        "3": "This option is not the transport or place described: drives a vehicle"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "85"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "What does a passenger do?",
+      "options": [
+        "repairs every road",
+        "flies an airplane alone every time",
+        "builds a station",
+        "travels in a vehicle"
+      ],
+      "correctIndex": 3,
+      "explanation": "A passenger travels in a vehicle.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: travels in a vehicle",
+        "1": "This option is not the transport or place described: travels in a vehicle",
+        "2": "This option is not the transport or place described: travels in a vehicle"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "86"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which transport is good for a short trip without an engine?",
+      "options": ["A bicycle.", "A ship.", "An airplane.", "A train."],
+      "correctIndex": 0,
+      "explanation": "A bicycle can be used for short trips and has no engine.",
+      "wrongExplanations": {
+        "1": "This option is not the transport or place described: A bicycle.",
+        "2": "This option is not the transport or place described: A bicycle.",
+        "3": "This option is not the transport or place described: A bicycle."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "87"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which transport can carry people across the sea?",
+      "options": ["A taxi.", "A ship.", "A bus.", "A bicycle."],
+      "correctIndex": 1,
+      "explanation": "A ship can carry people across the sea.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: A ship.",
+        "2": "This option is not the transport or place described: A ship.",
+        "3": "This option is not the transport or place described: A ship."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "88"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which word means a place where airplanes arrive and leave?",
+      "options": ["bakery", "library", "airport", "sidewalk"],
+      "correctIndex": 2,
+      "explanation": "An airport serves airplanes and passengers.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: airport",
+        "1": "This option is not the transport or place described: airport",
+        "3": "This option is not the transport or place described: airport"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "89"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which word means a place where trains arrive and leave?",
+      "options": ["playground", "pharmacy", "cinema", "station"],
+      "correctIndex": 3,
+      "explanation": "A station is a place where trains can arrive and leave.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: station",
+        "1": "This option is not the transport or place described: station",
+        "2": "This option is not the transport or place described: station"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "What should people do before crossing a street?",
+      "options": [
+        "look for traffic and cross safely",
+        "run without looking",
+        "close their eyes",
+        "stand in the road"
+      ],
+      "correctIndex": 0,
+      "explanation": "Checking traffic helps people cross safely.",
+      "wrongExplanations": {
+        "1": "This option is not the transport or place described: look for traffic and cross safely",
+        "2": "This option is not the transport or place described: look for traffic and cross safely",
+        "3": "This option is not the transport or place described: look for traffic and cross safely"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which transport helps people walk safely beside a road?",
+      "options": ["the ship", "the sidewalk", "the airplane", "the train"],
+      "correctIndex": 1,
+      "explanation": "People use a sidewalk to walk beside a road.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: the sidewalk",
+        "2": "This option is not the transport or place described: the sidewalk",
+        "3": "This option is not the transport or place described: the sidewalk"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "Which sentence is correct?",
+      "options": [
+        "The bus is under the sea.",
+        "The bus is on the rails.",
+        "The bus is on the road.",
+        "The bus is in the sky."
+      ],
+      "correctIndex": 2,
+      "explanation": "A bus normally travels on a road.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: The bus is on the road.",
+        "1": "This option is not the transport or place described: The bus is on the road.",
+        "3": "This option is not the transport or place described: The bus is on the road."
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_means_transport_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "means-transport",
+      "topicName": "Means of transport",
+      "question": "What does “means of transport” mean?",
+      "options": [
+        "only city buildings",
+        "types of food",
+        "school subjects",
+        "ways or vehicles used to travel"
+      ],
+      "correctIndex": 3,
+      "explanation": "The phrase refers to vehicles and ways people travel.",
+      "wrongExplanations": {
+        "0": "This option is not the transport or place described: ways or vehicles used to travel",
+        "1": "This option is not the transport or place described: ways or vehicles used to travel",
+        "2": "This option is not the transport or place described: ways or vehicles used to travel"
+      },
+      "skill": "reconhecer-meios-de-transporte",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

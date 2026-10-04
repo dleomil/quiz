@@ -22,6 +22,8 @@ Use este checklist antes de:
 - qual issue, spec ou PR esta guiando a acao
 - qual item do board sera afetado
 - qual documento eh o contexto oficial
+- quais papeis e identificadores de ator ou thread produzem e verificam o mesmo
+  artefato, sempre distintos quando o modelo de capabilities exigir
 
 ### 2. Taxonomia e permissao
 
@@ -58,13 +60,20 @@ permitida. `feat/*` nao e valido; para funcionalidades, use `feature/*`.
 
 - como a mudanca sera revertida se necessario
 - como a protecao original sera restaurada
+- se o modo de mantenedor unico estiver ativo, confirmar que a excecao remove
+  somente reviewers e que a restauracao permanece rastreada em #310
 - se ha impacto em producao ou board
+- qual modo operacional foi declarado pelo Product Owner: continuo ou protegido
+- se o calendario escolar permite promocao para producao neste momento
 
 ### 6. Checklist de escrita
 
 - o arquivo novo passa em lint antes do PR
 - o comentario ou body usa Markdown real, nao escapes de nova linha
+- corpos Markdown multilinha ou com crases usam arquivo e `--body-file`, nunca
+  string inline do shell
 - o comando do GitHub CLI foi conferido antes de executar
+- o corpo publicado foi relido antes de qualquer acao dependente
 - o board reflete o estado real em todos os campos relevantes
 
 ## Regra operacional

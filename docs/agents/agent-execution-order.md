@@ -60,6 +60,8 @@ Use antes do merge final do PR.
 - nao usar Reviewer Agent como substituto de validacao
 - nao usar Release and Board Agent antes de existir evidencia
 - nao executar varios agentes fora de ordem sem necessidade real
+- nao usar a mesma identidade ou thread para produzir e revisar o mesmo
+  artefato; registrar ambos os atores no preflight ou no PR
 
 ## Fluxo anterior a uma demanda de mercado
 

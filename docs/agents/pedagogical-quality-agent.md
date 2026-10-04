@@ -14,6 +14,7 @@ Use antes de qualquer alteracao no banco de questoes e sempre que uma explicacao
 - tema e objetivo curricular
 - serie atendida pelo lote
 - `docs/harness/content-update-quality-gates.md`
+- proposta no formato `content-v1`, com `wrongExplanations` indexado por alternativa
 
 ## Checkpoints obrigatorios
 

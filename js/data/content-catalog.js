@@ -33,6 +33,17 @@ const ContentCatalog = (function () {
       status: 'published',
       grade: '3-ano',
       displayName: '2º trimestre de 2026',
+      isCurrent: false,
+    },
+    {
+      schemaVersion: 'content-v1',
+      contentSetId: '2026-t3-v1',
+      academicYear: 2026,
+      term: 't3',
+      version: 1,
+      status: 'published',
+      grade: '3-ano',
+      displayName: '3º trimestre de 2026',
       isCurrent: true,
     },
   ];

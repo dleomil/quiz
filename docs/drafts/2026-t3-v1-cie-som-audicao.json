@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "O que é o som?",
+      "options": [
+        "uma vibração que pode ser percebida pela audição",
+        "uma cor da luz",
+        "um tipo de água",
+        "uma sombra parada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O som é produzido por vibrações e pode ser percebido pelos ouvidos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de uma vibração que pode ser percebida pela audição.",
+        "2": "A alternativa não corresponde ao conceito de uma vibração que pode ser percebida pela audição.",
+        "3": "A alternativa não corresponde ao conceito de uma vibração que pode ser percebida pela audição."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "O que pode produzir som?",
+      "options": [
+        "uma cor",
+        "um objeto vibrando",
+        "um objeto completamente parado",
+        "uma sombra"
+      ],
+      "correctIndex": 1,
+      "explanation": "A vibração de um corpo pode produzir som.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um objeto vibrando.",
+        "2": "A alternativa não corresponde ao conceito de um objeto vibrando.",
+        "3": "A alternativa não corresponde ao conceito de um objeto vibrando."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Como uma corda de violão produz som?",
+      "options": [
+        "absorvendo toda luz",
+        "produzindo água",
+        "vibrando quando é tocada",
+        "ficando imóvel"
+      ],
+      "correctIndex": 2,
+      "explanation": "A corda vibra e essa vibração produz o som.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de vibrando quando é tocada.",
+        "1": "A alternativa não corresponde ao conceito de vibrando quando é tocada.",
+        "3": "A alternativa não corresponde ao conceito de vibrando quando é tocada."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual órgão ajuda a perceber sons?",
+      "options": ["o cotovelo", "o joelho", "o cabelo", "o ouvido"],
+      "correctIndex": 3,
+      "explanation": "O ouvido participa da audição.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o ouvido.",
+        "1": "A alternativa não corresponde ao conceito de o ouvido.",
+        "2": "A alternativa não corresponde ao conceito de o ouvido."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "O que acontece quando batemos palmas?",
+      "options": [
+        "as mãos vibram e produzem som",
+        "a luz desaparece",
+        "a sombra fica colorida",
+        "o ar vira água"
+      ],
+      "correctIndex": 0,
+      "explanation": "O movimento e a vibração das mãos produzem o som.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de as mãos vibram e produzem som.",
+        "2": "A alternativa não corresponde ao conceito de as mãos vibram e produzem som.",
+        "3": "A alternativa não corresponde ao conceito de as mãos vibram e produzem som."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Como podemos representar um som forte?",
+      "options": [
+        "somente com uma cor",
+        "com uma vibração mais intensa",
+        "sem nenhuma vibração",
+        "com menos movimento sempre"
+      ],
+      "correctIndex": 1,
+      "explanation": "A intensidade da vibração influencia a força percebida do som.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de com uma vibração mais intensa.",
+        "2": "A alternativa não corresponde ao conceito de com uma vibração mais intensa.",
+        "3": "A alternativa não corresponde ao conceito de com uma vibração mais intensa."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "50"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "O que diferencia sons agudos e graves?",
+      "options": [
+        "a quantidade de luz",
+        "o formato da sombra",
+        "a rapidez das vibrações",
+        "a cor do objeto"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sons agudos e graves estão relacionados à frequência das vibrações.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a rapidez das vibrações.",
+        "1": "A alternativa não corresponde ao conceito de a rapidez das vibrações.",
+        "3": "A alternativa não corresponde ao conceito de a rapidez das vibrações."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual exemplo é um som do ambiente?",
+      "options": [
+        "a cor de uma parede",
+        "a sombra de uma árvore",
+        "o cheiro de uma flor",
+        "o canto de um pássaro"
+      ],
+      "correctIndex": 3,
+      "explanation": "O canto é uma vibração que pode ser percebida como som.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o canto de um pássaro.",
+        "1": "A alternativa não corresponde ao conceito de o canto de um pássaro.",
+        "2": "A alternativa não corresponde ao conceito de o canto de um pássaro."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "52"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Por que conseguimos ouvir uma campainha?",
+      "options": [
+        "as vibrações chegam aos nossos ouvidos",
+        "a campainha envia cores aos olhos",
+        "o som não precisa vibrar",
+        "a sombra produz o toque"
+      ],
+      "correctIndex": 0,
+      "explanation": "As vibrações se propagam e chegam aos ouvidos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de as vibrações chegam aos nossos ouvidos.",
+        "2": "A alternativa não corresponde ao conceito de as vibrações chegam aos nossos ouvidos.",
+        "3": "A alternativa não corresponde ao conceito de as vibrações chegam aos nossos ouvidos."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "53"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "O que é ruído excessivo?",
+      "options": [
+        "uma imagem refletida",
+        "um som muito intenso ou incômodo",
+        "um som sempre agradável",
+        "uma luz fraca"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ruído excessivo pode incomodar e prejudicar a audição.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um som muito intenso ou incômodo.",
+        "2": "A alternativa não corresponde ao conceito de um som muito intenso ou incômodo.",
+        "3": "A alternativa não corresponde ao conceito de um som muito intenso ou incômodo."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual atitude ajuda a proteger a audição?",
+      "options": [
+        "ficar perto de caixas muito altas",
+        "gritar perto do ouvido",
+        "manter volume moderado nos fones",
+        "usar volume máximo sempre"
+      ],
+      "correctIndex": 2,
+      "explanation": "Volume moderado reduz riscos à audição.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de manter volume moderado nos fones.",
+        "1": "A alternativa não corresponde ao conceito de manter volume moderado nos fones.",
+        "3": "A alternativa não corresponde ao conceito de manter volume moderado nos fones."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "55"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Por que devemos evitar som muito alto por muito tempo?",
+      "options": [
+        "porque muda a cor do som",
+        "porque produz água",
+        "porque elimina todas as vibrações",
+        "porque ele pode prejudicar os ouvidos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Exposição prolongada a sons intensos pode causar danos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque ele pode prejudicar os ouvidos.",
+        "1": "A alternativa não corresponde ao conceito de porque ele pode prejudicar os ouvidos.",
+        "2": "A alternativa não corresponde ao conceito de porque ele pode prejudicar os ouvidos."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "56"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual cuidado é adequado em um show ou evento barulhento?",
+      "options": [
+        "afastar-se das caixas de som e fazer pausas",
+        "ficar encostado nas caixas",
+        "aumentar ainda mais o volume",
+        "colocar o ouvido perto do alto-falante"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distância e pausas ajudam a reduzir a exposição ao som intenso.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de afastar-se das caixas de som e fazer pausas.",
+        "2": "A alternativa não corresponde ao conceito de afastar-se das caixas de som e fazer pausas.",
+        "3": "A alternativa não corresponde ao conceito de afastar-se das caixas de som e fazer pausas."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Como o silêncio pode ajudar?",
+      "options": [
+        "transforma ruído em luz",
+        "dá descanso aos ouvidos",
+        "produz som mais forte",
+        "impede qualquer audição futura"
+      ],
+      "correctIndex": 1,
+      "explanation": "Períodos de silêncio permitem descanso auditivo.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de dá descanso aos ouvidos.",
+        "2": "A alternativa não corresponde ao conceito de dá descanso aos ouvidos.",
+        "3": "A alternativa não corresponde ao conceito de dá descanso aos ouvidos."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "58"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "O que fazer se um som causar dor no ouvido?",
+      "options": [
+        "aumentar o volume",
+        "ignorar sempre",
+        "avisar um adulto e afastar-se do som",
+        "aproximar-se da fonte"
+      ],
+      "correctIndex": 2,
+      "explanation": "Dor ou desconforto deve ser comunicado a um adulto responsável.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de avisar um adulto e afastar-se do som.",
+        "1": "A alternativa não corresponde ao conceito de avisar um adulto e afastar-se do som.",
+        "3": "A alternativa não corresponde ao conceito de avisar um adulto e afastar-se do som."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual objeto de uma escola pode produzir som?",
+      "options": [
+        "uma parede sem vibração",
+        "uma janela fechada sem movimento",
+        "uma folha desenhada",
+        "um sino"
+      ],
+      "correctIndex": 3,
+      "explanation": "O sino vibra e produz som.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um sino.",
+        "1": "A alternativa não corresponde ao conceito de um sino.",
+        "2": "A alternativa não corresponde ao conceito de um sino."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Como uma bateria produz som?",
+      "options": [
+        "suas partes vibram quando são golpeadas",
+        "porque não há movimento",
+        "porque reflete cores",
+        "porque absorve água"
+      ],
+      "correctIndex": 0,
+      "explanation": "As partes da bateria vibram ao serem golpeadas.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de suas partes vibram quando são golpeadas.",
+        "2": "A alternativa não corresponde ao conceito de suas partes vibram quando são golpeadas.",
+        "3": "A alternativa não corresponde ao conceito de suas partes vibram quando são golpeadas."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual frase mostra cuidado com a audição?",
+      "options": [
+        "ficar perto de ruídos intensos",
+        "usar fones em volume seguro e fazer pausas",
+        "usar fones no máximo o dia todo",
+        "gritar diretamente nos ouvidos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volume seguro e pausas ajudam a preservar a audição.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usar fones em volume seguro e fazer pausas.",
+        "2": "A alternativa não corresponde ao conceito de usar fones em volume seguro e fazer pausas.",
+        "3": "A alternativa não corresponde ao conceito de usar fones em volume seguro e fazer pausas."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Por que não devemos colocar objetos no ouvido?",
+      "options": [
+        "porque o ouvido não percebe sons",
+        "porque o som fica colorido",
+        "porque podemos machucar o ouvido",
+        "porque objetos produzem luz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Objetos podem causar lesões e não devem ser introduzidos no ouvido.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque podemos machucar o ouvido.",
+        "1": "A alternativa não corresponde ao conceito de porque podemos machucar o ouvido.",
+        "3": "A alternativa não corresponde ao conceito de porque podemos machucar o ouvido."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_som_audicao_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "som-audicao",
+      "topicName": "Som, audição e cuidado auditivo",
+      "question": "Qual resumo está correto?",
+      "options": [
+        "sons não dependem de vibração",
+        "ouvidos não precisam de cuidado",
+        "todo som é sempre seguro",
+        "sons vêm de vibrações e a audição precisa ser protegida"
+      ],
+      "correctIndex": 3,
+      "explanation": "Vibração explica a produção do som e cuidados preservam a audição.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de sons vêm de vibrações e a audição precisa ser protegida.",
+        "1": "A alternativa não corresponde ao conceito de sons vêm de vibrações e a audição precisa ser protegida.",
+        "2": "A alternativa não corresponde ao conceito de sons vêm de vibrações e a audição precisa ser protegida."
+      },
+      "skill": "reconhecer-producao-do-som-e-cuidados-com-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

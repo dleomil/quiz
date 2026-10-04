@@ -1,15 +1,6 @@
 /* exported ResultsView */
-/* global Store, QuestionsDB, getGrade, resolveTopicLabel */
+/* global App, Store, QuestionsDB, escapeHTML, getGrade, resolveTopicLabel */
 const ResultsView = (function () {
-  function escapeText(value) {
-    return String(value == null ? '' : value)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
   function getCorrectReason(q) {
     return q.explanation || 'Essa é a resposta certa para esta pergunta.';
   }
@@ -36,15 +27,15 @@ const ResultsView = (function () {
           ? '<span class="tag tag-user-fail">⏰ Tempo esgotado</span>'
           : ok
             ? '<span class="tag tag-user-ok">✅ ' +
-              q.options[ans.selected] +
+              escapeHTML(q.options[ans.selected]) +
               '</span>'
             : '<span class="tag tag-user-fail">❌ ' +
-              q.options[ans.selected] +
+              escapeHTML(q.options[ans.selected]) +
               '</span>';
 
         var correctTag = !ok
           ? '<span class="tag tag-correct">✅ ' +
-            q.options[q.correctIndex] +
+            escapeHTML(q.options[q.correctIndex]) +
             '</span>'
           : '';
 
@@ -54,10 +45,10 @@ const ResultsView = (function () {
           (ok ? 'Você acertou' : 'A resposta certa é') +
           '</div>' +
           '<div class="gab-answer">' +
-          escapeText(q.options[q.correctIndex]) +
+          escapeHTML(q.options[q.correctIndex]) +
           '</div>' +
           '<div class="gab-explain">' +
-          escapeText(getCorrectReason(q)) +
+          escapeHTML(getCorrectReason(q)) +
           '</div>' +
           '</div>';
 
@@ -69,7 +60,7 @@ const ResultsView = (function () {
               : 'Por que a sua resposta não está correta') +
             '</div>' +
             '<div class="gab-why-wrong">' +
-            escapeText(
+            escapeHTML(
               isTimeout
                 ? 'Você não respondeu a tempo.'
                 : 'Você marcou "' +
@@ -78,7 +69,7 @@ const ResultsView = (function () {
             ) +
             '</div>' +
             '<div class="gab-explain">' +
-            escapeText(getWrongReason(q, ans.selected)) +
+            escapeHTML(getWrongReason(q, ans.selected)) +
             '</div>' +
             '</div>'
           : '';
@@ -88,18 +79,18 @@ const ResultsView = (function () {
           (ok ? 'ok-item' : 'fail-item') +
           '" role="article">' +
           '<div class="gab-num">' +
-          topicInfo.icon +
+          escapeHTML(topicInfo.icon) +
           ' ' +
-          topicInfo.name +
+          escapeHTML(topicInfo.name) +
           ' — Questão ' +
           (idx + 1) +
           '</div>' +
           '<div class="gab-q">' +
-          q.question +
+          escapeHTML(q.question) +
           '</div>' +
           (q.subject === 'ingles' && q.questionPt
             ? '<div class="gab-question-support"><span>Em português:</span> ' +
-              escapeText(q.questionPt) +
+              escapeHTML(q.questionPt) +
               '</div>'
             : '') +
           '<div class="gab-tags">' +
@@ -130,10 +121,10 @@ const ResultsView = (function () {
       'footer{margin-top:32px;font-size:.8rem;color:#94A3B8}</style></head><body>' +
       '<h1>📝 Resultado do Quiz</h1>' +
       '<p><strong>Assunto:</strong> ' +
-      topicLabel +
+      escapeHTML(topicLabel) +
       '</p>' +
       '<p><strong>Data:</strong> ' +
-      dateStr +
+      escapeHTML(dateStr) +
       '</p>' +
       '<p><strong>Nota:</strong> ' +
       pct +
@@ -142,10 +133,10 @@ const ResultsView = (function () {
       '/' +
       total +
       ') ' +
-      g.stars +
+      escapeHTML(g.stars) +
       '</p>' +
       '<p><strong>Desempenho:</strong> ' +
-      g.msg +
+      escapeHTML(g.msg) +
       '</p><hr/><h2>Gabarito</h2>' +
       gabHTML +
       '<footer>Gerado pelo Quiz Etapa</footer></body></html>';
@@ -187,7 +178,7 @@ const ResultsView = (function () {
       '<div class="card">' +
       '<div class="results-top">' +
       '<div class="score-circle ' +
-      g.cls +
+      escapeHTML(g.cls) +
       '" role="img" aria-label="Nota: ' +
       pct +
       '%">' +
@@ -201,12 +192,12 @@ const ResultsView = (function () {
       '</span>' +
       '</div>' +
       '<div class="score-msg">' +
-      g.msg +
+      escapeHTML(g.msg) +
       '</div>' +
       '<div class="stars-row" aria-label="' +
-      g.label +
+      escapeHTML(g.label) +
       '">' +
-      g.stars +
+      escapeHTML(g.stars) +
       '</div>' +
       (timedOut > 0
         ? '<p style="color:var(--muted);font-size:.9rem;margin-bottom:12px">⏰ ' +
@@ -214,8 +205,8 @@ const ResultsView = (function () {
           ' questão(ões) com tempo esgotado</p>'
         : '') +
       '<div class="results-actions">' +
-      '<button class="btn btn-primary" onclick="App.startQuiz(Store.get().selectedTopic, Store.get().selectedSubject)">🔁 Refazer</button>' +
-      '<button class="btn btn-outline" onclick="App.navigate(\'home\',{force:true})">🏠 Início</button>' +
+      '<button class="btn btn-primary" id="btn-repeat-quiz">🔁 Refazer</button>' +
+      '<button class="btn btn-outline" id="btn-results-home">🏠 Início</button>' +
       '<button class="btn btn-download" id="btn-download-result">⬇️ Baixar resultado</button>' +
       '</div>' +
       '</div>' +
@@ -225,6 +216,15 @@ const ResultsView = (function () {
       buildGabaritoHTML(s.answers, s.questions) +
       '</div>';
 
+    el.querySelector('#btn-repeat-quiz').addEventListener('click', function () {
+      App.startQuiz(Store.get().selectedTopic, Store.get().selectedSubject);
+    });
+    el.querySelector('#btn-results-home').addEventListener(
+      'click',
+      function () {
+        App.navigate('home', { force: true });
+      },
+    );
     el.querySelector('#btn-download-result').addEventListener(
       'click',
       function () {

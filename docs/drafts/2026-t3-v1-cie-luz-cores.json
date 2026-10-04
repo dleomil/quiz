@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que é uma cor?",
+      "options": [
+        "uma percepção produzida pela luz que chega aos olhos",
+        "um tipo de som",
+        "uma forma de vento",
+        "um objeto que não depende de luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "As cores são percebidas quando a luz chega aos olhos após interagir com os objetos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de uma percepção produzida pela luz que chega aos olhos.",
+        "2": "A alternativa não corresponde ao conceito de uma percepção produzida pela luz que chega aos olhos.",
+        "3": "A alternativa não corresponde ao conceito de uma percepção produzida pela luz que chega aos olhos."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual é uma fonte de luz branca usada no dia a dia?",
+      "options": [
+        "um caderno fechado",
+        "uma lâmpada branca acesa",
+        "uma pedra escura",
+        "um copo vazio"
+      ],
+      "correctIndex": 1,
+      "explanation": "Uma lâmpada acesa pode emitir luz que percebemos como branca.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de uma lâmpada branca acesa.",
+        "2": "A alternativa não corresponde ao conceito de uma lâmpada branca acesa.",
+        "3": "A alternativa não corresponde ao conceito de uma lâmpada branca acesa."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que pode acontecer quando a luz branca atravessa um prisma?",
+      "options": [
+        "ela deixa de existir",
+        "ela produz apenas som",
+        "ela pode se separar em várias cores",
+        "ela vira água"
+      ],
+      "correctIndex": 2,
+      "explanation": "O prisma pode separar a luz em diferentes cores.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de ela pode se separar em várias cores.",
+        "1": "A alternativa não corresponde ao conceito de ela pode se separar em várias cores.",
+        "3": "A alternativa não corresponde ao conceito de ela pode se separar em várias cores."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual fenômeno natural pode mostrar várias cores no céu?",
+      "options": [
+        "a sombra de uma parede",
+        "o som de um trovão",
+        "o vento entre árvores",
+        "o arco-íris"
+      ],
+      "correctIndex": 3,
+      "explanation": "O arco-íris aparece quando a luz interage com gotículas de água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o arco-íris.",
+        "1": "A alternativa não corresponde ao conceito de o arco-íris.",
+        "2": "A alternativa não corresponde ao conceito de o arco-íris."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Por que vemos um objeto vermelho iluminado?",
+      "options": [
+        "porque parte da luz vermelha chega aos nossos olhos",
+        "porque o objeto produz som vermelho",
+        "porque não há luz no ambiente",
+        "porque toda luz é absorvida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cor percebida depende da luz que chega aos olhos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de porque parte da luz vermelha chega aos nossos olhos.",
+        "2": "A alternativa não corresponde ao conceito de porque parte da luz vermelha chega aos nossos olhos.",
+        "3": "A alternativa não corresponde ao conceito de porque parte da luz vermelha chega aos nossos olhos."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que um objeto escuro pode fazer com mais luz?",
+      "options": [
+        "transformar luz em água",
+        "absorver grande parte da luz",
+        "refletir toda a luz",
+        "produzir luz branca própria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Objetos escuros costumam absorver grande parte da luz que recebem.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de absorver grande parte da luz.",
+        "2": "A alternativa não corresponde ao conceito de absorver grande parte da luz.",
+        "3": "A alternativa não corresponde ao conceito de absorver grande parte da luz."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "50"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que um objeto claro pode fazer com a luz?",
+      "options": [
+        "produzir som",
+        "eliminar as cores",
+        "refletir uma parte maior da luz",
+        "impedir sempre toda luz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Superfícies claras podem refletir mais luz.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de refletir uma parte maior da luz.",
+        "1": "A alternativa não corresponde ao conceito de refletir uma parte maior da luz.",
+        "3": "A alternativa não corresponde ao conceito de refletir uma parte maior da luz."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual conjunto apresenta cores frequentemente observadas no arco-íris?",
+      "options": [
+        "preto, cinza, marrom e branco apenas",
+        "som, calor, vento e chuva",
+        "madeira, vidro, metal e papel",
+        "vermelho, amarelo, verde e azul"
+      ],
+      "correctIndex": 3,
+      "explanation": "O arco-íris mostra várias cores, incluindo vermelho, amarelo, verde e azul.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de vermelho, amarelo, verde e azul.",
+        "1": "A alternativa não corresponde ao conceito de vermelho, amarelo, verde e azul.",
+        "2": "A alternativa não corresponde ao conceito de vermelho, amarelo, verde e azul."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "52"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Como a luz influencia a cor percebida?",
+      "options": [
+        "a iluminação pode mudar a aparência das cores",
+        "a luz nunca interfere",
+        "a cor depende apenas do som",
+        "a luz transforma todos os objetos em transparentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A iluminação participa da percepção das cores.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de a iluminação pode mudar a aparência das cores.",
+        "2": "A alternativa não corresponde ao conceito de a iluminação pode mudar a aparência das cores.",
+        "3": "A alternativa não corresponde ao conceito de a iluminação pode mudar a aparência das cores."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "53"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Por que uma sala sem luz dificulta identificar cores?",
+      "options": [
+        "porque toda sombra é colorida",
+        "porque pouca luz chega aos olhos",
+        "porque os objetos perdem sua forma",
+        "porque o som cobre as cores"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sem luz suficiente, a percepção das cores fica prejudicada.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque pouca luz chega aos olhos.",
+        "2": "A alternativa não corresponde ao conceito de porque pouca luz chega aos olhos.",
+        "3": "A alternativa não corresponde ao conceito de porque pouca luz chega aos olhos."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual experiência ajuda a observar a separação de cores?",
+      "options": [
+        "colocar um objeto no escuro",
+        "ouvir música perto de uma parede",
+        "passar luz por um prisma",
+        "apagar todas as luzes"
+      ],
+      "correctIndex": 2,
+      "explanation": "O prisma permite observar a separação da luz em cores.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de passar luz por um prisma.",
+        "1": "A alternativa não corresponde ao conceito de passar luz por um prisma.",
+        "3": "A alternativa não corresponde ao conceito de passar luz por um prisma."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "55"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que acontece com a luz ao ser absorvida por um objeto?",
+      "options": [
+        "ela sempre retorna ao ambiente",
+        "ela vira uma imagem no espelho",
+        "ela passa sem interagir",
+        "parte da luz fica retida no material"
+      ],
+      "correctIndex": 3,
+      "explanation": "Absorção significa que parte da luz fica no material.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de parte da luz fica retida no material.",
+        "1": "A alternativa não corresponde ao conceito de parte da luz fica retida no material.",
+        "2": "A alternativa não corresponde ao conceito de parte da luz fica retida no material."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "56"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que acontece com a luz ao ser refletida?",
+      "options": [
+        "ela retorna e muda de direção",
+        "ela desaparece sempre",
+        "ela se transforma em som",
+        "ela deixa de alcançar qualquer lugar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reflexão muda a direção da luz.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ela retorna e muda de direção.",
+        "2": "A alternativa não corresponde ao conceito de ela retorna e muda de direção.",
+        "3": "A alternativa não corresponde ao conceito de ela retorna e muda de direção."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual relação existe entre luz e sombra colorida?",
+      "options": [
+        "a cor nunca depende da iluminação",
+        "a cor da luz pode influenciar a aparência da sombra",
+        "sombras sempre produzem luz",
+        "sombras existem sem fonte"
+      ],
+      "correctIndex": 1,
+      "explanation": "A iluminação influencia a aparência das sombras.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a cor da luz pode influenciar a aparência da sombra.",
+        "2": "A alternativa não corresponde ao conceito de a cor da luz pode influenciar a aparência da sombra.",
+        "3": "A alternativa não corresponde ao conceito de a cor da luz pode influenciar a aparência da sombra."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "58"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Por que uma folha verde parece verde sob luz branca?",
+      "options": [
+        "porque não recebe luz",
+        "porque produz som verde",
+        "porque reflete luz verde para nossos olhos",
+        "porque absorve somente a luz verde"
+      ],
+      "correctIndex": 2,
+      "explanation": "A folha reflete parte da luz verde que chega aos olhos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque reflete luz verde para nossos olhos.",
+        "1": "A alternativa não corresponde ao conceito de porque reflete luz verde para nossos olhos.",
+        "3": "A alternativa não corresponde ao conceito de porque reflete luz verde para nossos olhos."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual material pode ajudar a separar a luz em cores?",
+      "options": [
+        "uma parede opaca",
+        "um pedaço de madeira",
+        "um tecido grosso",
+        "um prisma transparente"
+      ],
+      "correctIndex": 3,
+      "explanation": "O prisma desvia diferentes cores e ajuda a observá-las separadas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um prisma transparente.",
+        "1": "A alternativa não corresponde ao conceito de um prisma transparente.",
+        "2": "A alternativa não corresponde ao conceito de um prisma transparente."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Como comparar cores em uma atividade com segurança?",
+      "options": [
+        "observar objetos sob diferentes iluminações sem olhar diretamente para o Sol",
+        "olhar diretamente para o Sol",
+        "usar objetos quebrados",
+        "apagar toda luz e fechar os olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A observação deve evitar luz intensa direta e usar materiais seguros.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de observar objetos sob diferentes iluminações sem olhar diretamente para o sol.",
+        "2": "A alternativa não corresponde ao conceito de observar objetos sob diferentes iluminações sem olhar diretamente para o sol.",
+        "3": "A alternativa não corresponde ao conceito de observar objetos sob diferentes iluminações sem olhar diretamente para o sol."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "O que pode mudar quando uma lâmpada colorida ilumina um objeto?",
+      "options": [
+        "a existência do objeto",
+        "a cor percebida do objeto",
+        "a massa do objeto",
+        "o som do ambiente"
+      ],
+      "correctIndex": 1,
+      "explanation": "A cor da iluminação altera a luz que chega aos olhos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de a cor percebida do objeto.",
+        "2": "A alternativa não corresponde ao conceito de a cor percebida do objeto.",
+        "3": "A alternativa não corresponde ao conceito de a cor percebida do objeto."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Qual frase resume a relação entre luz e cores?",
+      "options": [
+        "toda luz é sempre invisível",
+        "materiais não interagem com luz",
+        "as cores percebidas dependem da luz e de como os materiais interagem com ela",
+        "cores existem sem luz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Percepção, reflexão e absorção ajudam a explicar as cores.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de as cores percebidas dependem da luz e de como os materiais interagem com ela.",
+        "1": "A alternativa não corresponde ao conceito de as cores percebidas dependem da luz e de como os materiais interagem com ela.",
+        "3": "A alternativa não corresponde ao conceito de as cores percebidas dependem da luz e de como os materiais interagem com ela."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_luz_cores_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "luz-cores",
+      "topicName": "Luz e cores",
+      "question": "Por que estudar luz e cores é útil?",
+      "options": [
+        "para eliminar a necessidade de luz",
+        "para transformar sombras em som",
+        "para afirmar que todas as cores são iguais",
+        "para compreender fenômenos do cotidiano como arco-íris e iluminação"
+      ],
+      "correctIndex": 3,
+      "explanation": "O estudo explica observações comuns do ambiente.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de para compreender fenômenos do cotidiano como arco-íris e iluminação.",
+        "1": "A alternativa não corresponde ao conceito de para compreender fenômenos do cotidiano como arco-íris e iluminação.",
+        "2": "A alternativa não corresponde ao conceito de para compreender fenômenos do cotidiano como arco-íris e iluminação."
+      },
+      "skill": "reconhecer-relacao-introdutoria-entre-luz-e-cores",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

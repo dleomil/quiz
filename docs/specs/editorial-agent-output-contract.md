@@ -1,0 +1,88 @@
+# Contrato de Saida dos Agentes Editoriais
+
+## Objetivo
+
+Padronizar resultados do Content Curator e do Pedagogical Quality Agent para
+que cada parecer seja rastreavel, validavel e incapaz de autorizar publicacao
+sem decisao humana.
+
+## Campos obrigatorios
+
+Antes da saida, a entrada deve declarar `workItemId`, `contentSetId`,
+`subjectId`, `topicId`, `grade`, `academicYear`, `term`, `authorizedSkill`,
+`sourceRef`, `questionVersion`, `authorizedObjective`, `manifestState`,
+`humanFreezeApproval`, `requestedPass` e `sourceStatus`. O manifesto deve estar
+`frozen`, o congelamento deve possuir aprovacao humana e a passagem solicitada
+deve corresponder ao agente. A revisao pedagogica ou linguistica tambem exige a
+proposta completa da questao, com quatro alternativas, resposta, explicacao e
+tres feedbacks incorretos indexados pelos indices das alternativas.
+
+`humanFreezeApproval` registra `approvedBy`, `approvedAt` no formato
+`AAAA-MM-DD` e `evidenceRef`. Um booleano sem responsavel e evidencia nao atende
+ao preflight.
+
+| Campo                   | Regra                                                  |
+| ----------------------- | ------------------------------------------------------ |
+| `agent`                 | `content_curator` ou `pedagogical_quality`             |
+| `workItemId`            | card ou identificador ficticio que originou o trabalho |
+| `contentSetId`          | acervo avaliado, sem autorizar sua publicacao          |
+| `subjectId`             | materia declarada no escopo                            |
+| `topicId`               | tema declarado no escopo                               |
+| `reviewPass`            | `curation`, `pedagogical` ou `linguistic`              |
+| `decision`              | `approved`, `adjustments_required` ou `blocked`        |
+| `facts`                 | fatos confirmados, sem inferencias misturadas          |
+| `doubts`                | lacunas e ambiguidades ainda abertas                   |
+| `findings`              | achados rastreaveis por questao e criterio             |
+| `recommendations`       | proximas acoes propostas, sem executa-las              |
+| `humanApprovalRequired` | sempre `true`                                          |
+
+Quando `content_curator` retorna `approved` ou `adjustments_required`, a saida
+tambem inclui `proposal` completa. Essa mesma estrutura entra na passagem
+pedagogica ou linguistica seguinte. Achados devem usar exatamente o `id` da
+proposta avaliada.
+
+A proposta deve ser diretamente compativel com `content-v1`, sem envelope
+alternativo. O `sourceRef` possui somente `referenceId`, `section` e `topic`; a
+proposta nao pode transportar pagina, trecho ou texto da fonte escolar. Os
+metadados de ano e trimestre pertencem ao contexto autorizado de entrada e nao
+sao duplicados dentro da questao.
+
+O campo `wrongExplanations` e um objeto com exatamente uma mensagem para cada
+indice incorreto. A chave deve ser o indice da alternativa, nunca a posicao de
+uma lista de feedbacks.
+
+Cada achado informa `questionId`, `criterion`, `severity`, `evidence` e
+`recommendation`. Severidades permitidas: `blocking`, `major` e `minor`.
+
+## Regras de decisao
+
+- `content_curator` usa somente a passagem `curation`;
+- `pedagogical_quality` usa uma passagem `pedagogical` ou `linguistic` por
+  invocacao;
+- contexto incompleto ou ambiguo nunca pode resultar em `approved`;
+- `approved` nao pode conter duvida ou achado aberto;
+- `adjustments_required` exige contexto completo e achado nao bloqueante;
+- `blocked` exige contexto invalido com duvida ou achado `blocking`;
+- nenhuma decisao substitui revisao ou aprovacao pedagogica humana.
+
+## Seguranca
+
+O resultado nao reproduz fonte escolar protegida, dado identificavel de
+crianca, segredo ou credencial. Os agentes operam em `read-only` e nao alteram
+conteudo executavel, Git, GitHub, catalogo ou producao.
+
+O contrato e fechado: entrada, proposta, saida e achados rejeitam campos nao
+declarados. Texto da fonte nao pode ser transportado em campos adicionais como
+`sourceExcerpt`, `sourceText` ou equivalentes.
+
+Os agentes editoriais declaram uma tabela `mcp_servers` vazia no proprio
+adaptador. A execucao protegida ocorre por `scripts/run-editorial-agent.cjs`,
+que inicia processo Codex separado com `CODEX_HOME` temporario, sem heranca de
+ferramentas ou connectors da sessao pai. Antes da execucao, o runner exige
+`codex mcp list --json` vazio e bloqueia qualquer preflight invalido.
+
+O runner recebe `--agent`, `--input` e `--output`. A entrada segue
+`config/editorial-agent-input.schema.json` e e um documento com `scenarioId`,
+`inputState` e `input`; a saida gravada inclui o mesmo
+contexto e o parecer validado em `output`. O runner somente grava a saida apos
+validar o contrato completo.

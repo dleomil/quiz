@@ -1,0 +1,531 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Na frase “A menina correu no pátio”, qual palavra indica uma ação?",
+      "options": ["correu", "menina", "pátio", "no"],
+      "correctIndex": 0,
+      "explanation": "Correu indica a ação realizada pela menina.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é correu.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é correu.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é correu."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual palavra é um verbo?",
+      "options": ["quintal", "brincar", "bola", "alegre"],
+      "correctIndex": 1,
+      "explanation": "Brincar é uma palavra que indica ação.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é brincar.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é brincar.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é brincar."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Complete: Pedro ____ um livro.",
+      "options": ["atento", "biblioteca", "leu", "livro"],
+      "correctIndex": 2,
+      "explanation": "Leu indica a ação realizada por Pedro.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é leu.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é leu.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é leu."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual verbo completa melhor: “As crianças ____ no recreio”?",
+      "options": ["recreio", "crianças", "divertidas", "jogam"],
+      "correctIndex": 3,
+      "explanation": "Jogam indica o que as crianças fazem no recreio.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é jogam.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é jogam.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é jogam."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Na frase “O gato dorme no tapete”, qual é o verbo?",
+      "options": ["dorme", "gato", "tapete", "no"],
+      "correctIndex": 0,
+      "explanation": "Dorme indica a ação do gato.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é dorme.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é dorme.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é dorme."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual palavra indica uma ação em “Ana escreve uma carta”?",
+      "options": ["uma", "escreve", "Ana", "carta"],
+      "correctIndex": 1,
+      "explanation": "Escreve indica a ação realizada por Ana.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é escreve.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é escreve.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é escreve."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Complete: Nós ____ uma história.",
+      "options": ["curiosa", "nós", "contamos", "história"],
+      "correctIndex": 2,
+      "explanation": "Contamos indica a ação realizada por nós.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é contamos.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é contamos.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é contamos."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual verbo completa: “O pássaro ____ no céu”?",
+      "options": ["pássaro", "céu", "azul", "voa"],
+      "correctIndex": 3,
+      "explanation": "Voa indica a ação do pássaro.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é voa.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é voa.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é voa."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Na frase “A professora explicou a atividade”, qual é o verbo?",
+      "options": ["explicou", "professora", "atividade", "a"],
+      "correctIndex": 0,
+      "explanation": "Explicou indica a ação da professora.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é explicou.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é explicou.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é explicou."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual palavra é um verbo no infinitivo?",
+      "options": ["cantor", "cantar", "canção", "bonita"],
+      "correctIndex": 1,
+      "explanation": "Cantar é uma forma de verbo no infinitivo.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é cantar.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é cantar.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é cantar."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Complete: “Eu ____ água depois da corrida.”",
+      "options": ["corrida", "cansado", "bebi", "água"],
+      "correctIndex": 2,
+      "explanation": "Bebi indica uma ação realizada por eu.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é bebi.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é bebi.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é bebi."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual verbo combina com “O sol ____ pela manhã”?",
+      "options": ["manhã", "sol", "claro", "nasce"],
+      "correctIndex": 3,
+      "explanation": "Nasce indica o que o sol faz nessa frase.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é nasce.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é nasce.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é nasce."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Na frase “Marina abriu a janela”, qual palavra indica ação?",
+      "options": ["abriu", "Marina", "janela", "a"],
+      "correctIndex": 0,
+      "explanation": "Abriu indica a ação realizada por Marina.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é abriu.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é abriu.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é abriu."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual palavra completa: “Eles ____ uma música”?",
+      "options": ["animada", "ouviram", "música", "eles"],
+      "correctIndex": 1,
+      "explanation": "Ouviram indica a ação realizada por eles.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é ouviram.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é ouviram.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é ouviram."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual é o verbo em “O menino desenha uma casa”?",
+      "options": ["casa", "uma", "desenha", "menino"],
+      "correctIndex": 2,
+      "explanation": "Desenha indica a ação do menino.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é desenha.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é desenha.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é desenha."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Complete: “Nós ____ cedo para a escola.”",
+      "options": ["escola", "cedo", "nós", "chegamos"],
+      "correctIndex": 3,
+      "explanation": "Chegamos indica a ação realizada por nós.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é chegamos.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é chegamos.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é chegamos."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual palavra é um verbo?",
+      "options": ["sorrir", "sorriso", "feliz", "rosto"],
+      "correctIndex": 0,
+      "explanation": "Sorrir indica uma ação.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é sorrir.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é sorrir.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é sorrir."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Na frase “A turma aprendeu a lição”, qual é o verbo?",
+      "options": ["a", "aprendeu", "turma", "lição"],
+      "correctIndex": 1,
+      "explanation": "Aprendeu indica a ação realizada pela turma.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é aprendeu.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é aprendeu.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é aprendeu."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual verbo completa: “O cachorro ____ quando ouviu o barulho”?",
+      "options": ["barulho", "alto", "latia", "cachorro"],
+      "correctIndex": 2,
+      "explanation": "Latia indica a ação do cachorro nessa situação.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é latia.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é latia.",
+        "3": "Esta alternativa não é o verbo pedido; a palavra correta é latia."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_verbos_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "verbos",
+      "topicName": "Verbos",
+      "question": "Qual resumo está correto sobre os verbos?",
+      "options": [
+        "todo verbo é um objeto",
+        "verbos nomeiam apenas lugares",
+        "verbos não aparecem em frases",
+        "verbos podem indicar ações em frases"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verbos podem indicar ações e ajudam a construir o sentido das frases.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não é o verbo pedido; a palavra correta é verbos podem indicar ações em frases.",
+        "1": "Esta alternativa não é o verbo pedido; a palavra correta é verbos podem indicar ações em frases.",
+        "2": "Esta alternativa não é o verbo pedido; a palavra correta é verbos podem indicar ações em frases."
+      },
+      "skill": "identificar-e-usar-verbos-em-frases",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "booklet": "Apostila 5",
+        "page": "11"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

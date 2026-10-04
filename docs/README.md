@@ -50,14 +50,19 @@ docs/
 │   ├── agent-preflight-checklist.md
 │   ├── execution-lessons-learned.md
 │   ├── content-update-quality-gates.md
+│   ├── t2-content-cycle-retrospective.md
 │   └── pilot-execution-checklist.md
 ├── roadmap/
 │   ├── panel-control-phased-plan.md
-│   └── phased-evolution-roadmap.md
+│   ├── phased-evolution-roadmap.md
+│   └── t3-content-readiness-plan.md
 ├── specs/
 │   ├── panel-control-functional-architecture.md
 │   ├── content-schema-v1.md
+│   ├── curriculum-intake-template.md
 │   ├── curriculum-content-update-governance.md
+│   ├── third-trimester-curriculum-manifest-2026.md
+│   ├── editorial-agent-output-contract.md
 │   ├── executable-codex-agents.md
 │   ├── product-discovery-agent.md
 │   ├── pilot-low-risk-workflow.md
@@ -73,6 +78,34 @@ docs/
 └── backlog/
     └── prioritized-epics-and-stories.md
 ```
+
+O runner protegido dos agentes editoriais fica em
+`scripts/run-editorial-agent.cjs`, com o schema de resposta em
+`config/editorial-agent-output.schema.json`, o schema de entrada em
+`config/editorial-agent-input.schema.json` e seus testes em
+`tests/agents/editorial-agent-runner.spec.cjs`.
+
+O modelo estrutural dos nove papeis e suas separacoes fica em
+`config/agent-capabilities.json`, com contrato em
+`docs/specs/agent-capability-model.md`. Os cinco TOMLs executaveis continuam
+como adapters read-only desse modelo.
+
+O indice validavel das policies fica em
+`config/governance-guidelines.json`. Seu contrato, manutencao e bundle
+deterministico estao descritos em
+`docs/harness/versioned-governance-guidelines.md`; os documentos referenciados
+continuam sendo as fontes normativas.
+
+O piloto local `quiz-governance` disponibiliza esse indice, os documentos
+validados por hash e o modelo central de capacidades por tres ferramentas MCP
+somente leitura. O contrato e a ativacao opt-in estao em
+`docs/specs/read-only-governance-mcp-pilot.md`; configuracoes pessoais do Codex
+continuam ignoradas pelo Git.
+
+Registros reais de execucao podem ser persistidos fora do repositorio no
+ledger local-first append-only descrito em
+`docs/specs/local-first-agent-record-ledger.md`. Exportacao, auditoria e
+sincronizacao usam bundles manuais deterministas, sem rede ou backend.
 
 ## Regras de uso
 

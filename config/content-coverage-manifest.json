@@ -47,6 +47,30 @@
           "action_verbs": 20
         }
       }
+    },
+    "2026-t3-v1": {
+      "subjects": {
+        "geografia": {
+          "agua-recurso": 20,
+          "nascente-rio": 20,
+          "agua-limitada": 20,
+          "agua-brasil": 20,
+          "usos-agua": 20
+        },
+        "ingles": {
+          "present-continuous": 20,
+          "places-city": 20,
+          "celebrations": 20,
+          "means-transport": 20
+        },
+        "historia": {
+          "povo-brasileiro": 20,
+          "imigrantes-portugueses-espanhois": 20,
+          "imigrantes-italianos": 20,
+          "imigrantes-alemaes": 20,
+          "imigrantes-japoneses": 20
+        }
+      }
     }
   }
 }

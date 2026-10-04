@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "revisions"],
+  "properties": {
+    "schemaVersion": { "const": "agent-execution-ledger-v1" },
+    "revisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/revision" }
+    }
+  },
+  "$defs": {
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision", "previousSha256", "addedRecords", "sha256"],
+      "properties": {
+        "revision": { "type": "integer", "minimum": 1 },
+        "previousSha256": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+          ]
+        },
+        "addedRecords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "agent-execution-record-set.schema.json#/$defs/record"
+          }
+        },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    }
+  }
+}

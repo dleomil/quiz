@@ -1,0 +1,546 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Choose the sentence that describes an action happening now.",
+      "options": [
+        "She is reading a book.",
+        "She reads books every day.",
+        "She read a book yesterday.",
+        "She will read tomorrow."
+      ],
+      "correctIndex": 0,
+      "explanation": "The present continuous uses am, is, or are plus a verb ending in -ing.",
+      "wrongExplanations": {
+        "1": "This option does not complete the present continuous pattern: She is reading a book..",
+        "2": "This option does not complete the present continuous pattern: She is reading a book..",
+        "3": "This option does not complete the present continuous pattern: She is reading a book.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: I ___ playing soccer now.",
+      "options": ["be", "am", "is", "are"],
+      "correctIndex": 1,
+      "explanation": "The subject I uses am in the present continuous.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: am.",
+        "2": "This option does not complete the present continuous pattern: am.",
+        "3": "This option does not complete the present continuous pattern: am."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: He ___ eating lunch.",
+      "options": ["are", "be", "is", "am"],
+      "correctIndex": 2,
+      "explanation": "The subject he uses is before the -ing verb.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: is.",
+        "1": "This option does not complete the present continuous pattern: is.",
+        "3": "This option does not complete the present continuous pattern: is."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: They ___ watching TV.",
+      "options": ["am", "is", "be", "are"],
+      "correctIndex": 3,
+      "explanation": "The subject they uses are before the -ing verb.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: are.",
+        "1": "This option does not complete the present continuous pattern: are.",
+        "2": "This option does not complete the present continuous pattern: are."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Which sentence is correct?",
+      "options": [
+        "We are studying English.",
+        "We is studying English.",
+        "We am studying English.",
+        "We studying are English."
+      ],
+      "correctIndex": 0,
+      "explanation": "We combines with are and the -ing form studying.",
+      "wrongExplanations": {
+        "1": "This option does not complete the present continuous pattern: We are studying English..",
+        "2": "This option does not complete the present continuous pattern: We are studying English..",
+        "3": "This option does not complete the present continuous pattern: We are studying English.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "What is the -ing form of play?",
+      "options": ["plays", "playing", "plaing", "played"],
+      "correctIndex": 1,
+      "explanation": "The verb play becomes playing in the present continuous.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: playing.",
+        "2": "This option does not complete the present continuous pattern: playing.",
+        "3": "This option does not complete the present continuous pattern: playing."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "80"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "What is the -ing form of read?",
+      "options": ["reads", "readding", "reading", "readed"],
+      "correctIndex": 2,
+      "explanation": "The verb read becomes reading.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: reading.",
+        "1": "This option does not complete the present continuous pattern: reading.",
+        "3": "This option does not complete the present continuous pattern: reading."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "81"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "The dog are running.",
+        "The dog am running.",
+        "The dog running is.",
+        "The dog is running."
+      ],
+      "correctIndex": 3,
+      "explanation": "A singular subject such as the dog uses is.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: The dog is running..",
+        "1": "This option does not complete the present continuous pattern: The dog is running..",
+        "2": "This option does not complete the present continuous pattern: The dog is running.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "82"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: Look! The children ___ jumping.",
+      "options": ["are", "am", "is", "be"],
+      "correctIndex": 0,
+      "explanation": "The plural subject children uses are.",
+      "wrongExplanations": {
+        "1": "This option does not complete the present continuous pattern: are.",
+        "2": "This option does not complete the present continuous pattern: are.",
+        "3": "This option does not complete the present continuous pattern: are."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "83"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Which sentence shows an action happening at this moment?",
+      "options": [
+        "The girl will sing later.",
+        "The girl is singing now.",
+        "The girl sings on Mondays.",
+        "The girl sang yesterday."
+      ],
+      "correctIndex": 1,
+      "explanation": "The expression now and is singing show an action in progress.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: The girl is singing now..",
+        "2": "This option does not complete the present continuous pattern: The girl is singing now..",
+        "3": "This option does not complete the present continuous pattern: The girl is singing now.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "84"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Choose the negative form: He ___ not sleeping.",
+      "options": ["are", "be", "is", "am"],
+      "correctIndex": 2,
+      "explanation": "He is not sleeping is the negative present continuous form.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: is.",
+        "1": "This option does not complete the present continuous pattern: is.",
+        "3": "This option does not complete the present continuous pattern: is."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "85"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: I am ___ a picture.",
+      "options": ["draw", "drew", "draws", "drawing"],
+      "correctIndex": 3,
+      "explanation": "After am, use the verb with -ing: drawing.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: drawing.",
+        "1": "This option does not complete the present continuous pattern: drawing.",
+        "2": "This option does not complete the present continuous pattern: drawing."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "86"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: We are ___ a song.",
+      "options": ["singing", "sing", "sang", "sings"],
+      "correctIndex": 0,
+      "explanation": "After are, use singing for an action in progress.",
+      "wrongExplanations": {
+        "1": "This option does not complete the present continuous pattern: singing.",
+        "2": "This option does not complete the present continuous pattern: singing.",
+        "3": "This option does not complete the present continuous pattern: singing."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "87"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Which question is correct?",
+      "options": [
+        "Are you listen?",
+        "Are you listening?",
+        "Is you listening?",
+        "Am you listening?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Questions with you use are before the subject.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: Are you listening?.",
+        "2": "This option does not complete the present continuous pattern: Are you listening?.",
+        "3": "This option does not complete the present continuous pattern: Are you listening?."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "88"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Choose the short answer: Is she dancing? — Yes, ___.",
+      "options": ["she am", "is she", "she is", "she are"],
+      "correctIndex": 2,
+      "explanation": "The short positive answer repeats she and is.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: she is.",
+        "1": "This option does not complete the present continuous pattern: she is.",
+        "3": "This option does not complete the present continuous pattern: she is."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "89"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: ___ he riding a bike?",
+      "options": ["Are", "Am", "Be", "Is"],
+      "correctIndex": 3,
+      "explanation": "A question with he begins with Is.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: Is.",
+        "1": "This option does not complete the present continuous pattern: Is.",
+        "2": "This option does not complete the present continuous pattern: Is."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "75"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Which sentence has the correct word order?",
+      "options": [
+        "The students are writing.",
+        "Are writing the students.",
+        "The students writing are.",
+        "Writing are the students."
+      ],
+      "correctIndex": 0,
+      "explanation": "The usual order is subject, be, and verb ending in -ing.",
+      "wrongExplanations": {
+        "1": "This option does not complete the present continuous pattern: The students are writing..",
+        "2": "This option does not complete the present continuous pattern: The students are writing..",
+        "3": "This option does not complete the present continuous pattern: The students are writing.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "76"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Choose the sentence about an action happening today.",
+      "options": [
+        "My mother will cook tomorrow.",
+        "My mother is cooking dinner.",
+        "My mother cooks every Sunday.",
+        "My mother cooked yesterday."
+      ],
+      "correctIndex": 1,
+      "explanation": "Is cooking describes an action in progress.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: My mother is cooking dinner..",
+        "2": "This option does not complete the present continuous pattern: My mother is cooking dinner..",
+        "3": "This option does not complete the present continuous pattern: My mother is cooking dinner.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "77"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Complete: The baby is ___ now.",
+      "options": ["cried", "cries", "crying", "cry"],
+      "correctIndex": 2,
+      "explanation": "After is, crying describes the action happening now.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: crying.",
+        "1": "This option does not complete the present continuous pattern: crying.",
+        "3": "This option does not complete the present continuous pattern: crying."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "78"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_ing_present_continuous_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ingles",
+      "topic": "present-continuous",
+      "topicName": "Present continuous",
+      "question": "Which sentence is a correct summary of the present continuous?",
+      "options": [
+        "It describes only yesterday actions.",
+        "It is used without a form of be.",
+        "It always describes a habit.",
+        "It describes an action in progress."
+      ],
+      "correctIndex": 3,
+      "explanation": "The present continuous commonly describes actions happening now or around now.",
+      "wrongExplanations": {
+        "0": "This option does not complete the present continuous pattern: It describes an action in progress..",
+        "1": "This option does not complete the present continuous pattern: It describes an action in progress..",
+        "2": "This option does not complete the present continuous pattern: It describes an action in progress.."
+      },
+      "skill": "reconhecer-acoes-em-andamento",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Inglês",
+        "page": "79"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

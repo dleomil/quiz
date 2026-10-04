@@ -39,6 +39,12 @@ acervo e deve registrar:
 - lotes planejados e quantidade acumulada por tema;
 - criterio de publicacao e plano de rollback.
 
+O intake deve usar `docs/specs/curriculum-intake-template.md`. O manifesto nasce
+como `awaiting-source`, passa por `under-review` durante a extracao e somente
+autoriza curadoria quando estiver `frozen` com aprovacao do Product Owner.
+Mudancas posteriores seguem o controle de versao do template e reabrem os gates
+dos temas afetados.
+
 Paginas de apostila nao fazem parte do contrato de cobertura. Um tema pode ser
 curado sem material escolar local quando for possivel criar conteudo original,
 factualmente verificavel e adequado a serie. A falta de uma pagina nao e motivo
@@ -61,6 +67,7 @@ completo.
 - o material em `SchoolContent/` esta protegido contra commit acidental
 - a proxima alteracao de conteudo pode nascer de uma spec rastreavel
 - existe uma spec de cobertura para todo novo ano ou trimestre
+- existe template de intake com estados, checklist e controle de mudanca
 
 ## Plano de validacao
 

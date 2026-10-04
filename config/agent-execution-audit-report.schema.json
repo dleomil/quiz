@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "ledgerSha256",
+    "revisionCount",
+    "recordCount",
+    "status",
+    "outcomes",
+    "findingSeverities",
+    "openFindings"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "agent-execution-audit-report-v1" },
+    "ledgerSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "revisionCount": { "type": "integer", "minimum": 1 },
+    "recordCount": { "type": "integer", "minimum": 1 },
+    "status": { "enum": ["clean", "attention-required"] },
+    "outcomes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/count" }
+    },
+    "findingSeverities": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/count" }
+    },
+    "openFindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["recordId", "findingId", "severity"],
+        "properties": {
+          "recordId": { "type": "string" },
+          "findingId": { "type": "string" },
+          "severity": { "enum": ["blocking", "major", "minor", "info"] }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "count": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "count"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

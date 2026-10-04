@@ -23,7 +23,9 @@ Nao usar `\\n` literal dentro de strings de comando para simular quebra de linha
 ## Regras obrigatorias
 
 - usar Markdown com quebras reais de linha
-- preferir `--body-file` ou arquivo temporario para textos maiores que uma linha
+- usar `--body-file` ou arquivo temporario para textos maiores que uma linha
+- proibir corpo inline quando o Markdown contiver crases, blocos de codigo,
+  expansoes de shell ou outros caracteres interpretaveis pelo terminal
 - manter seções curtas e consistentes
 - preservar titulos simples como `## Objetivo`, `## Mudancas`, `## Validacao`, `## Observacao`
 - evitar mistura de escape de shell com conteudo de comentario
@@ -63,6 +65,7 @@ Antes de postar comentarios ou descricoes, o agente deve:
 - escolher `--body-file` quando apropriado
 - validar localmente o Markdown final
 - garantir que a mensagem no GitHub nao contenha escapes literais
+- reler o corpo publicado antes de criar cards derivados ou mover o board
 
 ## Resultado esperado
 

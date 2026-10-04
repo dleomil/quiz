@@ -1,5 +1,5 @@
 /* exported QuizView */
-/* global App, Store, QuestionsDB */
+/* global App, Store, QuestionsDB, escapeHTML */
 const QuizView = (function () {
   const LETTERS = ['A', 'B', 'C', 'D'];
   let timerInterval = null;
@@ -54,15 +54,6 @@ const QuizView = (function () {
     }, secsPerQ * 1000);
   }
 
-  function escapeText(value) {
-    return String(value == null ? '' : value)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
   function getCorrectReason(q) {
     return q.explanation || 'Essa é a resposta certa para esta pergunta.';
   }
@@ -100,16 +91,16 @@ const QuizView = (function () {
         </div>
         <div class="feedback-block">
           <div class="feedback-label">${correctLabel}</div>
-          <div class="feedback-explain">${escapeText(q.options[q.correctIndex])}</div>
-          <div class="feedback-why">${escapeText(getCorrectReason(q))}</div>
+          <div class="feedback-explain">${escapeHTML(q.options[q.correctIndex])}</div>
+          <div class="feedback-why">${escapeHTML(getCorrectReason(q))}</div>
         </div>
         ${
           !isCorrect
             ? `
           <div class="feedback-block">
             <div class="feedback-label">${wrongLabel}</div>
-            <div class="feedback-why">${escapeText(isTimeout ? 'Você não respondeu a tempo.' : `Você marcou ${chosenText}.`)}</div>
-            <div class="feedback-explain">${escapeText(getWrongReason(q, chosen))}</div>
+            <div class="feedback-why">${escapeHTML(isTimeout ? 'Você não respondeu a tempo.' : `Você marcou ${chosenText}.`)}</div>
+            <div class="feedback-explain">${escapeHTML(getWrongReason(q, chosen))}</div>
           </div>
         `
             : ''
@@ -188,7 +179,7 @@ const QuizView = (function () {
       <div class="card">
         <div class="quiz-meta">
           <span class="counter">Pergunta ${s.index + 1} de ${total}</span>
-          <span class="topic-tag">${topicInfo.icon} ${topicInfo.name}</span>
+          <span class="topic-tag">${escapeHTML(topicInfo.icon)} ${escapeHTML(topicInfo.name)}</span>
           <span class="score-live">✅ ${correct} certa${correct !== 1 ? 's' : ''}</span>
         </div>
 
@@ -211,15 +202,15 @@ const QuizView = (function () {
             ? `
           <div class="text-excerpt">
             <div class="text-excerpt-label">📄 Leia o texto:</div>
-            ${q.text}
+            ${escapeHTML(q.text)}
           </div>`
             : ''
         }
 
-        <div class="question-text">${s.index + 1}. ${q.question}</div>
+        <div class="question-text">${s.index + 1}. ${escapeHTML(q.question)}</div>
         ${
           q.subject === 'ingles' && q.questionPt
-            ? `<div class="question-support"><span>Em português:</span> ${q.questionPt}</div>`
+            ? `<div class="question-support"><span>Em português:</span> ${escapeHTML(q.questionPt)}</div>`
             : ''
         }
 
@@ -229,7 +220,7 @@ const QuizView = (function () {
               (opt, i) => `
             <button class="option-btn" data-index="${i}">
               <span class="option-letter">${LETTERS[i]}</span>
-              <span>${opt}</span>
+              <span>${escapeHTML(opt)}</span>
             </button>`,
             )
             .join('')}

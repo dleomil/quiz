@@ -21,6 +21,7 @@ Use para inclusao, revisao ou retirada de materias, topicos, questoes, alternati
 - tema curricular autorizado
 - objetivo de aprendizagem ou habilidade verificavel
 - restricoes de linguagem e quantidade do lote
+- `sourceRef` autorizado com identificador, secao e tema, sem pagina
 
 ## Saidas obrigatorias
 
@@ -28,6 +29,7 @@ Use para inclusao, revisao ou retirada de materias, topicos, questoes, alternati
 - proposta de questao com alternativa correta identificada
 - metadados de serie, materia, topico, habilidade e versao
 - indicacao clara de qualquer ambiguidade encontrada na fonte
+- proposta diretamente compativel com `content-v1`, com `reviewStatus: draft`
 
 ## Limites
 

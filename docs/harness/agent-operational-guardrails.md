@@ -13,6 +13,7 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 - ausencia de preflight antes de criar ou mover itens
 - novo arquivo de teste sem declaracao de globals exigida pelo lint do repositorio
 - uso de flags incorretas em comandos do GitHub CLI
+- interpretacao de crases Markdown pelo shell em corpos inline de issues
 - divergencia entre os campos `Status` e `Workflow` do Project
 - merge bloqueado por regra de aprovacao sem segundo revisor disponivel
 
@@ -42,7 +43,11 @@ Consolidar os erros operacionais encontrados nas execucoes dos agentes em regras
 
 - usar o endpoint correto do GitHub
 - alterar o minimo necessario
-- restaurar a protecao imediatamente apos o merge
+- restaurar qualquer ajuste temporario de protecao imediatamente apos o merge;
+  o modo permanente de mantenedor unico nao remove os demais gates
+- no modo de mantenedor unico, preservar todos os demais gates e registrar a
+  decisao do mantenedor no PR; a aprovacao independente permanece como regra
+  futura rastreada na Tech Task #310
 
 ### 5. Exigir preflight do agente
 
@@ -64,13 +69,19 @@ Antes de qualquer acao de escrita, o agente deve confirmar:
 
 - confirmar a sintaxe do subcomando antes de escrever comentario, issue, PR ou acao de board
 - usar `--help` ou a documentacao oficial do comando quando houver duvida
-- preferir arquivos Markdown reais para corpos longos e evitar strings com escapes que quebram a formatacao
+- usar arquivo Markdown real e `--body-file` para todo corpo multilinha ou com
+  crases; nao passar esse conteudo em string inline do shell
+- reler o corpo publicado antes de movimentar o card ou criar dependencias
 
 ### 8. Validar paridade do board e da governanca de merge
 
 - quando o Project usar mais de um campo de estado, atualizar todos os campos relevantes de forma coerente
 - antes do merge, revisar a regra real de aprovacao e last push approval da branch alvo
-- se for necessario ajuste temporario de branch protection, reduzir apenas o minimo necessario e restaurar imediatamente apos o merge
+- se for necessario ajuste temporario de branch protection, reduzir apenas o
+  minimo necessario e restaurar imediatamente apos o merge; o modo permanente
+  de mantenedor unico definido na estrategia de branching e rastreado em #310.
+  Essa regra vale para a aprovacao do Pull Request, nao para os gates
+  pedagogicos ou editoriais.
 
 ### 9. Controlar descoberta de produto assistida
 
