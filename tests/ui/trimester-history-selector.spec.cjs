@@ -40,9 +40,9 @@ function session(contentSetId, date, pct) {
     contentSetId,
     contentVersion: 1,
     date,
-    subject: 'portugues',
+    subject: 'historia',
     topicId: 'all',
-    topic: 'Português',
+    topic: 'História',
     correct,
     total: 10,
     pct,
@@ -95,10 +95,10 @@ async function run() {
     await installHistory(page, history);
 
     const options = page.locator('.content-set-option');
-    assert.strictEqual(await options.count(), 2);
+    assert.strictEqual(await options.count(), 3);
     assert.strictEqual(
       await options
-        .filter({ hasText: '2º trimestre' })
+        .filter({ hasText: '3º trimestre' })
         .getAttribute('aria-pressed'),
       'true',
     );
@@ -106,14 +106,9 @@ async function run() {
     await page.locator('#nav-history').click();
     assert.strictEqual(
       await page.locator('#filter-content-set').inputValue(),
-      '2026-t2-v1',
+      '2026-t3-v1',
     );
-    assert.strictEqual(await page.locator('.session-card').count(), 1);
-    assert.ok(
-      (await page.locator('.session-period').textContent()).includes(
-        '2º trimestre',
-      ),
-    );
+    assert.strictEqual(await page.locator('.session-card').count(), 0);
 
     await page.locator('#filter-content-set').selectOption('');
     assert.strictEqual(await page.locator('.session-card').count(), 3);

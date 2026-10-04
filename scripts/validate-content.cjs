@@ -366,6 +366,13 @@ function loadContentSources(rootDir) {
     });
   });
 
+  const t3ReleasePath = path.join(rootDir, 'js', 'data', 't3-published.js');
+  if (fs.existsSync(t3ReleasePath)) {
+    vm.runInContext(fs.readFileSync(t3ReleasePath, 'utf8'), context, {
+      filename: t3ReleasePath,
+    });
+  }
+
   return context.window.QuestionsDataSources || {};
 }
 

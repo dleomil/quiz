@@ -90,8 +90,9 @@ async function run() {
     assert.deepStrictEqual(result.publishedContentSets, [
       '2026-t1-v1',
       '2026-t2-v1',
+      '2026-t3-v1',
     ]);
-    assert.strictEqual(result.runtimeT3Count, 0);
+    assert.strictEqual(result.runtimeT3Count, 280);
     assert.strictEqual(result.historyEntry.contentSetId, '2026-t3-v1');
     assert.strictEqual(result.historyEntry.topicId, 'luz-visao');
     assert.strictEqual(result.historyEntry.total, 20);
@@ -100,7 +101,7 @@ async function run() {
 
     await browser.close();
     console.log(
-      't3-pilot-draft-ui: ok (harness isolado, runtime publicado intacto)',
+      't3-pilot-draft-ui: ok (harness isolado, release incremental intacto)',
     );
   } finally {
     server.kill();

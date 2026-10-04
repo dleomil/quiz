@@ -31,7 +31,7 @@ async function openHistoryTopics(page) {
   await page.goto(baseUrl, { waitUntil: 'networkidle' });
   assert.strictEqual(
     await page.evaluate(() => Store.get().selectedContentSet),
-    '2026-t2-v1',
+    '2026-t3-v1',
   );
   await page.locator('.subject-card[data-subject="historia"]').click();
 }
@@ -80,13 +80,13 @@ async function run() {
 
     await openHistoryTopics(page);
     const allTopics = page.locator('.topic-card[data-topic="all"]');
-    assert.strictEqual(await allTopics.getAttribute('data-count'), '80');
+    assert.strictEqual(await allTopics.getAttribute('data-count'), '100');
     await allTopics.click();
 
     const input = page.locator('#question-count-input');
     const start = page.locator('#btn-start-selected-count');
     assert.strictEqual(await input.getAttribute('min'), '2');
-    assert.strictEqual(await input.getAttribute('max'), '80');
+    assert.strictEqual(await input.getAttribute('max'), '100');
     assert.strictEqual(await input.inputValue(), '30');
 
     await input.fill('');
@@ -98,15 +98,15 @@ async function run() {
     assert.strictEqual(await start.isDisabled(), true);
     assert.ok(
       (await page.locator('#question-count-error').textContent()).includes(
-        '2 até 80',
+        '2 até 100',
       ),
     );
     await page.locator('#count-inc').click();
     assert.strictEqual(await input.inputValue(), '2');
 
-    await input.fill('81');
+    await input.fill('101');
     await page.locator('#count-dec').click();
-    assert.strictEqual(await input.inputValue(), '80');
+    assert.strictEqual(await input.inputValue(), '100');
 
     await input.fill('2.5');
     assert.strictEqual(await start.isDisabled(), true);
@@ -118,10 +118,10 @@ async function run() {
     assert.strictEqual(await input.inputValue(), '40');
     assert.strictEqual(await start.isEnabled(), true);
 
-    await page.evaluate(() => App.startQuiz('all', 'historia', 81));
+    await page.evaluate(() => App.startQuiz('all', 'historia', 101));
     assert.strictEqual(
       await page.locator('#toast-container .toast').last().textContent(),
-      'Escolha entre 2 e 80 questões.',
+      'Escolha entre 2 e 100 questões.',
     );
     assert.strictEqual(
       await page.locator('#question-count-panel').isVisible(),
@@ -132,12 +132,12 @@ async function run() {
     assert.strictEqual(await start.isEnabled(), true);
     await start.click();
     const minimumSnapshot = await quizSnapshot(page);
-    assert.strictEqual(minimumSnapshot.contentSetId, '2026-t2-v1');
+    assert.strictEqual(minimumSnapshot.contentSetId, '2026-t3-v1');
     assert.strictEqual(minimumSnapshot.selectedTopic, 'all');
     assert.strictEqual(minimumSnapshot.count, 2);
     assert.strictEqual(minimumSnapshot.uniqueIds, 2);
     assert.deepStrictEqual(minimumSnapshot.subjects, ['historia']);
-    assert.deepStrictEqual(minimumSnapshot.contentSets, ['2026-t2-v1']);
+    assert.deepStrictEqual(minimumSnapshot.contentSets, ['2026-t3-v1']);
     assert.strictEqual(minimumSnapshot.intro, '2 questões');
 
     await openHistoryTopics(page);
@@ -145,12 +145,12 @@ async function run() {
     await page.locator('[data-count-choice="all"]').click();
     await start.click();
     const allSnapshot = await quizSnapshot(page);
-    assert.strictEqual(allSnapshot.count, 80);
-    assert.strictEqual(allSnapshot.uniqueIds, 80);
+    assert.strictEqual(allSnapshot.count, 100);
+    assert.strictEqual(allSnapshot.uniqueIds, 100);
     assert.deepStrictEqual(allSnapshot.subjects, ['historia']);
-    assert.deepStrictEqual(allSnapshot.contentSets, ['2026-t2-v1']);
-    assert.strictEqual(allSnapshot.topics.length, 4);
-    assert.strictEqual(allSnapshot.intro, '80 questões');
+    assert.deepStrictEqual(allSnapshot.contentSets, ['2026-t3-v1']);
+    assert.strictEqual(allSnapshot.topics.length, 5);
+    assert.strictEqual(allSnapshot.intro, '100 questões');
 
     await openHistoryTopics(page);
     const specificTopic = page
