@@ -21,6 +21,7 @@
     "test:editorial-runner": "node tests/agents/editorial-agent-runner.spec.cjs",
     "validate:branch": "node scripts/validate-branch-policy.cjs",
     "validate:branch-sync": "node scripts/validate-branch-sync.cjs",
+    "validate:promotion": "node scripts/validate-promotion-manifest.cjs",
     "validate:guidelines": "node scripts/governance-guidelines.cjs validate",
     "mcp:governance": "node scripts/governance-mcp-server.cjs",
     "validate:mcp-governance": "node scripts/governance-mcp-server.cjs --validate",
