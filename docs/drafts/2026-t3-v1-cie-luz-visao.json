@@ -9,14 +9,14 @@
       "subject": "ciencias",
       "topic": "luz-visao",
       "topicName": "Luz e Visão",
-      "question": "A luz do Sol é um exemplo de:",
+      "question": "O Sol é um exemplo de:",
       "options": ["fonte luminosa", "corpo iluminado", "sombra", "espelho"],
       "correctIndex": 0,
-      "explanation": "A luz do Sol é produzida pelo próprio Sol.",
+      "explanation": "O Sol produz sua própria luz e é uma fonte luminosa.",
       "wrongExplanations": {
-        "1": "A alternativa não corresponde ao conceito de fonte luminosa.",
-        "2": "A alternativa não corresponde ao conceito de fonte luminosa.",
-        "3": "A alternativa não corresponde ao conceito de fonte luminosa."
+        "1": "Um corpo iluminado recebe luz de outra fonte e não produz luz própria.",
+        "2": "Uma sombra é uma região que recebe pouca ou nenhuma luz.",
+        "3": "Um espelho reflete a luz que recebe, mas não produz luz própria."
       },
       "skill": "reconhecer-fontes-propriedades-e-cuidados-da-luz",
       "sourceRef": {
