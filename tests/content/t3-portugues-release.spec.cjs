@@ -19,29 +19,29 @@ const context = vm.createContext({ window: {} });
 });
 
 const sources = context.window.QuestionsDataSources;
-const questions = sources.ciencias.questions.filter(
+const portugues = sources.portugues.questions.filter(
   (question) => question.contentSetId === '2026-t3-v1',
 );
-const corposLuz = questions.filter(
-  (question) => question.topic === 'corpos-luz',
-);
-
-assert.equal(corposLuz.length, 20);
-assert.equal(new Set(corposLuz.map((question) => question.id)).size, 20);
-assert.deepEqual(
-  corposLuz.reduce((counts, question) => {
-    counts[question.correctIndex] = (counts[question.correctIndex] || 0) + 1;
-    return counts;
-  }, {}),
-  { 0: 5, 1: 5, 2: 5, 3: 5 },
-);
-assert.ok(corposLuz.every((question) => question.reviewStatus === 'published'));
-assert.equal(questions.length, 140);
-assert.equal(
-  sources.portugues.questions.filter(
+assert.equal(portugues.length, 40);
+assert.equal(new Set(portugues.map((question) => question.id)).size, 40);
+['usos-c', 'verbos'].forEach((topic) => {
+  const questions = portugues.filter((question) => question.topic === topic);
+  assert.equal(questions.length, 20);
+  assert.deepEqual(
+    questions.reduce((counts, question) => {
+      counts[question.correctIndex] = (counts[question.correctIndex] || 0) + 1;
+      return counts;
+    }, {}),
+    { 0: 5, 1: 5, 2: 5, 3: 5 },
+  );
+  assert.ok(
+    questions.every((question) => question.reviewStatus === 'published'),
+  );
+});
+assert.ok(
+  sources.ciencias.questions.filter(
     (question) => question.contentSetId === '2026-t3-v1',
-  ).length,
-  40,
+  ).length === 140,
 );
 assert.equal(
   sources.matematica.questions.filter(
@@ -51,5 +51,5 @@ assert.equal(
 );
 
 console.log(
-  't3-ciencias-corpos-luz-release: ok (140 ciencias T3; 40 portugues; matematica fora)',
+  't3-portugues-release: ok (40 portugues T3; ciencias preservadas; matematica fora)',
 );
