@@ -52,6 +52,7 @@
       "subjects": {
         "ciencias": {
           "luz-visao": 20,
+          "corpos-luz": 20,
           "materiais-transparentes": 20,
           "propriedades-luz": 20,
           "espelhos": 20,
