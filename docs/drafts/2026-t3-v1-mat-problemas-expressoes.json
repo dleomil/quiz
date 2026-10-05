@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Lia tinha 18 adesivos e ganhou mais 7. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "18 + 7 = 25",
+        "18 − 7 = 11",
+        "18 × 7 = 126",
+        "18 ÷ 7 = 2, resto 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ganhar adesivos aumenta a quantidade: 18 + 7 = 25.",
+      "wrongExplanations": {
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 18 + 7 = 25.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 18 + 7 = 25.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 18 + 7 = 25."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Havia 32 livros na mesa e 9 foram guardados. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "32 + 9 = 41",
+        "32 − 9 = 23",
+        "32 × 9 = 288",
+        "32 ÷ 9 = 3, resto 5"
+      ],
+      "correctIndex": 1,
+      "explanation": "Guardar 9 livros retira essa quantidade: 32 − 9 = 23.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 32 − 9 = 23.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 32 − 9 = 23.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 32 − 9 = 23."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 6 caixas com 4 bolas em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "6 + 4 = 10",
+        "6 − 4 = 2",
+        "6 × 4 = 24",
+        "6 ÷ 4 = 1, resto 2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Seis grupos iguais de quatro bolas são representados por 6 × 4 = 24.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 6 × 4 = 24.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 6 × 4 = 24.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 6 × 4 = 24."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma turma tinha 27 folhas e recebeu mais 8. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "27 − 8 = 19",
+        "27 × 8 = 216",
+        "27 ÷ 8 = 3, resto 3",
+        "27 + 8 = 35"
+      ],
+      "correctIndex": 3,
+      "explanation": "Receber folhas acrescenta 8 às 27 que já havia. 27 + 8 = 35.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 27 + 8 = 35.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 27 + 8 = 35.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 27 + 8 = 35."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "De 45 laranjas, 18 foram usadas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "45 − 18 = 27",
+        "45 + 18 = 63",
+        "45 × 18 = 810",
+        "45 ÷ 18 = 2, resto 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usar laranjas diminui o total: 45 − 18 = 27.",
+      "wrongExplanations": {
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 45 − 18 = 27.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 45 − 18 = 27.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 45 − 18 = 27."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 7 bandejas com 5 pães em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "7 + 5 = 12",
+        "7 × 5 = 35",
+        "7 − 5 = 2",
+        "7 ÷ 5 = 1, resto 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "A multiplicação representa sete grupos de cinco pães. 7 × 5 = 35.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 5 = 35.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 5 = 35.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 5 = 35."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma caixa tinha 36 peças; 16 foram retiradas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "36 + 16 = 52",
+        "36 × 16 = 576",
+        "36 − 16 = 20",
+        "36 ÷ 16 = 2, resto 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "Retirar 16 peças é representado por 36 − 16. 36 − 16 = 20.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 36 − 16 = 20.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 36 − 16 = 20.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 36 − 16 = 20."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Nina leu 25 páginas ontem e 14 hoje. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "25 − 14 = 11",
+        "25 × 14 = 350",
+        "25 ÷ 14 = 1, resto 11",
+        "25 + 14 = 39"
+      ],
+      "correctIndex": 3,
+      "explanation": "As páginas dos dois dias são juntadas: 25 + 14 = 39.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 25 + 14 = 39.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 25 + 14 = 39.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 25 + 14 = 39."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 8 mesas com 3 estudantes em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "8 × 3 = 24",
+        "8 + 3 = 11",
+        "8 − 3 = 5",
+        "8 ÷ 3 = 2, resto 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Oito grupos iguais de três estudantes são 8 × 3. 8 × 3 = 24.",
+      "wrongExplanations": {
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 3 = 24.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 3 = 24.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 3 = 24."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma cesta tinha 48 frutas e 25 foram vendidas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "48 + 25 = 73",
+        "48 − 25 = 23",
+        "48 × 25 = 1200",
+        "48 ÷ 25 = 1, resto 23"
+      ],
+      "correctIndex": 1,
+      "explanation": "Vender frutas retira 25 do total de 48. 48 − 25 = 23.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 48 − 25 = 23.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 48 − 25 = 23.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 48 − 25 = 23."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma coleção tem 29 cartões e ganha mais 34. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "29 − 34 = -5",
+        "29 × 34 = 986",
+        "29 + 34 = 63",
+        "29 ÷ 34 = 0, resto 29"
+      ],
+      "correctIndex": 2,
+      "explanation": "Juntar cartões significa somar 29 e 34. 29 + 34 = 63.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 29 + 34 = 63.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 29 + 34 = 63.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 29 + 34 = 63."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 9 pacotes com 4 figurinhas em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "9 + 4 = 13",
+        "9 − 4 = 5",
+        "9 ÷ 4 = 2, resto 1",
+        "9 × 4 = 36"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nove grupos de quatro figurinhas são representados por 9 × 4. 9 × 4 = 36.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 4 = 36.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 4 = 36.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 4 = 36."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma sala tinha 56 cadeiras e 17 foram levadas para outra sala. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "56 − 17 = 39",
+        "56 + 17 = 73",
+        "56 × 17 = 952",
+        "56 ÷ 17 = 3, resto 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Levar cadeiras embora reduz a quantidade: 56 − 17. 56 − 17 = 39.",
+      "wrongExplanations": {
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 56 − 17 = 39.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 56 − 17 = 39.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 56 − 17 = 39."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Rui juntou 38 conchas e depois encontrou mais 46. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "38 − 46 = -8",
+        "38 + 46 = 84",
+        "38 × 46 = 1748",
+        "38 ÷ 46 = 0, resto 38"
+      ],
+      "correctIndex": 1,
+      "explanation": "Encontrar mais conchas aumenta a coleção; somamos 38 e 46. 38 + 46 = 84.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 38 + 46 = 84.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 38 + 46 = 84.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 38 + 46 = 84."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma biblioteca coloca 6 livros em cada uma de 7 caixas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "7 + 6 = 13",
+        "7 − 6 = 1",
+        "7 × 6 = 42",
+        "7 ÷ 6 = 1, resto 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sete grupos de seis livros correspondem a 7 × 6. 7 × 6 = 42.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 6 = 42.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 6 = 42.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 6 = 42."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Um agricultor colheu 83 maçãs e separou 48. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "83 + 48 = 131",
+        "83 × 48 = 3984",
+        "83 ÷ 48 = 1, resto 35",
+        "83 − 48 = 35"
+      ],
+      "correctIndex": 3,
+      "explanation": "Separar 48 maçãs deixa a diferença entre 83 e 48. 83 − 48 = 35.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 83 − 48 = 35.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 83 − 48 = 35.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 83 − 48 = 35."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma escola recebeu 56 cadernos e depois mais 17. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "56 + 17 = 73",
+        "56 − 17 = 39",
+        "56 × 17 = 952",
+        "56 ÷ 17 = 3, resto 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Receber mais cadernos pede uma adição. 56 + 17 = 73.",
+      "wrongExplanations": {
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 56 + 17 = 73.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 56 + 17 = 73.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 56 + 17 = 73."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 8 caixas com 6 bolas em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "8 + 6 = 14",
+        "8 × 6 = 48",
+        "8 − 6 = 2",
+        "8 ÷ 6 = 1, resto 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oito grupos de seis bolas são representados por 8 × 6. 8 × 6 = 48.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 6 = 48.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 6 = 48.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 6 = 48."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma loja tinha 100 cadernos e vendeu 64. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "100 + 64 = 164",
+        "100 × 64 = 6400",
+        "100 − 64 = 36",
+        "100 ÷ 64 = 1, resto 36"
+      ],
+      "correctIndex": 2,
+      "explanation": "Vender cadernos reduz o estoque: 100 − 64 = 36.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 100 − 64 = 36.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 100 − 64 = 36.",
+        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 100 − 64 = 36."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 9 fileiras com 5 cadeiras em cada uma. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "9 + 5 = 14",
+        "9 − 5 = 4",
+        "9 ÷ 5 = 1, resto 4",
+        "9 × 5 = 45"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nove grupos de cinco cadeiras correspondem a 9 × 5. 9 × 5 = 45.",
+      "wrongExplanations": {
+        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 5 = 45.",
+        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 5 = 45.",
+        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 5 = 45."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

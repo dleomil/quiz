@@ -8,7 +8,7 @@
 | Trimestre                 | `t3`                                                    |
 | Serie                     | `3-ano`                                                 |
 | `contentSetId`            | `2026-t3-v1`                                            |
-| Versao do manifesto       | 2                                                       |
+| Versao do manifesto       | 3                                                       |
 | Estado do manifesto       | `frozen`                                                |
 | Estado inicial do acervo  | `draft` e invisivel                                     |
 | Estado do release parcial | `published` para Ciências, Geografia, Inglês e História |
@@ -103,20 +103,23 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | proposto     |
 | Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | proposto     |
 | Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | proposto     |
-| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | bloqueado    |
-| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | bloqueado    |
+| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | proposto     |
+| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | proposto     |
 | Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | proposto     |
 | Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | proposto     |
 | Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | proposto     |
 | Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | proposto     |
 | Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | proposto     |
-| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | bloqueado    |
+| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | proposto     |
 
 Atividades adicionais nao criam tema independente. A segunda menção a
-multiplicação e os métodos de divisão precisam ser reconciliados antes do
-congelamento para evitar duplicidade ou cobertura artificial.
+multiplicação será coberta pelos temas `multiplicacao` e
+`decomposicao-multiplicacao`, sem duplicar o objeto de conhecimento. Os títulos
+do roteiro identificam seções próprias para métodos da divisão, expressões
+aritméticas e divisão euclidiana; esses temas permanecem propostos e prontos
+para iniciar a curadoria editorial, mantendo os limites descritos na matriz.
 
-## Totais provisórios
+## Totais do escopo congelado
 
 | Materia    |  Temas | Bloqueados |    Meta |
 | ---------- | -----: | ---------: | ------: |
@@ -125,21 +128,33 @@ congelamento para evitar duplicidade ou cobertura artificial.
 | Inglês     |      4 |          0 |      80 |
 | História   |      5 |          0 |     100 |
 | Português  |      8 |          0 |     160 |
-| Matemática |     11 |          3 |     220 |
-| **Total**  | **40** |      **3** | **800** |
+| Matemática |     11 |          0 |     220 |
+| **Total**  | **40** |      **0** | **800** |
 
-Os totais sao provisórios. O manifesto nao pode ser congelado enquanto os
-temas bloqueados e a duplicidade de Matemática nao forem decididos.
+Os totais representam o escopo curricular congelado, nao o conteudo ja
+publicado. O release parcial continua limitado aos pacotes aprovados e
+registrados na seção de release incremental.
 
 ## Lacunas e decisões pendentes
 
-| ID         | Tipo        | Descrição                                                        | Impacto    | Decisão                                                       | Estado    |
-| ---------- | ----------- | ---------------------------------------------------------------- | ---------- | ------------------------------------------------------------- | --------- |
-| T3-INT-001 | ambiguidade | confirmar se divisão e métodos da divisão são um ou dois objetos | Matemática | manter divisão como conceito e métodos como tema separado     | resolvido |
-| T3-INT-002 | ambiguidade | confirmar escopo de expressões e convenção ensinada              | Matemática | manter expressões simples e a convenção coberta pela apostila | resolvido |
-| T3-INT-003 | ambiguidade | confirmar se divisão euclidiana é tema próprio                   | Matemática | manter tema próprio por possuir seção e objetivo distintos    | resolvido |
-| T3-INT-004 | prazo       | janela até a primeira prova é curta                              | todos      | priorizar por data sem publicar pacote incompleto             | resolvido |
-| T3-INT-005 | fonte       | confirmar que o DOCX é a versão final                            | todos      | Product Owner confirmou prosseguimento com este arquivo       | resolvido |
+| ID         | Tipo        | Descrição                                                        | Impacto    | Decisão                                                                                        | Estado    |
+| ---------- | ----------- | ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------- | --------- |
+| T3-INT-001 | ambiguidade | confirmar se divisão e métodos da divisão são um ou dois objetos | Matemática | manter divisão como conceito e métodos como tema separado                                      | resolvido |
+| T3-INT-002 | ambiguidade | confirmar escopo de expressões e convenção ensinada              | Matemática | manter expressões simples e a convenção coberta pela apostila                                  | resolvido |
+| T3-INT-003 | ambiguidade | confirmar se divisão euclidiana é tema próprio                   | Matemática | manter tema próprio por possuir seção e objetivo distintos                                     | resolvido |
+| T3-INT-004 | prazo       | janela até a primeira prova é curta                              | todos      | priorizar por data sem publicar pacote incompleto                                              | resolvido |
+| T3-INT-005 | fonte       | confirmar que o DOCX é a versão final                            | todos      | Product Owner confirmou prosseguimento com este arquivo                                        | resolvido |
+| T3-INT-006 | ambiguidade | segunda menção a multiplicação pode duplicar cobertura           | Matemática | integrar a menção aos temas `multiplicacao` e `decomposicao-multiplicacao`, sem tema adicional | resolvido |
+
+## Emenda ao congelamento (versao 3)
+
+Em 2026-10-05, o Product Owner aprovou manter a segunda menção a
+multiplicação dentro dos dois temas existentes. A conferência dos títulos do
+roteiro confirma seções próprias para métodos da divisão, expressões simples e
+divisão euclidiana; os três itens antes marcados como bloqueados ficam
+liberados para curadoria, sem alterar seus objetivos. Esta emenda nao autoriza
+publicação: os gates editoriais e a aprovação humana do release continuam
+obrigatórios.
 
 ## Gates
 
@@ -156,13 +171,14 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 
 ## Controle de alterações
 
-| Versão | Data       | Estado          | Descrição                                                | Aprovação                              |
-| -----: | ---------- | --------------- | -------------------------------------------------------- | -------------------------------------- |
-|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                        | pendente                               |
-|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos | Product Owner confirmou prosseguimento |
-|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado        | Product Owner (`dleomil`)              |
-|      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História      | Product Owner (`dleomil`)              |
-|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências    | Product Owner (`dleomil`)              |
+| Versão | Data       | Estado          | Descrição                                                                                                    | Aprovação                              |
+| -----: | ---------- | --------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                                                                            | pendente                               |
+|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos                                                     | Product Owner confirmou prosseguimento |
+|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado                                                            | Product Owner (`dleomil`)              |
+|      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História                                                          | Product Owner (`dleomil`)              |
+|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências                                                        | Product Owner (`dleomil`)              |
+|      6 | 2026-10-05 | frozen-amended  | reconciliação da menção repetida a multiplicação e liberação dos temas matemáticos bloqueados para curadoria | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.

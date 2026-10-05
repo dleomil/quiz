@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "matematica:problemas-expressoes",
+  "sourceSha256": "03234e3f535f4a3135f1b87cd99315506860fd7be6b8f7991411e50e5fc16eb7",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_problemas_expressoes_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/problemas-expressoes"
+      ],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

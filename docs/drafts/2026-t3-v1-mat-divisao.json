@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "24 figurinhas são repartidas igualmente entre 4 crianças. Quantas recebe cada criança?",
+      "options": ["6", "4", "5", "8"],
+      "correctIndex": 0,
+      "explanation": "Dividir 24 em 4 grupos iguais dá 6 figurinhas para cada criança.",
+      "wrongExplanations": {
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "35 maçãs são colocadas igualmente em 5 cestas. Quantas maçãs ficam em cada cesta?",
+      "options": ["5", "7", "6", "8"],
+      "correctIndex": 1,
+      "explanation": "Como 5 × 7 = 35, cada cesta recebe 7 maçãs.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "32 livros são organizados em 4 prateleiras, em quantidades iguais. Quantos livros por prateleira?",
+      "options": ["4", "6", "8", "9"],
+      "correctIndex": 2,
+      "explanation": "A divisão 32 ÷ 4 resulta em 8 livros por prateleira.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "21 crianças formam 3 equipes iguais. Quantas crianças há em cada equipe?",
+      "options": ["3", "6", "8", "7"],
+      "correctIndex": 3,
+      "explanation": "Três equipes com 7 crianças formam 21 crianças.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "36 lápis são separados igualmente em 6 caixas. Quantos lápis por caixa?",
+      "options": ["6", "5", "7", "9"],
+      "correctIndex": 0,
+      "explanation": "A conta 36 ÷ 6 = 6 indica seis lápis em cada caixa.",
+      "wrongExplanations": {
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "40 biscoitos são repartidos igualmente entre 5 pratos. Quantos por prato?",
+      "options": ["5", "8", "7", "9"],
+      "correctIndex": 1,
+      "explanation": "Cinco grupos de oito biscoitos totalizam 40.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "27 bolas são guardadas em 3 sacos iguais. Quantas bolas em cada saco?",
+      "options": ["6", "8", "9", "10"],
+      "correctIndex": 2,
+      "explanation": "Dividir 27 por 3 dá 9 bolas para cada saco.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "30 flores são distribuídas igualmente em 5 vasos. Quantas flores por vaso?",
+      "options": ["5", "7", "8", "6"],
+      "correctIndex": 3,
+      "explanation": "Cinco vasos com seis flores cada acomodam as 30 flores.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "48 cartões são separados em 6 montes iguais. Quantos cartões em cada monte?",
+      "options": ["8", "6", "7", "9"],
+      "correctIndex": 0,
+      "explanation": "48 ÷ 6 = 8 cartões em cada monte.",
+      "wrongExplanations": {
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "45 estudantes entram em 5 grupos iguais. Quantos estudantes em cada grupo?",
+      "options": ["5", "9", "8", "10"],
+      "correctIndex": 1,
+      "explanation": "Cinco grupos de nove estudantes somam 45.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "28 carrinhos são colocados igualmente em 4 caixas. Quantos carrinhos por caixa?",
+      "options": ["4", "6", "7", "8"],
+      "correctIndex": 2,
+      "explanation": "A divisão 28 ÷ 4 = 7 dá a quantidade de carrinhos em cada caixa.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "54 copos são organizados em 6 mesas iguais. Quantos copos por mesa?",
+      "options": ["6", "8", "10", "9"],
+      "correctIndex": 3,
+      "explanation": "Cada uma das 6 mesas recebe 9 copos, pois 6 × 9 = 54.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "42 sementes são colocadas igualmente em 7 vasos. Quantas em cada vaso?",
+      "options": ["6", "5", "7", "8"],
+      "correctIndex": 0,
+      "explanation": "42 dividido por 7 é 6 sementes por vaso.",
+      "wrongExplanations": {
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "56 livros são separados em 8 pilhas iguais. Quantos livros em cada pilha?",
+      "options": ["6", "7", "8", "9"],
+      "correctIndex": 1,
+      "explanation": "Oito pilhas de sete livros contêm 56 livros.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "63 botões são divididos igualmente entre 7 caixas. Quantos botões por caixa?",
+      "options": ["7", "8", "9", "10"],
+      "correctIndex": 2,
+      "explanation": "63 ÷ 7 = 9 botões em cada caixa.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "36 crianças fazem filas de 4 crianças. Quantas filas completas podem ser feitas?",
+      "options": ["8", "10", "12", "9"],
+      "correctIndex": 3,
+      "explanation": "Nove filas com quatro crianças usam 36 crianças.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "24 pães são colocados em sacos com 3 pães em cada. Quantos sacos são necessários?",
+      "options": ["8", "6", "7", "9"],
+      "correctIndex": 0,
+      "explanation": "Com três pães por saco, 24 ÷ 3 = 8 sacos.",
+      "wrongExplanations": {
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "40 folhas são entregues em grupos de 8 folhas. Quantos grupos completos há?",
+      "options": ["4", "5", "6", "8"],
+      "correctIndex": 1,
+      "explanation": "Cinco grupos de oito folhas formam 40 folhas.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "72 peças são organizadas em caixas com 9 peças. Quantas caixas ficam completas?",
+      "options": ["7", "9", "8", "10"],
+      "correctIndex": 2,
+      "explanation": "72 ÷ 9 = 8 caixas completas.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao",
+      "topicName": "Divisão",
+      "question": "64 adesivos formam cartelas com 8 adesivos cada. Quantas cartelas completas?",
+      "options": ["6", "7", "9", "8"],
+      "correctIndex": 3,
+      "explanation": "Oito cartelas de oito adesivos usam 64 adesivos.",
+      "wrongExplanations": {
+        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
+        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+      },
+      "skill": "resolver-e-interpretar-divisoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma figura retangular ocupa 3 colunas e 2 linhas de quadradinhos. Qual é sua área?",
+      "options": ["6", "4", "5", "7"],
+      "correctIndex": 0,
+      "explanation": "3 grupos de 2 quadradinhos totalizam 6.",
+      "wrongExplanations": {
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Há 4 quadradinhos em cada uma de 3 linhas completas. Quantos quadradinhos cobrem a região?",
+      "options": ["10", "12", "11", "13"],
+      "correctIndex": 1,
+      "explanation": "4 grupos de 3 quadradinhos totalizam 12.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma região da malha mede 2 quadradinhos de largura por 2 de altura. Qual é a área?",
+      "options": ["2", "3", "4", "5"],
+      "correctIndex": 2,
+      "explanation": "2 grupos de 2 quadradinhos totalizam 4.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 4 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 4 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 4 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Um retângulo cobre 2 linhas com 5 quadradinhos em cada linha. Quantos quadradinhos há?",
+      "options": ["8", "9", "11", "10"],
+      "correctIndex": 3,
+      "explanation": "5 grupos de 2 quadradinhos totalizam 10.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma figura retangular ocupa 3 colunas e 4 linhas de quadradinhos. Qual é sua área?",
+      "options": ["12", "10", "11", "13"],
+      "correctIndex": 0,
+      "explanation": "3 grupos de 4 quadradinhos totalizam 12.",
+      "wrongExplanations": {
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Há 6 quadradinhos em cada uma de 2 linhas completas. Quantos quadradinhos cobrem a região?",
+      "options": ["10", "12", "11", "13"],
+      "correctIndex": 1,
+      "explanation": "6 grupos de 2 quadradinhos totalizam 12.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma região da malha mede 5 quadradinhos de largura por 3 de altura. Qual é a área?",
+      "options": ["13", "14", "15", "16"],
+      "correctIndex": 2,
+      "explanation": "5 grupos de 3 quadradinhos totalizam 15.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Um retângulo cobre 4 linhas com 4 quadradinhos em cada linha. Quantos quadradinhos há?",
+      "options": ["14", "15", "17", "16"],
+      "correctIndex": 3,
+      "explanation": "4 grupos de 4 quadradinhos totalizam 16.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 16 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 16 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 16 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma figura retangular ocupa 2 colunas e 5 linhas de quadradinhos. Qual é sua área?",
+      "options": ["10", "8", "9", "11"],
+      "correctIndex": 0,
+      "explanation": "2 grupos de 5 quadradinhos totalizam 10.",
+      "wrongExplanations": {
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Há 6 quadradinhos em cada uma de 3 linhas completas. Quantos quadradinhos cobrem a região?",
+      "options": ["16", "18", "17", "19"],
+      "correctIndex": 1,
+      "explanation": "6 grupos de 3 quadradinhos totalizam 18.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 18 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 18 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 18 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma região da malha mede 4 quadradinhos de largura por 2 de altura. Qual é a área?",
+      "options": ["6", "7", "8", "9"],
+      "correctIndex": 2,
+      "explanation": "4 grupos de 2 quadradinhos totalizam 8.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 8 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 8 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 8 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Um retângulo cobre 4 linhas com 5 quadradinhos em cada linha. Quantos quadradinhos há?",
+      "options": ["18", "19", "21", "20"],
+      "correctIndex": 3,
+      "explanation": "5 grupos de 4 quadradinhos totalizam 20.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma figura retangular ocupa 3 colunas e 3 linhas de quadradinhos. Qual é sua área?",
+      "options": ["9", "7", "8", "10"],
+      "correctIndex": 0,
+      "explanation": "3 grupos de 3 quadradinhos totalizam 9.",
+      "wrongExplanations": {
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 9 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 9 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 9 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Há 6 quadradinhos em cada uma de 4 linhas completas. Quantos quadradinhos cobrem a região?",
+      "options": ["22", "24", "23", "25"],
+      "correctIndex": 1,
+      "explanation": "6 grupos de 4 quadradinhos totalizam 24.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma região da malha mede 5 quadradinhos de largura por 5 de altura. Qual é a área?",
+      "options": ["23", "24", "25", "26"],
+      "correctIndex": 2,
+      "explanation": "5 grupos de 5 quadradinhos totalizam 25.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 25 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 25 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 25 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Um retângulo cobre 3 linhas com 2 quadradinhos em cada linha. Quantos quadradinhos há?",
+      "options": ["4", "5", "7", "6"],
+      "correctIndex": 3,
+      "explanation": "2 grupos de 3 quadradinhos totalizam 6.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma figura retangular ocupa 4 colunas e 5 linhas de quadradinhos. Qual é sua área?",
+      "options": ["20", "18", "19", "21"],
+      "correctIndex": 0,
+      "explanation": "4 grupos de 5 quadradinhos totalizam 20.",
+      "wrongExplanations": {
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Há 6 quadradinhos em cada uma de 5 linhas completas. Quantos quadradinhos cobrem a região?",
+      "options": ["28", "30", "29", "31"],
+      "correctIndex": 1,
+      "explanation": "6 grupos de 5 quadradinhos totalizam 30.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 30 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 30 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 30 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Uma região da malha mede 3 quadradinhos de largura por 5 de altura. Qual é a área?",
+      "options": ["13", "14", "15", "16"],
+      "correctIndex": 2,
+      "explanation": "3 grupos de 5 quadradinhos totalizam 15.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
+        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_area_malha_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "area-malha",
+      "topicName": "Área da malha quadriculada",
+      "question": "Um retângulo cobre 6 linhas com 4 quadradinhos em cada linha. Quantos quadradinhos há?",
+      "options": ["22", "23", "25", "24"],
+      "correctIndex": 3,
+      "explanation": "4 grupos de 6 quadradinhos totalizam 24.",
+      "wrongExplanations": {
+        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
+        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
+        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas."
+      },
+      "skill": "calcular-area-por-contagem-em-malha",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "area-malha"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

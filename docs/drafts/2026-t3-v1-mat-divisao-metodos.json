@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método longo para calcular 84 ÷ 4, começamos pelas 8 dezenas. Quantas dezenas cabem em cada grupo?",
+      "options": ["2", "1", "4", "8"],
+      "correctIndex": 0,
+      "explanation": "Oito dezenas repartidas em quatro grupos dão duas dezenas por grupo.",
+      "wrongExplanations": {
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método longo de 96 ÷ 3, quantas dezenas ficam em cada grupo ao repartir as 9 dezenas?",
+      "options": ["2", "3", "6", "9"],
+      "correctIndex": 1,
+      "explanation": "Nove dezenas divididas em três grupos são três dezenas para cada grupo.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 3.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 3.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 3."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Ao dividir 75 por 5 pelo método longo, quantas dezenas há no quociente ao repartir as 7 dezenas?",
+      "options": ["2", "5", "1", "7"],
+      "correctIndex": 2,
+      "explanation": "O 5 cabe uma vez em 7 dezenas; sobram 2 dezenas para juntar às unidades.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No cálculo longo de 88 ÷ 4, quantas dezenas cabem em cada grupo quando repartimos 8 dezenas?",
+      "options": ["1", "4", "8", "2"],
+      "correctIndex": 3,
+      "explanation": "Oito dezenas em quatro grupos iguais formam duas dezenas por grupo.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Para iniciar 69 ÷ 3 pelo método longo, repartimos 6 dezenas em 3 grupos. Quantas dezenas recebe cada grupo?",
+      "options": ["2", "1", "3", "6"],
+      "correctIndex": 0,
+      "explanation": "Cada grupo recebe duas dezenas, pois 6 ÷ 3 = 2.",
+      "wrongExplanations": {
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método longo de 96 ÷ 4, repartimos primeiro 9 dezenas em 4 grupos. Quantas dezenas sobram nessa etapa?",
+      "options": ["0", "1", "2", "4"],
+      "correctIndex": 1,
+      "explanation": "Quatro grupos recebem duas dezenas cada, e sobra uma dezena.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Ao repartir 8 dezenas em 3 grupos iguais no método longo, quantas dezenas sobram?",
+      "options": ["1", "3", "2", "5"],
+      "correctIndex": 2,
+      "explanation": "Cada grupo recebe 2 dezenas; 8 − 6 deixa 2 dezenas.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No começo de 76 ÷ 3 pelo método longo, quantas dezenas sobram depois de dar 2 dezenas a cada grupo?",
+      "options": ["0", "2", "3", "1"],
+      "correctIndex": 3,
+      "explanation": "Três grupos de 2 dezenas usam 6 das 7 dezenas; sobra 1 dezena.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método longo de 95 ÷ 4, depois de distribuir 2 dezenas por grupo, quantas dezenas sobram?",
+      "options": ["1", "0", "2", "4"],
+      "correctIndex": 0,
+      "explanation": "Quatro grupos de 2 dezenas usam 8; das 9 dezenas, sobra 1.",
+      "wrongExplanations": {
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Para dividir 86 por 2 pelo método longo, quantas dezenas resultam de repartir 8 dezenas em 2 grupos?",
+      "options": ["2", "4", "6", "8"],
+      "correctIndex": 1,
+      "explanation": "Oito dezenas divididas em dois grupos são quatro dezenas em cada.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método breve, em 96 ÷ 4, 9 dezenas divididas por 4 dão 2 dezenas e sobra 1 dezena. Juntando essa dezena às 6 unidades, quantas unidades há para a próxima etapa?",
+      "options": ["7", "10", "16", "24"],
+      "correctIndex": 2,
+      "explanation": "A dezena que sobrou vale 10 unidades; 10 + 6 = 16 unidades.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 16.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 16.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 16."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método breve de 84 ÷ 4, 8 dezenas divididas por 4 dão 2 dezenas. Quantas unidades restam para dividir?",
+      "options": ["0", "8", "12", "4"],
+      "correctIndex": 3,
+      "explanation": "Depois das dezenas, permanecem as 4 unidades de 84.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Em 75 ÷ 5 pelo método breve, 7 dezenas divididas por 5 dão 1 dezena e sobram 2 dezenas. Quantas unidades são 2 dezenas mais 5 unidades?",
+      "options": ["25", "12", "20", "35"],
+      "correctIndex": 0,
+      "explanation": "As 2 dezenas que sobraram valem 20 unidades; 20 + 5 = 25.",
+      "wrongExplanations": {
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 25.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 25.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 25."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método breve de 88 ÷ 4, após repartir 8 dezenas em 4 grupos, quantas unidades de 88 ficam para dividir?",
+      "options": ["2", "8", "4", "16"],
+      "correctIndex": 1,
+      "explanation": "As 8 dezenas foram divididas; restam as 8 unidades.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 8.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 8.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 8."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Ao calcular 69 ÷ 3 pelo método breve, 6 dezenas divididas por 3 dão 2 dezenas. Quantas unidades sobram para a etapa seguinte?",
+      "options": ["2", "3", "9", "12"],
+      "correctIndex": 2,
+      "explanation": "Depois das dezenas, as 9 unidades de 69 continuam para ser divididas.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 9.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 9.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 9."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método breve de 96 ÷ 3, após dividir 9 dezenas por 3, quantas unidades ainda precisam ser divididas?",
+      "options": ["3", "9", "15", "6"],
+      "correctIndex": 3,
+      "explanation": "As dezenas foram repartidas; restam as 6 unidades do número.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 6.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 6.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 6."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Em 72 ÷ 3 pelo método breve, 7 dezenas por 3 dão 2 dezenas e sobra 1 dezena. Quantas unidades são 1 dezena e mais 2 unidades?",
+      "options": ["12", "3", "10", "21"],
+      "correctIndex": 0,
+      "explanation": "A dezena restante vale 10 unidades; 10 + 2 = 12.",
+      "wrongExplanations": {
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 12.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 12.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 12."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método breve de 84 ÷ 3, 8 dezenas por 3 dão 2 dezenas e sobram 2 dezenas. Quantas unidades são 2 dezenas mais 4 unidades?",
+      "options": ["6", "24", "20", "28"],
+      "correctIndex": 1,
+      "explanation": "As duas dezenas restantes valem 20 unidades; junto das 4 unidades, são 24.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 24.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 24.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 24."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "Em 65 ÷ 5 pelo método breve, depois de dividir 6 dezenas por 5 sobra 1 dezena. Com as 5 unidades, quantas unidades há para dividir?",
+      "options": ["6", "10", "15", "25"],
+      "correctIndex": 2,
+      "explanation": "A dezena que sobrou equivale a 10 unidades; 10 + 5 = 15.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 15.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 15.",
+        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 15."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_metodos_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-metodos",
+      "topicName": "Métodos longo e breve da divisão",
+      "question": "No método breve de 78 ÷ 6, 7 dezenas por 6 dão 1 dezena e sobra 1 dezena. Quantas unidades são essa dezena e as 8 unidades?",
+      "options": ["8", "14", "68", "18"],
+      "correctIndex": 3,
+      "explanation": "Uma dezena vale 10 unidades; 10 + 8 = 18 unidades.",
+      "wrongExplanations": {
+        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 18.",
+        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 18.",
+        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 18."
+      },
+      "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-metodos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
