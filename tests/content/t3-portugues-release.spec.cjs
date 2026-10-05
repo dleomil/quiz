@@ -53,5 +53,5 @@ assert.equal(
 );
 
 console.log(
-  't3-portugues-release: ok (40 portugues T3; 140 ciencias; matematica fora)',
+  't3-portugues-release: ok (40 portugues T3; ciencias preservadas; matematica fora)',
 );
