@@ -80,6 +80,24 @@ async function run() {
         runtimeT3Count: QuestionsDB.getAll().filter(
           (question) => question.contentSetId === pilotDraft.contentSetId,
         ).length,
+        runtimeT3Subjects: QuestionsDB.getAll()
+          .filter(
+            (question) => question.contentSetId === pilotDraft.contentSetId,
+          )
+          .reduce((counts, question) => {
+            counts[question.subject] = (counts[question.subject] || 0) + 1;
+            return counts;
+          }, {}),
+        runtimeT3ScienceTopics: QuestionsDB.getAll()
+          .filter(
+            (question) =>
+              question.contentSetId === pilotDraft.contentSetId &&
+              question.subject === 'ciencias',
+          )
+          .reduce((topics, question) => {
+            topics[question.topic] = (topics[question.topic] || 0) + 1;
+            return topics;
+          }, {}),
         historyEntry: state.history[0],
         persisted: JSON.parse(localStorage.getItem('quiz_etapa_v1'))[0],
       };
@@ -92,7 +110,21 @@ async function run() {
       '2026-t2-v1',
       '2026-t3-v1',
     ]);
-    assert.strictEqual(result.runtimeT3Count, 280);
+    assert.strictEqual(result.runtimeT3Count, 400);
+    assert.deepStrictEqual(result.runtimeT3Subjects, {
+      ciencias: 120,
+      geografia: 100,
+      historia: 100,
+      ingles: 80,
+    });
+    assert.deepStrictEqual(result.runtimeT3ScienceTopics, {
+      espelhos: 20,
+      'luz-cores': 20,
+      'luz-visao': 20,
+      'materiais-transparentes': 20,
+      'propriedades-luz': 20,
+      'som-audicao': 20,
+    });
     assert.strictEqual(result.historyEntry.contentSetId, '2026-t3-v1');
     assert.strictEqual(result.historyEntry.topicId, 'luz-visao');
     assert.strictEqual(result.historyEntry.total, 20);
