@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor da expressão 18 + 7?",
+      "options": ["25", "24", "26", "11"],
+      "correctIndex": 0,
+      "explanation": "Somamos 18 e 7: 18 + 7 = 25.",
+      "wrongExplanations": {
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 25.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 25.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 25."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule a expressão 32 − 9.",
+      "options": ["21", "23", "22", "41"],
+      "correctIndex": 1,
+      "explanation": "Retirando 9 de 32, obtemos 23.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 23.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 23.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 23."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto vale 6 × 4?",
+      "options": ["10", "20", "24", "28"],
+      "correctIndex": 2,
+      "explanation": "Seis grupos de quatro formam 24.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 24.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 24.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 24."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o resultado de 27 + 8?",
+      "options": ["34", "36", "19", "35"],
+      "correctIndex": 3,
+      "explanation": "A soma de 27 com 8 é 35.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 35."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 45 − 18.",
+      "options": ["27", "23", "26", "33"],
+      "correctIndex": 0,
+      "explanation": "Subtraindo 18 de 45, restam 27.",
+      "wrongExplanations": {
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 27.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 27.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 27."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto é 7 × 5?",
+      "options": ["12", "35", "30", "40"],
+      "correctIndex": 1,
+      "explanation": "Sete grupos de cinco totalizam 35.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 35."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor de 36 + 16?",
+      "options": ["42", "50", "52", "62"],
+      "correctIndex": 2,
+      "explanation": "Somando 36 e 16, encontramos 52.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 52.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 52.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 52."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 64 − 27.",
+      "options": ["33", "36", "47", "37"],
+      "correctIndex": 3,
+      "explanation": "A diferença entre 64 e 27 é 37.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 37.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 37.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 37."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto vale 8 × 3?",
+      "options": ["24", "11", "21", "32"],
+      "correctIndex": 0,
+      "explanation": "Oito grupos de três totalizam 24.",
+      "wrongExplanations": {
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 24.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 24.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 24."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o resultado de 48 + 25?",
+      "options": ["63", "73", "72", "83"],
+      "correctIndex": 1,
+      "explanation": "Somando 48 e 25, obtemos 73.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 73.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 73.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 73."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 71 − 36.",
+      "options": ["34", "45", "35", "47"],
+      "correctIndex": 2,
+      "explanation": "Subtraindo 36 de 71, restam 35.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 35."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto é 9 × 4?",
+      "options": ["13", "32", "40", "36"],
+      "correctIndex": 3,
+      "explanation": "Nove grupos de quatro formam 36.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 36.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 36.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 36."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor de 29 + 34?",
+      "options": ["63", "53", "62", "73"],
+      "correctIndex": 0,
+      "explanation": "A soma de 29 e 34 é 63.",
+      "wrongExplanations": {
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 63.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 63.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 63."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 83 − 48.",
+      "options": ["34", "35", "45", "51"],
+      "correctIndex": 1,
+      "explanation": "A diferença entre 83 e 48 é 35.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 35."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto vale 6 × 7?",
+      "options": ["13", "36", "42", "49"],
+      "correctIndex": 2,
+      "explanation": "Seis grupos de sete formam 42.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 42.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 42.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 42."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o resultado de 56 + 17?",
+      "options": ["63", "72", "83", "73"],
+      "correctIndex": 3,
+      "explanation": "Somando 56 e 17, encontramos 73.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 73.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 73.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 73."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 92 − 57.",
+      "options": ["35", "34", "45", "49"],
+      "correctIndex": 0,
+      "explanation": "Retirando 57 de 92, restam 35.",
+      "wrongExplanations": {
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 35.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 35."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto é 8 × 6?",
+      "options": ["14", "48", "42", "54"],
+      "correctIndex": 1,
+      "explanation": "Oito grupos de seis totalizam 48.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 48.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 48.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 48."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor de 38 + 46?",
+      "options": ["74", "83", "84", "94"],
+      "correctIndex": 2,
+      "explanation": "A soma de 38 com 46 é 84.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 84.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 84.",
+        "3": "Observe o sinal da expressão e calcule essa operação; o valor é 84."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 100 − 64.",
+      "options": ["34", "46", "54", "36"],
+      "correctIndex": 3,
+      "explanation": "Subtraindo 64 de 100, obtemos 36.",
+      "wrongExplanations": {
+        "0": "Observe o sinal da expressão e calcule essa operação; o valor é 36.",
+        "1": "Observe o sinal da expressão e calcule essa operação; o valor é 36.",
+        "2": "Observe o sinal da expressão e calcule essa operação; o valor é 36."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

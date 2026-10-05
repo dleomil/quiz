@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 17 objetos em grupos de 5, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "3 grupos completos e sobram 2",
+        "2 grupos completos e sobram 7",
+        "3 grupos completos e sobram 3",
+        "4 grupos completos e sobram 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "5 × 3 = 15, e 17 − 15 = 2; portanto, o resto é menor que 5.",
+      "wrongExplanations": {
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 3 grupos completos e sobram 2.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 3 grupos completos e sobram 2.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 3 grupos completos e sobram 2."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 23 ÷ 4, qual é o quociente e o resto?",
+      "options": [
+        "quociente 4 e resto 7",
+        "quociente 5 e resto 3",
+        "quociente 5 e resto 4",
+        "quociente 6 e resto 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "4 × 5 = 20, e 23 − 20 = 3; portanto, o resto é menor que 4.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 29 objetos em grupos de 6, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "3 grupos completos e sobram 11",
+        "4 grupos completos e sobram 6",
+        "4 grupos completos e sobram 5",
+        "5 grupos completos e sobram 5"
+      ],
+      "correctIndex": 2,
+      "explanation": "6 × 4 = 24, e 29 − 24 = 5; portanto, o resto é menor que 6.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 5.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 5.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 5."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 18 ÷ 4, qual é o quociente e o resto?",
+      "options": [
+        "quociente 3 e resto 6",
+        "quociente 4 e resto 3",
+        "quociente 5 e resto 2",
+        "quociente 4 e resto 2"
+      ],
+      "correctIndex": 3,
+      "explanation": "4 × 4 = 16, e 18 − 16 = 2; portanto, o resto é menor que 4.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 4 e resto 2.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 4 e resto 2.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 4 e resto 2."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 31 objetos em grupos de 7, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "4 grupos completos e sobram 3",
+        "3 grupos completos e sobram 10",
+        "4 grupos completos e sobram 4",
+        "5 grupos completos e sobram 3"
+      ],
+      "correctIndex": 0,
+      "explanation": "7 × 4 = 28, e 31 − 28 = 3; portanto, o resto é menor que 7.",
+      "wrongExplanations": {
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 26 ÷ 5, qual é o quociente e o resto?",
+      "options": [
+        "quociente 4 e resto 6",
+        "quociente 5 e resto 1",
+        "quociente 5 e resto 2",
+        "quociente 6 e resto 1"
+      ],
+      "correctIndex": 1,
+      "explanation": "5 × 5 = 25, e 26 − 25 = 1; portanto, o resto é menor que 5.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 1.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 1.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 1."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 34 objetos em grupos de 8, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "3 grupos completos e sobram 10",
+        "4 grupos completos e sobram 3",
+        "4 grupos completos e sobram 2",
+        "5 grupos completos e sobram 2"
+      ],
+      "correctIndex": 2,
+      "explanation": "8 × 4 = 32, e 34 − 32 = 2; portanto, o resto é menor que 8.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 2.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 2.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 2."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 20 ÷ 6, qual é o quociente e o resto?",
+      "options": [
+        "quociente 2 e resto 8",
+        "quociente 3 e resto 3",
+        "quociente 4 e resto 2",
+        "quociente 3 e resto 2"
+      ],
+      "correctIndex": 3,
+      "explanation": "6 × 3 = 18, e 20 − 18 = 2; portanto, o resto é menor que 6.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 3 e resto 2.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 3 e resto 2.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 3 e resto 2."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 37 objetos em grupos de 9, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "4 grupos completos e sobra 1",
+        "3 grupos completos e sobram 10",
+        "4 grupos completos e sobram 2",
+        "5 grupos completos e sobra 1"
+      ],
+      "correctIndex": 0,
+      "explanation": "9 × 4 = 36, e 37 − 36 = 1; portanto, o resto é menor que 9.",
+      "wrongExplanations": {
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobra 1.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobra 1.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobra 1."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 42 ÷ 5, qual é o quociente e o resto?",
+      "options": [
+        "quociente 7 e resto 7",
+        "quociente 8 e resto 2",
+        "quociente 8 e resto 3",
+        "quociente 9 e resto 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "5 × 8 = 40, e 42 − 40 = 2; portanto, o resto é menor que 5.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 8 e resto 2.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 8 e resto 2.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 8 e resto 2."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 33 objetos em grupos de 4, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "7 grupos completos e sobram 5",
+        "8 grupos completos e sobram 2",
+        "8 grupos completos e sobra 1",
+        "9 grupos completos e sobra 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "4 × 8 = 32, e 33 − 32 = 1; portanto, o resto é menor que 4.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 8 grupos completos e sobra 1.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 8 grupos completos e sobra 1.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 8 grupos completos e sobra 1."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 50 ÷ 7, qual é o quociente e o resto?",
+      "options": [
+        "quociente 6 e resto 8",
+        "quociente 7 e resto 2",
+        "quociente 8 e resto 1",
+        "quociente 7 e resto 1"
+      ],
+      "correctIndex": 3,
+      "explanation": "7 × 7 = 49, e 50 − 49 = 1; portanto, o resto é menor que 7.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 1.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 1.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 1."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 27 objetos em grupos de 5, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "5 grupos completos e sobram 2",
+        "4 grupos completos e sobram 7",
+        "5 grupos completos e sobram 3",
+        "6 grupos completos e sobram 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "5 × 5 = 25, e 27 − 25 = 2; portanto, o resto é menor que 5.",
+      "wrongExplanations": {
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 2.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 2.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 2."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 46 ÷ 6, qual é o quociente e o resto?",
+      "options": [
+        "quociente 6 e resto 10",
+        "quociente 7 e resto 4",
+        "quociente 7 e resto 5",
+        "quociente 8 e resto 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "6 × 7 = 42, e 46 − 42 = 4; portanto, o resto é menor que 6.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 4.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 4.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 4."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 41 objetos em grupos de 8, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "4 grupos completos e sobram 9",
+        "5 grupos completos e sobram 2",
+        "5 grupos completos e sobra 1",
+        "6 grupos completos e sobra 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "8 × 5 = 40, e 41 − 40 = 1; portanto, o resto é menor que 8.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobra 1.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobra 1.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobra 1."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 28 ÷ 3, qual é o quociente e o resto?",
+      "options": [
+        "quociente 8 e resto 4",
+        "quociente 9 e resto 2",
+        "quociente 10 e resto 1",
+        "quociente 9 e resto 1"
+      ],
+      "correctIndex": 3,
+      "explanation": "3 × 9 = 27, e 28 − 27 = 1; portanto, o resto é menor que 3.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 9 e resto 1.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 9 e resto 1.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 9 e resto 1."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 35 objetos em grupos de 6, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "5 grupos completos e sobram 5",
+        "4 grupos completos e sobram 11",
+        "5 grupos completos e sobram 6",
+        "6 grupos completos e sobram 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "6 × 5 = 30, e 35 − 30 = 5; portanto, o resto é menor que 6.",
+      "wrongExplanations": {
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 5.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 5.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 5."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 53 ÷ 10, qual é o quociente e o resto?",
+      "options": [
+        "quociente 4 e resto 13",
+        "quociente 5 e resto 3",
+        "quociente 5 e resto 4",
+        "quociente 6 e resto 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "10 × 5 = 50, e 53 − 50 = 3; portanto, o resto é menor que 10.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Ao dividir 19 objetos em grupos de 4, quantos grupos completos se formam e quantos objetos sobram?",
+      "options": [
+        "3 grupos completos e sobram 7",
+        "4 grupos completos e sobram 4",
+        "4 grupos completos e sobram 3",
+        "5 grupos completos e sobram 3"
+      ],
+      "correctIndex": 2,
+      "explanation": "4 × 4 = 16, e 19 − 16 = 3; portanto, o resto é menor que 4.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
+        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_divisao_euclidiana_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "divisao-euclidiana",
+      "topicName": "Divisão euclidiana",
+      "question": "Na divisão 39 ÷ 7, qual é o quociente e o resto?",
+      "options": [
+        "quociente 4 e resto 11",
+        "quociente 5 e resto 5",
+        "quociente 6 e resto 4",
+        "quociente 5 e resto 4"
+      ],
+      "correctIndex": 3,
+      "explanation": "7 × 5 = 35, e 39 − 35 = 4; portanto, o resto é menor que 7.",
+      "wrongExplanations": {
+        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 4.",
+        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 4.",
+        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 4."
+      },
+      "skill": "interpretar-quociente-e-resto",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "divisao-euclidiana"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

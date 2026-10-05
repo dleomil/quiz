@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Há 4 caixas com 6 lápis em cada uma. Quantos lápis há ao todo?",
+      "options": ["24", "10", "18", "30"],
+      "correctIndex": 0,
+      "explanation": "Quatro grupos de seis lápis são 6 + 6 + 6 + 6 = 24.",
+      "wrongExplanations": {
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma bandeja tem 7 fileiras com 5 pãezinhos em cada fileira. Quantos pãezinhos há?",
+      "options": ["12", "35", "30", "40"],
+      "correctIndex": 1,
+      "explanation": "São sete grupos de cinco: 7 × 5 = 35.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 35.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 35.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 35."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Em 6 estojos há 4 canetas em cada estojo. Quantas canetas há?",
+      "options": ["10", "20", "24", "28"],
+      "correctIndex": 2,
+      "explanation": "Seis grupos de quatro correspondem a 6 × 4 = 24.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma sala tem 8 mesas, com 3 livros em cada mesa. Quantos livros há?",
+      "options": ["11", "21", "32", "24"],
+      "correctIndex": 3,
+      "explanation": "O total é 8 grupos de 3, ou 8 × 3 = 24.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 24."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Há 9 pratos com 4 biscoitos em cada prato. Quantos biscoitos há?",
+      "options": ["36", "13", "32", "40"],
+      "correctIndex": 0,
+      "explanation": "Nove grupos de quatro biscoitos totalizam 9 × 4 = 36.",
+      "wrongExplanations": {
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 36.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 36.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 36."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma caixa guarda 5 pacotes com 7 figurinhas em cada pacote. Quantas figurinhas?",
+      "options": ["12", "35", "30", "42"],
+      "correctIndex": 1,
+      "explanation": "Cinco grupos de sete são 5 × 7 = 35 figurinhas.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 35.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 35.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 35."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "No jardim há 4 canteiros com 8 flores em cada um. Quantas flores?",
+      "options": ["12", "28", "32", "36"],
+      "correctIndex": 2,
+      "explanation": "Quatro grupos de oito flores dão 4 × 8 = 32.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 32.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 32.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 32."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma estante tem 6 prateleiras e cada uma guarda 5 vasos. Quantos vasos?",
+      "options": ["11", "25", "35", "30"],
+      "correctIndex": 3,
+      "explanation": "Seis grupos de cinco vasos totalizam 6 × 5 = 30.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 30.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 30.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 30."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Há 7 saquinhos com 3 bolinhas em cada um. Quantas bolinhas?",
+      "options": ["21", "10", "18", "24"],
+      "correctIndex": 0,
+      "explanation": "Sete grupos de três bolinhas são 7 × 3 = 21.",
+      "wrongExplanations": {
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 21.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 21.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 21."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma equipe arruma 8 fileiras de 4 cadeiras. Quantas cadeiras?",
+      "options": ["12", "32", "28", "36"],
+      "correctIndex": 1,
+      "explanation": "O total de cadeiras é 8 × 4 = 32.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 32.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 32.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 32."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Em 3 caixas há 9 carrinhos em cada caixa. Quantos carrinhos?",
+      "options": ["12", "24", "27", "30"],
+      "correctIndex": 2,
+      "explanation": "Três grupos de nove carrinhos totalizam 3 × 9 = 27.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 27.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 27.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 27."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma criança coleciona 6 cartelas com 7 adesivos em cada. Quantos adesivos?",
+      "options": ["13", "36", "49", "42"],
+      "correctIndex": 3,
+      "explanation": "Seis grupos de sete adesivos são 6 × 7 = 42.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 42.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 42.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 42."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Há 5 mesas com 8 copos em cada mesa. Quantos copos?",
+      "options": ["40", "13", "35", "45"],
+      "correctIndex": 0,
+      "explanation": "Cinco grupos de oito copos correspondem a 5 × 8 = 40.",
+      "wrongExplanations": {
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 40.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 40.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 40."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma banca expõe 9 bandejas com 3 maçãs em cada. Quantas maçãs?",
+      "options": ["12", "27", "24", "30"],
+      "correctIndex": 1,
+      "explanation": "Nove grupos de três maçãs são 9 × 3 = 27.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 27.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 27.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 27."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Cada pacote tem 6 cartões. Quantos cartões há em 8 pacotes?",
+      "options": ["14", "42", "48", "54"],
+      "correctIndex": 2,
+      "explanation": "Oito grupos de seis cartões totalizam 8 × 6 = 48.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 48.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 48.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 48."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Um teatro tem 4 setores com 9 assentos em cada setor. Quantos assentos?",
+      "options": ["13", "32", "40", "36"],
+      "correctIndex": 3,
+      "explanation": "Quatro grupos de nove assentos são 4 × 9 = 36.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 36.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 36.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 36."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Há 7 caixas com 6 brinquedos em cada caixa. Quantos brinquedos?",
+      "options": ["42", "13", "36", "49"],
+      "correctIndex": 0,
+      "explanation": "Sete grupos de seis brinquedos totalizam 7 × 6 = 42.",
+      "wrongExplanations": {
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 42.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 42.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 42."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma professora distribui 5 lápis para cada uma das 9 mesas. Quantos lápis?",
+      "options": ["14", "45", "40", "50"],
+      "correctIndex": 1,
+      "explanation": "Nove grupos de cinco lápis correspondem a 9 × 5 = 45.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 45.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 45.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 45."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Uma horta tem 8 canteiros com 7 pés de alface em cada. Quantos pés?",
+      "options": ["15", "49", "56", "63"],
+      "correctIndex": 2,
+      "explanation": "Oito grupos de sete pés de alface totalizam 8 × 7 = 56.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 56.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 56.",
+        "3": "Represente a situação como grupos iguais e confira a multiplicação; o total é 56."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_multiplicacao_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "multiplicacao",
+      "topicName": "Multiplicação",
+      "question": "Há 6 bandejas com 9 copos em cada bandeja. Quantos copos?",
+      "options": ["15", "48", "60", "54"],
+      "correctIndex": 3,
+      "explanation": "Seis grupos de nove copos são 6 × 9 = 54.",
+      "wrongExplanations": {
+        "0": "Represente a situação como grupos iguais e confira a multiplicação; o total é 54.",
+        "1": "Represente a situação como grupos iguais e confira a multiplicação; o total é 54.",
+        "2": "Represente a situação como grupos iguais e confira a multiplicação; o total é 54."
+      },
+      "skill": "resolver-multiplicacoes-do-3o-ano",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
