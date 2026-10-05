@@ -1,0 +1,8 @@
+{
+  "base": "main",
+  "head": "release/promote-t3-ciencias-corpos-luz",
+  "title": "Promove T3 ciencias corpos luz",
+  "body": "Publica somente corpos-luz no T3.\nChecks obrigatorios devem passar.\nAprovacao humana e obrigatoria.\nRollback reverte este merge.",
+  "checks": ["npm test", "validacao de conteudo", "aprovacao humana"],
+  "rollback": "Reverter o merge desta promocao."
+}
