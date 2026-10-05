@@ -50,6 +50,14 @@
     },
     "2026-t3-v1": {
       "subjects": {
+        "ciencias": {
+          "luz-visao": 20,
+          "materiais-transparentes": 20,
+          "propriedades-luz": 20,
+          "espelhos": 20,
+          "luz-cores": 20,
+          "som-audicao": 20
+        },
         "geografia": {
           "agua-recurso": 20,
           "nascente-rio": 20,
