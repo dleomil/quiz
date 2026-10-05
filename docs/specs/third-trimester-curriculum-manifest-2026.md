@@ -2,20 +2,20 @@
 
 ## Estado do intake
 
-| Campo                     | Valor                                                   |
-| ------------------------- | ------------------------------------------------------- |
-| Ano letivo                | 2026                                                    |
-| Trimestre                 | `t3`                                                    |
-| Serie                     | `3-ano`                                                 |
-| `contentSetId`            | `2026-t3-v1`                                            |
-| Versao do manifesto       | 2                                                       |
-| Estado do manifesto       | `frozen`                                                |
-| Estado inicial do acervo  | `draft` e invisivel                                     |
-| Estado do release parcial | `published` para Ciências, Geografia, Inglês e História |
-| Responsavel pelo aceite   | Product Owner (`dleomil`)                               |
-| Data de recebimento       | 2026-10-02                                              |
-| Primeira prova            | 2026-10-14                                              |
-| Ultima prova regular      | 2026-10-21                                              |
+| Campo                     | Valor                                                              |
+| ------------------------- | ------------------------------------------------------------------ |
+| Ano letivo                | 2026                                                               |
+| Trimestre                 | `t3`                                                               |
+| Serie                     | `3-ano`                                                            |
+| `contentSetId`            | `2026-t3-v1`                                                       |
+| Versao do manifesto       | 2                                                                  |
+| Estado do manifesto       | `frozen`                                                           |
+| Estado inicial do acervo  | `draft` e invisivel                                                |
+| Estado do release parcial | `published` para Ciências, Geografia, Inglês, História e Português |
+| Responsavel pelo aceite   | Product Owner (`dleomil`)                                          |
+| Data de recebimento       | 2026-10-02                                                         |
+| Primeira prova            | 2026-10-14                                                         |
+| Ultima prova regular      | 2026-10-21                                                         |
 
 O intake foi aberto a partir do roteiro mensal recebido. A matriz foi congelada
 com as decisões registradas abaixo; ela autoriza o piloto, mas não publica o
@@ -26,9 +26,10 @@ reproduzido neste manifesto.
 
 Foram publicados somente os pacotes aprovados antes das respectivas provas:
 Ciências (7 temas, 140 questões), Geografia (5 temas, 100 questões), Inglês (4
-temas, 80 questões) e História (5 temas, 100 questões), totalizando 420
-questões em `2026-t3-v1`. O tema `corpos-luz` foi publicado após aceite humano;
-Português e Matemática continuam fora do runtime até concluírem seus gates.
+temas, 80 questões), História (5 temas, 100 questões) e Português (2 temas, 40
+questões), totalizando 460 questões em `2026-t3-v1`. Os temas `corpos-luz`,
+`usos-c` e `verbos` foram publicados após aceite humano; Matemática continua
+fora do runtime até concluir seus gates.
 T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
 metadados e referências, enquanto os documentos normativos continuam sendo as
 fontes de verdade.
@@ -92,8 +93,8 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | História   | imigrantes-italianos             | imigrantes italianos                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | História   | imigrantes-alemaes               | imigrantes alemães                             |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
-| Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | em-curadoria |
-| Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | em-curadoria |
+| Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | publicado    |
+| Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | publicado    |
 | Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | proposto     |
 | Português  | preterito-perfeito               | pretérito perfeito                             |                             reconhecer ações concluídas |   20 | proposto     |
 | Português  | prefixo-des                      | palavras iniciadas por des-                    |                           reconhecer formação e sentido |   20 | proposto     |
