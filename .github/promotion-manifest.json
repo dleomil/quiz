@@ -1,8 +1,8 @@
 {
   "base": "main",
-  "head": "develop",
-  "title": "Promote approved release",
-  "body": "Promote approved content from develop.\nChecks listed below passed.\nHuman approval is required.\nRollback reverts this merge.",
-  "checks": ["npm test", "content validation", "human approval"],
-  "rollback": "Revert the promotion merge commit."
+  "head": "release/promote-t3-ciencias-corpos-luz",
+  "title": "Promove T3 ciencias corpos luz",
+  "body": "Publica somente corpos-luz no T3.\nChecks obrigatorios devem passar.\nAprovacao humana e obrigatoria.\nRollback reverte este merge.",
+  "checks": ["npm test", "validacao de conteudo", "aprovacao humana"],
+  "rollback": "Reverter o merge desta promocao."
 }

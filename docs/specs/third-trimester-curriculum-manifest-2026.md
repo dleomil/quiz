@@ -22,12 +22,12 @@ com as decisões registradas abaixo; ela autoriza o piloto, mas não publica o
 acervo nem substitui as revisões de conteúdo. O documento escolar nao e
 reproduzido neste manifesto.
 
-## Release incremental de 2026-10-04
+## Release incremental de 2026-10-05
 
 Foram publicados somente os pacotes aprovados antes das respectivas provas:
-Ciências (6 temas, 120 questões), Geografia (5 temas, 100 questões), Inglês (4
-temas, 80 questões) e História (5 temas, 100 questões), totalizando 400
-questões em `2026-t3-v1`. O tema `corpos-luz` de Ciências permanece pendente;
+Ciências (7 temas, 140 questões), Geografia (5 temas, 100 questões), Inglês (4
+temas, 80 questões) e História (5 temas, 100 questões), totalizando 420
+questões em `2026-t3-v1`. O tema `corpos-luz` foi publicado após aceite humano;
 Português e Matemática continuam fora do runtime até concluírem seus gates.
 T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
 metadados e referências, enquanto os documentos normativos continuam sendo as
@@ -72,7 +72,7 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Materia    | Tema ID                          | Objeto de conhecimento                         |                                    Objetivo verificavel | Meta | Estado       |
 | ---------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------: | ---: | ------------ |
 | Ciências   | luz-visao                        | luz, visão e saúde visual                      |       reconhecer fontes, propriedades e cuidados da luz |   20 | proposto     |
-| Ciências   | corpos-luz                       | corpos luminosos e iluminados                  |                   diferenciar emissão e recepção de luz |   20 | proposto     |
+| Ciências   | corpos-luz                       | corpos luminosos e iluminados                  |                   diferenciar emissão e recepção de luz |   20 | publicado    |
 | Ciências   | materiais-transparentes          | materiais transparentes, translúcidos e opacos |              classificar materiais pela passagem da luz |   20 | em-curadoria |
 | Ciências   | propriedades-luz                 | propriedades da luz                            |                 reconhecer reflexão, sombra e percepção |   20 | em-curadoria |
 | Ciências   | espelhos                         | espelhos e reflexão                            |               identificar situações simples de reflexão |   20 | em-curadoria |
@@ -163,6 +163,7 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 |      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado        | Product Owner (`dleomil`)              |
 |      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História      | Product Owner (`dleomil`)              |
 |      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências    | Product Owner (`dleomil`)              |
+|      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.
