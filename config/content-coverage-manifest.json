@@ -78,6 +78,10 @@
           "imigrantes-italianos": 20,
           "imigrantes-alemaes": 20,
           "imigrantes-japoneses": 20
+        },
+        "portugues": {
+          "usos-c": 20,
+          "verbos": 20
         }
       }
     }
