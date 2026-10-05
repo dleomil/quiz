@@ -2,20 +2,20 @@
 
 ## Estado do intake
 
-| Campo                     | Valor                                         |
-| ------------------------- | --------------------------------------------- |
-| Ano letivo                | 2026                                          |
-| Trimestre                 | `t3`                                          |
-| Serie                     | `3-ano`                                       |
-| `contentSetId`            | `2026-t3-v1`                                  |
-| Versao do manifesto       | 2                                             |
-| Estado do manifesto       | `frozen`                                      |
-| Estado inicial do acervo  | `draft` e invisivel                           |
-| Estado do release parcial | `published` para Geografia, Inglês e História |
-| Responsavel pelo aceite   | Product Owner (`dleomil`)                     |
-| Data de recebimento       | 2026-10-02                                    |
-| Primeira prova            | 2026-10-14                                    |
-| Ultima prova regular      | 2026-10-21                                    |
+| Campo                     | Valor                                                   |
+| ------------------------- | ------------------------------------------------------- |
+| Ano letivo                | 2026                                                    |
+| Trimestre                 | `t3`                                                    |
+| Serie                     | `3-ano`                                                 |
+| `contentSetId`            | `2026-t3-v1`                                            |
+| Versao do manifesto       | 2                                                       |
+| Estado do manifesto       | `frozen`                                                |
+| Estado inicial do acervo  | `draft` e invisivel                                     |
+| Estado do release parcial | `published` para Ciências, Geografia, Inglês e História |
+| Responsavel pelo aceite   | Product Owner (`dleomil`)                               |
+| Data de recebimento       | 2026-10-02                                              |
+| Primeira prova            | 2026-10-14                                              |
+| Ultima prova regular      | 2026-10-21                                              |
 
 O intake foi aberto a partir do roteiro mensal recebido. A matriz foi congelada
 com as decisões registradas abaixo; ela autoriza o piloto, mas não publica o
@@ -24,14 +24,14 @@ reproduzido neste manifesto.
 
 ## Release incremental de 2026-10-04
 
-Foram publicados somente os pacotes completos aprovados antes das respectivas
-provas: Geografia (5 temas, 100 questões), Inglês (4 temas, 80 questões) e
-História (5 temas, 100 questões), totalizando 280 questões em `2026-t3-v1`.
-T1 e T2 permanecem disponíveis como histórico; Português, Ciências e Matemática
-continuam fora do runtime até concluírem seus gates de qualidade. A aprovação
-humana deste recorte foi registrada pelo Product Owner (`dleomil`) em
-2026-10-04. O bundle de produção contém metadados e referências, enquanto os
-documentos normativos continuam sendo as fontes de verdade.
+Foram publicados somente os pacotes aprovados antes das respectivas provas:
+Ciências (6 temas, 120 questões), Geografia (5 temas, 100 questões), Inglês (4
+temas, 80 questões) e História (5 temas, 100 questões), totalizando 400
+questões em `2026-t3-v1`. O tema `corpos-luz` de Ciências permanece pendente;
+Português e Matemática continuam fora do runtime até concluírem seus gates.
+T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
+metadados e referências, enquanto os documentos normativos continuam sendo as
+fontes de verdade.
 
 ## Fonte curricular
 
@@ -152,7 +152,7 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 - [x] matriz foi congelada;
 - [x] piloto de um tema foi aprovado para produção editorial;
 - [x] `2026-t3-v1` foi validado em harness isolado como `draft`;
-- [x] aprovação humana de publicação foi registrada para o release incremental de 2026-10-04.
+- [x] aprovação humana de publicação foi registrada para os releases incrementais de 2026-10-04.
 
 ## Controle de alterações
 
@@ -162,6 +162,7 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 |      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos | Product Owner confirmou prosseguimento |
 |      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado        | Product Owner (`dleomil`)              |
 |      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História      | Product Owner (`dleomil`)              |
+|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências    | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.

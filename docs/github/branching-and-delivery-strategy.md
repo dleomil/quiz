@@ -68,6 +68,16 @@ decisoes humanas rastreaveis.
 A reconciliacao registra a ancestralidade do release e nao autoriza nova
 promocao, deploy ou alteracao funcional.
 
+### Mensagens de merge
+
+Para evitar mensagens visualmente ruidosas ou com histórico acumulado, merges
+de promoção e reconciliação devem usar título curto em ASCII e corpo de três a
+cinco linhas com objetivo, escopo, checks e rollback. Não reutilizar a mensagem
+automática do GitHub nem incluir lista de commits ou blocos `Co-authored-by`.
+Antes da aprovação, revisar a prévia; depois do merge, confirmar com
+`git show -s --format='%B' <merge-sha>` que a mensagem contém somente o resumo
+esperado.
+
 O historico linear deve permanecer desabilitado em `main` e `develop` para
 permitir esses merge commits controlados. As demais protecoes continuam
 obrigatorias. O gate de ancestralidade bloqueia uma promocao ou reconciliacao
