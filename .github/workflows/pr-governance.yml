@@ -46,6 +46,11 @@ jobs:
           test -f docs/README.md
           test -f docs/github/branching-and-delivery-strategy.md
 
+      - name: Validate PR language
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: node scripts/validate-pr-language.cjs
+
       - name: Validate agent capabilities
         run: npm run validate:agents
 

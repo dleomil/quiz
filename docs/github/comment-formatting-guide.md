@@ -27,6 +27,12 @@ Explicar como aplicar, no GitHub, a politica de formatacao definida no harness.
 ## Resultado esperado
 
 - comentarios renderizados corretamente
+
+## Idioma
+
+Escreva comentarios em portugues do Brasil; mantenha em ingles somente comandos,
+codigo, nomes tecnicos e identificadores necessarios.
+
 - aplicacao consistente da politica do harness
 - menos ruído de formatacao
 - reutilizacao dos templates corretos

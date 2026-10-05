@@ -4,6 +4,11 @@
 
 Padronizar o texto base usado em PRs e issues para manter a estrutura em Markdown e evitar formatacao quebrada.
 
+## Idioma
+
+Titulos, descricoes e comentarios devem ser escritos em portugues do Brasil.
+Ingles fica restrito a comandos, codigo, nomes tecnicos e identificadores.
+
 ## Fonte de verdade
 
 A politica oficial de formatacao vive em `docs/harness/comment-formatting-policy.md`.
