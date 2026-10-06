@@ -1,0 +1,486 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "Complete com a grafia correta: “No calor, o ____ derrete.”",
+      "options": ["gelo", "jelo", "gello", "gilu"],
+      "correctIndex": 0,
+      "explanation": "A grafia correta é gelo, com g antes de e.",
+      "wrongExplanations": {
+        "1": "A palavra gelo é escrita com g, não com j.",
+        "2": "Gelo não leva dois l.",
+        "3": "A grafia correta da palavra é gelo."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A ____ tem pescoço comprido. Qual grafia completa a frase?",
+      "options": ["jirafa", "girafa", "girrafa", "gerafa"],
+      "correctIndex": 1,
+      "explanation": "Girafa se escreve com g antes de i.",
+      "wrongExplanations": {
+        "0": "A grafia correta de girafa começa com g.",
+        "2": "Girafa é escrita com um r no meio da palavra.",
+        "3": "A primeira sílaba da palavra é gi, não ge."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "O pião começou a ____ no chão. Escolha a grafia correta.",
+      "options": ["jirar", "girir", "girar", "girrar"],
+      "correctIndex": 2,
+      "explanation": "Girar se escreve com g antes de i e significa dar voltas.",
+      "wrongExplanations": {
+        "0": "O verbo girar é escrito com g, não com j.",
+        "1": "A forma correta é girar, com a na última sílaba.",
+        "3": "Girar é escrito com um r no meio da palavra."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "Muita ____ aguardava a entrada do cinema. Qual grafia está correta?",
+      "options": ["jente", "genti", "guente", "gente"],
+      "correctIndex": 3,
+      "explanation": "Gente se escreve com g antes de e.",
+      "wrongExplanations": {
+        "0": "A palavra gente começa com g, não com j.",
+        "1": "A grafia correta termina com te: gente.",
+        "2": "Gente não se escreve com gu."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A comida ficou guardada na ____. Marque a grafia correta.",
+      "options": ["geladeira", "jeladeira", "geledeira", "geladera"],
+      "correctIndex": 0,
+      "explanation": "Geladeira se escreve com g e tem a sílaba ge no início.",
+      "wrongExplanations": {
+        "1": "A palavra geladeira começa com g, não com j.",
+        "2": "A grafia correta é geladeira, com a sílaba dei.",
+        "3": "Geladeira termina com eira."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A sopa foi servida em uma ____. Escolha a palavra com a grafia correta.",
+      "options": ["tijela", "tigela", "tigella", "tegela"],
+      "correctIndex": 1,
+      "explanation": "Tigela se escreve com g antes de e.",
+      "wrongExplanations": {
+        "0": "A grafia correta de tigela usa g, não j.",
+        "2": "Tigela é escrita com um l só.",
+        "3": "A primeira sílaba é ti, e a palavra se escreve tigela."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "Escrevi o horário da consulta na ____. Qual grafia completa a frase?",
+      "options": ["ajenda", "aginda", "agenda", "agênda"],
+      "correctIndex": 2,
+      "explanation": "Agenda se escreve com g antes de e.",
+      "wrongExplanations": {
+        "0": "Agenda se escreve com g antes de e.",
+        "1": "Na grafia agenda, usa-se e depois do g.",
+        "3": "Agenda não recebe acento circunflexo."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "Para escapar do perigo, o animal precisou ____. Escolha a grafia correta.",
+      "options": ["fujir", "fugír", "fugirr", "fugir"],
+      "correctIndex": 3,
+      "explanation": "Fugir se escreve com g antes de i e não leva acento.",
+      "wrongExplanations": {
+        "0": "Fugir é escrito com g, não com j.",
+        "1": "Fugir não recebe acento agudo.",
+        "2": "O verbo é escrito com um r no final: fugir."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "Dentro do ovo está a ____. Marque a grafia correta.",
+      "options": ["gema", "jema", "gima", "gemma"],
+      "correctIndex": 0,
+      "explanation": "Gema se escreve com g antes de e.",
+      "wrongExplanations": {
+        "1": "A palavra gema começa com g, não com j.",
+        "2": "A palavra correta é gema, com e depois do g.",
+        "3": "Gema é escrita com um m só."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "O chá pode ser preparado com ____. Escolha a grafia correta.",
+      "options": ["genjibre", "gengibre", "jengibre", "gengibra"],
+      "correctIndex": 1,
+      "explanation": "Gengibre se escreve com g antes de e e de i.",
+      "wrongExplanations": {
+        "0": "Em gengibre, usa-se g antes de i, não j.",
+        "2": "Gengibre começa com g, não com j.",
+        "3": "A palavra é gengibre, com e no final."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "O ____ é uma flor com pétalas amarelas. Qual grafia está correta?",
+      "options": ["jirassol", "gerassol", "girassol", "girassou"],
+      "correctIndex": 2,
+      "explanation": "Girassol se escreve com g antes de i e termina com ol.",
+      "wrongExplanations": {
+        "0": "Girassol começa com g, não com j.",
+        "1": "Girassol começa com gi, não ge.",
+        "3": "A palavra correta termina com ol: girassol."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A turma visitou o ____ novo do bairro. Marque a grafia correta.",
+      "options": ["colegio", "coléjio", "colégeo", "colégio"],
+      "correctIndex": 3,
+      "explanation": "Colégio se escreve com g antes de i e leva acento agudo no é.",
+      "wrongExplanations": {
+        "0": "Colégio leva acento agudo no é.",
+        "1": "A palavra colégio é escrita com g, não com j.",
+        "2": "A palavra se escreve colégio, com i depois do g."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A ____ explica o que cada símbolo do mapa significa. Qual é a grafia correta?",
+      "options": ["legenda", "lejenda", "legênda", "ligenda"],
+      "correctIndex": 0,
+      "explanation": "Legenda se escreve com g antes de e.",
+      "wrongExplanations": {
+        "1": "A palavra legenda é escrita com g, não com j.",
+        "2": "Legenda não leva acento circunflexo.",
+        "3": "A primeira sílaba é le, não li: legenda."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "Escovar os dentes faz parte da ____. Escolha a grafia correta.",
+      "options": ["hijiene", "higiene", "higiêne", "higene"],
+      "correctIndex": 1,
+      "explanation": "Higiene é escrita com g na sílaba gi.",
+      "wrongExplanations": {
+        "0": "Higiene é escrita com g, não com j.",
+        "2": "A palavra higiene não leva acento circunflexo.",
+        "3": "Depois de hi, a palavra higiene tem a sílaba gi."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "O cachorro soltou um ____ baixo ao se machucar. Qual grafia está correta?",
+      "options": ["jemido", "gemído", "gemido", "gimido"],
+      "correctIndex": 2,
+      "explanation": "Gemido se escreve com g antes de e e não leva acento.",
+      "wrongExplanations": {
+        "0": "A grafia correta começa com g: gemido.",
+        "1": "Gemido não leva acento agudo.",
+        "3": "A primeira sílaba é ge, não gi."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "O livro conta uma história de ____. Marque a grafia correta.",
+      "options": ["majia", "magía", "maguia", "magia"],
+      "correctIndex": 3,
+      "explanation": "Magia se escreve com g antes de i e não leva acento.",
+      "wrongExplanations": {
+        "0": "A grafia correta de magia usa g, não j.",
+        "1": "Magia não leva acento agudo.",
+        "2": "A palavra magia não tem u depois do g."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A ____ tem muitas montanhas e rios. Qual grafia completa a frase?",
+      "options": ["região", "rejão", "regiao", "rejiao"],
+      "correctIndex": 0,
+      "explanation": "Região se escreve com g antes de i e leva til no ã.",
+      "wrongExplanations": {
+        "1": "Região é escrita com g, não com j.",
+        "2": "A palavra região leva til no ã.",
+        "3": "A grafia correta é região, com g e til no ã."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A grade de ferro ficou coberta de ____. Escolha a grafia correta.",
+      "options": ["ferrujem", "ferrugem", "ferugem", "ferrugém"],
+      "correctIndex": 1,
+      "explanation": "Ferrugem se escreve com dois erres e com g antes de e.",
+      "wrongExplanations": {
+        "0": "A palavra ferrugem é escrita com g, não com j.",
+        "2": "Ferrugem tem dois erres depois de fe: ferrugem.",
+        "3": "Ferrugem não leva acento agudo."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "A ____ de ônibus durou duas horas. Marque a grafia correta.",
+      "options": ["viajem", "viagen", "viagem", "viagém"],
+      "correctIndex": 2,
+      "explanation": "Viagem é um substantivo e se escreve com g antes de e.",
+      "wrongExplanations": {
+        "0": "Viajem é uma forma de verbo; o substantivo é viagem.",
+        "1": "A palavra termina com m: viagem.",
+        "3": "Viagem não leva acento agudo."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_usos_ge_gi_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "usos-ge-gi",
+      "question": "O corredor foi ____ e chegou primeiro à sala. Qual grafia está correta?",
+      "options": ["lijero", "ligero", "lijeiro", "ligeiro"],
+      "correctIndex": 3,
+      "explanation": "Ligeiro se escreve com g antes de e e significa rápido.",
+      "wrongExplanations": {
+        "0": "Ligeiro se escreve com g, não com j.",
+        "1": "A grafia correta é ligeiro, com i depois do g.",
+        "2": "A palavra correta é ligeiro, sem j depois do l."
+      },
+      "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "usos-ge-gi"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "base": "main",
-  "head": "release/promote-t3-portugues-usos-c-verbos",
-  "title": "Promove T3 portugues usos c verbos",
-  "body": "Publica usos-c e verbos no T3.\nTotal publicado passa a 460 questoes.\nAprovacao humana e obrigatoria.\nRollback reverte este merge.",
+  "head": "release/t3-portugues-temas",
+  "title": "Promove seis temas de Portugues T3",
+  "body": "Publica seis temas de Portugues T3.\nPortugues passa a 160 questoes publicadas.\nChecks completos; aceite humano pendente.\nRollback: reverter este merge.",
   "checks": ["npm test", "validacao de conteudo", "aprovacao humana"],
   "rollback": "Reverter o merge desta promocao."
 }

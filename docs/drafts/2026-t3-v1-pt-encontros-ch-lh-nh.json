@@ -1,0 +1,496 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": ["xave", "chave", "chavê", "chavve"],
+      "correctIndex": 1,
+      "explanation": "Chave é escrita com ch no início e sem acento.",
+      "wrongExplanations": {
+        "0": "A palavra chave começa com ch, não com x.",
+        "2": "Chave não recebe acento no final.",
+        "3": "Chave é escrita com um v."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra tem o dígrafo lh?",
+      "options": ["tenha", "telha", "tenda", "tela"],
+      "correctIndex": 1,
+      "explanation": "Telha contém as letras lh juntas, que representam um som.",
+      "wrongExplanations": {
+        "0": "Tenha é escrita com nh, não com lh.",
+        "2": "Tenda não tem o dígrafo lh.",
+        "3": "Tela é escrita sem h depois do l."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Complete a palavra: “O coe__o pulou no jardim.”",
+      "options": ["nh", "lh", "ch", "l"],
+      "correctIndex": 1,
+      "explanation": "Coelho é escrito com lh: c-o-e-l-h-o.",
+      "wrongExplanations": {
+        "0": "Com nh, a palavra ficaria coenho, que não é a grafia do animal.",
+        "2": "Com ch, a palavra ficaria coecho; a grafia correta é coelho.",
+        "3": "Sem o h, a palavra ficaria coelo; escreve-se coelho."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra completa a frase: “A ____ caiu durante a noite”?",
+      "options": ["chuba", "chuva", "xuva", "chuvaa"],
+      "correctIndex": 1,
+      "explanation": "A palavra que nomeia a água que cai das nuvens é chuva, escrita com ch.",
+      "wrongExplanations": {
+        "0": "A grafia correta é chuva, com v.",
+        "2": "Chuva começa com ch, não com x.",
+        "3": "A palavra chuva não tem dois a no final."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Em qual palavra as letras nh aparecem juntas?",
+      "options": ["nilo", "milho", "ninho", "lindo"],
+      "correctIndex": 2,
+      "explanation": "Ninho é escrito com nh no meio da palavra.",
+      "wrongExplanations": {
+        "0": "Nilo não tem h depois do n.",
+        "1": "Milho contém lh, não nh.",
+        "3": "Lindo não contém o dígrafo nh."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra completa corretamente a frase: “A ____ de couve caiu no chão”?",
+      "options": ["folia", "foia", "folha", "foilha"],
+      "correctIndex": 2,
+      "explanation": "Folha completa a frase e é escrita com lh entre as vogais.",
+      "wrongExplanations": {
+        "0": "Folia é uma palavra válida, mas não completa a frase; a parte da planta é a folha.",
+        "1": "A palavra é folha e precisa do dígrafo lh.",
+        "3": "Folha não tem i antes do lh."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Complete: “O passarinho fez um ____ no galho.”",
+      "options": ["nilo", "nicho", "ninho", "nino"],
+      "correctIndex": 2,
+      "explanation": "Ninho é o lugar onde algumas aves colocam seus ovos.",
+      "wrongExplanations": {
+        "0": "Nilo não completa essa frase com o sentido esperado.",
+        "1": "Nicho tem outro significado e não é o abrigo feito pela ave nessa frase.",
+        "3": "A grafia correta é ninho, com nh."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra tem o dígrafo ch?",
+      "options": ["casa", "cesta", "chave", "sapo"],
+      "correctIndex": 2,
+      "explanation": "Chave tem as letras ch juntas no início.",
+      "wrongExplanations": {
+        "0": "Casa começa com c e não tem ch.",
+        "1": "Cesta começa com c e não tem ch.",
+        "3": "Sapo começa com s e não tem ch."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Escolha a forma escrita corretamente para completar a frase: “O menino ____ o chapéu.”",
+      "options": ["alhou", "anou", "achou", "achol"],
+      "correctIndex": 2,
+      "explanation": "Achou é uma forma do verbo achar e se escreve com ch.",
+      "wrongExplanations": {
+        "0": "Alhou não é a forma correta do verbo nessa frase.",
+        "1": "Anou não é a forma correta do verbo nessa frase.",
+        "3": "A forma correta é achou, com u no final."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra completa corretamente a frase: “A ____ botou um ovo no ninho”?",
+      "options": ["galina", "galhina", "galhinha", "galinha"],
+      "correctIndex": 3,
+      "explanation": "Galinha é escrita com nh entre as vogais.",
+      "wrongExplanations": {
+        "0": "A grafia correta é galinha, com nh.",
+        "1": "Em galinha, o h vem depois do n, não depois do l.",
+        "2": "Galhinha não é a grafia da ave da frase; escreve-se galinha, com nh."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Em qual palavra as letras lh aparecem juntas?",
+      "options": ["minho", "milo", "micho", "milho"],
+      "correctIndex": 3,
+      "explanation": "Milho é escrito com lh no meio da palavra.",
+      "wrongExplanations": {
+        "0": "Minho tem nh, não lh.",
+        "1": "Milo não tem h depois do l.",
+        "2": "Micho tem ch, não lh."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra completa: “A criança desenhou uma ____ no papel”?",
+      "options": ["linia", "linha", "lhinia", "lina"],
+      "correctIndex": 1,
+      "explanation": "Linha é escrita com nh entre as vogais.",
+      "wrongExplanations": {
+        "0": "A grafia correta é linha, com nh.",
+        "2": "Em linha, o n vem antes do h.",
+        "3": "Linha precisa do h depois do n."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra tem o dígrafo ch no meio?",
+      "options": ["bico", "bilho", "binho", "bicho"],
+      "correctIndex": 3,
+      "explanation": "Bicho tem ch entre as vogais i e o.",
+      "wrongExplanations": {
+        "0": "Bico é escrito sem h depois do c.",
+        "1": "Bilho não é a grafia da palavra indicada; escreve-se bicho.",
+        "2": "Binho tem nh, não ch."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Complete: “A ____ está cheia de água.”",
+      "options": ["colha", "conha", "conca", "concha"],
+      "correctIndex": 3,
+      "explanation": "Concha é escrita com ch e pode nomear a parte dura de um molusco.",
+      "wrongExplanations": {
+        "0": "Colha é uma forma do verbo colher e não nomeia essa parte do molusco.",
+        "1": "Conha não é a grafia da palavra concha.",
+        "2": "Conca não tem o dígrafo ch da palavra concha."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra completa corretamente a frase: “O médico examinou minha ____”?",
+      "options": ["oreia", "orelhaa", "oreilha", "orelha"],
+      "correctIndex": 3,
+      "explanation": "Orelha é escrita com lh.",
+      "wrongExplanations": {
+        "0": "Oreia não completa a frase; para a parte do corpo, escreve-se orelha, com lh.",
+        "1": "Orelha não tem dois a no final.",
+        "2": "Orelha não tem i antes do lh."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra tem o dígrafo nh?",
+      "options": ["sonho", "solho", "socho", "sono"],
+      "correctIndex": 0,
+      "explanation": "Sonho é escrito com nh no meio da palavra.",
+      "wrongExplanations": {
+        "1": "Solho tem lh e não é a palavra sonho.",
+        "2": "Socho tem ch e não é a palavra sonho.",
+        "3": "Sono não tem h depois do n."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual frase usa corretamente a palavra mochila?",
+      "options": [
+        "Guardei o livro na mochila.",
+        "Guardei o livro na mochilha.",
+        "Guardei o livro na monila.",
+        "Guardei o livro na mochia."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mochila se escreve com ch entre as vogais.",
+      "wrongExplanations": {
+        "1": "A grafia correta é mochila, com ch, não mochilha.",
+        "2": "A palavra mochila não é escrita com n no meio.",
+        "3": "Mochila precisa do l antes do a."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra completa corretamente: “O ____ está no quintal”?",
+      "options": ["coelho", "coenho", "coeio", "coelhoa"],
+      "correctIndex": 0,
+      "explanation": "Coelho é escrito com lh.",
+      "wrongExplanations": {
+        "1": "A grafia correta é coelho, com lh.",
+        "2": "Coelho não tem i antes do o final.",
+        "3": "Coelho não recebe a letra a no final."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": ["manhã", "manhãa", "manhãn", "manhâ"],
+      "correctIndex": 0,
+      "explanation": "Manhã é escrita com nh e til no a final.",
+      "wrongExplanations": {
+        "1": "A palavra manhã termina com ã, sem outro a depois.",
+        "2": "Manhã não tem n depois do ã.",
+        "3": "Manhã usa til no a, não acento circunflexo."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_encontros_ch_lh_nh_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "encontros-ch-lh-nh",
+      "question": "Qual alternativa reúne uma palavra com ch, uma com lh e uma com nh, nessa ordem?",
+      "options": [
+        "chuva, folha, ninho",
+        "chuva, linha, milho",
+        "telha, chuva, ninho",
+        "ninho, telha, chave"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chuva tem ch, folha tem lh e ninho tem nh.",
+      "wrongExplanations": {
+        "1": "A ordem está incorreta: chuva tem ch, linha tem nh e milho tem lh.",
+        "2": "A primeira palavra tem lh, não ch.",
+        "3": "A primeira palavra tem nh, não ch."
+      },
+      "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "encontros-ch-lh-nh"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
