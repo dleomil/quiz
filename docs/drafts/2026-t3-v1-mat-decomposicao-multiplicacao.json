@@ -14,9 +14,9 @@
       "correctIndex": 0,
       "explanation": "4 × 10 = 40 e 4 × 2 = 8; 40 + 8 = 48.",
       "wrongExplanations": {
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 48.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 48.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 48."
+        "1": "Separe 12 em 10 + 2: 4 × 10 + 4 × 2 = 48. A opção 42 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 4 × 10 + 4 × 2 = 48. A opção 44 não soma os dois produtos corretamente.",
+        "3": "Separe 12 em 10 + 2: 4 × 10 + 4 × 2 = 48. A opção 52 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -39,9 +39,9 @@
       "correctIndex": 1,
       "explanation": "3 × 10 = 30 e 3 × 4 = 12; 30 + 12 = 42.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 42.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 42.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 42."
+        "0": "Separe 14 em 10 + 4: 3 × 10 + 3 × 4 = 42. A opção 38 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 3 × 10 + 3 × 4 = 42. A opção 40 não soma os dois produtos corretamente.",
+        "3": "Separe 14 em 10 + 4: 3 × 10 + 3 × 4 = 42. A opção 46 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -64,9 +64,9 @@
       "correctIndex": 2,
       "explanation": "5 × 10 = 50 e 5 × 3 = 15; a soma é 65.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 65.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 65.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 65."
+        "0": "Separe 13 em 10 + 3: 5 × 10 + 5 × 3 = 65. A opção 60 não soma os dois produtos corretamente.",
+        "1": "Separe 13 em 10 + 3: 5 × 10 + 5 × 3 = 65. A opção 63 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 5 × 10 + 5 × 3 = 65. A opção 70 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -89,9 +89,9 @@
       "correctIndex": 3,
       "explanation": "60 + 12 = 72.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 72.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 72.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 72."
+        "0": "Separe 12 em 10 + 2: 6 × 10 + 6 × 2 = 72. A opção 68 não soma os dois produtos corretamente.",
+        "1": "Separe 12 em 10 + 2: 6 × 10 + 6 × 2 = 72. A opção 70 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 6 × 10 + 6 × 2 = 72. A opção 76 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -114,9 +114,9 @@
       "correctIndex": 0,
       "explanation": "70 + 21 = 91.",
       "wrongExplanations": {
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 91.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 91.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 91."
+        "1": "Separe 13 em 10 + 3: 7 × 10 + 7 × 3 = 91. A opção 88 não soma os dois produtos corretamente.",
+        "2": "Separe 13 em 10 + 3: 7 × 10 + 7 × 3 = 91. A opção 90 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 7 × 10 + 7 × 3 = 91. A opção 94 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 1,
       "explanation": "40 + 20 = 60.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 60.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 60.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 60."
+        "0": "Separe 15 em 10 + 5: 4 × 10 + 4 × 5 = 60. A opção 55 não soma os dois produtos corretamente.",
+        "2": "Separe 15 em 10 + 5: 4 × 10 + 4 × 5 = 60. A opção 58 não soma os dois produtos corretamente.",
+        "3": "Separe 15 em 10 + 5: 4 × 10 + 4 × 5 = 60. A opção 65 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -164,9 +164,9 @@
       "correctIndex": 2,
       "explanation": "30 + 18 = 48.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 48.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 48.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 48."
+        "0": "Separe 16 em 10 + 6: 3 × 10 + 3 × 6 = 48. A opção 42 não soma os dois produtos corretamente.",
+        "1": "Separe 16 em 10 + 6: 3 × 10 + 3 × 6 = 48. A opção 46 não soma os dois produtos corretamente.",
+        "3": "Separe 16 em 10 + 6: 3 × 10 + 3 × 6 = 48. A opção 52 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -189,9 +189,9 @@
       "correctIndex": 3,
       "explanation": "8 × 10 = 80 e 8 × 2 = 16; 80 + 16 = 96.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 96.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 96.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 96."
+        "0": "Separe 12 em 10 + 2: 8 × 10 + 8 × 2 = 96. A opção 88 não soma os dois produtos corretamente.",
+        "1": "Separe 12 em 10 + 2: 8 × 10 + 8 × 2 = 96. A opção 92 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 8 × 10 + 8 × 2 = 96. A opção 104 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -214,9 +214,9 @@
       "correctIndex": 0,
       "explanation": "50 + 20 = 70.",
       "wrongExplanations": {
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 70.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 70.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 70."
+        "1": "Separe 14 em 10 + 4: 5 × 10 + 5 × 4 = 70. A opção 66 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 5 × 10 + 5 × 4 = 70. A opção 68 não soma os dois produtos corretamente.",
+        "3": "Separe 14 em 10 + 4: 5 × 10 + 5 × 4 = 70. A opção 74 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -239,9 +239,9 @@
       "correctIndex": 1,
       "explanation": "60 + 18 = 78.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 78.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 78.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 78."
+        "0": "Separe 13 em 10 + 3: 6 × 10 + 6 × 3 = 78. A opção 72 não soma os dois produtos corretamente.",
+        "2": "Separe 13 em 10 + 3: 6 × 10 + 6 × 3 = 78. A opção 75 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 6 × 10 + 6 × 3 = 78. A opção 81 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -264,9 +264,9 @@
       "correctIndex": 2,
       "explanation": "70 + 14 = 84.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 84.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 84.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 84."
+        "0": "Separe 12 em 10 + 2: 7 × 10 + 7 × 2 = 84. A opção 77 não soma os dois produtos corretamente.",
+        "1": "Separe 12 em 10 + 2: 7 × 10 + 7 × 2 = 84. A opção 82 não soma os dois produtos corretamente.",
+        "3": "Separe 12 em 10 + 2: 7 × 10 + 7 × 2 = 84. A opção 88 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 3,
       "explanation": "4 × 10 = 40 e 4 × 7 = 28; 40 + 28 = 68.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 68.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 68.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 68."
+        "0": "Separe 17 em 10 + 7: 4 × 10 + 4 × 7 = 68. A opção 61 não soma os dois produtos corretamente.",
+        "1": "Separe 17 em 10 + 7: 4 × 10 + 4 × 7 = 68. A opção 64 não soma os dois produtos corretamente.",
+        "2": "Separe 17 em 10 + 7: 4 × 10 + 4 × 7 = 68. A opção 72 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -314,9 +314,9 @@
       "correctIndex": 0,
       "explanation": "30 + 24 = 54.",
       "wrongExplanations": {
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 54.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 54.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 54."
+        "1": "Separe 18 em 10 + 8: 3 × 10 + 3 × 8 = 54. A opção 48 não soma os dois produtos corretamente.",
+        "2": "Separe 18 em 10 + 8: 3 × 10 + 3 × 8 = 54. A opção 51 não soma os dois produtos corretamente.",
+        "3": "Separe 18 em 10 + 8: 3 × 10 + 3 × 8 = 54. A opção 60 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -339,9 +339,9 @@
       "correctIndex": 1,
       "explanation": "9 × 10 = 90 e 9 × 2 = 18; 90 + 18 = 108.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 108.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 108.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 108."
+        "0": "Separe 12 em 10 + 2: 9 × 10 + 9 × 2 = 108. A opção 98 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 9 × 10 + 9 × 2 = 108. A opção 106 não soma os dois produtos corretamente.",
+        "3": "Separe 12 em 10 + 2: 9 × 10 + 9 × 2 = 108. A opção 116 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -364,9 +364,9 @@
       "correctIndex": 2,
       "explanation": "50 + 30 = 80.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 80.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 80.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 80."
+        "0": "Separe 16 em 10 + 6: 5 × 10 + 5 × 6 = 80. A opção 74 não soma os dois produtos corretamente.",
+        "1": "Separe 16 em 10 + 6: 5 × 10 + 5 × 6 = 80. A opção 76 não soma os dois produtos corretamente.",
+        "3": "Separe 16 em 10 + 6: 5 × 10 + 5 × 6 = 80. A opção 86 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -389,9 +389,9 @@
       "correctIndex": 3,
       "explanation": "40 + 32 = 72.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 72.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 72.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 72."
+        "0": "Separe 18 em 10 + 8: 4 × 10 + 4 × 8 = 72. A opção 64 não soma os dois produtos corretamente.",
+        "1": "Separe 18 em 10 + 8: 4 × 10 + 4 × 8 = 72. A opção 68 não soma os dois produtos corretamente.",
+        "2": "Separe 18 em 10 + 8: 4 × 10 + 4 × 8 = 72. A opção 76 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -414,9 +414,9 @@
       "correctIndex": 0,
       "explanation": "60 + 30 = 90.",
       "wrongExplanations": {
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 90.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 90.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 90."
+        "1": "Separe 15 em 10 + 5: 6 × 10 + 6 × 5 = 90. A opção 84 não soma os dois produtos corretamente.",
+        "2": "Separe 15 em 10 + 5: 6 × 10 + 6 × 5 = 90. A opção 86 não soma os dois produtos corretamente.",
+        "3": "Separe 15 em 10 + 5: 6 × 10 + 6 × 5 = 90. A opção 96 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 1,
       "explanation": "70 + 28 = 98.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 98.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 98.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 98."
+        "0": "Separe 14 em 10 + 4: 7 × 10 + 7 × 4 = 98. A opção 91 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 7 × 10 + 7 × 4 = 98. A opção 94 não soma os dois produtos corretamente.",
+        "3": "Separe 14 em 10 + 4: 7 × 10 + 7 × 4 = 98. A opção 102 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -464,9 +464,9 @@
       "correctIndex": 2,
       "explanation": "8 × 10 = 80 e 8 × 3 = 24; 80 + 24 = 104.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 104.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 104.",
-        "3": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 104."
+        "0": "Separe 13 em 10 + 3: 8 × 10 + 8 × 3 = 104. A opção 96 não soma os dois produtos corretamente.",
+        "1": "Separe 13 em 10 + 3: 8 × 10 + 8 × 3 = 104. A opção 101 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 8 × 10 + 8 × 3 = 104. A opção 112 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {
@@ -489,9 +489,9 @@
       "correctIndex": 3,
       "explanation": "90 + 36 = 126.",
       "wrongExplanations": {
-        "0": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 126.",
-        "1": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 126.",
-        "2": "Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é 126."
+        "0": "Separe 14 em 10 + 4: 9 × 10 + 9 × 4 = 126. A opção 117 não soma os dois produtos corretamente.",
+        "1": "Separe 14 em 10 + 4: 9 × 10 + 9 × 4 = 126. A opção 122 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 9 × 10 + 9 × 4 = 126. A opção 136 não soma os dois produtos corretamente."
       },
       "skill": "usar-decomposicao-para-calcular-multiplicacoes",
       "sourceRef": {

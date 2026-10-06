@@ -11,7 +11,11 @@ const context = vm.createContext({ window: {} });
     context,
   );
 });
-['t3-published.js', 't3-portugues-published.js'].forEach((file) => {
+[
+  't3-published.js',
+  't3-portugues-published.js',
+  't3-matematica-published.js',
+].forEach((file) => {
   vm.runInContext(
     fs.readFileSync(path.join(ROOT, 'js/data', file), 'utf8'),
     context,
@@ -47,9 +51,9 @@ assert.equal(
   sources.matematica.questions.filter(
     (question) => question.contentSetId === '2026-t3-v1',
   ).length,
-  0,
+  220,
 );
 
 console.log(
-  't3-ciencias-corpos-luz-release: ok (140 ciencias T3; 40 portugues; matematica fora)',
+  't3-ciencias-corpos-luz-release: ok (140 ciencias T3; 40 portugues; 220 matematica)',
 );

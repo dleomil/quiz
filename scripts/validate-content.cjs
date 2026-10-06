@@ -366,7 +366,11 @@ function loadContentSources(rootDir) {
     });
   });
 
-  ['t3-published.js', 't3-portugues-published.js'].forEach(function (file) {
+  [
+    't3-published.js',
+    't3-portugues-published.js',
+    't3-matematica-published.js',
+  ].forEach(function (file) {
     const releasePath = path.join(rootDir, 'js', 'data', file);
     if (fs.existsSync(releasePath)) {
       vm.runInContext(fs.readFileSync(releasePath, 'utf8'), context, {

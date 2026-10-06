@@ -14,9 +14,9 @@
       "correctIndex": 0,
       "explanation": "Somando as medidas dos lados (3 + 3 + 3 + 3), obtemos 12 cm.",
       "wrongExplanations": {
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 12 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 12 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 12 cm."
+        "1": "O perímetro soma cada lado uma vez: 3 + 3 + 3 + 3 = 12 cm. A opção 10 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 3 + 3 + 3 + 3 = 12 cm. A opção 11 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 3 + 3 + 3 + 3 = 12 cm. A opção 13 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -39,9 +39,9 @@
       "correctIndex": 1,
       "explanation": "Somando as medidas dos lados (5 + 2 + 5 + 2), obtemos 14 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 14 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 14 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 14 cm."
+        "0": "O perímetro soma cada lado uma vez: 5 + 2 + 5 + 2 = 14 cm. A opção 12 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 5 + 2 + 5 + 2 = 14 cm. A opção 13 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 5 + 2 + 5 + 2 = 14 cm. A opção 15 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -64,9 +64,9 @@
       "correctIndex": 2,
       "explanation": "Somando as medidas dos lados (4 + 3 + 5), obtemos 12 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 12 cm.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 12 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 12 cm."
+        "0": "O perímetro soma cada lado uma vez: 4 + 3 + 5 = 12 cm. A opção 10 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 4 + 3 + 5 = 12 cm. A opção 11 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 4 + 3 + 5 = 12 cm. A opção 13 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -89,9 +89,9 @@
       "correctIndex": 3,
       "explanation": "Somando as medidas dos lados (6 + 2 + 6 + 2), obtemos 16 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 16 m.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 16 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 16 m."
+        "0": "O perímetro soma cada lado uma vez: 6 + 2 + 6 + 2 = 16 m. A opção 14 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 6 + 2 + 6 + 2 = 16 m. A opção 15 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 6 + 2 + 6 + 2 = 16 m. A opção 17 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -114,9 +114,9 @@
       "correctIndex": 0,
       "explanation": "Somando as medidas dos lados (5 + 5 + 5 + 5), obtemos 20 cm.",
       "wrongExplanations": {
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 20 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 20 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 20 cm."
+        "1": "O perímetro soma cada lado uma vez: 5 + 5 + 5 + 5 = 20 cm. A opção 18 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 5 + 5 + 5 + 5 = 20 cm. A opção 19 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 5 + 5 + 5 + 5 = 20 cm. A opção 21 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 1,
       "explanation": "Somando as medidas dos lados (6 + 6 + 4), obtemos 16 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 16 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 16 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 16 cm."
+        "0": "O perímetro soma cada lado uma vez: 6 + 6 + 4 = 16 cm. A opção 14 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 6 + 6 + 4 = 16 cm. A opção 15 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 6 + 6 + 4 = 16 cm. A opção 17 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -164,9 +164,9 @@
       "correctIndex": 2,
       "explanation": "Somando as medidas dos lados (7 + 3 + 7 + 3), obtemos 20 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 20 m.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 20 m.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 20 m."
+        "0": "O perímetro soma cada lado uma vez: 7 + 3 + 7 + 3 = 20 m. A opção 18 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 7 + 3 + 7 + 3 = 20 m. A opção 19 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 7 + 3 + 7 + 3 = 20 m. A opção 21 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -189,9 +189,9 @@
       "correctIndex": 3,
       "explanation": "Somando as medidas dos lados (2 + 2 + 2 + 2), obtemos 8 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 8 cm.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 8 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 8 cm."
+        "0": "O perímetro soma cada lado uma vez: 2 + 2 + 2 + 2 = 8 cm. A opção 6 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 2 + 2 + 2 + 2 = 8 cm. A opção 7 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 2 + 2 + 2 + 2 = 8 cm. A opção 9 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -214,9 +214,9 @@
       "correctIndex": 0,
       "explanation": "Somando as medidas dos lados (8 + 2 + 8 + 2), obtemos 20 cm.",
       "wrongExplanations": {
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 20 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 20 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 20 cm."
+        "1": "O perímetro soma cada lado uma vez: 8 + 2 + 8 + 2 = 20 cm. A opção 18 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 8 + 2 + 8 + 2 = 20 cm. A opção 19 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 8 + 2 + 8 + 2 = 20 cm. A opção 21 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -239,9 +239,9 @@
       "correctIndex": 1,
       "explanation": "Somando as medidas dos lados (7 + 5 + 4), obtemos 16 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 16 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 16 m.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 16 m."
+        "0": "O perímetro soma cada lado uma vez: 7 + 5 + 4 = 16 m. A opção 14 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 7 + 5 + 4 = 16 m. A opção 15 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 7 + 5 + 4 = 16 m. A opção 17 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -264,9 +264,9 @@
       "correctIndex": 2,
       "explanation": "Somando as medidas dos lados (6 + 6 + 6 + 6), obtemos 24 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 24 cm.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 24 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 24 cm."
+        "0": "O perímetro soma cada lado uma vez: 6 + 6 + 6 + 6 = 24 cm. A opção 22 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 6 + 6 + 6 + 6 = 24 cm. A opção 23 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 6 + 6 + 6 + 6 = 24 cm. A opção 25 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 3,
       "explanation": "Somando as medidas dos lados (9 + 4 + 9 + 4), obtemos 26 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 26 m.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 26 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 26 m."
+        "0": "O perímetro soma cada lado uma vez: 9 + 4 + 9 + 4 = 26 m. A opção 24 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 9 + 4 + 9 + 4 = 26 m. A opção 25 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 9 + 4 + 9 + 4 = 26 m. A opção 27 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -309,14 +309,14 @@
       "subject": "matematica",
       "topic": "perimetro",
       "topicName": "Perímetro",
-      "question": "Um triângulo tem lados de 8 cm, 3 cm e 5 cm. Qual é o perímetro?",
-      "options": ["16 cm", "14 cm", "15 cm", "17 cm"],
+      "question": "Um triângulo tem lados de 8 cm, 4 cm e 5 cm. Qual é o perímetro?",
+      "options": ["17 cm", "15 cm", "16 cm", "18 cm"],
       "correctIndex": 0,
-      "explanation": "Somando as medidas dos lados (8 + 3 + 5), obtemos 16 cm.",
+      "explanation": "Somando as medidas dos lados (8 + 4 + 5), obtemos 17 cm.",
       "wrongExplanations": {
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 16 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 16 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 16 cm."
+        "1": "O perímetro soma cada lado uma vez: 8 + 4 + 5 = 17 cm. A opção 15 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 8 + 4 + 5 = 17 cm. A opção 16 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 8 + 4 + 5 = 17 cm. A opção 18 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -339,9 +339,9 @@
       "correctIndex": 1,
       "explanation": "Somando as medidas dos lados (7 + 7 + 7 + 7), obtemos 28 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 28 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 28 m.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 28 m."
+        "0": "O perímetro soma cada lado uma vez: 7 + 7 + 7 + 7 = 28 m. A opção 26 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 7 + 7 + 7 + 7 = 28 m. A opção 27 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 7 + 7 + 7 + 7 = 28 m. A opção 29 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -364,9 +364,9 @@
       "correctIndex": 2,
       "explanation": "Somando as medidas dos lados (6 + 5 + 6 + 5), obtemos 22 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 22 cm.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 22 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 22 cm."
+        "0": "O perímetro soma cada lado uma vez: 6 + 5 + 6 + 5 = 22 cm. A opção 20 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 6 + 5 + 6 + 5 = 22 cm. A opção 21 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 6 + 5 + 6 + 5 = 22 cm. A opção 23 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -389,9 +389,9 @@
       "correctIndex": 3,
       "explanation": "Somando as medidas dos lados (3 + 4 + 3 + 4), obtemos 14 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 14 m.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 14 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 14 m."
+        "0": "O perímetro soma cada lado uma vez: 3 + 4 + 3 + 4 = 14 m. A opção 12 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 3 + 4 + 3 + 4 = 14 m. A opção 13 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 3 + 4 + 3 + 4 = 14 m. A opção 15 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -409,14 +409,14 @@
       "subject": "matematica",
       "topic": "perimetro",
       "topicName": "Perímetro",
-      "question": "Um triângulo tem lados de 9 cm, 2 cm e 3 cm. Qual é o perímetro?",
-      "options": ["14 cm", "12 cm", "13 cm", "15 cm"],
+      "question": "Um triângulo tem lados de 9 cm, 4 cm e 6 cm. Qual é o perímetro?",
+      "options": ["19 cm", "17 cm", "18 cm", "20 cm"],
       "correctIndex": 0,
-      "explanation": "Somando as medidas dos lados (9 + 2 + 3), obtemos 14 cm.",
+      "explanation": "Somando as medidas dos lados (9 + 4 + 6), obtemos 19 cm.",
       "wrongExplanations": {
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 14 cm.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 14 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 14 cm."
+        "1": "O perímetro soma cada lado uma vez: 9 + 4 + 6 = 19 cm. A opção 17 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 9 + 4 + 6 = 19 cm. A opção 18 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 9 + 4 + 6 = 19 cm. A opção 20 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 1,
       "explanation": "Somando as medidas dos lados (10 + 3 + 10 + 3), obtemos 26 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 26 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 26 m.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 26 m."
+        "0": "O perímetro soma cada lado uma vez: 10 + 3 + 10 + 3 = 26 m. A opção 24 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 10 + 3 + 10 + 3 = 26 m. A opção 25 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 10 + 3 + 10 + 3 = 26 m. A opção 27 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -464,9 +464,9 @@
       "correctIndex": 2,
       "explanation": "Somando as medidas dos lados (8 + 8 + 8 + 8), obtemos 32 cm.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 32 cm.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 32 cm.",
-        "3": "Some as medidas de todos os lados do contorno; o perímetro é 32 cm."
+        "0": "O perímetro soma cada lado uma vez: 8 + 8 + 8 + 8 = 32 cm. A opção 30 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 8 + 8 + 8 + 8 = 32 cm. A opção 31 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 8 + 8 + 8 + 8 = 32 cm. A opção 33 cm não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {
@@ -489,9 +489,9 @@
       "correctIndex": 3,
       "explanation": "Somando as medidas dos lados (5 + 7 + 6), obtemos 18 m.",
       "wrongExplanations": {
-        "0": "Some as medidas de todos os lados do contorno; o perímetro é 18 m.",
-        "1": "Some as medidas de todos os lados do contorno; o perímetro é 18 m.",
-        "2": "Some as medidas de todos os lados do contorno; o perímetro é 18 m."
+        "0": "O perímetro soma cada lado uma vez: 5 + 7 + 6 = 18 m. A opção 16 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 5 + 7 + 6 = 18 m. A opção 17 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 5 + 7 + 6 = 18 m. A opção 19 m não corresponde à soma completa."
       },
       "skill": "calcular-perimetro",
       "sourceRef": {

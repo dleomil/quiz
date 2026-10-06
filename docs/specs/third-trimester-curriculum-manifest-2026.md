@@ -2,20 +2,20 @@
 
 ## Estado do intake
 
-| Campo                     | Valor                                                              |
-| ------------------------- | ------------------------------------------------------------------ |
-| Ano letivo                | 2026                                                               |
-| Trimestre                 | `t3`                                                               |
-| Serie                     | `3-ano`                                                            |
-| `contentSetId`            | `2026-t3-v1`                                                       |
-| Versao do manifesto       | 3                                                                  |
-| Estado do manifesto       | `frozen`                                                           |
-| Estado inicial do acervo  | `draft` e invisivel                                                |
-| Estado do release parcial | `published` para Ciências, Geografia, Inglês, História e Português |
-| Responsavel pelo aceite   | Product Owner (`dleomil`)                                          |
-| Data de recebimento       | 2026-10-02                                                         |
-| Primeira prova            | 2026-10-14                                                         |
-| Ultima prova regular      | 2026-10-21                                                         |
+| Campo                     | Valor                                                                          |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| Ano letivo                | 2026                                                                           |
+| Trimestre                 | `t3`                                                                           |
+| Serie                     | `3-ano`                                                                        |
+| `contentSetId`            | `2026-t3-v1`                                                                   |
+| Versao do manifesto       | 3                                                                              |
+| Estado do manifesto       | `frozen`                                                                       |
+| Estado inicial do acervo  | `draft` e invisivel                                                            |
+| Estado do release parcial | `published` para Ciências, Geografia, Inglês, História, Português e Matemática |
+| Responsavel pelo aceite   | Product Owner (`dleomil`)                                                      |
+| Data de recebimento       | 2026-10-02                                                                     |
+| Primeira prova            | 2026-10-14                                                                     |
+| Ultima prova regular      | 2026-10-21                                                                     |
 
 O intake foi aberto a partir do roteiro mensal recebido. A matriz foi congelada
 com as decisões registradas abaixo; ela autoriza o piloto, mas não publica o
@@ -26,10 +26,11 @@ reproduzido neste manifesto.
 
 Foram publicados somente os pacotes aprovados antes das respectivas provas:
 Ciências (7 temas, 140 questões), Geografia (5 temas, 100 questões), Inglês (4
-temas, 80 questões), História (5 temas, 100 questões) e Português (2 temas, 40
-questões), totalizando 460 questões em `2026-t3-v1`. Os temas `corpos-luz`,
-`usos-c` e `verbos` foram publicados após aceite humano; Matemática continua
-fora do runtime até concluir seus gates.
+temas, 80 questões), História (5 temas, 100 questões), Português (2 temas, 40
+questões) e Matemática (11 temas, 220 questões), totalizando 680 questões em
+`2026-t3-v1`. Os temas `corpos-luz`, `usos-c` e `verbos` foram publicados após
+aceite humano. Matemática foi publicada após a conclusão das revisões
+pedagógica e linguística para cada questão e aprovação do pacote.
 T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
 metadados e referências, enquanto os documentos normativos continuam sendo as
 fontes de verdade.
@@ -101,24 +102,24 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Português  | futuro                           | futuro do presente                             |                                reconhecer ações futuras |   20 | proposto     |
 | Português  | usos-ge-gi                       | usos de ge e gi                                |                        aplicar grafias contextualizadas |   20 | proposto     |
 | Português  | adjetivos                        | adjetivos                                      |                  identificar características atribuídas |   20 | proposto     |
-| Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | proposto     |
-| Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | proposto     |
-| Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | proposto     |
-| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | proposto     |
-| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | proposto     |
-| Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | proposto     |
-| Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | proposto     |
-| Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | proposto     |
-| Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | proposto     |
-| Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | proposto     |
-| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | proposto     |
+| Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | publicado    |
+| Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | publicado    |
+| Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | publicado    |
+| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | publicado    |
+| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | publicado    |
+| Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | publicado    |
+| Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | publicado    |
+| Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | publicado    |
+| Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | publicado    |
+| Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | publicado    |
+| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | publicado    |
 
 Atividades adicionais nao criam tema independente. A segunda menção a
 multiplicação será coberta pelos temas `multiplicacao` e
 `decomposicao-multiplicacao`, sem duplicar o objeto de conhecimento. Os títulos
 do roteiro identificam seções próprias para métodos da divisão, expressões
-aritméticas e divisão euclidiana; esses temas permanecem propostos e prontos
-para iniciar a curadoria editorial, mantendo os limites descritos na matriz.
+aritméticas e divisão euclidiana; esses temas foram mantidos como objetos
+distintos e publicados junto com os demais temas aprovados de Matemática.
 
 ## Totais do escopo congelado
 
@@ -182,6 +183,7 @@ obrigatórios.
 |      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                                                                    | Product Owner (`dleomil`)              |
 |      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português                                                                   | Product Owner (`dleomil`)              |
 |      8 | 2026-10-05 | frozen-amended  | reconciliação da menção repetida a multiplicação e liberação dos temas matemáticos bloqueados para curadoria | Product Owner (`dleomil`)              |
+|      9 | 2026-10-05 | published       | release dos 11 temas de Matemática após 440 revisões e aprovação humana                                      | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.
