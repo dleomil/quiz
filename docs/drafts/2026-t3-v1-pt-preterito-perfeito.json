@@ -1,0 +1,501 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Ontem, Ana ____ no parque.",
+      "options": ["brinca", "brincou", "brincar", "brincará"],
+      "correctIndex": 1,
+      "explanation": "Brincou indica uma ação que Ana realizou e concluiu ontem.",
+      "wrongExplanations": {
+        "0": "Brinca indica uma ação no presente.",
+        "2": "Brincar está no infinitivo, sem indicar quando a ação aconteceu.",
+        "3": "Brincará indica uma ação futura."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma completa a frase: “Pedro ____ a janela ontem”?",
+      "options": ["abrirá", "abrir", "abriu", "abre"],
+      "correctIndex": 2,
+      "explanation": "Abriu indica que Pedro realizou essa ação ontem.",
+      "wrongExplanations": {
+        "0": "Abrirá indica uma ação futura.",
+        "1": "Abrir está no infinitivo.",
+        "3": "Abre indica uma ação no presente."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma apresenta uma ação concluída na frase “Na semana passada, nós ____ um desenho”?",
+      "options": ["desenharemos", "desenhar", "desenhávamos", "desenhamos"],
+      "correctIndex": 3,
+      "explanation": "Desenhamos, acompanhado de “na semana passada”, indica a ação concluída naquele período.",
+      "wrongExplanations": {
+        "0": "Desenharemos indica uma ação futura.",
+        "1": "Desenhar está no infinitivo.",
+        "2": "Desenhávamos indica uma ação habitual ou em andamento no passado."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual frase apresenta uma ação concluída no passado?",
+      "options": [
+        "As crianças correram no pátio.",
+        "As crianças correm no pátio.",
+        "As crianças correrão no pátio.",
+        "As crianças corriam no pátio."
+      ],
+      "correctIndex": 0,
+      "explanation": "Correram apresenta a ação como concluída no passado.",
+      "wrongExplanations": {
+        "1": "Correm indica uma ação no presente.",
+        "2": "Correrão indica uma ação futura.",
+        "3": "Corriam apresenta uma ação passada habitual ou em andamento."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Complete: “Ontem, eu ____ uma história para minha irmã.”",
+      "options": ["lerei", "leio", "ler", "li"],
+      "correctIndex": 3,
+      "explanation": "Li indica que a leitura aconteceu e foi concluída ontem.",
+      "wrongExplanations": {
+        "0": "Lerei indica uma leitura futura.",
+        "1": "Leio indica uma ação no presente.",
+        "2": "Ler está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual palavra da frase indica uma ação concluída: “Bia ganhou uma bola no domingo passado”?",
+      "options": ["domingo", "ganhou", "bola", "uma"],
+      "correctIndex": 1,
+      "explanation": "Ganhou é a forma verbal que apresenta a ação concluída no passado.",
+      "wrongExplanations": {
+        "0": "Domingo indica quando a ação aconteceu, mas não é o verbo.",
+        "2": "Bola nomeia o objeto recebido, não a ação.",
+        "3": "Uma acompanha o substantivo bola e não indica ação."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Ontem, eles ____ cedo para a escola.",
+      "options": ["chegam", "chegar", "chegaram", "chegarão"],
+      "correctIndex": 2,
+      "explanation": "Chegaram indica que a chegada à escola foi concluída ontem.",
+      "wrongExplanations": {
+        "0": "Chegam está no presente.",
+        "1": "Chegar está no infinitivo.",
+        "3": "Chegarão indica uma ação futura."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Na frase “A turma terminou a tarefa”, qual forma verbal indica a ação concluída?",
+      "options": ["terminou", "termina", "terminará", "terminar"],
+      "correctIndex": 0,
+      "explanation": "Terminou apresenta a tarefa como concluída.",
+      "wrongExplanations": {
+        "1": "Termina indica uma ação no presente.",
+        "2": "Terminará indica uma ação futura.",
+        "3": "Terminar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma apresenta uma ação concluída na frase “Quando a campainha tocou, eu ____ a porta”?",
+      "options": ["fecharei", "fecho", "fechei", "fechava"],
+      "correctIndex": 2,
+      "explanation": "Fechei indica uma ação que foi concluída naquele momento passado.",
+      "wrongExplanations": {
+        "0": "Fecharei indica uma ação futura.",
+        "1": "Fecho indica uma ação no presente.",
+        "3": "Fechava apresenta uma ação passada em andamento ou habitual."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma do verbo beber está no pretérito perfeito na frase “Marcos bebeu água”?",
+      "options": ["beber", "bebe", "bebia", "bebeu"],
+      "correctIndex": 3,
+      "explanation": "Bebeu indica a ação concluída de beber no passado.",
+      "wrongExplanations": {
+        "0": "Beber está no infinitivo.",
+        "1": "Bebe está no presente.",
+        "2": "Bebia apresenta uma ação passada habitual ou em andamento."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Complete: “Ontem, vocês ____ para a prova.”",
+      "options": ["estudam", "estudaram", "estudarão", "estudar"],
+      "correctIndex": 1,
+      "explanation": "Estudaram indica que a ação foi realizada ontem.",
+      "wrongExplanations": {
+        "0": "Estudam indica uma ação no presente.",
+        "2": "Estudarão indica uma ação futura.",
+        "3": "Estudar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual frase relata uma ação concluída?",
+      "options": [
+        "Hoje, Rui desenha um mapa.",
+        "Amanhã, Rui desenhará um mapa.",
+        "Ontem, Rui desenhou um mapa.",
+        "Rui desenhava mapas quando era menor."
+      ],
+      "correctIndex": 2,
+      "explanation": "Desenhou relata uma ação concluída ontem.",
+      "wrongExplanations": {
+        "0": "Desenha está no presente.",
+        "1": "Desenhará está no futuro.",
+        "3": "Desenhava apresenta uma ação habitual ou em andamento no passado."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Na frase “A professora explicou a atividade”, qual palavra apresenta a ação concluída?",
+      "options": ["professora", "explicou", "atividade", "a"],
+      "correctIndex": 1,
+      "explanation": "Explicou é o verbo que indica a ação realizada pela professora.",
+      "wrongExplanations": {
+        "0": "Professora nomeia quem realizou a ação.",
+        "2": "Atividade nomeia aquilo que foi explicado.",
+        "3": "A acompanha o substantivo atividade e não indica a ação."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma apresenta uma ação concluída na frase “No sábado passado, a turma ____ o museu da cidade”?",
+      "options": ["visitará", "visita", "visitava", "visitou"],
+      "correctIndex": 3,
+      "explanation": "Visitou indica uma visita concluída no sábado passado.",
+      "wrongExplanations": {
+        "0": "Visitará indica uma ação futura.",
+        "1": "Visita indica uma ação no presente.",
+        "2": "Visitava apresenta uma ação passada habitual ou em andamento."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Na frase “Luiza recebeu um bilhete”, qual forma verbal indica uma ação concluída?",
+      "options": ["recebeu", "recebe", "receber", "receberá"],
+      "correctIndex": 0,
+      "explanation": "Recebeu indica que Luiza já recebeu o bilhete.",
+      "wrongExplanations": {
+        "1": "Recebe está no presente.",
+        "2": "Receber está no infinitivo.",
+        "3": "Receberá indica uma ação futura."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma apresenta como concluída a viagem da família: “A família ____ de manhã e chegou à tarde”?",
+      "options": ["viajará", "viaja", "viajou", "viajava"],
+      "correctIndex": 2,
+      "explanation": "Viajou indica a ação concluída antes de a família chegar.",
+      "wrongExplanations": {
+        "0": "Viajará indica uma ação futura.",
+        "1": "Viaja indica uma ação no presente.",
+        "3": "Viajava apresenta uma ação passada habitual ou em andamento."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual forma do verbo correr apresenta uma ação concluída na frase “Ontem, João ____ na pista”?",
+      "options": ["corria", "correu", "corre", "correrá"],
+      "correctIndex": 1,
+      "explanation": "Correu indica uma corrida concluída ontem.",
+      "wrongExplanations": {
+        "0": "Corria apresenta uma ação passada habitual ou em andamento.",
+        "2": "Corre indica uma ação no presente.",
+        "3": "Correrá indica uma ação futura."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Ontem, nós ____ um bolo para a festa.",
+      "options": ["fizemos", "fazemos", "faremos", "fazer"],
+      "correctIndex": 0,
+      "explanation": "Fizemos indica uma ação concluída no passado.",
+      "wrongExplanations": {
+        "1": "Fazemos indica uma ação no presente.",
+        "2": "Faremos indica uma ação futura.",
+        "3": "Fazer está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Qual frase está no pretérito perfeito?",
+      "options": [
+        "A menina pintará um quadro.",
+        "A menina pinta um quadro.",
+        "A menina pintava um quadro.",
+        "A menina pintou um quadro."
+      ],
+      "correctIndex": 3,
+      "explanation": "Pintou apresenta a ação como concluída no passado.",
+      "wrongExplanations": {
+        "0": "Pintará indica uma ação futura.",
+        "1": "Pinta indica uma ação no presente.",
+        "2": "Pintava indica uma ação passada habitual ou em andamento."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_preterito_perfeito_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "preterito-perfeito",
+      "question": "Complete: “Ontem, a turma ____ uma música na apresentação.”",
+      "options": ["cantou", "canta", "cantará", "cantar"],
+      "correctIndex": 0,
+      "explanation": "Cantou indica a ação concluída na apresentação de ontem.",
+      "wrongExplanations": {
+        "1": "Canta indica uma ação no presente.",
+        "2": "Cantará indica uma ação futura.",
+        "3": "Cantar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "preterito-perfeito"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
