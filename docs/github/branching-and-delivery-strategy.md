@@ -177,11 +177,29 @@ linguisticos e humanos em ambos os modos.
 - nao fazer push direto em `main`
 - nao fazer push direto em `develop`
 - toda evolucao deve passar por Pull Request
+- a ruleset ativa exige Pull Request em `main` e `develop`, inclusive no modo
+  de mantenedor unico; ela exige zero aprovadores independentes enquanto
+  vigorar a excecao registrada em #310, sem remover checks ou protecoes atuais
 - exigir aprovacao independente quando houver ao menos dois mantenedores
   elegiveis; durante a fase de mantenedor unico, aplicar a excecao rastreada em
   #310
 - usar GitHub Actions como gate minimo de governanca nos PRs
 - registrar o modo operacional vigente em toda promocao para `main`
+
+## Operacao local com menos aprovacoes
+
+Para operacoes Git rotineiras, use o auxiliar global `codex-safe-git`, que
+aceita somente status, diff de leitura, stage por caminhos explicitos, commit
+de caminhos explicitos, troca/criacao de branches e push normal de branches
+temporarias deste repositorio. Ele recusa opcoes arbitrarias, amend, reset,
+force-push, branches permanentes e destinos diferentes de `dleomil/quiz`.
+
+O auxiliar reduz prompts do Codex para esses comandos delimitados, mas nao
+altera o sandbox do sistema operacional nem as protecoes do GitHub. Nao use
+regras globais que liberem todo o comando `git`; preserve a aprovacao humana
+para operacoes destrutivas, merges, releases, deploys e decisoes editoriais.
+Antes de abrir um PR, rode `npm run verify:local`, que agrupa a suite de testes,
+lint, formatacao e verificacao do diff.
 
 ## Motivacao arquitetural
 
