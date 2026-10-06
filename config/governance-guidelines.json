@@ -56,12 +56,12 @@
     },
     {
       "id": "branching-and-delivery",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "status": "active",
       "type": "policy",
       "owner": "architecture",
       "sourcePath": "docs/github/branching-and-delivery-strategy.md",
-      "sha256": "e8e2a1412b75ed91af5442c817f639aac802df42715edc43bb2af83d40d73f8b",
+      "sha256": "10d29b7361f105001b08eee0a3a5f3310a0ccef3fedc4507fdff959798d51ca1",
       "appliesTo": [
         "pull-requests",
         "releases",
@@ -74,7 +74,8 @@
         "branch sync validation",
         "merge authorization",
         "merge message manifest",
-        "post-merge message audit"
+        "post-merge message audit",
+        "restricted local git helper"
       ]
     },
     {
