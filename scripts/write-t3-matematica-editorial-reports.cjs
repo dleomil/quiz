@@ -124,8 +124,6 @@ function writeReports() {
       }),
     );
     const file = reportPath(topic, questions);
-    if (fs.existsSync(file))
-      throw new Error(`Relatorio existente; nao sobrescrito: ${file}`);
     const report = {
       schemaVersion: 'editorial-review-v1',
       reviewMode: 'in-conversation-direct',
