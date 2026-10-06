@@ -1,8 +1,8 @@
 {
   "base": "main",
   "head": "develop",
-  "title": "Promote approved release",
-  "body": "Promote approved content from develop.\nChecks listed below passed.\nHuman approval is required.\nRollback reverts this merge.",
-  "checks": ["npm test", "content validation", "human approval"],
-  "rollback": "Revert the promotion merge commit."
+  "title": "Promove pacote aprovado para main",
+  "body": "Objetivo: publicar o pacote aprovado.\nEscopo: conteudo T3 validado.\nVerificacoes: testes e validacoes aprovados.\nReversao: reverter este merge.",
+  "checks": ["npm test", "validacao de conteudo", "aprovacao humana"],
+  "rollback": "Reverter este merge."
 }
