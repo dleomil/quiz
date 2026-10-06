@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "merge-message-v1",
+  "operation": "promotion",
+  "base": "main",
+  "head": "release/merge-message-policy",
+  "subject": "Promove pacote aprovado para main",
+  "body": "Objetivo: publicar o pacote aprovado.\nEscopo: alteracoes aprovadas nesta PR.\nVerificacoes: testes e validacoes aprovados.\nReversao: reverter este merge."
+}
