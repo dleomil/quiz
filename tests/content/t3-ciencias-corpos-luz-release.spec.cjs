@@ -15,6 +15,7 @@ const context = vm.createContext({ window: {} });
   't3-published.js',
   't3-portugues-published.js',
   't3-matematica-published.js',
+  't3-portugues-expansion-published.js',
 ].forEach((file) => {
   vm.runInContext(
     fs.readFileSync(path.join(ROOT, 'js/data', file), 'utf8'),
@@ -45,7 +46,7 @@ assert.equal(
   sources.portugues.questions.filter(
     (question) => question.contentSetId === '2026-t3-v1',
   ).length,
-  40,
+  160,
 );
 assert.equal(
   sources.matematica.questions.filter(
@@ -55,5 +56,5 @@ assert.equal(
 );
 
 console.log(
-  't3-ciencias-corpos-luz-release: ok (140 ciencias T3; 40 portugues; 220 matematica)',
+  't3-ciencias-corpos-luz-release: ok (140 ciencias T3; 160 portugues; 220 matematica)',
 );

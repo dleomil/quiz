@@ -35,6 +35,14 @@ T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
 metadados e referências, enquanto os documentos normativos continuam sendo as
 fontes de verdade.
 
+## Release incremental de 2026-10-06
+
+Foram publicados os seis temas restantes de Português (8 temas, 160 questões
+T3). O total do release T3 passa a 800 questões: Ciências (140), Geografia
+(100), Inglês (80), História (100), Português (160) e Matemática (220). Os
+120 novos itens preservam os textos dos rascunhos aprovados e suas auditorias
+editoriais; os acervos já publicados foram preservados.
+
 ## Fonte curricular
 
 | Campo                     | Valor                                                                                           |
@@ -96,12 +104,12 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | História   | imigrantes-japoneses             | imigrantes japoneses                           |                     reconhecer presença e contribuições |   20 | em-curadoria |
 | Português  | usos-c                           | usos de ç                                      |                                     aplicar grafia de ç |   20 | publicado    |
 | Português  | verbos                           | verbos                                         |                     identificar e usar verbos em frases |   20 | publicado    |
-| Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | proposto     |
-| Português  | preterito-perfeito               | pretérito perfeito                             |                             reconhecer ações concluídas |   20 | proposto     |
-| Português  | prefixo-des                      | palavras iniciadas por des-                    |                           reconhecer formação e sentido |   20 | proposto     |
-| Português  | futuro                           | futuro do presente                             |                                reconhecer ações futuras |   20 | proposto     |
-| Português  | usos-ge-gi                       | usos de ge e gi                                |                        aplicar grafias contextualizadas |   20 | proposto     |
-| Português  | adjetivos                        | adjetivos                                      |                  identificar características atribuídas |   20 | proposto     |
+| Português  | encontros-ch-lh-nh               | palavras com ch, lh e nh                       |             reconhecer e escrever palavras com dígrafos |   20 | publicado    |
+| Português  | preterito-perfeito               | pretérito perfeito                             |                             reconhecer ações concluídas |   20 | publicado    |
+| Português  | prefixo-des                      | palavras iniciadas por des-                    |                           reconhecer formação e sentido |   20 | publicado    |
+| Português  | futuro                           | futuro do presente                             |                                reconhecer ações futuras |   20 | publicado    |
+| Português  | usos-ge-gi                       | usos de ge e gi                                |                        aplicar grafias contextualizadas |   20 | publicado    |
+| Português  | adjetivos                        | adjetivos                                      |                  identificar características atribuídas |   20 | publicado    |
 | Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | publicado    |
 | Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | publicado    |
 | Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | publicado    |
@@ -184,6 +192,7 @@ obrigatórios.
 |      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português                                                                   | Product Owner (`dleomil`)              |
 |      8 | 2026-10-05 | frozen-amended  | reconciliação da menção repetida a multiplicação e liberação dos temas matemáticos bloqueados para curadoria | Product Owner (`dleomil`)              |
 |      9 | 2026-10-05 | published       | release dos 11 temas de Matemática após 440 revisões e aprovação humana                                      | Product Owner (`dleomil`)              |
+|     10 | 2026-10-06 | published       | release dos seis temas restantes de Português com 120 questões                                               | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.

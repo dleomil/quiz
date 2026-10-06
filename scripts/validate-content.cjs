@@ -370,6 +370,7 @@ function loadContentSources(rootDir) {
     't3-published.js',
     't3-portugues-published.js',
     't3-matematica-published.js',
+    't3-portugues-expansion-published.js',
   ].forEach(function (file) {
     const releasePath = path.join(rootDir, 'js', 'data', file);
     if (fs.existsSync(releasePath)) {
