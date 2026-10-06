@@ -1,8 +1,8 @@
 {
   "base": "main",
-  "head": "release/t3-portugues-temas",
-  "title": "Promove seis temas de Portugues T3",
-  "body": "Publica seis temas de Portugues T3.\nPortugues passa a 160 questoes publicadas.\nChecks completos; aceite humano pendente.\nRollback: reverter este merge.",
+  "head": "release/merge-message-policy",
+  "title": "Promove pacote aprovado para main",
+  "body": "Objetivo: publicar o pacote aprovado.\nEscopo: alteracoes aprovadas nesta PR.\nVerificacoes: testes e validacoes aprovados.\nReversao: reverter este merge.",
   "checks": ["npm test", "validacao de conteudo", "aprovacao humana"],
-  "rollback": "Reverter o merge desta promocao."
+  "rollback": "Reverter este merge."
 }

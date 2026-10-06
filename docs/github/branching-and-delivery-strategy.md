@@ -70,13 +70,31 @@ promocao, deploy ou alteracao funcional.
 
 ### Mensagens de merge
 
-Para evitar mensagens visualmente ruidosas ou com histórico acumulado, merges
-de promoção e reconciliação devem usar título curto em ASCII e corpo de três a
-cinco linhas com objetivo, escopo, checks e rollback. Não reutilizar a mensagem
-automática do GitHub nem incluir lista de commits ou blocos `Co-authored-by`.
-Antes da aprovação, revisar a prévia; depois do merge, confirmar com
-`git show -s --format='%B' <merge-sha>` que a mensagem contém somente o resumo
-esperado.
+Merges de promoção para `main` e reconciliação para `develop` devem usar
+mensagens curtas em português ASCII, sem título automático do GitHub, lista de
+commits ou blocos `Co-authored-by`. O manifesto
+`.github/merge-message-manifest.json` define o título e as quatro linhas do
+corpo; o título e o corpo da PR devem corresponder exatamente a esse modelo.
+Concluir com `gh pr merge --merge --subject ... --body ...`, usando os valores
+validados no manifesto.
+
+O gate da PR valida o modelo antes do merge. Após a conclusão, o workflow
+`Merge Message Audit` compara a mensagem efetiva do commit com o manifesto e
+falha visivelmente se houver divergência. O GitHub não permite validar antes
+do merge o título final escolhido na interface; por isso, a auditoria posterior
+detecta esse desvio sem reescrever histórico. PRs de trabalho comuns e seus
+commits ficam fora desta regra.
+
+Modelos obrigatórios:
+
+- Promoção: título `Promove pacote aprovado para main`; corpo com as linhas
+  `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o manifesto.
+- Reconciliação: título `Reconciliacao apos publicacao em develop`; corpo com
+  as linhas `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o
+  manifesto.
+
+Antes da aprovação, revisar o manifesto e a prévia da mensagem; depois do
+merge, confirmar com `git show -s --format='%B' <merge-sha>`.
 
 O historico linear deve permanecer desabilitado em `main` e `develop` para
 permitir esses merge commits controlados. As demais protecoes continuam
