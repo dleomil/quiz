@@ -10,7 +10,7 @@ const TEMPLATES = {
     subject: 'Promove pacote aprovado para main',
     body: [
       'Objetivo: publicar o pacote aprovado.',
-      'Escopo: conteudo T3 validado.',
+      'Escopo: alteracoes aprovadas nesta PR.',
       'Verificacoes: testes e validacoes aprovados.',
       'Reversao: reverter este merge.',
     ].join('\n'),

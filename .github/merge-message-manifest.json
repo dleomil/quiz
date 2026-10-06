@@ -1,8 +1,8 @@
 {
   "schemaVersion": "merge-message-v1",
-  "operation": "promotion",
-  "base": "main",
-  "head": "develop",
-  "subject": "Promove pacote aprovado para main",
-  "body": "Objetivo: publicar o pacote aprovado.\nEscopo: conteudo T3 validado.\nVerificacoes: testes e validacoes aprovados.\nReversao: reverter este merge."
+  "operation": "reconciliation",
+  "base": "develop",
+  "head": "chore/reconcile-main-develop-merge-message-policy",
+  "subject": "Reconciliacao apos publicacao em develop",
+  "body": "Objetivo: integrar main em develop.\nEscopo: preservar alteracoes de develop.\nVerificacoes: testes e ancestralidade aprovados.\nReversao: reverter este merge."
 }
