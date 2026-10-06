@@ -2,20 +2,20 @@
 
 ## Estado do intake
 
-| Campo                     | Valor                                                              |
-| ------------------------- | ------------------------------------------------------------------ |
-| Ano letivo                | 2026                                                               |
-| Trimestre                 | `t3`                                                               |
-| Serie                     | `3-ano`                                                            |
-| `contentSetId`            | `2026-t3-v1`                                                       |
-| Versao do manifesto       | 2                                                                  |
-| Estado do manifesto       | `frozen`                                                           |
-| Estado inicial do acervo  | `draft` e invisivel                                                |
-| Estado do release parcial | `published` para Ciências, Geografia, Inglês, História e Português |
-| Responsavel pelo aceite   | Product Owner (`dleomil`)                                          |
-| Data de recebimento       | 2026-10-02                                                         |
-| Primeira prova            | 2026-10-14                                                         |
-| Ultima prova regular      | 2026-10-21                                                         |
+| Campo                     | Valor                                                                          |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| Ano letivo                | 2026                                                                           |
+| Trimestre                 | `t3`                                                                           |
+| Serie                     | `3-ano`                                                                        |
+| `contentSetId`            | `2026-t3-v1`                                                                   |
+| Versao do manifesto       | 3                                                                              |
+| Estado do manifesto       | `frozen`                                                                       |
+| Estado inicial do acervo  | `draft` e invisivel                                                            |
+| Estado do release parcial | `published` para Ciências, Geografia, Inglês, História, Português e Matemática |
+| Responsavel pelo aceite   | Product Owner (`dleomil`)                                                      |
+| Data de recebimento       | 2026-10-02                                                                     |
+| Primeira prova            | 2026-10-14                                                                     |
+| Ultima prova regular      | 2026-10-21                                                                     |
 
 O intake foi aberto a partir do roteiro mensal recebido. A matriz foi congelada
 com as decisões registradas abaixo; ela autoriza o piloto, mas não publica o
@@ -28,8 +28,7 @@ Foram publicados somente os pacotes aprovados antes das respectivas provas:
 Ciências (7 temas, 140 questões), Geografia (5 temas, 100 questões), Inglês (4
 temas, 80 questões), História (5 temas, 100 questões) e Português (2 temas, 40
 questões), totalizando 460 questões em `2026-t3-v1`. Os temas `corpos-luz`,
-`usos-c` e `verbos` foram publicados após aceite humano; Matemática continua
-fora do runtime até concluir seus gates.
+`usos-c` e `verbos` foram publicados após aceite humano.
 T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
 metadados e referências, enquanto os documentos normativos continuam sendo as
 fontes de verdade.
@@ -41,6 +40,13 @@ T3). O total do release T3 passa a 580 questões: Ciências (140), Geografia
 (100), Inglês (80), História (100) e Português (160). Matemática permanece
 fora do runtime nesta promoção. Os 120 novos itens preservam os textos dos
 rascunhos aprovados e suas auditorias editoriais.
+
+## Release de Matemática T3
+
+Este release adiciona 11 temas de Matemática, com 20 questões cada, após 440
+revisões pedagógicas e linguísticas e aprovação humana registrada. O total do
+runtime T3 passa a 800 questões, sem alterar as 580 questões das demais
+matérias. Os relatórios editoriais preservam os hashes dos drafts revisados.
 
 ## Fonte curricular
 
@@ -119,11 +125,24 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | proposto     |
 | Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | proposto     |
 | Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | proposto     |
-| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | bloqueado    |
+| Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | publicado    |
+| Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | publicado    |
+| Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | publicado    |
+| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | publicado    |
+| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | publicado    |
+| Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | publicado    |
+| Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | publicado    |
+| Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | publicado    |
+| Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | publicado    |
+| Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | publicado    |
+| Matemática | divisao-euclidiana               | divisão euclidiana                             |                           interpretar quociente e resto |   20 | publicado    |
 
 Atividades adicionais nao criam tema independente. A segunda menção a
-multiplicação e os métodos de divisão precisam ser reconciliados antes do
-congelamento para evitar duplicidade ou cobertura artificial.
+multiplicação será coberta pelos temas `multiplicacao` e
+`decomposicao-multiplicacao`, sem duplicar o objeto de conhecimento. Os títulos
+do roteiro identificam seções próprias para métodos da divisão, expressões
+aritméticas e divisão euclidiana; esses temas foram mantidos como objetos
+distintos e publicados junto com os demais temas aprovados de Matemática.
 
 ## Totais provisórios
 
@@ -134,11 +153,10 @@ congelamento para evitar duplicidade ou cobertura artificial.
 | Inglês     |      4 |          0 |      80 |
 | História   |      5 |          0 |     100 |
 | Português  |      8 |          0 |     160 |
-| Matemática |     11 |          3 |     220 |
-| **Total**  | **40** |      **3** | **800** |
+| Matemática |     11 |          0 |     220 |
+| **Total**  | **40** |      **0** | **800** |
 
-Os totais sao provisórios. O manifesto nao pode ser congelado enquanto os
-temas bloqueados e a duplicidade de Matemática nao forem decididos.
+Os totais representam o escopo curricular congelado e o conjunto publicado.
 
 ## Lacunas e decisões pendentes
 
@@ -175,6 +193,7 @@ temas bloqueados e a duplicidade de Matemática nao forem decididos.
 |      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                | Product Owner (`dleomil`)              |
 |      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português               | Product Owner (`dleomil`)              |
 |      8 | 2026-10-06 | published       | release dos seis temas restantes de Português            | Product Owner (`dleomil`)              |
+|      9 | 2026-10-06 | published       | release de 11 temas de Matemática após 440 revisões e aprovação humana | Product Owner (`dleomil`) |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.

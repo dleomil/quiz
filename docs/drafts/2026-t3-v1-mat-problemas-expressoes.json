@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Lia tinha 18 adesivos e ganhou mais 7. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "18 + 7 = 25",
+        "18 − 7 = 11",
+        "18 × 7 = 126",
+        "18 ÷ 7 = 2, resto 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ganhar adesivos aumenta a quantidade: 18 + 7 = 25.",
+      "wrongExplanations": {
+        "1": "A situação é representada por uma adição: 18 + 7 = 25. A opção 18 − 7 = 11 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 18 + 7 = 25. A opção 18 × 7 = 126 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 18 + 7 = 25. A opção 18 ÷ 7 = 2, resto 4 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Havia 32 livros na mesa e 9 foram guardados. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "32 + 9 = 41",
+        "32 − 9 = 23",
+        "32 × 9 = 288",
+        "32 ÷ 9 = 3, resto 5"
+      ],
+      "correctIndex": 1,
+      "explanation": "Guardar 9 livros retira essa quantidade: 32 − 9 = 23.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma subtração: 32 − 9 = 23. A opção 32 + 9 = 41 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 32 − 9 = 23. A opção 32 × 9 = 288 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 32 − 9 = 23. A opção 32 ÷ 9 = 3, resto 5 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 6 caixas com 4 bolas em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "6 + 4 = 10",
+        "6 − 4 = 2",
+        "6 × 4 = 24",
+        "6 ÷ 4 = 1, resto 2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Seis grupos iguais de quatro bolas são representados por 6 × 4 = 24.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma multiplicação: 6 × 4 = 24. A opção 6 + 4 = 10 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 6 × 4 = 24. A opção 6 − 4 = 2 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 6 × 4 = 24. A opção 6 ÷ 4 = 1, resto 2 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma turma tinha 27 folhas e recebeu mais 8. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "27 − 8 = 19",
+        "27 × 8 = 216",
+        "27 ÷ 8 = 3, resto 3",
+        "27 + 8 = 35"
+      ],
+      "correctIndex": 3,
+      "explanation": "Receber folhas acrescenta 8 às 27 que já havia. 27 + 8 = 35.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma adição: 27 + 8 = 35. A opção 27 − 8 = 19 usa subtração, que não representa essa ação.",
+        "1": "A situação é representada por uma adição: 27 + 8 = 35. A opção 27 × 8 = 216 usa multiplicação, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 27 + 8 = 35. A opção 27 ÷ 8 = 3, resto 3 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "De 45 laranjas, 18 foram usadas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "45 − 18 = 27",
+        "45 + 18 = 63",
+        "45 × 18 = 810",
+        "45 ÷ 18 = 2, resto 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usar laranjas diminui o total: 45 − 18 = 27.",
+      "wrongExplanations": {
+        "1": "A situação é representada por uma subtração: 45 − 18 = 27. A opção 45 + 18 = 63 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 45 − 18 = 27. A opção 45 × 18 = 810 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 45 − 18 = 27. A opção 45 ÷ 18 = 2, resto 9 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 7 bandejas com 5 pães em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "7 + 5 = 12",
+        "7 × 5 = 35",
+        "7 − 5 = 2",
+        "7 ÷ 5 = 1, resto 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "A multiplicação representa sete grupos de cinco pães. 7 × 5 = 35.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma multiplicação: 7 × 5 = 35. A opção 7 + 5 = 12 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 7 × 5 = 35. A opção 7 − 5 = 2 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 7 × 5 = 35. A opção 7 ÷ 5 = 1, resto 2 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma caixa tinha 36 peças; 16 foram retiradas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "36 + 16 = 52",
+        "36 × 16 = 576",
+        "36 − 16 = 20",
+        "36 ÷ 16 = 2, resto 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "Retirar 16 peças é representado por 36 − 16. 36 − 16 = 20.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma subtração: 36 − 16 = 20. A opção 36 + 16 = 52 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma subtração: 36 − 16 = 20. A opção 36 × 16 = 576 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 36 − 16 = 20. A opção 36 ÷ 16 = 2, resto 4 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Nina leu 25 páginas ontem e 14 hoje. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "25 − 14 = 11",
+        "25 × 14 = 350",
+        "25 ÷ 14 = 1, resto 11",
+        "25 + 14 = 39"
+      ],
+      "correctIndex": 3,
+      "explanation": "As páginas dos dois dias são juntadas: 25 + 14 = 39.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma adição: 25 + 14 = 39. A opção 25 − 14 = 11 usa subtração, que não representa essa ação.",
+        "1": "A situação é representada por uma adição: 25 + 14 = 39. A opção 25 × 14 = 350 usa multiplicação, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 25 + 14 = 39. A opção 25 ÷ 14 = 1, resto 11 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 8 mesas com 3 estudantes em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "8 × 3 = 24",
+        "8 + 3 = 11",
+        "8 − 3 = 5",
+        "8 ÷ 3 = 2, resto 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Oito grupos iguais de três estudantes são 8 × 3. 8 × 3 = 24.",
+      "wrongExplanations": {
+        "1": "A situação é representada por uma multiplicação: 8 × 3 = 24. A opção 8 + 3 = 11 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 8 × 3 = 24. A opção 8 − 3 = 5 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 8 × 3 = 24. A opção 8 ÷ 3 = 2, resto 2 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma cesta tinha 48 frutas e 25 foram vendidas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "48 + 25 = 73",
+        "48 − 25 = 23",
+        "48 × 25 = 1200",
+        "48 ÷ 25 = 1, resto 23"
+      ],
+      "correctIndex": 1,
+      "explanation": "Vender frutas retira 25 do total de 48. 48 − 25 = 23.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma subtração: 48 − 25 = 23. A opção 48 + 25 = 73 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 48 − 25 = 23. A opção 48 × 25 = 1200 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 48 − 25 = 23. A opção 48 ÷ 25 = 1, resto 23 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma coleção tem 29 cartões e ganha mais 34. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "29 − 34 = -5",
+        "29 × 34 = 986",
+        "29 + 34 = 63",
+        "29 ÷ 34 = 0, resto 29"
+      ],
+      "correctIndex": 2,
+      "explanation": "Juntar cartões significa somar 29 e 34. 29 + 34 = 63.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma adição: 29 + 34 = 63. A opção 29 − 34 = -5 usa subtração, que não representa essa ação.",
+        "1": "A situação é representada por uma adição: 29 + 34 = 63. A opção 29 × 34 = 986 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 29 + 34 = 63. A opção 29 ÷ 34 = 0, resto 29 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 9 pacotes com 4 figurinhas em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "9 + 4 = 13",
+        "9 − 4 = 5",
+        "9 ÷ 4 = 2, resto 1",
+        "9 × 4 = 36"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nove grupos de quatro figurinhas são representados por 9 × 4. 9 × 4 = 36.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma multiplicação: 9 × 4 = 36. A opção 9 + 4 = 13 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 9 × 4 = 36. A opção 9 − 4 = 5 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 9 × 4 = 36. A opção 9 ÷ 4 = 2, resto 1 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma sala tinha 56 cadeiras e 17 foram levadas para outra sala. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "56 − 17 = 39",
+        "56 + 17 = 73",
+        "56 × 17 = 952",
+        "56 ÷ 17 = 3, resto 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Levar cadeiras embora reduz a quantidade: 56 − 17. 56 − 17 = 39.",
+      "wrongExplanations": {
+        "1": "A situação é representada por uma subtração: 56 − 17 = 39. A opção 56 + 17 = 73 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 56 − 17 = 39. A opção 56 × 17 = 952 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 56 − 17 = 39. A opção 56 ÷ 17 = 3, resto 5 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Rui juntou 38 conchas e depois encontrou mais 46. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "38 − 46 = -8",
+        "38 + 46 = 84",
+        "38 × 46 = 1748",
+        "38 ÷ 46 = 0, resto 38"
+      ],
+      "correctIndex": 1,
+      "explanation": "Encontrar mais conchas aumenta a coleção; somamos 38 e 46. 38 + 46 = 84.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma adição: 38 + 46 = 84. A opção 38 − 46 = -8 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 38 + 46 = 84. A opção 38 × 46 = 1748 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 38 + 46 = 84. A opção 38 ÷ 46 = 0, resto 38 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma biblioteca coloca 6 livros em cada uma de 7 caixas. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "7 + 6 = 13",
+        "7 − 6 = 1",
+        "7 × 6 = 42",
+        "7 ÷ 6 = 1, resto 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sete grupos de seis livros correspondem a 7 × 6. 7 × 6 = 42.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma multiplicação: 7 × 6 = 42. A opção 7 + 6 = 13 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 7 × 6 = 42. A opção 7 − 6 = 1 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 7 × 6 = 42. A opção 7 ÷ 6 = 1, resto 1 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Um agricultor colheu 83 maçãs e separou 48. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "83 + 48 = 131",
+        "83 × 48 = 3984",
+        "83 ÷ 48 = 1, resto 35",
+        "83 − 48 = 35"
+      ],
+      "correctIndex": 3,
+      "explanation": "Separar 48 maçãs deixa a diferença entre 83 e 48. 83 − 48 = 35.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma subtração: 83 − 48 = 35. A opção 83 + 48 = 131 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma subtração: 83 − 48 = 35. A opção 83 × 48 = 3984 usa multiplicação, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 83 − 48 = 35. A opção 83 ÷ 48 = 1, resto 35 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma escola recebeu 56 cadernos e depois mais 17. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "56 + 17 = 73",
+        "56 − 17 = 39",
+        "56 × 17 = 952",
+        "56 ÷ 17 = 3, resto 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Receber mais cadernos pede uma adição. 56 + 17 = 73.",
+      "wrongExplanations": {
+        "1": "A situação é representada por uma adição: 56 + 17 = 73. A opção 56 − 17 = 39 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 56 + 17 = 73. A opção 56 × 17 = 952 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 56 + 17 = 73. A opção 56 ÷ 17 = 3, resto 5 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 8 caixas com 6 bolas em cada. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "8 + 6 = 14",
+        "8 × 6 = 48",
+        "8 − 6 = 2",
+        "8 ÷ 6 = 1, resto 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oito grupos de seis bolas são representados por 8 × 6. 8 × 6 = 48.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma multiplicação: 8 × 6 = 48. A opção 8 + 6 = 14 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 8 × 6 = 48. A opção 8 − 6 = 2 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 8 × 6 = 48. A opção 8 ÷ 6 = 1, resto 2 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Uma loja tinha 100 cadernos e vendeu 64. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "100 + 64 = 164",
+        "100 × 64 = 6400",
+        "100 − 64 = 36",
+        "100 ÷ 64 = 1, resto 36"
+      ],
+      "correctIndex": 2,
+      "explanation": "Vender cadernos reduz o estoque: 100 − 64 = 36.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma subtração: 100 − 64 = 36. A opção 100 + 64 = 164 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma subtração: 100 − 64 = 36. A opção 100 × 64 = 6400 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 100 − 64 = 36. A opção 100 ÷ 64 = 1, resto 36 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_problemas_expressoes_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "problemas-expressoes",
+      "topicName": "Problemas com expressões",
+      "question": "Há 9 fileiras com 5 cadeiras em cada uma. Qual opção mostra a expressão e o resultado?",
+      "options": [
+        "9 + 5 = 14",
+        "9 − 5 = 4",
+        "9 ÷ 5 = 1, resto 4",
+        "9 × 5 = 45"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nove grupos de cinco cadeiras correspondem a 9 × 5. 9 × 5 = 45.",
+      "wrongExplanations": {
+        "0": "A situação é representada por uma multiplicação: 9 × 5 = 45. A opção 9 + 5 = 14 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 9 × 5 = 45. A opção 9 − 5 = 4 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 9 × 5 = 45. A opção 9 ÷ 5 = 1, resto 4 usa divisão, que não representa essa ação."
+      },
+      "skill": "traduzir-situacoes-em-expressoes-e-resolver",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "problemas-expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

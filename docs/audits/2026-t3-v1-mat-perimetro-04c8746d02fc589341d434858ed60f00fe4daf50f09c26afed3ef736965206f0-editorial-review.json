@@ -1,0 +1,734 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "in-conversation-direct",
+  "reviewer": "Codex (conversa atual)",
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "matematica",
+  "topicId": "perimetro",
+  "sourceSha256": "04c8746d02fc589341d434858ed60f00fe4daf50f09c26afed3ef736965206f0",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "blocked",
+  "humanApprovalRequired": true,
+  "reviews": [
+    {
+      "questionId": "2026t3v1_math_perimetro_001",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_001",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 12 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_001",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_002",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_002",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 14 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_002",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_003",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_003",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 12 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_003",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_004",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_004",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 16 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_004",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_005",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_005",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 20 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_005",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_006",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_006",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 16 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_006",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_007",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_007",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 20 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_007",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_008",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_008",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 8 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_008",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_009",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_009",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 20 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_009",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_010",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_010",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 16 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_010",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_011",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_011",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 24 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_011",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_012",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_012",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 26 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_012",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_013",
+      "pass": "pedagogical",
+      "decision": "blocked",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_013",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 16 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_perimetro_013",
+          "pass": "pedagogical",
+          "severity": "blocking",
+          "criterion": "As medidas dos lados devem definir a figura nomeada no enunciado.",
+          "evidence": "Os lados 8 cm, 3 cm e 5 cm não formam um triângulo: 3 + 5 = 8 (caso degenerado).",
+          "recommendation": "Trocar uma das medidas para que a soma dos dois lados menores seja maior que o terceiro e recalcular as alternativas."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Trocar uma das medidas para que a soma dos dois lados menores seja maior que o terceiro e recalcular as alternativas."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_013",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_014",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_014",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 28 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_014",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_015",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_015",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 22 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_015",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_016",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_016",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 14 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_016",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_017",
+      "pass": "pedagogical",
+      "decision": "blocked",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_017",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 14 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_perimetro_017",
+          "pass": "pedagogical",
+          "severity": "blocking",
+          "criterion": "As medidas dos lados devem definir a figura nomeada no enunciado.",
+          "evidence": "Os lados 9 cm, 2 cm e 3 cm não formam um triângulo: 2 + 3 < 9.",
+          "recommendation": "Trocar uma das medidas para satisfazer a desigualdade triangular e recalcular as alternativas."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Trocar uma das medidas para satisfazer a desigualdade triangular e recalcular as alternativas."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_017",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_018",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_018",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 26 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_018",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_019",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_019",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 32 cm.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_019",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_020",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_perimetro_020",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Some as medidas de todos os lados do contorno; o perímetro é 18 m.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_perimetro_020",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    }
+  ]
+}

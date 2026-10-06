@@ -1,0 +1,914 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "in-conversation-direct",
+  "reviewer": "Codex (conversa atual)",
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "matematica",
+  "topicId": "retas-perpendiculares",
+  "sourceSha256": "65009d8f029796eac6412392cbc9dedb8a46504544eaa29b0cf800ec6debe097",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "blocked",
+  "humanApprovalRequired": true,
+  "reviews": [
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_001",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_001",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_001",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_002",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_002",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_002",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_003",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_003",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, não; são paralelas..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_003",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_003",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, não; são paralelas..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_004",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_004",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_004",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_004",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_005",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_005",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, duas retas que se cruzam em ângulo reto..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_005",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_005",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, duas retas que se cruzam em ângulo reto..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_006",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_006",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_006",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_006",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_007",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_007",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, não..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_007",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_007",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, não..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_008",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_008",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_008",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_008",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_009",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_009",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, cruzam-se formando ângulo reto..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_009",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_009",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, cruzam-se formando ângulo reto..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_010",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_010",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, não; elas não se cruzam..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_010",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_010",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, não; elas não se cruzam..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_011",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_011",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, ângulo reto..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_011",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_011",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, ângulo reto..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_012",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_012",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, retas perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_012",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_012",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, retas perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_013",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_013",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_013",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_013",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_014",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_014",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, elas são perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_014",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_014",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, elas são perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_015",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_015",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_015",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_015",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_016",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_016",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendicularidade..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_016",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_016",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendicularidade..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_017",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_017",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_017",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_017",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_018",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_018",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, duas linhas paralelas que não se cruzam..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_018",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_018",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, duas linhas paralelas que não se cruzam..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_019",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_019",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_019",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_019",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_020",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_020",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_020",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_retas_perpendiculares_020",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Pontuação deve evitar duplicação e a frase precisa permanecer fluida.",
+          "evidence": "O feedback contém pontuação duplicada ou uma junção truncada: “Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..”",
+          "recommendation": "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+        }
+      ],
+      "recommendations": [
+        "Reescrever a frase de forma independente da alternativa e remover pontos duplicados."
+      ],
+      "humanApprovalRequired": true
+    }
+  ]
+}
