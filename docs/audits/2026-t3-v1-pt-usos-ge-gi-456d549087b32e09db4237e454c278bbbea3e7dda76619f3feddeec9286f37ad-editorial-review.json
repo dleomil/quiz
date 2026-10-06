@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "two-independent-internal-reviewers",
+  "reviewers": ["portugues_pedagogical_smoke", "portugues_linguistic_smoke"],
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "portugues",
+  "topicId": "usos-ge-gi",
+  "sourceSha256": "456d549087b32e09db4237e454c278bbbea3e7dda76619f3feddeec9286f37ad",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "clear",
+  "humanApprovalRequired": true,
+  "resolvedFindings": [
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_007",
+      "pass": "pedagogical",
+      "severity": "minor",
+      "resolution": "O feedback de ajenda foi reescrito sem referência incorreta à sílaba; o feedback de aginda agora descreve a vogal após g. O item final foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_007",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "O feedback de ajenda foi reescrito sem referência incorreta à sílaba. O item final foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_010",
+      "pass": "pedagogical",
+      "severity": "major",
+      "resolution": "A explicação deixou de nomear sequências gráficas como sílabas e o feedback de genjibre passou a explicar o uso de g no lugar de j antes de i. O item corrigido foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_010",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "A explicação passou a indicar g antes de e e de i, sem alegação sobre sílabas. O item corrigido foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_011",
+      "pass": "pedagogical",
+      "severity": "major",
+      "resolution": "O feedback de girassou passou a explicar a terminação incorreta sou em vez de ol. O item corrigido foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_011",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "O feedback foi ajustado para tratar da terminação do distrator girassou. O item corrigido foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_020",
+      "pass": "pedagogical",
+      "severity": "minor",
+      "resolution": "A explicação substituiu a referência imprecisa à sílaba por uma descrição da sequência gráfica. O item corrigido foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_020",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "A explicação substituiu a referência à sílaba ge pela grafia g antes de e. O item corrigido foi aprovado nas duas passagens."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_001",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_001",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_002",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_002",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_003",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_003",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_004",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_004",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_005",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_005",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_006",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_006",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_007",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_007",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_008",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_008",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_009",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_009",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_010",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_010",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_011",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_011",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_012",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_012",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_013",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_013",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_014",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_014",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_015",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_015",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_016",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_016",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_017",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_017",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_018",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_018",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_019",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_019",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_020",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_usos_ge_gi_020",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    }
+  ]
+}

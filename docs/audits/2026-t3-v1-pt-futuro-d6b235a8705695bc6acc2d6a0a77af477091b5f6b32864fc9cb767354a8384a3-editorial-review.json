@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "two-independent-internal-reviewers",
+  "reviewers": ["portugues_pedagogical_smoke", "portugues_linguistic_smoke"],
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "portugues",
+  "topicId": "futuro",
+  "sourceSha256": "d6b235a8705695bc6acc2d6a0a77af477091b5f6b32864fc9cb767354a8384a3",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "clear",
+  "humanApprovalRequired": true,
+  "resolvedFindings": [
+    {
+      "questionId": "2026t3v1_pt_futuro_006",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "A construção ‘para eu’ foi removida da explicação; o texto foi reescrito e aprovado na revisão linguística."
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_006",
+      "pass": "pedagogical",
+      "severity": "major",
+      "resolution": "A explicação passou a relacionar a forma verbal ao futuro do presente e ao sentido de ação posterior; o item corrigido foi aprovado nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_010",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "A construção ‘para eu’ foi removida da explicação; o texto foi reescrito e aprovado na revisão linguística."
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_010",
+      "pass": "pedagogical",
+      "severity": "major",
+      "resolution": "A explicação passou a relacionar a forma verbal ao futuro do presente e ao marcador ‘amanhã’; o item corrigido foi aprovado nas duas passagens."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v1_pt_futuro_001",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_001",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_002",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_002",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_003",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_003",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_004",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_004",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_005",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_005",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_006",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_006",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_007",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_007",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_008",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_008",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_009",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_009",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_010",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_010",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_011",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_011",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_012",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_012",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_013",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_013",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_014",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_014",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_015",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_015",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_016",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_016",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_017",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_017",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_018",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_018",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_019",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_019",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_020",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_futuro_020",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    }
+  ]
+}

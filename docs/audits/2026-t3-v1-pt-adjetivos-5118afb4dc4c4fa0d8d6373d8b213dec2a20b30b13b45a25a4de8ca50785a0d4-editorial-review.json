@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "two-independent-internal-reviewers",
+  "reviewers": ["portugues_pedagogical_smoke", "portugues_linguistic_smoke"],
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "portugues",
+  "topicId": "adjetivos",
+  "sourceSha256": "5118afb4dc4c4fa0d8d6373d8b213dec2a20b30b13b45a25a4de8ca50785a0d4",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "clear",
+  "humanApprovalRequired": true,
+  "resolvedFindings": [
+    {
+      "questionId": "2026t3v1_pt_adjetivos_017",
+      "pass": "linguistic",
+      "severity": "minor",
+      "resolution": "O feedback foi alterado para dizer que lanche nomeia a refeição. A versão final do item foi aprovada nas passagens pedagógica e linguística."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v1_pt_adjetivos_001",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_001",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_002",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_002",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_003",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_003",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_004",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_004",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_005",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_005",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_006",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_006",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_007",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_007",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_008",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_008",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_009",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_009",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_010",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_010",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_011",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_011",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_012",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_012",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_013",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_013",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_014",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_014",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_015",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_015",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_016",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_016",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_017",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_017",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_018",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_018",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_019",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_019",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_020",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_adjetivos_020",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    }
+  ]
+}

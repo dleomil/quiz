@@ -1,0 +1,748 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "two-independent-internal-reviewers",
+  "reviewers": ["portugues_pedagogical_smoke", "portugues_linguistic_smoke"],
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "portugues",
+  "topicId": "encontros-ch-lh-nh",
+  "sourceSha256": "a37f50c9740040abc7bf4aa6511be82c005904dd35be2c6301614703e5b8c672",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "clear",
+  "humanApprovalRequired": true,
+  "resolvedFindings": [
+    {
+      "questionId": "2026t3v1_pt_encontros_ch_lh_nh_003",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "A lacuna e as alternativas foram corrigidas para que ‘lh’ complete ‘coe__o’ como ‘coelho’. A versão corrigida recebeu nova aprovação pedagógica e linguística."
+    },
+    {
+      "questionId": "2026t3v1_pt_encontros_ch_lh_nh_006",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora fornece contexto semântico para distinguir ‘folha’ de ‘folia’. A versão corrigida recebeu nova aprovação pedagógica e linguística."
+    },
+    {
+      "questionId": "2026t3v1_pt_encontros_ch_lh_nh_009",
+      "pass": "linguistic",
+      "severity": "major",
+      "resolution": "O enunciado e a pontuação foram corrigidos. A versão corrigida recebeu nova aprovação pedagógica e linguística."
+    },
+    {
+      "questionId": "2026t3v1_pt_encontros_ch_lh_nh_010",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora identifica a ave no contexto da frase, distinguindo ‘galinha’ de outras formas. A versão corrigida recebeu nova aprovação pedagógica e linguística."
+    },
+    {
+      "questionId": "2026t3v1_pt_encontros_ch_lh_nh_015",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora contextualiza ‘orelha’ como parte do corpo, distinguindo-a de ‘oreia’. A versão corrigida recebeu nova aprovação pedagógica e linguística."
+    }
+  ],
+  "reviews": [
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_001",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "A alternativa de índice 1 apresenta a grafia correta de ‘chave’.",
+        "O item avalia o reconhecimento do dígrafo ch com resposta única, enunciado claro e feedbacks corretos para o 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_001",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado, as alternativas e as explicações apresentam ortografia, pontuação e clareza adequadas ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_002",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "Somente ‘telha’ contém o dígrafo lh entre as alternativas.",
+        "A explicação e os feedbacks distinguem corretamente lh de nh e da ausência de h."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_002",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A pergunta e as explicações são claras, naturais e linguisticamente adequadas ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_003",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "A alternativa ‘lh’ completa corretamente a lacuna e forma ‘coelho’.",
+        "O item apresenta resposta única, está alinhado ao reconhecimento do dígrafo lh e oferece feedbacks corretos e claros para o 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_003",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado, as opções de preenchimento e as explicações estão claros, coerentes e adequados ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e realizar a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_004",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Chuva’ é a única alternativa que completa a frase com sentido e grafia corretos.",
+        "A explicação e os feedbacks tratam corretamente o uso de ch, de v e da terminação da palavra."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_004",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A frase é natural, e as explicações apresentam linguagem clara e adequada ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_005",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "Somente ‘ninho’ apresenta as letras nh juntas.",
+        "Os feedbacks distinguem corretamente nh de lh e das palavras sem h."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_005",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado e as explicações estão corretos, claros e sem ambiguidade linguística relevante."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_006",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Folha’ é a única alternativa que completa a frase com sentido e grafia corretos.",
+        "O contexto elimina a ambiguidade com ‘folia’, e os feedbacks explicam adequadamente o uso de lh."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_006",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O contexto da frase elimina a ambiguidade entre ‘folia’ e ‘folha’, e as explicações são claras e naturais."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação contextualizada e realizar a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_007",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Ninho’ completa a frase com o sentido convencional de abrigo feito por aves.",
+        "A resposta correta mobiliza o dígrafo nh, e os feedbacks diferenciam grafia e significado adequadamente."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_007",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A frase fornece contexto suficiente, e as explicações são claras, naturais e adequadas ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_008",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "Somente ‘chave’ contém o dígrafo ch.",
+        "A explicação e os feedbacks são claros, corretos e adequados ao reconhecimento visual do dígrafo no 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_008",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado e todas as explicações são diretos, coerentes e linguisticamente adequados ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_009",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Achou’ é a única alternativa que completa a frase com sentido e forma verbal adequados.",
+        "A explicação relaciona corretamente o verbo achar ao dígrafo ch, e os feedbacks sustentam a resposta esperada."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_009",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado explicita a tarefa e apresenta pontuação, clareza e naturalidade adequadas ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e realizar a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_010",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Galinha’ é a única alternativa que completa a frase com o nome da ave e a grafia correta.",
+        "O contexto elimina a ambiguidade com ‘galhinha’, e os feedbacks distinguem corretamente nh de lh."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_010",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O contexto da ave torna a resposta inequívoca, e as explicações apresentam linguagem clara e adequada."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter o contexto semântico atual e realizar a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_011",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "Somente ‘milho’ apresenta as letras lh juntas.",
+        "A explicação e os feedbacks distinguem corretamente lh de nh, ch e da ausência de h."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_011",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A pergunta focaliza claramente a sequência de letras solicitada, e as explicações estão bem redigidas."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_012",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Linha’ é a única alternativa que completa a frase com sentido e grafia corretos.",
+        "A explicação e os feedbacks identificam corretamente a sequência nh e sua posição na palavra."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_012",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A frase, as alternativas e as explicações apresentam clareza, correção e vocabulário adequado ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_013",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "Somente ‘bicho’ apresenta o dígrafo ch no meio da palavra.",
+        "A explicação localiza corretamente ch entre as vogais, e os feedbacks diferenciam as demais sequências."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_013",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado é claro, e as explicações distinguem as grafias de modo compreensível para o 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_014",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Concha’ é a única alternativa que completa a frase com sentido esperado e grafia correta.",
+        "A explicação e os feedbacks abordam corretamente o dígrafo ch e distinguem as demais opções."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_014",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A frase é compreensível, e as explicações esclarecem de forma adequada o sentido e a grafia pretendidos."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_015",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Orelha’ é a única alternativa que completa a frase com a parte do corpo examinada e a grafia correta.",
+        "O contexto elimina a ambiguidade com ‘oreia’, e a explicação e os feedbacks abordam corretamente o dígrafo lh."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_015",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A frase fornece contexto suficiente, e o enunciado e as explicações estão ortograficamente corretos e claros."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e realizar a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_016",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "Somente ‘sonho’ contém o dígrafo nh.",
+        "A explicação e os feedbacks distinguem corretamente nh de lh, ch e da ausência de h."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_016",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado identifica claramente o aspecto ortográfico avaliado, e as explicações são coerentes e naturais."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_017",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "A primeira frase é a única que emprega ‘mochila’ com a grafia correta.",
+        "A explicação e os feedbacks tratam corretamente a presença de ch e os demais elementos da palavra."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_017",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "As frases e explicações apresentam linguagem simples, clara e adequada ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_018",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Coelho’ é a única alternativa que completa a frase com sentido e grafia corretos.",
+        "A explicação e os feedbacks abordam corretamente o dígrafo lh e as incorreções das demais opções."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_018",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A frase e as explicações são claras, naturais e consistentes com as alternativas apresentadas."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_019",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "‘Manhã’ é a única alternativa com a grafia correta.",
+        "A explicação e os feedbacks tratam corretamente o dígrafo nh, o til e a terminação da palavra."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_019",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "O enunciado, as alternativas e as explicações apresentam acentuação, ortografia e clareza adequadas ao 3º ano."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_020",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "A primeira alternativa reúne corretamente uma palavra com ch, uma com lh e uma com nh, nessa ordem.",
+        "A explicação e os feedbacks identificam corretamente os dígrafos e a ordem presente em cada alternativa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": ["Manter a validação humana antes da publicação."],
+      "humanApprovalRequired": true
+    },
+    {
+      "agent": "pedagogical_quality",
+      "workItemId": "2026t3v1_pt_encontros_ch_lh_nh_020",
+      "contentSetId": "2026-t3-v1",
+      "subjectId": "portugues",
+      "topicId": "encontros-ch-lh-nh",
+      "reviewPass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "A ordem solicitada está explicitada com clareza, e as explicações distinguem corretamente as sequências de letras."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Manter a redação atual e a validação humana antes da publicação."
+      ],
+      "humanApprovalRequired": true
+    }
+  ]
+}

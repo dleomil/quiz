@@ -1,0 +1,3634 @@
+/* Publicacao T3 de Portugues: seis temas aprovados. */
+(function () {
+  const publishedQuestions = [
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_001",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra está escrita corretamente?",
+    "options": [
+      "xave",
+      "chave",
+      "chavê",
+      "chavve"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chave é escrita com ch no início e sem acento.",
+    "wrongExplanations": {
+      "0": "A palavra chave começa com ch, não com x.",
+      "2": "Chave não recebe acento no final.",
+      "3": "Chave é escrita com um v."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_002",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra tem o dígrafo lh?",
+    "options": [
+      "tenha",
+      "telha",
+      "tenda",
+      "tela"
+    ],
+    "correctIndex": 1,
+    "explanation": "Telha contém as letras lh juntas, que representam um som.",
+    "wrongExplanations": {
+      "0": "Tenha é escrita com nh, não com lh.",
+      "2": "Tenda não tem o dígrafo lh.",
+      "3": "Tela é escrita sem h depois do l."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_003",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Complete a palavra: “O coe__o pulou no jardim.”",
+    "options": [
+      "nh",
+      "lh",
+      "ch",
+      "l"
+    ],
+    "correctIndex": 1,
+    "explanation": "Coelho é escrito com lh: c-o-e-l-h-o.",
+    "wrongExplanations": {
+      "0": "Com nh, a palavra ficaria coenho, que não é a grafia do animal.",
+      "2": "Com ch, a palavra ficaria coecho; a grafia correta é coelho.",
+      "3": "Sem o h, a palavra ficaria coelo; escreve-se coelho."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_004",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra completa a frase: “A ____ caiu durante a noite”?",
+    "options": [
+      "chuba",
+      "chuva",
+      "xuva",
+      "chuvaa"
+    ],
+    "correctIndex": 1,
+    "explanation": "A palavra que nomeia a água que cai das nuvens é chuva, escrita com ch.",
+    "wrongExplanations": {
+      "0": "A grafia correta é chuva, com v.",
+      "2": "Chuva começa com ch, não com x.",
+      "3": "A palavra chuva não tem dois a no final."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_005",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Em qual palavra as letras nh aparecem juntas?",
+    "options": [
+      "nilo",
+      "milho",
+      "ninho",
+      "lindo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ninho é escrito com nh no meio da palavra.",
+    "wrongExplanations": {
+      "0": "Nilo não tem h depois do n.",
+      "1": "Milho contém lh, não nh.",
+      "3": "Lindo não contém o dígrafo nh."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_006",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra completa corretamente a frase: “A ____ de couve caiu no chão”?",
+    "options": [
+      "folia",
+      "foia",
+      "folha",
+      "foilha"
+    ],
+    "correctIndex": 2,
+    "explanation": "Folha completa a frase e é escrita com lh entre as vogais.",
+    "wrongExplanations": {
+      "0": "Folia é uma palavra válida, mas não completa a frase; a parte da planta é a folha.",
+      "1": "A palavra é folha e precisa do dígrafo lh.",
+      "3": "Folha não tem i antes do lh."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_007",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Complete: “O passarinho fez um ____ no galho.”",
+    "options": [
+      "nilo",
+      "nicho",
+      "ninho",
+      "nino"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ninho é o lugar onde algumas aves colocam seus ovos.",
+    "wrongExplanations": {
+      "0": "Nilo não completa essa frase com o sentido esperado.",
+      "1": "Nicho tem outro significado e não é o abrigo feito pela ave nessa frase.",
+      "3": "A grafia correta é ninho, com nh."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_008",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra tem o dígrafo ch?",
+    "options": [
+      "casa",
+      "cesta",
+      "chave",
+      "sapo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chave tem as letras ch juntas no início.",
+    "wrongExplanations": {
+      "0": "Casa começa com c e não tem ch.",
+      "1": "Cesta começa com c e não tem ch.",
+      "3": "Sapo começa com s e não tem ch."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_009",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Escolha a forma escrita corretamente para completar a frase: “O menino ____ o chapéu.”",
+    "options": [
+      "alhou",
+      "anou",
+      "achou",
+      "achol"
+    ],
+    "correctIndex": 2,
+    "explanation": "Achou é uma forma do verbo achar e se escreve com ch.",
+    "wrongExplanations": {
+      "0": "Alhou não é a forma correta do verbo nessa frase.",
+      "1": "Anou não é a forma correta do verbo nessa frase.",
+      "3": "A forma correta é achou, com u no final."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_010",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra completa corretamente a frase: “A ____ botou um ovo no ninho”?",
+    "options": [
+      "galina",
+      "galhina",
+      "galhinha",
+      "galinha"
+    ],
+    "correctIndex": 3,
+    "explanation": "Galinha é escrita com nh entre as vogais.",
+    "wrongExplanations": {
+      "0": "A grafia correta é galinha, com nh.",
+      "1": "Em galinha, o h vem depois do n, não depois do l.",
+      "2": "Galhinha não é a grafia da ave da frase; escreve-se galinha, com nh."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_011",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Em qual palavra as letras lh aparecem juntas?",
+    "options": [
+      "minho",
+      "milo",
+      "micho",
+      "milho"
+    ],
+    "correctIndex": 3,
+    "explanation": "Milho é escrito com lh no meio da palavra.",
+    "wrongExplanations": {
+      "0": "Minho tem nh, não lh.",
+      "1": "Milo não tem h depois do l.",
+      "2": "Micho tem ch, não lh."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_012",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra completa: “A criança desenhou uma ____ no papel”?",
+    "options": [
+      "linia",
+      "linha",
+      "lhinia",
+      "lina"
+    ],
+    "correctIndex": 1,
+    "explanation": "Linha é escrita com nh entre as vogais.",
+    "wrongExplanations": {
+      "0": "A grafia correta é linha, com nh.",
+      "2": "Em linha, o n vem antes do h.",
+      "3": "Linha precisa do h depois do n."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_013",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra tem o dígrafo ch no meio?",
+    "options": [
+      "bico",
+      "bilho",
+      "binho",
+      "bicho"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bicho tem ch entre as vogais i e o.",
+    "wrongExplanations": {
+      "0": "Bico é escrito sem h depois do c.",
+      "1": "Bilho não é a grafia da palavra indicada; escreve-se bicho.",
+      "2": "Binho tem nh, não ch."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_014",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Complete: “A ____ está cheia de água.”",
+    "options": [
+      "colha",
+      "conha",
+      "conca",
+      "concha"
+    ],
+    "correctIndex": 3,
+    "explanation": "Concha é escrita com ch e pode nomear a parte dura de um molusco.",
+    "wrongExplanations": {
+      "0": "Colha é uma forma do verbo colher e não nomeia essa parte do molusco.",
+      "1": "Conha não é a grafia da palavra concha.",
+      "2": "Conca não tem o dígrafo ch da palavra concha."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_015",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra completa corretamente a frase: “O médico examinou minha ____”?",
+    "options": [
+      "oreia",
+      "orelhaa",
+      "oreilha",
+      "orelha"
+    ],
+    "correctIndex": 3,
+    "explanation": "Orelha é escrita com lh.",
+    "wrongExplanations": {
+      "0": "Oreia não completa a frase; para a parte do corpo, escreve-se orelha, com lh.",
+      "1": "Orelha não tem dois a no final.",
+      "2": "Orelha não tem i antes do lh."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_016",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra tem o dígrafo nh?",
+    "options": [
+      "sonho",
+      "solho",
+      "socho",
+      "sono"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sonho é escrito com nh no meio da palavra.",
+    "wrongExplanations": {
+      "1": "Solho tem lh e não é a palavra sonho.",
+      "2": "Socho tem ch e não é a palavra sonho.",
+      "3": "Sono não tem h depois do n."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_017",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual frase usa corretamente a palavra mochila?",
+    "options": [
+      "Guardei o livro na mochila.",
+      "Guardei o livro na mochilha.",
+      "Guardei o livro na monila.",
+      "Guardei o livro na mochia."
+    ],
+    "correctIndex": 0,
+    "explanation": "Mochila se escreve com ch entre as vogais.",
+    "wrongExplanations": {
+      "1": "A grafia correta é mochila, com ch, não mochilha.",
+      "2": "A palavra mochila não é escrita com n no meio.",
+      "3": "Mochila precisa do l antes do a."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_018",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra completa corretamente: “O ____ está no quintal”?",
+    "options": [
+      "coelho",
+      "coenho",
+      "coeio",
+      "coelhoa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Coelho é escrito com lh.",
+    "wrongExplanations": {
+      "1": "A grafia correta é coelho, com lh.",
+      "2": "Coelho não tem i antes do o final.",
+      "3": "Coelho não recebe a letra a no final."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_019",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual palavra está escrita corretamente?",
+    "options": [
+      "manhã",
+      "manhãa",
+      "manhãn",
+      "manhâ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Manhã é escrita com nh e til no a final.",
+    "wrongExplanations": {
+      "1": "A palavra manhã termina com ã, sem outro a depois.",
+      "2": "Manhã não tem n depois do ã.",
+      "3": "Manhã usa til no a, não acento circunflexo."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_encontros_ch_lh_nh_020",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "encontros-ch-lh-nh",
+    "question": "Qual alternativa reúne uma palavra com ch, uma com lh e uma com nh, nessa ordem?",
+    "options": [
+      "chuva, folha, ninho",
+      "chuva, linha, milho",
+      "telha, chuva, ninho",
+      "ninho, telha, chave"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chuva tem ch, folha tem lh e ninho tem nh.",
+    "wrongExplanations": {
+      "1": "A ordem está incorreta: chuva tem ch, linha tem nh e milho tem lh.",
+      "2": "A primeira palavra tem lh, não ch.",
+      "3": "A primeira palavra tem nh, não ch."
+    },
+    "skill": "reconhecer-e-escrever-palavras-com-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "encontros-ch-lh-nh"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras com ch, lh e nh"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_001",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Ontem, Ana ____ no parque.",
+    "options": [
+      "brinca",
+      "brincou",
+      "brincar",
+      "brincará"
+    ],
+    "correctIndex": 1,
+    "explanation": "Brincou indica uma ação que Ana realizou e concluiu ontem.",
+    "wrongExplanations": {
+      "0": "Brinca indica uma ação no presente.",
+      "2": "Brincar está no infinitivo, sem indicar quando a ação aconteceu.",
+      "3": "Brincará indica uma ação futura."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_002",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma completa a frase: “Pedro ____ a janela ontem”?",
+    "options": [
+      "abrirá",
+      "abrir",
+      "abriu",
+      "abre"
+    ],
+    "correctIndex": 2,
+    "explanation": "Abriu indica que Pedro realizou essa ação ontem.",
+    "wrongExplanations": {
+      "0": "Abrirá indica uma ação futura.",
+      "1": "Abrir está no infinitivo.",
+      "3": "Abre indica uma ação no presente."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_003",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma apresenta uma ação concluída na frase “Na semana passada, nós ____ um desenho”?",
+    "options": [
+      "desenharemos",
+      "desenhar",
+      "desenhávamos",
+      "desenhamos"
+    ],
+    "correctIndex": 3,
+    "explanation": "Desenhamos, acompanhado de “na semana passada”, indica a ação concluída naquele período.",
+    "wrongExplanations": {
+      "0": "Desenharemos indica uma ação futura.",
+      "1": "Desenhar está no infinitivo.",
+      "2": "Desenhávamos indica uma ação habitual ou em andamento no passado."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_004",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual frase apresenta uma ação concluída no passado?",
+    "options": [
+      "As crianças correram no pátio.",
+      "As crianças correm no pátio.",
+      "As crianças correrão no pátio.",
+      "As crianças corriam no pátio."
+    ],
+    "correctIndex": 0,
+    "explanation": "Correram apresenta a ação como concluída no passado.",
+    "wrongExplanations": {
+      "1": "Correm indica uma ação no presente.",
+      "2": "Correrão indica uma ação futura.",
+      "3": "Corriam apresenta uma ação passada habitual ou em andamento."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_005",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Complete: “Ontem, eu ____ uma história para minha irmã.”",
+    "options": [
+      "lerei",
+      "leio",
+      "ler",
+      "li"
+    ],
+    "correctIndex": 3,
+    "explanation": "Li indica que a leitura aconteceu e foi concluída ontem.",
+    "wrongExplanations": {
+      "0": "Lerei indica uma leitura futura.",
+      "1": "Leio indica uma ação no presente.",
+      "2": "Ler está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_006",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual palavra da frase indica uma ação concluída: “Bia ganhou uma bola no domingo passado”?",
+    "options": [
+      "domingo",
+      "ganhou",
+      "bola",
+      "uma"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ganhou é a forma verbal que apresenta a ação concluída no passado.",
+    "wrongExplanations": {
+      "0": "Domingo indica quando a ação aconteceu, mas não é o verbo.",
+      "2": "Bola nomeia o objeto recebido, não a ação.",
+      "3": "Uma acompanha o substantivo bola e não indica ação."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_007",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Ontem, eles ____ cedo para a escola.",
+    "options": [
+      "chegam",
+      "chegar",
+      "chegaram",
+      "chegarão"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chegaram indica que a chegada à escola foi concluída ontem.",
+    "wrongExplanations": {
+      "0": "Chegam está no presente.",
+      "1": "Chegar está no infinitivo.",
+      "3": "Chegarão indica uma ação futura."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_008",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Na frase “A turma terminou a tarefa”, qual forma verbal indica a ação concluída?",
+    "options": [
+      "terminou",
+      "termina",
+      "terminará",
+      "terminar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Terminou apresenta a tarefa como concluída.",
+    "wrongExplanations": {
+      "1": "Termina indica uma ação no presente.",
+      "2": "Terminará indica uma ação futura.",
+      "3": "Terminar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_009",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma apresenta uma ação concluída na frase “Quando a campainha tocou, eu ____ a porta”?",
+    "options": [
+      "fecharei",
+      "fecho",
+      "fechei",
+      "fechava"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fechei indica uma ação que foi concluída naquele momento passado.",
+    "wrongExplanations": {
+      "0": "Fecharei indica uma ação futura.",
+      "1": "Fecho indica uma ação no presente.",
+      "3": "Fechava apresenta uma ação passada em andamento ou habitual."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_010",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma do verbo beber está no pretérito perfeito na frase “Marcos bebeu água”?",
+    "options": [
+      "beber",
+      "bebe",
+      "bebia",
+      "bebeu"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bebeu indica a ação concluída de beber no passado.",
+    "wrongExplanations": {
+      "0": "Beber está no infinitivo.",
+      "1": "Bebe está no presente.",
+      "2": "Bebia apresenta uma ação passada habitual ou em andamento."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_011",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Complete: “Ontem, vocês ____ para a prova.”",
+    "options": [
+      "estudam",
+      "estudaram",
+      "estudarão",
+      "estudar"
+    ],
+    "correctIndex": 1,
+    "explanation": "Estudaram indica que a ação foi realizada ontem.",
+    "wrongExplanations": {
+      "0": "Estudam indica uma ação no presente.",
+      "2": "Estudarão indica uma ação futura.",
+      "3": "Estudar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_012",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual frase relata uma ação concluída?",
+    "options": [
+      "Hoje, Rui desenha um mapa.",
+      "Amanhã, Rui desenhará um mapa.",
+      "Ontem, Rui desenhou um mapa.",
+      "Rui desenhava mapas quando era menor."
+    ],
+    "correctIndex": 2,
+    "explanation": "Desenhou relata uma ação concluída ontem.",
+    "wrongExplanations": {
+      "0": "Desenha está no presente.",
+      "1": "Desenhará está no futuro.",
+      "3": "Desenhava apresenta uma ação habitual ou em andamento no passado."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_013",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Na frase “A professora explicou a atividade”, qual palavra apresenta a ação concluída?",
+    "options": [
+      "professora",
+      "explicou",
+      "atividade",
+      "a"
+    ],
+    "correctIndex": 1,
+    "explanation": "Explicou é o verbo que indica a ação realizada pela professora.",
+    "wrongExplanations": {
+      "0": "Professora nomeia quem realizou a ação.",
+      "2": "Atividade nomeia aquilo que foi explicado.",
+      "3": "A acompanha o substantivo atividade e não indica a ação."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_014",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma apresenta uma ação concluída na frase “No sábado passado, a turma ____ o museu da cidade”?",
+    "options": [
+      "visitará",
+      "visita",
+      "visitava",
+      "visitou"
+    ],
+    "correctIndex": 3,
+    "explanation": "Visitou indica uma visita concluída no sábado passado.",
+    "wrongExplanations": {
+      "0": "Visitará indica uma ação futura.",
+      "1": "Visita indica uma ação no presente.",
+      "2": "Visitava apresenta uma ação passada habitual ou em andamento."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_015",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Na frase “Luiza recebeu um bilhete”, qual forma verbal indica uma ação concluída?",
+    "options": [
+      "recebeu",
+      "recebe",
+      "receber",
+      "receberá"
+    ],
+    "correctIndex": 0,
+    "explanation": "Recebeu indica que Luiza já recebeu o bilhete.",
+    "wrongExplanations": {
+      "1": "Recebe está no presente.",
+      "2": "Receber está no infinitivo.",
+      "3": "Receberá indica uma ação futura."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_016",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma apresenta como concluída a viagem da família: “A família ____ de manhã e chegou à tarde”?",
+    "options": [
+      "viajará",
+      "viaja",
+      "viajou",
+      "viajava"
+    ],
+    "correctIndex": 2,
+    "explanation": "Viajou indica a ação concluída antes de a família chegar.",
+    "wrongExplanations": {
+      "0": "Viajará indica uma ação futura.",
+      "1": "Viaja indica uma ação no presente.",
+      "3": "Viajava apresenta uma ação passada habitual ou em andamento."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_017",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual forma do verbo correr apresenta uma ação concluída na frase “Ontem, João ____ na pista”?",
+    "options": [
+      "corria",
+      "correu",
+      "corre",
+      "correrá"
+    ],
+    "correctIndex": 1,
+    "explanation": "Correu indica uma corrida concluída ontem.",
+    "wrongExplanations": {
+      "0": "Corria apresenta uma ação passada habitual ou em andamento.",
+      "2": "Corre indica uma ação no presente.",
+      "3": "Correrá indica uma ação futura."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_018",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Ontem, nós ____ um bolo para a festa.",
+    "options": [
+      "fizemos",
+      "fazemos",
+      "faremos",
+      "fazer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fizemos indica uma ação concluída no passado.",
+    "wrongExplanations": {
+      "1": "Fazemos indica uma ação no presente.",
+      "2": "Faremos indica uma ação futura.",
+      "3": "Fazer está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_019",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Qual frase está no pretérito perfeito?",
+    "options": [
+      "A menina pintará um quadro.",
+      "A menina pinta um quadro.",
+      "A menina pintava um quadro.",
+      "A menina pintou um quadro."
+    ],
+    "correctIndex": 3,
+    "explanation": "Pintou apresenta a ação como concluída no passado.",
+    "wrongExplanations": {
+      "0": "Pintará indica uma ação futura.",
+      "1": "Pinta indica uma ação no presente.",
+      "2": "Pintava indica uma ação passada habitual ou em andamento."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_preterito_perfeito_020",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "preterito-perfeito",
+    "question": "Complete: “Ontem, a turma ____ uma música na apresentação.”",
+    "options": [
+      "cantou",
+      "canta",
+      "cantará",
+      "cantar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cantou indica a ação concluída na apresentação de ontem.",
+    "wrongExplanations": {
+      "1": "Canta indica uma ação no presente.",
+      "2": "Cantará indica uma ação futura.",
+      "3": "Cantar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-concluidas-no-preterito-perfeito",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "preterito-perfeito"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Pretérito perfeito"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_001",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Na palavra desatar, o prefixo des- indica que alguém vai:",
+    "options": [
+      "soltar o que foi amarrado",
+      "dar um nó mais forte",
+      "cortar uma corda em pedaços",
+      "guardar a corda"
+    ],
+    "correctIndex": 0,
+    "explanation": "Desatar é soltar ou desfazer um nó.",
+    "wrongExplanations": {
+      "1": "Desatar é o contrário de apertar ou fazer um nó.",
+      "2": "Cortar uma corda não é o sentido de desatar.",
+      "3": "Guardar a corda não explica o sentido de desatar."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_002",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Em “desobedecer a uma regra”, o prefixo des- ajuda a indicar:",
+    "options": [
+      "obedecer com atenção",
+      "não obedecer",
+      "escrever a regra",
+      "lembrar a regra"
+    ],
+    "correctIndex": 1,
+    "explanation": "Desobedecer significa não cumprir ou não seguir uma regra.",
+    "wrongExplanations": {
+      "0": "Desobedecer não significa obedecer; o prefixo muda o sentido.",
+      "2": "Escrever a regra é uma ação diferente de obedecer ou desobedecer.",
+      "3": "Lembrar a regra não explica o sentido do verbo desobedecer."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_003",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Se desentupimos o ralo, o que fazemos?",
+    "options": [
+      "colocamos mais água no ralo",
+      "fechamos o ralo com uma tampa",
+      "retiramos o que estava bloqueando a passagem",
+      "limpamos apenas a parte de fora"
+    ],
+    "correctIndex": 2,
+    "explanation": "Desentupir é retirar aquilo que impedia a passagem pelo ralo.",
+    "wrongExplanations": {
+      "0": "Colocar água não garante que a passagem bloqueada seja liberada.",
+      "1": "Fechar o ralo não remove o que o estava bloqueando.",
+      "3": "Limpar só a parte de fora não significa desentupir o ralo."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_004",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "A palavra desleal descreve alguém que não age com lealdade. Nela, des- indica:",
+    "options": [
+      "muito leal",
+      "que está aprendendo a ser leal",
+      "que age com coragem",
+      "falta ou ausência de lealdade"
+    ],
+    "correctIndex": 3,
+    "explanation": "Em desleal, des- indica falta de lealdade.",
+    "wrongExplanations": {
+      "0": "Desleal não significa muito leal; o prefixo altera o sentido.",
+      "1": "A palavra não indica uma pessoa que está aprendendo.",
+      "2": "Coragem e lealdade têm sentidos diferentes."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_005",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Ao descalçar os sapatos, uma pessoa vai:",
+    "options": [
+      "tirar os sapatos dos pés",
+      "amarrar os cadarços",
+      "limpar os sapatos",
+      "experimentar outro par"
+    ],
+    "correctIndex": 0,
+    "explanation": "Descalçar significa tirar o calçado dos pés.",
+    "wrongExplanations": {
+      "1": "Amarrar os cadarços não é tirar os sapatos.",
+      "2": "Limpar o calçado é uma ação diferente de descalçá-lo.",
+      "3": "Experimentar outro par não indica o sentido de descalçar."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_006",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Qual palavra indica retirar a tampa de uma garrafa?",
+    "options": [
+      "tampar",
+      "destampar",
+      "tampado",
+      "tampa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Destampar é tirar a tampa.",
+    "wrongExplanations": {
+      "0": "Tampar é colocar ou manter uma tampa, não retirá-la.",
+      "2": "Tampado descreve algo que está com tampa.",
+      "3": "Tampa nomeia a peça, não a ação de tirá-la."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_007",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Se uma caixa está desarrumada, ela está:",
+    "options": [
+      "organizada por tamanho",
+      "guardada no armário",
+      "fora de ordem",
+      "vazia por dentro"
+    ],
+    "correctIndex": 2,
+    "explanation": "Desarrumada significa que não está arrumada ou está fora de ordem.",
+    "wrongExplanations": {
+      "0": "Organizar por tamanho é uma forma de arrumar.",
+      "1": "Estar no armário não informa se a caixa está arrumada.",
+      "3": "Uma caixa pode estar desarrumada sem estar vazia."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_008",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Em “desnecessário”, o prefixo des- ajuda a indicar que algo:",
+    "options": [
+      "é necessário para todos",
+      "é muito importante",
+      "deve ser feito agora",
+      "não é necessário"
+    ],
+    "correctIndex": 3,
+    "explanation": "Desnecessário significa que não é necessário.",
+    "wrongExplanations": {
+      "0": "Desnecessário expressa a ideia contrária a necessário.",
+      "1": "Ser importante não é o significado de desnecessário.",
+      "2": "A palavra não indica quando algo deve ser feito."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_009",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Qual palavra é formada com des- e indica fazer o contrário de montar?",
+    "options": [
+      "montagem",
+      "montador",
+      "montado",
+      "desmontar"
+    ],
+    "correctIndex": 3,
+    "explanation": "Desmontar é separar as partes de algo que estava montado.",
+    "wrongExplanations": {
+      "0": "Montagem é o ato ou resultado de montar.",
+      "1": "Montador é quem monta ou uma ferramenta, não a ação contrária.",
+      "2": "Montado indica algo que já foi montado."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_010",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Ao desacelerar a bicicleta, o ciclista vai:",
+    "options": [
+      "soltar o guidão",
+      "diminuir a velocidade",
+      "parar de pedalar para sempre",
+      "trocar o pneu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Desacelerar é diminuir a velocidade.",
+    "wrongExplanations": {
+      "0": "Soltar o guidão não é diminuir a velocidade da bicicleta.",
+      "2": "Diminuir a velocidade não significa que o ciclista nunca mais pedalará.",
+      "3": "Trocar o pneu não explica o sentido de desacelerar."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_011",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Qual descrição mostra materiais desorganizados?",
+    "options": [
+      "cada material guardado em sua caixa identificada",
+      "lápis e cadernos misturados sobre a mesa, sem lugar certo",
+      "livros separados nas prateleiras por assunto",
+      "cada objeto colocado no espaço marcado para ele"
+    ],
+    "correctIndex": 1,
+    "explanation": "Materiais misturados e sem lugar certo estão fora de ordem.",
+    "wrongExplanations": {
+      "0": "Caixas identificadas ajudam a guardar cada material de forma organizada.",
+      "2": "Separar os livros por assunto mostra organização.",
+      "3": "Colocar cada objeto no espaço marcado mantém os materiais organizados."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_012",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Ao descolar um adesivo do caderno, a pessoa vai:",
+    "options": [
+      "colar outro adesivo por cima",
+      "desenhar no adesivo",
+      "tirar o adesivo da superfície",
+      "guardar o caderno"
+    ],
+    "correctIndex": 2,
+    "explanation": "Descolar é separar algo que estava colado.",
+    "wrongExplanations": {
+      "0": "Colar outro adesivo não retira o que já estava colado.",
+      "1": "Desenhar no adesivo não significa descolá-lo.",
+      "3": "Guardar o caderno não informa se o adesivo foi retirado."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_013",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "O que acontece quando alguém desenterra uma caixa?",
+    "options": [
+      "retira a caixa da terra",
+      "pinta a caixa",
+      "coloca a caixa dentro da terra",
+      "abre a caixa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Desenterrar é tirar algo que estava enterrado.",
+    "wrongExplanations": {
+      "1": "Pintar a caixa não diz onde ela estava.",
+      "2": "Colocar na terra é enterrar, não desenterrar.",
+      "3": "Abrir a caixa não significa retirá-la da terra."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_014",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Se o desenho desbotou com o tempo, suas cores:",
+    "options": [
+      "perderam parte da intensidade",
+      "ficaram mais fortes",
+      "foram pintadas de novo",
+      "mudaram para outra folha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Desbotar significa perder parte da cor ou da intensidade da cor.",
+    "wrongExplanations": {
+      "1": "Desbotar não significa que as cores ficaram mais fortes.",
+      "2": "Pintar de novo é uma ação diferente de desbotar.",
+      "3": "As cores não mudam de folha quando o desenho desbota."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_015",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Em “desfazer um laço”, desfazer significa:",
+    "options": [
+      "apertar o laço",
+      "fazer outro laço",
+      "soltar ou reverter o que foi feito",
+      "escolher uma fita"
+    ],
+    "correctIndex": 2,
+    "explanation": "Desfazer um laço é soltar ou reverter aquilo que tinha sido feito.",
+    "wrongExplanations": {
+      "0": "Apertar o laço não é desfazê-lo.",
+      "1": "Fazer outro laço é uma ação diferente.",
+      "3": "Escolher uma fita não explica o significado de desfazer."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_016",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Se um brinquedo está desprotegido, isso quer dizer que ele:",
+    "options": [
+      "está bem guardado",
+      "ganhou uma proteção nova",
+      "está limpo",
+      "não está protegido"
+    ],
+    "correctIndex": 3,
+    "explanation": "Desprotegido significa que não está protegido.",
+    "wrongExplanations": {
+      "0": "Um brinquedo guardado pode estar protegido.",
+      "1": "Ganhar uma proteção nova não significa estar sem proteção.",
+      "2": "Estar limpo não informa se o brinquedo está protegido."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_017",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Ao descascar uma laranja, o que fazemos?",
+    "options": [
+      "retiramos a casca",
+      "colocamos a laranja na casca",
+      "cortamos a laranja em rodelas",
+      "lavamos a fruta"
+    ],
+    "correctIndex": 0,
+    "explanation": "Descascar é tirar a casca de uma fruta ou de outro alimento.",
+    "wrongExplanations": {
+      "1": "A casca é retirada; não colocamos a laranja dentro dela.",
+      "2": "Cortar em rodelas é diferente de tirar a casca.",
+      "3": "Lavar a fruta não é o mesmo que descascá-la."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_018",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Em “desligar a televisão”, o prefixo des- indica que a pessoa vai:",
+    "options": [
+      "aumentar o volume",
+      "interromper o funcionamento",
+      "trocar de canal",
+      "limpar a tela"
+    ],
+    "correctIndex": 1,
+    "explanation": "Desligar é interromper o funcionamento de um aparelho ligado.",
+    "wrongExplanations": {
+      "0": "Aumentar o volume não desliga a televisão.",
+      "2": "Trocar de canal mantém a televisão funcionando.",
+      "3": "Limpar a tela é uma ação diferente de desligar o aparelho."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_019",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Qual palavra indica desfazer uma costura?",
+    "options": [
+      "costureira",
+      "costurado",
+      "costurar",
+      "descosturar"
+    ],
+    "correctIndex": 3,
+    "explanation": "Descosturar é desfazer os pontos de uma costura.",
+    "wrongExplanations": {
+      "0": "Costureira é a pessoa que costura.",
+      "1": "Costurado descreve algo que recebeu uma costura.",
+      "2": "Costurar é fazer a costura, não desfazê-la."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_prefixo_des_020",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "prefixo-des",
+    "question": "Ao desabotoar a camisa, uma pessoa vai:",
+    "options": [
+      "abotoar a camisa",
+      "lavar a camisa",
+      "abrir os botões que estavam fechados",
+      "pendurar a camisa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Desabotoar é abrir ou soltar os botões que estavam abotoados.",
+    "wrongExplanations": {
+      "0": "Abotoar é fechar os botões, o contrário de desabotoar.",
+      "1": "Lavar a camisa não indica o que se faz com os botões.",
+      "3": "Pendurar a camisa é uma ação diferente de desabotoá-la."
+    },
+    "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "prefixo-des"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Palavras iniciadas por des-"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_001",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo brincar está no futuro do presente?",
+    "options": [
+      "brincará",
+      "brinca",
+      "brincou",
+      "brincar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Brincará é a forma do futuro do presente para ele ou ela.",
+    "wrongExplanations": {
+      "1": "Brinca está no presente.",
+      "2": "Brincou está no passado.",
+      "3": "Brincar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_002",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "No futuro do presente, como fica o verbo cantar para nós?",
+    "options": [
+      "cantávamos",
+      "cantaremos",
+      "cantamos",
+      "cantar"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cantaremos é a forma do futuro do presente para nós.",
+    "wrongExplanations": {
+      "0": "Cantávamos está no passado.",
+      "2": "Cantamos não é a forma do futuro do presente pedida neste item.",
+      "3": "Cantar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_003",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Na frase “Amanhã, Miguel escreverá um bilhete”, qual palavra é o verbo no futuro?",
+    "options": [
+      "amanhã",
+      "Miguel",
+      "escreverá",
+      "bilhete"
+    ],
+    "correctIndex": 2,
+    "explanation": "Escreverá é o verbo que expressa a ação futura de escrever.",
+    "wrongExplanations": {
+      "0": "Amanhã indica quando a ação ocorrerá, mas não é o verbo.",
+      "1": "Miguel nomeia quem fará a ação.",
+      "3": "Bilhete nomeia aquilo que será escrito."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_004",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual é a forma do futuro do presente do verbo partir para eles?",
+    "options": [
+      "partiram",
+      "partem",
+      "partir",
+      "partirão"
+    ],
+    "correctIndex": 3,
+    "explanation": "Partirão é a forma do futuro do presente para eles ou elas.",
+    "wrongExplanations": {
+      "0": "Partiram está no passado.",
+      "1": "Partem está no presente.",
+      "2": "Partir está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_005",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual frase usa o futuro do presente do verbo dançar?",
+    "options": [
+      "A menina dançará na festa.",
+      "A menina dança na festa.",
+      "A menina dançou na festa.",
+      "A menina gosta de dançar."
+    ],
+    "correctIndex": 0,
+    "explanation": "Dançará está no futuro do presente e indica uma ação posterior.",
+    "wrongExplanations": {
+      "1": "Dança está no presente.",
+      "2": "Dançou está no passado.",
+      "3": "Dançar está no infinitivo, acompanhado do verbo gosta."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_006",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo comer completa “Eu ____” no futuro do presente?",
+    "options": [
+      "comia",
+      "comerei",
+      "como",
+      "comer"
+    ],
+    "correctIndex": 1,
+    "explanation": "Comerei está no futuro do presente e indica uma ação que eu farei depois.",
+    "wrongExplanations": {
+      "0": "Comia está no passado.",
+      "2": "Como está no presente.",
+      "3": "Comer está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_007",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Complete escolhendo o futuro do presente de trazer: “Na próxima semana, vocês ____ os materiais.”",
+    "options": [
+      "trazer",
+      "trouxeram",
+      "trarão",
+      "trazem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trarão é o futuro do presente do verbo trazer para vocês.",
+    "wrongExplanations": {
+      "0": "Trazer está no infinitivo.",
+      "1": "Trouxeram está no passado.",
+      "3": "Trazem está no presente."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_008",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Na frase “A equipe chegará mais tarde”, o verbo chegará indica uma ação:",
+    "options": [
+      "que acontece agora",
+      "que ocorreu antes",
+      "que se repete sempre",
+      "que acontecerá depois"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chegará está no futuro do presente e indica uma ação posterior.",
+    "wrongExplanations": {
+      "0": "Chegará não está no presente.",
+      "1": "Chegará não está no passado.",
+      "2": "A frase não diz que a chegada se repete."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_009",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo fazer está no futuro do presente para ele ou ela?",
+    "options": [
+      "fará",
+      "fez",
+      "faz",
+      "faria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fará é o futuro do presente do verbo fazer para ele ou ela.",
+    "wrongExplanations": {
+      "1": "Fez está no passado.",
+      "2": "Faz está no presente.",
+      "3": "Faria está no futuro do pretérito, não no futuro do presente."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_010",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual palavra completa a frase no futuro do presente: “Amanhã, eu ____ um plano para a viagem”?",
+    "options": [
+      "planejei",
+      "planejarei",
+      "planejo",
+      "planejar"
+    ],
+    "correctIndex": 1,
+    "explanation": "Planejarei está no futuro do presente e combina com “amanhã”, pois indica uma ação que eu farei depois.",
+    "wrongExplanations": {
+      "0": "Planejei está no passado.",
+      "2": "Planejo está no presente.",
+      "3": "Planejar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_011",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo ser está no futuro do presente para nós?",
+    "options": [
+      "somos",
+      "éramos",
+      "seremos",
+      "ser"
+    ],
+    "correctIndex": 2,
+    "explanation": "Seremos é o futuro do presente do verbo ser para nós.",
+    "wrongExplanations": {
+      "0": "Somos está no presente.",
+      "1": "Éramos está no passado.",
+      "3": "Ser está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_012",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual frase apresenta o verbo viajar no futuro do presente para elas?",
+    "options": [
+      "Elas viajaram nas férias.",
+      "Elas viajam nas férias.",
+      "Elas gostam de viajar.",
+      "Elas viajarão nas férias."
+    ],
+    "correctIndex": 3,
+    "explanation": "Viajarão é o futuro do presente de viajar para elas.",
+    "wrongExplanations": {
+      "0": "Viajaram está no passado.",
+      "1": "Viajam está no presente.",
+      "2": "Viajar está no infinitivo, acompanhado do verbo gostam."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_013",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo aparecer completa a frase no futuro do presente: “O sol ____ no horizonte”?",
+    "options": [
+      "aparecerá",
+      "apareceu",
+      "aparece",
+      "aparecer"
+    ],
+    "correctIndex": 0,
+    "explanation": "O sol é tratado no singular, e aparecerá está no futuro do presente.",
+    "wrongExplanations": {
+      "1": "Apareceu está no passado.",
+      "2": "Aparece está no presente.",
+      "3": "Aparecer está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_014",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Escolha a forma do futuro do presente de comprar para eles: “Eles ____ os ingressos.”",
+    "options": [
+      "compraram",
+      "comprarão",
+      "compram",
+      "comprar"
+    ],
+    "correctIndex": 1,
+    "explanation": "Comprarão é a forma do futuro do presente para eles ou elas.",
+    "wrongExplanations": {
+      "0": "Compraram está no passado.",
+      "2": "Compram está no presente.",
+      "3": "Comprar está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_015",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo correr está no futuro do presente?",
+    "options": [
+      "corria",
+      "correu",
+      "correrá",
+      "correr"
+    ],
+    "correctIndex": 2,
+    "explanation": "Correrá está no futuro do presente para ele ou ela.",
+    "wrongExplanations": {
+      "0": "Corria está no passado.",
+      "1": "Correu está no passado.",
+      "3": "Correr está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_016",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo ter está no futuro do presente para ela?",
+    "options": [
+      "tem",
+      "tinha",
+      "ter",
+      "terá"
+    ],
+    "correctIndex": 3,
+    "explanation": "Terá é o futuro do presente do verbo ter para ela.",
+    "wrongExplanations": {
+      "0": "Tem está no presente.",
+      "1": "Tinha está no passado.",
+      "2": "Ter está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_017",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "O que a forma verbal “construiremos” expressa?",
+    "options": [
+      "uma ação que nós faremos depois",
+      "uma ação que já fizemos",
+      "uma ação que fazemos agora",
+      "o nome de uma construção"
+    ],
+    "correctIndex": 0,
+    "explanation": "Construiremos está no futuro do presente para nós.",
+    "wrongExplanations": {
+      "1": "Construiremos não está no passado.",
+      "2": "Construiremos não está no presente.",
+      "3": "Construiremos é um verbo, não o nome de uma construção."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_018",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Complete no futuro do presente do verbo vir: “Amanhã, eles ____ visitar a escola.”",
+    "options": [
+      "vieram",
+      "virão",
+      "vêm",
+      "vir"
+    ],
+    "correctIndex": 1,
+    "explanation": "Virão é o futuro do presente do verbo vir para eles.",
+    "wrongExplanations": {
+      "0": "Vieram está no passado.",
+      "2": "Vêm está no presente.",
+      "3": "Vir está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_019",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual é o futuro do presente do verbo dormir para nós?",
+    "options": [
+      "dorme",
+      "dormiram",
+      "dormiremos",
+      "dormir"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dormiremos é a forma do futuro do presente para nós.",
+    "wrongExplanations": {
+      "0": "Dorme está no presente.",
+      "1": "Dormiram está no passado.",
+      "3": "Dormir está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_futuro_020",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "futuro",
+    "question": "Qual forma do verbo ver está no futuro do presente para vocês?",
+    "options": [
+      "veem",
+      "viram",
+      "ver",
+      "verão"
+    ],
+    "correctIndex": 3,
+    "explanation": "Verão é o futuro do presente do verbo ver para vocês.",
+    "wrongExplanations": {
+      "0": "Veem está no presente.",
+      "1": "Viram está no passado.",
+      "2": "Ver está no infinitivo."
+    },
+    "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "futuro"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Futuro do presente"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_001",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "Complete com a grafia correta: “No calor, o ____ derrete.”",
+    "options": [
+      "gelo",
+      "jelo",
+      "gello",
+      "gilu"
+    ],
+    "correctIndex": 0,
+    "explanation": "A grafia correta é gelo, com g antes de e.",
+    "wrongExplanations": {
+      "1": "A palavra gelo é escrita com g, não com j.",
+      "2": "Gelo não leva dois l.",
+      "3": "A grafia correta da palavra é gelo."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_002",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A ____ tem pescoço comprido. Qual grafia completa a frase?",
+    "options": [
+      "jirafa",
+      "girafa",
+      "girrafa",
+      "gerafa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Girafa se escreve com g antes de i.",
+    "wrongExplanations": {
+      "0": "A grafia correta de girafa começa com g.",
+      "2": "Girafa é escrita com um r no meio da palavra.",
+      "3": "A primeira sílaba da palavra é gi, não ge."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_003",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "O pião começou a ____ no chão. Escolha a grafia correta.",
+    "options": [
+      "jirar",
+      "girir",
+      "girar",
+      "girrar"
+    ],
+    "correctIndex": 2,
+    "explanation": "Girar se escreve com g antes de i e significa dar voltas.",
+    "wrongExplanations": {
+      "0": "O verbo girar é escrito com g, não com j.",
+      "1": "A forma correta é girar, com a na última sílaba.",
+      "3": "Girar é escrito com um r no meio da palavra."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_004",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "Muita ____ aguardava a entrada do cinema. Qual grafia está correta?",
+    "options": [
+      "jente",
+      "genti",
+      "guente",
+      "gente"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gente se escreve com g antes de e.",
+    "wrongExplanations": {
+      "0": "A palavra gente começa com g, não com j.",
+      "1": "A grafia correta termina com te: gente.",
+      "2": "Gente não se escreve com gu."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_005",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A comida ficou guardada na ____. Marque a grafia correta.",
+    "options": [
+      "geladeira",
+      "jeladeira",
+      "geledeira",
+      "geladera"
+    ],
+    "correctIndex": 0,
+    "explanation": "Geladeira se escreve com g e tem a sílaba ge no início.",
+    "wrongExplanations": {
+      "1": "A palavra geladeira começa com g, não com j.",
+      "2": "A grafia correta é geladeira, com a sílaba dei.",
+      "3": "Geladeira termina com eira."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_006",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A sopa foi servida em uma ____. Escolha a palavra com a grafia correta.",
+    "options": [
+      "tijela",
+      "tigela",
+      "tigella",
+      "tegela"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tigela se escreve com g antes de e.",
+    "wrongExplanations": {
+      "0": "A grafia correta de tigela usa g, não j.",
+      "2": "Tigela é escrita com um l só.",
+      "3": "A primeira sílaba é ti, e a palavra se escreve tigela."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_007",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "Escrevi o horário da consulta na ____. Qual grafia completa a frase?",
+    "options": [
+      "ajenda",
+      "aginda",
+      "agenda",
+      "agênda"
+    ],
+    "correctIndex": 2,
+    "explanation": "Agenda se escreve com g antes de e.",
+    "wrongExplanations": {
+      "0": "Agenda se escreve com g antes de e.",
+      "1": "Na grafia agenda, usa-se e depois do g.",
+      "3": "Agenda não recebe acento circunflexo."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_008",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "Para escapar do perigo, o animal precisou ____. Escolha a grafia correta.",
+    "options": [
+      "fujir",
+      "fugír",
+      "fugirr",
+      "fugir"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fugir se escreve com g antes de i e não leva acento.",
+    "wrongExplanations": {
+      "0": "Fugir é escrito com g, não com j.",
+      "1": "Fugir não recebe acento agudo.",
+      "2": "O verbo é escrito com um r no final: fugir."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_009",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "Dentro do ovo está a ____. Marque a grafia correta.",
+    "options": [
+      "gema",
+      "jema",
+      "gima",
+      "gemma"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gema se escreve com g antes de e.",
+    "wrongExplanations": {
+      "1": "A palavra gema começa com g, não com j.",
+      "2": "A palavra correta é gema, com e depois do g.",
+      "3": "Gema é escrita com um m só."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_010",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "O chá pode ser preparado com ____. Escolha a grafia correta.",
+    "options": [
+      "genjibre",
+      "gengibre",
+      "jengibre",
+      "gengibra"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gengibre se escreve com g antes de e e de i.",
+    "wrongExplanations": {
+      "0": "Em gengibre, usa-se g antes de i, não j.",
+      "2": "Gengibre começa com g, não com j.",
+      "3": "A palavra é gengibre, com e no final."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_011",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "O ____ é uma flor com pétalas amarelas. Qual grafia está correta?",
+    "options": [
+      "jirassol",
+      "gerassol",
+      "girassol",
+      "girassou"
+    ],
+    "correctIndex": 2,
+    "explanation": "Girassol se escreve com g antes de i e termina com ol.",
+    "wrongExplanations": {
+      "0": "Girassol começa com g, não com j.",
+      "1": "Girassol começa com gi, não ge.",
+      "3": "A palavra correta termina com ol: girassol."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_012",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A turma visitou o ____ novo do bairro. Marque a grafia correta.",
+    "options": [
+      "colegio",
+      "coléjio",
+      "colégeo",
+      "colégio"
+    ],
+    "correctIndex": 3,
+    "explanation": "Colégio se escreve com g antes de i e leva acento agudo no é.",
+    "wrongExplanations": {
+      "0": "Colégio leva acento agudo no é.",
+      "1": "A palavra colégio é escrita com g, não com j.",
+      "2": "A palavra se escreve colégio, com i depois do g."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_013",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A ____ explica o que cada símbolo do mapa significa. Qual é a grafia correta?",
+    "options": [
+      "legenda",
+      "lejenda",
+      "legênda",
+      "ligenda"
+    ],
+    "correctIndex": 0,
+    "explanation": "Legenda se escreve com g antes de e.",
+    "wrongExplanations": {
+      "1": "A palavra legenda é escrita com g, não com j.",
+      "2": "Legenda não leva acento circunflexo.",
+      "3": "A primeira sílaba é le, não li: legenda."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_014",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "Escovar os dentes faz parte da ____. Escolha a grafia correta.",
+    "options": [
+      "hijiene",
+      "higiene",
+      "higiêne",
+      "higene"
+    ],
+    "correctIndex": 1,
+    "explanation": "Higiene é escrita com g na sílaba gi.",
+    "wrongExplanations": {
+      "0": "Higiene é escrita com g, não com j.",
+      "2": "A palavra higiene não leva acento circunflexo.",
+      "3": "Depois de hi, a palavra higiene tem a sílaba gi."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_015",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "O cachorro soltou um ____ baixo ao se machucar. Qual grafia está correta?",
+    "options": [
+      "jemido",
+      "gemído",
+      "gemido",
+      "gimido"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gemido se escreve com g antes de e e não leva acento.",
+    "wrongExplanations": {
+      "0": "A grafia correta começa com g: gemido.",
+      "1": "Gemido não leva acento agudo.",
+      "3": "A primeira sílaba é ge, não gi."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_016",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "O livro conta uma história de ____. Marque a grafia correta.",
+    "options": [
+      "majia",
+      "magía",
+      "maguia",
+      "magia"
+    ],
+    "correctIndex": 3,
+    "explanation": "Magia se escreve com g antes de i e não leva acento.",
+    "wrongExplanations": {
+      "0": "A grafia correta de magia usa g, não j.",
+      "1": "Magia não leva acento agudo.",
+      "2": "A palavra magia não tem u depois do g."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_017",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A ____ tem muitas montanhas e rios. Qual grafia completa a frase?",
+    "options": [
+      "região",
+      "rejão",
+      "regiao",
+      "rejiao"
+    ],
+    "correctIndex": 0,
+    "explanation": "Região se escreve com g antes de i e leva til no ã.",
+    "wrongExplanations": {
+      "1": "Região é escrita com g, não com j.",
+      "2": "A palavra região leva til no ã.",
+      "3": "A grafia correta é região, com g e til no ã."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_018",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A grade de ferro ficou coberta de ____. Escolha a grafia correta.",
+    "options": [
+      "ferrujem",
+      "ferrugem",
+      "ferugem",
+      "ferrugém"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ferrugem se escreve com dois erres e com g antes de e.",
+    "wrongExplanations": {
+      "0": "A palavra ferrugem é escrita com g, não com j.",
+      "2": "Ferrugem tem dois erres depois de fe: ferrugem.",
+      "3": "Ferrugem não leva acento agudo."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_019",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "A ____ de ônibus durou duas horas. Marque a grafia correta.",
+    "options": [
+      "viajem",
+      "viagen",
+      "viagem",
+      "viagém"
+    ],
+    "correctIndex": 2,
+    "explanation": "Viagem é um substantivo e se escreve com g antes de e.",
+    "wrongExplanations": {
+      "0": "Viajem é uma forma de verbo; o substantivo é viagem.",
+      "1": "A palavra termina com m: viagem.",
+      "3": "Viagem não leva acento agudo."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_usos_ge_gi_020",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "usos-ge-gi",
+    "question": "O corredor foi ____ e chegou primeiro à sala. Qual grafia está correta?",
+    "options": [
+      "lijero",
+      "ligero",
+      "lijeiro",
+      "ligeiro"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ligeiro se escreve com g antes de e e significa rápido.",
+    "wrongExplanations": {
+      "0": "Ligeiro se escreve com g, não com j.",
+      "1": "A grafia correta é ligeiro, com i depois do g.",
+      "2": "A palavra correta é ligeiro, sem j depois do l."
+    },
+    "skill": "aplicar-grafias-contextualizadas-de-ge-e-gi",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "usos-ge-gi"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Usos de ge e gi"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_001",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “A mochila pesada ficou perto da porta”, qual palavra indica uma característica da mochila?",
+    "options": [
+      "pesada",
+      "mochila",
+      "ficou",
+      "porta"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pesada indica uma característica da mochila.",
+    "wrongExplanations": {
+      "1": "Mochila nomeia o objeto; pesada é a palavra que o caracteriza.",
+      "2": "Ficou indica o que aconteceu; pesada descreve a mochila.",
+      "3": "Porta nomeia outro objeto; pesada descreve a mochila."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_002",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "A janela ficou aberta durante a noite. Qual palavra conta como ela ficou?",
+    "options": [
+      "janela",
+      "aberta",
+      "durante",
+      "noite"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aberta indica uma característica da janela naquele momento.",
+    "wrongExplanations": {
+      "0": "Janela é o objeto caracterizado; aberta descreve como ela ficou.",
+      "2": "Durante indica uma relação de tempo; aberta descreve a janela.",
+      "3": "Noite nomeia um período; aberta é a característica da janela."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_003",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “O coelho rápido atravessou o jardim”, que palavra caracteriza o coelho?",
+    "options": [
+      "coelho",
+      "atravessou",
+      "rápido",
+      "jardim"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rápido apresenta uma característica do coelho.",
+    "wrongExplanations": {
+      "0": "Coelho nomeia o animal; rápido descreve uma característica dele.",
+      "1": "Atravessou indica uma ação; rápido caracteriza o coelho.",
+      "3": "Jardim nomeia um lugar; rápido caracteriza o coelho."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_004",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Qual palavra completa a frase com uma característica do suco? “O suco de limão estava ____.”",
+    "options": [
+      "copo",
+      "beber",
+      "mesa",
+      "azedo"
+    ],
+    "correctIndex": 3,
+    "explanation": "Azedo descreve o sabor do suco de limão.",
+    "wrongExplanations": {
+      "0": "Copo nomeia um recipiente; a frase pede uma característica do suco.",
+      "1": "Beber indica uma ação; a frase pede uma característica do suco.",
+      "2": "Mesa nomeia um móvel; azedo descreve o sabor do suco."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_005",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "As crianças montaram uma torre alta. Qual palavra descreve a torre?",
+    "options": [
+      "alta",
+      "crianças",
+      "montaram",
+      "torre"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alta indica uma característica da torre.",
+    "wrongExplanations": {
+      "1": "Crianças nomeia quem montou a torre; alta descreve a torre.",
+      "2": "Montaram indica uma ação; alta caracteriza a torre.",
+      "3": "Torre nomeia a construção; alta informa como ela é."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_006",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “O dia chuvoso mudou nossos planos”, como era o dia?",
+    "options": [
+      "mudou",
+      "chuvoso",
+      "planos",
+      "nossos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chuvoso descreve uma característica do dia.",
+    "wrongExplanations": {
+      "0": "Mudou indica uma ação; chuvoso caracteriza o dia.",
+      "2": "Planos nomeia o que foi alterado; chuvoso descreve o dia.",
+      "3": "Nossos indica a quem pertencem os planos; chuvoso caracteriza o dia."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_007",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "O passarinho pequeno pousou no galho. Qual palavra indica o tamanho do passarinho?",
+    "options": [
+      "pousou",
+      "galho",
+      "pequeno",
+      "passarinho"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pequeno indica o tamanho do passarinho.",
+    "wrongExplanations": {
+      "0": "Pousou indica uma ação; pequeno descreve o tamanho do passarinho.",
+      "1": "Galho nomeia onde ele pousou; pequeno caracteriza o passarinho.",
+      "3": "Passarinho nomeia o animal; pequeno indica uma característica dele."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_008",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Qual palavra mostra como ficou a sala? “Depois da organização, a sala estava ____ e sem objetos espalhados.”",
+    "options": [
+      "cadeiras",
+      "arrumada",
+      "organizar",
+      "sala"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrumada descreve como a sala ficou.",
+    "wrongExplanations": {
+      "0": "Cadeiras nomeia objetos da sala; arrumada descreve como ela ficou.",
+      "2": "Organizar indica uma ação; arrumada caracteriza a sala.",
+      "3": "Sala nomeia o lugar; arrumada indica uma característica dele."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_009",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “A menina curiosa fez muitas perguntas”, qual palavra caracteriza a menina?",
+    "options": [
+      "curiosa",
+      "menina",
+      "fez",
+      "perguntas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curiosa apresenta uma característica da menina.",
+    "wrongExplanations": {
+      "1": "Menina nomeia a pessoa; curiosa descreve uma característica dela.",
+      "2": "Fez indica uma ação; curiosa caracteriza a menina.",
+      "3": "Perguntas nomeia o que ela fez; curiosa descreve a menina."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_010",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "O cobertor macio estava dobrado na cama. Qual palavra descreve o cobertor ao toque?",
+    "options": [
+      "cama",
+      "dobrado",
+      "estava",
+      "macio"
+    ],
+    "correctIndex": 3,
+    "explanation": "Macio indica uma característica do cobertor ao toque.",
+    "wrongExplanations": {
+      "0": "Cama nomeia o lugar onde está o cobertor; macio descreve o cobertor.",
+      "1": "Dobrado informa como o cobertor foi colocado; macio descreve seu toque.",
+      "2": "Estava é uma forma do verbo estar; macio caracteriza o cobertor."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_011",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “Os corredores atentos ouviram o sinal”, como estavam os corredores?",
+    "options": [
+      "ouviram",
+      "sinal",
+      "atentos",
+      "corredores"
+    ],
+    "correctIndex": 2,
+    "explanation": "Atentos caracteriza os corredores e concorda com esse substantivo no plural.",
+    "wrongExplanations": {
+      "0": "Ouviram indica uma ação; atentos descreve os corredores.",
+      "1": "Sinal nomeia o que foi ouvido; atentos caracteriza os corredores.",
+      "3": "Corredores nomeia as pessoas; atentos indica uma característica delas."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_012",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Qual palavra completa a frase dizendo uma característica das folhas? “No outono, algumas folhas ficam ____.”",
+    "options": [
+      "árvores",
+      "caem",
+      "folhas",
+      "amareladas"
+    ],
+    "correctIndex": 3,
+    "explanation": "Amareladas descreve a cor das folhas.",
+    "wrongExplanations": {
+      "0": "Árvores nomeia as plantas; a frase pede uma característica das folhas.",
+      "1": "Caem indica uma ação; amareladas descreve a cor das folhas.",
+      "2": "Folhas nomeia o que muda de cor; amareladas caracteriza essas folhas."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_013",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "A praça silenciosa estava quase vazia. Qual palavra caracteriza a praça pelo som do lugar?",
+    "options": [
+      "silenciosa",
+      "praça",
+      "estava",
+      "vazia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Silenciosa indica que havia pouco ou nenhum barulho na praça.",
+    "wrongExplanations": {
+      "1": "Praça nomeia o lugar; silenciosa descreve uma característica dele.",
+      "2": "Estava é uma forma do verbo estar; silenciosa caracteriza a praça.",
+      "3": "Vazia também caracteriza a praça, mas descreve a quantidade de pessoas, não o som pedido."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_014",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “O mapa antigo ficou guardado na gaveta”, qual palavra indica a idade do mapa?",
+    "options": [
+      "gaveta",
+      "antigo",
+      "guardado",
+      "mapa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Antigo indica que o mapa existe há muito tempo.",
+    "wrongExplanations": {
+      "0": "Gaveta nomeia o lugar onde o mapa foi guardado; antigo caracteriza o mapa.",
+      "2": "Guardado informa o que foi feito com o mapa; antigo indica sua idade.",
+      "3": "Mapa nomeia o objeto; antigo apresenta uma característica dele."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_015",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "O caminho estreito passava entre duas árvores. Qual palavra informa a largura do caminho?",
+    "options": [
+      "passava",
+      "árvores",
+      "estreito",
+      "caminho"
+    ],
+    "correctIndex": 2,
+    "explanation": "Estreito indica que o caminho tem pouca largura.",
+    "wrongExplanations": {
+      "0": "Passava indica o trajeto; estreito descreve a largura do caminho.",
+      "1": "Árvores nomeia elementos próximos; estreito caracteriza o caminho.",
+      "3": "Caminho nomeia o lugar por onde se passa; estreito apresenta uma característica dele."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_016",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "As caixas leves foram levadas para a sala. Qual palavra descreve o peso das caixas?",
+    "options": [
+      "caixas",
+      "foram",
+      "sala",
+      "leves"
+    ],
+    "correctIndex": 3,
+    "explanation": "Leves indica uma característica do peso das caixas.",
+    "wrongExplanations": {
+      "0": "Caixas nomeia os objetos; leves descreve uma característica deles.",
+      "1": "Foram faz parte da informação sobre o que aconteceu; leves caracteriza as caixas.",
+      "2": "Sala nomeia o lugar de destino; leves descreve o peso das caixas."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_017",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "A turma escolheu uma receita simples para o lanche. Qual palavra caracteriza a receita?",
+    "options": [
+      "simples",
+      "receita",
+      "escolheu",
+      "lanche"
+    ],
+    "correctIndex": 0,
+    "explanation": "Simples indica que a receita não é complicada.",
+    "wrongExplanations": {
+      "1": "Receita nomeia o texto de instruções; simples descreve uma característica dela.",
+      "2": "Escolheu indica uma ação da turma; simples descreve a receita.",
+      "3": "Lanche nomeia a refeição; simples caracteriza a receita."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_018",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Qual palavra completa a frase descrevendo o estado do brinquedo? “Depois da brincadeira, o carrinho ficou ____.”",
+    "options": [
+      "brincadeira",
+      "sujo",
+      "carrinho",
+      "limpar"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sujo descreve o estado em que o carrinho ficou.",
+    "wrongExplanations": {
+      "0": "Brincadeira nomeia a atividade; a frase pede uma característica do carrinho.",
+      "2": "Carrinho nomeia o brinquedo; sujo descreve como ele ficou.",
+      "3": "Limpar indica uma ação; sujo caracteriza o estado do carrinho."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_019",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "Na frase “O vizinho gentil ajudou a carregar as compras”, qual palavra descreve o vizinho?",
+    "options": [
+      "ajudou",
+      "compras",
+      "gentil",
+      "vizinho"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gentil caracteriza o vizinho e indica uma atitude atenciosa.",
+    "wrongExplanations": {
+      "0": "Ajudou indica uma ação; gentil descreve uma característica do vizinho.",
+      "1": "Compras nomeia o que foi carregado; gentil caracteriza o vizinho.",
+      "3": "Vizinho nomeia a pessoa; gentil informa como ela é."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  },
+  {
+    "schemaVersion": "content-v1",
+    "id": "2026t3v1_pt_adjetivos_020",
+    "contentSetId": "2026-t3-v1",
+    "subject": "portugues",
+    "topic": "adjetivos",
+    "question": "As trilhas longas exigiram várias pausas. Qual palavra indica uma característica das trilhas?",
+    "options": [
+      "exigiram",
+      "pausas",
+      "trilhas",
+      "longas"
+    ],
+    "correctIndex": 3,
+    "explanation": "Longas caracteriza as trilhas e concorda com esse substantivo no plural.",
+    "wrongExplanations": {
+      "0": "Exigiram indica o que as trilhas fizeram; longas descreve uma característica delas.",
+      "1": "Pausas nomeia o que foi necessário; longas caracteriza as trilhas.",
+      "2": "Trilhas nomeia os caminhos; longas indica uma característica desses caminhos."
+    },
+    "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+    "sourceRef": {
+      "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+      "section": "Português",
+      "topic": "adjetivos"
+    },
+    "reviewStatus": "published",
+    "version": 1,
+    "topicName": "Adjetivos"
+  }
+];
+  const source = window.QuestionsDataSources.portugues;
+  if (!source) return;
+  source.questions.push(...publishedQuestions);
+  Object.assign(source.topicMeta, {
+  "encontros-ch-lh-nh": {
+    "name": "Palavras com ch, lh e nh",
+    "icon": "📚"
+  },
+  "preterito-perfeito": {
+    "name": "Pretérito perfeito",
+    "icon": "📚"
+  },
+  "prefixo-des": {
+    "name": "Palavras iniciadas por des-",
+    "icon": "📚"
+  },
+  "futuro": {
+    "name": "Futuro do presente",
+    "icon": "📚"
+  },
+  "usos-ge-gi": {
+    "name": "Usos de ge e gi",
+    "icon": "📚"
+  },
+  "adjetivos": {
+    "name": "Adjetivos",
+    "icon": "📚"
+  }
+});
+})();
