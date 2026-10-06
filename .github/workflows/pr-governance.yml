@@ -41,6 +41,14 @@ jobs:
           npm run validate:branch-sync -- "$HEAD_REF" "$BASE_REF" origin/pr-head
           npm run test:branch-policy
 
+      - name: Validate merge message in Portuguese
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          HEAD_REF: ${{ github.head_ref }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: node scripts/merge-message-policy.cjs validate-pr
+
       - name: Validate repository documentation presence
         run: |
           test -f docs/README.md
