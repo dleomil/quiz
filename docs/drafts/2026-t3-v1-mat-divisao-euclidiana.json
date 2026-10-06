@@ -19,9 +19,9 @@
       "correctIndex": 0,
       "explanation": "5 × 3 = 15, e 17 − 15 = 2; portanto, o resto é menor que 5.",
       "wrongExplanations": {
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 3 grupos completos e sobram 2.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 3 grupos completos e sobram 2.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 3 grupos completos e sobram 2."
+        "1": "O resto 7 não pode ser igual ou maior que o divisor 5; ainda caberia pelo menos mais um grupo. Confira a opção “2 grupos completos e sobram 7”.",
+        "2": "Confira a divisão pela igualdade 5 × 3 + 3 = 18. O resultado precisa recompor 17; a opção “3 grupos completos e sobram 3” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 5 × 4 + 2 = 22. O resultado precisa recompor 17; a opção “4 grupos completos e sobram 2” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -49,9 +49,9 @@
       "correctIndex": 1,
       "explanation": "4 × 5 = 20, e 23 − 20 = 3; portanto, o resto é menor que 4.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3."
+        "0": "O resto 7 não pode ser igual ou maior que o divisor 4; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 4 e resto 7”.",
+        "2": "O resto 4 não pode ser igual ou maior que o divisor 4; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 5 e resto 4”.",
+        "3": "Confira a divisão pela igualdade 4 × 6 + 3 = 27. O resultado precisa recompor 23; a opção “quociente 6 e resto 3” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -79,9 +79,9 @@
       "correctIndex": 2,
       "explanation": "6 × 4 = 24, e 29 − 24 = 5; portanto, o resto é menor que 6.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 5.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 5.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 5."
+        "0": "O resto 11 não pode ser igual ou maior que o divisor 6; ainda caberia pelo menos mais um grupo. Confira a opção “3 grupos completos e sobram 11”.",
+        "1": "O resto 6 não pode ser igual ou maior que o divisor 6; ainda caberia pelo menos mais um grupo. Confira a opção “4 grupos completos e sobram 6”.",
+        "3": "Confira a divisão pela igualdade 6 × 5 + 5 = 35. O resultado precisa recompor 29; a opção “5 grupos completos e sobram 5” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -109,9 +109,9 @@
       "correctIndex": 3,
       "explanation": "4 × 4 = 16, e 18 − 16 = 2; portanto, o resto é menor que 4.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 4 e resto 2.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 4 e resto 2.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 4 e resto 2."
+        "0": "O resto 6 não pode ser igual ou maior que o divisor 4; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 3 e resto 6”.",
+        "1": "Confira a divisão pela igualdade 4 × 4 + 3 = 19. O resultado precisa recompor 18; a opção “quociente 4 e resto 3” não satisfaz essa igualdade.",
+        "2": "Confira a divisão pela igualdade 4 × 5 + 2 = 22. O resultado precisa recompor 18; a opção “quociente 5 e resto 2” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 0,
       "explanation": "7 × 4 = 28, e 31 − 28 = 3; portanto, o resto é menor que 7.",
       "wrongExplanations": {
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3."
+        "1": "O resto 10 não pode ser igual ou maior que o divisor 7; ainda caberia pelo menos mais um grupo. Confira a opção “3 grupos completos e sobram 10”.",
+        "2": "Confira a divisão pela igualdade 7 × 4 + 4 = 32. O resultado precisa recompor 31; a opção “4 grupos completos e sobram 4” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 7 × 5 + 3 = 38. O resultado precisa recompor 31; a opção “5 grupos completos e sobram 3” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -169,9 +169,9 @@
       "correctIndex": 1,
       "explanation": "5 × 5 = 25, e 26 − 25 = 1; portanto, o resto é menor que 5.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 1.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 1.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 1."
+        "0": "O resto 6 não pode ser igual ou maior que o divisor 5; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 4 e resto 6”.",
+        "2": "Confira a divisão pela igualdade 5 × 5 + 2 = 27. O resultado precisa recompor 26; a opção “quociente 5 e resto 2” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 5 × 6 + 1 = 31. O resultado precisa recompor 26; a opção “quociente 6 e resto 1” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -199,9 +199,9 @@
       "correctIndex": 2,
       "explanation": "8 × 4 = 32, e 34 − 32 = 2; portanto, o resto é menor que 8.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 2.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 2.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 2."
+        "0": "O resto 10 não pode ser igual ou maior que o divisor 8; ainda caberia pelo menos mais um grupo. Confira a opção “3 grupos completos e sobram 10”.",
+        "1": "Confira a divisão pela igualdade 8 × 4 + 3 = 35. O resultado precisa recompor 34; a opção “4 grupos completos e sobram 3” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 8 × 5 + 2 = 42. O resultado precisa recompor 34; a opção “5 grupos completos e sobram 2” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -229,9 +229,9 @@
       "correctIndex": 3,
       "explanation": "6 × 3 = 18, e 20 − 18 = 2; portanto, o resto é menor que 6.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 3 e resto 2.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 3 e resto 2.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 3 e resto 2."
+        "0": "O resto 8 não pode ser igual ou maior que o divisor 6; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 2 e resto 8”.",
+        "1": "Confira a divisão pela igualdade 6 × 3 + 3 = 21. O resultado precisa recompor 20; a opção “quociente 3 e resto 3” não satisfaz essa igualdade.",
+        "2": "Confira a divisão pela igualdade 6 × 4 + 2 = 26. O resultado precisa recompor 20; a opção “quociente 4 e resto 2” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -259,9 +259,9 @@
       "correctIndex": 0,
       "explanation": "9 × 4 = 36, e 37 − 36 = 1; portanto, o resto é menor que 9.",
       "wrongExplanations": {
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobra 1.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobra 1.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobra 1."
+        "1": "O resto 10 não pode ser igual ou maior que o divisor 9; ainda caberia pelo menos mais um grupo. Confira a opção “3 grupos completos e sobram 10”.",
+        "2": "Confira a divisão pela igualdade 9 × 4 + 2 = 38. O resultado precisa recompor 37; a opção “4 grupos completos e sobram 2” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 9 × 5 + 1 = 46. O resultado precisa recompor 37; a opção “5 grupos completos e sobra 1” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 1,
       "explanation": "5 × 8 = 40, e 42 − 40 = 2; portanto, o resto é menor que 5.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 8 e resto 2.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 8 e resto 2.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 8 e resto 2."
+        "0": "O resto 7 não pode ser igual ou maior que o divisor 5; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 7 e resto 7”.",
+        "2": "Confira a divisão pela igualdade 5 × 8 + 3 = 43. O resultado precisa recompor 42; a opção “quociente 8 e resto 3” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 5 × 9 + 2 = 47. O resultado precisa recompor 42; a opção “quociente 9 e resto 2” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -319,9 +319,9 @@
       "correctIndex": 2,
       "explanation": "4 × 8 = 32, e 33 − 32 = 1; portanto, o resto é menor que 4.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 8 grupos completos e sobra 1.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 8 grupos completos e sobra 1.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 8 grupos completos e sobra 1."
+        "0": "O resto 5 não pode ser igual ou maior que o divisor 4; ainda caberia pelo menos mais um grupo. Confira a opção “7 grupos completos e sobram 5”.",
+        "1": "Confira a divisão pela igualdade 4 × 8 + 2 = 34. O resultado precisa recompor 33; a opção “8 grupos completos e sobram 2” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 4 × 9 + 1 = 37. O resultado precisa recompor 33; a opção “9 grupos completos e sobra 1” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -349,9 +349,9 @@
       "correctIndex": 3,
       "explanation": "7 × 7 = 49, e 50 − 49 = 1; portanto, o resto é menor que 7.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 1.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 1.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 1."
+        "0": "O resto 8 não pode ser igual ou maior que o divisor 7; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 6 e resto 8”.",
+        "1": "Confira a divisão pela igualdade 7 × 7 + 2 = 51. O resultado precisa recompor 50; a opção “quociente 7 e resto 2” não satisfaz essa igualdade.",
+        "2": "Confira a divisão pela igualdade 7 × 8 + 1 = 57. O resultado precisa recompor 50; a opção “quociente 8 e resto 1” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -379,9 +379,9 @@
       "correctIndex": 0,
       "explanation": "5 × 5 = 25, e 27 − 25 = 2; portanto, o resto é menor que 5.",
       "wrongExplanations": {
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 2.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 2.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 2."
+        "1": "O resto 7 não pode ser igual ou maior que o divisor 5; ainda caberia pelo menos mais um grupo. Confira a opção “4 grupos completos e sobram 7”.",
+        "2": "Confira a divisão pela igualdade 5 × 5 + 3 = 28. O resultado precisa recompor 27; a opção “5 grupos completos e sobram 3” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 5 × 6 + 2 = 32. O resultado precisa recompor 27; a opção “6 grupos completos e sobram 2” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -409,9 +409,9 @@
       "correctIndex": 1,
       "explanation": "6 × 7 = 42, e 46 − 42 = 4; portanto, o resto é menor que 6.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 4.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 4.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 7 e resto 4."
+        "0": "O resto 10 não pode ser igual ou maior que o divisor 6; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 6 e resto 10”.",
+        "2": "Confira a divisão pela igualdade 6 × 7 + 5 = 47. O resultado precisa recompor 46; a opção “quociente 7 e resto 5” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 6 × 8 + 4 = 52. O resultado precisa recompor 46; a opção “quociente 8 e resto 4” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 2,
       "explanation": "8 × 5 = 40, e 41 − 40 = 1; portanto, o resto é menor que 8.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobra 1.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobra 1.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobra 1."
+        "0": "O resto 9 não pode ser igual ou maior que o divisor 8; ainda caberia pelo menos mais um grupo. Confira a opção “4 grupos completos e sobram 9”.",
+        "1": "Confira a divisão pela igualdade 8 × 5 + 2 = 42. O resultado precisa recompor 41; a opção “5 grupos completos e sobram 2” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 8 × 6 + 1 = 49. O resultado precisa recompor 41; a opção “6 grupos completos e sobra 1” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -469,9 +469,9 @@
       "correctIndex": 3,
       "explanation": "3 × 9 = 27, e 28 − 27 = 1; portanto, o resto é menor que 3.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 9 e resto 1.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 9 e resto 1.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 9 e resto 1."
+        "0": "O resto 4 não pode ser igual ou maior que o divisor 3; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 8 e resto 4”.",
+        "1": "Confira a divisão pela igualdade 3 × 9 + 2 = 29. O resultado precisa recompor 28; a opção “quociente 9 e resto 2” não satisfaz essa igualdade.",
+        "2": "Confira a divisão pela igualdade 3 × 10 + 1 = 31. O resultado precisa recompor 28; a opção “quociente 10 e resto 1” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -499,9 +499,9 @@
       "correctIndex": 0,
       "explanation": "6 × 5 = 30, e 35 − 30 = 5; portanto, o resto é menor que 6.",
       "wrongExplanations": {
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 5.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 5.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 5 grupos completos e sobram 5."
+        "1": "O resto 11 não pode ser igual ou maior que o divisor 6; ainda caberia pelo menos mais um grupo. Confira a opção “4 grupos completos e sobram 11”.",
+        "2": "O resto 6 não pode ser igual ou maior que o divisor 6; ainda caberia pelo menos mais um grupo. Confira a opção “5 grupos completos e sobram 6”.",
+        "3": "Confira a divisão pela igualdade 6 × 6 + 5 = 41. O resultado precisa recompor 35; a opção “6 grupos completos e sobram 5” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -529,9 +529,9 @@
       "correctIndex": 1,
       "explanation": "10 × 5 = 50, e 53 − 50 = 3; portanto, o resto é menor que 10.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 3."
+        "0": "O resto 13 não pode ser igual ou maior que o divisor 10; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 4 e resto 13”.",
+        "2": "Confira a divisão pela igualdade 10 × 5 + 4 = 54. O resultado precisa recompor 53; a opção “quociente 5 e resto 4” não satisfaz essa igualdade.",
+        "3": "Confira a divisão pela igualdade 10 × 6 + 3 = 63. O resultado precisa recompor 53; a opção “quociente 6 e resto 3” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -559,9 +559,9 @@
       "correctIndex": 2,
       "explanation": "4 × 4 = 16, e 19 − 16 = 3; portanto, o resto é menor que 4.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3.",
-        "3": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é 4 grupos completos e sobram 3."
+        "0": "O resto 7 não pode ser igual ou maior que o divisor 4; ainda caberia pelo menos mais um grupo. Confira a opção “3 grupos completos e sobram 7”.",
+        "1": "O resto 4 não pode ser igual ou maior que o divisor 4; ainda caberia pelo menos mais um grupo. Confira a opção “4 grupos completos e sobram 4”.",
+        "3": "Confira a divisão pela igualdade 4 × 5 + 3 = 23. O resultado precisa recompor 19; a opção “5 grupos completos e sobram 3” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {
@@ -589,9 +589,9 @@
       "correctIndex": 3,
       "explanation": "7 × 5 = 35, e 39 − 35 = 4; portanto, o resto é menor que 7.",
       "wrongExplanations": {
-        "0": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 4.",
-        "1": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 4.",
-        "2": "Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é quociente 5 e resto 4."
+        "0": "O resto 11 não pode ser igual ou maior que o divisor 7; ainda caberia pelo menos mais um grupo. Confira a opção “quociente 4 e resto 11”.",
+        "1": "Confira a divisão pela igualdade 7 × 5 + 5 = 40. O resultado precisa recompor 39; a opção “quociente 5 e resto 5” não satisfaz essa igualdade.",
+        "2": "Confira a divisão pela igualdade 7 × 6 + 4 = 46. O resultado precisa recompor 39; a opção “quociente 6 e resto 4” não satisfaz essa igualdade."
       },
       "skill": "interpretar-quociente-e-resto",
       "sourceRef": {

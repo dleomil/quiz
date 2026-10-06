@@ -6,7 +6,6 @@ const ROOT = path.resolve(__dirname, '..');
 const SOURCE_ID = 'roteiro-estudos-av-mensal-t3-2026';
 const CONTENT_SET_ID = '2026-t3-v1';
 const DRAFT_DIRECTORY = path.join(ROOT, 'docs/drafts');
-const AUDIT_DIRECTORY = path.join(ROOT, 'docs/audits');
 
 const TOPICS = [
   {
@@ -15,8 +14,6 @@ const TOPICS = [
     skill: 'comparar-possibilidades-simples',
     objective: 'comparar possibilidades simples',
     sourceTopic: 'probabilidade',
-    wrongFeedback: (answer) =>
-      `Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, ${answer.toLowerCase()}.`,
     items: [
       [
         'Em dois sacos com 10 fichas cada, A tem 3 azuis e B tem 7 azuis. De qual saco é mais provável tirar uma ficha azul?',
@@ -162,8 +159,6 @@ const TOPICS = [
     skill: 'resolver-multiplicacoes-do-3o-ano',
     objective: 'resolver multiplicações do 3o ano',
     sourceTopic: 'multiplicacao',
-    wrongFeedback: (answer) =>
-      `Represente a situação como grupos iguais e confira a multiplicação; o total é ${answer}.`,
     items: [
       [
         'Há 4 caixas com 6 lápis em cada uma. Quantos lápis há ao todo?',
@@ -293,8 +288,6 @@ const TOPICS = [
     skill: 'resolver-e-interpretar-divisoes',
     objective: 'resolver e interpretar divisões',
     sourceTopic: 'divisao',
-    wrongFeedback: (answer) =>
-      `Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe ${answer}.`,
     items: [
       [
         '24 figurinhas são repartidas igualmente entre 4 crianças. Quantas recebe cada criança?',
@@ -424,8 +417,6 @@ const TOPICS = [
     skill: 'reconhecer-metodos-longo-e-breve-da-divisao',
     objective: 'reconhecer procedimentos ensinados para dividir',
     sourceTopic: 'divisao-metodos',
-    wrongFeedback: (answer) =>
-      `Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é ${answer}.`,
     items: [
       [
         'No método longo para calcular 84 ÷ 4, começamos pelas 8 dezenas. Quantas dezenas cabem em cada grupo?',
@@ -555,8 +546,6 @@ const TOPICS = [
     skill: 'calcular-expressoes-aritmeticas-simples',
     objective: 'calcular expressões pela convenção ensinada',
     sourceTopic: 'expressoes',
-    wrongFeedback: (answer) =>
-      `Observe o sinal da expressão e calcule essa operação; o valor é ${answer}.`,
     items: [
       [
         'Qual é o valor da expressão 18 + 7?',
@@ -686,8 +675,6 @@ const TOPICS = [
     skill: 'usar-decomposicao-para-calcular-multiplicacoes',
     objective: 'usar decomposição para calcular',
     sourceTopic: 'decomposicao-multiplicacao',
-    wrongFeedback: (answer) =>
-      `Multiplique o fator pelas dezenas e pelas unidades e some os produtos; o total é ${answer}.`,
     items: [
       [
         'Use a decomposição: 4 × 12 = (4 × 10) + (4 × 2). Qual é o produto?',
@@ -817,8 +804,6 @@ const TOPICS = [
     skill: 'traduzir-situacoes-em-expressoes-e-resolver',
     objective: 'traduzir situações e resolver',
     sourceTopic: 'problemas-expressoes',
-    wrongFeedback: (answer) =>
-      `Escolha a expressão que representa a ação descrita; ela resulta em ${answer}.`,
     items: [
       [
         'Lia tinha 18 adesivos e ganhou mais 7. Qual expressão mostra quantos adesivos ela tem agora?',
@@ -960,6 +945,163 @@ function addGeneratedTopic(topic, items) {
   TOPICS.push({ ...topic, items });
 }
 
+function createWrongFeedback(topicId, question, answer, distractor, rationale) {
+  const values = [...question.matchAll(/\d+/g)].map(([value]) => Number(value));
+  const selected = String(distractor);
+
+  if (topicId === 'probabilidade') {
+    const countAfter = (label) => {
+      const role = new RegExp(
+        `(?:\\b${label}\\s+(?:(?:também\\s+)?(?:tem|guarda))|\\b(?:pote|roleta|caixa|saco|sacola)\\s+${label}[,\\s]+|\\b(?:[Nn]o|[Nn]a|[Ee]m)\\s+${label},\\s*)`,
+        'g',
+      );
+      const matches = [...question.matchAll(role)];
+      const lastMatch = matches.at(-1);
+      if (!lastMatch) {
+        throw new Error(
+          `Probabilidade: não foi possível ler o grupo ${label}: ${question}`,
+        );
+      }
+      return Number(
+        question.slice(lastMatch.index + lastMatch[0].length).match(/\d+/)?.[0],
+      );
+    };
+    const total = Number(
+      question.match(/\bem\s+(\d+)(?:\s+setores?)?/i)?.[1] ||
+        question.match(
+          /\b(?:com|tem|têm)\s+(\d+)\s+(?:fichas?|setores?|botões?|cartões?|bolas?|peças?|tampinhas?|lápis|contas?|cubos?)(?:\s+cada)?/i,
+        )?.[1],
+    );
+    const favorableA = countAfter('A');
+    const favorableB = countAfter('B');
+    const phraseA =
+      favorableA === 1
+        ? '1 resultado favorável'
+        : `${favorableA} resultados favoráveis`;
+    const phraseB =
+      favorableB === 1
+        ? '1 resultado favorável'
+        : `${favorableB} resultados favoráveis`;
+    const conclusion =
+      favorableA === favorableB
+        ? 'as chances são iguais'
+        : `a chance correspondente a ${favorableA > favorableB ? 'A' : 'B'} é maior`;
+    return `A tem ${phraseA}; B tem ${phraseB}. Há ${total} possibilidades em cada caso, então ${conclusion}. Por isso, “${selected}” não corresponde à comparação.`;
+  }
+
+  if (topicId === 'multiplicacao') {
+    const [groups, perGroup] = values;
+    return `Multiplique as quantidades indicadas (${groups} e ${perGroup}): ${groups} × ${perGroup} = ${answer}. Por isso, ${selected} não representa o total.`;
+  }
+
+  if (topicId === 'divisao') {
+    const [total, groupSize] = values;
+    const grouping =
+      /quantas (?:filas|caixas|cartelas|caixas)|quantos sacos|quantos grupos|grupos completos/i.test(
+        question,
+      );
+    if (grouping) {
+      const itemsInGroup = groupSize;
+      return `Cada grupo precisa de ${itemsInGroup} itens. Teste ${selected} grupos: ${selected} × ${itemsInGroup} ${Number(selected) * itemsInGroup === total ? 'usa' : 'não usa'} ${total} itens.`;
+    }
+    const groupCount = groupSize;
+    return `Reparta ${total} itens por ${groupCount} grupos iguais. Confira a opção ${selected}: ${selected} × ${groupCount} ${Number(selected) * groupCount === total ? 'recompõe' : 'não recompõe'} o total de ${total}.`;
+  }
+
+  if (topicId === 'divisao-metodos') {
+    return `${rationale} A opção ${selected} não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.`;
+  }
+
+  if (topicId === 'expressoes') {
+    const [, left, operator, right] =
+      question.match(/(\d+)\s*([+−×÷])\s*(\d+)/) || [];
+    const operation = {
+      '+': 'some',
+      '−': 'subtraia',
+      '×': 'multiplique',
+      '÷': 'divida',
+    }[operator];
+    return `Na expressão ${left} ${operator} ${right}, ${operation} os dois números para verificar o resultado ${answer}. A opção ${selected} não é o valor dessa operação.`;
+  }
+
+  if (topicId === 'decomposicao-multiplicacao') {
+    const [, factor, target] =
+      question.match(/(?:calcular|encontrar)\s+(\d+)\s*×\s*(\d+)/i) || [];
+    const [, firstFactor, firstMultiplicand] =
+      question.match(/(\d+)\s*×\s*(\d+)/) || [];
+    const selectedFactor = target ? factor : firstFactor;
+    const multiplicand = target || firstMultiplicand;
+    const tens = Math.floor(Number(multiplicand) / 10) * 10;
+    const units = Number(multiplicand) - tens;
+    return `Separe ${multiplicand} em ${tens} + ${units}: ${selectedFactor} × ${tens} + ${selectedFactor} × ${units} = ${answer}. A opção ${selected} não soma os dois produtos corretamente.`;
+  }
+
+  if (topicId === 'problemas-expressoes') {
+    const correctOperator = answer.match(/[+−×÷]/)?.[0];
+    const selectedOperator = selected.match(/[+−×÷]/)?.[0];
+    const operations = {
+      '+': 'adição',
+      '−': 'subtração',
+      '×': 'multiplicação',
+      '÷': 'divisão',
+    };
+    return `A situação é representada por uma ${operations[correctOperator]}: ${answer}. A opção ${selected} usa ${operations[selectedOperator]}, que não representa essa ação.`;
+  }
+
+  if (topicId === 'area-malha') {
+    const rowFirst = question.match(/(\d+) linhas? com (\d+) quadradinhos/i);
+    const rows = rowFirst ? Number(rowFirst[1]) : values[1];
+    const columns = rowFirst ? Number(rowFirst[2]) : values[0];
+    return `Conte ${rows} linhas com ${columns} quadradinhos em cada: ${rows} × ${columns} = ${answer} unidades quadradas. A opção ${selected} não conta todas as casas.`;
+  }
+
+  if (topicId === 'perimetro') {
+    const sides = (rationale.match(/\(([^)]+)\)/)?.[1] || '').split(' + ');
+    return `O perímetro soma cada lado uma vez: ${sides.join(' + ')} = ${answer}. A opção ${selected} não corresponde à soma completa.`;
+  }
+
+  if (topicId === 'retas-perpendiculares') {
+    const lower = selected.toLocaleLowerCase('pt-BR');
+    if (
+      /nunca se encontram/.test(question) &&
+      lower.includes('formam ângulos retos')
+    ) {
+      return `Retas que nunca se encontram são paralelas; por isso, não formam ângulos retos. A opção “${selected}” afirma o contrário.`;
+    }
+    if (/retas paralelas/i.test(question) && lower.startsWith('sim')) {
+      return `Retas paralelas não se cruzam, então não podem formar ângulos retos. A opção “${selected}” contradiz essa propriedade.`;
+    }
+    if (
+      lower.includes('paralel') ||
+      lower.includes('não se cruz') ||
+      lower.includes('não há encontro') ||
+      lower.includes('ausência de cruzamento') ||
+      lower.includes('lado a lado')
+    ) {
+      return `Retas perpendiculares precisam se cruzar a 90°. A opção “${selected}” descreve retas sem esse cruzamento.`;
+    }
+    if (lower.includes('sem ângulo reto')) {
+      return `Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “${selected}” diz que esse ângulo não aparece.`;
+    }
+    return `Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “${selected}” não verifica essa condição.`;
+  }
+
+  if (topicId === 'divisao-euclidiana') {
+    const [, quotient, remainder] = selected.match(/(\d+).*?(\d+)$/) || [];
+    const [, divisor] = question.match(/(?:grupos de |÷ )(\d+)/) || [];
+    const q = Number(quotient);
+    const r = Number(remainder);
+    const d = Number(divisor);
+    const dividend = values[0];
+    if (r >= d) {
+      return `O resto ${r} não pode ser igual ou maior que o divisor ${d}; ainda caberia pelo menos mais um grupo. Confira a opção “${selected}”.`;
+    }
+    return `Confira a divisão pela igualdade ${d} × ${q} + ${r} = ${d * q + r}. O resultado precisa recompor ${dividend}; a opção “${selected}” não satisfaz essa igualdade.`;
+  }
+
+  return `${rationale} Use esse raciocínio para conferir por que a opção ${selected} não atende ao enunciado.`;
+}
+
 const areaDimensions = [
   [3, 2],
   [4, 3],
@@ -989,8 +1131,6 @@ addGeneratedTopic(
     skill: 'calcular-area-por-contagem-em-malha',
     objective: 'contar unidades de área em malha quadriculada',
     sourceTopic: 'area-malha',
-    wrongFeedback: (answer) =>
-      `Conte os quadradinhos que cobrem a figura sem sobreposição; a área é ${answer} unidades quadradas.`,
   },
   areaDimensions.map(([columns, rows], index) => {
     const area = columns * rows;
@@ -1004,7 +1144,7 @@ addGeneratedTopic(
       ways[index % ways.length],
       String(area),
       numericWrongAnswers(area),
-      `${columns} grupos de ${rows} quadradinhos totalizam ${area}.`,
+      `${rows} linhas com ${columns} quadradinhos em cada totalizam ${area} unidades quadradas.`,
     ];
   }),
 );
@@ -1043,9 +1183,9 @@ const perimeters = [
   { sides: [6, 6, 6, 6], unit: 'cm', label: 'Um quadrado tem lados de 6 cm.' },
   { sides: [9, 4, 9, 4], unit: 'm', label: 'Um retângulo mede 9 m por 4 m.' },
   {
-    sides: [8, 3, 5],
+    sides: [8, 4, 5],
     unit: 'cm',
-    label: 'Um triângulo tem lados de 8 cm, 3 cm e 5 cm.',
+    label: 'Um triângulo tem lados de 8 cm, 4 cm e 5 cm.',
   },
   { sides: [7, 7, 7, 7], unit: 'm', label: 'Um quadrado tem lados de 7 m.' },
   {
@@ -1059,9 +1199,9 @@ const perimeters = [
     label: 'Uma figura tem lados de 3 m, 4 m, 3 m e 4 m.',
   },
   {
-    sides: [9, 2, 3],
+    sides: [9, 4, 6],
     unit: 'cm',
-    label: 'Um triângulo tem lados de 9 cm, 2 cm e 3 cm.',
+    label: 'Um triângulo tem lados de 9 cm, 4 cm e 6 cm.',
   },
   {
     sides: [10, 3, 10, 3],
@@ -1082,8 +1222,6 @@ addGeneratedTopic(
     skill: 'calcular-perimetro',
     objective: 'calcular o contorno de figuras simples',
     sourceTopic: 'perimetro',
-    wrongFeedback: (answer) =>
-      `Some as medidas de todos os lados do contorno; o perímetro é ${answer}.`,
   },
   perimeters.map(({ sides, unit, label }, index) => {
     const perimeter = sides.reduce((sum, side) => sum + side, 0);
@@ -1243,12 +1381,12 @@ const perpendicularQuestions = [
     ],
   ],
   [
-    'Qual par de linhas não pode ser perpendicular?',
-    'Duas linhas paralelas que não se cruzam.',
+    'Qual par de retas forma um ângulo reto?',
+    'Uma reta vertical e outra horizontal que se cruzam em ângulo reto.',
     [
-      'Uma vertical e outra horizontal que se cruzam em ângulo reto.',
-      'Duas retas que formam ângulo reto.',
+      'Duas linhas paralelas que não se cruzam.',
       'Duas retas que se cruzam sem formar ângulo reto.',
+      'Duas linhas horizontais lado a lado.',
     ],
   ],
   [
@@ -1269,8 +1407,6 @@ addGeneratedTopic(
     skill: 'reconhecer-retas-perpendiculares-e-angulos-retos',
     objective: 'reconhecer retas perpendiculares e ângulos retos',
     sourceTopic: 'retas-perpendiculares',
-    wrongFeedback: (answer) =>
-      `Observe se as retas se cruzam formando um ângulo reto; neste caso, ${answer.toLowerCase()}.`,
   },
   perpendicularQuestions.map(([question, correct, wrong], index) => [
     question,
@@ -1311,8 +1447,6 @@ addGeneratedTopic(
     skill: 'interpretar-quociente-e-resto',
     objective: 'interpretar quociente e resto',
     sourceTopic: 'divisao-euclidiana',
-    wrongFeedback: (answer) =>
-      `Confira quantos grupos completos são formados e quantos itens sobram; o resultado pedido é ${answer}.`,
   },
   euclideanDivisions.map(([dividend, divisor], index) => {
     const quotient = Math.floor(dividend / divisor);
@@ -1403,7 +1537,16 @@ function buildQuestions(topic) {
       options
         .map((_, optionIndex) => optionIndex)
         .filter((optionIndex) => optionIndex !== correctIndex)
-        .map((optionIndex) => [optionIndex, topic.wrongFeedback(answer)]),
+        .map((optionIndex) => [
+          optionIndex,
+          createWrongFeedback(
+            topic.id,
+            prompt,
+            answer,
+            options[optionIndex],
+            rationale,
+          ),
+        ]),
     );
     return {
       schemaVersion: 'content-v1',
@@ -1429,32 +1572,6 @@ function buildQuestions(topic) {
   });
 }
 
-function buildAudit(topic, questions) {
-  const reviews = questions.flatMap((question) =>
-    ['curriculum-factual', 'pedagogical-linguistic'].map((pass) => ({
-      questionId: question.id,
-      pass,
-      actorId: 'codex-single-agent',
-      actorRole:
-        pass === 'curriculum-factual'
-          ? 'content_curator'
-          : 'pedagogical_quality',
-      evidenceRefs: [`school-curriculum:2026-t3/matematica/${topic.id}`],
-      decision: 'clear',
-      findings: [],
-    })),
-  );
-  return {
-    schemaVersion: 'content-quality-audit-v1',
-    reviewMode: 'single-agent-sequential',
-    reportStatus: 'draft',
-    contentSetId: CONTENT_SET_ID,
-    topicId: `matematica:${topic.id}`,
-    sourceSha256: sha256(questions),
-    reviews,
-  };
-}
-
 function writeNew(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   const replaceGenerated = process.argv.includes('--replace-generated');
@@ -1468,20 +1585,15 @@ function writeNew(filePath, value) {
 function main() {
   TOPICS.forEach((topic) => {
     const questions = buildQuestions(topic);
-    const slug = topic.id.replace(/-/g, '_');
     writeNew(path.join(DRAFT_DIRECTORY, `2026-t3-v1-mat-${topic.id}.json`), {
       schemaVersion: 'content-draft-v1',
       contentSetId: CONTENT_SET_ID,
       questions,
     });
-    writeNew(
-      path.join(AUDIT_DIRECTORY, `2026-t3-v1-mat-${slug}-audit.json`),
-      buildAudit(topic, questions),
-    );
   });
   process.stdout.write('t3-matematica-drafts: 220 questoes em rascunho\n');
 }
 
 if (require.main === module) main();
 
-module.exports = { TOPICS, buildQuestions, buildAudit, sha256 };
+module.exports = { TOPICS, buildQuestions, sha256 };

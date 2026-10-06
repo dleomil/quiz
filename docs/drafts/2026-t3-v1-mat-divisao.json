@@ -14,9 +14,9 @@
       "correctIndex": 0,
       "explanation": "Dividir 24 em 4 grupos iguais dá 6 figurinhas para cada criança.",
       "wrongExplanations": {
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+        "1": "Reparta 24 itens por 4 grupos iguais. Confira a opção 4: 4 × 4 não recompõe o total de 24.",
+        "2": "Reparta 24 itens por 4 grupos iguais. Confira a opção 5: 5 × 4 não recompõe o total de 24.",
+        "3": "Reparta 24 itens por 4 grupos iguais. Confira a opção 8: 8 × 4 não recompõe o total de 24."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -39,9 +39,9 @@
       "correctIndex": 1,
       "explanation": "Como 5 × 7 = 35, cada cesta recebe 7 maçãs.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+        "0": "Reparta 35 itens por 5 grupos iguais. Confira a opção 5: 5 × 5 não recompõe o total de 35.",
+        "2": "Reparta 35 itens por 5 grupos iguais. Confira a opção 6: 6 × 5 não recompõe o total de 35.",
+        "3": "Reparta 35 itens por 5 grupos iguais. Confira a opção 8: 8 × 5 não recompõe o total de 35."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -64,9 +64,9 @@
       "correctIndex": 2,
       "explanation": "A divisão 32 ÷ 4 resulta em 8 livros por prateleira.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+        "0": "Reparta 32 itens por 4 grupos iguais. Confira a opção 4: 4 × 4 não recompõe o total de 32.",
+        "1": "Reparta 32 itens por 4 grupos iguais. Confira a opção 6: 6 × 4 não recompõe o total de 32.",
+        "3": "Reparta 32 itens por 4 grupos iguais. Confira a opção 9: 9 × 4 não recompõe o total de 32."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -89,9 +89,9 @@
       "correctIndex": 3,
       "explanation": "Três equipes com 7 crianças formam 21 crianças.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+        "0": "Reparta 21 itens por 3 grupos iguais. Confira a opção 3: 3 × 3 não recompõe o total de 21.",
+        "1": "Reparta 21 itens por 3 grupos iguais. Confira a opção 6: 6 × 3 não recompõe o total de 21.",
+        "2": "Reparta 21 itens por 3 grupos iguais. Confira a opção 8: 8 × 3 não recompõe o total de 21."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -114,9 +114,9 @@
       "correctIndex": 0,
       "explanation": "A conta 36 ÷ 6 = 6 indica seis lápis em cada caixa.",
       "wrongExplanations": {
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+        "1": "Reparta 36 itens por 6 grupos iguais. Confira a opção 5: 5 × 6 não recompõe o total de 36.",
+        "2": "Reparta 36 itens por 6 grupos iguais. Confira a opção 7: 7 × 6 não recompõe o total de 36.",
+        "3": "Reparta 36 itens por 6 grupos iguais. Confira a opção 9: 9 × 6 não recompõe o total de 36."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 1,
       "explanation": "Cinco grupos de oito biscoitos totalizam 40.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+        "0": "Reparta 40 itens por 5 grupos iguais. Confira a opção 5: 5 × 5 não recompõe o total de 40.",
+        "2": "Reparta 40 itens por 5 grupos iguais. Confira a opção 7: 7 × 5 não recompõe o total de 40.",
+        "3": "Reparta 40 itens por 5 grupos iguais. Confira a opção 9: 9 × 5 não recompõe o total de 40."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -164,9 +164,9 @@
       "correctIndex": 2,
       "explanation": "Dividir 27 por 3 dá 9 bolas para cada saco.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+        "0": "Reparta 27 itens por 3 grupos iguais. Confira a opção 6: 6 × 3 não recompõe o total de 27.",
+        "1": "Reparta 27 itens por 3 grupos iguais. Confira a opção 8: 8 × 3 não recompõe o total de 27.",
+        "3": "Reparta 27 itens por 3 grupos iguais. Confira a opção 10: 10 × 3 não recompõe o total de 27."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -189,9 +189,9 @@
       "correctIndex": 3,
       "explanation": "Cinco vasos com seis flores cada acomodam as 30 flores.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+        "0": "Reparta 30 itens por 5 grupos iguais. Confira a opção 5: 5 × 5 não recompõe o total de 30.",
+        "1": "Reparta 30 itens por 5 grupos iguais. Confira a opção 7: 7 × 5 não recompõe o total de 30.",
+        "2": "Reparta 30 itens por 5 grupos iguais. Confira a opção 8: 8 × 5 não recompõe o total de 30."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -214,9 +214,9 @@
       "correctIndex": 0,
       "explanation": "48 ÷ 6 = 8 cartões em cada monte.",
       "wrongExplanations": {
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+        "1": "Reparta 48 itens por 6 grupos iguais. Confira a opção 6: 6 × 6 não recompõe o total de 48.",
+        "2": "Reparta 48 itens por 6 grupos iguais. Confira a opção 7: 7 × 6 não recompõe o total de 48.",
+        "3": "Reparta 48 itens por 6 grupos iguais. Confira a opção 9: 9 × 6 não recompõe o total de 48."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -239,9 +239,9 @@
       "correctIndex": 1,
       "explanation": "Cinco grupos de nove estudantes somam 45.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+        "0": "Reparta 45 itens por 5 grupos iguais. Confira a opção 5: 5 × 5 não recompõe o total de 45.",
+        "2": "Reparta 45 itens por 5 grupos iguais. Confira a opção 8: 8 × 5 não recompõe o total de 45.",
+        "3": "Reparta 45 itens por 5 grupos iguais. Confira a opção 10: 10 × 5 não recompõe o total de 45."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -264,9 +264,9 @@
       "correctIndex": 2,
       "explanation": "A divisão 28 ÷ 4 = 7 dá a quantidade de carrinhos em cada caixa.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+        "0": "Reparta 28 itens por 4 grupos iguais. Confira a opção 4: 4 × 4 não recompõe o total de 28.",
+        "1": "Reparta 28 itens por 4 grupos iguais. Confira a opção 6: 6 × 4 não recompõe o total de 28.",
+        "3": "Reparta 28 itens por 4 grupos iguais. Confira a opção 8: 8 × 4 não recompõe o total de 28."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 3,
       "explanation": "Cada uma das 6 mesas recebe 9 copos, pois 6 × 9 = 54.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+        "0": "Reparta 54 itens por 6 grupos iguais. Confira a opção 6: 6 × 6 não recompõe o total de 54.",
+        "1": "Reparta 54 itens por 6 grupos iguais. Confira a opção 8: 8 × 6 não recompõe o total de 54.",
+        "2": "Reparta 54 itens por 6 grupos iguais. Confira a opção 10: 10 × 6 não recompõe o total de 54."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -314,9 +314,9 @@
       "correctIndex": 0,
       "explanation": "42 dividido por 7 é 6 sementes por vaso.",
       "wrongExplanations": {
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6."
+        "1": "Reparta 42 itens por 7 grupos iguais. Confira a opção 5: 5 × 7 não recompõe o total de 42.",
+        "2": "Reparta 42 itens por 7 grupos iguais. Confira a opção 7: 7 × 7 não recompõe o total de 42.",
+        "3": "Reparta 42 itens por 7 grupos iguais. Confira a opção 8: 8 × 7 não recompõe o total de 42."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -339,9 +339,9 @@
       "correctIndex": 1,
       "explanation": "Oito pilhas de sete livros contêm 56 livros.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7."
+        "0": "Reparta 56 itens por 8 grupos iguais. Confira a opção 6: 6 × 8 não recompõe o total de 56.",
+        "2": "Reparta 56 itens por 8 grupos iguais. Confira a opção 8: 8 × 8 não recompõe o total de 56.",
+        "3": "Reparta 56 itens por 8 grupos iguais. Confira a opção 9: 9 × 8 não recompõe o total de 56."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -364,9 +364,9 @@
       "correctIndex": 2,
       "explanation": "63 ÷ 7 = 9 botões em cada caixa.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+        "0": "Reparta 63 itens por 7 grupos iguais. Confira a opção 7: 7 × 7 não recompõe o total de 63.",
+        "1": "Reparta 63 itens por 7 grupos iguais. Confira a opção 8: 8 × 7 não recompõe o total de 63.",
+        "3": "Reparta 63 itens por 7 grupos iguais. Confira a opção 10: 10 × 7 não recompõe o total de 63."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -389,9 +389,9 @@
       "correctIndex": 3,
       "explanation": "Nove filas com quatro crianças usam 36 crianças.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9."
+        "0": "Cada grupo precisa de 4 itens. Teste 8 grupos: 8 × 4 não usa 36 itens.",
+        "1": "Cada grupo precisa de 4 itens. Teste 10 grupos: 10 × 4 não usa 36 itens.",
+        "2": "Cada grupo precisa de 4 itens. Teste 12 grupos: 12 × 4 não usa 36 itens."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -414,9 +414,9 @@
       "correctIndex": 0,
       "explanation": "Com três pães por saco, 24 ÷ 3 = 8 sacos.",
       "wrongExplanations": {
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+        "1": "Cada grupo precisa de 3 itens. Teste 6 grupos: 6 × 3 não usa 24 itens.",
+        "2": "Cada grupo precisa de 3 itens. Teste 7 grupos: 7 × 3 não usa 24 itens.",
+        "3": "Cada grupo precisa de 3 itens. Teste 9 grupos: 9 × 3 não usa 24 itens."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 1,
       "explanation": "Cinco grupos de oito folhas formam 40 folhas.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5."
+        "0": "Cada grupo precisa de 8 itens. Teste 4 grupos: 4 × 8 não usa 40 itens.",
+        "2": "Cada grupo precisa de 8 itens. Teste 6 grupos: 6 × 8 não usa 40 itens.",
+        "3": "Cada grupo precisa de 8 itens. Teste 8 grupos: 8 × 8 não usa 40 itens."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -464,9 +464,9 @@
       "correctIndex": 2,
       "explanation": "72 ÷ 9 = 8 caixas completas.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "3": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+        "0": "Cada grupo precisa de 9 itens. Teste 7 grupos: 7 × 9 não usa 72 itens.",
+        "1": "Cada grupo precisa de 9 itens. Teste 9 grupos: 9 × 9 não usa 72 itens.",
+        "3": "Cada grupo precisa de 9 itens. Teste 10 grupos: 10 × 9 não usa 72 itens."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {
@@ -489,9 +489,9 @@
       "correctIndex": 3,
       "explanation": "Oito cartelas de oito adesivos usam 64 adesivos.",
       "wrongExplanations": {
-        "0": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "1": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.",
-        "2": "Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8."
+        "0": "Cada grupo precisa de 8 itens. Teste 6 grupos: 6 × 8 não usa 64 itens.",
+        "1": "Cada grupo precisa de 8 itens. Teste 7 grupos: 7 × 8 não usa 64 itens.",
+        "2": "Cada grupo precisa de 8 itens. Teste 9 grupos: 9 × 8 não usa 64 itens."
       },
       "skill": "resolver-e-interpretar-divisoes",
       "sourceRef": {

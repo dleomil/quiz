@@ -19,9 +19,9 @@
       "correctIndex": 0,
       "explanation": "Ganhar adesivos aumenta a quantidade: 18 + 7 = 25.",
       "wrongExplanations": {
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 18 + 7 = 25.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 18 + 7 = 25.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 18 + 7 = 25."
+        "1": "A situação é representada por uma adição: 18 + 7 = 25. A opção 18 − 7 = 11 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 18 + 7 = 25. A opção 18 × 7 = 126 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 18 + 7 = 25. A opção 18 ÷ 7 = 2, resto 4 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -49,9 +49,9 @@
       "correctIndex": 1,
       "explanation": "Guardar 9 livros retira essa quantidade: 32 − 9 = 23.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 32 − 9 = 23.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 32 − 9 = 23.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 32 − 9 = 23."
+        "0": "A situação é representada por uma subtração: 32 − 9 = 23. A opção 32 + 9 = 41 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 32 − 9 = 23. A opção 32 × 9 = 288 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 32 − 9 = 23. A opção 32 ÷ 9 = 3, resto 5 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -79,9 +79,9 @@
       "correctIndex": 2,
       "explanation": "Seis grupos iguais de quatro bolas são representados por 6 × 4 = 24.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 6 × 4 = 24.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 6 × 4 = 24.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 6 × 4 = 24."
+        "0": "A situação é representada por uma multiplicação: 6 × 4 = 24. A opção 6 + 4 = 10 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 6 × 4 = 24. A opção 6 − 4 = 2 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 6 × 4 = 24. A opção 6 ÷ 4 = 1, resto 2 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -109,9 +109,9 @@
       "correctIndex": 3,
       "explanation": "Receber folhas acrescenta 8 às 27 que já havia. 27 + 8 = 35.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 27 + 8 = 35.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 27 + 8 = 35.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 27 + 8 = 35."
+        "0": "A situação é representada por uma adição: 27 + 8 = 35. A opção 27 − 8 = 19 usa subtração, que não representa essa ação.",
+        "1": "A situação é representada por uma adição: 27 + 8 = 35. A opção 27 × 8 = 216 usa multiplicação, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 27 + 8 = 35. A opção 27 ÷ 8 = 3, resto 3 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 0,
       "explanation": "Usar laranjas diminui o total: 45 − 18 = 27.",
       "wrongExplanations": {
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 45 − 18 = 27.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 45 − 18 = 27.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 45 − 18 = 27."
+        "1": "A situação é representada por uma subtração: 45 − 18 = 27. A opção 45 + 18 = 63 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 45 − 18 = 27. A opção 45 × 18 = 810 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 45 − 18 = 27. A opção 45 ÷ 18 = 2, resto 9 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -169,9 +169,9 @@
       "correctIndex": 1,
       "explanation": "A multiplicação representa sete grupos de cinco pães. 7 × 5 = 35.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 5 = 35.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 5 = 35.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 5 = 35."
+        "0": "A situação é representada por uma multiplicação: 7 × 5 = 35. A opção 7 + 5 = 12 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 7 × 5 = 35. A opção 7 − 5 = 2 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 7 × 5 = 35. A opção 7 ÷ 5 = 1, resto 2 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -199,9 +199,9 @@
       "correctIndex": 2,
       "explanation": "Retirar 16 peças é representado por 36 − 16. 36 − 16 = 20.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 36 − 16 = 20.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 36 − 16 = 20.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 36 − 16 = 20."
+        "0": "A situação é representada por uma subtração: 36 − 16 = 20. A opção 36 + 16 = 52 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma subtração: 36 − 16 = 20. A opção 36 × 16 = 576 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 36 − 16 = 20. A opção 36 ÷ 16 = 2, resto 4 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -229,9 +229,9 @@
       "correctIndex": 3,
       "explanation": "As páginas dos dois dias são juntadas: 25 + 14 = 39.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 25 + 14 = 39.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 25 + 14 = 39.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 25 + 14 = 39."
+        "0": "A situação é representada por uma adição: 25 + 14 = 39. A opção 25 − 14 = 11 usa subtração, que não representa essa ação.",
+        "1": "A situação é representada por uma adição: 25 + 14 = 39. A opção 25 × 14 = 350 usa multiplicação, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 25 + 14 = 39. A opção 25 ÷ 14 = 1, resto 11 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -259,9 +259,9 @@
       "correctIndex": 0,
       "explanation": "Oito grupos iguais de três estudantes são 8 × 3. 8 × 3 = 24.",
       "wrongExplanations": {
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 3 = 24.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 3 = 24.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 3 = 24."
+        "1": "A situação é representada por uma multiplicação: 8 × 3 = 24. A opção 8 + 3 = 11 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 8 × 3 = 24. A opção 8 − 3 = 5 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 8 × 3 = 24. A opção 8 ÷ 3 = 2, resto 2 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 1,
       "explanation": "Vender frutas retira 25 do total de 48. 48 − 25 = 23.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 48 − 25 = 23.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 48 − 25 = 23.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 48 − 25 = 23."
+        "0": "A situação é representada por uma subtração: 48 − 25 = 23. A opção 48 + 25 = 73 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 48 − 25 = 23. A opção 48 × 25 = 1200 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 48 − 25 = 23. A opção 48 ÷ 25 = 1, resto 23 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -319,9 +319,9 @@
       "correctIndex": 2,
       "explanation": "Juntar cartões significa somar 29 e 34. 29 + 34 = 63.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 29 + 34 = 63.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 29 + 34 = 63.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 29 + 34 = 63."
+        "0": "A situação é representada por uma adição: 29 + 34 = 63. A opção 29 − 34 = -5 usa subtração, que não representa essa ação.",
+        "1": "A situação é representada por uma adição: 29 + 34 = 63. A opção 29 × 34 = 986 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 29 + 34 = 63. A opção 29 ÷ 34 = 0, resto 29 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -349,9 +349,9 @@
       "correctIndex": 3,
       "explanation": "Nove grupos de quatro figurinhas são representados por 9 × 4. 9 × 4 = 36.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 4 = 36.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 4 = 36.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 4 = 36."
+        "0": "A situação é representada por uma multiplicação: 9 × 4 = 36. A opção 9 + 4 = 13 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 9 × 4 = 36. A opção 9 − 4 = 5 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 9 × 4 = 36. A opção 9 ÷ 4 = 2, resto 1 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -379,9 +379,9 @@
       "correctIndex": 0,
       "explanation": "Levar cadeiras embora reduz a quantidade: 56 − 17. 56 − 17 = 39.",
       "wrongExplanations": {
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 56 − 17 = 39.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 56 − 17 = 39.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 56 − 17 = 39."
+        "1": "A situação é representada por uma subtração: 56 − 17 = 39. A opção 56 + 17 = 73 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 56 − 17 = 39. A opção 56 × 17 = 952 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 56 − 17 = 39. A opção 56 ÷ 17 = 3, resto 5 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -409,9 +409,9 @@
       "correctIndex": 1,
       "explanation": "Encontrar mais conchas aumenta a coleção; somamos 38 e 46. 38 + 46 = 84.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 38 + 46 = 84.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 38 + 46 = 84.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 38 + 46 = 84."
+        "0": "A situação é representada por uma adição: 38 + 46 = 84. A opção 38 − 46 = -8 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 38 + 46 = 84. A opção 38 × 46 = 1748 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 38 + 46 = 84. A opção 38 ÷ 46 = 0, resto 38 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 2,
       "explanation": "Sete grupos de seis livros correspondem a 7 × 6. 7 × 6 = 42.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 6 = 42.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 6 = 42.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 7 × 6 = 42."
+        "0": "A situação é representada por uma multiplicação: 7 × 6 = 42. A opção 7 + 6 = 13 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 7 × 6 = 42. A opção 7 − 6 = 1 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 7 × 6 = 42. A opção 7 ÷ 6 = 1, resto 1 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -469,9 +469,9 @@
       "correctIndex": 3,
       "explanation": "Separar 48 maçãs deixa a diferença entre 83 e 48. 83 − 48 = 35.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 83 − 48 = 35.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 83 − 48 = 35.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 83 − 48 = 35."
+        "0": "A situação é representada por uma subtração: 83 − 48 = 35. A opção 83 + 48 = 131 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma subtração: 83 − 48 = 35. A opção 83 × 48 = 3984 usa multiplicação, que não representa essa ação.",
+        "2": "A situação é representada por uma subtração: 83 − 48 = 35. A opção 83 ÷ 48 = 1, resto 35 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -499,9 +499,9 @@
       "correctIndex": 0,
       "explanation": "Receber mais cadernos pede uma adição. 56 + 17 = 73.",
       "wrongExplanations": {
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 56 + 17 = 73.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 56 + 17 = 73.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 56 + 17 = 73."
+        "1": "A situação é representada por uma adição: 56 + 17 = 73. A opção 56 − 17 = 39 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma adição: 56 + 17 = 73. A opção 56 × 17 = 952 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma adição: 56 + 17 = 73. A opção 56 ÷ 17 = 3, resto 5 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -529,9 +529,9 @@
       "correctIndex": 1,
       "explanation": "Oito grupos de seis bolas são representados por 8 × 6. 8 × 6 = 48.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 6 = 48.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 6 = 48.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 8 × 6 = 48."
+        "0": "A situação é representada por uma multiplicação: 8 × 6 = 48. A opção 8 + 6 = 14 usa adição, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 8 × 6 = 48. A opção 8 − 6 = 2 usa subtração, que não representa essa ação.",
+        "3": "A situação é representada por uma multiplicação: 8 × 6 = 48. A opção 8 ÷ 6 = 1, resto 2 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -559,9 +559,9 @@
       "correctIndex": 2,
       "explanation": "Vender cadernos reduz o estoque: 100 − 64 = 36.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 100 − 64 = 36.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 100 − 64 = 36.",
-        "3": "Escolha a expressão que representa a ação descrita; ela resulta em 100 − 64 = 36."
+        "0": "A situação é representada por uma subtração: 100 − 64 = 36. A opção 100 + 64 = 164 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma subtração: 100 − 64 = 36. A opção 100 × 64 = 6400 usa multiplicação, que não representa essa ação.",
+        "3": "A situação é representada por uma subtração: 100 − 64 = 36. A opção 100 ÷ 64 = 1, resto 36 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {
@@ -589,9 +589,9 @@
       "correctIndex": 3,
       "explanation": "Nove grupos de cinco cadeiras correspondem a 9 × 5. 9 × 5 = 45.",
       "wrongExplanations": {
-        "0": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 5 = 45.",
-        "1": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 5 = 45.",
-        "2": "Escolha a expressão que representa a ação descrita; ela resulta em 9 × 5 = 45."
+        "0": "A situação é representada por uma multiplicação: 9 × 5 = 45. A opção 9 + 5 = 14 usa adição, que não representa essa ação.",
+        "1": "A situação é representada por uma multiplicação: 9 × 5 = 45. A opção 9 − 5 = 4 usa subtração, que não representa essa ação.",
+        "2": "A situação é representada por uma multiplicação: 9 × 5 = 45. A opção 9 ÷ 5 = 1, resto 4 usa divisão, que não representa essa ação."
       },
       "skill": "traduzir-situacoes-em-expressoes-e-resolver",
       "sourceRef": {

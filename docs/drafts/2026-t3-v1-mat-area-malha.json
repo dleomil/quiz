@@ -12,11 +12,11 @@
       "question": "Uma figura retangular ocupa 3 colunas e 2 linhas de quadradinhos. Qual é sua área?",
       "options": ["6", "4", "5", "7"],
       "correctIndex": 0,
-      "explanation": "3 grupos de 2 quadradinhos totalizam 6.",
+      "explanation": "2 linhas com 3 quadradinhos em cada totalizam 6 unidades quadradas.",
       "wrongExplanations": {
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas."
+        "1": "Conte 2 linhas com 3 quadradinhos em cada: 2 × 3 = 6 unidades quadradas. A opção 4 não conta todas as casas.",
+        "2": "Conte 2 linhas com 3 quadradinhos em cada: 2 × 3 = 6 unidades quadradas. A opção 5 não conta todas as casas.",
+        "3": "Conte 2 linhas com 3 quadradinhos em cada: 2 × 3 = 6 unidades quadradas. A opção 7 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -37,11 +37,11 @@
       "question": "Há 4 quadradinhos em cada uma de 3 linhas completas. Quantos quadradinhos cobrem a região?",
       "options": ["10", "12", "11", "13"],
       "correctIndex": 1,
-      "explanation": "4 grupos de 3 quadradinhos totalizam 12.",
+      "explanation": "3 linhas com 4 quadradinhos em cada totalizam 12 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas."
+        "0": "Conte 3 linhas com 4 quadradinhos em cada: 3 × 4 = 12 unidades quadradas. A opção 10 não conta todas as casas.",
+        "2": "Conte 3 linhas com 4 quadradinhos em cada: 3 × 4 = 12 unidades quadradas. A opção 11 não conta todas as casas.",
+        "3": "Conte 3 linhas com 4 quadradinhos em cada: 3 × 4 = 12 unidades quadradas. A opção 13 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -62,11 +62,11 @@
       "question": "Uma região da malha mede 2 quadradinhos de largura por 2 de altura. Qual é a área?",
       "options": ["2", "3", "4", "5"],
       "correctIndex": 2,
-      "explanation": "2 grupos de 2 quadradinhos totalizam 4.",
+      "explanation": "2 linhas com 2 quadradinhos em cada totalizam 4 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 4 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 4 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 4 unidades quadradas."
+        "0": "Conte 2 linhas com 2 quadradinhos em cada: 2 × 2 = 4 unidades quadradas. A opção 2 não conta todas as casas.",
+        "1": "Conte 2 linhas com 2 quadradinhos em cada: 2 × 2 = 4 unidades quadradas. A opção 3 não conta todas as casas.",
+        "3": "Conte 2 linhas com 2 quadradinhos em cada: 2 × 2 = 4 unidades quadradas. A opção 5 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -87,11 +87,11 @@
       "question": "Um retângulo cobre 2 linhas com 5 quadradinhos em cada linha. Quantos quadradinhos há?",
       "options": ["8", "9", "11", "10"],
       "correctIndex": 3,
-      "explanation": "5 grupos de 2 quadradinhos totalizam 10.",
+      "explanation": "2 linhas com 5 quadradinhos em cada totalizam 10 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas."
+        "0": "Conte 2 linhas com 5 quadradinhos em cada: 2 × 5 = 10 unidades quadradas. A opção 8 não conta todas as casas.",
+        "1": "Conte 2 linhas com 5 quadradinhos em cada: 2 × 5 = 10 unidades quadradas. A opção 9 não conta todas as casas.",
+        "2": "Conte 2 linhas com 5 quadradinhos em cada: 2 × 5 = 10 unidades quadradas. A opção 11 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -112,11 +112,11 @@
       "question": "Uma figura retangular ocupa 3 colunas e 4 linhas de quadradinhos. Qual é sua área?",
       "options": ["12", "10", "11", "13"],
       "correctIndex": 0,
-      "explanation": "3 grupos de 4 quadradinhos totalizam 12.",
+      "explanation": "4 linhas com 3 quadradinhos em cada totalizam 12 unidades quadradas.",
       "wrongExplanations": {
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas."
+        "1": "Conte 4 linhas com 3 quadradinhos em cada: 4 × 3 = 12 unidades quadradas. A opção 10 não conta todas as casas.",
+        "2": "Conte 4 linhas com 3 quadradinhos em cada: 4 × 3 = 12 unidades quadradas. A opção 11 não conta todas as casas.",
+        "3": "Conte 4 linhas com 3 quadradinhos em cada: 4 × 3 = 12 unidades quadradas. A opção 13 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -137,11 +137,11 @@
       "question": "Há 6 quadradinhos em cada uma de 2 linhas completas. Quantos quadradinhos cobrem a região?",
       "options": ["10", "12", "11", "13"],
       "correctIndex": 1,
-      "explanation": "6 grupos de 2 quadradinhos totalizam 12.",
+      "explanation": "2 linhas com 6 quadradinhos em cada totalizam 12 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 12 unidades quadradas."
+        "0": "Conte 2 linhas com 6 quadradinhos em cada: 2 × 6 = 12 unidades quadradas. A opção 10 não conta todas as casas.",
+        "2": "Conte 2 linhas com 6 quadradinhos em cada: 2 × 6 = 12 unidades quadradas. A opção 11 não conta todas as casas.",
+        "3": "Conte 2 linhas com 6 quadradinhos em cada: 2 × 6 = 12 unidades quadradas. A opção 13 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -162,11 +162,11 @@
       "question": "Uma região da malha mede 5 quadradinhos de largura por 3 de altura. Qual é a área?",
       "options": ["13", "14", "15", "16"],
       "correctIndex": 2,
-      "explanation": "5 grupos de 3 quadradinhos totalizam 15.",
+      "explanation": "3 linhas com 5 quadradinhos em cada totalizam 15 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas."
+        "0": "Conte 3 linhas com 5 quadradinhos em cada: 3 × 5 = 15 unidades quadradas. A opção 13 não conta todas as casas.",
+        "1": "Conte 3 linhas com 5 quadradinhos em cada: 3 × 5 = 15 unidades quadradas. A opção 14 não conta todas as casas.",
+        "3": "Conte 3 linhas com 5 quadradinhos em cada: 3 × 5 = 15 unidades quadradas. A opção 16 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -187,11 +187,11 @@
       "question": "Um retângulo cobre 4 linhas com 4 quadradinhos em cada linha. Quantos quadradinhos há?",
       "options": ["14", "15", "17", "16"],
       "correctIndex": 3,
-      "explanation": "4 grupos de 4 quadradinhos totalizam 16.",
+      "explanation": "4 linhas com 4 quadradinhos em cada totalizam 16 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 16 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 16 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 16 unidades quadradas."
+        "0": "Conte 4 linhas com 4 quadradinhos em cada: 4 × 4 = 16 unidades quadradas. A opção 14 não conta todas as casas.",
+        "1": "Conte 4 linhas com 4 quadradinhos em cada: 4 × 4 = 16 unidades quadradas. A opção 15 não conta todas as casas.",
+        "2": "Conte 4 linhas com 4 quadradinhos em cada: 4 × 4 = 16 unidades quadradas. A opção 17 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -212,11 +212,11 @@
       "question": "Uma figura retangular ocupa 2 colunas e 5 linhas de quadradinhos. Qual é sua área?",
       "options": ["10", "8", "9", "11"],
       "correctIndex": 0,
-      "explanation": "2 grupos de 5 quadradinhos totalizam 10.",
+      "explanation": "5 linhas com 2 quadradinhos em cada totalizam 10 unidades quadradas.",
       "wrongExplanations": {
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 10 unidades quadradas."
+        "1": "Conte 5 linhas com 2 quadradinhos em cada: 5 × 2 = 10 unidades quadradas. A opção 8 não conta todas as casas.",
+        "2": "Conte 5 linhas com 2 quadradinhos em cada: 5 × 2 = 10 unidades quadradas. A opção 9 não conta todas as casas.",
+        "3": "Conte 5 linhas com 2 quadradinhos em cada: 5 × 2 = 10 unidades quadradas. A opção 11 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -237,11 +237,11 @@
       "question": "Há 6 quadradinhos em cada uma de 3 linhas completas. Quantos quadradinhos cobrem a região?",
       "options": ["16", "18", "17", "19"],
       "correctIndex": 1,
-      "explanation": "6 grupos de 3 quadradinhos totalizam 18.",
+      "explanation": "3 linhas com 6 quadradinhos em cada totalizam 18 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 18 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 18 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 18 unidades quadradas."
+        "0": "Conte 3 linhas com 6 quadradinhos em cada: 3 × 6 = 18 unidades quadradas. A opção 16 não conta todas as casas.",
+        "2": "Conte 3 linhas com 6 quadradinhos em cada: 3 × 6 = 18 unidades quadradas. A opção 17 não conta todas as casas.",
+        "3": "Conte 3 linhas com 6 quadradinhos em cada: 3 × 6 = 18 unidades quadradas. A opção 19 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -262,11 +262,11 @@
       "question": "Uma região da malha mede 4 quadradinhos de largura por 2 de altura. Qual é a área?",
       "options": ["6", "7", "8", "9"],
       "correctIndex": 2,
-      "explanation": "4 grupos de 2 quadradinhos totalizam 8.",
+      "explanation": "2 linhas com 4 quadradinhos em cada totalizam 8 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 8 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 8 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 8 unidades quadradas."
+        "0": "Conte 2 linhas com 4 quadradinhos em cada: 2 × 4 = 8 unidades quadradas. A opção 6 não conta todas as casas.",
+        "1": "Conte 2 linhas com 4 quadradinhos em cada: 2 × 4 = 8 unidades quadradas. A opção 7 não conta todas as casas.",
+        "3": "Conte 2 linhas com 4 quadradinhos em cada: 2 × 4 = 8 unidades quadradas. A opção 9 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -287,11 +287,11 @@
       "question": "Um retângulo cobre 4 linhas com 5 quadradinhos em cada linha. Quantos quadradinhos há?",
       "options": ["18", "19", "21", "20"],
       "correctIndex": 3,
-      "explanation": "5 grupos de 4 quadradinhos totalizam 20.",
+      "explanation": "4 linhas com 5 quadradinhos em cada totalizam 20 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas."
+        "0": "Conte 4 linhas com 5 quadradinhos em cada: 4 × 5 = 20 unidades quadradas. A opção 18 não conta todas as casas.",
+        "1": "Conte 4 linhas com 5 quadradinhos em cada: 4 × 5 = 20 unidades quadradas. A opção 19 não conta todas as casas.",
+        "2": "Conte 4 linhas com 5 quadradinhos em cada: 4 × 5 = 20 unidades quadradas. A opção 21 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -312,11 +312,11 @@
       "question": "Uma figura retangular ocupa 3 colunas e 3 linhas de quadradinhos. Qual é sua área?",
       "options": ["9", "7", "8", "10"],
       "correctIndex": 0,
-      "explanation": "3 grupos de 3 quadradinhos totalizam 9.",
+      "explanation": "3 linhas com 3 quadradinhos em cada totalizam 9 unidades quadradas.",
       "wrongExplanations": {
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 9 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 9 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 9 unidades quadradas."
+        "1": "Conte 3 linhas com 3 quadradinhos em cada: 3 × 3 = 9 unidades quadradas. A opção 7 não conta todas as casas.",
+        "2": "Conte 3 linhas com 3 quadradinhos em cada: 3 × 3 = 9 unidades quadradas. A opção 8 não conta todas as casas.",
+        "3": "Conte 3 linhas com 3 quadradinhos em cada: 3 × 3 = 9 unidades quadradas. A opção 10 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -337,11 +337,11 @@
       "question": "Há 6 quadradinhos em cada uma de 4 linhas completas. Quantos quadradinhos cobrem a região?",
       "options": ["22", "24", "23", "25"],
       "correctIndex": 1,
-      "explanation": "6 grupos de 4 quadradinhos totalizam 24.",
+      "explanation": "4 linhas com 6 quadradinhos em cada totalizam 24 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas."
+        "0": "Conte 4 linhas com 6 quadradinhos em cada: 4 × 6 = 24 unidades quadradas. A opção 22 não conta todas as casas.",
+        "2": "Conte 4 linhas com 6 quadradinhos em cada: 4 × 6 = 24 unidades quadradas. A opção 23 não conta todas as casas.",
+        "3": "Conte 4 linhas com 6 quadradinhos em cada: 4 × 6 = 24 unidades quadradas. A opção 25 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -362,11 +362,11 @@
       "question": "Uma região da malha mede 5 quadradinhos de largura por 5 de altura. Qual é a área?",
       "options": ["23", "24", "25", "26"],
       "correctIndex": 2,
-      "explanation": "5 grupos de 5 quadradinhos totalizam 25.",
+      "explanation": "5 linhas com 5 quadradinhos em cada totalizam 25 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 25 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 25 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 25 unidades quadradas."
+        "0": "Conte 5 linhas com 5 quadradinhos em cada: 5 × 5 = 25 unidades quadradas. A opção 23 não conta todas as casas.",
+        "1": "Conte 5 linhas com 5 quadradinhos em cada: 5 × 5 = 25 unidades quadradas. A opção 24 não conta todas as casas.",
+        "3": "Conte 5 linhas com 5 quadradinhos em cada: 5 × 5 = 25 unidades quadradas. A opção 26 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -387,11 +387,11 @@
       "question": "Um retângulo cobre 3 linhas com 2 quadradinhos em cada linha. Quantos quadradinhos há?",
       "options": ["4", "5", "7", "6"],
       "correctIndex": 3,
-      "explanation": "2 grupos de 3 quadradinhos totalizam 6.",
+      "explanation": "3 linhas com 2 quadradinhos em cada totalizam 6 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 6 unidades quadradas."
+        "0": "Conte 3 linhas com 2 quadradinhos em cada: 3 × 2 = 6 unidades quadradas. A opção 4 não conta todas as casas.",
+        "1": "Conte 3 linhas com 2 quadradinhos em cada: 3 × 2 = 6 unidades quadradas. A opção 5 não conta todas as casas.",
+        "2": "Conte 3 linhas com 2 quadradinhos em cada: 3 × 2 = 6 unidades quadradas. A opção 7 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -412,11 +412,11 @@
       "question": "Uma figura retangular ocupa 4 colunas e 5 linhas de quadradinhos. Qual é sua área?",
       "options": ["20", "18", "19", "21"],
       "correctIndex": 0,
-      "explanation": "4 grupos de 5 quadradinhos totalizam 20.",
+      "explanation": "5 linhas com 4 quadradinhos em cada totalizam 20 unidades quadradas.",
       "wrongExplanations": {
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 20 unidades quadradas."
+        "1": "Conte 5 linhas com 4 quadradinhos em cada: 5 × 4 = 20 unidades quadradas. A opção 18 não conta todas as casas.",
+        "2": "Conte 5 linhas com 4 quadradinhos em cada: 5 × 4 = 20 unidades quadradas. A opção 19 não conta todas as casas.",
+        "3": "Conte 5 linhas com 4 quadradinhos em cada: 5 × 4 = 20 unidades quadradas. A opção 21 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -437,11 +437,11 @@
       "question": "Há 6 quadradinhos em cada uma de 5 linhas completas. Quantos quadradinhos cobrem a região?",
       "options": ["28", "30", "29", "31"],
       "correctIndex": 1,
-      "explanation": "6 grupos de 5 quadradinhos totalizam 30.",
+      "explanation": "5 linhas com 6 quadradinhos em cada totalizam 30 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 30 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 30 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 30 unidades quadradas."
+        "0": "Conte 5 linhas com 6 quadradinhos em cada: 5 × 6 = 30 unidades quadradas. A opção 28 não conta todas as casas.",
+        "2": "Conte 5 linhas com 6 quadradinhos em cada: 5 × 6 = 30 unidades quadradas. A opção 29 não conta todas as casas.",
+        "3": "Conte 5 linhas com 6 quadradinhos em cada: 5 × 6 = 30 unidades quadradas. A opção 31 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -462,11 +462,11 @@
       "question": "Uma região da malha mede 3 quadradinhos de largura por 5 de altura. Qual é a área?",
       "options": ["13", "14", "15", "16"],
       "correctIndex": 2,
-      "explanation": "3 grupos de 5 quadradinhos totalizam 15.",
+      "explanation": "5 linhas com 3 quadradinhos em cada totalizam 15 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas.",
-        "3": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 15 unidades quadradas."
+        "0": "Conte 5 linhas com 3 quadradinhos em cada: 5 × 3 = 15 unidades quadradas. A opção 13 não conta todas as casas.",
+        "1": "Conte 5 linhas com 3 quadradinhos em cada: 5 × 3 = 15 unidades quadradas. A opção 14 não conta todas as casas.",
+        "3": "Conte 5 linhas com 3 quadradinhos em cada: 5 × 3 = 15 unidades quadradas. A opção 16 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {
@@ -487,11 +487,11 @@
       "question": "Um retângulo cobre 6 linhas com 4 quadradinhos em cada linha. Quantos quadradinhos há?",
       "options": ["22", "23", "25", "24"],
       "correctIndex": 3,
-      "explanation": "4 grupos de 6 quadradinhos totalizam 24.",
+      "explanation": "6 linhas com 4 quadradinhos em cada totalizam 24 unidades quadradas.",
       "wrongExplanations": {
-        "0": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
-        "1": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas.",
-        "2": "Conte os quadradinhos que cobrem a figura sem sobreposição; a área é 24 unidades quadradas."
+        "0": "Conte 6 linhas com 4 quadradinhos em cada: 6 × 4 = 24 unidades quadradas. A opção 22 não conta todas as casas.",
+        "1": "Conte 6 linhas com 4 quadradinhos em cada: 6 × 4 = 24 unidades quadradas. A opção 23 não conta todas as casas.",
+        "2": "Conte 6 linhas com 4 quadradinhos em cada: 6 × 4 = 24 unidades quadradas. A opção 25 não conta todas as casas."
       },
       "skill": "calcular-area-por-contagem-em-malha",
       "sourceRef": {

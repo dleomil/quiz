@@ -1,0 +1,761 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "in-conversation-direct",
+  "reviewer": "Codex (conversa atual)",
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "matematica",
+  "topicId": "divisao",
+  "sourceSha256": "f6fe48ebbff3492971cba7eaecf2d47e5b4df58fd7ff16c0bef8f1fe1c8ad136",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "blocked",
+  "humanApprovalRequired": true,
+  "reviews": [
+    {
+      "questionId": "2026t3v1_math_divisao_001",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_001",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_001",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_002",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_002",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_002",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_003",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_003",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_003",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_004",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_004",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_004",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_005",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_005",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_005",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_006",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_006",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_006",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_007",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_007",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_007",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_008",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_008",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_008",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_009",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_009",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_009",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_010",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_010",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_010",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_011",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_011",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_011",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_012",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_012",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_012",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_013",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_013",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 6.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_013",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_014",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_014",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 7.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_014",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_015",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_015",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_015",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_016",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_016",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 9.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_divisao_016",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "O feedback deve distinguir divisão por partilha e por medida.",
+          "evidence": "A questão pede quantos grupos/filas/caixas cabem, mas o feedback afirma quantos itens cada grupo recebe.",
+          "recommendation": "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_016",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_017",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_017",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_divisao_017",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "O feedback deve distinguir divisão por partilha e por medida.",
+          "evidence": "A questão pede quantos grupos/filas/caixas cabem, mas o feedback afirma quantos itens cada grupo recebe.",
+          "recommendation": "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_017",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_018",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_018",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 5.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_divisao_018",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "O feedback deve distinguir divisão por partilha e por medida.",
+          "evidence": "A questão pede quantos grupos/filas/caixas cabem, mas o feedback afirma quantos itens cada grupo recebe.",
+          "recommendation": "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_018",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_019",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_019",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_divisao_019",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "O feedback deve distinguir divisão por partilha e por medida.",
+          "evidence": "A questão pede quantos grupos/filas/caixas cabem, mas o feedback afirma quantos itens cada grupo recebe.",
+          "recommendation": "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_019",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_020",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_divisao_020",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Verifique quantos itens ficam em cada grupo quando a quantidade é repartida igualmente; cada grupo recebe 8.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        },
+        {
+          "questionId": "2026t3v1_math_divisao_020",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "O feedback deve distinguir divisão por partilha e por medida.",
+          "evidence": "A questão pede quantos grupos/filas/caixas cabem, mas o feedback afirma quantos itens cada grupo recebe.",
+          "recommendation": "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito.",
+        "Reescrever o feedback para explicar a quantidade de grupos completos, não itens por grupo."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_divisao_020",
+      "pass": "linguistic",
+      "decision": "approved",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [],
+      "humanApprovalRequired": true
+    }
+  ]
+}

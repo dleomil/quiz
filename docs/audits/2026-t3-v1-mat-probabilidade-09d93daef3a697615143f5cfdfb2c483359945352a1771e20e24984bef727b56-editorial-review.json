@@ -1,0 +1,936 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "in-conversation-direct",
+  "reviewer": "Codex (conversa atual)",
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "matematica",
+  "topicId": "probabilidade",
+  "sourceSha256": "09d93daef3a697615143f5cfdfb2c483359945352a1771e20e24984bef727b56",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "blocked",
+  "humanApprovalRequired": true,
+  "reviews": [
+    {
+      "questionId": "2026t3v1_math_probabilidade_001",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_001",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_001",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_001",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_002",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_002",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_002",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_002",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_003",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_003",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_003",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_003",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_004",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_004",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_004",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_004",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_005",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_005",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, sacola a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_005",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_005",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, sacola a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_006",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_006",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_006",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_006",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_007",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_007",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_007",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_007",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_008",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_008",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_008",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_008",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_009",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_009",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, igual nos dois potes.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_009",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_009",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, igual nos dois potes.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_010",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_010",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, a chance de sair sol é igual nas duas..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_010",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_010",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, a chance de sair sol é igual nas duas..”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_011",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_011",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_011",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_011",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_012",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_012",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_012",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_012",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_013",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_013",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_013",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_013",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_014",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_014",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_014",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_014",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_015",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_015",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_015",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_015",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_016",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_016",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_016",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_016",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_017",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_017",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_017",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_017",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_018",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_018",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_018",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_018",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_019",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_019",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_019",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_019",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_020",
+      "pass": "pedagogical",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_020",
+          "pass": "pedagogical",
+          "severity": "major",
+          "criterion": "Cada alternativa incorreta deve receber feedback diagnóstico específico.",
+          "evidence": "As três explicações de erro são iguais (“Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.”) e não explicam o raciocínio associado a cada distrator.",
+          "recommendation": "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+        }
+      ],
+      "recommendations": [
+        "Escrever feedback distinto para cada distrator, explicando o erro provável e orientando a correção sem apenas revelar o gabarito."
+      ],
+      "humanApprovalRequired": true
+    },
+    {
+      "questionId": "2026t3v1_math_probabilidade_020",
+      "pass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": [
+        "Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa."
+      ],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "2026t3v1_math_probabilidade_020",
+          "pass": "linguistic",
+          "severity": "major",
+          "criterion": "Frases explicativas devem manter capitalização e pontuação naturais.",
+          "evidence": "O feedback termina com a resposta incorporada em minúsculas: “Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.”",
+          "recommendation": "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+        }
+      ],
+      "recommendations": [
+        "Reformular o feedback como uma frase completa, sem inserir literalmente a alternativa em caixa baixa."
+      ],
+      "humanApprovalRequired": true
+    }
+  ]
+}

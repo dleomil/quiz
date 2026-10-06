@@ -19,9 +19,9 @@
       "correctIndex": 0,
       "explanation": "Os sacos têm o mesmo total; B tem mais fichas azuis.",
       "wrongExplanations": {
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b."
+        "1": "A tem 3 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Saco A” não corresponde à comparação.",
+        "2": "A tem 3 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 3 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Não é possível comparar” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -49,9 +49,9 @@
       "correctIndex": 1,
       "explanation": "Com o mesmo número de setores, a roleta B tem mais setores verdes.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta b.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta b."
+        "0": "A tem 2 resultados favoráveis; B tem 5 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Roleta A” não corresponde à comparação.",
+        "2": "A tem 2 resultados favoráveis; B tem 5 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 2 resultados favoráveis; B tem 5 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Nenhuma pode parar no verde” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -79,9 +79,9 @@
       "correctIndex": 2,
       "explanation": "Como os potes têm o mesmo total, o pote A, com mais botões vermelhos, oferece maior chance.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a."
+        "0": "A tem 9 resultados favoráveis; B tem 4 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Pote B” não corresponde à comparação.",
+        "1": "A tem 9 resultados favoráveis; B tem 4 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 9 resultados favoráveis; B tem 4 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não há botões vermelhos” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -109,9 +109,9 @@
       "correctIndex": 3,
       "explanation": "A caixa B tem mais cartões favoráveis entre o mesmo total.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b."
+        "0": "A tem 1 resultado favorável; B tem 4 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "1": "A tem 1 resultado favorável; B tem 4 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 1 resultado favorável; B tem 4 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “É impossível nas duas” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 0,
       "explanation": "Com totais iguais, seis bolas amarelas representam uma chance maior que duas.",
       "wrongExplanations": {
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, sacola a.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, sacola a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, sacola a."
+        "1": "A tem 6 resultados favoráveis; B tem 2 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Sacola B” não corresponde à comparação.",
+        "2": "A tem 6 resultados favoráveis; B tem 2 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 6 resultados favoráveis; B tem 2 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não há como tirar amarela” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -169,9 +169,9 @@
       "correctIndex": 1,
       "explanation": "A roleta A tem mais setores de estrela, e ambas têm seis setores iguais.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a."
+        "0": "A tem 3 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Roleta B” não corresponde à comparação.",
+        "2": "A tem 3 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 3 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Nenhuma tem estrela” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -199,9 +199,9 @@
       "correctIndex": 2,
       "explanation": "O saco A tem mais peças quadradas no mesmo total de peças.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a."
+        "0": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Saco B” não corresponde à comparação.",
+        "1": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não se pode retirar peça quadrada” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -229,9 +229,9 @@
       "correctIndex": 3,
       "explanation": "A caixa B oferece mais resultados favoráveis entre dez lápis.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b."
+        "0": "A tem 4 resultados favoráveis; B tem 8 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "1": "A tem 4 resultados favoráveis; B tem 8 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 4 resultados favoráveis; B tem 8 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Nenhuma tem lápis azul” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -259,9 +259,9 @@
       "correctIndex": 0,
       "explanation": "Os dois potes têm o mesmo total e a mesma quantidade de tampinhas brancas.",
       "wrongExplanations": {
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, igual nos dois potes.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, igual nos dois potes.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, igual nos dois potes."
+        "1": "A tem 2 resultados favoráveis; B tem 2 resultados favoráveis. Há 6 possibilidades em cada caso, então as chances são iguais. Por isso, “maior no pote A” não corresponde à comparação.",
+        "2": "A tem 2 resultados favoráveis; B tem 2 resultados favoráveis. Há 6 possibilidades em cada caso, então as chances são iguais. Por isso, “maior no pote B” não corresponde à comparação.",
+        "3": "A tem 2 resultados favoráveis; B tem 2 resultados favoráveis. Há 6 possibilidades em cada caso, então as chances são iguais. Por isso, “impossível nos dois” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 1,
       "explanation": "A quantidade de setores com sol e o total de setores são iguais.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, a chance de sair sol é igual nas duas..",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, a chance de sair sol é igual nas duas..",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, a chance de sair sol é igual nas duas.."
+        "0": "A tem 3 resultados favoráveis; B tem 3 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A roleta A tem maior chance.” não corresponde à comparação.",
+        "2": "A tem 3 resultados favoráveis; B tem 3 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A roleta B tem maior chance.” não corresponde à comparação.",
+        "3": "A tem 3 resultados favoráveis; B tem 3 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Sol não pode aparecer.” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -319,9 +319,9 @@
       "correctIndex": 2,
       "explanation": "O total é igual, mas o saco A tem mais contas verdes.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco a."
+        "0": "A tem 8 resultados favoráveis; B tem 5 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Saco B” não corresponde à comparação.",
+        "1": "A tem 8 resultados favoráveis; B tem 5 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 8 resultados favoráveis; B tem 5 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não há contas verdes” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -349,9 +349,9 @@
       "correctIndex": 3,
       "explanation": "A caixa B tem seis cartões favoráveis, mais do que a caixa A.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b."
+        "0": "A tem 1 resultado favorável; B tem 6 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "1": "A tem 1 resultado favorável; B tem 6 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 1 resultado favorável; B tem 6 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Lua não aparece em nenhuma” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -379,9 +379,9 @@
       "correctIndex": 0,
       "explanation": "Cada sacola tem quatro peças redondas em oito peças.",
       "wrongExplanations": {
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais.."
+        "1": "A tem 4 resultados favoráveis; B tem 4 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A sacola A.” não corresponde à comparação.",
+        "2": "A tem 4 resultados favoráveis; B tem 4 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A sacola B.” não corresponde à comparação.",
+        "3": "A tem 4 resultados favoráveis; B tem 4 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Nenhuma, pois não há peças redondas.” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -409,9 +409,9 @@
       "correctIndex": 1,
       "explanation": "O pote A tem mais botões azuis e o mesmo total de botões.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, pote a."
+        "0": "A tem 5 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Pote B” não corresponde à comparação.",
+        "2": "A tem 5 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os potes têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 5 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “É impossível nos dois” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 2,
       "explanation": "Sete setores favoráveis são mais do que três, com o mesmo total de setores.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a."
+        "0": "A tem 7 resultados favoráveis; B tem 3 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Roleta B” não corresponde à comparação.",
+        "1": "A tem 7 resultados favoráveis; B tem 3 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "3": "A tem 7 resultados favoráveis; B tem 3 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Nenhuma tem setor amarelo” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -469,9 +469,9 @@
       "correctIndex": 3,
       "explanation": "O saco B tem mais fichas com estrela entre doze fichas.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b."
+        "0": "A tem 4 resultados favoráveis; B tem 9 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Saco A” não corresponde à comparação.",
+        "1": "A tem 4 resultados favoráveis; B tem 9 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Os sacos têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 4 resultados favoráveis; B tem 9 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Estrela não aparece em nenhum” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -499,9 +499,9 @@
       "correctIndex": 0,
       "explanation": "Em ambos há seis triângulos no mesmo total de oito peças.",
       "wrongExplanations": {
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais..",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, as chances são iguais.."
+        "1": "A tem 6 resultados favoráveis; B tem 6 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Pote A.” não corresponde à comparação.",
+        "2": "A tem 6 resultados favoráveis; B tem 6 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Pote B.” não corresponde à comparação.",
+        "3": "A tem 6 resultados favoráveis; B tem 6 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “É impossível nos dois.” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -529,9 +529,9 @@
       "correctIndex": 1,
       "explanation": "A caixa B contém mais cubos laranjas, mantendo o mesmo total.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, caixa b."
+        "0": "A tem 2 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "2": "A tem 2 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "3": "A tem 2 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Não há cubos laranjas” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -559,9 +559,9 @@
       "correctIndex": 2,
       "explanation": "Cinco cartões favoráveis em seis dão chance maior que um em seis.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b.",
-        "3": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, saco b."
+        "0": "A tem 1 resultado favorável; B tem 5 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Saco A” não corresponde à comparação.",
+        "1": "A tem 1 resultado favorável; B tem 5 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "3": "A tem 1 resultado favorável; B tem 5 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “É impossível nos dois” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {
@@ -589,9 +589,9 @@
       "correctIndex": 3,
       "explanation": "Com o mesmo total de setores, cinco azuis são mais que dois.",
       "wrongExplanations": {
-        "0": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.",
-        "1": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a.",
-        "2": "Compare quantos resultados favorecem cada evento no mesmo total de possibilidades; aqui, roleta a."
+        "0": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Roleta B” não corresponde à comparação.",
+        "1": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "2": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Azul não pode sair” não corresponde à comparação."
       },
       "skill": "comparar-possibilidades-simples",
       "sourceRef": {

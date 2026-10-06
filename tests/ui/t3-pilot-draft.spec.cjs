@@ -110,15 +110,17 @@ async function run() {
       '2026-t2-v1',
       '2026-t3-v1',
     ]);
-    assert.strictEqual(result.runtimeT3Count, 440);
+    assert.strictEqual(result.runtimeT3Count, 680);
     assert.deepStrictEqual(result.runtimeT3Subjects, {
-      ciencias: 120,
+      ciencias: 140,
       geografia: 100,
       historia: 100,
       ingles: 80,
+      matematica: 220,
       portugues: 40,
     });
     assert.deepStrictEqual(result.runtimeT3ScienceTopics, {
+      'corpos-luz': 20,
       espelhos: 20,
       'luz-cores': 20,
       'luz-visao': 20,

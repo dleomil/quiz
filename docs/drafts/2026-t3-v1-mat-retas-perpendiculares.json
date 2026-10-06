@@ -19,9 +19,9 @@
       "correctIndex": 0,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares."
+        "1": "Retas perpendiculares precisam se cruzar a 90°. A opção “Paralelas” descreve retas sem esse cruzamento.",
+        "2": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Retas que se cruzam sem ângulo reto” diz que esse ângulo não aparece.",
+        "3": "Retas perpendiculares precisam se cruzar a 90°. A opção “Retas que não se cruzam” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -49,9 +49,9 @@
       "correctIndex": 1,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Paralelas” descreve retas sem esse cruzamento.",
+        "2": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Retas que se cruzam sem ângulo reto” diz que esse ângulo não aparece.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Retas que não se encontram” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -79,9 +79,9 @@
       "correctIndex": 2,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não; são paralelas..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não; são paralelas..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não; são paralelas.."
+        "0": "Retas que nunca se encontram são paralelas; por isso, não formam ângulos retos. A opção “Sim; formam ângulos retos.” afirma o contrário.",
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Sim; qualquer par de retas é perpendicular.” não verifica essa condição.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Não; cruzam-se sem formar ângulo reto.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -109,9 +109,9 @@
       "correctIndex": 3,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “São paralelas.” descreve retas sem esse cruzamento.",
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Não se encontram.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 0,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, duas retas que se cruzam em ângulo reto..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, duas retas que se cruzam em ângulo reto..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, duas retas que se cruzam em ângulo reto.."
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Duas retas que nunca se cruzam.” não verifica essa condição.",
+        "2": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Duas retas que se cruzam sem ângulo reto.” diz que esse ângulo não aparece.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Duas retas que seguem juntas.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -169,9 +169,9 @@
       "correctIndex": 1,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “São paralelas.” descreve retas sem esse cruzamento.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Não têm ponto em comum.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -199,9 +199,9 @@
       "correctIndex": 2,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não.."
+        "0": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Sim, pois qualquer cruzamento é perpendicular.” não verifica essa condição.",
+        "1": "Retas perpendiculares precisam se cruzar a 90°. A opção “Sim, pois retas paralelas são perpendiculares.” descreve retas sem esse cruzamento.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Sim, porque qualquer cruzamento forma ângulo reto.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -229,9 +229,9 @@
       "correctIndex": 3,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “São paralelas.” descreve retas sem esse cruzamento.",
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Não se encontram.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -259,9 +259,9 @@
       "correctIndex": 0,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, cruzam-se formando ângulo reto..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, cruzam-se formando ângulo reto..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, cruzam-se formando ângulo reto.."
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Nunca se encontram.” não verifica essa condição.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "3": "Retas perpendiculares precisam se cruzar a 90°. A opção “Têm a mesma direção e não se cruzam.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 1,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não; elas não se cruzam..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não; elas não se cruzam..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, não; elas não se cruzam.."
+        "0": "Retas paralelas não se cruzam, então não podem formar ângulos retos. A opção “Sim, sempre.” contradiz essa propriedade.",
+        "2": "Retas paralelas não se cruzam, então não podem formar ângulos retos. A opção “Sim, porque qualquer par de retas se cruza.” contradiz essa propriedade.",
+        "3": "Retas paralelas não se cruzam, então não podem formar ângulos retos. A opção “Sim, porque paralelas formam ângulo reto.” contradiz essa propriedade."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -319,9 +319,9 @@
       "correctIndex": 2,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, ângulo reto..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, ângulo reto..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, ângulo reto.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Linhas paralelas.” descreve retas sem esse cruzamento.",
+        "1": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Cruzamento sem ângulo reto.” diz que esse ângulo não aparece.",
+        "3": "Retas perpendiculares precisam se cruzar a 90°. A opção “Não há encontro entre as bordas.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -349,9 +349,9 @@
       "correctIndex": 3,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, retas perpendiculares..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, retas perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, retas perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Retas paralelas.” descreve retas sem esse cruzamento.",
+        "1": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Retas que se cruzam sem ângulo reto.” diz que esse ângulo não aparece.",
+        "2": "Retas perpendiculares precisam se cruzar a 90°. A opção “Retas que não se cruzam.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -379,9 +379,9 @@
       "correctIndex": 0,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.."
+        "1": "Retas perpendiculares precisam se cruzar a 90°. A opção “Paralelas.” descreve retas sem esse cruzamento.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "3": "Retas perpendiculares precisam se cruzar a 90°. A opção “Não se cruzam.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -409,9 +409,9 @@
       "correctIndex": 1,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, elas são perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, elas são perpendiculares..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, elas são perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Elas são paralelas.” descreve retas sem esse cruzamento.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Elas se cruzam sem formar ângulo reto.” não verifica essa condição.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Elas não se encontram.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 2,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Paralelas.” descreve retas sem esse cruzamento.",
+        "1": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Retas que se cruzam sem ângulo reto.” diz que esse ângulo não aparece.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Retas que não se encontram.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -469,9 +469,9 @@
       "correctIndex": 3,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendicularidade..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendicularidade..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendicularidade.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Paralelismo.” descreve retas sem esse cruzamento.",
+        "1": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “Cruzamento sem ângulo reto.” diz que esse ângulo não aparece.",
+        "2": "Retas perpendiculares precisam se cruzar a 90°. A opção “Ausência de cruzamento.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -499,9 +499,9 @@
       "correctIndex": 0,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.."
+        "1": "Retas perpendiculares precisam se cruzar a 90°. A opção “paralelas.” descreve retas sem esse cruzamento.",
+        "2": "Cruzar-se não basta: retas perpendiculares formam ângulo reto. A opção “retas que se cruzam sem ângulo reto.” diz que esse ângulo não aparece.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “retas que não se encontram.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -519,19 +519,19 @@
       "subject": "matematica",
       "topic": "retas-perpendiculares",
       "topicName": "Retas perpendiculares",
-      "question": "Qual par de linhas não pode ser perpendicular?",
+      "question": "Qual par de retas forma um ângulo reto?",
       "options": [
-        "Uma vertical e outra horizontal que se cruzam em ângulo reto.",
         "Duas linhas paralelas que não se cruzam.",
-        "Duas retas que formam ângulo reto.",
-        "Duas retas que se cruzam sem formar ângulo reto."
+        "Uma reta vertical e outra horizontal que se cruzam em ângulo reto.",
+        "Duas retas que se cruzam sem formar ângulo reto.",
+        "Duas linhas horizontais lado a lado."
       ],
       "correctIndex": 1,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, duas linhas paralelas que não se cruzam..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, duas linhas paralelas que não se cruzam..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, duas linhas paralelas que não se cruzam.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Duas linhas paralelas que não se cruzam.” descreve retas sem esse cruzamento.",
+        "2": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Duas retas que se cruzam sem formar ângulo reto.” não verifica essa condição.",
+        "3": "Retas perpendiculares precisam se cruzar a 90°. A opção “Duas linhas horizontais lado a lado.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -559,9 +559,9 @@
       "correctIndex": 2,
       "explanation": "Retas perpendiculares se cruzam formando ângulo reto.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares..",
-        "3": "Observe se as retas se cruzam formando um ângulo reto; neste caso, perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “Paralelos.” descreve retas sem esse cruzamento.",
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "3": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Não se encontram.” não verifica essa condição."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {
@@ -589,9 +589,9 @@
       "correctIndex": 3,
       "explanation": "O cruzamento em ângulo reto caracteriza retas perpendiculares.",
       "wrongExplanations": {
-        "0": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "1": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares..",
-        "2": "Observe se as retas se cruzam formando um ângulo reto; neste caso, são perpendiculares.."
+        "0": "Retas perpendiculares precisam se cruzar a 90°. A opção “São paralelas.” descreve retas sem esse cruzamento.",
+        "1": "Não basta que as retas se encontrem: o ângulo deve ser reto (90°). A opção “Cruzam-se sem formar ângulo reto.” não verifica essa condição.",
+        "2": "Retas perpendiculares precisam se cruzar a 90°. A opção “Não se cruzam.” descreve retas sem esse cruzamento."
       },
       "skill": "reconhecer-retas-perpendiculares-e-angulos-retos",
       "sourceRef": {

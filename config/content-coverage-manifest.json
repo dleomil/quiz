@@ -52,6 +52,7 @@
       "subjects": {
         "ciencias": {
           "luz-visao": 20,
+          "corpos-luz": 20,
           "materiais-transparentes": 20,
           "propriedades-luz": 20,
           "espelhos": 20,
@@ -81,6 +82,19 @@
         "portugues": {
           "usos-c": 20,
           "verbos": 20
+        },
+        "matematica": {
+          "probabilidade": 20,
+          "multiplicacao": 20,
+          "divisao": 20,
+          "divisao-metodos": 20,
+          "expressoes": 20,
+          "decomposicao-multiplicacao": 20,
+          "problemas-expressoes": 20,
+          "area-malha": 20,
+          "perimetro": 20,
+          "retas-perpendiculares": 20,
+          "divisao-euclidiana": 20
         }
       }
     }

@@ -14,9 +14,9 @@
       "correctIndex": 0,
       "explanation": "Oito dezenas repartidas em quatro grupos dão duas dezenas por grupo.",
       "wrongExplanations": {
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+        "1": "Oito dezenas repartidas em quatro grupos dão duas dezenas por grupo. A opção 1 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Oito dezenas repartidas em quatro grupos dão duas dezenas por grupo. A opção 4 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Oito dezenas repartidas em quatro grupos dão duas dezenas por grupo. A opção 8 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -39,9 +39,9 @@
       "correctIndex": 1,
       "explanation": "Nove dezenas divididas em três grupos são três dezenas para cada grupo.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 3.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 3.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 3."
+        "0": "Nove dezenas divididas em três grupos são três dezenas para cada grupo. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Nove dezenas divididas em três grupos são três dezenas para cada grupo. A opção 6 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Nove dezenas divididas em três grupos são três dezenas para cada grupo. A opção 9 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -64,9 +64,9 @@
       "correctIndex": 2,
       "explanation": "O 5 cabe uma vez em 7 dezenas; sobram 2 dezenas para juntar às unidades.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+        "0": "O 5 cabe uma vez em 7 dezenas; sobram 2 dezenas para juntar às unidades. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "O 5 cabe uma vez em 7 dezenas; sobram 2 dezenas para juntar às unidades. A opção 5 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "O 5 cabe uma vez em 7 dezenas; sobram 2 dezenas para juntar às unidades. A opção 7 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -89,9 +89,9 @@
       "correctIndex": 3,
       "explanation": "Oito dezenas em quatro grupos iguais formam duas dezenas por grupo.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+        "0": "Oito dezenas em quatro grupos iguais formam duas dezenas por grupo. A opção 1 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "Oito dezenas em quatro grupos iguais formam duas dezenas por grupo. A opção 4 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Oito dezenas em quatro grupos iguais formam duas dezenas por grupo. A opção 8 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -114,9 +114,9 @@
       "correctIndex": 0,
       "explanation": "Cada grupo recebe duas dezenas, pois 6 ÷ 3 = 2.",
       "wrongExplanations": {
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+        "1": "Cada grupo recebe duas dezenas, pois 6 ÷ 3 = 2. A opção 1 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Cada grupo recebe duas dezenas, pois 6 ÷ 3 = 2. A opção 3 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Cada grupo recebe duas dezenas, pois 6 ÷ 3 = 2. A opção 6 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -139,9 +139,9 @@
       "correctIndex": 1,
       "explanation": "Quatro grupos recebem duas dezenas cada, e sobra uma dezena.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+        "0": "Quatro grupos recebem duas dezenas cada, e sobra uma dezena. A opção 0 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Quatro grupos recebem duas dezenas cada, e sobra uma dezena. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Quatro grupos recebem duas dezenas cada, e sobra uma dezena. A opção 4 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -164,9 +164,9 @@
       "correctIndex": 2,
       "explanation": "Cada grupo recebe 2 dezenas; 8 − 6 deixa 2 dezenas.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 2."
+        "0": "Cada grupo recebe 2 dezenas; 8 − 6 deixa 2 dezenas. A opção 1 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "Cada grupo recebe 2 dezenas; 8 − 6 deixa 2 dezenas. A opção 3 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Cada grupo recebe 2 dezenas; 8 − 6 deixa 2 dezenas. A opção 5 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -189,9 +189,9 @@
       "correctIndex": 3,
       "explanation": "Três grupos de 2 dezenas usam 6 das 7 dezenas; sobra 1 dezena.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+        "0": "Três grupos de 2 dezenas usam 6 das 7 dezenas; sobra 1 dezena. A opção 0 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "Três grupos de 2 dezenas usam 6 das 7 dezenas; sobra 1 dezena. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Três grupos de 2 dezenas usam 6 das 7 dezenas; sobra 1 dezena. A opção 3 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -214,9 +214,9 @@
       "correctIndex": 0,
       "explanation": "Quatro grupos de 2 dezenas usam 8; das 9 dezenas, sobra 1.",
       "wrongExplanations": {
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 1."
+        "1": "Quatro grupos de 2 dezenas usam 8; das 9 dezenas, sobra 1. A opção 0 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Quatro grupos de 2 dezenas usam 8; das 9 dezenas, sobra 1. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Quatro grupos de 2 dezenas usam 8; das 9 dezenas, sobra 1. A opção 4 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -239,9 +239,9 @@
       "correctIndex": 1,
       "explanation": "Oito dezenas divididas em dois grupos são quatro dezenas em cada.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4."
+        "0": "Oito dezenas divididas em dois grupos são quatro dezenas em cada. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Oito dezenas divididas em dois grupos são quatro dezenas em cada. A opção 6 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Oito dezenas divididas em dois grupos são quatro dezenas em cada. A opção 8 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -264,9 +264,9 @@
       "correctIndex": 2,
       "explanation": "A dezena que sobrou vale 10 unidades; 10 + 6 = 16 unidades.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 16.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 16.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 16."
+        "0": "A dezena que sobrou vale 10 unidades; 10 + 6 = 16 unidades. A opção 7 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "A dezena que sobrou vale 10 unidades; 10 + 6 = 16 unidades. A opção 10 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "A dezena que sobrou vale 10 unidades; 10 + 6 = 16 unidades. A opção 24 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -289,9 +289,9 @@
       "correctIndex": 3,
       "explanation": "Depois das dezenas, permanecem as 4 unidades de 84.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 4."
+        "0": "Depois das dezenas, permanecem as 4 unidades de 84. A opção 0 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "Depois das dezenas, permanecem as 4 unidades de 84. A opção 8 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Depois das dezenas, permanecem as 4 unidades de 84. A opção 12 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -314,9 +314,9 @@
       "correctIndex": 0,
       "explanation": "As 2 dezenas que sobraram valem 20 unidades; 20 + 5 = 25.",
       "wrongExplanations": {
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 25.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 25.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 25."
+        "1": "As 2 dezenas que sobraram valem 20 unidades; 20 + 5 = 25. A opção 12 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "As 2 dezenas que sobraram valem 20 unidades; 20 + 5 = 25. A opção 20 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "As 2 dezenas que sobraram valem 20 unidades; 20 + 5 = 25. A opção 35 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -339,9 +339,9 @@
       "correctIndex": 1,
       "explanation": "As 8 dezenas foram divididas; restam as 8 unidades.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 8.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 8.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 8."
+        "0": "As 8 dezenas foram divididas; restam as 8 unidades. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "As 8 dezenas foram divididas; restam as 8 unidades. A opção 4 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "As 8 dezenas foram divididas; restam as 8 unidades. A opção 16 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -364,9 +364,9 @@
       "correctIndex": 2,
       "explanation": "Depois das dezenas, as 9 unidades de 69 continuam para ser divididas.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 9.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 9.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 9."
+        "0": "Depois das dezenas, as 9 unidades de 69 continuam para ser divididas. A opção 2 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "Depois das dezenas, as 9 unidades de 69 continuam para ser divididas. A opção 3 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "Depois das dezenas, as 9 unidades de 69 continuam para ser divididas. A opção 12 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -389,9 +389,9 @@
       "correctIndex": 3,
       "explanation": "As dezenas foram repartidas; restam as 6 unidades do número.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 6.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 6.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 6."
+        "0": "As dezenas foram repartidas; restam as 6 unidades do número. A opção 3 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "As dezenas foram repartidas; restam as 6 unidades do número. A opção 9 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "As dezenas foram repartidas; restam as 6 unidades do número. A opção 15 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -414,9 +414,9 @@
       "correctIndex": 0,
       "explanation": "A dezena restante vale 10 unidades; 10 + 2 = 12.",
       "wrongExplanations": {
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 12.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 12.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 12."
+        "1": "A dezena restante vale 10 unidades; 10 + 2 = 12. A opção 3 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "A dezena restante vale 10 unidades; 10 + 2 = 12. A opção 10 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "A dezena restante vale 10 unidades; 10 + 2 = 12. A opção 21 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -439,9 +439,9 @@
       "correctIndex": 1,
       "explanation": "As duas dezenas restantes valem 20 unidades; junto das 4 unidades, são 24.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 24.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 24.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 24."
+        "0": "As duas dezenas restantes valem 20 unidades; junto das 4 unidades, são 24. A opção 6 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "As duas dezenas restantes valem 20 unidades; junto das 4 unidades, são 24. A opção 20 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "As duas dezenas restantes valem 20 unidades; junto das 4 unidades, são 24. A opção 28 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -464,9 +464,9 @@
       "correctIndex": 2,
       "explanation": "A dezena que sobrou equivale a 10 unidades; 10 + 5 = 15.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 15.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 15.",
-        "3": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 15."
+        "0": "A dezena que sobrou equivale a 10 unidades; 10 + 5 = 15. A opção 6 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "A dezena que sobrou equivale a 10 unidades; 10 + 5 = 15. A opção 10 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "3": "A dezena que sobrou equivale a 10 unidades; 10 + 5 = 15. A opção 25 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
@@ -489,9 +489,9 @@
       "correctIndex": 3,
       "explanation": "Uma dezena vale 10 unidades; 10 + 8 = 18 unidades.",
       "wrongExplanations": {
-        "0": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 18.",
-        "1": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 18.",
-        "2": "Mantenha o valor posicional ao dividir dezenas e unidades; nesta etapa, o resultado é 18."
+        "0": "Uma dezena vale 10 unidades; 10 + 8 = 18 unidades. A opção 8 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "1": "Uma dezena vale 10 unidades; 10 + 8 = 18 unidades. A opção 14 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades.",
+        "2": "Uma dezena vale 10 unidades; 10 + 8 = 18 unidades. A opção 68 não corresponde à etapa indicada; confira o valor posicional das dezenas e unidades."
       },
       "skill": "reconhecer-metodos-longo-e-breve-da-divisao",
       "sourceRef": {
