@@ -1,4 +1,5 @@
 const crypto = require('node:crypto');
+const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -228,9 +229,21 @@ function renderBundle(questions) {
   return `/* Publicacao T3 de Portugues: seis temas aprovados. */\n(function () {\n  const publishedQuestions = ${JSON.stringify(questions, null, 2)};\n  const source = window.QuestionsDataSources.portugues;\n  if (!source) return;\n  source.questions.push(...publishedQuestions);\n  Object.assign(source.topicMeta, ${JSON.stringify(topicMeta, null, 2)});\n})();\n`;
 }
 
+function formatBundle(bundle) {
+  return execFileSync(
+    process.execPath,
+    [
+      require.resolve('prettier/bin/prettier.cjs'),
+      '--stdin-filepath',
+      OUTPUT_PATH,
+    ],
+    { input: bundle, encoding: 'utf8' },
+  );
+}
+
 function validateGeneratedBundle() {
   const questions = collectPublishedQuestions();
-  const expected = renderBundle(questions);
+  const expected = formatBundle(renderBundle(questions));
   assert(fs.existsSync(OUTPUT_PATH), 'bundle de expansao ausente');
   assert(
     fs.readFileSync(OUTPUT_PATH, 'utf8') === expected,
@@ -241,7 +254,7 @@ function validateGeneratedBundle() {
 
 function buildRelease() {
   const questions = collectPublishedQuestions();
-  const bundle = renderBundle(questions);
+  const bundle = formatBundle(renderBundle(questions));
   fs.writeFileSync(OUTPUT_PATH, bundle);
   return questions.length;
 }
