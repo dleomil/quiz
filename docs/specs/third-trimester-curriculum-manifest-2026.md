@@ -183,17 +183,17 @@ Os totais representam o escopo curricular congelado e o conjunto publicado.
 
 ## Controle de alterações
 
-| Versão | Data       | Estado          | Descrição                                                | Aprovação                              |
-| -----: | ---------- | --------------- | -------------------------------------------------------- | -------------------------------------- |
-|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                        | pendente                               |
-|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos | Product Owner confirmou prosseguimento |
-|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado        | Product Owner (`dleomil`)              |
-|      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História      | Product Owner (`dleomil`)              |
-|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências    | Product Owner (`dleomil`)              |
-|      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                | Product Owner (`dleomil`)              |
-|      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português               | Product Owner (`dleomil`)              |
-|      8 | 2026-10-06 | published       | release dos seis temas restantes de Português            | Product Owner (`dleomil`)              |
-|      9 | 2026-10-06 | published       | release de 11 temas de Matemática após 440 revisões e aprovação humana | Product Owner (`dleomil`) |
+| Versão | Data       | Estado          | Descrição                                                              | Aprovação                              |
+| -----: | ---------- | --------------- | ---------------------------------------------------------------------- | -------------------------------------- |
+|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                                      | pendente                               |
+|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos               | Product Owner confirmou prosseguimento |
+|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado                      | Product Owner (`dleomil`)              |
+|      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História                    | Product Owner (`dleomil`)              |
+|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências                  | Product Owner (`dleomil`)              |
+|      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                              | Product Owner (`dleomil`)              |
+|      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português                             | Product Owner (`dleomil`)              |
+|      8 | 2026-10-06 | published       | release dos seis temas restantes de Português                          | Product Owner (`dleomil`)              |
+|      9 | 2026-10-06 | published       | release de 11 temas de Matemática após 440 revisões e aprovação humana | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.
