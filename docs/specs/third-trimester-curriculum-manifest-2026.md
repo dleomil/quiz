@@ -8,7 +8,7 @@
 | Trimestre                 | `t3`                                                                           |
 | Serie                     | `3-ano`                                                                        |
 | `contentSetId`            | `2026-t3-v1`                                                                   |
-| Versao do manifesto       | 3                                                                              |
+| Versao do manifesto       | 4                                                                              |
 | Estado do manifesto       | `frozen`                                                                       |
 | Estado inicial do acervo  | `draft` e invisivel                                                            |
 | Estado do release parcial | `published` para Ciências, Geografia, Inglês, História, Português e Matemática |
@@ -42,6 +42,13 @@ T3). O total do release T3 passa a 800 questões: Ciências (140), Geografia
 (100), Inglês (80), História (100), Português (160) e Matemática (220). Os
 120 novos itens preservam os textos dos rascunhos aprovados e suas auditorias
 editoriais; os acervos já publicados foram preservados.
+
+## Release de Matemática T3
+
+Este release adiciona 11 temas de Matemática, com 20 questões cada, após 440
+revisões pedagógicas e linguísticas e aprovação humana registrada. O total do
+runtime T3 passa a 800 questões, sem alterar as 580 questões das demais
+matérias. Os relatórios editoriais preservam os hashes dos drafts revisados.
 
 ## Fonte curricular
 
@@ -141,9 +148,10 @@ distintos e publicados junto com os demais temas aprovados de Matemática.
 | Matemática |     11 |          0 |     220 |
 | **Total**  | **40** |      **0** | **800** |
 
-Os totais representam o escopo curricular congelado, nao o conteudo ja
-publicado. O release parcial continua limitado aos pacotes aprovados e
-registrados na seção de release incremental.
+Os totais representam o escopo curricular congelado e o conjunto publicado,
+conforme as seções de release incremental. A promoção de Matemática para
+`main` em 2026-10-07 concluiu a publicação das 800 questões T3 sem alterar as
+580 questões já publicadas nas outras matérias.
 
 ## Lacunas e decisões pendentes
 
@@ -193,6 +201,7 @@ obrigatórios.
 |      8 | 2026-10-05 | frozen-amended  | reconciliação da menção repetida a multiplicação e liberação dos temas matemáticos bloqueados para curadoria | Product Owner (`dleomil`)              |
 |      9 | 2026-10-05 | published       | release dos 11 temas de Matemática após 440 revisões e aprovação humana                                      | Product Owner (`dleomil`)              |
 |     10 | 2026-10-06 | published       | release dos seis temas restantes de Português com 120 questões                                               | Product Owner (`dleomil`)              |
+|     11 | 2026-10-07 | published       | promoção de Matemática T3 para `main`, sem alterar matérias existentes                                       | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.
