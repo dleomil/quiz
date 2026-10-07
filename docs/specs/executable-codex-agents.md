@@ -33,6 +33,11 @@ processo Codex separado com `CODEX_HOME` temporario e nao herda ferramentas ou
 connectors da sessao pai. O runner tambem exige `codex mcp list --json` vazio e
 falha fechado quando qualquer preflight ou validacao falhar.
 
+A autenticacao usa somente uma sessao local confirmada como ChatGPT. O runner
+copia temporariamente o cache local para o `CODEX_HOME` isolado, restringe sua
+permissao e o remove ao encerrar. A chave `OPENAI_API_KEY` nao e encaminhada;
+ausencia de sessao ou cache invalido bloqueia a execucao, sem fallback.
+
 O modelo central exige `mcpPolicy: none` explicitamente para todos os adapters.
 O validador rejeita a omissao da politica e qualquer servidor MCP configurado.
 

@@ -27,8 +27,8 @@ const ALLOWED_ENVIRONMENT = [
   'LC_ALL',
   'TERM',
   'NO_COLOR',
-  'OPENAI_API_KEY',
 ];
+const AUTH_CACHE_FILE = 'auth.json';
 
 function argument(name) {
   const index = process.argv.indexOf(name);
@@ -65,6 +65,73 @@ function isolatedEnvironment(tempHome) {
     if (process.env[name]) environment[name] = process.env[name];
   });
   return environment;
+}
+
+function sourceEnvironment() {
+  const environment = {};
+  [
+    ...ALLOWED_ENVIRONMENT,
+    'HOME',
+    'USERPROFILE',
+    'LOCALAPPDATA',
+    'CODEX_HOME',
+  ].forEach((name) => {
+    if (process.env[name]) environment[name] = process.env[name];
+  });
+  return environment;
+}
+
+function authenticatedChatGptCache(codexBin) {
+  const status = spawnSync(codexBin, ['login', 'status'], {
+    cwd: ROOT,
+    env: sourceEnvironment(),
+    encoding: 'utf8',
+  });
+  const statusText = `${status.stdout || ''}\n${status.stderr || ''}`;
+  if (status.status !== 0 || !/logged in using chatgpt/i.test(statusText)) {
+    throw new Error('sessao ChatGPT do Codex indisponivel');
+  }
+
+  const sourceHome =
+    process.env.CODEX_HOME || path.join(os.homedir(), '.codex');
+  const authPath = path.join(sourceHome, AUTH_CACHE_FILE);
+  let authStat;
+  try {
+    authStat = fs.lstatSync(authPath);
+  } catch {
+    throw new Error('cache local da sessao ChatGPT indisponivel');
+  }
+  if (!authStat.isFile() || authStat.isSymbolicLink()) {
+    throw new Error('cache local da sessao ChatGPT invalido');
+  }
+  return authPath;
+}
+
+function copyAuthenticatedCache(sourcePath, tempHome) {
+  const targetPath = path.join(tempHome, AUTH_CACHE_FILE);
+  fs.copyFileSync(sourcePath, targetPath, fs.constants.COPYFILE_EXCL);
+  fs.chmodSync(targetPath, 0o600);
+}
+
+function safeExecutionFailure(result) {
+  const details =
+    `${result.stdout || ''}\n${result.stderr || ''}`.toLowerCase();
+  if (/\b401\b/.test(details)) return 'resposta 401 do servico';
+  const categories = [
+    [
+      /authentication|unauthorized|not authenticated|login required|logged out|invalid (?:bearer |refresh )?token|expired token|\b403\b/,
+      'autenticacao',
+    ],
+    [/network|connect|timeout|econn|dns|socket/, 'rede'],
+    [/sandbox|permission|operation not permitted/, 'sandbox'],
+    [/model|not available|unsupported/, 'modelo'],
+    [/schema|json/, 'schema'],
+  ];
+  const category = categories.find(([pattern]) => pattern.test(details))?.[1];
+  if (category) return `falha de ${category}`;
+  if (result.error?.code) return `spawn ${result.error.code}`;
+  if (result.signal) return `sinal ${result.signal}`;
+  return `codigo ${result.status}`;
 }
 
 function buildMcpArguments() {
@@ -121,18 +188,34 @@ function run() {
     return fail('inputState invalido');
   }
 
-  const tempHome = fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-codex-home-'));
-  const tempWorkspace = fs.mkdtempSync(
-    path.join(os.tmpdir(), 'quiz-editorial-workspace-'),
-  );
-  const tempMessage = path.join(tempHome, 'agent-output.json');
-  const env = isolatedEnvironment(tempHome);
+  let tempHome;
+  let tempWorkspace;
   const cleanup = () => {
-    fs.rmSync(tempHome, { recursive: true, force: true });
-    fs.rmSync(tempWorkspace, { recursive: true, force: true });
+    if (tempHome) fs.rmSync(tempHome, { recursive: true, force: true });
+    if (tempWorkspace)
+      fs.rmSync(tempWorkspace, { recursive: true, force: true });
   };
   try {
-    if (!env.OPENAI_API_KEY) return fail('OPENAI_API_KEY nao configurada');
+    const sourceAuthPath = authenticatedChatGptCache(codexBin);
+    tempHome = fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-codex-home-'));
+    tempWorkspace = fs.mkdtempSync(
+      path.join(os.tmpdir(), 'quiz-editorial-workspace-'),
+    );
+    copyAuthenticatedCache(sourceAuthPath, tempHome);
+    const tempMessage = path.join(tempHome, 'agent-output.json');
+    const env = isolatedEnvironment(tempHome);
+    const isolatedLogin = spawnSync(codexBin, ['login', 'status'], {
+      cwd: tempWorkspace,
+      env,
+      encoding: 'utf8',
+    });
+    const isolatedStatus = `${isolatedLogin.stdout || ''}\n${isolatedLogin.stderr || ''}`;
+    if (
+      isolatedLogin.status !== 0 ||
+      !/logged in using chatgpt/i.test(isolatedStatus)
+    ) {
+      return fail('cache ChatGPT nao autenticado no perfil isolado');
+    }
     const mcpCheck = spawnSync(codexBin, buildMcpArguments(), {
       cwd: tempWorkspace,
       env,
@@ -163,7 +246,10 @@ function run() {
       buildExecArguments(agentConfig, tempMessage, tempWorkspace, prompt),
       { cwd: tempWorkspace, env, encoding: 'utf8' },
     );
-    if (result.status !== 0) return fail('execucao do agente falhou');
+    if (result.status !== 0) {
+      const detail = safeExecutionFailure(result);
+      return fail(`execucao do agente falhou (${detail})`);
+    }
     let output;
     try {
       output = JSON.parse(fs.readFileSync(tempMessage, 'utf8'));
@@ -193,4 +279,11 @@ function run() {
 
 if (require.main === module) run();
 
-module.exports = { buildExecArguments, buildMcpArguments, run };
+module.exports = {
+  authenticatedChatGptCache,
+  buildExecArguments,
+  buildMcpArguments,
+  copyAuthenticatedCache,
+  run,
+  safeExecutionFailure,
+};
