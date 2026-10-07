@@ -88,6 +88,19 @@
           "futuro": 20,
           "usos-ge-gi": 20,
           "adjetivos": 20
+        },
+        "matematica": {
+          "probabilidade": 20,
+          "multiplicacao": 20,
+          "divisao": 20,
+          "divisao-metodos": 20,
+          "expressoes": 20,
+          "decomposicao-multiplicacao": 20,
+          "problemas-expressoes": 20,
+          "area-malha": 20,
+          "perimetro": 20,
+          "retas-perpendiculares": 20,
+          "divisao-euclidiana": 20
         }
       }
     }

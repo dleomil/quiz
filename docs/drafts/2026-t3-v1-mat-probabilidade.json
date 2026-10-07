@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Em dois sacos com 10 fichas cada, A tem 3 azuis e B tem 7 azuis. De qual saco é mais provável tirar uma ficha azul?",
+      "options": [
+        "Saco B",
+        "Saco A",
+        "Os dois têm a mesma chance",
+        "Não é possível comparar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sacos têm o mesmo total; B tem mais fichas azuis.",
+      "wrongExplanations": {
+        "1": "A tem 3 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Saco A” não corresponde à comparação.",
+        "2": "A tem 3 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 3 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Não é possível comparar” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "A roleta A tem 2 setores verdes em 8. A roleta B tem 5 setores verdes em 8. Qual oferece maior chance de parar no verde?",
+      "options": [
+        "Roleta A",
+        "Roleta B",
+        "As duas têm a mesma chance",
+        "Nenhuma pode parar no verde"
+      ],
+      "correctIndex": 1,
+      "explanation": "Com o mesmo número de setores, a roleta B tem mais setores verdes.",
+      "wrongExplanations": {
+        "0": "A tem 2 resultados favoráveis; B tem 5 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Roleta A” não corresponde à comparação.",
+        "2": "A tem 2 resultados favoráveis; B tem 5 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 2 resultados favoráveis; B tem 5 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Nenhuma pode parar no verde” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois potes têm 12 botões cada. No pote A, 9 são vermelhos; no B, 4 são vermelhos. Em qual pote o sorteio de um botão vermelho é mais provável?",
+      "options": [
+        "Pote B",
+        "Os dois têm a mesma chance",
+        "Pote A",
+        "Não há botões vermelhos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Como os potes têm o mesmo total, o pote A, com mais botões vermelhos, oferece maior chance.",
+      "wrongExplanations": {
+        "0": "A tem 9 resultados favoráveis; B tem 4 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Pote B” não corresponde à comparação.",
+        "1": "A tem 9 resultados favoráveis; B tem 4 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 9 resultados favoráveis; B tem 4 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não há botões vermelhos” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Em duas caixas com 6 cartões cada, A tem 1 cartão com estrela e B tem 4. De qual caixa é mais provável retirar uma estrela?",
+      "options": [
+        "Caixa A",
+        "As duas têm a mesma chance",
+        "É impossível nas duas",
+        "Caixa B"
+      ],
+      "correctIndex": 3,
+      "explanation": "A caixa B tem mais cartões favoráveis entre o mesmo total.",
+      "wrongExplanations": {
+        "0": "A tem 1 resultado favorável; B tem 4 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "1": "A tem 1 resultado favorável; B tem 4 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 1 resultado favorável; B tem 4 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “É impossível nas duas” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Cada uma de duas sacolas tem 10 bolas. A tem 6 amarelas e B tem 2 amarelas. Qual sacola dá maior chance de tirar uma bola amarela?",
+      "options": [
+        "Sacola A",
+        "Sacola B",
+        "As duas têm a mesma chance",
+        "Não há como tirar amarela"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com totais iguais, seis bolas amarelas representam uma chance maior que duas.",
+      "wrongExplanations": {
+        "1": "A tem 6 resultados favoráveis; B tem 2 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Sacola B” não corresponde à comparação.",
+        "2": "A tem 6 resultados favoráveis; B tem 2 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 6 resultados favoráveis; B tem 2 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não há como tirar amarela” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "A roleta A tem 3 setores com uma estrela em 6 setores iguais. A roleta B tem 1 setor com estrela em 6. Qual tem maior chance de sair estrela?",
+      "options": [
+        "Roleta B",
+        "Roleta A",
+        "As duas têm a mesma chance",
+        "Nenhuma tem estrela"
+      ],
+      "correctIndex": 1,
+      "explanation": "A roleta A tem mais setores de estrela, e ambas têm seis setores iguais.",
+      "wrongExplanations": {
+        "0": "A tem 3 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Roleta B” não corresponde à comparação.",
+        "2": "A tem 3 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 3 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Nenhuma tem estrela” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois sacos têm 8 peças cada. Em A, 5 são quadradas; em B, 2 são quadradas. De qual saco é mais provável retirar uma peça quadrada?",
+      "options": [
+        "Saco B",
+        "Os dois têm a mesma chance",
+        "Saco A",
+        "Não se pode retirar peça quadrada"
+      ],
+      "correctIndex": 2,
+      "explanation": "O saco A tem mais peças quadradas no mesmo total de peças.",
+      "wrongExplanations": {
+        "0": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Saco B” não corresponde à comparação.",
+        "1": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não se pode retirar peça quadrada” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Duas caixas têm 10 lápis cada. A guarda 4 lápis azuis e B guarda 8. De qual caixa é mais provável escolher um lápis azul?",
+      "options": [
+        "Caixa A",
+        "As duas têm a mesma chance",
+        "Nenhuma tem lápis azul",
+        "Caixa B"
+      ],
+      "correctIndex": 3,
+      "explanation": "A caixa B oferece mais resultados favoráveis entre dez lápis.",
+      "wrongExplanations": {
+        "0": "A tem 4 resultados favoráveis; B tem 8 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "1": "A tem 4 resultados favoráveis; B tem 8 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 4 resultados favoráveis; B tem 8 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Nenhuma tem lápis azul” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois potes têm 6 tampinhas cada. A tem 2 brancas e B tem 2 brancas. A chance de tirar uma branca é...",
+      "options": [
+        "igual nos dois potes",
+        "maior no pote A",
+        "maior no pote B",
+        "impossível nos dois"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os dois potes têm o mesmo total e a mesma quantidade de tampinhas brancas.",
+      "wrongExplanations": {
+        "1": "A tem 2 resultados favoráveis; B tem 2 resultados favoráveis. Há 6 possibilidades em cada caso, então as chances são iguais. Por isso, “maior no pote A” não corresponde à comparação.",
+        "2": "A tem 2 resultados favoráveis; B tem 2 resultados favoráveis. Há 6 possibilidades em cada caso, então as chances são iguais. Por isso, “maior no pote B” não corresponde à comparação.",
+        "3": "A tem 2 resultados favoráveis; B tem 2 resultados favoráveis. Há 6 possibilidades em cada caso, então as chances são iguais. Por isso, “impossível nos dois” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Duas roletas têm 8 setores iguais. A tem 3 setores com sol e B também tem 3. Qual afirmação é correta?",
+      "options": [
+        "A roleta A tem maior chance.",
+        "A chance de sair sol é igual nas duas.",
+        "A roleta B tem maior chance.",
+        "Sol não pode aparecer."
+      ],
+      "correctIndex": 1,
+      "explanation": "A quantidade de setores com sol e o total de setores são iguais.",
+      "wrongExplanations": {
+        "0": "A tem 3 resultados favoráveis; B tem 3 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A roleta A tem maior chance.” não corresponde à comparação.",
+        "2": "A tem 3 resultados favoráveis; B tem 3 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A roleta B tem maior chance.” não corresponde à comparação.",
+        "3": "A tem 3 resultados favoráveis; B tem 3 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Sol não pode aparecer.” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Em dois sacos com 12 contas cada, A tem 8 verdes e B tem 5 verdes. De qual saco é mais provável retirar uma conta verde?",
+      "options": [
+        "Saco B",
+        "Os dois têm a mesma chance",
+        "Saco A",
+        "Não há contas verdes"
+      ],
+      "correctIndex": 2,
+      "explanation": "O total é igual, mas o saco A tem mais contas verdes.",
+      "wrongExplanations": {
+        "0": "A tem 8 resultados favoráveis; B tem 5 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Saco B” não corresponde à comparação.",
+        "1": "A tem 8 resultados favoráveis; B tem 5 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os dois têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 8 resultados favoráveis; B tem 5 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Não há contas verdes” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Cada caixa tem 10 cartões. A tem 1 cartão com lua e B tem 6. Em qual caixa a chance de tirar lua é maior?",
+      "options": [
+        "Caixa A",
+        "As duas têm a mesma chance",
+        "Lua não aparece em nenhuma",
+        "Caixa B"
+      ],
+      "correctIndex": 3,
+      "explanation": "A caixa B tem seis cartões favoráveis, mais do que a caixa A.",
+      "wrongExplanations": {
+        "0": "A tem 1 resultado favorável; B tem 6 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "1": "A tem 1 resultado favorável; B tem 6 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As duas têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 1 resultado favorável; B tem 6 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Lua não aparece em nenhuma” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Duas sacolas têm 8 peças cada. A tem 4 redondas e B tem 4 redondas. Qual tem maior chance de retirar uma peça redonda?",
+      "options": [
+        "As chances são iguais.",
+        "A sacola A.",
+        "A sacola B.",
+        "Nenhuma, pois não há peças redondas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cada sacola tem quatro peças redondas em oito peças.",
+      "wrongExplanations": {
+        "1": "A tem 4 resultados favoráveis; B tem 4 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A sacola A.” não corresponde à comparação.",
+        "2": "A tem 4 resultados favoráveis; B tem 4 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “A sacola B.” não corresponde à comparação.",
+        "3": "A tem 4 resultados favoráveis; B tem 4 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Nenhuma, pois não há peças redondas.” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois potes têm 6 botões cada. A tem 5 azuis e B tem 1 azul. De qual pote é mais provável retirar um botão azul?",
+      "options": [
+        "Pote B",
+        "Pote A",
+        "Os potes têm a mesma chance",
+        "É impossível nos dois"
+      ],
+      "correctIndex": 1,
+      "explanation": "O pote A tem mais botões azuis e o mesmo total de botões.",
+      "wrongExplanations": {
+        "0": "A tem 5 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Pote B” não corresponde à comparação.",
+        "2": "A tem 5 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Os potes têm a mesma chance” não corresponde à comparação.",
+        "3": "A tem 5 resultados favoráveis; B tem 1 resultado favorável. Há 6 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “É impossível nos dois” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Duas roletas têm 10 setores iguais. A tem 7 setores amarelos e B tem 3. Qual roleta tem maior chance de parar no amarelo?",
+      "options": [
+        "Roleta B",
+        "As chances são iguais",
+        "Roleta A",
+        "Nenhuma tem setor amarelo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sete setores favoráveis são mais do que três, com o mesmo total de setores.",
+      "wrongExplanations": {
+        "0": "A tem 7 resultados favoráveis; B tem 3 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Roleta B” não corresponde à comparação.",
+        "1": "A tem 7 resultados favoráveis; B tem 3 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "3": "A tem 7 resultados favoráveis; B tem 3 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Nenhuma tem setor amarelo” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois sacos têm 12 fichas cada. A tem 4 fichas com estrela e B tem 9. De qual é mais provável tirar uma ficha com estrela?",
+      "options": [
+        "Saco A",
+        "Os sacos têm a mesma chance",
+        "Estrela não aparece em nenhum",
+        "Saco B"
+      ],
+      "correctIndex": 3,
+      "explanation": "O saco B tem mais fichas com estrela entre doze fichas.",
+      "wrongExplanations": {
+        "0": "A tem 4 resultados favoráveis; B tem 9 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Saco A” não corresponde à comparação.",
+        "1": "A tem 4 resultados favoráveis; B tem 9 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Os sacos têm a mesma chance” não corresponde à comparação.",
+        "2": "A tem 4 resultados favoráveis; B tem 9 resultados favoráveis. Há 12 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Estrela não aparece em nenhum” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois potes têm 8 peças cada. A tem 6 triângulos e B tem 6 triângulos. Qual pote oferece maior chance de retirar um triângulo?",
+      "options": [
+        "As chances são iguais.",
+        "Pote A.",
+        "Pote B.",
+        "É impossível nos dois."
+      ],
+      "correctIndex": 0,
+      "explanation": "Em ambos há seis triângulos no mesmo total de oito peças.",
+      "wrongExplanations": {
+        "1": "A tem 6 resultados favoráveis; B tem 6 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Pote A.” não corresponde à comparação.",
+        "2": "A tem 6 resultados favoráveis; B tem 6 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “Pote B.” não corresponde à comparação.",
+        "3": "A tem 6 resultados favoráveis; B tem 6 resultados favoráveis. Há 8 possibilidades em cada caso, então as chances são iguais. Por isso, “É impossível nos dois.” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Duas caixas têm 10 cubos cada. A tem 2 cubos laranjas e B tem 7. De qual caixa é mais provável tirar um cubo laranja?",
+      "options": [
+        "Caixa A",
+        "Caixa B",
+        "As chances são iguais",
+        "Não há cubos laranjas"
+      ],
+      "correctIndex": 1,
+      "explanation": "A caixa B contém mais cubos laranjas, mantendo o mesmo total.",
+      "wrongExplanations": {
+        "0": "A tem 2 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Caixa A” não corresponde à comparação.",
+        "2": "A tem 2 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "3": "A tem 2 resultados favoráveis; B tem 7 resultados favoráveis. Há 10 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Não há cubos laranjas” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Dois sacos têm 6 cartões cada. A tem 1 cartão de coração e B tem 5. De qual saco é mais provável retirar um coração?",
+      "options": [
+        "Saco A",
+        "As chances são iguais",
+        "Saco B",
+        "É impossível nos dois"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cinco cartões favoráveis em seis dão chance maior que um em seis.",
+      "wrongExplanations": {
+        "0": "A tem 1 resultado favorável; B tem 5 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “Saco A” não corresponde à comparação.",
+        "1": "A tem 1 resultado favorável; B tem 5 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "3": "A tem 1 resultado favorável; B tem 5 resultados favoráveis. Há 6 possibilidades em cada caso, então a chance correspondente a B é maior. Por isso, “É impossível nos dois” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_probabilidade_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "probabilidade",
+      "topicName": "Probabilidade",
+      "question": "Duas roletas iguais em tamanho têm 8 setores. A tem 5 setores azuis e B tem 2. Em qual a chance de sair azul é maior?",
+      "options": [
+        "Roleta B",
+        "As chances são iguais",
+        "Azul não pode sair",
+        "Roleta A"
+      ],
+      "correctIndex": 3,
+      "explanation": "Com o mesmo total de setores, cinco azuis são mais que dois.",
+      "wrongExplanations": {
+        "0": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Roleta B” não corresponde à comparação.",
+        "1": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “As chances são iguais” não corresponde à comparação.",
+        "2": "A tem 5 resultados favoráveis; B tem 2 resultados favoráveis. Há 8 possibilidades em cada caso, então a chance correspondente a A é maior. Por isso, “Azul não pode sair” não corresponde à comparação."
+      },
+      "skill": "comparar-possibilidades-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "probabilidade"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

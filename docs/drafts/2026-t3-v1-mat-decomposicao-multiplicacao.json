@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Use a decomposição: 4 × 12 = (4 × 10) + (4 × 2). Qual é o produto?",
+      "options": ["48", "42", "44", "52"],
+      "correctIndex": 0,
+      "explanation": "4 × 10 = 40 e 4 × 2 = 8; 40 + 8 = 48.",
+      "wrongExplanations": {
+        "1": "Separe 12 em 10 + 2: 4 × 10 + 4 × 2 = 48. A opção 42 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 4 × 10 + 4 × 2 = 48. A opção 44 não soma os dois produtos corretamente.",
+        "3": "Separe 12 em 10 + 2: 4 × 10 + 4 × 2 = 48. A opção 52 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule por decomposição: 3 × 14 = (3 × 10) + (3 × 4).",
+      "options": ["38", "42", "40", "46"],
+      "correctIndex": 1,
+      "explanation": "3 × 10 = 30 e 3 × 4 = 12; 30 + 12 = 42.",
+      "wrongExplanations": {
+        "0": "Separe 14 em 10 + 4: 3 × 10 + 3 × 4 = 42. A opção 38 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 3 × 10 + 3 × 4 = 42. A opção 40 não soma os dois produtos corretamente.",
+        "3": "Separe 14 em 10 + 4: 3 × 10 + 3 × 4 = 42. A opção 46 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Qual resultado de 5 × 13 usando (5 × 10) + (5 × 3)?",
+      "options": ["60", "63", "65", "70"],
+      "correctIndex": 2,
+      "explanation": "5 × 10 = 50 e 5 × 3 = 15; a soma é 65.",
+      "wrongExplanations": {
+        "0": "Separe 13 em 10 + 3: 5 × 10 + 5 × 3 = 65. A opção 60 não soma os dois produtos corretamente.",
+        "1": "Separe 13 em 10 + 3: 5 × 10 + 5 × 3 = 65. A opção 63 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 5 × 10 + 5 × 3 = 65. A opção 70 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Resolva 6 × 12 pensando em 6 × 10 + 6 × 2.",
+      "options": ["68", "70", "76", "72"],
+      "correctIndex": 3,
+      "explanation": "60 + 12 = 72.",
+      "wrongExplanations": {
+        "0": "Separe 12 em 10 + 2: 6 × 10 + 6 × 2 = 72. A opção 68 não soma os dois produtos corretamente.",
+        "1": "Separe 12 em 10 + 2: 6 × 10 + 6 × 2 = 72. A opção 70 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 6 × 10 + 6 × 2 = 72. A opção 76 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule 7 × 13 usando 7 × 10 + 7 × 3.",
+      "options": ["91", "88", "90", "94"],
+      "correctIndex": 0,
+      "explanation": "70 + 21 = 91.",
+      "wrongExplanations": {
+        "1": "Separe 13 em 10 + 3: 7 × 10 + 7 × 3 = 91. A opção 88 não soma os dois produtos corretamente.",
+        "2": "Separe 13 em 10 + 3: 7 × 10 + 7 × 3 = 91. A opção 90 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 7 × 10 + 7 × 3 = 91. A opção 94 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Qual é 4 × 15 usando 4 × 10 + 4 × 5?",
+      "options": ["55", "60", "58", "65"],
+      "correctIndex": 1,
+      "explanation": "40 + 20 = 60.",
+      "wrongExplanations": {
+        "0": "Separe 15 em 10 + 5: 4 × 10 + 4 × 5 = 60. A opção 55 não soma os dois produtos corretamente.",
+        "2": "Separe 15 em 10 + 5: 4 × 10 + 4 × 5 = 60. A opção 58 não soma os dois produtos corretamente.",
+        "3": "Separe 15 em 10 + 5: 4 × 10 + 4 × 5 = 60. A opção 65 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Use 3 × 10 + 3 × 6 para calcular 3 × 16.",
+      "options": ["42", "46", "48", "52"],
+      "correctIndex": 2,
+      "explanation": "30 + 18 = 48.",
+      "wrongExplanations": {
+        "0": "Separe 16 em 10 + 6: 3 × 10 + 3 × 6 = 48. A opção 42 não soma os dois produtos corretamente.",
+        "1": "Separe 16 em 10 + 6: 3 × 10 + 3 × 6 = 48. A opção 46 não soma os dois produtos corretamente.",
+        "3": "Separe 16 em 10 + 6: 3 × 10 + 3 × 6 = 48. A opção 52 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule 8 × 12 decompondo 12 em 10 + 2.",
+      "options": ["88", "92", "104", "96"],
+      "correctIndex": 3,
+      "explanation": "8 × 10 = 80 e 8 × 2 = 16; 80 + 16 = 96.",
+      "wrongExplanations": {
+        "0": "Separe 12 em 10 + 2: 8 × 10 + 8 × 2 = 96. A opção 88 não soma os dois produtos corretamente.",
+        "1": "Separe 12 em 10 + 2: 8 × 10 + 8 × 2 = 96. A opção 92 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 8 × 10 + 8 × 2 = 96. A opção 104 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Quanto é 5 × 14 usando 5 × 10 + 5 × 4?",
+      "options": ["70", "66", "68", "74"],
+      "correctIndex": 0,
+      "explanation": "50 + 20 = 70.",
+      "wrongExplanations": {
+        "1": "Separe 14 em 10 + 4: 5 × 10 + 5 × 4 = 70. A opção 66 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 5 × 10 + 5 × 4 = 70. A opção 68 não soma os dois produtos corretamente.",
+        "3": "Separe 14 em 10 + 4: 5 × 10 + 5 × 4 = 70. A opção 74 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Use 6 × 10 + 6 × 3 para calcular 6 × 13.",
+      "options": ["72", "78", "75", "81"],
+      "correctIndex": 1,
+      "explanation": "60 + 18 = 78.",
+      "wrongExplanations": {
+        "0": "Separe 13 em 10 + 3: 6 × 10 + 6 × 3 = 78. A opção 72 não soma os dois produtos corretamente.",
+        "2": "Separe 13 em 10 + 3: 6 × 10 + 6 × 3 = 78. A opção 75 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 6 × 10 + 6 × 3 = 78. A opção 81 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule 7 × 12 usando 7 × 10 + 7 × 2.",
+      "options": ["77", "82", "84", "88"],
+      "correctIndex": 2,
+      "explanation": "70 + 14 = 84.",
+      "wrongExplanations": {
+        "0": "Separe 12 em 10 + 2: 7 × 10 + 7 × 2 = 84. A opção 77 não soma os dois produtos corretamente.",
+        "1": "Separe 12 em 10 + 2: 7 × 10 + 7 × 2 = 84. A opção 82 não soma os dois produtos corretamente.",
+        "3": "Separe 12 em 10 + 2: 7 × 10 + 7 × 2 = 84. A opção 88 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Qual é o produto 4 × 17 se 17 = 10 + 7?",
+      "options": ["61", "64", "72", "68"],
+      "correctIndex": 3,
+      "explanation": "4 × 10 = 40 e 4 × 7 = 28; 40 + 28 = 68.",
+      "wrongExplanations": {
+        "0": "Separe 17 em 10 + 7: 4 × 10 + 4 × 7 = 68. A opção 61 não soma os dois produtos corretamente.",
+        "1": "Separe 17 em 10 + 7: 4 × 10 + 4 × 7 = 68. A opção 64 não soma os dois produtos corretamente.",
+        "2": "Separe 17 em 10 + 7: 4 × 10 + 4 × 7 = 68. A opção 72 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Use a decomposição 3 × 10 + 3 × 8 para encontrar 3 × 18.",
+      "options": ["54", "48", "51", "60"],
+      "correctIndex": 0,
+      "explanation": "30 + 24 = 54.",
+      "wrongExplanations": {
+        "1": "Separe 18 em 10 + 8: 3 × 10 + 3 × 8 = 54. A opção 48 não soma os dois produtos corretamente.",
+        "2": "Separe 18 em 10 + 8: 3 × 10 + 3 × 8 = 54. A opção 51 não soma os dois produtos corretamente.",
+        "3": "Separe 18 em 10 + 8: 3 × 10 + 3 × 8 = 54. A opção 60 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule 9 × 12 decompondo 12 em 10 + 2.",
+      "options": ["98", "108", "106", "116"],
+      "correctIndex": 1,
+      "explanation": "9 × 10 = 90 e 9 × 2 = 18; 90 + 18 = 108.",
+      "wrongExplanations": {
+        "0": "Separe 12 em 10 + 2: 9 × 10 + 9 × 2 = 108. A opção 98 não soma os dois produtos corretamente.",
+        "2": "Separe 12 em 10 + 2: 9 × 10 + 9 × 2 = 108. A opção 106 não soma os dois produtos corretamente.",
+        "3": "Separe 12 em 10 + 2: 9 × 10 + 9 × 2 = 108. A opção 116 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Quanto é 5 × 16 usando 5 × 10 + 5 × 6?",
+      "options": ["74", "76", "80", "86"],
+      "correctIndex": 2,
+      "explanation": "50 + 30 = 80.",
+      "wrongExplanations": {
+        "0": "Separe 16 em 10 + 6: 5 × 10 + 5 × 6 = 80. A opção 74 não soma os dois produtos corretamente.",
+        "1": "Separe 16 em 10 + 6: 5 × 10 + 5 × 6 = 80. A opção 76 não soma os dois produtos corretamente.",
+        "3": "Separe 16 em 10 + 6: 5 × 10 + 5 × 6 = 80. A opção 86 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule 4 × 18 usando 4 × 10 + 4 × 8.",
+      "options": ["64", "68", "76", "72"],
+      "correctIndex": 3,
+      "explanation": "40 + 32 = 72.",
+      "wrongExplanations": {
+        "0": "Separe 18 em 10 + 8: 4 × 10 + 4 × 8 = 72. A opção 64 não soma os dois produtos corretamente.",
+        "1": "Separe 18 em 10 + 8: 4 × 10 + 4 × 8 = 72. A opção 68 não soma os dois produtos corretamente.",
+        "2": "Separe 18 em 10 + 8: 4 × 10 + 4 × 8 = 72. A opção 76 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Use 6 × 10 + 6 × 5 para calcular 6 × 15.",
+      "options": ["90", "84", "86", "96"],
+      "correctIndex": 0,
+      "explanation": "60 + 30 = 90.",
+      "wrongExplanations": {
+        "1": "Separe 15 em 10 + 5: 6 × 10 + 6 × 5 = 90. A opção 84 não soma os dois produtos corretamente.",
+        "2": "Separe 15 em 10 + 5: 6 × 10 + 6 × 5 = 90. A opção 86 não soma os dois produtos corretamente.",
+        "3": "Separe 15 em 10 + 5: 6 × 10 + 6 × 5 = 90. A opção 96 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Qual é 7 × 14 usando 7 × 10 + 7 × 4?",
+      "options": ["91", "98", "94", "102"],
+      "correctIndex": 1,
+      "explanation": "70 + 28 = 98.",
+      "wrongExplanations": {
+        "0": "Separe 14 em 10 + 4: 7 × 10 + 7 × 4 = 98. A opção 91 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 7 × 10 + 7 × 4 = 98. A opção 94 não soma os dois produtos corretamente.",
+        "3": "Separe 14 em 10 + 4: 7 × 10 + 7 × 4 = 98. A opção 102 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Calcule 8 × 13 decompondo 13 em 10 + 3.",
+      "options": ["96", "101", "104", "112"],
+      "correctIndex": 2,
+      "explanation": "8 × 10 = 80 e 8 × 3 = 24; 80 + 24 = 104.",
+      "wrongExplanations": {
+        "0": "Separe 13 em 10 + 3: 8 × 10 + 8 × 3 = 104. A opção 96 não soma os dois produtos corretamente.",
+        "1": "Separe 13 em 10 + 3: 8 × 10 + 8 × 3 = 104. A opção 101 não soma os dois produtos corretamente.",
+        "3": "Separe 13 em 10 + 3: 8 × 10 + 8 × 3 = 104. A opção 112 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_decomposicao_multiplicacao_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "decomposicao-multiplicacao",
+      "topicName": "Decomposição com multiplicação",
+      "question": "Use 9 × 10 + 9 × 4 para encontrar 9 × 14.",
+      "options": ["117", "122", "136", "126"],
+      "correctIndex": 3,
+      "explanation": "90 + 36 = 126.",
+      "wrongExplanations": {
+        "0": "Separe 14 em 10 + 4: 9 × 10 + 9 × 4 = 126. A opção 117 não soma os dois produtos corretamente.",
+        "1": "Separe 14 em 10 + 4: 9 × 10 + 9 × 4 = 126. A opção 122 não soma os dois produtos corretamente.",
+        "2": "Separe 14 em 10 + 4: 9 × 10 + 9 × 4 = 126. A opção 136 não soma os dois produtos corretamente."
+      },
+      "skill": "usar-decomposicao-para-calcular-multiplicacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "decomposicao-multiplicacao"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
