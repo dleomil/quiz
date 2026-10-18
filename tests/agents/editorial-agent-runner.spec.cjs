@@ -142,6 +142,49 @@ fs.writeFileSync(output, response);
     );
     assert.equal(pedagogical.status, 0, pedagogical.stderr);
 
+    const deliveryPackage = path.join(directory, 'delivery-package.json');
+    writeJson(deliveryPackage, {
+      questions: [pedagogicalSource.input.proposal],
+    });
+    const deliveryArgs = [
+      runner,
+      '--agent',
+      'pedagogical_quality',
+      '--input',
+      pedagogicalInputPath,
+      '--output',
+      pedagogicalOutputPath,
+      '--codex-bin',
+      fakeCodex,
+      '--delivery-package',
+      deliveryPackage,
+    ];
+    const delivery = spawnSync(process.execPath, deliveryArgs, {
+      cwd: root,
+      encoding: 'utf8',
+      env: { PATH: process.env.PATH, OPENAI_API_KEY: 'test-only-not-a-secret' },
+    });
+    assert.equal(delivery.status, 0, delivery.stderr);
+    const delivered = JSON.parse(
+      fs.readFileSync(pedagogicalOutputPath, 'utf8'),
+    );
+    assert.equal(delivered.execution.kind, 'isolated-editorial');
+    assert.equal(delivered.execution.testOnly, true);
+    assert.equal(delivered.execution.pass, 'linguistic');
+    assert.match(delivered.execution.packageSha256, /^[a-f0-9]{64}$/);
+    assert.ok(delivered.execution.runId);
+    const changedProposal = {
+      ...pedagogicalSource.input.proposal,
+      question: 'Outra pergunta.',
+    };
+    writeJson(deliveryPackage, { questions: [changedProposal] });
+    const divergent = spawnSync(process.execPath, deliveryArgs, {
+      cwd: root,
+      encoding: 'utf8',
+    });
+    assert.notEqual(divergent.status, 0);
+    assert.match(divergent.stderr, /proposta diverge/);
+
     const blocked = spawnSync(
       process.execPath,
       [
