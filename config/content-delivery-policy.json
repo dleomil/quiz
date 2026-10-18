@@ -2,7 +2,14 @@
   "schemaVersion": "content-delivery-policy-v1",
   "activationCommit": "977c1372b82f1c494a5394238cfe27b95b5d9ef0",
   "minimumCycle": "2026-t3",
-  "enabledSubjects": ["ingles"],
+  "enabledSubjects": [
+    "portugues",
+    "matematica",
+    "ciencias",
+    "geografia",
+    "historia",
+    "ingles"
+  ],
   "humanApprovers": ["dleomil"],
   "repository": "dleomil/quiz",
   "runtimeFiles": [
@@ -65,5 +72,9 @@
       "criterion": "Explicacao correta e feedback coerente com cada distrator."
     }
   ],
-  "editorialDirectory": "docs/editorial"
+  "editorialDirectory": "docs/editorial",
+  "publisherFiles": [
+    "scripts/build-t3-matematica-release.cjs",
+    "scripts/build-t3-portugues-expansion.cjs"
+  ]
 }

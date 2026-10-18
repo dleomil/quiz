@@ -1,3 +1,4 @@
+const { assertPublication } = require('./content-delivery.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -35,6 +36,8 @@ function buildRelease() {
       return { ...question, reviewStatus: 'published' };
     });
   });
+
+  assertPublication(questions);
 
   const topicMeta = Object.fromEntries(
     TOPICS.map(([topic, name]) => [topic, { name, icon: '🔢' }]),

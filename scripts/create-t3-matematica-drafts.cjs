@@ -1,3 +1,4 @@
+const { validateGeneratedQuestions } = require('./content-delivery.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -1481,7 +1482,7 @@ function sha256(value) {
     .digest('hex');
 }
 
-function buildQuestions(topic) {
+function buildQuestionsUnchecked(topic) {
   if (topic.items.length !== 20) {
     throw new Error(
       `${topic.id}: esperado 20 itens, encontrado ${topic.items.length}`,
@@ -1570,6 +1571,10 @@ function buildQuestions(topic) {
       version: 1,
     };
   });
+}
+
+function buildQuestions(...args) {
+  return validateGeneratedQuestions(buildQuestionsUnchecked(...args));
 }
 
 function writeNew(filePath, value) {

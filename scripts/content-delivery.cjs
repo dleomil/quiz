@@ -82,6 +82,17 @@ function validateBatch(questions, { policy, coverage, topicNames = {} } = {}) {
   const ids = new Set();
   for (const question of questions) {
     errors.push(...validateQuestion(question, first.subject));
+    if (
+      question.subject === 'historia' &&
+      !/^\d{4}-t[23]-v\d+$/.test(question.contentSetId || '')
+    ) {
+      errors.push(
+        ...validateQuestion(
+          { ...question, contentSetId: '2026-t3-v1' },
+          first.subject,
+        ),
+      );
+    }
     if (question.schemaVersion !== 'content-v1')
       errors.push(`${question.id}: exige content-v1`);
     if (batchKey(question) !== batchKey(first))
@@ -216,6 +227,8 @@ function validateReviews(
         scenario.output?.findings?.length
       )
         errors.push(`revisao com pendencias: ${pair}`);
+      if (!scenario.output?.facts?.length)
+        errors.push(`revisao sem fatos registrados: ${pair}`);
     } catch (error) {
       errors.push(`${pair}: ${error.message}`);
     }
@@ -228,7 +241,8 @@ function validateReviews(
     );
     if (
       !evidence ||
-      !evidence.evidence ||
+      typeof evidence.evidence !== 'string' ||
+      !evidence.evidence.trim() ||
       evidence.verification !== rule.verification
     )
       errors.push(`requisito sem evidencia: ${rule.id}`);
@@ -271,6 +285,102 @@ function validateApproval(questions, record, policy, readComment) {
   }
   return errors;
 }
+function validateGeneratedQuestions(questions, root = ROOT) {
+  const policy = JSON.parse(
+    fs.readFileSync(path.join(root, POLICY_PATH), 'utf8'),
+  );
+  const coverage = JSON.parse(
+    fs.readFileSync(
+      path.join(root, 'config/content-coverage-manifest.json'),
+      'utf8',
+    ),
+  );
+  if (!Array.isArray(questions) || !questions.length)
+    throw new Error('gerador retornou lote vazio');
+  const groups = new Map();
+  for (const question of questions) {
+    if (!applies(question.contentSetId, policy))
+      throw new Error('geracao fora do escopo T3 e proximos acervos');
+    const key = batchKey(question);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(question);
+  }
+  const errors = [...groups.values()].flatMap(
+    (batch) => validateBatch(batch, { policy, coverage }).errors,
+  );
+  if (errors.length) throw new Error(errors.join('\n'));
+  return questions;
+}
+
+function assertPublication(
+  questions,
+  { root = ROOT, baseRef = 'HEAD', readComment } = {},
+) {
+  const policy = JSON.parse(
+    fs.readFileSync(path.join(root, POLICY_PATH), 'utf8'),
+  );
+  const before = readState(snapshot(root, baseRef), policy);
+  const worktree = snapshot(root, 'WORKTREE');
+  const current = readState(worktree, policy);
+  const coverage = JSON.parse(
+    worktree.read('config/content-coverage-manifest.json'),
+  );
+  const groups = new Map();
+  for (const question of questions) {
+    const key = batchKey(question);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(question);
+  }
+  const errors = [...current.errors];
+  const readJson = (name) => {
+    if (!worktree.names.includes(name) || name.split('/').includes('..'))
+      throw new Error('evidencia ausente');
+    return JSON.parse(worktree.read(name));
+  };
+  const commentReader =
+    readComment ||
+    ((id) =>
+      JSON.parse(
+        execFileSync(
+          'gh',
+          ['api', `repos/${policy.repository}/issues/comments/${id}`],
+          { encoding: 'utf8' },
+        ),
+      ));
+  for (const [key, batch] of groups) {
+    if (packageHash(batch) === packageHash(before.published.get(key) || []))
+      continue;
+    const draft = current.drafts.get(key);
+    const checked = validateBatch(draft, {
+      policy,
+      coverage,
+      topicNames: current.topicNames[batch[0].subject],
+    });
+    errors.push(...checked.errors);
+    if (!draft?.length) continue;
+    if (packageHash(checked.questions) !== packageHash(batch))
+      errors.push(`${key}: publicador diverge do rascunho`);
+    const recordPath = `${policy.editorialDirectory}/${key.replaceAll('/', '--')}.json`;
+    if (!worktree.names.includes(recordPath)) {
+      errors.push(`${key}: revisao ausente para publicacao`);
+      continue;
+    }
+    const record = readJson(recordPath);
+    errors.push(
+      ...validateReviews(checked.questions, record, readJson, { policy }),
+    );
+    errors.push(
+      ...validateApproval(checked.questions, record, policy, commentReader),
+    );
+    if (
+      record.visual?.sourceSha256 !== packageHash(batch) ||
+      record.visual?.test !== 'content-delivery-ui' ||
+      !record.visual?.evidenceRef
+    )
+      errors.push(`${key}: evidencia visual ausente`);
+  }
+  if (errors.length) throw new Error(errors.join('\n'));
+}
 function git(root, args) {
   return execFileSync('git', args, {
     cwd: root,
@@ -294,9 +404,34 @@ function snapshot(root, ref) {
         : git(root, ['show', `${ref}:${name}`]),
   };
 }
+function defaultBase(root, policy) {
+  const branch = git(root, ['rev-parse', '--abbrev-ref', 'HEAD']).trim();
+  const ref =
+    branch === 'main' || /^(?:release|hotfix)\//.test(branch)
+      ? 'origin/main'
+      : 'origin/develop';
+  try {
+    git(root, ['rev-parse', '--verify', ref]);
+    return ref;
+  } catch {
+    return policy.activationCommit;
+  }
+}
 function readState(source, policy) {
   const errors = [];
   const drafts = new Map();
+  for (const name of source.names.filter((file) =>
+    /^scripts\/create-t[123]-.*\.cjs$/.test(file),
+  )) {
+    if (!policy.generatorFiles.includes(name))
+      errors.push(`caminho de geracao nao cadastrado: ${name}`);
+  }
+  for (const name of source.names.filter((file) =>
+    /^scripts\/build-t[123]-.*\.cjs$/.test(file),
+  )) {
+    if (!policy.publisherFiles?.includes(name))
+      errors.push(`caminho de publicacao nao cadastrado: ${name}`);
+  }
   for (const name of source.names.filter((file) =>
     /^docs\/drafts\/.*\.json$/.test(file),
   )) {
@@ -329,20 +464,21 @@ function readState(source, policy) {
       vm.runInContext(source.read(file), context, { timeout: 3000 });
   }
   const known = new Set(policy.runtimeFiles);
-  for (const name of source.names.filter((file) =>
-    /^js\/data\/.*\.js$/.test(file),
-  )) {
+  const subjectFiles = new Set(
+    subjects.map((subject) => `js/data/subjects/${subject}.js`),
+  );
+  const supportFiles = new Set([
+    'js/data/content-catalog.js',
+    'js/data/questions.js',
+  ]);
+  for (const name of source.names.filter((file) => /^js\/.*\.js$/.test(file))) {
+    if (known.has(name) || subjectFiles.has(name) || supportFiles.has(name))
+      continue;
     if (
-      /published\.js$/.test(name) ||
-      /contentSetId\s*:\s*['"]\d{4}-t[123]-v/.test(source.read(name))
-    ) {
-      if (
-        !known.has(name) &&
-        !name.startsWith('js/data/subjects/') &&
-        name !== 'js/data/content-catalog.js'
-      )
-        errors.push(`caminho de conteudo nao cadastrado: ${name}`);
-    }
+      name.startsWith('js/data/') ||
+      /QuestionsDataSources/.test(source.read(name))
+    )
+      errors.push(`caminho de conteudo nao cadastrado: ${name}`);
   }
   for (const file of policy.runtimeFiles)
     if (source.names.includes(file))
@@ -377,7 +513,8 @@ function validateDelivery({
 }) {
   const head = snapshot(root, headRef);
   const policy = suppliedPolicy || JSON.parse(head.read(POLICY_PATH));
-  const base = snapshot(root, baseRef || policy.activationCommit);
+  const selectedBase = baseRef || defaultBase(root, policy);
+  const base = snapshot(root, selectedBase);
   const before = readState(base, policy);
   const after = readState(head, policy);
   const errors = [...after.errors];
@@ -476,7 +613,7 @@ function validateDelivery({
   }
   return {
     schemaVersion: 'content-delivery-result-v1',
-    baseRef: baseRef || policy.activationCommit,
+    baseRef: selectedBase,
     headRef,
     batches,
     errors,
@@ -515,6 +652,8 @@ module.exports = {
   validateBatch,
   validateReviews,
   validateApproval,
+  validateGeneratedQuestions,
+  assertPublication,
   snapshot,
   readState,
   validateDelivery,

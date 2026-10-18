@@ -1,3 +1,4 @@
+const { validateGeneratedQuestions } = require('./content-delivery.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -6,10 +7,6 @@ const ROOT = path.resolve(__dirname, '..');
 const DRAFT_PATH = path.join(
   ROOT,
   'docs/drafts/2026-t3-v1-cie-materiais-luz.json',
-);
-const AUDIT_PATH = path.join(
-  ROOT,
-  'docs/audits/2026-t3-v1-cie-materiais-luz-audit.json',
 );
 
 const SPECS = [
@@ -207,7 +204,7 @@ function sha256(value) {
     .update(JSON.stringify(stableValue(value)))
     .digest('hex');
 }
-function buildQuestions() {
+function buildQuestionsUnchecked() {
   return SPECS.map(([question, correct, wrong, explanation], index) => {
     const correctIndex = index % 4;
     const options = new Array(4);
@@ -246,46 +243,20 @@ function buildQuestions() {
     };
   });
 }
-function buildAudit(questions) {
-  const reviews = questions.flatMap((question) =>
-    ['curriculum-factual', 'pedagogical-linguistic'].map((pass) => ({
-      questionId: question.id,
-      pass,
-      actorId: 'codex-single-agent',
-      actorRole:
-        pass === 'curriculum-factual'
-          ? 'content_curator'
-          : 'pedagogical_quality',
-      evidenceRefs: [
-        `school-curriculum:2026-t3/ciencias/materiais-transparentes/page-${question.sourceRef.page}`,
-      ],
-      decision: 'clear',
-      findings: [],
-    })),
-  );
-  return {
-    schemaVersion: 'content-quality-audit-v1',
-    reviewMode: 'single-agent-sequential',
-    reportStatus: 'draft',
-    contentSetId: '2026-t3-v1',
-    topicId: 'ciencias:materiais-transparentes',
-    sourceSha256: sha256(questions),
-    reviews,
-  };
+function buildQuestions(...args) {
+  return validateGeneratedQuestions(buildQuestionsUnchecked(...args));
 }
+
 function main() {
   const questions = buildQuestions();
-  const audit = buildAudit(questions);
   fs.mkdirSync(path.dirname(DRAFT_PATH), { recursive: true });
-  fs.mkdirSync(path.dirname(AUDIT_PATH), { recursive: true });
   fs.writeFileSync(
     DRAFT_PATH,
     `${JSON.stringify({ schemaVersion: 'content-draft-v1', contentSetId: '2026-t3-v1', questions }, null, 2)}\n`,
   );
-  fs.writeFileSync(AUDIT_PATH, `${JSON.stringify(audit, null, 2)}\n`);
-  process.stdout.write(
-    `t3-ciencias-materiais-luz: ok (${questions.length} questoes, ${audit.reviews.length} passagens)\n`,
-  );
+  process.stdout
+    .write(`Rascunho validado: ${questions.length} questoes; revisao deve ser registrada separadamente.
+`);
 }
 if (require.main === module) main();
-module.exports = { buildQuestions, buildAudit, sha256 };
+module.exports = { buildQuestions, sha256 };

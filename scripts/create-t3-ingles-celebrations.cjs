@@ -1,3 +1,4 @@
+const { validateGeneratedQuestions } = require('./content-delivery.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -177,7 +178,7 @@ function sha256(value) {
     .update(JSON.stringify(stableValue(value)))
     .digest('hex');
 }
-function buildQuestions() {
+function buildQuestionsUnchecked() {
   const questions = SPECS.map(
     ([question, correct, wrong, explanation, questionPt], index) => {
       const correctIndex = index % 4;
@@ -224,6 +225,10 @@ function buildQuestions() {
   if (errors.length) throw new Error(errors.join('\n'));
   return questions;
 }
+function buildQuestions(...args) {
+  return validateGeneratedQuestions(buildQuestionsUnchecked(...args));
+}
+
 function main() {
   const questions = buildQuestions();
   fs.mkdirSync(path.dirname(DRAFT_PATH), { recursive: true });

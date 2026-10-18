@@ -163,3 +163,16 @@ Automacao estrutural nao substitui revisao de linguagem, ambiguidade ou adequaca
 ## Regra de seguranca
 
 Nenhum agente pode publicar um lote curricular com base apenas em inferencia automatizada ou sem aprovacao humana registrada.
+
+## Entregas novas e alteradas a partir do T3 de 2026
+
+Para esses lotes e para os proximos acervos, aplicar o
+[contrato comum de entrega editorial](../specs/content-delivery-contract.md).
+Cada requisito possui criterio de aceite e evidencia; duas passagens editoriais
+reais e separadas devem se referir ao pacote exato. Geradores nao emitem
+aprovacoes. Diagnostico tecnico e distinto de revisao editorial.
+
+A validacao compara a base e o candidato, confere o runtime e testa os IDs do
+lote no quiz e no gabarito. Aceite de implementacao nao substitui aceite editorial
+ou autorizacao de release. O novo contrato nao amplia requisitos para T1/T2 e
+nao exige revisao retroativa de lotes intocados.
