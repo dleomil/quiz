@@ -20,6 +20,9 @@ const COVERAGE_MANIFEST_PATH = path.join(
   'config',
   'content-coverage-manifest.json',
 );
+// Padrões do incidente de História; complementam a revisão linguística.
+const HISTORY_ENGLISH_PATTERN =
+  /\b(?:what|which|why|how|when|where|who)\s+(?:is|are|was|were|do|does|did|can|should)\b|\b(?:the|because|through|without|every|only|immigrants|immigration|portuguese|spanish|brazilian|historical|community|communities|moving|staying|visiting)\b|\bthis option\b/i;
 
 function isNonEmptyString(value) {
   return typeof value === 'string' && value.trim().length > 0;
@@ -40,6 +43,7 @@ function containsHtmlTag(value) {
 function validateRenderableText(question, label) {
   const errors = [];
   const fields = [
+    ['topicName', question.topicName],
     ['question', question.question],
     ['questionPt', question.questionPt],
     ['text', question.text],
@@ -65,6 +69,16 @@ function validateRenderableText(question, label) {
     if (containsHtmlTag(value)) {
       errors.push(
         '[' + label + '] ' + field + ' nao pode conter marcacao HTML',
+      );
+    }
+    if (
+      question.subject === 'historia' &&
+      /^\d{4}-t[23]-v\d+$/.test(question.contentSetId || '') &&
+      typeof value === 'string' &&
+      HISTORY_ENGLISH_PATTERN.test(value)
+    ) {
+      errors.push(
+        '[' + label + '] ' + field + ' contem padrao em ingles em Historia',
       );
     }
   });
