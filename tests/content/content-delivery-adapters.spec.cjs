@@ -13,6 +13,25 @@ const {
 const { evidenceFor } = require('../helpers/content-delivery-fixtures.cjs');
 const policy = require('../../config/content-delivery-policy.json');
 const coverage = require('../../config/content-coverage-manifest.json');
+assert.equal(policy.schemaVersion, 'content-delivery-policy-v1');
+assert.deepEqual([...policy.enabledSubjects].sort(), [
+  'ciencias',
+  'geografia',
+  'historia',
+  'ingles',
+  'matematica',
+  'portugues',
+]);
+assert.deepEqual(
+  policy.requirements.map((rule) => [rule.id, rule.verification]).sort(),
+  [
+    ['curriculum', 'pedagogical'],
+    ['english-support', 'linguistic'],
+    ['feedback', 'pedagogical'],
+    ['language', 'linguistic'],
+    ['structure', 'automatic'],
+  ],
+);
 const ROOT = path.resolve(__dirname, '../..');
 const temporary = fs.mkdtempSync(
   path.join(os.tmpdir(), 'quiz-content-adapters-'),
