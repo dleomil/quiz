@@ -8,6 +8,7 @@ const {
   validateBatch,
   validateDelivery,
   validateGeneratedQuestions,
+  assertPublication,
   validateReviews,
 } = require('../../scripts/content-delivery.cjs');
 const { evidenceFor } = require('../helpers/content-delivery-fixtures.cjs');
@@ -73,6 +74,14 @@ try {
     'Base ficticia',
   );
   const baseline = git('rev-parse', 'HEAD');
+  assert.throws(
+    () =>
+      assertPublication(
+        require('../../scripts/create-t3-ingles-present-continuous.cjs').buildQuestions(),
+        { root: temporary },
+      ),
+    /runtime exige status published/,
+  );
   const auditsBefore = inventory(path.join(temporary, 'docs/audits'));
   let generated = 0;
   for (const file of policy.generatorFiles) {

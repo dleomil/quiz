@@ -353,6 +353,10 @@ function assertPublication(
         ),
       ));
   for (const [key, batch] of groups) {
+    if (batch.some((question) => question.reviewStatus !== 'published')) {
+      errors.push(`${key}: runtime exige status published`);
+      continue;
+    }
     if (packageHash(batch) === packageHash(before.published.get(key) || []))
       continue;
     const draft = current.drafts.get(key);
