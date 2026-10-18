@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "content-v1",
+  "id": "2026t3v1_his_imigrantes_ibericos_001",
+  "contentSetId": "2026-t3-v1",
+  "subject": "historia",
+  "topic": "imigrantes-portugueses-espanhois",
+  "topicName": "Imigrantes portugueses e espanhóis",
+  "question": "What does immigration mean?",
+  "options": [
+    "moving from one place to another to live",
+    "visiting a museum for one hour",
+    "changing the weather",
+    "staying in the same home forever"
+  ],
+  "correctIndex": 0,
+  "explanation": "Immigration involves moving to another place to live.",
+  "wrongExplanations": {
+    "1": "This option does not match the historical idea: moving from one place to another to live.",
+    "2": "This option does not match the historical idea: moving from one place to another to live.",
+    "3": "This option does not match the historical idea: moving from one place to another to live."
+  },
+  "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+  "sourceRef": {
+    "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+    "section": "História",
+    "page": "90"
+  },
+  "reviewStatus": "published",
+  "version": 1
+}
