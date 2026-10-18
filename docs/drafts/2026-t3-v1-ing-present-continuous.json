@@ -10,6 +10,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Choose the sentence that describes an action happening now.",
+      "questionPt": "Escolha a frase em inglês que descreve uma ação que está acontecendo agora.",
       "options": [
         "She is reading a book.",
         "She reads books every day.",
@@ -30,7 +31,7 @@
         "page": "75"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -40,6 +41,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: I ___ playing soccer now.",
+      "questionPt": "Complete a frase em inglês: I ___ playing soccer now.",
       "options": ["be", "am", "is", "are"],
       "correctIndex": 1,
       "explanation": "The subject I uses am in the present continuous.",
@@ -55,7 +57,7 @@
         "page": "76"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -65,6 +67,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: He ___ eating lunch.",
+      "questionPt": "Complete a frase em inglês: He ___ eating lunch.",
       "options": ["are", "be", "is", "am"],
       "correctIndex": 2,
       "explanation": "The subject he uses is before the -ing verb.",
@@ -80,7 +83,7 @@
         "page": "77"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -90,6 +93,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: They ___ watching TV.",
+      "questionPt": "Complete a frase em inglês: They ___ watching TV.",
       "options": ["am", "is", "be", "are"],
       "correctIndex": 3,
       "explanation": "The subject they uses are before the -ing verb.",
@@ -105,7 +109,7 @@
         "page": "78"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -115,6 +119,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Which sentence is correct?",
+      "questionPt": "Qual frase em inglês está correta?",
       "options": [
         "We are studying English.",
         "We is studying English.",
@@ -135,7 +140,7 @@
         "page": "79"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -145,6 +150,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "What is the -ing form of play?",
+      "questionPt": "Qual é a forma do verbo “play” com a terminação -ing?",
       "options": ["plays", "playing", "plaing", "played"],
       "correctIndex": 1,
       "explanation": "The verb play becomes playing in the present continuous.",
@@ -160,7 +166,7 @@
         "page": "80"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -170,6 +176,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "What is the -ing form of read?",
+      "questionPt": "Qual é a forma do verbo “read” com a terminação -ing?",
       "options": ["reads", "readding", "reading", "readed"],
       "correctIndex": 2,
       "explanation": "The verb read becomes reading.",
@@ -185,7 +192,7 @@
         "page": "81"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -195,6 +202,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Choose the correct sentence.",
+      "questionPt": "Escolha a frase em inglês que está correta.",
       "options": [
         "The dog are running.",
         "The dog am running.",
@@ -215,7 +223,7 @@
         "page": "82"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -225,6 +233,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: Look! The children ___ jumping.",
+      "questionPt": "Complete a frase em inglês: Look! The children ___ jumping.",
       "options": ["are", "am", "is", "be"],
       "correctIndex": 0,
       "explanation": "The plural subject children uses are.",
@@ -240,7 +249,7 @@
         "page": "83"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -250,6 +259,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Which sentence shows an action happening at this moment?",
+      "questionPt": "Qual frase em inglês mostra uma ação acontecendo neste momento?",
       "options": [
         "The girl will sing later.",
         "The girl is singing now.",
@@ -270,7 +280,7 @@
         "page": "84"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -280,6 +290,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Choose the negative form: He ___ not sleeping.",
+      "questionPt": "Complete a frase negativa em inglês: He ___ not sleeping.",
       "options": ["are", "be", "is", "am"],
       "correctIndex": 2,
       "explanation": "He is not sleeping is the negative present continuous form.",
@@ -295,7 +306,7 @@
         "page": "85"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -305,6 +316,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: I am ___ a picture.",
+      "questionPt": "Complete a frase em inglês: I am ___ a picture.",
       "options": ["draw", "drew", "draws", "drawing"],
       "correctIndex": 3,
       "explanation": "After am, use the verb with -ing: drawing.",
@@ -320,7 +332,7 @@
         "page": "86"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -330,6 +342,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: We are ___ a song.",
+      "questionPt": "Complete a frase em inglês: We are ___ a song.",
       "options": ["singing", "sing", "sang", "sings"],
       "correctIndex": 0,
       "explanation": "After are, use singing for an action in progress.",
@@ -345,7 +358,7 @@
         "page": "87"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -355,6 +368,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Which question is correct?",
+      "questionPt": "Qual pergunta está escrita corretamente em inglês?",
       "options": [
         "Are you listen?",
         "Are you listening?",
@@ -375,7 +389,7 @@
         "page": "88"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -385,6 +399,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Choose the short answer: Is she dancing? — Yes, ___.",
+      "questionPt": "Complete a resposta curta em inglês: Is she dancing? — Yes, ___.",
       "options": ["she am", "is she", "she is", "she are"],
       "correctIndex": 2,
       "explanation": "The short positive answer repeats she and is.",
@@ -400,7 +415,7 @@
         "page": "89"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -410,6 +425,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: ___ he riding a bike?",
+      "questionPt": "Complete a pergunta em inglês: ___ he riding a bike?",
       "options": ["Are", "Am", "Be", "Is"],
       "correctIndex": 3,
       "explanation": "A question with he begins with Is.",
@@ -425,7 +441,7 @@
         "page": "75"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -435,6 +451,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Which sentence has the correct word order?",
+      "questionPt": "Qual frase em inglês apresenta a ordem correta das palavras?",
       "options": [
         "The students are writing.",
         "Are writing the students.",
@@ -455,7 +472,7 @@
         "page": "76"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -465,6 +482,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Choose the sentence about an action happening today.",
+      "questionPt": "Escolha a frase em inglês que apresenta uma ação acontecendo hoje.",
       "options": [
         "My mother will cook tomorrow.",
         "My mother is cooking dinner.",
@@ -485,7 +503,7 @@
         "page": "77"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -495,6 +513,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Complete: The baby is ___ now.",
+      "questionPt": "Complete a frase em inglês: The baby is ___ now.",
       "options": ["cried", "cries", "crying", "cry"],
       "correctIndex": 2,
       "explanation": "After is, crying describes the action happening now.",
@@ -510,7 +529,7 @@
         "page": "78"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -520,6 +539,7 @@
       "topic": "present-continuous",
       "topicName": "Present continuous",
       "question": "Which sentence is a correct summary of the present continuous?",
+      "questionPt": "Qual alternativa resume corretamente o uso do present continuous?",
       "options": [
         "It describes only yesterday actions.",
         "It is used without a form of be.",
@@ -540,7 +560,7 @@
         "page": "79"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     }
   ]
 }

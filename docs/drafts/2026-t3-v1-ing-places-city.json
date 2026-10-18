@@ -10,6 +10,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you borrow books?",
+      "questionPt": "Em que lugar você pode pegar livros emprestados?",
       "options": [
         "At the library.",
         "At the hospital.",
@@ -30,7 +31,7 @@
         "page": "75"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -40,6 +41,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you see a doctor?",
+      "questionPt": "Em que lugar você pode consultar um médico?",
       "options": [
         "At the bakery.",
         "At the hospital.",
@@ -60,7 +62,7 @@
         "page": "76"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -70,6 +72,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you buy bread?",
+      "questionPt": "Em que lugar você pode comprar pão?",
       "options": [
         "At the school.",
         "At the bank.",
@@ -90,7 +93,7 @@
         "page": "77"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -100,6 +103,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you watch a movie?",
+      "questionPt": "Em que lugar você pode assistir a um filme?",
       "options": [
         "At the library.",
         "At the pharmacy.",
@@ -120,7 +124,7 @@
         "page": "78"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -130,6 +134,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can children study?",
+      "questionPt": "Em que lugar as crianças podem estudar?",
       "options": [
         "At the school.",
         "At the supermarket.",
@@ -150,7 +155,7 @@
         "page": "79"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -160,6 +165,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you buy medicine?",
+      "questionPt": "Em que lugar você pode comprar remédios?",
       "options": [
         "At the restaurant.",
         "At the pharmacy.",
@@ -180,7 +186,7 @@
         "page": "80"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -190,6 +196,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you send a letter?",
+      "questionPt": "Em que lugar você pode enviar uma carta?",
       "options": [
         "At the bakery.",
         "At the playground.",
@@ -210,7 +217,7 @@
         "page": "81"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -220,6 +227,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you see old objects and art?",
+      "questionPt": "Em que lugar você pode ver objetos antigos e obras de arte?",
       "options": [
         "At the bank.",
         "At the bus stop.",
@@ -240,7 +248,7 @@
         "page": "82"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -250,6 +258,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you play outside?",
+      "questionPt": "Em que lugar você pode brincar ao ar livre?",
       "options": [
         "At the park.",
         "At the hospital.",
@@ -270,7 +279,7 @@
         "page": "83"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -280,6 +289,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you buy food and household items?",
+      "questionPt": "Em que lugar você pode comprar alimentos e produtos para a casa?",
       "options": [
         "At the school.",
         "At the supermarket.",
@@ -300,7 +310,7 @@
         "page": "84"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -310,6 +320,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you take a bus?",
+      "questionPt": "Em que lugar você pode pegar um ônibus?",
       "options": [
         "At the museum.",
         "At the pharmacy.",
@@ -330,7 +341,7 @@
         "page": "85"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -340,6 +351,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you catch a train?",
+      "questionPt": "Em que lugar você pode pegar um trem?",
       "options": [
         "At the restaurant.",
         "At the library.",
@@ -360,7 +372,7 @@
         "page": "86"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -370,6 +382,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you eat a meal?",
+      "questionPt": "Em que lugar você pode fazer uma refeição?",
       "options": [
         "At the restaurant.",
         "At the hospital.",
@@ -390,7 +403,7 @@
         "page": "87"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -400,6 +413,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you keep money and use banking services?",
+      "questionPt": "Em que lugar você pode guardar dinheiro e usar serviços bancários?",
       "options": [
         "At the school.",
         "At the bank.",
@@ -420,7 +434,7 @@
         "page": "88"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -430,6 +444,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where can you see animals?",
+      "questionPt": "Em que lugar você pode ver animais?",
       "options": [
         "At the bakery.",
         "At the station.",
@@ -450,7 +465,7 @@
         "page": "89"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -460,6 +475,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Where do firefighters work?",
+      "questionPt": "Em que lugar os bombeiros trabalham?",
       "options": [
         "At the library.",
         "At the supermarket.",
@@ -480,7 +496,7 @@
         "page": "75"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -490,6 +506,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Which place has swings and slides for children?",
+      "questionPt": "Qual lugar tem balanços e escorregadores para crianças?",
       "options": [
         "The playground.",
         "The pharmacy.",
@@ -510,7 +527,7 @@
         "page": "76"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -520,6 +537,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Which place helps people cross a road safely?",
+      "questionPt": "Qual lugar ajuda as pessoas a atravessar uma rua com segurança?",
       "options": [
         "The museum.",
         "The crosswalk.",
@@ -540,7 +558,7 @@
         "page": "77"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -550,6 +568,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "Which place is usually next to streets and cars?",
+      "questionPt": "Qual lugar costuma ficar ao lado das ruas e dos carros?",
       "options": [
         "The zoo.",
         "The restaurant.",
@@ -570,7 +589,7 @@
         "page": "78"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -580,6 +599,7 @@
       "topic": "places-city",
       "topicName": "Places in the city",
       "question": "What does “places in the city” mean?",
+      "questionPt": "O que significa a expressão “places in the city”?",
       "options": [
         "only colors in a city",
         "actions happening at home",
@@ -600,7 +620,7 @@
         "page": "79"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     }
   ]
 }

@@ -6927,9 +6927,9 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Escolha a frase em inglês que descreve uma ação que está acontecendo agora.',
       },
       {
         schemaVersion: 'content-v1',
@@ -6954,9 +6954,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase em inglês: I ___ playing soccer now.',
       },
       {
         schemaVersion: 'content-v1',
@@ -6981,9 +6980,8 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase em inglês: He ___ eating lunch.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7008,9 +7006,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase em inglês: They ___ watching TV.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7040,9 +7037,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual frase em inglês está correta?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7067,9 +7063,8 @@
           page: '80',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual é a forma do verbo “play” com a terminação -ing?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7094,9 +7089,8 @@
           page: '81',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual é a forma do verbo “read” com a terminação -ing?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7126,9 +7120,8 @@
           page: '82',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Escolha a frase em inglês que está correta.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7153,9 +7146,9 @@
           page: '83',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Complete a frase em inglês: Look! The children ___ jumping.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7186,9 +7179,9 @@
           page: '84',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual frase em inglês mostra uma ação acontecendo neste momento?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7214,9 +7207,8 @@
           page: '85',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase negativa em inglês: He ___ not sleeping.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7241,9 +7233,8 @@
           page: '86',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase em inglês: I am ___ a picture.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7268,9 +7259,8 @@
           page: '87',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase em inglês: We are ___ a song.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7300,9 +7290,8 @@
           page: '88',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual pergunta está escrita corretamente em inglês?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7327,9 +7316,9 @@
           page: '89',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Complete a resposta curta em inglês: Is she dancing? — Yes, ___.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7354,9 +7343,8 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a pergunta em inglês: ___ he riding a bike?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7386,9 +7374,9 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual frase em inglês apresenta a ordem correta das palavras?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7418,9 +7406,9 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Escolha a frase em inglês que apresenta uma ação acontecendo hoje.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7445,9 +7433,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Complete a frase em inglês: The baby is ___ now.',
       },
       {
         schemaVersion: 'content-v1',
@@ -7479,9 +7466,9 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual alternativa resume corretamente o uso do present continuous?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7511,9 +7498,8 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode pegar livros emprestados?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7543,9 +7529,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode consultar um médico?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7575,9 +7560,8 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode comprar pão?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7607,9 +7591,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode assistir a um filme?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7639,9 +7622,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar as crianças podem estudar?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7671,9 +7653,8 @@
           page: '80',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode comprar remédios?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7703,9 +7684,8 @@
           page: '81',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode enviar uma carta?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7735,9 +7715,9 @@
           page: '82',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Em que lugar você pode ver objetos antigos e obras de arte?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7767,9 +7747,8 @@
           page: '83',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode brincar ao ar livre?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7799,9 +7778,9 @@
           page: '84',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Em que lugar você pode comprar alimentos e produtos para a casa?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7831,9 +7810,8 @@
           page: '85',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode pegar um ônibus?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7863,9 +7841,8 @@
           page: '86',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode pegar um trem?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7895,9 +7872,8 @@
           page: '87',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode fazer uma refeição?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7927,9 +7903,9 @@
           page: '88',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Em que lugar você pode guardar dinheiro e usar serviços bancários?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7959,9 +7935,8 @@
           page: '89',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar você pode ver animais?',
       },
       {
         schemaVersion: 'content-v1',
@@ -7991,9 +7966,8 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar os bombeiros trabalham?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8023,9 +7997,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual lugar tem balanços e escorregadores para crianças?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8055,9 +8028,9 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual lugar ajuda as pessoas a atravessar uma rua com segurança?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8087,9 +8060,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual lugar costuma ficar ao lado das ruas e dos carros?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8120,9 +8092,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que significa a expressão “places in the city”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8153,9 +8124,8 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que significa a palavra “birthday”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8180,9 +8150,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas costumam usar em um bolo de aniversário?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8212,9 +8181,8 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas cantam em uma festa de aniversário?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8239,9 +8207,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que significa a palavra “present”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8266,9 +8233,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas podem dar em uma comemoração?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8298,9 +8264,8 @@
           page: '80',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que significa a palavra “party”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8326,9 +8291,9 @@
           page: '81',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual palavra em inglês significa um dia especial de folga ou comemoração?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8358,9 +8323,8 @@
           page: '82',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas costumam fazer em uma comemoração?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8385,9 +8349,9 @@
           page: '83',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'O que as pessoas podem fazer ao som de música em uma festa?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8412,9 +8376,8 @@
           page: '84',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual enfeite pode aparecer em uma festa?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8445,9 +8408,8 @@
           page: '85',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas dizem para parabenizar alguém?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8477,9 +8439,8 @@
           page: '86',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual é o significado da expressão “family celebration”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8510,9 +8471,8 @@
           page: '87',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual evento pode ser uma comemoração na escola?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8542,9 +8502,8 @@
           page: '88',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas podem fazer antes de uma festa?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8574,9 +8533,9 @@
           page: '89',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'O que os convidados podem fazer quando chegam a uma festa?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8607,9 +8566,8 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que significa o verbo “celebrate”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8634,9 +8592,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual objeto pode guardar um presente de aniversário?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8666,9 +8623,9 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'O que os amigos podem escrever em um cartão de aniversário?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8699,9 +8656,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Por que as pessoas comemoram dias especiais?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8731,9 +8687,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual frase em inglês descreve uma comemoração?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8758,9 +8713,8 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo se desloca sobre trilhos?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8785,9 +8739,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo voa no céu?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8812,9 +8765,8 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo se desloca na água?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8839,9 +8791,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo tem duas rodas e pedais?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8866,9 +8817,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo transporta muitos passageiros em uma cidade?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8893,9 +8843,8 @@
           page: '80',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo pode levar um passageiro por uma estrada?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8920,9 +8869,8 @@
           page: '81',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual veículo tem duas rodas e motor?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8952,9 +8900,8 @@
           page: '82',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar as pessoas embarcam em um avião?',
       },
       {
         schemaVersion: 'content-v1',
@@ -8984,9 +8931,8 @@
           page: '83',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar as pessoas esperam um ônibus?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9016,9 +8962,8 @@
           page: '84',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Em que lugar as pessoas embarcam em um trem?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9048,9 +8993,8 @@
           page: '85',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que faz um “driver”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9080,9 +9024,8 @@
           page: '86',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que faz um “passenger”?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9107,9 +9050,9 @@
           page: '87',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual meio de transporte é adequado para um trajeto curto sem motor?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9134,9 +9077,8 @@
           page: '88',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual meio de transporte pode levar pessoas pelo mar?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9161,9 +9103,9 @@
           page: '89',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual palavra em inglês indica o lugar onde aviões chegam e partem?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9188,9 +9130,9 @@
           page: '75',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual palavra em inglês indica o lugar onde trens chegam e partem?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9220,9 +9162,8 @@
           page: '76',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'O que as pessoas devem fazer antes de atravessar uma rua?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9247,9 +9188,9 @@
           page: '77',
         },
         reviewStatus: 'published',
-        version: 1,
+        version: 2,
         questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+          'Qual opção ajuda as pessoas a caminhar com segurança ao lado de uma rua?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9279,9 +9220,8 @@
           page: '78',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual frase em inglês está correta?',
       },
       {
         schemaVersion: 'content-v1',
@@ -9311,9 +9251,8 @@
           page: '79',
         },
         reviewStatus: 'published',
-        version: 1,
-        questionPt:
-          'Escolha a alternativa correta para a frase ou palavra apresentada em inglês.',
+        version: 2,
+        questionPt: 'Qual é o significado da expressão “means of transport”?',
       },
     ],
     historia: [

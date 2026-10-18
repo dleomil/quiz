@@ -87,8 +87,9 @@ jobs:
       - name: Validate pedagogical regression corpus
         run: npm run test:pedagogical-regression
 
-      - name: Validar conteudo e idioma de Historia
+      - name: Validar conteudo, idiomas e apoio bilingue
         run: |
           npm run validate:content
           npm run test:content
           npm run test:ui:history-language-audit
+          npm run test:ui:english-t3-bilingual
