@@ -1,6 +1,10 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const {
+  sha256,
+} = require('../../scripts/create-t3-ingles-means-transport.cjs');
+const { validateQuestion } = require('../../scripts/validate-content.cjs');
 const ROOT = path.resolve(__dirname, '../..');
 const draft = JSON.parse(
   fs.readFileSync(
@@ -31,6 +35,8 @@ for (const question of questions) {
   assert.equal(question.subject, 'ingles');
   assert.equal(question.topic, 'means-transport');
   assert.equal(question.reviewStatus, 'draft');
+  assert.equal(question.version, 2);
+  assert.deepEqual(validateQuestion(question, 'ingles'), []);
   assert.equal(question.options.length, 4);
   assert.equal(new Set(question.options).size, 4);
   assert.match(question.explanation, /\S/);
@@ -43,16 +49,12 @@ for (const question of questions) {
 assert.equal(audit.schemaVersion, 'content-quality-audit-v1');
 assert.equal(audit.topicId, 'ingles:means-transport');
 assert.equal(audit.reviews.length, 40);
-assert.equal(new Set(audit.reviews.map((review) => review.actorId)).size, 1);
-assert.ok(
-  audit.reviews.every(
-    (review) => review.decision === 'clear' && review.findings.length === 0,
-  ),
-);
+// A auditoria histórica não aprova os apoios corrigidos.
+assert.notEqual(audit.sourceSha256, sha256(questions));
 assert.deepEqual(
   new Set(audit.reviews.map((review) => review.questionId)),
   new Set(questions.map((question) => question.id)),
 );
 console.log(
-  't3-ingles-means-transport: ok (20 perguntas, 5/5/5/5, 40 revisões)',
+  't3-ingles-means-transport: ok (20 questões v2 com apoio em português; auditoria anterior preservada)',
 );

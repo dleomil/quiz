@@ -32,6 +32,15 @@ function normalizeOption(value) {
   return String(value).trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
 }
 
+function normalizeSupport(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLocaleLowerCase('pt-BR')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+}
+
 function questionLabel(question) {
   return isNonEmptyString(question && question.id) ? question.id : '<sem-id>';
 }
@@ -149,6 +158,22 @@ function validateQuestion(question, sourceName) {
 
   if (question.subject === 'ingles' && !isNonEmptyString(question.questionPt)) {
     errors.push('[' + label + '] Ingles content-v1 exige questionPt');
+  } else if (
+    question.subject === 'ingles' &&
+    /^\d{4}-t[23]-v\d+$/.test(question.contentSetId || '')
+  ) {
+    const support = normalizeSupport(question.questionPt);
+    if (
+      support ===
+      'escolha a alternativa correta para a frase ou palavra apresentada em ingles'
+    ) {
+      errors.push('[' + label + '] questionPt nao pode ser apoio generico');
+    }
+    if (support === normalizeSupport(question.question)) {
+      errors.push(
+        '[' + label + '] questionPt nao pode repetir apenas o enunciado',
+      );
+    }
   }
 
   ['contentSetId', 'skill', 'reviewStatus'].forEach(function (field) {
