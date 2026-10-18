@@ -35,6 +35,9 @@ function canonicalQuestions(questions) {
 function packageHash(questions) {
   return digest(canonicalQuestions(questions));
 }
+function runtimeHash(questions) {
+  return digest([...questions].sort((a, b) => a.id.localeCompare(b.id)));
+}
 function reviewProjection(question) {
   const result = {
     ...question,
@@ -95,6 +98,8 @@ function validateBatch(questions, { policy, coverage, topicNames = {} } = {}) {
     }
     if (question.schemaVersion !== 'content-v1')
       errors.push(`${question.id}: exige content-v1`);
+    if (!['draft', 'published'].includes(question.reviewStatus))
+      errors.push(`${question.id}: status fora do fluxo editorial`);
     if (batchKey(question) !== batchKey(first))
       errors.push(`${question.id}: lote mistura temas`);
     if (ids.has(question.id)) errors.push(`${question.id}: ID duplicado`);
@@ -554,8 +559,7 @@ function validateDelivery({
       digest(canonicalQuestions(previousDraft || [])) !==
       digest(canonicalQuestions(draft || []));
     const publishedChanged =
-      digest(canonicalQuestions(previousPublished || [])) !==
-      digest(canonicalQuestions(published || []));
+      runtimeHash(previousPublished || []) !== runtimeHash(published || []);
     if (!draftChanged && !publishedChanged) continue;
     if (!draft || !draft.length) {
       errors.push(`${key}: remocao ou publicacao sem rascunho autorizado`);
@@ -583,6 +587,8 @@ function validateDelivery({
     }
     if (publishedChanged) {
       stage = 'publish';
+      if (published?.some((question) => question.reviewStatus !== 'published'))
+        errors.push(`${key}: runtime exige status published`);
       if (!published?.length)
         errors.push(
           `${key}: remocao de lote publicado exige decisao curricular especifica`,
