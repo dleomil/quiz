@@ -76,3 +76,12 @@ T2 V2 continua sendo o acervo padrão.
 Em 2026-10-03, o Product Owner registrou `go` para iniciar a curadoria dos
 demais temas do T3. O acervo `2026-t3-v1` permanece `draft` e invisível; esta
 decisão não autoriza publicação nem alteração do runtime.
+
+## Contrato para proximas alteracoes
+
+Novas inclusoes, alteracoes ou primeiras publicacoes deste lote seguem o
+[contrato comum de entrega editorial](content-delivery-contract.md). Os requisitos
+devem ter criterios e evidencias registrados; revisoes pedagogica e linguistica
+referem-se ao hash exato do pacote. Publicacao exige correspondencia entre
+rascunho e runtime, evidencia visual e aceite editorial humano. Auditorias
+anteriores permanecem historicas, sem exigir revisao retroativa do lote intocado.

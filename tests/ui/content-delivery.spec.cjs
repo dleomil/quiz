@@ -6,14 +6,20 @@ const path = require('node:path');
 const { spawn } = require('node:child_process');
 const { chromium } = require('playwright');
 const { loadContentSources } = require('../../scripts/validate-content.cjs');
-const { batchKey, packageHash } = require('../../scripts/content-delivery.cjs');
+const {
+  batchKey,
+  packageHash,
+  validateBatch,
+} = require('../../scripts/content-delivery.cjs');
 
 const ROOT = path.resolve(__dirname, '../..');
 const pilot = process.argv.includes('--pilot');
+const preview = process.argv.includes('--preview');
 const outputDirectory =
   process.env.CONTENT_DELIVERY_ARTIFACTS ||
   fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-content-delivery-ui-'));
 async function run() {
+  assert.ok(!(pilot && preview), 'Piloto e preview sao modos distintos.');
   let result;
   if (pilot) {
     const questions =
@@ -36,11 +42,12 @@ async function run() {
     result = JSON.parse(
       fs.readFileSync(process.env.CONTENT_DELIVERY_RESULT, 'utf8'),
     );
-    assert.deepEqual(
-      result.errors,
-      [],
-      'O lote deve passar no gate antes do teste visual.',
-    );
+    if (!preview)
+      assert.deepEqual(
+        result.errors,
+        [],
+        'O lote deve passar no gate antes do teste visual.',
+      );
   }
   const batches = result.batches.filter((batch) => batch.stage === 'publish');
   if (!batches.length) {
@@ -52,6 +59,14 @@ async function run() {
     const [contentSetId, subject, topic] = batch.key.split('/');
     const questions = sources[subject].questions.filter(
       (q) => q.contentSetId === contentSetId && q.topic === topic,
+    );
+    assert.deepEqual(
+      validateBatch(questions, {
+        policy: require('../../config/content-delivery-policy.json'),
+        coverage: require('../../config/content-coverage-manifest.json'),
+      }).errors,
+      [],
+      'O preview tambem exige conteudo estruturalmente valido.',
     );
     assert.equal(
       packageHash(questions),
@@ -132,6 +147,9 @@ async function run() {
             await page.locator('.question-text').textContent(),
             `1. ${question.question}`,
           );
+          assert.ok(await page.locator('.question-text').isVisible());
+          for (const option of await page.locator('.option-btn').all())
+            assert.ok(await option.isVisible());
           assert.deepEqual(
             await page
               .locator('.option-btn > span:last-child')
@@ -139,12 +157,14 @@ async function run() {
               .then((values) => values.map((value) => value.trim())),
             question.options,
           );
-          if (question.subject === 'ingles')
+          if (question.subject === 'ingles') {
+            assert.ok(await page.locator('.question-support').isVisible());
             assert.equal(
               (await page.locator('.question-support').textContent()).trim(),
               `Em português: ${question.questionPt}`,
             );
-          else assert.equal(await page.locator('.question-support').count(), 0);
+          } else
+            assert.equal(await page.locator('.question-support').count(), 0);
           const width = await page.evaluate(() => ({
             scroll: document.documentElement.scrollWidth,
             client: document.documentElement.clientWidth,
@@ -186,13 +206,15 @@ async function run() {
           assert.equal(explanations[0], question.explanation);
           if (wrong)
             assert.equal(explanations[1], question.wrongExplanations[chosen]);
-          if (question.subject === 'ingles')
+          if (question.subject === 'ingles') {
+            assert.ok(await page.locator('.gab-question-support').isVisible());
             assert.equal(
               (
                 await page.locator('.gab-question-support').textContent()
               ).trim(),
               `Em português: ${question.questionPt}`,
             );
+          }
           const resultsWidth = await page.evaluate(() => ({
             scroll: document.documentElement.scrollWidth,
             client: document.documentElement.clientWidth,
@@ -218,6 +240,7 @@ async function run() {
       schemaVersion: 'content-delivery-visual-v1',
       test: 'content-delivery-ui',
       testOnly: pilot,
+      purpose: pilot ? 'pilot' : preview ? 'preview' : 'publication',
       batches,
       responses,
       baseUrl,

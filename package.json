@@ -74,7 +74,7 @@
     "test:ui:history-language-audit": "node tests/ui/history-language-audit.spec.cjs",
     "test:ui:english-t3-bilingual": "node tests/ui/english-t3-bilingual.spec.cjs",
     "validate:delivery": "node scripts/content-delivery.cjs",
-    "test:delivery": "node tests/content/content-delivery.spec.cjs",
+    "test:delivery": "node tests/content/content-delivery.spec.cjs && node tests/content/content-delivery-adapters.spec.cjs",
     "test:ui:content-delivery": "node tests/ui/content-delivery.spec.cjs",
     "test:ui:content-delivery-pilot": "node tests/ui/content-delivery.spec.cjs --pilot"
   },

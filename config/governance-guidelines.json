@@ -80,12 +80,12 @@
     },
     {
       "id": "curriculum-content-quality",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "policy",
       "owner": "content",
       "sourcePath": "docs/harness/content-update-quality-gates.md",
-      "sha256": "45484f3f045ea506b016dcd37999477cd1649327cabdd66d1bbe9171e5272b80",
+      "sha256": "f59ce883e644982326405c11e306dc52c4884d228ada57393fc2f84f02f5b2be",
       "appliesTo": ["content-updates", "editorial-workflows"],
       "enforcement": "manual-blocking",
       "evidence": ["pedagogical review", "linguistic review", "human approval"]
@@ -181,6 +181,23 @@
       "appliesTo": ["implementation", "pull-requests", "specification"],
       "enforcement": "manual-blocking",
       "evidence": ["approved implementation plan", "linked pull request"]
+    },
+    {
+      "id": "content-delivery-contract",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "content",
+      "sourcePath": "docs/specs/content-delivery-contract.md",
+      "sha256": "aa7248d71eecf567972a3968b680bdf2c47739cf058d070d3e4dbb00912e32e7",
+      "appliesTo": ["content-updates", "editorial-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "validacao do lote alterado",
+        "revisoes vinculadas ao hash",
+        "aceite editorial verificavel",
+        "interface por IDs do lote"
+      ]
     }
   ]
 }

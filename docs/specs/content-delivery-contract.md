@@ -2,8 +2,7 @@
 
 O contrato protege lotes novos, alterados ou publicados pela primeira vez a
 partir de 2026 T3. Nao exige reauditoria de lotes intocados. T1/T2 ficam fora
-deste novo fluxo. A primeira entrega habilita Ingles; a expansao habilita as
-seis materias. O cadastro fica em `config/content-delivery-policy.json`.
+deste novo fluxo. O contrato esta habilitado nas seis materias. O cadastro fica em `config/content-delivery-policy.json`.
 
 ## Etapas e requisitos
 
@@ -18,7 +17,7 @@ conhecidos. Elas complementam a revisao semantica; nao certificam qualquer
 traducao. Instrucao equivalente pode se repetir em questoes diferentes.
 
 `npm run validate:delivery` compara o workspace completo (incluindo alteracoes
-nao commitadas) com o commit de ativacao. Para uma entrega, usar:
+nao commitadas) com `origin/develop` (ou `origin/main` em branches de release/hotfix). Sem referencia remota, usa o commit de ativacao como fallback. Para uma entrega, usar:
 
 ```sh
 npm run validate:delivery -- --base-ref origin/develop --head-ref WORKTREE
@@ -26,8 +25,8 @@ node scripts/content-delivery.cjs --base-ref origin/main --head-ref HEAD
 ```
 
 No CI a comparacao usa os snapshots da base e do head real do PR. A etapa e
-inferida do conteudo, nunca de uma label. Um rascunho novo pode permanecer com
-revisao pendente; altera-lo nao publica a mudanca. Publicar pela primeira vez
+inferida do conteudo, nunca de uma label. Um rascunho novo corresponde a curadoria e pode permanecer com
+revisao pendente; isso nao autoriza implementacao no runtime; altera-lo nao publica a mudanca. Publicar pela primeira vez
 conteudo anteriormente preparado tambem exige o novo contrato.
 
 ## Pacote e revisoes
@@ -132,6 +131,18 @@ CONTENT_DELIVERY_RESULT=/tmp/content-delivery.json npm run test:ui:content-deliv
 BASE_URL=https://quiz-lilac-theta.vercel.app CONTENT_DELIVERY_RESULT=/tmp/content-delivery.json npm run test:ui:content-delivery
 ```
 
+Antes do aceite, e possivel conferir o candidato em modo preview, mesmo que
+o resultado do gate ainda indique revisoes ou aceite pendentes:
+
+```sh
+CONTENT_DELIVERY_RESULT=/tmp/content-delivery.json npm run test:ui:content-delivery -- --preview
+```
+
+Esse modo exige estrutura valida e correspondencia entre IDs, hash e conteudo
+carregado. Ele produz evidencia visual identificada como preview e nao dispensa
+nenhum bloqueio editorial de publicacao. O JSON de selecao continua sendo gerado
+pelo gate; o codigo de saida nao zero informa as pendencias, sem apagar esse JSON.
+
 As capturas e `result.json` ficam no diretorio temporario
 `quiz-content-delivery-ui-<identificador>`; `CONTENT_DELIVERY_ARTIFACTS` permite escolher outro
 diretorio. A evidencia relaciona hashes, IDs e variantes. No CI, o artefato content-delivery-evidence preserva as capturas e resultados, separando piloto e publicacao. Preview autenticado
@@ -148,3 +159,23 @@ sem altera-las ou republica-las; seu resultado e identificado como teste.
 Nao foi realizada nova revisao pedagogica ou linguistica real nesta entrega.
 O piloto comprova os bloqueios tecnicos. Merge, publicacao e deploy continuam
 sujeitos a autorizacao explicita do mantenedor.
+
+## Adaptadores das seis materias
+
+Os 24 geradores cadastrados aplicam o contrato antes de escrever. Eles nao
+produzem pareceres. Os dois publicadores existentes de Matematica e expansao
+de Portugues conferem mudancas contra HEAD antes de gravar; uma nova publicacao
+ou alteracao exige o pacote editorial. Gerar novamente o mesmo conteudo e uma
+operacao idempotente, sem nova exigencia editorial. A comparacao do PR com a
+base de destino continua obrigatoria, inclusive para publicacao pela primeira
+vez de um lote preparado anteriormente em develop.
+
+O comando `write-t3-matematica-editorial-reports.cjs` agora emite somente um
+`technical-diagnostic-v1` na saida padrao. Ele nao grava revisoes nem declara
+aprovacao editorial. Os registros antigos nao sao evidencia do contrato novo.
+
+O teste `content-delivery-adapters` executa os geradores em diretorio temporario,
+confere seus resultados contra os rascunhos atuais e injeta defeitos em todos
+os caminhos para comprovar o bloqueio antes da escrita. Tambem exercita o
+contrato em seis materias e em um ciclo futuro ficticio. Novos geradores e
+publicadores devem ser cadastrados, instrumentados e incluidos nessa verificacao.

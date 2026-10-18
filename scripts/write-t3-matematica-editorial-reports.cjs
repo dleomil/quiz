@@ -1,9 +1,5 @@
-const fs = require('node:fs');
 const { TOPICS, buildQuestions } = require('./create-t3-matematica-drafts.cjs');
-const {
-  PASSES,
-  reportPath,
-} = require('./validate-t3-matematica-editorial-reports.cjs');
+const PASSES = ['pedagogical', 'linguistic'];
 
 function makeFinding(question, pass, finding) {
   return {
@@ -95,66 +91,19 @@ function findingsFor(question, topic, pass) {
   return findings;
 }
 
-function writeReports() {
-  const reports = [];
-  for (const topic of TOPICS) {
-    const questions = buildQuestions(topic);
-    const reviews = questions.flatMap((question) =>
-      PASSES.map((pass) => {
-        const findings = findingsFor(question, topic, pass);
-        const blocking = findings.some(
-          (finding) => finding.severity === 'blocking',
-        );
-        return {
-          questionId: question.id,
-          pass,
-          decision: blocking
-            ? 'blocked'
-            : findings.length
-              ? 'adjustments_required'
-              : 'approved',
-          facts: [
-            'Enunciado, alternativas, gabarito e explicação principal revisados diretamente nesta conversa.',
-          ],
-          doubts: [],
-          findings,
-          recommendations: findings.map((finding) => finding.recommendation),
-          humanApprovalRequired: true,
-        };
-      }),
-    );
-    const file = reportPath(topic, questions);
-    const report = {
-      schemaVersion: 'editorial-review-v1',
-      reviewMode: 'in-conversation-direct',
-      reviewer: 'Codex (conversa atual)',
-      contentSetId: '2026-t3-v1',
-      subjectId: 'matematica',
-      topicId: topic.id,
-      sourceSha256: require('./create-t3-matematica-drafts.cjs').sha256(
-        questions,
-      ),
-      requestedPasses: PASSES,
-      expectedEvaluations: questions.length * PASSES.length,
-      completedEvaluations: reviews.length,
-      reportStatus: reviews.every((review) => review.decision === 'approved')
-        ? 'clear'
-        : 'blocked',
-      humanApprovalRequired: true,
-      reviews,
-    };
-    fs.writeFileSync(file, `${JSON.stringify(report, null, 2)}\n`, {
-      flag: 'wx',
-    });
-    reports.push({
+function diagnoseQuestions() {
+  return {
+    schemaVersion: 'technical-diagnostic-v1',
+    editorialApproval: false,
+    topics: TOPICS.map((topic) => ({
       topic: topic.id,
-      evaluations: reviews.length,
-      status: report.reportStatus,
-    });
-  }
-  console.log(JSON.stringify(reports, null, 2));
+      findings: buildQuestions(topic).flatMap((question) =>
+        PASSES.flatMap((pass) => findingsFor(question, topic, pass)),
+      ),
+    })),
+  };
 }
 
-if (require.main === module) writeReports();
-
-module.exports = { findingsFor, writeReports };
+if (require.main === module)
+  console.log(JSON.stringify(diagnoseQuestions(), null, 2));
+module.exports = { findingsFor, diagnoseQuestions };
