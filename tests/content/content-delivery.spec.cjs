@@ -165,8 +165,8 @@ try {
     'js/data/subjects/ingles.js',
     'window.QuestionsDataSources = {ingles:{questions:[],topicMeta:{}}};',
   );
-  const bundle = (value) =>
-    `window.QuestionsDataSources.ingles.questions.push(...${JSON.stringify(value)});`;
+  const bundle = (value, reviewStatus = 'published') =>
+    `window.QuestionsDataSources.ingles.questions.push(...${JSON.stringify(value.map((question) => ({ ...question, reviewStatus })))});`;
   write(
     'js/data/pilot-published.js',
     bundle(questions.map((q) => ({ ...q, reviewStatus: 'published' }))),
@@ -224,6 +224,17 @@ try {
       readComment: () => revised.comment,
     }).errors.some((error) => error.includes('fictici')),
   );
+  for (const status of ['draft', 'retired']) {
+    write('docs/drafts/pilot.json', { questions });
+    write('js/data/pilot-published.js', bundle(questions, status));
+    assert.ok(
+      validateDelivery({ root: temporary, baseRef: 'HEAD' }).errors.some(
+        (error) => error.includes('runtime exige status published'),
+      ),
+      'Mudar apenas o status do runtime tambem exige verificacao.',
+    );
+  }
+  write('docs/drafts/pilot.json', { questions: changed });
   write(
     'js/data/pilot-published.js',
     bundle(
