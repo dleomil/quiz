@@ -10,6 +10,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What is a birthday?",
+      "questionPt": "O que significa a palavra “birthday”?",
       "options": [
         "a day that celebrates a person being born",
         "a kind of vehicle",
@@ -30,7 +31,7 @@
         "page": "75"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -40,6 +41,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What do people often use on a birthday cake?",
+      "questionPt": "O que as pessoas costumam usar em um bolo de aniversário?",
       "options": ["shoes", "candles", "umbrellas", "books"],
       "correctIndex": 1,
       "explanation": "Candles are often placed on a birthday cake.",
@@ -55,7 +57,7 @@
         "page": "76"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -65,6 +67,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What do people sing at a birthday party?",
+      "questionPt": "O que as pessoas cantam em uma festa de aniversário?",
       "options": [
         "The bus song",
         "School rules",
@@ -85,7 +88,7 @@
         "page": "77"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -95,6 +98,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What is a present?",
+      "questionPt": "O que significa a palavra “present”?",
       "options": ["a classroom", "a street", "a meal time", "a gift"],
       "correctIndex": 3,
       "explanation": "A present is another word for a gift.",
@@ -110,7 +114,7 @@
         "page": "78"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -120,6 +124,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What can people give at a celebration?",
+      "questionPt": "O que as pessoas podem dar em uma comemoração?",
       "options": ["a card", "a traffic light", "a sidewalk", "a textbook only"],
       "correctIndex": 0,
       "explanation": "A card can carry a celebration message.",
@@ -135,7 +140,7 @@
         "page": "79"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -145,6 +150,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What is a party?",
+      "questionPt": "O que significa a palavra “party”?",
       "options": [
         "a city building",
         "a gathering to celebrate something",
@@ -165,7 +171,7 @@
         "page": "80"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -175,6 +181,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "Which word means a special day off or celebration?",
+      "questionPt": "Qual palavra em inglês significa um dia especial de folga ou comemoração?",
       "options": ["window", "backpack", "holiday", "pencil"],
       "correctIndex": 2,
       "explanation": "Holiday can describe a special day or period of celebration.",
@@ -190,7 +197,7 @@
         "page": "81"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -200,6 +207,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What do people often do at a celebration?",
+      "questionPt": "O que as pessoas costumam fazer em uma comemoração?",
       "options": [
         "repair roads",
         "take a math test",
@@ -220,7 +228,7 @@
         "page": "82"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -230,6 +238,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What can people do with music at a party?",
+      "questionPt": "O que as pessoas podem fazer ao som de música em uma festa?",
       "options": ["dance", "sleep in class", "cross a road", "read a map"],
       "correctIndex": 0,
       "explanation": "People often dance to music at parties.",
@@ -245,7 +254,7 @@
         "page": "83"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -255,6 +264,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "Which decoration can appear at a party?",
+      "questionPt": "Qual enfeite pode aparecer em uma festa?",
       "options": ["school desks", "balloons", "bricks", "traffic signs"],
       "correctIndex": 1,
       "explanation": "Balloons are common party decorations.",
@@ -270,7 +280,7 @@
         "page": "84"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -280,6 +290,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What do people say to congratulate someone?",
+      "questionPt": "O que as pessoas dizem para parabenizar alguém?",
       "options": [
         "Where is the bus?",
         "Be quiet in class!",
@@ -300,7 +311,7 @@
         "page": "85"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -310,6 +321,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What is a family celebration?",
+      "questionPt": "Qual é o significado da expressão “family celebration”?",
       "options": [
         "a road sign",
         "a science tool",
@@ -330,7 +342,7 @@
         "page": "86"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -340,6 +352,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "Which event can be a celebration at school?",
+      "questionPt": "Qual evento pode ser uma comemoração na escola?",
       "options": [
         "a school festival",
         "a broken pencil",
@@ -360,7 +373,7 @@
         "page": "87"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -370,6 +383,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What can people do before a party?",
+      "questionPt": "O que as pessoas podem fazer antes de uma festa?",
       "options": [
         "remove all music",
         "decorate the room",
@@ -390,7 +404,7 @@
         "page": "88"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -400,6 +414,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What can guests do when they arrive at a party?",
+      "questionPt": "O que os convidados podem fazer quando chegam a uma festa?",
       "options": [
         "leave immediately every time",
         "hide all decorations",
@@ -420,7 +435,7 @@
         "page": "89"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -430,6 +445,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What does “celebrate” mean?",
+      "questionPt": "O que significa o verbo “celebrate”?",
       "options": [
         "to forget an event",
         "to repair a bicycle",
@@ -450,7 +466,7 @@
         "page": "75"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -460,6 +476,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "Which item can hold a birthday gift?",
+      "questionPt": "Qual objeto pode guardar um presente de aniversário?",
       "options": ["a gift bag", "a street lamp", "a school bell", "a bus lane"],
       "correctIndex": 0,
       "explanation": "A gift bag can be used to carry a present.",
@@ -475,7 +492,7 @@
         "page": "76"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -485,6 +502,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "What can friends write in a birthday card?",
+      "questionPt": "O que os amigos podem escrever em um cartão de aniversário?",
       "options": [
         "a weather report only",
         "a kind message",
@@ -505,7 +523,7 @@
         "page": "77"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -515,6 +533,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "Why do people celebrate special days?",
+      "questionPt": "Por que as pessoas comemoram dias especiais?",
       "options": [
         "to stop people talking",
         "to avoid being together",
@@ -535,7 +554,7 @@
         "page": "78"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     },
     {
       "schemaVersion": "content-v1",
@@ -545,6 +564,7 @@
       "topic": "celebrations",
       "topicName": "Celebrations",
       "question": "Which sentence describes a celebration?",
+      "questionPt": "Qual frase em inglês descreve uma comemoração?",
       "options": [
         "The pencil is under the desk.",
         "The bus is at the station.",
@@ -565,7 +585,7 @@
         "page": "79"
       },
       "reviewStatus": "draft",
-      "version": 1
+      "version": 2
     }
   ]
 }
