@@ -133,7 +133,7 @@ BASE_URL=https://quiz-lilac-theta.vercel.app CONTENT_DELIVERY_RESULT=/tmp/conten
 ```
 
 As capturas e `result.json` ficam no diretorio temporario
-`quiz-content-delivery-ui`; `CONTENT_DELIVERY_ARTIFACTS` permite escolher outro
+`quiz-content-delivery-ui-<identificador>`; `CONTENT_DELIVERY_ARTIFACTS` permite escolher outro
 diretorio. A evidencia relaciona hashes, IDs e variantes. No CI, o artefato content-delivery-evidence preserva as capturas e resultados, separando piloto e publicacao. Preview autenticado
 inacessivel nao deve ser descrito como conferido.
 

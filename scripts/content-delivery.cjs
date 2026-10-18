@@ -247,13 +247,14 @@ function validateApproval(questions, record, policy, readComment) {
     !policy.humanApprovers.includes(approval.approvedBy)
   )
     return ['aceite editorial humano ausente ou divergente'];
-  const pattern = new RegExp(
-    `^https://github\\.com/${policy.repository}/(?:issues|pull)/\\d+#issuecomment-(\\d+)$`,
-  );
-  const match = pattern.exec(approval.evidenceRef || '');
-  if (!match) return ['aceite exige comentario verificavel no repositorio'];
+  const match =
+    /^https:\/\/github\.com\/([^/]+\/[^/]+)\/(?:issues|pull)\/\d+#issuecomment-(\d+)$/.exec(
+      approval.evidenceRef || '',
+    );
+  if (!match || match[1] !== policy.repository)
+    return ['aceite exige comentario verificavel no repositorio'];
   try {
-    const comment = readComment(match[1]);
+    const comment = readComment(match[2]);
     if (
       comment.user?.login !== approval.approvedBy ||
       comment.user?.type !== 'User' ||

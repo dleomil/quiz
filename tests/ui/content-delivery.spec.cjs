@@ -12,7 +12,7 @@ const ROOT = path.resolve(__dirname, '../..');
 const pilot = process.argv.includes('--pilot');
 const outputDirectory =
   process.env.CONTENT_DELIVERY_ARTIFACTS ||
-  path.join(os.tmpdir(), 'quiz-content-delivery-ui');
+  fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-content-delivery-ui-'));
 async function run() {
   let result;
   if (pilot) {
