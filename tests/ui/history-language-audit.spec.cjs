@@ -2,6 +2,7 @@
 const assert = require('node:assert/strict');
 const { spawn } = require('node:child_process');
 const path = require('node:path');
+const os = require('node:os');
 const { chromium } = require('playwright');
 const {
   buildQuestions,
@@ -146,7 +147,7 @@ async function run() {
           getComputedStyle(document.querySelector('.feedback')).opacity === '1',
       );
       await page.screenshot({
-        path: `/private/tmp/quiz-history-language-${device}.png`,
+        path: path.join(os.tmpdir(), `quiz-history-language-${device}.png`),
         fullPage: true,
       });
     }
