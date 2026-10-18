@@ -1,6 +1,6 @@
 {
   "base": "main",
-  "head": "release/t3-matematica",
+  "head": "release/correcao-idioma-historia",
   "title": "Promove pacote aprovado para main",
   "body": "Objetivo: publicar o pacote aprovado.\nEscopo: alteracoes aprovadas nesta PR.\nVerificacoes: testes e validacoes aprovados.\nReversao: reverter este merge.",
   "checks": ["npm test", "validacao de conteudo", "aprovacao humana"],
