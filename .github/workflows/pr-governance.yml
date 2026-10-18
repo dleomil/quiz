@@ -10,6 +10,7 @@ on:
 permissions:
   contents: read
   pull-requests: read
+  issues: read
 
 jobs:
   pr-governance:
@@ -37,6 +38,7 @@ jobs:
         run: |
           git fetch --no-tags origin \
             "+refs/heads/main:refs/remotes/origin/main" \
+            "+refs/heads/${BASE_REF}:refs/remotes/origin/${BASE_REF}" \
             "+refs/pull/${PR_NUMBER}/head:refs/remotes/origin/pr-head"
           npm run validate:branch -- "$HEAD_REF" "$BASE_REF"
           npm run validate:branch-sync -- "$HEAD_REF" "$BASE_REF" origin/pr-head
@@ -93,3 +95,24 @@ jobs:
           npm run test:content
           npm run test:ui:history-language-audit
           npm run test:ui:english-t3-bilingual
+
+      - name: Validar entrega editorial do lote alterado
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/content-delivery.cjs --base-ref "origin/${BASE_REF}" --head-ref origin/pr-head > "$RUNNER_TEMP/content-delivery.json"
+          cat "$RUNNER_TEMP/content-delivery.json"
+          npm run test:delivery
+          CONTENT_DELIVERY_ARTIFACTS="$RUNNER_TEMP/content-delivery/pilot" npm run test:ui:content-delivery-pilot
+          CONTENT_DELIVERY_RESULT="$RUNNER_TEMP/content-delivery.json" CONTENT_DELIVERY_ARTIFACTS="$RUNNER_TEMP/content-delivery/publication" npm run test:ui:content-delivery
+
+      - name: Preservar evidencias do piloto e do lote publicado
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: content-delivery-evidence
+          path: |
+            ${{ runner.temp }}/content-delivery.json
+            ${{ runner.temp }}/content-delivery/
+          if-no-files-found: ignore

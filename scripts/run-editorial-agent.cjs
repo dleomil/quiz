@@ -1,6 +1,13 @@
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
+const crypto = require('node:crypto');
+const {
+  packageHash,
+  digest,
+  reviewProjection,
+  requirementsFor,
+} = require('./content-delivery.cjs');
 const { spawnSync } = require('node:child_process');
 const {
   AGENT_CONTRACTS,
@@ -98,6 +105,7 @@ function run() {
   const inputPath = argument('--input');
   const outputPath = argument('--output');
   const codexBin = argument('--codex-bin') || 'codex';
+  const deliveryPackage = argument('--delivery-package');
   if (!ALLOWED_AGENTS.has(agent))
     return fail('agente editorial nao autorizado');
   if (!inputPath || !outputPath) return fail('use --input e --output');
@@ -117,6 +125,27 @@ function run() {
   }
   const inputErrors = validateEditorialInputDocument(document, agent);
   if (inputErrors.length) return fail(inputErrors.join('; '));
+  let packageSha256;
+  if (deliveryPackage) {
+    try {
+      const { questions } = JSON.parse(
+        fs.readFileSync(path.resolve(deliveryPackage), 'utf8'),
+      );
+      const question = questions.find(
+        (item) => item.id === document.input.proposal?.id,
+      );
+      if (
+        agent !== 'pedagogical_quality' ||
+        !question ||
+        digest(reviewProjection(question)) !== digest(document.input.proposal)
+      ) {
+        return fail('proposta diverge do pacote editorial');
+      }
+      packageSha256 = packageHash(questions);
+    } catch (error) {
+      return fail(`pacote editorial invalido: ${error.message}`);
+    }
+  }
   if (!['complete', 'ambiguous', 'incomplete'].includes(document.inputState)) {
     return fail('inputState invalido');
   }
@@ -156,6 +185,12 @@ function run() {
       'Nao publique, edite ou execute qualquer alteracao no projeto.',
       'A sessao deve permanecer somente leitura e sem acesso a fontes locais.',
       `Instrucoes versionadas do agente:\n${agentConfig.developer_instructions}`,
+      ...(deliveryPackage
+        ? [
+            `Requisitos do lote para esta passagem:\n${JSON.stringify(requirementsFor(document.input.subjectId, require('../config/content-delivery-policy.json')))}`,
+            'Confira explicitamente idioma, instrucao em portugues quando aplicavel, termos avaliados, lacunas e ausencia de resposta revelada. Registre fatos e achados especificos desta questao; nao presuma aprovacao pelo preenchimento dos campos.',
+          ]
+        : []),
       `Entrada autorizada:\n${JSON.stringify(document)}`,
     ].join('\n\n');
     const result = spawnSync(
@@ -178,6 +213,18 @@ function run() {
     };
     const errors = validateEditorialScenario(scenario);
     if (errors.length) return fail(`saida rejeitada: ${errors.join('; ')}`);
+    if (deliveryPackage) {
+      scenario.execution = {
+        kind: 'isolated-editorial',
+        runId: crypto.randomUUID(),
+        packageSha256,
+        proposalSha256: digest(document.input.proposal),
+        agent,
+        pass: document.input.requestedPass,
+        completedAt: new Date().toISOString(),
+        testOnly: Boolean(argument('--codex-bin')),
+      };
+    }
     fs.mkdirSync(path.dirname(path.resolve(outputPath)), { recursive: true });
     fs.writeFileSync(
       path.resolve(outputPath),

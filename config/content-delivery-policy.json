@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "content-delivery-policy-v1",
+  "activationCommit": "977c1372b82f1c494a5394238cfe27b95b5d9ef0",
+  "minimumCycle": "2026-t3",
+  "enabledSubjects": ["ingles"],
+  "humanApprovers": ["dleomil"],
+  "repository": "dleomil/quiz",
+  "runtimeFiles": [
+    "js/data/t3-matematica-published.js",
+    "js/data/t3-portugues-expansion-published.js",
+    "js/data/t3-portugues-published.js",
+    "js/data/t3-published.js"
+  ],
+  "generatorFiles": [
+    "scripts/create-t3-ciencias-corpos-luz.cjs",
+    "scripts/create-t3-ciencias-espelhos.cjs",
+    "scripts/create-t3-ciencias-luz-cores.cjs",
+    "scripts/create-t3-ciencias-materiais-luz.cjs",
+    "scripts/create-t3-ciencias-propriedades-luz.cjs",
+    "scripts/create-t3-ciencias-som-audicao.cjs",
+    "scripts/create-t3-geografia-agua-brasil.cjs",
+    "scripts/create-t3-geografia-agua-limitada.cjs",
+    "scripts/create-t3-geografia-agua-recurso.cjs",
+    "scripts/create-t3-geografia-nascente-rio.cjs",
+    "scripts/create-t3-geografia-usos-agua.cjs",
+    "scripts/create-t3-historia-imigrantes-alemaes.cjs",
+    "scripts/create-t3-historia-imigrantes-ibericos.cjs",
+    "scripts/create-t3-historia-imigrantes-italianos.cjs",
+    "scripts/create-t3-historia-imigrantes-japoneses.cjs",
+    "scripts/create-t3-historia-povo-brasileiro.cjs",
+    "scripts/create-t3-ingles-celebrations.cjs",
+    "scripts/create-t3-ingles-means-transport.cjs",
+    "scripts/create-t3-ingles-places-city.cjs",
+    "scripts/create-t3-ingles-present-continuous.cjs",
+    "scripts/create-t3-matematica-drafts.cjs",
+    "scripts/create-t3-pilot-draft.cjs",
+    "scripts/create-t3-portugues-usos-c.cjs",
+    "scripts/create-t3-portugues-verbos.cjs"
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "criterion": "Contrato content-v1, IDs unicos e feedback para as tres alternativas incorretas."
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "criterion": "Cobertura do tema, habilidade e resposta unica defensavel."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "criterion": "Idioma correto, clareza e adequacao ao terceiro ano."
+    },
+    {
+      "id": "english-support",
+      "subject": "ingles",
+      "verification": "linguistic",
+      "criterion": "Instrucao equivalente em portugues, sem traduzir termos avaliados ou revelar a resposta."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "criterion": "Explicacao correta e feedback coerente com cada distrator."
+    }
+  ],
+  "editorialDirectory": "docs/editorial"
+}
