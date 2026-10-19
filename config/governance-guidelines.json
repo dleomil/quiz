@@ -198,6 +198,22 @@
         "aceite editorial verificavel",
         "interface por IDs do lote"
       ]
+    },
+    {
+      "id": "document-versioning",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/document-versioning.md",
+      "sha256": "d27ad9c6ab6959dca14f693f1bbf33667b283e7a499974aa4364f84e71084682",
+      "appliesTo": ["documentation", "agent-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "inventario completo e hashes conferidos",
+        "mudancas comparadas com a base",
+        "aceite humano do baseline antes do consumo"
+      ]
     }
   ]
 }
