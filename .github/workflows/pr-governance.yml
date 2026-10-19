@@ -70,6 +70,13 @@ jobs:
           npm run validate:guidelines
           npm run test:guidelines
 
+      - name: Validar catalogo e mudancas documentais
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          npm run validate:documents -- --base-ref "origin/${BASE_REF}"
+          npm run test:documents
+
       - name: Validate read-only governance MCP
         run: |
           npm run validate:mcp-governance

@@ -96,6 +96,13 @@ deterministico estao descritos em
 `docs/harness/versioned-governance-guidelines.md`; os documentos referenciados
 continuam sendo as fontes normativas.
 
+O inventario de todos os Markdown versionados fica em
+`config/document-catalog.json`, conforme
+[`document-versioning.md`](specs/document-versioning.md). Revisoes e hashes
+permitem comparar mudancas; aceite humano nao e inferido do cadastro. A
+evolucao planejada dos agentes, suas dependencias e limites ficam em
+[`agent-workflow-evolution.md`](specs/agent-workflow-evolution.md).
+
 O piloto local `quiz-governance` disponibiliza esse indice, os documentos
 validados por hash e o modelo central de capacidades por tres ferramentas MCP
 somente leitura. O contrato e a ativacao opt-in estao em
