@@ -92,24 +92,24 @@
     },
     {
       "id": "editorial-agent-output",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "status": "active",
       "type": "contract",
       "owner": "content",
       "sourcePath": "docs/specs/editorial-agent-output-contract.md",
-      "sha256": "f150dc26b1cfe911521f2cf6207f70e6bfd75b7d5b8019e95e7830224fd4c274",
+      "sha256": "bd158110bdddd209fa0d4a9277f715fb9d79f34a6e36fc59275ae20f425b4bcf",
       "appliesTo": ["editorial-agents", "editorial-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["validated editorial agent output"]
     },
     {
       "id": "executable-codex-agents",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "status": "active",
       "type": "standard",
       "owner": "architecture",
       "sourcePath": "docs/specs/executable-codex-agents.md",
-      "sha256": "b46c517ee0e39a35cf3c0d38b68e008bd4c8dd44bc193261e7d97dae35dc5d8a",
+      "sha256": "e12392121a16bc90a008e932fde0c673aa64edfc91db2e932847645cdcb3c5d0",
       "appliesTo": ["agent-configuration", "agent-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["agent configuration validation"]

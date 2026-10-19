@@ -81,6 +81,11 @@ que inicia processo Codex separado com `CODEX_HOME` temporario, sem heranca de
 ferramentas ou connectors da sessao pai. Antes da execucao, o runner exige
 `codex mcp list --json` vazio e bloqueia qualquer preflight invalido.
 
+O runner confirma `codex login status` como ChatGPT, copia somente o cache local
+da sessao para o diretorio temporario com permissao restrita e o remove ao
+encerrar. `OPENAI_API_KEY` nao e encaminhada nem usada; se a sessao ChatGPT ou
+o cache local nao estiverem disponiveis, a execucao falha sem fallback.
+
 O runner recebe `--agent`, `--input` e `--output`. A entrada segue
 `config/editorial-agent-input.schema.json` e e um documento com `scenarioId`,
 `inputState` e `input`; a saida gravada inclui o mesmo
