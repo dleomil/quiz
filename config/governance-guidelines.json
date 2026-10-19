@@ -201,12 +201,12 @@
     },
     {
       "id": "document-versioning",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "status": "active",
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/document-versioning.md",
-      "sha256": "d27ad9c6ab6959dca14f693f1bbf33667b283e7a499974aa4364f84e71084682",
+      "sha256": "ad845b6ba0dc7fb6d6f5e7a45f2012578f3ba5642d6d8517cb04368f5d4347d3",
       "appliesTo": ["documentation", "agent-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": [

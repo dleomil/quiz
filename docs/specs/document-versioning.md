@@ -35,7 +35,9 @@ Aprovo o baseline documental hash <sha256>
 ```
 
 `verify-approval` consulta o comentario, confere URL, autor autorizado, tipo
-User e a linha exata. O recibo registra a referencia e a data; ele comprova a
+User e exige que o corpo inteiro contenha somente a linha exata. Exemplos em
+blocos de codigo, citacoes e comentarios de instrucao nao sao aceites. O recibo
+registra a referencia e a data; ele comprova a
 declaracao da conta autorizada, sem autenticar criptograficamente a pessoa.
 Uma autorizacao generica de implementacao ou merge nao substitui esse aceite.
 

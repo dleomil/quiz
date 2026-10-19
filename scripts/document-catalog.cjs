@@ -466,7 +466,8 @@ function verifyApproval(bundle, evidenceRef, readComment) {
     comment?.user?.login !== 'dleomil' ||
     comment?.user?.type !== 'User' ||
     !Number.isFinite(Date.parse(comment.created_at || '')) ||
-    !comment.body?.split(/\r?\n/).some((value) => value.trim() === line)
+    typeof comment.body !== 'string' ||
+    comment.body.trim() !== line
   )
     throw new Error('aceite documental ausente ou divergente');
   return {

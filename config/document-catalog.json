@@ -578,11 +578,11 @@
       "path": "docs/specs/document-versioning.md",
       "kind": "specification",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.0.1",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "d27ad9c6ab6959dca14f693f1bbf33667b283e7a499974aa4364f84e71084682"
+      "status": "draft",
+      "sha256": "ad845b6ba0dc7fb6d6f5e7a45f2012578f3ba5642d6d8517cb04368f5d4347d3"
     },
     {
       "id": "docs--specs--editorial-agent-output-contract",

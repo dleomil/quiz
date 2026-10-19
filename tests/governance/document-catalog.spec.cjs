@@ -175,6 +175,17 @@ try {
     verifyApproval(bundle, url, () => comment).baselineSha256,
     bundle.sha256,
   );
+  for (const body of [
+    `Exemplo de aceite:\n\n\`\`\`text\n${comment.body}\n\`\`\``,
+    `> ${comment.body}`,
+    `Nao aprovado.\n${comment.body}`,
+    `${comment.body}\n${comment.body}`,
+  ]) {
+    assert.throws(
+      () => verifyApproval(bundle, url, () => ({ ...comment, body })),
+      /aceite documental/,
+    );
+  }
   assert.throws(
     () =>
       verifyApproval(bundle, url, () => ({
