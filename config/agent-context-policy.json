@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "agent-context-policy-v1",
+  "common": ["AGENTS.md", "docs/product/product-scope-and-principles.md"],
+  "editorial": ["docs/specs/content-delivery-contract.md"],
+  "english": "docs/specs/english-t2-bilingual-question-support.md",
+  "dependencies": {
+    "docs/specs/content-delivery-contract.md": [
+      "docs/harness/content-update-quality-gates.md",
+      "docs/specs/editorial-agent-output-contract.md"
+    ],
+    "docs/harness/content-update-quality-gates.md": [
+      "docs/harness/pedagogical-regression-corpus.md"
+    ],
+    "docs/agents/content-curator-agent.md": [
+      "docs/architecture/target-architecture.md"
+    ],
+    "docs/specs/editorial-agent-output-contract.md": [
+      "docs/specs/agent-context-and-auth.md"
+    ]
+  },
+  "approvals": [
+    {
+      "sourceCommit": "fb94a6d0f37967cae703e42c047027402bcdf6b5",
+      "sha256": "69ebd751211b534cfbe5d8a7bdc55be892953dd0a8ed860626deb22e545bb1f8",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6273556952"
+    }
+  ],
+  "curricula": {
+    "2026-t3": "docs/specs/third-trimester-curriculum-manifest-2026.md"
+  }
+}

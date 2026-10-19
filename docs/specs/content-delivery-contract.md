@@ -92,10 +92,13 @@ reaproveitar pareceres. Arquivos antigos de auditoria permanecem historicos.
 Para cada passagem usar o runner isolado existente:
 
 ```sh
-node scripts/run-editorial-agent.cjs --agent pedagogical_quality --input <entrada.json> --output docs/editorial/<execucao.json> --delivery-package <pacote.json>
+node scripts/run-editorial-agent.cjs --agent pedagogical_quality --input <entrada.json> --work <ficha.json> --auth-home <perfil-dedicado> --output docs/editorial/<execucao.json> --delivery-package <pacote.json>
 ```
 
 O pacote contem `questions` completas, com metadados normalizados como acima.
+A ficha fixada ao commit, o contexto completo e o perfil ChatGPT dedicado
+seguem `agent-context-and-auth.md`. O recibo sidecar preserva as evidencias de
+execucao sem alterar registros ou ledgers existentes.
 A proposta da entrada segue o contrato editorial existente: sem `topicName`,
 com `sourceRef` restrito a `referenceId`, `section` e `topic`. A funcao
 `reviewProjection` prepara essa projecao sem transcrever a fonte escolar. O
