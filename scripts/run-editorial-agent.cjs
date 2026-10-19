@@ -20,6 +20,7 @@ const {
   isolationArguments,
   preflight,
   validateProfile,
+  skillArguments,
 } = require('./agent-auth.cjs');
 const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
 const {
@@ -89,7 +90,7 @@ function loadAgentConfig(agent) {
 function buildMcpArguments() {
   return ['mcp', 'list', '--json'];
 }
-function buildExecArguments(config, message, workspace, sessionHome) {
+function buildExecArguments(config, message, workspace, sessionHome, authHome) {
   return [
     'exec',
     '--strict-config',
@@ -102,6 +103,7 @@ function buildExecArguments(config, message, workspace, sessionHome) {
     '--config',
     `model_reasoning_effort=${JSON.stringify(config.model_reasoning_effort)}`,
     ...isolationArguments(sessionHome),
+    ...skillArguments(authHome),
     '--sandbox',
     'read-only',
     '--skip-git-repo-check',
@@ -249,7 +251,13 @@ function run() {
       'Confira idioma, instrucao em portugues, lacunas e resposta revelada. Registre fatos e achados especificos.',
       `Entrada autorizada:\n${JSON.stringify(document)}`,
     ].join('\n\n');
-    const argv = buildExecArguments(config, message, workspace, sessionHome);
+    const argv = buildExecArguments(
+      config,
+      message,
+      workspace,
+      sessionHome,
+      authHome,
+    );
     configuration = digest({
       argv: argv.map((value) =>
         value

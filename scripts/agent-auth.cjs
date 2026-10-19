@@ -5,6 +5,13 @@ const { spawnSync } = require('node:child_process');
 const { ROOT } = require('./document-catalog.cjs');
 
 const CLI_VERSION = '0.160.0';
+const SYSTEM_SKILLS = [
+  'review-agent',
+  'skill-creator',
+  'skill-installer',
+  'openai-docs',
+  'imagegen',
+];
 const DISABLED_FEATURES = [
   'shell_tool',
   'shell_snapshot',
@@ -125,11 +132,12 @@ function validateProfile(value) {
       'symlink no perfil dedicado',
     );
     check(
-      !/^(auth\.json|AGENTS\.md|hooks(?:\.json)?|skills|plugins|agents|rules|mcp.*|.*\.config\.toml)$/i.test(
+      !/^(auth\.json|AGENTS\.md|hooks(?:\.json)?|plugins|agents|rules|mcp.*|.*\.config\.toml)$/i.test(
         entry,
       ),
       'arquivo externo ou cache de token proibido no perfil',
     );
+    if (entry === 'skills') validateSystemSkills(home);
   }
   check(
     fs.readFileSync(path.join(home, 'config.toml'), 'utf8') === CONFIG,
@@ -143,6 +151,74 @@ function validateProfile(value) {
     'identidade do perfil invalida',
   );
   return home;
+}
+function validateSystemSkills(home) {
+  const directory = path.join(home, 'skills');
+  const walk = (target) => {
+    const stat = fs.lstatSync(target);
+    check(!stat.isSymbolicLink(), 'symlink nas skills do perfil dedicado');
+    check(
+      stat.isDirectory() || stat.isFile(),
+      'entrada irregular nas skills do perfil dedicado',
+    );
+    if (stat.isDirectory())
+      for (const entry of fs.readdirSync(target))
+        walk(path.join(target, entry));
+  };
+  walk(directory);
+  check(
+    fs.statSync(directory).isDirectory() &&
+      fs.readdirSync(directory).every((entry) => entry === '.system'),
+    'skills externas proibidas no perfil',
+  );
+  const system = path.join(directory, '.system');
+  if (!fs.existsSync(system)) return;
+  check(
+    fs.statSync(system).isDirectory() &&
+      fs
+        .readdirSync(system)
+        .every(
+          (entry) =>
+            SYSTEM_SKILLS.includes(entry) ||
+            entry === '.codex-system-skills.marker',
+        ),
+    'skill de sistema desconhecida; revisar versao da CLI',
+  );
+}
+function skillArguments(home) {
+  return [
+    '--config',
+    `skills.config=[${SYSTEM_SKILLS.map((name) => `{path=${JSON.stringify(path.join(home, 'skills', '.system', name, 'SKILL.md'))},enabled=false}`).join(',')}]`,
+  ];
+}
+function assertNoEnabledSkills(raw) {
+  const messages = JSON.parse(raw);
+  check(
+    Array.isArray(messages) &&
+      messages.length > 0 &&
+      messages.every(
+        (message) =>
+          message.type === 'message' &&
+          typeof message.role === 'string' &&
+          Array.isArray(message.content) &&
+          message.content.length > 0 &&
+          message.content.every((part) => typeof part.text === 'string'),
+      ),
+    'contexto de preflight invalido',
+  );
+  for (const message of messages)
+    for (const part of message.content || []) {
+      const value = part.text || '';
+      const marker = '### Available skills';
+      if (!value.includes(marker)) continue;
+      const section = value
+        .slice(value.indexOf(marker) + marker.length)
+        .split(/\n#{1,3} /)[0];
+      check(
+        !/(?:^|\n)[ \t]*-[ \t]+\S/.test(section),
+        'skill ativa no contexto protegido',
+      );
+    }
 }
 function environment(authHome, sessionHome) {
   const result = {
@@ -172,12 +248,16 @@ function isolationArguments(sessionHome) {
   ].flatMap((value) => ['--config', value]);
 }
 function checkedCall(bin, args, options, includeStderr = false) {
-  const result = spawnSync(bin, args, {
-    ...options,
-    encoding: 'utf8',
-    timeout: 30000,
-    maxBuffer: 16 * 1024 * 1024,
-  });
+  const result = spawnSync(
+    bin,
+    [...args, ...skillArguments(options.env.CODEX_HOME)],
+    {
+      ...options,
+      encoding: 'utf8',
+      timeout: 30000,
+      maxBuffer: 16 * 1024 * 1024,
+    },
+  );
   check(
     result.status === 0 && !result.error,
     `preflight ${args.slice(0, 2).join(' ')} falhou`,
@@ -239,6 +319,20 @@ function preflight(bin, home, sessionHome, workspace, model) {
     Array.isArray(models) && models.some((entry) => entry.slug === model),
     'modelo ausente do catalogo; sem fallback',
   );
+  assertNoEnabledSkills(
+    checkedCall(
+      bin,
+      [
+        'debug',
+        'prompt-input',
+        ...isolationArguments(sessionHome),
+        '--config',
+        `model=${JSON.stringify(model)}`,
+        'Confirme somente o contexto de preflight.',
+      ],
+      options,
+    ),
+  );
   validateProfile(home);
   return {
     cliVersion: CLI_VERSION,
@@ -249,6 +343,7 @@ function preflight(bin, home, sessionHome, workspace, model) {
     auth: 'chatgpt-keyring',
     modelCatalogued: model,
     accountModelAccess: 'not-yet-observed',
+    skills: 'disabled-and-context-checked',
   };
 }
 
@@ -275,7 +370,11 @@ function runCli() {
     sessionHome = fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-auth-session-'));
     const result = spawnSync(
       'codex',
-      ['login', ...(command === 'login' ? ['--device-auth'] : ['status'])],
+      [
+        'login',
+        ...(command === 'login' ? ['--device-auth'] : ['status']),
+        ...skillArguments(home),
+      ],
       {
         cwd: sessionHome,
         env: environment(home, sessionHome),
@@ -297,6 +396,7 @@ function runCli() {
 if (require.main === module) runCli();
 module.exports = {
   CLI_VERSION,
+  SYSTEM_SKILLS,
   CONFIG,
   DISABLED_FEATURES,
   environment,
@@ -304,4 +404,6 @@ module.exports = {
   isolationArguments,
   preflight,
   validateProfile,
+  skillArguments,
+  assertNoEnabledSkills,
 };

@@ -13,6 +13,8 @@ const {
   initializeProfile,
   validateProfile,
   environment,
+  skillArguments,
+  assertNoEnabledSkills,
 } = require('../../scripts/agent-auth.cjs');
 const { usageFromEvents } = require('../../scripts/agent-run-receipt.cjs');
 const { argumentsFrom } = require('../../scripts/run-editorial-agent.cjs');
@@ -28,6 +30,17 @@ try {
   const root = fixtureRepository(original, directory);
   const runner = path.join(root, 'scripts/run-editorial-agent.cjs');
   const authHome = initializeProfile(path.join(directory, 'dedicated-auth'));
+  const builtInSkill = path.join(
+    authHome,
+    'skills',
+    '.system',
+    'skill-creator',
+  );
+  fs.mkdirSync(builtInSkill, { recursive: true });
+  fs.writeFileSync(
+    path.join(builtInSkill, 'SKILL.md'),
+    'Skill de sistema ficticia que deve ficar desabilitada.',
+  );
   const commentPath = path.join(directory, 'comment.json');
   const recordPath = path.join(directory, 'record.json');
   json(commentPath, commentFor(root));
@@ -48,6 +61,7 @@ if (args[0] === 'features') {
  process.exit(0);
 }
 if (args[0] === 'mcp') { console.log(mode === 'mcp' ? '[{"name":"github"}]' : '[]'); process.exit(0); }
+if (args[0] === 'debug' && args[1] === 'prompt-input') { console.log(JSON.stringify([{type:'message',role:'developer',content:[{text:mode === 'skill-context' ? '### Available skills\\n- externa: instrucao indevida\\n### How to use skills' : '### Available skills\\n\\n### How to use skills'}]}])); process.exit(0); }
 if (args[0] === 'debug') { console.log(JSON.stringify({models: mode === 'no-model' ? [] : [{slug:'gpt-5.6-sol'}]})); process.exit(0); }
 if (args[0] !== 'exec') process.exit(2);
 const prompt = fs.readFileSync(0, 'utf8');
@@ -132,6 +146,11 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   assert.equal(record.env.HOME, os.homedir());
   assert.equal(record.env.XDG_CONFIG_HOME, record.env.TMPDIR);
   assert.equal(record.env.OPENAI_API_KEY, undefined);
+  assert.ok(record.argv.includes(skillArguments(authHome)[1]));
+  assert.equal(
+    success.receipt.preflight.skills,
+    'disabled-and-context-checked',
+  );
   assert.equal(record.env.INHERITED_CONNECTOR_TOKEN, undefined);
   assert.ok(
     record.argv.includes('--ignore-user-config') &&
@@ -160,6 +179,7 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
     ['host-skills', /skills pessoais/],
     ['mcp', /MCP ou connector/],
     ['no-model', /modelo ausente/],
+    ['skill-context', /skill ativa no contexto/],
     ['failed', /execucao falhou/],
     ['tool', /ferramenta acionada/],
     ['bad-output', /saida rejeitada/],
@@ -197,6 +217,30 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   fs.writeFileSync(path.join(authHome, 'hooks.json'), '{}');
   assert.throws(() => validateProfile(authHome), /arquivo externo/);
   fs.unlinkSync(path.join(authHome, 'hooks.json'));
+  const externalSkill = path.join(authHome, 'skills', 'externa');
+  fs.mkdirSync(externalSkill);
+  assert.throws(() => validateProfile(authHome), /skills externas/);
+  fs.rmdirSync(externalSkill);
+  const unknownSystemSkill = path.join(
+    authHome,
+    'skills',
+    '.system',
+    'desconhecida',
+  );
+  fs.mkdirSync(unknownSystemSkill);
+  assert.throws(
+    () => validateProfile(authHome),
+    /skill de sistema desconhecida/,
+  );
+  fs.rmdirSync(unknownSystemSkill);
+  const badLink = path.join(builtInSkill, 'escape');
+  fs.symlinkSync(directory, badLink);
+  assert.throws(() => validateProfile(authHome), /symlink nas skills/);
+  fs.unlinkSync(badLink);
+  assert.throws(
+    () => assertNoEnabledSkills('[]'),
+    /contexto de preflight invalido/,
+  );
   fs.chmodSync(authHome, 0o755);
   assert.throws(() => validateProfile(authHome), /permissoes inseguras/);
   fs.chmodSync(authHome, 0o700);
