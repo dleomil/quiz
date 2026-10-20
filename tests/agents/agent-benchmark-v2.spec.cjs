@@ -6,6 +6,7 @@ const { execFileSync, spawnSync } = require('node:child_process');
 const { fixtureRepository, commentFor } = require('./context-test-support.cjs');
 const { fakeCli } = require('./evaluation-test-support.cjs');
 const { initializeProfile } = require('../../scripts/agent-auth.cjs');
+const { readBytes } = require('../../scripts/agent-event-capture.cjs');
 const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-benchmark-v2-'));
 try {
   const root = fixtureRepository(path.resolve(__dirname, '../..'), directory);
@@ -143,9 +144,9 @@ try {
   const originals = new Map();
   function preserve(relative) {
     const file = path.join(current.directory, relative);
-    if (fs.statSync(file).isDirectory())
+    if (fs.lstatSync(file).isDirectory())
       for (const name of fs.readdirSync(file)) preserve(`${relative}/${name}`);
-    else originals.set(file, fs.readFileSync(file));
+    else originals.set(file, readBytes(file));
   }
   for (const name of [
     'campaign.json',
