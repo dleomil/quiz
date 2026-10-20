@@ -490,11 +490,11 @@
       "path": "docs/specs/agent-capability-model.md",
       "kind": "contract",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.2.0",
+      "revision": 2,
+      "version": "2.0.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "8e2282234a49bfd56e8a02848834a77ab643b32326b67d7e5f7c264a70a5fa65"
+      "status": "draft",
+      "sha256": "ea9770de6a411c07461d5700ebec15f7b8788bb92f77b11e326d6d4dfdfc3d8f"
     },
     {
       "id": "docs--specs--agent-context-and-auth",
@@ -638,6 +638,17 @@
       "normative": false,
       "status": "unclassified",
       "sha256": "120ecb3b1bd1ea9cbb5944d26dfe8cbecdb5bff1f575c02475fba72d2174038e"
+    },
+    {
+      "id": "docs--specs--isolated-agent-executor",
+      "path": "docs/specs/isolated-agent-executor.md",
+      "kind": "specification",
+      "owner": "architecture",
+      "revision": 2,
+      "version": "1.0.1",
+      "normative": true,
+      "status": "draft",
+      "sha256": "97a06f157086df1ed455038aebb475ca21e03c105e22bdb54659bf5885c98d13"
     },
     {
       "id": "docs--specs--local-first-agent-record-ledger",

@@ -9,7 +9,7 @@ separacoes de responsabilidade usados no fluxo assistido por agentes.
 `docs/agents/` continuam sendo os contratos de comportamento, e os TOMLs em
 `.codex/agents/` continuam sendo apenas adapters executaveis.
 
-## Contrato `agent-capabilities-v1`
+## Contrato `agent-capabilities-v2`
 
 O modelo possui tres colecoes:
 
@@ -27,6 +27,13 @@ Um papel `documented` existe no modelo operacional, mas nao possui TOML. Um
 papel `executable` exige adapter com caminho, nome, modelo, esforco e sandbox.
 Nesta versao, todo adapter executavel deve permanecer `read-only` e declarar
 explicitamente `mcpPolicy: none`; omissao ou permissao adicional falha fechada.
+
+Um papel `candidate` e restrito a Spec e Implementer, com apenas sua capability
+de autoria, adapter JSON em `config/agents/`, `runner: isolated-writer`,
+`activation: evaluation-only` e sandbox `isolated-copy`. Seus modelos e esforcos
+candidatos sao fixados pelo plano e validados. Nao e projetado como TOML nativo
+nem habilita escrita para os cinco executaveis existentes. O contrato completo
+esta em `docs/specs/isolated-agent-executor.md`.
 
 O piloto descrito em `docs/specs/read-only-governance-mcp-pilot.md` e uma
 ferramenta opt-in da sessao principal e nao pertence a um adapter. Ele nao muda
@@ -49,6 +56,9 @@ O baseline possui nove papeis:
 Somente Verifier, Reviewer, Content Curator, Pedagogical Quality e Product
 Discovery possuem adapters executaveis nesta fase. Incluir outro adapter ou
 ampliar sandbox exige entrega propria, revisao de risco e atualizacao do modelo.
+Spec e Implementer agora possuem adapters candidatos exclusivamente para o
+runner protegido. Os registros e ledgers historicos continuam em seus schemas
+existentes; a versao 2 e do modelo de capacidades e de sua projecao de consulta.
 
 ## Separacao obrigatoria
 

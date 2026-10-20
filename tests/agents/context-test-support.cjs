@@ -17,8 +17,16 @@ function fixtureRepository(root, directory) {
     'scripts/agent-auth.cjs',
     'scripts/agent-run-receipt.cjs',
     'scripts/run-editorial-agent.cjs',
+    'scripts/run-writer-agent.cjs',
+    'scripts/agent-writer-sandbox.cjs',
+    'scripts/agent-isolated-copy.cjs',
+    'scripts/agent-capabilities.cjs',
+    'config/agent-capabilities.json',
+    'config/agents/spec.json',
+    'config/agents/implementer.json',
     'config/agent-context-policy.json',
   ]) {
+    fs.mkdirSync(path.dirname(path.join(target, name)), { recursive: true });
     fs.copyFileSync(path.join(root, name), path.join(target, name));
   }
   const catalog = JSON.parse(
@@ -41,6 +49,8 @@ function fixtureRepository(root, directory) {
       '--',
       'scripts',
       'config/agent-context-policy.json',
+      'config/agent-capabilities.json',
+      'config/agents',
       'config/document-catalog.json',
       'docs',
       'AGENTS.md',
