@@ -4,7 +4,51 @@ Entrega #404 do plano aprovado em `docs/specs/agent-workflow-evolution.md`.
 Este guia descreve a ferramenta; os contratos e aceites normativos continuam
 fixados pela ficha de trabalho e pela politica de contexto.
 
-## Preparacao
+## Rodada vigente: benchmark v2 pendente de aceite
+
+A operação vigente está descrita no [pacote de revisão humana](benchmark-v2-review.md).
+As seções históricas abaixo documentam as duas retomadas anteriores e não
+habilitam novos slots. O pacote v2 substitui a agenda anterior quando aprovado.
+
+A campanha já consumiu três tentativas, sem comparação elegível. O benchmark v2
+propõe 28 novas comparações, totalizando 31 de 32. Nenhuma tentativa adicional,
+reparo ou comparação de verificadores está autorizada. Os verificadores ficam
+adiados. Os perfis efetivos permanecem inalterados.
+
+Depois dos testes, commit e checks, gerar o pacote exato offline:
+
+```sh
+npm run evaluation -- benchmark-check --auth-home "$HOME/.codex-quiz-auth" \
+  --output /caminho/novo/benchmark-v2-package.json
+npm run evaluation -- inspect-capture --auth-home "$HOME/.codex-quiz-auth" \
+  --slot schema-replacement-2 --output /caminho/novo/diagnostico.json
+```
+
+Submeter o commit e SHA-256 do pacote ao mantenedor. Parar antes de chamadas.
+Somente depois do aceite explícito desse pacote registrar a aprovação selada
+`agent-benchmark-human-approval-v2`, vinculando sourceCommit, packageSha256,
+stateSha256, origin=user-session, actor=dleomil, decision=approved, testOnly=false,
+statement com a manifestação de aceite e approvedAt. O hash usa a serialização
+canônica de `evaluation.sealed`; não é uma assinatura de identidade humana.
+
+```sh
+npm run evaluation -- revise-benchmark --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <estado-aprovado> --approval-file /caminho/privado/aceite.json
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot v2-historia-valida-editorial-current
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot v2-historia-valida-editorial-candidate
+```
+
+Inspecionar esse primeiro par antes das outras 26 chamadas. Usar a ordem do
+pacote. Falha técnica ou novo defeito do benchmark interrompe; falha de qualidade
+permanece no resultado, sem retry. Não chamar `init`, `resume`, `resume-events`,
+`resume-parser` ou `analyze` para tentar abrir slots antigos depois da revisão.
+`inspect-capture` não reclassifica a terceira tentativa como sucesso nem concede
+elegibilidade. O resultado histórico rejeitado permanece intacto.
+
+## Referência histórica: preparação inicial
 
 A rodada usa somente fixtures sinteticas, identificadas em
 `config/agent-evaluation-plan.json`. Sao oito casos editoriais comparados entre
