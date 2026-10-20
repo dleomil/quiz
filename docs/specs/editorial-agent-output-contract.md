@@ -77,12 +77,16 @@ declarados. Texto da fonte nao pode ser transportado em campos adicionais como
 
 Os agentes editoriais declaram uma tabela `mcp_servers` vazia no proprio
 adaptador. A execucao protegida ocorre por `scripts/run-editorial-agent.cjs`,
-que inicia processo Codex separado com `CODEX_HOME` temporario, sem heranca de
-ferramentas ou connectors da sessao pai. Antes da execucao, o runner exige
-`codex mcp list --json` vazio e bloqueia qualquer preflight invalido.
+que inicia processo Codex separado com `CODEX_HOME` dedicado ao login ChatGPT
+no chaveiro e workspace temporario, sem heranca de ferramentas ou connectors da
+sessao pai. Antes da execucao, o runner exige contratos completos aprovados,
+flags efetivas sem ferramentas e `codex mcp list --json` vazio. Qualquer
+preflight invalido bloqueia; nao ha fallback para API ou copia de credenciais.
 
-O runner recebe `--agent`, `--input` e `--output`. A entrada segue
+O runner recebe `--agent`, `--input`, `--output`, `--work` e `--auth-home`.
+A ficha e a preparacao do perfil seguem `agent-context-and-auth.md`. A entrada segue
 `config/editorial-agent-input.schema.json` e e um documento com `scenarioId`,
 `inputState` e `input`; a saida gravada inclui o mesmo
 contexto e o parecer validado em `output`. O runner somente grava a saida apos
-validar o contrato completo.
+validar o contrato completo. O sidecar `<saida>.receipt.json` registra tambem
+falhas de preflight e hashes do contexto, sem alterar este schema editorial.

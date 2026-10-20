@@ -60,6 +60,11 @@ jobs:
       - name: Validate agent capabilities
         run: npm run validate:agents
 
+      - name: Validar contexto e runner editorial sem chamadas reais
+        run: |
+          npm run test:agent-context
+          npm run test:editorial-runner
+
       - name: Validate agent execution record contract
         run: |
           npm run test:agent-records

@@ -497,6 +497,17 @@
       "sha256": "8e2282234a49bfd56e8a02848834a77ab643b32326b67d7e5f7c264a70a5fa65"
     },
     {
+      "id": "docs--specs--agent-context-and-auth",
+      "path": "docs/specs/agent-context-and-auth.md",
+      "kind": "contract",
+      "owner": "architecture",
+      "revision": 1,
+      "version": "1.0.0",
+      "normative": true,
+      "status": "draft",
+      "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e"
+    },
+    {
       "id": "docs--specs--agent-execution-records",
       "path": "docs/specs/agent-execution-records.md",
       "kind": "contract",
@@ -534,11 +545,11 @@
       "path": "docs/specs/content-delivery-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "2.0.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "aa7248d71eecf567972a3968b680bdf2c47739cf058d070d3e4dbb00912e32e7"
+      "status": "draft",
+      "sha256": "b615fec1f49de6289f2af3a8527e87086e8557dddbc8d58103f959c79f65dd52"
     },
     {
       "id": "docs--specs--content-schema-v1",
@@ -589,11 +600,11 @@
       "path": "docs/specs/editorial-agent-output-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "2.0.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "f150dc26b1cfe911521f2cf6207f70e6bfd75b7d5b8019e95e7830224fd4c274"
+      "status": "draft",
+      "sha256": "654b7c89ff30fc95a5db6a7516b62fa286639f0137e7583e960099fb33a79131"
     },
     {
       "id": "docs--specs--english-t2-bilingual-question-support",
@@ -611,11 +622,11 @@
       "path": "docs/specs/executable-codex-agents.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.2.0",
+      "revision": 2,
+      "version": "2.0.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "b46c517ee0e39a35cf3c0d38b68e008bd4c8dd44bc193261e7d97dae35dc5d8a"
+      "status": "draft",
+      "sha256": "165ce0c233a91163de13875b7a2246a62ef0d04ba3c7740cecdbc84f48a5e9f7"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",
