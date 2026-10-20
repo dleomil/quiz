@@ -20,7 +20,12 @@ const {
   validateEditorialInputDocument,
 } = require('./validate-codex-agents.cjs');
 const { digest, ROOT } = require('./document-catalog.cjs');
-const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
+const {
+  makeReceipt,
+  analyzeEvents,
+  assertEvents,
+} = require('./agent-run-receipt.cjs');
+const captures = require('./agent-event-capture.cjs');
 const { execute } = require('./agent-process.cjs');
 const { buildExecArguments } = require('./run-editorial-agent.cjs');
 const transport = require('./agent-output-transport.cjs');
@@ -28,8 +33,18 @@ const transport = require('./agent-output-transport.cjs');
 function parse(argv) {
   const command = argv[0];
   evaluation.check(
-    ['init', 'list', 'ready', 'run', 'report', 'resume'].includes(command),
-    'use init, list, ready, run, report ou resume',
+    [
+      'init',
+      'list',
+      'ready',
+      'run',
+      'report',
+      'resume',
+      'resume-events',
+      'resume-parser',
+      'analyze',
+    ].includes(command),
+    'use init, list, ready, run, report, resume, resume-events, resume-parser ou analyze',
   );
   const args = {};
   for (let index = 1; index < argv.length; index += 2) {
@@ -56,7 +71,7 @@ function parse(argv) {
     'aceite ficticio exige binario de teste',
   );
   evaluation.check(
-    (command === 'run') === Boolean(args['--slot']),
+    ['run', 'analyze'].includes(command) === Boolean(args['--slot']),
     'informe --slot somente ao executar uma tentativa',
   );
   evaluation.check(
@@ -64,7 +79,8 @@ function parse(argv) {
     'saida explicita permitida somente para relatorio',
   );
   evaluation.check(
-    (command === 'resume') === Boolean(args['--expected-state']),
+    ['resume', 'resume-events', 'resume-parser'].includes(command) ===
+      Boolean(args['--expected-state']),
     'retomada exige --expected-state; proibido nos outros comandos',
   );
   return { command, args };
@@ -119,6 +135,7 @@ async function verification(ticketFile, work, output, args, configuration) {
   let failureReason = null;
   const runId = crypto.randomUUID();
   const schema = transport.verificationSchema();
+  let capture, captureInfo, message;
   try {
     lock = path.join(home, 'quiz-run.lock');
     try {
@@ -156,7 +173,7 @@ async function verification(ticketFile, work, output, args, configuration) {
       path.join(workspace, 'output.schema.json'),
       JSON.stringify(schema),
     );
-    const message = path.join(scratch, 'message.json');
+    message = path.join(scratch, 'message.json');
     const config = {
       model: ticket.slot.model,
       model_reasoning_effort: ticket.slot.effort,
@@ -183,6 +200,7 @@ async function verification(ticketFile, work, output, args, configuration) {
       schemaSha256: digest(schema),
       checks,
     });
+    capture = captures.createCapture(output);
     modelInvocations = 1;
     state = 'execution-failed';
     const events = await execute(bin, argv, {
@@ -190,8 +208,11 @@ async function verification(ticketFile, work, output, args, configuration) {
       env: auth.environment(home, scratch),
       input: prompt,
       timeoutMs: 300000 - (Date.now() - started),
+      capture,
     });
-    usage = usageFromEvents(events);
+    const eventDiagnosis = analyzeEvents(events);
+    usage = eventDiagnosis.usage;
+    assertEvents(eventDiagnosis);
     state = 'output-rejected';
     const result = evaluation.read(message);
     transport.validateValue(result, schema);
@@ -202,6 +223,15 @@ async function verification(ticketFile, work, output, args, configuration) {
     failureReason = error.message;
   } finally {
     try {
+      if (capture) {
+        try {
+          captureInfo = capture.finish(message);
+          usage ||= captureInfo.diagnosis.usage;
+        } catch {
+          state = 'output-rejected';
+          failureReason = 'falha ao preservar captura';
+        }
+      }
       evaluation.write(
         `${output}.receipt.json`,
         makeReceipt({
@@ -226,6 +256,8 @@ async function verification(ticketFile, work, output, args, configuration) {
           preflight: checks || null,
           usage: usage || null,
           artifactSha256: artifactSha256 || null,
+          captureSha256: captureInfo?.sha256 || null,
+          eventDiagnosis: captureInfo?.diagnosis || null,
         }),
       );
     } finally {
@@ -373,6 +405,19 @@ async function runSlot(args) {
       'recibo ausente ou divergente da reserva',
     );
     evaluation.verifySeal(receipt);
+    if (receipt.modelInvocations === 1) {
+      const { manifest } = captures.verifyCapture(
+        output,
+        receipt.captureSha256,
+      );
+      evaluation.check(
+        manifest.exitCode === 0 &&
+          !manifest.processError &&
+          !manifest.truncated &&
+          manifest.diagnosis.accepted,
+        receipt.failureReason || 'captura nao comprova conclusao sem falhas',
+      );
+    }
     evaluation.check(
       hasOutput && ['completed', 'proposed'].includes(receipt.result),
       receipt.failureReason || 'execucao sem proposta aceita pelo runner',
@@ -478,9 +523,71 @@ function report(current) {
         ) === result.outputSha256,
         'artefato da tentativa foi alterado',
       );
-    return result;
+    const output = path.join(
+      current.directory,
+      'runs',
+      attempt.slot.id,
+      'result.json',
+    );
+    const receipt = result.receiptSha256
+      ? evaluation.read(`${output}.receipt.json`)
+      : null;
+    const captureState = receipt?.captureSha256
+      ? captures.verifyCapture(output, receipt.captureSha256).manifest
+      : null;
+    const analysis = require('./agent-evaluation-reanalysis.cjs').readAnalysis(
+      current,
+      attempt,
+    );
+    const failureClass = result.passed
+      ? null
+      : captureState?.processError
+        ? captureState.processError
+        : captureState?.truncated
+          ? 'capture_limit'
+          : /invalid_json_schema/.test(result.failureReason || '')
+            ? 'transport_schema'
+            : receipt?.failureReason ===
+                'ferramenta acionada em revisao sem ferramentas'
+              ? 'unclassified_protocol'
+              : receipt?.eventDiagnosis?.reasonCode ||
+                (receipt?.result === 'execution-failed'
+                  ? 'process_failure'
+                  : receipt?.result === 'preflight-blocked'
+                    ? 'preflight_failure'
+                    : receipt?.result === 'output-rejected'
+                      ? 'output_validation'
+                      : 'quality');
+    const technicalFailure = [
+      'capture_failure',
+      'capture_limit',
+      'transport_schema',
+      'unclassified_protocol',
+      'unknown_item',
+      'unknown_event',
+      'invalid_plan',
+      'invalid_jsonl',
+      'invalid_usage',
+      'incomplete_turn',
+      'process_failure',
+      'preflight_failure',
+    ].includes(failureClass);
+    return analysis
+      ? {
+          ...result,
+          failureClass,
+          technicalFailure,
+          analysis,
+          logicalPassed: analysis.passed,
+        }
+      : { ...result, failureClass, technicalFailure };
   });
   const effective = (slot) =>
+    results.find(
+      (item) =>
+        item.slot.id === current.resumption?.replacementSlot &&
+        item.slot.replacementOf === slot.id,
+    ) ||
     results.find((item) => item.slot.replacementOf === slot.id) ||
     results.find((item) => item.slot.id === slot.id);
   const completed = current.campaign.schedule.every((slot) => {
@@ -500,7 +607,10 @@ function report(current) {
       expected.length > 0 &&
       expected.every(
         (slot) =>
-          (effective(slot)?.passed && !effective(slot)?.testOnly) ||
+          ((effective(slot)?.analysis
+            ? effective(slot).logicalPassed
+            : effective(slot)?.passed) &&
+            !effective(slot)?.testOnly) ||
           results.some(
             (item) =>
               item.slot.repairOf === slot.id && item.passed && !item.testOnly,
@@ -531,6 +641,8 @@ function report(current) {
       failedAttempts: 0,
       pendingAttempts: 0,
       technicalFailures: 0,
+      recoveredAttempts: 0,
+      recoveredPassedCases: 0,
       replacements: 0,
       reportedUsageRecords: 0,
       knownTokens: {
@@ -546,9 +658,12 @@ function report(current) {
     else metric.initialAttempts++;
     if (item.pending) metric.pendingAttempts++;
     else if (item.passed) metric.passedAttempts++;
-    else if (current.resumption?.failedSlot === item.slot.id)
-      metric.technicalFailures++;
+    else if (item.technicalFailure) metric.technicalFailures++;
     else metric.failedAttempts++;
+    if (item.analysis) {
+      metric.recoveredAttempts++;
+      if (item.analysis.passed) metric.recoveredPassedCases++;
+    }
     if (item.usage) {
       metric.reportedUsageRecords++;
       for (const key of Object.keys(metric.knownTokens))
@@ -573,6 +688,7 @@ function report(current) {
     activeSourceCommit: current.configuration.commit,
     resumption: current.resumption,
     stateSha256: evaluation.stateFingerprint(current),
+    fingerprintVersion: 'sha256-bytes-v2',
     planSha256: current.campaign.planSha256,
     testOnly: current.campaign.testOnly,
     completed,
@@ -624,12 +740,32 @@ async function run(argv = process.argv.slice(2)) {
     );
     return;
   }
+  if (['resume-events', 'resume-parser'].includes(command)) {
+    process.stdout.write(
+      `${JSON.stringify(require('./agent-evaluation-event-resumption.cjs').resumeEvents(home, args['--expected-state'], ROOT, command === 'resume-parser' ? 'parser' : 'events'), null, 2)}\n`,
+    );
+    return;
+  }
   const current = evaluation.openCampaign(
     home,
     ROOT,
     ['list', 'report'].includes(command),
   );
-  if (command === 'list') {
+  if (command === 'analyze') {
+    evaluation.check(
+      current.campaign.testOnly === Boolean(args['--codex-bin']),
+      'campanha real e fixture nao podem ser misturadas',
+    );
+    const lock = path.join(home, 'quiz-evaluation.lock');
+    fs.mkdirSync(lock, { mode: 0o700 });
+    try {
+      process.stdout.write(
+        `${JSON.stringify(require('./agent-evaluation-reanalysis.cjs').analyze(current, args['--slot'], ROOT, args['--codex-bin'] || 'codex'), null, 2)}\n`,
+      );
+    } finally {
+      fs.rmdirSync(lock);
+    }
+  } else if (command === 'list') {
     process.stdout.write(
       `${JSON.stringify({ campaign: current.campaign, attemptsUsed: current.attempts.length }, null, 2)}\n`,
     );

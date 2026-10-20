@@ -51,6 +51,11 @@ if(args[0]!=='exec')process.exit(2);
 if(args.includes('--output-schema'))strictSchema(JSON.parse(fs.readFileSync(args[args.indexOf('--output-schema')+1],'utf8')));
 const prompt=fs.readFileSync(0,'utf8');
 fs.appendFileSync(${JSON.stringify(record)},JSON.stringify({model:args[args.indexOf('--model')+1],cwd:process.cwd(),args,apiKey:process.env.OPENAI_API_KEY||null,hasOracle:fs.existsSync('config/agent-evaluation-plan.json')||fs.existsSync('scripts/agent-evaluation-grading.cjs')})+'\\n');
+console.log(JSON.stringify({type:'thread.started',thread_id:'fixture-thread'}));
+console.log(JSON.stringify({type:'turn.started'}));
+console.log(JSON.stringify({type:'item.updated',item:{id:'plan_0',type:'todo_list',items:[{text:'Conferir fonte.',completed:true}]}}));
+if(mode==='unknown-event')console.log(JSON.stringify({type:'item.completed',item:{id:'future_0',type:'future_metadata'}}));
+if(mode==='forbidden-tool')console.log(JSON.stringify({type:'item.completed',item:{id:'tool_0',type:'web_search'}}));
 if(mode==='failed-remote'){console.log(JSON.stringify({type:'error',message:'modelo indisponivel no teste'}));process.exit(1);}
 const start=prompt.lastIndexOf('Entrada autorizada:\\n');
 if(start>=0){
@@ -73,8 +78,9 @@ if(start>=0){
  const file=work.allowedPaths[0];
  if(file.endsWith('.cjs'))fs.writeFileSync(file,mode==='bad-code'?'module.exports = () => ({total:0,correct:0,points:0,percent:0});':${JSON.stringify(GOOD_CODE)});
  else fs.writeFileSync(file,${JSON.stringify(GOOD_DOCUMENTATION)});
- console.log(JSON.stringify({type:'item.completed',item:{type:'file_change'}}));
+ console.log(JSON.stringify({type:'item.completed',item:{id:'file_0',type:'file_change'}}));
 }
+console.log(JSON.stringify({type:'item.completed',item:{id:'message_0',type:'agent_message',text:'Resposta concluida.'}}));
 console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:120,cached_input_tokens:10,output_tokens:30}}));
 `;
   fs.writeFileSync(target, program, { mode: 0o755 });

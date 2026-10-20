@@ -184,7 +184,7 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
     ['no-model', /modelo ausente/],
     ['skill-context', /skill ativa no contexto/],
     ['failed', /execucao falhou/],
-    ['tool', /ferramenta acionada/],
+    ['tool', /ferramenta proibida/],
     ['bad-output', /saida rejeitada/],
   ]) {
     const blocked = invoke(mode);

@@ -22,7 +22,12 @@ const {
   validateProfile,
   skillArguments,
 } = require('./agent-auth.cjs');
-const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
+const {
+  makeReceipt,
+  analyzeEvents,
+  assertEvents,
+} = require('./agent-run-receipt.cjs');
+const { createCapture } = require('./agent-event-capture.cjs');
 const transport = require('./agent-output-transport.cjs');
 const {
   AGENT_CONTRACTS,
@@ -139,6 +144,7 @@ async function run(cliArguments = process.argv.slice(2)) {
   let evaluation;
   let modelInvocations = 0;
   let transportSchema, wireSha256;
+  let capture, captureInfo, message;
   try {
     args = argumentsFrom(cliArguments);
     let config = loadAgentConfig(args['--agent']);
@@ -284,7 +290,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       path.join(workspace, 'output.schema.json'),
       JSON.stringify(transportSchema),
     );
-    const message = path.join(sessionHome, 'output.json');
+    message = path.join(sessionHome, 'output.json');
     const deliveryPolicyPath = 'config/content-delivery-policy.json';
     const deliveryPolicy = pinnedConfig(
       ROOT,
@@ -328,15 +334,19 @@ async function run(cliArguments = process.argv.slice(2)) {
       checks,
     });
     resultState = 'execution-failed';
+    if (evaluation) capture = createCapture(path.resolve(args['--output']));
     modelInvocations = 1;
     const events = await execute(bin, argv, {
       cwd: workspace,
       env: environment(authHome, sessionHome),
       input: prompt,
       timeoutMs: 300000 - (Date.now() - started),
+      capture,
     });
     resultState = 'output-rejected';
-    usage = usageFromEvents(events);
+    const eventDiagnosis = analyzeEvents(events);
+    usage = eventDiagnosis.usage;
+    assertEvents(eventDiagnosis);
     validateProfile(authHome);
     const rawOutput = JSON.parse(fs.readFileSync(message, 'utf8'));
     wireSha256 = digest(rawOutput);
@@ -390,6 +400,17 @@ async function run(cliArguments = process.argv.slice(2)) {
     process.exitCode = 1;
   } finally {
     try {
+      if (capture) {
+        try {
+          captureInfo = capture.finish(message);
+          usage ||= captureInfo.diagnosis.usage;
+        } catch (error) {
+          resultState = 'output-rejected';
+          failureReason = 'falha ao preservar captura';
+          process.stderr.write(`editorial-agent-runner: ${error.message}\n`);
+          process.exitCode = 1;
+        }
+      }
       if (receipt && receiptPath) {
         const value = makeReceipt({
           ...receipt,
@@ -406,6 +427,8 @@ async function run(cliArguments = process.argv.slice(2)) {
           usage,
           modelInvocations,
           wireSha256: wireSha256 || null,
+          captureSha256: captureInfo?.sha256 || null,
+          eventDiagnosis: captureInfo?.diagnosis || null,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
         fs.writeFileSync(receiptPath, `${JSON.stringify(value, null, 2)}\n`, {

@@ -5,6 +5,8 @@ const { execFileSync } = require('node:child_process');
 const { ROOT, digest, readSource } = require('./document-catalog.cjs');
 const { pinnedConfig } = require('./agent-context.cjs');
 const { validateProfile } = require('./agent-auth.cjs');
+const { sha256 } = require('./governance-guidelines.cjs');
+const captures = require('./agent-event-capture.cjs');
 
 const PLAN_PATH = 'config/agent-evaluation-plan.json';
 const CAMPAIGN_ID = 'agent-evolution-2026-10';
@@ -25,6 +27,11 @@ const CRITICAL_PATHS = [
   'scripts/agent-evaluation-grading.cjs',
   'scripts/run-model-evaluation.cjs',
   'scripts/agent-process.cjs',
+  'scripts/agent-cli-events.cjs',
+  'scripts/agent-event-capture.cjs',
+  'scripts/agent-evaluation-event-resumption.cjs',
+  'scripts/agent-evaluation-reanalysis.cjs',
+  'config/agent-evaluation-events-resumption.json',
   'scripts/agent-output-transport.cjs',
   RESUMPTION_PLAN,
   'scripts/run-editorial-agent.cjs',
@@ -364,7 +371,14 @@ function openCampaign(home, root = ROOT, readOnly = false) {
   const storedResumption = readOptional(
     path.join(directory, 'resumption.json'),
   );
-  const resumption = storedResumption ? verifySeal(storedResumption) : null;
+  const firstResumption = storedResumption
+    ? verifySeal(storedResumption)
+    : null;
+  const resumption = require('./agent-evaluation-event-resumption.cjs').active(
+    directory,
+    firstResumption,
+    campaign,
+  );
   if (resumption)
     check(
       resumption.campaignSha256 === campaign.sha256 &&
@@ -395,10 +409,13 @@ function openCampaign(home, root = ROOT, readOnly = false) {
             readOnly
               ? execFileSync(
                   'git',
-                  ['show', `${resumption.targetCommit}:${RESUMPTION_PLAN}`],
+                  [
+                    'show',
+                    `${resumption.targetCommit}:${resumption.amendmentPath || RESUMPTION_PLAN}`,
+                  ],
                   { cwd: root },
                 )
-              : readSource(root, RESUMPTION_PLAN),
+              : readSource(root, resumption.amendmentPath || RESUMPTION_PLAN),
           ),
         ) === resumption.amendmentSha256,
       'adendo de retomada diverge',
@@ -443,6 +460,7 @@ function openCampaign(home, root = ROOT, readOnly = false) {
     configuration,
     initialConfiguration,
     resumption,
+    firstResumption,
     attempts,
   };
 }
@@ -455,7 +473,7 @@ function stateFingerprint(current) {
     if (stat.isDirectory())
       for (const name of fs.readdirSync(target).sort())
         walk(`${relative}/${name}`);
-    else entries[relative] = digest(read(target));
+    else entries[relative] = sha256(captures.readBytes(target));
   }
   for (const name of ['attempts', 'claims', 'results', 'runs']) walk(name);
   return digest({ campaignSha256: current.campaign.sha256, entries });
@@ -609,6 +627,7 @@ function resume(home, expectedState, root = ROOT) {
       targetSnapshot: configuration.snapshot,
       amendmentSha256: digest(amendment),
       stateSha256: expectedState,
+      fingerprintVersion: 'sha256-bytes-v2',
       failedTicketSha256: ticket.sha256,
       failedSlot: ticket.slot.id,
       replacementSlot: amendment.replacementSlot,
@@ -642,6 +661,52 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
       const result = readOptional(
         path.join(current.directory, 'results', `${attempt.slot.id}.json`),
       );
+      if (
+        current.resumption?.kind &&
+        ![
+          current.resumption.failedSlot,
+          current.resumption.replacementPredecessor,
+        ].includes(attempt.slot.id)
+      ) {
+        check(
+          result,
+          'tentativa anterior sem resultado; investigar antes de continuar',
+        );
+        const output = path.join(
+          current.directory,
+          'runs',
+          attempt.slot.id,
+          'result.json',
+        );
+        const receipt = verifySeal(read(`${output}.receipt.json`));
+        check(
+          receipt.sha256 === result.receiptSha256 &&
+            receipt.evaluation?.ticketSha256 === attempt.sha256,
+          'recibo anterior divergente',
+        );
+        check(
+          receipt.captureSha256,
+          'tentativa sem captura; investigar antes de continuar',
+        );
+        const { manifest } = captures.verifyCapture(
+          output,
+          receipt.captureSha256,
+        );
+        const recovered =
+          require('./agent-evaluation-reanalysis.cjs').readAnalysis(
+            current,
+            attempt,
+            root,
+          );
+        check(
+          recovered ||
+            (manifest.exitCode === 0 &&
+              !manifest.processError &&
+              !manifest.truncated &&
+              manifest.diagnosis.accepted),
+          'falha tecnica pendente; analisar captura antes de consumir outra tentativa',
+        );
+      }
       if (
         /invalid_json_schema/.test(result?.failureReason || '') &&
         attempt.sha256 !== current.resumption?.failedTicketSha256
@@ -758,7 +823,8 @@ function finish(home, ticket, result, root = ROOT) {
 function repairSlot(current, id, parentId) {
   check(['repair-1', 'repair-2'].includes(id), 'reserva de correcao invalida');
   check(
-    id !== current.resumption?.retiredRepairSlot,
+    id !== current.resumption?.retiredRepairSlot &&
+      !current.resumption?.retiredRepairSlots?.includes(id),
     'reserva usada pela reposicao tecnica',
   );
   const parent = current.attempts.find((item) => item.slot.id === parentId);
@@ -788,7 +854,8 @@ function resolveSlot(current, id) {
   if (id === current.resumption?.replacementSlot)
     return replacementSlot(current);
   check(
-    id !== current.resumption?.retiredRepairSlot,
+    id !== current.resumption?.retiredRepairSlot &&
+      !current.resumption?.retiredRepairSlots?.includes(id),
     'reserva usada pela reposicao tecnica',
   );
   const normal = current.campaign.schedule.find((item) => item.id === id);
@@ -835,10 +902,14 @@ function replacementSlot(current) {
     ...parent.slot,
     id: current.resumption.replacementSlot,
     replacementOf: parent.slot.id,
+    ...(current.resumption.replacementPredecessor
+      ? { replacesAttempt: current.resumption.replacementPredecessor }
+      : {}),
   };
 }
 module.exports = {
   ROOT,
+  head,
   PLAN_PATH,
   CAMPAIGN_ID,
   loadPlan,

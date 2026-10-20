@@ -129,8 +129,70 @@ tickets vinculam o adendo e o commit ativo; consultas historicas continuam possi
 O relatorio conserva o total consumido e separa falha tecnica, reposicao e
 desempenho. O controle so fica coberto pelo resultado da reposicao; a falha original
 nao vira um julgamento de qualidade do modelo. Uma nova incompatibilidade de schema
-bloqueia outras reservas e exige novo planejamento. Nao ha segunda retomada,
-repeticao automatica ou aumento do limite.
+bloqueia outras reservas e exige novo planejamento. A segunda retomada excepcional abaixo substitui a disponibilidade da reserva restante.
+Nao existe repeticao automatica nem aumento do limite.
+
+## Segunda retomada e captura de eventos
+
+A tentativa `schema-replacement-1`, no commit
+`33d5442f9efc121303c2a2d6f3c940ee7141b03a`, encerrou a CLI com codigo zero,
+mas o guardiao antigo rejeitou um item como ferramenta. Os eventos e a resposta
+brutos daquela chamada nao foram preservados; a causa exata permanece desconhecida.
+Nao atribuir a falha a `todo_list` ou a uma ferramenta sem evidencia.
+
+O segundo adendo aprovado, `config/agent-evaluation-events-resumption.json`,
+vincula os hashes da segunda falha e da primeira retomada. Usa a ultima reserva
+para `schema-replacement-2`, mesmo caso, modelo e esforco. A conta passa a ser
+duas falhas anteriores mais 30 casos logicos, no maximo 32 tentativas.
+`repair-1` e `repair-2` ficam desabilitados nesta campanha. Os registros anteriores
+permanecem intactos; `event-resumption.json` registra a nova transicao.
+
+```sh
+npm run evaluation -- report --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- resume-events --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <stateSha256-atual>
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot schema-replacement-2
+```
+
+Antes de outras chamadas, conferir a captura e o resultado da reposicao. Eventos
+JSONL, stderr, resposta final e proposta de arquivo, quando disponiveis, ficam em
+`runs/<slot>/result.json.capture`, fora do checkout. O diretorio e privado (0700),
+os arquivos sao exclusivos (0600) e o manifesto fixa hashes e tamanhos. A captura
+ocorre antes da validacao e da limpeza da sandbox. Falhas e interrupcoes conservam
+dados parciais; nenhuma captura parcial ou truncada autoriza aceite. Nao incluir
+arquivos brutos no Git ou em comentarios do GitHub.
+
+O parser separa ferramenta proibida, item ou evento desconhecido, JSONL invalido,
+plano invalido, processo com erro, conclusao ausente e uso invalido. `todo_list`
+e aceito somente na estrutura interna prevista, sem execucao externa. Recibos
+incluem versao do parser, resumo sem payload bruto, hash do manifesto e uso
+informado, mesmo quando a resposta e rejeitada. O fingerprint `sha256-bytes-v2`
+considera os bytes dos arquivos, incluindo capturas; o fingerprint historico nao
+e reescrito. Falha tecnica nova impede reservar outra tentativa.
+
+Se uma captura completa provar somente incompatibilidade de metadados, o plano
+permite uma unica correcao adicional do parser, com testes e checks do novo commit.
+`resume-parser` registra essa transicao em `event-parser-revision.json`; a agenda,
+os contratos e os demais componentes criticos permanecem protegidos. Depois,
+`analyze` reavalia a captura existente, sem login, rede ou invocacao de modelo:
+
+```sh
+npm run evaluation -- resume-parser --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <stateSha256-atual>
+npm run evaluation -- analyze --auth-home "$HOME/.codex-quiz-auth" \
+  --slot <tentativa-com-captura-completa>
+```
+
+A analise exige processo concluido com codigo zero, arquivos e vinculos integros,
+nenhuma ferramenta proibida e todos os validadores originais. Codigo candidato
+continua sendo testado em sandbox nativa independente, exportando a fonte do Git
+original; nao e aplicado ao checkout. O resultado derivado tem arquivo e hashes
+proprios. O resultado rejeitado original nao muda. A analise nao consome tentativa,
+nao e correcao do modelo e nao permite avaliar as duas falhas sem captura. Ferramenta
+proibida, falha de infraestrutura ou nova incompatibilidade apos essa transicao
+interrompem a rodada; nao autorizam outra chamada ou aumento do teto.
 
 ## Relatorio e decisao
 

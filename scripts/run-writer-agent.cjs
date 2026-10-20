@@ -13,7 +13,12 @@ const auth = require('./agent-auth.cjs');
 const copies = require('./agent-isolated-copy.cjs');
 const sandbox = require('./agent-writer-sandbox.cjs');
 const { validateCapabilityModel } = require('./agent-capabilities.cjs');
-const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
+const {
+  makeReceipt,
+  analyzeEvents,
+  assertEvents,
+} = require('./agent-run-receipt.cjs');
+const { createCapture } = require('./agent-event-capture.cjs');
 
 function check(value, message) {
   if (!value) throw new Error(message);
@@ -116,6 +121,8 @@ function executionArguments(adapter, workspace, scratch, authHome, scope) {
     '--ignore-rules',
     '--ephemeral',
     '--json',
+    '--output-last-message',
+    path.join(scratch, 'message.txt'),
     '--model',
     adapter.model,
     '--config',
@@ -145,6 +152,7 @@ async function run(cliArguments = process.argv.slice(2)) {
     usage,
     artifact;
   let evaluation;
+  let capture, captureInfo, saveCandidate, message;
   let failureReason = null;
   let result = 'preflight-blocked';
   let invocations = 0;
@@ -267,6 +275,11 @@ async function run(cliArguments = process.argv.slice(2)) {
           : undefined,
       );
       const bin = args['--codex-bin'] || 'codex';
+      saveCandidate = () => {
+        const candidate = copies.collect(prepared, work, context.sha256, runId);
+        capture.save('proposal.json', candidate);
+        return candidate;
+      };
       checks = {
         sandbox: sandbox.probe(
           bin,
@@ -284,6 +297,7 @@ async function run(cliArguments = process.argv.slice(2)) {
         prepared.directory,
         adapter.model,
       );
+      message = path.join(scratch, 'message.txt');
       const argv = executionArguments(
         adapter,
         prepared.directory,
@@ -310,17 +324,29 @@ async function run(cliArguments = process.argv.slice(2)) {
         'Nao declare revisao independente, aceite humano, merge ou publicacao. Ao concluir, relate requisitos atendidos e limitacoes.',
       ].join('\n\n');
       result = 'execution-failed';
+      if (evaluation)
+        capture = createCapture(output, ['command_execution', 'file_change']);
       invocations = 1;
       const events = await execute(bin, argv, {
         cwd: prepared.directory,
         env: auth.environment(home, scratch),
         input: prompt,
         timeoutMs: 300000 - (Date.now() - started),
+        capture,
       });
       result = 'output-rejected';
-      usage = usageFromEvents(events, ['command_execution', 'file_change']);
+      if (capture) {
+        artifact = saveCandidate();
+        saveCandidate = null;
+      }
+      const eventDiagnosis = analyzeEvents(events, [
+        'command_execution',
+        'file_change',
+      ]);
+      usage = eventDiagnosis.usage;
+      assertEvents(eventDiagnosis);
       auth.validateProfile(home);
-      artifact = copies.collect(prepared, work, context.sha256, runId);
+      artifact ||= copies.collect(prepared, work, context.sha256, runId);
       fs.mkdirSync(path.dirname(output), { recursive: true });
       writeExclusive(output, `${JSON.stringify(artifact, null, 2)}\n`);
       result = 'proposed';
@@ -332,6 +358,24 @@ async function run(cliArguments = process.argv.slice(2)) {
     process.exitCode = 1;
   } finally {
     try {
+      if (capture) {
+        if (saveCandidate) {
+          try {
+            saveCandidate();
+          } catch {
+            /* Propostas fora do escopo nao podem ser recuperadas. */
+          }
+        }
+        try {
+          captureInfo = capture.finish(message);
+          usage ||= captureInfo.diagnosis.usage;
+        } catch (error) {
+          result = 'output-rejected';
+          failureReason = 'falha ao preservar captura';
+          process.stderr.write(`writer-agent: ${error.message}\n`);
+          process.exitCode = 1;
+        }
+      }
       if (receipt) {
         const value = makeReceipt({
           ...receipt,
@@ -345,8 +389,11 @@ async function run(cliArguments = process.argv.slice(2)) {
           approvals: context?.approvals || [],
           configurationSha256: configuration || null,
           preflight: checks || null,
-          artifactSha256: artifact?.sha256 || null,
+          artifactSha256:
+            result === 'proposed' ? artifact?.sha256 || null : null,
           usage: usage || null,
+          captureSha256: captureInfo?.sha256 || null,
+          eventDiagnosis: captureInfo?.diagnosis || null,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
         writeExclusive(receiptPath, `${JSON.stringify(value, null, 2)}\n`);

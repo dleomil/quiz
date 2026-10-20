@@ -1,7 +1,7 @@
 const { spawn } = require('node:child_process');
 
 function execute(bin, args, options) {
-  const { timeoutMs = 300000, input, ...childOptions } = options;
+  const { timeoutMs = 300000, input, capture, ...childOptions } = options;
   if (!Number.isSafeInteger(timeoutMs) || timeoutMs <= 0 || timeoutMs > 300000)
     return Promise.reject(
       new Error('prazo da invocacao esgotado ou invalido; sem repeticao'),
@@ -13,6 +13,7 @@ function execute(bin, args, options) {
       stdio: ['pipe', 'pipe', 'pipe'],
     });
     let stdout = '';
+    const chunks = [];
     let bytes = 0;
     let failure;
     const kill = () => {
@@ -42,13 +43,27 @@ function execute(bin, args, options) {
       kill();
     }, timeoutMs);
     child.stdout.on('data', (value) => {
+      try {
+        capture?.append('stdout', value);
+      } catch (error) {
+        failure = new Error('falha ao preservar diagnostico', { cause: error });
+        kill();
+      }
+      const remaining = Math.max(0, 16 * 1024 * 1024 - bytes);
+      if (remaining) chunks.push(value.subarray(0, remaining));
       bytes += value.length;
       if (bytes > 16 * 1024 * 1024) {
         failure = new Error('eventos excedem limite');
         kill();
-      } else stdout += value.toString();
+      }
     });
     child.stderr.on('data', (value) => {
+      try {
+        capture?.append('stderr', value);
+      } catch (error) {
+        failure = new Error('falha ao preservar diagnostico', { cause: error });
+        kill();
+      }
       bytes += value.length;
       if (bytes > 16 * 1024 * 1024) {
         failure = new Error('eventos excedem limite');
@@ -58,11 +73,22 @@ function execute(bin, args, options) {
     child.on('error', (error) => {
       cleanup();
       kill();
+      try {
+        capture?.complete(null, error);
+      } catch {
+        /* O recibo registra a falha de captura no coordenador. */
+      }
       reject(error);
     });
     child.on('close', (code) => {
       cleanup();
       kill();
+      stdout = Buffer.concat(chunks).toString('utf8');
+      try {
+        capture?.complete(code, failure || code !== 0);
+      } catch (error) {
+        failure = new Error('falha ao encerrar captura', { cause: error });
+      }
       if (failure || code !== 0) {
         let remote = '';
         for (const line of stdout.split('\n')) {

@@ -1,42 +1,8 @@
 const { digest } = require('./document-catalog.cjs');
+const { analyzeEvents, assertEvents } = require('./agent-cli-events.cjs');
 
 function usageFromEvents(jsonl, allowedTools = []) {
-  let usage = null;
-  let completed = false;
-  let unexpectedTool = false;
-  for (const line of jsonl.split('\n').filter(Boolean)) {
-    let event;
-    try {
-      event = JSON.parse(line);
-    } catch {
-      throw new Error('eventos da CLI invalidos');
-    }
-    if (
-      event.item &&
-      !['agent_message', 'reasoning', 'plan', ...allowedTools].includes(
-        event.item.type,
-      )
-    )
-      unexpectedTool = true;
-    if (event.type === 'turn.completed') {
-      completed = true;
-      const reported = event.usage;
-      if (reported) {
-        const keys = ['input_tokens', 'cached_input_tokens', 'output_tokens'];
-        if (
-          !keys.every(
-            (key) => Number.isSafeInteger(reported[key]) && reported[key] >= 0,
-          )
-        )
-          throw new Error('uso de tokens invalido');
-        usage = Object.fromEntries(keys.map((key) => [key, reported[key]]));
-      }
-    }
-  }
-  if (unexpectedTool)
-    throw new Error('ferramenta acionada em revisao sem ferramentas');
-  if (!completed) throw new Error('execucao sem evento de conclusao');
-  return usage;
+  return assertEvents(analyzeEvents(jsonl, allowedTools));
 }
 
 function makeReceipt(details) {
@@ -57,4 +23,4 @@ function makeReceipt(details) {
   };
   return { ...payload, sha256: digest(payload) };
 }
-module.exports = { makeReceipt, usageFromEvents };
+module.exports = { makeReceipt, usageFromEvents, analyzeEvents, assertEvents };
