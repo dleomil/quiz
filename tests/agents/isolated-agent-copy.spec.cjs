@@ -231,6 +231,8 @@ try {
     /hash/,
   );
   fs.symlinkSync('/private/tmp', path.join(root, 'link'));
+  assert.throws(() => copy.state(root, 'link'), /symlink/);
+  assert.throws(() => copy.state(root, 'link/file.txt'), /symlink/);
   git('add', 'link');
   git(
     '-c',

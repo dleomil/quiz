@@ -191,6 +191,28 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:90,cached_
   fs.rmdirSync(path.join(home, 'quiz-run.lock'));
 
   const artifact = JSON.parse(fs.readFileSync(success.output));
+  const retained = fs.readFileSync(success.output);
+  const repeatedOutput = spawnSync(
+    process.execPath,
+    [
+      runner,
+      '--mode',
+      'evaluation',
+      '--work',
+      success.workFile,
+      '--output',
+      success.output,
+      '--auth-home',
+      home,
+      '--codex-bin',
+      fake('ok'),
+      '--test-comment',
+      comment,
+    ],
+    { cwd: root, encoding: 'utf8' },
+  );
+  assert.equal(repeatedOutput.status, 1);
+  assert.deepEqual(fs.readFileSync(success.output), retained);
   const appliedOutput = path.join(directory, 'applied.json');
   const application = spawnSync(
     process.execPath,

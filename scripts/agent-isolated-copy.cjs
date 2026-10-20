@@ -46,11 +46,12 @@ function allowedPaths(paths) {
     );
   return [...paths].sort();
 }
-function git(root, args) {
+function git(root, args, input) {
   return execFileSync('git', args, {
     cwd: root,
-    maxBuffer: MAX_BYTES,
-    stdio: ['ignore', 'pipe', 'pipe'],
+    input,
+    maxBuffer: MAX_BYTES + 1024 * 1024,
+    stdio: ['pipe', 'pipe', 'pipe'],
   });
 }
 function head(root) {
@@ -59,6 +60,7 @@ function head(root) {
 function sourceFiles(root, commit) {
   check(/^[a-f0-9]{40}$/.test(commit), 'commit invalido');
   const files = new Map();
+  const entries = [];
   let size = 0;
   for (const record of git(root, ['ls-tree', '-r', '-z', commit])
     .toString()
@@ -73,18 +75,48 @@ function sourceFiles(root, commit) {
       type === 'blob' && ['100644', '100755'].includes(mode),
       `tipo Git proibido na copia: ${name}`,
     );
-    const bytes = git(root, ['cat-file', 'blob', oid]);
+    entries.push({ name, mode, oid });
+  }
+  const blobs = entries.length
+    ? git(
+        root,
+        ['cat-file', '--batch'],
+        `${entries.map((entry) => entry.oid).join('\n')}\n`,
+      )
+    : Buffer.alloc(0);
+  let offset = 0;
+  for (const { name, mode, oid } of entries) {
+    const newline = blobs.indexOf(10, offset);
+    check(newline !== -1, 'resposta Git incompleta');
+    const header = blobs.subarray(offset, newline).toString().split(' ');
+    const length = Number(header[2]);
+    check(
+      header.length === 3 &&
+        header[0] === oid &&
+        header[1] === 'blob' &&
+        Number.isSafeInteger(length) &&
+        length >= 0,
+      'blob Git invalido',
+    );
+    offset = newline + 1;
+    check(
+      offset + length < blobs.length && blobs[offset + length] === 10,
+      'blob Git truncado',
+    );
+    const bytes = blobs.subarray(offset, offset + length);
+    offset += length + 1;
     size += bytes.length;
     check(size <= MAX_BYTES, 'copia excede limite de tamanho');
     files.set(name, { kind: 'file', sha256: sha256(bytes), mode, bytes });
   }
+  check(offset === blobs.length, 'dados Git extras');
   return files;
 }
 function state(root, name) {
   check(safePath(name), 'caminho inseguro');
   let current = root;
   const parts = name.split('/');
-  for (let index = 0; index < parts.length; index++) {
+  for (let index = 0; index < parts.length - 1; index++) {
     current = path.join(current, parts[index]);
     let stat;
     try {
@@ -94,32 +126,36 @@ function state(root, name) {
       throw error;
     }
     check(!stat.isSymbolicLink(), `symlink detectado: ${name}`);
-    if (index < parts.length - 1)
-      check(stat.isDirectory(), `ancestral irregular: ${name}`);
-    else {
-      check(
-        stat.isFile() && stat.nlink === 1,
-        `arquivo irregular ou hardlink: ${name}`,
-      );
-      check(stat.size <= MAX_BYTES, 'arquivo excede limite');
-      const fd = fs.openSync(
-        current,
-        fs.constants.O_RDONLY | fs.constants.O_NOFOLLOW,
-      );
-      try {
-        const bytes = fs.readFileSync(fd);
-        return {
-          kind: 'file',
-          sha256: sha256(bytes),
-          mode: stat.mode & 0o111 ? '100755' : '100644',
-          bytes,
-        };
-      } finally {
-        fs.closeSync(fd);
-      }
-    }
+    check(stat.isDirectory(), `ancestral irregular: ${name}`);
   }
-  throw new Error('estado invalido');
+  current = path.join(root, name);
+  let descriptor;
+  try {
+    descriptor = fs.openSync(
+      current,
+      fs.constants.O_RDONLY | fs.constants.O_NOFOLLOW,
+    );
+    const stat = fs.fstatSync(descriptor);
+    check(
+      stat.isFile() && stat.nlink === 1,
+      `arquivo irregular ou hardlink: ${name}`,
+    );
+    check(stat.size <= MAX_BYTES, 'arquivo excede limite');
+    const bytes = fs.readFileSync(descriptor);
+    return {
+      kind: 'file',
+      sha256: sha256(bytes),
+      mode: stat.mode & 0o111 ? '100755' : '100644',
+      bytes,
+    };
+  } catch (error) {
+    if (error.code === 'ENOENT') return null;
+    if (error.code === 'ELOOP')
+      throw new Error(`symlink detectado: ${name}`, { cause: error });
+    throw error;
+  } finally {
+    if (descriptor !== undefined) fs.closeSync(descriptor);
+  }
 }
 function projection(value) {
   if (!value) return null;

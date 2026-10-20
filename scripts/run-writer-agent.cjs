@@ -18,6 +18,21 @@ const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
 function check(value, message) {
   if (!value) throw new Error(message);
 }
+function writeExclusive(file, bytes) {
+  const descriptor = fs.openSync(
+    file,
+    fs.constants.O_CREAT |
+      fs.constants.O_EXCL |
+      fs.constants.O_WRONLY |
+      fs.constants.O_NOFOLLOW,
+    0o600,
+  );
+  try {
+    fs.writeFileSync(descriptor, bytes);
+  } finally {
+    fs.closeSync(descriptor);
+  }
+}
 function argumentsFrom(argv) {
   const args = {};
   const flags = [
@@ -242,10 +257,7 @@ async function run() {
         context.sha256,
       );
       fs.mkdirSync(path.dirname(output), { recursive: true });
-      fs.writeFileSync(output, `${JSON.stringify(applied, null, 2)}\n`, {
-        flag: 'wx',
-        mode: 0o600,
-      });
+      writeExclusive(output, `${JSON.stringify(applied, null, 2)}\n`);
       result = 'applied';
     } else {
       const home = auth.validateProfile(args['--auth-home']);
@@ -316,10 +328,7 @@ async function run() {
       auth.validateProfile(home);
       artifact = copies.collect(prepared, work, context.sha256, runId);
       fs.mkdirSync(path.dirname(output), { recursive: true });
-      fs.writeFileSync(output, `${JSON.stringify(artifact, null, 2)}\n`, {
-        flag: 'wx',
-        mode: 0o600,
-      });
+      writeExclusive(output, `${JSON.stringify(artifact, null, 2)}\n`);
       result = 'proposed';
     }
     process.stdout.write(`writer-agent: ${result}; ${output}\n`);
@@ -346,10 +355,7 @@ async function run() {
           usage: usage || null,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
-        fs.writeFileSync(receiptPath, `${JSON.stringify(value, null, 2)}\n`, {
-          flag: 'wx',
-          mode: 0o600,
-        });
+        writeExclusive(receiptPath, `${JSON.stringify(value, null, 2)}\n`);
       }
     } catch {
       process.stderr.write(

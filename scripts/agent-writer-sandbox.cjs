@@ -45,7 +45,26 @@ function probe(bin, workspace, scope, scratch, authHome, original) {
   const outside = path.join(probeHome, 'outside-canary');
   const outsideLink = path.join(scratch, 'outside-link');
   const writable = path.join(workspace, scope[0]);
-  const before = fs.existsSync(writable) ? fs.readFileSync(writable) : null;
+  let descriptor;
+  let created = false;
+  try {
+    descriptor = fs.openSync(
+      writable,
+      fs.constants.O_RDWR | fs.constants.O_NOFOLLOW,
+    );
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+    descriptor = fs.openSync(
+      writable,
+      fs.constants.O_RDWR |
+        fs.constants.O_CREAT |
+        fs.constants.O_EXCL |
+        fs.constants.O_NOFOLLOW,
+      0o600,
+    );
+    created = true;
+  }
+  const before = fs.readFileSync(descriptor);
   fs.writeFileSync(outside, 'fixture sem credenciais');
   fs.symlinkSync(outside, outsideLink);
   try {
@@ -140,9 +159,13 @@ function finish(){console.log(JSON.stringify(result));process.exitCode=failed?1:
       modelInvocations: 0,
     };
   } finally {
-    if (before === null) {
-      if (fs.existsSync(writable)) fs.unlinkSync(writable);
-    } else fs.writeFileSync(writable, before);
+    try {
+      fs.ftruncateSync(descriptor, 0);
+      fs.writeSync(descriptor, before, 0, before.length, 0);
+    } finally {
+      fs.closeSync(descriptor);
+    }
+    if (created) fs.unlinkSync(writable);
     fs.unlinkSync(outsideLink);
     fs.rmSync(probeHome, { recursive: true, force: true });
   }
