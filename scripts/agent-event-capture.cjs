@@ -30,7 +30,7 @@ function writeBytes(file, bytes) {
     fs.closeSync(fd);
   }
 }
-function createCapture(output, allowedTools = []) {
+function createCapture(output, allowedTools = [], context = {}) {
   const parent = fs.realpathSync(path.dirname(output));
   const repository = fs.realpathSync(ROOT);
   if (parent === repository || parent.startsWith(repository + path.sep))
@@ -120,6 +120,7 @@ function createCapture(output, allowedTools = []) {
     const diagnosis = analyzeEvents(
       readBytes(path.join(directory, 'stdout.jsonl')).toString('utf8'),
       allowedTools,
+      context,
     );
     const payload = {
       schemaVersion: 'agent-event-capture-v1',

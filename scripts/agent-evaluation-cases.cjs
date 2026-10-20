@@ -65,6 +65,12 @@ function inputFor(slot, configuration) {
     requestedPass: pass || 'curation',
     sourceStatus: 'authorized',
   };
+  if (configuration.benchmark) {
+    const curriculum = configuration.benchmark.curriculum[input.subjectId];
+    input.authorizedObjective = curriculum.objective;
+    input.authorizedSkill = curriculum.skill;
+    input.sourceRef = curriculum.sourceRef;
+  }
   if (proposal) input.proposal = proposal;
   return { scenarioId: slot.id, inputState: 'complete', input };
 }
@@ -104,7 +110,11 @@ function workFor(slot, configuration, root, repair) {
     schemaVersion: 'agent-work-v1',
     id: slot.id,
     objective:
-      document?.input.authorizedObjective ||
+      (configuration.benchmark && document
+        ? slot.category === 'editorial'
+          ? 'Revisar somente a passagem solicitada da proposta sintética fornecida, confrontando-a com o objetivo curricular e os fatos autorizados; sem publicação.'
+          : `Criar somente a pergunta sintética EVAL-CUR-${slot.repetition} de present continuous conforme o objetivo curricular e os fatos autorizados; sem publicação.`
+        : document?.input.authorizedObjective) ||
       `Avaliacao sintetica delimitada de ${slot.category}.`,
     baseCommit: configuration.commit,
     role: slot.role,
@@ -139,6 +149,14 @@ function workFor(slot, configuration, root, repair) {
     rollback:
       'Descartar a proposta sintetica. Nenhum resultado e aplicado ao projeto.',
   };
+  if (configuration.benchmark && document) {
+    const curriculum =
+      configuration.benchmark.curriculum[document.input.subjectId];
+    work.requirements.push(
+      `Objetivo de aprendizagem autorizado: ${curriculum.objective}`,
+      `Fonte sintética autorizada ${curriculum.sourceRef.referenceId}, vinculada ao escopo ${configuration.benchmark.manifestPath}, tema ${curriculum.topic}: ${curriculum.facts.join(' ')}`,
+    );
+  }
   if (repair)
     work.requirements.push(
       `Correcao unica da tentativa ${slot.repairOf}. Diagnostico independente: ${JSON.stringify(repair.grade)}. Proposta anterior: ${JSON.stringify(repair.output)}.`,

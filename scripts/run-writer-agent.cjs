@@ -233,6 +233,13 @@ async function run(cliArguments = process.argv.slice(2)) {
         ? {
             slotId: evaluation.slot.id,
             ticketSha256: evaluation.sha256,
+            ...(evaluation.benchmarkVersion
+              ? {
+                  benchmarkVersion: evaluation.benchmarkVersion,
+                  benchmarkSha256: evaluation.benchmarkSha256,
+                  benchmarkRevisionSha256: evaluation.benchmarkRevisionSha256,
+                }
+              : {}),
             repairOf: evaluation.slot.repairOf || null,
           }
         : null,
@@ -325,7 +332,10 @@ async function run(cliArguments = process.argv.slice(2)) {
       ].join('\n\n');
       result = 'execution-failed';
       if (evaluation)
-        capture = createCapture(output, ['command_execution', 'file_change']);
+        capture = createCapture(output, ['command_execution', 'file_change'], {
+          authHome: home,
+          preflight: checks.authentication,
+        });
       invocations = 1;
       const events = await execute(bin, argv, {
         cwd: prepared.directory,
@@ -339,10 +349,11 @@ async function run(cliArguments = process.argv.slice(2)) {
         artifact = saveCandidate();
         saveCandidate = null;
       }
-      const eventDiagnosis = analyzeEvents(events, [
-        'command_execution',
-        'file_change',
-      ]);
+      const eventDiagnosis = analyzeEvents(
+        events,
+        ['command_execution', 'file_change'],
+        { authHome: home, preflight: checks.authentication },
+      );
       usage = eventDiagnosis.usage;
       assertEvents(eventDiagnosis);
       auth.validateProfile(home);

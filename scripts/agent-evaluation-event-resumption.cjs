@@ -48,6 +48,10 @@ function resumeEvents(home, expectedState, root = e.ROOT, kind = 'events') {
     runLock = lock;
     const current = e.openCampaign(home, root, true);
     e.check(
+      !current.benchmarkRevision,
+      'retomada legada desabilitada apos benchmark v2',
+    );
+    e.check(
       current.resumption && expectedState === e.stateFingerprint(current),
       'estado da retomada de eventos mudou',
     );

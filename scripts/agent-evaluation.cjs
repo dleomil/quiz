@@ -22,6 +22,9 @@ const VARIANTS = {
 };
 const CRITICAL_PATHS = [
   PLAN_PATH,
+  'config/agent-evaluation-benchmark-v2.json',
+  'scripts/agent-evaluation-benchmark.cjs',
+  'scripts/agent-evaluation-inspection.cjs',
   'scripts/agent-evaluation.cjs',
   'scripts/agent-evaluation-cases.cjs',
   'scripts/agent-evaluation-grading.cjs',
@@ -264,6 +267,18 @@ function loadPlan(root = ROOT, sourceCommit, snapshotKeys) {
 }
 function schedule(configuration) {
   const { plan, cases } = configuration;
+  if (configuration.benchmark) {
+    const legacy = schedule({ plan, cases });
+    const slots = legacy
+      .filter((slot) => slot.category !== 'verification')
+      .map((slot) => ({
+        ...slot,
+        id: `v2-${slot.id}`,
+        benchmarkVersion: 'v2',
+      }));
+    check(slots.length === 28, 'agenda v2 invalida');
+    return slots;
+  }
   const slots = [];
   for (const [index, item] of cases.entries()) {
     const variants =
@@ -385,15 +400,19 @@ function openCampaign(home, root = ROOT, readOnly = false) {
         resumption.sourceCommit === campaign.sourceCommit,
       'retomada fora da campanha',
     );
-  const configuration = readOnly
-    ? resumption
-      ? loadPlan(
-          root,
-          resumption.targetCommit,
-          Object.keys(resumption.targetSnapshot),
-        )
-      : initialConfiguration
-    : loadPlan(root);
+  const benchmarkRecord = readOptional(
+    path.join(directory, 'benchmark-v2-revision.json'),
+  );
+  const configuration =
+    readOnly || benchmarkRecord
+      ? resumption
+        ? loadPlan(
+            root,
+            resumption.targetCommit,
+            Object.keys(resumption.targetSnapshot),
+          )
+        : initialConfiguration
+      : loadPlan(root);
   check(
     configuration.commit ===
       (resumption?.targetCommit || campaign.sourceCommit) &&
@@ -454,7 +473,7 @@ function openCampaign(home, root = ROOT, readOnly = false) {
       attempts.some((item) => `${item.slot.id}.json` === name),
       'resultado sem reserva; contador inconsistente',
     );
-  return {
+  const current = {
     directory,
     campaign,
     configuration,
@@ -463,6 +482,14 @@ function openCampaign(home, root = ROOT, readOnly = false) {
     firstResumption,
     attempts,
   };
+  return benchmarkRecord
+    ? require('./agent-evaluation-benchmark.cjs').activate(
+        current,
+        benchmarkRecord,
+        root,
+        readOnly,
+      )
+    : current;
 }
 function stateFingerprint(current) {
   const entries = {};
@@ -649,8 +676,11 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
   fs.mkdirSync(lock, { mode: 0o700 });
   try {
     const current = openCampaign(home, root);
+    if (current.benchmarkRevision)
+      require('./agent-evaluation-benchmark.cjs').beforeReserve(current, id);
     check(
-      !current.resumption ||
+      current.benchmarkRevision ||
+        !current.resumption ||
         current.attempts.some(
           (item) => item.slot.id === current.resumption.replacementSlot,
         ) ||
@@ -658,6 +688,13 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
       'a reposicao tecnica deve ser a primeira tentativa da retomada',
     );
     for (const attempt of current.attempts) {
+      if (
+        current.benchmarkRevision &&
+        current.benchmarkRevision.legacyBindings.some(
+          (row) => row.id === attempt.slot.id,
+        )
+      )
+        continue;
       const result = readOptional(
         path.join(current.directory, 'results', `${attempt.slot.id}.json`),
       );
@@ -728,6 +765,13 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
       token: crypto.randomUUID(),
       workSha256,
       inputSha256,
+      ...(current.benchmarkRevision
+        ? {
+            benchmarkVersion: 'v2',
+            benchmarkSha256: current.benchmarkRevision.benchmarkSha256,
+            benchmarkRevisionSha256: current.benchmarkRevision.sha256,
+          }
+        : {}),
       ...(current.resumption
         ? { resumptionSha256: current.resumption.sha256 }
         : {}),
@@ -759,11 +803,20 @@ function claim(file, home, work, inputSha256, testOnly, root = ROOT) {
       ticket.slot.role === work.role,
     'ticket diverge da entrada, perfil ou fonte',
   );
-  const expected = ticket.slot.replacementOf
-    ? replacementSlot(current)
-    : ticket.slot.repairOf
-      ? repairSlot(current, ticket.slot.id, ticket.slot.repairOf)
-      : current.campaign.schedule.find((item) => item.id === ticket.slot.id);
+  check(
+    (ticket.benchmarkRevisionSha256 || null) ===
+      (current.benchmarkRevision?.sha256 || null) &&
+      (ticket.benchmarkSha256 || null) ===
+        (current.benchmarkRevision?.benchmarkSha256 || null),
+    'ticket de outra revisao do benchmark',
+  );
+  const expected = current.benchmarkRevision
+    ? schedule(current.configuration).find((slot) => slot.id === ticket.slot.id)
+    : ticket.slot.replacementOf
+      ? replacementSlot(current)
+      : ticket.slot.repairOf
+        ? repairSlot(current, ticket.slot.id, ticket.slot.repairOf)
+        : current.campaign.schedule.find((item) => item.id === ticket.slot.id);
   check(
     expected && digest(expected) === digest(ticket.slot),
     'perfil fora da agenda aprovada',
@@ -808,6 +861,13 @@ function finish(home, ticket, result, root = ROOT) {
   );
   const value = sealed({
     schemaVersion: 'agent-evaluation-result-v1',
+    ...(ticket.benchmarkVersion
+      ? {
+          benchmarkVersion: ticket.benchmarkVersion,
+          benchmarkSha256: ticket.benchmarkSha256,
+          benchmarkRevisionSha256: ticket.benchmarkRevisionSha256,
+        }
+      : {}),
     ticketSha256: ticket.sha256,
     slot: ticket.slot,
     testOnly: ticket.testOnly,
@@ -851,6 +911,11 @@ function repairSlot(current, id, parentId) {
   return { ...parent.slot, id, repairOf: parentId };
 }
 function resolveSlot(current, id) {
+  if (current.benchmarkRevision) {
+    const slot = schedule(current.configuration).find((row) => row.id === id);
+    check(slot, 'slot fora das 28 tentativas aprovadas do benchmark v2');
+    return slot;
+  }
   if (id === current.resumption?.replacementSlot)
     return replacementSlot(current);
   check(

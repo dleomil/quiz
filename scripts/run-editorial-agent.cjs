@@ -218,6 +218,13 @@ async function run(cliArguments = process.argv.slice(2)) {
       receipt.evaluation = {
         slotId: evaluation.slot.id,
         ticketSha256: evaluation.sha256,
+        ...(evaluation.benchmarkVersion
+          ? {
+              benchmarkVersion: evaluation.benchmarkVersion,
+              benchmarkSha256: evaluation.benchmarkSha256,
+              benchmarkRevisionSha256: evaluation.benchmarkRevisionSha256,
+            }
+          : {}),
         repairOf: evaluation.slot.repairOf || null,
         replacementOf: evaluation.slot.replacementOf || null,
       };
@@ -334,7 +341,13 @@ async function run(cliArguments = process.argv.slice(2)) {
       checks,
     });
     resultState = 'execution-failed';
-    if (evaluation) capture = createCapture(path.resolve(args['--output']));
+    const parserContext = { authHome, preflight: checks };
+    if (evaluation)
+      capture = createCapture(
+        path.resolve(args['--output']),
+        [],
+        parserContext,
+      );
     modelInvocations = 1;
     const events = await execute(bin, argv, {
       cwd: workspace,
@@ -344,7 +357,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       capture,
     });
     resultState = 'output-rejected';
-    const eventDiagnosis = analyzeEvents(events);
+    const eventDiagnosis = analyzeEvents(events, [], parserContext);
     usage = eventDiagnosis.usage;
     assertEvents(eventDiagnosis);
     validateProfile(authHome);

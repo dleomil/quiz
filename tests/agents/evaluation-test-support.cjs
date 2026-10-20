@@ -29,6 +29,11 @@ function fakeCli(directory, root, mode = 'ok') {
       path.join(root, 'tests/fixtures/agent-evaluation/editorial-cases.json'),
     ),
   ).cases;
+  const v2Cases = JSON.parse(
+    fs.readFileSync(
+      path.join(root, 'config/agent-evaluation-benchmark-v2.json'),
+    ),
+  ).cases;
   const program = `#!/usr/bin/env node
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
 const args=process.argv.slice(2), mode=${JSON.stringify(mode)};
@@ -52,6 +57,10 @@ if(args.includes('--output-schema'))strictSchema(JSON.parse(fs.readFileSync(args
 const prompt=fs.readFileSync(0,'utf8');
 fs.appendFileSync(${JSON.stringify(record)},JSON.stringify({model:args[args.indexOf('--model')+1],cwd:process.cwd(),args,apiKey:process.env.OPENAI_API_KEY||null,hasOracle:fs.existsSync('config/agent-evaluation-plan.json')||fs.existsSync('scripts/agent-evaluation-grading.cjs')})+'\\n');
 console.log(JSON.stringify({type:'thread.started',thread_id:'fixture-thread'}));
+if(mode==='startup-warnings'){
+ const {startupMessages}=require(${JSON.stringify(path.join(root, 'scripts/agent-cli-events.cjs'))});
+ for(const [index,message] of startupMessages(process.env.CODEX_HOME).entries())console.log(JSON.stringify({type:'item.completed',item:{id:'warn_'+index,type:'error',message}}));
+}
 console.log(JSON.stringify({type:'turn.started'}));
 console.log(JSON.stringify({type:'item.updated',item:{id:'plan_0',type:'todo_list',items:[{text:'Conferir fonte.',completed:true}]}}));
 if(mode==='unknown-event')console.log(JSON.stringify({type:'item.completed',item:{id:'future_0',type:'future_metadata'}}));
@@ -65,7 +74,7 @@ if(start>=0){
   const match=prompt.match(/EVAL-CUR-(\\d)/);const second=match&&match[1]==='2';const answer=second?'are':'is';
   output.proposal={schemaVersion:'content-v1',id:'EVAL-CUR-'+(second?'2':'1'),contentSetId:input.contentSetId,subject:input.subjectId,topic:input.topicId,skill:input.authorizedSkill,version:input.questionVersion,sourceRef:input.sourceRef,reviewStatus:'draft',question:second?'Complete: They ___ playing in the park.':'Complete: She ___ reading a book.',questionPt:second?'Complete: Eles ___ brincando no parque.':'Complete: Ela ___ lendo um livro.',options:second?['are','is','am','be']:['is','are','am','be'],correctIndex:0,explanation:second?'Com they, usamos are para uma acao em andamento.':'Com she, usamos is para uma acao em andamento.',wrongExplanations:{'1':'Essa forma nao acompanha o sujeito desta frase.','2':'Am acompanha I, nao o sujeito desta frase.','3':'Be nao e a forma conjugada pedida nesta frase.'}};
  }else{
-  const expected=${JSON.stringify(cases)}.find(item=>item.proposal.id===input.proposal.id);
+  const expected=(input.workItemId.startsWith('v2-')?${JSON.stringify(v2Cases)}:${JSON.stringify(cases)}).find(item=>item.proposal.id===input.proposal.id);
   if(expected.kind==='invalid' && mode!=='missed'){
    output.decision='blocked';output.findings=[{questionId:input.proposal.id,criterion:expected.expectedCriterion,severity:'blocking',evidence:JSON.stringify(input.proposal),recommendation:'Corrigir o defeito sintetico identificado.'}];
   }

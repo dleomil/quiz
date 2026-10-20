@@ -6,6 +6,7 @@ const { spawn } = require('node:child_process');
 const {
   analyzeEvents,
   assertEvents,
+  startupMessages,
 } = require('../../scripts/agent-cli-events.cjs');
 const {
   createCapture,
@@ -105,6 +106,109 @@ assert.equal(
   ).reasonCode,
   'invalid_usage',
 );
+const warningHome = '/private/tmp/quiz-profile';
+const warningProof = {
+  cliVersion: '0.160.0',
+  auth: 'chatgpt-keyring',
+  skills: 'disabled-and-context-checked',
+  features: Object.fromEntries([
+    ...require('../../scripts/agent-auth.cjs').DISABLED_FEATURES.map((name) => [
+      name,
+      false,
+    ]),
+    ['skip_host_skill_discovery', true],
+  ]),
+};
+const warningContext = { authHome: warningHome, preflight: warningProof };
+const startup = startupMessages(warningHome).map((message, index) => ({
+  type: 'item.completed',
+  item: { id: `warning_${index}`, type: 'error', message },
+}));
+const warningEvents = [lifecycle[0], ...startup, ...lifecycle.slice(1)];
+const warningSummary = analyzeEvents(jsonl(warningEvents), [], warningContext);
+assert.equal(warningSummary.accepted, true);
+assert.equal(warningSummary.warnings.length, 2);
+assert.ok(!JSON.stringify(warningSummary).includes(warningHome));
+assert.equal(analyzeEvents(jsonl(warningEvents)).accepted, false);
+for (const proof of [
+  { ...warningProof, cliVersion: '0.160.1' },
+  {
+    ...warningProof,
+    features: { ...warningProof.features, code_mode_host: true },
+  },
+  {
+    ...warningProof,
+    features: { ...warningProof.features, skip_host_skill_discovery: false },
+  },
+  {
+    ...warningProof,
+    features: { ...warningProof.features, web_search: true, plugins: true },
+  },
+])
+  assert.equal(
+    analyzeEvents(jsonl(warningEvents), [], {
+      ...warningContext,
+      preflight: proof,
+    }).accepted,
+    false,
+  );
+assert.equal(
+  analyzeEvents(jsonl(warningEvents), [], {
+    ...warningContext,
+    authHome: '/private/tmp/outro',
+  }).accepted,
+  false,
+);
+for (const warning of startup) {
+  assert.equal(
+    analyzeEvents(
+      jsonl([
+        lifecycle[0],
+        {
+          ...warning,
+          item: { ...warning.item, message: warning.item.message + '!' },
+        },
+        ...lifecycle.slice(1),
+      ]),
+      [],
+      warningContext,
+    ).accepted,
+    false,
+  );
+  assert.equal(
+    analyzeEvents(
+      jsonl([...lifecycle.slice(0, 2), warning, ...lifecycle.slice(2)]),
+      [],
+      warningContext,
+    ).accepted,
+    false,
+  );
+  assert.equal(
+    analyzeEvents(jsonl([warning, ...lifecycle]), [], warningContext).accepted,
+    false,
+  );
+  assert.equal(
+    analyzeEvents(
+      jsonl([lifecycle[0], warning, warning, ...lifecycle.slice(1)]),
+      [],
+      warningContext,
+    ).accepted,
+    false,
+  );
+}
+for (const event of [
+  { type: 'error', message: startup[0].item.message },
+  { type: 'turn.failed' },
+  { type: 'item.completed', item: { id: 'tool', type: 'web_search' } },
+])
+  assert.equal(
+    analyzeEvents(
+      jsonl([...warningEvents.slice(0, -1), event, warningEvents.at(-1)]),
+      [],
+      warningContext,
+    ).accepted,
+    false,
+  );
 async function main() {
   const directory = fs.mkdtempSync(
     path.join(os.tmpdir(), 'quiz-capture-test-'),

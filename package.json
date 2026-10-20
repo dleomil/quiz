@@ -87,7 +87,7 @@
     "context:build": "node scripts/agent-context.cjs",
     "test:writer-runner": "node tests/agents/isolated-agent-copy.spec.cjs && node tests/agents/writer-agent-runner.spec.cjs",
     "test:writer-sandbox": "node tests/agents/writer-sandbox.spec.cjs",
-    "test:agent-evaluation": "node tests/agents/agent-event-capture.spec.cjs && node tests/agents/agent-output-transport.spec.cjs && node tests/agents/agent-evaluation.spec.cjs && node tests/agents/model-evaluation-runner.spec.cjs && node tests/agents/agent-resumption.spec.cjs && node tests/agents/agent-events-resumption.spec.cjs",
+    "test:agent-evaluation": "node tests/agents/agent-event-capture.spec.cjs && node tests/agents/agent-output-transport.spec.cjs && node tests/agents/agent-evaluation.spec.cjs && node tests/agents/model-evaluation-runner.spec.cjs && node tests/agents/agent-resumption.spec.cjs && node tests/agents/agent-events-resumption.spec.cjs && node tests/agents/agent-benchmark-v2.spec.cjs",
     "test:agent-evaluation-sandbox": "node tests/agents/model-evaluation-sandbox.spec.cjs",
     "evaluation": "node scripts/run-model-evaluation.cjs"
   },

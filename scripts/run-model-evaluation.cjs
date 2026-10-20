@@ -43,8 +43,11 @@ function parse(argv) {
       'resume-events',
       'resume-parser',
       'analyze',
+      'inspect-capture',
+      'benchmark-check',
+      'revise-benchmark',
     ].includes(command),
-    'use init, list, ready, run, report, resume, resume-events, resume-parser ou analyze',
+    'use init, list, ready, run, report, resume, resume-events, resume-parser, analyze, inspect-capture, benchmark-check ou revise-benchmark',
   );
   const args = {};
   for (let index = 1; index < argv.length; index += 2) {
@@ -57,6 +60,7 @@ function parse(argv) {
         '--test-comment',
         '--output',
         '--expected-state',
+        '--approval-file',
       ].includes(name) &&
         !args[name] &&
         argv[index + 1] &&
@@ -71,17 +75,24 @@ function parse(argv) {
     'aceite ficticio exige binario de teste',
   );
   evaluation.check(
-    ['run', 'analyze'].includes(command) === Boolean(args['--slot']),
+    ['run', 'analyze', 'inspect-capture'].includes(command) ===
+      Boolean(args['--slot']),
     'informe --slot somente ao executar uma tentativa',
   );
   evaluation.check(
-    !args['--output'] || command === 'report',
-    'saida explicita permitida somente para relatorio',
+    !args['--output'] ||
+      ['report', 'benchmark-check', 'inspect-capture'].includes(command),
+    'saida explicita permitida somente para relatorio, diagnostico ou pacote',
   );
   evaluation.check(
-    ['resume', 'resume-events', 'resume-parser'].includes(command) ===
-      Boolean(args['--expected-state']),
+    ['resume', 'resume-events', 'resume-parser', 'revise-benchmark'].includes(
+      command,
+    ) === Boolean(args['--expected-state']),
     'retomada exige --expected-state; proibido nos outros comandos',
+  );
+  evaluation.check(
+    (command === 'revise-benchmark') === Boolean(args['--approval-file']),
+    'revisao exige --approval-file; proibido nos outros comandos',
   );
   return { command, args };
 }
@@ -200,7 +211,8 @@ async function verification(ticketFile, work, output, args, configuration) {
       schemaSha256: digest(schema),
       checks,
     });
-    capture = captures.createCapture(output);
+    const parserContext = { authHome: home, preflight: checks };
+    capture = captures.createCapture(output, [], parserContext);
     modelInvocations = 1;
     state = 'execution-failed';
     const events = await execute(bin, argv, {
@@ -210,7 +222,7 @@ async function verification(ticketFile, work, output, args, configuration) {
       timeoutMs: 300000 - (Date.now() - started),
       capture,
     });
-    const eventDiagnosis = analyzeEvents(events);
+    const eventDiagnosis = analyzeEvents(events, [], parserContext);
     usage = eventDiagnosis.usage;
     assertEvents(eventDiagnosis);
     state = 'output-rejected';
@@ -479,6 +491,13 @@ function report(current) {
     if (!stored)
       return {
         slot: attempt.slot,
+        ...(attempt.benchmarkVersion
+          ? {
+              benchmarkVersion: attempt.benchmarkVersion,
+              benchmarkSha256: attempt.benchmarkSha256,
+              benchmarkRevisionSha256: attempt.benchmarkRevisionSha256,
+            }
+          : {}),
         passed: false,
         pending: true,
         modelInvocations: null,
@@ -492,6 +511,13 @@ function report(current) {
         result.passed === result.grade?.passed,
       'resultado diverge da tentativa',
     );
+    if (attempt.benchmarkVersion)
+      evaluation.check(
+        result.benchmarkVersion === attempt.benchmarkVersion &&
+          result.benchmarkSha256 === attempt.benchmarkSha256 &&
+          result.benchmarkRevisionSha256 === attempt.benchmarkRevisionSha256,
+        'resultado de outra revisao do benchmark',
+      );
     if (result.receiptSha256) {
       const receipt = evaluation.verifySeal(
         evaluation.read(
@@ -532,6 +558,17 @@ function report(current) {
     const receipt = result.receiptSha256
       ? evaluation.read(`${output}.receipt.json`)
       : null;
+    if (attempt.benchmarkVersion)
+      evaluation.check(
+        receipt &&
+          receipt.requestedModel === attempt.slot.model &&
+          receipt.reasoningEffort === attempt.slot.effort &&
+          receipt.evaluation?.benchmarkVersion === attempt.benchmarkVersion &&
+          receipt.evaluation?.benchmarkSha256 === attempt.benchmarkSha256 &&
+          receipt.evaluation?.benchmarkRevisionSha256 ===
+            attempt.benchmarkRevisionSha256,
+        'recibo de outra revisao do benchmark',
+      );
     const captureState = receipt?.captureSha256
       ? captures.verifyCapture(output, receipt.captureSha256).manifest
       : null;
@@ -582,6 +619,17 @@ function report(current) {
         }
       : { ...result, failureClass, technicalFailure };
   });
+  const allResults = [...results];
+  const legacyDiagnostics = current.benchmarkRevision
+    ? results.filter((row) => row.benchmarkVersion !== 'v2')
+    : [];
+  if (current.benchmarkRevision) {
+    for (let index = results.length - 1; index >= 0; index--)
+      if (results[index].benchmarkVersion !== 'v2') results.splice(index, 1);
+  }
+  const activeSchedule = current.benchmarkRevision
+    ? evaluation.schedule(current.configuration)
+    : current.campaign.schedule;
   const effective = (slot) =>
     results.find(
       (item) =>
@@ -590,7 +638,7 @@ function report(current) {
     ) ||
     results.find((item) => item.slot.replacementOf === slot.id) ||
     results.find((item) => item.slot.id === slot.id);
-  const completed = current.campaign.schedule.every((slot) => {
+  const completed = activeSchedule.every((slot) => {
     const item = effective(slot);
     return (
       item &&
@@ -599,7 +647,7 @@ function report(current) {
     );
   });
   const eligible = (variant, category) => {
-    const expected = current.campaign.schedule.filter(
+    const expected = activeSchedule.filter(
       (slot) => slot.variant === variant && slot.category === category,
     );
     return (
@@ -625,7 +673,7 @@ function report(current) {
     editorial: eligible('editorial-candidate', 'editorial'),
     verification: eligible('verifier-candidate', 'verification'),
   };
-  const usageRecords = results.filter((item) => item.usage);
+  const usageRecords = allResults.filter((item) => item.usage);
   const profileMetrics = {};
   for (const item of results) {
     const key = `${item.slot.category}/${item.slot.variant}`;
@@ -682,7 +730,18 @@ function report(current) {
         : (values[middle - 1] + values[middle]) / 2;
   }
   return evaluation.sealed({
-    schemaVersion: 'agent-model-evaluation-report-v1',
+    schemaVersion: current.benchmarkRevision
+      ? 'agent-model-evaluation-report-v2'
+      : 'agent-model-evaluation-report-v1',
+    ...(current.benchmarkRevision
+      ? {
+          benchmarkRevision: current.benchmarkRevision,
+          legacyDiagnostics,
+          verificationDeferred: true,
+          approvedNewAttempts: 28,
+          reserveAuthorized: false,
+        }
+      : {}),
     id: current.campaign.id,
     sourceCommit: current.campaign.sourceCommit,
     activeSourceCommit: current.configuration.commit,
@@ -694,11 +753,11 @@ function report(current) {
     completed,
     attemptsUsed: current.attempts.length,
     maximumAttempts: 32,
-    modelInvocationsKnown: results.reduce(
+    modelInvocationsKnown: allResults.reduce(
       (sum, item) => sum + (item.modelInvocations || 0),
       0,
     ),
-    invocationsUnreported: results.filter(
+    invocationsUnreported: allResults.filter(
       (item) => item.modelInvocations === null,
     ).length,
     usageRecords: usageRecords.length,
@@ -728,6 +787,21 @@ function report(current) {
 async function run(argv = process.argv.slice(2)) {
   const { command, args } = parse(argv);
   const home = auth.validateProfile(args['--auth-home']);
+  if (command === 'benchmark-check' || command === 'revise-benchmark') {
+    const benchmark = require('./agent-evaluation-benchmark.cjs');
+    const value =
+      command === 'benchmark-check'
+        ? benchmark.checkBenchmark(home)
+        : benchmark.revise(
+            home,
+            args['--expected-state'],
+            args['--approval-file'],
+          );
+    if (args['--output'])
+      evaluation.write(path.resolve(args['--output']), value);
+    process.stdout.write(`${JSON.stringify(value, null, 2)}\n`);
+    return;
+  }
   if (command === 'init') {
     process.stdout.write(
       `${JSON.stringify(evaluation.initialize(home, ROOT, Boolean(args['--codex-bin'])), null, 2)}\n`,
@@ -749,9 +823,22 @@ async function run(argv = process.argv.slice(2)) {
   const current = evaluation.openCampaign(
     home,
     ROOT,
-    ['list', 'report'].includes(command),
+    ['list', 'report', 'inspect-capture'].includes(command),
   );
-  if (command === 'analyze') {
+  if (command === 'inspect-capture') {
+    const value = require('./agent-evaluation-inspection.cjs').inspect(
+      current,
+      args['--slot'],
+      home,
+    );
+    if (args['--output'])
+      evaluation.write(path.resolve(args['--output']), value);
+    process.stdout.write(`${JSON.stringify(value, null, 2)}\n`);
+  } else if (command === 'analyze') {
+    evaluation.check(
+      !current.benchmarkRevision,
+      'analise legada nao concede elegibilidade ao benchmark v2',
+    );
     evaluation.check(
       current.campaign.testOnly === Boolean(args['--codex-bin']),
       'campanha real e fixture nao podem ser misturadas',
@@ -801,7 +888,9 @@ async function run(argv = process.argv.slice(2)) {
         return approvals.get(id);
       };
       const checkedContexts = new Set();
-      for (const slot of current.campaign.schedule) {
+      for (const slot of current.benchmarkRevision
+        ? evaluation.schedule(current.configuration)
+        : current.campaign.schedule) {
         const input = workFor(slot, current.configuration, ROOT);
         schemaFor(slot, current.configuration, input.document);
         if (input.document) {
@@ -820,9 +909,10 @@ async function run(argv = process.argv.slice(2)) {
       const proofs = Object.fromEntries(
         [
           ...new Set(
-            Object.values(current.configuration.plan.variants).map(
-              (item) => item.model,
-            ),
+            (current.benchmarkRevision
+              ? evaluation.schedule(current.configuration)
+              : Object.values(current.configuration.plan.variants)
+            ).map((item) => item.model),
           ),
         ].map((model) => [
           model,
