@@ -15,12 +15,12 @@
     },
     {
       "id": "agent-capability-model",
-      "version": "1.2.0",
+      "version": "2.0.0",
       "status": "active",
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-capability-model.md",
-      "sha256": "8e2282234a49bfd56e8a02848834a77ab643b32326b67d7e5f7c264a70a5fa65",
+      "sha256": "ea9770de6a411c07461d5700ebec15f7b8788bb92f77b11e326d6d4dfdfc3d8f",
       "appliesTo": ["agent-configuration", "agent-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": ["agent capability validation", "distinct actor record"]

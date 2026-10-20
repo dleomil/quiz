@@ -1,6 +1,6 @@
 const { digest } = require('./document-catalog.cjs');
 
-function usageFromEvents(jsonl) {
+function usageFromEvents(jsonl, allowedTools = []) {
   let usage = null;
   let completed = false;
   let unexpectedTool = false;
@@ -13,7 +13,9 @@ function usageFromEvents(jsonl) {
     }
     if (
       event.item &&
-      !['agent_message', 'reasoning', 'plan'].includes(event.item.type)
+      !['agent_message', 'reasoning', 'plan', ...allowedTools].includes(
+        event.item.type,
+      )
     )
       unexpectedTool = true;
     if (event.type === 'turn.completed') {

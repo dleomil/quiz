@@ -38,6 +38,13 @@ assert.equal(
   5,
 );
 assert.equal(model.separationRules.length, 4);
+assert.deepEqual(
+  model.roles
+    .filter((role) => role.status === 'candidate')
+    .map((role) => role.id)
+    .sort(),
+  ['implementer', 'spec'],
+);
 assert.deepEqual(Object.keys(deriveAgentContracts(model)).sort(), [
   'content-curator.toml',
   'pedagogical-quality.toml',
@@ -112,6 +119,16 @@ executableWithWriteCapability.roles.find(
   (role) => role.status === 'executable',
 ).capabilities = ['implementation-author'];
 expectError(executableWithWriteCapability, 'capability read-only');
+
+const unsafeCandidate = clone(model);
+unsafeCandidate.roles.find(
+  (role) => role.id === 'implementer',
+).adapter.activation = 'active';
+expectError(unsafeCandidate, 'avaliacao explicita');
+const costlyFallback = clone(model);
+costlyFallback.roles.find((role) => role.id === 'implementer').adapter.model =
+  'gpt-6.1-sol';
+expectError(costlyFallback, 'modelo candidato diverge');
 
 const documentedWithAdapter = clone(model);
 documentedWithAdapter.roles.find(

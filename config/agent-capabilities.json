@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "agent-capabilities-v1",
+  "schemaVersion": "agent-capabilities-v2",
   "capabilities": [
     {
       "id": "architecture-review",
@@ -86,12 +86,23 @@
     },
     {
       "id": "implementer",
-      "status": "documented",
+      "status": "candidate",
       "capabilities": ["implementation-author"],
       "contractPaths": [
         "docs/agents/agent-operating-model.md",
-        "docs/agents/agent-preflight-application.md"
-      ]
+        "docs/agents/agent-preflight-application.md",
+        "docs/specs/isolated-agent-executor.md"
+      ],
+      "adapter": {
+        "configPath": "config/agents/implementer.json",
+        "agentName": "implementer",
+        "model": "gpt-6-luna",
+        "reasoningEffort": "medium",
+        "sandboxMode": "isolated-copy",
+        "mcpPolicy": "none",
+        "runner": "isolated-writer",
+        "activation": "evaluation-only"
+      }
     },
     {
       "id": "pedagogical-quality",
@@ -158,12 +169,23 @@
     },
     {
       "id": "spec",
-      "status": "documented",
+      "status": "candidate",
       "capabilities": ["specification-author"],
       "contractPaths": [
         "docs/agents/agent-operating-model.md",
-        "docs/agents/agent-preflight-application.md"
-      ]
+        "docs/agents/agent-preflight-application.md",
+        "docs/specs/isolated-agent-executor.md"
+      ],
+      "adapter": {
+        "configPath": "config/agents/spec.json",
+        "agentName": "spec",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "high",
+        "sandboxMode": "isolated-copy",
+        "mcpPolicy": "none",
+        "runner": "isolated-writer",
+        "activation": "evaluation-only"
+      }
     },
     {
       "id": "verifier",

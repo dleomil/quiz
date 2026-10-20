@@ -16,6 +16,11 @@
     ],
     "docs/specs/editorial-agent-output-contract.md": [
       "docs/specs/agent-context-and-auth.md"
+    ],
+    "docs/specs/isolated-agent-executor.md": [
+      "docs/specs/agent-context-and-auth.md",
+      "docs/specs/agent-capability-model.md",
+      "docs/architecture/target-architecture.md"
     ]
   },
   "approvals": [
