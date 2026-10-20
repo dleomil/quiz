@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const { spawn } = require('node:child_process');
+const { execute } = require('./agent-process.cjs');
 const { ROOT, digest } = require('./document-catalog.cjs');
 const {
   buildContext,
@@ -44,6 +44,7 @@ function argumentsFrom(argv) {
     '--test-comment',
     '--artifact',
     '--expected-sha256',
+    '--evaluation-ticket',
   ];
   for (let index = 0; index < argv.length; index += 2) {
     const key = argv[index];
@@ -75,6 +76,10 @@ function argumentsFrom(argv) {
       args['--artifact'] && args['--expected-sha256'] && !args['--auth-home'],
       'aplicacao exige artefato revisado e hash',
     );
+  check(
+    !args['--evaluation-ticket'] || args['--mode'] === 'evaluation',
+    'ticket permitido somente em avaliacao',
+  );
   return args;
 }
 function adapterFor(work) {
@@ -126,62 +131,7 @@ function executionArguments(adapter, workspace, scratch, authHome, scope) {
     '-',
   ];
 }
-function execute(bin, args, options) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(bin, args, {
-      ...options,
-      detached: true,
-      stdio: ['pipe', 'pipe', 'pipe'],
-    });
-    let stdout = '';
-    let bytes = 0;
-    let failure;
-    const kill = () => {
-      if (child.pid) {
-        try {
-          process.kill(-child.pid, 'SIGKILL');
-        } catch {
-          // O grupo ja encerrado nao exige outra acao.
-        }
-      }
-    };
-    const timer = setTimeout(() => {
-      failure = new Error('limite de cinco minutos; sem repeticao');
-      kill();
-    }, 300000);
-    child.stdout.on('data', (value) => {
-      bytes += value.length;
-      if (bytes > 16 * 1024 * 1024) {
-        failure = new Error('eventos excedem limite');
-        kill();
-      } else stdout += value.toString();
-    });
-    child.stderr.on('data', (value) => {
-      bytes += value.length;
-      if (bytes > 16 * 1024 * 1024) {
-        failure = new Error('eventos excedem limite');
-        kill();
-      }
-    });
-    child.on('error', (error) => {
-      clearTimeout(timer);
-      kill();
-      reject(error);
-    });
-    child.on('close', (code) => {
-      clearTimeout(timer);
-      kill();
-      if (failure || code !== 0)
-        reject(
-          failure || new Error('execucao falhou; sem repeticao ou fallback'),
-        );
-      else resolve(stdout);
-    });
-    child.stdin.on('error', () => {});
-    child.stdin.end(options.input);
-  });
-}
-async function run() {
+async function run(cliArguments = process.argv.slice(2)) {
   let args,
     receiptPath,
     receipt,
@@ -194,13 +144,14 @@ async function run() {
     configuration,
     usage,
     artifact;
+  let evaluation;
   let failureReason = null;
   let result = 'preflight-blocked';
   let invocations = 0;
   const started = Date.now();
   const runId = crypto.randomUUID();
   try {
-    args = argumentsFrom(process.argv.slice(2));
+    args = argumentsFrom(cliArguments);
     const output = path.resolve(args['--output']);
     const outputParent = fs.realpathSync(path.dirname(output));
     const repository = fs.realpathSync(ROOT);
@@ -235,6 +186,29 @@ async function run() {
         : {},
     );
     adapter = adapterFor(work);
+    if (args['--evaluation-ticket']) {
+      evaluation = require('./agent-evaluation.cjs').claim(
+        args['--evaluation-ticket'],
+        args['--auth-home'],
+        work,
+        null,
+        Boolean(args['--codex-bin']),
+      );
+      check(
+        ['code', 'documentation'].includes(evaluation.slot.category),
+        'categoria nao pertence ao escritor',
+      );
+      const target = evaluation.plan.authorFiles[evaluation.slot.category];
+      check(
+        digest(work.allowedPaths) === digest([target]),
+        'escopo diverge da tarefa sintetica',
+      );
+      adapter = {
+        ...adapter,
+        model: evaluation.slot.model,
+        reasoningEffort: evaluation.slot.effort,
+      };
+    }
     const scope = copies.allowedPaths(work.allowedPaths);
     receipt = {
       runId,
@@ -246,6 +220,14 @@ async function run() {
       adapterSha256: adapter.sha256,
       mode: args['--mode'],
       independentVerifier: work.independentVerifier,
+      evaluationOnly: Boolean(evaluation),
+      evaluation: evaluation
+        ? {
+            slotId: evaluation.slot.id,
+            ticketSha256: evaluation.sha256,
+            repairOf: evaluation.slot.repairOf || null,
+          }
+        : null,
     };
     if (args['--mode'] === 'apply') {
       artifact = JSON.parse(fs.readFileSync(args['--artifact'], 'utf8'));
@@ -272,7 +254,18 @@ async function run() {
       const scratch = path.join(owned, 'scratch');
       fs.mkdirSync(scratch, { mode: 0o700 });
       const workspace = path.join(owned, 'copy');
-      const prepared = copies.prepare(ROOT, work.baseCommit, scope, workspace);
+      const prepared = copies.prepare(
+        ROOT,
+        work.baseCommit,
+        scope,
+        workspace,
+        evaluation
+          ? [
+              'package.json',
+              evaluation.plan.authorFiles[evaluation.slot.category],
+            ]
+          : undefined,
+      );
       const bin = args['--codex-bin'] || 'codex';
       checks = {
         sandbox: sandbox.probe(
@@ -305,7 +298,7 @@ async function run() {
         checks,
       });
       check(
-        args['--codex-bin'],
+        args['--codex-bin'] || evaluation,
         'candidatos bloqueados para chamadas reais ate reserva contabilizada da entrega #404',
       );
       const prompt = [
@@ -322,6 +315,7 @@ async function run() {
         cwd: prepared.directory,
         env: auth.environment(home, scratch),
         input: prompt,
+        timeoutMs: 300000 - (Date.now() - started),
       });
       result = 'output-rejected';
       usage = usageFromEvents(events, ['command_execution', 'file_change']);
@@ -369,4 +363,10 @@ async function run() {
   }
 }
 if (require.main === module) run();
-module.exports = { argumentsFrom, executionArguments, adapterFor, run };
+module.exports = {
+  argumentsFrom,
+  executionArguments,
+  adapterFor,
+  execute,
+  run,
+};

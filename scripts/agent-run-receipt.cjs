@@ -46,7 +46,7 @@ function makeReceipt(details) {
     observedModel: null,
     subscriptionUsage: null,
     attempts: 1,
-    corrections: 0,
+    corrections: details.evaluation?.repairOf ? 1 : 0,
     limitations: [
       'Modelo e esforco solicitados fixados; identidade remota nao atestada pela CLI.',
       'Disponibilidade no catalogo nao comprova acesso da conta.',

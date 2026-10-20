@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const { spawnSync } = require('node:child_process');
+const { execute } = require('./agent-process.cjs');
 const {
   packageHash,
   digest,
@@ -49,6 +49,7 @@ const FLAGS = [
   '--codex-bin',
   '--test-comment',
   '--delivery-package',
+  '--evaluation-ticket',
 ];
 
 function argumentsFrom(argv) {
@@ -117,7 +118,7 @@ function buildExecArguments(config, message, workspace, sessionHome, authHome) {
   ];
 }
 
-function run() {
+async function run(cliArguments = process.argv.slice(2)) {
   let args;
   let sessionHome;
   let workspace;
@@ -134,9 +135,15 @@ function run() {
   let usage = null;
   let artifactSha256 = null;
   let failureReason = null;
+  let evaluation;
+  let modelInvocations = 0;
   try {
-    args = argumentsFrom(process.argv.slice(2));
-    const config = loadAgentConfig(args['--agent']);
+    args = argumentsFrom(cliArguments);
+    let config = loadAgentConfig(args['--agent']);
+    if (args['--evaluation-ticket'] && args['--delivery-package'])
+      throw new Error(
+        'avaliacao sintetica nao pode produzir evidencia de publicacao',
+      );
     for (const key of ['--input', '--output', '--work', '--auth-home'])
       if (!args[key]) throw new Error(`use ${key}`);
     receiptPath = `${path.resolve(args['--output'])}.receipt.json`;
@@ -169,6 +176,30 @@ function run() {
     const work = JSON.parse(
       fs.readFileSync(path.resolve(args['--work']), 'utf8'),
     );
+    if (args['--evaluation-ticket']) {
+      evaluation = require('./agent-evaluation.cjs').claim(
+        args['--evaluation-ticket'],
+        args['--auth-home'],
+        work,
+        receipt.inputSha256,
+        Boolean(args['--codex-bin']),
+      );
+      if (!['editorial', 'curation'].includes(evaluation.slot.category))
+        throw new Error('categoria nao pertence ao runner editorial');
+      config = {
+        ...config,
+        model: evaluation.slot.model,
+        model_reasoning_effort: evaluation.slot.effort,
+      };
+      receipt.requestedModel = config.model;
+      receipt.reasoningEffort = config.model_reasoning_effort;
+      receipt.evaluationOnly = true;
+      receipt.evaluation = {
+        slotId: evaluation.slot.id,
+        ticketSha256: evaluation.sha256,
+        repairOf: evaluation.slot.repairOf || null,
+      };
+    }
     workSha256 = digest(work);
     if (
       work.id !== document.input.workItemId ||
@@ -242,6 +273,11 @@ function run() {
       work.baseCommit,
     );
     const prompt = [
+      ...(evaluation
+        ? [
+            'Avaliacao isolada com fonte e congelamento ficticios autorizados para este experimento; nenhuma aprovacao curricular de producao esta representada. Julgue a proposta sintetica e seus requisitos, sem exigir material escolar externo.',
+          ]
+        : []),
       `Atue exclusivamente como ${args['--agent']}.`,
       'Nao use ferramentas; retorne apenas o JSON do schema. Nao publique ou altere o projeto.',
       `Instrucoes do adaptador:\n${config.developer_instructions}`,
@@ -270,20 +306,15 @@ function run() {
       checks,
     });
     resultState = 'execution-failed';
-    const result = spawnSync(bin, argv, {
+    modelInvocations = 1;
+    const events = await execute(bin, argv, {
       cwd: workspace,
       env: environment(authHome, sessionHome),
       input: prompt,
-      encoding: 'utf8',
-      timeout: 300000,
-      maxBuffer: 16 * 1024 * 1024,
+      timeoutMs: 300000 - (Date.now() - started),
     });
-    if (result.status !== 0 || result.error)
-      throw new Error(
-        'execucao falhou ou excedeu cinco minutos; sem nova tentativa automatica',
-      );
     resultState = 'output-rejected';
-    usage = usageFromEvents(result.stdout || '');
+    usage = usageFromEvents(events);
     validateProfile(authHome);
     const output = JSON.parse(fs.readFileSync(message, 'utf8'));
     const scenario = {
@@ -340,6 +371,7 @@ function run() {
           preflight: checks || null,
           artifactSha256,
           usage,
+          modelInvocations,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
         fs.writeFileSync(receiptPath, `${JSON.stringify(value, null, 2)}\n`, {

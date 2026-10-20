@@ -90,6 +90,17 @@
       "sha256": "9fd68d3c3bbff37e3a531d297fefabf932048a30fbbada4a9363ecb9ece3dbf5"
     },
     {
+      "id": "docs--agents--model-evaluation-runbook",
+      "path": "docs/agents/model-evaluation-runbook.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "739ecd7bcb489fb980f1e083f0470d1cec69ed0c27ae6be63f0f3a20d4b42df1"
+    },
+    {
       "id": "docs--agents--pedagogical-quality-agent",
       "path": "docs/agents/pedagogical-quality-agent.md",
       "kind": "guide",

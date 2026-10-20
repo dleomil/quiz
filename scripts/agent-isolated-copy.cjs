@@ -171,11 +171,24 @@ function originals(root, source, scope) {
       `conflito no original: ${name}; voltar ao planejamento`,
     );
 }
-function prepare(root, commit, paths, directory) {
+function prepare(root, commit, paths, directory, readPaths) {
   root = fs.realpathSync(root);
   check(head(root) === commit, 'commit base mudou; voltar ao planejamento');
   const scope = allowedPaths(paths);
-  const source = sourceFiles(root, commit);
+  let source = sourceFiles(root, commit);
+  if (readPaths) {
+    const selected = allowedPaths(readPaths);
+    check(
+      scope.every((name) => selected.includes(name)) &&
+        selected.includes('package.json'),
+      'copia de avaliacao sem escopo ou runtime',
+    );
+    check(
+      selected.every((name) => source.has(name)),
+      'fonte sintetica ausente do commit',
+    );
+    source = new Map([...source].filter(([name]) => selected.includes(name)));
+  }
   originals(root, source, scope);
   check(!fs.existsSync(directory), 'copia ja existe');
   fs.mkdirSync(directory, { mode: 0o700 });

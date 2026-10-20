@@ -65,6 +65,7 @@ jobs:
           npm run test:agent-context
           npm run test:editorial-runner
           npm run test:writer-runner
+          npm run test:agent-evaluation
 
       - name: Validate agent execution record contract
         run: |
