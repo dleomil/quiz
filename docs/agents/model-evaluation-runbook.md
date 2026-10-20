@@ -30,6 +30,14 @@ isolamento nativo, sem invocar modelos nem consumir tentativa. A presenca no
 catalogo nao comprova disponibilidade do modelo para a conta. Falha bloqueia
 o inicio; investigar a causa antes de reservar uma tentativa real.
 
+Antes da reserva, os schemas efetivamente enviados tambem passam por verificacao
+offline do subconjunto suportado pelo servico. O schema de transporte tem campos
+tipados e obrigatorios, objetos fechados e listas com itens definidos. O contrato
+editorial completo permanece na validacao local. Valores nulos representam apenas
+ausencias previstas; o decoder nao cria textos, traducoes ou evidencias. Recibos
+novos identificam a versao do transporte e os hashes do contrato, schema e resposta.
+Esse check offline nao comprova aceitacao pelo servico.
+
 ## Reserva e execucao
 
 A campanha tem ID fixo `agent-evolution-2026-10` e fica em
@@ -87,6 +95,42 @@ Uma falha sem proposta aproveitavel nao consome reserva de correcao.
 ```sh
 npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" --slot repair-1
 ```
+
+## Retomada excepcional aprovada
+
+A primeira tentativa real, `historia-valida-editorial-current` no commit
+`7c2d1294064d87b2f82928a4ef9c48d4dcf269a6`, recebeu HTTP 400
+`invalid_json_schema`, sem resposta avaliavel. O mantenedor aprovou usar uma das
+reservas para repor esse controle. O adendo versionado
+`config/agent-evaluation-resumption.json` fixa os hashes dessa falha e a excecao.
+
+A conta final permanece em ate 32: uma falha tecnica, 30 casos avaliados e uma
+correcao de Luna. `repair-2` fica desabilitado; `repair-1` conserva a prioridade
+codigo, documentacao e curadoria. A reposicao usa `schema-replacement-1`, mesmo
+caso, modelo e esforco. Identificadores de execucao e commit podem mudar.
+
+Depois dos testes e checks do novo commit, consultar `report` para obter
+`stateSha256` e registrar a transicao explicita:
+
+```sh
+npm run evaluation -- resume --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <stateSha256-do-relatorio>
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot schema-replacement-1
+```
+
+`resume` so aceita a unica falha identificada, sem mudancas no corpus, modelos,
+criterios ou contratos normativos. Confere os registros e grava um unico
+`resumption.json`, sem substituir campanha, ticket, recibo ou resultado antigos.
+O estado esperado impede retomar a partir de uma leitura desatualizada. Os novos
+tickets vinculam o adendo e o commit ativo; consultas historicas continuam possiveis.
+
+O relatorio conserva o total consumido e separa falha tecnica, reposicao e
+desempenho. O controle so fica coberto pelo resultado da reposicao; a falha original
+nao vira um julgamento de qualidade do modelo. Uma nova incompatibilidade de schema
+bloqueia outras reservas e exige novo planejamento. Nao ha segunda retomada,
+repeticao automatica ou aumento do limite.
 
 ## Relatorio e decisao
 

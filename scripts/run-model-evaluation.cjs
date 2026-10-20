@@ -23,12 +23,13 @@ const { digest, ROOT } = require('./document-catalog.cjs');
 const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
 const { execute } = require('./agent-process.cjs');
 const { buildExecArguments } = require('./run-editorial-agent.cjs');
+const transport = require('./agent-output-transport.cjs');
 
 function parse(argv) {
   const command = argv[0];
   evaluation.check(
-    ['init', 'list', 'ready', 'run', 'report'].includes(command),
-    'use init, list, ready, run ou report',
+    ['init', 'list', 'ready', 'run', 'report', 'resume'].includes(command),
+    'use init, list, ready, run, report ou resume',
   );
   const args = {};
   for (let index = 1; index < argv.length; index += 2) {
@@ -40,6 +41,7 @@ function parse(argv) {
         '--codex-bin',
         '--test-comment',
         '--output',
+        '--expected-state',
       ].includes(name) &&
         !args[name] &&
         argv[index + 1] &&
@@ -61,7 +63,27 @@ function parse(argv) {
     !args['--output'] || command === 'report',
     'saida explicita permitida somente para relatorio',
   );
+  evaluation.check(
+    (command === 'resume') === Boolean(args['--expected-state']),
+    'retomada exige --expected-state; proibido nos outros comandos',
+  );
   return { command, args };
+}
+function schemaFor(slot, configuration, document) {
+  if (slot.category === 'verification') return transport.verificationSchema();
+  if (!document) return null;
+  const contract = JSON.parse(
+    pinnedConfig(
+      ROOT,
+      'config/editorial-agent-output.schema.json',
+      configuration.commit,
+    ),
+  );
+  return transport.editorialSchema(
+    contract,
+    slot.role.replaceAll('-', '_'),
+    document.input.subjectId,
+  );
 }
 function contextFor(work, args, readComment) {
   return buildContext(
@@ -96,29 +118,7 @@ async function verification(ticketFile, work, output, args, configuration) {
   let state = 'preflight-blocked';
   let failureReason = null;
   const runId = crypto.randomUUID();
-  const schema = {
-    type: 'object',
-    additionalProperties: false,
-    required: ['decision', 'findings', 'facts', 'limitations'],
-    properties: {
-      decision: { enum: ['approved', 'adjustments_required', 'blocked'] },
-      findings: {
-        type: 'array',
-        items: {
-          type: 'object',
-          additionalProperties: false,
-          required: ['requirementId', 'severity', 'evidence'],
-          properties: {
-            requirementId: { type: 'string' },
-            severity: { enum: ['major', 'blocking'] },
-            evidence: { type: 'string' },
-          },
-        },
-      },
-      facts: { type: 'array', items: { type: 'string' } },
-      limitations: { type: 'array', items: { type: 'string' } },
-    },
-  };
+  const schema = transport.verificationSchema();
   try {
     lock = path.join(home, 'quiz-run.lock');
     try {
@@ -194,6 +194,7 @@ async function verification(ticketFile, work, output, args, configuration) {
     usage = usageFromEvents(events);
     state = 'output-rejected';
     const result = evaluation.read(message);
+    transport.validateValue(result, schema);
     evaluation.write(output, result);
     artifactSha256 = digest(result);
     state = 'completed';
@@ -305,6 +306,7 @@ async function runSlot(args) {
       ROOT,
       repair,
     );
+    schemaFor(slot, current.configuration, document);
     const reserved = evaluation.reserve(
       home,
       slot.id,
@@ -478,9 +480,17 @@ function report(current) {
       );
     return result;
   });
-  const completed = current.campaign.schedule.every((slot) =>
-    results.some((item) => item.slot.id === slot.id && !item.pending),
-  );
+  const effective = (slot) =>
+    results.find((item) => item.slot.replacementOf === slot.id) ||
+    results.find((item) => item.slot.id === slot.id);
+  const completed = current.campaign.schedule.every((slot) => {
+    const item = effective(slot);
+    return (
+      item &&
+      !item.pending &&
+      !(slot.id === current.resumption?.failedSlot && item.slot.id === slot.id)
+    );
+  });
   const eligible = (variant, category) => {
     const expected = current.campaign.schedule.filter(
       (slot) => slot.variant === variant && slot.category === category,
@@ -490,9 +500,7 @@ function report(current) {
       expected.length > 0 &&
       expected.every(
         (slot) =>
-          results.some(
-            (item) => item.slot.id === slot.id && item.passed && !item.testOnly,
-          ) ||
+          (effective(slot)?.passed && !effective(slot)?.testOnly) ||
           results.some(
             (item) =>
               item.slot.repairOf === slot.id && item.passed && !item.testOnly,
@@ -522,6 +530,8 @@ function report(current) {
       passedAttempts: 0,
       failedAttempts: 0,
       pendingAttempts: 0,
+      technicalFailures: 0,
+      replacements: 0,
       reportedUsageRecords: 0,
       knownTokens: {
         input_tokens: 0,
@@ -532,9 +542,12 @@ function report(current) {
     });
     metric.attemptsConsumed++;
     if (item.slot.repairOf) metric.corrections++;
+    else if (item.slot.replacementOf) metric.replacements++;
     else metric.initialAttempts++;
     if (item.pending) metric.pendingAttempts++;
     else if (item.passed) metric.passedAttempts++;
+    else if (current.resumption?.failedSlot === item.slot.id)
+      metric.technicalFailures++;
     else metric.failedAttempts++;
     if (item.usage) {
       metric.reportedUsageRecords++;
@@ -557,6 +570,9 @@ function report(current) {
     schemaVersion: 'agent-model-evaluation-report-v1',
     id: current.campaign.id,
     sourceCommit: current.campaign.sourceCommit,
+    activeSourceCommit: current.configuration.commit,
+    resumption: current.resumption,
+    stateSha256: evaluation.stateFingerprint(current),
     planSha256: current.campaign.planSha256,
     testOnly: current.campaign.testOnly,
     completed,
@@ -599,6 +615,12 @@ async function run(argv = process.argv.slice(2)) {
   if (command === 'init') {
     process.stdout.write(
       `${JSON.stringify(evaluation.initialize(home, ROOT, Boolean(args['--codex-bin'])), null, 2)}\n`,
+    );
+    return;
+  }
+  if (command === 'resume') {
+    process.stdout.write(
+      `${JSON.stringify(evaluation.resume(home, args['--expected-state']), null, 2)}\n`,
     );
     return;
   }
@@ -645,6 +667,7 @@ async function run(argv = process.argv.slice(2)) {
       const checkedContexts = new Set();
       for (const slot of current.campaign.schedule) {
         const input = workFor(slot, current.configuration, ROOT);
+        schemaFor(slot, current.configuration, input.document);
         if (input.document) {
           const errors = validateEditorialInputDocument(
             input.document,

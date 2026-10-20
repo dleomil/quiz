@@ -18,6 +18,7 @@ const {
 } = require('../../scripts/agent-auth.cjs');
 const { usageFromEvents } = require('../../scripts/agent-run-receipt.cjs');
 const { argumentsFrom } = require('../../scripts/run-editorial-agent.cjs');
+const { SCHEMA_GUARD } = require('./transport-test-support.cjs');
 
 const original = path.resolve(__dirname, '../..');
 const directory = fs.mkdtempSync(
@@ -53,6 +54,7 @@ try {
 const fs = require('node:fs');
 const args = process.argv.slice(2);
 const mode = ${JSON.stringify(mode)};
+${SCHEMA_GUARD}
 if (args[0] === '--version') { console.log('codex-cli 0.160.0'); process.exit(0); }
 if (args[0] === 'login') { console.log(mode === 'api' ? 'Logged in using an API key' : 'Logged in using ChatGPT'); process.exit(mode === 'no-login' ? 1 : 0); }
 if (args[0] === 'features') {
@@ -64,12 +66,13 @@ if (args[0] === 'mcp') { console.log(mode === 'mcp' ? '[{"name":"github"}]' : '[
 if (args[0] === 'debug' && args[1] === 'prompt-input') { console.log(JSON.stringify([{type:'message',role:'developer',content:[{text:mode === 'skill-context' ? '### Available skills\\n- externa: instrucao indevida\\n### How to use skills' : '### Available skills\\n\\n### How to use skills'}]}])); process.exit(0); }
 if (args[0] === 'debug') { console.log(JSON.stringify({models: mode === 'no-model' ? [] : [{slug:'gpt-5.6-sol'}]})); process.exit(0); }
 if (args[0] !== 'exec') process.exit(2);
+strictSchema(JSON.parse(fs.readFileSync(args[args.indexOf('--output-schema')+1], 'utf8')));
 const prompt = fs.readFileSync(0, 'utf8');
 fs.writeFileSync(${JSON.stringify(recordPath)}, JSON.stringify({argv: args, env: process.env, cwd:process.cwd(), prompt}));
 if (mode === 'failed') process.exit(1);
 const response = prompt.includes('Atue exclusivamente como pedagogical_quality.')
  ? ${JSON.stringify(scenarios[1].output)} : ${JSON.stringify(scenarios[0].output)};
-fs.writeFileSync(args[args.indexOf('--output-last-message')+1], mode === 'bad-output' ? '{}' : JSON.stringify(response));
+fs.writeFileSync(args[args.indexOf('--output-last-message')+1], mode === 'bad-output' ? '{}' : JSON.stringify(transportOutput(response)));
 if(mode === 'tool') console.log(JSON.stringify({type:'item.completed',item:{type:'command_execution'}}));
 console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached_input_tokens:20,output_tokens:45}}));
 `,

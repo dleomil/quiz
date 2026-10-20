@@ -94,11 +94,11 @@
       "path": "docs/agents/model-evaluation-runbook.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "739ecd7bcb489fb980f1e083f0470d1cec69ed0c27ae6be63f0f3a20d4b42df1"
+      "sha256": "813a0adc22fdf19cefc5189a5ff5648f34b5de0b32d85cb452da2c2b4d476dd0"
     },
     {
       "id": "docs--agents--pedagogical-quality-agent",

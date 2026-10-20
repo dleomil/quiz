@@ -8,6 +8,7 @@ const { validateProfile } = require('./agent-auth.cjs');
 
 const PLAN_PATH = 'config/agent-evaluation-plan.json';
 const CAMPAIGN_ID = 'agent-evolution-2026-10';
+const RESUMPTION_PLAN = 'config/agent-evaluation-resumption.json';
 const PLAN_CACHE = new Map();
 const VARIANTS = {
   'editorial-current': ['gpt-5.6-sol', 'high'],
@@ -24,6 +25,8 @@ const CRITICAL_PATHS = [
   'scripts/agent-evaluation-grading.cjs',
   'scripts/run-model-evaluation.cjs',
   'scripts/agent-process.cjs',
+  'scripts/agent-output-transport.cjs',
+  RESUMPTION_PLAN,
   'scripts/run-editorial-agent.cjs',
   'scripts/run-writer-agent.cjs',
   'scripts/agent-auth.cjs',
@@ -342,22 +345,64 @@ function openCampaign(home, root = ROOT, readOnly = false) {
     'campanha irregular',
   );
   const campaign = verifySeal(read(path.join(directory, 'campaign.json')));
-  const configuration = loadPlan(
+  const initialConfiguration = loadPlan(
     root,
-    readOnly ? campaign.sourceCommit : undefined,
-    readOnly ? Object.keys(campaign.snapshot) : undefined,
+    campaign.sourceCommit,
+    Object.keys(campaign.snapshot),
   );
   check(
     campaign.schemaVersion === 'agent-evaluation-campaign-v1' &&
       campaign.id === CAMPAIGN_ID &&
-      campaign.sourceCommit === configuration.commit &&
-      campaign.planSha256 === configuration.sha256 &&
+      campaign.sourceCommit === initialConfiguration.commit &&
+      campaign.planSha256 === initialConfiguration.sha256 &&
       campaign.maximumAttempts === 32 &&
       typeof campaign.testOnly === 'boolean' &&
-      digest(campaign.schedule) === digest(schedule(configuration)) &&
-      digest(campaign.snapshot) === digest(configuration.snapshot),
+      digest(campaign.schedule) === digest(schedule(initialConfiguration)) &&
+      digest(campaign.snapshot) === digest(initialConfiguration.snapshot),
     'snapshot da campanha diverge; preservar contador e voltar ao planejamento',
   );
+  const storedResumption = readOptional(
+    path.join(directory, 'resumption.json'),
+  );
+  const resumption = storedResumption ? verifySeal(storedResumption) : null;
+  if (resumption)
+    check(
+      resumption.campaignSha256 === campaign.sha256 &&
+        resumption.sourceCommit === campaign.sourceCommit,
+      'retomada fora da campanha',
+    );
+  const configuration = readOnly
+    ? resumption
+      ? loadPlan(
+          root,
+          resumption.targetCommit,
+          Object.keys(resumption.targetSnapshot),
+        )
+      : initialConfiguration
+    : loadPlan(root);
+  check(
+    configuration.commit ===
+      (resumption?.targetCommit || campaign.sourceCommit) &&
+      configuration.sha256 ===
+        (resumption?.targetPlanSha256 || campaign.planSha256),
+    'snapshot da campanha diverge; preservar contador e voltar ao planejamento',
+  );
+  if (resumption)
+    check(
+      digest(configuration.snapshot) === digest(resumption.targetSnapshot) &&
+        digest(
+          JSON.parse(
+            readOnly
+              ? execFileSync(
+                  'git',
+                  ['show', `${resumption.targetCommit}:${RESUMPTION_PLAN}`],
+                  { cwd: root },
+                )
+              : readSource(root, RESUMPTION_PLAN),
+          ),
+        ) === resumption.amendmentSha256,
+      'adendo de retomada diverge',
+    );
   for (const name of ['attempts', 'claims', 'results', 'runs']) {
     const stat = fs.lstatSync(path.join(directory, name));
     check(
@@ -392,7 +437,191 @@ function openCampaign(home, root = ROOT, readOnly = false) {
       attempts.some((item) => `${item.slot.id}.json` === name),
       'resultado sem reserva; contador inconsistente',
     );
-  return { directory, campaign, configuration, attempts };
+  return {
+    directory,
+    campaign,
+    configuration,
+    initialConfiguration,
+    resumption,
+    attempts,
+  };
+}
+function stateFingerprint(current) {
+  const entries = {};
+  function walk(relative) {
+    const target = path.join(current.directory, relative);
+    const stat = fs.lstatSync(target);
+    check(!stat.isSymbolicLink(), 'symlink nos registros da campanha');
+    if (stat.isDirectory())
+      for (const name of fs.readdirSync(target).sort())
+        walk(`${relative}/${name}`);
+    else entries[relative] = digest(read(target));
+  }
+  for (const name of ['attempts', 'claims', 'results', 'runs']) walk(name);
+  return digest({ campaignSha256: current.campaign.sha256, entries });
+}
+function resume(home, expectedState, root = ROOT) {
+  home = validateProfile(home);
+  const mutex = path.join(home, 'quiz-evaluation.lock');
+  fs.mkdirSync(mutex, { mode: 0o700 });
+  let runLock;
+  try {
+    const lock = path.join(home, 'quiz-run.lock');
+    fs.mkdirSync(lock, { mode: 0o700 });
+    runLock = lock;
+    const current = openCampaign(home, root, true);
+    check(
+      !current.resumption &&
+        current.attempts.length === 1 &&
+        expectedState === stateFingerprint(current),
+      'estado mudou ou retomada ja registrada',
+    );
+    const configuration = loadPlan(root);
+    execFileSync(
+      'git',
+      [
+        'merge-base',
+        '--is-ancestor',
+        current.campaign.sourceCommit,
+        configuration.commit,
+      ],
+      { cwd: root },
+    );
+    const amendment = JSON.parse(
+      pinnedConfig(root, RESUMPTION_PLAN, configuration.commit),
+    );
+    check(
+      amendment.schemaVersion === 'agent-evaluation-resumption-plan-v1' &&
+        Object.keys(amendment).sort().join(',') ===
+          'failedReceiptSha256,failedResultSha256,failedSlot,failedTicketSha256,maximumAttempts,reason,replacementSlot,retiredRepairSlot,schemaVersion,sourceCommit' &&
+        amendment.sourceCommit === current.campaign.sourceCommit &&
+        amendment.reason === 'invalid_json_schema' &&
+        amendment.replacementSlot === 'schema-replacement-1' &&
+        amendment.retiredRepairSlot === 'repair-2' &&
+        amendment.maximumAttempts === 32,
+      'adendo fora da retomada aprovada',
+    );
+    const ticket = current.attempts[0];
+    const result = verifySeal(
+      read(path.join(current.directory, 'results', `${ticket.slot.id}.json`)),
+    );
+    const receipt = verifySeal(
+      read(
+        path.join(
+          current.directory,
+          'runs',
+          ticket.slot.id,
+          'result.json.receipt.json',
+        ),
+      ),
+    );
+    check(
+      ticket.slot.id === amendment.failedSlot &&
+        ticket.sha256 === amendment.failedTicketSha256 &&
+        result.sha256 === amendment.failedResultSha256 &&
+        receipt.sha256 === amendment.failedReceiptSha256 &&
+        result.ticketSha256 === ticket.sha256 &&
+        result.receiptSha256 === receipt.sha256 &&
+        result.modelInvocations === 1 &&
+        !result.hasOutput &&
+        !result.passed &&
+        /invalid_json_schema/.test(result.failureReason),
+      'falha tecnica nao comprovada',
+    );
+    check(
+      read(path.join(current.directory, 'runs', ticket.slot.id, 'work.json')) &&
+        ticket.workSha256 ===
+          digest(
+            read(
+              path.join(current.directory, 'runs', ticket.slot.id, 'work.json'),
+            ),
+          ) &&
+        ticket.inputSha256 ===
+          digest(
+            read(
+              path.join(
+                current.directory,
+                'runs',
+                ticket.slot.id,
+                'input.json',
+              ),
+            ),
+          ),
+      'entrada original alterada',
+    );
+    check(
+      current.campaign.testOnly === ticket.testOnly &&
+        receipt.testOnly === ticket.testOnly &&
+        fs.existsSync(
+          path.join(current.directory, 'claims', `${ticket.slot.id}.json`),
+        ),
+      'perfil ou reivindicacao diverge',
+    );
+    const allowed = new Set([
+      RESUMPTION_PLAN,
+      'scripts/agent-evaluation.cjs',
+      'scripts/run-editorial-agent.cjs',
+      'scripts/run-model-evaluation.cjs',
+      'config/document-catalog.json',
+    ]);
+    for (const [name, hash] of Object.entries(current.campaign.snapshot))
+      if (!allowed.has(name))
+        check(
+          configuration.snapshot[name] === hash,
+          `fonte protegida mudou: ${name}`,
+        );
+    for (const name of Object.keys(configuration.snapshot))
+      if (!Object.hasOwn(current.campaign.snapshot, name))
+        check(
+          ['scripts/agent-output-transport.cjs', RESUMPTION_PLAN].includes(
+            name,
+          ),
+          `fonte nova nao autorizada: ${name}`,
+        );
+    const originalCatalog = JSON.parse(
+      execFileSync(
+        'git',
+        [
+          'show',
+          `${current.campaign.sourceCommit}:config/document-catalog.json`,
+        ],
+        { cwd: root },
+      ),
+    );
+    const nextCatalog = JSON.parse(
+      readSource(root, 'config/document-catalog.json'),
+    );
+    check(
+      digest(originalCatalog.documents.filter((item) => item.normative)) ===
+        digest(nextCatalog.documents.filter((item) => item.normative)),
+      'contratos normativos mudaram',
+    );
+    check(
+      digest(schedule(configuration)) === digest(current.campaign.schedule),
+      'agenda ou modelos mudaram',
+    );
+    const value = sealed({
+      schemaVersion: 'agent-evaluation-resumption-v1',
+      campaignSha256: current.campaign.sha256,
+      sourceCommit: current.campaign.sourceCommit,
+      targetCommit: configuration.commit,
+      targetPlanSha256: configuration.sha256,
+      targetSnapshot: configuration.snapshot,
+      amendmentSha256: digest(amendment),
+      stateSha256: expectedState,
+      failedTicketSha256: ticket.sha256,
+      failedSlot: ticket.slot.id,
+      replacementSlot: amendment.replacementSlot,
+      retiredRepairSlot: amendment.retiredRepairSlot,
+      maximumAttempts: 32,
+      createdAt: new Date().toISOString(),
+    });
+    write(path.join(current.directory, 'resumption.json'), value);
+    return value;
+  } finally {
+    if (runLock) fs.rmdirSync(runLock);
+    fs.rmdirSync(mutex);
+  }
 }
 function reserve(home, id, workSha256, inputSha256, root = ROOT) {
   check(/^[a-z0-9-]+$/.test(id), 'slot invalido');
@@ -401,6 +630,26 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
   fs.mkdirSync(lock, { mode: 0o700 });
   try {
     const current = openCampaign(home, root);
+    check(
+      !current.resumption ||
+        current.attempts.some(
+          (item) => item.slot.id === current.resumption.replacementSlot,
+        ) ||
+        id === current.resumption.replacementSlot,
+      'a reposicao tecnica deve ser a primeira tentativa da retomada',
+    );
+    for (const attempt of current.attempts) {
+      const result = readOptional(
+        path.join(current.directory, 'results', `${attempt.slot.id}.json`),
+      );
+      if (
+        /invalid_json_schema/.test(result?.failureReason || '') &&
+        attempt.sha256 !== current.resumption?.failedTicketSha256
+      )
+        throw new Error(
+          'incompatibilidade tecnica pendente; voltar ao planejamento antes de consumir outra tentativa',
+        );
+    }
     check(current.attempts.length < 32, 'limite de 32 tentativas atingido');
     const slot = resolveSlot(current, id);
     check(
@@ -414,8 +663,11 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
       token: crypto.randomUUID(),
       workSha256,
       inputSha256,
+      ...(current.resumption
+        ? { resumptionSha256: current.resumption.sha256 }
+        : {}),
       reservedAt: new Date().toISOString(),
-      sourceCommit: current.campaign.sourceCommit,
+      sourceCommit: current.configuration.commit,
       testOnly: current.campaign.testOnly,
     });
     const file = path.join(current.directory, 'attempts', `${id}.json`);
@@ -434,15 +686,19 @@ function claim(file, home, work, inputSha256, testOnly, root = ROOT) {
       current.attempts.some((item) => item.sha256 === ticket.sha256) &&
       ticket.schemaVersion === 'agent-evaluation-ticket-v1' &&
       ticket.testOnly === testOnly &&
+      (ticket.resumptionSha256 || null) ===
+        (current.resumption?.sha256 || null) &&
       ticket.sourceCommit === work.baseCommit &&
       ticket.workSha256 === digest(work) &&
       ticket.inputSha256 === inputSha256 &&
       ticket.slot.role === work.role,
     'ticket diverge da entrada, perfil ou fonte',
   );
-  const expected = ticket.slot.repairOf
-    ? repairSlot(current, ticket.slot.id, ticket.slot.repairOf)
-    : current.campaign.schedule.find((item) => item.id === ticket.slot.id);
+  const expected = ticket.slot.replacementOf
+    ? replacementSlot(current)
+    : ticket.slot.repairOf
+      ? repairSlot(current, ticket.slot.id, ticket.slot.repairOf)
+      : current.campaign.schedule.find((item) => item.id === ticket.slot.id);
   check(
     expected && digest(expected) === digest(ticket.slot),
     'perfil fora da agenda aprovada',
@@ -501,6 +757,10 @@ function finish(home, ticket, result, root = ROOT) {
 }
 function repairSlot(current, id, parentId) {
   check(['repair-1', 'repair-2'].includes(id), 'reserva de correcao invalida');
+  check(
+    id !== current.resumption?.retiredRepairSlot,
+    'reserva usada pela reposicao tecnica',
+  );
   const parent = current.attempts.find((item) => item.slot.id === parentId);
   check(
     parent &&
@@ -525,6 +785,12 @@ function repairSlot(current, id, parentId) {
   return { ...parent.slot, id, repairOf: parentId };
 }
 function resolveSlot(current, id) {
+  if (id === current.resumption?.replacementSlot)
+    return replacementSlot(current);
+  check(
+    id !== current.resumption?.retiredRepairSlot,
+    'reserva usada pela reposicao tecnica',
+  );
   const normal = current.campaign.schedule.find((item) => item.id === id);
   if (normal) return normal;
   check(['repair-1', 'repair-2'].includes(id), 'slot inexistente');
@@ -556,6 +822,21 @@ function resolveSlot(current, id) {
     'nenhuma proposta de Luna elegivel a correcao; reserva preservada',
   );
 }
+function replacementSlot(current) {
+  check(current.resumption, 'reposicao sem retomada aprovada');
+  const parent = current.attempts.find(
+    (item) => item.sha256 === current.resumption.failedTicketSha256,
+  );
+  check(
+    parent && parent.slot.id === current.resumption.failedSlot,
+    'origem da reposicao diverge',
+  );
+  return {
+    ...parent.slot,
+    id: current.resumption.replacementSlot,
+    replacementOf: parent.slot.id,
+  };
+}
 module.exports = {
   ROOT,
   PLAN_PATH,
@@ -574,4 +855,6 @@ module.exports = {
   sealed,
   verifySeal,
   check,
+  resume,
+  stateFingerprint,
 };

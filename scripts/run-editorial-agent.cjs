@@ -23,6 +23,7 @@ const {
   skillArguments,
 } = require('./agent-auth.cjs');
 const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
+const transport = require('./agent-output-transport.cjs');
 const {
   AGENT_CONTRACTS,
   parseAgentToml,
@@ -137,6 +138,7 @@ async function run(cliArguments = process.argv.slice(2)) {
   let failureReason = null;
   let evaluation;
   let modelInvocations = 0;
+  let transportSchema, wireSha256;
   try {
     args = argumentsFrom(cliArguments);
     let config = loadAgentConfig(args['--agent']);
@@ -176,6 +178,19 @@ async function run(cliArguments = process.argv.slice(2)) {
     const work = JSON.parse(
       fs.readFileSync(path.resolve(args['--work']), 'utf8'),
     );
+    const contract = pinnedConfig(
+      ROOT,
+      path.relative(ROOT, OUTPUT_SCHEMA),
+      work.baseCommit,
+    );
+    transportSchema = transport.editorialSchema(
+      JSON.parse(contract),
+      args['--agent'],
+      document.input.subjectId,
+    );
+    receipt.transportVersion = transport.VERSION;
+    receipt.contractSchemaSha256 = sha256(contract);
+    receipt.transportSchemaSha256 = digest(transportSchema);
     if (args['--evaluation-ticket']) {
       evaluation = require('./agent-evaluation.cjs').claim(
         args['--evaluation-ticket'],
@@ -198,6 +213,7 @@ async function run(cliArguments = process.argv.slice(2)) {
         slotId: evaluation.slot.id,
         ticketSha256: evaluation.sha256,
         repairOf: evaluation.slot.repairOf || null,
+        replacementOf: evaluation.slot.replacementOf || null,
       };
     }
     workSha256 = digest(work);
@@ -264,7 +280,10 @@ async function run(cliArguments = process.argv.slice(2)) {
       path.relative(ROOT, OUTPUT_SCHEMA),
       work.baseCommit,
     );
-    fs.writeFileSync(path.join(workspace, 'output.schema.json'), schema);
+    fs.writeFileSync(
+      path.join(workspace, 'output.schema.json'),
+      JSON.stringify(transportSchema),
+    );
     const message = path.join(sessionHome, 'output.json');
     const deliveryPolicyPath = 'config/content-delivery-policy.json';
     const deliveryPolicy = pinnedConfig(
@@ -281,6 +300,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       `Atue exclusivamente como ${args['--agent']}.`,
       'Nao use ferramentas; retorne apenas o JSON do schema. Nao publique ou altere o projeto.',
       `Instrucoes do adaptador:\n${config.developer_instructions}`,
+      transport.INSTRUCTIONS,
       renderContext(context),
       `Ficha delimitada:\n${JSON.stringify(work)}`,
       `Requisitos especificos da materia:\n${JSON.stringify(requirementsFor(document.input.subjectId, JSON.parse(deliveryPolicy)))}`,
@@ -302,6 +322,8 @@ async function run(cliArguments = process.argv.slice(2)) {
       ),
       adapterSha256: config.sha256,
       schemaSha256: sha256(schema),
+      transportSchemaSha256: digest(transportSchema),
+      transportVersion: transport.VERSION,
       deliveryPolicySha256: sha256(deliveryPolicy),
       checks,
     });
@@ -316,7 +338,18 @@ async function run(cliArguments = process.argv.slice(2)) {
     resultState = 'output-rejected';
     usage = usageFromEvents(events);
     validateProfile(authHome);
-    const output = JSON.parse(fs.readFileSync(message, 'utf8'));
+    const rawOutput = JSON.parse(fs.readFileSync(message, 'utf8'));
+    wireSha256 = digest(rawOutput);
+    let output;
+    try {
+      output = transport.decodeEditorial(
+        rawOutput,
+        transportSchema,
+        args['--agent'],
+      );
+    } catch (error) {
+      throw new Error(`saida rejeitada: ${error.message}`, { cause: error });
+    }
     const scenario = {
       scenarioId: document.scenarioId,
       inputState: document.inputState,
@@ -372,6 +405,7 @@ async function run(cliArguments = process.argv.slice(2)) {
           artifactSha256,
           usage,
           modelInvocations,
+          wireSha256: wireSha256 || null,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
         fs.writeFileSync(receiptPath, `${JSON.stringify(value, null, 2)}\n`, {

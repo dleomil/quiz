@@ -1,6 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { DISABLED_FEATURES } = require('../../scripts/agent-auth.cjs');
+const { SCHEMA_GUARD } = require('./transport-test-support.cjs');
 
 const GOOD_CODE = `module.exports = function summarizeResponses(items) {
   if (!Array.isArray(items) || items.some(item => !item || Array.isArray(item) || typeof item.correct !== 'boolean')) throw new TypeError('Entrada invalida');
@@ -31,6 +32,7 @@ function fakeCli(directory, root, mode = 'ok') {
   const program = `#!/usr/bin/env node
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
 const args=process.argv.slice(2), mode=${JSON.stringify(mode)};
+${SCHEMA_GUARD}
 if(args[0]==='--version'){console.log('codex-cli 0.160.0');process.exit(0);}
 if(args[0]==='login'){console.log('Logged in using ChatGPT');process.exit(mode==='no-login'?1:0);}
 if(args[0]==='features'){for(const name of ${JSON.stringify(DISABLED_FEATURES)})console.log(name+' stable false');console.log('skip_host_skill_discovery beta true');process.exit(0);}
@@ -46,6 +48,7 @@ if(args[0]==='sandbox'){
  process.stdout.write(result.stdout||'');process.stderr.write(result.stderr||'');process.exit(result.status||0);
 }
 if(args[0]!=='exec')process.exit(2);
+if(args.includes('--output-schema'))strictSchema(JSON.parse(fs.readFileSync(args[args.indexOf('--output-schema')+1],'utf8')));
 const prompt=fs.readFileSync(0,'utf8');
 fs.appendFileSync(${JSON.stringify(record)},JSON.stringify({model:args[args.indexOf('--model')+1],cwd:process.cwd(),args,apiKey:process.env.OPENAI_API_KEY||null,hasOracle:fs.existsSync('config/agent-evaluation-plan.json')||fs.existsSync('scripts/agent-evaluation-grading.cjs')})+'\\n');
 if(mode==='failed-remote'){console.log(JSON.stringify({type:'error',message:'modelo indisponivel no teste'}));process.exit(1);}
@@ -62,7 +65,7 @@ if(start>=0){
    output.decision='blocked';output.findings=[{questionId:input.proposal.id,criterion:expected.expectedCriterion,severity:'blocking',evidence:JSON.stringify(input.proposal),recommendation:'Corrigir o defeito sintetico identificado.'}];
   }
  }
- fs.writeFileSync(args[args.indexOf('--output-last-message')+1],JSON.stringify(output));
+ fs.writeFileSync(args[args.indexOf('--output-last-message')+1],JSON.stringify(transportOutput(output)));
 }else if(prompt.includes('verificador analitico independente')){
  fs.writeFileSync(args[args.indexOf('--output-last-message')+1],JSON.stringify({decision:'adjustments_required',findings:[{requirementId:'VER-EMPTY',severity:'blocking',evidence:'reduce sem valor inicial falha quando a lista esta vazia.'}],facts:['Os testes fornecidos nao cobrem lista vazia.'],limitations:['Analise baseada nas evidencias fornecidas.']}));
 }else{
