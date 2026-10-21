@@ -7,13 +7,44 @@ const { permissionArguments, PROFILE } = require('./agent-writer-sandbox.cjs');
 const { validateEditorialScenario } = require('./validate-codex-agents.cjs');
 const { validateQuestion } = require('./validate-content.cjs');
 const { sha256 } = require('./governance-guidelines.cjs');
+const { DISABLED_FEATURES } = require('./agent-auth.cjs');
 
-function gradeEditorial(document, scenario, expected) {
+function verifiedIsolation(evidence) {
+  const proof = evidence?.preflight;
+  return (
+    evidence?.eventDiagnosis?.accepted === true &&
+    evidence.eventDiagnosis.issues?.length === 0 &&
+    proof?.auth === 'chatgpt-keyring' &&
+    proof?.skills === 'disabled-and-context-checked' &&
+    proof?.mcpServerCount === 0 &&
+    DISABLED_FEATURES.every((name) => proof.features?.[name] === false)
+  );
+}
+
+function isIsolationFinding(item) {
+  const criterion = String(item?.criterion || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+  return criterion.includes('isolamento') && criterion.includes('ferramenta');
+}
+
+function gradeEditorial(document, scenario, expected, evidence = null) {
   const errors = validateEditorialScenario({
     ...document,
     output: scenario.output,
   });
   const output = scenario.output || {};
+  const isolationVerified = verifiedIsolation(evidence);
+  const findings = isolationVerified
+    ? (output.findings || []).filter((item) => !isIsolationFinding(item))
+    : output.findings || [];
+  const blockedOnlyByIsolation =
+    isolationVerified &&
+    output.decision === 'blocked' &&
+    output.findings?.length > 0 &&
+    findings.length === 0 &&
+    output.doubts?.length === 0;
   const normalizeEvidence = (value) =>
     String(value)
       .normalize('NFD')
@@ -23,15 +54,15 @@ function gradeEditorial(document, scenario, expected) {
       .replace(/[^a-z0-9]/g, '');
   if (expected.kind === 'valid') {
     if (
-      output.decision !== 'approved' ||
-      output.findings?.length ||
+      (output.decision !== 'approved' && !blockedOnlyByIsolation) ||
+      findings.length ||
       output.doubts?.length
     )
       errors.push('Controle valido nao foi aceito sem achados.');
   } else if (
     output.decision === 'approved' ||
     !Array.isArray(output.findings) ||
-    !output.findings.some(
+    !findings.some(
       (item) =>
         item?.questionId === document.input.proposal.id &&
         item.criterion === expected.expectedCriterion &&

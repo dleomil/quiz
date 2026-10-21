@@ -6,6 +6,7 @@ const { execFileSync } = require('node:child_process');
 const { fixtureRepository } = require('./context-test-support.cjs');
 const { initializeProfile } = require('../../scripts/agent-auth.cjs');
 const { digest } = require('../../scripts/document-catalog.cjs');
+const { DISABLED_FEATURES } = require('../../scripts/agent-auth.cjs');
 
 const original = path.resolve(__dirname, '../..');
 const directory = fs.mkdtempSync(
@@ -16,6 +17,78 @@ try {
   const evaluation = require(path.join(root, 'scripts/agent-evaluation.cjs'));
   const { workFor } = require(
     path.join(root, 'scripts/agent-evaluation-cases.cjs'),
+  );
+  const grading = require(
+    path.join(root, 'scripts/agent-evaluation-grading.cjs'),
+  );
+  const editorialFixture = JSON.parse(
+    fs.readFileSync(
+      path.join(root, 'tests/fixtures/agents/editorial-scenarios.json'),
+      'utf8',
+    ),
+  )[0];
+  const falseIsolationBlock = {
+    ...editorialFixture,
+    output: {
+      ...editorialFixture.output,
+      decision: 'blocked',
+      findings: [
+        {
+          questionId: editorialFixture.output.proposal.id,
+          criterion: 'Isolamento da superfície de ferramentas',
+          severity: 'blocking',
+          evidence: 'A ferramenta foi mencionada no texto da sessão.',
+          recommendation: 'Verificar a prova do runner.',
+        },
+      ],
+    },
+  };
+  const isolationEvidence = {
+    preflight: {
+      auth: 'chatgpt-keyring',
+      skills: 'disabled-and-context-checked',
+      mcpServerCount: 0,
+      features: Object.fromEntries(
+        DISABLED_FEATURES.map((name) => [name, false]),
+      ),
+    },
+    eventDiagnosis: { accepted: true, issues: [] },
+  };
+  assert.equal(
+    grading.gradeEditorial(editorialFixture, falseIsolationBlock, {
+      kind: 'valid',
+    }).passed,
+    false,
+  );
+  assert.equal(
+    grading.gradeEditorial(
+      editorialFixture,
+      falseIsolationBlock,
+      { kind: 'valid' },
+      isolationEvidence,
+    ).passed,
+    true,
+  );
+  assert.equal(
+    grading.gradeEditorial(
+      editorialFixture,
+      {
+        ...falseIsolationBlock,
+        output: {
+          ...falseIsolationBlock.output,
+          findings: [
+            ...falseIsolationBlock.output.findings,
+            {
+              ...falseIsolationBlock.output.findings[0],
+              criterion: 'erro factual',
+            },
+          ],
+        },
+      },
+      { kind: 'valid' },
+      isolationEvidence,
+    ).passed,
+    false,
   );
   const home = initializeProfile(path.join(directory, 'dummy-auth'));
   const initial = evaluation.initialize(home, root, true);

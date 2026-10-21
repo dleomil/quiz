@@ -19,6 +19,11 @@ const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-writer-test-'));
 const json = (file, value) =>
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`);
 try {
+  fs.writeFileSync(
+    path.join(directory, 'codex-code-mode-host'),
+    '#!/bin/sh\nexit 0\n',
+    { mode: 0o755 },
+  );
   const root = fixtureRepository(original, directory);
   const runner = path.join(root, 'scripts/run-writer-agent.cjs');
   const home = initializeProfile(path.join(directory, 'dedicated-auth'));
@@ -133,6 +138,7 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:90,cached_
   assert.equal(captured.env.CODEX_HOME, home);
   assert.ok(captured.args.includes('--ignore-user-config'));
   assert.ok(captured.args.includes('features.shell_tool=true'));
+  assert.ok(captured.args.includes('features.code_mode_host=true'));
   assert.ok(
     captured.args.some((value) => value.includes('network.enabled=false')),
   );

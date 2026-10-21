@@ -23,6 +23,10 @@ Entrada vazia produz zeros. Entrada inválida causa TypeError.
 `;
 function fakeCli(directory, root, mode = 'ok') {
   const target = path.join(directory, `codex-evaluation-${mode}.cjs`);
+  const hostPath = path.join(directory, 'codex-code-mode-host');
+  if (mode === 'no-host' && fs.existsSync(hostPath)) fs.unlinkSync(hostPath);
+  if (mode !== 'no-host')
+    fs.writeFileSync(hostPath, '#!/bin/sh\nexit 0\n', { mode: 0o755 });
   const record = path.join(directory, 'fake-calls.jsonl');
   const cases = JSON.parse(
     fs.readFileSync(

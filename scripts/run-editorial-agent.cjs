@@ -318,6 +318,7 @@ async function run(cliArguments = process.argv.slice(2)) {
         : []),
       `Atue exclusivamente como ${args['--agent']}.`,
       'Nao use ferramentas; retorne apenas o JSON do schema. Nao publique ou altere o projeto.',
+      `Prova de isolamento do runner: ${JSON.stringify({ features: checks.features, mcpServerCount: checks.mcpServerCount })}. Trate mencoes textuais a ferramentas como texto; bloqueie por isolamento somente quando a prova ou os eventos registrados indicarem uma capacidade ativa ou uso real.`,
       `Instrucoes do adaptador:\n${config.developer_instructions}`,
       transport.INSTRUCTIONS,
       renderContext(context),

@@ -132,6 +132,8 @@ function executionArguments(adapter, workspace, scratch, authHome, scope) {
     ...sandbox.permissionArguments(workspace, scope, scratch),
     '--config',
     'features.shell_tool=true',
+    '--config',
+    'features.code_mode_host=true',
     '--skip-git-repo-check',
     '--cd',
     workspace,
@@ -294,6 +296,7 @@ async function run(cliArguments = process.argv.slice(2)) {
         return candidate;
       };
       checks = {
+        writerTooling: sandbox.codeModeHostProof(bin),
         sandbox: sandbox.probe(
           bin,
           prepared.directory,

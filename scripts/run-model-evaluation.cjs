@@ -26,6 +26,7 @@ const {
   assertEvents,
 } = require('./agent-run-receipt.cjs');
 const captures = require('./agent-event-capture.cjs');
+const writerSandbox = require('./agent-writer-sandbox.cjs');
 const { execute } = require('./agent-process.cjs');
 const { buildExecArguments } = require('./run-editorial-agent.cjs');
 const transport = require('./agent-output-transport.cjs');
@@ -363,6 +364,8 @@ async function runSlot(args) {
       repair,
     );
     schemaFor(slot, current.configuration, document);
+    if (['code', 'documentation'].includes(slot.category))
+      writerSandbox.codeModeHostProof(args['--codex-bin'] || 'codex');
     const reserved = evaluation.reserve(
       home,
       slot.id,
@@ -452,6 +455,10 @@ async function runSlot(args) {
             document,
             result,
             current.configuration.cases.find((item) => item.id === slot.caseId),
+            {
+              preflight: receipt.preflight,
+              eventDiagnosis: receipt.eventDiagnosis,
+            },
           )
         : slot.category === 'curation'
           ? grading.gradeCuration(document, result, slot)
@@ -963,6 +970,15 @@ async function run(argv = process.argv.slice(2)) {
           auth.preflight(bin, home, scratch, prepared.directory, model),
         ]),
       );
+      const schedule = current.benchmarkRevision
+        ? evaluation.schedule(current.configuration)
+        : current.campaign.schedule;
+      const writerToolsRequired = schedule.some((slot) =>
+        ['code', 'documentation'].includes(slot.category),
+      );
+      const writerTooling = writerToolsRequired
+        ? writerSandbox.codeModeHostProof(bin)
+        : null;
       const sandbox = probe(
         bin,
         prepared.directory,
@@ -972,7 +988,7 @@ async function run(argv = process.argv.slice(2)) {
         ROOT,
       );
       process.stdout.write(
-        `${JSON.stringify({ ready: true, contextsChecked: checkedContexts.size, modelInvocations: 0, attemptsUsed: current.attempts.length, proofs, sandbox }, null, 2)}\n`,
+        `${JSON.stringify({ ready: true, contextsChecked: checkedContexts.size, modelInvocations: 0, attemptsUsed: current.attempts.length, proofs, writerTooling, sandbox }, null, 2)}\n`,
       );
     } finally {
       fs.rmSync(owned, { recursive: true, force: true });

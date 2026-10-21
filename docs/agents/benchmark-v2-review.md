@@ -334,11 +334,12 @@ Eles consomem orçamento e aparecem como diagnósticos históricos; não entram 
 métricas de qualidade v2. `inspect-capture` é somente diagnóstico e jamais produz
 elegibilidade. A causa exata da segunda falha continua desconhecida.
 
-A exceção de protocolo reconhece apenas duas mensagens exatas de configuração
-na CLI 0.160.0, antes de `turn.started`, com flags, perfil e preflight compatíveis.
-Os avisos ficam registrados. Mensagem desconhecida, mudança de contexto, erro
-real, ferramenta proibida, captura incompleta ou inválida interrompem a rodada.
-Não habilitar Code Mode nem alterar autenticação para suprimir os avisos.
+A exceção de protocolo reconhece apenas o aviso exato de descoberta de skills
+em desenvolvimento na CLI 0.160.0, antes de `turn.started`, com perfil e
+preflight compatíveis. O aviso fica registrado. A mensagem de host de Code Mode
+desativado é erro de processo, não aviso. Para autoria futura, o executor exige
+o binário do host e habilita Code Mode somente no runner que usa sandbox nativa
+com caminhos e rede restritos; revisores editoriais continuam sem ferramentas.
 
 Após o aceite: preflight sem modelo; executar e inspecionar primeiro o par de
 História válido. Prosseguir em série pela agenda fixada. Defeito novo do benchmark
@@ -352,3 +353,22 @@ de PR, Discovery e verificadores mantêm os perfis atuais sem inferência.
 
 Rollback: interromper chamadas e reverter o código por PR, preservando campanha,
 contador, registros e capturas. Retomar requer nova avaliação do estado real.
+
+## Lições da campanha concluída
+
+A inspeção das onze falhas encontrou oito tarefas de autoria sem alterações:
+as capturas mostram que o modelo tentou usar ferramentas, mas a CLI respondeu
+que o host de Code Mode estava desativado. O parser tratava essa mensagem como
+aviso e o avaliador acabava classificando a proposta vazia como falha de
+qualidade. Duas revisões de controles válidos foram bloqueadas por alegações de
+ferramentas que não aparecem na prova de preflight nem nos eventos. Uma saída
+de curadoria tinha `questionId` divergente e permanece falha de saída legítima.
+
+Os runners agora verificam o executável do host antes de reservar uma tentativa,
+ativam Code Mode apenas para autoria dentro da sandbox e classificam a mensagem
+de host desativado como falha técnica. A revisão editorial recebe os dados
+verificados de isolamento; o avaliador ignora um bloqueio baseado somente nessa
+alegação apenas quando preflight comprova zero MCP, ferramentas desativadas e
+nenhum evento de ferramenta. Achados pedagógicos, linguísticos e erros de
+contrato continuam sendo avaliados normalmente. Os resultados históricos não
+são reescritos e nenhuma nova chamada foi feita.

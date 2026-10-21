@@ -83,11 +83,11 @@
       "path": "docs/agents/benchmark-v2-review.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "informative",
-      "sha256": "bcd9d9ed2df16ceb6c32a56268fbbdfa297c509b9269abcf46a2c1b905167196"
+      "sha256": "fb053e6c7c8765174c16b5c95b57814913f1184a616b9ba536415af88b5d9df4"
     },
     {
       "id": "docs--agents--content-curator-agent",

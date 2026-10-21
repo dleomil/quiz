@@ -340,6 +340,7 @@ function preflight(bin, home, sessionHome, workspace, model) {
       ...DISABLED_FEATURES.map((name) => [name, false]),
       ['skip_host_skill_discovery', true],
     ]),
+    mcpServerCount: mcp.length,
     auth: 'chatgpt-keyring',
     modelCatalogued: model,
     accountModelAccess: 'not-yet-observed',

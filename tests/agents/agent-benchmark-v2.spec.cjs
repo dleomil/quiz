@@ -25,7 +25,12 @@ try {
   const campaign = e.initialize(home, root, true);
   let current = e.openCampaign(home, root);
   const driver = path.join(root, 'scripts/run-model-evaluation.cjs');
-  const invoke = (command, extra = [], mode = 'startup-warnings') => {
+  const invoke = (
+    command,
+    extra = [],
+    mode = 'startup-warnings',
+    env = process.env,
+  ) => {
     const fake = fakeCli(directory, root, mode);
     return spawnSync(
       process.execPath,
@@ -40,7 +45,7 @@ try {
         comment,
         ...extra,
       ],
-      { cwd: root, encoding: 'utf8', timeout: 60000 },
+      { cwd: root, encoding: 'utf8', timeout: 60000, env },
     );
   };
   function failed(id, reason) {
@@ -313,6 +318,20 @@ try {
     () => e.reserve(home, pack.agenda[1].slot.id, 'x', null, root),
     /fora de ordem/,
   );
+  const noHostPath = path.join(directory, 'path-without-code-mode-host');
+  fs.mkdirSync(noHostPath);
+  fs.symlinkSync(process.execPath, path.join(noHostPath, 'node'));
+  const gitExecutable = process.env.PATH.split(path.delimiter)
+    .map((entry) => path.join(entry, 'git'))
+    .find((candidate) => fs.existsSync(candidate));
+  assert.ok(gitExecutable);
+  fs.symlinkSync(gitExecutable, path.join(noHostPath, 'git'));
+  const notReady = invoke('ready', [], 'no-host', {
+    ...process.env,
+    PATH: noHostPath,
+  });
+  assert.notEqual(notReady.status, 0);
+  assert.match(notReady.stderr, /host de Code Mode indisponivel/);
   const ready = invoke('ready');
   assert.equal(ready.status, 0, ready.stderr);
   const proof = JSON.parse(ready.stdout);

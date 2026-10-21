@@ -8,6 +8,40 @@ const PROFILE = 'quiz-isolated';
 function check(value, message) {
   if (!value) throw new Error(message);
 }
+function executableAt(target) {
+  try {
+    const stat = fs.statSync(target);
+    return stat.isFile() && (stat.mode & 0o111) !== 0;
+  } catch {
+    return false;
+  }
+}
+function resolveExecutable(name, environment) {
+  if (path.isAbsolute(name)) return executableAt(name) ? name : null;
+  for (const directory of (environment.PATH || '').split(path.delimiter)) {
+    if (!directory) continue;
+    const target = path.join(directory, name);
+    if (executableAt(target)) return target;
+  }
+  return null;
+}
+function codeModeHostProof(bin = 'codex', environment = process.env) {
+  const candidates = (environment.PATH || '')
+    .split(path.delimiter)
+    .filter(Boolean)
+    .map((directory) => path.join(directory, 'codex-code-mode-host'));
+  const cliPath = resolveExecutable(bin, environment);
+  if (cliPath)
+    candidates.unshift(
+      path.join(path.dirname(cliPath), 'codex-code-mode-host'),
+    );
+  const found = candidates.some(executableAt);
+  check(
+    found,
+    'host de Code Mode indisponivel; autoria isolada bloqueada antes da invocacao',
+  );
+  return { available: true, enabledFeatures: ['shell_tool', 'code_mode_host'] };
+}
 function permissionArguments(workspace, scope, scratch) {
   check(
     ['darwin', 'linux'].includes(process.platform),
@@ -170,4 +204,9 @@ function finish(){console.log(JSON.stringify(result));process.exitCode=failed?1:
     fs.rmSync(probeHome, { recursive: true, force: true });
   }
 }
-module.exports = { permissionArguments, probe, PROFILE };
+module.exports = {
+  permissionArguments,
+  probe,
+  codeModeHostProof,
+  PROFILE,
+};

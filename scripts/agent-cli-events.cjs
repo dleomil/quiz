@@ -1,10 +1,9 @@
 const path = require('node:path');
 const { DISABLED_FEATURES } = require('./agent-auth.cjs');
-const VERSION = 'codex-0.160.0-events-v2';
+const VERSION = 'codex-0.160.0-events-v3';
 function startupMessages(home) {
   return [
     `Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set \`suppress_unstable_features_warning = true\` in ${path.join(home, 'config.toml')}.`,
-    'Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.',
   ];
 }
 function warningContext(context) {

@@ -127,9 +127,26 @@ const startup = startupMessages(warningHome).map((message, index) => ({
 const warningEvents = [lifecycle[0], ...startup, ...lifecycle.slice(1)];
 const warningSummary = analyzeEvents(jsonl(warningEvents), [], warningContext);
 assert.equal(warningSummary.accepted, true);
-assert.equal(warningSummary.warnings.length, 2);
+assert.equal(warningSummary.warnings.length, 1);
 assert.ok(!JSON.stringify(warningSummary).includes(warningHome));
 assert.equal(analyzeEvents(jsonl(warningEvents)).accepted, false);
+const codeModeUnavailable = {
+  type: 'item.completed',
+  item: {
+    id: 'code_mode_error',
+    type: 'error',
+    message:
+      'Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.',
+  },
+};
+assert.equal(
+  analyzeEvents(
+    jsonl([lifecycle[0], codeModeUnavailable, ...lifecycle.slice(1)]),
+    ['command_execution', 'file_change'],
+    warningContext,
+  ).reasonCode,
+  'process_failure',
+);
 for (const proof of [
   { ...warningProof, cliVersion: '0.160.1' },
   {
