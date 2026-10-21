@@ -46,8 +46,10 @@ function parse(argv) {
       'inspect-capture',
       'benchmark-check',
       'revise-benchmark',
+      'continuation-check',
+      'continue-benchmark',
     ].includes(command),
-    'use init, list, ready, run, report, resume, resume-events, resume-parser, analyze, inspect-capture, benchmark-check ou revise-benchmark',
+    'use init, list, ready, run, report, resume, resume-events, resume-parser, analyze, inspect-capture, benchmark-check, revise-benchmark, continuation-check ou continue-benchmark',
   );
   const args = {};
   for (let index = 1; index < argv.length; index += 2) {
@@ -81,17 +83,27 @@ function parse(argv) {
   );
   evaluation.check(
     !args['--output'] ||
-      ['report', 'benchmark-check', 'inspect-capture'].includes(command),
+      [
+        'report',
+        'benchmark-check',
+        'inspect-capture',
+        'continuation-check',
+      ].includes(command),
     'saida explicita permitida somente para relatorio, diagnostico ou pacote',
   );
   evaluation.check(
-    ['resume', 'resume-events', 'resume-parser', 'revise-benchmark'].includes(
-      command,
-    ) === Boolean(args['--expected-state']),
+    [
+      'resume',
+      'resume-events',
+      'resume-parser',
+      'revise-benchmark',
+      'continue-benchmark',
+    ].includes(command) === Boolean(args['--expected-state']),
     'retomada exige --expected-state; proibido nos outros comandos',
   );
   evaluation.check(
-    (command === 'revise-benchmark') === Boolean(args['--approval-file']),
+    ['revise-benchmark', 'continue-benchmark'].includes(command) ===
+      Boolean(args['--approval-file']),
     'revisao exige --approval-file; proibido nos outros comandos',
   );
   return { command, args };
@@ -736,6 +748,22 @@ function report(current) {
     ...(current.benchmarkRevision
       ? {
           benchmarkRevision: current.benchmarkRevision,
+          ...(current.benchmarkContinuation
+            ? {
+                benchmarkContinuation: {
+                  packageSha256: current.benchmarkContinuation.packageSha256,
+                  sourceCommit:
+                    current.benchmarkContinuation.package.targetCommit,
+                  stateSha256:
+                    current.benchmarkContinuation.package.stateSha256,
+                  slots: current.benchmarkContinuation.package.slots.map(
+                    (slot) => slot.id,
+                  ),
+                  attemptsUsedBeforeContinuation:
+                    current.benchmarkContinuation.package.attemptsUsed,
+                },
+              }
+            : {}),
           legacyDiagnostics,
           verificationDeferred: true,
           approvedNewAttempts: 28,
@@ -796,6 +824,22 @@ async function run(argv = process.argv.slice(2)) {
             home,
             args['--expected-state'],
             args['--approval-file'],
+          );
+    if (args['--output'])
+      evaluation.write(path.resolve(args['--output']), value);
+    process.stdout.write(`${JSON.stringify(value, null, 2)}\n`);
+    return;
+  }
+  if (command === 'continuation-check' || command === 'continue-benchmark') {
+    const benchmark = require('./agent-evaluation-benchmark.cjs');
+    const value =
+      command === 'continuation-check'
+        ? benchmark.checkContinuation(home, ROOT)
+        : benchmark.continueBenchmark(
+            home,
+            args['--expected-state'],
+            args['--approval-file'],
+            ROOT,
           );
     if (args['--output'])
       evaluation.write(path.resolve(args['--output']), value);

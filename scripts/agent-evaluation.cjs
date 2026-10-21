@@ -49,6 +49,7 @@ const CRITICAL_PATHS = [
   'config/agent-capabilities.json',
   'config/agent-context-policy.json',
   'config/document-catalog.json',
+  'docs/agents/model-evaluation-runbook.md',
   'config/editorial-agent-output.schema.json',
   'scripts/document-catalog.cjs',
   'scripts/governance-guidelines.cjs',
@@ -473,6 +474,9 @@ function openCampaign(home, root = ROOT, readOnly = false) {
       attempts.some((item) => `${item.slot.id}.json` === name),
       'resultado sem reserva; contador inconsistente',
     );
+  const continuationRecord = benchmarkRecord
+    ? readOptional(path.join(directory, 'benchmark-v2-continuation.json'))
+    : null;
   const current = {
     directory,
     campaign,
@@ -481,17 +485,23 @@ function openCampaign(home, root = ROOT, readOnly = false) {
     resumption,
     firstResumption,
     attempts,
+    continuationRecord,
   };
-  return benchmarkRecord
-    ? require('./agent-evaluation-benchmark.cjs').activate(
-        current,
-        benchmarkRecord,
-        root,
-        readOnly,
-      )
-    : current;
+  if (benchmarkRecord) {
+    const benchmark = require('./agent-evaluation-benchmark.cjs');
+    const active = benchmark.activate(current, benchmarkRecord, root, readOnly);
+    return continuationRecord
+      ? benchmark.activateContinuation(
+          active,
+          continuationRecord,
+          root,
+          readOnly,
+        )
+      : active;
+  }
+  return current;
 }
-function stateFingerprint(current) {
+function stateSnapshot(current) {
   const entries = {};
   function walk(relative) {
     const target = path.join(current.directory, relative);
@@ -503,7 +513,14 @@ function stateFingerprint(current) {
     else entries[relative] = sha256(captures.readBytes(target));
   }
   for (const name of ['attempts', 'claims', 'results', 'runs']) walk(name);
-  return digest({ campaignSha256: current.campaign.sha256, entries });
+  return {
+    campaignSha256: current.campaign.sha256,
+    entries,
+    sha256: digest({ campaignSha256: current.campaign.sha256, entries }),
+  };
+}
+function stateFingerprint(current) {
+  return stateSnapshot(current).sha256;
 }
 function resume(home, expectedState, root = ROOT) {
   home = validateProfile(home);
@@ -772,6 +789,11 @@ function reserve(home, id, workSha256, inputSha256, root = ROOT) {
             benchmarkRevisionSha256: current.benchmarkRevision.sha256,
           }
         : {}),
+      ...(current.benchmarkContinuation
+        ? {
+            benchmarkContinuationSha256: current.benchmarkContinuation.sha256,
+          }
+        : {}),
       ...(current.resumption
         ? { resumptionSha256: current.resumption.sha256 }
         : {}),
@@ -809,6 +831,11 @@ function claim(file, home, work, inputSha256, testOnly, root = ROOT) {
       (ticket.benchmarkSha256 || null) ===
         (current.benchmarkRevision?.benchmarkSha256 || null),
     'ticket de outra revisao do benchmark',
+  );
+  check(
+    (ticket.benchmarkContinuationSha256 || null) ===
+      (current.benchmarkContinuation?.sha256 || null),
+    'ticket de outra continuacao do benchmark',
   );
   const expected = current.benchmarkRevision
     ? schedule(current.configuration).find((slot) => slot.id === ticket.slot.id)
@@ -993,4 +1020,5 @@ module.exports = {
   check,
   resume,
   stateFingerprint,
+  stateSnapshot,
 };

@@ -238,6 +238,12 @@ async function run(cliArguments = process.argv.slice(2)) {
                   benchmarkVersion: evaluation.benchmarkVersion,
                   benchmarkSha256: evaluation.benchmarkSha256,
                   benchmarkRevisionSha256: evaluation.benchmarkRevisionSha256,
+                  ...(evaluation.benchmarkContinuationSha256
+                    ? {
+                        benchmarkContinuationSha256:
+                          evaluation.benchmarkContinuationSha256,
+                      }
+                    : {}),
                 }
               : {}),
             repairOf: evaluation.slot.repairOf || null,

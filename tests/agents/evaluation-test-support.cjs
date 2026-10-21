@@ -73,6 +73,7 @@ if(start>=0){
  if(input.requestedPass==='curation'){
   const match=prompt.match(/EVAL-CUR-(\\d)/);const second=match&&match[1]==='2';const answer=second?'are':'is';
   output.proposal={schemaVersion:'content-v1',id:'EVAL-CUR-'+(second?'2':'1'),contentSetId:input.contentSetId,subject:input.subjectId,topic:input.topicId,skill:input.authorizedSkill,version:input.questionVersion,sourceRef:input.sourceRef,reviewStatus:'draft',question:second?'Complete: They ___ playing in the park.':'Complete: She ___ reading a book.',questionPt:second?'Complete: Eles ___ brincando no parque.':'Complete: Ela ___ lendo um livro.',options:second?['are','is','am','be']:['is','are','am','be'],correctIndex:0,explanation:second?'Com they, usamos are para uma acao em andamento.':'Com she, usamos is para uma acao em andamento.',wrongExplanations:{'1':'Essa forma nao acompanha o sujeito desta frase.','2':'Am acompanha I, nao o sujeito desta frase.','3':'Be nao e a forma conjugada pedida nesta frase.'}};
+  if(mode==='rejected-curation'){output.decision='blocked';output.findings=[{questionId:'EVAL-CUR-WRONG',criterion:'apoio-generico',severity:'blocking',evidence:'A evidencia foi associada ao identificador errado.',recommendation:'Usar o ID da proposta.'}];}
  }else{
   const expected=(input.workItemId.startsWith('v2-')?${JSON.stringify(v2Cases)}:${JSON.stringify(cases)}).find(item=>item.proposal.id===input.proposal.id);
   if(expected.kind==='invalid' && mode!=='missed'){

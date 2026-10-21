@@ -12,6 +12,22 @@ const {
 } = require('./validate-codex-agents.cjs');
 const PLAN = 'config/agent-evaluation-benchmark-v2.json';
 const RECORD = 'benchmark-v2-revision.json';
+const CONTINUATION_RECORD = 'benchmark-v2-continuation.json';
+const CONTINUATION_SLOTS = [
+  'v2-curation-2-author-sol',
+  'v2-curation-2-author-luna',
+];
+const CONTINUATION_ALLOWED = new Set([
+  'scripts/agent-evaluation-benchmark.cjs',
+  'scripts/agent-evaluation.cjs',
+  'scripts/run-model-evaluation.cjs',
+  'scripts/run-editorial-agent.cjs',
+  'scripts/run-writer-agent.cjs',
+  'docs/agents/model-evaluation-runbook.md',
+  'tests/agents/agent-benchmark-v2.spec.cjs',
+  'tests/agents/evaluation-test-support.cjs',
+  'config/document-catalog.json',
+]);
 const OBJECTIVES = {
   historia: [
     'povo-brasileiro',
@@ -326,6 +342,209 @@ function approvalValid(approval, pack, testOnly) {
     'aprovacao humana ausente, desatualizada ou de outro pacote',
   );
 }
+function outputValidationFailure(current, ticket, result, receipt) {
+  if (
+    result.passed !== false ||
+    result.hasOutput !== false ||
+    result.modelInvocations !== 1 ||
+    receipt.result !== 'output-rejected' ||
+    receipt.failureReason !== result.failureReason ||
+    !/^saida rejeitada:/.test(result.failureReason || '')
+  )
+    return false;
+  const output = path.join(
+    current.directory,
+    'runs',
+    `${ticket.slot.id}`,
+    'result.json',
+  );
+  const { manifest } = captures.verifyCapture(output, receipt.captureSha256);
+  return (
+    manifest.exitCode === 0 &&
+    !manifest.processError &&
+    !manifest.truncated &&
+    manifest.diagnosis.accepted &&
+    manifest.diagnosis.completed &&
+    manifest.diagnosis.issues.length === 0 &&
+    receipt.modelInvocations === 1
+  );
+}
+function assertAttemptIntegrity(current, ticket, record) {
+  const result = e.verifySeal(
+    e.read(path.join(current.directory, 'results', `${ticket.slot.id}.json`)),
+  );
+  const output = path.join(
+    current.directory,
+    'runs',
+    ticket.slot.id,
+    'result.json',
+  );
+  const receipt = e.verifySeal(e.read(`${output}.receipt.json`));
+  e.check(
+    result.receiptSha256 === receipt.sha256 &&
+      result.ticketSha256 === ticket.sha256 &&
+      receipt.evaluation?.benchmarkRevisionSha256 === record.sha256 &&
+      receipt.evaluation?.benchmarkSha256 === record.benchmarkSha256 &&
+      (receipt.evaluation?.benchmarkContinuationSha256 || null) ===
+        (ticket.benchmarkContinuationSha256 || null) &&
+      receipt.evaluation?.ticketSha256 === ticket.sha256 &&
+      receipt.modelInvocations === 1 &&
+      result.modelInvocations === 1,
+    'vinculo da tentativa v2 divergente',
+  );
+  const { manifest } = captures.verifyCapture(output, receipt.captureSha256);
+  const accepted =
+    ['completed', 'proposed'].includes(receipt.result) &&
+    manifest.exitCode === 0 &&
+    !manifest.processError &&
+    !manifest.truncated &&
+    manifest.diagnosis.accepted &&
+    manifest.diagnosis.completed &&
+    manifest.diagnosis.issues.length === 0;
+  e.check(
+    accepted || outputValidationFailure(current, ticket, result, receipt),
+    'falha tecnica v2 pendente; interromper sem repetir',
+  );
+  return { result, receipt, manifest };
+}
+function continuationPackage(current, root = e.ROOT) {
+  e.check(
+    current.benchmarkRevision && !current.benchmarkContinuation,
+    'benchmark sem continuacao disponivel',
+  );
+  const revision = current.benchmarkRevision;
+  const v2 = current.attempts.filter((item) => item.benchmarkVersion === 'v2');
+  const used = new Set(v2.map((item) => item.slot.id));
+  const remaining = revision.agenda.filter((slot) => !used.has(slot.id));
+  e.check(
+    current.attempts.length === 29 &&
+      v2.length === 26 &&
+      digest(remaining.map((slot) => slot.id)) === digest(CONTINUATION_SLOTS),
+    'historico ou slots restantes divergem da continuacao autorizada',
+  );
+  for (const ticket of v2) assertAttemptIntegrity(current, ticket, revision);
+
+  const target = load(root);
+  e.check(
+    target.commit !== revision.targetCommit &&
+      target.benchmark &&
+      digest(target.benchmark) === revision.benchmarkSha256 &&
+      digest(e.schedule(target)) === digest(revision.agenda),
+    'commit, corpus ou agenda da continuacao diverge do pacote aprovado',
+  );
+  execFileSync(
+    'git',
+    ['merge-base', '--is-ancestor', revision.targetCommit, target.commit],
+    { cwd: root },
+  );
+  for (const name of Object.keys(target.snapshot)) {
+    const before = revision.targetSnapshot[name];
+    if (before !== target.snapshot[name])
+      e.check(
+        CONTINUATION_ALLOWED.has(name),
+        `fonte fora do escopo da continuacao mudou: ${name}`,
+      );
+  }
+  for (const name of Object.keys(revision.targetSnapshot))
+    e.check(
+      Object.hasOwn(target.snapshot, name) || CONTINUATION_ALLOWED.has(name),
+      `fonte do pacote original removida: ${name}`,
+    );
+  const beforeCatalog = JSON.parse(
+    source(root, revision.targetCommit, 'config/document-catalog.json'),
+  );
+  const afterCatalog = JSON.parse(
+    source(root, target.commit, 'config/document-catalog.json'),
+  );
+  e.check(
+    digest(beforeCatalog.documents.filter((item) => item.normative)) ===
+      digest(afterCatalog.documents.filter((item) => item.normative)),
+    'documentos normativos mudaram durante a continuacao',
+  );
+  const state = e.stateSnapshot(current);
+  const payload = {
+    schemaVersion: 'agent-benchmark-v2-continuation-package-v1',
+    campaignSha256: current.campaign.sha256,
+    parentRevisionSha256: revision.sha256,
+    parentPackageSha256: revision.packageSha256,
+    parentTargetCommit: revision.targetCommit,
+    targetCommit: target.commit,
+    targetPlanSha256: target.sha256,
+    targetSnapshot: target.snapshot,
+    benchmarkSha256: revision.benchmarkSha256,
+    agendaSha256: digest(revision.agenda),
+    stateSha256: state.sha256,
+    stateFiles: state.entries,
+    attemptsUsed: current.attempts.length,
+    testOnly: current.campaign.testOnly,
+    maximumAttempts: 32,
+    remainingAttempts: 2,
+    projectedTotal: 31,
+    reserveAuthorized: true,
+    slots: remaining,
+  };
+  return { ...payload, sha256: digest(payload) };
+}
+function checkContinuation(home, root = e.ROOT) {
+  const current = e.openCampaign(home, root, true);
+  e.check(!current.benchmarkContinuation, 'continuacao ja registrada');
+  return continuationPackage(current, root);
+}
+function continuationApprovalValid(approval, pack) {
+  e.verifySeal(approval);
+  e.check(
+    approval.schemaVersion === 'agent-benchmark-v2-continuation-approval-v1' &&
+      approval.origin === 'user-session' &&
+      approval.actor === 'dleomil' &&
+      approval.decision === 'approved' &&
+      approval.testOnly === pack.testOnly &&
+      approval.sourceCommit === pack.targetCommit &&
+      approval.packageSha256 === pack.sha256 &&
+      approval.stateSha256 === pack.stateSha256 &&
+      typeof approval.statement === 'string' &&
+      approval.statement.trim().length >= 10 &&
+      typeof approval.approvedAt === 'string' &&
+      Number.isFinite(Date.parse(approval.approvedAt)),
+    'aprovacao humana da continuacao ausente ou divergente',
+  );
+}
+function continueBenchmark(home, expectedState, approvalFile, root = e.ROOT) {
+  home = require('./agent-auth.cjs').validateProfile(home);
+  const mutex = path.join(home, 'quiz-evaluation.lock');
+  fs.mkdirSync(mutex, { mode: 0o700 });
+  let runLock;
+  try {
+    const lock = path.join(home, 'quiz-run.lock');
+    fs.mkdirSync(lock, { mode: 0o700 });
+    runLock = lock;
+    const current = e.openCampaign(home, root, true);
+    e.check(
+      !current.benchmarkContinuation &&
+        expectedState === e.stateFingerprint(current),
+      'estado mudou ou continuacao ja registrada',
+    );
+    const pack = continuationPackage(current, root);
+    e.check(pack.stateSha256 === expectedState, 'estado do pacote mudou');
+    const approval = e.read(approvalFile);
+    continuationApprovalValid(approval, pack);
+    const record = {
+      schemaVersion: 'agent-benchmark-v2-continuation-v1',
+      campaignSha256: current.campaign.sha256,
+      parentRevisionSha256: current.benchmarkRevision.sha256,
+      parentPackageSha256: current.benchmarkRevision.packageSha256,
+      packageSha256: pack.sha256,
+      package: pack,
+      approval,
+      createdAt: new Date().toISOString(),
+    };
+    const sealed = { ...record, sha256: digest(record) };
+    e.write(path.join(current.directory, CONTINUATION_RECORD), sealed);
+    return sealed;
+  } finally {
+    if (runLock) fs.rmdirSync(runLock);
+    fs.rmdirSync(mutex);
+  }
+}
 function revise(home, expectedState, approvalFile, root = e.ROOT) {
   const mutex = path.join(home, 'quiz-evaluation.lock');
   fs.mkdirSync(mutex, { mode: 0o700 });
@@ -375,9 +594,10 @@ function revise(home, expectedState, approvalFile, root = e.ROOT) {
 }
 function activate(current, raw, root, readOnly) {
   const record = e.verifySeal(raw);
-  const configuration = readOnly
-    ? load(root, record.targetCommit, Object.keys(record.targetSnapshot))
-    : load(root);
+  const configuration =
+    readOnly || current.continuationRecord
+      ? load(root, record.targetCommit, Object.keys(record.targetSnapshot))
+      : load(root);
   e.check(
     record.schemaVersion === 'agent-evaluation-benchmark-revision-v2' &&
       record.campaignSha256 === current.campaign.sha256 &&
@@ -418,21 +638,157 @@ function activate(current, raw, root, readOnly) {
   );
   approvalValid(record.approval, pack, current.campaign.testOnly);
   const legacy = new Set(record.legacyBindings.map((row) => row.id));
+  const continuation = current.continuationRecord
+    ? e.verifySeal(current.continuationRecord)
+    : null;
   for (const ticket of current.attempts.filter(
     (row) => !legacy.has(row.slot.id),
   )) {
+    const inherited = !ticket.benchmarkContinuationSha256;
     e.check(
       ticket.benchmarkVersion === 'v2' &&
         ticket.benchmarkRevisionSha256 === record.sha256 &&
         ticket.benchmarkSha256 === record.benchmarkSha256 &&
-        ticket.sourceCommit === record.targetCommit &&
+        ticket.sourceCommit ===
+          (inherited
+            ? record.targetCommit
+            : continuation?.package?.targetCommit) &&
         ticket.testOnly === current.campaign.testOnly &&
         ticket.resumptionSha256 === record.parentResumptionSha256 &&
-        record.agenda.some((slot) => digest(slot) === digest(ticket.slot)),
-      'tentativa fora da revisao aprovada',
+        record.agenda.some((slot) => digest(slot) === digest(ticket.slot)) &&
+        (inherited ||
+          (continuation &&
+            ticket.benchmarkContinuationSha256 === continuation.sha256 &&
+            continuation.package.slots.some(
+              (slot) => slot.id === ticket.slot.id,
+            ))),
+      'tentativa fora da revisao aprovada ou continuacao',
     );
   }
   return { ...current, configuration, benchmarkRevision: record };
+}
+function activateContinuation(current, raw, root = e.ROOT, readOnly = false) {
+  const record = e.verifySeal(raw);
+  const revision = current.benchmarkRevision;
+  e.check(
+    record.schemaVersion === 'agent-benchmark-v2-continuation-v1' &&
+      record.campaignSha256 === current.campaign.sha256 &&
+      record.parentRevisionSha256 === revision.sha256 &&
+      record.parentPackageSha256 === revision.packageSha256,
+    'continuacao fora da revisao aprovada',
+  );
+  const pack = e.verifySeal(record.package);
+  e.check(
+    pack.sha256 === record.packageSha256 &&
+      pack.parentRevisionSha256 === revision.sha256 &&
+      pack.parentPackageSha256 === revision.packageSha256 &&
+      pack.campaignSha256 === current.campaign.sha256 &&
+      pack.maximumAttempts === 32 &&
+      pack.remainingAttempts === 2 &&
+      pack.projectedTotal === 31 &&
+      pack.reserveAuthorized === true &&
+      digest(pack.slots.map((slot) => slot.id)) === digest(CONTINUATION_SLOTS),
+    'pacote de continuacao divergente',
+  );
+  continuationApprovalValid(record.approval, pack);
+  const configuration = load(
+    root,
+    readOnly ? pack.targetCommit : undefined,
+    readOnly ? Object.keys(pack.targetSnapshot) : undefined,
+  );
+  e.check(
+    pack.targetCommit === configuration.commit &&
+      pack.targetPlanSha256 === configuration.sha256 &&
+      digest(pack.targetSnapshot) === digest(configuration.snapshot) &&
+      digest(configuration.benchmark) === revision.benchmarkSha256 &&
+      digest(e.schedule(configuration)) === digest(revision.agenda),
+    'snapshot do pacote de continuacao diverge',
+  );
+  execFileSync(
+    'git',
+    [
+      'merge-base',
+      '--is-ancestor',
+      revision.targetCommit,
+      configuration.commit,
+    ],
+    { cwd: root },
+  );
+  for (const name of Object.keys(configuration.snapshot)) {
+    const before = revision.targetSnapshot[name];
+    if (before !== configuration.snapshot[name])
+      e.check(
+        CONTINUATION_ALLOWED.has(name),
+        `fonte fora do escopo da continuacao mudou: ${name}`,
+      );
+  }
+  const parentState = {
+    campaignSha256: pack.campaignSha256,
+    entries: pack.stateFiles,
+    sha256: pack.stateSha256,
+  };
+  e.check(
+    parentState.sha256 ===
+      digest({
+        campaignSha256: parentState.campaignSha256,
+        entries: parentState.entries,
+      }),
+    'snapshot historico da continuacao diverge',
+  );
+  for (const [relative, expected] of Object.entries(parentState.entries)) {
+    const file = path.join(current.directory, relative);
+    e.check(
+      sha256(captures.readBytes(file)) === expected,
+      `historico anterior alterado: ${relative}`,
+    );
+  }
+  const parentIds = new Set(
+    Object.keys(parentState.entries)
+      .filter((name) => name.startsWith('attempts/'))
+      .map((name) => path.basename(name, '.json')),
+  );
+  const continuationAttempts = current.attempts.filter(
+    (ticket) => !parentIds.has(ticket.slot.id),
+  );
+  const orderedContinuationAttempts = [...continuationAttempts].sort(
+    (left, right) => left.reservedAt.localeCompare(right.reservedAt),
+  );
+  e.check(
+    parentIds.size === pack.attemptsUsed &&
+      current.attempts.length ===
+        parentIds.size + continuationAttempts.length &&
+      continuationAttempts.length <= pack.slots.length &&
+      digest(orderedContinuationAttempts.map((ticket) => ticket.slot.id)) ===
+        digest(
+          pack.slots
+            .slice(0, continuationAttempts.length)
+            .map((slot) => slot.id),
+        ),
+    'tentativas adicionais fora da continuacao aprovada',
+  );
+  for (const ticket of continuationAttempts) {
+    e.check(
+      ticket.benchmarkContinuationSha256 === record.sha256 &&
+        ticket.sourceCommit === pack.targetCommit &&
+        ticket.benchmarkRevisionSha256 === revision.sha256,
+      'ticket de continuacao divergente',
+    );
+    const result = e.readOptional(
+      path.join(current.directory, 'results', `${ticket.slot.id}.json`),
+    );
+    if (result) assertAttemptIntegrity(current, ticket, revision);
+    else
+      e.check(
+        orderedContinuationAttempts.at(-1)?.sha256 === ticket.sha256 &&
+          ticket.slot.id === pack.slots[continuationAttempts.length - 1]?.id,
+        'tentativa de continuacao pendente fora da ultima reserva',
+      );
+  }
+  return {
+    ...current,
+    configuration,
+    benchmarkContinuation: record,
+  };
 }
 function beforeReserve(current, id) {
   const record = current.benchmarkRevision;
@@ -443,35 +799,28 @@ function beforeReserve(current, id) {
     next?.id === id,
     'agenda v2 encerrada ou fora de ordem; nenhuma tentativa extra autorizada',
   );
+  if (current.benchmarkContinuation) {
+    const used = new Set(current.attempts.map((ticket) => ticket.slot.id));
+    const nextContinuationSlot =
+      current.benchmarkContinuation.package.slots.find(
+        (slot) => !used.has(slot.id),
+      );
+    e.check(
+      nextContinuationSlot?.id === id,
+      'slot fora do adendo de continuacao aprovado',
+    );
+  }
   for (const ticket of current.attempts.filter(
     (row) => row.benchmarkVersion === 'v2',
   )) {
-    const result = e.verifySeal(
-      e.read(path.join(current.directory, 'results', `${ticket.slot.id}.json`)),
-    );
-    const output = path.join(
-      current.directory,
-      'runs',
-      ticket.slot.id,
-      'result.json',
-    );
-    const receipt = e.verifySeal(e.read(`${output}.receipt.json`));
-    const { manifest } = captures.verifyCapture(output, receipt.captureSha256);
-    e.check(
-      result.receiptSha256 === receipt.sha256 &&
-        result.ticketSha256 === ticket.sha256 &&
-        receipt.evaluation?.benchmarkRevisionSha256 === record.sha256 &&
-        receipt.evaluation?.benchmarkSha256 === record.benchmarkSha256 &&
-        receipt.evaluation?.ticketSha256 === ticket.sha256 &&
-        receipt.modelInvocations === 1 &&
-        result.modelInvocations === 1 &&
-        ['completed', 'proposed'].includes(receipt.result) &&
-        manifest.exitCode === 0 &&
-        !manifest.processError &&
-        !manifest.truncated &&
-        manifest.diagnosis.accepted,
-      'falha tecnica v2 pendente; interromper sem repetir',
-    );
+    assertAttemptIntegrity(current, ticket, record);
+    if (ticket.benchmarkContinuationSha256)
+      e.check(
+        current.benchmarkContinuation &&
+          ticket.benchmarkContinuationSha256 ===
+            current.benchmarkContinuation.sha256,
+        'ticket fora do adendo aprovado',
+      );
   }
 }
 module.exports = {
@@ -481,6 +830,9 @@ module.exports = {
   checkBenchmark,
   revise,
   activate,
+  checkContinuation,
+  continueBenchmark,
+  activateContinuation,
   beforeReserve,
   legacyFingerprint,
 };

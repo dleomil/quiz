@@ -259,6 +259,23 @@ com as referencias ao relatorio e os aceites documentais aplicaveis. Spec,
 revisao de PR ou outros papeis sem medicao propria continuam sem ativacao por
 inferencia. Product Discovery permanece no modelo atual nesta rodada.
 
+### Continuação auditável após validação de saída
+
+Uma resposta rejeitada pelo contrato permanece como falha consumida. Ela só
+deixa de bloquear a agenda quando o recibo confirma uma invocação, o diagnóstico
+confirma turno concluído sem problemas de eventos e a captura está completa,
+íntegra e sem truncamento; o motivo também deve começar com `saida rejeitada:`.
+Erros de processo, transporte, captura, ferramenta ou integridade continuam
+bloqueando a campanha. A saída rejeitada nunca é corrigida nem repetida.
+
+Se uma mudança necessária no runner ocorrer após a ativação do benchmark, não
+editar a revisão ativa nem iniciar uma campanha nova. Executar
+`continuation-check` depois de um novo commit e apresentar o hash do pacote de
+continuação ao mantenedor. O adendo vincula a revisão original, o estado
+integral da campanha, o commit novo e os slots restantes. Só após aceite humano
+explícito registrar com `continue-benchmark`; o registro preserva todos os
+artefatos anteriores e não autoriza slots além dos enumerados no pacote.
+
 `--codex-bin` e `--test-comment` sao exclusivos de fixtures. Uma campanha de
 teste nao se mistura com campanha real e nunca produz elegibilidade, mesmo
 quando todos os casos simulados passam. Os testes normais e o CI usam essas

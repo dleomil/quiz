@@ -319,16 +319,22 @@ try {
   assert.equal(proof.contextsChecked, 5);
   assert.equal(Object.keys(proof.proofs).length, 3);
   assert.equal(proof.modelInvocations, 0);
-  for (const [index, item] of pack.agenda.entries()) {
+  for (const [index, item] of pack.agenda.slice(0, 26).entries()) {
     // Uma falha de qualidade continua contando; nao permite correcao ou repeticao.
+    const outputRejected = index === 25;
+    const expectedFailure = index === 4 || outputRejected;
     const completed = invoke(
       'run',
       ['--slot', item.slot.id],
-      index === 4 ? 'missed' : 'startup-warnings',
+      index === 4
+        ? 'missed'
+        : outputRejected
+          ? 'rejected-curation'
+          : 'startup-warnings',
     );
     assert.equal(
       completed.status,
-      index === 4 ? 1 : 0,
+      expectedFailure ? 1 : 0,
       `${item.slot.id}: ${completed.stderr}\n${completed.stdout}`,
     );
     if (index === 0) {
@@ -352,6 +358,92 @@ try {
     }
   }
   current = e.openCampaign(home, root);
+  assert.equal(current.attempts.length, 29);
+  const partialReport = JSON.parse(invoke('report').stdout);
+  const rejectedResult = partialReport.results.find(
+    (item) => item.slot.id === 'v2-curation-1-author-sol',
+  );
+  assert.equal(rejectedResult.failureClass, 'output_validation');
+  assert.equal(rejectedResult.technicalFailure, false);
+  assert.equal(partialReport.completed, false);
+  fs.appendFileSync(
+    path.join(root, 'docs/agents/model-evaluation-runbook.md'),
+    '\nAtualizacao nao normativa do fixture de continuacao.\n',
+  );
+  execFileSync(
+    'git',
+    [
+      '-c',
+      'user.name=Fixture',
+      '-c',
+      'user.email=fixture@example.invalid',
+      'add',
+      'docs/agents/model-evaluation-runbook.md',
+    ],
+    { cwd: root },
+  );
+  execFileSync(
+    'git',
+    [
+      '-c',
+      'user.name=Fixture',
+      '-c',
+      'user.email=fixture@example.invalid',
+      'commit',
+      '--quiet',
+      '-m',
+      'Prepara adendo sintetico',
+    ],
+    { cwd: root },
+  );
+  const continuationCheck = invoke('continuation-check');
+  assert.equal(
+    continuationCheck.status,
+    0,
+    continuationCheck.stderr + continuationCheck.stdout,
+  );
+  const continuationPackage = JSON.parse(continuationCheck.stdout);
+  assert.equal(continuationPackage.attemptsUsed, 29);
+  assert.deepEqual(
+    continuationPackage.slots.map((slot) => slot.id),
+    ['v2-curation-2-author-sol', 'v2-curation-2-author-luna'],
+  );
+  const continuationApprovalFile = path.join(
+    directory,
+    'continuation-approval.json',
+  );
+  const continuationApproval = {
+    schemaVersion: 'agent-benchmark-v2-continuation-approval-v1',
+    origin: 'user-session',
+    actor: 'dleomil',
+    decision: 'approved',
+    testOnly: true,
+    sourceCommit: continuationPackage.targetCommit,
+    packageSha256: continuationPackage.sha256,
+    stateSha256: continuationPackage.stateSha256,
+    statement: 'Aceite exclusivamente ficticio para este teste.',
+    approvedAt: new Date().toISOString(),
+  };
+  fs.writeFileSync(
+    continuationApprovalFile,
+    JSON.stringify(e.sealed(continuationApproval)),
+  );
+  const continuation = invoke('continue-benchmark', [
+    '--expected-state',
+    continuationPackage.stateSha256,
+    '--approval-file',
+    continuationApprovalFile,
+  ]);
+  assert.equal(
+    continuation.status,
+    0,
+    continuation.stderr + continuation.stdout,
+  );
+  for (const slot of continuationPackage.slots) {
+    const completed = invoke('run', ['--slot', slot.id]);
+    assert.equal(completed.status, 0, completed.stderr + completed.stdout);
+  }
+  current = e.openCampaign(home, root);
   assert.equal(current.attempts.length, 31);
   assert.throws(
     () => e.reserve(home, 'repair-1', 'x', null, root),
@@ -366,6 +458,11 @@ try {
   const report = JSON.parse(reportRun.stdout);
   assert.equal(report.schemaVersion, 'agent-model-evaluation-report-v2');
   assert.equal(report.attemptsUsed, 31);
+  assert.equal(report.benchmarkContinuation.attemptsUsedBeforeContinuation, 29);
+  assert.deepEqual(report.benchmarkContinuation.slots, [
+    'v2-curation-2-author-sol',
+    'v2-curation-2-author-luna',
+  ]);
   assert.equal(report.results.length, 28);
   assert.equal(report.legacyDiagnostics.length, 3);
   assert.equal(report.completed, true);
@@ -391,7 +488,10 @@ try {
   );
   const legacyBytes = fs.readFileSync(legacyFile);
   fs.appendFileSync(legacyFile, ' ');
-  assert.throws(() => e.openCampaign(home, root), /bytes historicos/);
+  assert.throws(
+    () => e.openCampaign(home, root),
+    /historico anterior alterado|bytes historicos/,
+  );
   fs.writeFileSync(legacyFile, legacyBytes);
   assert.equal(
     invoke('resume-parser', ['--expected-state', e.stateFingerprint(current)])
@@ -406,7 +506,7 @@ try {
   assert.equal(calls.length, 29);
   assert.ok(calls.every((row) => row.hasOracle === false));
   console.log(
-    'agent-benchmark-v2: ok (objetivos, aceite, isolamento, historico preservado e 3+28=31; somente fixtures)',
+    'agent-benchmark-v2: ok (continuação selada, rejeição de saída, histórico preservado e 3+28=31; somente fixtures)',
   );
 } finally {
   fs.rmSync(directory, { recursive: true, force: true });
