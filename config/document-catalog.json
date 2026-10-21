@@ -79,6 +79,17 @@
       "sha256": "91f9b8b3ce442e9d5108c2e7d4fbaa64be7e53262fb0602e4fe4411e197c6be8"
     },
     {
+      "id": "docs--agents--benchmark-v2-review",
+      "path": "docs/agents/benchmark-v2-review.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 2,
+      "version": null,
+      "normative": false,
+      "status": "informative",
+      "sha256": "fb053e6c7c8765174c16b5c95b57814913f1184a616b9ba536415af88b5d9df4"
+    },
+    {
       "id": "docs--agents--content-curator-agent",
       "path": "docs/agents/content-curator-agent.md",
       "kind": "guide",
@@ -88,6 +99,17 @@
       "normative": true,
       "status": "baseline-pending",
       "sha256": "9fd68d3c3bbff37e3a531d297fefabf932048a30fbbada4a9363ecb9ece3dbf5"
+    },
+    {
+      "id": "docs--agents--model-evaluation-runbook",
+      "path": "docs/agents/model-evaluation-runbook.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 5,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "1432be046f10b82678c778d16896e6823ee091afd7dc15e339e18826328cafb3"
     },
     {
       "id": "docs--agents--pedagogical-quality-agent",

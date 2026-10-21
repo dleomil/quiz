@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "agent-evaluation-resumption-plan-v1",
+  "sourceCommit": "7c2d1294064d87b2f82928a4ef9c48d4dcf269a6",
+  "failedSlot": "historia-valida-editorial-current",
+  "failedTicketSha256": "245354acef7e3569428895291bb72c63ca77044f6fa4b7811b80e114abd358a0",
+  "failedResultSha256": "9c6ee2105257b0fe91d9266fe1084f79c451ea3d410e7d521829d54709957e5c",
+  "failedReceiptSha256": "221ac8caf855aa90549593625126e618af654c4dc387037bcbefa2e629f45b9e",
+  "reason": "invalid_json_schema",
+  "replacementSlot": "schema-replacement-1",
+  "retiredRepairSlot": "repair-2",
+  "maximumAttempts": 32
+}

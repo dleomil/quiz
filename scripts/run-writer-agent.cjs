@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const { spawn } = require('node:child_process');
+const { execute } = require('./agent-process.cjs');
 const { ROOT, digest } = require('./document-catalog.cjs');
 const {
   buildContext,
@@ -13,7 +13,12 @@ const auth = require('./agent-auth.cjs');
 const copies = require('./agent-isolated-copy.cjs');
 const sandbox = require('./agent-writer-sandbox.cjs');
 const { validateCapabilityModel } = require('./agent-capabilities.cjs');
-const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
+const {
+  makeReceipt,
+  analyzeEvents,
+  assertEvents,
+} = require('./agent-run-receipt.cjs');
+const { createCapture } = require('./agent-event-capture.cjs');
 
 function check(value, message) {
   if (!value) throw new Error(message);
@@ -44,6 +49,7 @@ function argumentsFrom(argv) {
     '--test-comment',
     '--artifact',
     '--expected-sha256',
+    '--evaluation-ticket',
   ];
   for (let index = 0; index < argv.length; index += 2) {
     const key = argv[index];
@@ -75,6 +81,10 @@ function argumentsFrom(argv) {
       args['--artifact'] && args['--expected-sha256'] && !args['--auth-home'],
       'aplicacao exige artefato revisado e hash',
     );
+  check(
+    !args['--evaluation-ticket'] || args['--mode'] === 'evaluation',
+    'ticket permitido somente em avaliacao',
+  );
   return args;
 }
 function adapterFor(work) {
@@ -111,6 +121,8 @@ function executionArguments(adapter, workspace, scratch, authHome, scope) {
     '--ignore-rules',
     '--ephemeral',
     '--json',
+    '--output-last-message',
+    path.join(scratch, 'message.txt'),
     '--model',
     adapter.model,
     '--config',
@@ -120,68 +132,15 @@ function executionArguments(adapter, workspace, scratch, authHome, scope) {
     ...sandbox.permissionArguments(workspace, scope, scratch),
     '--config',
     'features.shell_tool=true',
+    '--config',
+    'features.code_mode_host=true',
     '--skip-git-repo-check',
     '--cd',
     workspace,
     '-',
   ];
 }
-function execute(bin, args, options) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(bin, args, {
-      ...options,
-      detached: true,
-      stdio: ['pipe', 'pipe', 'pipe'],
-    });
-    let stdout = '';
-    let bytes = 0;
-    let failure;
-    const kill = () => {
-      if (child.pid) {
-        try {
-          process.kill(-child.pid, 'SIGKILL');
-        } catch {
-          // O grupo ja encerrado nao exige outra acao.
-        }
-      }
-    };
-    const timer = setTimeout(() => {
-      failure = new Error('limite de cinco minutos; sem repeticao');
-      kill();
-    }, 300000);
-    child.stdout.on('data', (value) => {
-      bytes += value.length;
-      if (bytes > 16 * 1024 * 1024) {
-        failure = new Error('eventos excedem limite');
-        kill();
-      } else stdout += value.toString();
-    });
-    child.stderr.on('data', (value) => {
-      bytes += value.length;
-      if (bytes > 16 * 1024 * 1024) {
-        failure = new Error('eventos excedem limite');
-        kill();
-      }
-    });
-    child.on('error', (error) => {
-      clearTimeout(timer);
-      kill();
-      reject(error);
-    });
-    child.on('close', (code) => {
-      clearTimeout(timer);
-      kill();
-      if (failure || code !== 0)
-        reject(
-          failure || new Error('execucao falhou; sem repeticao ou fallback'),
-        );
-      else resolve(stdout);
-    });
-    child.stdin.on('error', () => {});
-    child.stdin.end(options.input);
-  });
-}
-async function run() {
+async function run(cliArguments = process.argv.slice(2)) {
   let args,
     receiptPath,
     receipt,
@@ -194,13 +153,15 @@ async function run() {
     configuration,
     usage,
     artifact;
+  let evaluation;
+  let capture, captureInfo, saveCandidate, message;
   let failureReason = null;
   let result = 'preflight-blocked';
   let invocations = 0;
   const started = Date.now();
   const runId = crypto.randomUUID();
   try {
-    args = argumentsFrom(process.argv.slice(2));
+    args = argumentsFrom(cliArguments);
     const output = path.resolve(args['--output']);
     const outputParent = fs.realpathSync(path.dirname(output));
     const repository = fs.realpathSync(ROOT);
@@ -235,6 +196,29 @@ async function run() {
         : {},
     );
     adapter = adapterFor(work);
+    if (args['--evaluation-ticket']) {
+      evaluation = require('./agent-evaluation.cjs').claim(
+        args['--evaluation-ticket'],
+        args['--auth-home'],
+        work,
+        null,
+        Boolean(args['--codex-bin']),
+      );
+      check(
+        ['code', 'documentation'].includes(evaluation.slot.category),
+        'categoria nao pertence ao escritor',
+      );
+      const target = evaluation.plan.authorFiles[evaluation.slot.category];
+      check(
+        digest(work.allowedPaths) === digest([target]),
+        'escopo diverge da tarefa sintetica',
+      );
+      adapter = {
+        ...adapter,
+        model: evaluation.slot.model,
+        reasoningEffort: evaluation.slot.effort,
+      };
+    }
     const scope = copies.allowedPaths(work.allowedPaths);
     receipt = {
       runId,
@@ -246,6 +230,27 @@ async function run() {
       adapterSha256: adapter.sha256,
       mode: args['--mode'],
       independentVerifier: work.independentVerifier,
+      evaluationOnly: Boolean(evaluation),
+      evaluation: evaluation
+        ? {
+            slotId: evaluation.slot.id,
+            ticketSha256: evaluation.sha256,
+            ...(evaluation.benchmarkVersion
+              ? {
+                  benchmarkVersion: evaluation.benchmarkVersion,
+                  benchmarkSha256: evaluation.benchmarkSha256,
+                  benchmarkRevisionSha256: evaluation.benchmarkRevisionSha256,
+                  ...(evaluation.benchmarkContinuationSha256
+                    ? {
+                        benchmarkContinuationSha256:
+                          evaluation.benchmarkContinuationSha256,
+                      }
+                    : {}),
+                }
+              : {}),
+            repairOf: evaluation.slot.repairOf || null,
+          }
+        : null,
     };
     if (args['--mode'] === 'apply') {
       artifact = JSON.parse(fs.readFileSync(args['--artifact'], 'utf8'));
@@ -272,9 +277,26 @@ async function run() {
       const scratch = path.join(owned, 'scratch');
       fs.mkdirSync(scratch, { mode: 0o700 });
       const workspace = path.join(owned, 'copy');
-      const prepared = copies.prepare(ROOT, work.baseCommit, scope, workspace);
+      const prepared = copies.prepare(
+        ROOT,
+        work.baseCommit,
+        scope,
+        workspace,
+        evaluation
+          ? [
+              'package.json',
+              evaluation.plan.authorFiles[evaluation.slot.category],
+            ]
+          : undefined,
+      );
       const bin = args['--codex-bin'] || 'codex';
+      saveCandidate = () => {
+        const candidate = copies.collect(prepared, work, context.sha256, runId);
+        capture.save('proposal.json', candidate);
+        return candidate;
+      };
       checks = {
+        writerTooling: sandbox.codeModeHostProof(bin),
         sandbox: sandbox.probe(
           bin,
           prepared.directory,
@@ -291,6 +313,7 @@ async function run() {
         prepared.directory,
         adapter.model,
       );
+      message = path.join(scratch, 'message.txt');
       const argv = executionArguments(
         adapter,
         prepared.directory,
@@ -305,7 +328,7 @@ async function run() {
         checks,
       });
       check(
-        args['--codex-bin'],
+        args['--codex-bin'] || evaluation,
         'candidatos bloqueados para chamadas reais ate reserva contabilizada da entrega #404',
       );
       const prompt = [
@@ -317,16 +340,33 @@ async function run() {
         'Nao declare revisao independente, aceite humano, merge ou publicacao. Ao concluir, relate requisitos atendidos e limitacoes.',
       ].join('\n\n');
       result = 'execution-failed';
+      if (evaluation)
+        capture = createCapture(output, ['command_execution', 'file_change'], {
+          authHome: home,
+          preflight: checks.authentication,
+        });
       invocations = 1;
       const events = await execute(bin, argv, {
         cwd: prepared.directory,
         env: auth.environment(home, scratch),
         input: prompt,
+        timeoutMs: 300000 - (Date.now() - started),
+        capture,
       });
       result = 'output-rejected';
-      usage = usageFromEvents(events, ['command_execution', 'file_change']);
+      if (capture) {
+        artifact = saveCandidate();
+        saveCandidate = null;
+      }
+      const eventDiagnosis = analyzeEvents(
+        events,
+        ['command_execution', 'file_change'],
+        { authHome: home, preflight: checks.authentication },
+      );
+      usage = eventDiagnosis.usage;
+      assertEvents(eventDiagnosis);
       auth.validateProfile(home);
-      artifact = copies.collect(prepared, work, context.sha256, runId);
+      artifact ||= copies.collect(prepared, work, context.sha256, runId);
       fs.mkdirSync(path.dirname(output), { recursive: true });
       writeExclusive(output, `${JSON.stringify(artifact, null, 2)}\n`);
       result = 'proposed';
@@ -338,6 +378,24 @@ async function run() {
     process.exitCode = 1;
   } finally {
     try {
+      if (capture) {
+        if (saveCandidate) {
+          try {
+            saveCandidate();
+          } catch {
+            /* Propostas fora do escopo nao podem ser recuperadas. */
+          }
+        }
+        try {
+          captureInfo = capture.finish(message);
+          usage ||= captureInfo.diagnosis.usage;
+        } catch (error) {
+          result = 'output-rejected';
+          failureReason = 'falha ao preservar captura';
+          process.stderr.write(`writer-agent: ${error.message}\n`);
+          process.exitCode = 1;
+        }
+      }
       if (receipt) {
         const value = makeReceipt({
           ...receipt,
@@ -351,8 +409,11 @@ async function run() {
           approvals: context?.approvals || [],
           configurationSha256: configuration || null,
           preflight: checks || null,
-          artifactSha256: artifact?.sha256 || null,
+          artifactSha256:
+            result === 'proposed' ? artifact?.sha256 || null : null,
           usage: usage || null,
+          captureSha256: captureInfo?.sha256 || null,
+          eventDiagnosis: captureInfo?.diagnosis || null,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
         writeExclusive(receiptPath, `${JSON.stringify(value, null, 2)}\n`);
@@ -369,4 +430,10 @@ async function run() {
   }
 }
 if (require.main === module) run();
-module.exports = { argumentsFrom, executionArguments, adapterFor, run };
+module.exports = {
+  argumentsFrom,
+  executionArguments,
+  adapterFor,
+  execute,
+  run,
+};

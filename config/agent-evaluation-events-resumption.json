@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "agent-evaluation-events-plan-v1",
+  "sourceCommit": "33d5442f9efc121303c2a2d6f3c940ee7141b03a",
+  "parentResumptionSha256": "405c98f6324d701e50c868dd6f01bcf05ce5fee25c2c662ddb07b1dbd4e57d2d",
+  "failedSlot": "schema-replacement-1",
+  "failedTicketSha256": "d1537860c2364f2214ff0167d17ec01926bb1a7894394c35c67665ee833dc12e",
+  "failedResultSha256": "bdf36ff7a98836e03729ab733995980913c39e95f42af11cfe2421e940cefc0a",
+  "failedReceiptSha256": "deff921923929782f14fb97cc5b1fa13f06aa44b7c36841f996a44f10ba212ca",
+  "replacementSlot": "schema-replacement-2",
+  "maximumAttempts": 32
+}

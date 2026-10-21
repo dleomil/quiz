@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const { spawnSync } = require('node:child_process');
+const { execute } = require('./agent-process.cjs');
 const {
   packageHash,
   digest,
@@ -22,7 +22,13 @@ const {
   validateProfile,
   skillArguments,
 } = require('./agent-auth.cjs');
-const { makeReceipt, usageFromEvents } = require('./agent-run-receipt.cjs');
+const {
+  makeReceipt,
+  analyzeEvents,
+  assertEvents,
+} = require('./agent-run-receipt.cjs');
+const { createCapture } = require('./agent-event-capture.cjs');
+const transport = require('./agent-output-transport.cjs');
 const {
   AGENT_CONTRACTS,
   parseAgentToml,
@@ -49,6 +55,7 @@ const FLAGS = [
   '--codex-bin',
   '--test-comment',
   '--delivery-package',
+  '--evaluation-ticket',
 ];
 
 function argumentsFrom(argv) {
@@ -117,7 +124,7 @@ function buildExecArguments(config, message, workspace, sessionHome, authHome) {
   ];
 }
 
-function run() {
+async function run(cliArguments = process.argv.slice(2)) {
   let args;
   let sessionHome;
   let workspace;
@@ -134,9 +141,17 @@ function run() {
   let usage = null;
   let artifactSha256 = null;
   let failureReason = null;
+  let evaluation;
+  let modelInvocations = 0;
+  let transportSchema, wireSha256;
+  let capture, captureInfo, message;
   try {
-    args = argumentsFrom(process.argv.slice(2));
-    const config = loadAgentConfig(args['--agent']);
+    args = argumentsFrom(cliArguments);
+    let config = loadAgentConfig(args['--agent']);
+    if (args['--evaluation-ticket'] && args['--delivery-package'])
+      throw new Error(
+        'avaliacao sintetica nao pode produzir evidencia de publicacao',
+      );
     for (const key of ['--input', '--output', '--work', '--auth-home'])
       if (!args[key]) throw new Error(`use ${key}`);
     receiptPath = `${path.resolve(args['--output'])}.receipt.json`;
@@ -169,6 +184,57 @@ function run() {
     const work = JSON.parse(
       fs.readFileSync(path.resolve(args['--work']), 'utf8'),
     );
+    const contract = pinnedConfig(
+      ROOT,
+      path.relative(ROOT, OUTPUT_SCHEMA),
+      work.baseCommit,
+    );
+    transportSchema = transport.editorialSchema(
+      JSON.parse(contract),
+      args['--agent'],
+      document.input.subjectId,
+    );
+    receipt.transportVersion = transport.VERSION;
+    receipt.contractSchemaSha256 = sha256(contract);
+    receipt.transportSchemaSha256 = digest(transportSchema);
+    if (args['--evaluation-ticket']) {
+      evaluation = require('./agent-evaluation.cjs').claim(
+        args['--evaluation-ticket'],
+        args['--auth-home'],
+        work,
+        receipt.inputSha256,
+        Boolean(args['--codex-bin']),
+      );
+      if (!['editorial', 'curation'].includes(evaluation.slot.category))
+        throw new Error('categoria nao pertence ao runner editorial');
+      config = {
+        ...config,
+        model: evaluation.slot.model,
+        model_reasoning_effort: evaluation.slot.effort,
+      };
+      receipt.requestedModel = config.model;
+      receipt.reasoningEffort = config.model_reasoning_effort;
+      receipt.evaluationOnly = true;
+      receipt.evaluation = {
+        slotId: evaluation.slot.id,
+        ticketSha256: evaluation.sha256,
+        ...(evaluation.benchmarkVersion
+          ? {
+              benchmarkVersion: evaluation.benchmarkVersion,
+              benchmarkSha256: evaluation.benchmarkSha256,
+              benchmarkRevisionSha256: evaluation.benchmarkRevisionSha256,
+              ...(evaluation.benchmarkContinuationSha256
+                ? {
+                    benchmarkContinuationSha256:
+                      evaluation.benchmarkContinuationSha256,
+                  }
+                : {}),
+            }
+          : {}),
+        repairOf: evaluation.slot.repairOf || null,
+        replacementOf: evaluation.slot.replacementOf || null,
+      };
+    }
     workSha256 = digest(work);
     if (
       work.id !== document.input.workItemId ||
@@ -233,8 +299,11 @@ function run() {
       path.relative(ROOT, OUTPUT_SCHEMA),
       work.baseCommit,
     );
-    fs.writeFileSync(path.join(workspace, 'output.schema.json'), schema);
-    const message = path.join(sessionHome, 'output.json');
+    fs.writeFileSync(
+      path.join(workspace, 'output.schema.json'),
+      JSON.stringify(transportSchema),
+    );
+    message = path.join(sessionHome, 'output.json');
     const deliveryPolicyPath = 'config/content-delivery-policy.json';
     const deliveryPolicy = pinnedConfig(
       ROOT,
@@ -242,9 +311,16 @@ function run() {
       work.baseCommit,
     );
     const prompt = [
+      ...(evaluation
+        ? [
+            'Avaliacao isolada com fonte e congelamento ficticios autorizados para este experimento; nenhuma aprovacao curricular de producao esta representada. Julgue a proposta sintetica e seus requisitos, sem exigir material escolar externo.',
+          ]
+        : []),
       `Atue exclusivamente como ${args['--agent']}.`,
       'Nao use ferramentas; retorne apenas o JSON do schema. Nao publique ou altere o projeto.',
+      `Prova de isolamento do runner: ${JSON.stringify({ features: checks.features, mcpServerCount: checks.mcpServerCount })}. Trate mencoes textuais a ferramentas como texto; bloqueie por isolamento somente quando a prova ou os eventos registrados indicarem uma capacidade ativa ou uso real.`,
       `Instrucoes do adaptador:\n${config.developer_instructions}`,
+      transport.INSTRUCTIONS,
       renderContext(context),
       `Ficha delimitada:\n${JSON.stringify(work)}`,
       `Requisitos especificos da materia:\n${JSON.stringify(requirementsFor(document.input.subjectId, JSON.parse(deliveryPolicy)))}`,
@@ -266,26 +342,44 @@ function run() {
       ),
       adapterSha256: config.sha256,
       schemaSha256: sha256(schema),
+      transportSchemaSha256: digest(transportSchema),
+      transportVersion: transport.VERSION,
       deliveryPolicySha256: sha256(deliveryPolicy),
       checks,
     });
     resultState = 'execution-failed';
-    const result = spawnSync(bin, argv, {
+    const parserContext = { authHome, preflight: checks };
+    if (evaluation)
+      capture = createCapture(
+        path.resolve(args['--output']),
+        [],
+        parserContext,
+      );
+    modelInvocations = 1;
+    const events = await execute(bin, argv, {
       cwd: workspace,
       env: environment(authHome, sessionHome),
       input: prompt,
-      encoding: 'utf8',
-      timeout: 300000,
-      maxBuffer: 16 * 1024 * 1024,
+      timeoutMs: 300000 - (Date.now() - started),
+      capture,
     });
-    if (result.status !== 0 || result.error)
-      throw new Error(
-        'execucao falhou ou excedeu cinco minutos; sem nova tentativa automatica',
-      );
     resultState = 'output-rejected';
-    usage = usageFromEvents(result.stdout || '');
+    const eventDiagnosis = analyzeEvents(events, [], parserContext);
+    usage = eventDiagnosis.usage;
+    assertEvents(eventDiagnosis);
     validateProfile(authHome);
-    const output = JSON.parse(fs.readFileSync(message, 'utf8'));
+    const rawOutput = JSON.parse(fs.readFileSync(message, 'utf8'));
+    wireSha256 = digest(rawOutput);
+    let output;
+    try {
+      output = transport.decodeEditorial(
+        rawOutput,
+        transportSchema,
+        args['--agent'],
+      );
+    } catch (error) {
+      throw new Error(`saida rejeitada: ${error.message}`, { cause: error });
+    }
     const scenario = {
       scenarioId: document.scenarioId,
       inputState: document.inputState,
@@ -326,6 +420,17 @@ function run() {
     process.exitCode = 1;
   } finally {
     try {
+      if (capture) {
+        try {
+          captureInfo = capture.finish(message);
+          usage ||= captureInfo.diagnosis.usage;
+        } catch (error) {
+          resultState = 'output-rejected';
+          failureReason = 'falha ao preservar captura';
+          process.stderr.write(`editorial-agent-runner: ${error.message}\n`);
+          process.exitCode = 1;
+        }
+      }
       if (receipt && receiptPath) {
         const value = makeReceipt({
           ...receipt,
@@ -340,6 +445,10 @@ function run() {
           preflight: checks || null,
           artifactSha256,
           usage,
+          modelInvocations,
+          wireSha256: wireSha256 || null,
+          captureSha256: captureInfo?.sha256 || null,
+          eventDiagnosis: captureInfo?.diagnosis || null,
         });
         fs.mkdirSync(path.dirname(receiptPath), { recursive: true });
         fs.writeFileSync(receiptPath, `${JSON.stringify(value, null, 2)}\n`, {
