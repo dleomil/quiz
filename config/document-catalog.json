@@ -200,6 +200,17 @@
       "sha256": "b07eaf88be3fd75f8ecc0c00713f4b6c212d3d2caf9f1d1c82120f8ce6cd6421"
     },
     {
+      "id": "docs--agents--verifier-comparison-runbook",
+      "path": "docs/agents/verifier-comparison-runbook.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 2,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "ebe9862560bcb1961725f8b8e95d51b0e093a75b6443c4a7598102a10c906d60"
+    },
+    {
       "id": "docs--architecture--target-architecture",
       "path": "docs/architecture/target-architecture.md",
       "kind": "guide",

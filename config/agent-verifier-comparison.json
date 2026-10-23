@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "agent-verifier-comparison-v1",
+  "id": "agent-verifier-comparison-2026-10",
+  "maximumInvocations": 12,
+  "timeoutMs": 300000,
+  "casesPath": "tests/fixtures/agent-verifier-comparison/cases.json",
+  "adapterPath": ".codex/agents/verifier.toml",
+  "variants": {
+    "current": {
+      "model": "gpt-5.6-terra",
+      "effort": "medium"
+    },
+    "candidate": {
+      "model": "gpt-6.1-sol",
+      "effort": "high"
+    }
+  },
+  "sourceSpec": {
+    "path": "docs/agents/verifier-comparison-runbook.md",
+    "campaignId": "agent-evolution-2026-10"
+  }
+}
