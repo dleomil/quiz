@@ -40,3 +40,15 @@ presentes, cartões, músicas e eventos especiais.
 Este lote permanece fora do runtime e do catálogo publicado. A aprovação do
 lote autoriza somente a próxima etapa editorial; publicação exige implementação
 controlada, validação de cobertura e novo gate de release.
+
+## Contrato para proximas alteracoes
+
+Novas inclusoes, alteracoes ou primeiras publicacoes deste lote seguem o
+[contrato comum de entrega editorial](content-delivery-contract.md). Os requisitos
+devem ter criterios e evidencias registrados; revisoes pedagogica e linguistica
+referem-se ao hash exato do pacote. Publicacao exige correspondencia entre
+rascunho e runtime, evidencia visual e aceite editorial humano. Auditorias
+anteriores permanecem historicas, sem exigir revisao retroativa do lote intocado.
+
+Em Ingles, o apoio em portugues deve explicar a instrucao, preservar os termos
+avaliados e nao revelar a resposta. Campo preenchido, por si so, nao atende ao aceite.

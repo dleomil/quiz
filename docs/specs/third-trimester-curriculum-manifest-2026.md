@@ -8,7 +8,7 @@
 | Trimestre                 | `t3`                                                                           |
 | Serie                     | `3-ano`                                                                        |
 | `contentSetId`            | `2026-t3-v1`                                                                   |
-| Versao do manifesto       | 3                                                                              |
+| Versao do manifesto       | 4                                                                              |
 | Estado do manifesto       | `frozen`                                                                       |
 | Estado inicial do acervo  | `draft` e invisivel                                                            |
 | Estado do release parcial | `published` para Ciências, Geografia, Inglês, História, Português e Matemática |
@@ -26,9 +26,11 @@ reproduzido neste manifesto.
 
 Foram publicados somente os pacotes aprovados antes das respectivas provas:
 Ciências (7 temas, 140 questões), Geografia (5 temas, 100 questões), Inglês (4
-temas, 80 questões), História (5 temas, 100 questões) e Português (2 temas, 40
-questões), totalizando 460 questões em `2026-t3-v1`. Os temas `corpos-luz`,
-`usos-c` e `verbos` foram publicados após aceite humano.
+temas, 80 questões), História (5 temas, 100 questões), Português (2 temas, 40
+questões) e Matemática (11 temas, 220 questões), totalizando 680 questões em
+`2026-t3-v1`. Os temas `corpos-luz`, `usos-c` e `verbos` foram publicados após
+aceite humano. Matemática foi publicada após a conclusão das revisões
+pedagógica e linguística para cada questão e aprovação do pacote.
 T1 e T2 permanecem disponíveis como histórico. O bundle de produção contém
 metadados e referências, enquanto os documentos normativos continuam sendo as
 fontes de verdade.
@@ -36,10 +38,10 @@ fontes de verdade.
 ## Release incremental de 2026-10-06
 
 Foram publicados os seis temas restantes de Português (8 temas, 160 questões
-T3). O total do release T3 passa a 580 questões: Ciências (140), Geografia
-(100), Inglês (80), História (100) e Português (160). Matemática permanece
-fora do runtime nesta promoção. Os 120 novos itens preservam os textos dos
-rascunhos aprovados e suas auditorias editoriais.
+T3). O total do release T3 passa a 800 questões: Ciências (140), Geografia
+(100), Inglês (80), História (100), Português (160) e Matemática (220). Os
+120 novos itens preservam os textos dos rascunhos aprovados e suas auditorias
+editoriais; os acervos já publicados foram preservados.
 
 ## Release de Matemática T3
 
@@ -115,16 +117,6 @@ exatamente 20 questões originais por linha. Os IDs sao provisórios.
 | Português  | futuro                           | futuro do presente                             |                                reconhecer ações futuras |   20 | publicado    |
 | Português  | usos-ge-gi                       | usos de ge e gi                                |                        aplicar grafias contextualizadas |   20 | publicado    |
 | Português  | adjetivos                        | adjetivos                                      |                  identificar características atribuídas |   20 | publicado    |
-| Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | proposto     |
-| Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | proposto     |
-| Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | proposto     |
-| Matemática | divisao-metodos                  | métodos longo e breve da divisão               |                      reconhecer procedimentos ensinados |   20 | bloqueado    |
-| Matemática | expressoes                       | expressões aritméticas simples                 |             calcular expressões pela convenção ensinada |   20 | bloqueado    |
-| Matemática | decomposicao-multiplicacao       | decomposição com multiplicação                 |                         usar decomposição para calcular |   20 | proposto     |
-| Matemática | problemas-expressoes             | problemas com expressões                       |                           traduzir situações e resolver |   20 | proposto     |
-| Matemática | area-malha                       | área em malha quadriculada                     |                                 contar unidades de área |   20 | proposto     |
-| Matemática | perimetro                        | perímetro                                      |                                      calcular contornos |   20 | proposto     |
-| Matemática | retas-perpendiculares            | retas perpendiculares                          |                                  reconhecer ângulo reto |   20 | proposto     |
 | Matemática | probabilidade                    | probabilidade                                  |                         comparar possibilidades simples |   20 | publicado    |
 | Matemática | multiplicacao                    | multiplicação                                  |                       resolver multiplicações do 3o ano |   20 | publicado    |
 | Matemática | divisao                          | divisão                                        |                         resolver e interpretar divisões |   20 | publicado    |
@@ -144,7 +136,7 @@ do roteiro identificam seções próprias para métodos da divisão, expressões
 aritméticas e divisão euclidiana; esses temas foram mantidos como objetos
 distintos e publicados junto com os demais temas aprovados de Matemática.
 
-## Totais provisórios
+## Totais do escopo congelado
 
 | Materia    |  Temas | Bloqueados |    Meta |
 | ---------- | -----: | ---------: | ------: |
@@ -156,17 +148,31 @@ distintos e publicados junto com os demais temas aprovados de Matemática.
 | Matemática |     11 |          0 |     220 |
 | **Total**  | **40** |      **0** | **800** |
 
-Os totais representam o escopo curricular congelado e o conjunto publicado.
+Os totais representam o escopo curricular congelado e o conjunto publicado,
+conforme as seções de release incremental. A promoção de Matemática para
+`main` em 2026-10-07 concluiu a publicação das 800 questões T3 sem alterar as
+580 questões já publicadas nas outras matérias.
 
 ## Lacunas e decisões pendentes
 
-| ID         | Tipo        | Descrição                                                        | Impacto    | Decisão                                                       | Estado    |
-| ---------- | ----------- | ---------------------------------------------------------------- | ---------- | ------------------------------------------------------------- | --------- |
-| T3-INT-001 | ambiguidade | confirmar se divisão e métodos da divisão são um ou dois objetos | Matemática | manter divisão como conceito e métodos como tema separado     | resolvido |
-| T3-INT-002 | ambiguidade | confirmar escopo de expressões e convenção ensinada              | Matemática | manter expressões simples e a convenção coberta pela apostila | resolvido |
-| T3-INT-003 | ambiguidade | confirmar se divisão euclidiana é tema próprio                   | Matemática | manter tema próprio por possuir seção e objetivo distintos    | resolvido |
-| T3-INT-004 | prazo       | janela até a primeira prova é curta                              | todos      | priorizar por data sem publicar pacote incompleto             | resolvido |
-| T3-INT-005 | fonte       | confirmar que o DOCX é a versão final                            | todos      | Product Owner confirmou prosseguimento com este arquivo       | resolvido |
+| ID         | Tipo        | Descrição                                                        | Impacto    | Decisão                                                                                        | Estado    |
+| ---------- | ----------- | ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------- | --------- |
+| T3-INT-001 | ambiguidade | confirmar se divisão e métodos da divisão são um ou dois objetos | Matemática | manter divisão como conceito e métodos como tema separado                                      | resolvido |
+| T3-INT-002 | ambiguidade | confirmar escopo de expressões e convenção ensinada              | Matemática | manter expressões simples e a convenção coberta pela apostila                                  | resolvido |
+| T3-INT-003 | ambiguidade | confirmar se divisão euclidiana é tema próprio                   | Matemática | manter tema próprio por possuir seção e objetivo distintos                                     | resolvido |
+| T3-INT-004 | prazo       | janela até a primeira prova é curta                              | todos      | priorizar por data sem publicar pacote incompleto                                              | resolvido |
+| T3-INT-005 | fonte       | confirmar que o DOCX é a versão final                            | todos      | Product Owner confirmou prosseguimento com este arquivo                                        | resolvido |
+| T3-INT-006 | ambiguidade | segunda menção a multiplicação pode duplicar cobertura           | Matemática | integrar a menção aos temas `multiplicacao` e `decomposicao-multiplicacao`, sem tema adicional | resolvido |
+
+## Emenda ao congelamento (versao 3)
+
+Em 2026-10-05, o Product Owner aprovou manter a segunda menção a
+multiplicação dentro dos dois temas existentes. A conferência dos títulos do
+roteiro confirma seções próprias para métodos da divisão, expressões simples e
+divisão euclidiana; os três itens antes marcados como bloqueados ficam
+liberados para curadoria, sem alterar seus objetivos. Esta emenda nao autoriza
+publicação: os gates editoriais e a aprovação humana do release continuam
+obrigatórios.
 
 ## Gates
 
@@ -183,17 +189,19 @@ Os totais representam o escopo curricular congelado e o conjunto publicado.
 
 ## Controle de alterações
 
-| Versão | Data       | Estado          | Descrição                                                              | Aprovação                              |
-| -----: | ---------- | --------------- | ---------------------------------------------------------------------- | -------------------------------------- |
-|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                                      | pendente                               |
-|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos               | Product Owner confirmou prosseguimento |
-|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado                      | Product Owner (`dleomil`)              |
-|      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História                    | Product Owner (`dleomil`)              |
-|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências                  | Product Owner (`dleomil`)              |
-|      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                              | Product Owner (`dleomil`)              |
-|      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português                             | Product Owner (`dleomil`)              |
-|      8 | 2026-10-06 | published       | release dos seis temas restantes de Português                          | Product Owner (`dleomil`)              |
-|      9 | 2026-10-06 | published       | release de 11 temas de Matemática após 440 revisões e aprovação humana | Product Owner (`dleomil`)              |
+| Versão | Data       | Estado          | Descrição                                                                                                    | Aprovação                              |
+| -----: | ---------- | --------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+|      1 | 2026-08-24 | awaiting-source | contrato reservado antes da fonte                                                                            | pendente                               |
+|      2 | 2026-10-02 | under-review    | fonte recebida; matriz preliminar e calendário extraídos                                                     | Product Owner confirmou prosseguimento |
+|      3 | 2026-10-02 | frozen          | decisões de escopo registradas; piloto autorizado                                                            | Product Owner (`dleomil`)              |
+|      4 | 2026-10-04 | published       | release incremental de Geografia, Inglês e História                                                          | Product Owner (`dleomil`)              |
+|      5 | 2026-10-04 | published       | release incremental dos 6 temas completos de Ciências                                                        | Product Owner (`dleomil`)              |
+|      6 | 2026-10-05 | published       | release isolado de Corpos-luz em Ciências                                                                    | Product Owner (`dleomil`)              |
+|      7 | 2026-10-05 | published       | release de usos de ç e verbos em Português                                                                   | Product Owner (`dleomil`)              |
+|      8 | 2026-10-05 | frozen-amended  | reconciliação da menção repetida a multiplicação e liberação dos temas matemáticos bloqueados para curadoria | Product Owner (`dleomil`)              |
+|      9 | 2026-10-05 | published       | release dos 11 temas de Matemática após 440 revisões e aprovação humana                                      | Product Owner (`dleomil`)              |
+|     10 | 2026-10-06 | published       | release dos seis temas restantes de Português com 120 questões                                               | Product Owner (`dleomil`)              |
+|     11 | 2026-10-07 | published       | promoção de Matemática T3 para `main`, sem alterar matérias existentes                                       | Product Owner (`dleomil`)              |
 
 Nenhuma alteração neste manifesto autoriza publicação direta ou substitui
 revisão pedagógica humana.

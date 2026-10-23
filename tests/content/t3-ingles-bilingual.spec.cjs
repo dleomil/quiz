@@ -27,11 +27,12 @@ const temporary = fs.mkdtempSync(
   path.join(os.tmpdir(), 'quiz-ingles-geradores-'),
 );
 try {
-  fs.mkdirSync(path.join(temporary, 'scripts'));
-  fs.copyFileSync(
-    path.join(ROOT, 'scripts/validate-content.cjs'),
-    path.join(temporary, 'scripts/validate-content.cjs'),
-  );
+  fs.cpSync(path.join(ROOT, 'scripts'), path.join(temporary, 'scripts'), {
+    recursive: true,
+  });
+  fs.cpSync(path.join(ROOT, 'config'), path.join(temporary, 'config'), {
+    recursive: true,
+  });
   for (const topic of topics) {
     const name = `create-t3-ingles-${topic}.cjs`;
     const generator = require(path.join(ROOT, 'scripts', name));

@@ -52,7 +52,7 @@ function createFixture() {
     ],
   });
   writeJson(path.join(root, 'config', 'agent-capabilities.json'), {
-    schemaVersion: 'agent-capabilities-v1',
+    schemaVersion: 'agent-capabilities-v2',
     capabilities: [
       {
         id: 'specification-author',
@@ -179,7 +179,7 @@ withFixture(({ policyContent, root }) => {
   assert.equal(guideline.content, policyContent);
   assert.equal(guideline.guideline.sha256, sha256(policyContent));
   const capabilities = service.callTool('read_agent_capabilities', {});
-  assert.equal(capabilities.schemaVersion, 'agent-capabilities-v1');
+  assert.equal(capabilities.schemaVersion, 'agent-capabilities-v2');
   assert.equal(capabilities.roles.length, 2);
   assert.throws(
     () => service.callTool('read_guideline', { id: '../policy' }),
@@ -487,7 +487,7 @@ assert.equal(responses[1].result.tools.length, 3);
 assert.equal(responses[2].result.isError, false);
 assert.equal(
   responses[3].result.structuredContent.schemaVersion,
-  'agent-capabilities-v1',
+  'agent-capabilities-v2',
 );
 assert.deepEqual(repositoryFingerprint(), fingerprintBefore);
 

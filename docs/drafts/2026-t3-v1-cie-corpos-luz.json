@@ -1,0 +1,581 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "O que é um corpo luminoso?",
+      "options": [
+        "um corpo que produz sua própria luz",
+        "um corpo que apenas recebe luz",
+        "uma região escura formada por um objeto",
+        "um material que deixa toda luz passar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um corpo luminoso emite luz própria.",
+      "wrongExplanations": {
+        "1": "\"um corpo que apenas recebe luz\" não descreve corretamente esta situação: Um corpo luminoso emite luz própria.",
+        "2": "\"uma região escura formada por um objeto\" não descreve corretamente esta situação: Um corpo luminoso emite luz própria.",
+        "3": "\"um material que deixa toda luz passar\" não descreve corretamente esta situação: Um corpo luminoso emite luz própria."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "41"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual é um corpo luminoso natural?",
+      "options": ["uma parede", "o Sol", "a Lua", "um livro"],
+      "correctIndex": 1,
+      "explanation": "O Sol produz luz própria e é uma fonte natural de luz.",
+      "wrongExplanations": {
+        "0": "\"uma parede\" não descreve corretamente esta situação: O Sol produz luz própria e é uma fonte natural de luz.",
+        "2": "\"a Lua\" não descreve corretamente esta situação: O Sol produz luz própria e é uma fonte natural de luz.",
+        "3": "\"um livro\" não descreve corretamente esta situação: O Sol produz luz própria e é uma fonte natural de luz."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "42"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual objeto é luminoso quando está ligado?",
+      "options": ["um caderno", "uma bola", "uma lâmpada", "uma cadeira"],
+      "correctIndex": 2,
+      "explanation": "Uma lâmpada ligada produz luz.",
+      "wrongExplanations": {
+        "0": "\"um caderno\" não descreve corretamente esta situação: Uma lâmpada ligada produz luz.",
+        "1": "\"uma bola\" não descreve corretamente esta situação: Uma lâmpada ligada produz luz.",
+        "3": "\"uma cadeira\" não descreve corretamente esta situação: Uma lâmpada ligada produz luz."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "43"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "A Lua é classificada como corpo:",
+      "options": ["luminoso", "transparente", "sem luz", "iluminado"],
+      "correctIndex": 3,
+      "explanation": "A Lua não produz luz própria; ela reflete a luz do Sol.",
+      "wrongExplanations": {
+        "0": "\"luminoso\" não descreve corretamente esta situação: A Lua não produz luz própria; ela reflete a luz do Sol.",
+        "1": "\"transparente\" não descreve corretamente esta situação: A Lua não produz luz própria; ela reflete a luz do Sol.",
+        "2": "\"sem luz\" não descreve corretamente esta situação: A Lua não produz luz própria; ela reflete a luz do Sol."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "44"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Por que vemos um livro perto de uma janela durante o dia?",
+      "options": [
+        "porque ele recebe e reflete a luz",
+        "porque ele produz luz própria",
+        "porque ele não recebe luz",
+        "porque ele transforma luz em som"
+      ],
+      "correctIndex": 0,
+      "explanation": "O livro é iluminado pela luz que chega até ele e reflete parte dela.",
+      "wrongExplanations": {
+        "1": "\"porque ele produz luz própria\" não descreve corretamente esta situação: O livro é iluminado pela luz que chega até ele e reflete parte dela.",
+        "2": "\"porque ele não recebe luz\" não descreve corretamente esta situação: O livro é iluminado pela luz que chega até ele e reflete parte dela.",
+        "3": "\"porque ele transforma luz em som\" não descreve corretamente esta situação: O livro é iluminado pela luz que chega até ele e reflete parte dela."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Uma bola colocada perto de uma lanterna ligada é um exemplo de:",
+      "options": [
+        "o Sol ao amanhecer",
+        "corpo iluminado",
+        "uma chama de vela acesa",
+        "uma lâmpada ligada"
+      ],
+      "correctIndex": 1,
+      "explanation": "A bola recebe luz da lanterna; por isso é um corpo iluminado.",
+      "wrongExplanations": {
+        "0": "\"o Sol ao amanhecer\" não descreve corretamente esta situação: A bola recebe luz da lanterna; por isso é um corpo iluminado.",
+        "2": "\"uma chama de vela acesa\" não descreve corretamente esta situação: A bola recebe luz da lanterna; por isso é um corpo iluminado.",
+        "3": "\"uma lâmpada ligada\" não descreve corretamente esta situação: A bola recebe luz da lanterna; por isso é um corpo iluminado."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "46"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "O que permite enxergar um objeto iluminado?",
+      "options": [
+        "o objeto apagar toda a luz",
+        "a ausência total de luz",
+        "a luz refletida pelo objeto chegar aos olhos",
+        "o objeto criar luz própria"
+      ],
+      "correctIndex": 2,
+      "explanation": "Vemos o objeto quando parte da luz que ele reflete chega aos nossos olhos.",
+      "wrongExplanations": {
+        "0": "\"o objeto apagar toda a luz\" não descreve corretamente esta situação: Vemos o objeto quando parte da luz que ele reflete chega aos nossos olhos.",
+        "1": "\"a ausência total de luz\" não descreve corretamente esta situação: Vemos o objeto quando parte da luz que ele reflete chega aos nossos olhos.",
+        "3": "\"o objeto criar luz própria\" não descreve corretamente esta situação: Vemos o objeto quando parte da luz que ele reflete chega aos nossos olhos."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "47"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Um pirilampo aceso é um corpo:",
+      "options": ["iluminado", "opaco sem luz", "transparente", "luminoso"],
+      "correctIndex": 3,
+      "explanation": "O pirilampo produz luz por um processo do próprio organismo.",
+      "wrongExplanations": {
+        "0": "\"iluminado\" não descreve corretamente esta situação: O pirilampo produz luz por um processo do próprio organismo.",
+        "1": "\"opaco sem luz\" não descreve corretamente esta situação: O pirilampo produz luz por um processo do próprio organismo.",
+        "2": "\"transparente\" não descreve corretamente esta situação: O pirilampo produz luz por um processo do próprio organismo."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "48"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual alternativa reúne somente corpos iluminados?",
+      "options": [
+        "Lua, livro e parede",
+        "Sol, lâmpada e chama",
+        "pirilampo, Sol e Lua",
+        "lâmpada, parede e vela acesa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lua, livro e parede não emitem luz própria; eles podem receber luz.",
+      "wrongExplanations": {
+        "1": "\"Sol, lâmpada e chama\" não descreve corretamente esta situação: Lua, livro e parede não emitem luz própria; eles podem receber luz.",
+        "2": "\"pirilampo, Sol e Lua\" não descreve corretamente esta situação: Lua, livro e parede não emitem luz própria; eles podem receber luz.",
+        "3": "\"lâmpada, parede e vela acesa\" não descreve corretamente esta situação: Lua, livro e parede não emitem luz própria; eles podem receber luz."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "49"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Uma vela apagada é melhor classificada como:",
+      "options": [
+        "sombra",
+        "corpo iluminado, quando recebe luz",
+        "corpo luminoso, mesmo apagada",
+        "fonte de luz natural"
+      ],
+      "correctIndex": 1,
+      "explanation": "A vela só emite luz quando está acesa; apagada, ela pode apenas receber luz.",
+      "wrongExplanations": {
+        "0": "\"sombra\" não descreve corretamente esta situação: A vela só emite luz quando está acesa; apagada, ela pode apenas receber luz.",
+        "2": "\"corpo luminoso, mesmo apagada\" não descreve corretamente esta situação: A vela só emite luz quando está acesa; apagada, ela pode apenas receber luz.",
+        "3": "\"fonte de luz natural\" não descreve corretamente esta situação: A vela só emite luz quando está acesa; apagada, ela pode apenas receber luz."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "50"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Quando uma vela está acesa, a chama é:",
+      "options": [
+        "um espelho",
+        "uma sombra",
+        "um corpo luminoso",
+        "um corpo apenas iluminado"
+      ],
+      "correctIndex": 2,
+      "explanation": "A chama emite luz própria enquanto a vela está acesa.",
+      "wrongExplanations": {
+        "0": "\"um espelho\" não descreve corretamente esta situação: A chama emite luz própria enquanto a vela está acesa.",
+        "1": "\"uma sombra\" não descreve corretamente esta situação: A chama emite luz própria enquanto a vela está acesa.",
+        "3": "\"um corpo apenas iluminado\" não descreve corretamente esta situação: A chama emite luz própria enquanto a vela está acesa."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "51"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual frase está correta?",
+      "options": [
+        "só corpos luminosos podem ser vistos",
+        "corpos iluminados nunca refletem luz",
+        "a luz não participa da visão",
+        "um corpo pode ser visto quando recebe ou produz luz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Corpos luminosos emitem luz e corpos iluminados refletem a luz que recebem.",
+      "wrongExplanations": {
+        "0": "\"só corpos luminosos podem ser vistos\" não descreve corretamente esta situação: Corpos luminosos emitem luz e corpos iluminados refletem a luz que recebem.",
+        "1": "\"corpos iluminados nunca refletem luz\" não descreve corretamente esta situação: Corpos luminosos emitem luz e corpos iluminados refletem a luz que recebem.",
+        "2": "\"a luz não participa da visão\" não descreve corretamente esta situação: Corpos luminosos emitem luz e corpos iluminados refletem a luz que recebem."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "52"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Um planeta aparece brilhante no céu porque:",
+      "options": [
+        "reflete a luz que recebe do Sol",
+        "produz a mesma luz do Sol",
+        "não recebe nenhuma luz",
+        "é uma estrela"
+      ],
+      "correctIndex": 0,
+      "explanation": "Planetas não são estrelas; vemos a luz do Sol refletida por eles.",
+      "wrongExplanations": {
+        "1": "\"produz a mesma luz do Sol\" não descreve corretamente esta situação: Planetas não são estrelas; vemos a luz do Sol refletida por eles.",
+        "2": "\"não recebe nenhuma luz\" não descreve corretamente esta situação: Planetas não são estrelas; vemos a luz do Sol refletida por eles.",
+        "3": "\"é uma estrela\" não descreve corretamente esta situação: Planetas não são estrelas; vemos a luz do Sol refletida por eles."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "53"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual objeto não produz luz própria?",
+      "options": [
+        "um pirilampo aceso",
+        "um espelho",
+        "uma lâmpada ligada",
+        "uma chama"
+      ],
+      "correctIndex": 1,
+      "explanation": "O espelho reflete a luz que recebe, mas não é uma fonte luminosa.",
+      "wrongExplanations": {
+        "0": "\"um pirilampo aceso\" não descreve corretamente esta situação: O espelho reflete a luz que recebe, mas não é uma fonte luminosa.",
+        "2": "\"uma lâmpada ligada\" não descreve corretamente esta situação: O espelho reflete a luz que recebe, mas não é uma fonte luminosa.",
+        "3": "\"uma chama\" não descreve corretamente esta situação: O espelho reflete a luz que recebe, mas não é uma fonte luminosa."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "54"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Em um quarto totalmente escuro, um brinquedo comum não é visto porque:",
+      "options": [
+        "ele começou a produzir luz",
+        "os olhos não precisam de luz",
+        "não há luz para ele refletir",
+        "o brinquedo deixou de existir"
+      ],
+      "correctIndex": 2,
+      "explanation": "Um brinquedo comum precisa receber luz para refletir parte dela até os olhos.",
+      "wrongExplanations": {
+        "0": "\"ele começou a produzir luz\" não descreve corretamente esta situação: Um brinquedo comum precisa receber luz para refletir parte dela até os olhos.",
+        "1": "\"os olhos não precisam de luz\" não descreve corretamente esta situação: Um brinquedo comum precisa receber luz para refletir parte dela até os olhos.",
+        "3": "\"o brinquedo deixou de existir\" não descreve corretamente esta situação: Um brinquedo comum precisa receber luz para refletir parte dela até os olhos."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "55"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual é a diferença principal entre corpo luminoso e iluminado?",
+      "options": [
+        "o luminoso é sempre maior",
+        "o iluminado nunca pode ser visto",
+        "o luminoso não interage com a luz",
+        "o luminoso emite luz própria e o iluminado recebe luz"
+      ],
+      "correctIndex": 3,
+      "explanation": "A origem da luz é o que diferencia os dois tipos de corpo.",
+      "wrongExplanations": {
+        "0": "\"o luminoso é sempre maior\" não descreve corretamente esta situação: A origem da luz é o que diferencia os dois tipos de corpo.",
+        "1": "\"o iluminado nunca pode ser visto\" não descreve corretamente esta situação: A origem da luz é o que diferencia os dois tipos de corpo.",
+        "2": "\"o luminoso não interage com a luz\" não descreve corretamente esta situação: A origem da luz é o que diferencia os dois tipos de corpo."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "41"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Uma placa de trânsito vista à noite com faróis acesos é:",
+      "options": [
+        "um corpo iluminado pelos faróis",
+        "uma fonte luminosa como o farol",
+        "uma sombra produzida pelo carro",
+        "um corpo que não recebe luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A placa recebe a luz dos faróis e reflete parte dela.",
+      "wrongExplanations": {
+        "1": "\"uma fonte luminosa como o farol\" não descreve corretamente esta situação: A placa recebe a luz dos faróis e reflete parte dela.",
+        "2": "\"uma sombra produzida pelo carro\" não descreve corretamente esta situação: A placa recebe a luz dos faróis e reflete parte dela.",
+        "3": "\"um corpo que não recebe luz\" não descreve corretamente esta situação: A placa recebe a luz dos faróis e reflete parte dela."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "42"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual exemplo apresenta fonte de luz artificial?",
+      "options": ["uma pedra", "uma lanterna ligada", "o Sol", "a Lua"],
+      "correctIndex": 1,
+      "explanation": "A lanterna ligada é produzida por pessoas e emite luz.",
+      "wrongExplanations": {
+        "0": "\"uma pedra\" não descreve corretamente esta situação: A lanterna ligada é produzida por pessoas e emite luz.",
+        "2": "\"o Sol\" não descreve corretamente esta situação: A lanterna ligada é produzida por pessoas e emite luz.",
+        "3": "\"a Lua\" não descreve corretamente esta situação: A lanterna ligada é produzida por pessoas e emite luz."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "43"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Se uma lâmpada está desligada e recebe luz do Sol, ela é:",
+      "options": [
+        "uma fonte natural de luz",
+        "uma sombra",
+        "um corpo iluminado",
+        "um corpo luminoso por estar no teto"
+      ],
+      "correctIndex": 2,
+      "explanation": "Desligada, a lâmpada não emite luz; ela apenas recebe a luz solar.",
+      "wrongExplanations": {
+        "0": "\"uma fonte natural de luz\" não descreve corretamente esta situação: Desligada, a lâmpada não emite luz; ela apenas recebe a luz solar.",
+        "1": "\"uma sombra\" não descreve corretamente esta situação: Desligada, a lâmpada não emite luz; ela apenas recebe a luz solar.",
+        "3": "\"um corpo luminoso por estar no teto\" não descreve corretamente esta situação: Desligada, a lâmpada não emite luz; ela apenas recebe a luz solar."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "44"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_cie_corpos_luz_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "ciencias",
+      "topic": "corpos-luz",
+      "topicName": "Corpos luminosos e iluminados",
+      "question": "Qual conclusão é correta sobre a Lua?",
+      "options": [
+        "ela cria luz igual à de uma lâmpada",
+        "ela é invisível durante a noite",
+        "ela não tem relação com a luz solar",
+        "ela é vista porque reflete a luz do Sol"
+      ],
+      "correctIndex": 3,
+      "explanation": "A luz solar refletida pela Lua permite que ela seja vista da Terra.",
+      "wrongExplanations": {
+        "0": "\"ela cria luz igual à de uma lâmpada\" não descreve corretamente esta situação: A luz solar refletida pela Lua permite que ela seja vista da Terra.",
+        "1": "\"ela é invisível durante a noite\" não descreve corretamente esta situação: A luz solar refletida pela Lua permite que ela seja vista da Terra.",
+        "2": "\"ela não tem relação com a luz solar\" não descreve corretamente esta situação: A luz solar refletida pela Lua permite que ela seja vista da Terra."
+      },
+      "skill": "diferenciar-corpos-luminosos-e-iluminados",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Ciências",
+        "page": "45"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

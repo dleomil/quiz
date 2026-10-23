@@ -4,15 +4,10 @@ const path = require('node:path');
 const {
   TOPICS,
   buildQuestions,
-  sha256,
 } = require('../../scripts/create-t3-matematica-drafts.cjs');
 const {
   validateContentSources,
 } = require('../../scripts/validate-content.cjs');
-const {
-  reportPath,
-  validateTopicReport,
-} = require('../../scripts/validate-t3-matematica-editorial-reports.cjs');
 
 const ROOT = path.resolve(__dirname, '../..');
 const ids = new Set();
@@ -132,13 +127,9 @@ for (const topic of TOPICS) {
       );
     }
   }
-
-  const report = JSON.parse(
-    fs.readFileSync(reportPath(topic, questions), 'utf8'),
-  );
-  assert.equal(report.sourceSha256, sha256(questions));
-  assert.deepEqual(validateTopicReport(report, topic, questions), []);
 }
 
 assert.equal(ids.size, 220);
-console.log('t3-matematica: ok (220 questões em 11 temas, todas em rascunho)');
+console.log(
+  't3-matematica: ok (220 questões em 11 temas, contrato estrutural e semantico; revisao para mudancas exigida pelo gate comum)',
+);

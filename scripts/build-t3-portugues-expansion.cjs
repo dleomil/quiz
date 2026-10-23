@@ -1,11 +1,10 @@
-const crypto = require('node:crypto');
+const { assertPublication } = require('./content-delivery.cjs');
 const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const DRAFT_DIRECTORY = path.join(ROOT, 'docs/drafts');
-const AUDIT_DIRECTORY = path.join(ROOT, 'docs/audits');
 const OUTPUT_PATH = path.join(
   ROOT,
   'js/data/t3-portugues-expansion-published.js',
@@ -22,39 +21,6 @@ const REQUIRED_REFERENCE_ID = 'roteiro-estudos-av-mensal-t3-2026';
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
-}
-
-function stableValue(value) {
-  if (Array.isArray(value)) return value.map(stableValue);
-  if (value && typeof value === 'object') {
-    return Object.fromEntries(
-      Object.keys(value)
-        .sort()
-        .map((key) => [key, stableValue(value[key])]),
-    );
-  }
-  return value;
-}
-
-function sourceHash(questions) {
-  return crypto
-    .createHash('sha256')
-    .update(JSON.stringify(stableValue(questions)))
-    .digest('hex');
-}
-
-function readAudit(topic) {
-  const prefix = `2026-t3-v1-pt-${topic}-`;
-  const matches = fs
-    .readdirSync(AUDIT_DIRECTORY)
-    .filter(
-      (file) =>
-        file.startsWith(prefix) && file.endsWith('-editorial-review.json'),
-    );
-  assert(matches.length === 1, `${topic}: deve haver exatamente uma auditoria`);
-  return JSON.parse(
-    fs.readFileSync(path.join(AUDIT_DIRECTORY, matches[0]), 'utf8'),
-  );
 }
 
 function validateTopic(topic, topicName) {
@@ -144,64 +110,6 @@ function validateTopic(topic, topicName) {
     `${topic}: distribuicao deve ser 5/5/5/5`,
   );
 
-  const audit = readAudit(topic);
-  assert(
-    audit.schemaVersion === 'editorial-review-v1',
-    `${topic}: schema de auditoria invalido`,
-  );
-  assert(
-    audit.contentSetId === '2026-t3-v1',
-    `${topic}: auditoria de outro content set`,
-  );
-  assert(
-    audit.subjectId === 'portugues' && audit.topicId === topic,
-    `${topic}: auditoria fora do tema`,
-  );
-  assert(audit.reportStatus === 'clear', `${topic}: auditoria nao esta clear`);
-  assert(
-    audit.humanApprovalRequired === true,
-    `${topic}: gate de aprovacao humana ausente`,
-  );
-  assert(
-    audit.expectedEvaluations === 40 && audit.completedEvaluations === 40,
-    `${topic}: auditoria incompleta`,
-  );
-  assert(
-    audit.sourceSha256 === sourceHash(questions),
-    `${topic}: hash da auditoria nao corresponde ao rascunho`,
-  );
-  assert(
-    Array.isArray(audit.reviews) && audit.reviews.length === 40,
-    `${topic}: deve registrar 40 avaliacoes`,
-  );
-
-  const expectedEvaluations = new Set();
-  questions.forEach((question) => {
-    ['pedagogical', 'linguistic'].forEach((reviewPass) => {
-      expectedEvaluations.add(`${question.id}:${reviewPass}`);
-    });
-  });
-  const seenEvaluations = new Set();
-  audit.reviews.forEach((review) => {
-    const questionId = review.workItemId || review.questionId;
-    const reviewPass = review.reviewPass || review.pass;
-    const key = `${questionId}:${reviewPass}`;
-    assert(
-      expectedEvaluations.has(key),
-      `${topic}: avaliacao inesperada ${key}`,
-    );
-    assert(!seenEvaluations.has(key), `${topic}: avaliacao duplicada ${key}`);
-    assert(
-      review.decision === 'approved',
-      `${topic}: avaliacao nao aprovada ${key}`,
-    );
-    seenEvaluations.add(key);
-  });
-  assert(
-    seenEvaluations.size === expectedEvaluations.size,
-    `${topic}: avaliacao ausente`,
-  );
-
   return questions.map((question) => ({
     ...question,
     topicName,
@@ -219,6 +127,7 @@ function collectPublishedQuestions() {
     'IDs duplicados entre temas',
   );
 
+  assertPublication(questions);
   return questions;
 }
 

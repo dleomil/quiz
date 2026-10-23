@@ -1,128 +1,60 @@
-# Documentacao do Produto
+# Indice da documentacao
 
-Esta pasta concentra a documentacao viva do projeto. A organizacao foi pensada para manter requisitos, definicoes tecnicas e operacao do board no GitHub dentro do proprio repositorio, com versionamento junto ao codigo.
+Esta pasta reune as fontes versionadas de produto, especificacao e operacao do Quiz Etapa. O indice ajuda a encontrar os documentos principais; os arquivos de cada pasta continuam sendo a fonte de verdade de seus respectivos assuntos.
 
-## Mapa da Documentacao
+## Mapa
 
-| Pasta                | Papel                                               | Conteudo tipico                                                           |
-| -------------------- | --------------------------------------------------- | ------------------------------------------------------------------------- |
-| `docs/harness/`      | Politicas, guardrails e contratos operacionais      | preflight, fronteiras, politica de formato, controle de fluxo dos agentes |
-| `docs/agents/`       | Modelo operacional dos agentes e seu manual de uso  | papeis, ordem, aplicacao por papel, fluxo do revisor, manual consolidado  |
-| `docs/github/`       | Guias praticos e templates de operacao no GitHub    | board, branching, corpo de PR/issue, guias de uso, formatos operacionais  |
-| `docs/specs/`        | Especificacoes de trabalho e pilotos                | specs de produto, pilotos de baixo risco, criterios de aceite e validacao |
-| `docs/backlog/`      | Fonte do backlog priorizado                         | epicos, historias, requisitos, plano de validacao, evidencias esperadas   |
-| `docs/roadmap/`      | Ordem evolutiva por fases                           | fases, priorizacao, dependencias e sequencia recomendada                  |
-| `docs/product/`      | Visao de produto e principios                       | escopo, principios e diretrizes de produto                                |
-| `docs/architecture/` | Definicoes tecnicas e fronteiras                    | arquitetura alvo, contratos tecnicos e decisoes de engenharia             |
-| `docs/platform/`     | Avaliacoes de infraestrutura e limites operacionais | Vercel, migracao, retention e sinais de reavaliacao                       |
-| `docs/security/`     | Avaliacoes e requisitos de seguranca                | superficies de risco, controles, prioridades, rollout e rollback          |
+| Pasta           | Conteudo                                                  |
+| --------------- | --------------------------------------------------------- |
+| `product/`      | Escopo, publico, principios e diretrizes do produto       |
+| `architecture/` | Arquitetura, fronteiras e decisoes tecnicas               |
+| `specs/`        | Requisitos, contratos, formatos e criterios de aceite     |
+| `agents/`       | Papeis, limites, sequencia e operacao dos agentes         |
+| `harness/`      | Guardrails, preflight, testes e licoes operacionais       |
+| `backlog/`      | Epicos, historias e prioridades documentadas              |
+| `roadmap/`      | Fases, dependencias e ordem de evolucao                   |
+| `github/`       | Branching, PRs, issues e operacao do Project              |
+| `platform/`     | Hospedagem, limites de infraestrutura e migracao          |
+| `security/`     | Superficies de risco, controles e avaliacoes de seguranca |
 
-## Estrutura recomendada
+## Leituras principais
 
-```text
-docs/
-├── README.md
-├── agents/
-│   ├── agent-operating-model.md
-│   ├── agent-operating-manual.md
-│   ├── agent-execution-order.md
-│   ├── agent-preflight-application.md
-│   ├── content-curator-agent.md
-│   ├── pedagogical-quality-agent.md
-│   ├── product-discovery-agent.md
-│   ├── reviewer-agent-comment-template.md
-│   ├── reviewer-agent-decision-matrix.md
-│   ├── production-safe-adoption-plan.md
-│   ├── reviewer-agent.md
-│   └── reviewer-agent-workflow.md
-├── architecture/
-│   └── target-architecture.md
-├── product/
-│   └── product-scope-and-principles.md
-├── platform/
-│   └── vercel-limits-assessment.md
-├── security/
-│   └── frontend-security-assessment.md
-├── harness/
-│   ├── harness-engineering.md
-│   ├── harness-vs-github-boundaries.md
-│   ├── agent-operational-guardrails.md
-│   ├── agent-preflight-checklist.md
-│   ├── execution-lessons-learned.md
-│   ├── content-update-quality-gates.md
-│   ├── t2-content-cycle-retrospective.md
-│   └── pilot-execution-checklist.md
-├── roadmap/
-│   ├── panel-control-phased-plan.md
-│   ├── phased-evolution-roadmap.md
-│   └── t3-content-readiness-plan.md
-├── specs/
-│   ├── panel-control-functional-architecture.md
-│   ├── content-schema-v1.md
-│   ├── curriculum-intake-template.md
-│   ├── curriculum-content-update-governance.md
-│   ├── third-trimester-curriculum-manifest-2026.md
-│   ├── editorial-agent-output-contract.md
-│   ├── executable-codex-agents.md
-│   ├── product-discovery-agent.md
-│   ├── pilot-low-risk-workflow.md
-│   ├── spec-driven-development.md
-│   └── vercel-limits-and-retention.md
-├── github/
-│   ├── comment-formatting-guide.md
-│   ├── github-project-guide.md
-│   ├── github-project-pocket-guide.md
-│   ├── github-project-operating-model.md
-│   ├── initial-execution-plan.md
-│   └── pr-issue-body-template.md
-└── backlog/
-    └── prioritized-epics-and-stories.md
+| Assunto                           | Documento                                                                                        |
+| --------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Escopo e principios do produto    | [product-scope-and-principles.md](product/product-scope-and-principles.md)                       |
+| Contrato editorial de acervos     | [content-delivery-contract.md](specs/content-delivery-contract.md)                               |
+| Manifesto curricular de 2026 T3   | [third-trimester-curriculum-manifest-2026.md](specs/third-trimester-curriculum-manifest-2026.md) |
+| Apoio bilingue para Ingles        | [english-t2-bilingual-question-support.md](specs/english-t2-bilingual-question-support.md)       |
+| Selecao da quantidade de questoes | [question-count-selection.md](specs/question-count-selection.md)                                 |
+| Evolucao do fluxo de agentes      | [agent-workflow-evolution.md](specs/agent-workflow-evolution.md)                                 |
+| Manual operacional dos agentes    | [agent-operating-manual.md](agents/agent-operating-manual.md)                                    |
+| Ordem de execucao dos agentes     | [agent-execution-order.md](agents/agent-execution-order.md)                                      |
+| Licoes operacionais               | [execution-lessons-learned.md](harness/execution-lessons-learned.md)                             |
+| Branching, checks e promocao      | [branching-and-delivery-strategy.md](github/branching-and-delivery-strategy.md)                  |
+| Limites e estrategia da Vercel    | [vercel-limits-assessment.md](platform/vercel-limits-assessment.md)                              |
+| Seguranca da interface            | [frontend-security-assessment.md](security/frontend-security-assessment.md)                      |
+| Versionamento documental          | [document-versioning.md](specs/document-versioning.md)                                           |
+
+## Estrutura do codigo e comandos
+
+O app e uma aplicacao web estatica: a entrada fica em `index.html`, os estilos em `css/`, a coordenacao da interface em `js/app.js`, os dados em `js/data/` e as telas em `js/views/`. Os validadores e runners ficam em `scripts/`; as suites automatizadas estao em `tests/`; os controles de CI estao em `.github/workflows/`.
+
+Use Node.js 24 e npm. `npm ci` instala as dependencias; `npm run dev` inicia o servidor local; `npm run verify:local` executa testes, lint, formato e verificacao do diff. Os testes de interface usam Playwright. No CI, `ubuntu-24.04` fornece Google Chrome preinstalado, selecionado pelo canal Playwright `chrome`; o workflow nao baixa um navegador.
+
+## Governanca dos documentos
+
+O inventario e os hashes ficam em `config/document-catalog.json`. Depois de alterar um documento Markdown catalogado, sincronize e valide o registro:
+
+```bash
+npm run documents:sync
+npm run validate:documents
 ```
 
-O runner protegido dos agentes editoriais fica em
-`scripts/run-editorial-agent.cjs`, com o schema de resposta em
-`config/editorial-agent-output.schema.json`, o schema de entrada em
-`config/editorial-agent-input.schema.json` e seus testes em
-`tests/agents/editorial-agent-runner.spec.cjs`.
+O catalogo registra identidade, versao e hash; ele nao representa aceite humano. Especificacoes e aprovacao continuam seguindo os gates descritos nos proprios documentos e nas issues ou PRs correspondentes.
 
-O modelo estrutural dos nove papeis e suas separacoes fica em
-`config/agent-capabilities.json`, com contrato em
-`docs/specs/agent-capability-model.md`. Os cinco TOMLs executaveis continuam
-como adapters read-only desse modelo.
+## Manutencao
 
-O indice validavel das policies fica em
-`config/governance-guidelines.json`. Seu contrato, manutencao e bundle
-deterministico estao descritos em
-`docs/harness/versioned-governance-guidelines.md`; os documentos referenciados
-continuam sendo as fontes normativas.
-
-O piloto local `quiz-governance` disponibiliza esse indice, os documentos
-validados por hash e o modelo central de capacidades por tres ferramentas MCP
-somente leitura. O contrato e a ativacao opt-in estao em
-`docs/specs/read-only-governance-mcp-pilot.md`; configuracoes pessoais do Codex
-continuam ignoradas pelo Git.
-
-Registros reais de execucao podem ser persistidos fora do repositorio no
-ledger local-first append-only descrito em
-`docs/specs/local-first-agent-record-ledger.md`. Exportacao, auditoria e
-sincronizacao usam bundles manuais deterministas, sem rede ou backend.
-
-## Regras de uso
-
-- `docs/product/`: visao de produto, principios, escopo e diretrizes que mudam pouco.
-- `docs/platform/`: avaliacoes de infraestrutura, limites de plataforma e decisoes operacionais.
-- `docs/security/`: avaliacoes de risco, controles existentes e planos graduais de endurecimento.
-- `docs/architecture/`: definicoes tecnicas, fronteiras arquiteturais e decisoes de engenharia.
-- `docs/specs/`: especificacoes de trabalho, criterios de aceite e formatos de entrega antes da implementacao.
-- `docs/harness/`: regras, guardrails, validacoes e observabilidade dos agentes e do fluxo assistido por IA.
-- `docs/agents/`: papeis, limites e contratos operacionais dos agentes do projeto.
-- `docs/roadmap/`: plano evolutivo por fases, com criterio de prioridade e dependencias.
-- `docs/backlog/`: epicos e historias prontas para virar issues no GitHub.
-- `docs/github/`: guia operacional do board, guia de bolso, estrategia de uso e ordem inicial de execucao.
-- `.github/`: configuracoes operacionais do repositorio, incluindo templates e orientacoes de board.
-
-## Como manter
-
-- Requisitos funcionais e nao funcionais devem nascer em `docs/backlog/` e apontar para os documentos de `product/` e `architecture/`.
-- Mudancas arquiteturais relevantes devem atualizar primeiro `docs/architecture/`.
-- O board do GitHub deve refletir o backlog, e nao substitui-lo. O board organiza execucao; os documentos preservam o contexto, as decisoes e os criterios.
+- Requisitos de produto devem permanecer ligados ao escopo e as especificacoes pertinentes.
+- Decisoes arquiteturais relevantes devem atualizar `architecture/` e os contratos afetados.
+- O backlog documentado e o Project organizam a execucao; preservar o vinculo entre issue, PR, validacao e evidencia.
+- `develop` e integracao. `main` e producao e so recebe promocao em PR separado, com checks e autorizacao de release.

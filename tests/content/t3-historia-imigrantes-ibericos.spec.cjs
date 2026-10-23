@@ -82,10 +82,12 @@ try {
     tempRoot,
     'scripts/create-t3-historia-imigrantes-ibericos.cjs',
   );
-  fs.copyFileSync(
-    path.join(ROOT, 'scripts/create-t3-historia-imigrantes-ibericos.cjs'),
-    generatorPath,
-  );
+  fs.cpSync(path.join(ROOT, 'scripts'), path.join(tempRoot, 'scripts'), {
+    recursive: true,
+  });
+  fs.cpSync(path.join(ROOT, 'config'), path.join(tempRoot, 'config'), {
+    recursive: true,
+  });
   execFileSync(process.execPath, [generatorPath]);
   const generated = JSON.parse(
     fs.readFileSync(

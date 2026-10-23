@@ -14,8 +14,8 @@ const context = vm.createContext({ window: {} });
 [
   't3-published.js',
   't3-portugues-published.js',
-  't3-portugues-expansion-published.js',
   't3-matematica-published.js',
+  't3-portugues-expansion-published.js',
 ].forEach((file) => {
   vm.runInContext(
     fs.readFileSync(path.join(ROOT, 'js/data', file), 'utf8'),

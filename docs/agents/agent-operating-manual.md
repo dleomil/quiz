@@ -24,8 +24,9 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 2. Revise riscos e fronteiras.
 3. Implemente o menor passo possivel.
 4. Valide contra a spec.
-5. Atualize issue, PR e board.
-6. Revise o PR com o Reviewer Agent antes do merge.
+5. Registre no issue, PR e board o estado intermediario e as evidencias atuais.
+6. Revise o PR com o Reviewer Agent antes do merge; marque o board como
+   concluido somente depois do merge.
 
 ## Documentos de referencia
 
@@ -79,7 +80,7 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 ### Para concluir uma entrega
 
 - registrar evidencias
-- atualizar o board
+- atualizar o board com o estado real; `Done` exige merge concluido
 - aplicar o parecer do Reviewer Agent
 - preservar a trilha no PR e na issue
 

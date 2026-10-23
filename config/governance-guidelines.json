@@ -15,12 +15,12 @@
     },
     {
       "id": "agent-capability-model",
-      "version": "1.2.0",
+      "version": "2.0.0",
       "status": "active",
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-capability-model.md",
-      "sha256": "8e2282234a49bfd56e8a02848834a77ab643b32326b67d7e5f7c264a70a5fa65",
+      "sha256": "ea9770de6a411c07461d5700ebec15f7b8788bb92f77b11e326d6d4dfdfc3d8f",
       "appliesTo": ["agent-configuration", "agent-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": ["agent capability validation", "distinct actor record"]
@@ -56,12 +56,12 @@
     },
     {
       "id": "branching-and-delivery",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "status": "active",
       "type": "policy",
       "owner": "architecture",
       "sourcePath": "docs/github/branching-and-delivery-strategy.md",
-      "sha256": "e8e2a1412b75ed91af5442c817f639aac802df42715edc43bb2af83d40d73f8b",
+      "sha256": "10d29b7361f105001b08eee0a3a5f3310a0ccef3fedc4507fdff959798d51ca1",
       "appliesTo": [
         "pull-requests",
         "releases",
@@ -74,41 +74,42 @@
         "branch sync validation",
         "merge authorization",
         "merge message manifest",
-        "post-merge message audit"
+        "post-merge message audit",
+        "restricted local git helper"
       ]
     },
     {
       "id": "curriculum-content-quality",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "active",
       "type": "policy",
       "owner": "content",
       "sourcePath": "docs/harness/content-update-quality-gates.md",
-      "sha256": "45484f3f045ea506b016dcd37999477cd1649327cabdd66d1bbe9171e5272b80",
+      "sha256": "f59ce883e644982326405c11e306dc52c4884d228ada57393fc2f84f02f5b2be",
       "appliesTo": ["content-updates", "editorial-workflows"],
       "enforcement": "manual-blocking",
       "evidence": ["pedagogical review", "linguistic review", "human approval"]
     },
     {
       "id": "editorial-agent-output",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "status": "active",
       "type": "contract",
       "owner": "content",
       "sourcePath": "docs/specs/editorial-agent-output-contract.md",
-      "sha256": "f150dc26b1cfe911521f2cf6207f70e6bfd75b7d5b8019e95e7830224fd4c274",
+      "sha256": "654b7c89ff30fc95a5db6a7516b62fa286639f0137e7583e960099fb33a79131",
       "appliesTo": ["editorial-agents", "editorial-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["validated editorial agent output"]
     },
     {
       "id": "executable-codex-agents",
-      "version": "1.2.0",
+      "version": "2.0.0",
       "status": "active",
       "type": "standard",
       "owner": "architecture",
       "sourcePath": "docs/specs/executable-codex-agents.md",
-      "sha256": "b46c517ee0e39a35cf3c0d38b68e008bd4c8dd44bc193261e7d97dae35dc5d8a",
+      "sha256": "165ce0c233a91163de13875b7a2246a62ef0d04ba3c7740cecdbc84f48a5e9f7",
       "appliesTo": ["agent-configuration", "agent-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["agent configuration validation"]
@@ -180,6 +181,55 @@
       "appliesTo": ["implementation", "pull-requests", "specification"],
       "enforcement": "manual-blocking",
       "evidence": ["approved implementation plan", "linked pull request"]
+    },
+    {
+      "id": "content-delivery-contract",
+      "version": "2.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "content",
+      "sourcePath": "docs/specs/content-delivery-contract.md",
+      "sha256": "b615fec1f49de6289f2af3a8527e87086e8557dddbc8d58103f959c79f65dd52",
+      "appliesTo": ["content-updates", "editorial-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "validacao do lote alterado",
+        "revisoes vinculadas ao hash",
+        "aceite editorial verificavel",
+        "interface por IDs do lote"
+      ]
+    },
+    {
+      "id": "document-versioning",
+      "version": "1.0.1",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/document-versioning.md",
+      "sha256": "ad845b6ba0dc7fb6d6f5e7a45f2012578f3ba5642d6d8517cb04368f5d4347d3",
+      "appliesTo": ["documentation", "agent-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "inventario completo e hashes conferidos",
+        "mudancas comparadas com a base",
+        "aceite humano do baseline antes do consumo"
+      ]
+    },
+    {
+      "id": "agent-context-and-auth",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/agent-context-and-auth.md",
+      "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e",
+      "appliesTo": ["agent-workflows", "editorial-workflows"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "complete pinned context bundle",
+        "dedicated ChatGPT keyring preflight",
+        "execution receipt sidecar"
+      ]
     }
   ]
 }

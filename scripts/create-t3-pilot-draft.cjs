@@ -1,3 +1,4 @@
+const { validateGeneratedQuestions } = require('./content-delivery.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -9,19 +10,18 @@ const DRAFT_PATH = path.join(
   'drafts',
   '2026-t3-v1-cie-luz-visao.json',
 );
-const AUDIT_PATH = path.join(
-  ROOT,
-  'docs',
-  'audits',
-  '2026-t3-v1-cie-luz-visao-audit.json',
-);
 
 const SPECS = [
   [
-    'A luz do Sol é um exemplo de:',
+    'O Sol é um exemplo de:',
     'fonte luminosa',
     ['corpo iluminado', 'sombra', 'espelho'],
-    'A luz do Sol é produzida pelo próprio Sol.',
+    'O Sol produz sua própria luz e é uma fonte luminosa.',
+    [
+      'Um corpo iluminado recebe luz de outra fonte e não produz luz própria.',
+      'Uma sombra é uma região que recebe pouca ou nenhuma luz.',
+      'Um espelho reflete a luz que recebe, mas não produz luz própria.',
+    ],
   ],
   [
     'Qual objeto produz luz quando está ligado?',
@@ -186,95 +186,63 @@ function sha256(value) {
     .digest('hex');
 }
 
-function buildQuestions() {
-  return SPECS.map(([question, correct, wrong, explanation], index) => {
-    const correctIndex = index % 4;
-    const base = [correct, ...wrong];
-    const options = new Array(4);
-    const wrongExplanations = {};
-    base.forEach((option, baseIndex) => {
-      const targetIndex = (baseIndex + correctIndex) % 4;
-      options[targetIndex] = option;
-      if (baseIndex > 0) {
-        wrongExplanations[targetIndex] =
-          `A alternativa não corresponde ao conceito de ${correct.toLowerCase()}.`;
-      }
-    });
-    return {
-      schemaVersion: 'content-v1',
-      id: `2026t3v1_cie_luz_visao_${String(index + 1).padStart(3, '0')}`,
-      contentSetId: '2026-t3-v1',
-      subject: 'ciencias',
-      topic: 'luz-visao',
-      topicName: 'Luz e Visão',
-      question,
-      options,
-      correctIndex,
-      explanation,
-      wrongExplanations,
-      skill: 'reconhecer-fontes-propriedades-e-cuidados-da-luz',
-      sourceRef: {
-        referenceId: 'escola-2026-t3',
-        section: 'Ciências',
-        page: String([41, 43, 46, 48, 49, 51, 54][index % 7]),
-      },
-      reviewStatus: 'draft',
-      version: 1,
-    };
-  });
+function buildQuestionsUnchecked() {
+  return SPECS.map(
+    ([question, correct, wrong, explanation, wrongReasons], index) => {
+      const correctIndex = index % 4;
+      const base = [correct, ...wrong];
+      const options = new Array(4);
+      const wrongExplanations = {};
+      base.forEach((option, baseIndex) => {
+        const targetIndex = (baseIndex + correctIndex) % 4;
+        options[targetIndex] = option;
+        if (baseIndex > 0) {
+          wrongExplanations[targetIndex] =
+            wrongReasons?.[baseIndex - 1] ||
+            `A alternativa não corresponde ao conceito de ${correct.toLowerCase()}.`;
+        }
+      });
+      return {
+        schemaVersion: 'content-v1',
+        id: `2026t3v1_cie_luz_visao_${String(index + 1).padStart(3, '0')}`,
+        contentSetId: '2026-t3-v1',
+        subject: 'ciencias',
+        topic: 'luz-visao',
+        topicName: 'Luz e Visão',
+        question,
+        options,
+        correctIndex,
+        explanation,
+        wrongExplanations,
+        skill: 'reconhecer-fontes-propriedades-e-cuidados-da-luz',
+        sourceRef: {
+          referenceId: 'escola-2026-t3',
+          section: 'Ciências',
+          page: String([41, 43, 46, 48, 49, 51, 54][index % 7]),
+        },
+        reviewStatus: 'draft',
+        version: 1,
+      };
+    },
+  );
 }
 
-function buildAudit(questions) {
-  const reviews = questions.flatMap((question) => [
-    {
-      questionId: question.id,
-      pass: 'curriculum-factual',
-      actorId: 'codex-single-agent',
-      actorRole: 'content_curator',
-      evidenceRefs: [
-        `school-curriculum:2026-t3/ciencias/luz-visao/page-${question.sourceRef.page}`,
-      ],
-      decision: 'clear',
-      findings: [],
-    },
-    {
-      questionId: question.id,
-      pass: 'pedagogical-linguistic',
-      actorId: 'codex-single-agent',
-      actorRole: 'pedagogical_quality',
-      evidenceRefs: [
-        `school-curriculum:2026-t3/ciencias/luz-visao/page-${question.sourceRef.page}`,
-      ],
-      decision: 'clear',
-      findings: [],
-    },
-  ]);
-  return {
-    schemaVersion: 'content-quality-audit-v1',
-    reviewMode: 'single-agent-sequential',
-    reportStatus: 'draft',
-    contentSetId: '2026-t3-v1',
-    topicId: 'ciencias:luz-visao',
-    sourceSha256: sha256(questions),
-    reviews,
-  };
+function buildQuestions(...args) {
+  return validateGeneratedQuestions(buildQuestionsUnchecked(...args));
 }
 
 function main() {
   const questions = buildQuestions();
-  const audit = buildAudit(questions);
   fs.mkdirSync(path.dirname(DRAFT_PATH), { recursive: true });
-  fs.mkdirSync(path.dirname(AUDIT_PATH), { recursive: true });
   fs.writeFileSync(
     DRAFT_PATH,
     `${JSON.stringify({ schemaVersion: 'content-draft-v1', contentSetId: '2026-t3-v1', questions }, null, 2)}\n`,
   );
-  fs.writeFileSync(AUDIT_PATH, `${JSON.stringify(audit, null, 2)}\n`);
-  process.stdout.write(
-    `t3-pilot-draft: ok (${questions.length} questoes, ${audit.reviews.length} passagens)\n`,
-  );
+  process.stdout
+    .write(`Rascunho validado: ${questions.length} questoes; revisao deve ser registrada separadamente.
+`);
 }
 
 if (require.main === module) main();
 
-module.exports = { buildQuestions, buildAudit, sha256 };
+module.exports = { buildQuestions, sha256 };

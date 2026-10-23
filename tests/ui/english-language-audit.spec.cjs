@@ -2,7 +2,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
-const { chromium } = require('playwright');
+const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
 const port = 4187;

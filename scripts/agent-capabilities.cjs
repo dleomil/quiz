@@ -4,7 +4,7 @@ const { execFileSync } = require('node:child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const MODEL_PATH = path.join(ROOT, 'config', 'agent-capabilities.json');
-const SCHEMA_VERSION = 'agent-capabilities-v1';
+const SCHEMA_VERSION = 'agent-capabilities-v2';
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const AGENT_NAME = /^[a-z0-9]+(?:_[a-z0-9]+)*$/;
 const OPERATIONS = new Set([
@@ -15,7 +15,7 @@ const OPERATIONS = new Set([
   'research',
 ]);
 const EFFECTS = new Set(['read-only', 'workspace-write', 'external-write']);
-const ROLE_STATUSES = new Set(['documented', 'executable']);
+const ROLE_STATUSES = new Set(['documented', 'executable', 'candidate']);
 const REASONING_EFFORTS = new Set(['low', 'medium', 'high', 'xhigh']);
 
 const TOP_KEYS = new Set([
@@ -44,6 +44,8 @@ const ADAPTER_KEYS = new Set([
   'reasoningEffort',
   'sandboxMode',
   'mcpPolicy',
+  'runner',
+  'activation',
 ]);
 const SEPARATION_KEYS = new Set([
   'id',
@@ -163,10 +165,30 @@ function validateContractFile(contractPath, options, label, errors) {
   }
 }
 
-function validateAdapter(adapter, label, errors) {
+function validateAdapter(adapter, label, errors, candidateRole) {
   errors.push(...unknownKeys(adapter, ADAPTER_KEYS, label));
   if (!isPlainObject(adapter)) return;
-  if (!isSafeAdapterPath(adapter.configPath)) {
+  if (candidateRole) {
+    if (
+      adapter.configPath !== `config/agents/${candidateRole}.json` ||
+      adapter.runner !== 'isolated-writer' ||
+      adapter.activation !== 'evaluation-only' ||
+      adapter.sandboxMode !== 'isolated-copy'
+    )
+      errors.push(
+        `${label} candidato exige runner isolado e avaliacao explicita`,
+      );
+    const expected = {
+      spec: ['gpt-6.1-sol', 'high'],
+      implementer: ['gpt-6-luna', 'medium'],
+    }[candidateRole];
+    if (
+      !expected ||
+      adapter.model !== expected[0] ||
+      adapter.reasoningEffort !== expected[1]
+    )
+      errors.push(`${label} modelo candidato diverge do plano`);
+  } else if (!isSafeAdapterPath(adapter.configPath)) {
     errors.push(`${label}.configPath deve ficar em .codex/agents`);
   }
   if (!isText(adapter.agentName) || !AGENT_NAME.test(adapter.agentName)) {
@@ -177,7 +199,12 @@ function validateAdapter(adapter, label, errors) {
   if (!REASONING_EFFORTS.has(adapter.reasoningEffort)) {
     errors.push(`${label}.reasoningEffort invalido`);
   }
-  if (adapter.sandboxMode !== 'read-only') {
+  if (
+    !candidateRole &&
+    (adapter.runner !== undefined || adapter.activation !== undefined)
+  )
+    errors.push(`${label} runner candidato proibido para executavel nativo`);
+  if (!candidateRole && adapter.sandboxMode !== 'read-only') {
     errors.push(`${label}.sandboxMode deve ser read-only`);
   }
   if (adapter.mcpPolicy !== 'none') {
@@ -241,6 +268,11 @@ function validateCapabilityModel(model, options = {}) {
     roleIds.add(role.id);
     if (!ROLE_STATUSES.has(role.status))
       errors.push(`${label}.status invalido`);
+    if (
+      role.status === 'candidate' &&
+      !['spec', 'implementer'].includes(role.id)
+    )
+      errors.push(`${label} papel candidato nao autorizado`);
     validateUniqueTextList(role.capabilities, `${label}.capabilities`, errors);
     if (Array.isArray(role.capabilities)) {
       role.capabilities.forEach((capabilityId) => {
@@ -273,11 +305,51 @@ function validateCapabilityModel(model, options = {}) {
         );
       });
     }
-    if (role.status === 'executable') {
+    if (role.status === 'executable' || role.status === 'candidate') {
       if (!role.adapter)
         errors.push(`${label}.adapter obrigatorio para papel executavel`);
       else {
-        validateAdapter(role.adapter, `${label}.adapter`, errors);
+        validateAdapter(
+          role.adapter,
+          `${label}.adapter`,
+          errors,
+          role.status === 'candidate' ? role.id : undefined,
+        );
+        if (role.status === 'candidate') {
+          const expected =
+            role.id === 'spec'
+              ? 'specification-author'
+              : 'implementation-author';
+          if (
+            !Array.isArray(role.capabilities) ||
+            role.capabilities.length !== 1 ||
+            role.capabilities[0] !== expected
+          )
+            errors.push(`${label} candidato exige apenas autoria delimitada`);
+          try {
+            const root = options.rootDirectory || ROOT;
+            if (
+              role.adapter.configPath !== `config/agents/${role.id}.json` ||
+              !['spec', 'implementer'].includes(role.id)
+            )
+              throw new Error('caminho proibido');
+            if (hasSymlinkComponent(root, role.adapter.configPath))
+              throw new Error('symlink');
+            const file = JSON.parse(
+              fs.readFileSync(path.join(root, role.adapter.configPath)),
+            );
+            if (
+              Object.keys(file).sort().join(',') !==
+                'instructions,role,schemaVersion' ||
+              file.schemaVersion !== 'agent-writer-adapter-v1' ||
+              file.role !== role.id ||
+              !isText(file.instructions)
+            )
+              throw new Error('contrato divergente');
+          } catch {
+            errors.push(`${label} adapter candidato invalido ou ausente`);
+          }
+        }
         if (isPlainObject(role.adapter)) {
           if (configPaths.has(role.adapter.configPath)) {
             errors.push(

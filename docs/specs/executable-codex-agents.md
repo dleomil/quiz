@@ -29,9 +29,13 @@ contratos esperados dos TOMLs; nao existe uma segunda lista hardcoded.
 
 Os agentes editoriais declaram uma tabela `mcp_servers` vazia. A execucao
 protegida deve ocorrer por `scripts/run-editorial-agent.cjs`, que inicia um
-processo Codex separado com `CODEX_HOME` temporario e nao herda ferramentas ou
-connectors da sessao pai. O runner tambem exige `codex mcp list --json` vazio e
-falha fechado quando qualquer preflight ou validacao falhar.
+processo Codex separado com `CODEX_HOME` dedicado, login ChatGPT no chaveiro,
+workspace e ambiente de comandos temporarios. Nao herda ferramentas ou connectors da sessao
+pai. O runner exige ficha fixada ao commit, contexto completo com aceite
+documental, flags efetivas sem ferramentas e `codex mcp list --json` vazio.
+Falha fechado quando qualquer preflight ou validacao falhar. Preparacao, uso e
+recibos estao em `agent-context-and-auth.md`; nao ha fallback por API ou copia
+de `auth.json`. Os modelos desta tabela continuam vigentes ate avaliacao.
 
 O modelo central exige `mcpPolicy: none` explicitamente para todos os adapters.
 O validador rejeita a omissao da politica e qualquer servidor MCP configurado.
