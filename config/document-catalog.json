@@ -35,6 +35,17 @@
       "sha256": "4138114d9cc4021a4a9a1232423759e465f78a745722260aa6612294d7f606b1"
     },
     {
+      "id": "docs--agents--2026-benchmark-v2-failure-review",
+      "path": "docs/agents/2026-benchmark-v2-failure-review.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "5fce47ea37326fc1b01ab3f1d2eb43532d9dbb43e477985501e3d9df5f81539d"
+    },
+    {
       "id": "docs--agents--agent-execution-order",
       "path": "docs/agents/agent-execution-order.md",
       "kind": "guide",
@@ -462,6 +473,17 @@
       "normative": true,
       "status": "baseline-pending",
       "sha256": "2f4b3e5fa906963798115f63b54cb3e17895167782b4a24edc575d66af716ab9"
+    },
+    {
+      "id": "docs--roadmap--2026-t3-cycle-closeout",
+      "path": "docs/roadmap/2026-t3-cycle-closeout.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "7fe8bcb0ea204d598b3326605413857582228abb97019f2eb3dde66cbe21e51a"
     },
     {
       "id": "docs--roadmap--panel-control-phased-plan",
