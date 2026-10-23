@@ -130,6 +130,7 @@ Atualizar issue, PR, labels, status e evidencias no board.
 - nao altera criterio tecnico
 - nao fecha item sem validacao
 - nao move item sem confirmar a consistencia entre `Status` e `Workflow` quando ambos existirem
+- antes do merge, registra o estado como em revisao ou pronto; marca como concluido somente apos o merge
 
 ### 6. Reviewer Agent
 
@@ -249,8 +250,9 @@ O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-w
 2. `Architect Agent` revisa riscos e limites.
 3. `Implementer Agent` executa o menor passo possivel.
 4. `Verifier Agent` valida contra a spec.
-5. `Release and Board Agent` publica o resultado no board.
-6. `Reviewer Agent` emite parecer de conformidade para PRs antes do merge.
+5. `Release and Board Agent` registra evidencias e o estado intermediario no board.
+6. `Reviewer Agent` emite parecer de conformidade antes do merge; o board so
+   passa a concluido depois que o merge estiver confirmado.
 
 ## Fluxo para descoberta de produto
 

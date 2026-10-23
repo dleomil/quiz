@@ -14,7 +14,9 @@ permissions:
 
 jobs:
   pr-governance:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    env:
+      PLAYWRIGHT_BROWSER_CHANNEL: chrome
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -94,8 +96,11 @@ jobs:
           npm run lint
           npm run format:check
 
-      - name: Install Playwright Chromium
-        run: npx playwright install --with-deps chromium
+      - name: Confirmar Chrome preinstalado no runner
+        run: google-chrome --version
+
+      - name: Validar configuracao do navegador Playwright
+        run: node tests/ui/playwright-browser.spec.cjs
 
       - name: Validate safe frontend rendering
         run: npm run test:frontend-security
