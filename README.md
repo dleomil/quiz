@@ -1,6 +1,6 @@
 # Quiz Etapa
 
-> Aplicacao web de quiz educativo para criancas do 3o ano do Ensino Fundamental, com foco em pratica, revisao e acompanhamento de desempenho.
+Aplicacao web de quiz educativo para criancas do 3º ano do Ensino Fundamental. O projeto oferece pratica por materia e assunto, feedback imediato, explicacoes e historico local de desempenho.
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-F59E0B)
 ![HTML](https://img.shields.io/badge/HTML5-estrutura-E34F26)
@@ -8,149 +8,91 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E)
 ![Deploy](https://img.shields.io/badge/deploy-vercel-000000)
 
-## Sobre o projeto
+## Produto
 
-O **Quiz Etapa** e uma aplicacao web estatica criada para tornar a revisao escolar mais leve, visual e interativa. O aluno escolhe uma materia, seleciona um assunto e responde a uma sequencia de perguntas com feedback imediato, explicacoes e historico de desempenho salvo no navegador.
+O quiz contem seis materias: **Portugues, Matematica, Ciencias, Geografia, Historia e Ingles**. O estudante escolhe um acervo publicado por ano e trimestre, depois seleciona uma materia e um assunto. O catalogo do codigo marca 2026 T3 como acervo atual; o que esta em producao depende do conteudo promovido a `main`. A disponibilidade de temas varia conforme o acervo.
 
-O projeto foi estruturado para funcionar sem backend, o que facilita uso, manutencao e deploy.
+Em Ingles, os conjuntos com apoio bilingue mostram uma traducao em portugues do enunciado para ajudar a crianca a compreender a pergunta. O estudante tambem pode:
 
-## Destaques
+- personalizar a quantidade ate o total disponivel no tema; quando ha duas ou mais questoes, o intervalo comeca em 2 e a sugestao inicial e ate 30;
+- usar os atalhos de 2, 10, 20 questoes ou todas as disponiveis, quando couberem;
+- alternar entre os temas claro e escuro;
+- acompanhar o progresso, receber feedback, revisar o gabarito e consultar historico salvo no navegador.
 
-- Interface simples e amigavel para estudo infantil
-- Quiz com progresso visual por pergunta
-- Feedback imediato apos cada resposta
-- Gabarito comentado no fim da sessao
-- Historico de desempenho salvo localmente
-- Grafico de evolucao com `Chart.js`
-- Exportacao do resultado em HTML
+Os dados da aplicacao ficam no navegador usando `localStorage`; o produto nao possui backend de usuarios ou banco de dados remoto.
 
-## Funcionalidades
+## Tecnologias e estrutura
 
-- Escolha de materia na tela inicial
-- Selecao de assunto especifico ou modo `Todos os Assuntos`
-- Sorteio de perguntas a partir de um banco local
-- Exibicao de trechos de texto quando a questao exige interpretacao
-- Contador de progresso e acertos durante o quiz
-- Tela final com percentual de aproveitamento
-- Revisao detalhada das respostas certas e erradas
-- Historico das tentativas com media, melhor nota e grafico
-- Limpeza manual do historico quando desejado
-
-## Materias e conteudos
-
-Atualmente, o projeto possui foco principal em **Portugues**, com perguntas organizadas por temas. A estrutura tambem ja esta preparada para expansao, permitindo adicionar novas materias e novos conjuntos de questoes com relativa facilidade.
-
-## Tecnologias utilizadas
-
-- HTML5
-- CSS3
-- JavaScript Vanilla
-- Chart.js
-- `localStorage`
-- Vercel
-
-## Documentacao
-
-A documentacao viva do projeto fica em `docs/` e o guia operacional do board fica em `docs/github/`.
-
-Leituras principais:
-
-- [Documentacao do Produto](docs/README.md)
-- [Guia do GitHub Project](docs/github/github-project-guide.md)
-- [Guia de bolso do GitHub Project](docs/github/github-project-pocket-guide.md)
-- [Modelo Operacional do GitHub Project](docs/github/github-project-operating-model.md)
-- [Estrategia de Branching e Evolucao Controlada](docs/github/branching-and-delivery-strategy.md)
-- [Plano Inicial de Execucao do Board](docs/github/initial-execution-plan.md)
-
-## Estrutura do projeto
+O produto usa HTML, CSS e JavaScript sem framework, Chart.js, Node.js e Vercel. Os principais arquivos estao organizados assim:
 
 ```text
-Quiz/
-├── index.html
-├── css/
-│   └── style.css
+.
+├── .github/workflows/   # Validacoes de PR e promocao
+├── config/              # Catalogos e politicas versionados
+├── css/                 # Estilos, temas e layout responsivo
+├── docs/                # Especificacoes, governanca e operacao
 ├── js/
-│   ├── app.js
-│   ├── store.js
-│   ├── data/
-│   │   ├── questions.js
-│   │   └── subjects/
-│   │       ├── portugues.js
-│   │       ├── matematica.js
-│   │       ├── ciencias.js
-│   │       ├── geografia.js
-│   │       ├── historia.js
-│   │       └── ingles.js
-│   └── views/
-│       ├── home.js
-│       ├── subject.js
-│       ├── quiz.js
-│       ├── results.js
-│       └── history.js
+│   ├── app.js           # Inicializacao e coordenacao da interface
+│   ├── data/            # Catalogo e dados das seis materias
+│   └── views/           # Telas de materia, quiz, resultado e historico
+├── scripts/             # Servidor local, validadores e ferramentas editoriais
+├── tests/               # Testes de conteudo, governanca e interface
+├── index.html
+├── package.json
 └── vercel.json
 ```
 
-## Fluxo da aplicacao
+## Desenvolvimento local
 
-1. O usuario escolhe uma materia.
-2. Seleciona um assunto especifico ou todos os assuntos disponiveis.
-3. O sistema monta uma sessao com perguntas sorteadas do banco local.
-4. Cada resposta recebe retorno imediato.
-5. Ao final, o resultado e calculado e armazenado no historico.
-6. O usuario pode revisar o gabarito e baixar o resultado.
-
-## Como executar localmente
-
-Como o projeto e estatico, voce pode abrir o arquivo `index.html` diretamente no navegador.
-
-Se quiser rodar com um servidor local:
+Use Node.js 24, a mesma versao configurada nos workflows do projeto, com npm. Na raiz do repositorio:
 
 ```bash
+npm ci
 npm run dev
 ```
 
-Ou use uma extensao como **Live Server** no VS Code.
+Abra `http://127.0.0.1:3000`. `npm start` e um alias para `npm run dev`.
 
-## Comandos oficiais
+O pacote Playwright esta nas dependencias. Para validar os testes de interface com o Google Chrome ja instalado no computador, execute:
 
-- `npm run dev`: sobe um servidor local na porta `3000`
-- `npm start`: alias do `npm run dev`
-- `npm run lint`: valida padroes de codigo com ESLint
-- `npm run format:check`: verifica o formato padrao com Prettier
-- `npm run format`: aplica o formato padrao com Prettier
-- `npm test`: executa validacao de conteudo e testes de regressao do quiz
-- `npm run validate:content`: valida a estrutura de todas as fontes de questoes
-- `npm run test:content`: executa fixtures do contrato de conteudo v1
-- `npm run test:frontend-security`: valida historico e renderizacao contra payloads HTML
-- `npm run test:ui:content-session`: valida catalogo e persistencia de sessoes v2
-- `npm run test:ui:dark-mode`: executa apenas o teste de interface do modo escuro
+```bash
+PLAYWRIGHT_BROWSER_CHANNEL=chrome npm run verify:local
+```
 
-## Persistencia de dados
+Sem essa variavel, os testes usam o navegador padrao do Playwright. No CI, o workflow roda em `ubuntu-24.04` e usa o Google Chrome preinstalado na imagem; nao baixa ou instala um navegador durante a validacao.
 
-O historico dos quizzes e salvo com `localStorage`, ou seja:
+## Testes e validacoes
 
-- os dados ficam armazenados no proprio navegador
-- nao ha dependencia de banco de dados externo
-- o historico permanece entre acessos no mesmo dispositivo e navegador
-- limpar os dados do navegador remove esse historico
+`npm run verify:local` executa `npm test`, ESLint, Prettier e `git diff --check`. A suite abrange validacao de conteudo e cobertura, regressao pedagogica, contratos dos agentes, seguranca de renderizacao e testes Playwright para as experiencias de interface.
 
-## Possiveis evolucoes
+Comandos uteis:
 
-- adicionar novas materias
-- criar niveis de dificuldade
-- incluir temporizador por pergunta
-- melhorar filtros e leitura do historico
-- adicionar sons e reforcos visuais
-- incluir relatorios mais detalhados por tema
+| Comando                     | Uso                                                  |
+| --------------------------- | ---------------------------------------------------- |
+| `npm test`                  | Executa os testes e validadores locais do projeto    |
+| `npm run verify:local`      | Executa a suite completa, lint, formato e diff check |
+| `npm run lint`              | Verifica JavaScript com ESLint                       |
+| `npm run format:check`      | Verifica a formatacao com Prettier                   |
+| `npm run validate:content`  | Valida os dados de questoes                          |
+| `npm run validate:delivery` | Verifica o contrato de entrega editorial             |
+| `npm run validate:agents`   | Verifica a configuracao e capacidades dos agentes    |
 
-## Objetivo
+Os testes usam fixtures e nao fazem chamadas reais a modelos. Execucoes reais dos agentes e publicacao editorial seguem autorizacoes e gates separados.
 
-A proposta do projeto e transformar a revisao escolar em uma experiencia mais acessivel e motivadora, ajudando criancas a praticar com autonomia e permitindo um acompanhamento simples por responsaveis ou professores.
+## Agentes e governanca editorial
 
-## Deploy
+Os papeis, permissoes e separacoes entre autoria e revisao ficam em `config/agent-capabilities.json` e `docs/specs/agent-capability-model.md`. Os runners protegidos ficam em `scripts/run-editorial-agent.cjs` e `scripts/run-writer-agent.cjs`; suas instrucoes, contexto, recibos e limites estao documentados em `docs/agents/` e `docs/harness/`.
 
-O repositorio ja possui `vercel.json`, facilitando a publicacao do projeto na Vercel.
+Geradores e validadores ajudam a controlar o formato e as evidencias, mas nao substituem revisao pedagogica e linguistica independente, aprovacao humana aplicavel ou autorizacao de release.
 
-## Licenca
+## Branches e publicacao
 
-Este projeto usa a licenca [MIT](LICENSE).
+`develop` e a branch de integracao e validacao; seu conteudo nao representa por si so uma publicacao em producao. `main` e a branch de producao. Mudancas chegam a `main` por PR separado, com os checks exigidos e autorizacao explicita de release. O deploy configurado usa Vercel; um preview de PR nao e a promocao para producao.
+
+Consulte a [estrategia de branching e entrega](docs/github/branching-and-delivery-strategy.md) e a [avaliacao de limites da Vercel](docs/platform/vercel-limits-assessment.md).
+
+## Documentacao e licenca
+
+O [indice da documentacao](docs/README.md) organiza escopo do produto, especificacoes, operacao dos agentes e entrega. Documentos Markdown e seus hashes estao inventariados em `config/document-catalog.json`; para manter o catalogo, use `npm run documents:sync` e `npm run validate:documents`.
+
+O pacote declara a licenca MIT, conforme os termos existentes em [LICENSE](LICENSE).
