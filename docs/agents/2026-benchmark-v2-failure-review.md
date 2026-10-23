@@ -1,6 +1,6 @@
 # Revisao humana das falhas do benchmark de agentes v2
 
-**Estado:** proposta de classificacao; decisao humana pendente.  
+**Estado:** classificacao confirmada pelo mantenedor em 2026-10-22.
 **Entrega:** #404, PR corretivo #410.  
 **Pacote avaliado:** SHA-256 `93d837d8d3864b50568961b3583bd13026f30d1e3bb40d537d6fe750dc459914`.  
 **Relatorio privado:** SHA-256 `da16bbb25bd1107ffcdf7825e1f9b91cb74899f8171cfdba48a559cd111feb7d`.
@@ -30,10 +30,11 @@ foram reescritos. A correcao melhora a validade de execucoes futuras, mas nao
 converte esta amostra em prova geral de capacidade nem habilita modelos ou
 categorias para uso regular.
 
-## Decisao solicitada ao mantenedor
+## Decisao do mantenedor
 
-Confirmar ou corrigir a reclassificacao acima. Ate essa decisao, #404 e a
-iniciativa #400 permanecem abertas; #405 continua bloqueada. A tentativa
-restante nao esta autorizada para correcao, repeticao ou comparacao de
-verificadores. Capturas brutas e dados completos do relatorio permanecem no
-perfil privado de avaliacao, fora do Git e do GitHub.
+O mantenedor confirmou a reclassificacao acima em [#404](https://github.com/dleomil/quiz/issues/404#issuecomment-6354156955).
+A issue #404 foi encerrada como concluida; #405 pode prosseguir conforme seu
+escopo proprio. A iniciativa #400 permanece aberta ate a conclusao das demais
+entregas. A tentativa restante nao esta autorizada para correcao, repeticao ou
+comparacao de verificadores. Capturas brutas e dados completos do relatorio
+permanecem no perfil privado de avaliacao, fora do Git e do GitHub.

@@ -39,11 +39,11 @@
       "path": "docs/agents/2026-benchmark-v2-failure-review.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "5fce47ea37326fc1b01ab3f1d2eb43532d9dbb43e477985501e3d9df5f81539d"
+      "sha256": "b7946be82f4ad67858841ac0748e6287d47c642808bb5e998610f593015a787a"
     },
     {
       "id": "docs--agents--agent-execution-order",
