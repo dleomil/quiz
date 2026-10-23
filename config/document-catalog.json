@@ -17,22 +17,22 @@
       "path": "README.md",
       "kind": "readme",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "informative",
-      "sha256": "448d1895feba9c573186cbf775f87f005556e7c48e4be83b67659431a59f3005"
+      "sha256": "8827c4db3fadefd057088bcaff5d13cb520782e99002987bb4447426f61412f4"
     },
     {
       "id": "docs--readme",
       "path": "docs/README.md",
       "kind": "readme",
       "owner": "architecture",
-      "revision": 2,
+      "revision": 3,
       "version": null,
       "normative": false,
       "status": "informative",
-      "sha256": "4138114d9cc4021a4a9a1232423759e465f78a745722260aa6612294d7f606b1"
+      "sha256": "8a0dd25eed6425a50f4c4ae1d973ab8e39a5e898ebc842c3a954dbbe72f6e5da"
     },
     {
       "id": "docs--agents--2026-benchmark-v2-failure-review",
