@@ -76,3 +76,23 @@ O relatorio inclui tentativas, recibos, uso informado, duracao, resultados e
 limitacoes. A amostra pequena e sintetica nao comprova desempenho geral; a CLI
 nao atesta identidade remota do modelo nem consumo da assinatura. Qualquer
 ativacao de perfil exige decisao, PR e autorizacao proprios.
+
+## Recuperar respostas capturadas sem novas chamadas
+
+Se uma execucao registrar falha tecnica, mas a captura autenticada contiver
+`response.json`, use a recuperacao offline depois de confirmar a causa. O
+comando valida o pacote contra o commit de origem, os recibos, os manifestos
+das capturas e o schema das respostas; depois reaplica o grader local. Ele nao
+altera o relatorio original, recibos, resultados ou ledger e nao chama modelos.
+Se faltar uma resposta, houver divergencia de hash ou o schema falhar, a
+recuperacao para sem produzir relatorio.
+
+    npm run evaluation:verifiers:recover -- \
+      --auth-home "$HOME/.codex-quiz-auth" \
+      --package /private/tmp/agent-verifier-comparison-package.json \
+      --output /private/tmp/agent-verifier-comparison-recovered-report.json
+
+O relatorio suplementar distingue as notas recuperadas das falhas originais da
+CLI. Ele preserva o total de chamadas ja consumidas, informa zero chamadas
+adicionais e continua inelegivel para ativacao. Esta recuperacao serve para
+respostas ja capturadas; nao libera repeticao ou retomada de slots.
