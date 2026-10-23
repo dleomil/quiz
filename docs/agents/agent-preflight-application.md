@@ -59,6 +59,7 @@ Antes de atualizar board, issue ou PR, confirmar:
 - qual item sera movido
 - se a branch e a base do PR passam em `npm run validate:branch`
 - qual estado real da entrega deve ser refletido
+- se o merge foi confirmado; sem merge, nao marcar como concluido
 - quais labels, campos e comentarios precisam ser atualizados
 - se o estado final corresponde ao que foi entregue
 

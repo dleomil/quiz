@@ -166,6 +166,12 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   assert.equal(record.argv.at(-1), '-');
   assert.ok(record.prompt.includes('Contratos autorizados completos'));
   assert.ok(record.prompt.includes('# Instrucoes do projeto Quiz'));
+  assert.ok(
+    record.prompt.includes(
+      '# Contrato de entrega editorial: T3 e proximos acervos',
+    ),
+    'o runner deve entregar ao agente o contrato normativo fixado na ficha',
+  );
   assert.ok(record.argv.includes('shell_environment_policy.inherit="none"'));
   assert.ok(
     record.argv.includes(
@@ -211,6 +217,22 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
     invoke('ok', scenarios[1], ['--delivery-package', delivery]).stderr,
     /proposta diverge/,
   );
+
+  const contractPath = path.join(
+    root,
+    'docs/specs/content-delivery-contract.md',
+  );
+  const contractSource = fs.readFileSync(contractPath);
+  fs.unlinkSync(recordPath);
+  fs.appendFileSync(contractPath, '\nAlteracao normativa sem novo aceite.\n');
+  const staleContext = invoke('ok');
+  assert.notEqual(staleContext.status, 0);
+  assert.match(staleContext.stderr, /hash documental divergente/);
+  assert.equal(fs.existsSync(recordPath), false);
+  assert.equal(staleContext.receipt.contextSha256, null);
+  assert.equal(staleContext.receipt.modelInvocations, 0);
+  fs.writeFileSync(contractPath, contractSource);
+
   fs.mkdirSync(path.join(authHome, 'quiz-run.lock'));
   assert.match(invoke('ok').stderr, /concorrente bloqueada/);
   fs.rmdirSync(path.join(authHome, 'quiz-run.lock'));

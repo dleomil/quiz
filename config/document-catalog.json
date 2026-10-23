@@ -39,44 +39,44 @@
       "path": "docs/agents/agent-execution-order.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "f133fb20648aa1fabb11e21f6a607af26bc7548625d0fc0b61f88da7be817d2c"
+      "sha256": "7925cbaad45744f7ab82ea53b45e015876b99192fd8b22f62079cccef93ce718"
     },
     {
       "id": "docs--agents--agent-operating-manual",
       "path": "docs/agents/agent-operating-manual.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "6cf22b8d3caace4d24dc3cb7643b71227ef36fdf2e7d453ebbac98d580386fa2"
+      "sha256": "148ba2e0587bb4bb8b443c119bdc83de1d53b5178dd4794dd02f79aefa1567d3"
     },
     {
       "id": "docs--agents--agent-operating-model",
       "path": "docs/agents/agent-operating-model.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.0.1",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "072d60bbc9422bd07d7fc33810e4add9b09ec228e9cb98f607fd067c9b6fd726"
+      "status": "draft",
+      "sha256": "880664c4031481a0d6abb409903b8b24c3fadedc03161430df5317dbd404add0"
     },
     {
       "id": "docs--agents--agent-preflight-application",
       "path": "docs/agents/agent-preflight-application.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.0.1",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "91f9b8b3ce442e9d5108c2e7d4fbaa64be7e53262fb0602e4fe4411e197c6be8"
+      "status": "draft",
+      "sha256": "35b13fa7c26cb729dbf2b206391e6d07c40b4559f3cba0b786d3d6165370c366"
     },
     {
       "id": "docs--agents--benchmark-v2-review",
@@ -369,11 +369,11 @@
       "path": "docs/harness/execution-lessons-learned.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "ed8326cc49c3db4d3425a10fe1c772568b2f09841191363ef5cd482cbab3b6a8"
+      "sha256": "54f2fc2b2e942121463346243364841150df79d708e889f3ab4a8eeb2fb86264"
     },
     {
       "id": "docs--harness--harness-engineering",
