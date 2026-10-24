@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "agent-verifier-cases-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "valid-reducer",
+      "kind": "control",
+      "decision": "approved",
+      "expectedFindings": [],
+      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items) || items.some((item) => !item || typeof item.correct !== 'boolean')) throw new TypeError('invalid'); return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
+      "requirements": [
+        {
+          "id": "VER-TOTAL",
+          "text": "Cada item correto vale cinco pontos e cada incorreto vale zero."
+        },
+        {
+          "id": "VER-EMPTY",
+          "text": "A lista vazia deve resultar em zero pontos."
+        },
+        {
+          "id": "VER-INPUT",
+          "text": "A entrada deve ser uma lista de itens com correct booleano; entradas invalidas devem lancar TypeError."
+        },
+        {
+          "id": "VER-PURE",
+          "text": "A funcao nao pode alterar a lista nem os itens recebidos."
+        },
+        {
+          "id": "VER-EVIDENCE",
+          "text": "A decisao deve refletir evidencias de testes reproduziveis, inclusive falhas observadas."
+        }
+      ],
+      "tests": [
+        {
+          "id": "mixed-score",
+          "input": [{ "correct": true }, { "correct": false }],
+          "expected": 5
+        },
+        { "id": "empty-list", "input": [], "expected": 0 },
+        {
+          "id": "invalid-input",
+          "input": [null],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "invalid-correct-type",
+          "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        }
+      ],
+      "evidenceClaim": "A suite reproduzivel foi aprovada."
+    },
+    {
+      "id": "valid-loop",
+      "kind": "control",
+      "decision": "approved",
+      "expectedFindings": [],
+      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items) || items.some((item) => !item || typeof item.correct !== 'boolean')) throw new TypeError('invalid'); let total = 0; for (const item of items) total += item.correct ? 5 : 0; return total; };",
+      "requirements": [
+        {
+          "id": "VER-TOTAL",
+          "text": "Cada item correto vale cinco pontos e cada incorreto vale zero."
+        },
+        {
+          "id": "VER-EMPTY",
+          "text": "A lista vazia deve resultar em zero pontos."
+        },
+        {
+          "id": "VER-INPUT",
+          "text": "A entrada deve ser uma lista de itens com correct booleano; entradas invalidas devem lancar TypeError."
+        },
+        {
+          "id": "VER-PURE",
+          "text": "A funcao nao pode alterar a lista nem os itens recebidos."
+        },
+        {
+          "id": "VER-EVIDENCE",
+          "text": "A decisao deve refletir evidencias de testes reproduziveis, inclusive falhas observadas."
+        }
+      ],
+      "tests": [
+        {
+          "id": "mixed-score",
+          "input": [{ "correct": true }, { "correct": false }],
+          "expected": 5
+        },
+        { "id": "empty-list", "input": [], "expected": 0 },
+        {
+          "id": "invalid-input",
+          "input": [null],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "invalid-correct-type",
+          "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        }
+      ],
+      "evidenceClaim": "A suite reproduzivel foi aprovada."
+    },
+    {
+      "id": "valid-helper",
+      "kind": "control",
+      "decision": "approved",
+      "expectedFindings": [],
+      "source": "function score(item) { return item.correct === true ? 5 : 0; }\nmodule.exports = function totalPoints(items) { if (!Array.isArray(items) || items.some((item) => !item || typeof item.correct !== 'boolean')) throw new TypeError('invalid'); return items.map(score).reduce((total, points) => total + points, 0); };",
+      "requirements": [
+        {
+          "id": "VER-TOTAL",
+          "text": "Cada item correto vale cinco pontos e cada incorreto vale zero."
+        },
+        {
+          "id": "VER-EMPTY",
+          "text": "A lista vazia deve resultar em zero pontos."
+        },
+        {
+          "id": "VER-INPUT",
+          "text": "A entrada deve ser uma lista de itens com correct booleano; entradas invalidas devem lancar TypeError."
+        },
+        {
+          "id": "VER-PURE",
+          "text": "A funcao nao pode alterar a lista nem os itens recebidos."
+        },
+        {
+          "id": "VER-EVIDENCE",
+          "text": "A decisao deve refletir evidencias de testes reproduziveis, inclusive falhas observadas."
+        }
+      ],
+      "tests": [
+        {
+          "id": "mixed-score",
+          "input": [{ "correct": true }, { "correct": false }],
+          "expected": 5
+        },
+        { "id": "empty-list", "input": [], "expected": 0 },
+        {
+          "id": "invalid-input",
+          "input": [null],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "invalid-correct-type",
+          "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        }
+      ],
+      "evidenceClaim": "A suite reproduzivel foi aprovada."
+    },
+    {
+      "id": "missing-empty-case",
+      "kind": "defect",
+      "decision": "adjustments_required",
+      "expectedFindings": ["VER-EMPTY"],
+      "evidenceGroups": {
+        "VER-EMPTY": [
+          ["reduce", "acumulador"],
+          ["empty", "vazia"]
+        ]
+      },
+      "source": "module.exports = function totalPoints(items) { return items.reduce((sum, item) => sum + (item.correct ? 5 : 0)); };",
+      "requirements": [
+        {
+          "id": "VER-TOTAL",
+          "text": "Cada item correto vale cinco pontos e cada incorreto vale zero."
+        },
+        {
+          "id": "VER-EMPTY",
+          "text": "A lista vazia deve resultar em zero pontos."
+        },
+        {
+          "id": "VER-INPUT",
+          "text": "A entrada deve ser uma lista de itens com correct booleano; entradas invalidas devem lancar TypeError."
+        },
+        {
+          "id": "VER-PURE",
+          "text": "A funcao nao pode alterar a lista nem os itens recebidos."
+        },
+        {
+          "id": "VER-EVIDENCE",
+          "text": "A decisao deve refletir evidencias de testes reproduziveis, inclusive falhas observadas."
+        }
+      ],
+      "tests": [
+        {
+          "id": "mixed-score",
+          "input": [{ "correct": true }, { "correct": false }],
+          "expected": 5
+        },
+        {
+          "id": "single-incorrect",
+          "input": [{ "correct": false }],
+          "expected": 0
+        }
+      ],
+      "evidenceClaim": "A suite reproduzivel foi aprovada."
+    },
+    {
+      "id": "missing-input-validation",
+      "kind": "defect",
+      "decision": "adjustments_required",
+      "expectedFindings": ["VER-INPUT"],
+      "evidenceGroups": {
+        "VER-INPUT": [
+          ["TypeError", "tipo"],
+          ["entrada", "invalid", "boolean"]
+        ]
+      },
+      "source": "module.exports = function totalPoints(items) { return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
+      "requirements": [
+        {
+          "id": "VER-TOTAL",
+          "text": "Cada item correto vale cinco pontos e cada incorreto vale zero."
+        },
+        {
+          "id": "VER-EMPTY",
+          "text": "A lista vazia deve resultar em zero pontos."
+        },
+        {
+          "id": "VER-INPUT",
+          "text": "A entrada deve ser uma lista de itens com correct booleano; entradas invalidas devem lancar TypeError."
+        },
+        {
+          "id": "VER-PURE",
+          "text": "A funcao nao pode alterar a lista nem os itens recebidos."
+        },
+        {
+          "id": "VER-EVIDENCE",
+          "text": "A decisao deve refletir evidencias de testes reproduziveis, inclusive falhas observadas."
+        }
+      ],
+      "tests": [
+        {
+          "id": "mixed-score",
+          "input": [{ "correct": true }, { "correct": false }],
+          "expected": 5
+        },
+        { "id": "empty-list", "input": [], "expected": 0 }
+      ],
+      "evidenceClaim": "A suite reproduzivel foi aprovada."
+    },
+    {
+      "id": "contradictory-test-evidence",
+      "kind": "evidence-defect",
+      "decision": "blocked",
+      "expectedFindings": ["VER-EVIDENCE"],
+      "evidenceGroups": {
+        "VER-EVIDENCE": [
+          ["esperava", "expected"],
+          ["observou", "recebeu", "actual"],
+          ["4", "5"]
+        ]
+      },
+      "source": "module.exports = function totalPoints(items) { return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
+      "requirements": [
+        {
+          "id": "VER-TOTAL",
+          "text": "Cada item correto vale cinco pontos e cada incorreto vale zero."
+        },
+        {
+          "id": "VER-EMPTY",
+          "text": "A lista vazia deve resultar em zero pontos."
+        },
+        {
+          "id": "VER-INPUT",
+          "text": "A entrada deve ser uma lista de itens com correct booleano; entradas invalidas devem lancar TypeError."
+        },
+        {
+          "id": "VER-PURE",
+          "text": "A funcao nao pode alterar a lista nem os itens recebidos."
+        },
+        {
+          "id": "VER-EVIDENCE",
+          "text": "A decisao deve refletir evidencias de testes reproduziveis, inclusive falhas observadas."
+        }
+      ],
+      "tests": [
+        {
+          "id": "claimed-mixed-score",
+          "input": [{ "correct": true }, { "correct": false }],
+          "expected": 4
+        }
+      ],
+      "evidenceClaim": "O relatorio original diz que a suite passou; a reproducao independente pode divergir."
+    }
+  ]
+}
