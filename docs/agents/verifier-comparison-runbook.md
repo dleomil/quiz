@@ -73,15 +73,25 @@ resultado nao habilita modelo para uso regular.
       --output /private/tmp/agent-verifier-comparison-report.json
 
 O relatorio inclui tentativas, recibos, uso informado, duracao, resultados e
-limitacoes. A amostra pequena e sintetica nao comprova desempenho geral; a CLI
-nao atesta identidade remota do modelo nem consumo da assinatura. Qualquer
-ativacao de perfil exige decisao, PR e autorizacao proprios.
+limitacoes. `completed` significa que todos os processos da CLI terminaram sem
+falha; `scoringComplete` significa que todas as respostas puderam ser validadas
+e pontuadas. `responseRecoveries` e os contadores por variante mostram respostas
+recuperadas; elas continuam contabilizadas como falhas tecnicas. A amostra
+pequena e sintetica nao comprova desempenho geral; a CLI nao atesta identidade
+remota do modelo nem consumo da assinatura. Qualquer ativacao de perfil exige
+decisao, PR e autorizacao proprios.
 
 ## Recuperar respostas capturadas sem novas chamadas
 
-Se uma execucao registrar falha tecnica, mas a captura autenticada contiver
-`response.json`, use a recuperacao offline depois de confirmar a causa. O
-comando valida o pacote contra o commit de origem, os recibos, os manifestos
+Durante `run`, a resposta pode ser pontuada automaticamente quando o unico erro
+for exatamente `Code Mode is unavailable because code-mode host is disabled`,
+o turno tiver terminado, nao houver evento de ferramenta e a captura validada
+contiver JSON conforme o schema. O resultado recebe `response-recovered`, mas
+preserva a falha original da CLI no recibo; o slot continua consumido. Qualquer
+outra falha continua sem recuperacao automatica.
+
+Para campanhas antigas ou respostas ja capturadas, use a recuperacao offline.
+O comando valida o pacote contra o commit de origem, os recibos, os manifestos
 das capturas e o schema das respostas; depois reaplica o grader local. Ele nao
 altera o relatorio original, recibos, resultados ou ledger e nao chama modelos.
 Se faltar uma resposta, houver divergencia de hash ou o schema falhar, a
