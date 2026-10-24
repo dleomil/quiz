@@ -204,11 +204,11 @@
       "path": "docs/agents/verifier-comparison-runbook.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 3,
+      "revision": 4,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "ce9bd3e6ade611c6d51b25995a4e228b620d661fb5a98aab7af7058c60c25fb5"
+      "sha256": "fe9ff199245b09eaeb5a87f6a7733d4cf48b63bdebb60c416e3e40c22b2f32ff"
     },
     {
       "id": "docs--architecture--target-architecture",

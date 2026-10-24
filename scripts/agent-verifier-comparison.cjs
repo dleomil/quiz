@@ -43,6 +43,8 @@ const SUPPORT_PATHS = [
 ];
 const CAMPAIGN_PARENT = 'quiz-evaluations';
 const SCHEMA = transport.verificationSchema();
+const CODE_MODE_DISABLED_MESSAGE =
+  'Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.';
 
 function check(value, message) {
   if (!value) throw new Error(message);
@@ -508,6 +510,50 @@ function grade(caseData, output) {
   };
 }
 
+function recoverableCodeModeResponse(stdout, context, capture) {
+  try {
+    const diagnosis = analyzeEvents(stdout, [], context);
+    if (
+      diagnosis.completed !== true ||
+      diagnosis.reasonCode !== 'process_failure' ||
+      diagnosis.issues.length !== 1 ||
+      diagnosis.issues[0].itemType !== 'error' ||
+      diagnosis.issues[0].eventType !== 'item.completed' ||
+      diagnosis.types['thread.started'] !== 1 ||
+      diagnosis.types['turn.started'] !== 1 ||
+      diagnosis.types['turn.completed'] !== 1 ||
+      diagnosis.types['item.completed:agent_message'] !== 1
+    )
+      return null;
+    const events = stdout
+      .split('\n')
+      .filter((line) => line.trim())
+      .map((line) => JSON.parse(line));
+    const codeModeErrors = events.filter(
+      (event) =>
+        event.type === 'item.completed' &&
+        event.item?.type === 'error' &&
+        event.item.message === CODE_MODE_DISABLED_MESSAGE,
+    );
+    if (codeModeErrors.length !== 1 || !capture) return null;
+    const responseState = capture.manifest.files['response.json'];
+    if (!responseState) return null;
+    const responseBytes = captures.readBytes(
+      path.join(capture.directory, 'response.json'),
+    );
+    if (
+      sha256(responseBytes) !== responseState.sha256 ||
+      responseBytes.length !== responseState.bytes
+    )
+      return null;
+    const output = JSON.parse(responseBytes.toString('utf8'));
+    transport.validateValue(output, SCHEMA);
+    return { diagnosis, output };
+  } catch {
+    return null;
+  }
+}
+
 function verifyReady(home, reviewPackage, bin) {
   const checked = [];
   const workspace = fs.mkdtempSync(
@@ -570,6 +616,8 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
   let capture;
   let captureInfo;
   let messageFile;
+  let responsePath;
+  let captureContext;
   let evidence;
   let checks;
   let output;
@@ -640,9 +688,9 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
       scratch,
       home,
     );
-    const context = { authHome: home, preflight: checks };
-    const responsePath = path.join(runDirectory, 'response.json');
-    capture = captures.createCapture(responsePath, [], context);
+    captureContext = { authHome: home, preflight: checks };
+    responsePath = path.join(runDirectory, 'response.json');
+    capture = captures.createCapture(responsePath, [], captureContext);
     modelInvocations = 1;
     state = 'execution-failed';
     const events = await execute(bin, argv, {
@@ -655,7 +703,7 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
       ),
       capture,
     });
-    const diagnosis = analyzeEvents(events, [], context);
+    const diagnosis = analyzeEvents(events, [], captureContext);
     usage = diagnosis.usage;
     assertEvents(diagnosis);
     state = 'output-rejected';
@@ -675,7 +723,47 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
     if (!reservation) throw error;
   } finally {
     try {
-      if (capture) captureInfo = capture.finish(messageFile);
+      if (capture) {
+        captureInfo = capture.finish(messageFile);
+        if (reservation && state === 'execution-failed') {
+          let recovered;
+          try {
+            const verifiedCapture = captures.verifyCapture(
+              responsePath,
+              captureInfo.sha256,
+            );
+            const stdout = captures
+              .readBytes(path.join(verifiedCapture.directory, 'stdout.jsonl'))
+              .toString('utf8');
+            recovered = recoverableCodeModeResponse(
+              stdout,
+              captureContext,
+              verifiedCapture,
+            );
+          } catch {
+            recovered = null;
+          }
+          if (recovered) {
+            output = recovered.output;
+            usage = recovered.diagnosis.usage;
+            gradeResult = grade(caseData, output);
+            state = 'response-recovered';
+            evaluation.write(path.join(runDirectory, 'output.json'), output);
+            evaluation.write(
+              path.join(runDirectory, 'grade.json'),
+              gradeResult,
+            );
+            evaluation.write(
+              path.join(runDirectory, 'work.json'),
+              workFor(caseData, reviewPackage),
+            );
+            evaluation.write(
+              path.join(runDirectory, 'evidence.json'),
+              evidence,
+            );
+          }
+        }
+      }
       if (reservation) {
         const result = evaluation.sealed({
           schemaVersion: 'agent-verifier-result-v1',
@@ -817,9 +905,23 @@ function report(home, packageFile, testOnly, root) {
     );
     if (receipt.modelInvocations === 1) {
       const captureOutput = path.join(runDirectory, 'response.json');
-      captures.verifyCapture(captureOutput, receipt.captureSha256);
+      const capture = captures.verifyCapture(
+        captureOutput,
+        receipt.captureSha256,
+      );
+      if (result.result === 'response-recovered') {
+        const stdout = captures
+          .readBytes(path.join(capture.directory, 'stdout.jsonl'))
+          .toString('utf8');
+        const recovered = recoverableCodeModeResponse(
+          stdout,
+          { authHome: home, preflight: receipt.preflight },
+          capture,
+        );
+        check(recovered, 'recuperacao nao corresponde ao evento permitido');
+      }
     }
-    if (result.result === 'completed') {
+    if (['completed', 'response-recovered'].includes(result.result)) {
       const output = readJson(path.join(runDirectory, 'output.json'));
       const gradeResult = readJson(path.join(runDirectory, 'grade.json'));
       const expectedGrade = grade(caseDefinition(result.caseId, root), output);
@@ -836,6 +938,13 @@ function report(home, packageFile, testOnly, root) {
       .filter((item) => item.result === 'completed')
       .map((item) => item.slot),
   );
+  const scored = new Set(
+    results
+      .filter((item) =>
+        ['completed', 'response-recovered'].includes(item.result),
+      )
+      .map((item) => item.slot),
+  );
   const summaries = Object.fromEntries(
     ['current', 'candidate'].map((variant) => {
       const modelResults = results.filter(
@@ -844,7 +953,8 @@ function report(home, packageFile, testOnly, root) {
       let falsePositives = 0;
       let falseNegatives = 0;
       for (const result of modelResults) {
-        if (result.result !== 'completed') continue;
+        if (!['completed', 'response-recovered'].includes(result.result))
+          continue;
         const output = readJson(
           path.join(directory, 'runs', result.slot, 'output.json'),
         );
@@ -872,6 +982,12 @@ function report(home, packageFile, testOnly, root) {
           model: reviewPackage.variants[variant].model,
           invocations: tickets.filter((ticket) => ticket.variant === variant)
             .length,
+          scored: modelResults.filter((result) =>
+            ['completed', 'response-recovered'].includes(result.result),
+          ).length,
+          responseRecoveries: modelResults.filter(
+            (result) => result.result === 'response-recovered',
+          ).length,
           passed: modelResults.filter((result) => result.gradePassed).length,
           falsePositives,
           falseNegatives,
@@ -891,6 +1007,10 @@ function report(home, packageFile, testOnly, root) {
     callsConsumed: tickets.length,
     remainingInvocations: 12 - tickets.length,
     completed: expectedSlots.every((slot) => completed.has(slot)),
+    scoringComplete: expectedSlots.every((slot) => scored.has(slot)),
+    responseRecoveries: results.filter(
+      (result) => result.result === 'response-recovered',
+    ).length,
     activationEligible: false,
     testOnly: Boolean(testOnly),
     variants: summaries,
@@ -1043,6 +1163,7 @@ if (require.main === module) {
 }
 
 module.exports = {
+  CODE_MODE_DISABLED_MESSAGE,
   SUPPORT_PATHS,
   approve,
   buildPackage,

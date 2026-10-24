@@ -6,6 +6,7 @@ const {
   DISABLED_FEATURES,
   initializeProfile,
 } = require('../../scripts/agent-auth.cjs');
+const evaluation = require('../../scripts/agent-evaluation.cjs');
 const { digest } = require('../../scripts/document-catalog.cjs');
 const comparison = require('../../scripts/agent-verifier-comparison.cjs');
 
@@ -72,6 +73,62 @@ function fakeCodex(directory, root) {
   ].join('\n');
   fs.writeFileSync(bin, source, { mode: 0o700 });
   return { bin, record };
+}
+
+function fakeCodeModeFailure(sourceBin, targetBin, options = {}) {
+  let source = fs.readFileSync(sourceBin, 'utf8');
+  const outputWriter =
+    'fs.writeFileSync(args[args.indexOf("--output-last-message")+1],JSON.stringify(output));';
+  const outputReplacement = options.missingResponse
+    ? 'void output;'
+    : options.invalidResponse
+      ? 'fs.writeFileSync(args[args.indexOf("--output-last-message")+1],JSON.stringify({invalid:true}));'
+      : outputWriter;
+  assert.ok(source.includes(outputWriter));
+  source = source.replace(outputWriter, outputReplacement);
+
+  const turnStarted = 'console.log(JSON.stringify({type:"turn.started"}));';
+  const errorEvent =
+    'console.log(JSON.stringify({type:"item.completed",item:{id:"code_mode_disabled",type:"error",message:' +
+    JSON.stringify(comparison.CODE_MODE_DISABLED_MESSAGE) +
+    '}}));';
+  assert.ok(source.includes(turnStarted));
+  source = source.replace(turnStarted, errorEvent + turnStarted);
+  if (options.forbiddenTool) {
+    source = source.replace(
+      turnStarted,
+      turnStarted +
+        'console.log(JSON.stringify({type:"item.completed",item:{id:"tool",type:"command_execution"}}));',
+    );
+  }
+
+  const turnCompleted =
+    'console.log(JSON.stringify({type:"turn.completed",usage:{input_tokens:12,cached_input_tokens:0,output_tokens:5}}));';
+  assert.ok(source.includes(turnCompleted));
+  source = source.replace(
+    turnCompleted,
+    options.incompleteTurn
+      ? 'process.exitCode=1;'
+      : turnCompleted + 'process.exitCode=1;',
+  );
+  fs.writeFileSync(targetBin, source, { mode: 0o700 });
+  return targetBin;
+}
+
+function approvedProfile(directory, packageFile, packageHash, root, label) {
+  const home = initializeProfile(path.join(directory, label));
+  comparison.approve(
+    home,
+    packageFile,
+    'Aprovo o pacote ' +
+      packageHash +
+      ' e o limite de 12 chamadas, fixture ' +
+      label +
+      '.',
+    true,
+    root,
+  );
+  return home;
 }
 
 async function main() {
@@ -290,11 +347,15 @@ async function main() {
 
     const report = comparison.report(home, packageFile, true, root);
     assert.equal(report.completed, true);
+    assert.equal(report.scoringComplete, true);
+    assert.equal(report.responseRecoveries, 0);
     assert.equal(report.callsConsumed, 12);
     assert.equal(report.remainingInvocations, 0);
     assert.equal(report.activationEligible, false);
     assert.equal(report.variants.current.invocations, 6);
     assert.equal(report.variants.candidate.invocations, 6);
+    assert.equal(report.variants.current.scored, 6);
+    assert.equal(report.variants.candidate.scored, 6);
     assert.equal(report.variants.current.passed, 6);
     assert.equal(report.variants.candidate.passed, 6);
     assert.equal(report.variants.current.falsePositives, 0);
@@ -382,8 +443,110 @@ async function main() {
     assert.equal(failedReport.remainingInvocations, 11);
     assert.equal(failedReport.variants.current.technicalFailures, 1);
     assert.equal(failedReport.variants.current.falseNegatives, 0);
+
+    const recoveredHome = approvedProfile(
+      temp,
+      packageFile,
+      failedPackageHash,
+      root,
+      'recoverable-code-mode-auth',
+    );
+    const recoverableBin = fakeCodeModeFailure(
+      fake.bin,
+      path.join(temp, 'codex-code-mode-disabled.cjs'),
+    );
+    const recoveredAttempt = await comparison.runOne(
+      recoveredHome,
+      packageFile,
+      'valid-reducer',
+      'current',
+      recoverableBin,
+      true,
+      root,
+    );
+    assert.equal(recoveredAttempt.result, 'response-recovered');
+    assert.equal(recoveredAttempt.gradePassed, true);
+    assert.equal(recoveredAttempt.modelInvocations, 1);
+    assert.match(recoveredAttempt.failureReason, /execucao falhou/);
+    assert.ok(recoveredAttempt.outputSha256);
+    const recoveredDirectory = path.join(
+      recoveredHome,
+      'quiz-evaluations',
+      'agent-verifier-comparison-2026-10',
+      'runs',
+      'valid-reducer-current',
+    );
+    const recoveredReceipt = evaluation.verifySeal(
+      JSON.parse(
+        fs.readFileSync(path.join(recoveredDirectory, 'receipt.json'), 'utf8'),
+      ),
+    );
+    assert.equal(recoveredReceipt.result, 'response-recovered');
+    assert.equal(recoveredReceipt.eventDiagnosis.reasonCode, 'process_failure');
+    assert.ok(fs.existsSync(path.join(recoveredDirectory, 'grade.json')));
+    const recoveredReport = comparison.report(
+      recoveredHome,
+      packageFile,
+      true,
+      root,
+    );
+    assert.equal(recoveredReport.completed, false);
+    assert.equal(recoveredReport.scoringComplete, false);
+    assert.equal(recoveredReport.responseRecoveries, 1);
+    assert.equal(recoveredReport.variants.current.scored, 1);
+    assert.equal(recoveredReport.variants.current.responseRecoveries, 1);
+    assert.equal(recoveredReport.variants.current.passed, 1);
+    assert.equal(recoveredReport.variants.current.technicalFailures, 1);
+    await assert.rejects(
+      comparison.runOne(
+        recoveredHome,
+        packageFile,
+        'valid-reducer',
+        'current',
+        recoverableBin,
+        true,
+        root,
+      ),
+      /slot ja reservado/,
+    );
+
+    for (const [label, options] of [
+      ['invalid-response', { invalidResponse: true }],
+      ['missing-response', { missingResponse: true }],
+      ['forbidden-tool', { forbiddenTool: true }],
+      ['incomplete-turn', { incompleteTurn: true }],
+    ]) {
+      const home = approvedProfile(
+        temp,
+        packageFile,
+        failedPackageHash,
+        root,
+        `${label}-auth`,
+      );
+      const bin = fakeCodeModeFailure(
+        fake.bin,
+        path.join(temp, `codex-${label}.cjs`),
+        options,
+      );
+      const attempt = await comparison.runOne(
+        home,
+        packageFile,
+        'valid-reducer',
+        'current',
+        bin,
+        true,
+        root,
+      );
+      assert.equal(attempt.result, 'execution-failed', label);
+      assert.equal(attempt.gradePassed, false, label);
+      assert.equal(attempt.outputSha256, null, label);
+      const report = comparison.report(home, packageFile, true, root);
+      assert.equal(report.scoringComplete, false, label);
+      assert.equal(report.responseRecoveries, 0, label);
+      assert.equal(report.variants.current.technicalFailures, 1, label);
+    }
     process.stdout.write(
-      'verifier-comparison: ok (12 slots isolados, fixtures sem autenticacao real, sem retries)\n',
+      'verifier-comparison: ok (12 slots isolados, recuperacao exata de Code Mode, falhas bloqueadas, sem chamadas reais)\n',
     );
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });
