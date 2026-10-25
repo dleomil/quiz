@@ -67,6 +67,22 @@ VER-EMPTY e VER-INPUT nos casos de defeito; e bloquear a evidencia contraditoria
 com VER-EVIDENCE. Cada achado precisa de severidade e evidencia especifica. O
 resultado nao habilita modelo para uso regular.
 
+Os casos fornecem ao verificador o programa de validacao, as entradas e os
+resultados observados pelo harness. O agente nao deve repetir testes nem dizer
+que os executou; deve avaliar os resultados fornecidos e citar limitacoes sem
+transforma-las automaticamente em achados. Cada controle valida tambem arrays
+esparsos, pois lacunas nao representam itens com `correct` booleano. Os casos
+de defeito devem isolar os requisitos esperados ou listar todos os defeitos
+realmente sustentados pelo codigo e pelos resultados. O grader mantem a
+comparacao exata de IDs e usa anchors por caso para rejeitar evidencia vaga sem
+exigir uma frase lexical especifica.
+
+O corpus e o grader foram corrigidos depois da primeira campanha. Seus
+resultados permanecem preservados como evidencia historica, mas nao sao uma
+linha de base comparavel ao pacote corrigido. Qualquer nova campanha tera outro
+hash e exige aprovacao explicita de pacote e orcamento; a correcao offline nao
+autoriza chamadas.
+
     npm run evaluation:verifiers -- report \
       --auth-home "$HOME/.codex-quiz-auth" \
       --package /private/tmp/agent-verifier-comparison-package.json \
