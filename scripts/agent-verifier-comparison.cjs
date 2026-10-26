@@ -988,6 +988,7 @@ function report(home, packageFile, testOnly, root) {
       );
       let falsePositives = 0;
       let falseNegatives = 0;
+      let decisionMismatches = 0;
       for (const result of modelResults) {
         if (!['completed', 'response-recovered'].includes(result.result))
           continue;
@@ -995,6 +996,7 @@ function report(home, packageFile, testOnly, root) {
           path.join(directory, 'runs', result.slot, 'output.json'),
         );
         const caseData = caseDefinition(result.caseId, root);
+        if (output.decision !== caseData.decision) decisionMismatches++;
         if (
           caseData.kind === 'control' &&
           (output.decision !== 'approved' || output.findings.length > 0)
@@ -1027,6 +1029,7 @@ function report(home, packageFile, testOnly, root) {
           passed: modelResults.filter((result) => result.gradePassed).length,
           falsePositives,
           falseNegatives,
+          decisionMismatches,
           technicalFailures: modelResults.filter(
             (result) => result.result !== 'completed',
           ).length,
@@ -1035,7 +1038,7 @@ function report(home, packageFile, testOnly, root) {
     }),
   );
   return {
-    schemaVersion: 'agent-verifier-comparison-report-v1',
+    schemaVersion: 'agent-verifier-comparison-report-v2',
     campaignId: reviewPackage.campaignId,
     packageSha256: reviewPackage.sha256,
     sourceCommit: reviewPackage.sourceCommit,

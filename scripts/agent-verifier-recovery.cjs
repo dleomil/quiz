@@ -227,6 +227,7 @@ function recover(home, packageFile, root = ROOT, readCommitted = gitSource) {
           (id) =>
             !output.findings.some((finding) => finding.requirementId === id),
         ));
+    const decisionMismatch = output.decision !== caseData.decision;
     callsByVariant[variant] += receipt.modelInvocations;
     results.push({
       slot,
@@ -242,6 +243,7 @@ function recover(home, packageFile, root = ROOT, readCommitted = gitSource) {
       gradeErrors: grade.errors,
       falsePositive,
       falseNegative,
+      decisionMismatch,
       usage: receipt.usage || null,
       durationMs: receipt.durationMs,
     });
@@ -263,6 +265,8 @@ function recover(home, packageFile, root = ROOT, readCommitted = gitSource) {
           passed: rows.filter((item) => item.gradePassed).length,
           falsePositives: rows.filter((item) => item.falsePositive).length,
           falseNegatives: rows.filter((item) => item.falseNegative).length,
+          decisionMismatches: rows.filter((item) => item.decisionMismatch)
+            .length,
           inputTokens: rows.reduce(
             (total, item) => total + (item.usage?.input_tokens || 0),
             0,
@@ -283,7 +287,7 @@ function recover(home, packageFile, root = ROOT, readCommitted = gitSource) {
     }),
   );
   const report = {
-    schemaVersion: 'agent-verifier-recovered-report-v1',
+    schemaVersion: 'agent-verifier-recovered-report-v2',
     campaignId: reviewPackage.campaignId,
     packageSha256: reviewPackage.sha256,
     sourceCommit: reviewPackage.sourceCommit,
@@ -294,6 +298,9 @@ function recover(home, packageFile, root = ROOT, readCommitted = gitSource) {
       (item) => item.originalExecutionResult === 'completed',
     ),
     recoveredResponsesValidated: results.length,
+    scoringComplete:
+      results.length === expected.length &&
+      results.every((item) => Array.isArray(item.gradeErrors)),
     activationEligible: false,
     variants,
     results,

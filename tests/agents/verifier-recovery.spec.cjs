@@ -11,7 +11,8 @@ const { sha256 } = require('../../scripts/governance-guidelines.cjs');
 const recovery = require('../../scripts/agent-verifier-recovery.cjs');
 
 const evidence = {
-  'VER-EMPTY': 'reduce sem valor inicial falha para lista vazia',
+  'VER-EMPTY':
+    'O código retorna null para empty-list; o harness observou esperado 0, atual null.',
   'VER-INPUT': 'A entrada aceita valores invalidos e deveria lancar TypeError',
   'VER-EVIDENCE':
     'O teste claimed-mixed-score esperava 4 e observou actual=5, contradizendo o relato',
@@ -29,12 +30,14 @@ function packageFor(root) {
   return { ...payload, sha256: digest(payload) };
 }
 
-function expectedOutput(item, forceControlFinding = false) {
+function expectedOutput(item, forceControlFinding = false, decisionOverride) {
   const findingIds = forceControlFinding
     ? ['VER-EVIDENCE']
     : item.expectedFindings;
   return {
-    decision: forceControlFinding ? 'adjustments_required' : item.decision,
+    decision: forceControlFinding
+      ? 'adjustments_required'
+      : decisionOverride || item.decision,
     findings: findingIds.map((requirementId) => ({
       requirementId,
       severity: 'major',
@@ -165,6 +168,9 @@ function makeFixture(root, options = {}) {
           : expectedOutput(
               item,
               variant === 'current' && item.id === 'valid-reducer',
+              options.decisionMismatchSlot === slot
+                ? 'adjustments_required'
+                : undefined,
             );
       if (!(options.missingResponse && slot === options.missingResponse))
         capture.save('response.json', output);
@@ -255,13 +261,17 @@ function main() {
       assert.equal(report.callsConsumed, 12);
       assert.equal(report.additionalModelInvocations, 0);
       assert.equal(report.recoveredResponsesValidated, 12);
+      assert.equal(report.schemaVersion, 'agent-verifier-recovered-report-v2');
+      assert.equal(report.scoringComplete, true);
       assert.equal(report.originalReportCompleted, false);
       assert.equal(report.activationEligible, false);
       assert.equal(report.variants.current.technicalFailures, 6);
       assert.equal(report.variants.candidate.technicalFailures, 6);
       assert.equal(report.variants.current.passed, 5);
       assert.equal(report.variants.current.falsePositives, 1);
+      assert.equal(report.variants.current.decisionMismatches, 1);
       assert.equal(report.variants.candidate.passed, 6);
+      assert.equal(report.variants.candidate.decisionMismatches, 0);
       assert.equal(report.variants.current.inputTokens, 60);
       assert.equal(report.variants.candidate.outputTokens, 30);
       const reportPath = path.join(fixture.temp, 'recovered-report.json');
@@ -276,6 +286,29 @@ function main() {
         sha256(fs.readFileSync(path.join(fixture.campaignDir, name))),
       ]);
       assert.deepEqual(after, before);
+
+      const decisionMismatch = makeFixture(root, {
+        decisionMismatchSlot: 'contradictory-test-evidence-current',
+      });
+      try {
+        const mismatchReport = recovery.recover(
+          decisionMismatch.home,
+          decisionMismatch.packageFile,
+          root,
+          decisionMismatch.readCommitted,
+        );
+        assert.equal(mismatchReport.variants.current.decisionMismatches, 2);
+        assert.equal(mismatchReport.variants.candidate.decisionMismatches, 0);
+        const mismatchRow = mismatchReport.results.find(
+          (item) => item.slot === 'contradictory-test-evidence-current',
+        );
+        assert.equal(mismatchRow.decisionMismatch, true);
+        assert.deepEqual(mismatchRow.gradeErrors, [
+          'decisao esperada: blocked',
+        ]);
+      } finally {
+        fs.rmSync(decisionMismatch.temp, { recursive: true, force: true });
+      }
 
       const missing = makeFixture(root, {
         missingResponse: 'valid-reducer-current',

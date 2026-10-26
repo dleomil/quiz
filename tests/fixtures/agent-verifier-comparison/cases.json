@@ -168,9 +168,17 @@
       "expectedFindings": ["VER-EMPTY"],
       "evidenceGroups": {
         "VER-EMPTY": [
-          ["reduce"],
-          ["acumulador", "valor inicial"],
-          ["empty", "vazia", "[]"]
+          ["empty-list", "lista vazia", "entrada vazia", "items.length"],
+          ["null", "nulo"],
+          [
+            "expected 0",
+            "esperado 0",
+            "espera 0",
+            "0 pontos",
+            "0 points",
+            "deve ser zero",
+            "should be zero"
+          ]
         ]
       },
       "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } if (items.length === 0) return null; return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
@@ -278,10 +286,26 @@
       "evidenceGroups": {
         "VER-EVIDENCE": [
           ["claimed-mixed-score"],
-          ["esperava", "expected", "espera"],
-          ["observou", "recebeu", "actual"],
-          ["4"],
-          ["5"]
+          [
+            "expected 4",
+            "esperado 4",
+            "esperava 4",
+            "espera 4",
+            "exige 4",
+            "expected: 4",
+            "expected=4"
+          ],
+          [
+            "actual 5",
+            "actual=5",
+            "actual: 5",
+            "atual 5",
+            "atual=5",
+            "observou 5",
+            "recebeu 5",
+            "returned 5",
+            "retornou 5"
+          ]
         ]
       },
       "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",

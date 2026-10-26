@@ -124,3 +124,22 @@ O relatorio suplementar distingue as notas recuperadas das falhas originais da
 CLI. Ele preserva o total de chamadas ja consumidas, informa zero chamadas
 adicionais e continua inelegivel para ativacao. Esta recuperacao serve para
 respostas ja capturadas; nao libera repeticao ou retomada de slots.
+
+## Reavaliar com grader corrigido
+
+Depois de integrar uma correcao do grader, a recuperacao pode reaplicar a
+versao atual do grader as capturas validadas pelo pacote e commit originais.
+Use um novo caminho para o relatorio suplementar; nao sobrescreva o relatorio
+original. O ledger, as respostas e os recibos permanecem imutaveis e nenhuma
+chamada e feita:
+
+    npm run evaluation:verifiers:recover -- \
+      --auth-home "$HOME/.codex-quiz-auth" \
+      --package /private/tmp/agent-verifier-comparison-package-oracle-v2.json \
+      --output /private/tmp/agent-verifier-comparison-regraded-report-oracle-v2.json
+
+Os relatorios de comparacao e de recuperacao usam schema v2. Incluem
+`decisionMismatches`, que conta decisoes diferentes do gabarito; os contadores
+de falso positivo e falso negativo mantem seu significado anterior. O relatorio
+de recuperacao tambem informa `scoringComplete`. Falhas tecnicas originais da
+CLI continuam registradas e nao sao apagadas pela reavaliacao.
