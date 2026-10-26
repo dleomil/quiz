@@ -354,7 +354,7 @@ function scriptForTests() {
     'const envelope=JSON.parse(process.argv[1]);const data=envelope.payload;',
     'const fn=require(path.resolve(data.target));',
     'const results=data.tests.map(test=>{',
-    'const input=JSON.parse(JSON.stringify(test.input));',
+    'const input=Object.hasOwn(test,"sparseLength")?new Array(test.sparseLength):JSON.parse(JSON.stringify(test.input));',
     'const before=JSON.stringify(input);',
     'try{return {id:test.id,actual:fn(input),inputUnchanged:JSON.stringify(input)===before};}',
     'catch(error){return {id:test.id,error:error&&error.name||"Error",inputUnchanged:JSON.stringify(input)===before};}',
@@ -369,10 +369,18 @@ function collectEvidence(caseData, bin, workspace, scratch) {
     caseData.source,
     { flag: 'wx', mode: 0o600 },
   );
-  const observed = runIndependent(bin, workspace, scratch, scriptForTests(), {
+  const program = scriptForTests();
+  const payload = {
     target: path.join(workspace, 'implementation.cjs'),
-    tests: caseData.tests.map((item) => ({ id: item.id, input: item.input })),
-  });
+    tests: caseData.tests.map((item) => ({
+      id: item.id,
+      input: item.input,
+      ...(Object.hasOwn(item, 'sparseLength')
+        ? { sparseLength: item.sparseLength }
+        : {}),
+    })),
+  };
+  const observed = runIndependent(bin, workspace, scratch, program, payload);
   check(
     observed.observed && observed.observed.length === caseData.tests.length,
     'evidencia real de testes nao foi coletada: ' + JSON.stringify(observed),
@@ -385,7 +393,9 @@ function collectEvidence(caseData, bin, workspace, scratch) {
         digest(entry.actual) === digest(test.expected);
     return {
       id: test.id,
-      input: test.input,
+      input: Object.hasOwn(test, 'sparseLength')
+        ? { sparseLength: test.sparseLength }
+        : test.input,
       expected: Object.hasOwn(test, 'expectedError')
         ? { error: test.expectedError }
         : test.expected,
@@ -398,6 +408,17 @@ function collectEvidence(caseData, bin, workspace, scratch) {
   });
   return {
     commandSha256: observed.commandSha256,
+    reproduction: {
+      runtime: 'node',
+      program,
+      payload: {
+        target: 'implementation.cjs',
+        tests: payload.tests.map(({ id, input, sparseLength }) => ({
+          id,
+          ...(sparseLength === undefined ? { input } : { sparseLength }),
+        })),
+      },
+    },
     durationMs: observed.durationMs,
     suitePassed: results.every((item) => item.passed),
     results,
@@ -407,7 +428,7 @@ function collectEvidence(caseData, bin, workspace, scratch) {
   };
 }
 
-function workFor(caseData, reviewPackage) {
+function workFor(caseData, reviewPackage, evidence) {
   const requirements = caseData.requirements.map(
     (item) => item.id + ': ' + item.text,
   );
@@ -425,17 +446,27 @@ function workFor(caseData, reviewPackage) {
     requirements,
     validExamples: [
       'Identifique somente divergencias comprovadas pelo codigo ou pelas evidencias reais.',
+      'Use o procedimento e os resultados do harness incluidos no caso. Nao exija nova execucao nem trate a ausencia de ferramentas externas como defeito.',
+      'Distinga resultados observados pelo harness de qualquer execucao propria; nao afirme ter executado comandos.',
     ],
     invalidExamples: [
       'Aprovar apenas porque os testes informados passaram; inventar execucao ou evidencia.',
+      'Afirmar que os resultados do harness nao podem ser avaliados quando o procedimento, entradas e saidas estao incluidos.',
     ],
     allowedPaths: [],
-    commands: [],
-    evidence: [],
+    commands: [
+      JSON.stringify({
+        runtime: evidence.reproduction.runtime,
+        program: evidence.reproduction.program,
+        payload: evidence.reproduction.payload,
+        commandSha256: evidence.commandSha256,
+      }),
+    ],
+    evidence: evidence.results.map((item) => JSON.stringify(item)),
     acceptanceCriteria: requirements,
     independentVerifier: 'independent-script-' + caseData.id,
     stopConditions: [
-      'Fonte, contrato ou evidencia divergente; ferramenta externa necessaria.',
+      'Fonte, contrato ou resultado do harness contraditorio; ferramenta externa necessaria fora do procedimento fornecido.',
     ],
     rollback:
       'Descartar o resultado sintetico; nenhuma alteracao e aplicada ao projeto.',
@@ -641,7 +672,7 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
     );
     reservation = reserve(campaign.directory, reviewPackage, caseId, variant);
     fs.mkdirSync(runDirectory, { mode: 0o700 });
-    const work = workFor(caseData, reviewPackage);
+    const work = workFor(caseData, reviewPackage, evidence);
     const input = {
       work,
       requirements: caseData.requirements,
@@ -671,7 +702,7 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
       'Atue como verificador analitico independente em um exercicio sintetico. Nao use ferramentas, nao altere arquivos e nao afirme executar testes.',
       adapter.developer_instructions,
       'Caso sintetico:\n' + JSON.stringify(input),
-      'Compare cada requisito com o codigo e com as evidencias observadas. Se houver evidencia contraditoria, nao declare os testes aprovados. Retorne apenas JSON conforme o schema.',
+      'Compare cada requisito com o codigo e com as evidencias observadas. O harness fornecido ja executou o procedimento listado; use seus resultados como evidencias, sem afirmar que voce executou os testes. Se houver evidencia contraditoria, nao declare os testes aprovados. Documentos externos nao incluidos sao limitacoes, nao achados por si so. Retorne apenas JSON conforme o schema.',
     ].join('\n\n');
     contextSha256 = digest({
       visibleInput: input,
@@ -715,7 +746,7 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
     evaluation.write(path.join(runDirectory, 'grade.json'), gradeResult);
     evaluation.write(
       path.join(runDirectory, 'work.json'),
-      workFor(caseData, reviewPackage),
+      workFor(caseData, reviewPackage, evidence),
     );
     evaluation.write(path.join(runDirectory, 'evidence.json'), evidence);
   } catch (error) {
@@ -755,7 +786,7 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
             );
             evaluation.write(
               path.join(runDirectory, 'work.json'),
-              workFor(caseData, reviewPackage),
+              workFor(caseData, reviewPackage, evidence),
             );
             evaluation.write(
               path.join(runDirectory, 'evidence.json'),

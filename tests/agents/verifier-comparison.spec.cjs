@@ -28,7 +28,7 @@ function fakeCodex(directory, root) {
           'VER-INPUT':
             'A entrada aceita valores invalidos e deveria lancar TypeError quando correct nao e booleano.',
           'VER-EVIDENCE':
-            'O teste esperava 4 e observou 5, contradizendo o relato.',
+            'O teste claimed-mixed-score esperava 4 e observou actual=5, contradizendo o relato.',
         }[requirementId];
         return { requirementId, severity: 'major', evidence };
       });
@@ -150,6 +150,15 @@ async function main() {
     const caseById = Object.fromEntries(
       corpus.cases.map((item) => [item.id, item]),
     );
+    assert.deepEqual(caseById['missing-empty-case'].expectedFindings, [
+      'VER-EMPTY',
+    ]);
+    assert.deepEqual(caseById['missing-input-validation'].expectedFindings, [
+      'VER-INPUT',
+    ]);
+    assert.deepEqual(caseById['contradictory-test-evidence'].expectedFindings, [
+      'VER-EVIDENCE',
+    ]);
 
     for (const item of corpus.cases) {
       const output =
@@ -171,7 +180,7 @@ async function main() {
                   'VER-INPUT':
                     'A entrada aceita valores invalidos e deveria lancar TypeError',
                   'VER-EVIDENCE':
-                    'O teste esperava 4 e observou 5, contradizendo o relato',
+                    'O teste claimed-mixed-score esperava 4 e observou actual=5, contradizendo o relato',
                 }[requirementId],
               })),
               facts: ['ok'],
@@ -179,6 +188,87 @@ async function main() {
             };
       assert.equal(comparison.grade(item, output).passed, true, item.id);
     }
+    const semanticEmptyEvidence = {
+      decision: 'adjustments_required',
+      findings: [
+        {
+          requirementId: 'VER-EMPTY',
+          severity: 'major',
+          evidence:
+            'No codigo, [].reduce sem acumulador nao fornece resultado para lista vazia.',
+        },
+      ],
+      facts: ['O trecho observado usa reduce sem valor inicial.'],
+      limitations: [],
+    };
+    assert.equal(
+      comparison.grade(caseById['missing-empty-case'], semanticEmptyEvidence)
+        .passed,
+      true,
+    );
+    const weakEmptyEvidence = {
+      ...semanticEmptyEvidence,
+      findings: semanticEmptyEvidence.findings.map((item) => ({ ...item })),
+    };
+    weakEmptyEvidence.findings[0].evidence =
+      'Esse comportamento talvez seja incorreto.';
+    assert.equal(
+      comparison.grade(caseById['missing-empty-case'], weakEmptyEvidence)
+        .passed,
+      false,
+    );
+    const semanticContradictionEvidence = {
+      decision: 'blocked',
+      findings: [
+        {
+          requirementId: 'VER-EVIDENCE',
+          severity: 'blocking',
+          evidence:
+            'No teste claimed-mixed-score esperava 4 e observou actual=5, em desacordo com a regra.',
+        },
+      ],
+      facts: ['O harness registrou a divergencia esperada.'],
+      limitations: [],
+    };
+    assert.equal(
+      comparison.grade(
+        caseById['contradictory-test-evidence'],
+        semanticContradictionEvidence,
+      ).passed,
+      true,
+    );
+    const weakContradictionEvidence = {
+      ...semanticContradictionEvidence,
+      findings: semanticContradictionEvidence.findings.map((item) => ({
+        ...item,
+      })),
+    };
+    weakContradictionEvidence.findings[0].evidence =
+      'A evidência está confusa.';
+    assert.equal(
+      comparison.grade(
+        caseById['contradictory-test-evidence'],
+        weakContradictionEvidence,
+      ).passed,
+      false,
+    );
+    const unsupportedExtraFinding = {
+      decision: 'adjustments_required',
+      findings: [
+        {
+          requirementId: 'VER-EVIDENCE',
+          severity: 'major',
+          evidence: 'O comando nao foi fornecido para reproduzir a suite.',
+        },
+      ],
+      facts: ['Os resultados do harness foram fornecidos.'],
+      limitations: [],
+    };
+    assert.equal(
+      comparison.grade(caseById['valid-reducer'], unsupportedExtraFinding)
+        .passed,
+      false,
+    );
     const missed = {
       decision: 'approved',
       findings: [],
@@ -344,6 +434,76 @@ async function main() {
         assert.equal(result.gradePassed, true, item.id + '-' + variant);
         assert.equal(result.modelInvocations, 1);
       }
+
+    const validWork = JSON.parse(
+      fs.readFileSync(
+        path.join(campaign, 'runs', 'valid-reducer-current', 'work.json'),
+        'utf8',
+      ),
+    );
+    assert.equal(validWork.commands.length, 1);
+    assert.match(validWork.commands[0], /"program"/);
+    assert.equal(validWork.evidence.length, 5);
+    const helperEvidence = JSON.parse(
+      fs.readFileSync(
+        path.join(campaign, 'runs', 'valid-helper-current', 'evidence.json'),
+        'utf8',
+      ),
+    );
+    const sparseInput = helperEvidence.results.find(
+      (item) => item.id === 'sparse-array',
+    );
+    assert.equal(sparseInput.actual.error, 'TypeError');
+    assert.equal(sparseInput.passed, true);
+    const emptyEvidence = JSON.parse(
+      fs.readFileSync(
+        path.join(
+          campaign,
+          'runs',
+          'missing-empty-case-current',
+          'evidence.json',
+        ),
+        'utf8',
+      ),
+    );
+    const failedEmpty = emptyEvidence.results.find(
+      (item) => item.id === 'empty-list',
+    );
+    assert.equal(failedEmpty.actual, null);
+    assert.equal(failedEmpty.passed, false);
+    const inputEvidence = JSON.parse(
+      fs.readFileSync(
+        path.join(
+          campaign,
+          'runs',
+          'missing-input-validation-current',
+          'evidence.json',
+        ),
+        'utf8',
+      ),
+    );
+    const failedInput = inputEvidence.results.find(
+      (item) => item.id === 'invalid-correct-type',
+    );
+    assert.equal(failedInput.actual, 5);
+    assert.equal(failedInput.passed, false);
+    const contradictionEvidence = JSON.parse(
+      fs.readFileSync(
+        path.join(
+          campaign,
+          'runs',
+          'contradictory-test-evidence-current',
+          'evidence.json',
+        ),
+        'utf8',
+      ),
+    );
+    const contradicted = contradictionEvidence.results.find(
+      (item) => item.id === 'claimed-mixed-score',
+    );
+    assert.equal(contradicted.actual, 5);
+    assert.equal(contradicted.expected, 4);
+    assert.equal(contradicted.passed, false);
 
     const report = comparison.report(home, packageFile, true, root);
     assert.equal(report.completed, true);

@@ -13,7 +13,8 @@ const recovery = require('../../scripts/agent-verifier-recovery.cjs');
 const evidence = {
   'VER-EMPTY': 'reduce sem valor inicial falha para lista vazia',
   'VER-INPUT': 'A entrada aceita valores invalidos e deveria lancar TypeError',
-  'VER-EVIDENCE': 'O teste esperava 4 e observou 5, contradizendo o relato',
+  'VER-EVIDENCE':
+    'O teste claimed-mixed-score esperava 4 e observou actual=5, contradizendo o relato',
 };
 
 function sourceReader(root) {

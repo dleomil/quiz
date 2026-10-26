@@ -7,7 +7,7 @@
       "kind": "control",
       "decision": "approved",
       "expectedFindings": [],
-      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items) || items.some((item) => !item || typeof item.correct !== 'boolean')) throw new TypeError('invalid'); return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
+      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
       "requirements": [
         {
           "id": "VER-TOTAL",
@@ -45,6 +45,11 @@
         {
           "id": "invalid-correct-type",
           "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "sparse-array",
+          "sparseLength": 1,
           "expectedError": "TypeError"
         }
       ],
@@ -55,7 +60,7 @@
       "kind": "control",
       "decision": "approved",
       "expectedFindings": [],
-      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items) || items.some((item) => !item || typeof item.correct !== 'boolean')) throw new TypeError('invalid'); let total = 0; for (const item of items) total += item.correct ? 5 : 0; return total; };",
+      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } let total = 0; for (const item of items) total += item.correct ? 5 : 0; return total; };",
       "requirements": [
         {
           "id": "VER-TOTAL",
@@ -93,6 +98,11 @@
         {
           "id": "invalid-correct-type",
           "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "sparse-array",
+          "sparseLength": 1,
           "expectedError": "TypeError"
         }
       ],
@@ -103,7 +113,7 @@
       "kind": "control",
       "decision": "approved",
       "expectedFindings": [],
-      "source": "function score(item) { return item.correct === true ? 5 : 0; }\nmodule.exports = function totalPoints(items) { if (!Array.isArray(items) || items.some((item) => !item || typeof item.correct !== 'boolean')) throw new TypeError('invalid'); return items.map(score).reduce((total, points) => total + points, 0); };",
+      "source": "function score(item) { return item.correct === true ? 5 : 0; }\nmodule.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } return items.map(score).reduce((total, points) => total + points, 0); };",
       "requirements": [
         {
           "id": "VER-TOTAL",
@@ -141,6 +151,11 @@
         {
           "id": "invalid-correct-type",
           "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "sparse-array",
+          "sparseLength": 1,
           "expectedError": "TypeError"
         }
       ],
@@ -153,11 +168,12 @@
       "expectedFindings": ["VER-EMPTY"],
       "evidenceGroups": {
         "VER-EMPTY": [
-          ["reduce", "acumulador"],
-          ["empty", "vazia"]
+          ["reduce"],
+          ["acumulador", "valor inicial"],
+          ["empty", "vazia", "[]"]
         ]
       },
-      "source": "module.exports = function totalPoints(items) { return items.reduce((sum, item) => sum + (item.correct ? 5 : 0)); };",
+      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } if (items.length === 0) return null; return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
       "requirements": [
         {
           "id": "VER-TOTAL",
@@ -190,9 +206,20 @@
           "id": "single-incorrect",
           "input": [{ "correct": false }],
           "expected": 0
+        },
+        { "id": "empty-list", "input": [], "expected": 0 },
+        {
+          "id": "invalid-correct-type",
+          "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        },
+        {
+          "id": "sparse-array",
+          "sparseLength": 1,
+          "expectedError": "TypeError"
         }
       ],
-      "evidenceClaim": "A suite reproduzivel foi aprovada."
+      "evidenceClaim": "O harness observou que empty-list retornou null em vez de 0; os testes de pontuacao e de entradas invalidas passaram."
     },
     {
       "id": "missing-input-validation",
@@ -234,9 +261,14 @@
           "input": [{ "correct": true }, { "correct": false }],
           "expected": 5
         },
-        { "id": "empty-list", "input": [], "expected": 0 }
+        { "id": "empty-list", "input": [], "expected": 0 },
+        {
+          "id": "invalid-correct-type",
+          "input": [{ "correct": "yes" }],
+          "expectedError": "TypeError"
+        }
       ],
-      "evidenceClaim": "A suite reproduzivel foi aprovada."
+      "evidenceClaim": "Os testes para entradas validas passaram; invalid-correct-type retornou 5 sem TypeError."
     },
     {
       "id": "contradictory-test-evidence",
@@ -245,12 +277,14 @@
       "expectedFindings": ["VER-EVIDENCE"],
       "evidenceGroups": {
         "VER-EVIDENCE": [
-          ["esperava", "expected"],
+          ["claimed-mixed-score"],
+          ["esperava", "expected", "espera"],
           ["observou", "recebeu", "actual"],
-          ["4", "5"]
+          ["4"],
+          ["5"]
         ]
       },
-      "source": "module.exports = function totalPoints(items) { return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
+      "source": "module.exports = function totalPoints(items) { if (!Array.isArray(items)) throw new TypeError('invalid'); for (let index = 0; index < items.length; index += 1) { const item = items[index]; if (!Object.prototype.hasOwnProperty.call(items, index) || !item || typeof item.correct !== 'boolean') throw new TypeError('invalid'); } return items.reduce((sum, item) => sum + (item.correct ? 5 : 0), 0); };",
       "requirements": [
         {
           "id": "VER-TOTAL",
