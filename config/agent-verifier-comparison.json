@@ -1,6 +1,6 @@
 {
   "schemaVersion": "agent-verifier-comparison-v1",
-  "id": "agent-verifier-comparison-2026-10",
+  "id": "agent-verifier-comparison-2026-10-oracle-v2",
   "maximumInvocations": 12,
   "timeoutMs": 300000,
   "casesPath": "tests/fixtures/agent-verifier-comparison/cases.json",

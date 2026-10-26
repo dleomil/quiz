@@ -319,10 +319,35 @@ async function main() {
     const campaign = path.join(
       home,
       'quiz-evaluations',
-      'agent-verifier-comparison-2026-10',
+      'agent-verifier-comparison-2026-10-oracle-v2',
     );
     assert.equal(fs.readdirSync(path.join(campaign, 'attempts')).length, 0);
     assert.equal(fs.existsSync(fake.record), false);
+    const legacyDirectory = comparison.campaignDirectory(
+      home,
+      'agent-verifier-comparison-2026-10',
+    );
+    fs.mkdirSync(legacyDirectory, { recursive: true, mode: 0o700 });
+    const historicalMarker = path.join(legacyDirectory, 'historical.json');
+    fs.writeFileSync(historicalMarker, '{"preserve":true}\n', {
+      mode: 0o600,
+    });
+    assert.notEqual(legacyDirectory, campaign);
+    assert.equal(
+      comparison.campaignDirectory(
+        home,
+        'agent-verifier-comparison-2026-10-oracle-v2',
+      ),
+      campaign,
+    );
+    assert.throws(
+      () => comparison.campaignDirectory(home, '../invalid'),
+      /ID de campanha invalido/,
+    );
+    assert.equal(
+      fs.readFileSync(historicalMarker, 'utf8'),
+      '{"preserve":true}\n',
+    );
     const readiness = comparison.verifyReady(
       home,
       comparison.verifyPackage(packageFile, root),
@@ -632,7 +657,7 @@ async function main() {
     const recoveredDirectory = path.join(
       recoveredHome,
       'quiz-evaluations',
-      'agent-verifier-comparison-2026-10',
+      'agent-verifier-comparison-2026-10-oracle-v2',
       'runs',
       'valid-reducer-current',
     );
