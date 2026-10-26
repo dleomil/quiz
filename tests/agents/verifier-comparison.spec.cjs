@@ -24,7 +24,7 @@ function fakeCodex(directory, root) {
       const findings = item.expectedFindings.map((requirementId) => {
         const evidence = {
           'VER-EMPTY':
-            'reduce sem valor inicial retorna o primeiro elemento e falha para lista vazia.',
+            'O codigo retorna null para empty-list; o harness observou esperado 0, atual null.',
           'VER-INPUT':
             'A entrada aceita valores invalidos e deveria lancar TypeError quando correct nao e booleano.',
           'VER-EVIDENCE':
@@ -176,7 +176,7 @@ async function main() {
                 severity: 'major',
                 evidence: {
                   'VER-EMPTY':
-                    'reduce sem valor inicial falha para lista vazia',
+                    'O codigo retorna null para empty-list; o harness observou esperado 0, atual null',
                   'VER-INPUT':
                     'A entrada aceita valores invalidos e deveria lancar TypeError',
                   'VER-EVIDENCE':
@@ -195,10 +195,10 @@ async function main() {
           requirementId: 'VER-EMPTY',
           severity: 'major',
           evidence:
-            'No codigo, [].reduce sem acumulador nao fornece resultado para lista vazia.',
+            'O código retorna null para empty-list; o harness observou esperado 0, atual null.',
         },
       ],
-      facts: ['O trecho observado usa reduce sem valor inicial.'],
+      facts: ['O caso vazio retornou null em vez dos zero pontos previstos.'],
       limitations: [],
     };
     assert.equal(
@@ -217,6 +217,27 @@ async function main() {
         .passed,
       false,
     );
+    const currentContradictionEvidence = {
+      decision: 'adjustments_required',
+      findings: [
+        {
+          requirementId: 'VER-EVIDENCE',
+          severity: 'major',
+          evidence:
+            'O harness observou claimed-mixed-score: esperado 4, atual 5; a expectativa contradiz a regra.',
+        },
+      ],
+      facts: ['O harness registrou a divergencia esperada.'],
+      limitations: [],
+    };
+    const currentContradictionGrade = comparison.grade(
+      caseById['contradictory-test-evidence'],
+      currentContradictionEvidence,
+    );
+    assert.equal(currentContradictionGrade.passed, false);
+    assert.deepEqual(currentContradictionGrade.errors, [
+      'decisao esperada: blocked',
+    ]);
     const semanticContradictionEvidence = {
       decision: 'blocked',
       findings: [
@@ -224,7 +245,7 @@ async function main() {
           requirementId: 'VER-EVIDENCE',
           severity: 'blocking',
           evidence:
-            'No teste claimed-mixed-score esperava 4 e observou actual=5, em desacordo com a regra.',
+            'claimed-mixed-score exige 4, mas o harness observou actual=5, em desacordo com a regra.',
         },
       ],
       facts: ['O harness registrou a divergencia esperada.'],
@@ -533,6 +554,7 @@ async function main() {
     const report = comparison.report(home, packageFile, true, root);
     assert.equal(report.completed, true);
     assert.equal(report.scoringComplete, true);
+    assert.equal(report.schemaVersion, 'agent-verifier-comparison-report-v2');
     assert.equal(report.responseRecoveries, 0);
     assert.equal(report.callsConsumed, 12);
     assert.equal(report.remainingInvocations, 0);
@@ -545,8 +567,10 @@ async function main() {
     assert.equal(report.variants.candidate.passed, 6);
     assert.equal(report.variants.current.falsePositives, 0);
     assert.equal(report.variants.current.falseNegatives, 0);
+    assert.equal(report.variants.current.decisionMismatches, 0);
     assert.equal(report.variants.candidate.falsePositives, 0);
     assert.equal(report.variants.candidate.falseNegatives, 0);
+    assert.equal(report.variants.candidate.decisionMismatches, 0);
     await assert.rejects(
       () =>
         comparison.runOne(
@@ -628,6 +652,7 @@ async function main() {
     assert.equal(failedReport.remainingInvocations, 11);
     assert.equal(failedReport.variants.current.technicalFailures, 1);
     assert.equal(failedReport.variants.current.falseNegatives, 0);
+    assert.equal(failedReport.variants.current.decisionMismatches, 0);
 
     const recoveredHome = approvedProfile(
       temp,
