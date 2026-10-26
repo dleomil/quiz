@@ -87,10 +87,11 @@
     "context:build": "node scripts/agent-context.cjs",
     "test:writer-runner": "node tests/agents/isolated-agent-copy.spec.cjs && node tests/agents/writer-agent-runner.spec.cjs",
     "test:writer-sandbox": "node tests/agents/writer-sandbox.spec.cjs",
-    "test:agent-evaluation": "node tests/agents/agent-event-capture.spec.cjs && node tests/agents/agent-output-transport.spec.cjs && node tests/agents/agent-evaluation.spec.cjs && node tests/agents/model-evaluation-runner.spec.cjs && node tests/agents/agent-resumption.spec.cjs && node tests/agents/agent-events-resumption.spec.cjs && node tests/agents/agent-benchmark-v2.spec.cjs && node tests/agents/verifier-comparison.spec.cjs && node tests/agents/verifier-recovery.spec.cjs",
+    "test:agent-evaluation": "node tests/agents/agent-event-capture.spec.cjs && node tests/agents/agent-output-transport.spec.cjs && node tests/agents/agent-evaluation.spec.cjs && node tests/agents/model-evaluation-runner.spec.cjs && node tests/agents/agent-resumption.spec.cjs && node tests/agents/agent-events-resumption.spec.cjs && node tests/agents/agent-benchmark-v2.spec.cjs && node tests/agents/verifier-comparison.spec.cjs && node tests/agents/verifier-recovery.spec.cjs && node tests/agents/verifier-loop-policy.spec.cjs",
     "test:agent-evaluation-sandbox": "node tests/agents/model-evaluation-sandbox.spec.cjs",
     "evaluation": "node scripts/run-model-evaluation.cjs",
     "evaluation:verifiers": "node scripts/agent-verifier-comparison.cjs",
+    "verifier:loop": "node scripts/agent-verifier-loop.cjs",
     "evaluation:verifiers:recover": "node scripts/agent-verifier-recovery.cjs"
   },
   "repository": {

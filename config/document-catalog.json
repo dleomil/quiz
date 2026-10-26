@@ -72,11 +72,11 @@
       "path": "docs/agents/agent-operating-model.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 2,
-      "version": "1.0.1",
+      "revision": 3,
+      "version": "1.1.0",
       "normative": true,
       "status": "draft",
-      "sha256": "880664c4031481a0d6abb409903b8b24c3fadedc03161430df5317dbd404add0"
+      "sha256": "2ed0312f78c55304253b47f62602fdc6d1cc259575f4f354e787d7db5bb5d476"
     },
     {
       "id": "docs--agents--agent-preflight-application",
@@ -198,6 +198,17 @@
       "normative": true,
       "status": "baseline-pending",
       "sha256": "b07eaf88be3fd75f8ecc0c00713f4b6c212d3d2caf9f1d1c82120f8ce6cd6421"
+    },
+    {
+      "id": "docs--agents--verifier-bounded-loop",
+      "path": "docs/agents/verifier-bounded-loop.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "dd170ae118e5a95c7d419371ea1cfde2ba4cf50be794f001a17d740c1f92eb34"
     },
     {
       "id": "docs--agents--verifier-comparison-runbook",
@@ -677,11 +688,11 @@
       "path": "docs/specs/executable-codex-agents.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 2,
-      "version": "2.0.0",
+      "revision": 3,
+      "version": "2.1.0",
       "normative": true,
       "status": "draft",
-      "sha256": "165ce0c233a91163de13875b7a2246a62ef0d04ba3c7740cecdbc84f48a5e9f7"
+      "sha256": "888ac4600a3bbe2cef90d5769f39bcc7bfa7f24516af8bfac5b6c29bbed1fe2e"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",
