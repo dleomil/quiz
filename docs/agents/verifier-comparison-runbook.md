@@ -11,8 +11,10 @@ Concluir npm run verify:local, integrar o codigo aprovado no commit que sera
 medido e manter o checkout limpo. Gerar o pacote fora do repositorio:
 
     npm run evaluation:verifiers -- benchmark-check \
-      --output /private/tmp/agent-verifier-comparison-package.json
+      --output /private/tmp/agent-verifier-comparison-package-oracle-v2.json
 
+O ID `agent-verifier-comparison-2026-10-oracle-v2` cria um ledger privado
+separado do diretorio legado; nao mover nem limpar os registros anteriores.
 Revisar o corpus e apresentar o SHA-256, o commit de origem e o teto de 12
 invocacoes ao mantenedor. benchmark-check nao autentica, nao reserva slots e
 nao chama modelos. Antes das chamadas, obter aceite explicito para o hash e o
@@ -26,7 +28,7 @@ API. Se o status indicar logout, conclua o login ChatGPT por device code:
     node scripts/agent-auth.cjs login --auth-home "$HOME/.codex-quiz-auth"
     npm run evaluation:verifiers -- ready \
       --auth-home "$HOME/.codex-quiz-auth" \
-      --package /private/tmp/agent-verifier-comparison-package.json
+      --package /private/tmp/agent-verifier-comparison-package-oracle-v2.json
 
 ready verifica login, versao da CLI, isolamento, MCP vazio e presenca dos dois
 modelos no catalogo, sem invocar modelos. O catalogo nao comprova acesso da
@@ -38,7 +40,7 @@ local vinculada ao hash:
 
     npm run evaluation:verifiers -- approve \
       --auth-home "$HOME/.codex-quiz-auth" \
-      --package /private/tmp/agent-verifier-comparison-package.json \
+      --package /private/tmp/agent-verifier-comparison-package-oracle-v2.json \
       --statement "Aprovo o pacote HASH e o limite total de 12 chamadas."
 
 ## Execucao e limites
@@ -51,7 +53,7 @@ remova o bloqueio nem retome a campanha sem revisao e nova decisao do mantenedor
 
     npm run evaluation:verifiers -- run \
       --auth-home "$HOME/.codex-quiz-auth" \
-      --package /private/tmp/agent-verifier-comparison-package.json \
+      --package /private/tmp/agent-verifier-comparison-package-oracle-v2.json \
       --case missing-empty-case --variant current
 
 Repetir para cada ID listado no pacote (valid-reducer, valid-loop, valid-helper,
@@ -85,8 +87,8 @@ autoriza chamadas.
 
     npm run evaluation:verifiers -- report \
       --auth-home "$HOME/.codex-quiz-auth" \
-      --package /private/tmp/agent-verifier-comparison-package.json \
-      --output /private/tmp/agent-verifier-comparison-report.json
+      --package /private/tmp/agent-verifier-comparison-package-oracle-v2.json \
+      --output /private/tmp/agent-verifier-comparison-report-oracle-v2.json
 
 O relatorio inclui tentativas, recibos, uso informado, duracao, resultados e
 limitacoes. `completed` significa que todos os processos da CLI terminaram sem
@@ -115,8 +117,8 @@ recuperacao para sem produzir relatorio.
 
     npm run evaluation:verifiers:recover -- \
       --auth-home "$HOME/.codex-quiz-auth" \
-      --package /private/tmp/agent-verifier-comparison-package.json \
-      --output /private/tmp/agent-verifier-comparison-recovered-report.json
+      --package /private/tmp/agent-verifier-comparison-package-oracle-v2.json \
+      --output /private/tmp/agent-verifier-comparison-recovered-report-oracle-v2.json
 
 O relatorio suplementar distingue as notas recuperadas das falhas originais da
 CLI. Ele preserva o total de chamadas ja consumidas, informa zero chamadas

@@ -80,7 +80,7 @@ function loadConfiguration(root) {
   const configuration = JSON.parse(readSource(root, CONFIG_PATH));
   check(
     configuration.schemaVersion === 'agent-verifier-comparison-v1' &&
-      configuration.id === 'agent-verifier-comparison-2026-10' &&
+      configuration.id === 'agent-verifier-comparison-2026-10-oracle-v2' &&
       configuration.maximumInvocations === 12 &&
       configuration.timeoutMs === 300000 &&
       configuration.casesPath === CASES_PATH &&
@@ -197,8 +197,13 @@ function verifyPackage(file, root) {
   return value;
 }
 
-function campaignDirectory(home) {
+function campaignDirectory(home, campaignId) {
   home = auth.validateProfile(home);
+  check(
+    typeof campaignId === 'string' &&
+      /^[a-z0-9][a-z0-9-]{0,79}$/.test(campaignId),
+    'ID de campanha invalido',
+  );
   const parent = path.join(home, CAMPAIGN_PARENT);
   try {
     fs.mkdirSync(parent, { mode: 0o700 });
@@ -210,11 +215,11 @@ function campaignDirectory(home) {
     stat.isDirectory() && !stat.isSymbolicLink() && !(stat.mode & 0o077),
     'diretorio privado irregular',
   );
-  return path.join(parent, 'agent-verifier-comparison-2026-10');
+  return path.join(parent, campaignId);
 }
 
 function ensureCampaign(home, reviewPackage, testOnly) {
-  const directory = campaignDirectory(home);
+  const directory = campaignDirectory(home, reviewPackage.campaignId);
   try {
     fs.mkdirSync(directory, { mode: 0o700 });
   } catch (error) {
@@ -865,7 +870,7 @@ async function runOne(home, packageFile, caseId, variant, bin, testOnly, root) {
 function report(home, packageFile, testOnly, root) {
   root = root || ROOT;
   const reviewPackage = verifyPackage(packageFile, root);
-  const directory = campaignDirectory(home);
+  const directory = campaignDirectory(home, reviewPackage.campaignId);
   check(
     !fs.existsSync(path.join(directory, 'run.lock')),
     'campanha em execucao; aguarde antes de gerar relatorio',
@@ -1199,6 +1204,7 @@ module.exports = {
   approve,
   buildPackage,
   caseDefinition,
+  campaignDirectory,
   collectEvidence,
   grade,
   loadConfiguration,
