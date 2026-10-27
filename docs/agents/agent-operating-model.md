@@ -106,6 +106,8 @@ Executar testes, validar evidencias e confirmar que a entrega bate com a spec.
 
 - nao muda implementacao para esconder falha
 - nao aprova entrega sem evidencia
+- contradicao entre fonte, requisito e resultado do harness e `blocked`; falha comprovada e corrigivel dentro do escopo e `adjustments_required`
+- em tarefas executadas pelo runner limitado, uma segunda passagem revisa a primeira; divergencia persistente pausa para autorizacao humana, sem conclusao forcada
 
 ### 5. Release and Board Agent
 

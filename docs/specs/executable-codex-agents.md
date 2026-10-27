@@ -73,6 +73,13 @@ proposta, execute `pedagogical_quality` separadamente com `reviewPass`
 Na CLI, `/agent` permite inspecionar as threads ativas. A delegacao deve ocorrer
 somente quando o trabalho for independente e delimitado.
 
+Para verificacoes que precisem de revisao automatica limitada, use
+`npm run verifier:loop` conforme `docs/agents/verifier-bounded-loop.md`. O
+runner revisa somente a ficha, os contratos e as evidencias fornecidas; nao
+executa comandos da ficha. Evidencia de harness deve ser coletada por um
+processo autorizado antes da verificacao. Divergencia persistente exige aceite
+humano vinculado ao hash da ficha e nunca ultrapassa quatro invocacoes totais.
+
 ## Guardrails
 
 - todos os agentes desta fase operam em `read-only`;
