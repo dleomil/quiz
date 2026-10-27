@@ -281,11 +281,11 @@
       "path": "docs/backlog/prioritized-epics-and-stories.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 2,
+      "revision": 3,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "e823029ebfee90a22460cc26b78076bf8c03ac073942e77fb8b05640873a8e3c"
+      "sha256": "3798dd410fba4d23ef877b608875a8912956efd99709165c49a860aa9d3a73af"
     },
     {
       "id": "docs--github--branching-and-delivery-strategy",
@@ -523,11 +523,11 @@
       "path": "docs/roadmap/mobile-app-roadmap.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "5cd02e7eaac7500049ba93274fa895bb13dc40b65d446e1dfb5f1846b42bbb8f"
+      "sha256": "1126d2366d71cbb5ba2794e768ea4db3b103e9d591bf2f3c82894dd87830a8c8"
     },
     {
       "id": "docs--roadmap--panel-control-phased-plan",
@@ -754,11 +754,11 @@
       "path": "docs/specs/mobile-app-mvp.md",
       "kind": "specification",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "dd86f651aef2a4253de04d57e02fde24072c85e597692f52f80b84f17cb753c1"
+      "sha256": "bb83114b1a74cc7cdf0b254a26b0945ea6f2b2e00707266f4ed4da868f63371c"
     },
     {
       "id": "docs--specs--panel-control-functional-architecture",

@@ -38,8 +38,13 @@ primeiro lancamento.
   esta incluido; novos anos ou acervos nao sao prometidos implicitamente.
 - A compra e restauravel dentro do ecossistema da mesma loja. Compra Apple nao
   concede automaticamente licenca Google, nem o contrario.
-- O preco e definido pelo responsavel pelo produto antes da configuracao dos
-  produtos das lojas, depois de pesquisa com familias e calculo de custos.
+- Preco inicial planejado: R$ 5, em compra unica nao consumivel para
+  desbloquear o catalogo publicado do 3o ano incluido no lancamento. O relato
+  de conversas positivas com usuarios do site e um sinal qualitativo de
+  interesse, nao uma validacao de disposicao a pagar.
+- Antes de criar os produtos nas lojas, confirmar o ponto de preco disponivel,
+  impostos, comissoes e valor liquido. Rever o preco se a oferta ou os custos
+  mudarem.
 - A compra e links externos ficam atras de uma area para responsaveis, adequada
   a criancas e alinhada aos requisitos aplicaveis das lojas.
 

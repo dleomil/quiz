@@ -11,8 +11,10 @@ nem autoriza datas, gastos, publicacao ou mudancas no board.
 
 - Cliente inicial: familias; usuario estudante do 3o ano.
 - React Native/Expo, em `apps/mobile` dentro de monorepo npm.
-- App gratis, uma amostra por materia, compra unica para o catalogo publicado
-  incluido na versao inicial.
+- App gratis, uma amostra por materia e compra unica inicialmente planejada em
+  R$ 5 para desbloquear o catalogo publicado do 3o ano incluido no lancamento.
+  Conversas positivas com usuarios do site sao sinal qualitativo, nao prova de
+  disposicao a pagar.
 - Compra e restauracao separadas por loja; sem login, backend, sincronizacao,
   anuncios ou analytics de terceiros no MVP.
 - Web continua na Vercel com fluxo e artefato independentes. Painel enterprise
@@ -22,10 +24,10 @@ nem autoriza datas, gastos, publicacao ou mudancas no board.
 
 ### Fase 0 — Produto, conteudo e conformidade
 
-**Entregas:** validar proposta e compra unica com responsaveis; definir temas de
-amostra; congelar o catalogo incluido; levantar custos e escolher preco antes
-de criar SKUs; revisar privacidade, direitos de conteudo, classificacao etaria
-e checklist infantil.
+**Entregas:** validar compreensao da proposta com responsaveis; definir temas de
+amostra; congelar o catalogo incluido; confirmar ponto de preco, custos e valor
+liquido do preco inicial planejado de R$ 5 antes de criar SKUs; revisar
+privacidade, direitos de conteudo, classificacao etaria e checklist infantil.
 
 **Gate:** responsaveis entendem o valor, o limite da amostra, o que a compra
 desbloqueia e a ausencia de sincronizacao; a pessoa responsavel aceita preco e
