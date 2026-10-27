@@ -4,6 +4,119 @@
 
 Cada epico abaixo pode virar uma issue do tipo `Epic` no GitHub. As historias associadas devem virar issues menores, vinculadas ao epico correspondente no board.
 
+## Epic 11: App familiar iOS e Android
+
+**Estado:** proposta documental; ainda nao criada como issue nem adicionada ao board.
+
+**Objetivo**
+
+Validar uma oferta educacional para familias nas lojas moveis sem interromper o
+site, mantendo governanca de conteudo, protecao infantil e ciclos de release
+independentes.
+
+**Decisoes de escopo**
+
+- React Native/Expo em `apps/mobile`, no mesmo repositorio por npm workspaces.
+- Seis materias do 3o ano, com um tema de amostra gratuito por materia e compra
+  unica nao consumivel para o catalogo publicado da versao inicial.
+- Historico local, sem conta ou sincronizacao; restauracao de compra separada
+  por loja; app em portugues para disponibilidade inicial no Brasil.
+- Painel escolar, anuncios, assinatura, analytics de terceiros, identidade e
+  backend fora do MVP.
+
+### Historia 11.1 - Validar oferta e prontidao infantil
+
+Entrevistar responsaveis, testar compreensao da amostra e compra unica,
+selecionar temas gratuitos, decidir preco e revisar privacidade, direitos e
+declaracoes de loja antes de criar os produtos de compra.
+
+**Criterios de aceite**
+
+- Oferta, catalogo incluido e limites da compra estao descritos sem promessa
+  ambigua sobre novos anos/acervos.
+- Cada materia tem um tema de amostra aprovado e congelado para a versao inicial.
+- Preco e checklist infantil/privacy foram revisados por responsaveis antes do
+  gate de implementacao de pagamentos.
+
+### Historia 11.2 - Criar workspace mobile sem impacto no site
+
+Adicionar Expo/React Native em workspace isolado, com dependencias, comandos,
+builds e CI proprios. Preservar a configuracao Vercel e excluir arquivos mobile
+do deploy estatico.
+
+**Criterios de aceite**
+
+- Instalacao limpa e builds iOS/Android reproduziveis.
+- Checks web continuam passando e o preview Vercel nao expoe nem inclui codigo
+  mobile.
+- Credenciais e segredos ficam fora do Git; rollback por PR nao afeta o site.
+
+### Historia 11.3 - Compartilhar conteudo com paridade verificavel
+
+Extrair/adaptar conteudo validado para um pacote sem APIs de browser, mantendo
+compatibilidade dos contratos existentes e uma comparacao automatizada com a
+origem web.
+
+**Criterios de aceite**
+
+- Paridade de IDs, enunciados, alternativas, gabaritos, explicacoes, idioma,
+  acervo e status editorial nas seis materias.
+- Qualquer divergencia ou conteudo nao aprovado bloqueia o pacote mobile.
+- Alterar o site para consumir o pacote ocorre em PR separado com regressao
+  web completa.
+
+### Historia 11.4 - Entregar jornada de estudo offline
+
+Implementar selecao, sessao, feedback, explicacao, revisao e historico local,
+usando conteudo publicado e experiencia adequada a telefone e tablet.
+
+**Criterios de aceite**
+
+- Jornada principal funciona sem rede depois da instalacao.
+- Historico e preferencias persistem localmente e a perda por remocao do app e
+  explicada ao responsavel.
+- Testes de acessibilidade e usabilidade em dispositivos reais nao mostram
+  bloqueios para estudantes do publico alvo.
+
+### Historia 11.5 - Integrar compra unica e restauracao por loja
+
+Configurar compra nao consumivel em Apple e Google, com area parental, estados
+de acesso, restauracao e tratamento de falhas sem conta remota.
+
+**Criterios de aceite**
+
+- Sandbox valida compra, cancelamento, pendencia, reinstalacao e restauracao em
+  cada plataforma.
+- A compra de uma loja nao e apresentada como licenca da outra.
+- Crianca nao acessa compra ou link externo fora da area parental.
+
+### Historia 11.6 - Completar beta e gate de publicacao
+
+Distribuir beta fechado, coletar defeitos sem rastreamento individual infantil,
+preparar fichas de loja e solicitar decisao humana de release separada para
+cada plataforma.
+
+**Criterios de aceite**
+
+- Checklist de conteudo, privacidade, seguranca, restauracao, suporte e loja
+  completo e revisado.
+- Metadados, screenshots, classificacao e politica correspondem ao app real.
+- Go/no-go explicito e autorizacao de release registrados antes da submissao
+  publica.
+
+**Plano de validacao do epic**
+
+- Pesquisa com responsaveis antes de fixar preco e SKU.
+- `npm run verify:local` e preview web preservado em cada PR que toque a base
+  compartilhada.
+- Builds iOS/Android, testes de paridade, offline, acessibilidade e sandbox em
+  cada gate aplicavel.
+- Revisao editorial humana e verificacao de politicas antes de beta/publicacao.
+
+O detalhamento de dependencias, gates e rollback fica em
+`docs/roadmap/mobile-app-roadmap.md`; requisitos de produto estao em
+`docs/specs/mobile-app-mvp.md`.
+
 ## Epic 10: Prontidao do Pipeline Curricular T3
 
 **Issue:** `#299`

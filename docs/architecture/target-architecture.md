@@ -160,3 +160,22 @@ Sessoes novas devem referenciar `contentSetId`, versao do acervo e `questionIds`
 
 4. Fazer do board um reflexo da arquitetura.
    As issues do GitHub devem nascer a partir de epicos e historias alinhados a essas fronteiras.
+
+## Superficies de produto e monorepo mobile
+
+A trilha mobile proposta adiciona iOS e Android sem substituir nem reescrever o
+site estatico. O app fica em `apps/mobile` com React Native/Expo; um pacote
+`packages/quiz-content` so passa a ser fonte compartilhada depois de uma
+extracao testada contra o conteudo publicado atual. A decisao detalhada e os
+controles estao em `docs/architecture/mobile-app-monorepo-adr.md`.
+
+O workspace pode compartilhar conteudo validado e regras puras, mas nao UI,
+APIs do navegador, persistencia local ou cobranca. Web e mobile conservam
+adaptadores e pipelines de release distintos. A configuracao Vercel deve
+continuar publicando somente o site; o preview deve provar que fontes e builds
+moveis nao entram no artefato web.
+
+O MVP mobile usa persistencia local e compra por loja sem identidade remota.
+Sincronizacao, contas familiares e dados escolares exigem uma decisao posterior
+de identidade, backend, privacidade e retencao; nao sao pressupostos desta
+arquitetura.

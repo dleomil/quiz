@@ -28,11 +28,11 @@
       "path": "docs/README.md",
       "kind": "readme",
       "owner": "architecture",
-      "revision": 3,
+      "revision": 4,
       "version": null,
       "normative": false,
       "status": "informative",
-      "sha256": "8a0dd25eed6425a50f4c4ae1d973ab8e39a5e898ebc842c3a954dbbe72f6e5da"
+      "sha256": "3aca49657e283d5407dce58331d206d05aff0dcca93b846e19d67c4dc23849c0"
     },
     {
       "id": "docs--agents--2026-benchmark-v2-failure-review",
@@ -222,15 +222,26 @@
       "sha256": "19a7cf9228cdafd63fd804b92104ae3d963c6611451b9d24a888d87e5547e612"
     },
     {
+      "id": "docs--architecture--mobile-app-monorepo-adr",
+      "path": "docs/architecture/mobile-app-monorepo-adr.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "5a09d6c529904029268d1e7599b51a72731bf17e8b16068d3e3e14833c67f2fd"
+    },
+    {
       "id": "docs--architecture--target-architecture",
       "path": "docs/architecture/target-architecture.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.1.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "a78ab1424fc48c38d99d37f89a2cb9b0163b7c7bdb9bac1a81fc6e9615b386e6"
+      "status": "draft",
+      "sha256": "913f779600d4d52e05e80d5831be2dd5f9dde194f74f41a8bb9dc64d02b37b74"
     },
     {
       "id": "docs--audits--2026-t3-v1-his-imigrantes-ibericos-v2-review",
@@ -270,11 +281,11 @@
       "path": "docs/backlog/prioritized-epics-and-stories.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "b92c00532974758c308f174377202ef4f429e199d6ec7b093e7e32806a2f502a"
+      "sha256": "e823029ebfee90a22460cc26b78076bf8c03ac073942e77fb8b05640873a8e3c"
     },
     {
       "id": "docs--github--branching-and-delivery-strategy",
@@ -490,11 +501,11 @@
       "path": "docs/product/product-scope-and-principles.md",
       "kind": "product",
       "owner": "product",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.1.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "2f4b3e5fa906963798115f63b54cb3e17895167782b4a24edc575d66af716ab9"
+      "status": "draft",
+      "sha256": "2ca057426622539481ef63d482ff911ad518ffe8e7aae1da8399cd3c8d131e9a"
     },
     {
       "id": "docs--roadmap--2026-t3-cycle-closeout",
@@ -506,6 +517,17 @@
       "normative": false,
       "status": "unclassified",
       "sha256": "7fe8bcb0ea204d598b3326605413857582228abb97019f2eb3dde66cbe21e51a"
+    },
+    {
+      "id": "docs--roadmap--mobile-app-roadmap",
+      "path": "docs/roadmap/mobile-app-roadmap.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "5cd02e7eaac7500049ba93274fa895bb13dc40b65d446e1dfb5f1846b42bbb8f"
     },
     {
       "id": "docs--roadmap--panel-control-phased-plan",
@@ -523,11 +545,11 @@
       "path": "docs/roadmap/phased-evolution-roadmap.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "b1b2658df3d46ae858e0a107a268985227c98b53df1e1ab376657654813df5e9"
+      "sha256": "89a01e9755f1e0f15d2d24eaff79846c814446cb9136fd9f13e2742d5f0b2cce"
     },
     {
       "id": "docs--roadmap--t3-content-readiness-plan",
@@ -726,6 +748,17 @@
       "normative": true,
       "status": "baseline-pending",
       "sha256": "e7bf06fee9816c5986c983ae83ef8eb754d85299d32249dac4ffd5de2e53257a"
+    },
+    {
+      "id": "docs--specs--mobile-app-mvp",
+      "path": "docs/specs/mobile-app-mvp.md",
+      "kind": "specification",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "dd86f651aef2a4253de04d57e02fde24072c85e597692f52f80b84f17cb753c1"
     },
     {
       "id": "docs--specs--panel-control-functional-architecture",
