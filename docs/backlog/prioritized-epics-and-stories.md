@@ -26,17 +26,19 @@ independentes.
 
 ### Historia 11.1 - Validar oferta e prontidao infantil
 
-Entrevistar responsaveis, testar compreensao da amostra e compra unica,
-selecionar temas gratuitos, decidir preco e revisar privacidade, direitos e
-declaracoes de loja antes de criar os produtos de compra.
+Registrar conversas positivas ja realizadas com usuarios do site como sinal
+qualitativo; testar compreensao da amostra e da compra unica; selecionar temas
+gratuitos; confirmar ponto de preco, custos e valor liquido do preco inicial
+planejado de R$ 5; revisar privacidade, direitos e declaracoes de loja antes de
+criar os produtos de compra.
 
 **Criterios de aceite**
 
 - Oferta, catalogo incluido e limites da compra estao descritos sem promessa
   ambigua sobre novos anos/acervos.
 - Cada materia tem um tema de amostra aprovado e congelado para a versao inicial.
-- Preco e checklist infantil/privacy foram revisados por responsaveis antes do
-  gate de implementacao de pagamentos.
+- Preco inicial planejado de R$ 5, catalogo incluido e checklist infantil e de
+  privacidade foram revisados antes do gate de implementacao de pagamentos.
 
 ### Historia 11.2 - Criar workspace mobile sem impacto no site
 
