@@ -22,6 +22,9 @@ Esta pasta reune as fontes versionadas de produto, especificacao e operacao do Q
 | Assunto                           | Documento                                                                                        |
 | --------------------------------- | ------------------------------------------------------------------------------------------------ |
 | Escopo e principios do produto    | [product-scope-and-principles.md](product/product-scope-and-principles.md)                       |
+| MVP dos apps moveis               | [mobile-app-mvp.md](specs/mobile-app-mvp.md)                                                     |
+| Decisao de monorepo mobile        | [mobile-app-monorepo-adr.md](architecture/mobile-app-monorepo-adr.md)                            |
+| Roadmap dos apps moveis           | [mobile-app-roadmap.md](roadmap/mobile-app-roadmap.md)                                           |
 | Contrato editorial de acervos     | [content-delivery-contract.md](specs/content-delivery-contract.md)                               |
 | Manifesto curricular de 2026 T3   | [third-trimester-curriculum-manifest-2026.md](specs/third-trimester-curriculum-manifest-2026.md) |
 | Apoio bilingue para Ingles        | [english-t2-bilingual-question-support.md](specs/english-t2-bilingual-question-support.md)       |
