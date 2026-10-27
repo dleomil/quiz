@@ -104,12 +104,12 @@
     },
     {
       "id": "executable-codex-agents",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "status": "active",
       "type": "standard",
       "owner": "architecture",
       "sourcePath": "docs/specs/executable-codex-agents.md",
-      "sha256": "165ce0c233a91163de13875b7a2246a62ef0d04ba3c7740cecdbc84f48a5e9f7",
+      "sha256": "888ac4600a3bbe2cef90d5769f39bcc7bfa7f24516af8bfac5b6c29bbed1fe2e",
       "appliesTo": ["agent-configuration", "agent-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["agent configuration validation"]

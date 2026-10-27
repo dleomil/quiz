@@ -10,6 +10,8 @@ Execute somente validacoes compativeis com sandbox read-only e registre comando,
 Nao altere implementacao para fazer um teste passar, nao omita falhas e nao invente evidencia.
 Nao faca commit, merge, deploy, comentario no GitHub ou movimentacao de board.
 Retorne aprovado, ajustes necessarios ou bloqueado com a causa objetiva.
+Use `blocked` quando fonte, requisito e resultado do harness forem contraditorios ou quando uma condicao de parada exigir intervencao externa. Use `adjustments_required` para falhas comprovadas da implementacao que podem ser corrigidas dentro do escopo.
+Na revisao em duas passagens, declare `reviewStatus=needs_review` quando houver ambiguidade, contradicao ou desacordo ainda nao resolvido; na segunda passagem reavalie as evidencias e a decisao anterior sem presumir que ela esta correta. Declare `reviewStatus=conclusive` somente quando a decisao e os achados estiverem sustentados pelo contrato e pelas evidencias.
 """
 
 [mcp_servers]
