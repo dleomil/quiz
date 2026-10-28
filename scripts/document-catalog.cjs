@@ -373,8 +373,8 @@ function compareCatalogs(previous, current) {
       sha256: item.sha256,
     });
     if (item.sha256 !== old.sha256) {
-      if (item.revision !== old.revision + 1)
-        errors.push(`${item.path}: conteudo alterado exige proxima revisao`);
+      if (item.revision <= old.revision)
+        errors.push(`${item.path}: conteudo alterado exige revisao maior`);
       if (
         old.normative &&
         (!item.version || compareVersions(item.version, old.version) <= 0)

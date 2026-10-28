@@ -72,14 +72,17 @@ promocao, deploy ou alteracao funcional.
 
 Merges de promoção para `main` e reconciliação para `develop` devem usar
 mensagens curtas em português ASCII, sem título automático do GitHub, lista de
-commits ou blocos `Co-authored-by`. O manifesto
-`.github/merge-message-manifest.json` define o título e as quatro linhas do
-corpo; o título e o corpo da PR devem corresponder exatamente a esse modelo.
+commits ou blocos `Co-authored-by`. Os manifestos
+`.github/promotion-merge-message.json` e
+`.github/reconciliation-merge-message.json` definem os modelos imutáveis de
+cada operação. O validador seleciona o modelo pelas refs da PR, e título e
+corpo devem corresponder exatamente a ele.
 Concluir com `gh pr merge --merge --subject ... --body ...`, usando os valores
 validados no manifesto.
 
 O gate da PR valida o modelo antes do merge. Após a conclusão, o workflow
-`Merge Message Audit` compara a mensagem efetiva do commit com o manifesto e
+`Merge Message Audit` compara a mensagem efetiva do commit com o manifesto da
+operação e
 falha visivelmente se houver divergência. O GitHub não permite validar antes
 do merge o título final escolhido na interface; por isso, a auditoria posterior
 detecta esse desvio sem reescrever histórico. PRs de trabalho comuns e seus
@@ -88,10 +91,11 @@ commits ficam fora desta regra.
 Modelos obrigatórios:
 
 - Promoção: título `Promove pacote aprovado para main`; corpo com as linhas
-  `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o manifesto.
+  `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o manifesto de
+  promoção.
 - Reconciliação: título `Reconciliacao apos publicacao em develop`; corpo com
   as linhas `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o
-  manifesto.
+  manifesto de reconciliação.
 
 Antes da aprovação, revisar o manifesto e a prévia da mensagem; depois do
 merge, confirmar com `git show -s --format='%B' <merge-sha>`.

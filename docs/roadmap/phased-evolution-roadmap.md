@@ -223,3 +223,11 @@ Definir ate onde a Vercel gratuita sustenta o produto e quais limites, custos e 
 ## Regra de execucao
 
 Nenhuma fase deve ser tratada como reescrita completa. A execucao ideal e por historias pequenas, independentes quando possivel, e sempre com criterio claro de pronto.
+
+## Trilha complementar: app familiar iOS e Android
+
+O plano segmentado para validar monetizacao familiar por lojas esta em
+`docs/roadmap/mobile-app-roadmap.md`. Ele preserva a prioridade da fila atual,
+exige gates de isolamento do deploy web, paridade de conteudo, revisao infantil
+e autorizacao de release. A existencia do roadmap nao representa compromisso
+de prazo nem cria issues ou altera o board.

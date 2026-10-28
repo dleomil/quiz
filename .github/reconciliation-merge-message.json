@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "merge-message-v1",
+  "operation": "reconciliation",
+  "base": "develop",
+  "head": "chore/reconcile-main-develop-2026-10-27",
+  "subject": "Reconciliacao apos publicacao em develop",
+  "body": "Objetivo: integrar main em develop.\nEscopo: preservar alteracoes de develop.\nVerificacoes: testes e ancestralidade aprovados.\nReversao: reverter este merge."
+}

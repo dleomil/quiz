@@ -121,9 +121,16 @@ try {
     [],
   );
   assert.deepEqual(compareCatalogs(initial, updated).errors, []);
+  const accumulated = clone(updated);
+  accumulated.documents.find((document) => document.id === item.id).revision =
+    3;
+  assert.deepEqual(compareCatalogs(initial, accumulated).errors, []);
   const stale = clone(updated);
   stale.documents.find((document) => document.id === item.id).revision = 1;
-  expect(compareCatalogs(initial, stale).errors, 'proxima revisao');
+  expect(compareCatalogs(initial, stale).errors, 'revisao maior');
+  const regressed = clone(updated);
+  regressed.documents.find((document) => document.id === item.id).revision = 0;
+  expect(compareCatalogs(initial, regressed).errors, 'revisao maior');
   const inherited = clone(updated);
   inherited.documents.find((document) => document.id === item.id).status =
     'approved';
