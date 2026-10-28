@@ -135,7 +135,7 @@ function repositoryFingerprint() {
     { cwd: ROOT, encoding: 'utf8' },
   )
     .split('\0')
-    .filter(Boolean)
+    .filter((file) => file && fs.existsSync(path.join(ROOT, file)))
     .sort();
   return files.map((file) => [
     file,

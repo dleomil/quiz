@@ -1,7 +1,10 @@
 const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 
-const MANIFEST_PATH = '.github/merge-message-manifest.json';
+const MANIFEST_PATHS = {
+  promotion: '.github/promotion-merge-message.json',
+  reconciliation: '.github/reconciliation-merge-message.json',
+};
 const ASCII = /^[\x20-\x7E]+$/;
 const ASCII_LINES = /^[\x20-\x7E\n]+$/;
 const TEMPLATES = {
@@ -119,7 +122,7 @@ function auditCommitMessage(manifest, context = {}) {
   return errors;
 }
 
-function readManifest(path = MANIFEST_PATH) {
+function readManifest(path) {
   return JSON.parse(fs.readFileSync(path, 'utf8'));
 }
 
@@ -153,7 +156,7 @@ if (require.main === module) {
       if (!mergeSha || mergeSha !== headSha) {
         report(['HEAD deve corresponder ao SHA mesclado'], '', '');
       } else {
-        const manifest = readManifest();
+        const manifest = readManifest(MANIFEST_PATHS[operation]);
         const commitMessage = execFileSync(
           'git',
           ['show', '-s', '--format=%B', mergeSha],
@@ -171,7 +174,7 @@ if (require.main === module) {
       process.stdout.write('merge-message-policy: nao aplicavel\n');
     } else {
       report(
-        validateManifest(readManifest(), context),
+        validateManifest(readManifest(MANIFEST_PATHS[operation]), context),
         'merge-message-policy: ok',
         '',
       );

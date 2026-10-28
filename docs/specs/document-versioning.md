@@ -52,7 +52,10 @@ npm run documents:verify-approval -- --baseline <baseline.json> --evidence <come
 ```
 
 `sync` e a unica operacao de escrita: cadastra novos Markdown, atualiza hashes e
-incrementa uma revisao por alteracao de conteudo. Cada norma alterada recebe
+incrementa uma revisao por alteracao de conteudo. Em uma PR comparada com uma
+base que nao recebeu revisoes intermediarias, uma revisao acima da base e
+aceita, preservando os incrementos ja registrados no historico de `develop`.
+Cada norma alterada recebe
 incremento patch por padrao e volta a `draft`; extensoes compativeis exigem
 minor e alteracoes normativas incompativeis exigem major, avaliadas no PR.
 Sincronizar novamente o mesmo conteudo nao altera a revisao.
