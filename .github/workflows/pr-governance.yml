@@ -59,6 +59,9 @@ jobs:
           test -f docs/README.md
           test -f docs/github/branching-and-delivery-strategy.md
 
+      - name: Validar avisos locais de tarefas
+        run: npm run test:task-callback
+
       - name: Validate agent capabilities
         run: npm run validate:agents
 
