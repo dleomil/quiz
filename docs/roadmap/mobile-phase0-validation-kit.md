@@ -3,13 +3,33 @@
 ## Objetivo e decisoes atuais
 
 Validar a oferta inicial do app para familias com estudantes do 3o ano antes
-de iniciar o workspace mobile. O preco inicial escolhido e R$ 5 em pagamento
+de iniciar o workspace mobile. O preco inicial planejado e R$ 5 em pagamento
 unico para desbloquear o catalogo publicado incluido no lancamento. O app tera
 uma amostra gratuita por materia, sem conta, sincronizacao ou coleta de dados
 infantis.
 
 Este kit orienta a coleta de evidencias; nao aprova amostras, SKU, declaracoes
 de loja ou release. Nenhum produto deve ser cadastrado nas lojas nesta fase.
+
+## Referencias e estado das evidencias
+
+Este kit segue a [especificacao do MVP](../specs/mobile-app-mvp.md) e o
+[roadmap do app](./mobile-app-roadmap.md). E um guia nao normativo para
+preparar a validacao; integrar este documento nao conclui a Fase 0.
+
+Permanecem pendentes de evidencia neste kit:
+
+- entrevistas com responsaveis e compreensao da oferta;
+- seis amostras com revisao editorial humana concluida;
+- definicao do catalogo inicial e direitos de distribuicao;
+- verificacao vigente dos requisitos das lojas e privacidade;
+- disponibilidade do preco, custos e calculo financeiro por loja;
+- decisao humana sobre o inicio da Fase 1.
+
+Para cada evidencia, registrar responsavel, data, referencia verificavel,
+resultado e pendencia restante. Usar respostas agregadas e anonimas nas
+entrevistas. Sem resultado disponivel, manter o estado pendente; nao inferir
+aprovacao pela existencia deste roteiro ou pela passagem dos checks do PR.
 
 ## Conversas com responsaveis
 
@@ -56,8 +76,9 @@ novos anos ou conteudo futuro.
   privacidade, classificacao e declaracoes de loja. Guardar links e data da
   consulta; encaminhar duvidas legais a profissional competente.
 - Confirmar para R$ 5 o preco selecionavel em cada loja, impostos, comissao,
-  valor liquido, moeda e diferencas entre plataformas. Nao alterar o preco
-  definido sem decisao explicita do responsavel pelo produto.
+  valor liquido, moeda e diferencas entre plataformas. Confirmar a disponibilidade e a viabilidade nas duas lojas antes da
+  decisao do responsavel pelo produto; nao tratar o valor planejado como
+  preco aprovado.
 - Inventariar direitos e origem dos conteudos e confirmar que podem ser
   distribuidos em aplicativos moveis.
 - Registrar pendencias, responsavel, evidencia necessaria e efeito sobre o

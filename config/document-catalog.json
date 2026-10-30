@@ -534,11 +534,11 @@
       "path": "docs/roadmap/mobile-phase0-validation-kit.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "fdfc4458e70f9ed85db5da25ed2f750826ca030daa33345ebd5c5dfe564120b2"
+      "sha256": "bf787f0732096022555dca3f5c3d1d2ca95bc12b367e3e0804210c7df418508f"
     },
     {
       "id": "docs--roadmap--panel-control-phased-plan",
