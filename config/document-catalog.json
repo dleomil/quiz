@@ -530,6 +530,17 @@
       "sha256": "1126d2366d71cbb5ba2794e768ea4db3b103e9d591bf2f3c82894dd87830a8c8"
     },
     {
+      "id": "docs--roadmap--mobile-phase0-validation-kit",
+      "path": "docs/roadmap/mobile-phase0-validation-kit.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 2,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "bf787f0732096022555dca3f5c3d1d2ca95bc12b367e3e0804210c7df418508f"
+    },
+    {
       "id": "docs--roadmap--panel-control-phased-plan",
       "path": "docs/roadmap/panel-control-phased-plan.md",
       "kind": "guide",
