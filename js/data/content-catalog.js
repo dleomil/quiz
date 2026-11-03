@@ -46,6 +46,19 @@ const ContentCatalog = (function () {
       displayName: '3º trimestre de 2026',
       isCurrent: true,
     },
+    {
+      schemaVersion: 'content-v1',
+      contentSetId: '2026-t3-v2',
+      academicYear: 2026,
+      term: 't3',
+      version: 2,
+      status: 'draft',
+      grade: '3-ano',
+      displayName: 'Provas finais — novembro de 2026',
+      isCurrent: false,
+      publicationMode: 'by-subject',
+      publishedSubjects: [],
+    },
   ];
 
   function getPublished() {

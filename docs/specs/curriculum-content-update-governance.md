@@ -86,3 +86,26 @@ completo.
 ## Riscos e rollback
 
 O principal risco e transformar interpretacao automatizada em verdade pedagogica. O rollback consiste em manter cada lote separado, reverter o PR do lote e restaurar o conteudo anterior sem tocar na fonte local.
+
+## Entrega por matéria completa nas provas finais de novembro de 2026
+
+Para `2026-t3-v2`, foi autorizado planejar a liberação por disciplina completa.
+A matriz curricular integral permanece no manifesto; nenhuma linha pode ser
+omitida para simular completude. Esta exceção não altera acervos anteriores.
+
+O catálogo declara `publicationMode: by-subject` e `publishedSubjects`.
+A cobertura declara o mesmo modo e `intakeStatus`. Antes do congelamento,
+`intakeStatus` permanece `under-review`, o catálogo permanece `draft` e nenhuma
+matéria está liberada. Alterar esses campos não substitui a decisão humana.
+
+Após congelamento e gates editoriais, uma matéria só pode ser liberada se
+todos os seus temas declarados tiverem exatamente 20 questões publicadas.
+O runtime não pode conter questões de disciplinas pendentes nem rascunhos de
+uma matéria liberada. O seletor informa as disciplinas disponíveis, sem
+apresentar o ciclo inteiro como concluído. As demais continuam em preparação,
+fora do runtime publicado. Para outros acervos permanece a regra integral.
+
+Toda questão reaproveitada no novo acervo recebe novas revisões independentes
+pedagógica e linguística e aceite editorial do hash exato. Os campos de
+cobertura validam quantidade e visibilidade; o contrato de entrega continua
+responsável por bloquear pareceres ausentes, inválidos e aceite de outro hash.

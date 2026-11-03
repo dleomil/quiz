@@ -12,14 +12,23 @@ function parseArguments(args) {
   const result = { subject: null, topics: [] };
   for (let index = 0; index < args.length; index += 1) {
     const argument = args[index];
-    if (argument !== '--subject' && argument !== '--topic') {
+    if (
+      argument !== '--subject' &&
+      argument !== '--topic' &&
+      argument !== '--content-set'
+    ) {
       throw new Error('argumento invalido: ' + argument);
     }
     const value = args[index + 1];
     if (!value || value.startsWith('--')) {
       throw new Error(argument + ' exige um valor');
     }
-    if (argument === '--subject') {
+    if (argument === '--content-set') {
+      if (result.contentSetId) throw new Error('--content-set duplicado');
+      if (!/^\d{4}-t3-v[1-9]\d*$/.test(value))
+        throw new Error('acervo T3 invalido');
+      result.contentSetId = value;
+    } else if (argument === '--subject') {
       if (result.subject) throw new Error('--subject duplicado');
       result.subject = value;
     } else {
@@ -37,20 +46,21 @@ function parseArguments(args) {
 }
 
 function evaluateTopics({
+  contentSetId = CONTENT_SET_ID,
   sources,
   coverageManifest,
   contentCatalog,
   subject,
   topics,
 }) {
-  const coverage = coverageManifest?.contentSets?.[CONTENT_SET_ID]?.subjects;
+  const coverage = coverageManifest?.contentSets?.[contentSetId]?.subjects;
   const expectedTopics = coverage?.[subject];
   if (!expectedTopics) {
     throw new Error('materia nao declarada no manifesto T3: ' + subject);
   }
 
   const contentSet = contentCatalog.find(
-    (entry) => entry.contentSetId === CONTENT_SET_ID,
+    (entry) => entry.contentSetId === contentSetId,
   );
   if (!contentSet) throw new Error('acervo T3 ausente no catalogo');
 
@@ -62,7 +72,7 @@ function evaluateTopics({
     }
     const matching = questions.filter(
       (question) =>
-        question.contentSetId === CONTENT_SET_ID && question.topic === topic,
+        question.contentSetId === contentSetId && question.topic === topic,
     );
     const actual = matching.length;
     if (actual > expected) {
@@ -72,6 +82,8 @@ function evaluateTopics({
     }
     const complete =
       contentSet.status === 'published' &&
+      (contentSet.publicationMode !== 'by-subject' ||
+        contentSet.publishedSubjects?.includes(subject)) &&
       actual === expected &&
       matching.every((question) => question.reviewStatus === 'published');
     return {
@@ -85,7 +97,7 @@ function evaluateTopics({
 
   return {
     schemaVersion: 't3-publication-preflight-v1',
-    contentSetId: CONTENT_SET_ID,
+    contentSetId,
     subject,
     topics: results,
     decision: results.some((result) => result.complete)

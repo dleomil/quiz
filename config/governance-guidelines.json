@@ -80,12 +80,12 @@
     },
     {
       "id": "curriculum-content-quality",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "status": "active",
       "type": "policy",
       "owner": "content",
       "sourcePath": "docs/harness/content-update-quality-gates.md",
-      "sha256": "f59ce883e644982326405c11e306dc52c4884d228ada57393fc2f84f02f5b2be",
+      "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b",
       "appliesTo": ["content-updates", "editorial-workflows"],
       "enforcement": "manual-blocking",
       "evidence": ["pedagogical review", "linguistic review", "human approval"]

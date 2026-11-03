@@ -41,6 +41,34 @@ function fixtures({ completed = ['tema-pronto'], incomplete = [] } = {}) {
 }
 
 function run() {
+  assert.equal(
+    parseArguments([
+      '--content-set',
+      '2026-t3-v2',
+      '--subject',
+      'portugues',
+      '--topic',
+      'usos-de-je-ji',
+    ]).contentSetId,
+    '2026-t3-v2',
+  );
+  assert.throws(
+    () => parseArguments(['--content-set', '2026-t2-v2']),
+    /acervo T3 invalido/,
+  );
+  const next = fixtures();
+  next.coverageManifest.contentSets['2026-t3-v2'] =
+    next.coverageManifest.contentSets[contentSetId];
+  next.contentCatalog.push({ contentSetId: '2026-t3-v2', status: 'draft' });
+  const selected = evaluateTopics({
+    ...next,
+    contentSetId: '2026-t3-v2',
+    subject: 'portugues',
+    topics: ['tema-pronto'],
+  });
+  assert.equal(selected.contentSetId, '2026-t3-v2');
+  assert.equal(selected.topics[0].actual, 0);
+  assert.equal(selected.decision, 'proceed_to_planning');
   assert.deepEqual(
     parseArguments([
       '--subject',

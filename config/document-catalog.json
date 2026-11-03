@@ -402,11 +402,11 @@
       "path": "docs/harness/content-update-quality-gates.md",
       "kind": "policy",
       "owner": "content",
-      "revision": 1,
-      "version": "1.1.0",
+      "revision": 2,
+      "version": "1.2.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "f59ce883e644982326405c11e306dc52c4884d228ada57393fc2f84f02f5b2be"
+      "status": "draft",
+      "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b"
     },
     {
       "id": "docs--harness--execution-lessons-learned",
@@ -666,11 +666,11 @@
       "path": "docs/specs/curriculum-content-update-governance.md",
       "kind": "specification",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "ad5b71c38e9fd5c57651ad02ef3e984bc40a7cd4b7f818c99735069bc9aadf58"
+      "sha256": "7d8351fe2310afec523529b9d23670b89ade0f1e40150c57ec29b46de95c7051"
     },
     {
       "id": "docs--specs--curriculum-intake-template",
@@ -726,6 +726,17 @@
       "normative": true,
       "status": "draft",
       "sha256": "888ac4600a3bbe2cef90d5769f39bcc7bfa7f24516af8bfac5b6c29bbed1fe2e"
+    },
+    {
+      "id": "docs--specs--final-exams-november-2026-intake",
+      "path": "docs/specs/final-exams-november-2026-intake.md",
+      "kind": "specification",
+      "owner": "architecture",
+      "revision": 3,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "080edb46821115645c72f2f9d224be88a3f4edacafa47055b9ba36d706bbbdcd"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",
