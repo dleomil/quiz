@@ -116,11 +116,11 @@
       "path": "docs/agents/editorial-diagnostics.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "91e80ca3334ccd6d51871954725f5f7ea4c77bab403b4f2ee2b36032acd7f348"
+      "sha256": "2d5651657cc69e091fd0e6cdfe22afa60db886668266ebeb75e3c28b5b086d35"
     },
     {
       "id": "docs--agents--model-evaluation-runbook",

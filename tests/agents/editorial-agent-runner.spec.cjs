@@ -17,7 +17,20 @@ const {
   assertNoEnabledSkills,
 } = require('../../scripts/agent-auth.cjs');
 const { usageFromEvents } = require('../../scripts/agent-run-receipt.cjs');
-const { argumentsFrom } = require('../../scripts/run-editorial-agent.cjs');
+const {
+  argumentsFrom,
+  buildExecArguments,
+} = require('../../scripts/run-editorial-agent.cjs');
+assert.equal(
+  buildExecArguments(
+    { model: 'gpt-5.6-sol', model_reasoning_effort: 'high' },
+    '/tmp/message',
+    '/tmp/work',
+    '/tmp/session',
+    '/tmp/auth',
+  )[0],
+  '--no-daemon',
+);
 const { SCHEMA_GUARD } = require('./transport-test-support.cjs');
 
 const original = path.resolve(__dirname, '../..');
@@ -52,7 +65,7 @@ try {
       bin,
       `#!/usr/bin/env node
 const fs = require('node:fs');
-const args = process.argv.slice(2);
+const args = process.argv.slice(2).filter((arg) => arg !== '--no-daemon');
 const mode = ${JSON.stringify(mode)};
 ${SCHEMA_GUARD}
 if (args[0] === '--version') { console.log('codex-cli 0.160.0'); process.exit(0); }
@@ -182,7 +195,11 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   );
   assert.ok(record.argv.includes('cli_auth_credentials_store="keyring"'));
   for (const flag of DISABLED_FEATURES)
-    assert.ok(record.argv.includes(`features.${flag}=false`));
+    assert.ok(
+      record.argv.includes(
+        `features.${flag === 'code_mode' ? 'code_mode.enabled' : flag}=false`,
+      ),
+    );
   assert.equal(record.argv.at(-1), '-');
   assert.ok(record.prompt.includes('Contratos autorizados completos'));
   assert.ok(record.prompt.includes('# Instrucoes do projeto Quiz'));

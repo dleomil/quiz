@@ -99,6 +99,7 @@ function buildMcpArguments() {
 }
 function buildExecArguments(config, message, workspace, sessionHome, authHome) {
   return [
+    '--no-daemon',
     'exec',
     '--strict-config',
     '--ignore-user-config',

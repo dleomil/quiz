@@ -244,7 +244,10 @@ function isolationArguments(sessionHome) {
     'features.skip_host_skill_discovery=true',
     'shell_environment_policy.inherit="none"',
     `shell_environment_policy.set={ HOME=${JSON.stringify(sessionHome)}, TMPDIR=${JSON.stringify(sessionHome)} }`,
-    ...DISABLED_FEATURES.map((name) => `features.${name}=false`),
+    ...DISABLED_FEATURES.map(
+      (name) =>
+        `features.${name === 'code_mode' ? 'code_mode.enabled' : name}=false`,
+    ),
   ].flatMap((value) => ['--config', value]);
 }
 function checkedCall(bin, args, options, includeStderr = false) {
