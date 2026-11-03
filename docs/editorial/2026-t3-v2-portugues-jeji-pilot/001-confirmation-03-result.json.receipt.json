@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "agent-run-receipt-v1",
+  "runId": "0939f2b0-bc6c-45c9-a72d-b3efdaadd15a",
+  "actor": "content_curator",
+  "requestedModel": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "startedAt": "2026-11-03T11:31:44.304Z",
+  "testOnly": false,
+  "adapterSha256": "f680db5bf107db30cf891e3304ae7bf92f0aa28318577a6a0aa398a01268b74d",
+  "inputSha256": "7911e0ad7d1c178e58cbd242827f7c73b79a16ce427c3a11b67aa9d92e022f48",
+  "transportVersion": "agent-output-transport-v1",
+  "contractSchemaSha256": "bc3176c18748e5ff2a1e4a093ff7740bb18fc9f23aacca4a2fe1ada979b7359a",
+  "transportSchemaSha256": "8e1687dcf05ad26cc3ef98bac8ca2b18846aa7a1c3008ccffca7eb648cf676fb",
+  "completedAt": "2026-11-03T11:32:07.643Z",
+  "durationMs": 23339,
+  "result": "output-rejected",
+  "failureReason": "erro de execucao informado pela CLI: error, linha 3",
+  "contextSha256": "21eab47e1354e1e85911fcb1450f9394e0e600fb2ac7a61344ca74c63d978302",
+  "workSha256": "06e1271fa8e3e6662075e9ccc7c6a051f83115c486f4599f7488f3fe8389aaa6",
+  "configurationSha256": "13d37844ef5d3d765b7fedc4bbcfdd9654af972b26ce61874982e856a6621535",
+  "approvals": [
+    {
+      "schemaVersion": "document-baseline-approval-v1",
+      "baselineSha256": "f7e72defde5427470bf6be309710c5c80557f3074ab31142bdf7f0d077c09b37",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369",
+      "approvedBy": "dleomil",
+      "observedAt": "2026-11-03T00:26:04Z"
+    }
+  ],
+  "preflight": {
+    "cliVersion": "0.160.0",
+    "features": {
+      "shell_tool": false,
+      "shell_snapshot": false,
+      "apps": false,
+      "hooks": false,
+      "multi_agent": false,
+      "multi_agent_v2": false,
+      "plugins": false,
+      "remote_plugin": false,
+      "skill_mcp_dependency_install": false,
+      "skill_search": false,
+      "memories": false,
+      "goals": false,
+      "browser_use": false,
+      "browser_use_external": false,
+      "browser_use_full_cdp_access": false,
+      "computer_use": false,
+      "in_app_browser": false,
+      "in_app_chat": false,
+      "in_app_local_automation": false,
+      "image_generation": false,
+      "view_image": false,
+      "code_mode": false,
+      "code_mode_host": false,
+      "code_mode_only": false,
+      "artifact": false,
+      "workspace_dependencies": false,
+      "tool_suggest": false,
+      "step_model_switching": false,
+      "request_permissions_tool": false,
+      "auth_elicitation": false,
+      "realtime_conversation": false,
+      "daemon_auto_start": false,
+      "sleep_tool": false,
+      "agent_message_board": false,
+      "send_message_to_user_async": false,
+      "external_agent_memory_import": false,
+      "skip_host_skill_discovery": true
+    },
+    "mcpServerCount": 0,
+    "auth": "chatgpt-keyring",
+    "modelCatalogued": "gpt-5.6-sol",
+    "accountModelAccess": "not-yet-observed",
+    "skills": "disabled-and-context-checked"
+  },
+  "artifactSha256": null,
+  "usage": {
+    "input_tokens": 23711,
+    "cached_input_tokens": 0,
+    "output_tokens": 1615
+  },
+  "modelInvocations": 1,
+  "wireSha256": null,
+  "captureId": "0939f2b0-bc6c-45c9-a72d-b3efdaadd15a",
+  "captureSha256": "2e9692bff407bde2ab618ada0cb9c4fadaf0cb74d8100ec29f4e6633419d663a",
+  "eventDiagnosis": {
+    "version": "codex-0.160.0-events-v3",
+    "accepted": false,
+    "reasonCode": "process_failure",
+    "reason": "erro de execucao informado pela CLI",
+    "completed": true,
+    "usage": {
+      "input_tokens": 23711,
+      "cached_input_tokens": 0,
+      "output_tokens": 1615
+    },
+    "types": {
+      "thread.started": 1,
+      "item.completed:error": 2,
+      "turn.started": 1,
+      "item.completed:agent_message": 1,
+      "turn.completed": 1
+    },
+    "issues": [
+      {
+        "code": "process_failure",
+        "line": 3,
+        "eventType": "item.completed",
+        "itemType": "error",
+        "itemId": "item_1"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "startup_config_1",
+        "line": 2,
+        "itemId": "item_0"
+      }
+    ]
+  },
+  "observedModel": null,
+  "subscriptionUsage": null,
+  "attempts": 1,
+  "corrections": 0,
+  "limitations": [
+    "Modelo e esforco solicitados fixados; identidade remota nao atestada pela CLI.",
+    "Disponibilidade no catalogo nao comprova acesso da conta.",
+    "Consumo da assinatura e cobranca nao informados pela CLI; sem estimativa por preco de API.",
+    "Tentativas contam invocacoes do runner; tentativas internas do servico nao informadas.",
+    "Recibo local e evidencia rastreavel, sem assinatura criptografica de identidade humana."
+  ],
+  "sha256": "74a6b9a00ccff805d1316def094e4b75abecf2101f88097cbe890437a180892c"
+}
