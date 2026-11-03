@@ -112,6 +112,17 @@
       "sha256": "9fd68d3c3bbff37e3a531d297fefabf932048a30fbbada4a9363ecb9ece3dbf5"
     },
     {
+      "id": "docs--agents--editorial-diagnostics",
+      "path": "docs/agents/editorial-diagnostics.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 1,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "91e80ca3334ccd6d51871954725f5f7ea4c77bab403b4f2ee2b36032acd7f348"
+    },
+    {
       "id": "docs--agents--model-evaluation-runbook",
       "path": "docs/agents/model-evaluation-runbook.md",
       "kind": "guide",

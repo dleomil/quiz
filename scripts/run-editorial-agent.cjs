@@ -144,7 +144,7 @@ async function run(cliArguments = process.argv.slice(2)) {
   let evaluation;
   let modelInvocations = 0;
   let transportSchema, wireSha256;
-  let capture, captureInfo, message;
+  let capture, captureInfo, message, captureId;
   try {
     args = argumentsFrom(cliArguments);
     let config = loadAgentConfig(args['--agent']);
@@ -349,12 +349,24 @@ async function run(cliArguments = process.argv.slice(2)) {
     });
     resultState = 'execution-failed';
     const parserContext = { authHome, preflight: checks };
-    if (evaluation)
-      capture = createCapture(
-        path.resolve(args['--output']),
-        [],
-        parserContext,
-      );
+    let captureOutput = path.resolve(args['--output']);
+    if (!evaluation) {
+      const storage = path.join(authHome, 'quiz-editorial-runs');
+      fs.mkdirSync(storage, { recursive: true, mode: 0o700 });
+      const stat = fs.lstatSync(storage);
+      if (
+        !stat.isDirectory() ||
+        stat.isSymbolicLink() ||
+        stat.mode & 0o077 ||
+        stat.uid !== process.getuid()
+      )
+        throw new Error('diretorio privado de diagnostico invalido');
+      captureId = runId;
+      const runDirectory = path.join(storage, runId);
+      fs.mkdirSync(runDirectory, { mode: 0o700 });
+      captureOutput = path.join(runDirectory, 'result.json');
+    }
+    capture = createCapture(captureOutput, [], parserContext);
     modelInvocations = 1;
     const events = await execute(bin, argv, {
       cwd: workspace,
@@ -364,6 +376,13 @@ async function run(cliArguments = process.argv.slice(2)) {
       capture,
     });
     resultState = 'output-rejected';
+    captureInfo = capture.finish(message);
+    if (
+      captureInfo.truncated ||
+      captureInfo.exitCode !== 0 ||
+      captureInfo.processError
+    )
+      throw new Error('captura incompleta ou falha de processo');
     const eventDiagnosis = analyzeEvents(events, [], parserContext);
     usage = eventDiagnosis.usage;
     assertEvents(eventDiagnosis);
@@ -415,8 +434,12 @@ async function run(cliArguments = process.argv.slice(2)) {
     failureReason =
       error instanceof SyntaxError
         ? 'JSON invalido na entrada ou saida'
-        : error.message;
-    process.stderr.write(`editorial-agent-runner: ${error.message}\n`);
+        : modelInvocations && !error.diagnosis
+          ? resultState === 'output-rejected'
+            ? 'saida rejeitada: consultar captura privada'
+            : 'execucao falhou; consultar captura privada'
+          : error.message;
+    process.stderr.write(`editorial-agent-runner: ${failureReason}\n`);
     process.exitCode = 1;
   } finally {
     try {
@@ -447,6 +470,7 @@ async function run(cliArguments = process.argv.slice(2)) {
           usage,
           modelInvocations,
           wireSha256: wireSha256 || null,
+          captureId: captureId || null,
           captureSha256: captureInfo?.sha256 || null,
           eventDiagnosis: captureInfo?.diagnosis || null,
         });
