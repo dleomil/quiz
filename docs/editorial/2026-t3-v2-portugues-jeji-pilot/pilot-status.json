@@ -6,14 +6,18 @@
   "topic": "usos-de-je-ji",
   "manifestStatus": "frozen",
   "baselineApproval": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369",
-  "status": "blocked-execution",
+  "status": "blocked-cli-code-mode",
   "preparedWorkItems": 20,
-  "modelInvocations": 1,
+  "modelInvocations": 2,
   "acceptedQuestions": 0,
   "pedagogicalReviews": 0,
   "linguisticReviews": 0,
   "failedReceipt": "001-curation-result.json.receipt.json",
-  "failureReason": "erro de execucao informado pela CLI: error, linha 3",
-  "diagnosticLimitation": "O recibo preserva o erro generico; o runner de producao nao persistiu stdout/stderr detalhados. Nenhum log editorial detalhado desta execucao foi localizado.",
-  "nextStep": "Planejar captura persistente dos eventos de producao, com testes de sigilo e integridade, antes de nova invocacao. Nao repetir automaticamente nem trocar modelo ou regras de isolamento."
+  "failureReason": "CLI homologada 0.160.0 emite item.completed/error por host de Code Mode desativado. Processo encerra com zero, mas o parser rejeita o evento conforme contrato.",
+  "diagnosticLimitation": "Resolvida: captura privada integral preservada e verificada por hash.",
+  "nextStep": "Planejar compatibilidade da execucao editorial com Code Mode desativado; nao habilitar host, nao flexibilizar parser e nao repetir automaticamente.",
+  "diagnosticReceipt": "001-diagnostic-02-result.json.receipt.json",
+  "captureId": "73ee6a2c-4ffa-43e5-963d-d3b1f6acc9ce",
+  "captureSha256": "c7ba9137f415e6790e1033c4e334a4eeff29144f629c01373a3ef44047547459",
+  "captureVerified": true
 }
