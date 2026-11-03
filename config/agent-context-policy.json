@@ -25,6 +25,11 @@
   },
   "approvals": [
     {
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454",
+      "sha256": "f7e72defde5427470bf6be309710c5c80557f3074ab31142bdf7f0d077c09b37",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    {
       "sourceCommit": "18f3efbfefd43a7b219fd4db5a73e3f54a4329c0",
       "sha256": "895d3b3563660dff35c06e7b6e2ac23f9e6db73e73df23fe82e3d5f6cb899457",
       "evidenceRef": "https://github.com/dleomil/quiz/issues/403#issuecomment-6292586502"
