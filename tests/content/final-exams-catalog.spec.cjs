@@ -61,7 +61,7 @@ assert.ok(
     Object.values(topics).every((n) => n === 20),
   ),
 );
-assert.equal(coverage.intakeStatus, 'under-review');
+assert.equal(coverage.intakeStatus, 'frozen');
 
 const draft = scenario('draft', []);
 assert.equal(

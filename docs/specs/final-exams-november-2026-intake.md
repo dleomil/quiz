@@ -1,10 +1,11 @@
 # Intake das provas finais de novembro de 2026
 
-Estado: **under-review; aguardando decisão formal de congelamento**.
+Estado: **frozen; versão 1 da matriz congelada pelo Product Owner**.
 Versão do manifesto: 1. Responsável pelo aceite: Product Owner (`dleomil`).
-Estado inicial do acervo: `draft`, invisível. Decisão formal: pendente.
-Prosseguimento do trabalho autorizado nesta conversa em 02/11/2026; esse
-registro não equivale ao congelamento nem ao aceite editorial de questões.
+Estado inicial do acervo: `draft`, invisível. Decisão formal de congelamento: aprovada em 02/11/2026.
+Evidência: após solicitação explícita de congelamento da versão 1 de 66 temas,
+o Product Owner respondeu nesta conversa: “Aprovado, pode seguir”. Esse aceite
+cobre a matriz curricular, sem aprovar questões, revisões ou publicação.
 Acervo pretendido: `2026-t3-v2`; série: 3º ano; trimestre: T3.
 Recebimento informado: 02/11/2026. Fonte local em SchoolContent; não versionar arquivos escolares.
 Livro de 10/11: fora deste escopo por insuficiência de fonte. Atividades adicionais não constituem tema autônomo.
@@ -16,7 +17,7 @@ Livro de 10/11: fora deste escopo por insuficiência de fonte. Atividades adicio
 
 ## Matriz e sequência de entrega
 
-Cada linha exige 20 questões completas e duas revisões novas, inclusive quando o texto vier do acervo anterior. IDs abaixo são propostas para congelamento.
+Cada linha exige 20 questões completas e duas revisões novas, inclusive quando o texto vier do acervo anterior. IDs abaixo estão congelados nesta versão da matriz.
 
 ### Português — 11/11/2026: 10 temas, 200 questões
 
@@ -120,9 +121,9 @@ Cada linha exige 20 questões completas e duas revisões novas, inclusive quando
 - Português não pode reaproveitar adjetivos gerais como cobertura de gentílicos, nem GE/GI como JE/JI.
 - Inglês: revisar forma negativa e separar Thanksgiving de Christmas; apoio instrucional em português sem fornecer respostas.
 - Divisão, usos da água e audição do T3 anterior são apenas candidatas a comparação por habilidade e revisão integral.
-- Conferir objetivos dos títulos genéricos, especialmente Mais sobre divisão, Mapas, Acentuação e Percurso da água, antes do congelamento.
-- Conferir a divergência de localização de Corpos celestes na fonte: objeto consta no roteiro, sem inferir exclusão pelo intervalo de páginas.
-- Aprovação do manifesto: pendente; o estado não autoriza curadoria.
+- Aprovados os objetivos propostos para Mais sobre divisão, Mapas, Acentuação e Percurso da água.
+- Corpos celestes permanece incluído: consta no roteiro; a inconsistência de localização não exclui o objeto.
+- Congelamento aprovado; curadoria depende ainda da aceitação documental exigida pelo runner.
 
 ## Gates e entrega
 
@@ -149,10 +150,11 @@ Antes de gerar conteúdo, executar preflight no acervo de destino após sua decl
 - [x] Objetivos observáveis propostos para cada objeto.
 - [x] Reaproveitamento condicionado a novas revisões integrais.
 - [x] Preflight permite selecionar o novo acervo sem alterar o padrão antigo.
-- [ ] Confirmar formalmente a interpretação dos títulos genéricos e a inclusão de Corpos celestes.
+- [x] Confirmar formalmente a interpretação dos títulos genéricos e a inclusão de Corpos celestes.
 - [x] Declarar o acervo draft e a cobertura planejada, validando unicidade dos IDs e isolamento.
 - [x] Concluir o contrato técnico de liberação por matéria completa, com testes de bloqueio e visibilidade.
-- [ ] Registrar a decisão explícita de congelar esta versão da matriz.
+- [x] Registrar a decisão explícita de congelar esta versão da matriz.
 
-O checklist pendente impede a transição para frozen. Ainda não há liberação
-para gerar questões ou executar o piloto editorial.
+A matriz está congelada. Antes da invocação editorial, registrar a nova fonte
+no contexto do runner e obter o aceite do baseline documental exato. O piloto
+não possui aprovação editorial e não está liberado para publicação.

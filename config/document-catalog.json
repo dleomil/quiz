@@ -731,12 +731,12 @@
       "id": "docs--specs--final-exams-november-2026-intake",
       "path": "docs/specs/final-exams-november-2026-intake.md",
       "kind": "specification",
-      "owner": "architecture",
-      "revision": 3,
-      "version": null,
-      "normative": false,
-      "status": "unclassified",
-      "sha256": "080edb46821115645c72f2f9d224be88a3f4edacafa47055b9ba36d706bbbdcd"
+      "owner": "content",
+      "revision": 4,
+      "version": "1.0.1",
+      "normative": true,
+      "status": "draft",
+      "sha256": "13723530648377fb5f095d9af2a316f34e063597b0d2f4d0bb65b63f80f06523"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",

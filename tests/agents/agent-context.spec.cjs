@@ -28,7 +28,7 @@ try {
   );
   assert.ok(
     bundle.documents.some((doc) =>
-      doc.path.includes('third-trimester-curriculum'),
+      doc.path.includes('final-exams-november-2026-intake'),
     ),
   );
   for (const doc of bundle.documents)
