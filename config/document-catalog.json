@@ -655,11 +655,11 @@
       "path": "docs/specs/content-delivery-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 2,
-      "version": "2.0.0",
+      "revision": 3,
+      "version": "2.1.0",
       "normative": true,
       "status": "draft",
-      "sha256": "b615fec1f49de6289f2af3a8527e87086e8557dddbc8d58103f959c79f65dd52"
+      "sha256": "0e519a2656eab8e7b67211730b225b22760c68147b4f860a0337b91f1aca9b78"
     },
     {
       "id": "docs--specs--content-schema-v1",
