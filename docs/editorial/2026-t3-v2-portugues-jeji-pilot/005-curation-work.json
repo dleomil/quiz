@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "agent-work-v1",
+  "id": "444-jeji-curation-005",
+  "objective": "Criar uma questão original sobre JE/JI para o 3º ano. Identificador obrigatório T3F-PT-JEJI-005. Explorar a palavra sujeira em contexto curto e natural. Propor quatro alternativas de grafia, uma única correta, correctIndex 0, explicação correta e justificativa individual de cada erro. Evitar frases artificiais, ambiguidade, dicas que revelem a resposta e repetição de outros itens. Não usar a presença de J como regra universal para sons JE/JI; G também pode representar esses sons em outras palavras. Erros ortográficos são permitidos somente como distratores deliberados, claramente corrigidos no feedback.",
+  "baseCommit": "0cc2cc07f94c38e1f9ea4cffa62b69afd90e2efc",
+  "role": "content-curator",
+  "subjectId": "portugues",
+  "curriculumCycle": "2026-t3",
+  "dependencies": ["https://github.com/dleomil/quiz/issues/444"],
+  "documents": [
+    {
+      "id": "agents",
+      "version": "1.0.0",
+      "sha256": "fd4addcce96c418ff7f944d09cb387f8517a5bfb0752182aaccebc91dcb4b18b",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--agents--content-curator-agent",
+      "version": "1.0.0",
+      "sha256": "9fd68d3c3bbff37e3a531d297fefabf932048a30fbbada4a9363ecb9ece3dbf5",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--architecture--target-architecture",
+      "version": "1.1.0",
+      "sha256": "913f779600d4d52e05e80d5831be2dd5f9dde194f74f41a8bb9dc64d02b37b74",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--harness--content-update-quality-gates",
+      "version": "1.2.0",
+      "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--harness--pedagogical-regression-corpus",
+      "version": "1.0.0",
+      "sha256": "afd400c459b6d3d774db56df0346e87f57dba04f1ec561a648fa0aa957c1c5f8",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--product--product-scope-and-principles",
+      "version": "1.1.0",
+      "sha256": "2ca057426622539481ef63d482ff911ad518ffe8e7aae1da8399cd3c8d131e9a",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--specs--agent-context-and-auth",
+      "version": "1.0.0",
+      "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--specs--content-delivery-contract",
+      "version": "2.0.0",
+      "sha256": "b615fec1f49de6289f2af3a8527e87086e8557dddbc8d58103f959c79f65dd52",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--specs--editorial-agent-output-contract",
+      "version": "2.0.0",
+      "sha256": "654b7c89ff30fc95a5db6a7516b62fa286639f0137e7583e960099fb33a79131",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    },
+    {
+      "id": "docs--specs--final-exams-november-2026-intake",
+      "version": "1.0.1",
+      "sha256": "13723530648377fb5f095d9af2a316f34e063597b0d2f4d0bb65b63f80f06523",
+      "sourceCommit": "27c41fec7ddfdfb918bb1356c33155362006e454"
+    }
+  ],
+  "requirements": [
+    "Respeitar o objetivo curricular congelado, com humanApprovalRequired true.",
+    "Usar o ID e correctIndex solicitados e os metadados da entrada, sem campos extras.",
+    "Garantir linguagem infantil correta e feedback explicativo para todas as alternativas.",
+    "Não reproduzir material protegido nem usar ferramentas."
+  ],
+  "validExamples": [
+    "Contexto cotidiano curto que permite avaliar uma grafia e explicar a escolha."
+  ],
+  "invalidExamples": [
+    "Enunciado que já mostra a grafia correta e depois pede que a criança a escolha.",
+    "Alternativas equivalentes ou instrução para escolher erro sem informar essa intenção."
+  ],
+  "allowedPaths": [],
+  "acceptanceCriteria": [
+    "Proposta content-v1 completa no schema, reviewStatus draft e decisão com pendência humana."
+  ],
+  "commands": [],
+  "evidence": ["baseline documental aprovado no comentário 6592047369"],
+  "independentVerifier": "pedagogical-quality-em-passagens-separadas",
+  "stopConditions": [
+    "Manifesto não congelado, fonte ambígua, isolamento não comprovado ou dúvida factual não resolvida."
+  ],
+  "rollback": "Preservar a evidência e descartar a proposta sem alterar runtime."
+}

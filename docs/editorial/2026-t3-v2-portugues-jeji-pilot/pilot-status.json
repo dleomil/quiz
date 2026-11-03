@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "final-exams-pilot-status-v1",
+  "issue": "https://github.com/dleomil/quiz/issues/444",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "usos-de-je-ji",
+  "manifestStatus": "frozen",
+  "baselineApproval": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369",
+  "status": "blocked-execution",
+  "preparedWorkItems": 20,
+  "modelInvocations": 1,
+  "acceptedQuestions": 0,
+  "pedagogicalReviews": 0,
+  "linguisticReviews": 0,
+  "failedReceipt": "001-curation-result.json.receipt.json",
+  "failureReason": "erro de execucao informado pela CLI: error, linha 3",
+  "diagnosticLimitation": "O recibo preserva o erro generico; o runner de producao nao persistiu stdout/stderr detalhados. Nenhum log editorial detalhado desta execucao foi localizado.",
+  "nextStep": "Planejar captura persistente dos eventos de producao, com testes de sigilo e integridade, antes de nova invocacao. Nao repetir automaticamente nem trocar modelo ou regras de isolamento."
+}
