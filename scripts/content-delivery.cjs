@@ -179,6 +179,7 @@ function validateReviews(
   );
   const seen = new Set();
   const runIds = new Set();
+  const recoveredEvidence = new Map();
   for (const entry of record.reviews || []) {
     const pair = `${entry.questionId}:${entry.pass}`;
     if (!expected.has(pair) || seen.has(pair))
@@ -207,10 +208,42 @@ function validateReviews(
       )
         errors.push(`hash da execucao diverge: ${pair}`);
       if (
-        execution.kind !== 'isolated-editorial' ||
+        !['isolated-editorial', 'isolated-editorial-recovered'].includes(
+          execution.kind,
+        ) ||
         (!allowTestEvidence && execution.testOnly !== false)
       )
         errors.push(`execucao editorial ausente ou ficticia: ${pair}`);
+      if (execution.kind === 'isolated-editorial-recovered') {
+        if (
+          !policy.editorialRecovery?.contentSetIds?.includes(
+            question?.contentSetId,
+          )
+        )
+          throw new Error('recuperacao nao autorizada para o acervo');
+        const ref = execution.recoveryEvidencePath;
+        if (
+          !/^docs\/editorial\/[\w./-]+\.json$/.test(ref || '') ||
+          ref.split('/').includes('..')
+        )
+          throw new Error('referencia de recuperacao invalida');
+        const report = readJson(ref);
+        recoveredEvidence.set(ref, report.sha256);
+        require('./editorial-recovery.cjs').validateReport(report);
+        if (
+          report.sha256 !== execution.recoverySha256 ||
+          report.originalRunId !== execution.runId ||
+          digest(report.scenario.input) !== digest(scenario.input) ||
+          digest(report.scenario.output) !== digest(scenario.output)
+        )
+          throw new Error('revisao recuperada diverge do relatorio');
+        if (
+          !(record.recoveryReports || []).some(
+            (r) => r.path === ref && r.sha256 === report.sha256,
+          )
+        )
+          throw new Error('recuperacao ausente no conjunto de aceite');
+      }
       if (!execution.runId || runIds.has(execution.runId))
         errors.push(`execucao repetida ou ausente: ${pair}`);
       runIds.add(execution.runId);
@@ -238,6 +271,13 @@ function validateReviews(
       errors.push(`${pair}: ${error.message}`);
     }
   }
+  const refs = record.recoveryReports || [];
+  if (
+    refs.length !== recoveredEvidence.size ||
+    new Set(refs.map((r) => r.path)).size !== refs.length ||
+    refs.some((r) => recoveredEvidence.get(r.path) !== r.sha256)
+  )
+    errors.push('conjunto de recuperacao diverge das revisoes');
   for (const pair of expected)
     if (!seen.has(pair)) errors.push(`revisao ausente: ${pair}`);
   for (const rule of requirementsFor(questions[0].subject, policy)) {
@@ -283,6 +323,21 @@ function validateApproval(questions, record, policy, readComment) {
         .includes(statement)
     )
       errors.push('comentario nao comprova aceite editorial do pacote');
+    if (record.recoveryReports?.length) {
+      const recoveryHash = digest(
+        [...record.recoveryReports].sort((a, b) =>
+          a.path.localeCompare(b.path),
+        ),
+      );
+      if (
+        approval.recoveryBundleSha256 !== recoveryHash ||
+        !comment.body
+          ?.split('\n')
+          .map((s) => s.trim())
+          .includes('Reconheco recuperacao editorial hash ' + recoveryHash)
+      )
+        errors.push('aceite do conjunto recuperado ausente ou divergente');
+    }
     if (comment.html_url !== approval.evidenceRef || !comment.created_at)
       errors.push('origem do aceite diverge');
   } catch {

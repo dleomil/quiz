@@ -182,3 +182,29 @@ confere seus resultados contra os rascunhos atuais e injeta defeitos em todos
 os caminhos para comprovar o bloqueio antes da escrita. Tambem exercita o
 contrato em seis materias e em um ciclo futuro ficticio. Novos geradores e
 publicadores devem ser cadastrados, instrumentados e incluidos nessa verificacao.
+
+## Recuperação editorial controlada — provas finais de 2026
+
+Para `2026-t3-v2`, uma resposta completa pode originar evidência suplementar
+`isolated-editorial-recovered`. O parser geral e o recibo original continuam
+registrando a falha; recuperação não transforma a execução em sucesso.
+
+O recuperador offline exige recibo e captura íntegros, processo com código zero,
+turno único concluído, resposta final válida, nenhum uso de ferramenta e como
+único evento bloqueante a mensagem exata de host de Code Mode desativado antes
+do turno. Exige também entrada, ficha, commits, modelo, configuração, schema e
+baseline correspondentes. Não chama modelo, não faz login e não usa rede.
+
+A evidência suplementar preserva o runId original e os hashes. Uma chamada não
+pode contar como duas passagens. Logs brutos permanecem privados; o relatório
+publicável contém o cenário validado, recibo original e vínculos de integridade.
+O CI confere os vínculos publicáveis; a verificação dos arquivos privados ocorre
+localmente. O relatório não é uma assinatura criptográfica de execução remota.
+
+Curadoria recuperada produz apenas candidata em draft. Questões seguem exigindo
+passagens pedagógica e linguística reais e separadas, correção dos achados e
+aceite humano do pacote exato. A publicação de revisões recuperadas exige ainda
+a linha `Reconheco recuperacao editorial hash <hash-do-conjunto>` no comentário
+de aceite, vinculada a `approval.recoveryBundleSha256` e à lista ordenada
+`recoveryReports` com caminhos e hashes dos relatórios. A linha de aceite do
+pacote continua obrigatória. Acervos anteriores permanecem no contrato original.
