@@ -710,7 +710,7 @@ function validateDelivery({
     batches.push({
       key,
       stage,
-      sourceSha256: packageHash(questions),
+      sourceSha256: packageHash(runtimeQuestions),
       ids: questions.map((question) => question.id),
     });
   }
