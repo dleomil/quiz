@@ -10,6 +10,26 @@ const ROOT = path.resolve(__dirname, '..');
 const POLICY_PATH = 'config/content-delivery-policy.json';
 const PASSES = ['pedagogical', 'linguistic'];
 
+function readGitHubComment(repository, id) {
+  let failure;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      return JSON.parse(
+        execFileSync(
+          'gh',
+          ['api', `repos/${repository}/issues/comments/${id}`],
+          { encoding: 'utf8' },
+        ),
+      );
+    } catch (error) {
+      failure = error;
+      if (attempt < 2)
+        Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 500);
+    }
+  }
+  throw failure;
+}
+
 function stable(value) {
   if (Array.isArray(value)) return value.map(stable);
   if (value && typeof value === 'object') {
@@ -426,15 +446,7 @@ function assertPublication(
     return JSON.parse(worktree.read(name));
   };
   const commentReader =
-    readComment ||
-    ((id) =>
-      JSON.parse(
-        execFileSync(
-          'gh',
-          ['api', `repos/${policy.repository}/issues/comments/${id}`],
-          { encoding: 'utf8' },
-        ),
-      ));
+    readComment || ((id) => readGitHubComment(policy.repository, id));
   for (const [key, batch] of groups) {
     if (batch.some((question) => question.reviewStatus !== 'published')) {
       errors.push(`${key}: runtime exige status published`);
@@ -627,15 +639,7 @@ function validateDelivery({
     return JSON.parse(head.read(name));
   };
   const commentReader =
-    readComment ||
-    ((id) =>
-      JSON.parse(
-        execFileSync(
-          'gh',
-          ['api', `repos/${policy.repository}/issues/comments/${id}`],
-          { encoding: 'utf8' },
-        ),
-      ));
+    readComment || ((id) => readGitHubComment(policy.repository, id));
   for (const key of keys) {
     const previousDraft = before.drafts.get(key),
       draft = after.drafts.get(key);
