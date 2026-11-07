@@ -388,8 +388,14 @@ function validateApproval(questions, record, policy, readComment) {
     }
     if (comment.html_url !== approval.evidenceRef || !comment.created_at)
       errors.push('origem do aceite diverge');
-  } catch {
-    errors.push('nao foi possivel verificar o aceite editorial');
+  } catch (error) {
+    const detail = String(error?.stderr || error?.message || '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 240);
+    errors.push(
+      `nao foi possivel verificar o aceite editorial${detail ? `: ${detail}` : ''}`,
+    );
   }
   return errors;
 }
