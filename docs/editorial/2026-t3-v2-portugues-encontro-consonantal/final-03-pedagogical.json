@@ -1,0 +1,201 @@
+{
+  "scenarioId": "encontro-consonantal-r54-03-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "encontro-consonantal-r54-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Encontro consonantal"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Identificar encontros consonantais e distingui-los de dígrafos.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal no meio?",
+        "options": ["ninho", "telha", "festa", "massa"],
+        "correctIndex": 2,
+        "explanation": "Em festa, S e T ficam juntos e cada consoante mantém seu som.",
+        "wrongExplanations": {
+          "0": "NH é dígrafo em ninho.",
+          "1": "LH é dígrafo em telha.",
+          "3": "SS é dígrafo em massa."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal formado por T e R?",
+        "options": ["chuva", "carro", "ninho", "trigo"],
+        "correctIndex": 3,
+        "explanation": "Em trigo, T e R são pronunciados em sequência.",
+        "wrongExplanations": {
+          "0": "CH é dígrafo em chuva.",
+          "1": "RR é dígrafo em carro.",
+          "2": "NH é dígrafo em ninho."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra as letras QU representam um único som consonantal?",
+        "options": ["quilo", "blusa", "prato", "flor"],
+        "correctIndex": 0,
+        "explanation": "Em quilo, as letras QU representam um único som; por isso, QU é um dígrafo.",
+        "wrongExplanations": {
+          "1": "BL é encontro consonantal em blusa.",
+          "2": "PR é encontro consonantal em prato.",
+          "3": "FL é encontro consonantal em flor."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal no início?",
+        "options": ["chave", "planta", "palha", "carro"],
+        "correctIndex": 1,
+        "explanation": "Em planta, P e L mantêm seus sons, formando encontro consonantal.",
+        "wrongExplanations": {
+          "0": "CH é dígrafo em chave.",
+          "2": "LH é dígrafo em palha.",
+          "3": "RR é dígrafo em carro."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal formado por D e R?",
+        "options": ["massa", "chave", "dragão", "galho"],
+        "correctIndex": 2,
+        "explanation": "Em dragão, D e R aparecem juntos e cada consoante é pronunciada.",
+        "wrongExplanations": {
+          "0": "SS é dígrafo em massa.",
+          "1": "CH é dígrafo em chave.",
+          "3": "LH é dígrafo em galho."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "encontro-consonantal-r54-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto declara 3º ano, ano letivo de 2026, T3, manifesto congelado, fonte autorizada e objetivo curricular rastreável: identificar encontros consonantais e distingui-los de dígrafos.",
+      "2026t3v2_pt_encontro_011 possui resposta única: “festa” apresenta o encontro consonantal ST, enquanto NH, LH e SS são dígrafos nos demais itens; a explicação e os três feedbacks são coerentes.",
+      "2026t3v2_pt_encontro_012 possui resposta única: “trigo” apresenta o encontro consonantal TR, enquanto CH, RR e NH são dígrafos; a explicação e os feedbacks correspondem às alternativas.",
+      "2026t3v2_pt_encontro_013 possui resposta única: em “quilo”, QU representa um único som consonantal e funciona como dígrafo; BL, PR e FL são encontros consonantais, conforme os feedbacks.",
+      "2026t3v2_pt_encontro_014 possui resposta única: “planta” apresenta o encontro consonantal PL no início, enquanto CH, LH e RR são dígrafos; a explicação e os feedbacks são adequados.",
+      "2026t3v2_pt_encontro_015 possui resposta única: “dragão” apresenta o encontro consonantal DR, enquanto SS, CH e LH são dígrafos; a explicação e os feedbacks são coerentes.",
+      "As cinco questões estão em português, apresentam quatro alternativas completas, não contêm lacunas e não revelam a resposta no enunciado.",
+      "As questões medem diretamente o objetivo autorizado, sem depender de pegadinha ou habilidade lateral."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Realizar a passagem linguística independente sobre o mesmo pacote exato.",
+      "Manter pendente a aprovação humana pedagógica do lote e do hash exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "192a839e-81db-4ede-bd54-2d50bc69c465",
+    "packageSha256": "255306284b9a18d9e135bed92983afb1a2092d2c14443f0f1cb4306febe9ad36",
+    "questionSha256s": {
+      "2026t3v2_pt_encontro_011": "57fab50d52518a1b4be630a7d98b7886f138e828d91bde8ef5ea947438b66d3d",
+      "2026t3v2_pt_encontro_012": "c3116cfccbdefac198c80ebcf5f599d01e0690504d6dc76b244994873c875f6c",
+      "2026t3v2_pt_encontro_013": "92e68ffd50cdf49ee3dbb086643b3bd74c3f5c05144eb9aababa3ae1cb4d9d6b",
+      "2026t3v2_pt_encontro_014": "fc172dc9dcd2c534f53d0d5a0ae401790b66625e5aa716abcd6c5aa6c94fbb7b",
+      "2026t3v2_pt_encontro_015": "45ced50e1006aa847871d94185545d7d00e2e39d857775c5c9006d1ffd3f09af"
+    },
+    "batchProposalSha256": "14cb6c323da20e142a381fd0c50a3871d0dcaa737eb4c6e03bb1f5ede4bf2ca9",
+    "batchQuestionIds": [
+      "2026t3v2_pt_encontro_011",
+      "2026t3v2_pt_encontro_012",
+      "2026t3v2_pt_encontro_013",
+      "2026t3v2_pt_encontro_014",
+      "2026t3v2_pt_encontro_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-06T23:38:06.812Z",
+    "testOnly": false
+  }
+}

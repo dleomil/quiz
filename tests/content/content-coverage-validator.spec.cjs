@@ -95,6 +95,94 @@ function run() {
     ),
   );
 
+  const partialManifest = {
+    schemaVersion: 'coverage-v1',
+    contentSets: {
+      '2026-t3-v2': {
+        publicationMode: 'by-subject',
+        intakeStatus: 'frozen',
+        subjects: {
+          portugues: { primeiro: 20, segundo: 20 },
+          geografia: { agua: 20 },
+        },
+      },
+    },
+  };
+  const partialCatalog = [
+    {
+      contentSetId: '2026-t3-v2',
+      status: 'published',
+      publicationMode: 'by-subject',
+      publishedSubjects: ['portugues'],
+    },
+  ];
+  const approved = ['primeiro', 'segundo'].flatMap((topic) =>
+    Array.from({ length: 20 }, (_, index) => ({
+      schemaVersion: 'content-v1',
+      id: topic + index,
+      contentSetId: '2026-t3-v2',
+      subject: 'portugues',
+      topic,
+      reviewStatus: 'published',
+    })),
+  );
+  const check = (
+    questions = approved,
+    metadata = partialManifest,
+    catalogs = partialCatalog,
+  ) =>
+    validateCoverageManifest({ portugues: { questions } }, metadata, catalogs);
+  assert.deepEqual(check(), []);
+  assert.ok(
+    check(approved.slice(1)).some((error) =>
+      error.includes('atual=19 esperado=20'),
+    ),
+  );
+  assert.ok(
+    check(approved.filter((q) => q.topic !== 'segundo')).some((error) =>
+      error.includes('atual=0 esperado=20'),
+    ),
+  );
+  assert.ok(check([...approved, { ...approved[0], id: 'extra' }]).length);
+  assert.ok(
+    check([
+      ...approved,
+      { ...approved[0], subject: 'geografia', topic: 'agua', id: 'pendente' },
+    ]).some((error) => error.includes('materia pendente')),
+  );
+  assert.ok(
+    check(
+      approved.map((q, i) => (i === 0 ? { ...q, reviewStatus: 'draft' } : q)),
+    ).some((error) => error.includes('sem publicacao')),
+  );
+  for (const publishedSubjects of [
+    [],
+    ['portugues', 'portugues'],
+    ['desconhecida'],
+  ]) {
+    assert.ok(
+      check(approved, partialManifest, [
+        { ...partialCatalog[0], publishedSubjects },
+      ]).length,
+    );
+  }
+  const underReview = JSON.parse(JSON.stringify(partialManifest));
+  underReview.contentSets['2026-t3-v2'].intakeStatus = 'under-review';
+  assert.ok(
+    check(approved, underReview).some((error) =>
+      error.includes('intake frozen'),
+    ),
+  );
+  assert.deepEqual(
+    check([], underReview, [
+      { ...partialCatalog[0], status: 'draft', publishedSubjects: [] },
+    ]),
+    [],
+  );
+  assert.ok(
+    check([], underReview, [{ ...partialCatalog[0], status: 'draft' }]).length,
+  );
+
   console.log('content-coverage-validator: ok');
 }
 

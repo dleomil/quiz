@@ -1,0 +1,198 @@
+{
+  "scenarioId": "uso-de-eza-e-esa-r54-04-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "uso-de-eza-e-esa-r54-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Uso de EZA e ESA"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Distinguir substantivos em EZA e palavras em ESA conforme a formação e o sentido.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra é o gentílico feminino de Japão?",
+        "options": ["japonesa", "francesa", "gentileza", "portuguesa"],
+        "correctIndex": 0,
+        "explanation": "Japonesa é o gentílico feminino de Japão e termina em -esa.",
+        "wrongExplanations": {
+          "1": "Francesa indica origem na França.",
+          "2": "Gentileza é uma qualidade, não um gentílico.",
+          "3": "Portuguesa indica origem em Portugal."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A menina lavou o chão com água e sabão. Qual substantivo terminado em -eza nomeia o ato de deixar algo limpo?",
+        "options": ["limpeza", "beleza", "gentileza", "natureza"],
+        "correctIndex": 0,
+        "explanation": "Limpeza nomeia o ato de tirar a sujeira e deixar algo limpo.",
+        "wrongExplanations": {
+          "1": "Beleza nomeia uma qualidade do que é belo, não o ato de limpar.",
+          "2": "Gentileza é o modo bondoso de tratar alguém, não o ato de limpar.",
+          "3": "Natureza se refere ao mundo natural, não ao ato de limpar."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra indica que uma pessoa é natural da Inglaterra?",
+        "options": ["inglesa", "francesa", "portuguesa", "japonesa"],
+        "correctIndex": 0,
+        "explanation": "Inglesa é a forma feminina do gentílico de Inglaterra.",
+        "wrongExplanations": {
+          "1": "Francesa indica origem na França.",
+          "2": "Portuguesa indica origem em Portugal.",
+          "3": "Japonesa indica origem no Japão."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra nomeia a condição de ser rico?",
+        "options": ["riqueza", "pobreza", "gentileza", "francesa"],
+        "correctIndex": 0,
+        "explanation": "Riqueza vem de rico e nomeia a abundância de bens ou recursos; termina em -eza.",
+        "wrongExplanations": {
+          "1": "Pobreza nomeia a condição de ser pobre.",
+          "2": "Gentileza vem de gentil e nomeia o modo bondoso de tratar as pessoas.",
+          "3": "Francesa é um gentílico."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A estudante veio de Portugal. Qual gentílico feminino indica sua origem?",
+        "options": ["portuguesa", "francesa", "gentileza", "japonesa"],
+        "correctIndex": 0,
+        "explanation": "Portuguesa é o gentílico feminino de Portugal.",
+        "wrongExplanations": {
+          "1": "Francesa indica origem na França.",
+          "2": "Gentileza é uma qualidade, não um gentílico.",
+          "3": "Japonesa indica origem no Japão."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "uso-de-eza-e-esa-r54-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "2026t3v2_pt_eza_esa_016 apresenta enunciado, alternativas e explicações em português claro, correto e adequado ao 3º ano, sem lacuna nem revelação indevida da resposta.",
+      "2026t3v2_pt_eza_esa_017 apresenta contexto compreensível e formulação natural; o enunciado e os feedbacks distinguem os sentidos das palavras sem ambiguidade linguística.",
+      "2026t3v2_pt_eza_esa_018 emprega vocabulário acessível e construção gramatical correta; alternativas e explicações são claras e coerentes entre si.",
+      "2026t3v2_pt_eza_esa_019 apresenta pergunta direta, explicação bem articulada e feedbacks redigidos com clareza e adequação infantil.",
+      "2026t3v2_pt_eza_esa_020 apresenta instrução clara em português e explicações concisas, respeitosas e linguisticamente corretas.",
+      "As cinco propostas possuem quatro alternativas preenchidas, explicação da resposta correta e feedback específico para cada alternativa incorreta.",
+      "Não foram identificados erros de ortografia, acentuação, concordância ou pontuação nas cinco propostas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter os textos avaliados e encaminhar o pacote exato para a aprovação humana e os demais gates obrigatórios."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "b975f491-c05e-49a6-a95e-1a96b4f6d51d",
+    "questionSha256s": {
+      "2026t3v2_pt_eza_esa_016": "c0cba36b7e206490cdb34292b8b92b3844aa1ec9e9e2a47394a8cebf0556da2e",
+      "2026t3v2_pt_eza_esa_017": "44e04c4a002f40a293531805e69632f68f6796291c4c1f8a4b8fde96099d0784",
+      "2026t3v2_pt_eza_esa_018": "bc4243bb6dbbbd8690e4abcb9a7a83c9fba0bf1fe838a195ad918c9f3a421fe0",
+      "2026t3v2_pt_eza_esa_019": "81806951fcdf8cf8b273ea2a282317cbe823671cbfb615146c56b83d44c4f87b",
+      "2026t3v2_pt_eza_esa_020": "faa202ffabc0d381214a69c0ac226d5c2657c5ec263b853da29bbaa2a1b5322a"
+    },
+    "batchProposalSha256": "7e66bd6087555089d43a38f601be04c0cfd479b340b6955b9078a9095bc08855",
+    "batchQuestionIds": [
+      "2026t3v2_pt_eza_esa_016",
+      "2026t3v2_pt_eza_esa_017",
+      "2026t3v2_pt_eza_esa_018",
+      "2026t3v2_pt_eza_esa_019",
+      "2026t3v2_pt_eza_esa_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-06T23:41:49.236Z",
+    "testOnly": false
+  }
+}

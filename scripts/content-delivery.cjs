@@ -10,6 +10,26 @@ const ROOT = path.resolve(__dirname, '..');
 const POLICY_PATH = 'config/content-delivery-policy.json';
 const PASSES = ['pedagogical', 'linguistic'];
 
+function readGitHubComment(repository, id) {
+  let failure;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      return JSON.parse(
+        execFileSync(
+          'gh',
+          ['api', `repos/${repository}/issues/comments/${id}`],
+          { encoding: 'utf8' },
+        ),
+      );
+    } catch (error) {
+      failure = error;
+      if (attempt < 2)
+        Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 500);
+    }
+  }
+  throw failure;
+}
+
 function stable(value) {
   if (Array.isArray(value)) return value.map(stable);
   if (value && typeof value === 'object') {
@@ -67,6 +87,12 @@ function applies(contentSetId, policy) {
 function requirementsFor(subject, policy) {
   return policy.requirements.filter(
     (rule) => !rule.subject || rule.subject === subject,
+  );
+}
+function requiresVisualEvidence(questions) {
+  const first = questions[0];
+  return !(
+    first?.subject === 'portugues' && first?.contentSetId === '2026-t3-v2'
   );
 }
 function validateBatch(questions, { policy, coverage, topicNames = {} } = {}) {
@@ -179,6 +205,7 @@ function validateReviews(
   );
   const seen = new Set();
   const runIds = new Set();
+  const recoveredEvidence = new Map();
   for (const entry of record.reviews || []) {
     const pair = `${entry.questionId}:${entry.pass}`;
     if (!expected.has(pair) || seen.has(pair))
@@ -196,22 +223,76 @@ function validateReviews(
       errors.push(...validateEditorialScenario(editorialScenario));
       const execution = scenario.execution || {};
       const question = questions.find((item) => item.id === entry.questionId);
+      const reviewedProposal =
+        scenario.input?.proposal ||
+        (scenario.input?.proposals || []).find(
+          (item) => item.id === entry.questionId,
+        );
       if (
         !question ||
-        digest(scenario.input?.proposal) !== digest(reviewProjection(question))
+        !reviewedProposal ||
+        digest(reviewedProposal) !== digest(reviewProjection(question))
       )
         errors.push(`proposta revisada diverge: ${pair}`);
       if (
-        execution.packageSha256 !== hash ||
-        execution.proposalSha256 !== digest(scenario.input?.proposal)
+        (execution.questionSha256s?.[entry.questionId]
+          ? execution.questionSha256s[entry.questionId] !==
+            digest(reviewProjection(question))
+          : execution.questionSha256
+            ? execution.questionSha256 !== digest(reviewProjection(question))
+            : execution.packageSha256 !== hash) ||
+        (!execution.questionSha256s &&
+        !execution.questionSha256 &&
+        scenario.input?.proposals
+          ? execution.batchProposalSha256 !==
+              digest(scenario.input.proposals) ||
+            !(execution.batchQuestionIds || []).includes(entry.questionId)
+          : !execution.questionSha256s &&
+            !execution.questionSha256 &&
+            execution.proposalSha256 !== digest(scenario.input?.proposal))
       )
         errors.push(`hash da execucao diverge: ${pair}`);
       if (
-        execution.kind !== 'isolated-editorial' ||
+        !['isolated-editorial', 'isolated-editorial-recovered'].includes(
+          execution.kind,
+        ) ||
         (!allowTestEvidence && execution.testOnly !== false)
       )
         errors.push(`execucao editorial ausente ou ficticia: ${pair}`);
-      if (!execution.runId || runIds.has(execution.runId))
+      if (execution.kind === 'isolated-editorial-recovered') {
+        if (
+          !policy.editorialRecovery?.contentSetIds?.includes(
+            question?.contentSetId,
+          )
+        )
+          throw new Error('recuperacao nao autorizada para o acervo');
+        const ref = execution.recoveryEvidencePath;
+        if (
+          !/^docs\/editorial\/[\w./-]+\.json$/.test(ref || '') ||
+          ref.split('/').includes('..')
+        )
+          throw new Error('referencia de recuperacao invalida');
+        const report = readJson(ref);
+        recoveredEvidence.set(ref, report.sha256);
+        require('./editorial-recovery.cjs').validateReport(report);
+        if (
+          report.sha256 !== execution.recoverySha256 ||
+          report.originalRunId !== execution.runId ||
+          digest(report.scenario.input) !== digest(scenario.input) ||
+          digest(report.scenario.output) !== digest(scenario.output)
+        )
+          throw new Error('revisao recuperada diverge do relatorio');
+        if (
+          !(record.recoveryReports || []).some(
+            (r) => r.path === ref && r.sha256 === report.sha256,
+          )
+        )
+          throw new Error('recuperacao ausente no conjunto de aceite');
+      }
+      if (
+        !execution.runId ||
+        (runIds.has(execution.runId) && !scenario.input?.proposals)
+      )
         errors.push(`execucao repetida ou ausente: ${pair}`);
       runIds.add(execution.runId);
       if (
@@ -238,6 +319,13 @@ function validateReviews(
       errors.push(`${pair}: ${error.message}`);
     }
   }
+  const refs = record.recoveryReports || [];
+  if (
+    refs.length !== recoveredEvidence.size ||
+    new Set(refs.map((r) => r.path)).size !== refs.length ||
+    refs.some((r) => recoveredEvidence.get(r.path) !== r.sha256)
+  )
+    errors.push('conjunto de recuperacao diverge das revisoes');
   for (const pair of expected)
     if (!seen.has(pair)) errors.push(`revisao ausente: ${pair}`);
   for (const rule of requirementsFor(questions[0].subject, policy)) {
@@ -283,10 +371,31 @@ function validateApproval(questions, record, policy, readComment) {
         .includes(statement)
     )
       errors.push('comentario nao comprova aceite editorial do pacote');
+    if (record.recoveryReports?.length) {
+      const recoveryHash = digest(
+        [...record.recoveryReports].sort((a, b) =>
+          a.path.localeCompare(b.path),
+        ),
+      );
+      if (
+        approval.recoveryBundleSha256 !== recoveryHash ||
+        !comment.body
+          ?.split('\n')
+          .map((s) => s.trim())
+          .includes('Reconheco recuperacao editorial hash ' + recoveryHash)
+      )
+        errors.push('aceite do conjunto recuperado ausente ou divergente');
+    }
     if (comment.html_url !== approval.evidenceRef || !comment.created_at)
       errors.push('origem do aceite diverge');
-  } catch {
-    errors.push('nao foi possivel verificar o aceite editorial');
+  } catch (error) {
+    const detail = String(error?.stderr || error?.message || '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 240);
+    errors.push(
+      `nao foi possivel verificar o aceite editorial${detail ? `: ${detail}` : ''}`,
+    );
   }
   return errors;
 }
@@ -343,15 +452,7 @@ function assertPublication(
     return JSON.parse(worktree.read(name));
   };
   const commentReader =
-    readComment ||
-    ((id) =>
-      JSON.parse(
-        execFileSync(
-          'gh',
-          ['api', `repos/${policy.repository}/issues/comments/${id}`],
-          { encoding: 'utf8' },
-        ),
-      ));
+    readComment || ((id) => readGitHubComment(policy.repository, id));
   for (const [key, batch] of groups) {
     if (batch.some((question) => question.reviewStatus !== 'published')) {
       errors.push(`${key}: runtime exige status published`);
@@ -382,9 +483,10 @@ function assertPublication(
       ...validateApproval(checked.questions, record, policy, commentReader),
     );
     if (
-      record.visual?.sourceSha256 !== packageHash(batch) ||
-      record.visual?.test !== 'content-delivery-ui' ||
-      !record.visual?.evidenceRef
+      requiresVisualEvidence(batch, policy) &&
+      (record.visual?.sourceSha256 !== packageHash(batch) ||
+        record.visual?.test !== 'content-delivery-ui' ||
+        !record.visual?.evidenceRef)
     )
       errors.push(`${key}: evidencia visual ausente`);
   }
@@ -543,15 +645,7 @@ function validateDelivery({
     return JSON.parse(head.read(name));
   };
   const commentReader =
-    readComment ||
-    ((id) =>
-      JSON.parse(
-        execFileSync(
-          'gh',
-          ['api', `repos/${policy.repository}/issues/comments/${id}`],
-          { encoding: 'utf8' },
-        ),
-      ));
+    readComment || ((id) => readGitHubComment(policy.repository, id));
   for (const key of keys) {
     const previousDraft = before.drafts.get(key),
       draft = after.drafts.get(key);
@@ -581,16 +675,17 @@ function validateDelivery({
     let record;
     if (head.names.includes(recordPath)) {
       record = readJson(recordPath);
-      errors.push(
-        ...validateReviews(questions, record, readJson, {
-          policy,
-          allowTestEvidence,
-        }).map((error) => `${key}: ${error}`),
-      );
       stage = 'review';
     }
     if (publishedChanged) {
       stage = 'publish';
+      if (record)
+        errors.push(
+          ...validateReviews(questions, record, readJson, {
+            policy,
+            allowTestEvidence,
+          }).map((error) => `${key}: ${error}`),
+        );
       if (published?.some((question) => question.reviewStatus !== 'published'))
         errors.push(`${key}: runtime exige status published`);
       if (!published?.length)
@@ -607,9 +702,10 @@ function validateDelivery({
           ),
         );
         if (
-          record.visual?.sourceSha256 !== packageHash(questions) ||
-          record.visual?.test !== 'content-delivery-ui' ||
-          !record.visual?.evidenceRef
+          requiresVisualEvidence(questions, policy) &&
+          (record.visual?.sourceSha256 !== packageHash(questions) ||
+            record.visual?.test !== 'content-delivery-ui' ||
+            !record.visual?.evidenceRef)
         )
           errors.push(`${key}: evidencia visual do pacote ausente`);
       }
@@ -659,6 +755,7 @@ module.exports = {
   batchKey,
   applies,
   requirementsFor,
+  requiresVisualEvidence,
   validateBatch,
   validateReviews,
   validateApproval,

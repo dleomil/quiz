@@ -47,8 +47,17 @@ const QuestionsDB = (function () {
       contentSetId: question.contentSetId || '2026-t1-v1',
     }));
 
-    subjectCounts[subject] = normalizedQuestions.length;
-    questions.push(...normalizedQuestions);
+    const visibleQuestions = normalizedQuestions.filter((question) => {
+      const catalog = ContentCatalog.getById(question.contentSetId);
+      if (catalog?.publicationMode !== 'by-subject') return true;
+      return (
+        catalog.status === 'published' &&
+        catalog.publishedSubjects.includes(question.subject) &&
+        question.reviewStatus === 'published'
+      );
+    });
+    subjectCounts[subject] = visibleQuestions.length;
+    questions.push(...visibleQuestions);
 
     normalizedQuestions.forEach((question) => {
       topicCounts[question.topic] = (topicCounts[question.topic] || 0) + 1;

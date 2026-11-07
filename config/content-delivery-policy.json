@@ -76,5 +76,8 @@
   "publisherFiles": [
     "scripts/build-t3-matematica-release.cjs",
     "scripts/build-t3-portugues-expansion.cjs"
-  ]
+  ],
+  "editorialRecovery": {
+    "contentSetIds": ["2026-t3-v2"]
+  }
 }

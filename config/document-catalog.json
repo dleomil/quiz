@@ -112,6 +112,17 @@
       "sha256": "9fd68d3c3bbff37e3a531d297fefabf932048a30fbbada4a9363ecb9ece3dbf5"
     },
     {
+      "id": "docs--agents--editorial-diagnostics",
+      "path": "docs/agents/editorial-diagnostics.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 2,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "2d5651657cc69e091fd0e6cdfe22afa60db886668266ebeb75e3c28b5b086d35"
+    },
+    {
       "id": "docs--agents--model-evaluation-runbook",
       "path": "docs/agents/model-evaluation-runbook.md",
       "kind": "guide",
@@ -402,11 +413,11 @@
       "path": "docs/harness/content-update-quality-gates.md",
       "kind": "policy",
       "owner": "content",
-      "revision": 1,
-      "version": "1.1.0",
+      "revision": 2,
+      "version": "1.2.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "f59ce883e644982326405c11e306dc52c4884d228ada57393fc2f84f02f5b2be"
+      "status": "draft",
+      "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b"
     },
     {
       "id": "docs--harness--execution-lessons-learned",
@@ -530,6 +541,17 @@
       "sha256": "1126d2366d71cbb5ba2794e768ea4db3b103e9d591bf2f3c82894dd87830a8c8"
     },
     {
+      "id": "docs--roadmap--mobile-phase0-validation-kit",
+      "path": "docs/roadmap/mobile-phase0-validation-kit.md",
+      "kind": "guide",
+      "owner": "architecture",
+      "revision": 2,
+      "version": null,
+      "normative": false,
+      "status": "unclassified",
+      "sha256": "bf787f0732096022555dca3f5c3d1d2ca95bc12b367e3e0804210c7df418508f"
+    },
+    {
       "id": "docs--roadmap--panel-control-phased-plan",
       "path": "docs/roadmap/panel-control-phased-plan.md",
       "kind": "guide",
@@ -633,11 +655,11 @@
       "path": "docs/specs/content-delivery-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 2,
-      "version": "2.0.0",
+      "revision": 3,
+      "version": "2.1.0",
       "normative": true,
       "status": "draft",
-      "sha256": "b615fec1f49de6289f2af3a8527e87086e8557dddbc8d58103f959c79f65dd52"
+      "sha256": "0e519a2656eab8e7b67211730b225b22760c68147b4f860a0337b91f1aca9b78"
     },
     {
       "id": "docs--specs--content-schema-v1",
@@ -655,11 +677,11 @@
       "path": "docs/specs/curriculum-content-update-governance.md",
       "kind": "specification",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "ad5b71c38e9fd5c57651ad02ef3e984bc40a7cd4b7f818c99735069bc9aadf58"
+      "sha256": "7d8351fe2310afec523529b9d23670b89ade0f1e40150c57ec29b46de95c7051"
     },
     {
       "id": "docs--specs--curriculum-intake-template",
@@ -715,6 +737,17 @@
       "normative": true,
       "status": "draft",
       "sha256": "888ac4600a3bbe2cef90d5769f39bcc7bfa7f24516af8bfac5b6c29bbed1fe2e"
+    },
+    {
+      "id": "docs--specs--final-exams-november-2026-intake",
+      "path": "docs/specs/final-exams-november-2026-intake.md",
+      "kind": "specification",
+      "owner": "content",
+      "revision": 4,
+      "version": "1.0.1",
+      "normative": true,
+      "status": "draft",
+      "sha256": "13723530648377fb5f095d9af2a316f34e063597b0d2f4d0bb65b63f80f06523"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",

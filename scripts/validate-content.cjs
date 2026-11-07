@@ -335,6 +335,74 @@ function validateCoverageManifest(sources, manifest, contentSets) {
       return;
     }
 
+    const bySubject = entry.publicationMode === 'by-subject';
+    const released = catalog.publishedSubjects;
+    const releasedTopics = catalog.publishedTopics;
+    if (bySubject || catalog.publicationMode === 'by-subject') {
+      if (
+        !bySubject ||
+        catalog.publicationMode !== 'by-subject' ||
+        !Array.isArray(released) ||
+        new Set(released).size !== released.length ||
+        released.some((subject) => !Object.hasOwn(entry.subjects, subject)) ||
+        (releasedTopics !== undefined &&
+          (!Array.isArray(releasedTopics) ||
+            new Set(releasedTopics).size !== releasedTopics.length))
+      ) {
+        errors.push(
+          '[coverage:' + contentSetId + '] publicacao por materia invalida',
+        );
+        return;
+      }
+      if (
+        catalog.status === 'published' &&
+        (released.length === 0 || entry.intakeStatus !== 'frozen')
+      ) {
+        errors.push(
+          '[coverage:' +
+            contentSetId +
+            '] publicacao exige intake frozen e materia liberada',
+        );
+      }
+      if (catalog.status !== 'published' && released.length) {
+        errors.push(
+          '[coverage:' +
+            contentSetId +
+            '] acervo nao publicado nao libera materias',
+        );
+      }
+      if (
+        Object.values(entry.subjects).some(
+          (topics) =>
+            !topics ||
+            !Object.keys(topics).length ||
+            Object.values(topics).some((count) => count !== 20),
+        )
+      ) {
+        errors.push('[coverage:' + contentSetId + '] cada tema exige meta 20');
+      }
+      Object.values(sources).forEach((source) => {
+        (source.questions || []).forEach((question) => {
+          if (
+            question.contentSetId !== contentSetId ||
+            catalog.status !== 'published'
+          )
+            return;
+          if (
+            !released.includes(question.subject) ||
+            question.reviewStatus !== 'published'
+          ) {
+            errors.push(
+              '[coverage:' +
+                contentSetId +
+                '] runtime inclui questao de materia pendente ou sem publicacao: ' +
+                question.id,
+            );
+          }
+        });
+      });
+    }
+
     const expectedByTopic = new Map();
     Object.entries(entry.subjects).forEach(function ([subject, topics]) {
       if (!topics || typeof topics !== 'object') {
@@ -376,7 +444,10 @@ function validateCoverageManifest(sources, manifest, contentSets) {
       const separator = key.indexOf(':');
       const subject = key.slice(0, separator);
       const topic = key.slice(separator + 1);
-      const mustBeComplete = catalog.status === 'published';
+      const mustBeComplete =
+        catalog.status === 'published' &&
+        (!bySubject || released.includes(subject)) &&
+        (!Array.isArray(releasedTopics) || releasedTopics.includes(topic));
       if (actual > expected || (mustBeComplete && actual !== expected)) {
         errors.push(
           coverageLabel(contentSetId, subject, topic) +

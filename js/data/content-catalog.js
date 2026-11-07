@@ -11,7 +11,7 @@ const ContentCatalog = (function () {
       status: 'retired',
       grade: '3-ano',
       displayName: 'Acervo anterior',
-      isCurrent: false,
+      isCurrent: true,
     },
     {
       schemaVersion: 'content-v1',
@@ -44,7 +44,25 @@ const ContentCatalog = (function () {
       status: 'published',
       grade: '3-ano',
       displayName: '3º trimestre de 2026',
+      isCurrent: false,
+    },
+    {
+      schemaVersion: 'content-v1',
+      contentSetId: '2026-t3-v2',
+      academicYear: 2026,
+      term: 't3',
+      version: 2,
+      status: 'published',
+      grade: '3-ano',
+      displayName: 'Provas finais — novembro de 2026',
       isCurrent: true,
+      publicationMode: 'by-subject',
+      publishedSubjects: ['portugues'],
+      publishedTopics: [
+        'dicionario',
+        'encontro-consonantal',
+        'uso-de-eza-e-esa',
+      ],
     },
   ];
 

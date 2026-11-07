@@ -1,0 +1,495 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "encontro-consonantal",
+  "topicName": "Encontro consonantal",
+  "status": "draft_pending_reviews",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 7",
+    "topic": "Encontro consonantal"
+  },
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal no começo?",
+      "options": ["prato", "chave", "ninho", "passo"],
+      "correctIndex": 0,
+      "explanation": "Em prato, P e R aparecem juntos e cada consoante mantém seu som.",
+      "wrongExplanations": {
+        "1": "Chave tem o dígrafo CH, que representa um som.",
+        "2": "Ninho tem o dígrafo NH.",
+        "3": "Passo tem o dígrafo SS."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Em qual palavra as duas consoantes juntas representam sons distintos?",
+      "options": ["carro", "blusa", "chuva", "galho"],
+      "correctIndex": 1,
+      "explanation": "Em blusa, B e L são pronunciados; formam encontro consonantal.",
+      "wrongExplanations": {
+        "0": "RR representa um único som em carro.",
+        "2": "Em chuva, as letras CH representam um único som.",
+        "3": "LH representa um único som em galho."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra apresenta encontro consonantal no meio da palavra?",
+      "options": ["massa", "ninho", "apto", "banho"],
+      "correctIndex": 2,
+      "explanation": "Em apto, P e T ficam juntos e cada consoante representa um som.",
+      "wrongExplanations": {
+        "0": "SS é dígrafo em massa.",
+        "1": "NH é dígrafo em ninho.",
+        "3": "NH é dígrafo em banho."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra começa com duas consoantes que mantêm seus sons?",
+      "options": ["telha", "queijo", "carro", "clima"],
+      "correctIndex": 3,
+      "explanation": "Em clima, C e L formam encontro consonantal e ambos são pronunciados.",
+      "wrongExplanations": {
+        "0": "Em telha, LH representa um único som consonantal.",
+        "1": "Em queijo, QU representa um único som consonantal.",
+        "2": "Em carro, RR representa um único som consonantal."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Em qual palavra há encontro consonantal?",
+      "options": ["pedra", "palha", "massa", "queijo"],
+      "correctIndex": 0,
+      "explanation": "Em pedra, D e R são consoantes juntas e cada uma mantém seu som.",
+      "wrongExplanations": {
+        "1": "Em palha, LH representa um único som consonantal.",
+        "2": "Em massa, SS representa um único som consonantal.",
+        "3": "Em queijo, QU representa um único som consonantal."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal com F e R?",
+      "options": ["fada", "fruta", "ficha", "folha"],
+      "correctIndex": 1,
+      "explanation": "Em fruta, F e R aparecem juntos e cada um tem seu som.",
+      "wrongExplanations": {
+        "0": "Fada não tem F e R juntos; depois do F vem a vogal A.",
+        "2": "CH é dígrafo em ficha.",
+        "3": "LH é dígrafo em folha."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal no início?",
+      "options": ["galho", "passo", "grilo", "guerra"],
+      "correctIndex": 2,
+      "explanation": "Em grilo, G e R são pronunciados em sequência.",
+      "wrongExplanations": {
+        "0": "LH é dígrafo em galho.",
+        "1": "SS é dígrafo em passo.",
+        "3": "GU forma dígrafo em guerra."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Em qual palavra há dígrafo e não encontro consonantal?",
+      "options": ["planta", "trigo", "clube", "ninho"],
+      "correctIndex": 3,
+      "explanation": "NH representa um único som em ninho.",
+      "wrongExplanations": {
+        "0": "PL é encontro consonantal: P e L mantêm seus sons.",
+        "1": "TR é encontro consonantal.",
+        "2": "CL é encontro consonantal."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra contém encontro consonantal?",
+      "options": ["creme", "chave", "massa", "telha"],
+      "correctIndex": 0,
+      "explanation": "Em creme, C e R são pronunciados em sequência e formam um encontro consonantal.",
+      "wrongExplanations": {
+        "1": "CH é dígrafo em chave.",
+        "2": "SS é dígrafo em massa.",
+        "3": "LH é dígrafo em telha."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra começa com encontro consonantal formado por F e L?",
+      "options": ["ninho", "flor", "filho", "chuva"],
+      "correctIndex": 1,
+      "explanation": "Em flor, F e L são pronunciados em sequência.",
+      "wrongExplanations": {
+        "0": "NH é dígrafo em ninho.",
+        "2": "LH é dígrafo em filho.",
+        "3": "CH é dígrafo em chuva."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal no meio?",
+      "options": ["ninho", "telha", "festa", "massa"],
+      "correctIndex": 2,
+      "explanation": "Em festa, S e T ficam juntos e cada consoante mantém seu som.",
+      "wrongExplanations": {
+        "0": "NH é dígrafo em ninho.",
+        "1": "LH é dígrafo em telha.",
+        "3": "SS é dígrafo em massa."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal formado por T e R?",
+      "options": ["chuva", "carro", "ninho", "trigo"],
+      "correctIndex": 3,
+      "explanation": "Em trigo, T e R são pronunciados em sequência.",
+      "wrongExplanations": {
+        "0": "CH é dígrafo em chuva.",
+        "1": "RR é dígrafo em carro.",
+        "2": "NH é dígrafo em ninho."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Em qual palavra as letras QU representam um único som consonantal?",
+      "options": ["quilo", "blusa", "prato", "flor"],
+      "correctIndex": 0,
+      "explanation": "Em quilo, as letras QU representam um único som; por isso, QU é um dígrafo.",
+      "wrongExplanations": {
+        "1": "BL é encontro consonantal em blusa.",
+        "2": "PR é encontro consonantal em prato.",
+        "3": "FL é encontro consonantal em flor."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal no início?",
+      "options": ["chave", "planta", "palha", "carro"],
+      "correctIndex": 1,
+      "explanation": "Em planta, P e L mantêm seus sons, formando encontro consonantal.",
+      "wrongExplanations": {
+        "0": "CH é dígrafo em chave.",
+        "2": "LH é dígrafo em palha.",
+        "3": "RR é dígrafo em carro."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem encontro consonantal formado por D e R?",
+      "options": ["massa", "chave", "dragão", "galho"],
+      "correctIndex": 2,
+      "explanation": "Em dragão, D e R aparecem juntos e cada consoante é pronunciada.",
+      "wrongExplanations": {
+        "0": "SS é dígrafo em massa.",
+        "1": "CH é dígrafo em chave.",
+        "3": "LH é dígrafo em galho."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra contém um encontro consonantal formado pelas letras B e R?",
+      "options": ["banho", "carro", "chave", "brinco"],
+      "correctIndex": 3,
+      "explanation": "Em brinco, B e R são pronunciados em sequência.",
+      "wrongExplanations": {
+        "0": "NH é dígrafo em banho.",
+        "1": "RR é dígrafo em carro.",
+        "2": "CH é dígrafo em chave."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra contém um dígrafo?",
+      "options": ["massa", "prato", "clube", "flor"],
+      "correctIndex": 0,
+      "explanation": "Em massa, SS representa um único som consonantal; por isso, é dígrafo.",
+      "wrongExplanations": {
+        "1": "PR é encontro consonantal em prato.",
+        "2": "CL é encontro consonantal em clube.",
+        "3": "FL é encontro consonantal em flor."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Em qual palavra duas consoantes juntas representam sons diferentes?",
+      "options": ["carro", "atlas", "telha", "galho"],
+      "correctIndex": 1,
+      "explanation": "Em atlas, T e L mantêm sons distintos; formam encontro consonantal.",
+      "wrongExplanations": {
+        "0": "RR é dígrafo em carro.",
+        "2": "LH é dígrafo em telha.",
+        "3": "LH é dígrafo em galho."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra começa com o encontro consonantal PR?",
+      "options": ["rato", "pato", "prato", "chato"],
+      "correctIndex": 2,
+      "explanation": "Prato começa com P e R juntos; os dois sons são ouvidos.",
+      "wrongExplanations": {
+        "0": "Rato começa com R, sem encontro consonantal inicial.",
+        "1": "Pato começa com P, sem encontro consonantal inicial.",
+        "3": "Chato começa com o dígrafo CH."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_encontro_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "encontro-consonantal",
+      "question": "Qual palavra tem um encontro consonantal, e não um dígrafo?",
+      "options": ["chave", "ninho", "passo", "clube"],
+      "correctIndex": 3,
+      "explanation": "CL em clube é encontro consonantal; C e L representam sons distintos.",
+      "wrongExplanations": {
+        "0": "CH é dígrafo em chave.",
+        "1": "NH é dígrafo em ninho.",
+        "2": "SS é dígrafo em passo."
+      },
+      "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Encontro consonantal"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
