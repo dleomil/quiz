@@ -290,7 +290,7 @@ function run() {
   delete missingProposal[1].input.proposal;
   assert.ok(
     validateEditorialScenarios(missingProposal).some((error) =>
-      error.includes('propostas'),
+      error.includes('[language-adjustments-required]'),
     ),
   );
 
