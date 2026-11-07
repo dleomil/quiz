@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "usos-de-h",
+  "topicName": "Usos de H",
+  "status": "draft_pending_reviews",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 7",
+    "topic": "Usos de H/h"
+  },
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente a frase “A ____ produz mel na colmeia”?",
+      "options": [
+        "abelha",
+        "abela",
+        "abeia",
+        "abélha"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abelha é escrita com H entre L e A.",
+      "wrongExplanations": {
+        "1": "Abelha se escreve com LH, não apenas com L.",
+        "2": "A palavra abelha é escrita com LH.",
+        "3": "A palavra abelha não recebe acento."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": [
+        "hoje",
+        "oje",
+        "hoge",
+        "hojê"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hoje começa com H e termina com E.",
+      "wrongExplanations": {
+        "1": "Hoje começa com H.",
+        "2": "Hoje é escrita com J, não G.",
+        "3": "Hoje não recebe acento."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente a frase “A ____ é um instrumento de cordas”?",
+      "options": [
+        "harpa",
+        "arpa",
+        "hárpa",
+        "harpha"
+      ],
+      "correctIndex": 0,
+      "explanation": "Harpa começa com H.",
+      "wrongExplanations": {
+        "1": "Harpa começa com H.",
+        "2": "Harpa não recebe acento.",
+        "3": "Harpa se escreve com P, e não com PH."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente a frase “O relógio estava com uma ____ de atraso”?",
+      "options": [
+        "hora",
+        "ora",
+        "hóra",
+        "horra"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hora começa com H e completa corretamente a expressão “uma hora de atraso”.",
+      "wrongExplanations": {
+        "1": "Hora começa com H.",
+        "2": "Hora não recebe acento.",
+        "3": "Hora se escreve com um R."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra começa com H?",
+      "options": [
+        "hora",
+        "flor",
+        "mesa",
+        "pato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hora começa com H.",
+      "wrongExplanations": {
+        "1": "Flor começa com F.",
+        "2": "Mesa começa com M.",
+        "3": "Pato começa com P."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa a frase “O ____ recebe pessoas doentes para tratamento”?",
+      "options": [
+        "ospital",
+        "hospital",
+        "hospitau",
+        "hospitalh"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hospital começa com H e termina com L.",
+      "wrongExplanations": {
+        "0": "Hospital começa com H.",
+        "2": "Hospital termina com L, não U.",
+        "3": "Hospital não termina com H."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa “Em dia de chuva, abrimos o ____ para não nos molhar”?",
+      "options": [
+        "guarda-chuva",
+        "guarda-xuva",
+        "guarda-chuvah",
+        "guarda-chuvaa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Guarda-chuva se escreve com hífen; chuva começa com CH.",
+      "wrongExplanations": {
+        "1": "Chuva começa com CH, não X.",
+        "2": "Chuva não termina com H.",
+        "3": "Chuva termina com A, sem letra extra."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra está escrita corretamente e nomeia o estudo dos fatos do passado?",
+      "options": [
+        "istória",
+        "história",
+        "hestoria",
+        "hestória"
+      ],
+      "correctIndex": 1,
+      "explanation": "História começa com H e recebe acento agudo no O.",
+      "wrongExplanations": {
+        "0": "História começa com H.",
+        "2": "A grafia correta usa I depois do H e leva acento agudo no O.",
+        "3": "A grafia correta usa I depois do H, não E."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa “O ____ das aulas está no mural da escola”?",
+      "options": [
+        "orário",
+        "horário",
+        "horárrio",
+        "horrário"
+      ],
+      "correctIndex": 1,
+      "explanation": "Horário começa com H.",
+      "wrongExplanations": {
+        "0": "Horário começa com H.",
+        "2": "Horário se escreve com um R depois do A.",
+        "3": "Horário se escreve com um R depois do O."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra nomeia um veículo que transporta pessoas pelo ar?",
+      "options": [
+        "helicópterro",
+        "helicóptero",
+        "elicóptero",
+        "helicópteru"
+      ],
+      "correctIndex": 1,
+      "explanation": "Helicóptero começa com H.",
+      "wrongExplanations": {
+        "0": "Helicóptero se escreve com um R antes do O.",
+        "2": "Helicóptero começa com H.",
+        "3": "Helicóptero termina com O."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual grafia completa corretamente a frase: “A ____ abriu a porta para a visita.”",
+      "options": [
+        "mulher",
+        "muler",
+        "mullher",
+        "mulherh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mulher é escrita sem H no início; o H aparece no dígrafo LH.",
+      "wrongExplanations": {
+        "1": "Mulher se escreve com LH.",
+        "2": "Mulher tem um único L antes do H.",
+        "3": "Mulher não recebe H no final."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente: “O ____ é um sanduíche com carne dentro do pão.”",
+      "options": [
+        "hambúrguer",
+        "ambúrguer",
+        "hambúrguerh",
+        "hampúrguer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hambúrguer começa com H e recebe acento agudo no U.",
+      "wrongExplanations": {
+        "1": "Hambúrguer começa com H.",
+        "2": "Hambúrguer não termina com H.",
+        "3": "A palavra é escrita com B depois de M."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Complete: “O ____ caiu da árvore no quintal.”",
+      "options": [
+        "homem",
+        "omem",
+        "homen",
+        "homemh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Homem começa com H e termina com M.",
+      "wrongExplanations": {
+        "1": "Homem começa com H.",
+        "2": "Homem termina com M, não com N.",
+        "3": "Homem não termina com H."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual é a grafia correta da palavra que nomeia a água que cai das nuvens?",
+      "options": [
+        "chuva",
+        "xuva",
+        "chuba",
+        "chuma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chuva é escrita com o dígrafo CH.",
+      "wrongExplanations": {
+        "1": "Chuva começa com CH.",
+        "2": "Chuva se escreve com V.",
+        "3": "Chuva se escreve com V, não com M."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente: “Meu ____ ajudou a irmã na tarefa.”",
+      "options": [
+        "filho",
+        "fio",
+        "filu",
+        "fílio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Filho contém o dígrafo LH.",
+      "wrongExplanations": {
+        "1": "Fio é outra palavra; o nome do familiar é filho, com LH.",
+        "2": "Filho termina com O, não U.",
+        "3": "Filho não recebe acento e se escreve com LH."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra está escrita corretamente e nomeia o lugar onde os pássaros põem ovos?",
+      "options": [
+        "ninho",
+        "nino",
+        "ninhoo",
+        "ninhho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ninho é escrito com NH.",
+      "wrongExplanations": {
+        "1": "Ninho é escrito com NH.",
+        "2": "Ninho termina com um O.",
+        "3": "Ninho tem um único H depois do N."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente a frase “A ____ fica junto ao muro”?",
+      "options": [
+        "horta",
+        "orta",
+        "hórta",
+        "hortah"
+      ],
+      "correctIndex": 0,
+      "explanation": "Horta começa com H.",
+      "wrongExplanations": {
+        "1": "Horta começa com H.",
+        "2": "Horta não recebe acento.",
+        "3": "Horta não recebe H no final."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra começa com H?",
+      "options": [
+        "hora",
+        "flor",
+        "mesa",
+        "pato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hora começa com H.",
+      "wrongExplanations": {
+        "1": "Flor começa com F.",
+        "2": "Mesa começa com M.",
+        "3": "Pato começa com P."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente a frase “O ____ fica no centro da cidade”?",
+      "options": [
+        "hotel",
+        "otel",
+        "hoteu",
+        "hotell"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hotel começa com H.",
+      "wrongExplanations": {
+        "1": "Hotel começa com H.",
+        "2": "A palavra termina com L.",
+        "3": "Hotel termina com um único L."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_de_h_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-h",
+      "question": "Qual palavra completa corretamente a frase “A criança tomou uma xícara de ____ quente”?",
+      "options": [
+        "chocolate",
+        "xocolate",
+        "chocolatte",
+        "chocolateh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chocolate começa com CH.",
+      "wrongExplanations": {
+        "1": "Chocolate começa com CH, não X.",
+        "2": "Chocolate se escreve com um único T.",
+        "3": "Chocolate não termina com H."
+      },
+      "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Usos de H/h"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

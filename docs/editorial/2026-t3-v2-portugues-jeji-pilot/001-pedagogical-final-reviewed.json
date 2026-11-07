@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-001-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-001-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "jeito, jejum, jipe",
+        "geito, jejum, jipe",
+        "jeito, gejum, jipe",
+        "jeito, jejum, gipe"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “jeito”, “jejum” e “jipe”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”.",
+        "2": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "3": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-001-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-001 está vinculada ao objetivo curricular de escolher a grafia correta de palavras com JE e JI para o 3º ano.",
+      "A alternativa de índice 0 é a única em que as três palavras — “jeito”, “jejum” e “jipe” — estão grafadas corretamente.",
+      "Cada distrator contém uma única troca de J por G, e o feedback correspondente identifica especificamente a palavra incorreta e apresenta sua grafia correta.",
+      "A explicação confirma a resposta sem formular uma regra falsa ou sugerir que palavras com os sons de JE e JI sejam sempre escritas com J.",
+      "A questão mede diretamente a habilidade ortográfica declarada, sem exigir conhecimento lateral ou recorrer a pegadinha."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a passagem linguística independente e, depois das duas passagens válidas, para aprovação pedagógica humana."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "dd7de7ed-b414-49f1-b051-b2b3a377bf0c",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "741fa17c4391a8591650f1d651705019299833bfc051424c853c89391b2a2e28",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:23:16.351Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/001-pedagogical-r06-recovery.json",
+    "recoverySha256": "832b0da0d0ee266d9ea69ad7078cff42a92751f20088ac0a13c0ff2537eed992"
+  }
+}

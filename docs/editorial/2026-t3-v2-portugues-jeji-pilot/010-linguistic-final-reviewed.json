@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-010-linguistic-r10",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-010-linguistic-r10",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 8,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente. Uma delas deve nomear quem tem uma loja para vender produtos.",
+      "options": [
+        "logista, jejum, jiboia",
+        "lojista, jejum, jiboia",
+        "lojista, gejum, jiboia",
+        "lojista, jejum, giboia"
+      ],
+      "correctIndex": 1,
+      "explanation": "“Lojista” é quem tem uma loja para vender produtos. “Jejum” e “jiboia” também são palavras escritas com J nas sílabas JE e JI.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 8,
+      "wrongExplanations": {
+        "0": "Neste enunciado, a forma que corresponde ao significado pedido é “lojista”, com J.",
+        "2": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "3": "Na opção, “giboia” está escrita com G no lugar do J de “jiboia”. A grafia correta é “jiboia”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-010-linguistic-r10",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-010, versão 8, para o 3º ano.",
+      "Enunciado, alternativas, explicação e feedbacks estão em português, com ortografia, acentuação, concordância e pontuação adequadas.",
+      "As formas “lojista”, “jejum” e “jiboia” seguem a ortografia atual do português brasileiro.",
+      "A instrução é clara e a pista sobre “lojista” não revela sozinha a alternativa correta, pois ainda é necessário conferir as três palavras de cada lista.",
+      "Os feedbacks identificam as grafias inadequadas sem apresentá-las como variantes aceitas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter a proposta sem alterações linguísticas e submetê-la à revisão humana e às demais passagens obrigatórias do pacote exato."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "3a48c62b-6621-43cf-b375-27e053ba0884",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "b7bfadb44e68e80126729598d8f0d360e1e489a72c2cd6c295b8e0442cc578f8",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:36:32.840Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/010-linguistic-r10-recovery.json",
+    "recoverySha256": "dbe9da55ea44aa2bba031533fff26369e166ded91da3f8143e50974206eea12c"
+  }
+}

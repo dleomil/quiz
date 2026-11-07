@@ -1,0 +1,94 @@
+{
+  "scenarioId": "jeji-015-pedagogical-r12",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-015-pedagogical-r12",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "sugeira, jiló, laje",
+        "sujeira, giló, laje",
+        "sujeira, jiló, laje",
+        "sujeira, jiló, lage"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “sujeira”, “jiló” e “laje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "0": "Na opção, “sugeira” está escrita com G no lugar do J de “sujeira”. A grafia correta é “sujeira”.",
+        "1": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-015-pedagogical-r12",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-015, versão 5, em estado draft.",
+      "O contexto declara 3º ano, T3 de 2026, manifesto congelado, fonte autorizada e objetivo curricular rastreável: escolher a grafia correta de palavras com JE e JI.",
+      "A alternativa de índice 2 é a única defensável: “sujeira, jiló, laje”.",
+      "Cada distrator contém exatamente uma troca de J por G e permanece claramente incorreto: “sugeira”, “giló” ou “lage”.",
+      "A explicação identifica as três grafias corretas sem formular uma regra ortográfica falsa ou excessivamente geral.",
+      "Os três feedbacks de erro correspondem aos respectivos distratores e indicam especificamente a grafia que precisa ser corrigida.",
+      "A questão mede diretamente o objetivo declarado, com linguagem adequada ao 3º ano e sem exigir habilidade lateral desnecessária."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato de SHA-256 d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095 à passagem linguística independente e à aprovação humana antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "54a64410-c32a-49ac-aca3-70675aabff63",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "282978eb83870697ba66333ad77a4be8a654403e3291619255fa3a0711dac888",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:43:40.857Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/015-pedagogical-r12-recovery.json",
+    "recoverySha256": "ceaefaa59702dfc09bd4f8996c1000dd0c0bb5882f9a024ab986ba193f2a7ad6"
+  }
+}

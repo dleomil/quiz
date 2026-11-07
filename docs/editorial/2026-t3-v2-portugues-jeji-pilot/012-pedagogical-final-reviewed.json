@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-012-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-012-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "cangiquinha, hoje, jeito",
+        "canjiquinha, hoge, jeito",
+        "canjiquinha, hoje, geito",
+        "canjiquinha, hoje, jeito"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “canjiquinha”, “hoje” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “cangiquinha” está escrita com G no lugar do J de “canjiquinha”. A grafia correta é “canjiquinha”.",
+        "1": "Na opção, “hoge” está escrita com G no lugar do J de “hoje”. A grafia correta é “hoje”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-012-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-012 avalia o objetivo autorizado de escolher grafias corretas com JE e JI.",
+      "A alternativa de índice 3 é a única em que as três palavras estão corretamente grafadas: “canjiquinha”, “hoje” e “jeito”.",
+      "Cada alternativa incorreta contém um erro específico de troca entre J e G, sem concorrer com a resposta correta.",
+      "A explicação identifica as três grafias corretas, e cada feedback de erro aponta precisamente a palavra inadequada e sua correção.",
+      "O enunciado está em português, não possui lacunas e não revela a resposta correta.",
+      "A questão é compatível com o 3º ano e não exige habilidade lateral além da comparação ortográfica solicitada."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato a uma passagem linguística independente e à aprovação humana pedagógica antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "dcf695f6-e978-4bd1-a7a4-4467300d9967",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "b1eb084adfe8e85ab00d950f61eb3a188656f59ff625ea52a03993e68d83e5bf",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:28:48.770Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/012-pedagogical-r06-recovery.json",
+    "recoverySha256": "7f8662652a3622f8f7454e559ebb5e6587ccb06fd38dddd18b29061779d4ba2f"
+  }
+}

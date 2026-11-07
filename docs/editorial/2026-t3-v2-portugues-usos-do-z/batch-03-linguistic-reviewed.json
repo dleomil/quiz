@@ -1,0 +1,220 @@
+{
+  "scenarioId": "usos-do-z-final3-03-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-do-z-final3-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-palavras-escritas-com-z",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Usos do Z"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer palavras escritas com Z",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra completa a frase? “A amizade é uma grande ____.”",
+        "options": [
+          "riquesa",
+          "riquessa",
+          "riqueza",
+          "rriqueza"
+        ],
+        "correctIndex": 2,
+        "explanation": "Riqueza é escrita com Z.",
+        "wrongExplanations": {
+          "0": "Riqueza é escrita com Z, não com S.",
+          "1": "Riqueza é escrita com um Z, não com SS.",
+          "3": "Riqueza começa com um único R."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra completa a frase? “Devemos cuidar da ____.”",
+        "options": [
+          "naturesa",
+          "natureça",
+          "naturreza",
+          "natureza"
+        ],
+        "correctIndex": 3,
+        "explanation": "Natureza é escrita com Z.",
+        "wrongExplanations": {
+          "0": "Natureza é escrita com Z, não com S.",
+          "1": "A palavra natureza é escrita com Z.",
+          "2": "Natureza é escrita com um único R, sem RR no meio da palavra."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual número está escrito corretamente?",
+        "options": [
+          "onse",
+          "onze",
+          "onçe",
+          "onzi"
+        ],
+        "correctIndex": 1,
+        "explanation": "A palavra “onze” é escrita com Z.",
+        "wrongExplanations": {
+          "0": "A palavra “onze” é escrita com Z, não com S.",
+          "2": "A palavra “onze” é escrita com Z, sem Ç.",
+          "3": "A palavra “onze” termina com E."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual número completa a frase? “Depois do onze vem o ____.”",
+        "options": [
+          "dose",
+          "doze",
+          "dozê",
+          "doce"
+        ],
+        "correctIndex": 1,
+        "explanation": "A palavra “doze” é escrita com Z.",
+        "wrongExplanations": {
+          "0": "A palavra “doze” é escrita com Z, não com S.",
+          "2": "A palavra “doze” não recebe acento.",
+          "3": "Na sequência dos números, depois de onze vem doze."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “Minha avó preparou o jantar na ____.”",
+        "options": [
+          "cosinha",
+          "coxinha",
+          "cozinha",
+          "cuzinha"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cozinha é escrita com Z.",
+        "wrongExplanations": {
+          "0": "A grafia correta é cozinha, com Z.",
+          "1": "Coxinha é um alimento; a palavra que nomeia o cômodo é cozinha.",
+          "3": "A grafia correta é cozinha, com O na primeira sílaba."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-do-z-final3-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "O contexto declara 3º ano, T3 de 2026, tema usos-do-z, objetivo curricular rastreável, manifesto congelado e aprovação humana do congelamento.",
+      "A passagem solicitada e executada é exclusivamente linguistic.",
+      "A proposta 2026t3v2_pt_usos_do_z_011 apresenta instrução clara em português, frase compreensível e grafia adequada nos textos explicativos.",
+      "A proposta 2026t3v2_pt_usos_do_z_012 apresenta enunciado natural, lacuna com referente inequívoco e feedbacks linguisticamente coerentes.",
+      "A proposta 2026t3v2_pt_usos_do_z_013 formula uma pergunta direta e adequada ao 3º ano, sem revelar a resposta no enunciado.",
+      "A proposta 2026t3v2_pt_usos_do_z_014 apresenta frase clara, pontuação correta e lacuna que não revela previamente a resposta.",
+      "A proposta 2026t3v2_pt_usos_do_z_015 apresenta instrução clara, contexto cotidiano adequado à série e distinção compreensível entre “coxinha” e “cozinha”.",
+      "As cinco propostas contêm quatro alternativas, explicação da resposta correta e feedback textual para cada alternativa incorreta.",
+      "Não foram identificados erros de ortografia, acentuação, concordância ou pontuação nos enunciados e textos de feedback, desconsideradas as grafias deliberadamente incorretas usadas como distratores."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote exato para a passagem pedagógica independente e para a aprovação humana obrigatória.",
+      "Não interpretar este parecer linguístico como autorização de implementação, publicação ou release."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "5d1bd6f5-8f59-4695-8ab9-adc8d0b3ed1e",
+    "packageSha256": "d68a714178aa5421258d4c3b1e172c2b2e4c54f15181558c2e8d4ca09b0a9841",
+    "batchProposalSha256": "424eb26a6baff66e8e10b4a71730e0a967e77f3b4730aa6ad19a0ed72b1f3a5a",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_do_z_011",
+      "2026t3v2_pt_usos_do_z_012",
+      "2026t3v2_pt_usos_do_z_013",
+      "2026t3v2_pt_usos_do_z_014",
+      "2026t3v2_pt_usos_do_z_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T01:58:15.722Z",
+    "testOnly": false
+  }
+}

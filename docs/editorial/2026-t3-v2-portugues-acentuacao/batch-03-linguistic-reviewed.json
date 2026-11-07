@@ -1,0 +1,219 @@
+{
+  "scenarioId": "acentuacao-r26-03-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "acentuacao-r26-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Acentuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer a acentuação de palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual é a sílaba tônica da palavra “médico”?",
+        "options": [
+          "mé",
+          "di",
+          "co",
+          "A palavra não tem sílaba tônica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Na palavra “médico”, a sílaba tônica é “mé”.",
+        "wrongExplanations": {
+          "1": "Em “médico”, “di” é pronunciada com menos intensidade do que “mé”.",
+          "2": "Em “médico”, “co” é pronunciada com menos intensidade do que “mé”.",
+          "3": "Em “médico”, “di” e “co” são pronunciadas com menos intensidade do que “mé”."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra é oxítona, com a última sílaba tônica?",
+        "options": [
+          "café",
+          "lápis",
+          "árvore",
+          "médico"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ca-fé tem a última sílaba tônica.",
+        "wrongExplanations": {
+          "1": "Lápis é paroxítona.",
+          "2": "Árvore é proparoxítona.",
+          "3": "Médico é proparoxítona."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra é paroxítona, com a penúltima sílaba tônica?",
+        "options": [
+          "janela",
+          "café",
+          "sofá",
+          "cipó"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ja-ne-la tem a penúltima sílaba tônica.",
+        "wrongExplanations": {
+          "1": "Café é oxítona.",
+          "2": "Sofá é oxítona.",
+          "3": "Cipó é oxítona."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra é proparoxítona, com a antepenúltima sílaba tônica?",
+        "options": [
+          "música",
+          "café",
+          "anel",
+          "jardim"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mú-si-ca tem a antepenúltima sílaba tônica.",
+        "wrongExplanations": {
+          "1": "Café é oxítona.",
+          "2": "Anel é oxítona.",
+          "3": "Jardim é oxítona."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra tem acento agudo na sílaba final?",
+        "options": [
+          "avó",
+          "você",
+          "ônibus",
+          "árvore"
+        ],
+        "correctIndex": 0,
+        "explanation": "Avó tem acento agudo na letra “ó” da última sílaba.",
+        "wrongExplanations": {
+          "1": "Você tem acento circunflexo sobre a letra “e” da sílaba final.",
+          "2": "Ônibus tem acento circunflexo sobre a letra “o” da sílaba inicial.",
+          "3": "Árvore tem acento agudo na sílaba inicial, e não na sílaba final."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "acentuacao-r26-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara contexto curricular completo para o 3º ano, ano letivo de 2026, T3, tema Acentuação, manifesto congelado e aprovação humana do congelamento rastreável.",
+      "A passagem solicitada e executada é exclusivamente linguistic.",
+      "2026t3v2_pt_acentuacao_011 apresenta enunciado claro, linguagem adequada à série e explicações redigidas corretamente, sem lacuna nem revelação prévia da resposta.",
+      "2026t3v2_pt_acentuacao_012 emprega corretamente os termos “oxítona” e “última sílaba tônica”, com instrução direta e feedbacks linguisticamente claros.",
+      "2026t3v2_pt_acentuacao_013 emprega corretamente os termos “paroxítona” e “penúltima sílaba tônica”, com redação natural e adequada ao terceiro ano.",
+      "2026t3v2_pt_acentuacao_014 emprega corretamente os termos “proparoxítona” e “antepenúltima sílaba tônica”, sem ambiguidade linguística.",
+      "2026t3v2_pt_acentuacao_015 distingue de modo claro acento agudo e acento circunflexo, indicando a posição da sílaba sem revelar a resposta no enunciado.",
+      "As cinco propostas estão em português, possuem quatro alternativas preenchidas e apresentam explicação da resposta e feedback textual para cada alternativa incorreta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote inalterado para esta passagem linguística e submetê-lo à aprovação humana obrigatória do hash exato.",
+      "Confirmar separadamente a passagem pedagógica exigida antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "a5481c6a-fdfc-419b-9bc4-738d5c6f015b",
+    "packageSha256": "586fcaa7bff38e3027c640a81f2279bf5bda2e6e10084ddceb6c244fff6d3e86",
+    "batchProposalSha256": "7b2ecaa6ab7cd63b0da4e30a3af49a8abd01efd8b36e9b35e323e7980fab8dda",
+    "batchQuestionIds": [
+      "2026t3v2_pt_acentuacao_011",
+      "2026t3v2_pt_acentuacao_012",
+      "2026t3v2_pt_acentuacao_013",
+      "2026t3v2_pt_acentuacao_014",
+      "2026t3v2_pt_acentuacao_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-05T13:39:37.336Z",
+    "testOnly": false
+  }
+}

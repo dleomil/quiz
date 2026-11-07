@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-005-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-005-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "sujeira, jiló, jipe",
+        "sugeira, jiló, jipe",
+        "sujeira, giló, jipe",
+        "sujeira, jiló, gipe"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “sujeira”, “jiló” e “jipe”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “sugeira” está escrita com G no lugar do J de “sujeira”. A grafia correta é “sujeira”.",
+        "2": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-005-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-005, versão 4, em estado draft.",
+      "O enunciado apresenta instrução clara, natural e adequada ao 3º ano.",
+      "A ortografia, a acentuação, a concordância e a pontuação dos textos explicativos estão corretas.",
+      "As grafias incorretas dos distratores aparecem entre aspas e são explicitamente identificadas como erros, sem serem apresentadas como formas aceitas.",
+      "A explicação e os três feedbacks correspondem às alternativas e usam linguagem respeitosa e compreensível.",
+      "A passagem realizada foi exclusivamente linguística."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à aprovação humana e manter separadas as demais passagens editoriais obrigatórias."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "78315fc8-7bc0-4b6c-ad49-6b8dd315b0c1",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "a3329c8d9bcb8102d6855bf5093a467af4a1c79d356f0d499c72aeeca5092921",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:25:07.881Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/005-linguistic-r06-recovery.json",
+    "recoverySha256": "7bc9d3bfccb4d55f549cd1bc8119c28c1c2d6d5b1f0c55a8b8c749c08e5df5a2"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "scenarioId": "acentuacao-r26-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "acentuacao-r26-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Acentuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer a acentuação de palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra deve levar acento agudo?",
+        "options": [
+          "sofá",
+          "mesa",
+          "caderno",
+          "janela"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sofá é oxítona terminada em A e recebe acento.",
+        "wrongExplanations": {
+          "1": "Mesa não precisa de acento gráfico.",
+          "2": "Caderno não precisa de acento gráfico.",
+          "3": "Janela não precisa de acento gráfico."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual é a grafia correta da palavra que nomeia o órgão da visão?",
+        "options": [
+          "olho",
+          "ôlho",
+          "ólho",
+          "olhô"
+        ],
+        "correctIndex": 0,
+        "explanation": "Olho é uma palavra paroxítona terminada em O e, por isso, não recebe acento gráfico.",
+        "wrongExplanations": {
+          "1": "Olho não leva acento circunflexo.",
+          "2": "Olho não leva acento agudo no início.",
+          "3": "Olho não leva acento no final."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra completa corretamente a frase: “A ____ está cheia de água”?",
+        "options": [
+          "garrafa",
+          "gárrafa",
+          "garrafá",
+          "garráfa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Garrafa é paroxítona terminada em A e não recebe acento gráfico.",
+        "wrongExplanations": {
+          "1": "A palavra garrafa não leva acento gráfico.",
+          "2": "A sílaba tônica não é a última.",
+          "3": "Garrafa não recebe acento gráfico."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra está escrita com acento circunflexo?",
+        "options": [
+          "avó",
+          "você",
+          "café",
+          "sofá"
+        ],
+        "correctIndex": 1,
+        "explanation": "Você recebe acento circunflexo na letra e.",
+        "wrongExplanations": {
+          "0": "Avó tem acento agudo, não circunflexo.",
+          "2": "Café tem acento agudo, não circunflexo.",
+          "3": "Sofá tem acento agudo, não circunflexo."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra é escrita sem acento gráfico?",
+        "options": [
+          "casa",
+          "árvore",
+          "lápis",
+          "sofá"
+        ],
+        "correctIndex": 0,
+        "explanation": "Casa é uma palavra paroxítona terminada em A e não recebe acento gráfico.",
+        "wrongExplanations": {
+          "1": "Árvore leva acento agudo.",
+          "2": "Lápis leva acento agudo.",
+          "3": "Sofá leva acento agudo."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "acentuacao-r26-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A passagem solicitada é pedagogical e abrange exclusivamente os cinco IDs autorizados.",
+      "O contexto declara 3º ano, ano letivo de 2026, T3, manifesto congelado, fonte autorizada e objetivo curricular rastreável.",
+      "As cinco propostas possuem enunciado em português, quatro alternativas, correctIndex válido, explicação da resposta correta e feedback para cada alternativa incorreta.",
+      "Cada questão possui uma única resposta defensável e mede o reconhecimento da acentuação gráfica de palavras usuais.",
+      "As explicações e os feedbacks correspondem às alternativas apresentadas e não contêm erro factual identificado.",
+      "A lacuna da questão 2026t3v2_pt_acentuacao_008 é delimitada pela frase e admite somente a opção “garrafa”.",
+      "Não foi identificada instrução que revele indevidamente a resposta correta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato a uma passagem linguistic independente.",
+      "Manter pendentes a revisão e a aprovação pedagógica humana do pacote exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "337877dd-bee0-458b-9cab-a97be5a2d286",
+    "packageSha256": "586fcaa7bff38e3027c640a81f2279bf5bda2e6e10084ddceb6c244fff6d3e86",
+    "batchProposalSha256": "afa42a017c66c84b05b4a880e1aa424b5e273994a6dc6fb879856e12de64ae25",
+    "batchQuestionIds": [
+      "2026t3v2_pt_acentuacao_006",
+      "2026t3v2_pt_acentuacao_007",
+      "2026t3v2_pt_acentuacao_008",
+      "2026t3v2_pt_acentuacao_009",
+      "2026t3v2_pt_acentuacao_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-05T13:38:08.678Z",
+    "testOnly": false
+  }
+}

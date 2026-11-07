@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/portugues/acentuacao",
+  "sourceSha256": "586fcaa7bff38e3027c640a81f2279bf5bda2e6e10084ddceb6c244fff6d3e86",
+  "testOnly": false,
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "npm run validate:delivery aprovou a estrutura das 20 questões e os três feedbacks por questão."
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Quatro lotes passaram sem achados na revisão pedagógica independente."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Quatro lotes passaram sem achados na revisão linguística independente."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Os feedbacks explicam as alternativas incorretas após revisão dos quatro lotes."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v2_pt_acentuacao_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_acentuacao_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-acentuacao/batch-04-linguistic-reviewed.json"
+    }
+  ],
+  "approval": {
+    "kind": "editorial",
+    "sourceSha256": "586fcaa7bff38e3027c640a81f2279bf5bda2e6e10084ddceb6c244fff6d3e86",
+    "approvedBy": "dleomil",
+    "evidenceRef": "https://github.com/dleomil/quiz/issues/444#issuecomment-6688991168"
+  }
+}

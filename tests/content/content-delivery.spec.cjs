@@ -26,6 +26,21 @@ assert.equal(applies('2027-t1-v1', policy), true);
 assert.equal(applies('2026-t3-v2', policy), true);
 assert.equal(packageHash([...questions].reverse()), packageHash(questions));
 assert.equal(
+  validateBatch(
+    questions.map((original) => {
+      const question = { ...original };
+      delete question.topicName;
+      return question;
+    }),
+    {
+      policy,
+      coverage,
+      topicNames: { [questions[0].topic]: 'Rótulo' },
+    },
+  ).questions[0].topicName,
+  'Rótulo',
+);
+assert.equal(
   packageHash(
     questions.map((question) => ({ ...question, reviewStatus: 'published' })),
   ),

@@ -45,6 +45,13 @@ const PUBLISHED_FINAL_TOPICS = [
   'dicionario',
   'encontro-consonantal',
   'uso-de-eza-e-esa',
+  'usos-de-je-ji',
+  'adjetivos-patrios',
+  'usos-do-z',
+  'pontuacao',
+  'usos-de-h',
+  'acentuacao',
+  'sons-do-x',
 ];
 const REQUIRED_REFERENCE_ID = 'roteiro-estudos-av-mensal-t3-2026';
 
@@ -254,11 +261,14 @@ function validateGeneratedBundle() {
 function buildRelease({
   previewOnly = false,
   topics = PUBLISHED_FINAL_TOPICS,
+  readComment,
 } = {}) {
   const existingQuestions = collectPublishedQuestions();
-  const finalQuestions = collectFinalQuestions(topics);
+  const finalQuestions = collectFinalQuestions([
+    ...new Set([...PUBLISHED_FINAL_TOPICS, ...topics]),
+  ]);
   const questions = [...existingQuestions, ...finalQuestions];
-  if (!previewOnly) assertPublication(questions);
+  if (!previewOnly) assertPublication(questions, { readComment });
   const bundle = formatBundle(renderBundle(questions));
   fs.writeFileSync(OUTPUT_PATH, bundle);
   return questions.length;

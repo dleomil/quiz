@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-013-pedagogical-r05",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-013-pedagogical-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "jejum, jeito, jiló",
+        "gejum, jeito, jiló",
+        "jejum, geito, jiló",
+        "jejum, jeito, giló"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “jejum”, “jeito” e “jiló”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "1": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-013-pedagogical-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-013 está completa e vinculada ao objetivo curricular de escolher grafias corretas de palavras com JE e JI para o 3º ano.",
+      "A alternativa de índice 0 é a única defensável: “jejum”, “jeito” e “jiló” estão corretamente grafadas.",
+      "Cada distrator contém exatamente uma troca indevida de J por G, sem duplicidade ou concorrência com a resposta correta.",
+      "A explicação identifica as três grafias corretas, e cada feedback incorreto aponta especificamente o erro e apresenta a forma adequada.",
+      "O enunciado mede diretamente a habilidade autorizada, sem depender de habilidade lateral ou pegadinha.",
+      "Não há resposta revelada no enunciado nem lacuna pedagógica conhecida na proposta avaliada."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter a proposta inalterada para a passagem linguística independente e para a posterior aprovação humana do pacote exato."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "f6138bf0-57b6-44c4-8a2f-e8ee9da92b32",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "8dfb3eba81e384572ea49ee98ec0dcc9b40fb038c3262498799573ffacfbcd45",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:20:32.278Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/013-pedagogical-r05-recovery.json",
+    "recoverySha256": "fac758a2ccef7933789adbcd39e13db38603b36749a46b56c9a11e85a92d9618"
+  }
+}

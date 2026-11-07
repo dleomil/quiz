@@ -476,12 +476,8 @@ function assertPublication(
       continue;
     }
     const record = readJson(recordPath);
-    errors.push(
-      ...validateReviews(checked.questions, record, readJson, { policy }),
-    );
-    errors.push(
-      ...validateApproval(checked.questions, record, policy, commentReader),
-    );
+    errors.push(...validateReviews(draft, record, readJson, { policy }));
+    errors.push(...validateApproval(draft, record, policy, commentReader));
     if (
       requiresVisualEvidence(batch, policy) &&
       (record.visual?.sourceSha256 !== packageHash(batch) ||
@@ -669,7 +665,8 @@ function validateDelivery({
       topicNames: after.topicNames[subject],
     });
     errors.push(...checked.errors.map((error) => `${key}: ${error}`));
-    const questions = checked.questions;
+    const questions = draft;
+    const runtimeQuestions = checked.questions;
     let stage = 'draft';
     const recordPath = `${policy.editorialDirectory}/${key.replaceAll('/', '--')}.json`;
     let record;
@@ -692,7 +689,7 @@ function validateDelivery({
         errors.push(
           `${key}: remocao de lote publicado exige decisao curricular especifica`,
         );
-      else if (packageHash(questions) !== packageHash(published))
+      else if (packageHash(runtimeQuestions) !== packageHash(published))
         errors.push(`${key}: runtime diverge do rascunho`);
       if (!record) errors.push(`${key}: revisao ausente para publicacao`);
       else {
@@ -713,7 +710,7 @@ function validateDelivery({
     batches.push({
       key,
       stage,
-      sourceSha256: packageHash(questions),
+      sourceSha256: packageHash(runtimeQuestions),
       ids: questions.map((question) => question.id),
     });
   }

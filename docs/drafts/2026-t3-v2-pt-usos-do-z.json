@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "usos-do-z",
+  "topicName": "Usos do Z",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 6",
+    "topic": "Usos do Z"
+  },
+  "status": "draft_pending_reviews",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": [
+        "zebra",
+        "sebra",
+        "zebbra",
+        "cebra"
+      ],
+      "correctIndex": 0,
+      "explanation": "Zebra é escrita com Z no início.",
+      "wrongExplanations": {
+        "1": "A palavra zebra começa com Z.",
+        "2": "Zebra é escrita com um único B.",
+        "3": "A palavra zebra começa com Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Complete: “O resultado da conta foi ____.”",
+      "options": [
+        "sero",
+        "zero",
+        "zêro",
+        "cero"
+      ],
+      "correctIndex": 1,
+      "explanation": "Zero é escrito com Z.",
+      "wrongExplanations": {
+        "0": "A palavra zero começa com Z.",
+        "2": "Zero não recebe acento circunflexo.",
+        "3": "A grafia correta é zero, com Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra completa a frase? “O céu ficou ____ ao entardecer.”",
+      "options": [
+        "asul",
+        "azull",
+        "azul",
+        "azou"
+      ],
+      "correctIndex": 2,
+      "explanation": "Azul é escrito com Z.",
+      "wrongExplanations": {
+        "0": "A palavra azul é escrita com Z.",
+        "1": "Azul termina com um único L.",
+        "3": "A palavra que nomeia a cor é azul."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Como se escreve corretamente o nome da parte do rosto usada para sentir cheiros?",
+      "options": [
+        "narís",
+        "narisse",
+        "narizze",
+        "nariz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nariz é escrito com Z no final.",
+      "wrongExplanations": {
+        "0": "Nariz não recebe acento.",
+        "1": "A grafia correta é nariz, com Z.",
+        "2": "A palavra nariz termina com um único Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra escrita com Z significa contente?",
+      "options": [
+        "feliz",
+        "felis",
+        "felís",
+        "felizz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Feliz significa contente e termina com Z.",
+      "wrongExplanations": {
+        "1": "A palavra feliz termina com Z.",
+        "2": "A palavra feliz não recebe acento.",
+        "3": "Feliz termina com um único Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Complete: “A equipe é ____ de terminar o desafio.”",
+      "options": [
+        "capás",
+        "capaz",
+        "capass",
+        "capáz"
+      ],
+      "correctIndex": 1,
+      "explanation": "Na frase, a expressão adequada é “capaz de terminar”. A palavra capaz termina com Z.",
+      "wrongExplanations": {
+        "0": "A grafia correta é capaz, com Z.",
+        "2": "Capaz termina com Z, e não com SS como em “capass”.",
+        "3": "A palavra capaz não recebe acento."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra com Z nomeia o som produzido pela fala?",
+      "options": [
+        "vós",
+        "vos",
+        "voz",
+        "vozz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Voz é o som que produzimos quando falamos.",
+      "wrongExplanations": {
+        "0": "“Vós” é um pronome; a palavra que nomeia o som da fala é voz.",
+        "1": "“Vos” é um pronome; a palavra que nomeia o som da fala é voz.",
+        "3": "Voz termina com um único Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual grafia completa corretamente a frase: “O ____ é um cereal muito consumido no Brasil”?",
+      "options": [
+        "aroz",
+        "arróz",
+        "arroz",
+        "arrôs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Arroz é escrito com Z no final e dois R no meio.",
+      "wrongExplanations": {
+        "0": "Arroz é escrito com dois R.",
+        "1": "Arroz não recebe acento.",
+        "3": "A grafia correta é arroz, sem acento."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra nomeia a qualidade do que é belo?",
+      "options": [
+        "beleza",
+        "belesa",
+        "beleça",
+        "belêza"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beleza nomeia uma qualidade e é escrita com Z.",
+      "wrongExplanations": {
+        "1": "Beleza é escrita com Z, não com S.",
+        "2": "Beleza é escrita com Z, não com Ç.",
+        "3": "Beleza não recebe acento."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Complete: “Ela sentiu ____ quando o amigo foi embora.”",
+      "options": [
+        "tristesa",
+        "tristeza",
+        "tristteza",
+        "tristessa"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tristeza é escrita com Z.",
+      "wrongExplanations": {
+        "0": "Tristeza é escrita com Z, não com S.",
+        "2": "“Tristteza” duplica o T; tristeza tem apenas um T depois de S.",
+        "3": "Tristeza é escrita com um Z, não com SS."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra completa a frase? “A amizade é uma grande ____.”",
+      "options": [
+        "riquesa",
+        "riquessa",
+        "riqueza",
+        "rriqueza"
+      ],
+      "correctIndex": 2,
+      "explanation": "Riqueza é escrita com Z.",
+      "wrongExplanations": {
+        "0": "Riqueza é escrita com Z, não com S.",
+        "1": "Riqueza é escrita com um Z, não com SS.",
+        "3": "Riqueza começa com um único R."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra completa a frase? “Devemos cuidar da ____.”",
+      "options": [
+        "naturesa",
+        "natureça",
+        "naturreza",
+        "natureza"
+      ],
+      "correctIndex": 3,
+      "explanation": "Natureza é escrita com Z.",
+      "wrongExplanations": {
+        "0": "Natureza é escrita com Z, não com S.",
+        "1": "A palavra natureza é escrita com Z.",
+        "2": "Natureza é escrita com um único R, sem RR no meio da palavra."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual número está escrito corretamente?",
+      "options": [
+        "onse",
+        "onze",
+        "onçe",
+        "onzi"
+      ],
+      "correctIndex": 1,
+      "explanation": "A palavra “onze” é escrita com Z.",
+      "wrongExplanations": {
+        "0": "A palavra “onze” é escrita com Z, não com S.",
+        "2": "A palavra “onze” é escrita com Z, sem Ç.",
+        "3": "A palavra “onze” termina com E."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual número completa a frase? “Depois do onze vem o ____.”",
+      "options": [
+        "dose",
+        "doze",
+        "dozê",
+        "doce"
+      ],
+      "correctIndex": 1,
+      "explanation": "A palavra “doze” é escrita com Z.",
+      "wrongExplanations": {
+        "0": "A palavra “doze” é escrita com Z, não com S.",
+        "2": "A palavra “doze” não recebe acento.",
+        "3": "Na sequência dos números, depois de onze vem doze."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Complete: “Minha avó preparou o jantar na ____.”",
+      "options": [
+        "cosinha",
+        "coxinha",
+        "cozinha",
+        "cuzinha"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cozinha é escrita com Z.",
+      "wrongExplanations": {
+        "0": "A grafia correta é cozinha, com Z.",
+        "1": "Coxinha é um alimento; a palavra que nomeia o cômodo é cozinha.",
+        "3": "A grafia correta é cozinha, com O na primeira sílaba."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Complete: “A ____ da planta fica no solo.”",
+      "options": [
+        "raís",
+        "raizz",
+        "rais",
+        "raiz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Raiz nomeia a parte da planta que fica no solo e termina com Z.",
+      "wrongExplanations": {
+        "0": "A palavra raiz não recebe acento e termina com Z.",
+        "1": "Raiz termina com um único Z.",
+        "2": "A grafia correta é raiz, com Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra está escrita corretamente?",
+      "options": [
+        "luz",
+        "lus",
+        "lús",
+        "luzz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Luz é escrita com Z no final.",
+      "wrongExplanations": {
+        "1": "A grafia correta de luz termina com Z.",
+        "2": "Luz termina com Z e não recebe acento.",
+        "3": "Luz termina com um único Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Complete: “A ____ está no alto da colina.”",
+      "options": [
+        "crus",
+        "cruz",
+        "crús",
+        "cruzz"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cruz é escrita com Z no final.",
+      "wrongExplanations": {
+        "0": "A forma singular cruz termina com Z.",
+        "2": "“Crús” está incorreta: a palavra cruz termina com Z e não recebe acento.",
+        "3": "Cruz termina com um único Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual palavra contém a letra Z?",
+      "options": [
+        "cidade",
+        "saudade",
+        "amizade",
+        "verdade"
+      ],
+      "correctIndex": 2,
+      "explanation": "Amizade é escrita com Z.",
+      "wrongExplanations": {
+        "0": "Cidade é escrita com D e não contém Z.",
+        "1": "Saudade é escrita com D e não contém Z.",
+        "3": "Verdade é escrita com D e não contém Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_usos_do_z_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-do-z",
+      "question": "Qual grafia completa corretamente a frase “O ____ ajudou a carregar as caixas”?",
+      "options": [
+        "rapas",
+        "rapáz",
+        "rapaiz",
+        "rapaz"
+      ],
+      "correctIndex": 3,
+      "explanation": "No singular, rapaz termina com Z.",
+      "wrongExplanations": {
+        "0": "No singular, a grafia correta termina com Z.",
+        "1": "Rapaz não recebe acento.",
+        "2": "Rapaz não tem I antes do Z."
+      },
+      "skill": "reconhecer-palavras-escritas-com-z",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Usos do Z"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

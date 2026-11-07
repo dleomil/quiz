@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-008-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-008-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giló, jeitoso, jejum",
+        "jiló, geitoso, jejum",
+        "jiló, jeitoso, gejum",
+        "jiló, jeitoso, jejum"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jiló”, “jeitoso” e “jejum”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "1": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "2": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-008-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-008 apresenta instrução clara, em português e adequada ao 3º ano.",
+      "Enunciado, alternativas, explicação e feedbacks estão corretos quanto a ortografia, acentuação, concordância e pontuação.",
+      "A alternativa de índice 3 contém as grafias corretas “jiló”, “jeitoso” e “jejum”; as demais apresentam um erro ortográfico específico e claramente identificável.",
+      "Os três feedbacks associam corretamente cada distrator à grafia inadequada e informam a forma correta sem tratar o erro como variante aceita.",
+      "A explicação confirma a resposta sem introduzir generalização falsa sobre o emprego de J e G."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à aprovação humana e manter separadas as evidências das passagens pedagógica e linguística antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "3a78a860-31b6-43da-95cd-d401903f2c8a",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "367439ef76265c7ca5f425f1d2fe69a7039ac365f99e2b3eea36ea910a55a856",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:26:34.262Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/008-linguistic-r06-recovery.json",
+    "recoverySha256": "6a89c3565dce635ce35ad6ad46062a4719f428b556cda55e8cf1bb1e5e788eb0"
+  }
+}

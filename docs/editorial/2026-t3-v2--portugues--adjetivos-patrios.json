@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/portugues/adjetivos-patrios",
+  "sourceSha256": "3d18f8533a938189d9723d3064f602fb95548ae0739e674e653e16289e9709f9",
+  "testOnly": false,
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "npm run validate:delivery aprovou a estrutura das 20 questões e os três feedbacks por questão."
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Quatro lotes passaram sem achados na revisão pedagógica independente."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Quatro lotes passaram sem achados na revisão linguística independente."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "As justificativas das alternativas incorretas foram avaliadas nos quatro lotes."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_adjetivos_patrios_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-adjetivos-patrios/batch-04-linguistic-reviewed.json"
+    }
+  ],
+  "approval": {
+    "kind": "editorial",
+    "sourceSha256": "3d18f8533a938189d9723d3064f602fb95548ae0739e674e653e16289e9709f9",
+    "approvedBy": "dleomil",
+    "evidenceRef": "https://github.com/dleomil/quiz/issues/444#issuecomment-6688991168"
+  }
+}

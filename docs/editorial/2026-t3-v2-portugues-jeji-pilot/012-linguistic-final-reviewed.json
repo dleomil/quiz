@@ -1,0 +1,91 @@
+{
+  "scenarioId": "jeji-012-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-012-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "cangiquinha, hoje, jeito",
+        "canjiquinha, hoge, jeito",
+        "canjiquinha, hoje, geito",
+        "canjiquinha, hoje, jeito"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “canjiquinha”, “hoje” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “cangiquinha” está escrita com G no lugar do J de “canjiquinha”. A grafia correta é “canjiquinha”.",
+        "1": "Na opção, “hoge” está escrita com G no lugar do J de “hoje”. A grafia correta é “hoje”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-012-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-012 apresenta instrução clara, natural e adequada ao 3º ano.",
+      "O enunciado, as quatro alternativas, a explicação e os três feedbacks estão corretos quanto à ortografia, concordância e pontuação.",
+      "Os feedbacks identificam especificamente as grafias inadequadas “cangiquinha”, “hoge” e “geito” e apresentam corretamente “canjiquinha”, “hoje” e “jeito”.",
+      "A redação não apresenta lacunas, não revela a resposta no enunciado e não trata grafias incorretas como variantes aceitas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a aprovação humana e para as demais passagens independentes exigidas, sem considerar este parecer autorização de publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "8a798003-4fb3-49d2-81f8-b7abe3a5a5c4",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "b1eb084adfe8e85ab00d950f61eb3a188656f59ff625ea52a03993e68d83e5bf",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:29:03.971Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/012-linguistic-r06-recovery.json",
+    "recoverySha256": "30dd2d8a08a39bc963c33bd4dadf435a3b3f30d68c1741e16d9d2234ccff2bf3"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-009-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-009-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "laranjeira, jipe, jeito",
+        "larangeira, jipe, jeito",
+        "laranjeira, gipe, jeito",
+        "laranjeira, jipe, geito"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “laranjeira”, “jipe” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “larangeira” está escrita com G no lugar do J de “laranjeira”. A grafia correta é “laranjeira”.",
+        "2": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-009-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-009 foi avaliada exclusivamente na passagem linguística.",
+      "O enunciado está claro, corretamente pontuado e adequado ao 3º ano.",
+      "As grafias “laranjeira”, “jipe” e “jeito” estão corretas no português brasileiro.",
+      "Os três distratores apresentam uma única troca ortográfica identificável, sem tratar as formas incorretas como variantes aceitas.",
+      "A explicação e os três feedbacks são gramaticalmente corretos, coerentes com cada alternativa e não revelam a resposta antes da escolha."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a aprovação humana obrigatória, sem considerar este parecer autorização de publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "64a37848-80c0-4030-a4a7-5721f85a9422",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "09eb48a4f90928c28a13f86a57e52391930c4c654b3c89a9052ae6f755afc4d8",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:27:05.437Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/009-linguistic-r06-recovery.json",
+    "recoverySha256": "f8e7aa97908f5ae9c5343d218128a49b2c436fcc7f9a77965b190ba134a99373"
+  }
+}

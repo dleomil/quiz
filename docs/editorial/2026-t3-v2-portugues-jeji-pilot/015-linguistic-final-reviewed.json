@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-015-linguistic-r12",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-015-linguistic-r12",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "sugeira, jiló, laje",
+        "sujeira, giló, laje",
+        "sujeira, jiló, laje",
+        "sujeira, jiló, lage"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “sujeira”, “jiló” e “laje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "0": "Na opção, “sugeira” está escrita com G no lugar do J de “sujeira”. A grafia correta é “sujeira”.",
+        "1": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-015-linguistic-r12",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-015 foi avaliada exclusivamente na passagem linguística.",
+      "O enunciado apresenta instrução clara, natural e adequada ao 3º ano.",
+      "Enunciado, alternativas, explicação e três feedbacks estão corretos quanto a ortografia, acentuação, concordância e pontuação.",
+      "Os feedbacks identificam as grafias incorretas como erros e apresentam explicitamente as formas corretas “sujeira”, “jiló” e “laje”.",
+      "A formulação não revela a resposta correta antes da escolha do estudante e não apresenta lacunas linguísticas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem pedagógica independente e à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "a700277f-5d64-406f-8be7-45acaa41fc60",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "282978eb83870697ba66333ad77a4be8a654403e3291619255fa3a0711dac888",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:43:55.875Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/015-linguistic-r12-recovery.json",
+    "recoverySha256": "b81ee6a5355ecdd8d61baf847264601ed328cd0194937c6bb4cd291027f8e19a"
+  }
+}
