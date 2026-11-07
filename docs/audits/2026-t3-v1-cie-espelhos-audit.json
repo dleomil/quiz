@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "ciencias:espelhos",
+  "sourceSha256": "867e0f6896091672622d2f4f75e53e9e898d9872a461234257389653f4685965",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_cie_espelhos_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-46"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-46"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-47"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-47"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-48"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-48"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-49"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-49"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-50"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-50"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-51"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-51"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-52"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-52"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-53"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-53"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-54"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-54"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-55"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-55"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-56"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-56"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-57"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-57"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-58"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-58"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-59"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-59"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-46"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-46"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-47"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-47"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-48"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-48"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-49"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_espelhos_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/espelhos/page-49"],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

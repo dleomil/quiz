@@ -1,0 +1,486 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “A mochila pesada ficou perto da porta”, qual palavra indica uma característica da mochila?",
+      "options": ["pesada", "mochila", "ficou", "porta"],
+      "correctIndex": 0,
+      "explanation": "Pesada indica uma característica da mochila.",
+      "wrongExplanations": {
+        "1": "Mochila nomeia o objeto; pesada é a palavra que o caracteriza.",
+        "2": "Ficou indica o que aconteceu; pesada descreve a mochila.",
+        "3": "Porta nomeia outro objeto; pesada descreve a mochila."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "A janela ficou aberta durante a noite. Qual palavra conta como ela ficou?",
+      "options": ["janela", "aberta", "durante", "noite"],
+      "correctIndex": 1,
+      "explanation": "Aberta indica uma característica da janela naquele momento.",
+      "wrongExplanations": {
+        "0": "Janela é o objeto caracterizado; aberta descreve como ela ficou.",
+        "2": "Durante indica uma relação de tempo; aberta descreve a janela.",
+        "3": "Noite nomeia um período; aberta é a característica da janela."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “O coelho rápido atravessou o jardim”, que palavra caracteriza o coelho?",
+      "options": ["coelho", "atravessou", "rápido", "jardim"],
+      "correctIndex": 2,
+      "explanation": "Rápido apresenta uma característica do coelho.",
+      "wrongExplanations": {
+        "0": "Coelho nomeia o animal; rápido descreve uma característica dele.",
+        "1": "Atravessou indica uma ação; rápido caracteriza o coelho.",
+        "3": "Jardim nomeia um lugar; rápido caracteriza o coelho."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Qual palavra completa a frase com uma característica do suco? “O suco de limão estava ____.”",
+      "options": ["copo", "beber", "mesa", "azedo"],
+      "correctIndex": 3,
+      "explanation": "Azedo descreve o sabor do suco de limão.",
+      "wrongExplanations": {
+        "0": "Copo nomeia um recipiente; a frase pede uma característica do suco.",
+        "1": "Beber indica uma ação; a frase pede uma característica do suco.",
+        "2": "Mesa nomeia um móvel; azedo descreve o sabor do suco."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "As crianças montaram uma torre alta. Qual palavra descreve a torre?",
+      "options": ["alta", "crianças", "montaram", "torre"],
+      "correctIndex": 0,
+      "explanation": "Alta indica uma característica da torre.",
+      "wrongExplanations": {
+        "1": "Crianças nomeia quem montou a torre; alta descreve a torre.",
+        "2": "Montaram indica uma ação; alta caracteriza a torre.",
+        "3": "Torre nomeia a construção; alta informa como ela é."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “O dia chuvoso mudou nossos planos”, como era o dia?",
+      "options": ["mudou", "chuvoso", "planos", "nossos"],
+      "correctIndex": 1,
+      "explanation": "Chuvoso descreve uma característica do dia.",
+      "wrongExplanations": {
+        "0": "Mudou indica uma ação; chuvoso caracteriza o dia.",
+        "2": "Planos nomeia o que foi alterado; chuvoso descreve o dia.",
+        "3": "Nossos indica a quem pertencem os planos; chuvoso caracteriza o dia."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "O passarinho pequeno pousou no galho. Qual palavra indica o tamanho do passarinho?",
+      "options": ["pousou", "galho", "pequeno", "passarinho"],
+      "correctIndex": 2,
+      "explanation": "Pequeno indica o tamanho do passarinho.",
+      "wrongExplanations": {
+        "0": "Pousou indica uma ação; pequeno descreve o tamanho do passarinho.",
+        "1": "Galho nomeia onde ele pousou; pequeno caracteriza o passarinho.",
+        "3": "Passarinho nomeia o animal; pequeno indica uma característica dele."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Qual palavra mostra como ficou a sala? “Depois da organização, a sala estava ____ e sem objetos espalhados.”",
+      "options": ["cadeiras", "arrumada", "organizar", "sala"],
+      "correctIndex": 1,
+      "explanation": "Arrumada descreve como a sala ficou.",
+      "wrongExplanations": {
+        "0": "Cadeiras nomeia objetos da sala; arrumada descreve como ela ficou.",
+        "2": "Organizar indica uma ação; arrumada caracteriza a sala.",
+        "3": "Sala nomeia o lugar; arrumada indica uma característica dele."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “A menina curiosa fez muitas perguntas”, qual palavra caracteriza a menina?",
+      "options": ["curiosa", "menina", "fez", "perguntas"],
+      "correctIndex": 0,
+      "explanation": "Curiosa apresenta uma característica da menina.",
+      "wrongExplanations": {
+        "1": "Menina nomeia a pessoa; curiosa descreve uma característica dela.",
+        "2": "Fez indica uma ação; curiosa caracteriza a menina.",
+        "3": "Perguntas nomeia o que ela fez; curiosa descreve a menina."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "O cobertor macio estava dobrado na cama. Qual palavra descreve o cobertor ao toque?",
+      "options": ["cama", "dobrado", "estava", "macio"],
+      "correctIndex": 3,
+      "explanation": "Macio indica uma característica do cobertor ao toque.",
+      "wrongExplanations": {
+        "0": "Cama nomeia o lugar onde está o cobertor; macio descreve o cobertor.",
+        "1": "Dobrado informa como o cobertor foi colocado; macio descreve seu toque.",
+        "2": "Estava é uma forma do verbo estar; macio caracteriza o cobertor."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “Os corredores atentos ouviram o sinal”, como estavam os corredores?",
+      "options": ["ouviram", "sinal", "atentos", "corredores"],
+      "correctIndex": 2,
+      "explanation": "Atentos caracteriza os corredores e concorda com esse substantivo no plural.",
+      "wrongExplanations": {
+        "0": "Ouviram indica uma ação; atentos descreve os corredores.",
+        "1": "Sinal nomeia o que foi ouvido; atentos caracteriza os corredores.",
+        "3": "Corredores nomeia as pessoas; atentos indica uma característica delas."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Qual palavra completa a frase dizendo uma característica das folhas? “No outono, algumas folhas ficam ____.”",
+      "options": ["árvores", "caem", "folhas", "amareladas"],
+      "correctIndex": 3,
+      "explanation": "Amareladas descreve a cor das folhas.",
+      "wrongExplanations": {
+        "0": "Árvores nomeia as plantas; a frase pede uma característica das folhas.",
+        "1": "Caem indica uma ação; amareladas descreve a cor das folhas.",
+        "2": "Folhas nomeia o que muda de cor; amareladas caracteriza essas folhas."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "A praça silenciosa estava quase vazia. Qual palavra caracteriza a praça pelo som do lugar?",
+      "options": ["silenciosa", "praça", "estava", "vazia"],
+      "correctIndex": 0,
+      "explanation": "Silenciosa indica que havia pouco ou nenhum barulho na praça.",
+      "wrongExplanations": {
+        "1": "Praça nomeia o lugar; silenciosa descreve uma característica dele.",
+        "2": "Estava é uma forma do verbo estar; silenciosa caracteriza a praça.",
+        "3": "Vazia também caracteriza a praça, mas descreve a quantidade de pessoas, não o som pedido."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “O mapa antigo ficou guardado na gaveta”, qual palavra indica a idade do mapa?",
+      "options": ["gaveta", "antigo", "guardado", "mapa"],
+      "correctIndex": 1,
+      "explanation": "Antigo indica que o mapa existe há muito tempo.",
+      "wrongExplanations": {
+        "0": "Gaveta nomeia o lugar onde o mapa foi guardado; antigo caracteriza o mapa.",
+        "2": "Guardado informa o que foi feito com o mapa; antigo indica sua idade.",
+        "3": "Mapa nomeia o objeto; antigo apresenta uma característica dele."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "O caminho estreito passava entre duas árvores. Qual palavra informa a largura do caminho?",
+      "options": ["passava", "árvores", "estreito", "caminho"],
+      "correctIndex": 2,
+      "explanation": "Estreito indica que o caminho tem pouca largura.",
+      "wrongExplanations": {
+        "0": "Passava indica o trajeto; estreito descreve a largura do caminho.",
+        "1": "Árvores nomeia elementos próximos; estreito caracteriza o caminho.",
+        "3": "Caminho nomeia o lugar por onde se passa; estreito apresenta uma característica dele."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "As caixas leves foram levadas para a sala. Qual palavra descreve o peso das caixas?",
+      "options": ["caixas", "foram", "sala", "leves"],
+      "correctIndex": 3,
+      "explanation": "Leves indica uma característica do peso das caixas.",
+      "wrongExplanations": {
+        "0": "Caixas nomeia os objetos; leves descreve uma característica deles.",
+        "1": "Foram faz parte da informação sobre o que aconteceu; leves caracteriza as caixas.",
+        "2": "Sala nomeia o lugar de destino; leves descreve o peso das caixas."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "A turma escolheu uma receita simples para o lanche. Qual palavra caracteriza a receita?",
+      "options": ["simples", "receita", "escolheu", "lanche"],
+      "correctIndex": 0,
+      "explanation": "Simples indica que a receita não é complicada.",
+      "wrongExplanations": {
+        "1": "Receita nomeia o texto de instruções; simples descreve uma característica dela.",
+        "2": "Escolheu indica uma ação da turma; simples descreve a receita.",
+        "3": "Lanche nomeia a refeição; simples caracteriza a receita."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Qual palavra completa a frase descrevendo o estado do brinquedo? “Depois da brincadeira, o carrinho ficou ____.”",
+      "options": ["brincadeira", "sujo", "carrinho", "limpar"],
+      "correctIndex": 1,
+      "explanation": "Sujo descreve o estado em que o carrinho ficou.",
+      "wrongExplanations": {
+        "0": "Brincadeira nomeia a atividade; a frase pede uma característica do carrinho.",
+        "2": "Carrinho nomeia o brinquedo; sujo descreve como ele ficou.",
+        "3": "Limpar indica uma ação; sujo caracteriza o estado do carrinho."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "Na frase “O vizinho gentil ajudou a carregar as compras”, qual palavra descreve o vizinho?",
+      "options": ["ajudou", "compras", "gentil", "vizinho"],
+      "correctIndex": 2,
+      "explanation": "Gentil caracteriza o vizinho e indica uma atitude atenciosa.",
+      "wrongExplanations": {
+        "0": "Ajudou indica uma ação; gentil descreve uma característica do vizinho.",
+        "1": "Compras nomeia o que foi carregado; gentil caracteriza o vizinho.",
+        "3": "Vizinho nomeia a pessoa; gentil informa como ela é."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_adjetivos_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "adjetivos",
+      "question": "As trilhas longas exigiram várias pausas. Qual palavra indica uma característica das trilhas?",
+      "options": ["exigiram", "pausas", "trilhas", "longas"],
+      "correctIndex": 3,
+      "explanation": "Longas caracteriza as trilhas e concorda com esse substantivo no plural.",
+      "wrongExplanations": {
+        "0": "Exigiram indica o que as trilhas fizeram; longas descreve uma característica delas.",
+        "1": "Pausas nomeia o que foi necessário; longas caracteriza as trilhas.",
+        "2": "Trilhas nomeia os caminhos; longas indica uma característica desses caminhos."
+      },
+      "skill": "identificar-caracteristicas-atribuidas-a-substantivos",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "adjetivos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

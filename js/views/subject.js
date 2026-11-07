@@ -1,5 +1,5 @@
 /* exported SubjectView */
-/* global App, Store, QuestionsDB */
+/* global App, Store, QuestionsDB, escapeHTML */
 const SubjectView = (function () {
   const DEFAULT_QUESTION_COUNT = 30;
 
@@ -28,7 +28,7 @@ const SubjectView = (function () {
         <div class="question-count-heading">
           <span class="question-count-icon" aria-hidden="true">🎒</span>
           <div>
-            <p class="question-count-eyebrow">${name}</p>
+            <p class="question-count-eyebrow">${escapeHTML(name)}</p>
             <h3 id="question-count-title">Quantas questões você quer fazer?</h3>
           </div>
         </div>
@@ -164,7 +164,7 @@ const SubjectView = (function () {
       <div class="card">
         <div class="subject-header">
           <button class="btn-back" id="btn-back">← Voltar</button>
-          <h2>${subjectInfo.icon} ${subjectInfo.name}</h2>
+          <h2>${escapeHTML(subjectInfo.icon)} ${escapeHTML(subjectInfo.name)}</h2>
         </div>
 
         <p class="topic-section-title">Escolha o assunto:</p>
@@ -183,9 +183,9 @@ const SubjectView = (function () {
                 s.selectedContentSet,
               );
               return `
-              <button type="button" class="topic-card" data-topic="${t}" data-count="${available}" aria-pressed="false">
-                <div class="topic-icon">${m.icon}</div>
-                <div class="topic-name">${m.name}</div>
+              <button type="button" class="topic-card" data-topic="${escapeHTML(t)}" data-count="${available}" aria-pressed="false">
+                <div class="topic-icon">${escapeHTML(m.icon)}</div>
+                <div class="topic-name">${escapeHTML(m.name)}</div>
                 <div class="topic-count">${available} questões</div>
               </button>`;
             })

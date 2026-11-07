@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "historia:povo-brasileiro",
+  "sourceSha256": "f0729e9558d65f65873debdf404b04207e0837a2ca8b71e398678cdd42a0cff4",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-95"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-95"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-96"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-96"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-97"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-97"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-98"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-98"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-99"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-99"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-100"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-100"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-101"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-101"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-102"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-102"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-103"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-103"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-104"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-104"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_povo_brasileiro_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/povo-brasileiro/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

@@ -100,6 +100,39 @@ function run() {
   );
   assert.ok(invalidErrors.some((error) => error.includes('indice 2')));
 
+  [
+    { question: '<script>alert(1)</script>' },
+    { options: ['Litro', '<img src=x onerror=alert(1)>', 'Hora', 'Grama'] },
+    { explanation: '<svg onload=alert(1)></svg>' },
+    {
+      wrongExplanations: {
+        1: '<iframe srcdoc="unsafe"></iframe>',
+        2: 'Hora mede tempo.',
+        3: 'Grama mede massa.',
+      },
+    },
+  ].forEach((payload) => {
+    const markupErrors = validateQuestions([validContentV1Question(payload)]);
+    assert.ok(
+      markupErrors.some((error) =>
+        error.includes('nao pode conter marcacao HTML'),
+      ),
+    );
+  });
+
+  assert.deepStrictEqual(
+    validateQuestions([
+      validContentV1Question({
+        question: 'Qual comparação mostra que 2 < 3?',
+      }),
+      validContentV1Question({
+        id: 'mat_t2_test_002',
+        question: 'Compare as letras em A < B > C.',
+      }),
+    ]),
+    [],
+  );
+
   const missingTopicErrors = validateQuestions([
     validContentV1Question({
       sourceRef: {

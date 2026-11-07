@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scenarioId", "inputState", "input"],
+  "properties": {
+    "scenarioId": { "type": "string", "minLength": 1 },
+    "inputState": {
+      "enum": ["complete", "ambiguous", "incomplete"]
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workItemId",
+        "contentSetId",
+        "subjectId",
+        "topicId",
+        "grade",
+        "academicYear",
+        "term",
+        "authorizedSkill",
+        "sourceRef",
+        "questionVersion",
+        "authorizedObjective",
+        "manifestState",
+        "humanFreezeApproval",
+        "requestedPass",
+        "sourceStatus"
+      ],
+      "properties": {
+        "workItemId": { "type": "string", "minLength": 1 },
+        "contentSetId": { "type": "string", "minLength": 1 },
+        "subjectId": { "type": "string", "minLength": 1 },
+        "topicId": { "type": "string", "minLength": 1 },
+        "grade": { "type": "string", "minLength": 1 },
+        "academicYear": { "type": "integer", "minimum": 2000 },
+        "term": { "enum": ["t1", "t2", "t3"] },
+        "authorizedSkill": { "type": "string", "minLength": 1 },
+        "sourceRef": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["referenceId", "section", "topic"],
+          "properties": {
+            "referenceId": { "type": "string", "minLength": 1 },
+            "section": { "type": "string", "minLength": 1 },
+            "topic": { "type": "string", "minLength": 1 }
+          }
+        },
+        "questionVersion": { "type": "integer", "minimum": 1 },
+        "authorizedObjective": { "type": "string", "minLength": 1 },
+        "manifestState": { "const": "frozen" },
+        "humanFreezeApproval": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["approvedBy", "approvedAt", "evidenceRef"],
+          "properties": {
+            "approvedBy": { "type": "string", "minLength": 1 },
+            "approvedAt": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+            },
+            "evidenceRef": { "type": "string", "minLength": 1 }
+          }
+        },
+        "requestedPass": {
+          "enum": ["curation", "pedagogical", "linguistic"]
+        },
+        "sourceStatus": { "enum": ["authorized", "ambiguous"] },
+        "proposal": {
+          "$ref": "editorial-agent-output.schema.json#/$defs/proposal"
+        }
+      }
+    }
+  }
+}

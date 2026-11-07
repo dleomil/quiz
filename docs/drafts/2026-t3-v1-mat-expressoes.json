@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor da expressão 18 + 7?",
+      "options": ["25", "24", "26", "11"],
+      "correctIndex": 0,
+      "explanation": "Somamos 18 e 7: 18 + 7 = 25.",
+      "wrongExplanations": {
+        "1": "Na expressão 18 + 7, some os dois números para verificar o resultado 25. A opção 24 não é o valor dessa operação.",
+        "2": "Na expressão 18 + 7, some os dois números para verificar o resultado 25. A opção 26 não é o valor dessa operação.",
+        "3": "Na expressão 18 + 7, some os dois números para verificar o resultado 25. A opção 11 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule a expressão 32 − 9.",
+      "options": ["21", "23", "22", "41"],
+      "correctIndex": 1,
+      "explanation": "Retirando 9 de 32, obtemos 23.",
+      "wrongExplanations": {
+        "0": "Na expressão 32 − 9, subtraia os dois números para verificar o resultado 23. A opção 21 não é o valor dessa operação.",
+        "2": "Na expressão 32 − 9, subtraia os dois números para verificar o resultado 23. A opção 22 não é o valor dessa operação.",
+        "3": "Na expressão 32 − 9, subtraia os dois números para verificar o resultado 23. A opção 41 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto vale 6 × 4?",
+      "options": ["10", "20", "24", "28"],
+      "correctIndex": 2,
+      "explanation": "Seis grupos de quatro formam 24.",
+      "wrongExplanations": {
+        "0": "Na expressão 6 × 4, multiplique os dois números para verificar o resultado 24. A opção 10 não é o valor dessa operação.",
+        "1": "Na expressão 6 × 4, multiplique os dois números para verificar o resultado 24. A opção 20 não é o valor dessa operação.",
+        "3": "Na expressão 6 × 4, multiplique os dois números para verificar o resultado 24. A opção 28 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o resultado de 27 + 8?",
+      "options": ["34", "36", "19", "35"],
+      "correctIndex": 3,
+      "explanation": "A soma de 27 com 8 é 35.",
+      "wrongExplanations": {
+        "0": "Na expressão 27 + 8, some os dois números para verificar o resultado 35. A opção 34 não é o valor dessa operação.",
+        "1": "Na expressão 27 + 8, some os dois números para verificar o resultado 35. A opção 36 não é o valor dessa operação.",
+        "2": "Na expressão 27 + 8, some os dois números para verificar o resultado 35. A opção 19 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 45 − 18.",
+      "options": ["27", "23", "26", "33"],
+      "correctIndex": 0,
+      "explanation": "Subtraindo 18 de 45, restam 27.",
+      "wrongExplanations": {
+        "1": "Na expressão 45 − 18, subtraia os dois números para verificar o resultado 27. A opção 23 não é o valor dessa operação.",
+        "2": "Na expressão 45 − 18, subtraia os dois números para verificar o resultado 27. A opção 26 não é o valor dessa operação.",
+        "3": "Na expressão 45 − 18, subtraia os dois números para verificar o resultado 27. A opção 33 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto é 7 × 5?",
+      "options": ["12", "35", "30", "40"],
+      "correctIndex": 1,
+      "explanation": "Sete grupos de cinco totalizam 35.",
+      "wrongExplanations": {
+        "0": "Na expressão 7 × 5, multiplique os dois números para verificar o resultado 35. A opção 12 não é o valor dessa operação.",
+        "2": "Na expressão 7 × 5, multiplique os dois números para verificar o resultado 35. A opção 30 não é o valor dessa operação.",
+        "3": "Na expressão 7 × 5, multiplique os dois números para verificar o resultado 35. A opção 40 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor de 36 + 16?",
+      "options": ["42", "50", "52", "62"],
+      "correctIndex": 2,
+      "explanation": "Somando 36 e 16, encontramos 52.",
+      "wrongExplanations": {
+        "0": "Na expressão 36 + 16, some os dois números para verificar o resultado 52. A opção 42 não é o valor dessa operação.",
+        "1": "Na expressão 36 + 16, some os dois números para verificar o resultado 52. A opção 50 não é o valor dessa operação.",
+        "3": "Na expressão 36 + 16, some os dois números para verificar o resultado 52. A opção 62 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 64 − 27.",
+      "options": ["33", "36", "47", "37"],
+      "correctIndex": 3,
+      "explanation": "A diferença entre 64 e 27 é 37.",
+      "wrongExplanations": {
+        "0": "Na expressão 64 − 27, subtraia os dois números para verificar o resultado 37. A opção 33 não é o valor dessa operação.",
+        "1": "Na expressão 64 − 27, subtraia os dois números para verificar o resultado 37. A opção 36 não é o valor dessa operação.",
+        "2": "Na expressão 64 − 27, subtraia os dois números para verificar o resultado 37. A opção 47 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto vale 8 × 3?",
+      "options": ["24", "11", "21", "32"],
+      "correctIndex": 0,
+      "explanation": "Oito grupos de três totalizam 24.",
+      "wrongExplanations": {
+        "1": "Na expressão 8 × 3, multiplique os dois números para verificar o resultado 24. A opção 11 não é o valor dessa operação.",
+        "2": "Na expressão 8 × 3, multiplique os dois números para verificar o resultado 24. A opção 21 não é o valor dessa operação.",
+        "3": "Na expressão 8 × 3, multiplique os dois números para verificar o resultado 24. A opção 32 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o resultado de 48 + 25?",
+      "options": ["63", "73", "72", "83"],
+      "correctIndex": 1,
+      "explanation": "Somando 48 e 25, obtemos 73.",
+      "wrongExplanations": {
+        "0": "Na expressão 48 + 25, some os dois números para verificar o resultado 73. A opção 63 não é o valor dessa operação.",
+        "2": "Na expressão 48 + 25, some os dois números para verificar o resultado 73. A opção 72 não é o valor dessa operação.",
+        "3": "Na expressão 48 + 25, some os dois números para verificar o resultado 73. A opção 83 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 71 − 36.",
+      "options": ["34", "45", "35", "47"],
+      "correctIndex": 2,
+      "explanation": "Subtraindo 36 de 71, restam 35.",
+      "wrongExplanations": {
+        "0": "Na expressão 71 − 36, subtraia os dois números para verificar o resultado 35. A opção 34 não é o valor dessa operação.",
+        "1": "Na expressão 71 − 36, subtraia os dois números para verificar o resultado 35. A opção 45 não é o valor dessa operação.",
+        "3": "Na expressão 71 − 36, subtraia os dois números para verificar o resultado 35. A opção 47 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto é 9 × 4?",
+      "options": ["13", "32", "40", "36"],
+      "correctIndex": 3,
+      "explanation": "Nove grupos de quatro formam 36.",
+      "wrongExplanations": {
+        "0": "Na expressão 9 × 4, multiplique os dois números para verificar o resultado 36. A opção 13 não é o valor dessa operação.",
+        "1": "Na expressão 9 × 4, multiplique os dois números para verificar o resultado 36. A opção 32 não é o valor dessa operação.",
+        "2": "Na expressão 9 × 4, multiplique os dois números para verificar o resultado 36. A opção 40 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor de 29 + 34?",
+      "options": ["63", "53", "62", "73"],
+      "correctIndex": 0,
+      "explanation": "A soma de 29 e 34 é 63.",
+      "wrongExplanations": {
+        "1": "Na expressão 29 + 34, some os dois números para verificar o resultado 63. A opção 53 não é o valor dessa operação.",
+        "2": "Na expressão 29 + 34, some os dois números para verificar o resultado 63. A opção 62 não é o valor dessa operação.",
+        "3": "Na expressão 29 + 34, some os dois números para verificar o resultado 63. A opção 73 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 83 − 48.",
+      "options": ["34", "35", "45", "51"],
+      "correctIndex": 1,
+      "explanation": "A diferença entre 83 e 48 é 35.",
+      "wrongExplanations": {
+        "0": "Na expressão 83 − 48, subtraia os dois números para verificar o resultado 35. A opção 34 não é o valor dessa operação.",
+        "2": "Na expressão 83 − 48, subtraia os dois números para verificar o resultado 35. A opção 45 não é o valor dessa operação.",
+        "3": "Na expressão 83 − 48, subtraia os dois números para verificar o resultado 35. A opção 51 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto vale 6 × 7?",
+      "options": ["13", "36", "42", "49"],
+      "correctIndex": 2,
+      "explanation": "Seis grupos de sete formam 42.",
+      "wrongExplanations": {
+        "0": "Na expressão 6 × 7, multiplique os dois números para verificar o resultado 42. A opção 13 não é o valor dessa operação.",
+        "1": "Na expressão 6 × 7, multiplique os dois números para verificar o resultado 42. A opção 36 não é o valor dessa operação.",
+        "3": "Na expressão 6 × 7, multiplique os dois números para verificar o resultado 42. A opção 49 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o resultado de 56 + 17?",
+      "options": ["63", "72", "83", "73"],
+      "correctIndex": 3,
+      "explanation": "Somando 56 e 17, encontramos 73.",
+      "wrongExplanations": {
+        "0": "Na expressão 56 + 17, some os dois números para verificar o resultado 73. A opção 63 não é o valor dessa operação.",
+        "1": "Na expressão 56 + 17, some os dois números para verificar o resultado 73. A opção 72 não é o valor dessa operação.",
+        "2": "Na expressão 56 + 17, some os dois números para verificar o resultado 73. A opção 83 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 92 − 57.",
+      "options": ["35", "34", "45", "49"],
+      "correctIndex": 0,
+      "explanation": "Retirando 57 de 92, restam 35.",
+      "wrongExplanations": {
+        "1": "Na expressão 92 − 57, subtraia os dois números para verificar o resultado 35. A opção 34 não é o valor dessa operação.",
+        "2": "Na expressão 92 − 57, subtraia os dois números para verificar o resultado 35. A opção 45 não é o valor dessa operação.",
+        "3": "Na expressão 92 − 57, subtraia os dois números para verificar o resultado 35. A opção 49 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Quanto é 8 × 6?",
+      "options": ["14", "48", "42", "54"],
+      "correctIndex": 1,
+      "explanation": "Oito grupos de seis totalizam 48.",
+      "wrongExplanations": {
+        "0": "Na expressão 8 × 6, multiplique os dois números para verificar o resultado 48. A opção 14 não é o valor dessa operação.",
+        "2": "Na expressão 8 × 6, multiplique os dois números para verificar o resultado 48. A opção 42 não é o valor dessa operação.",
+        "3": "Na expressão 8 × 6, multiplique os dois números para verificar o resultado 48. A opção 54 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Qual é o valor de 38 + 46?",
+      "options": ["74", "83", "84", "94"],
+      "correctIndex": 2,
+      "explanation": "A soma de 38 com 46 é 84.",
+      "wrongExplanations": {
+        "0": "Na expressão 38 + 46, some os dois números para verificar o resultado 84. A opção 74 não é o valor dessa operação.",
+        "1": "Na expressão 38 + 46, some os dois números para verificar o resultado 84. A opção 83 não é o valor dessa operação.",
+        "3": "Na expressão 38 + 46, some os dois números para verificar o resultado 84. A opção 94 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_expressoes_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "expressoes",
+      "topicName": "Expressões aritméticas simples",
+      "question": "Calcule 100 − 64.",
+      "options": ["34", "46", "54", "36"],
+      "correctIndex": 3,
+      "explanation": "Subtraindo 64 de 100, obtemos 36.",
+      "wrongExplanations": {
+        "0": "Na expressão 100 − 64, subtraia os dois números para verificar o resultado 36. A opção 34 não é o valor dessa operação.",
+        "1": "Na expressão 100 − 64, subtraia os dois números para verificar o resultado 36. A opção 46 não é o valor dessa operação.",
+        "2": "Na expressão 100 − 64, subtraia os dois números para verificar o resultado 36. A opção 54 não é o valor dessa operação."
+      },
+      "skill": "calcular-expressoes-aritmeticas-simples",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "expressoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

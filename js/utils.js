@@ -1,5 +1,14 @@
-/* exported getGrade, resolveTopicLabel */
+/* exported escapeHTML, getGrade, resolveTopicLabel */
 /* global QuestionsDB */
+function escapeHTML(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 const GRADE_THRESHOLDS = [
   {
     min: 90,

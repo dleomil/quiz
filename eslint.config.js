@@ -38,7 +38,13 @@ const nodeGlobals = {
 
 module.exports = [
   {
-    ignores: ['node_modules/**', 'coverage/**', 'dist/**', 'eslint.config.js'],
+    ignores: [
+      'node_modules/**',
+      'coverage/**',
+      'dist/**',
+      'docs/editorial/**/*.cjs',
+      'eslint.config.js',
+    ],
   },
   js.configs.recommended,
   {

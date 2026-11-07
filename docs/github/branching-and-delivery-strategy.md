@@ -2,7 +2,9 @@
 
 ## Objetivo
 
-Definir uma estrategia simples de branching para o inicio da evolucao do produto, reduzindo risco operacional e impondo governanca leve com aprovacoes manuais.
+Definir uma estrategia simples de branching para o inicio da evolucao do
+produto, reduzindo risco operacional e impondo governanca leve com checks e
+decisoes humanas rastreaveis.
 
 ## Estrategia recomendada
 
@@ -43,9 +45,10 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 
 1. Criar branch a partir de `develop` para trabalho normal.
 2. Abrir Pull Request da branch temporaria para `develop`.
-3. Exigir aprovacao manual e concluir com squash as branches temporarias que
-   entram em `develop`, exceto a reconciliacao pos-release.
-4. Promover `develop` para `main` via Pull Request com aprovacao manual.
+3. Exigir a revisao permitida pelo modo de manutencao vigente e concluir com
+   squash as branches temporarias que entram em `develop`, exceto a
+   reconciliacao pos-release.
+4. Promover `develop` para `main` via Pull Request com autorizacao de release.
 5. Quando houver necessidade de estabilizacao antes da publicacao, permitir `release/*` com destino a `main`.
 
 ### Reconciliacao obrigatoria apos release
@@ -65,6 +68,38 @@ Definir uma estrategia simples de branching para o inicio da evolucao do produto
 A reconciliacao registra a ancestralidade do release e nao autoriza nova
 promocao, deploy ou alteracao funcional.
 
+### Mensagens de merge
+
+Merges de promoção para `main` e reconciliação para `develop` devem usar
+mensagens curtas em português ASCII, sem título automático do GitHub, lista de
+commits ou blocos `Co-authored-by`. Os manifestos
+`.github/promotion-merge-message.json` e
+`.github/reconciliation-merge-message.json` definem os modelos imutáveis de
+cada operação. O validador seleciona o modelo pelas refs da PR, e título e
+corpo devem corresponder exatamente a ele.
+Concluir com `gh pr merge --merge --subject ... --body ...`, usando os valores
+validados no manifesto.
+
+O gate da PR valida o modelo antes do merge. Após a conclusão, o workflow
+`Merge Message Audit` compara a mensagem efetiva do commit com o manifesto da
+operação e
+falha visivelmente se houver divergência. O GitHub não permite validar antes
+do merge o título final escolhido na interface; por isso, a auditoria posterior
+detecta esse desvio sem reescrever histórico. PRs de trabalho comuns e seus
+commits ficam fora desta regra.
+
+Modelos obrigatórios:
+
+- Promoção: título `Promove pacote aprovado para main`; corpo com as linhas
+  `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o manifesto de
+  promoção.
+- Reconciliação: título `Reconciliacao apos publicacao em develop`; corpo com
+  as linhas `Objetivo`, `Escopo`, `Verificacoes` e `Reversao`, conforme o
+  manifesto de reconciliação.
+
+Antes da aprovação, revisar o manifesto e a prévia da mensagem; depois do
+merge, confirmar com `git show -s --format='%B' <merge-sha>`.
+
 O historico linear deve permanecer desabilitado em `main` e `develop` para
 permitir esses merge commits controlados. As demais protecoes continuam
 obrigatorias. O gate de ancestralidade bloqueia uma promocao ou reconciliacao
@@ -76,6 +111,44 @@ executar `npm run validate:branch-sync` contra o SHA atual do PR. Se `main`
 tiver avancado desde o check da esteira, a integracao deve ser interrompida e o
 head atualizado. Essa verificacao just-in-time cobre a janela que os eventos
 nativos de Pull Request nao invalidam automaticamente.
+
+### Modo permanente de mantenedor unico
+
+#### Estado vigente em 2026-10-02
+
+O modo de mantenedor unico e a regra operacional permanente deste repositorio
+enquanto `dleomil` for o unico colaborador humano elegivel. Ele vale para `main`
+e `develop` e esta registrado na Tech Task #310. Permite que o mantenedor
+conclua um Pull Request depois de todos os checks e gates aplicaveis passarem,
+mas nao transforma parecer de agente em revisao humana independente.
+
+O mantenedor deve registrar no PR a decisao, os checks e as evidencias. A
+aprovacao independente somente sera reativada se surgir outro colaborador
+humano com permissao `write`, `maintain` ou `admin`; ate la, a ausencia de um
+segundo revisor nao bloqueia o fluxo.
+
+Enquanto `dleomil` for o unico colaborador humano elegivel, `main` e `develop`
+nao exigem aprovacao de outro usuario no GitHub, pois o autor nao pode aprovar o
+proprio Pull Request. A excecao remove somente `required_pull_request_reviews`.
+
+Continuam obrigatorios:
+
+- Pull Request e proibicao de push direto;
+- checks remotos configurados e branch atualizada;
+- resolucao de conversas e protecao aplicada a administradores;
+- evidencia tecnica no PR e decisao final do mantenedor unico;
+- autorizacao explicita de release para `main`;
+- aprovacoes humanas pedagogicas, editoriais ou de produto aplicaveis.
+
+Parecer automatizado ou de agente nao deve ser descrito como aprovacao humana
+independente. A regra permanente e rastreada pela Tech Task #310.
+
+Quando existir um segundo colaborador humano com permissao `write`, `maintain`
+ou `admin`, antes do proximo merge devem ser restauradas em ambas as branches:
+
+- uma aprovacao obrigatoria;
+- descarte de aprovacoes obsoletas apos novos pushes;
+- aprovacao por outro usuario depois do ultimo push.
 
 ## Modos de operacao por calendario escolar
 
@@ -108,9 +181,29 @@ linguisticos e humanos em ambos os modos.
 - nao fazer push direto em `main`
 - nao fazer push direto em `develop`
 - toda evolucao deve passar por Pull Request
-- neste inicio, exigir ao menos uma aprovacao manual
+- a ruleset ativa exige Pull Request em `main` e `develop`, inclusive no modo
+  de mantenedor unico; ela exige zero aprovadores independentes enquanto
+  vigorar a excecao registrada em #310, sem remover checks ou protecoes atuais
+- exigir aprovacao independente quando houver ao menos dois mantenedores
+  elegiveis; durante a fase de mantenedor unico, aplicar a excecao rastreada em
+  #310
 - usar GitHub Actions como gate minimo de governanca nos PRs
 - registrar o modo operacional vigente em toda promocao para `main`
+
+## Operacao local com menos aprovacoes
+
+Para operacoes Git rotineiras, use o auxiliar global `codex-safe-git`, que
+aceita somente status, diff de leitura, stage por caminhos explicitos, commit
+de caminhos explicitos, troca/criacao de branches e push normal de branches
+temporarias deste repositorio. Ele recusa opcoes arbitrarias, amend, reset,
+force-push, branches permanentes e destinos diferentes de `dleomil/quiz`.
+
+O auxiliar reduz prompts do Codex para esses comandos delimitados, mas nao
+altera o sandbox do sistema operacional nem as protecoes do GitHub. Nao use
+regras globais que liberem todo o comando `git`; preserve a aprovacao humana
+para operacoes destrutivas, merges, releases, deploys e decisoes editoriais.
+Antes de abrir um PR, rode `npm run verify:local`, que agrupa a suite de testes,
+lint, formatacao e verificacao do diff.
 
 ## Motivacao arquitetural
 

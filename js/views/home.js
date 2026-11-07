@@ -1,10 +1,26 @@
 /* exported HomeView */
-/* global App, Store, QuestionsDB */
+/* global App, Store, QuestionsDB, escapeHTML */
 const HomeView = (function () {
   function render(el) {
     const subjects = QuestionsDB.getSubjects();
     const contentSets = QuestionsDB.getContentSets();
     const selectedContentSet = Store.get().selectedContentSet;
+    const selectedCatalog = QuestionsDB.getContentSet(selectedContentSet);
+    const availability =
+      selectedCatalog?.publicationMode === 'by-subject'
+        ? `<p class="content-set-availability">Disponível agora: ${escapeHTML(
+            selectedCatalog.publishedSubjects
+              .map(
+                (subject) =>
+                  QuestionsDB.getSubjectInfo(subject, selectedContentSet).name,
+              )
+              .join(', '),
+          )}. ${
+            selectedCatalog.publishedSubjects.length < subjects.length
+              ? 'As demais matérias aguardam conclusão e revisão.'
+              : 'Todas as matérias deste acervo estão disponíveis.'
+          }</p>`
+        : '';
     const contentSetSelector =
       contentSets.length > 1
         ? `<section class="content-set-picker" aria-labelledby="content-set-title">
@@ -17,10 +33,10 @@ const HomeView = (function () {
                   return `<button
                     type="button"
                     class="content-set-option${isSelected ? ' selected' : ''}"
-                    data-content-set="${contentSet.contentSetId}"
+                    data-content-set="${escapeHTML(contentSet.contentSetId)}"
                     aria-pressed="${isSelected}"
                   >
-                    <span class="content-set-option-name">${contentSet.displayName}</span>
+                    <span class="content-set-option-name">${escapeHTML(contentSet.displayName)}</span>
                     <span class="content-set-option-state">${isSelected ? '✓ Estudando agora' : 'Escolher este trimestre'}</span>
                   </button>`;
                 })
@@ -34,6 +50,7 @@ const HomeView = (function () {
         <h2>🎓 Quiz Etapa — 3º Ano</h2>
         <p>Escolha a matéria e comece seu quiz!</p>
         ${contentSetSelector}
+        ${availability}
 
         <p class="topic-section-title">Escolha a matéria:</p>
         <div class="subject-grid" id="subject-grid">
@@ -46,16 +63,16 @@ const HomeView = (function () {
               const m = QuestionsDB.getSubjectInfo(s, selectedContentSet);
               if (m.available) {
                 return `
-                <div class="subject-card" data-subject="${s}">
-                  <div class="subject-icon">${m.icon}</div>
-                  <div class="subject-name">${m.name}</div>
+                <div class="subject-card" data-subject="${escapeHTML(s)}">
+                  <div class="subject-icon">${escapeHTML(m.icon)}</div>
+                  <div class="subject-name">${escapeHTML(m.name)}</div>
                   <div class="subject-count">${m.count} questões</div>
                 </div>`;
               } else {
                 return `
                 <div class="subject-card disabled">
-                  <div class="subject-icon">${m.icon}</div>
-                  <div class="subject-name">${m.name}</div>
+                  <div class="subject-icon">${escapeHTML(m.icon)}</div>
+                  <div class="subject-name">${escapeHTML(m.name)}</div>
                   <div class="subject-soon">Em breve</div>
                 </div>`;
               }

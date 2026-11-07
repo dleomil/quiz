@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "governance-guidelines-v1",
+  "guidelines": [
+    {
+      "id": "agent-preflight",
+      "version": "1.1.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "architecture",
+      "sourcePath": "docs/harness/agent-preflight-checklist.md",
+      "sha256": "420305eeed67e430fb57c3dba1ea1132301616208716b9a62b4cd974bdc26328",
+      "appliesTo": ["agent-workflows", "repository-mutations"],
+      "enforcement": "manual-blocking",
+      "evidence": ["preflight checklist completed before mutation"]
+    },
+    {
+      "id": "agent-capability-model",
+      "version": "2.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/agent-capability-model.md",
+      "sha256": "ea9770de6a411c07461d5700ebec15f7b8788bb92f77b11e326d6d4dfdfc3d8f",
+      "appliesTo": ["agent-configuration", "agent-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": ["agent capability validation", "distinct actor record"]
+    },
+    {
+      "id": "agent-execution-records",
+      "version": "1.1.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/agent-execution-records.md",
+      "sha256": "75dcbbe51fd6ec2a1bd4abb75ce9879fc7d5a7e82ed4d2e34a8b4bca1ee15c3f",
+      "appliesTo": [
+        "agent-workflows",
+        "editorial-workflows",
+        "product-discovery",
+        "pull-requests"
+      ],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated agent execution record set"]
+    },
+    {
+      "id": "agent-record-ledger",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/local-first-agent-record-ledger.md",
+      "sha256": "e7bf06fee9816c5986c983ae83ef8eb754d85299d32249dac4ffd5de2e53257a",
+      "appliesTo": ["agent-workflows", "governance-audit", "local-sync"],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated append-only ledger", "deterministic audit report"]
+    },
+    {
+      "id": "branching-and-delivery",
+      "version": "1.3.1",
+      "status": "active",
+      "type": "policy",
+      "owner": "architecture",
+      "sourcePath": "docs/github/branching-and-delivery-strategy.md",
+      "sha256": "3130d0f76df5c42a294e7f2166275828b2954c472cf7611dfed058bc9534cd05",
+      "appliesTo": [
+        "pull-requests",
+        "releases",
+        "repository-mutations",
+        "merge-message-audit"
+      ],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "required checks",
+        "branch sync validation",
+        "merge authorization",
+        "merge message manifest",
+        "post-merge message audit",
+        "restricted local git helper"
+      ]
+    },
+    {
+      "id": "curriculum-content-quality",
+      "version": "1.2.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "content",
+      "sourcePath": "docs/harness/content-update-quality-gates.md",
+      "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b",
+      "appliesTo": ["content-updates", "editorial-workflows"],
+      "enforcement": "manual-blocking",
+      "evidence": ["pedagogical review", "linguistic review", "human approval"]
+    },
+    {
+      "id": "editorial-agent-output",
+      "version": "2.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "content",
+      "sourcePath": "docs/specs/editorial-agent-output-contract.md",
+      "sha256": "654b7c89ff30fc95a5db6a7516b62fa286639f0137e7583e960099fb33a79131",
+      "appliesTo": ["editorial-agents", "editorial-workflows"],
+      "enforcement": "automated-blocking",
+      "evidence": ["validated editorial agent output"]
+    },
+    {
+      "id": "executable-codex-agents",
+      "version": "2.1.0",
+      "status": "active",
+      "type": "standard",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/executable-codex-agents.md",
+      "sha256": "888ac4600a3bbe2cef90d5769f39bcc7bfa7f24516af8bfac5b6c29bbed1fe2e",
+      "appliesTo": ["agent-configuration", "agent-workflows"],
+      "enforcement": "automated-blocking",
+      "evidence": ["agent configuration validation"]
+    },
+    {
+      "id": "harness-engineering",
+      "version": "1.1.0",
+      "status": "active",
+      "type": "guideline",
+      "owner": "architecture",
+      "sourcePath": "docs/harness/harness-engineering.md",
+      "sha256": "ebee5a881141aa1706a732df443a0d3a7e822072e86c0ae8769919b6a87d4319",
+      "appliesTo": ["agent-workflows", "delivery-workflows"],
+      "enforcement": "advisory",
+      "evidence": ["execution record linked to issue and pull request"]
+    },
+    {
+      "id": "pedagogical-regression-corpus",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "standard",
+      "owner": "content",
+      "sourcePath": "docs/harness/pedagogical-regression-corpus.md",
+      "sha256": "afd400c459b6d3d774db56df0346e87f57dba04f1ec561a648fa0aa957c1c5f8",
+      "appliesTo": ["content-updates", "pull-requests"],
+      "enforcement": "automated-diagnostic",
+      "evidence": ["pedagogical regression report"],
+      "metrics": [
+        {
+          "id": "diagnostic-candidates",
+          "definition": "Candidates emitted by the read-only T2 diagnostic scan.",
+          "target": "tracked without blocking publication",
+          "source": "npm run test:pedagogical-regression"
+        }
+      ]
+    },
+    {
+      "id": "product-discovery",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "policy",
+      "owner": "product",
+      "sourcePath": "docs/specs/product-discovery-agent.md",
+      "sha256": "9e09b2f5062288a7d79331d8c87e32f826d22418d0003a2ca3ae0ab350f375d0",
+      "appliesTo": ["product-discovery", "backlog-management"],
+      "enforcement": "manual-blocking",
+      "evidence": ["product owner decision", "dated source record"]
+    },
+    {
+      "id": "read-only-governance-mcp",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/read-only-governance-mcp-pilot.md",
+      "sha256": "b8db0957da8d1d5798012f29cea42e135818af72627a11e263b37d70eb3a93f6",
+      "appliesTo": ["agent-workflows", "governance-consumption"],
+      "enforcement": "automated-blocking",
+      "evidence": ["MCP contract validation", "read-only protocol tests"]
+    },
+    {
+      "id": "spec-driven-development",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "guideline",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/spec-driven-development.md",
+      "sha256": "94e0239573eb4947c2f9cd8d2649b9e2bf68c224dff8a6d92dcce94cce3201fb",
+      "appliesTo": ["implementation", "pull-requests", "specification"],
+      "enforcement": "manual-blocking",
+      "evidence": ["approved implementation plan", "linked pull request"]
+    },
+    {
+      "id": "content-delivery-contract",
+      "version": "2.1.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "content",
+      "sourcePath": "docs/specs/content-delivery-contract.md",
+      "sha256": "0e519a2656eab8e7b67211730b225b22760c68147b4f860a0337b91f1aca9b78",
+      "appliesTo": ["content-updates", "editorial-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "validacao do lote alterado",
+        "revisoes vinculadas ao hash",
+        "aceite editorial verificavel",
+        "interface por IDs do lote"
+      ]
+    },
+    {
+      "id": "document-versioning",
+      "version": "1.0.2",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/document-versioning.md",
+      "sha256": "f6ce36cc69ecdb3a2e91311797ff981686fc3535629be83c62a3b5b308626f7d",
+      "appliesTo": ["documentation", "agent-workflows", "pull-requests"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "inventario completo e hashes conferidos",
+        "mudancas comparadas com a base",
+        "aceite humano do baseline antes do consumo"
+      ]
+    },
+    {
+      "id": "agent-context-and-auth",
+      "version": "1.0.0",
+      "status": "active",
+      "type": "contract",
+      "owner": "architecture",
+      "sourcePath": "docs/specs/agent-context-and-auth.md",
+      "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e",
+      "appliesTo": ["agent-workflows", "editorial-workflows"],
+      "enforcement": "automated-blocking",
+      "evidence": [
+        "complete pinned context bundle",
+        "dedicated ChatGPT keyring preflight",
+        "execution receipt sidecar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+# Operacao da avaliacao limitada de modelos
+
+Entrega #404 do plano aprovado em `docs/specs/agent-workflow-evolution.md`.
+Este guia descreve a ferramenta; os contratos e aceites normativos continuam
+fixados pela ficha de trabalho e pela politica de contexto.
+
+## Rodada vigente: benchmark v2 pendente de aceite
+
+A operação vigente está descrita no [pacote de revisão humana](benchmark-v2-review.md).
+As seções históricas abaixo documentam as duas retomadas anteriores e não
+habilitam novos slots. O pacote v2 substitui a agenda anterior quando aprovado.
+
+A campanha já consumiu três tentativas, sem comparação elegível. O benchmark v2
+propõe 28 novas comparações, totalizando 31 de 32. Nenhuma tentativa adicional,
+reparo ou comparação de verificadores está autorizada. Os verificadores ficam
+adiados. Os perfis efetivos permanecem inalterados.
+
+Depois dos testes, commit e checks, gerar o pacote exato offline:
+
+```sh
+npm run evaluation -- benchmark-check --auth-home "$HOME/.codex-quiz-auth" \
+  --output /caminho/novo/benchmark-v2-package.json
+npm run evaluation -- inspect-capture --auth-home "$HOME/.codex-quiz-auth" \
+  --slot schema-replacement-2 --output /caminho/novo/diagnostico.json
+```
+
+Submeter o commit e SHA-256 do pacote ao mantenedor. Parar antes de chamadas.
+Somente depois do aceite explícito desse pacote registrar a aprovação selada
+`agent-benchmark-human-approval-v2`, vinculando sourceCommit, packageSha256,
+stateSha256, origin=user-session, actor=dleomil, decision=approved, testOnly=false,
+statement com a manifestação de aceite e approvedAt. O hash usa a serialização
+canônica de `evaluation.sealed`; não é uma assinatura de identidade humana.
+
+```sh
+npm run evaluation -- revise-benchmark --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <estado-aprovado> --approval-file /caminho/privado/aceite.json
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot v2-historia-valida-editorial-current
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot v2-historia-valida-editorial-candidate
+```
+
+Inspecionar esse primeiro par antes das outras 26 chamadas. Usar a ordem do
+pacote. Falha técnica ou novo defeito do benchmark interrompe; falha de qualidade
+permanece no resultado, sem retry. Não chamar `init`, `resume`, `resume-events`,
+`resume-parser` ou `analyze` para tentar abrir slots antigos depois da revisão.
+`inspect-capture` não reclassifica a terceira tentativa como sucesso nem concede
+elegibilidade. O resultado histórico rejeitado permanece intacto.
+
+## Referência histórica: preparação inicial
+
+A rodada usa somente fixtures sinteticas, identificadas em
+`config/agent-evaluation-plan.json`. Sao oito casos editoriais comparados entre
+os dois modelos, duas repeticoes de codigo, documentacao e curadoria em cada
+modelo de autoria, e um caso de verificacao nos dois modelos. Trinta tentativas
+iniciais e duas reservas compoem o teto de 32. O plano e os modelos sao fixos;
+nao existe argumento livre para escolher outro modelo ou aumentar o teto.
+
+Concluir os testes e os checks do codigo antes da medicao. Fazer commit dos
+arquivos envolvidos: os runners rejeitam codigo ou casos divergentes do commit.
+O login usa o perfil dedicado ja preparado, pelo fluxo oficial ChatGPT e
+chaveiro. Nao copiar `auth.json` nem usar API como alternativa.
+
+```sh
+node scripts/agent-auth.cjs login --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- init --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- list --auth-home "$HOME/.codex-quiz-auth"
+```
+
+`ready` confere autenticacao, catalogo local, ferramentas desabilitadas e o
+isolamento nativo, sem invocar modelos nem consumir tentativa. A presenca no
+catalogo nao comprova disponibilidade do modelo para a conta. Falha bloqueia
+o inicio; investigar a causa antes de reservar uma tentativa real.
+
+Antes da reserva, os schemas efetivamente enviados tambem passam por verificacao
+offline do subconjunto suportado pelo servico. O schema de transporte tem campos
+tipados e obrigatorios, objetos fechados e listas com itens definidos. O contrato
+editorial completo permanece na validacao local. Valores nulos representam apenas
+ausencias previstas; o decoder nao cria textos, traducoes ou evidencias. Recibos
+novos identificam a versao do transporte e os hashes do contrato, schema e resposta.
+Esse check offline nao comprova aceitacao pelo servico.
+
+## Reserva e execucao
+
+A campanha tem ID fixo `agent-evolution-2026-10` e fica em
+`<auth-home>/quiz-evaluations/agent-evolution-2026-10`. A inicializacao nao
+substitui uma campanha existente. A reserva e exclusiva por slot e ocorre antes
+do runner: falha de preflight, falha remota e interrupcao continuam consumidas.
+Uma segunda reivindicacao do ticket e recusada. Nao existe comando de reset ou
+reabertura de tentativa. Mudanca na base, no codigo critico ou no corpus bloqueia
+novas chamadas e exige voltar ao planejamento, preservando o contador.
+
+Executar manualmente um ID da agenda, em serie, com uma invocacao por comando:
+
+```sh
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot historia-valida-editorial-current
+```
+
+O modelo e esforco da variante aparecem explicitamente no ticket e no recibo.
+O adapter normal permanece fixado: a comparacao e exclusiva do experimento e
+nao habilita o candidato para trabalhos gerais. Revisoes usam os contratos
+editoriais existentes; o verificador analitico recebe codigo e evidencias reais
+de testes aprovados para conferir o requisito ausente. Cada chamada tem processo
+e contexto proprios. Testes independentes usam scripts, sem chamadas extras a IA.
+
+Cada invocacao tem prazo total de cinco minutos para iniciar e concluir a
+chamada ao modelo. O preflight reduz o tempo restante. O processo encerra o
+grupo iniciado por ele ao expirar ou receber interrupcao; nao reinicia o modelo.
+O limite de eventos permanece em 16 MiB. Um processo terminado abruptamente pode
+deixar uma tentativa sem resultado ou uma trava; preservar esses registros e
+investigar os processos antes de qualquer recuperacao manual.
+
+## Avaliacao independente e correcoes
+
+Os revisores recebem apenas a proposta e a passagem solicitada. O gabarito da
+avaliacao nao integra o prompt. Controles validos precisam ser aceitos sem
+achados; defeitos precisam de ID, criterio, gravidade e evidencia especifica.
+Os congelamentos de fonte registrados nas fixtures sao ficticios e nao
+representam aprovacao curricular de producao.
+
+Executores de codigo e documentacao recebem somente o arquivo sintetico
+delimitado e `package.json`, exportados do commit. Nao recebem os testes de
+avaliacao, o gabarito, material escolar local ou arquivos nao versionados. A
+proposta nao e aplicada ao checkout. Codigo gerado e executado somente em outro
+processo sob a sandbox, sem rede e sem escrita na copia; o coordenador confere
+o resultado estruturado completo. Vetores usados na verificacao ficam registrados.
+Documentacao e curadoria passam por checagens de estrutura e fatos delimitados;
+a amostra nao comprova qualidade geral para qualquer documento ou materia.
+
+As reservas `repair-1` e `repair-2` escolhem propostas de Luna reprovadas com
+diagnostico, na ordem codigo, documentacao e curadoria. Cada tentativa inicial
+pode receber uma unica correcao, usando o mesmo modelo. Nao corrigem outra
+correcao, nao promovem automaticamente o executor a Sol e nao criam rodada extra.
+Uma falha sem proposta aproveitavel nao consome reserva de correcao.
+
+```sh
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" --slot repair-1
+```
+
+## Retomada excepcional aprovada
+
+A primeira tentativa real, `historia-valida-editorial-current` no commit
+`7c2d1294064d87b2f82928a4ef9c48d4dcf269a6`, recebeu HTTP 400
+`invalid_json_schema`, sem resposta avaliavel. O mantenedor aprovou usar uma das
+reservas para repor esse controle. O adendo versionado
+`config/agent-evaluation-resumption.json` fixa os hashes dessa falha e a excecao.
+
+A conta final permanece em ate 32: uma falha tecnica, 30 casos avaliados e uma
+correcao de Luna. `repair-2` fica desabilitado; `repair-1` conserva a prioridade
+codigo, documentacao e curadoria. A reposicao usa `schema-replacement-1`, mesmo
+caso, modelo e esforco. Identificadores de execucao e commit podem mudar.
+
+Depois dos testes e checks do novo commit, consultar `report` para obter
+`stateSha256` e registrar a transicao explicita:
+
+```sh
+npm run evaluation -- resume --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <stateSha256-do-relatorio>
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot schema-replacement-1
+```
+
+`resume` so aceita a unica falha identificada, sem mudancas no corpus, modelos,
+criterios ou contratos normativos. Confere os registros e grava um unico
+`resumption.json`, sem substituir campanha, ticket, recibo ou resultado antigos.
+O estado esperado impede retomar a partir de uma leitura desatualizada. Os novos
+tickets vinculam o adendo e o commit ativo; consultas historicas continuam possiveis.
+
+O relatorio conserva o total consumido e separa falha tecnica, reposicao e
+desempenho. O controle so fica coberto pelo resultado da reposicao; a falha original
+nao vira um julgamento de qualidade do modelo. Uma nova incompatibilidade de schema
+bloqueia outras reservas e exige novo planejamento. A segunda retomada excepcional abaixo substitui a disponibilidade da reserva restante.
+Nao existe repeticao automatica nem aumento do limite.
+
+## Segunda retomada e captura de eventos
+
+A tentativa `schema-replacement-1`, no commit
+`33d5442f9efc121303c2a2d6f3c940ee7141b03a`, encerrou a CLI com codigo zero,
+mas o guardiao antigo rejeitou um item como ferramenta. Os eventos e a resposta
+brutos daquela chamada nao foram preservados; a causa exata permanece desconhecida.
+Nao atribuir a falha a `todo_list` ou a uma ferramenta sem evidencia.
+
+O segundo adendo aprovado, `config/agent-evaluation-events-resumption.json`,
+vincula os hashes da segunda falha e da primeira retomada. Usa a ultima reserva
+para `schema-replacement-2`, mesmo caso, modelo e esforco. A conta passa a ser
+duas falhas anteriores mais 30 casos logicos, no maximo 32 tentativas.
+`repair-1` e `repair-2` ficam desabilitados nesta campanha. Os registros anteriores
+permanecem intactos; `event-resumption.json` registra a nova transicao.
+
+```sh
+npm run evaluation -- report --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- resume-events --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <stateSha256-atual>
+npm run evaluation -- ready --auth-home "$HOME/.codex-quiz-auth"
+npm run evaluation -- run --auth-home "$HOME/.codex-quiz-auth" \
+  --slot schema-replacement-2
+```
+
+Antes de outras chamadas, conferir a captura e o resultado da reposicao. Eventos
+JSONL, stderr, resposta final e proposta de arquivo, quando disponiveis, ficam em
+`runs/<slot>/result.json.capture`, fora do checkout. O diretorio e privado (0700),
+os arquivos sao exclusivos (0600) e o manifesto fixa hashes e tamanhos. A captura
+ocorre antes da validacao e da limpeza da sandbox. Falhas e interrupcoes conservam
+dados parciais; nenhuma captura parcial ou truncada autoriza aceite. Nao incluir
+arquivos brutos no Git ou em comentarios do GitHub.
+
+O parser separa ferramenta proibida, item ou evento desconhecido, JSONL invalido,
+plano invalido, processo com erro, conclusao ausente e uso invalido. `todo_list`
+e aceito somente na estrutura interna prevista, sem execucao externa. Recibos
+incluem versao do parser, resumo sem payload bruto, hash do manifesto e uso
+informado, mesmo quando a resposta e rejeitada. O fingerprint `sha256-bytes-v2`
+considera os bytes dos arquivos, incluindo capturas; o fingerprint historico nao
+e reescrito. Falha tecnica nova impede reservar outra tentativa.
+
+Se uma captura completa provar somente incompatibilidade de metadados, o plano
+permite uma unica correcao adicional do parser, com testes e checks do novo commit.
+`resume-parser` registra essa transicao em `event-parser-revision.json`; a agenda,
+os contratos e os demais componentes criticos permanecem protegidos. Depois,
+`analyze` reavalia a captura existente, sem login, rede ou invocacao de modelo:
+
+```sh
+npm run evaluation -- resume-parser --auth-home "$HOME/.codex-quiz-auth" \
+  --expected-state <stateSha256-atual>
+npm run evaluation -- analyze --auth-home "$HOME/.codex-quiz-auth" \
+  --slot <tentativa-com-captura-completa>
+```
+
+A analise exige processo concluido com codigo zero, arquivos e vinculos integros,
+nenhuma ferramenta proibida e todos os validadores originais. Codigo candidato
+continua sendo testado em sandbox nativa independente, exportando a fonte do Git
+original; nao e aplicado ao checkout. O resultado derivado tem arquivo e hashes
+proprios. O resultado rejeitado original nao muda. A analise nao consome tentativa,
+nao e correcao do modelo e nao permite avaliar as duas falhas sem captura. Ferramenta
+proibida, falha de infraestrutura ou nova incompatibilidade apos essa transicao
+interrompem a rodada; nao autorizam outra chamada ou aumento do teto.
+
+## Relatorio e decisao
+
+```sh
+npm run evaluation -- report --auth-home "$HOME/.codex-quiz-auth" \
+  --output /caminho/novo/relatorio.json
+```
+
+O relatorio confere hashes dos tickets, resultados, recibos e artefatos. Pode
+ser consultado depois de mudancas no checkout usando o snapshot Git da campanha;
+essa leitura historica nao libera novas chamadas. Registra tentativas consumidas,
+falhas, duracoes, correcoes, tokens informados e cobertura dos dados de uso.
+Custos de API nao sao apresentados como cobranca da assinatura. Dados ausentes
+permanecem ausentes, sem estimativa fabricada de consumo ou identidade remota.
+
+`categoryEligibility` e um criterio para a decisao: exige rodada concluida e
+todos os casos da categoria aprovados, com eventual correcao permitida registrada.
+O relatorio nao modifica perfis. Ativar somente categorias comprovadas, por PR,
+com as referencias ao relatorio e os aceites documentais aplicaveis. Spec,
+revisao de PR ou outros papeis sem medicao propria continuam sem ativacao por
+inferencia. Product Discovery permanece no modelo atual nesta rodada.
+
+### Continuação auditável após validação de saída
+
+Uma resposta rejeitada pelo contrato permanece como falha consumida. Ela só
+deixa de bloquear a agenda quando o recibo confirma uma invocação, o diagnóstico
+confirma turno concluído sem problemas de eventos e a captura está completa,
+íntegra e sem truncamento; o motivo também deve começar com `saida rejeitada:`.
+Erros de processo, transporte, captura, ferramenta ou integridade continuam
+bloqueando a campanha. A saída rejeitada nunca é corrigida nem repetida.
+
+Se uma mudança necessária no runner ocorrer após a ativação do benchmark, não
+editar a revisão ativa nem iniciar uma campanha nova. Executar
+`continuation-check` depois de um novo commit e apresentar o hash do pacote de
+continuação ao mantenedor. O adendo vincula a revisão original, o estado
+integral da campanha, o commit novo e os slots restantes. Só após aceite humano
+explícito registrar com `continue-benchmark`; o registro preserva todos os
+artefatos anteriores e não autoriza slots além dos enumerados no pacote.
+
+`--codex-bin` e `--test-comment` sao exclusivos de fixtures. Uma campanha de
+teste nao se mistura com campanha real e nunca produz elegibilidade, mesmo
+quando todos os casos simulados passam. Os testes normais e o CI usam essas
+fixtures, sem chamar modelos. `npm run test:agent-evaluation-sandbox` verifica
+manualmente o executor independente nativo, tambem sem modelo ou login.
+
+O codigo usa os eventos JSONL e a resposta estruturada da CLI conforme a
+[documentacao oficial de execucao nao interativa](https://learn.chatgpt.com/docs/non-interactive-mode).
+Os resultados distinguem a validacao dos mecanismos, as medicoes reais e as
+limitacoes da amostra. Nenhum artefato da rodada autoriza publicacao curricular,
+merge, release ou deploy. Reversao de perfis e feita por PR; recibos e contador
+da campanha permanecem preservados.

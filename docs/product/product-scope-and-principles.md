@@ -19,6 +19,20 @@ O produto deve evoluir de uma aplicacao estatica orientada a conteudo local para
 - operacao segura e auditavel
 - base tecnica preparada para monetizacao
 
+## Trilha de produto mobile proposta
+
+O app para iOS e Android e uma superficie de produto complementar ao site, com
+primeiro foco em familias e estudantes do 3o ano. O MVP proposto usa React
+Native/Expo em um monorepo, oferece uma amostra por materia e uma compra unica
+para o catalogo publicado incluido na versao inicial. O progresso permanece
+local e compras sao restauradas dentro da loja de origem; contas, sincronizacao
+entre plataformas e administracao escolar ficam para decisoes posteriores.
+
+O site segue como produto ativo e recebe evolucao independente. A trilha
+enterprise futura pode concentrar acesso escolar, papeis e relatorios na web,
+mas nao integra o MVP familiar. Detalhes e criterios estao em
+`docs/specs/mobile-app-mvp.md` e `docs/roadmap/mobile-app-roadmap.md`.
+
 ## Principios de produto
 
 1. Evolucao incremental
@@ -62,3 +76,5 @@ O estado atual do projeto atende um MVP funcional com:
 - o codigo atual deve continuar servindo como base inicial
 - a evolucao deve ocorrer em mudancas pequenas
 - a documentacao deve permitir que backlog e board sejam usados sem perda de contexto
+- qualquer fundacao mobile deve manter o comportamento e o deploy do site
+  independentes e provar paridade de conteudo antes de compartilhar a fonte

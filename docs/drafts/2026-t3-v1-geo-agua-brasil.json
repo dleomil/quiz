@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "O que significa dizer que a água está presente de formas diferentes no Brasil?",
+      "options": [
+        "há rios, lagos, águas subterrâneas e outros ambientes com água",
+        "existe apenas água do mar",
+        "todos os lugares têm exatamente a mesma água disponível",
+        "a água só aparece quando chove"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Brasil reúne diferentes ambientes e fontes de água.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de há rios, lagos, águas subterrâneas e outros ambientes com água.",
+        "2": "A alternativa não corresponde ao conceito de há rios, lagos, águas subterrâneas e outros ambientes com água.",
+        "3": "A alternativa não corresponde ao conceito de há rios, lagos, águas subterrâneas e outros ambientes com água."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Por que a água não está disponível da mesma maneira em todos os lugares?",
+      "options": [
+        "porque só as cidades possuem água",
+        "porque as chuvas, os rios e as condições do ambiente variam",
+        "porque a água escolhe onde ficar",
+        "porque todo lugar recebe a mesma chuva"
+      ],
+      "correctIndex": 1,
+      "explanation": "A distribuição da água depende das condições naturais e do uso em cada lugar.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque as chuvas, os rios e as condições do ambiente variam.",
+        "2": "A alternativa não corresponde ao conceito de porque as chuvas, os rios e as condições do ambiente variam.",
+        "3": "A alternativa não corresponde ao conceito de porque as chuvas, os rios e as condições do ambiente variam."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual é um uso essencial da água nas casas?",
+      "options": [
+        "produzir brinquedos sem água",
+        "substituir o ar",
+        "beber e preparar alimentos",
+        "decorar paredes"
+      ],
+      "correctIndex": 2,
+      "explanation": "A água é necessária para o consumo e o preparo seguro dos alimentos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de beber e preparar alimentos.",
+        "1": "A alternativa não corresponde ao conceito de beber e preparar alimentos.",
+        "3": "A alternativa não corresponde ao conceito de beber e preparar alimentos."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual atividade também depende de água?",
+      "options": [
+        "apagar todas as plantas",
+        "evitar qualquer plantio",
+        "produzir vento",
+        "cultivar alimentos"
+      ],
+      "correctIndex": 3,
+      "explanation": "A agricultura usa água para o desenvolvimento das plantas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de cultivar alimentos.",
+        "1": "A alternativa não corresponde ao conceito de cultivar alimentos.",
+        "2": "A alternativa não corresponde ao conceito de cultivar alimentos."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Por que as pessoas precisam planejar o uso da água?",
+      "options": [
+        "para atender diferentes necessidades sem desperdício",
+        "para gastar toda a água rapidamente",
+        "para impedir o cuidado com os rios",
+        "para deixar torneiras abertas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Planejar ajuda a conciliar consumo, cuidado e disponibilidade.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de para atender diferentes necessidades sem desperdício.",
+        "2": "A alternativa não corresponde ao conceito de para atender diferentes necessidades sem desperdício.",
+        "3": "A alternativa não corresponde ao conceito de para atender diferentes necessidades sem desperdício."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "O que pode reduzir a qualidade da água de um rio?",
+      "options": [
+        "evitar produtos poluentes",
+        "lançar lixo ou esgoto sem tratamento",
+        "proteger as margens",
+        "recolher resíduos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Resíduos e esgoto podem poluir a água e prejudicar os seres vivos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de lançar lixo ou esgoto sem tratamento.",
+        "2": "A alternativa não corresponde ao conceito de lançar lixo ou esgoto sem tratamento.",
+        "3": "A alternativa não corresponde ao conceito de lançar lixo ou esgoto sem tratamento."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "68"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual atitude ajuda a proteger uma fonte de água?",
+      "options": [
+        "jogar óleo no solo",
+        "abandonar lixo nas margens",
+        "manter o entorno limpo e com vegetação",
+        "retirar toda a vegetação"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cuidar do entorno ajuda a conservar a fonte e a qualidade da água.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de manter o entorno limpo e com vegetação.",
+        "1": "A alternativa não corresponde ao conceito de manter o entorno limpo e com vegetação.",
+        "3": "A alternativa não corresponde ao conceito de manter o entorno limpo e com vegetação."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "69"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Como um período de pouca chuva pode afetar uma comunidade?",
+      "options": [
+        "pode criar rios novos imediatamente",
+        "pode tornar toda água potável",
+        "pode eliminar a necessidade de economizar",
+        "pode diminuir a água disponível para alguns usos"
+      ],
+      "correctIndex": 3,
+      "explanation": "A falta de chuva pode reduzir a disponibilidade e exigir cuidado.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de pode diminuir a água disponível para alguns usos.",
+        "1": "A alternativa não corresponde ao conceito de pode diminuir a água disponível para alguns usos.",
+        "2": "A alternativa não corresponde ao conceito de pode diminuir a água disponível para alguns usos."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "70"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual exemplo mostra uma diferença de acesso à água?",
+      "options": [
+        "uma comunidade recebe água encanada e outra depende de buscar água",
+        "todas as casas têm exatamente o mesmo acesso",
+        "nenhuma pessoa usa água",
+        "a água só existe em um copo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acesso pode variar entre comunidades e lugares.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de uma comunidade recebe água encanada e outra depende de buscar água.",
+        "2": "A alternativa não corresponde ao conceito de uma comunidade recebe água encanada e outra depende de buscar água.",
+        "3": "A alternativa não corresponde ao conceito de uma comunidade recebe água encanada e outra depende de buscar água."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "71"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Por que a água de um rio precisa ser tratada antes de beber?",
+      "options": [
+        "para impedir qualquer uso",
+        "para reduzir riscos à saúde e torná-la adequada ao consumo",
+        "para adicionar lixo",
+        "para deixá-la salgada"
+      ],
+      "correctIndex": 1,
+      "explanation": "O tratamento ajuda a tornar a água segura para consumo.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de para reduzir riscos à saúde e torná-la adequada ao consumo.",
+        "2": "A alternativa não corresponde ao conceito de para reduzir riscos à saúde e torná-la adequada ao consumo.",
+        "3": "A alternativa não corresponde ao conceito de para reduzir riscos à saúde e torná-la adequada ao consumo."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "72"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "O que é desperdício de água?",
+      "options": [
+        "consertar um vazamento",
+        "usar somente o necessário",
+        "usar ou deixar escapar água sem necessidade",
+        "fechar uma torneira"
+      ],
+      "correctIndex": 2,
+      "explanation": "Desperdiçar é gastar água sem finalidade ou cuidado.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de usar ou deixar escapar água sem necessidade.",
+        "1": "A alternativa não corresponde ao conceito de usar ou deixar escapar água sem necessidade.",
+        "3": "A alternativa não corresponde ao conceito de usar ou deixar escapar água sem necessidade."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "73"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual ação doméstica contribui para cuidar da água no Brasil?",
+      "options": [
+        "deixar a torneira aberta",
+        "lavar a calçada por horas",
+        "ignorar vazamentos",
+        "fechar a torneira enquanto ensaboa as mãos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pequenas atitudes reduzem o desperdício.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de fechar a torneira enquanto ensaboa as mãos.",
+        "1": "A alternativa não corresponde ao conceito de fechar a torneira enquanto ensaboa as mãos.",
+        "2": "A alternativa não corresponde ao conceito de fechar a torneira enquanto ensaboa as mãos."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "74"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Como a vegetação perto de rios pode ajudar?",
+      "options": [
+        "ela contribui para proteger o solo e as margens",
+        "ela transforma água em lixo",
+        "ela impede toda chuva",
+        "ela torna a água infinita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vegetação ajuda a proteger margens e o equilíbrio do ambiente.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ela contribui para proteger o solo e as margens.",
+        "2": "A alternativa não corresponde ao conceito de ela contribui para proteger o solo e as margens.",
+        "3": "A alternativa não corresponde ao conceito de ela contribui para proteger o solo e as margens."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "57"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual relação existe entre água e saúde?",
+      "options": [
+        "qualquer água é segura para beber",
+        "água contaminada pode causar problemas à saúde",
+        "água poluída sempre cura doenças",
+        "a saúde não depende de água"
+      ],
+      "correctIndex": 1,
+      "explanation": "A qualidade da água influencia a saúde das pessoas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de água contaminada pode causar problemas à saúde.",
+        "2": "A alternativa não corresponde ao conceito de água contaminada pode causar problemas à saúde.",
+        "3": "A alternativa não corresponde ao conceito de água contaminada pode causar problemas à saúde."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "58"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual responsabilidade é compartilhada por moradores e poder público?",
+      "options": [
+        "desperdiçar água em conjunto",
+        "impedir o tratamento da água",
+        "preservar fontes e organizar o uso da água",
+        "poluir rios de propósito"
+      ],
+      "correctIndex": 2,
+      "explanation": "O cuidado depende de ações individuais e coletivas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de preservar fontes e organizar o uso da água.",
+        "1": "A alternativa não corresponde ao conceito de preservar fontes e organizar o uso da água.",
+        "3": "A alternativa não corresponde ao conceito de preservar fontes e organizar o uso da água."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "59"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Por que devemos evitar jogar óleo na pia?",
+      "options": [
+        "porque ele cria água limpa",
+        "porque ele alimenta os rios",
+        "porque ele substitui o tratamento",
+        "porque ele pode chegar à água e dificultar seu tratamento"
+      ],
+      "correctIndex": 3,
+      "explanation": "O óleo pode poluir a água e deve receber destinação adequada.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque ele pode chegar à água e dificultar seu tratamento.",
+        "1": "A alternativa não corresponde ao conceito de porque ele pode chegar à água e dificultar seu tratamento.",
+        "2": "A alternativa não corresponde ao conceito de porque ele pode chegar à água e dificultar seu tratamento."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "63"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual frase resume um desafio relacionado à água no Brasil?",
+      "options": [
+        "garantir água de qualidade e acesso responsável em diferentes lugares",
+        "usar água sem limites",
+        "considerar toda água sempre disponível",
+        "abandonar fontes poluídas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O desafio envolve disponibilidade, qualidade, acesso e cuidado.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de garantir água de qualidade e acesso responsável em diferentes lugares.",
+        "2": "A alternativa não corresponde ao conceito de garantir água de qualidade e acesso responsável em diferentes lugares.",
+        "3": "A alternativa não corresponde ao conceito de garantir água de qualidade e acesso responsável em diferentes lugares."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "64"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "O que uma escola pode fazer para cuidar da água?",
+      "options": [
+        "proibir qualquer conversa sobre água",
+        "identificar vazamentos e promover uso consciente",
+        "deixar bebedouros vazando",
+        "jogar resíduos no ralo"
+      ],
+      "correctIndex": 1,
+      "explanation": "A escola pode reduzir desperdício e incentivar responsabilidade.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de identificar vazamentos e promover uso consciente.",
+        "2": "A alternativa não corresponde ao conceito de identificar vazamentos e promover uso consciente.",
+        "3": "A alternativa não corresponde ao conceito de identificar vazamentos e promover uso consciente."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "65"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Qual escolha combina preservação e uso responsável?",
+      "options": [
+        "usar sem limite e retirar vegetação",
+        "jogar resíduos e deixar vazamentos",
+        "economizar, não poluir e cuidar das fontes",
+        "desperdiçar, poluir e ignorar problemas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Essas atitudes protegem a água e ajudam a mantê-la disponível.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de economizar, não poluir e cuidar das fontes.",
+        "1": "A alternativa não corresponde ao conceito de economizar, não poluir e cuidar das fontes.",
+        "3": "A alternativa não corresponde ao conceito de economizar, não poluir e cuidar das fontes."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "66"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_geo_agua_brasil_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "geografia",
+      "topic": "agua-brasil",
+      "topicName": "Situação da água no Brasil",
+      "question": "Por que conhecer a situação da água no país é importante?",
+      "options": [
+        "para afirmar que todos os lugares são iguais",
+        "para justificar desperdícios",
+        "para dispensar o tratamento da água",
+        "para tomar decisões de cuidado adequadas a diferentes realidades"
+      ],
+      "correctIndex": 3,
+      "explanation": "Conhecer diferentes situações ajuda a agir com responsabilidade.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de para tomar decisões de cuidado adequadas a diferentes realidades.",
+        "1": "A alternativa não corresponde ao conceito de para tomar decisões de cuidado adequadas a diferentes realidades.",
+        "2": "A alternativa não corresponde ao conceito de para tomar decisões de cuidado adequadas a diferentes realidades."
+      },
+      "skill": "reconhecer-distribuicao-e-desafios-de-uso-da-agua",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Geografia",
+        "page": "67"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

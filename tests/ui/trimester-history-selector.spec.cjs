@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
-const { chromium } = require('playwright');
+const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
 const port = 4184;
@@ -27,22 +27,35 @@ async function waitForServer(url) {
 }
 
 function session(contentSetId, date, pct) {
+  const correct = pct / 10;
+  const questionIds = Array.from(
+    { length: 10 },
+    (_, index) => `question-${contentSetId}-${index}`,
+  );
   return {
     schemaVersion: 'session-v2',
     sessionId: `session-${contentSetId}`,
+    startedAt: '2026-08-12T12:00:00.000Z',
+    finishedAt: '2026-08-12T12:02:00.000Z',
     contentSetId,
     contentVersion: 1,
     date,
-    subject: 'portugues',
+    subject: 'historia',
     topicId: 'all',
-    topic: 'Português',
-    correct: pct / 10,
+    topic: 'História',
+    correct,
     total: 10,
     pct,
     durationSec: 120,
     timedOutCount: 0,
-    questionIds: [],
-    answers: [],
+    questionIds,
+    answers: questionIds.map((questionId, index) => ({
+      questionId,
+      selectedIndex: 0,
+      isCorrect: index < correct,
+      isTimeout: false,
+    })),
+    score: { correct, total: 10, pct },
   };
 }
 
@@ -82,10 +95,10 @@ async function run() {
     await installHistory(page, history);
 
     const options = page.locator('.content-set-option');
-    assert.strictEqual(await options.count(), 2);
+    assert.strictEqual(await options.count(), 4);
     assert.strictEqual(
-      await options
-        .filter({ hasText: '2º trimestre' })
+      await page
+        .locator('[data-content-set="2026-t3-v2"]')
         .getAttribute('aria-pressed'),
       'true',
     );
@@ -93,14 +106,9 @@ async function run() {
     await page.locator('#nav-history').click();
     assert.strictEqual(
       await page.locator('#filter-content-set').inputValue(),
-      '2026-t2-v1',
+      '2026-t3-v2',
     );
-    assert.strictEqual(await page.locator('.session-card').count(), 1);
-    assert.ok(
-      (await page.locator('.session-period').textContent()).includes(
-        '2º trimestre',
-      ),
-    );
+    assert.strictEqual(await page.locator('.session-card').count(), 0);
 
     await page.locator('#filter-content-set').selectOption('');
     assert.strictEqual(await page.locator('.session-card').count(), 3);

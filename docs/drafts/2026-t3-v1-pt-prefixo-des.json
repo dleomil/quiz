@@ -1,0 +1,571 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Na palavra desatar, o prefixo des- indica que alguém vai:",
+      "options": [
+        "soltar o que foi amarrado",
+        "dar um nó mais forte",
+        "cortar uma corda em pedaços",
+        "guardar a corda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desatar é soltar ou desfazer um nó.",
+      "wrongExplanations": {
+        "1": "Desatar é o contrário de apertar ou fazer um nó.",
+        "2": "Cortar uma corda não é o sentido de desatar.",
+        "3": "Guardar a corda não explica o sentido de desatar."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Em “desobedecer a uma regra”, o prefixo des- ajuda a indicar:",
+      "options": [
+        "obedecer com atenção",
+        "não obedecer",
+        "escrever a regra",
+        "lembrar a regra"
+      ],
+      "correctIndex": 1,
+      "explanation": "Desobedecer significa não cumprir ou não seguir uma regra.",
+      "wrongExplanations": {
+        "0": "Desobedecer não significa obedecer; o prefixo muda o sentido.",
+        "2": "Escrever a regra é uma ação diferente de obedecer ou desobedecer.",
+        "3": "Lembrar a regra não explica o sentido do verbo desobedecer."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Se desentupimos o ralo, o que fazemos?",
+      "options": [
+        "colocamos mais água no ralo",
+        "fechamos o ralo com uma tampa",
+        "retiramos o que estava bloqueando a passagem",
+        "limpamos apenas a parte de fora"
+      ],
+      "correctIndex": 2,
+      "explanation": "Desentupir é retirar aquilo que impedia a passagem pelo ralo.",
+      "wrongExplanations": {
+        "0": "Colocar água não garante que a passagem bloqueada seja liberada.",
+        "1": "Fechar o ralo não remove o que o estava bloqueando.",
+        "3": "Limpar só a parte de fora não significa desentupir o ralo."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "A palavra desleal descreve alguém que não age com lealdade. Nela, des- indica:",
+      "options": [
+        "muito leal",
+        "que está aprendendo a ser leal",
+        "que age com coragem",
+        "falta ou ausência de lealdade"
+      ],
+      "correctIndex": 3,
+      "explanation": "Em desleal, des- indica falta de lealdade.",
+      "wrongExplanations": {
+        "0": "Desleal não significa muito leal; o prefixo altera o sentido.",
+        "1": "A palavra não indica uma pessoa que está aprendendo.",
+        "2": "Coragem e lealdade têm sentidos diferentes."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Ao descalçar os sapatos, uma pessoa vai:",
+      "options": [
+        "tirar os sapatos dos pés",
+        "amarrar os cadarços",
+        "limpar os sapatos",
+        "experimentar outro par"
+      ],
+      "correctIndex": 0,
+      "explanation": "Descalçar significa tirar o calçado dos pés.",
+      "wrongExplanations": {
+        "1": "Amarrar os cadarços não é tirar os sapatos.",
+        "2": "Limpar o calçado é uma ação diferente de descalçá-lo.",
+        "3": "Experimentar outro par não indica o sentido de descalçar."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Qual palavra indica retirar a tampa de uma garrafa?",
+      "options": ["tampar", "destampar", "tampado", "tampa"],
+      "correctIndex": 1,
+      "explanation": "Destampar é tirar a tampa.",
+      "wrongExplanations": {
+        "0": "Tampar é colocar ou manter uma tampa, não retirá-la.",
+        "2": "Tampado descreve algo que está com tampa.",
+        "3": "Tampa nomeia a peça, não a ação de tirá-la."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Se uma caixa está desarrumada, ela está:",
+      "options": [
+        "organizada por tamanho",
+        "guardada no armário",
+        "fora de ordem",
+        "vazia por dentro"
+      ],
+      "correctIndex": 2,
+      "explanation": "Desarrumada significa que não está arrumada ou está fora de ordem.",
+      "wrongExplanations": {
+        "0": "Organizar por tamanho é uma forma de arrumar.",
+        "1": "Estar no armário não informa se a caixa está arrumada.",
+        "3": "Uma caixa pode estar desarrumada sem estar vazia."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Em “desnecessário”, o prefixo des- ajuda a indicar que algo:",
+      "options": [
+        "é necessário para todos",
+        "é muito importante",
+        "deve ser feito agora",
+        "não é necessário"
+      ],
+      "correctIndex": 3,
+      "explanation": "Desnecessário significa que não é necessário.",
+      "wrongExplanations": {
+        "0": "Desnecessário expressa a ideia contrária a necessário.",
+        "1": "Ser importante não é o significado de desnecessário.",
+        "2": "A palavra não indica quando algo deve ser feito."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Qual palavra é formada com des- e indica fazer o contrário de montar?",
+      "options": ["montagem", "montador", "montado", "desmontar"],
+      "correctIndex": 3,
+      "explanation": "Desmontar é separar as partes de algo que estava montado.",
+      "wrongExplanations": {
+        "0": "Montagem é o ato ou resultado de montar.",
+        "1": "Montador é quem monta ou uma ferramenta, não a ação contrária.",
+        "2": "Montado indica algo que já foi montado."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Ao desacelerar a bicicleta, o ciclista vai:",
+      "options": [
+        "soltar o guidão",
+        "diminuir a velocidade",
+        "parar de pedalar para sempre",
+        "trocar o pneu"
+      ],
+      "correctIndex": 1,
+      "explanation": "Desacelerar é diminuir a velocidade.",
+      "wrongExplanations": {
+        "0": "Soltar o guidão não é diminuir a velocidade da bicicleta.",
+        "2": "Diminuir a velocidade não significa que o ciclista nunca mais pedalará.",
+        "3": "Trocar o pneu não explica o sentido de desacelerar."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Qual descrição mostra materiais desorganizados?",
+      "options": [
+        "cada material guardado em sua caixa identificada",
+        "lápis e cadernos misturados sobre a mesa, sem lugar certo",
+        "livros separados nas prateleiras por assunto",
+        "cada objeto colocado no espaço marcado para ele"
+      ],
+      "correctIndex": 1,
+      "explanation": "Materiais misturados e sem lugar certo estão fora de ordem.",
+      "wrongExplanations": {
+        "0": "Caixas identificadas ajudam a guardar cada material de forma organizada.",
+        "2": "Separar os livros por assunto mostra organização.",
+        "3": "Colocar cada objeto no espaço marcado mantém os materiais organizados."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Ao descolar um adesivo do caderno, a pessoa vai:",
+      "options": [
+        "colar outro adesivo por cima",
+        "desenhar no adesivo",
+        "tirar o adesivo da superfície",
+        "guardar o caderno"
+      ],
+      "correctIndex": 2,
+      "explanation": "Descolar é separar algo que estava colado.",
+      "wrongExplanations": {
+        "0": "Colar outro adesivo não retira o que já estava colado.",
+        "1": "Desenhar no adesivo não significa descolá-lo.",
+        "3": "Guardar o caderno não informa se o adesivo foi retirado."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "O que acontece quando alguém desenterra uma caixa?",
+      "options": [
+        "retira a caixa da terra",
+        "pinta a caixa",
+        "coloca a caixa dentro da terra",
+        "abre a caixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desenterrar é tirar algo que estava enterrado.",
+      "wrongExplanations": {
+        "1": "Pintar a caixa não diz onde ela estava.",
+        "2": "Colocar na terra é enterrar, não desenterrar.",
+        "3": "Abrir a caixa não significa retirá-la da terra."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Se o desenho desbotou com o tempo, suas cores:",
+      "options": [
+        "perderam parte da intensidade",
+        "ficaram mais fortes",
+        "foram pintadas de novo",
+        "mudaram para outra folha"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desbotar significa perder parte da cor ou da intensidade da cor.",
+      "wrongExplanations": {
+        "1": "Desbotar não significa que as cores ficaram mais fortes.",
+        "2": "Pintar de novo é uma ação diferente de desbotar.",
+        "3": "As cores não mudam de folha quando o desenho desbota."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Em “desfazer um laço”, desfazer significa:",
+      "options": [
+        "apertar o laço",
+        "fazer outro laço",
+        "soltar ou reverter o que foi feito",
+        "escolher uma fita"
+      ],
+      "correctIndex": 2,
+      "explanation": "Desfazer um laço é soltar ou reverter aquilo que tinha sido feito.",
+      "wrongExplanations": {
+        "0": "Apertar o laço não é desfazê-lo.",
+        "1": "Fazer outro laço é uma ação diferente.",
+        "3": "Escolher uma fita não explica o significado de desfazer."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Se um brinquedo está desprotegido, isso quer dizer que ele:",
+      "options": [
+        "está bem guardado",
+        "ganhou uma proteção nova",
+        "está limpo",
+        "não está protegido"
+      ],
+      "correctIndex": 3,
+      "explanation": "Desprotegido significa que não está protegido.",
+      "wrongExplanations": {
+        "0": "Um brinquedo guardado pode estar protegido.",
+        "1": "Ganhar uma proteção nova não significa estar sem proteção.",
+        "2": "Estar limpo não informa se o brinquedo está protegido."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Ao descascar uma laranja, o que fazemos?",
+      "options": [
+        "retiramos a casca",
+        "colocamos a laranja na casca",
+        "cortamos a laranja em rodelas",
+        "lavamos a fruta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Descascar é tirar a casca de uma fruta ou de outro alimento.",
+      "wrongExplanations": {
+        "1": "A casca é retirada; não colocamos a laranja dentro dela.",
+        "2": "Cortar em rodelas é diferente de tirar a casca.",
+        "3": "Lavar a fruta não é o mesmo que descascá-la."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Em “desligar a televisão”, o prefixo des- indica que a pessoa vai:",
+      "options": [
+        "aumentar o volume",
+        "interromper o funcionamento",
+        "trocar de canal",
+        "limpar a tela"
+      ],
+      "correctIndex": 1,
+      "explanation": "Desligar é interromper o funcionamento de um aparelho ligado.",
+      "wrongExplanations": {
+        "0": "Aumentar o volume não desliga a televisão.",
+        "2": "Trocar de canal mantém a televisão funcionando.",
+        "3": "Limpar a tela é uma ação diferente de desligar o aparelho."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Qual palavra indica desfazer uma costura?",
+      "options": ["costureira", "costurado", "costurar", "descosturar"],
+      "correctIndex": 3,
+      "explanation": "Descosturar é desfazer os pontos de uma costura.",
+      "wrongExplanations": {
+        "0": "Costureira é a pessoa que costura.",
+        "1": "Costurado descreve algo que recebeu uma costura.",
+        "2": "Costurar é fazer a costura, não desfazê-la."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_prefixo_des_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "prefixo-des",
+      "question": "Ao desabotoar a camisa, uma pessoa vai:",
+      "options": [
+        "abotoar a camisa",
+        "lavar a camisa",
+        "abrir os botões que estavam fechados",
+        "pendurar a camisa"
+      ],
+      "correctIndex": 2,
+      "explanation": "Desabotoar é abrir ou soltar os botões que estavam abotoados.",
+      "wrongExplanations": {
+        "0": "Abotoar é fechar os botões, o contrário de desabotoar.",
+        "1": "Lavar a camisa não indica o que se faz com os botões.",
+        "3": "Pendurar a camisa é uma ação diferente de desabotoá-la."
+      },
+      "skill": "reconhecer-formacao-e-sentido-do-prefixo-des",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "prefixo-des"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

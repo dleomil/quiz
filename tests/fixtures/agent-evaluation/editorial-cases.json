@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "agent-editorial-evaluation-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "historia-valida",
+      "kind": "valid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-HIS-VALID",
+        "subject": "historia",
+        "topic": "povo-brasileiro",
+        "skill": "avaliacao-sintetica-povo-brasileiro",
+        "question": "Como são chamadas as pessoas que chegam de outro país para morar no Brasil?",
+        "options": [
+          "Imigrantes.",
+          "Turistas que ficam apenas um dia.",
+          "Pessoas que mudam apenas de bairro.",
+          "Visitantes que retornam no mesmo dia."
+        ],
+        "correctIndex": 0,
+        "explanation": "Imigrantes chegam de outro país para viver no novo lugar.",
+        "wrongExplanations": {
+          "1": "O turista desta alternativa fica apenas um dia, sem se mudar para morar.",
+          "2": "Mudar de bairro dentro do mesmo país não é imigração.",
+          "3": "Uma visita com retorno no mesmo dia não representa mudança para morar."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "historia",
+          "topic": "povo-brasileiro"
+        }
+      },
+      "expectedCriterion": null,
+      "evidenceGroups": []
+    },
+    {
+      "id": "ingles-valido",
+      "kind": "valid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-ENG-VALID",
+        "subject": "ingles",
+        "topic": "present-continuous",
+        "skill": "avaliacao-sintetica-present-continuous",
+        "question": "Complete: She ___ reading a book.",
+        "options": ["is", "are", "am", "be"],
+        "correctIndex": 0,
+        "explanation": "Com she, usamos is antes do verbo com ing para indicar uma ação em andamento.",
+        "wrongExplanations": {
+          "1": "Are acompanha sujeitos como they, não she.",
+          "2": "Am acompanha I, não she.",
+          "3": "Be não é a forma usada após she nesta frase."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "ingles",
+          "topic": "present-continuous"
+        },
+        "questionPt": "Complete: Ela ___ lendo um livro."
+      },
+      "expectedCriterion": null,
+      "evidenceGroups": []
+    },
+    {
+      "id": "historia-em-ingles",
+      "kind": "invalid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-HIS-LANGUAGE",
+        "subject": "historia",
+        "topic": "povo-brasileiro",
+        "skill": "avaliacao-sintetica-povo-brasileiro",
+        "question": "What are people who move from another country to live in Brazil called?",
+        "options": [
+          "Immigrants.",
+          "Tourists staying for one day.",
+          "People moving within the same neighborhood.",
+          "Visitors returning on the same day."
+        ],
+        "correctIndex": 0,
+        "explanation": "Immigrants move from another country to live in a new place.",
+        "wrongExplanations": {
+          "1": "O turista desta alternativa fica apenas um dia, sem se mudar para morar.",
+          "2": "Mudar de bairro dentro do mesmo país não é imigração.",
+          "3": "Uma visita com retorno no mesmo dia não representa mudança para morar."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "historia",
+          "topic": "povo-brasileiro"
+        }
+      },
+      "expectedCriterion": "idioma",
+      "evidenceGroups": [["What are people", "another country", "Immigrants"]]
+    },
+    {
+      "id": "apoio-generico",
+      "kind": "invalid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-ENG-GENERIC",
+        "subject": "ingles",
+        "topic": "present-continuous",
+        "skill": "avaliacao-sintetica-present-continuous",
+        "question": "Complete: She ___ reading a book.",
+        "options": ["is", "are", "am", "be"],
+        "correctIndex": 0,
+        "explanation": "Com she, usamos is antes do verbo com ing para indicar uma ação em andamento.",
+        "wrongExplanations": {
+          "1": "Are acompanha sujeitos como they, não she.",
+          "2": "Am acompanha I, não she.",
+          "3": "Be não é a forma usada após she nesta frase."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "ingles",
+          "topic": "present-continuous"
+        },
+        "questionPt": "Leia a pergunta em inglês e escolha a alternativa correta."
+      },
+      "expectedCriterion": "apoio-generico",
+      "evidenceGroups": [["Leia a pergunta", "escolha a alternativa correta"]]
+    },
+    {
+      "id": "resposta-revelada",
+      "kind": "invalid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-ENG-LEAK",
+        "subject": "ingles",
+        "topic": "present-continuous",
+        "skill": "avaliacao-sintetica-present-continuous",
+        "question": "Complete: She ___ reading a book.",
+        "options": ["is", "are", "am", "be"],
+        "correctIndex": 0,
+        "explanation": "Com she, usamos is antes do verbo com ing para indicar uma ação em andamento.",
+        "wrongExplanations": {
+          "1": "Are acompanha sujeitos como they, não she.",
+          "2": "Am acompanha I, não she.",
+          "3": "Be não é a forma usada após she nesta frase."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "ingles",
+          "topic": "present-continuous"
+        },
+        "questionPt": "Complete: Ela está lendo um livro. A resposta correta é is."
+      },
+      "expectedCriterion": "resposta-revelada",
+      "evidenceGroups": [["resposta correta é is", "Ela está lendo"]]
+    },
+    {
+      "id": "duas-respostas",
+      "kind": "invalid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-MAT-AMB",
+        "subject": "matematica",
+        "topic": "multiplicacao",
+        "skill": "avaliacao-sintetica-multiplicacao",
+        "question": "Qual conta tem resultado 6?",
+        "options": ["2 × 3", "3 × 2", "2 × 2", "4 × 2"],
+        "correctIndex": 0,
+        "explanation": "Duas vezes três resulta em seis.",
+        "wrongExplanations": {
+          "1": "Confira se há mais de uma conta que chega ao resultado seis.",
+          "2": "Duas vezes dois resulta em quatro.",
+          "3": "Quatro vezes dois resulta em oito."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "matematica",
+          "topic": "multiplicacao"
+        }
+      },
+      "expectedCriterion": "ambiguidade",
+      "evidenceGroups": [
+        ["2 × 3", "2 x 3", "2 vezes 3"],
+        ["3 × 2", "3 x 2", "3 vezes 2"]
+      ]
+    },
+    {
+      "id": "gabarito-incorreto",
+      "kind": "invalid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-MAT-ANSWER",
+        "subject": "matematica",
+        "topic": "multiplicacao",
+        "skill": "avaliacao-sintetica-multiplicacao",
+        "question": "Quanto é 3 × 2?",
+        "options": ["5", "6", "7", "8"],
+        "correctIndex": 0,
+        "explanation": "Três grupos de dois elementos totalizam seis.",
+        "wrongExplanations": {
+          "1": "Confira o gabarito: três vezes dois resulta em seis.",
+          "2": "Três vezes dois não resulta em sete.",
+          "3": "Três vezes dois não resulta em oito."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "matematica",
+          "topic": "multiplicacao"
+        }
+      },
+      "expectedCriterion": "resposta-incorreta",
+      "evidenceGroups": [
+        ["5", "cinco"],
+        ["6", "seis"]
+      ]
+    },
+    {
+      "id": "feedback-contraditorio",
+      "kind": "invalid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-MAT-FEEDBACK",
+        "subject": "matematica",
+        "topic": "multiplicacao",
+        "skill": "avaliacao-sintetica-multiplicacao",
+        "question": "Quanto é 3 × 2?",
+        "options": ["5", "6", "7", "8"],
+        "correctIndex": 1,
+        "explanation": "Três grupos de dois elementos totalizam seis.",
+        "wrongExplanations": {
+          "0": "Muito bem! Cinco é a resposta correta para três vezes dois.",
+          "2": "Três grupos de dois totalizam seis, não sete.",
+          "3": "Três grupos de dois totalizam seis, não oito."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-evaluation-only",
+          "section": "matematica",
+          "topic": "multiplicacao"
+        }
+      },
+      "expectedCriterion": "feedback-contraditorio",
+      "evidenceGroups": [
+        ["Muito bem", "Cinco é a resposta correta"],
+        ["6", "seis"]
+      ]
+    }
+  ]
+}

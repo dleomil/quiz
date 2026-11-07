@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "historia:imigrantes-portugueses-espanhois",
+  "sourceSha256": "8bf680fe10ac3e6fc826e21a5554dcd5409bbd7b4fae56aa031f14f3a3249a9a",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-95"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-95"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-96"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-96"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-97"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-97"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-98"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-98"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-99"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-99"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-100"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-100"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-101"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-101"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-102"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-102"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-103"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-103"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-104"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-104"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-90"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-91"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-92"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-93"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_his_imigrantes_ibericos_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/historia/imigrantes-ibericos/page-94"
+      ],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

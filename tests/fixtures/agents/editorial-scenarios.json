@@ -1,0 +1,279 @@
+[
+  {
+    "scenarioId": "curation-approved",
+    "inputState": "complete",
+    "input": {
+      "workItemId": "fixture-001",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "ciencias",
+      "topicId": "ciclo-da-agua",
+      "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "etapas-do-ciclo-da-agua",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Ciencias",
+        "topic": "ciclo-da-agua"
+      },
+      "questionVersion": 1,
+      "authorizedObjective": "Reconhecer etapas basicas do ciclo da agua.",
+      "manifestState": "frozen",
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/001"
+      },
+      "requestedPass": "curation",
+      "sourceStatus": "authorized"
+    },
+    "output": {
+      "agent": "content_curator",
+      "workItemId": "fixture-001",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "ciencias",
+      "topicId": "ciclo-da-agua",
+      "reviewPass": "curation",
+      "decision": "approved",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "id": "FIX-CIE-001",
+        "contentSetId": "fixture-editorial-draft",
+        "subject": "ciencias",
+        "topic": "ciclo-da-agua",
+        "question": "O que acontece com a agua aquecida pelo Sol?",
+        "options": [
+          "Pode evaporar e subir para o ar.",
+          "Transforma-se imediatamente em gelo.",
+          "Desaparece sem mudar de estado.",
+          "Passa a ser um tipo de solo."
+        ],
+        "correctIndex": 0,
+        "explanation": "O calor pode transformar a agua liquida em vapor.",
+        "wrongExplanations": {
+          "1": "O aquecimento nao forma gelo.",
+          "2": "A agua muda de estado e continua no ambiente.",
+          "3": "A agua nao se transforma em solo."
+        },
+        "version": 1,
+        "skill": "etapas-do-ciclo-da-agua",
+        "sourceRef": {
+          "referenceId": "escola-2026-t2",
+          "section": "Ciencias",
+          "topic": "ciclo-da-agua"
+        },
+        "reviewStatus": "draft"
+      },
+      "facts": [
+        "Tema e objetivo ficticios estao declarados no contexto de teste."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Encaminhar a proposta ficticia para revisao pedagogica."
+      ],
+      "humanApprovalRequired": true
+    }
+  },
+  {
+    "scenarioId": "language-adjustments-required",
+    "inputState": "complete",
+    "input": {
+      "workItemId": "fixture-002",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "portugues",
+      "topicId": "pontuacao",
+      "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "pontuacao-em-frases-interrogativas",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Portugues",
+        "topic": "pontuacao"
+      },
+      "questionVersion": 1,
+      "authorizedObjective": "Usar pontuacao em frases interrogativas.",
+      "manifestState": "frozen",
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/002"
+      },
+      "requestedPass": "linguistic",
+      "sourceStatus": "authorized",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "id": "FIX-PT-001",
+        "contentSetId": "fixture-editorial-draft",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual frase faz uma pergunta",
+        "options": [
+          "Eu moro perto.",
+          "Onde voce mora?",
+          "A casa e azul.",
+          "Hoje esta quente."
+        ],
+        "correctIndex": 1,
+        "explanation": "A segunda frase usa uma palavra interrogativa e pergunta algo.",
+        "wrongExplanations": {
+          "0": "Essa frase informa um lugar, mas nao faz uma pergunta.",
+          "2": "Essa frase descreve uma casa, mas nao faz uma pergunta.",
+          "3": "Essa frase informa como esta o dia, mas nao faz uma pergunta."
+        },
+        "version": 1,
+        "skill": "pontuacao-em-frases-interrogativas",
+        "sourceRef": {
+          "referenceId": "escola-2026-t2",
+          "section": "Portugues",
+          "topic": "pontuacao"
+        },
+        "reviewStatus": "draft"
+      }
+    },
+    "output": {
+      "agent": "pedagogical_quality",
+      "workItemId": "fixture-002",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "portugues",
+      "topicId": "pontuacao",
+      "reviewPass": "linguistic",
+      "decision": "adjustments_required",
+      "facts": ["A proposta ficticia contem uma pergunta identificada."],
+      "doubts": [],
+      "findings": [
+        {
+          "questionId": "FIX-PT-001",
+          "criterion": "pontuacao",
+          "severity": "major",
+          "evidence": "O enunciado ficticio termina sem sinal de interrogacao.",
+          "recommendation": "Adicionar o sinal de interrogacao ao enunciado."
+        }
+      ],
+      "recommendations": [
+        "Corrigir e submeter novamente a passagem linguistica."
+      ],
+      "humanApprovalRequired": true
+    }
+  },
+  {
+    "scenarioId": "pedagogical-context-blocked",
+    "inputState": "ambiguous",
+    "input": {
+      "workItemId": "fixture-003",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "matematica",
+      "topicId": "operacoes",
+      "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "adicao-com-resultado-unico",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Matematica",
+        "topic": "operacoes"
+      },
+      "questionVersion": 1,
+      "authorizedObjective": "Resolver uma operacao com resposta unica.",
+      "manifestState": "frozen",
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/003"
+      },
+      "requestedPass": "pedagogical",
+      "sourceStatus": "ambiguous",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "id": "FIX-MAT-001",
+        "contentSetId": "fixture-editorial-draft",
+        "subject": "matematica",
+        "topic": "operacoes",
+        "question": "Qual alternativa mostra o resultado de 2 + 2?",
+        "options": ["5", "6", "4", "quatro"],
+        "correctIndex": 2,
+        "explanation": "Somar duas unidades a outras duas resulta em quatro.",
+        "wrongExplanations": {
+          "0": "Cinco possui uma unidade a mais.",
+          "1": "Seis possui duas unidades a mais.",
+          "3": "A escrita por extenso tambem representa quatro, causando duplicidade."
+        },
+        "version": 1,
+        "skill": "adicao-com-resultado-unico",
+        "sourceRef": {
+          "referenceId": "escola-2026-t2",
+          "section": "Matematica",
+          "topic": "operacoes"
+        },
+        "reviewStatus": "draft"
+      }
+    },
+    "output": {
+      "agent": "pedagogical_quality",
+      "workItemId": "fixture-003",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "matematica",
+      "topicId": "operacoes",
+      "reviewPass": "pedagogical",
+      "decision": "blocked",
+      "facts": ["A proposta ficticia declara duas respostas como corretas."],
+      "doubts": [
+        "O objetivo curricular ficticio nao permite decidir qual resposta deve ser unica."
+      ],
+      "findings": [
+        {
+          "questionId": "FIX-MAT-001",
+          "criterion": "resposta-unica",
+          "severity": "blocking",
+          "evidence": "Duas alternativas ficticias atendem ao enunciado.",
+          "recommendation": "Esclarecer o objetivo e reescrever a questao antes de nova revisao."
+        }
+      ],
+      "recommendations": ["Obter esclarecimento curricular humano."],
+      "humanApprovalRequired": true
+    }
+  },
+  {
+    "scenarioId": "curation-input-incomplete",
+    "inputState": "incomplete",
+    "input": {
+      "workItemId": "fixture-004",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "geografia",
+      "topicId": "paisagem",
+      "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t2",
+      "authorizedSkill": "paisagem-natural-e-cultural",
+      "sourceRef": {
+        "referenceId": "escola-2026-t2",
+        "section": "Geografia",
+        "topic": "paisagem"
+      },
+      "questionVersion": 1,
+      "manifestState": "frozen",
+      "humanFreezeApproval": {
+        "approvedBy": "product-owner-fixture",
+        "approvedAt": "2026-09-01",
+        "evidenceRef": "fixture://approval/004"
+      },
+      "requestedPass": "curation",
+      "sourceStatus": "authorized"
+    },
+    "output": {
+      "agent": "content_curator",
+      "workItemId": "fixture-004",
+      "contentSetId": "fixture-editorial-draft",
+      "subjectId": "geografia",
+      "topicId": "paisagem",
+      "reviewPass": "curation",
+      "decision": "blocked",
+      "facts": ["O tema ficticio foi informado sem objetivo autorizado."],
+      "doubts": ["O objetivo curricular obrigatorio esta ausente."],
+      "findings": [],
+      "recommendations": ["Obter o objetivo autorizado antes da curadoria."],
+      "humanApprovalRequired": true
+    }
+  }
+]

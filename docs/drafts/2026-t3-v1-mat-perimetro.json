@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um quadrado tem lados de 3 cm. Qual é o perímetro?",
+      "options": ["12 cm", "10 cm", "11 cm", "13 cm"],
+      "correctIndex": 0,
+      "explanation": "Somando as medidas dos lados (3 + 3 + 3 + 3), obtemos 12 cm.",
+      "wrongExplanations": {
+        "1": "O perímetro soma cada lado uma vez: 3 + 3 + 3 + 3 = 12 cm. A opção 10 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 3 + 3 + 3 + 3 = 12 cm. A opção 11 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 3 + 3 + 3 + 3 = 12 cm. A opção 13 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 5 cm por 2 cm. Quanto mede todo o contorno?",
+      "options": ["12 cm", "14 cm", "13 cm", "15 cm"],
+      "correctIndex": 1,
+      "explanation": "Somando as medidas dos lados (5 + 2 + 5 + 2), obtemos 14 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 5 + 2 + 5 + 2 = 14 cm. A opção 12 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 5 + 2 + 5 + 2 = 14 cm. A opção 13 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 5 + 2 + 5 + 2 = 14 cm. A opção 15 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um triângulo tem lados de 4 cm, 3 cm e 5 cm. Qual é o perímetro?",
+      "options": ["10 cm", "11 cm", "12 cm", "13 cm"],
+      "correctIndex": 2,
+      "explanation": "Somando as medidas dos lados (4 + 3 + 5), obtemos 12 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 4 + 3 + 5 = 12 cm. A opção 10 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 4 + 3 + 5 = 12 cm. A opção 11 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 4 + 3 + 5 = 12 cm. A opção 13 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 6 m por 2 m. Quanto mede todo o contorno?",
+      "options": ["14 m", "15 m", "17 m", "16 m"],
+      "correctIndex": 3,
+      "explanation": "Somando as medidas dos lados (6 + 2 + 6 + 2), obtemos 16 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 6 + 2 + 6 + 2 = 16 m. A opção 14 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 6 + 2 + 6 + 2 = 16 m. A opção 15 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 6 + 2 + 6 + 2 = 16 m. A opção 17 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um quadrado tem lados de 5 cm. Qual é o perímetro?",
+      "options": ["20 cm", "18 cm", "19 cm", "21 cm"],
+      "correctIndex": 0,
+      "explanation": "Somando as medidas dos lados (5 + 5 + 5 + 5), obtemos 20 cm.",
+      "wrongExplanations": {
+        "1": "O perímetro soma cada lado uma vez: 5 + 5 + 5 + 5 = 20 cm. A opção 18 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 5 + 5 + 5 + 5 = 20 cm. A opção 19 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 5 + 5 + 5 + 5 = 20 cm. A opção 21 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um triângulo tem lados de 6 cm, 6 cm e 4 cm. Quanto mede todo o contorno?",
+      "options": ["14 cm", "16 cm", "15 cm", "17 cm"],
+      "correctIndex": 1,
+      "explanation": "Somando as medidas dos lados (6 + 6 + 4), obtemos 16 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 6 + 6 + 4 = 16 cm. A opção 14 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 6 + 6 + 4 = 16 cm. A opção 15 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 6 + 6 + 4 = 16 cm. A opção 17 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 7 m por 3 m. Qual é o perímetro?",
+      "options": ["18 m", "19 m", "20 m", "21 m"],
+      "correctIndex": 2,
+      "explanation": "Somando as medidas dos lados (7 + 3 + 7 + 3), obtemos 20 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 7 + 3 + 7 + 3 = 20 m. A opção 18 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 7 + 3 + 7 + 3 = 20 m. A opção 19 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 7 + 3 + 7 + 3 = 20 m. A opção 21 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um quadrado tem lados de 2 cm. Quanto mede todo o contorno?",
+      "options": ["6 cm", "7 cm", "9 cm", "8 cm"],
+      "correctIndex": 3,
+      "explanation": "Somando as medidas dos lados (2 + 2 + 2 + 2), obtemos 8 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 2 + 2 + 2 + 2 = 8 cm. A opção 6 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 2 + 2 + 2 + 2 = 8 cm. A opção 7 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 2 + 2 + 2 + 2 = 8 cm. A opção 9 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 8 cm por 2 cm. Qual é o perímetro?",
+      "options": ["20 cm", "18 cm", "19 cm", "21 cm"],
+      "correctIndex": 0,
+      "explanation": "Somando as medidas dos lados (8 + 2 + 8 + 2), obtemos 20 cm.",
+      "wrongExplanations": {
+        "1": "O perímetro soma cada lado uma vez: 8 + 2 + 8 + 2 = 20 cm. A opção 18 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 8 + 2 + 8 + 2 = 20 cm. A opção 19 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 8 + 2 + 8 + 2 = 20 cm. A opção 21 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um triângulo tem lados de 7 m, 5 m e 4 m. Quanto mede todo o contorno?",
+      "options": ["14 m", "16 m", "15 m", "17 m"],
+      "correctIndex": 1,
+      "explanation": "Somando as medidas dos lados (7 + 5 + 4), obtemos 16 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 7 + 5 + 4 = 16 m. A opção 14 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 7 + 5 + 4 = 16 m. A opção 15 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 7 + 5 + 4 = 16 m. A opção 17 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um quadrado tem lados de 6 cm. Qual é o perímetro?",
+      "options": ["22 cm", "23 cm", "24 cm", "25 cm"],
+      "correctIndex": 2,
+      "explanation": "Somando as medidas dos lados (6 + 6 + 6 + 6), obtemos 24 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 6 + 6 + 6 + 6 = 24 cm. A opção 22 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 6 + 6 + 6 + 6 = 24 cm. A opção 23 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 6 + 6 + 6 + 6 = 24 cm. A opção 25 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 9 m por 4 m. Quanto mede todo o contorno?",
+      "options": ["24 m", "25 m", "27 m", "26 m"],
+      "correctIndex": 3,
+      "explanation": "Somando as medidas dos lados (9 + 4 + 9 + 4), obtemos 26 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 9 + 4 + 9 + 4 = 26 m. A opção 24 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 9 + 4 + 9 + 4 = 26 m. A opção 25 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 9 + 4 + 9 + 4 = 26 m. A opção 27 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um triângulo tem lados de 8 cm, 4 cm e 5 cm. Qual é o perímetro?",
+      "options": ["17 cm", "15 cm", "16 cm", "18 cm"],
+      "correctIndex": 0,
+      "explanation": "Somando as medidas dos lados (8 + 4 + 5), obtemos 17 cm.",
+      "wrongExplanations": {
+        "1": "O perímetro soma cada lado uma vez: 8 + 4 + 5 = 17 cm. A opção 15 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 8 + 4 + 5 = 17 cm. A opção 16 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 8 + 4 + 5 = 17 cm. A opção 18 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um quadrado tem lados de 7 m. Quanto mede todo o contorno?",
+      "options": ["26 m", "28 m", "27 m", "29 m"],
+      "correctIndex": 1,
+      "explanation": "Somando as medidas dos lados (7 + 7 + 7 + 7), obtemos 28 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 7 + 7 + 7 + 7 = 28 m. A opção 26 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 7 + 7 + 7 + 7 = 28 m. A opção 27 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 7 + 7 + 7 + 7 = 28 m. A opção 29 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 6 cm por 5 cm. Qual é o perímetro?",
+      "options": ["20 cm", "21 cm", "22 cm", "23 cm"],
+      "correctIndex": 2,
+      "explanation": "Somando as medidas dos lados (6 + 5 + 6 + 5), obtemos 22 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 6 + 5 + 6 + 5 = 22 cm. A opção 20 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 6 + 5 + 6 + 5 = 22 cm. A opção 21 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 6 + 5 + 6 + 5 = 22 cm. A opção 23 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Uma figura tem lados de 3 m, 4 m, 3 m e 4 m. Quanto mede todo o contorno?",
+      "options": ["12 m", "13 m", "15 m", "14 m"],
+      "correctIndex": 3,
+      "explanation": "Somando as medidas dos lados (3 + 4 + 3 + 4), obtemos 14 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 3 + 4 + 3 + 4 = 14 m. A opção 12 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 3 + 4 + 3 + 4 = 14 m. A opção 13 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 3 + 4 + 3 + 4 = 14 m. A opção 15 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um triângulo tem lados de 9 cm, 4 cm e 6 cm. Qual é o perímetro?",
+      "options": ["19 cm", "17 cm", "18 cm", "20 cm"],
+      "correctIndex": 0,
+      "explanation": "Somando as medidas dos lados (9 + 4 + 6), obtemos 19 cm.",
+      "wrongExplanations": {
+        "1": "O perímetro soma cada lado uma vez: 9 + 4 + 6 = 19 cm. A opção 17 cm não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 9 + 4 + 6 = 19 cm. A opção 18 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 9 + 4 + 6 = 19 cm. A opção 20 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um retângulo mede 10 m por 3 m. Quanto mede todo o contorno?",
+      "options": ["24 m", "26 m", "25 m", "27 m"],
+      "correctIndex": 1,
+      "explanation": "Somando as medidas dos lados (10 + 3 + 10 + 3), obtemos 26 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 10 + 3 + 10 + 3 = 26 m. A opção 24 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 10 + 3 + 10 + 3 = 26 m. A opção 25 m não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 10 + 3 + 10 + 3 = 26 m. A opção 27 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um quadrado tem lados de 8 cm. Qual é o perímetro?",
+      "options": ["30 cm", "31 cm", "32 cm", "33 cm"],
+      "correctIndex": 2,
+      "explanation": "Somando as medidas dos lados (8 + 8 + 8 + 8), obtemos 32 cm.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 8 + 8 + 8 + 8 = 32 cm. A opção 30 cm não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 8 + 8 + 8 + 8 = 32 cm. A opção 31 cm não corresponde à soma completa.",
+        "3": "O perímetro soma cada lado uma vez: 8 + 8 + 8 + 8 = 32 cm. A opção 33 cm não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_math_perimetro_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "matematica",
+      "topic": "perimetro",
+      "topicName": "Perímetro",
+      "question": "Um triângulo tem lados de 5 m, 7 m e 6 m. Quanto mede todo o contorno?",
+      "options": ["16 m", "17 m", "19 m", "18 m"],
+      "correctIndex": 3,
+      "explanation": "Somando as medidas dos lados (5 + 7 + 6), obtemos 18 m.",
+      "wrongExplanations": {
+        "0": "O perímetro soma cada lado uma vez: 5 + 7 + 6 = 18 m. A opção 16 m não corresponde à soma completa.",
+        "1": "O perímetro soma cada lado uma vez: 5 + 7 + 6 = 18 m. A opção 17 m não corresponde à soma completa.",
+        "2": "O perímetro soma cada lado uma vez: 5 + 7 + 6 = 18 m. A opção 19 m não corresponde à soma completa."
+      },
+      "skill": "calcular-perimetro",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Matemática",
+        "topic": "perimetro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

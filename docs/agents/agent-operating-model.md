@@ -4,6 +4,11 @@
 
 Definir papeis simples e complementares para trabalhar com spec-driven development e harness engineering sem criar autonomia excessiva.
 
+O contrato estrutural dos nove papeis, suas capabilities e adapters fica em
+`config/agent-capabilities.json`, conforme
+`docs/specs/agent-capability-model.md`. Este documento continua definindo o
+comportamento de cada papel.
+
 ## Agentes propostos
 
 ### 1. Spec Agent
@@ -101,6 +106,8 @@ Executar testes, validar evidencias e confirmar que a entrega bate com a spec.
 
 - nao muda implementacao para esconder falha
 - nao aprova entrega sem evidencia
+- contradicao entre fonte, requisito e resultado do harness e `blocked`; falha comprovada e corrigivel dentro do escopo e `adjustments_required`
+- em tarefas executadas pelo runner limitado, uma segunda passagem revisa a primeira; divergencia persistente pausa para autorizacao humana, sem conclusao forcada
 
 ### 5. Release and Board Agent
 
@@ -125,6 +132,7 @@ Atualizar issue, PR, labels, status e evidencias no board.
 - nao altera criterio tecnico
 - nao fecha item sem validacao
 - nao move item sem confirmar a consistencia entre `Status` e `Workflow` quando ambos existirem
+- antes do merge, registra o estado como em revisao ou pronto; marca como concluido somente apos o merge
 
 ### 6. Reviewer Agent
 
@@ -244,8 +252,9 @@ O comportamento operacional do Reviewer Agent esta descrito em `reviewer-agent-w
 2. `Architect Agent` revisa riscos e limites.
 3. `Implementer Agent` executa o menor passo possivel.
 4. `Verifier Agent` valida contra a spec.
-5. `Release and Board Agent` publica o resultado no board.
-6. `Reviewer Agent` emite parecer de conformidade para PRs antes do merge.
+5. `Release and Board Agent` registra evidencias e o estado intermediario no board.
+6. `Reviewer Agent` emite parecer de conformidade antes do merge; o board so
+   passa a concluido depois que o merge estiver confirmado.
 
 ## Fluxo para descoberta de produto
 
@@ -272,6 +281,10 @@ A ordem detalhada de quando cada agente deve ser usado esta descrita em `docs/ag
 
 - uma tarefa relevante nao deve passar por todos os agentes ao mesmo tempo
 - cada agente existe para reduzir ambiguidade de um trecho especifico do fluxo
+- quem produz um artefato nao pode verificar ou revisar o mesmo artefato na
+  mesma identidade ou thread
+- o conjunto estruturado deve identificar as execucoes de producao e
+  verificacao, mantendo atores distintos para o mesmo artefato e versao
 - o harness define quais agentes podem agir em cada fase
 - cada agente deve executar o preflight definido em `docs/harness/agent-preflight-checklist.md` antes de agir
 - a aplicacao por papel esta detalhada em `docs/agents/agent-preflight-application.md`

@@ -1,0 +1,294 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "two-independent-internal-reviewers",
+  "reviewers": ["portugues_pedagogical_smoke", "portugues_linguistic_smoke"],
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "portugues",
+  "topicId": "preterito-perfeito",
+  "sourceSha256": "a1edd6bd567ef285dc07794ae27b89d5029ac98e82d80f48214c6ff57cc6fc36",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "clear",
+  "humanApprovalRequired": true,
+  "resolvedFindings": [
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_003",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora pede explicitamente uma ação concluída, distinguindo o pretérito perfeito do imperfeito. A versão corrigida foi aprovada nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_009",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora pede explicitamente uma ação concluída. A versão corrigida foi aprovada nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_014",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora pede explicitamente uma ação concluída no sábado passado. A versão corrigida foi aprovada nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_016",
+      "pass": "pedagogical",
+      "severity": "blocking",
+      "resolution": "O enunciado agora pede apresentar a viagem como concluída. A versão corrigida foi aprovada nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_017",
+      "pass": "linguistic",
+      "severity": "blocking",
+      "resolution": "O enunciado agora identifica uma forma do verbo correr e solicita ação concluída. A versão corrigida foi aprovada nas duas passagens."
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_017",
+      "pass": "linguistic",
+      "severity": "minor",
+      "resolution": "A expressão ambígua ‘forma de correr’ foi substituída por ‘forma do verbo correr’. A versão corrigida foi aprovada nas duas passagens."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_001",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_001",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_002",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_002",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_003",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_003",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_004",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_004",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_005",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_005",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_006",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_006",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_007",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_007",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_008",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_008",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_009",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_009",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_010",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_010",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_011",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_011",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_012",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_012",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_013",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_013",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_014",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_014",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_015",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_015",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_016",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_016",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_017",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_017",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_018",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_018",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_019",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_019",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_020",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_preterito_perfeito_020",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    }
+  ]
+}

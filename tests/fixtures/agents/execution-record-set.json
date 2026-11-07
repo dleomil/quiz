@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "agent-execution-record-set-v1",
+  "records": [
+    {
+      "recordId": "record-spec-author",
+      "executionId": "execution-spec-author",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T20:00:00-03:00",
+      "actor": { "id": "fixture-actor-spec", "roleId": "spec" },
+      "capabilityId": "specification-author",
+      "artifact": {
+        "type": "specification",
+        "id": "fixture-specification",
+        "version": "1.0.0",
+        "reference": "fixture://artifact/specification"
+      },
+      "outcome": {
+        "status": "produced",
+        "summary": "Spec ficticia produzida."
+      },
+      "evidence": [
+        {
+          "id": "evidence-spec",
+          "type": "document",
+          "reference": "fixture://evidence/specification",
+          "observedAt": "2026-09-09T20:00:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-architecture-review",
+      "executionId": "execution-architecture-review",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T20:10:00-03:00",
+      "actor": { "id": "fixture-actor-architect", "roleId": "architect" },
+      "capabilityId": "architecture-review",
+      "artifact": {
+        "type": "specification",
+        "id": "fixture-specification",
+        "version": "1.0.0",
+        "reference": "fixture://artifact/specification"
+      },
+      "subjectExecutionId": "execution-spec-author",
+      "outcome": { "status": "approved", "summary": "Spec ficticia revisada." },
+      "evidence": [
+        {
+          "id": "evidence-architecture",
+          "type": "agent-output",
+          "reference": "fixture://evidence/architecture-review",
+          "observedAt": "2026-09-09T20:10:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-implementation",
+      "executionId": "execution-implementation",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T20:20:00-03:00",
+      "actor": { "id": "fixture-actor-implementer", "roleId": "implementer" },
+      "capabilityId": "implementation-author",
+      "artifact": {
+        "type": "change",
+        "id": "fixture-change",
+        "version": "abc1234",
+        "reference": "fixture://artifact/change"
+      },
+      "outcome": {
+        "status": "produced",
+        "summary": "Mudanca ficticia implementada."
+      },
+      "evidence": [
+        {
+          "id": "evidence-implementation",
+          "type": "document",
+          "reference": "fixture://evidence/change",
+          "observedAt": "2026-09-09T20:20:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-verification",
+      "executionId": "execution-verification",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T20:30:00-03:00",
+      "actor": { "id": "fixture-actor-verifier", "roleId": "verifier" },
+      "capabilityId": "verification",
+      "artifact": {
+        "type": "change",
+        "id": "fixture-change",
+        "version": "abc1234",
+        "reference": "fixture://artifact/change"
+      },
+      "subjectExecutionId": "execution-implementation",
+      "outcome": {
+        "status": "approved",
+        "summary": "Testes ficticios aprovados."
+      },
+      "evidence": [
+        {
+          "id": "evidence-verification",
+          "type": "test-result",
+          "reference": "fixture://evidence/test-result",
+          "observedAt": "2026-09-09T20:30:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-pr-review",
+      "executionId": "execution-pr-review",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T20:40:00-03:00",
+      "actor": { "id": "fixture-actor-reviewer", "roleId": "reviewer" },
+      "capabilityId": "pull-request-review",
+      "artifact": {
+        "type": "change",
+        "id": "fixture-change",
+        "version": "abc1234",
+        "reference": "fixture://artifact/change"
+      },
+      "subjectExecutionId": "execution-implementation",
+      "outcome": {
+        "status": "approved",
+        "summary": "Revisao ficticia aprovada."
+      },
+      "evidence": [
+        {
+          "id": "evidence-review",
+          "type": "agent-output",
+          "reference": "fixture://evidence/pr-review",
+          "observedAt": "2026-09-09T20:40:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-content-author",
+      "executionId": "execution-content-author",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T20:50:00-03:00",
+      "actor": { "id": "fixture-actor-curator", "roleId": "content-curator" },
+      "capabilityId": "content-author",
+      "artifact": {
+        "type": "content-proposal",
+        "id": "fixture-content-proposal",
+        "version": "1",
+        "reference": "fixture://artifact/content-proposal"
+      },
+      "outcome": {
+        "status": "produced",
+        "summary": "Proposta ficticia produzida."
+      },
+      "evidence": [
+        {
+          "id": "evidence-content",
+          "type": "agent-output",
+          "reference": "fixture://evidence/content-proposal",
+          "observedAt": "2026-09-09T20:50:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-content-review",
+      "executionId": "execution-content-review",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T21:00:00-03:00",
+      "actor": {
+        "id": "fixture-actor-pedagogical-quality",
+        "roleId": "pedagogical-quality"
+      },
+      "capabilityId": "content-review",
+      "artifact": {
+        "type": "content-proposal",
+        "id": "fixture-content-proposal",
+        "version": "1",
+        "reference": "fixture://artifact/content-proposal"
+      },
+      "subjectExecutionId": "execution-content-author",
+      "outcome": {
+        "status": "approved",
+        "summary": "Proposta ficticia revisada."
+      },
+      "evidence": [
+        {
+          "id": "evidence-content-review",
+          "type": "agent-output",
+          "reference": "fixture://evidence/content-review",
+          "observedAt": "2026-09-09T21:00:00-03:00"
+        }
+      ],
+      "findings": [],
+      "humanDecisionRequired": true
+    },
+    {
+      "recordId": "record-product-research",
+      "executionId": "execution-product-research",
+      "workItemId": "fixture://work-item/315",
+      "recordedAt": "2026-09-09T21:10:00-03:00",
+      "actor": {
+        "id": "fixture-actor-product-discovery",
+        "roleId": "product-discovery"
+      },
+      "capabilityId": "product-research",
+      "artifact": {
+        "type": "product-opportunity",
+        "id": "fixture-opportunity",
+        "version": "1.0.0",
+        "reference": "fixture://artifact/opportunity"
+      },
+      "outcome": {
+        "status": "produced",
+        "summary": "Pesquisa ficticia concluida."
+      },
+      "evidence": [
+        {
+          "id": "evidence-research",
+          "type": "link",
+          "reference": "https://example.com/fixture-source",
+          "observedAt": "2026-09-09T21:10:00-03:00"
+        }
+      ],
+      "findings": [],
+      "research": {
+        "question": "Uma capacidade ficticia merece investigacao?",
+        "audience": "Publico ficticio sem dados pessoais",
+        "decisionOwner": "fixture-product-owner",
+        "sources": [
+          {
+            "id": "source-official",
+            "title": "Fonte oficial ficticia",
+            "origin": "example.com",
+            "url": "https://example.com/fixture-source",
+            "publishedAt": "2026-09-01",
+            "consultedAt": "2026-09-09"
+          }
+        ],
+        "claims": [
+          {
+            "id": "claim-fact",
+            "classification": "fact",
+            "statement": "A pagina ficticia declara a capacidade observada.",
+            "sourceIds": ["source-official"]
+          }
+        ],
+        "recommendation": "research",
+        "confidence": "medium"
+      },
+      "humanDecisionRequired": true
+    }
+  ]
+}

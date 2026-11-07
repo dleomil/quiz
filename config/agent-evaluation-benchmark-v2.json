@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "agent-evaluation-benchmark-v2",
+  "synthetic": true,
+  "maximumAttempts": 32,
+  "newAttempts": 28,
+  "projectedTotal": 31,
+  "reserveAuthorized": false,
+  "verificationDeferred": true,
+  "legacySourceCommit": "ea263cf8a742369fda5dfa193e53c44b697bd963",
+  "parentResumptionSha256": "ddc0ad5df59a0733db8802ed4fe488d26e9482733e7be5cb9ab2a1a19110ae9f",
+  "expectedStateSha256": "60531516075183309c3c139a0fe23e182a5119f7b33f9c95c4beef301882101e",
+  "manifestPath": "docs/specs/third-trimester-curriculum-manifest-2026.md",
+  "legacy": [
+    {
+      "id": "historia-valida-editorial-current",
+      "ticketSha256": "245354acef7e3569428895291bb72c63ca77044f6fa4b7811b80e114abd358a0",
+      "resultSha256": "9c6ee2105257b0fe91d9266fe1084f79c451ea3d410e7d521829d54709957e5c",
+      "receiptSha256": "221ac8caf855aa90549593625126e618af654c4dc387037bcbefa2e629f45b9e",
+      "captureSha256": null
+    },
+    {
+      "id": "schema-replacement-1",
+      "ticketSha256": "d1537860c2364f2214ff0167d17ec01926bb1a7894394c35c67665ee833dc12e",
+      "resultSha256": "bdf36ff7a98836e03729ab733995980913c39e95f42af11cfe2421e940cefc0a",
+      "receiptSha256": "deff921923929782f14fb97cc5b1fa13f06aa44b7c36841f996a44f10ba212ca",
+      "captureSha256": null
+    },
+    {
+      "id": "schema-replacement-2",
+      "ticketSha256": "15dda6b58cc027aa6b1e292d5bc28c2b09f98c6df94700f9a7db55429b9c8fb7",
+      "resultSha256": "3e8eb0ae3e0d86f0b2915267fa6c99fa8e728e84cf433553979a79ba899e9483",
+      "receiptSha256": "59b2b5e03b06962841a4663a8f6dd4a3100f34fe8d536f66dfa35123a65a890c",
+      "captureSha256": "82a0ed96fdfb55c4265f15cc6ffe8c3331d8d78b6811db633d915aaea0472f7f"
+    }
+  ],
+  "curriculum": {
+    "historia": {
+      "topic": "povo-brasileiro",
+      "objective": "Reconhecer a diversidade de origens na formação histórica do povo brasileiro.",
+      "skill": "reconhecer-diversidade-origens-povo-brasileiro",
+      "manifestSkill": "reconhecer diversidade histórica",
+      "sourceRef": {
+        "referenceId": "synthetic-benchmark-v2-historia",
+        "section": "historia",
+        "topic": "povo-brasileiro"
+      },
+      "facts": [
+        "O povo brasileiro tem origens diversas, incluindo povos indígenas, africanos e europeus.",
+        "Esses grupos, entre outros, contribuíram para a formação histórica e cultural do Brasil.",
+        "Reconhecer essa diversidade não significa reduzir a população a uma única origem."
+      ]
+    },
+    "ingles": {
+      "topic": "present-continuous",
+      "objective": "Reconhecer ações em andamento e completar frases com a forma adequada de to be no present continuous.",
+      "skill": "reconhecer-acoes-em-andamento-present-continuous",
+      "manifestSkill": "reconhecer ações em andamento",
+      "sourceRef": {
+        "referenceId": "synthetic-benchmark-v2-ingles",
+        "section": "ingles",
+        "topic": "present-continuous"
+      },
+      "facts": [
+        "O present continuous expressa uma ação em andamento por meio de sujeito + am/is/are + verbo com ing.",
+        "She combina com is; they combina com are; I combina com am.",
+        "She ___ reading a book corresponde a Ela ___ lendo um livro, mantendo a lacuna no apoio.",
+        "They ___ playing in the park corresponde a Eles ___ brincando no parque, mantendo a lacuna no apoio."
+      ]
+    },
+    "matematica": {
+      "topic": "multiplicacao",
+      "objective": "Resolver multiplicações do 3º ano e comparar os produtos de pequenos números naturais.",
+      "skill": "calcular-comparar-produtos-naturais",
+      "manifestSkill": "resolver multiplicações do 3o ano",
+      "sourceRef": {
+        "referenceId": "synthetic-benchmark-v2-matematica",
+        "section": "matematica",
+        "topic": "multiplicacao"
+      },
+      "facts": [
+        "Multiplicar pode representar grupos com a mesma quantidade de elementos.",
+        "2 × 3 = 6 e 3 × 2 = 6; 2 × 2 = 4; 4 × 2 = 8.",
+        "Três grupos de dois elementos totalizam seis; 3 × 2 = 6."
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "historia-valida",
+      "kind": "valid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-HIS-VALID",
+        "subject": "historia",
+        "topic": "povo-brasileiro",
+        "skill": "reconhecer-diversidade-origens-povo-brasileiro",
+        "question": "Qual alternativa reconhece a diversidade de origens na formação do povo brasileiro?",
+        "options": [
+          "Povos indígenas, africanos e europeus, entre outros, contribuíram para essa formação.",
+          "Somente os povos europeus contribuíram para essa formação.",
+          "Somente os povos indígenas contribuíram para essa formação.",
+          "Somente os povos africanos contribuíram para essa formação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A população brasileira tem origens diversas: povos indígenas, africanos e europeus, entre outros, contribuíram para sua formação.",
+        "wrongExplanations": {
+          "1": "A formação do povo brasileiro também inclui contribuições indígenas e africanas, além de outras origens.",
+          "2": "Os povos indígenas fazem parte dessa história, junto de africanos, europeus e outros grupos.",
+          "3": "Os povos africanos fazem parte dessa história, junto de indígenas, europeus e outros grupos."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-historia",
+          "section": "historia",
+          "topic": "povo-brasileiro"
+        }
+      },
+      "expectedCriterion": null,
+      "evidenceGroups": []
+    },
+    {
+      "id": "ingles-valido",
+      "kind": "valid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-ENG-VALID",
+        "subject": "ingles",
+        "topic": "present-continuous",
+        "skill": "reconhecer-acoes-em-andamento-present-continuous",
+        "question": "Complete: She ___ reading a book.",
+        "options": ["is", "are", "am", "be"],
+        "correctIndex": 0,
+        "explanation": "Com she, usamos is antes do verbo com ing para indicar uma ação em andamento.",
+        "wrongExplanations": {
+          "1": "Are acompanha sujeitos como they, não she.",
+          "2": "Am acompanha I, não she.",
+          "3": "Be não é a forma usada após she nesta frase."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-ingles",
+          "section": "ingles",
+          "topic": "present-continuous"
+        },
+        "questionPt": "Complete: Ela ___ lendo um livro."
+      },
+      "expectedCriterion": null,
+      "evidenceGroups": []
+    },
+    {
+      "id": "historia-em-ingles",
+      "kind": "invalid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-HIS-LANGUAGE",
+        "subject": "historia",
+        "topic": "povo-brasileiro",
+        "skill": "reconhecer-diversidade-origens-povo-brasileiro",
+        "question": "Which option recognizes the diversity of origins in the formation of the Brazilian people?",
+        "options": [
+          "Indigenous, African and European peoples, among others, contributed to this formation.",
+          "Only European peoples contributed to this formation.",
+          "Only Indigenous peoples contributed to this formation.",
+          "Only African peoples contributed to this formation."
+        ],
+        "correctIndex": 0,
+        "explanation": "The Brazilian population has diverse origins, including Indigenous, African and European peoples, among others.",
+        "wrongExplanations": {
+          "1": "A formação do povo brasileiro também inclui contribuições indígenas e africanas, além de outras origens.",
+          "2": "Os povos indígenas fazem parte dessa história, junto de africanos, europeus e outros grupos.",
+          "3": "Os povos africanos fazem parte dessa história, junto de indígenas, europeus e outros grupos."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-historia",
+          "section": "historia",
+          "topic": "povo-brasileiro"
+        }
+      },
+      "expectedCriterion": "idioma",
+      "evidenceGroups": [
+        ["Which option", "diversity of origins", "Indigenous, African"]
+      ]
+    },
+    {
+      "id": "apoio-generico",
+      "kind": "invalid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-ENG-GENERIC",
+        "subject": "ingles",
+        "topic": "present-continuous",
+        "skill": "reconhecer-acoes-em-andamento-present-continuous",
+        "question": "Complete: She ___ reading a book.",
+        "options": ["is", "are", "am", "be"],
+        "correctIndex": 0,
+        "explanation": "Com she, usamos is antes do verbo com ing para indicar uma ação em andamento.",
+        "wrongExplanations": {
+          "1": "Are acompanha sujeitos como they, não she.",
+          "2": "Am acompanha I, não she.",
+          "3": "Be não é a forma usada após she nesta frase."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-ingles",
+          "section": "ingles",
+          "topic": "present-continuous"
+        },
+        "questionPt": "Leia a pergunta em inglês e escolha a alternativa correta."
+      },
+      "expectedCriterion": "apoio-generico",
+      "evidenceGroups": [["Leia a pergunta", "escolha a alternativa correta"]]
+    },
+    {
+      "id": "resposta-revelada",
+      "kind": "invalid",
+      "pass": "linguistic",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-ENG-LEAK",
+        "subject": "ingles",
+        "topic": "present-continuous",
+        "skill": "reconhecer-acoes-em-andamento-present-continuous",
+        "question": "Complete: She ___ reading a book.",
+        "options": ["is", "are", "am", "be"],
+        "correctIndex": 0,
+        "explanation": "Com she, usamos is antes do verbo com ing para indicar uma ação em andamento.",
+        "wrongExplanations": {
+          "1": "Are acompanha sujeitos como they, não she.",
+          "2": "Am acompanha I, não she.",
+          "3": "Be não é a forma usada após she nesta frase."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-ingles",
+          "section": "ingles",
+          "topic": "present-continuous"
+        },
+        "questionPt": "Complete: Ela está lendo um livro. A resposta correta é is."
+      },
+      "expectedCriterion": "resposta-revelada",
+      "evidenceGroups": [["resposta correta é is", "Ela está lendo"]]
+    },
+    {
+      "id": "duas-respostas",
+      "kind": "invalid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-MAT-AMB",
+        "subject": "matematica",
+        "topic": "multiplicacao",
+        "skill": "calcular-comparar-produtos-naturais",
+        "question": "Qual conta tem resultado 6?",
+        "options": ["2 × 3", "3 × 2", "2 × 2", "4 × 2"],
+        "correctIndex": 0,
+        "explanation": "Duas vezes três resulta em seis.",
+        "wrongExplanations": {
+          "1": "Confira se há mais de uma conta que chega ao resultado seis.",
+          "2": "Duas vezes dois resulta em quatro.",
+          "3": "Quatro vezes dois resulta em oito."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-matematica",
+          "section": "matematica",
+          "topic": "multiplicacao"
+        }
+      },
+      "expectedCriterion": "ambiguidade",
+      "evidenceGroups": [
+        ["2 × 3", "2 x 3", "2 vezes 3"],
+        ["3 × 2", "3 x 2", "3 vezes 2"]
+      ]
+    },
+    {
+      "id": "gabarito-incorreto",
+      "kind": "invalid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-MAT-ANSWER",
+        "subject": "matematica",
+        "topic": "multiplicacao",
+        "skill": "calcular-comparar-produtos-naturais",
+        "question": "Quanto é 3 × 2?",
+        "options": ["5", "6", "7", "8"],
+        "correctIndex": 0,
+        "explanation": "Três grupos de dois elementos totalizam seis.",
+        "wrongExplanations": {
+          "1": "Confira o gabarito: três vezes dois resulta em seis.",
+          "2": "Três vezes dois não resulta em sete.",
+          "3": "Três vezes dois não resulta em oito."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-matematica",
+          "section": "matematica",
+          "topic": "multiplicacao"
+        }
+      },
+      "expectedCriterion": "resposta-incorreta",
+      "evidenceGroups": [
+        ["5", "cinco"],
+        ["6", "seis"]
+      ]
+    },
+    {
+      "id": "feedback-contraditorio",
+      "kind": "invalid",
+      "pass": "pedagogical",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "contentSetId": "synthetic-evaluation-2026-t3",
+        "version": 1,
+        "reviewStatus": "draft",
+        "id": "EVAL-MAT-FEEDBACK",
+        "subject": "matematica",
+        "topic": "multiplicacao",
+        "skill": "calcular-comparar-produtos-naturais",
+        "question": "Quanto é 3 × 2?",
+        "options": ["5", "6", "7", "8"],
+        "correctIndex": 1,
+        "explanation": "Três grupos de dois elementos totalizam seis.",
+        "wrongExplanations": {
+          "0": "Muito bem! Cinco é a resposta correta para três vezes dois.",
+          "2": "Três grupos de dois totalizam seis, não sete.",
+          "3": "Três grupos de dois totalizam seis, não oito."
+        },
+        "sourceRef": {
+          "referenceId": "synthetic-benchmark-v2-matematica",
+          "section": "matematica",
+          "topic": "multiplicacao"
+        }
+      },
+      "expectedCriterion": "feedback-contraditorio",
+      "evidenceGroups": [
+        ["Muito bem", "Cinco é a resposta correta"],
+        ["6", "seis"]
+      ]
+    }
+  ]
+}

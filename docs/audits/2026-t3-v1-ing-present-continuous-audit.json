@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "ingles:present-continuous",
+  "sourceSha256": "9556a43c9b8a750294bee6624c160c16847e0f64e5e30089b71a8efb493496ef",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_ing_present_continuous_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-75"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-75"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-76"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-76"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-77"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-77"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-78"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-78"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-79"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-79"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-80"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-80"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-81"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-81"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-82"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-82"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-83"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-83"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-84"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-84"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-85"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-85"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-86"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-86"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-87"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-87"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-88"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-88"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-89"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-89"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-75"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-75"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-76"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-76"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-77"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-77"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-78"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-78"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-79"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_present_continuous_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/ingles/present-continuous/page-79"
+      ],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

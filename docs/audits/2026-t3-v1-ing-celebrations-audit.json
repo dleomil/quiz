@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "ingles:celebrations",
+  "sourceSha256": "e358a4b2306fe790d9014ae40eacfca5749ad8c164c0235742ca351a2348c6cc",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_ing_celebrations_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-79"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-79"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-80"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-80"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-81"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-81"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-82"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-82"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-83"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-83"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-84"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-84"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-85"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-85"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-86"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-86"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-87"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-87"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-88"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-88"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-89"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-89"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-79"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_celebrations_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/celebrations/page-79"],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

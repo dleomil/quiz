@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "agent-evaluation-plan-v1",
+  "id": "agent-evolution-2026-10",
+  "maximumAttempts": 32,
+  "timeoutMs": 300000,
+  "sourceSpec": {
+    "commit": "504c9e276d23c4ab0bdcee6537684ffe1ab7781b",
+    "path": "docs/specs/agent-workflow-evolution.md"
+  },
+  "editorialCasesPath": "tests/fixtures/agent-evaluation/editorial-cases.json",
+  "authorFiles": {
+    "code": "tests/fixtures/agent-evaluation/score.cjs",
+    "documentation": "tests/fixtures/agent-evaluation/guide.txt"
+  },
+  "verificationFile": "tests/fixtures/agent-evaluation/verification.cjs",
+  "variants": {
+    "editorial-current": {
+      "model": "gpt-5.6-sol",
+      "effort": "high"
+    },
+    "editorial-candidate": {
+      "model": "gpt-6.1-sol",
+      "effort": "high"
+    },
+    "author-luna": {
+      "model": "gpt-6-luna",
+      "effort": "medium"
+    },
+    "author-sol": {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    "verifier-current": {
+      "model": "gpt-5.6-terra",
+      "effort": "medium"
+    },
+    "verifier-candidate": {
+      "model": "gpt-6.1-sol",
+      "effort": "high"
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "scenarioId": "dicionario-r54-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "dicionario-r54-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Dicionário"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Usar conhecimentos de ordem alfabética e consulta ao dicionário.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual palavra vem primeiro no dicionário?",
+        "options": ["gato", "garfo", "gaveta", "gazeta"],
+        "correctIndex": 1,
+        "explanation": "As quatro palavras começam com GA. Na terceira letra, R (garfo) vem antes de T (gato), V (gaveta) e Z (gazeta).",
+        "wrongExplanations": {
+          "0": "Gato começa com GAT; R de GAR vem antes de T.",
+          "2": "Gaveta começa com GAV; R de GAR vem antes de V.",
+          "3": "Gazeta começa com GAZ; R de GAR vem antes de Z."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Se colocarmos “mala” e as palavras das opções em ordem alfabética, qual opção ficará logo depois de “mala”?",
+        "options": ["maleta", "manga", "mapa", "mar"],
+        "correctIndex": 0,
+        "explanation": "Mala vem antes de maleta: as letras M, A e L são iguais, e na quarta letra A vem antes de E. Depois de mala, maleta vem antes das outras opções, que começam por MAN, MAP e MAR.",
+        "wrongExplanations": {
+          "1": "Maleta começa por MAL, antes de manga, que começa por MAN.",
+          "2": "Maleta começa por MAL, antes de mapa, que começa por MAP.",
+          "3": "Maleta começa por MAL, antes de mar, que começa por MAR."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual sequência está em ordem alfabética?",
+        "options": [
+          "nuvem, onda, panela",
+          "onda, nuvem, panela",
+          "panela, onda, nuvem",
+          "nuvem, panela, onda"
+        ],
+        "correctIndex": 0,
+        "explanation": "N vem antes de O, e O vem antes de P.",
+        "wrongExplanations": {
+          "1": "Nuvem deve vir antes de onda.",
+          "2": "Panela deve vir depois de nuvem e onda.",
+          "3": "Onda deve vir antes de panela."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Em uma página do dicionário, o que é um verbete?",
+        "options": [
+          "A palavra e informações sobre ela, como significado e classe gramatical",
+          "A capa e o título do dicionário",
+          "Os nomes de quem escreveu o livro",
+          "O número que indica a página"
+        ],
+        "correctIndex": 0,
+        "explanation": "O verbete apresenta uma palavra e informações como significado e classe gramatical.",
+        "wrongExplanations": {
+          "1": "A capa não reúne as informações de cada palavra.",
+          "2": "Os autores não formam o verbete de uma palavra.",
+          "3": "O número localiza uma página, mas não explica a palavra."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Para descobrir o significado de “corajoso”, qual parte do dicionário você deve consultar?",
+        "options": [
+          "O verbete de “corajoso”",
+          "A indicação da classe gramatical",
+          "A divisão silábica da palavra",
+          "Uma palavra vizinha na ordem alfabética"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para descobrir o significado, localizamos o verbete da palavra.",
+        "wrongExplanations": {
+          "1": "A classe gramatical informa como a palavra funciona, mas não apresenta seu significado.",
+          "2": "A divisão silábica mostra como separar a palavra, não o que ela significa.",
+          "3": "Uma palavra vizinha pode ter outro significado; consulte o verbete de “corajoso”."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "dicionario-r54-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto identifica o 3º ano, o ano letivo de 2026, o T3, a matéria Português, o tema Dicionário e o objetivo curricular autorizado.",
+      "O manifesto está declarado como frozen, com aprovação humana de congelamento identificada e fonte autorizada.",
+      "A passagem solicitada e executada é exclusivamente pedagogical.",
+      "A questão 2026t3v2_pt_dicionario_006 avalia corretamente a comparação alfabética de palavras com as duas primeiras letras iguais e possui resposta única: “garfo”.",
+      "A questão 2026t3v2_pt_dicionario_007 avalia corretamente a ordenação de palavras com prefixo inicial comum e possui resposta única: “maleta”.",
+      "A questão 2026t3v2_pt_dicionario_008 apresenta uma única sequência em ordem alfabética: “nuvem, onda, panela”.",
+      "A questão 2026t3v2_pt_dicionario_009 avalia o reconhecimento de um verbete e possui uma única resposta defensável.",
+      "A questão 2026t3v2_pt_dicionario_010 avalia a consulta ao verbete para localizar o significado de uma palavra e possui uma única resposta defensável.",
+      "As cinco propostas contêm quatro alternativas, correctIndex válido, explicação da resposta correta e feedback coerente para cada uma das três alternativas incorretas.",
+      "Os enunciados estão em português, não apresentam lacunas e não revelam antecipadamente a resposta correta.",
+      "As cinco questões medem conhecimentos de ordem alfabética ou consulta ao dicionário, conforme o objetivo curricular autorizado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote, sem alterações, a uma passagem linguística independente.",
+      "Manter pendente a aprovação humana pedagógica do pacote exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "2edaad9e-9ee6-4405-913a-c746cecbcf68",
+    "packageSha256": "ec3cb6908105d85b0d187b8d500c78d7c77a760a0582214ab5c03005fad4fcbe",
+    "questionSha256s": {
+      "2026t3v2_pt_dicionario_006": "00229c2263fd9e5132c5922920475326ac2556d1bec0887e37f69a919c3afa0c",
+      "2026t3v2_pt_dicionario_007": "2c3efe70fe15c3673c613b03743ff8e3754e8057bcb5213d0b394c162c953be7",
+      "2026t3v2_pt_dicionario_008": "5f4f49b94c52799bc74d72fe69ac63382457429981a789f399230f481bd35a60",
+      "2026t3v2_pt_dicionario_009": "c20a3fbf1b7ef2abaabc37619af269c3d291244a5633465dce07469c37603780",
+      "2026t3v2_pt_dicionario_010": "ab32b026e7f58155e052fba03ae7b33119704c7150e0115fd0b25cad0f9c6dc4"
+    },
+    "batchProposalSha256": "ab0daafe51ec68905cbe8cc1188efc3f249cba67fde459f937c470e82b8de499",
+    "batchQuestionIds": [
+      "2026t3v2_pt_dicionario_006",
+      "2026t3v2_pt_dicionario_007",
+      "2026t3v2_pt_dicionario_008",
+      "2026t3v2_pt_dicionario_009",
+      "2026t3v2_pt_dicionario_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-07T00:21:20.386Z",
+    "testOnly": false
+  }
+}

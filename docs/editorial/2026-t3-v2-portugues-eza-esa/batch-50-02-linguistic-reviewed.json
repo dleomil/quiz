@@ -1,0 +1,214 @@
+{
+  "scenarioId": "eza-esa-r50-02-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "eza-esa-r50-02-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Uso de EZA e ESA"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Distinguir palavras terminadas em -eza e -esa conforme sua formação e significado.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra completa corretamente a frase “A ____ da mala facilitou o transporte”?",
+        "options": ["leveza", "inglesa", "francesa", "portuguesa"],
+        "correctIndex": 0,
+        "explanation": "Leveza nomeia uma qualidade e termina com EZA.",
+        "wrongExplanations": {
+          "1": "Inglesa é um gentílico; a frase pede uma qualidade da mala.",
+          "2": "Francesa é um gentílico; a frase pede uma qualidade da mala.",
+          "3": "Portuguesa é um gentílico; a frase pede uma qualidade da mala."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual alternativa indica que uma mulher é natural da Inglaterra?",
+        "options": ["inglesa", "francesa", "portuguesa", "japonesa"],
+        "correctIndex": 0,
+        "explanation": "Inglesa é escrita com S e indica uma mulher ou menina da Inglaterra.",
+        "wrongExplanations": {
+          "1": "Francesa indica origem na França.",
+          "2": "Portuguesa indica origem em Portugal.",
+          "3": "Japonesa indica origem no Japão."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A menina percebeu que o colega estava triste e o ajudou com bondade. Qual palavra nomeia essa qualidade?",
+        "options": ["gentileza", "beleza", "tristeza", "natureza"],
+        "correctIndex": 0,
+        "explanation": "Gentileza é a qualidade de tratar os outros com atenção e bondade.",
+        "wrongExplanations": {
+          "1": "Beleza descreve algo belo, não o modo de tratar alguém.",
+          "2": "Tristeza é um sentimento, não a ação bondosa da menina.",
+          "3": "Natureza se refere ao mundo natural."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Quem nasce no Japão é ____.",
+        "options": ["francesa", "japonesa", "inglesa", "portuguesa"],
+        "correctIndex": 1,
+        "explanation": "Japonesa é o gentílico feminino de quem nasce no Japão; termina em -esa e se escreve com um S.",
+        "wrongExplanations": {
+          "0": "Francesa indica origem na França.",
+          "2": "Inglesa indica origem na Inglaterra.",
+          "3": "Portuguesa indica origem em Portugal."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra nomeia, de forma respeitosa, a condição de quem tem poucos recursos?",
+        "options": ["francesa", "pobreza", "portuguesa", "inglesa"],
+        "correctIndex": 1,
+        "explanation": "Pobreza é formada de pobre com o sufixo -eza e nomeia a condição de ser pobre.",
+        "wrongExplanations": {
+          "0": "Francesa é um gentílico.",
+          "2": "Portuguesa é um gentílico.",
+          "3": "Inglesa é um gentílico."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "eza-esa-r50-02-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "reviewPass": "linguistic",
+    "decision": "blocked",
+    "facts": [
+      "A entrada declara objetivo curricular, 3º ano, manifesto congelado, aprovação humana do congelamento e passagem linguistic.",
+      "As cinco propostas possuem enunciado em português, quatro alternativas, índice correto válido, explicação e três feedbacks de erro.",
+      "Os IDs 2026t3v2_pt_eza_esa_006 e 2026t3v2_pt_eza_esa_007 apresentam instruções claras, resposta única e linguagem adequada à série.",
+      "Nenhuma das cinco instruções revela literalmente a resposta correta.",
+      "A prova de isolamento informa ferramentas e conectores desativados, sem evento registrado de uso real."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_pt_eza_esa_008",
+        "criterion": "clareza referencial e coerência do feedback",
+        "severity": "major",
+        "evidence": "A expressão “essa qualidade” retoma diretamente “bondade”, enquanto a resposta esperada é “gentileza”. Além disso, o feedback de “tristeza” passa de “qualidade” para “ação bondosa”, enfraquecendo a coerência da instrução.",
+        "recommendation": "Reformular o contexto para nomear inequivocamente a gentileza e manter enunciado, explicação e feedbacks na mesma categoria semântica."
+      },
+      {
+        "questionId": "2026t3v2_pt_eza_esa_009",
+        "criterion": "concordância de gênero e instrução sem ambiguidade",
+        "severity": "blocking",
+        "evidence": "O sujeito genérico “Quem” não estabelece um referente feminino, mas a lacuna exige “japonesa” e todas as alternativas estão no feminino. A frase depende de uma informação de gênero que não foi declarada.",
+        "recommendation": "Declarar um referente feminino no enunciado, como uma menina ou mulher nascida no Japão, ou reformular integralmente as alternativas para concordarem com uma construção genérica."
+      },
+      {
+        "questionId": "2026t3v2_pt_eza_esa_010",
+        "criterion": "linguagem respeitosa e adequada à criança",
+        "severity": "major",
+        "evidence": "A explicação usa “condição de ser pobre”, formulação que caracteriza a pessoa, embora o próprio enunciado solicite uma maneira respeitosa de nomear a condição socioeconômica.",
+        "recommendation": "Empregar linguagem centrada na situação, como “situação de pobreza” ou “condição de viver com poucos recursos”, preservando a explicação ortográfica de -eza."
+      }
+    ],
+    "recommendations": [
+      "Corrigir os três achados antes de considerar o lote linguisticamente aprovado.",
+      "Submeter o pacote corrigido a uma nova passagem linguística vinculada ao conteúdo e ao hash atualizados.",
+      "Manter a aprovação pedagógica humana obrigatória; este parecer não autoriza implementação nem publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "f6251a24-0801-4e67-9d26-cbd0c6ca7c25",
+    "packageSha256": "037694ba66b63c404f82c872d14a5d1ff0801182515ec05f9f94c6ad6301c64c",
+    "batchProposalSha256": "ebd0b66ae5fd321b030449ddef2160668359d5b268d6f10854a0b748592685f5",
+    "batchQuestionIds": [
+      "2026t3v2_pt_eza_esa_006",
+      "2026t3v2_pt_eza_esa_007",
+      "2026t3v2_pt_eza_esa_008",
+      "2026t3v2_pt_eza_esa_009",
+      "2026t3v2_pt_eza_esa_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-06T14:50:49.143Z",
+    "testOnly": false
+  }
+}

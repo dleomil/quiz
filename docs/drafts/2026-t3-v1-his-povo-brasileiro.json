@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "O que significa dizer que o povo brasileiro é diverso?",
+      "options": [
+        "que pessoas e grupos têm diferentes histórias, culturas e costumes",
+        "que todas as pessoas são iguais em tudo",
+        "que existe apenas uma cultura",
+        "que a história não muda"
+      ],
+      "correctIndex": 0,
+      "explanation": "A diversidade reúne diferentes trajetórias, culturas e modos de viver.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de que pessoas e grupos têm diferentes histórias, culturas e costumes.",
+        "2": "A alternativa não corresponde ao conceito de que pessoas e grupos têm diferentes histórias, culturas e costumes.",
+        "3": "A alternativa não corresponde ao conceito de que pessoas e grupos têm diferentes histórias, culturas e costumes."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Quem já vivia no território brasileiro antes da chegada dos portugueses?",
+      "options": [
+        "apenas soldados",
+        "diferentes povos indígenas",
+        "somente viajantes europeus",
+        "nenhuma comunidade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Povos indígenas habitavam diferentes regiões do território.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de diferentes povos indígenas.",
+        "2": "A alternativa não corresponde ao conceito de diferentes povos indígenas.",
+        "3": "A alternativa não corresponde ao conceito de diferentes povos indígenas."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Por que não devemos falar dos povos indígenas como se fossem todos iguais?",
+      "options": [
+        "porque todos vivem no mesmo lugar",
+        "porque a história não registra diferenças",
+        "porque existem muitos povos, línguas e costumes diferentes",
+        "porque nenhum povo tem cultura"
+      ],
+      "correctIndex": 2,
+      "explanation": "Os povos indígenas formam comunidades diversas, com histórias e culturas próprias.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque existem muitos povos, línguas e costumes diferentes.",
+        "1": "A alternativa não corresponde ao conceito de porque existem muitos povos, línguas e costumes diferentes.",
+        "3": "A alternativa não corresponde ao conceito de porque existem muitos povos, línguas e costumes diferentes."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "O que a presença africana acrescentou à formação do Brasil?",
+      "options": [
+        "apenas um tipo de alimento",
+        "nenhuma contribuição",
+        "somente nomes de cidades",
+        "saberes, culturas, línguas, religiões e formas de resistência"
+      ],
+      "correctIndex": 3,
+      "explanation": "A presença africana marcou profundamente a cultura e a história do Brasil.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de saberes, culturas, línguas, religiões e formas de resistência.",
+        "1": "A alternativa não corresponde ao conceito de saberes, culturas, línguas, religiões e formas de resistência.",
+        "2": "A alternativa não corresponde ao conceito de saberes, culturas, línguas, religiões e formas de resistência."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Como muitas pessoas africanas chegaram ao Brasil durante a colonização?",
+      "options": [
+        "foram trazidas à força e escravizadas",
+        "vieram todas como turistas",
+        "chegaram sem violência e com os mesmos direitos",
+        "foram convidadas para governar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escravização foi uma violência histórica que trouxe pessoas africanas à força.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de foram trazidas à força e escravizadas.",
+        "2": "A alternativa não corresponde ao conceito de foram trazidas à força e escravizadas.",
+        "3": "A alternativa não corresponde ao conceito de foram trazidas à força e escravizadas."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Por que estudar a resistência de pessoas escravizadas é importante?",
+      "options": [
+        "para afirmar que não houve resistência",
+        "para reconhecer suas lutas por liberdade e dignidade",
+        "para justificar a escravidão",
+        "para apagar suas histórias"
+      ],
+      "correctIndex": 1,
+      "explanation": "A resistência revela ações e lutas contra a escravização.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de para reconhecer suas lutas por liberdade e dignidade.",
+        "2": "A alternativa não corresponde ao conceito de para reconhecer suas lutas por liberdade e dignidade.",
+        "3": "A alternativa não corresponde ao conceito de para reconhecer suas lutas por liberdade e dignidade."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "95"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "O que é cultura?",
+      "options": [
+        "uma regra igual para todos",
+        "somente um prédio antigo",
+        "um conjunto de modos de viver, saberes, práticas e expressões",
+        "apenas a comida de um lugar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cultura inclui saberes, práticas, expressões e modos de viver.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de um conjunto de modos de viver, saberes, práticas e expressões.",
+        "1": "A alternativa não corresponde ao conceito de um conjunto de modos de viver, saberes, práticas e expressões.",
+        "3": "A alternativa não corresponde ao conceito de um conjunto de modos de viver, saberes, práticas e expressões."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "96"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Qual exemplo mostra diversidade cultural?",
+      "options": [
+        "todas as festas iguais",
+        "uma única forma de falar",
+        "ausência de costumes",
+        "diferentes festas, músicas, comidas e línguas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Festas, músicas, comidas e línguas podem variar entre grupos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de diferentes festas, músicas, comidas e línguas.",
+        "1": "A alternativa não corresponde ao conceito de diferentes festas, músicas, comidas e línguas.",
+        "2": "A alternativa não corresponde ao conceito de diferentes festas, músicas, comidas e línguas."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "97"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Como os encontros entre diferentes grupos transformaram o Brasil?",
+      "options": [
+        "produziram trocas, conflitos e novas formas culturais",
+        "fizeram todas as diferenças desaparecerem",
+        "impediram qualquer mudança",
+        "criaram uma história sem pessoas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Encontros históricos tiveram trocas e também conflitos.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de produziram trocas, conflitos e novas formas culturais.",
+        "2": "A alternativa não corresponde ao conceito de produziram trocas, conflitos e novas formas culturais.",
+        "3": "A alternativa não corresponde ao conceito de produziram trocas, conflitos e novas formas culturais."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "98"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Por que a palavra “mistura” precisa ser usada com cuidado na História?",
+      "options": [
+        "porque a história não tem conflitos",
+        "porque pode esconder desigualdades e violências vividas pelos grupos",
+        "porque não existem grupos diferentes",
+        "porque toda relação foi sempre igual"
+      ],
+      "correctIndex": 1,
+      "explanation": "A formação histórica inclui relações desiguais e violências que não devem ser apagadas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque pode esconder desigualdades e violências vividas pelos grupos.",
+        "2": "A alternativa não corresponde ao conceito de porque pode esconder desigualdades e violências vividas pelos grupos.",
+        "3": "A alternativa não corresponde ao conceito de porque pode esconder desigualdades e violências vividas pelos grupos."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "99"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "O que podemos aprender com diferentes comunidades tradicionais?",
+      "options": [
+        "que nenhum saber é importante",
+        "que territórios não têm história",
+        "modos de cuidar, trabalhar e viver relacionados a seus territórios",
+        "que todos devem viver do mesmo jeito"
+      ],
+      "correctIndex": 2,
+      "explanation": "Comunidades guardam conhecimentos e experiências próprias.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de modos de cuidar, trabalhar e viver relacionados a seus territórios.",
+        "1": "A alternativa não corresponde ao conceito de modos de cuidar, trabalhar e viver relacionados a seus territórios.",
+        "3": "A alternativa não corresponde ao conceito de modos de cuidar, trabalhar e viver relacionados a seus territórios."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "100"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Por que a memória é importante para a formação do povo brasileiro?",
+      "options": [
+        "porque substitui todas as fontes",
+        "porque apaga o passado",
+        "porque torna todas as narrativas iguais",
+        "porque ajuda a preservar histórias e identidades"
+      ],
+      "correctIndex": 3,
+      "explanation": "Memórias ajudam grupos a contar e preservar suas histórias.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque ajuda a preservar histórias e identidades.",
+        "1": "A alternativa não corresponde ao conceito de porque ajuda a preservar histórias e identidades.",
+        "2": "A alternativa não corresponde ao conceito de porque ajuda a preservar histórias e identidades."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "101"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Qual atitude respeita a diversidade histórica?",
+      "options": [
+        "ouvir diferentes narrativas e evitar preconceitos",
+        "ridicularizar costumes",
+        "dizer que só uma história importa",
+        "apagar nomes e lembranças"
+      ],
+      "correctIndex": 0,
+      "explanation": "Respeito envolve escuta, conhecimento e combate ao preconceito.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de ouvir diferentes narrativas e evitar preconceitos.",
+        "2": "A alternativa não corresponde ao conceito de ouvir diferentes narrativas e evitar preconceitos.",
+        "3": "A alternativa não corresponde ao conceito de ouvir diferentes narrativas e evitar preconceitos."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "102"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "O que são fontes históricas?",
+      "options": [
+        "previsões do futuro",
+        "vestígios e registros que ajudam a estudar o passado",
+        "apenas opiniões atuais",
+        "objetos sem qualquer informação"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fontes podem ser documentos, objetos, imagens, relatos e outros vestígios.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de vestígios e registros que ajudam a estudar o passado.",
+        "2": "A alternativa não corresponde ao conceito de vestígios e registros que ajudam a estudar o passado.",
+        "3": "A alternativa não corresponde ao conceito de vestígios e registros que ajudam a estudar o passado."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "103"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Qual fonte pode ajudar a estudar a história de uma comunidade?",
+      "options": [
+        "um objeto sem contexto",
+        "uma invenção sem registro",
+        "relatos, fotografias e documentos",
+        "somente uma propaganda"
+      ],
+      "correctIndex": 2,
+      "explanation": "Diferentes fontes podem complementar o estudo histórico.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de relatos, fotografias e documentos.",
+        "1": "A alternativa não corresponde ao conceito de relatos, fotografias e documentos.",
+        "3": "A alternativa não corresponde ao conceito de relatos, fotografias e documentos."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "104"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Por que os nomes de lugares podem revelar histórias?",
+      "options": [
+        "porque todos os nomes são aleatórios",
+        "porque lugares não têm memória",
+        "porque nomes não mudam",
+        "porque podem guardar referências a povos, pessoas e acontecimentos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nomes podem carregar memórias e referências históricas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque podem guardar referências a povos, pessoas e acontecimentos.",
+        "1": "A alternativa não corresponde ao conceito de porque podem guardar referências a povos, pessoas e acontecimentos.",
+        "2": "A alternativa não corresponde ao conceito de porque podem guardar referências a povos, pessoas e acontecimentos."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "O que significa reconhecer protagonismo histórico?",
+      "options": [
+        "perceber que diferentes grupos agiram e participaram da história",
+        "atribuir tudo a uma única pessoa",
+        "negar ações coletivas",
+        "apagar grupos sem poder"
+      ],
+      "correctIndex": 0,
+      "explanation": "Muitos grupos participaram e transformaram a história.",
+      "wrongExplanations": {
+        "1": "A alternativa não corresponde ao conceito de perceber que diferentes grupos agiram e participaram da história.",
+        "2": "A alternativa não corresponde ao conceito de perceber que diferentes grupos agiram e participaram da história.",
+        "3": "A alternativa não corresponde ao conceito de perceber que diferentes grupos agiram e participaram da história."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Por que a formação do povo brasileiro não aconteceu de uma só vez?",
+      "options": [
+        "porque a cultura é imóvel",
+        "porque foi construída por processos históricos ao longo do tempo",
+        "porque não houve acontecimentos",
+        "porque todos chegaram no mesmo dia"
+      ],
+      "correctIndex": 1,
+      "explanation": "A formação ocorreu em diferentes períodos e contextos.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de porque foi construída por processos históricos ao longo do tempo.",
+        "2": "A alternativa não corresponde ao conceito de porque foi construída por processos históricos ao longo do tempo.",
+        "3": "A alternativa não corresponde ao conceito de porque foi construída por processos históricos ao longo do tempo."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Qual afirmação evita uma generalização?",
+      "options": [
+        "uma cultura representa todas as pessoas",
+        "nenhuma comunidade tem identidade",
+        "há diferentes povos indígenas, comunidades africanas e outros grupos com histórias próprias",
+        "todos os grupos têm os mesmos costumes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reconhecer diferenças evita tratar grupos diversos como iguais.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de há diferentes povos indígenas, comunidades africanas e outros grupos com histórias próprias.",
+        "1": "A alternativa não corresponde ao conceito de há diferentes povos indígenas, comunidades africanas e outros grupos com histórias próprias.",
+        "3": "A alternativa não corresponde ao conceito de há diferentes povos indígenas, comunidades africanas e outros grupos com histórias próprias."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_povo_brasileiro_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "povo-brasileiro",
+      "topicName": "Formação do povo brasileiro",
+      "question": "Qual resumo está correto?",
+      "options": [
+        "o Brasil tem uma única origem cultural",
+        "a história foi sem conflitos",
+        "somente um grupo construiu o país",
+        "o povo brasileiro foi formado por diferentes grupos, com trocas, conflitos e resistências"
+      ],
+      "correctIndex": 3,
+      "explanation": "A formação brasileira é plural e marcada por relações históricas diversas.",
+      "wrongExplanations": {
+        "0": "A alternativa não corresponde ao conceito de o povo brasileiro foi formado por diferentes grupos, com trocas, conflitos e resistências.",
+        "1": "A alternativa não corresponde ao conceito de o povo brasileiro foi formado por diferentes grupos, com trocas, conflitos e resistências.",
+        "2": "A alternativa não corresponde ao conceito de o povo brasileiro foi formado por diferentes grupos, com trocas, conflitos e resistências."
+      },
+      "skill": "reconhecer-diversidade-historica",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

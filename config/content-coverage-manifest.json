@@ -47,6 +47,146 @@
           "action_verbs": 20
         }
       }
+    },
+    "2026-t3-v1": {
+      "subjects": {
+        "ciencias": {
+          "luz-visao": 20,
+          "corpos-luz": 20,
+          "materiais-transparentes": 20,
+          "propriedades-luz": 20,
+          "espelhos": 20,
+          "luz-cores": 20,
+          "som-audicao": 20
+        },
+        "geografia": {
+          "agua-recurso": 20,
+          "nascente-rio": 20,
+          "agua-limitada": 20,
+          "agua-brasil": 20,
+          "usos-agua": 20
+        },
+        "ingles": {
+          "present-continuous": 20,
+          "places-city": 20,
+          "celebrations": 20,
+          "means-transport": 20
+        },
+        "historia": {
+          "povo-brasileiro": 20,
+          "imigrantes-portugueses-espanhois": 20,
+          "imigrantes-italianos": 20,
+          "imigrantes-alemaes": 20,
+          "imigrantes-japoneses": 20
+        },
+        "portugues": {
+          "usos-c": 20,
+          "verbos": 20,
+          "encontros-ch-lh-nh": 20,
+          "preterito-perfeito": 20,
+          "prefixo-des": 20,
+          "futuro": 20,
+          "usos-ge-gi": 20,
+          "adjetivos": 20
+        },
+        "matematica": {
+          "probabilidade": 20,
+          "multiplicacao": 20,
+          "divisao": 20,
+          "divisao-metodos": 20,
+          "expressoes": 20,
+          "decomposicao-multiplicacao": 20,
+          "problemas-expressoes": 20,
+          "area-malha": 20,
+          "perimetro": 20,
+          "retas-perpendiculares": 20,
+          "divisao-euclidiana": 20
+        }
+      }
+    },
+    "2026-t3-v2": {
+      "publicationMode": "by-subject",
+      "intakeStatus": "frozen",
+      "subjects": {
+        "portugues": {
+          "usos-de-je-ji": 20,
+          "adjetivos-patrios": 20,
+          "usos-do-z": 20,
+          "pontuacao": 20,
+          "usos-de-h": 20,
+          "acentuacao": 20,
+          "sons-do-x": 20,
+          "dicionario": 20,
+          "uso-de-eza-e-esa": 20,
+          "encontro-consonantal": 20
+        },
+        "geografia": {
+          "usos-da-agua": 20,
+          "percurso-da-agua": 20,
+          "agua-potavel-reuso-e-reaproveitamento": 20,
+          "agua-nos-centros-urbanos": 20,
+          "agua-no-campo": 20,
+          "municipio": 20,
+          "integracao-e-infraestrutura-urbana-e-rural": 20,
+          "desigualdades-urbanas-e-rurais": 20,
+          "tecnologia-no-campo": 20
+        },
+        "ingles": {
+          "present-continuous-negativo": 20,
+          "thanksgiving": 20,
+          "christmas": 20,
+          "toys-and-games-e-preferencias": 20
+        },
+        "historia": {
+          "producao-e-trabalho-no-periodo-colonial": 20,
+          "tratado-de-tordesilhas-e-colonia": 20,
+          "producao-de-acucar": 20,
+          "ocupacao-do-interior": 20,
+          "ouro-e-pedras-preciosas": 20,
+          "monarquia": 20,
+          "cafe-e-cidades": 20,
+          "borracha": 20,
+          "industrializacao-inicial": 20
+        },
+        "matematica": {
+          "divisao-euclidiana": 20,
+          "multiplicacao": 20,
+          "mais-sobre-divisao": 20,
+          "divisao-de-dezenas-sem-resto": 20,
+          "divisao-de-dezenas-com-resto": 20,
+          "cardinais-e-ordinais": 20,
+          "quatro-operacoes": 20,
+          "divisao-e-unidades-de-medida": 20,
+          "mapas": 20,
+          "compasso": 20,
+          "divisao-de-centenas-sem-resto": 20,
+          "divisao-de-centenas-com-resto": 20,
+          "divisao-por-10-100-e-1000": 20,
+          "graficos-de-barras": 20,
+          "multiplicacao-por-multiplos-de-10": 20,
+          "multiplicacao-por-dois-algarismos": 20,
+          "figuras-congruentes": 20,
+          "arcos-de-circunferencia": 20,
+          "circunferencia-em-seis-partes": 20
+        },
+        "ciencias": {
+          "som-e-audicao": 20,
+          "como-ouvimos": 20,
+          "saude-auditiva": 20,
+          "deficiencia-auditiva": 20,
+          "producao-do-som": 20,
+          "instrumentos-musicais": 20,
+          "propriedades-do-som": 20,
+          "corpos-celestes": 20,
+          "observacao-do-ceu": 20,
+          "representacoes-da-terra": 20,
+          "planeta-terra": 20,
+          "estrutura-interna-da-terra": 20,
+          "placas-tectonicas": 20,
+          "vulcoes": 20,
+          "terremotos-e-tsunamis": 20
+        }
+      }
     }
   }
 }

@@ -4,10 +4,14 @@ model = "gpt-5.6-terra"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 developer_instructions = """
-Siga o papel Verifier Agent em docs/agents/agent-operating-model.md e os gates aplicaveis em docs/harness/.
+Siga o papel Verifier Agent em docs/agents/agent-operating-model.md e o preflight em docs/harness/agent-preflight-checklist.md.
 Leia a spec e identifique criterios de aceite, comandos de validacao e evidencias obrigatorias antes de executar.
 Execute somente validacoes compativeis com sandbox read-only e registre comando, resultado e limitacoes.
 Nao altere implementacao para fazer um teste passar, nao omita falhas e nao invente evidencia.
 Nao faca commit, merge, deploy, comentario no GitHub ou movimentacao de board.
 Retorne aprovado, ajustes necessarios ou bloqueado com a causa objetiva.
+Use `blocked` quando fonte, requisito e resultado do harness forem contraditorios ou quando uma condicao de parada exigir intervencao externa. Use `adjustments_required` para falhas comprovadas da implementacao que podem ser corrigidas dentro do escopo.
+Na revisao em duas passagens, declare `reviewStatus=needs_review` quando houver ambiguidade, contradicao ou desacordo ainda nao resolvido; na segunda passagem reavalie as evidencias e a decisao anterior sem presumir que ela esta correta. Declare `reviewStatus=conclusive` somente quando a decisao e os achados estiverem sustentados pelo contrato e pelas evidencias.
 """
+
+[mcp_servers]

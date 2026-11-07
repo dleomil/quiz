@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "O que significa imigração?",
+      "options": [
+        "a chegada a outro país para morar nele",
+        "uma viagem de férias a outro país",
+        "a mudança de bairro na mesma cidade",
+        "uma visita a parentes em outra cidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Imigração é a chegada de pessoas a um país diferente daquele em que viviam, para morar nele.",
+      "wrongExplanations": {
+        "1": "Uma viagem de férias é temporária e não tem como objetivo morar no país visitado.",
+        "2": "Mudar de bairro na mesma cidade não envolve a chegada a outro país.",
+        "3": "Visitar parentes em outra cidade não significa chegar a outro país para morar."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "De quais países vieram os imigrantes portugueses e espanhóis?",
+      "options": [
+        "Itália e Japão",
+        "Portugal e Espanha",
+        "Portugal e Itália",
+        "Espanha e Alemanha"
+      ],
+      "correctIndex": 1,
+      "explanation": "Os portugueses vieram de Portugal, e os espanhóis, da Espanha.",
+      "wrongExplanations": {
+        "0": "Itália e Japão são países de origem de outros grupos de imigrantes.",
+        "2": "Portugal corresponde aos portugueses, mas os espanhóis vieram da Espanha, não da Itália.",
+        "3": "A Espanha corresponde aos espanhóis, mas os portugueses vieram de Portugal, não da Alemanha."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Qual motivo levou parte dos imigrantes portugueses e espanhóis a buscar uma nova vida no Brasil?",
+      "options": [
+        "o desejo de fazer uma visita curta a um museu",
+        "a intenção de acompanhar um jogo e retornar ao país de origem",
+        "a busca por trabalho e novas oportunidades",
+        "a vontade de passar férias e voltar para casa"
+      ],
+      "correctIndex": 2,
+      "explanation": "A busca por trabalho e novas oportunidades motivou parte desses imigrantes. As razões para imigrar podiam variar entre as pessoas.",
+      "wrongExplanations": {
+        "0": "Uma visita curta a um museu não envolve a mudança para morar no Brasil.",
+        "1": "Viajar para acompanhar um jogo e retornar não é estabelecer uma nova vida no país.",
+        "3": "Passar férias e voltar para casa descreve uma viagem de turismo, não uma mudança para morar."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "O que os imigrantes podem compartilhar com as pessoas do país onde passam a morar?",
+      "options": [
+        "somente o nome do país de origem",
+        "apenas objetos que cabem em uma mala",
+        "apenas costumes aprendidos depois da chegada",
+        "línguas, receitas, costumes e conhecimentos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Além de objetos, os imigrantes levam experiências, conhecimentos e práticas culturais que podem compartilhar.",
+      "wrongExplanations": {
+        "0": "As pessoas podem compartilhar muito mais que o nome do país de origem, como receitas e conhecimentos.",
+        "1": "As experiências e os conhecimentos também acompanham as pessoas, mesmo sem ocupar espaço na mala.",
+        "2": "Os imigrantes também podem compartilhar costumes que já conheciam antes da chegada."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Por que não devemos dizer que todos os imigrantes viveram a mesma experiência?",
+      "options": [
+        "porque suas vidas, seus motivos e seus lugares de origem podiam ser diferentes",
+        "porque morar no mesmo país torna todas as histórias iguais",
+        "porque a nacionalidade revela tudo sobre a vida de uma pessoa",
+        "porque uma história de família explica a vida de todos os imigrantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "As experiências de imigração variam. Pessoas de uma mesma nacionalidade também podem ter histórias diferentes.",
+      "wrongExplanations": {
+        "1": "Morar no mesmo país não torna iguais as experiências das pessoas.",
+        "2": "A nacionalidade não revela todos os acontecimentos e motivos da vida de uma pessoa.",
+        "3": "A história de uma família ajuda a conhecer essa família, mas não representa todos os imigrantes."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Qual situação é um exemplo de contribuição cultural?",
+      "options": [
+        "uma pessoa calcular a distância entre duas cidades",
+        "uma família compartilhar uma receita tradicional com seus vizinhos",
+        "uma família medir o tamanho de sua mala",
+        "uma pessoa consultar a previsão do tempo antes de viajar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Compartilhar uma receita tradicional é uma forma de transmitir conhecimentos e práticas culturais.",
+      "wrongExplanations": {
+        "0": "Calcular uma distância fornece uma medida; a situação não descreve uma contribuição cultural à comunidade.",
+        "2": "Medir uma mala informa seu tamanho; essa situação não descreve o compartilhamento de uma prática cultural.",
+        "3": "Consultar a previsão do tempo ajuda a planejar a viagem; a situação não mostra uma prática cultural sendo compartilhada."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "95"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Qual conjunto reúne práticas culturais que comunidades de imigrantes podem compartilhar?",
+      "options": [
+        "previsões de chuva, temperaturas e ventos",
+        "números de assentos, horários e preços de passagens",
+        "receitas, festas e palavras usadas no dia a dia",
+        "distâncias, velocidades e pesos das malas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Receitas, festas e palavras podem circular entre comunidades e participar da vida cultural.",
+      "wrongExplanations": {
+        "0": "Esse conjunto reúne informações sobre o tempo, não práticas culturais de comunidades.",
+        "1": "Esse conjunto reúne informações sobre passagens e transporte, não as práticas culturais pedidas.",
+        "3": "Esse conjunto reúne medidas relacionadas a uma viagem, não as práticas culturais pedidas."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "96"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Como os imigrantes portugueses e espanhóis puderam participar do trabalho no Brasil?",
+      "options": [
+        "somente na mesma profissão de seus pais",
+        "em uma única profissão escolhida para todos",
+        "apenas em trabalhos sem contato com outras pessoas",
+        "em diferentes profissões e atividades"
+      ],
+      "correctIndex": 3,
+      "explanation": "Os imigrantes participaram de diferentes atividades. Uma nacionalidade não determina uma única profissão.",
+      "wrongExplanations": {
+        "0": "A profissão dos pais não determina a única atividade que uma pessoa pode exercer.",
+        "1": "Pessoas de uma mesma nacionalidade podem exercer profissões diferentes.",
+        "2": "O trabalho também pode envolver contato e cooperação com outras pessoas."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "97"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Uma família de imigrantes compartilhou uma receita com os vizinhos. O que esse relato permite afirmar?",
+      "options": [
+        "que aquela família compartilhou uma prática cultural",
+        "que todas as famílias da mesma nacionalidade fizeram o mesmo",
+        "que todos os imigrantes trabalhavam preparando essa receita",
+        "que aquela receita era a única contribuição dos imigrantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O relato apresenta uma ação de uma família. Não permite atribuir a mesma ação a todas as pessoas de um grupo.",
+      "wrongExplanations": {
+        "1": "Um relato sobre uma família não comprova que todas as famílias fizeram o mesmo.",
+        "2": "Compartilhar uma receita não informa a profissão de todos os imigrantes.",
+        "3": "O relato mostra uma contribuição, mas não exclui a existência de outras."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "98"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "O que pode acontecer quando grupos com costumes diferentes passam a conviver?",
+      "options": [
+        "a convivência acontece sempre sem dificuldades",
+        "podem ocorrer trocas culturais e também conflitos",
+        "todos os costumes ficam iguais logo no primeiro encontro",
+        "somente o grupo que chegou muda seus costumes"
+      ],
+      "correctIndex": 1,
+      "explanation": "A convivência pode envolver aprendizado e trocas, mas também diferenças e conflitos que precisam ser enfrentados.",
+      "wrongExplanations": {
+        "0": "A convivência também pode apresentar dificuldades e conflitos.",
+        "2": "As diferenças não desaparecem de uma vez quando as pessoas se encontram.",
+        "3": "Diferentes grupos podem participar das trocas culturais durante a convivência."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "99"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "O que é uma comunidade?",
+      "options": [
+        "apenas as pessoas que nasceram no mesmo país",
+        "somente quem exerce a mesma profissão",
+        "um grupo de pessoas ligadas por convivência, espaços ou interesses em comum",
+        "somente as pessoas que têm o mesmo sobrenome"
+      ],
+      "correctIndex": 2,
+      "explanation": "Uma comunidade reúne pessoas com vínculos em comum. Elas não precisam ter a mesma origem ou profissão.",
+      "wrongExplanations": {
+        "0": "Uma comunidade pode reunir pessoas nascidas em países diferentes.",
+        "1": "Pessoas de profissões diferentes também podem pertencer à mesma comunidade.",
+        "3": "Pessoas com sobrenomes diferentes também podem fazer parte de uma comunidade."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "100"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Como os descendentes podem preservar a história de uma comunidade de imigrantes?",
+      "options": [
+        "apagando os nomes e as datas anotados nas fotografias",
+        "trocando os relatos das famílias por histórias inventadas",
+        "descartando cartas antigas antes de conhecer seu conteúdo",
+        "guardando registros e compartilhando memórias, relatos e celebrações"
+      ],
+      "correctIndex": 3,
+      "explanation": "Relatos, fotografias, cartas e celebrações podem ajudar a preservar e transmitir memórias de uma comunidade.",
+      "wrongExplanations": {
+        "0": "Apagar nomes e datas pode eliminar informações importantes para compreender as fotografias.",
+        "1": "Histórias inventadas não substituem relatos e registros sobre as experiências vividas.",
+        "2": "Descartar cartas sem examiná-las pode fazer a comunidade perder registros de sua história."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "101"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Quais fontes podem ajudar a estudar a história de uma família de imigrantes?",
+      "options": [
+        "cartas, fotografias, documentos e relatos de familiares",
+        "um palpite sobre a viagem, sem consultar registros ou relatos",
+        "uma história inventada sobre a família, sem evidências",
+        "uma data de chegada escolhida ao acaso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fontes diferentes podem ser comparadas para conhecer experiências de uma família de imigrantes.",
+      "wrongExplanations": {
+        "1": "Um palpite sem registros ou relatos não comprova como foi a viagem da família.",
+        "2": "Uma história inventada sem evidências não comprova as experiências da família.",
+        "3": "Uma data escolhida ao acaso não comprova quando a família chegou; é preciso consultar fontes."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "102"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Ao estudar a imigração, como devemos usar um sobrenome de família?",
+      "options": [
+        "como prova de que o nome nunca mudou ao longo do tempo",
+        "como uma pista que deve ser investigada com outras fontes",
+        "como prova de que todos os parentes nasceram no mesmo país",
+        "como uma informação suficiente para conhecer toda a história da família"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sobrenomes podem oferecer pistas sobre origens familiares, mas precisam ser estudados junto com outros registros e relatos.",
+      "wrongExplanations": {
+        "0": "Os nomes podem mudar; um sobrenome atual não prova que sempre foi escrito da mesma forma.",
+        "2": "Pessoas de uma família podem nascer em países diferentes, mesmo tendo o mesmo sobrenome.",
+        "3": "Um sobrenome não informa sozinho toda a trajetória de uma família."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "103"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "O que pode significar a integração de imigrantes em uma comunidade?",
+      "options": [
+        "viver sem conversar com os vizinhos",
+        "participar somente de atividades com pessoas da mesma origem",
+        "participar da vida da comunidade e poder manter costumes de origem",
+        "abandonar todos os costumes de origem para poder conviver"
+      ],
+      "correctIndex": 2,
+      "explanation": "A integração envolve participação na vida em sociedade. Ela não exige apagar a identidade cultural das pessoas.",
+      "wrongExplanations": {
+        "0": "Conversar e criar vínculos com outras pessoas faz parte da participação na comunidade.",
+        "1": "A participação na comunidade pode incluir pessoas de diferentes origens.",
+        "3": "Conviver não exige abandonar todos os costumes de origem; a diversidade pode ser respeitada."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "104"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Qual atitude demonstra respeito pelas histórias de imigrantes?",
+      "options": [
+        "imitar o sotaque de alguém para fazer os colegas rirem",
+        "contar a história de uma família como se fosse igual à de todas as outras",
+        "ignorar relatos de costumes diferentes dos nossos",
+        "ouvir os relatos e evitar julgar todo um grupo pela história de uma pessoa"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ouvir com respeito e reconhecer histórias diferentes ajuda a evitar julgamentos injustos sobre um grupo inteiro.",
+      "wrongExplanations": {
+        "0": "Usar o sotaque de alguém para fazer piada pode humilhar essa pessoa.",
+        "1": "As famílias podem ter histórias diferentes, mesmo quando possuem a mesma origem.",
+        "2": "Relatos de costumes diferentes também merecem atenção e respeito."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Por que uma receita de família pode ajudar a estudar a história da imigração?",
+      "options": [
+        "porque pode guardar memórias e mostrar trocas culturais",
+        "porque revela sozinha todos os acontecimentos de uma viagem",
+        "porque prova que todas as famílias cozinham da mesma maneira",
+        "porque mostra que os costumes nunca mudam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma receita pode ser transmitida entre gerações e adaptada no contato com outros costumes e ingredientes.",
+      "wrongExplanations": {
+        "1": "Uma receita pode oferecer pistas, mas não conta sozinha todos os acontecimentos de uma viagem.",
+        "2": "As receitas e as formas de cozinhar podem variar de uma família para outra.",
+        "3": "As receitas podem mudar e incorporar novos ingredientes e conhecimentos."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Qual cuidado devemos ter ao contar a história de imigrantes?",
+      "options": [
+        "desconsiderar registros que mostrem experiências diferentes",
+        "evitar dizer que todas as pessoas de um grupo viveram da mesma forma",
+        "usar o relato de uma pessoa para explicar a vida de todas as outras",
+        "escolher apenas histórias iguais à primeira que conhecemos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Reconhecer diferenças entre pessoas e comunidades ajuda a compreender a diversidade das experiências de imigração.",
+      "wrongExplanations": {
+        "0": "Registros com experiências diferentes ajudam a conhecer a diversidade das histórias.",
+        "2": "Um relato individual não representa automaticamente a vida de todas as outras pessoas.",
+        "3": "Buscar apenas histórias iguais pode esconder experiências diferentes e importantes."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Como a presença de imigrantes portugueses e espanhóis passou a fazer parte da história do Brasil?",
+      "options": [
+        "somente pelas viagens, sem relação com a vida no Brasil",
+        "apenas pela história de uma pessoa de cada país",
+        "pelas experiências, pelo trabalho e pelas relações de pessoas e comunidades",
+        "por uma única experiência vivida da mesma forma por todos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Essa presença foi construída por experiências e relações variadas, que fizeram parte da vida em sociedade.",
+      "wrongExplanations": {
+        "0": "A história da imigração também inclui a vida e as relações construídas depois da chegada.",
+        "1": "Muitas pessoas e comunidades fizeram parte dessa história, não apenas uma pessoa de cada país.",
+        "3": "As experiências dos imigrantes foram variadas, não uma única história igual para todos."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_ibericos_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-portugueses-espanhois",
+      "topicName": "Imigrantes portugueses e espanhóis",
+      "question": "Qual frase resume de forma adequada a história de imigrantes portugueses e espanhóis no Brasil?",
+      "options": [
+        "Todos tiveram o mesmo motivo para vir e exerceram a mesma profissão.",
+        "Seus costumes desapareceram assim que chegaram ao Brasil.",
+        "Uma única família representa a história de todos os imigrantes.",
+        "Eles tiveram experiências variadas e contribuíram de diferentes formas para a sociedade."
+      ],
+      "correctIndex": 3,
+      "explanation": "O estudo da imigração reconhece a diversidade das experiências e as contribuições de diferentes pessoas e comunidades.",
+      "wrongExplanations": {
+        "0": "Os motivos da imigração e as profissões podiam variar entre as pessoas.",
+        "1": "Os costumes podiam ser mantidos, compartilhados e transformados ao longo do tempo.",
+        "2": "Uma família tem sua própria história e não representa todas as experiências de um grupo."
+      },
+      "skill": "identificar-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    }
+  ]
+}

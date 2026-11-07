@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo brincar está no futuro do presente?",
+      "options": ["brincará", "brinca", "brincou", "brincar"],
+      "correctIndex": 0,
+      "explanation": "Brincará é a forma do futuro do presente para ele ou ela.",
+      "wrongExplanations": {
+        "1": "Brinca está no presente.",
+        "2": "Brincou está no passado.",
+        "3": "Brincar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "No futuro do presente, como fica o verbo cantar para nós?",
+      "options": ["cantávamos", "cantaremos", "cantamos", "cantar"],
+      "correctIndex": 1,
+      "explanation": "Cantaremos é a forma do futuro do presente para nós.",
+      "wrongExplanations": {
+        "0": "Cantávamos está no passado.",
+        "2": "Cantamos não é a forma do futuro do presente pedida neste item.",
+        "3": "Cantar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Na frase “Amanhã, Miguel escreverá um bilhete”, qual palavra é o verbo no futuro?",
+      "options": ["amanhã", "Miguel", "escreverá", "bilhete"],
+      "correctIndex": 2,
+      "explanation": "Escreverá é o verbo que expressa a ação futura de escrever.",
+      "wrongExplanations": {
+        "0": "Amanhã indica quando a ação ocorrerá, mas não é o verbo.",
+        "1": "Miguel nomeia quem fará a ação.",
+        "3": "Bilhete nomeia aquilo que será escrito."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual é a forma do futuro do presente do verbo partir para eles?",
+      "options": ["partiram", "partem", "partir", "partirão"],
+      "correctIndex": 3,
+      "explanation": "Partirão é a forma do futuro do presente para eles ou elas.",
+      "wrongExplanations": {
+        "0": "Partiram está no passado.",
+        "1": "Partem está no presente.",
+        "2": "Partir está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual frase usa o futuro do presente do verbo dançar?",
+      "options": [
+        "A menina dançará na festa.",
+        "A menina dança na festa.",
+        "A menina dançou na festa.",
+        "A menina gosta de dançar."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dançará está no futuro do presente e indica uma ação posterior.",
+      "wrongExplanations": {
+        "1": "Dança está no presente.",
+        "2": "Dançou está no passado.",
+        "3": "Dançar está no infinitivo, acompanhado do verbo gosta."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo comer completa “Eu ____” no futuro do presente?",
+      "options": ["comia", "comerei", "como", "comer"],
+      "correctIndex": 1,
+      "explanation": "Comerei está no futuro do presente e indica uma ação que eu farei depois.",
+      "wrongExplanations": {
+        "0": "Comia está no passado.",
+        "2": "Como está no presente.",
+        "3": "Comer está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Complete escolhendo o futuro do presente de trazer: “Na próxima semana, vocês ____ os materiais.”",
+      "options": ["trazer", "trouxeram", "trarão", "trazem"],
+      "correctIndex": 2,
+      "explanation": "Trarão é o futuro do presente do verbo trazer para vocês.",
+      "wrongExplanations": {
+        "0": "Trazer está no infinitivo.",
+        "1": "Trouxeram está no passado.",
+        "3": "Trazem está no presente."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Na frase “A equipe chegará mais tarde”, o verbo chegará indica uma ação:",
+      "options": [
+        "que acontece agora",
+        "que ocorreu antes",
+        "que se repete sempre",
+        "que acontecerá depois"
+      ],
+      "correctIndex": 3,
+      "explanation": "Chegará está no futuro do presente e indica uma ação posterior.",
+      "wrongExplanations": {
+        "0": "Chegará não está no presente.",
+        "1": "Chegará não está no passado.",
+        "2": "A frase não diz que a chegada se repete."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo fazer está no futuro do presente para ele ou ela?",
+      "options": ["fará", "fez", "faz", "faria"],
+      "correctIndex": 0,
+      "explanation": "Fará é o futuro do presente do verbo fazer para ele ou ela.",
+      "wrongExplanations": {
+        "1": "Fez está no passado.",
+        "2": "Faz está no presente.",
+        "3": "Faria está no futuro do pretérito, não no futuro do presente."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual palavra completa a frase no futuro do presente: “Amanhã, eu ____ um plano para a viagem”?",
+      "options": ["planejei", "planejarei", "planejo", "planejar"],
+      "correctIndex": 1,
+      "explanation": "Planejarei está no futuro do presente e combina com “amanhã”, pois indica uma ação que eu farei depois.",
+      "wrongExplanations": {
+        "0": "Planejei está no passado.",
+        "2": "Planejo está no presente.",
+        "3": "Planejar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo ser está no futuro do presente para nós?",
+      "options": ["somos", "éramos", "seremos", "ser"],
+      "correctIndex": 2,
+      "explanation": "Seremos é o futuro do presente do verbo ser para nós.",
+      "wrongExplanations": {
+        "0": "Somos está no presente.",
+        "1": "Éramos está no passado.",
+        "3": "Ser está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual frase apresenta o verbo viajar no futuro do presente para elas?",
+      "options": [
+        "Elas viajaram nas férias.",
+        "Elas viajam nas férias.",
+        "Elas gostam de viajar.",
+        "Elas viajarão nas férias."
+      ],
+      "correctIndex": 3,
+      "explanation": "Viajarão é o futuro do presente de viajar para elas.",
+      "wrongExplanations": {
+        "0": "Viajaram está no passado.",
+        "1": "Viajam está no presente.",
+        "2": "Viajar está no infinitivo, acompanhado do verbo gostam."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo aparecer completa a frase no futuro do presente: “O sol ____ no horizonte”?",
+      "options": ["aparecerá", "apareceu", "aparece", "aparecer"],
+      "correctIndex": 0,
+      "explanation": "O sol é tratado no singular, e aparecerá está no futuro do presente.",
+      "wrongExplanations": {
+        "1": "Apareceu está no passado.",
+        "2": "Aparece está no presente.",
+        "3": "Aparecer está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Escolha a forma do futuro do presente de comprar para eles: “Eles ____ os ingressos.”",
+      "options": ["compraram", "comprarão", "compram", "comprar"],
+      "correctIndex": 1,
+      "explanation": "Comprarão é a forma do futuro do presente para eles ou elas.",
+      "wrongExplanations": {
+        "0": "Compraram está no passado.",
+        "2": "Compram está no presente.",
+        "3": "Comprar está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo correr está no futuro do presente?",
+      "options": ["corria", "correu", "correrá", "correr"],
+      "correctIndex": 2,
+      "explanation": "Correrá está no futuro do presente para ele ou ela.",
+      "wrongExplanations": {
+        "0": "Corria está no passado.",
+        "1": "Correu está no passado.",
+        "3": "Correr está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo ter está no futuro do presente para ela?",
+      "options": ["tem", "tinha", "ter", "terá"],
+      "correctIndex": 3,
+      "explanation": "Terá é o futuro do presente do verbo ter para ela.",
+      "wrongExplanations": {
+        "0": "Tem está no presente.",
+        "1": "Tinha está no passado.",
+        "2": "Ter está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "O que a forma verbal “construiremos” expressa?",
+      "options": [
+        "uma ação que nós faremos depois",
+        "uma ação que já fizemos",
+        "uma ação que fazemos agora",
+        "o nome de uma construção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Construiremos está no futuro do presente para nós.",
+      "wrongExplanations": {
+        "1": "Construiremos não está no passado.",
+        "2": "Construiremos não está no presente.",
+        "3": "Construiremos é um verbo, não o nome de uma construção."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Complete no futuro do presente do verbo vir: “Amanhã, eles ____ visitar a escola.”",
+      "options": ["vieram", "virão", "vêm", "vir"],
+      "correctIndex": 1,
+      "explanation": "Virão é o futuro do presente do verbo vir para eles.",
+      "wrongExplanations": {
+        "0": "Vieram está no passado.",
+        "2": "Vêm está no presente.",
+        "3": "Vir está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual é o futuro do presente do verbo dormir para nós?",
+      "options": ["dorme", "dormiram", "dormiremos", "dormir"],
+      "correctIndex": 2,
+      "explanation": "Dormiremos é a forma do futuro do presente para nós.",
+      "wrongExplanations": {
+        "0": "Dorme está no presente.",
+        "1": "Dormiram está no passado.",
+        "3": "Dormir está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_pt_futuro_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "portugues",
+      "topic": "futuro",
+      "question": "Qual forma do verbo ver está no futuro do presente para vocês?",
+      "options": ["veem", "viram", "ver", "verão"],
+      "correctIndex": 3,
+      "explanation": "Verão é o futuro do presente do verbo ver para vocês.",
+      "wrongExplanations": {
+        "0": "Veem está no presente.",
+        "1": "Viram está no passado.",
+        "2": "Ver está no infinitivo."
+      },
+      "skill": "reconhecer-acoes-futuras-no-futuro-do-presente",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "Português",
+        "topic": "futuro"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

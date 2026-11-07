@@ -24,6 +24,16 @@ Definir os controles obrigatorios para atualizar conteudo escolar sem introduzir
   para bloquear uma curadoria
 - conteudo derivado deve respeitar direitos autorais e restricoes da escola
 
+## Superficie de ferramentas dos agentes editoriais
+
+- os adaptadores dos agentes editoriais devem declarar `sandbox_mode =
+"read-only"` e uma tabela `mcp_servers` vazia;
+- antes de delegar, o agente principal deve executar `codex mcp list --json`;
+- qualquer servidor MCP, connector, navegador ou ferramenta externa ativa fora
+  da politica deve bloquear a execucao editorial;
+- nenhum resultado editorial pode conter pagina, trecho ou texto da fonte
+  escolar.
+
 ## Gates bloqueantes
 
 O lote nao pode seguir para implementacao se qualquer ponto abaixo falhar:
@@ -153,3 +163,39 @@ Automacao estrutural nao substitui revisao de linguagem, ambiguidade ou adequaca
 ## Regra de seguranca
 
 Nenhum agente pode publicar um lote curricular com base apenas em inferencia automatizada ou sem aprovacao humana registrada.
+
+## Entregas novas e alteradas a partir do T3 de 2026
+
+Para esses lotes e para os proximos acervos, aplicar o
+[contrato comum de entrega editorial](../specs/content-delivery-contract.md).
+Cada requisito possui criterio de aceite e evidencia; duas passagens editoriais
+reais e separadas devem se referir ao pacote exato. Geradores nao emitem
+aprovacoes. Diagnostico tecnico e distinto de revisao editorial.
+
+A validacao compara a base e o candidato, confere o runtime e testa os IDs do
+lote no quiz e no gabarito. Aceite de implementacao nao substitui aceite editorial
+ou autorizacao de release. O novo contrato nao amplia requisitos para T1/T2 e
+nao exige revisao retroativa de lotes intocados.
+
+## Entrega por matéria completa nas provas finais de novembro de 2026
+
+Para `2026-t3-v2`, foi autorizado planejar a liberação por disciplina completa.
+A matriz curricular integral permanece no manifesto; nenhuma linha pode ser
+omitida para simular completude. Esta exceção não altera acervos anteriores.
+
+O catálogo declara `publicationMode: by-subject` e `publishedSubjects`.
+A cobertura declara o mesmo modo e `intakeStatus`. Antes do congelamento,
+`intakeStatus` permanece `under-review`, o catálogo permanece `draft` e nenhuma
+matéria está liberada. Alterar esses campos não substitui a decisão humana.
+
+Após congelamento e gates editoriais, uma matéria só pode ser liberada se
+todos os seus temas declarados tiverem exatamente 20 questões publicadas.
+O runtime não pode conter questões de disciplinas pendentes nem rascunhos de
+uma matéria liberada. O seletor informa as disciplinas disponíveis, sem
+apresentar o ciclo inteiro como concluído. As demais continuam em preparação,
+fora do runtime publicado. Para outros acervos permanece a regra integral.
+
+Toda questão reaproveitada no novo acervo recebe novas revisões independentes
+pedagógica e linguística e aceite editorial do hash exato. Os campos de
+cobertura validam quantidade e visibilidade; o contrato de entrega continua
+responsável por bloquear pareceres ausentes, inválidos e aceite de outro hash.

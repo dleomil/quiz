@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "portugues:verbos",
+  "sourceSha256": "c751ac28ebc2b651505c4a15626066e724fb0e5d7168c59fcf646f2342b35f68",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_pt_verbos_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_pt_verbos_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/portugues/verbos/page-11"],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

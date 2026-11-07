@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "ciencias:corpos-luz",
+  "sourceSha256": "2f911fc89859c6404195481f7cbff5043b220e969a97c5c0cde68b827a64f703",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-41"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-41"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-42"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-42"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-43"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-43"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-44"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-44"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-46"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-46"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-47"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-47"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-48"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-48"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-49"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-49"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-50"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-50"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-51"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-51"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-52"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-52"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-53"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-53"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-54"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-54"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-55"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-55"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-41"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-41"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-42"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-42"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-43"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-43"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-44"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-44"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-45"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_cie_corpos_luz_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ciencias/corpos-luz/page-45"],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

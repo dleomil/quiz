@@ -20,6 +20,9 @@ const COVERAGE_MANIFEST_PATH = path.join(
   'config',
   'content-coverage-manifest.json',
 );
+// Padrões do incidente de História; complementam a revisão linguística.
+const HISTORY_ENGLISH_PATTERN =
+  /\b(?:what|which|why|how|when|where|who)\s+(?:is|are|was|were|do|does|did|can|should)\b|\b(?:the|because|through|without|every|only|immigrants|immigration|portuguese|spanish|brazilian|historical|community|communities|moving|staying|visiting)\b|\bthis option\b/i;
 
 function isNonEmptyString(value) {
   return typeof value === 'string' && value.trim().length > 0;
@@ -29,8 +32,66 @@ function normalizeOption(value) {
   return String(value).trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
 }
 
+function normalizeSupport(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLocaleLowerCase('pt-BR')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+}
+
 function questionLabel(question) {
   return isNonEmptyString(question && question.id) ? question.id : '<sem-id>';
+}
+
+function containsHtmlTag(value) {
+  return typeof value === 'string' && /<\/?[a-z][^>]*>/i.test(value);
+}
+
+function validateRenderableText(question, label) {
+  const errors = [];
+  const fields = [
+    ['topicName', question.topicName],
+    ['question', question.question],
+    ['questionPt', question.questionPt],
+    ['text', question.text],
+    ['explanation', question.explanation],
+  ];
+  if (Array.isArray(question.options)) {
+    question.options.forEach(function (option, index) {
+      fields.push(['options[' + index + ']', option]);
+    });
+  }
+  if (
+    question.wrongExplanations &&
+    typeof question.wrongExplanations === 'object'
+  ) {
+    Object.entries(question.wrongExplanations).forEach(function ([
+      index,
+      value,
+    ]) {
+      fields.push(['wrongExplanations[' + index + ']', value]);
+    });
+  }
+  fields.forEach(function ([field, value]) {
+    if (containsHtmlTag(value)) {
+      errors.push(
+        '[' + label + '] ' + field + ' nao pode conter marcacao HTML',
+      );
+    }
+    if (
+      question.subject === 'historia' &&
+      /^\d{4}-t[23]-v\d+$/.test(question.contentSetId || '') &&
+      typeof value === 'string' &&
+      HISTORY_ENGLISH_PATTERN.test(value)
+    ) {
+      errors.push(
+        '[' + label + '] ' + field + ' contem padrao em ingles em Historia',
+      );
+    }
+  });
+  return errors;
 }
 
 function validateQuestion(question, sourceName) {
@@ -40,6 +101,8 @@ function validateQuestion(question, sourceName) {
   if (!question || typeof question !== 'object') {
     return ['[' + sourceName + '] questao invalida: objeto ausente'];
   }
+
+  errors.push.apply(errors, validateRenderableText(question, label));
 
   ['id', 'subject', 'topic', 'question', 'explanation'].forEach(
     function (field) {
@@ -95,6 +158,22 @@ function validateQuestion(question, sourceName) {
 
   if (question.subject === 'ingles' && !isNonEmptyString(question.questionPt)) {
     errors.push('[' + label + '] Ingles content-v1 exige questionPt');
+  } else if (
+    question.subject === 'ingles' &&
+    /^\d{4}-t[23]-v\d+$/.test(question.contentSetId || '')
+  ) {
+    const support = normalizeSupport(question.questionPt);
+    if (
+      support ===
+      'escolha a alternativa correta para a frase ou palavra apresentada em ingles'
+    ) {
+      errors.push('[' + label + '] questionPt nao pode ser apoio generico');
+    }
+    if (support === normalizeSupport(question.question)) {
+      errors.push(
+        '[' + label + '] questionPt nao pode repetir apenas o enunciado',
+      );
+    }
   }
 
   ['contentSetId', 'skill', 'reviewStatus'].forEach(function (field) {
@@ -256,6 +335,74 @@ function validateCoverageManifest(sources, manifest, contentSets) {
       return;
     }
 
+    const bySubject = entry.publicationMode === 'by-subject';
+    const released = catalog.publishedSubjects;
+    const releasedTopics = catalog.publishedTopics;
+    if (bySubject || catalog.publicationMode === 'by-subject') {
+      if (
+        !bySubject ||
+        catalog.publicationMode !== 'by-subject' ||
+        !Array.isArray(released) ||
+        new Set(released).size !== released.length ||
+        released.some((subject) => !Object.hasOwn(entry.subjects, subject)) ||
+        (releasedTopics !== undefined &&
+          (!Array.isArray(releasedTopics) ||
+            new Set(releasedTopics).size !== releasedTopics.length))
+      ) {
+        errors.push(
+          '[coverage:' + contentSetId + '] publicacao por materia invalida',
+        );
+        return;
+      }
+      if (
+        catalog.status === 'published' &&
+        (released.length === 0 || entry.intakeStatus !== 'frozen')
+      ) {
+        errors.push(
+          '[coverage:' +
+            contentSetId +
+            '] publicacao exige intake frozen e materia liberada',
+        );
+      }
+      if (catalog.status !== 'published' && released.length) {
+        errors.push(
+          '[coverage:' +
+            contentSetId +
+            '] acervo nao publicado nao libera materias',
+        );
+      }
+      if (
+        Object.values(entry.subjects).some(
+          (topics) =>
+            !topics ||
+            !Object.keys(topics).length ||
+            Object.values(topics).some((count) => count !== 20),
+        )
+      ) {
+        errors.push('[coverage:' + contentSetId + '] cada tema exige meta 20');
+      }
+      Object.values(sources).forEach((source) => {
+        (source.questions || []).forEach((question) => {
+          if (
+            question.contentSetId !== contentSetId ||
+            catalog.status !== 'published'
+          )
+            return;
+          if (
+            !released.includes(question.subject) ||
+            question.reviewStatus !== 'published'
+          ) {
+            errors.push(
+              '[coverage:' +
+                contentSetId +
+                '] runtime inclui questao de materia pendente ou sem publicacao: ' +
+                question.id,
+            );
+          }
+        });
+      });
+    }
+
     const expectedByTopic = new Map();
     Object.entries(entry.subjects).forEach(function ([subject, topics]) {
       if (!topics || typeof topics !== 'object') {
@@ -297,7 +444,10 @@ function validateCoverageManifest(sources, manifest, contentSets) {
       const separator = key.indexOf(':');
       const subject = key.slice(0, separator);
       const topic = key.slice(separator + 1);
-      const mustBeComplete = catalog.status === 'published';
+      const mustBeComplete =
+        catalog.status === 'published' &&
+        (!bySubject || released.includes(subject)) &&
+        (!Array.isArray(releasedTopics) || releasedTopics.includes(topic));
       if (actual > expected || (mustBeComplete && actual !== expected)) {
         errors.push(
           coverageLabel(contentSetId, subject, topic) +
@@ -324,6 +474,20 @@ function loadContentSources(rootDir) {
     vm.runInContext(fs.readFileSync(sourcePath, 'utf8'), context, {
       filename: sourcePath,
     });
+  });
+
+  [
+    't3-published.js',
+    't3-portugues-published.js',
+    't3-matematica-published.js',
+    't3-portugues-expansion-published.js',
+  ].forEach(function (file) {
+    const releasePath = path.join(rootDir, 'js', 'data', file);
+    if (fs.existsSync(releasePath)) {
+      vm.runInContext(fs.readFileSync(releasePath, 'utf8'), context, {
+        filename: releasePath,
+      });
+    }
   });
 
   return context.window.QuestionsDataSources || {};

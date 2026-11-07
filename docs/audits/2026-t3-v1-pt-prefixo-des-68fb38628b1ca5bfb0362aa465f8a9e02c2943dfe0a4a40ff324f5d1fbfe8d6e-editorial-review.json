@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "editorial-review-v1",
+  "reviewMode": "two-independent-internal-reviewers",
+  "reviewers": ["portugues_pedagogical_smoke", "portugues_linguistic_smoke"],
+  "contentSetId": "2026-t3-v1",
+  "subjectId": "portugues",
+  "topicId": "prefixo-des",
+  "sourceSha256": "68fb38628b1ca5bfb0362aa465f8a9e02c2943dfe0a4a40ff324f5d1fbfe8d6e",
+  "requestedPasses": ["pedagogical", "linguistic"],
+  "expectedEvaluations": 40,
+  "completedEvaluations": 40,
+  "reportStatus": "clear",
+  "humanApprovalRequired": true,
+  "resolvedFindings": [
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_011",
+      "pass": "linguistic",
+      "severity": "blocking",
+      "resolution": "As alternativas foram reescritas para contrastar explicitamente materiais organizados com materiais misturados e sem lugar certo. O item corrigido recebeu aprovação pedagógica e linguística."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_001",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_001",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_002",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_002",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_003",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_003",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_004",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_004",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_005",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_005",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_006",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_006",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_007",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_007",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_008",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_008",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_009",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_009",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_010",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_010",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_011",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_011",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_012",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_012",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_013",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_013",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_014",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_014",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_015",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_015",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_016",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_016",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_017",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_017",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_018",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_018",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_019",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_019",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_020",
+      "pass": "pedagogical",
+      "reviewer": "portugues_pedagogical_smoke",
+      "decision": "approved"
+    },
+    {
+      "questionId": "2026t3v1_pt_prefixo_des_020",
+      "pass": "linguistic",
+      "reviewer": "portugues_linguistic_smoke",
+      "decision": "approved"
+    }
+  ]
+}

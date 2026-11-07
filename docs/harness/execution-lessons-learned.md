@@ -44,6 +44,33 @@ Registrar os erros concretos observados na execucao recente e transformar cada u
 - apos criar ou editar issue, PR ou comentario, o agente deve reler o texto
   publicado antes de executar a proxima acao
 
+### 7. Falha de preflight nao e medida de qualidade do modelo
+
+- na revisao de #404, oito tentativas nao produziram propostas porque o host
+  de Code Mode estava desativado; classifica-las como baixa qualidade do modelo
+  mistura defeito de ambiente com defeito de saida
+- controles validos bloqueados sem evento de ferramenta devem ser comparados
+  com as provas de preflight e captura; preservar os resultados originais e
+  registrar a reclassificacao humana sem recalcular o benchmark
+- validar capacidades do host antes de consumir tentativas e manter o limite
+  aprovado; falha nao autoriza repeticao nem aumento automatico do orcamento
+
+### 8. Mudanca normativa invalida contexto e aprovacao anteriores
+
+- o executor deve receber o texto completo dos contratos fixados, nao apenas
+  seus caminhos ou um resumo
+- se o hash de um contrato mudar, bloquear antes da chamada ao modelo e exigir
+  novo vinculo e aceite; a revisao nao pode ser inferida do estado anterior
+- apos alterar documento catalogado, executar `npm run documents:sync` e
+  `npm run validate:documents` antes da suite completa e da abertura do PR
+
+### 9. O board so conclui trabalho integrado
+
+- validacao e parecer favoravel permitem aguardar o merge, mas nao significam
+  que a entrega ja foi integrada
+- registrar `Ready` ou `In Review` antes do merge e marcar `Done` somente depois
+  da integracao confirmada, mantendo `Status` e `Workflow` alinhados
+
 ## Uso esperado
 
 Este documento nao substitui `agent-operational-guardrails.md` nem o modelo operacional dos agentes. Ele existe para manter os erros reais visiveis e para orientar ajustes futuros no harness.

@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "ingles:places-city",
+  "sourceSha256": "e64fc27fa45de369480e4e5e60fb9acd4bf25279e0ebc0b58f2399adfa9909c7",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_ing_places_city_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-79"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-79"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-80"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-80"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-81"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-81"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-82"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-82"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-83"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-83"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-84"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-84"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-85"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-85"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-86"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-86"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-87"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-87"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-88"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-88"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-89"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-89"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-75"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-76"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-77"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-78"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-79"],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_ing_places_city_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": ["school-curriculum:2026-t3/ingles/places-city/page-79"],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

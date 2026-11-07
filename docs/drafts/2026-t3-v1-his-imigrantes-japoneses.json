@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v1",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_001",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que significa imigrar?",
+      "options": [
+        "mudar-se para outro lugar para viver",
+        "fazer uma visita curta",
+        "trocar o nome de uma cidade",
+        "ficar sempre no mesmo lugar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Imigrar é mudar-se para outro lugar com intenção de viver nele.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não corresponde ao conceito histórico: mudar-se para outro lugar para viver.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: mudar-se para outro lugar para viver.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: mudar-se para outro lugar para viver."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_002",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Qual grupo é estudado neste tema?",
+      "options": [
+        "somente cientistas",
+        "imigrantes japoneses",
+        "somente atletas",
+        "somente astronautas"
+      ],
+      "correctIndex": 1,
+      "explanation": "O tema trata das experiências de imigrantes japoneses.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: imigrantes japoneses.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: imigrantes japoneses.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: imigrantes japoneses."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_003",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Por que algumas pessoas japonesas vieram para o Brasil?",
+      "options": [
+        "para evitar toda convivência",
+        "para construir apenas aeroportos",
+        "em busca de trabalho, família e novas oportunidades",
+        "para mudar as estações do ano"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pessoas podem migrar por trabalho, família, segurança ou outras oportunidades.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: em busca de trabalho, família e novas oportunidades.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: em busca de trabalho, família e novas oportunidades.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: em busca de trabalho, família e novas oportunidades."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_004",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que imigrantes podem trazer para uma nova comunidade?",
+      "options": [
+        "apenas um tipo de roupa",
+        "nada de suas experiências",
+        "um novo oceano",
+        "línguas, comidas, costumes e conhecimentos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Experiências e práticas culturais podem circular entre comunidades.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: línguas, comidas, costumes e conhecimentos.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: línguas, comidas, costumes e conhecimentos.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: línguas, comidas, costumes e conhecimentos."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_005",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Por que não devemos dizer que todos os imigrantes japoneses viveram a mesma história?",
+      "options": [
+        "porque havia diferentes origens, motivos e experiências",
+        "porque a História não tem pessoas",
+        "porque toda viagem foi igual",
+        "porque culturas nunca mudam"
+      ],
+      "correctIndex": 0,
+      "explanation": "A história de cada pessoa e comunidade pode ser diferente.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não corresponde ao conceito histórico: porque havia diferentes origens, motivos e experiências.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: porque havia diferentes origens, motivos e experiências.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: porque havia diferentes origens, motivos e experiências."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_006",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que é uma contribuição cultural?",
+      "options": [
+        "um prédio vazio",
+        "uma prática ou conhecimento compartilhado com uma comunidade",
+        "um sinal de trânsito",
+        "uma previsão do tempo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Contribuições culturais incluem práticas, conhecimentos e expressões.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: uma prática ou conhecimento compartilhado com uma comunidade.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: uma prática ou conhecimento compartilhado com uma comunidade.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: uma prática ou conhecimento compartilhado com uma comunidade."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "95"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_007",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Qual pode ser uma contribuição de comunidades japonesas?",
+      "options": [
+        "somente placas de rua",
+        "nenhuma prática cultural",
+        "receitas, festas, artes e conhecimentos compartilhados",
+        "somente uniformes escolares"
+      ],
+      "correctIndex": 2,
+      "explanation": "Comidas, festas, artes e saberes podem fazer parte das trocas culturais.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: receitas, festas, artes e conhecimentos compartilhados.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: receitas, festas, artes e conhecimentos compartilhados.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: receitas, festas, artes e conhecimentos compartilhados."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "96"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_008",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Como imigrantes japoneses participaram da vida no Brasil?",
+      "options": [
+        "em uma única profissão",
+        "sem aprender nada",
+        "sem contato com outras pessoas",
+        "em diferentes trabalhos, famílias e comunidades"
+      ],
+      "correctIndex": 3,
+      "explanation": "As pessoas participaram de atividades variadas e construíram relações diversas.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: em diferentes trabalhos, famílias e comunidades.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: em diferentes trabalhos, famílias e comunidades.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: em diferentes trabalhos, famílias e comunidades."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "97"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_009",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Por que é importante identificar comunidades e pessoas específicas?",
+      "options": [
+        "para não transformar uma experiência em regra para todos",
+        "porque ninguém tem identidade",
+        "porque todas as histórias são idênticas",
+        "porque grupos não mudam"
+      ],
+      "correctIndex": 0,
+      "explanation": "A contextualização evita generalizações sobre um grupo inteiro.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não corresponde ao conceito histórico: para não transformar uma experiência em regra para todos.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: para não transformar uma experiência em regra para todos.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: para não transformar uma experiência em regra para todos."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "98"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_010",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que pode acontecer quando imigrantes e moradores locais convivem?",
+      "options": [
+        "somente um lado participa",
+        "podem ocorrer trocas, aprendizados e também conflitos",
+        "nunca acontece nenhuma mudança",
+        "todas as diferenças desaparecem na hora"
+      ],
+      "correctIndex": 1,
+      "explanation": "Encontros históricos podem envolver trocas, aprendizados e conflitos.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: podem ocorrer trocas, aprendizados e também conflitos.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: podem ocorrer trocas, aprendizados e também conflitos.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: podem ocorrer trocas, aprendizados e também conflitos."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "99"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_011",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que é uma comunidade?",
+      "options": [
+        "um tipo de veículo",
+        "um mapa sem lugares",
+        "um grupo de pessoas ligado por relações ou espaços",
+        "um objeto isolado"
+      ],
+      "correctIndex": 2,
+      "explanation": "Comunidades se formam por relações e experiências compartilhadas.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: um grupo de pessoas ligado por relações ou espaços.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: um grupo de pessoas ligado por relações ou espaços.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: um grupo de pessoas ligado por relações ou espaços."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "100"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_012",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Como famílias podem preservar memórias de imigração?",
+      "options": [
+        "apagando todos os nomes",
+        "esquecendo cada acontecimento",
+        "evitando contar histórias",
+        "por relatos, fotografias, objetos, festas e documentos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Memórias familiares e fontes ajudam a preservar experiências.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: por relatos, fotografias, objetos, festas e documentos.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: por relatos, fotografias, objetos, festas e documentos.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: por relatos, fotografias, objetos, festas e documentos."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "101"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_013",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Qual fonte pode ajudar a estudar a imigração japonesa?",
+      "options": [
+        "cartas, fotografias, documentos e relatos orais",
+        "um palpite sem evidência",
+        "uma página em branco",
+        "um número aleatório"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferentes fontes permitem investigar experiências históricas.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não corresponde ao conceito histórico: cartas, fotografias, documentos e relatos orais.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: cartas, fotografias, documentos e relatos orais.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: cartas, fotografias, documentos e relatos orais."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "102"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_014",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que um sobrenome pode indicar em uma pesquisa histórica?",
+      "options": [
+        "que nomes não podem ser estudados",
+        "pode ser uma pista sobre origens familiares",
+        "que todos têm a mesma origem",
+        "que nomes nunca mudam"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sobrenomes são pistas e precisam ser analisados com outras fontes.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: pode ser uma pista sobre origens familiares.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: pode ser uma pista sobre origens familiares.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: pode ser uma pista sobre origens familiares."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "103"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_015",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que pode significar integrar-se a uma comunidade?",
+      "options": [
+        "viver sem relações",
+        "recusar qualquer troca",
+        "participar da vida social mantendo identidades e memórias",
+        "apagar todas as diferenças"
+      ],
+      "correctIndex": 2,
+      "explanation": "Integração pode combinar participação social e continuidade de identidades.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: participar da vida social mantendo identidades e memórias.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: participar da vida social mantendo identidades e memórias.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: participar da vida social mantendo identidades e memórias."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "104"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_016",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Qual atitude respeita as histórias de imigrantes japoneses?",
+      "options": [
+        "zombar de sotaques",
+        "dizer que uma história vale por todas",
+        "apagar práticas culturais",
+        "escutar relatos e evitar estereótipos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Respeito histórico exige escuta, contexto e cuidado com estereótipos.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: escutar relatos e evitar estereótipos.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: escutar relatos e evitar estereótipos.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: escutar relatos e evitar estereótipos."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "90"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_017",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Por que uma receita pode ser uma pista histórica?",
+      "options": [
+        "porque pode guardar memórias e mostrar trocas culturais",
+        "porque comida não tem história",
+        "porque todas as receitas são iguais",
+        "porque receitas explicam apenas o clima"
+      ],
+      "correctIndex": 0,
+      "explanation": "Receitas podem carregar memórias familiares e intercâmbios culturais.",
+      "wrongExplanations": {
+        "1": "Esta alternativa não corresponde ao conceito histórico: porque pode guardar memórias e mostrar trocas culturais.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: porque pode guardar memórias e mostrar trocas culturais.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: porque pode guardar memórias e mostrar trocas culturais."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "91"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_018",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "O que uma pergunta de História sobre imigração deve evitar?",
+      "options": [
+        "reconhecer diferenças",
+        "generalizações sobre todo um grupo",
+        "contextualizar experiências",
+        "comparar fontes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Generalizações escondem diferenças e não explicam bem a História.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: generalizações sobre todo um grupo.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: generalizações sobre todo um grupo.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: generalizações sobre todo um grupo."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "92"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_019",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Como a presença japonesa passou a fazer parte da História do Brasil?",
+      "options": [
+        "sem contato com outras pessoas",
+        "apenas por tecnologia recente",
+        "por experiências e interações de diferentes pessoas e comunidades",
+        "por uma única história igual"
+      ],
+      "correctIndex": 2,
+      "explanation": "A presença histórica se construiu em experiências e relações variadas.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: por experiências e interações de diferentes pessoas e comunidades.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: por experiências e interações de diferentes pessoas e comunidades.",
+        "3": "Esta alternativa não corresponde ao conceito histórico: por experiências e interações de diferentes pessoas e comunidades."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "93"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v1_his_imigrantes_japoneses_020",
+      "contentSetId": "2026-t3-v1",
+      "subject": "historia",
+      "topic": "imigrantes-japoneses",
+      "topicName": "Imigrantes japoneses",
+      "question": "Qual resumo está correto?",
+      "options": [
+        "todos viveram a mesma vida",
+        "a imigração não mudou nada",
+        "uma pessoa fez todas as contribuições",
+        "imigrantes japoneses tiveram experiências e contribuições diversas"
+      ],
+      "correctIndex": 3,
+      "explanation": "O estudo histórico deve reconhecer diversidade e contribuições específicas.",
+      "wrongExplanations": {
+        "0": "Esta alternativa não corresponde ao conceito histórico: imigrantes japoneses tiveram experiências e contribuições diversas.",
+        "1": "Esta alternativa não corresponde ao conceito histórico: imigrantes japoneses tiveram experiências e contribuições diversas.",
+        "2": "Esta alternativa não corresponde ao conceito histórico: imigrantes japoneses tiveram experiências e contribuições diversas."
+      },
+      "skill": "reconhecer-presenca-e-contribuicoes-sem-generalizacoes",
+      "sourceRef": {
+        "referenceId": "roteiro-estudos-av-mensal-t3-2026",
+        "section": "História",
+        "page": "94"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

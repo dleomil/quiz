@@ -1,0 +1,201 @@
+{
+  "scenarioId": "uso-de-eza-e-esa-r54-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "uso-de-eza-e-esa-r54-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Uso de EZA e ESA"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Distinguir substantivos em EZA e palavras em ESA conforme a formação e o sentido.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra completa corretamente a frase “A ____ da mala facilitou o transporte”?",
+        "options": ["leveza", "inglesa", "francesa", "portuguesa"],
+        "correctIndex": 0,
+        "explanation": "Leveza nomeia uma qualidade e termina com EZA.",
+        "wrongExplanations": {
+          "1": "Inglesa é um gentílico; a frase pede uma qualidade da mala.",
+          "2": "Francesa é um gentílico; a frase pede uma qualidade da mala.",
+          "3": "Portuguesa é um gentílico; a frase pede uma qualidade da mala."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A menina nasceu na Inglaterra. Qual palavra completa corretamente a frase: “Ela é ____”?",
+        "options": ["inglesa", "riqueza", "beleza", "natureza"],
+        "correctIndex": 0,
+        "explanation": "Inglesa é o gentílico feminino de quem é natural da Inglaterra; as outras opções nomeiam qualidades ou o mundo natural.",
+        "wrongExplanations": {
+          "1": "Riqueza nomeia abundância de bens ou recursos, não a origem de uma pessoa.",
+          "2": "Beleza nomeia uma qualidade, não a origem de uma pessoa.",
+          "3": "Natureza se refere ao mundo natural, não à origem de uma pessoa."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "O modo bondoso de tratar alguém é chamado de ____. Qual palavra completa a frase?",
+        "options": ["gentileza", "portuguesa", "francesa", "camponesa"],
+        "correctIndex": 0,
+        "explanation": "Gentileza é o modo bondoso de tratar alguém e termina em -eza. Portuguesa, francesa e camponesa são palavras em -esa que indicam origem ou relação.",
+        "wrongExplanations": {
+          "1": "Portuguesa indica origem ou relação com Portugal; não nomeia um modo bondoso de tratar alguém.",
+          "2": "Francesa indica origem ou relação com a França; não nomeia um modo bondoso de tratar alguém.",
+          "3": "Camponesa nomeia uma mulher do campo; não significa modo bondoso de tratar alguém."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra informa que uma menina é natural do Japão?",
+        "options": ["japonesa", "beleza", "tristeza", "gentileza"],
+        "correctIndex": 0,
+        "explanation": "Japonesa é o gentílico feminino de quem é natural do Japão; termina em -esa e se escreve com um S.",
+        "wrongExplanations": {
+          "1": "Beleza nomeia uma qualidade, não a origem de uma pessoa.",
+          "2": "Tristeza nomeia um sentimento, não a origem de uma pessoa.",
+          "3": "Gentileza nomeia o modo bondoso de tratar alguém, não a origem de uma pessoa."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Em uma história, uma família tinha poucos recursos. Qual palavra nomeia essa situação?",
+        "options": ["francesa", "pobreza", "portuguesa", "inglesa"],
+        "correctIndex": 1,
+        "explanation": "Pobreza nomeia a situação de quem tem poucos recursos. A palavra é formada de pobre com o sufixo -eza.",
+        "wrongExplanations": {
+          "0": "Francesa indica origem ou relação com a França; não nomeia a situação de uma família com poucos recursos.",
+          "2": "Portuguesa indica origem ou relação com Portugal; não nomeia a situação de uma família com poucos recursos.",
+          "3": "Inglesa indica origem ou relação com a Inglaterra; não nomeia a situação de uma família com poucos recursos."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "uso-de-eza-e-esa-r54-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto informa 3º ano, T3 de 2026, manifesto congelado, fonte autorizada e objetivo curricular rastreável.",
+      "2026t3v2_pt_eza_esa_006 apresenta resposta única: “leveza” nomeia a qualidade pertinente à situação e se distingue dos gentílicos em ESA.",
+      "2026t3v2_pt_eza_esa_007 relaciona corretamente “inglesa” à origem na Inglaterra; os distratores em EZA não indicam origem.",
+      "2026t3v2_pt_eza_esa_008 usa “gentileza” de modo coerente com o sentido apresentado; os distratores em ESA não nomeiam esse modo de tratar alguém.",
+      "2026t3v2_pt_eza_esa_009 identifica corretamente “japonesa” como gentílico feminino e diferencia a palavra dos substantivos em EZA.",
+      "2026t3v2_pt_eza_esa_010 identifica corretamente “pobreza” como substantivo formado com o sufixo -eza e apresenta distratores que indicam origem ou relação geográfica.",
+      "As cinco propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para cada alternativa incorreta.",
+      "As questões medem o objetivo declarado, apresentam uma única resposta defensável e não revelam a resposta por apoio externo ao próprio enunciado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote, sem alterações, à passagem linguística independente.",
+      "Obter aprovação humana pedagógica vinculada ao hash exato do pacote antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "906ce9c2-24ad-4cfe-b1fc-a2a6bc39ef4e",
+    "packageSha256": "f3c426bc6faea328b95da67a198b553e342a5f3c913d8e8526e25b5226c2291e",
+    "questionSha256s": {
+      "2026t3v2_pt_eza_esa_006": "76ab00628c1111c9fd502b1cde8418735dff23c3912bd9c95fa9b01e9a9788ac",
+      "2026t3v2_pt_eza_esa_007": "8bb789c0e70b610e1da0e8688a504de89f1906130552c0c44aaa88b41930a4a6",
+      "2026t3v2_pt_eza_esa_008": "df17a9211f206961b4a69d7ea93d37d9f7b8ecc1f9de22ae5a47819f2bc6ee2f",
+      "2026t3v2_pt_eza_esa_009": "6a554888a593115cd1ef36c67d24e7ef13fdd9a9569c1b2222be7245d2e62af4",
+      "2026t3v2_pt_eza_esa_010": "e63909b530c801d281afe66ce9ed3d63a5cb74dee03f2cb5eb46db79e30d1549"
+    },
+    "batchProposalSha256": "5f73245c106cb23f3f7a8e97fe68608455cba8943901845f1b1a41798c02a1b1",
+    "batchQuestionIds": [
+      "2026t3v2_pt_eza_esa_006",
+      "2026t3v2_pt_eza_esa_007",
+      "2026t3v2_pt_eza_esa_008",
+      "2026t3v2_pt_eza_esa_009",
+      "2026t3v2_pt_eza_esa_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-07T00:26:39.900Z",
+    "testOnly": false
+  }
+}

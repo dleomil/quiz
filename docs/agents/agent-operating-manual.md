@@ -24,8 +24,9 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 2. Revise riscos e fronteiras.
 3. Implemente o menor passo possivel.
 4. Valide contra a spec.
-5. Atualize issue, PR e board.
-6. Revise o PR com o Reviewer Agent antes do merge.
+5. Registre no issue, PR e board o estado intermediario e as evidencias atuais.
+6. Revise o PR com o Reviewer Agent antes do merge; marque o board como
+   concluido somente depois do merge.
 
 ## Documentos de referencia
 
@@ -43,6 +44,8 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 - [pedagogical-quality-agent.md](pedagogical-quality-agent.md)
 - [product-discovery-agent.md](product-discovery-agent.md)
 - [../specs/product-discovery-agent.md](../specs/product-discovery-agent.md)
+- [../specs/editorial-agent-output-contract.md](../specs/editorial-agent-output-contract.md)
+- [../specs/agent-capability-model.md](../specs/agent-capability-model.md)
 - [../github/comment-formatting-guide.md](../github/comment-formatting-guide.md)
 - [../github/pr-issue-body-template.md](../github/pr-issue-body-template.md)
 - [../harness/content-update-quality-gates.md](../harness/content-update-quality-gates.md)
@@ -52,10 +55,14 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 ### Para usar os agentes executaveis do Codex
 
 - consultar `docs/specs/executable-codex-agents.md`
-- delegar explicitamente para `reviewer`, `verifier` ou `product_discovery`
+- delegar explicitamente para `reviewer`, `verifier`, `product_discovery`,
+  `content_curator` ou `pedagogical_quality`
 - manter os subagentes em `read-only`
 - inspecionar as threads antes de aceitar o resultado consolidado
+- registrar atores ou threads distintos para producao e revisao do mesmo
+  artefato
 - nunca tratar o parecer de um subagente como aprovacao humana
+- executar revisao pedagogica e linguistica em passagens separadas
 
 ### Para iniciar uma entrega
 
@@ -73,7 +80,7 @@ Consolidar, em uma unica porta de entrada, como operar os agentes do projeto sem
 ### Para concluir uma entrega
 
 - registrar evidencias
-- atualizar o board
+- atualizar o board com o estado real; `Done` exige merge concluido
 - aplicar o parecer do Reviewer Agent
 - preservar a trilha no PR e na issue
 

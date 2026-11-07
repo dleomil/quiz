@@ -2,7 +2,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
-const { chromium } = require('playwright');
+const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
 const port = 4182;
@@ -238,7 +238,7 @@ async function run() {
       mathT2Count: QuestionsDB.getSubjectInfo('matematica', '2026-t2-v1').count,
     }));
 
-    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t2-v1');
+    assert.strictEqual(legacySnapshot.selectedContentSet, '2026-t3-v2');
     assert.strictEqual(
       legacySnapshot.history[0].schemaVersion,
       'legacy-session-v1',
@@ -256,10 +256,14 @@ async function run() {
     assert.deepStrictEqual(legacySnapshot.publishedContentSets, [
       '2026-t1-v1',
       '2026-t2-v1',
+      '2026-t3-v1',
+      '2026-t3-v2',
     ]);
     assert.deepStrictEqual(legacySnapshot.contentSetOptions, [
       { id: '2026-t1-v1', selected: 'false' },
-      { id: '2026-t2-v1', selected: 'true' },
+      { id: '2026-t2-v1', selected: 'false' },
+      { id: '2026-t3-v1', selected: 'false' },
+      { id: '2026-t3-v2', selected: 'true' },
     ]);
     assert.strictEqual(legacySnapshot.draftQuestionIds.length, 20);
     assert.ok(legacySnapshot.draftQuestionIds.includes('mat_t2_mon_001'));

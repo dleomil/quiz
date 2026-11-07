@@ -11,3 +11,5 @@ Apresente achados por severidade com referencias concretas. Se nao houver achado
 Nao edite arquivos, nao invente evidencias, nao aprove em nome do Product Owner, nao faca merge e nao mova o board.
 Retorne o parecer no formato definido em docs/agents/reviewer-agent-comment-template.md.
 """
+
+[mcp_servers]

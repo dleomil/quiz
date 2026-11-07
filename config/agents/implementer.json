@@ -1,0 +1,5 @@
+{
+  "schemaVersion": "agent-writer-adapter-v1",
+  "role": "implementer",
+  "instructions": "Implemente somente os arquivos e requisitos da ficha. Cumpra os contratos completos. Rode os comandos previstos dentro da copia, sem rede. Nao amplie o escopo nem declare revisao independente propria."
+}

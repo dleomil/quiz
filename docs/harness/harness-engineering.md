@@ -56,6 +56,8 @@ Formato esperado de saida, por exemplo:
 - PR correspondente
 - commit relacionado
 - evidencias anexadas
+- conjunto `agent-execution-record-set-v1` validado quando houver autoria,
+  avaliacao, verificacao ou pesquisa assistida
 
 ### 6. Operational preflight
 
@@ -65,7 +67,8 @@ Checklist minimo antes de qualquer acao de escrita:
 - confirmar labels e taxonomia existentes
 - confirmar o item do Project e seus campos
 - confirmar o endpoint ou comando correto para a acao
-- confirmar como a protecao original sera restaurada
+- confirmar como a protecao original sera restaurada; no modo de mantenedor
+  unico, conferir a excecao versionada e a tarefa de restauracao #310
 - consultar o checklist dedicado em `agent-preflight-checklist.md`
 
 ## Niveis de permissao sugeridos

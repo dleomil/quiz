@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "content-quality-audit-v1",
+  "reviewMode": "single-agent-sequential",
+  "reportStatus": "draft",
+  "contentSetId": "2026-t3-v1",
+  "topicId": "matematica:retas-perpendiculares",
+  "sourceSha256": "65009d8f029796eac6412392cbc9dedb8a46504544eaa29b0cf800ec6debe097",
+  "reviews": [
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_001",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_001",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_002",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_002",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_003",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_003",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_004",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_004",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_005",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_005",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_006",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_006",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_007",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_007",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_008",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_008",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_009",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_009",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_010",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_010",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_011",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_011",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_012",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_012",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_013",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_013",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_014",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_014",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_015",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_015",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_016",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_016",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_017",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_017",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_018",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_018",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_019",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_019",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_020",
+      "pass": "curriculum-factual",
+      "actorId": "codex-single-agent",
+      "actorRole": "content_curator",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    },
+    {
+      "questionId": "2026t3v1_math_retas_perpendiculares_020",
+      "pass": "pedagogical-linguistic",
+      "actorId": "codex-single-agent",
+      "actorRole": "pedagogical_quality",
+      "evidenceRefs": [
+        "school-curriculum:2026-t3/matematica/retas-perpendiculares"
+      ],
+      "decision": "clear",
+      "findings": []
+    }
+  ]
+}

@@ -40,11 +40,12 @@ Use imediatamente apos a implementacao.
 
 ### 5. Release and Board Agent
 
-Use quando a entrega ja estiver validada.
+Use depois da validacao para registrar o estado intermediario real da entrega.
 
 - atualiza issue, PR e Project
-- move o card para o estado correto
-- registra evidencias e conclusao
+- registra links e evidencias verificadas
+- mantem o card em revisao ou pronto enquanto o merge ainda estiver pendente
+- marca como concluido somente depois do merge e do registro das evidencias
 
 ### 6. Reviewer Agent
 
@@ -53,6 +54,7 @@ Use antes do merge final do PR.
 - confere aderencia a spec
 - confere validacao e risco
 - registra parecer objetivo
+- confirma a separacao entre autoria e revisao no conjunto estruturado de registros
 
 ## Regras de uso
 
@@ -60,6 +62,8 @@ Use antes do merge final do PR.
 - nao usar Reviewer Agent como substituto de validacao
 - nao usar Release and Board Agent antes de existir evidencia
 - nao executar varios agentes fora de ordem sem necessidade real
+- nao usar a mesma identidade ou thread para produzir e revisar o mesmo
+  artefato; registrar ambos os atores no preflight ou no PR
 
 ## Fluxo anterior a uma demanda de mercado
 
