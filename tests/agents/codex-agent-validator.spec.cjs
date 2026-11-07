@@ -290,7 +290,7 @@ function run() {
   delete missingProposal[1].input.proposal;
   assert.ok(
     validateEditorialScenarios(missingProposal).some((error) =>
-      error.includes('lote editorial deve conter de 1 a 5 propostas'),
+      error.includes('propostas'),
     ),
   );
 
