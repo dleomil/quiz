@@ -1,0 +1,200 @@
+{
+  "scenarioId": "eza-esa-r50-03-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "eza-esa-r50-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Uso de EZA e ESA"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Distinguir palavras terminadas em -eza e -esa conforme sua formação e significado.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A menina nasceu em Portugal. Ela é ____.",
+        "options": ["portuguesa", "francesa", "gentileza", "inglesa"],
+        "correctIndex": 0,
+        "explanation": "Portuguesa indica que a menina é natural de Portugal.",
+        "wrongExplanations": {
+          "1": "Francesa indica origem na França.",
+          "2": "Gentileza é uma qualidade, não um gentílico.",
+          "3": "Inglesa indica origem na Inglaterra."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Ao ler as pistas de um enigma, a criança percebeu rapidamente a resposta e explicou seu raciocínio. Qual qualidade ela demonstrou?",
+        "options": ["esperteza", "gentileza", "beleza", "natureza"],
+        "correctIndex": 0,
+        "explanation": "Esperteza é a habilidade de perceber ou resolver algo com inteligência; essa qualidade aparece quando a criança entende as pistas e encontra a resposta.",
+        "wrongExplanations": {
+          "1": "Gentileza é tratar os outros com bondade.",
+          "2": "Beleza descreve algo belo; o contexto destaca resolver um problema.",
+          "3": "Natureza se refere ao mundo natural."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual é o gentílico feminino de França?",
+        "options": ["riqueza", "francesa", "portuguesa", "inglesa"],
+        "correctIndex": 1,
+        "explanation": "Francesa indica origem na França.",
+        "wrongExplanations": {
+          "0": "Riqueza é uma qualidade, não um gentílico.",
+          "2": "Portuguesa indica origem em Portugal.",
+          "3": "Inglesa indica origem na Inglaterra."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A bailarina fez movimentos leves e cuidadosos ao tocar as flores. Qual palavra nomeia essa qualidade?",
+        "options": ["delicadeza", "gentileza", "beleza", "natureza"],
+        "correctIndex": 0,
+        "explanation": "Delicadeza nomeia uma qualidade e termina com EZA.",
+        "wrongExplanations": {
+          "1": "Gentileza é tratar as pessoas com bondade.",
+          "2": "Beleza descreve algo belo, não o modo cuidadoso de tocar.",
+          "3": "Natureza se refere ao mundo natural."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Ela tratou todos com ____. Qual palavra completa a frase e nomeia essa qualidade?",
+        "options": ["gentileza", "francesa", "riqueza", "japonesa"],
+        "correctIndex": 0,
+        "explanation": "Gentileza vem de gentil e nomeia o modo bondoso de tratar as pessoas.",
+        "wrongExplanations": {
+          "1": "Francesa é um gentílico, não o nome dessa qualidade.",
+          "2": "Riqueza indica abundância ou posse de muitos bens; não descreve o modo de tratar as pessoas.",
+          "3": "Japonesa é um gentílico."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "eza-esa-r50-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "reviewPass": "pedagogical",
+    "decision": "blocked",
+    "facts": [
+      "O contexto informa 3º ano, T3 de 2026, manifesto congelado, aprovação humana do congelamento e objetivo curricular rastreável.",
+      "As cinco propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e feedback para cada alternativa incorreta.",
+      "As questões 2026t3v2_pt_eza_esa_011, 2026t3v2_pt_eza_esa_012, 2026t3v2_pt_eza_esa_014 e 2026t3v2_pt_eza_esa_015 apresentam resposta única defensável e feedback pedagogicamente coerente.",
+      "A questão 2026t3v2_pt_eza_esa_013 tem como resposta correta “francesa”, mas contém uma caracterização semanticamente inadequada de “riqueza” no feedback da alternativa 0.",
+      "Não foram observadas lacunas sem resposta, instruções em outro idioma ou revelação direta da resposta no enunciado."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_pt_eza_esa_013",
+        "criterion": "feedback — correção factual e adequação pedagógica",
+        "severity": "blocking",
+        "evidence": "O feedback da alternativa 0 afirma: “Riqueza é uma qualidade, não um gentílico.” Essa formulação pode ensinar equivocadamente que riqueza é uma qualidade pessoal, em vez de indicar abundância, grande quantidade ou condição de quem é rico.",
+        "recommendation": "Substituir o feedback por uma explicação factual, como: “Riqueza indica abundância ou grande quantidade de bens ou recursos; não é um gentílico.”"
+      }
+    ],
+    "recommendations": [
+      "Corrigir o feedback da alternativa 0 da questão 2026t3v2_pt_eza_esa_013 e submeter o pacote atualizado a uma nova passagem pedagógica.",
+      "Manter a passagem linguística independente para o pacote corrigido.",
+      "Obter aprovação humana pedagógica do hash exato após a conclusão das duas passagens editoriais."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "4eae6d71-d7af-4d01-b0e1-9ae06996ab78",
+    "packageSha256": "037694ba66b63c404f82c872d14a5d1ff0801182515ec05f9f94c6ad6301c64c",
+    "batchProposalSha256": "20a04deb9c2c25203472092e6762e0c9a4b55c6ad8da702c23cdd165b9720e5a",
+    "batchQuestionIds": [
+      "2026t3v2_pt_eza_esa_011",
+      "2026t3v2_pt_eza_esa_012",
+      "2026t3v2_pt_eza_esa_013",
+      "2026t3v2_pt_eza_esa_014",
+      "2026t3v2_pt_eza_esa_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-06T14:51:50.012Z",
+    "testOnly": false
+  }
+}

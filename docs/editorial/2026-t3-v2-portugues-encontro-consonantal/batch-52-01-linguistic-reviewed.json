@@ -1,0 +1,252 @@
+{
+  "scenarioId": "encontro-r52-01-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "encontro-r52-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Encontro consonantal"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Identificar encontros consonantais e distingui-los de dígrafos.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal no começo?",
+        "options": ["prato", "chave", "ninho", "passo"],
+        "correctIndex": 0,
+        "explanation": "Em prato, P e R aparecem juntos e cada consoante mantém seu som.",
+        "wrongExplanations": {
+          "1": "Chave tem o dígrafo CH, que representa um som.",
+          "2": "Ninho tem o dígrafo NH.",
+          "3": "Passo tem o dígrafo SS."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra as duas consoantes juntas representam sons distintos?",
+        "options": ["blusa", "chuva", "galho", "carro"],
+        "correctIndex": 0,
+        "explanation": "Em blusa, B e L são pronunciados; formam encontro consonantal.",
+        "wrongExplanations": {
+          "1": "Ch representa um único som em chuva.",
+          "2": "LH representa um único som em galho.",
+          "3": "RR representa um único som em carro."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra apresenta encontro consonantal no meio da palavra?",
+        "options": ["apto", "banho", "massa", "ninho"],
+        "correctIndex": 0,
+        "explanation": "Em apto, P e T ficam juntos e cada consoante representa um som.",
+        "wrongExplanations": {
+          "1": "NH é dígrafo em banho.",
+          "2": "SS é dígrafo em massa.",
+          "3": "NH é dígrafo em ninho."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra começa com duas consoantes que mantêm seus sons?",
+        "options": ["clima", "telha", "queijo", "carro"],
+        "correctIndex": 0,
+        "explanation": "Em clima, C e L formam encontro consonantal e ambos são pronunciados.",
+        "wrongExplanations": {
+          "1": "LH é dígrafo em telha.",
+          "2": "QU representa um som em queijo.",
+          "3": "RR representa um som em carro."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra há encontro consonantal?",
+        "options": ["pedra", "palha", "massa", "queijo"],
+        "correctIndex": 0,
+        "explanation": "Em pedra, D e R são consoantes juntas e cada uma mantém seu som.",
+        "wrongExplanations": {
+          "1": "LH é dígrafo em palha.",
+          "2": "SS é dígrafo em massa: as duas letras representam um único som consonantal.",
+          "3": "QU representa um som em queijo."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "encontro-r52-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "reviewPass": "linguistic",
+    "decision": "blocked",
+    "facts": [
+      "A passagem solicitada é exclusivamente linguística.",
+      "O manifesto está declarado como frozen, com aprovação humana de congelamento identificada.",
+      "As cinco propostas estão em português, contêm quatro alternativas e não revelam explicitamente a resposta no enunciado.",
+      "Não foram identificadas alternativas vazias ou duplicadas nas propostas.",
+      "A prova de isolamento declara ferramentas, conectores, navegador e MCP inativos, sem evento de uso real registrado."
+    ],
+    "doubts": [
+      "A ficha é contraditória: objective e acceptanceCriteria delimitam o tema Encontro consonantal, mas requirements enumera exclusivamente cinco IDs do tema Dicionário. Assim, não é possível confirmar de modo inequívoco quais questões foram autorizadas por todos os campos da ficha."
+    ],
+    "findings": [
+      {
+        "questionId": "2026t3v2_pt_encontro_001",
+        "criterion": "Rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "Este ID pertence à entrada e ao objetivo da ficha, mas não aparece em requirements, que enumera somente IDs 2026t3v2_pt_dicionario_001 a 005.",
+        "recommendation": "Corrigir a ficha para que objective, requirements e acceptanceCriteria indiquem de forma consistente este tema e os cinco IDs avaliados."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_002",
+        "criterion": "Rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "Este ID não consta na relação de IDs apresentada em requirements, embora a entrada autorizada o inclua no tema Encontro consonantal.",
+        "recommendation": "Emitir ficha coerente com o pacote exato e realizar nova passagem linguística isolada."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_002",
+        "criterion": "Consistência de apresentação",
+        "severity": "minor",
+        "evidence": "O feedback da opção 1 escreve “Ch”, enquanto os demais grupos de letras são apresentados em maiúsculas, como “LH” e “RR”.",
+        "recommendation": "Padronizar para “CH representa um único som em chuva”."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_003",
+        "criterion": "Rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "Este ID não consta na relação de IDs apresentada em requirements, que se refere a outro tema.",
+        "recommendation": "Alinhar todos os campos da ficha ao tema Encontro consonantal antes de repetir a revisão."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_004",
+        "criterion": "Rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "Este ID foi submetido na entrada, mas requirements autoriza nominalmente apenas IDs do tema Dicionário.",
+        "recommendation": "Corrigir a delimitação documental e submeter novamente o pacote exato."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_004",
+        "criterion": "Clareza do feedback",
+        "severity": "minor",
+        "evidence": "O feedback “QU representa um som em queijo” é menos preciso que os demais, pois não explicita que as duas letras representam um único som.",
+        "recommendation": "Usar formulação paralela e infantilmente clara, como “Em queijo, as letras QU representam um único som”."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_005",
+        "criterion": "Rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "Este ID não aparece em requirements, apesar de constar na entrada e no objetivo geral da ficha.",
+        "recommendation": "Substituir a relação divergente de IDs por uma delimitação consistente e rastreável."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_005",
+        "criterion": "Clareza do feedback",
+        "severity": "minor",
+        "evidence": "O feedback “QU representa um som em queijo” não explicita, como os demais feedbacks, que duas letras representam um único som.",
+        "recommendation": "Reformular para “Em queijo, as letras QU representam um único som”."
+      }
+    ],
+    "recommendations": [
+      "Corrigir a contradição entre os campos da ficha sem alterar as propostas durante esta passagem.",
+      "Após a correção documental, executar uma nova passagem exclusivamente linguística sobre o pacote exato.",
+      "Padronizar a grafia dos grupos de letras e tornar os dois feedbacks sobre QU mais explícitos.",
+      "Manter pendente a aprovação humana do pacote exato; este parecer não autoriza implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "9c8a0a9d-0b63-4d6f-9c10-cc22def66d1d",
+    "packageSha256": "1a53b0d325c9117141a17ea867666ad250d6b9771a3e89ee91f95f59b014ce03",
+    "batchProposalSha256": "de82953ebfe4be544b6ce6281199288061005127ec59f2dbe026c8eec9e1fa28",
+    "batchQuestionIds": [
+      "2026t3v2_pt_encontro_001",
+      "2026t3v2_pt_encontro_002",
+      "2026t3v2_pt_encontro_003",
+      "2026t3v2_pt_encontro_004",
+      "2026t3v2_pt_encontro_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-06T15:37:49.325Z",
+    "testOnly": false
+  }
+}

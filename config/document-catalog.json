@@ -116,11 +116,11 @@
       "path": "docs/agents/editorial-diagnostics.md",
       "kind": "guide",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "91e80ca3334ccd6d51871954725f5f7ea4c77bab403b4f2ee2b36032acd7f348"
+      "sha256": "2d5651657cc69e091fd0e6cdfe22afa60db886668266ebeb75e3c28b5b086d35"
     },
     {
       "id": "docs--agents--model-evaluation-runbook",
@@ -413,11 +413,11 @@
       "path": "docs/harness/content-update-quality-gates.md",
       "kind": "policy",
       "owner": "content",
-      "revision": 1,
-      "version": "1.1.0",
+      "revision": 2,
+      "version": "1.2.0",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "f59ce883e644982326405c11e306dc52c4884d228ada57393fc2f84f02f5b2be"
+      "status": "draft",
+      "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b"
     },
     {
       "id": "docs--harness--execution-lessons-learned",
@@ -655,11 +655,11 @@
       "path": "docs/specs/content-delivery-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 2,
-      "version": "2.0.0",
+      "revision": 3,
+      "version": "2.1.0",
       "normative": true,
       "status": "draft",
-      "sha256": "b615fec1f49de6289f2af3a8527e87086e8557dddbc8d58103f959c79f65dd52"
+      "sha256": "0e519a2656eab8e7b67211730b225b22760c68147b4f860a0337b91f1aca9b78"
     },
     {
       "id": "docs--specs--content-schema-v1",
@@ -677,11 +677,11 @@
       "path": "docs/specs/curriculum-content-update-governance.md",
       "kind": "specification",
       "owner": "architecture",
-      "revision": 1,
+      "revision": 2,
       "version": null,
       "normative": false,
       "status": "unclassified",
-      "sha256": "ad5b71c38e9fd5c57651ad02ef3e984bc40a7cd4b7f818c99735069bc9aadf58"
+      "sha256": "7d8351fe2310afec523529b9d23670b89ade0f1e40150c57ec29b46de95c7051"
     },
     {
       "id": "docs--specs--curriculum-intake-template",
@@ -737,6 +737,17 @@
       "normative": true,
       "status": "draft",
       "sha256": "888ac4600a3bbe2cef90d5769f39bcc7bfa7f24516af8bfac5b6c29bbed1fe2e"
+    },
+    {
+      "id": "docs--specs--final-exams-november-2026-intake",
+      "path": "docs/specs/final-exams-november-2026-intake.md",
+      "kind": "specification",
+      "owner": "content",
+      "revision": 4,
+      "version": "1.0.1",
+      "normative": true,
+      "status": "draft",
+      "sha256": "13723530648377fb5f095d9af2a316f34e063597b0d2f4d0bb65b63f80f06523"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",

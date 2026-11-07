@@ -29,6 +29,7 @@ async function waitForServer(url) {
 
 async function openHistoryTopics(page) {
   await page.goto(baseUrl, { waitUntil: 'networkidle' });
+  await page.locator('[data-content-set="2026-t3-v1"]').click();
   assert.strictEqual(
     await page.evaluate(() => Store.get().selectedContentSet),
     '2026-t3-v1',

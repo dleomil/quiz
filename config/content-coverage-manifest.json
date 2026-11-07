@@ -103,6 +103,90 @@
           "divisao-euclidiana": 20
         }
       }
+    },
+    "2026-t3-v2": {
+      "publicationMode": "by-subject",
+      "intakeStatus": "frozen",
+      "subjects": {
+        "portugues": {
+          "usos-de-je-ji": 20,
+          "adjetivos-patrios": 20,
+          "usos-do-z": 20,
+          "pontuacao": 20,
+          "usos-de-h": 20,
+          "acentuacao": 20,
+          "sons-do-x": 20,
+          "dicionario": 20,
+          "uso-de-eza-e-esa": 20,
+          "encontro-consonantal": 20
+        },
+        "geografia": {
+          "usos-da-agua": 20,
+          "percurso-da-agua": 20,
+          "agua-potavel-reuso-e-reaproveitamento": 20,
+          "agua-nos-centros-urbanos": 20,
+          "agua-no-campo": 20,
+          "municipio": 20,
+          "integracao-e-infraestrutura-urbana-e-rural": 20,
+          "desigualdades-urbanas-e-rurais": 20,
+          "tecnologia-no-campo": 20
+        },
+        "ingles": {
+          "present-continuous-negativo": 20,
+          "thanksgiving": 20,
+          "christmas": 20,
+          "toys-and-games-e-preferencias": 20
+        },
+        "historia": {
+          "producao-e-trabalho-no-periodo-colonial": 20,
+          "tratado-de-tordesilhas-e-colonia": 20,
+          "producao-de-acucar": 20,
+          "ocupacao-do-interior": 20,
+          "ouro-e-pedras-preciosas": 20,
+          "monarquia": 20,
+          "cafe-e-cidades": 20,
+          "borracha": 20,
+          "industrializacao-inicial": 20
+        },
+        "matematica": {
+          "divisao-euclidiana": 20,
+          "multiplicacao": 20,
+          "mais-sobre-divisao": 20,
+          "divisao-de-dezenas-sem-resto": 20,
+          "divisao-de-dezenas-com-resto": 20,
+          "cardinais-e-ordinais": 20,
+          "quatro-operacoes": 20,
+          "divisao-e-unidades-de-medida": 20,
+          "mapas": 20,
+          "compasso": 20,
+          "divisao-de-centenas-sem-resto": 20,
+          "divisao-de-centenas-com-resto": 20,
+          "divisao-por-10-100-e-1000": 20,
+          "graficos-de-barras": 20,
+          "multiplicacao-por-multiplos-de-10": 20,
+          "multiplicacao-por-dois-algarismos": 20,
+          "figuras-congruentes": 20,
+          "arcos-de-circunferencia": 20,
+          "circunferencia-em-seis-partes": 20
+        },
+        "ciencias": {
+          "som-e-audicao": 20,
+          "como-ouvimos": 20,
+          "saude-auditiva": 20,
+          "deficiencia-auditiva": 20,
+          "producao-do-som": 20,
+          "instrumentos-musicais": 20,
+          "propriedades-do-som": 20,
+          "corpos-celestes": 20,
+          "observacao-do-ceu": 20,
+          "representacoes-da-terra": 20,
+          "planeta-terra": 20,
+          "estrutura-interna-da-terra": 20,
+          "placas-tectonicas": 20,
+          "vulcoes": 20,
+          "terremotos-e-tsunamis": 20
+        }
+      }
     }
   }
 }

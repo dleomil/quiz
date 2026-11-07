@@ -27,3 +27,12 @@ Uma captura íntegra comprova o que ocorreu, mesmo em uma execução rejeitada.
 Não transforma erro em sucesso nem autoriza nova tentativa. Preservar os
 recibos anteriores e criar nova ficha, runId e saída a cada tentativa autorizada.
 Não remover capturas automaticamente. A reversão do código não apaga evidências.
+
+## Compatibilidade de configuração
+
+A execução editorial usa a CLI homologada 0.160.0 com `--no-daemon`,
+`features.code_mode.enabled=false` e o host de Code Mode desativado.
+O perfil persistente permanece intacto; os argumentos explícitos também
+valem quando a execução ignora a configuração de usuário. O erro de host
+indisponível continua bloqueante. A aceitação depende do resultado real
+e da captura íntegra, não apenas da configuração ou do código de saída.

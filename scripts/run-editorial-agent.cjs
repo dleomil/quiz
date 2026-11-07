@@ -99,6 +99,7 @@ function buildMcpArguments() {
 }
 function buildExecArguments(config, message, workspace, sessionHome, authHome) {
   return [
+    '--no-daemon',
     'exec',
     '--strict-config',
     '--ignore-user-config',
@@ -267,15 +268,20 @@ async function run(cliArguments = process.argv.slice(2)) {
       const { questions } = JSON.parse(
         fs.readFileSync(path.resolve(args['--delivery-package']), 'utf8'),
       );
-      const proposal = questions.find(
-        (item) => item.id === document.input.proposal?.id,
-      );
+      const proposals = document.input.proposals || [document.input.proposal];
+      const matches = proposals.every((proposal) => {
+        const packaged = questions.find((item) => item.id === proposal?.id);
+        return (
+          packaged && digest(reviewProjection(packaged)) === digest(proposal)
+        );
+      });
       if (
         args['--agent'] !== 'pedagogical_quality' ||
-        !proposal ||
-        digest(reviewProjection(proposal)) !== digest(document.input.proposal)
+        !matches ||
+        proposals.length < 1 ||
+        proposals.length > 5
       )
-        throw new Error('proposta diverge do pacote editorial');
+        throw new Error('proposta diverge do pacote editorial no lote');
       packageSha256 = packageHash(questions);
     }
     const authHome = validateProfile(args['--auth-home']);
@@ -407,12 +413,26 @@ async function run(cliArguments = process.argv.slice(2)) {
     };
     const errors = validateEditorialScenario(scenario);
     if (errors.length) throw new Error(`saida rejeitada: ${errors.join('; ')}`);
-    if (packageSha256)
+    if (packageSha256 || document.input.proposal || document.input.proposals)
       scenario.execution = {
         kind: 'isolated-editorial',
         runId,
-        packageSha256,
-        proposalSha256: digest(document.input.proposal),
+        ...(packageSha256 ? { packageSha256 } : {}),
+        questionSha256s: Object.fromEntries(
+          (document.input.proposals || [document.input.proposal])
+            .filter(Boolean)
+            .map((proposal) => [proposal.id, digest(proposal)]),
+        ),
+        ...(document.input.proposals
+          ? { batchProposalSha256: digest(document.input.proposals) }
+          : { proposalSha256: digest(document.input.proposal) }),
+        ...(document.input.proposals
+          ? {
+              batchQuestionIds: document.input.proposals.map(
+                (proposal) => proposal.id,
+              ),
+            }
+          : {}),
         agent: args['--agent'],
         pass: document.input.requestedPass,
         completedAt: new Date().toISOString(),
