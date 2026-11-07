@@ -261,11 +261,11 @@ function run() {
   );
 
   const proposalSourceExcerptLeak = cloneEditorialScenarios();
-  proposalSourceExcerptLeak[1].input.proposal.sourceExcerpt =
+  proposalSourceExcerptLeak[0].output.proposal.sourceExcerpt =
     'Trecho escolar nao autorizado.';
   assert.ok(
     validateEditorialScenarios(proposalSourceExcerptLeak).some((error) =>
-      error.includes('campo nao autorizado: input.proposals[0].sourceExcerpt'),
+      error.includes('campo nao autorizado: output.proposal.sourceExcerpt'),
     ),
   );
 
