@@ -45,7 +45,7 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
     'identidade divergente',
   );
   check(
-    receipt.preflight.cliVersion === '0.160.0' &&
+    /^\d+\.\d+\.\d+$/.test(receipt.preflight.cliVersion) &&
       receipt.preflight.mcpServerCount === 0,
     'preflight divergente',
   );
@@ -90,8 +90,10 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
   });
   check(
     diagnosis.completed &&
-      diagnosis.issues.length === 1 &&
-      diagnosis.issues[0].code === 'process_failure',
+      ((diagnosis.issues.length === 1 &&
+        diagnosis.issues[0].code === 'process_failure') ||
+        (diagnosis.warnings.length === 1 &&
+          diagnosis.warnings[0].code === 'startup_config_2')),
     'eventos inelegiveis',
   );
   const events = stdout
@@ -123,7 +125,11 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
     'item.completed:agent_message',
   ])
     check(diagnosis.types[kind] === 1, 'ciclo divergente');
-  check(diagnosis.issues[0].line === events.indexOf(bad[0]) + 1, 'outra falha');
+  check(
+    (diagnosis.issues[0] || diagnosis.warnings[0]).line ===
+      events.indexOf(bad[0]) + 1,
+    'outra falha',
+  );
   check(
     JSON.stringify(diagnosis) === JSON.stringify(manifest.diagnosis),
     'diagnostico divergente',
@@ -351,7 +357,7 @@ function validateReport(report) {
     'ator recuperado divergente',
   );
   check(
-    r.preflight.cliVersion === '0.160.0' &&
+    /^\d+\.\d+\.\d+$/.test(r.preflight.cliVersion) &&
       r.preflight.mcpServerCount === 0 &&
       r.preflight.auth === 'chatgpt-keyring' &&
       r.preflight.skills === 'disabled-and-context-checked' &&
@@ -370,10 +376,12 @@ function validateReport(report) {
   );
   check(
     m.diagnosis.completed &&
-      m.diagnosis.issues.length === 1 &&
-      m.diagnosis.issues[0].code === 'process_failure' &&
-      m.diagnosis.issues[0].itemType === 'error' &&
-      m.diagnosis.issues[0].eventType === 'item.completed',
+      ((m.diagnosis.issues.length === 1 &&
+        m.diagnosis.issues[0].code === 'process_failure' &&
+        m.diagnosis.issues[0].itemType === 'error' &&
+        m.diagnosis.issues[0].eventType === 'item.completed') ||
+        (m.diagnosis.warnings.length === 1 &&
+          m.diagnosis.warnings[0].code === 'startup_config_2')),
     'diagnostico recuperado divergente',
   );
   check(

@@ -1,0 +1,555 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "dicionario",
+  "topicName": "Dicionário",
+  "status": "draft_pending_reviews",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 7",
+    "topic": "Dicionário"
+  },
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "No dicionário, qual palavra aparece primeiro em ordem alfabética?",
+      "options": ["abacate", "banana", "caju", "damasco"],
+      "correctIndex": 0,
+      "explanation": "A vem antes de B, C e D no alfabeto; por isso, abacate aparece primeiro.",
+      "wrongExplanations": {
+        "1": "Banana começa com B, e B vem depois de A no alfabeto.",
+        "2": "Caju começa com C, depois de A e B no alfabeto.",
+        "3": "Damasco começa com D, depois de A, B e C no alfabeto."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual destas palavras vem primeiro no dicionário?",
+      "options": ["casa", "casaco", "casal", "casamento"],
+      "correctIndex": 0,
+      "explanation": "Todas as palavras começam com “casa”. Como “casa” termina nesse ponto, ela vem antes das palavras que continuam com outras letras.",
+      "wrongExplanations": {
+        "1": "Casaco continua depois de “casa” com as letras C e O.",
+        "2": "Casal continua depois de “casa” com a letra L.",
+        "3": "Casamento continua depois de “casa” com mais letras."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual sequência está em ordem alfabética?",
+      "options": [
+        "bola, dado, fada",
+        "dado, bola, fada",
+        "fada, dado, bola",
+        "bola, fada, dado"
+      ],
+      "correctIndex": 0,
+      "explanation": "B vem antes de D, e D vem antes de F.",
+      "wrongExplanations": {
+        "1": "Dado deveria vir depois de bola.",
+        "2": "Fada deveria vir depois de bola e dado.",
+        "3": "Dado deveria vir antes de fada."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual sequência está em ordem alfabética?",
+      "options": [
+        "janela, jardim, joaninha",
+        "jardim, janela, joaninha",
+        "joaninha, janela, jardim",
+        "janela, joaninha, jardim"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em janela, depois de JA vem N; em jardim, depois de JA vem R. N vem antes de R. As duas palavras com JA vêm antes de joaninha, que começa com JO.",
+      "wrongExplanations": {
+        "1": "Janela vem antes de jardim: depois de JA, N vem antes de R. Depois vem joaninha, que começa com JO.",
+        "2": "Joaninha começa com JO, que vem depois de JA nas palavras janela e jardim.",
+        "3": "Depois de JA, N vem antes de R; por isso janela vem antes de jardim. Joaninha, com JO, vem por último."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual palavra apareceria por último em ordem alfabética?",
+      "options": ["casa", "casaco", "casal", "casamento"],
+      "correctIndex": 3,
+      "explanation": "Casamento aparece por último: depois das letras “casa”, M vem depois de C e L no alfabeto.",
+      "wrongExplanations": {
+        "0": "Casa termina nesse ponto e, por isso, vem antes das palavras que continuam com outras letras.",
+        "1": "Casaco vem antes de casamento: depois de “casa”, C vem antes de M.",
+        "2": "Casal vem antes de casamento: depois de “casa”, L vem antes de M."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual palavra vem primeiro no dicionário?",
+      "options": ["gato", "garfo", "gaveta", "gazeta"],
+      "correctIndex": 1,
+      "explanation": "As quatro palavras começam com GA. Na terceira letra, R (garfo) vem antes de T (gato), V (gaveta) e Z (gazeta).",
+      "wrongExplanations": {
+        "0": "Gato começa com GAT; R de GAR vem antes de T.",
+        "2": "Gaveta começa com GAV; R de GAR vem antes de V.",
+        "3": "Gazeta começa com GAZ; R de GAR vem antes de Z."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Se colocarmos “mala” e as palavras das opções em ordem alfabética, qual opção ficará logo depois de “mala”?",
+      "options": ["maleta", "manga", "mapa", "mar"],
+      "correctIndex": 0,
+      "explanation": "Mala vem antes de maleta: as letras M, A e L são iguais, e na quarta letra A vem antes de E. Depois de mala, maleta vem antes das outras opções, que começam por MAN, MAP e MAR.",
+      "wrongExplanations": {
+        "1": "Maleta começa por MAL, antes de manga, que começa por MAN.",
+        "2": "Maleta começa por MAL, antes de mapa, que começa por MAP.",
+        "3": "Maleta começa por MAL, antes de mar, que começa por MAR."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual sequência está em ordem alfabética?",
+      "options": [
+        "nuvem, onda, panela",
+        "onda, nuvem, panela",
+        "panela, onda, nuvem",
+        "nuvem, panela, onda"
+      ],
+      "correctIndex": 0,
+      "explanation": "N vem antes de O, e O vem antes de P.",
+      "wrongExplanations": {
+        "1": "Nuvem deve vir antes de onda.",
+        "2": "Panela deve vir depois de nuvem e onda.",
+        "3": "Onda deve vir antes de panela."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Em uma página do dicionário, o que é um verbete?",
+      "options": [
+        "A palavra e informações sobre ela, como significado e classe gramatical",
+        "A capa e o título do dicionário",
+        "Os nomes de quem escreveu o livro",
+        "O número que indica a página"
+      ],
+      "correctIndex": 0,
+      "explanation": "O verbete apresenta uma palavra e informações como significado e classe gramatical.",
+      "wrongExplanations": {
+        "1": "A capa não reúne as informações de cada palavra.",
+        "2": "Os autores não formam o verbete de uma palavra.",
+        "3": "O número localiza uma página, mas não explica a palavra."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Para descobrir o significado de “corajoso”, qual parte do dicionário você deve consultar?",
+      "options": [
+        "O verbete de “corajoso”",
+        "A indicação da classe gramatical",
+        "A divisão silábica da palavra",
+        "Uma palavra vizinha na ordem alfabética"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para descobrir o significado, localizamos o verbete da palavra.",
+      "wrongExplanations": {
+        "1": "A classe gramatical informa como a palavra funciona, mas não apresenta seu significado.",
+        "2": "A divisão silábica mostra como separar a palavra, não o que ela significa.",
+        "3": "Uma palavra vizinha pode ter outro significado; consulte o verbete de “corajoso”."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual palavra vem primeiro na ordem alfabética?",
+      "options": ["casa", "casaco", "casal", "casamento"],
+      "correctIndex": 0,
+      "explanation": "Todas as palavras começam com “casa”. Depois desse começo igual, “casa” termina e as outras continuam com mais letras; por isso, “casa” aparece primeiro.",
+      "wrongExplanations": {
+        "1": "Casaco vem depois de casa.",
+        "2": "Casal vem depois de casa.",
+        "3": "Casamento vem depois de casa."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Um verbete traz várias informações. Qual delas explica o que a palavra consultada quer dizer?",
+      "options": [
+        "A definição da palavra",
+        "A separação em sílabas",
+        "A classe gramatical",
+        "A forma de pronunciar a palavra"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição no verbete explica o significado da palavra consultada.",
+      "wrongExplanations": {
+        "1": "A separação em sílabas mostra como dividir a palavra, não o que ela significa.",
+        "2": "A classe gramatical informa como a palavra funciona, mas não explica seu significado.",
+        "3": "A pronúncia mostra como falar a palavra; a definição explica o que ela quer dizer."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual palavra vem primeiro: “pato” ou “peixe”?",
+      "options": [
+        "pato",
+        "peixe",
+        "As duas aparecem exatamente no mesmo lugar",
+        "Não é possível comparar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pato e peixe começam com P. Na segunda letra, A vem antes de E; por isso, pato aparece primeiro.",
+      "wrongExplanations": {
+        "1": "A segunda letra de pato é A, que vem antes de E em peixe.",
+        "2": "A ordem é definida comparando as letras, da esquerda para a direita.",
+        "3": "Podemos comparar a segunda letra: A vem antes de E."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual sequência está em ordem alfabética?",
+      "options": [
+        "foca, formiga, foto",
+        "foto, formiga, foca",
+        "formiga, foca, foto",
+        "foca, foto, formiga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Foca, formiga e foto começam com FO; a terceira letra C vem antes de R e T.",
+      "wrongExplanations": {
+        "1": "Foca deve vir antes das palavras com R e T como terceira letra.",
+        "2": "Foca vem antes de formiga.",
+        "3": "Formiga começa com FOR e vem antes de foto, que começa com FOT."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Para descobrir o significado de “corajoso”, o que você deve fazer no dicionário?",
+      "options": [
+        "Procurar o verbete de “corajoso”",
+        "Ler apenas a separação silábica de “corajoso”",
+        "Consultar somente a classe gramatical de “corajoso”",
+        "Procurar o verbete de uma palavra parecida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Consulte o verbete de “corajoso”: ele traz informações sobre a palavra, como seu significado.",
+      "wrongExplanations": {
+        "1": "A separação silábica mostra como dividir a palavra, não seu significado.",
+        "2": "A classe gramatical indica como a palavra funciona, mas não o que ela quer dizer.",
+        "3": "Uma palavra parecida pode ter outro significado; consulte o verbete de “corajoso”."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual palavra vem primeiro no dicionário?",
+      "options": ["cama", "cana", "capa", "casa"],
+      "correctIndex": 0,
+      "explanation": "Todas começam com CA; na terceira letra, M vem antes de N, P e S.",
+      "wrongExplanations": {
+        "1": "Cana começa com CAN, depois de CAM.",
+        "2": "Capa começa com CAP, depois de CAM e CAN.",
+        "3": "Casa começa com CAS, depois das demais."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Colocando “pato” e as opções em ordem alfabética, qual opção aparece imediatamente depois de “pato”?",
+      "options": ["pavão", "pedra", "pente", "pipa"],
+      "correctIndex": 0,
+      "explanation": "Pato começa com PAT e pavão com PAV; T vem antes de V. Pavão também vem antes das palavras iniciadas por PE e PI.",
+      "wrongExplanations": {
+        "1": "Pedra começa com PE e vem depois de PA.",
+        "2": "Pente começa com PE e vem depois de PA.",
+        "3": "Pipa começa com PI e vem depois de PA."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "O verbete de “gigante” informa: “muito grande”. Em qual situação essa palavra pode ser usada?",
+      "options": [
+        "A torre é tão alta que se destaca acima dos prédios ao redor.",
+        "O grão cabe na ponta de um dedo.",
+        "O caminho entre as casas é bem curto.",
+        "A música toca em volume baixo."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gigante pode descrever algo muito grande.",
+      "wrongExplanations": {
+        "1": "Essa situação descreve algo pequeno, não muito grande.",
+        "2": "Um caminho curto tem pouca extensão, não é muito grande.",
+        "3": "Volume baixo descreve o som, não algo muito grande."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual sequência está em ordem alfabética?",
+      "options": [
+        "amor, anel, barco",
+        "anel, amor, barco",
+        "barco, anel, amor",
+        "amor, barco, anel"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vem antes de B; entre amor e anel, M vem antes de N.",
+      "wrongExplanations": {
+        "1": "Amor vem antes de anel porque M precede N.",
+        "2": "Barco começa com B e deve vir depois das palavras com A.",
+        "3": "Barco deve vir depois de amor e anel."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_dicionario_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "dicionario",
+      "question": "Qual é a estratégia mais adequada para encontrar “janela” em um dicionário impresso?",
+      "options": [
+        "Localizar a seção da letra J e seguir a ordem alfabética",
+        "Procurar apenas no fim do dicionário",
+        "Começar pela seção da letra A",
+        "Abrir em qualquer página e escolher uma palavra parecida"
+      ],
+      "correctIndex": 0,
+      "explanation": "As palavras do dicionário são organizadas em ordem alfabética; localizar a letra inicial ajuda na busca.",
+      "wrongExplanations": {
+        "1": "A última página não indica a seção da letra J.",
+        "2": "Janela começa com J, então a seção A não ajuda.",
+        "3": "É preciso localizar a letra J e seguir a ordem alfabética."
+      },
+      "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Dicionário"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

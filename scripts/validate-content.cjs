@@ -337,13 +337,17 @@ function validateCoverageManifest(sources, manifest, contentSets) {
 
     const bySubject = entry.publicationMode === 'by-subject';
     const released = catalog.publishedSubjects;
+    const releasedTopics = catalog.publishedTopics;
     if (bySubject || catalog.publicationMode === 'by-subject') {
       if (
         !bySubject ||
         catalog.publicationMode !== 'by-subject' ||
         !Array.isArray(released) ||
         new Set(released).size !== released.length ||
-        released.some((subject) => !Object.hasOwn(entry.subjects, subject))
+        released.some((subject) => !Object.hasOwn(entry.subjects, subject)) ||
+        (releasedTopics !== undefined &&
+          (!Array.isArray(releasedTopics) ||
+            new Set(releasedTopics).size !== releasedTopics.length))
       ) {
         errors.push(
           '[coverage:' + contentSetId + '] publicacao por materia invalida',
@@ -442,7 +446,8 @@ function validateCoverageManifest(sources, manifest, contentSets) {
       const topic = key.slice(separator + 1);
       const mustBeComplete =
         catalog.status === 'published' &&
-        (!bySubject || released.includes(subject));
+        (!bySubject || released.includes(subject)) &&
+        (!Array.isArray(releasedTopics) || releasedTopics.includes(topic));
       if (actual > expected || (mustBeComplete && actual !== expected)) {
         errors.push(
           coverageLabel(contentSetId, subject, topic) +

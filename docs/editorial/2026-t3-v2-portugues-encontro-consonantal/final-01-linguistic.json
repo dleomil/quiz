@@ -1,0 +1,198 @@
+{
+  "scenarioId": "encontro-consonantal-r54-01-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "encontro-consonantal-r54-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Encontro consonantal"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Identificar encontros consonantais e distingui-los de dígrafos.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal no começo?",
+        "options": ["prato", "chave", "ninho", "passo"],
+        "correctIndex": 0,
+        "explanation": "Em prato, P e R aparecem juntos e cada consoante mantém seu som.",
+        "wrongExplanations": {
+          "1": "Chave tem o dígrafo CH, que representa um som.",
+          "2": "Ninho tem o dígrafo NH.",
+          "3": "Passo tem o dígrafo SS."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra as duas consoantes juntas representam sons distintos?",
+        "options": ["carro", "blusa", "chuva", "galho"],
+        "correctIndex": 1,
+        "explanation": "Em blusa, B e L são pronunciados; formam encontro consonantal.",
+        "wrongExplanations": {
+          "0": "RR representa um único som em carro.",
+          "2": "Em chuva, as letras CH representam um único som.",
+          "3": "LH representa um único som em galho."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra apresenta encontro consonantal no meio da palavra?",
+        "options": ["massa", "ninho", "apto", "banho"],
+        "correctIndex": 2,
+        "explanation": "Em apto, P e T ficam juntos e cada consoante representa um som.",
+        "wrongExplanations": {
+          "0": "SS é dígrafo em massa.",
+          "1": "NH é dígrafo em ninho.",
+          "3": "NH é dígrafo em banho."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra começa com duas consoantes que mantêm seus sons?",
+        "options": ["telha", "queijo", "carro", "clima"],
+        "correctIndex": 3,
+        "explanation": "Em clima, C e L formam encontro consonantal e ambos são pronunciados.",
+        "wrongExplanations": {
+          "0": "Em telha, LH representa um único som consonantal.",
+          "1": "Em queijo, QU representa um único som consonantal.",
+          "2": "Em carro, RR representa um único som consonantal."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra há encontro consonantal?",
+        "options": ["pedra", "palha", "massa", "queijo"],
+        "correctIndex": 0,
+        "explanation": "Em pedra, D e R são consoantes juntas e cada uma mantém seu som.",
+        "wrongExplanations": {
+          "1": "Em palha, LH representa um único som consonantal.",
+          "2": "Em massa, SS representa um único som consonantal.",
+          "3": "Em queijo, QU representa um único som consonantal."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "encontro-consonantal-r54-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara proposta rastreável, objetivo curricular, 3º ano e passagem linguistic.",
+      "2026t3v2_pt_encontro_001 apresenta enunciado claro em português, alternativas distintas e explicações concisas, sem revelar antecipadamente a resposta.",
+      "2026t3v2_pt_encontro_002 usa linguagem natural e adequada ao 3º ano; a expressão “sons distintos” é compreensível no contexto das alternativas.",
+      "2026t3v2_pt_encontro_003 apresenta instrução direta, pontuação correta e feedbacks redigidos com clareza.",
+      "2026t3v2_pt_encontro_004 mantém concordância, acentuação e formulação adequadas; enunciado e feedbacks não geram ambiguidade linguística.",
+      "2026t3v2_pt_encontro_005 apresenta enunciado objetivo e explicações coerentes e respeitosas para todas as alternativas.",
+      "As cinco questões estão integralmente em português, não possuem lacunas textuais e não revelam a resposta correta no enunciado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a conferência independente e para a aprovação humana obrigatória, sem considerar este parecer como autorização de publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "5e400071-3c95-4679-9e47-899b8dc0b9b2",
+    "questionSha256s": {
+      "2026t3v2_pt_encontro_001": "ba468b7714322a5fd5cb75c7dd9c3bf84daa0a88811769b515704028e0511079",
+      "2026t3v2_pt_encontro_002": "2413c1796cc521fd6cdebeb44bddb562a6ab30f86edf1c94966e8d5b20ba4005",
+      "2026t3v2_pt_encontro_003": "6754cf8be6055c4e8b43aa45a7457138f0d88049211565feba2034ae69fb83a2",
+      "2026t3v2_pt_encontro_004": "cf2e5e8282fe5035e92110d38f0b71e12e4dd4a79c1266efbd6182187ac649bb",
+      "2026t3v2_pt_encontro_005": "5da0b356df4f32798d5a79d9a9fb05b0d085177ae0ae67ccd22fdecbc54bc4a6"
+    },
+    "batchProposalSha256": "cf9aca541cf1dcb154f557dd1d0f40dcc2552c2843fdf27e71be40f150fd4f91",
+    "batchQuestionIds": [
+      "2026t3v2_pt_encontro_001",
+      "2026t3v2_pt_encontro_002",
+      "2026t3v2_pt_encontro_003",
+      "2026t3v2_pt_encontro_004",
+      "2026t3v2_pt_encontro_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-07T00:21:43.486Z",
+    "testOnly": false
+  }
+}

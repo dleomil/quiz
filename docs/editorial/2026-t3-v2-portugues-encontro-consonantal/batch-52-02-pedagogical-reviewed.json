@@ -1,0 +1,233 @@
+{
+  "scenarioId": "encontro-r52-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "encontro-r52-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Encontro consonantal"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Identificar encontros consonantais e distingui-los de dígrafos.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal com F e R?",
+        "options": ["fruta", "ficha", "folha", "fada"],
+        "correctIndex": 0,
+        "explanation": "Em fruta, F e R aparecem juntos e cada um tem seu som.",
+        "wrongExplanations": {
+          "1": "CH é dígrafo em ficha.",
+          "2": "LH é dígrafo em folha.",
+          "3": "Fada não tem F e R juntos; depois do F vem a vogal A."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal no início?",
+        "options": ["grilo", "guerra", "galho", "passo"],
+        "correctIndex": 0,
+        "explanation": "Em grilo, G e R são pronunciados em sequência.",
+        "wrongExplanations": {
+          "1": "GU forma dígrafo em guerra.",
+          "2": "LH é dígrafo em galho.",
+          "3": "SS é dígrafo em passo."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra há dígrafo, e não encontro consonantal?",
+        "options": ["ninho", "planta", "trigo", "clube"],
+        "correctIndex": 0,
+        "explanation": "NH representa um único som em ninho.",
+        "wrongExplanations": {
+          "1": "PL é encontro consonantal: P e L mantêm seus sons.",
+          "2": "TR é encontro consonantal.",
+          "3": "CL é encontro consonantal."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra contém encontro consonantal?",
+        "options": ["creme", "chave", "massa", "telha"],
+        "correctIndex": 0,
+        "explanation": "Em creme, C e R são pronunciados; é encontro consonantal.",
+        "wrongExplanations": {
+          "1": "CH é dígrafo em chave.",
+          "2": "SS é dígrafo em massa.",
+          "3": "LH é dígrafo em telha."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra começa com encontro consonantal formado por F e L?",
+        "options": ["flor", "filho", "chuva", "ninho"],
+        "correctIndex": 0,
+        "explanation": "Em flor, F e L são pronunciados em sequência.",
+        "wrongExplanations": {
+          "1": "LH é dígrafo em filho.",
+          "2": "CH é dígrafo em chuva.",
+          "3": "NH é dígrafo em ninho."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "encontro-r52-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "reviewPass": "pedagogical",
+    "decision": "blocked",
+    "facts": [
+      "A entrada declara 3º ano, ano letivo de 2026, T3, manifesto congelado, aprovação humana do congelamento e passagem pedagogical.",
+      "As cinco propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e feedback para as três alternativas incorretas.",
+      "Em 2026t3v2_pt_encontro_006, “fruta” apresenta FR como encontro consonantal e é a única resposta defensável.",
+      "Em 2026t3v2_pt_encontro_007, “grilo” apresenta GR no início e é a única resposta defensável.",
+      "Em 2026t3v2_pt_encontro_008, “ninho” apresenta NH como dígrafo, enquanto PL, TR e CL são encontros consonantais.",
+      "Em 2026t3v2_pt_encontro_009, “creme” apresenta CR como encontro consonantal e é a única resposta defensável.",
+      "Em 2026t3v2_pt_encontro_010, “flor” começa com FL e é a única resposta defensável.",
+      "Os enunciados estão em português, não possuem lacunas e não revelam explicitamente a alternativa correta.",
+      "A prova de isolamento informa ferramentas e conectores desativados, sem evento registrado de uso real."
+    ],
+    "doubts": [
+      "A ficha é internamente contraditória: objetivo e critérios de aceite delimitam Encontro consonantal e os IDs encontro_006 a encontro_010, mas os requisitos delimitam Dicionário e os IDs dicionario_006 a dicionario_010. Não é possível determinar qual escopo foi formalmente autorizado."
+    ],
+    "findings": [
+      {
+        "questionId": "2026t3v2_pt_encontro_006",
+        "criterion": "rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "O ID consta no objetivo da ficha, mas não na lista de IDs dos requisitos, que aponta para dicionario_006 e para o tema Dicionário.",
+        "recommendation": "Corrigir a ficha para declarar de forma consistente o tema encontro-consonantal e o ID encontro_006, ou fornecer a proposta de Dicionário realmente pretendida."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_007",
+        "criterion": "rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "O ID consta no objetivo da ficha, mas não na lista de IDs dos requisitos, que aponta para dicionario_007 e para o tema Dicionário.",
+        "recommendation": "Corrigir a ficha para declarar de forma consistente o tema encontro-consonantal e o ID encontro_007, ou fornecer a proposta de Dicionário realmente pretendida."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_008",
+        "criterion": "rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "O ID consta no objetivo da ficha, mas não na lista de IDs dos requisitos, que aponta para dicionario_008 e para o tema Dicionário.",
+        "recommendation": "Corrigir a ficha para declarar de forma consistente o tema encontro-consonantal e o ID encontro_008, ou fornecer a proposta de Dicionário realmente pretendida."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_009",
+        "criterion": "rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "O ID consta no objetivo da ficha, mas não na lista de IDs dos requisitos, que aponta para dicionario_009 e para o tema Dicionário.",
+        "recommendation": "Corrigir a ficha para declarar de forma consistente o tema encontro-consonantal e o ID encontro_009, ou fornecer a proposta de Dicionário realmente pretendida."
+      },
+      {
+        "questionId": "2026t3v2_pt_encontro_010",
+        "criterion": "rastreabilidade do escopo autorizado",
+        "severity": "blocking",
+        "evidence": "O ID consta no objetivo da ficha, mas não na lista de IDs dos requisitos, que aponta para dicionario_010 e para o tema Dicionário.",
+        "recommendation": "Corrigir a ficha para declarar de forma consistente o tema encontro-consonantal e o ID encontro_010, ou fornecer a proposta de Dicionário realmente pretendida."
+      }
+    ],
+    "recommendations": [
+      "Alinhar objetivo, requisitos, tema e IDs na ficha delimitada antes de solicitar nova passagem pedagogical.",
+      "Submeter novamente o pacote exato após a correção da rastreabilidade; manter separadas a passagem linguistic e a aprovação humana do lote."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "3fdd8ceb-5d82-4c42-a781-e39caaae514d",
+    "packageSha256": "1a53b0d325c9117141a17ea867666ad250d6b9771a3e89ee91f95f59b014ce03",
+    "batchProposalSha256": "92989fde25c9bf51405c634cac24f9a26f4d2305f0992b06baa4c5b5b3f20766",
+    "batchQuestionIds": [
+      "2026t3v2_pt_encontro_006",
+      "2026t3v2_pt_encontro_007",
+      "2026t3v2_pt_encontro_008",
+      "2026t3v2_pt_encontro_009",
+      "2026t3v2_pt_encontro_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-06T15:38:36.167Z",
+    "testOnly": false
+  }
+}

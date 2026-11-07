@@ -1,0 +1,201 @@
+{
+  "scenarioId": "uso-de-eza-e-esa-r54-03-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "uso-de-eza-e-esa-r54-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Uso de EZA e ESA"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Distinguir substantivos em EZA e palavras em ESA conforme a formação e o sentido.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "A menina nasceu na França. Qual palavra em -esa indica sua origem, e não uma qualidade?",
+        "options": ["francesa", "gentileza", "riqueza", "beleza"],
+        "correctIndex": 0,
+        "explanation": "Francesa indica origem na França e termina em -esa. Gentileza, riqueza e beleza são substantivos em -eza que nomeiam qualidades.",
+        "wrongExplanations": {
+          "1": "Gentileza termina em -eza e nomeia uma qualidade, não origem.",
+          "2": "Riqueza termina em -eza e nomeia uma condição, não origem.",
+          "3": "Beleza termina em -eza e nomeia uma qualidade, não origem."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra em -eza nomeia a habilidade de encontrar rapidamente a resposta de um enigma?",
+        "options": ["esperteza", "camponesa", "beleza", "francesa"],
+        "correctIndex": 0,
+        "explanation": "Esperteza é a habilidade de perceber ou resolver algo com inteligência. Camponesa e francesa terminam em -esa; beleza termina em -eza, mas nomeia outra qualidade.",
+        "wrongExplanations": {
+          "1": "Camponesa termina em -esa e nomeia uma mulher do campo.",
+          "2": "Beleza termina em -eza, mas não é a habilidade de resolver o enigma.",
+          "3": "Francesa termina em -esa e indica origem ou relação com a França."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra em -eza nomeia a condição de possuir muitos bens, e não uma origem?",
+        "options": ["riqueza", "francesa", "portuguesa", "inglesa"],
+        "correctIndex": 0,
+        "explanation": "Riqueza é a condição de possuir muitos bens e termina em -eza. Francesa, portuguesa e inglesa terminam em -esa e indicam origem ou relação.",
+        "wrongExplanations": {
+          "1": "Francesa termina em -esa e indica relação com a França.",
+          "2": "Portuguesa termina em -esa e indica relação com Portugal.",
+          "3": "Inglesa termina em -esa e indica relação com a Inglaterra."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Qual palavra escrita com -eza nomeia o cuidado e a suavidade dos movimentos da bailarina?",
+        "options": ["delicadeza", "francesa", "camponesa", "natureza"],
+        "correctIndex": 0,
+        "explanation": "Delicadeza é a qualidade de quem age com cuidado e suavidade. Francesa e camponesa terminam em -esa; natureza termina em -eza, mas nomeia o mundo natural.",
+        "wrongExplanations": {
+          "1": "Francesa termina em -esa e indica origem ou relação com a França.",
+          "2": "Camponesa termina em -esa e nomeia uma mulher do campo.",
+          "3": "Natureza termina em -eza, mas não nomeia o cuidado e a suavidade dos movimentos."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_eza_esa_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "uso-de-eza-e-esa",
+        "question": "Ela tratou todos com bondade e educação. Qual palavra nomeia esse modo bondoso de tratar as pessoas?",
+        "options": ["gentileza", "francesa", "riqueza", "japonesa"],
+        "correctIndex": 0,
+        "explanation": "Gentileza é o modo bondoso e educado de tratar as pessoas; a palavra termina em -eza.",
+        "wrongExplanations": {
+          "1": "Francesa indica origem ou relação com a França, não um modo bondoso de tratar as pessoas.",
+          "2": "Riqueza indica abundância de bens, não um modo bondoso de tratar as pessoas.",
+          "3": "Japonesa indica origem ou relação com o Japão, não um modo bondoso de tratar as pessoas."
+        },
+        "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Uso de EZA e ESA"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "uso-de-eza-e-esa-r54-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "uso-de-eza-e-esa",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A entrada apresenta contexto curricular completo e rastreável: 3º ano, ano letivo de 2026, T3, manifesto congelado, fonte autorizada e objetivo de distinguir substantivos em -eza de palavras em -esa conforme a formação e o sentido.",
+      "A questão 2026t3v2_pt_eza_esa_011 possui resposta única defensável: “francesa” indica origem, enquanto os demais termos em -eza nomeiam qualidade ou condição; a explicação e os três feedbacks são coerentes.",
+      "A questão 2026t3v2_pt_eza_esa_012 possui resposta única defensável: “esperteza” corresponde à habilidade descrita; “beleza” não atende ao sentido e as palavras em -esa têm outras funções semânticas.",
+      "A questão 2026t3v2_pt_eza_esa_013 distingue corretamente “riqueza”, que nomeia uma condição, das três palavras em -esa que indicam origem ou relação com um lugar.",
+      "A questão 2026t3v2_pt_eza_esa_014 possui resposta única defensável: “delicadeza” corresponde ao cuidado e à suavidade descritos; os distratores são claramente inadequados ao sentido.",
+      "A questão 2026t3v2_pt_eza_esa_015 relaciona corretamente “gentileza” ao modo bondoso e educado de tratar pessoas; os três distratores não concorrem com a resposta.",
+      "As cinco propostas contêm quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para cada alternativa incorreta.",
+      "Nenhuma questão revela a resposta por lacuna, contém instrução em idioma inadequado ou depende de probabilidade para definir a alternativa correta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o mesmo pacote, sem alterações, para uma passagem linguística independente.",
+      "Manter pendente a aprovação humana pedagógica do hash exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "a9067646-1d0e-4f43-bf06-80e9a10b2307",
+    "packageSha256": "f3c426bc6faea328b95da67a198b553e342a5f3c913d8e8526e25b5226c2291e",
+    "questionSha256s": {
+      "2026t3v2_pt_eza_esa_011": "5ce6fabe00e2ba2a95ef9da175d0772bc60cf6c31519e3ca4efac889864c7e38",
+      "2026t3v2_pt_eza_esa_012": "914b8c6a83b2c9d2feea7c599f7fc3e5b0ef5447a3db00d25ee94edbb6d72f7f",
+      "2026t3v2_pt_eza_esa_013": "3da87cd8aa7c96d05d72899db9afa6cdc9ce01be19458ed0488d23cacf67c821",
+      "2026t3v2_pt_eza_esa_014": "8e09c18d0dd2100e1e9e3c32d31fd7869639735889c70bc5f272eef06cba3718",
+      "2026t3v2_pt_eza_esa_015": "0011d284de08a9a84a98ffd73486de8c9e67fb0c7302340f52f95b0915aecfca"
+    },
+    "batchProposalSha256": "3941a417e2036e7cfb809d36ae43a88d968e7e7747b5f04c36f5c01ab1c69884",
+    "batchQuestionIds": [
+      "2026t3v2_pt_eza_esa_011",
+      "2026t3v2_pt_eza_esa_012",
+      "2026t3v2_pt_eza_esa_013",
+      "2026t3v2_pt_eza_esa_014",
+      "2026t3v2_pt_eza_esa_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-07T00:42:18.194Z",
+    "testOnly": false
+  }
+}

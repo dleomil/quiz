@@ -112,7 +112,10 @@ let sequence = 0;
 try {
   const accepted = build();
   assert.equal(
-    inspect(accepted).scenario.output.proposal.id,
+    (
+      inspect(accepted).scenario.output.proposal ||
+      (inspect(accepted).scenario.output.proposals || [])[0]
+    ).id,
     scenario.output.proposal.id,
   );
   const payload = {

@@ -19,6 +19,7 @@ function scenario(status, released) {
     const next = ContentCatalog.getById('2026-t3-v2');
     next.status = ${JSON.stringify(status)};
     next.publishedSubjects = ${JSON.stringify(released)};
+    if (next.status === 'draft') ContentCatalog.getById('2026-t3-v1').isCurrent = true;
     window.QuestionsDataSources = {
       portugues: { subjectMeta: { name: 'Português', available: true },
         questions: [

@@ -1,0 +1,214 @@
+{
+  "scenarioId": "dicionario-r51-03-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "dicionario-r51-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Dicionário"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Usar conhecimentos de ordem alfabética e consulta ao dicionário.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual palavra vem primeiro na ordem alfabética?",
+        "options": ["casa", "casaco", "casal", "casamento"],
+        "correctIndex": 0,
+        "explanation": "Quando uma palavra termina e as outras continuam com mais letras, a palavra mais curta aparece primeiro.",
+        "wrongExplanations": {
+          "1": "Casaco vem depois de casa.",
+          "2": "Casal vem depois de casa.",
+          "3": "Casamento vem depois de casa."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual informação costuma aparecer em um verbete?",
+        "options": [
+          "O significado da palavra",
+          "A previsão do tempo",
+          "O preço do livro",
+          "A data da próxima prova"
+        ],
+        "correctIndex": 0,
+        "explanation": "O verbete pode trazer o significado da palavra.",
+        "wrongExplanations": {
+          "1": "A previsão do tempo não é uma informação sobre a palavra.",
+          "2": "O preço do livro não explica a palavra.",
+          "3": "A data da prova não é uma informação usada para explicar uma palavra."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual palavra vem primeiro: “pato” ou “peixe”?",
+        "options": [
+          "pato",
+          "peixe",
+          "As duas aparecem exatamente no mesmo lugar",
+          "Não é possível comparar"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pato e peixe começam com P. Na segunda letra, A vem antes de E; por isso, pato aparece primeiro.",
+        "wrongExplanations": {
+          "1": "A segunda letra de pato é A, que vem antes de E em peixe.",
+          "2": "A ordem é definida comparando as letras, da esquerda para a direita.",
+          "3": "Podemos comparar a segunda letra: A vem antes de E."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual sequência está em ordem alfabética?",
+        "options": [
+          "foca, formiga, foto",
+          "foto, formiga, foca",
+          "formiga, foca, foto",
+          "foca, foto, formiga"
+        ],
+        "correctIndex": 0,
+        "explanation": "Foca, formiga e foto começam com FO; a terceira letra C vem antes de R e T.",
+        "wrongExplanations": {
+          "1": "Foca deve vir antes das palavras com R e T como terceira letra.",
+          "2": "Foca vem antes de formiga.",
+          "3": "Formiga começa com FOR e vem antes de foto, que começa com FOT."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Para descobrir o significado da palavra “corajoso”, qual ação você deve fazer no dicionário?",
+        "options": [
+          "Consultar o verbete correspondente",
+          "Olhar a cor da capa",
+          "Contar os desenhos do livro",
+          "Ler somente o nome da editora"
+        ],
+        "correctIndex": 0,
+        "explanation": "Consulte o verbete de “corajoso”: ele traz informações sobre a palavra, como seu significado.",
+        "wrongExplanations": {
+          "1": "A cor da capa não explica o significado da palavra.",
+          "2": "A quantidade de desenhos não explica o significado da palavra.",
+          "3": "O nome da editora não explica o significado da palavra."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "dicionario-r51-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A passagem solicitada e executada é exclusivamente linguistic.",
+      "As cinco propostas possuem instruções em português, redação clara e vocabulário adequado ao 3º ano.",
+      "A proposta 2026t3v2_pt_dicionario_011 apresenta enunciado, alternativas e explicações com ortografia, concordância e pontuação corretas.",
+      "A proposta 2026t3v2_pt_dicionario_012 emprega o termo “verbete” de modo claro e mantém formulações naturais.",
+      "A proposta 2026t3v2_pt_dicionario_013 explica a comparação alfabética com linguagem direta e sem lacunas textuais.",
+      "A proposta 2026t3v2_pt_dicionario_014 apresenta sequências e explicações legíveis, com uso coerente de letras maiúsculas para destacar a comparação.",
+      "A proposta 2026t3v2_pt_dicionario_015 formula uma instrução compreensível e usa linguagem adequada à faixa etária.",
+      "Nenhum enunciado contém lacuna, instrução confusa ou revelação explícita da resposta correta.",
+      "As explicações e os feedbacks estão redigidos de forma respeitosa e coerente com as alternativas a que se referem."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote exato para a passagem pedagógica independente e para a aprovação humana obrigatória."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "8f91997e-fecd-43fe-bc2f-5d614d817bcd",
+    "packageSha256": "2e01e4039e6cd123513fbc9af11b063c0302f386417b73f648b7b424846177c1",
+    "batchProposalSha256": "9abd8d854be9d23c7ecf01c53664654bc1e930c21ae5015e846529ad3e86fc16",
+    "batchQuestionIds": [
+      "2026t3v2_pt_dicionario_011",
+      "2026t3v2_pt_dicionario_012",
+      "2026t3v2_pt_dicionario_013",
+      "2026t3v2_pt_dicionario_014",
+      "2026t3v2_pt_dicionario_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-06T14:57:17.304Z",
+    "testOnly": false
+  }
+}

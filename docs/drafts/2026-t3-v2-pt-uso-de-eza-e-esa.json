@@ -1,0 +1,495 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "uso-de-eza-e-esa",
+  "topicName": "Uso de EZA e ESA",
+  "status": "draft_pending_reviews",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 7",
+    "topic": "Uso de EZA e ESA"
+  },
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra nomeia uma qualidade que podemos perceber em uma paisagem?",
+      "options": ["francesa", "beleza", "portuguesa", "japonesa"],
+      "correctIndex": 1,
+      "explanation": "Beleza nomeia uma qualidade que pode ser percebida em uma paisagem e termina em -eza.",
+      "wrongExplanations": {
+        "0": "Francesa indica origem na França, não uma qualidade.",
+        "2": "Portuguesa indica origem em Portugal, não uma qualidade.",
+        "3": "Japonesa indica origem no Japão, não uma qualidade."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra nomeia um sentimento e termina com -eza?",
+      "options": ["tristeza", "francesa", "portuguesa", "inglesa"],
+      "correctIndex": 0,
+      "explanation": "Tristeza nomeia um sentimento e termina em -eza.",
+      "wrongExplanations": {
+        "1": "Francesa é um gentílico, não um sentimento.",
+        "2": "Portuguesa é um gentílico, não um sentimento.",
+        "3": "Inglesa é um gentílico, não um sentimento."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "A atleta é natural da França. Ela é ____.",
+      "options": ["inglesa", "francesa", "portuguesa", "japonesa"],
+      "correctIndex": 1,
+      "explanation": "Francesa é o gentílico feminino de quem é natural da França.",
+      "wrongExplanations": {
+        "0": "Inglesa indica origem na Inglaterra.",
+        "2": "Portuguesa indica origem em Portugal.",
+        "3": "Japonesa indica origem no Japão."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra nomeia o mundo natural, com seus seres e elementos?",
+      "options": ["beleza", "natureza", "francesa", "inglesa"],
+      "correctIndex": 1,
+      "explanation": "Natureza nomeia os elementos naturais de um lugar.",
+      "wrongExplanations": {
+        "0": "Beleza é uma qualidade, não o conjunto de elementos naturais.",
+        "2": "Francesa é um gentílico.",
+        "3": "Inglesa é um gentílico."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual é o gentílico feminino de Portugal?",
+      "options": ["beleza", "portuguesa", "francesa", "japonesa"],
+      "correctIndex": 1,
+      "explanation": "Portuguesa é o gentílico feminino de Portugal.",
+      "wrongExplanations": {
+        "0": "Beleza nomeia uma qualidade.",
+        "2": "Francesa indica origem na França.",
+        "3": "Japonesa indica origem no Japão."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra completa corretamente a frase “A ____ da mala facilitou o transporte”?",
+      "options": ["leveza", "inglesa", "francesa", "portuguesa"],
+      "correctIndex": 0,
+      "explanation": "Leveza nomeia uma qualidade e termina com EZA.",
+      "wrongExplanations": {
+        "1": "Inglesa é um gentílico; a frase pede uma qualidade da mala.",
+        "2": "Francesa é um gentílico; a frase pede uma qualidade da mala.",
+        "3": "Portuguesa é um gentílico; a frase pede uma qualidade da mala."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "A menina nasceu na Inglaterra. Qual palavra completa corretamente a frase: “Ela é ____”?",
+      "options": ["inglesa", "riqueza", "beleza", "natureza"],
+      "correctIndex": 0,
+      "explanation": "Inglesa é o gentílico feminino de quem é natural da Inglaterra; as outras opções nomeiam qualidades ou o mundo natural.",
+      "wrongExplanations": {
+        "1": "Riqueza nomeia abundância de bens ou recursos, não a origem de uma pessoa.",
+        "2": "Beleza nomeia uma qualidade, não a origem de uma pessoa.",
+        "3": "Natureza se refere ao mundo natural, não à origem de uma pessoa."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "O modo bondoso de tratar alguém é chamado de ____. Qual palavra completa a frase?",
+      "options": ["gentileza", "portuguesa", "francesa", "camponesa"],
+      "correctIndex": 0,
+      "explanation": "Gentileza é o modo bondoso de tratar alguém e termina em -eza. Portuguesa, francesa e camponesa são palavras em -esa que indicam origem ou relação.",
+      "wrongExplanations": {
+        "1": "Portuguesa indica origem ou relação com Portugal; não nomeia um modo bondoso de tratar alguém.",
+        "2": "Francesa indica origem ou relação com a França; não nomeia um modo bondoso de tratar alguém.",
+        "3": "Camponesa nomeia uma mulher do campo; não significa modo bondoso de tratar alguém."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra informa que uma menina é natural do Japão?",
+      "options": ["japonesa", "beleza", "tristeza", "gentileza"],
+      "correctIndex": 0,
+      "explanation": "Japonesa é o gentílico feminino de quem é natural do Japão; termina em -esa e se escreve com um S.",
+      "wrongExplanations": {
+        "1": "Beleza nomeia uma qualidade, não a origem de uma pessoa.",
+        "2": "Tristeza nomeia um sentimento, não a origem de uma pessoa.",
+        "3": "Gentileza nomeia o modo bondoso de tratar alguém, não a origem de uma pessoa."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Em uma história, uma família tinha poucos recursos. Qual palavra nomeia essa situação?",
+      "options": ["francesa", "pobreza", "portuguesa", "inglesa"],
+      "correctIndex": 1,
+      "explanation": "Pobreza nomeia a situação de quem tem poucos recursos. A palavra é formada de pobre com o sufixo -eza.",
+      "wrongExplanations": {
+        "0": "Francesa indica origem ou relação com a França; não nomeia a situação de uma família com poucos recursos.",
+        "2": "Portuguesa indica origem ou relação com Portugal; não nomeia a situação de uma família com poucos recursos.",
+        "3": "Inglesa indica origem ou relação com a Inglaterra; não nomeia a situação de uma família com poucos recursos."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "A menina nasceu na França. Qual palavra em -esa indica sua origem, e não uma qualidade?",
+      "options": ["francesa", "gentileza", "riqueza", "beleza"],
+      "correctIndex": 0,
+      "explanation": "Francesa indica origem na França e termina em -esa. Gentileza, riqueza e beleza são substantivos em -eza que nomeiam qualidades.",
+      "wrongExplanations": {
+        "1": "Gentileza termina em -eza e nomeia uma qualidade, não origem.",
+        "2": "Riqueza termina em -eza e nomeia uma condição, não origem.",
+        "3": "Beleza termina em -eza e nomeia uma qualidade, não origem."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra em -eza nomeia a habilidade de encontrar rapidamente a resposta de um enigma?",
+      "options": ["esperteza", "camponesa", "beleza", "francesa"],
+      "correctIndex": 0,
+      "explanation": "Esperteza é a habilidade de perceber ou resolver algo com inteligência. Camponesa e francesa terminam em -esa; beleza termina em -eza, mas nomeia outra qualidade.",
+      "wrongExplanations": {
+        "1": "Camponesa termina em -esa e nomeia uma mulher do campo.",
+        "2": "Beleza termina em -eza, mas não é a habilidade de resolver o enigma.",
+        "3": "Francesa termina em -esa e indica origem ou relação com a França."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra em -eza nomeia a condição de possuir muitos bens, e não uma origem?",
+      "options": ["riqueza", "francesa", "portuguesa", "inglesa"],
+      "correctIndex": 0,
+      "explanation": "Riqueza é a condição de possuir muitos bens e termina em -eza. Francesa, portuguesa e inglesa terminam em -esa e indicam origem ou relação.",
+      "wrongExplanations": {
+        "1": "Francesa termina em -esa e indica relação com a França.",
+        "2": "Portuguesa termina em -esa e indica relação com Portugal.",
+        "3": "Inglesa termina em -esa e indica relação com a Inglaterra."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra escrita com -eza nomeia o cuidado e a suavidade dos movimentos da bailarina?",
+      "options": ["delicadeza", "francesa", "camponesa", "natureza"],
+      "correctIndex": 0,
+      "explanation": "Delicadeza é a qualidade de quem age com cuidado e suavidade. Francesa e camponesa terminam em -esa; natureza termina em -eza, mas nomeia o mundo natural.",
+      "wrongExplanations": {
+        "1": "Francesa termina em -esa e indica origem ou relação com a França.",
+        "2": "Camponesa termina em -esa e nomeia uma mulher do campo.",
+        "3": "Natureza termina em -eza, mas não nomeia o cuidado e a suavidade dos movimentos."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Ela tratou todos com bondade e educação. Qual palavra nomeia esse modo bondoso de tratar as pessoas?",
+      "options": ["gentileza", "francesa", "riqueza", "japonesa"],
+      "correctIndex": 0,
+      "explanation": "Gentileza é o modo bondoso e educado de tratar as pessoas; a palavra termina em -eza.",
+      "wrongExplanations": {
+        "1": "Francesa indica origem ou relação com a França, não um modo bondoso de tratar as pessoas.",
+        "2": "Riqueza indica abundância de bens, não um modo bondoso de tratar as pessoas.",
+        "3": "Japonesa indica origem ou relação com o Japão, não um modo bondoso de tratar as pessoas."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra é o gentílico feminino de Japão?",
+      "options": ["japonesa", "francesa", "gentileza", "portuguesa"],
+      "correctIndex": 0,
+      "explanation": "Japonesa é o gentílico feminino de Japão e termina em -esa.",
+      "wrongExplanations": {
+        "1": "Francesa indica origem na França.",
+        "2": "Gentileza é uma qualidade, não um gentílico.",
+        "3": "Portuguesa indica origem em Portugal."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "A menina lavou o chão com água e sabão. Qual substantivo terminado em -eza nomeia o ato de deixar algo limpo?",
+      "options": ["limpeza", "beleza", "gentileza", "natureza"],
+      "correctIndex": 0,
+      "explanation": "Limpeza nomeia o ato de tirar a sujeira e deixar algo limpo.",
+      "wrongExplanations": {
+        "1": "Beleza nomeia uma qualidade do que é belo, não o ato de limpar.",
+        "2": "Gentileza é o modo bondoso de tratar alguém, não o ato de limpar.",
+        "3": "Natureza se refere ao mundo natural, não ao ato de limpar."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra indica que uma pessoa é natural da Inglaterra?",
+      "options": ["inglesa", "francesa", "portuguesa", "japonesa"],
+      "correctIndex": 0,
+      "explanation": "Inglesa é a forma feminina do gentílico de Inglaterra.",
+      "wrongExplanations": {
+        "1": "Francesa indica origem na França.",
+        "2": "Portuguesa indica origem em Portugal.",
+        "3": "Japonesa indica origem no Japão."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "Qual palavra nomeia a condição de ser rico?",
+      "options": ["riqueza", "pobreza", "gentileza", "francesa"],
+      "correctIndex": 0,
+      "explanation": "Riqueza vem de rico e nomeia a abundância de bens ou recursos; termina em -eza.",
+      "wrongExplanations": {
+        "1": "Pobreza nomeia a condição de ser pobre.",
+        "2": "Gentileza vem de gentil e nomeia o modo bondoso de tratar as pessoas.",
+        "3": "Francesa é um gentílico."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_eza_esa_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "uso-de-eza-e-esa",
+      "question": "A estudante veio de Portugal. Qual gentílico feminino indica sua origem?",
+      "options": ["portuguesa", "francesa", "gentileza", "japonesa"],
+      "correctIndex": 0,
+      "explanation": "Portuguesa é o gentílico feminino de Portugal.",
+      "wrongExplanations": {
+        "1": "Francesa indica origem na França.",
+        "2": "Gentileza é uma qualidade, não um gentílico.",
+        "3": "Japonesa indica origem no Japão."
+      },
+      "skill": "distinguir-substantivos-em-eza-e-palavras-em-esa-pelo-sentido",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Uso de EZA e ESA"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

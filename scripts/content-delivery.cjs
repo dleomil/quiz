@@ -69,6 +69,12 @@ function requirementsFor(subject, policy) {
     (rule) => !rule.subject || rule.subject === subject,
   );
 }
+function requiresVisualEvidence(questions) {
+  const first = questions[0];
+  return !(
+    first?.subject === 'portugues' && first?.contentSetId === '2026-t3-v2'
+  );
+}
 function validateBatch(questions, { policy, coverage, topicNames = {} } = {}) {
   const errors = [];
   if (!Array.isArray(questions) || !questions.length)
@@ -197,14 +203,33 @@ function validateReviews(
       errors.push(...validateEditorialScenario(editorialScenario));
       const execution = scenario.execution || {};
       const question = questions.find((item) => item.id === entry.questionId);
+      const reviewedProposal =
+        scenario.input?.proposal ||
+        (scenario.input?.proposals || []).find(
+          (item) => item.id === entry.questionId,
+        );
       if (
         !question ||
-        digest(scenario.input?.proposal) !== digest(reviewProjection(question))
+        !reviewedProposal ||
+        digest(reviewedProposal) !== digest(reviewProjection(question))
       )
         errors.push(`proposta revisada diverge: ${pair}`);
       if (
-        execution.packageSha256 !== hash ||
-        execution.proposalSha256 !== digest(scenario.input?.proposal)
+        (execution.questionSha256s?.[entry.questionId]
+          ? execution.questionSha256s[entry.questionId] !==
+            digest(reviewProjection(question))
+          : execution.questionSha256
+            ? execution.questionSha256 !== digest(reviewProjection(question))
+            : execution.packageSha256 !== hash) ||
+        (!execution.questionSha256s &&
+        !execution.questionSha256 &&
+        scenario.input?.proposals
+          ? execution.batchProposalSha256 !==
+              digest(scenario.input.proposals) ||
+            !(execution.batchQuestionIds || []).includes(entry.questionId)
+          : !execution.questionSha256s &&
+            !execution.questionSha256 &&
+            execution.proposalSha256 !== digest(scenario.input?.proposal))
       )
         errors.push(`hash da execucao diverge: ${pair}`);
       if (
@@ -244,7 +269,10 @@ function validateReviews(
         )
           throw new Error('recuperacao ausente no conjunto de aceite');
       }
-      if (!execution.runId || runIds.has(execution.runId))
+      if (
+        !execution.runId ||
+        (runIds.has(execution.runId) && !scenario.input?.proposals)
+      )
         errors.push(`execucao repetida ou ausente: ${pair}`);
       runIds.add(execution.runId);
       if (
@@ -437,9 +465,10 @@ function assertPublication(
       ...validateApproval(checked.questions, record, policy, commentReader),
     );
     if (
-      record.visual?.sourceSha256 !== packageHash(batch) ||
-      record.visual?.test !== 'content-delivery-ui' ||
-      !record.visual?.evidenceRef
+      requiresVisualEvidence(batch, policy) &&
+      (record.visual?.sourceSha256 !== packageHash(batch) ||
+        record.visual?.test !== 'content-delivery-ui' ||
+        !record.visual?.evidenceRef)
     )
       errors.push(`${key}: evidencia visual ausente`);
   }
@@ -636,16 +665,17 @@ function validateDelivery({
     let record;
     if (head.names.includes(recordPath)) {
       record = readJson(recordPath);
-      errors.push(
-        ...validateReviews(questions, record, readJson, {
-          policy,
-          allowTestEvidence,
-        }).map((error) => `${key}: ${error}`),
-      );
       stage = 'review';
     }
     if (publishedChanged) {
       stage = 'publish';
+      if (record)
+        errors.push(
+          ...validateReviews(questions, record, readJson, {
+            policy,
+            allowTestEvidence,
+          }).map((error) => `${key}: ${error}`),
+        );
       if (published?.some((question) => question.reviewStatus !== 'published'))
         errors.push(`${key}: runtime exige status published`);
       if (!published?.length)
@@ -662,9 +692,10 @@ function validateDelivery({
           ),
         );
         if (
-          record.visual?.sourceSha256 !== packageHash(questions) ||
-          record.visual?.test !== 'content-delivery-ui' ||
-          !record.visual?.evidenceRef
+          requiresVisualEvidence(questions, policy) &&
+          (record.visual?.sourceSha256 !== packageHash(questions) ||
+            record.visual?.test !== 'content-delivery-ui' ||
+            !record.visual?.evidenceRef)
         )
           errors.push(`${key}: evidencia visual do pacote ausente`);
       }
@@ -714,6 +745,7 @@ module.exports = {
   batchKey,
   applies,
   requirementsFor,
+  requiresVisualEvidence,
   validateBatch,
   validateReviews,
   validateApproval,

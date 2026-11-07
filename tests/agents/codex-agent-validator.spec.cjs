@@ -265,7 +265,7 @@ function run() {
     'Trecho escolar nao autorizado.';
   assert.ok(
     validateEditorialScenarios(proposalSourceExcerptLeak).some((error) =>
-      error.includes('campo nao autorizado: input.proposal.sourceExcerpt'),
+      error.includes('campo nao autorizado: input.proposals[0].sourceExcerpt'),
     ),
   );
 
@@ -290,7 +290,7 @@ function run() {
   delete missingProposal[1].input.proposal;
   assert.ok(
     validateEditorialScenarios(missingProposal).some((error) =>
-      error.includes('input.proposal incompleta'),
+      error.includes('lote editorial deve conter de 1 a 5 propostas'),
     ),
   );
 
@@ -328,7 +328,7 @@ function run() {
     'Feedback indevido para a alternativa correta.';
   assert.ok(
     validateEditorialScenarios(feedbackWithWrongIndex).some((error) =>
-      error.includes('input.proposal incompleta'),
+      error.includes('input.proposals[0] incompleta'),
     ),
   );
 

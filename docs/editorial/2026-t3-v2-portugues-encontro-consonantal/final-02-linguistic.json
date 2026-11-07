@@ -1,0 +1,199 @@
+{
+  "scenarioId": "encontro-consonantal-r54-02-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "encontro-consonantal-r54-02-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Encontro consonantal"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Identificar encontros consonantais e distingui-los de dígrafos.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal com F e R?",
+        "options": ["fada", "fruta", "ficha", "folha"],
+        "correctIndex": 1,
+        "explanation": "Em fruta, F e R aparecem juntos e cada um tem seu som.",
+        "wrongExplanations": {
+          "0": "Fada não tem F e R juntos; depois do F vem a vogal A.",
+          "2": "CH é dígrafo em ficha.",
+          "3": "LH é dígrafo em folha."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra tem encontro consonantal no início?",
+        "options": ["galho", "passo", "grilo", "guerra"],
+        "correctIndex": 2,
+        "explanation": "Em grilo, G e R são pronunciados em sequência.",
+        "wrongExplanations": {
+          "0": "LH é dígrafo em galho.",
+          "1": "SS é dígrafo em passo.",
+          "3": "GU forma dígrafo em guerra."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Em qual palavra há dígrafo e não encontro consonantal?",
+        "options": ["planta", "trigo", "clube", "ninho"],
+        "correctIndex": 3,
+        "explanation": "NH representa um único som em ninho.",
+        "wrongExplanations": {
+          "0": "PL é encontro consonantal: P e L mantêm seus sons.",
+          "1": "TR é encontro consonantal.",
+          "2": "CL é encontro consonantal."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra contém encontro consonantal?",
+        "options": ["creme", "chave", "massa", "telha"],
+        "correctIndex": 0,
+        "explanation": "Em creme, C e R são pronunciados em sequência e formam um encontro consonantal.",
+        "wrongExplanations": {
+          "1": "CH é dígrafo em chave.",
+          "2": "SS é dígrafo em massa.",
+          "3": "LH é dígrafo em telha."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_encontro_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "encontro-consonantal",
+        "question": "Qual palavra começa com encontro consonantal formado por F e L?",
+        "options": ["ninho", "flor", "filho", "chuva"],
+        "correctIndex": 1,
+        "explanation": "Em flor, F e L são pronunciados em sequência.",
+        "wrongExplanations": {
+          "0": "NH é dígrafo em ninho.",
+          "2": "LH é dígrafo em filho.",
+          "3": "CH é dígrafo em chuva."
+        },
+        "skill": "identificar-encontros-consonantais-e-distingui-los-de-digrafos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Encontro consonantal"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "encontro-consonantal-r54-02-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "encontro-consonantal",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara proposta rastreável, objetivo curricular, 3º ano, manifesto congelado e passagem linguistic.",
+      "A questão 2026t3v2_pt_encontro_006 apresenta enunciado, alternativas e explicações em português claro, correto e adequado ao 3º ano.",
+      "A questão 2026t3v2_pt_encontro_007 apresenta instrução direta e textos naturais, sem lacuna ou revelação da resposta no enunciado.",
+      "A questão 2026t3v2_pt_encontro_008 emprega linguagem clara e distingue os termos no enunciado sem antecipar qual alternativa é correta.",
+      "A questão 2026t3v2_pt_encontro_009 apresenta ortografia, concordância e pontuação corretas em todos os campos avaliados.",
+      "A questão 2026t3v2_pt_encontro_010 apresenta formulação clara, vocabulário adequado à série e feedbacks linguisticamente coerentes.",
+      "As cinco propostas possuem quatro alternativas, explicação da resposta correta e feedback textual para cada alternativa incorreta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter os textos avaliados sem alterações; qualquer mudança exige nova passagem linguística sobre o pacote atualizado.",
+      "Submeter o pacote exato à passagem pedagógica independente e à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "2ece0f25-6d07-434d-8333-6e8f43be527d",
+    "questionSha256s": {
+      "2026t3v2_pt_encontro_006": "b326013536b64eab00f0f30715e3faf913a37a41dc2913487eebe869df52d5a5",
+      "2026t3v2_pt_encontro_007": "96ccc5f9a6c387c4e8092bf779de7893f0dc919ec968e6165d7dbe60457d8606",
+      "2026t3v2_pt_encontro_008": "a3f4c9def89319111c975893f1ef807dbf8d0fa34032535579749bdbc9ca6bb4",
+      "2026t3v2_pt_encontro_009": "bda0c7111e752ace63976e7d05e7374e527f21e3fa311b840722dbe72ffc606e",
+      "2026t3v2_pt_encontro_010": "1e2ff6e1d0273fad024e658c9921e3bc7960d2773049e4ad28239136115d1972"
+    },
+    "batchProposalSha256": "43f17d2c5d89e6d68731192ffa1a5fdad335cf3b65640a3b7a79067d7eedeced",
+    "batchQuestionIds": [
+      "2026t3v2_pt_encontro_006",
+      "2026t3v2_pt_encontro_007",
+      "2026t3v2_pt_encontro_008",
+      "2026t3v2_pt_encontro_009",
+      "2026t3v2_pt_encontro_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-07T00:02:29.177Z",
+    "testOnly": false
+  }
+}

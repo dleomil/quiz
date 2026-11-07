@@ -109,6 +109,7 @@ async function run() {
       '2026-t1-v1',
       '2026-t2-v1',
       '2026-t3-v1',
+      '2026-t3-v2',
     ]);
     assert.strictEqual(result.runtimeT3Count, 800);
     assert.deepStrictEqual(result.runtimeT3Subjects, {

@@ -551,10 +551,15 @@ function recoverableCodeModeResponse(stdout, context, capture) {
     const diagnosis = analyzeEvents(stdout, [], context);
     if (
       diagnosis.completed !== true ||
-      diagnosis.reasonCode !== 'process_failure' ||
-      diagnosis.issues.length !== 1 ||
-      diagnosis.issues[0].itemType !== 'error' ||
-      diagnosis.issues[0].eventType !== 'item.completed' ||
+      !(
+        (diagnosis.reasonCode === 'process_failure' &&
+          diagnosis.issues.length === 1 &&
+          diagnosis.issues[0].itemType === 'error' &&
+          diagnosis.issues[0].eventType === 'item.completed') ||
+        (diagnosis.accepted === true &&
+          diagnosis.warnings.length === 1 &&
+          diagnosis.warnings[0].code === 'startup_config_2')
+      ) ||
       diagnosis.types['thread.started'] !== 1 ||
       diagnosis.types['turn.started'] !== 1 ||
       diagnosis.types['turn.completed'] !== 1 ||

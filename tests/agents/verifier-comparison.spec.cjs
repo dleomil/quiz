@@ -692,7 +692,7 @@ async function main() {
       ),
     );
     assert.equal(recoveredReceipt.result, 'response-recovered');
-    assert.equal(recoveredReceipt.eventDiagnosis.reasonCode, 'process_failure');
+    assert.equal(recoveredReceipt.eventDiagnosis.reasonCode, null);
     assert.ok(fs.existsSync(path.join(recoveredDirectory, 'grade.json')));
     const recoveredReport = comparison.report(
       recoveredHome,

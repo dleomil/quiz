@@ -74,6 +74,7 @@ async function run() {
     ]) {
       await page.setViewportSize(viewport);
       await page.goto(baseUrl, { waitUntil: 'networkidle' });
+      await page.locator('[data-content-set="2026-t3-v1"]').click();
       assert.ok(
         await page.evaluate(() => typeof QuestionsDB !== 'undefined'),
         'O endereço deve carregar o quiz, sem redirecionamento de autenticação.',
