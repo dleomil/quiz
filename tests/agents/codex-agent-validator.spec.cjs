@@ -328,7 +328,7 @@ function run() {
     'Feedback indevido para a alternativa correta.';
   assert.ok(
     validateEditorialScenarios(feedbackWithWrongIndex).some((error) =>
-      error.includes('input.proposals[0] incompleta'),
+      error.includes('[language-adjustments-required]'),
     ),
   );
 
