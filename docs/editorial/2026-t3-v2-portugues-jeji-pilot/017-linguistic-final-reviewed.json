@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-017-linguistic-r05",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-017-linguistic-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gorjeta, jeito, jejum",
+        "gorgeta, jeito, jejum",
+        "gorjeta, geito, jejum",
+        "gorjeta, jeito, gejum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lista correta reúne gorjeta, jeito, jejum. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "1": "Na opção, “gorgeta” troca a letra J por G em “gorjeta”. A grafia correta é “gorjeta”.",
+        "2": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “gejum” troca a letra J por G em “jejum”. A grafia correta é “jejum”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-017-linguistic-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-017, versão 3, em estado draft.",
+      "O enunciado está em português, é claro e adequado ao 3º ano, sem revelar a resposta correta.",
+      "A alternativa de índice 0 é a única lista com as três palavras grafadas corretamente: “gorjeta”, “jeito” e “jejum”.",
+      "Os três distratores apresentam erros ortográficos distintos, e cada feedback identifica o erro sem apresentar a grafia incorreta como aceita.",
+      "Enunciado, alternativas, explicação e feedbacks estão corretos quanto a ortografia, concordância e pontuação.",
+      "A explicação reconhece adequadamente que sons semelhantes podem ser representados por J ou G, sem formular regra universal incorreta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a revisão humana obrigatória, sem considerar este parecer como autorização de implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "561a8a7b-82a3-4f22-a2dc-96a50005ffb3",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "b8c1400b3c6ac62a4756aae71249f948bb158dfd6d59112185af74369beb1ea2",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:22:48.754Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/017-linguistic-r05-recovery.json",
+    "recoverySha256": "a9de884e15d209c87603308f4725be5b89175df388af941e9739c4e6d681120c"
+  }
+}

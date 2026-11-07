@@ -1,0 +1,219 @@
+{
+  "scenarioId": "adjetivos-patrios-final4-03-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "adjetivos-patrios-final4-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "relacionar-gentilicos-a-lugares-de-origem",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Adjetivos pátrios"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Relacionar gentílicos a lugares de origem",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce em Santa Catarina é…",
+        "options": [
+          "catarinense",
+          "capixaba",
+          "paranaense",
+          "goiana"
+        ],
+        "correctIndex": 0,
+        "explanation": "Catarinense é o gentílico de Santa Catarina.",
+        "wrongExplanations": {
+          "1": "Capixaba é o gentílico de quem nasce no Espírito Santo.",
+          "2": "Paranaense é o gentílico do Paraná.",
+          "3": "Goiana é a forma feminina do gentílico de Goiás."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasceu no Rio Grande do Sul é…",
+        "options": [
+          "gaúcha",
+          "baiana",
+          "catarinense",
+          "mineira"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gaúcha é a forma feminina de gaúcho, gentílico do Rio Grande do Sul.",
+        "wrongExplanations": {
+          "1": "Baiana é o gentílico feminino da Bahia.",
+          "2": "Catarinense é o gentílico de Santa Catarina.",
+          "3": "Mineira é o gentílico de Minas Gerais."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Como se chama, no masculino, quem nasce em Goiás?",
+        "options": [
+          "goiano",
+          "baiano",
+          "tocantinense",
+          "paranaense"
+        ],
+        "correctIndex": 0,
+        "explanation": "Goiano é o gentílico de quem nasce em Goiás.",
+        "wrongExplanations": {
+          "1": "Baiano é o gentílico da Bahia.",
+          "2": "Tocantinense é o gentílico de Tocantins.",
+          "3": "Paranaense é o gentílico do Paraná."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasceu no Espírito Santo é…",
+        "options": [
+          "capixaba",
+          "carioca",
+          "fluminense",
+          "baiana"
+        ],
+        "correctIndex": 0,
+        "explanation": "Capixaba é o gentílico de quem nasce no Espírito Santo.",
+        "wrongExplanations": {
+          "1": "Carioca se refere à cidade do Rio de Janeiro.",
+          "2": "Fluminense se refere ao estado do Rio de Janeiro.",
+          "3": "Baiana é o gentílico feminino da Bahia."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Lúcia nasceu em Pernambuco. Ela é…",
+        "options": [
+          "pernambucana",
+          "paraibana",
+          "alagoana",
+          "potiguar"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pernambucana é a forma feminina do gentílico de Pernambuco.",
+        "wrongExplanations": {
+          "1": "Paraibana é o gentílico feminino da Paraíba.",
+          "2": "Alagoana é o gentílico feminino de Alagoas.",
+          "3": "Potiguar é o gentílico do Rio Grande do Norte."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "adjetivos-patrios-final4-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara proposta rastreável, objetivo curricular, 3º ano, manifesto congelado com aprovação humana documentada e passagem pedagogical.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_011 relaciona corretamente “catarinense” a Santa Catarina, apresenta resposta única e feedback coerente para os três distratores.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_012 relaciona corretamente “gaúcha” ao Rio Grande do Sul e mantém concordância com “uma pessoa”, com resposta única e feedbacks adequados.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_013 relaciona corretamente a forma masculina “goiano” a Goiás, sem alternativa concorrente e com feedbacks factualmente corretos.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_014 relaciona corretamente “capixaba” ao Espírito Santo e distingue adequadamente “carioca” de “fluminense” nos feedbacks.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_015 relaciona corretamente “pernambucana” a Pernambuco, mantém concordância com Lúcia e apresenta distratores inequívocos.",
+      "As cinco questões medem diretamente o objetivo de relacionar gentílicos a lugares de origem, usam instruções em português, não apresentam lacunas nem revelam a resposta no enunciado.",
+      "Cada proposta contém quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para as três alternativas incorretas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente.",
+      "Manter o lote como draft até a aprovação humana pedagógica do hash exato e o cumprimento dos demais gates de entrega."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "77662e18-806a-4b39-a22a-ff81ff5afe03",
+    "packageSha256": "3d18f8533a938189d9723d3064f602fb95548ae0739e674e653e16289e9709f9",
+    "batchProposalSha256": "ad3a2e7a46cee9dd7f7e3cd334480445e5b4d0aa10782873393f3c5baab90d66",
+    "batchQuestionIds": [
+      "2026t3v2_pt_adjetivos_patrios_011",
+      "2026t3v2_pt_adjetivos_patrios_012",
+      "2026t3v2_pt_adjetivos_patrios_013",
+      "2026t3v2_pt_adjetivos_patrios_014",
+      "2026t3v2_pt_adjetivos_patrios_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-04T00:02:38.783Z",
+    "testOnly": false
+  }
+}

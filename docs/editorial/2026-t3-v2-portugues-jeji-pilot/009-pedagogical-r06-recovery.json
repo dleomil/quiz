@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "editorial-recovery-v1",
+  "status": "response-recovered",
+  "originalRunId": "d485fd34-cf4b-410e-b894-8a2bf3008176",
+  "originalResult": "output-rejected",
+  "sourceReceiptSha256": "0f2383073280f590e7fe7cc8112f72a2f6a9b0e4daf1f02fe5650edbc1426fbe",
+  "sourceReceipt": {
+    "schemaVersion": "agent-run-receipt-v1",
+    "runId": "d485fd34-cf4b-410e-b894-8a2bf3008176",
+    "actor": "pedagogical_quality",
+    "requestedModel": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "startedAt": "2026-11-03T15:26:35.345Z",
+    "testOnly": false,
+    "adapterSha256": "7f28b5d0d707f53bef7cb95bb68069ba78fec5c2cc97c5f2f50d24abdf6399e4",
+    "inputSha256": "f530bca12d12fad6b780ce9d08d2cffd9ec677646ba479092a85ea9d0181d022",
+    "transportVersion": "agent-output-transport-v1",
+    "contractSchemaSha256": "bc3176c18748e5ff2a1e4a093ff7740bb18fc9f23aacca4a2fe1ada979b7359a",
+    "transportSchemaSha256": "96a51903b8da4a9d54c3b939cec1b64a349096673fa511dac663fd6c1c6a87fe",
+    "completedAt": "2026-11-03T15:26:51.631Z",
+    "durationMs": 16286,
+    "result": "output-rejected",
+    "failureReason": "erro de execucao informado pela CLI: error, linha 3",
+    "contextSha256": "9bd5113670cf0173205302347682806bb977d5abffc081bea9d6c5f170ffff45",
+    "workSha256": "4be03ab9553e3911f4430f74601b7863f76feafa2655a1f73d5b6423f6c0d713",
+    "configurationSha256": "e5b7167338d38055b61784b4e822ac6a1049145070797bedd7075dc23adf4bce",
+    "approvals": [
+      {
+        "schemaVersion": "document-baseline-approval-v1",
+        "baselineSha256": "90874cd85522c0a2ee1e3bbf6e1943c261f9784494be5ad788aa8e8a1ee36f13",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd",
+        "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6603289681",
+        "approvedBy": "dleomil",
+        "observedAt": "2026-11-03T12:03:16Z"
+      }
+    ],
+    "preflight": {
+      "cliVersion": "0.160.0",
+      "features": {
+        "shell_tool": false,
+        "shell_snapshot": false,
+        "apps": false,
+        "hooks": false,
+        "multi_agent": false,
+        "multi_agent_v2": false,
+        "plugins": false,
+        "remote_plugin": false,
+        "skill_mcp_dependency_install": false,
+        "skill_search": false,
+        "memories": false,
+        "goals": false,
+        "browser_use": false,
+        "browser_use_external": false,
+        "browser_use_full_cdp_access": false,
+        "computer_use": false,
+        "in_app_browser": false,
+        "in_app_chat": false,
+        "in_app_local_automation": false,
+        "image_generation": false,
+        "view_image": false,
+        "code_mode": false,
+        "code_mode_host": false,
+        "code_mode_only": false,
+        "artifact": false,
+        "workspace_dependencies": false,
+        "tool_suggest": false,
+        "step_model_switching": false,
+        "request_permissions_tool": false,
+        "auth_elicitation": false,
+        "realtime_conversation": false,
+        "daemon_auto_start": false,
+        "sleep_tool": false,
+        "agent_message_board": false,
+        "send_message_to_user_async": false,
+        "external_agent_memory_import": false,
+        "skip_host_skill_discovery": true
+      },
+      "mcpServerCount": 0,
+      "auth": "chatgpt-keyring",
+      "modelCatalogued": "gpt-5.6-sol",
+      "accountModelAccess": "not-yet-observed",
+      "skills": "disabled-and-context-checked"
+    },
+    "artifactSha256": null,
+    "usage": {
+      "input_tokens": 22984,
+      "cached_input_tokens": 5120,
+      "output_tokens": 524
+    },
+    "modelInvocations": 1,
+    "wireSha256": null,
+    "captureId": "d485fd34-cf4b-410e-b894-8a2bf3008176",
+    "captureSha256": "a260a184df86c91e4665d9fc9610b08947748939bf2637ab0a1a1b8c30f295e9",
+    "eventDiagnosis": {
+      "version": "codex-0.160.0-events-v3",
+      "accepted": false,
+      "reasonCode": "process_failure",
+      "reason": "erro de execucao informado pela CLI",
+      "completed": true,
+      "usage": {
+        "input_tokens": 22984,
+        "cached_input_tokens": 5120,
+        "output_tokens": 524
+      },
+      "types": {
+        "thread.started": 1,
+        "item.completed:error": 2,
+        "turn.started": 1,
+        "item.completed:agent_message": 1,
+        "turn.completed": 1
+      },
+      "issues": [
+        {
+          "code": "process_failure",
+          "line": 3,
+          "eventType": "item.completed",
+          "itemType": "error",
+          "itemId": "item_1"
+        }
+      ],
+      "warnings": [
+        {
+          "code": "startup_config_1",
+          "line": 2,
+          "itemId": "item_0"
+        }
+      ]
+    },
+    "observedModel": null,
+    "subscriptionUsage": null,
+    "attempts": 1,
+    "corrections": 0,
+    "limitations": [
+      "Modelo e esforco solicitados fixados; identidade remota nao atestada pela CLI.",
+      "Disponibilidade no catalogo nao comprova acesso da conta.",
+      "Consumo da assinatura e cobranca nao informados pela CLI; sem estimativa por preco de API.",
+      "Tentativas contam invocacoes do runner; tentativas internas do servico nao informadas.",
+      "Recibo local e evidencia rastreavel, sem assinatura criptografica de identidade humana."
+    ],
+    "sha256": "0f2383073280f590e7fe7cc8112f72a2f6a9b0e4daf1f02fe5650edbc1426fbe"
+  },
+  "sourceCaptureManifest": {
+    "schemaVersion": "agent-event-capture-v1",
+    "files": {
+      "response.json": {
+        "sha256": "4864318daf4e3b5017f79b0ff2d812079b7ad73bfd25f1cbee5e77d9dac9f7fb",
+        "bytes": 1163
+      },
+      "stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stdout.jsonl": {
+        "sha256": "2958b0093e2d6f037242a8141902a20681c7d996c2b76a56d2ffae4cc82b6807",
+        "bytes": 2128
+      }
+    },
+    "exitCode": 0,
+    "processError": null,
+    "truncated": false,
+    "diagnosis": {
+      "version": "codex-0.160.0-events-v3",
+      "accepted": false,
+      "reasonCode": "process_failure",
+      "reason": "erro de execucao informado pela CLI",
+      "completed": true,
+      "usage": {
+        "input_tokens": 22984,
+        "cached_input_tokens": 5120,
+        "output_tokens": 524
+      },
+      "types": {
+        "thread.started": 1,
+        "item.completed:error": 2,
+        "turn.started": 1,
+        "item.completed:agent_message": 1,
+        "turn.completed": 1
+      },
+      "issues": [
+        {
+          "code": "process_failure",
+          "line": 3,
+          "eventType": "item.completed",
+          "itemType": "error",
+          "itemId": "item_1"
+        }
+      ],
+      "warnings": [
+        {
+          "code": "startup_config_1",
+          "line": 2,
+          "itemId": "item_0"
+        }
+      ]
+    },
+    "sha256": "a260a184df86c91e4665d9fc9610b08947748939bf2637ab0a1a1b8c30f295e9"
+  },
+  "sourceWork": {
+    "schemaVersion": "agent-work-v1",
+    "id": "444-jeji-009-pedagogical-r06",
+    "objective": "Avaliar exclusivamente a passagem pedagogical da proposta T3F-PT-JEJI-009. Emitir parecer critico verdadeiro: aprovar apenas se nao houver pendencias; caso contrario registrar achados especificos. Nao completar campos nem reescrever a proposta.",
+    "baseCommit": "bb005a15575374addc7f6048e76ac5734d00cc95",
+    "role": "pedagogical-quality",
+    "subjectId": "portugues",
+    "curriculumCycle": "2026-t3",
+    "dependencies": [
+      "https://github.com/dleomil/quiz/issues/444"
+    ],
+    "documents": [
+      {
+        "id": "agents",
+        "version": "1.0.0",
+        "sha256": "fd4addcce96c418ff7f944d09cb387f8517a5bfb0752182aaccebc91dcb4b18b",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--agents--pedagogical-quality-agent",
+        "version": "1.0.0",
+        "sha256": "322c0d0bfa0b6d1a90244588e41a5924114646b33791a3a879972c1d0a9724b9",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--harness--content-update-quality-gates",
+        "version": "1.2.0",
+        "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--harness--pedagogical-regression-corpus",
+        "version": "1.0.0",
+        "sha256": "afd400c459b6d3d774db56df0346e87f57dba04f1ec561a648fa0aa957c1c5f8",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--product--product-scope-and-principles",
+        "version": "1.1.0",
+        "sha256": "2ca057426622539481ef63d482ff911ad518ffe8e7aae1da8399cd3c8d131e9a",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--specs--agent-context-and-auth",
+        "version": "1.0.0",
+        "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--specs--content-delivery-contract",
+        "version": "2.1.0",
+        "sha256": "0e519a2656eab8e7b67211730b225b22760c68147b4f860a0337b91f1aca9b78",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--specs--editorial-agent-output-contract",
+        "version": "2.0.0",
+        "sha256": "654b7c89ff30fc95a5db6a7516b62fa286639f0137e7583e960099fb33a79131",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      },
+      {
+        "id": "docs--specs--final-exams-november-2026-intake",
+        "version": "1.0.1",
+        "sha256": "13723530648377fb5f095d9af2a316f34e063597b0d2f4d0bb65b63f80f06523",
+        "sourceCommit": "7a2348eae43f6b5c87e5e07104cbb3cb961955bd"
+      }
+    ],
+    "requirements": [
+      "Respeitar metadados exatos da entrada: subjectId portugues, topicId usos-de-je-ji, reviewPass pedagogical.",
+      "Em findings, questionId deve ser exatamente T3F-PT-JEJI-009, nunca o workItemId.",
+      "Avaliar somente a passagem solicitada; manter humanApprovalRequired true.",
+      "Nao aprovar por schema, probabilidade ou ausencia de ferramenta; ler todos os textos e feedbacks da proposta.",
+      "Verificar resposta unica, adequacao ao terceiro ano, objetivo JE/JI, plausibilidade dos distratores, ausencia de habilidade lateral desnecessaria, pegadinhas e explicacoes falsas ou excessivamente gerais."
+    ],
+    "validExamples": [
+      "Parecer fundamentado em trechos e aspectos especificos da proposta; decisao approved somente sem achados ou duvidas."
+    ],
+    "invalidExamples": [
+      "Aprovacao generica porque os campos estao presentes.",
+      "Alegar que sons JE/JI sempre se escrevem com J."
+    ],
+    "allowedPaths": [],
+    "acceptanceCriteria": [
+      "Proposta content-v1 completa no schema, reviewStatus draft e decisão com pendência humana."
+    ],
+    "commands": [],
+    "evidence": [
+      "Pacote candidato SHA256 840a7a51d069f92a89c13afb08682605d9bf5cc34d26bf9fd1ec7316bb4bfbeb"
+    ],
+    "independentVerifier": "coordenador-da-sessao-com-conferencia-adicional-e-aceite-humano-pendente",
+    "stopConditions": [
+      "Manifesto não congelado, fonte ambígua, isolamento não comprovado ou dúvida factual não resolvida."
+    ],
+    "rollback": "Preservar a evidência e descartar a proposta sem alterar runtime."
+  },
+  "sourceCaptureSha256": "a260a184df86c91e4665d9fc9610b08947748939bf2637ab0a1a1b8c30f295e9",
+  "inputSha256": "f530bca12d12fad6b780ce9d08d2cffd9ec677646ba479092a85ea9d0181d022",
+  "workSha256": "4be03ab9553e3911f4430f74601b7863f76feafa2655a1f73d5b6423f6c0d713",
+  "responseSha256": "4864318daf4e3b5017f79b0ff2d812079b7ad73bfd25f1cbee5e77d9dac9f7fb",
+  "scenario": {
+    "scenarioId": "jeji-009-pedagogical-r06",
+    "inputState": "complete",
+    "input": {
+      "workItemId": "444-jeji-009-pedagogical-r06",
+      "contentSetId": "2026-t3-v2",
+      "subjectId": "portugues",
+      "topicId": "usos-de-je-ji",
+      "grade": "3-ano",
+      "academicYear": 2026,
+      "term": "t3",
+      "authorizedSkill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "questionVersion": 4,
+      "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+      "manifestState": "frozen",
+      "humanFreezeApproval": {
+        "approvedBy": "dleomil",
+        "approvedAt": "2026-11-02",
+        "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+      },
+      "requestedPass": "pedagogical",
+      "sourceStatus": "authorized",
+      "proposal": {
+        "schemaVersion": "content-v1",
+        "id": "T3F-PT-JEJI-009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-je-ji",
+        "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+        "options": [
+          "laranjeira, jipe, jeito",
+          "larangeira, jipe, jeito",
+          "laranjeira, gipe, jeito",
+          "laranjeira, jipe, geito"
+        ],
+        "correctIndex": 0,
+        "explanation": "As grafias corretas são “laranjeira”, “jipe” e “jeito”. É preciso observar como cada palavra é escrita.",
+        "skill": "distinguir-grafias-com-je-ji",
+        "sourceRef": {
+          "referenceId": "escola-2026-t3-final-novembro",
+          "section": "Português",
+          "topic": "usos-de-je-ji"
+        },
+        "reviewStatus": "draft",
+        "version": 4,
+        "wrongExplanations": {
+          "1": "Na opção, “larangeira” está escrita com G no lugar do J de “laranjeira”. A grafia correta é “laranjeira”.",
+          "2": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+          "3": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+        }
+      }
+    },
+    "output": {
+      "agent": "pedagogical_quality",
+      "workItemId": "444-jeji-009-pedagogical-r06",
+      "contentSetId": "2026-t3-v2",
+      "subjectId": "portugues",
+      "topicId": "usos-de-je-ji",
+      "reviewPass": "pedagogical",
+      "decision": "approved",
+      "facts": [
+        "A proposta T3F-PT-JEJI-009 está completa e vinculada ao objetivo curricular de escolher a grafia correta de palavras com JE e JI para o 3º ano.",
+        "A alternativa de índice 0 é a única em que as três palavras estão grafadas corretamente.",
+        "Cada distrator contém um único erro identificável, sem duplicidade ou concorrência com a resposta correta.",
+        "A explicação apresenta as três grafias corretas, e cada feedback identifica precisamente o erro da alternativa correspondente e informa a forma correta.",
+        "O enunciado está em português, não revela a resposta e mede diretamente a habilidade autorizada, sem exigir conhecimento lateral.",
+        "A proposta permanece com reviewStatus draft e requer aprovação humana."
+      ],
+      "doubts": [],
+      "findings": [],
+      "recommendations": [
+        "Submeter o pacote exato à passagem linguística independente e à aprovação pedagógica humana antes de qualquer implementação ou publicação."
+      ],
+      "humanApprovalRequired": true
+    }
+  },
+  "additionalModelInvocations": 0,
+  "humanApprovalRequired": true,
+  "publicationEligible": false,
+  "sha256": "53de7652cffec43ae7ee869562180266d676ee2c1490ea43f9a11d489bdb3fcc"
+}

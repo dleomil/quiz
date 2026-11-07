@@ -1,0 +1,219 @@
+{
+  "scenarioId": "pontuacao-final8-01-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "pontuacao-final8-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "pontuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Pontuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Escolher sinais de pontuação adequados ao sentido e à intenção das frases.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "A frase neutra “Ana leu um livro___” informa um fato, sem expressar emoção. Qual sinal encerra essa declaração?",
+        "options": [
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Ponto de exclamação (!)",
+          "Vírgula (,)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto final pode encerrar uma frase que apresenta uma informação.",
+        "wrongExplanations": {
+          "1": "O ponto de interrogação marca uma pergunta.",
+          "2": "O ponto de exclamação pode marcar emoção ou surpresa.",
+          "3": "A vírgula geralmente separa elementos dentro da frase."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Escolha o sinal que completa a frase “Onde está meu caderno___”.",
+        "options": [
+          "Ponto de interrogação (?)",
+          "Ponto final (.)",
+          "Vírgula (,)",
+          "Dois-pontos (:)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto de interrogação é usado ao final de uma pergunta direta.",
+        "wrongExplanations": {
+          "1": "O ponto final encerra uma declaração, não marca a pergunta aqui.",
+          "2": "A vírgula não encerra essa pergunta.",
+          "3": "Os dois-pontos podem anunciar uma explicação ou uma lista."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "A frase “Que surpresa boa” expressa alegria. Qual sinal combina com essa intenção?",
+        "options": [
+          "Ponto de exclamação (!)",
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Vírgula (,)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto de exclamação pode indicar emoção ou entusiasmo.",
+        "wrongExplanations": {
+          "1": "O ponto final encerra a frase sem destacar a emoção.",
+          "2": "A frase não faz uma pergunta.",
+          "3": "A vírgula não encerra a frase."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual sinal separa os itens desta lista? “Na mochila, coloquei o livro___ o estojo e a régua.”",
+        "options": [
+          "Vírgula (,)",
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Ponto de exclamação (!)"
+        ],
+        "correctIndex": 0,
+        "explanation": "A vírgula separa elementos de uma enumeração.",
+        "wrongExplanations": {
+          "1": "O ponto final encerraria a frase antes do restante da lista.",
+          "2": "A frase não é uma pergunta.",
+          "3": "O ponto de exclamação destaca emoção; aqui, a vírgula separa itens da lista."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "A frase apresenta apenas uma informação, sem pergunta ou emoção. Qual sinal deve completar o espaço? “Hoje teremos aula de música___”",
+        "options": [
+          "Ponto final (.)",
+          "Vírgula (,)",
+          "Dois-pontos (:)",
+          "Ponto de interrogação (?)"
+        ],
+        "correctIndex": 0,
+        "explanation": "A frase apresenta uma informação e pode terminar com ponto final.",
+        "wrongExplanations": {
+          "1": "A vírgula não encerra essa frase.",
+          "2": "Os dois-pontos costumam introduzir uma explicação ou enumeração.",
+          "3": "A frase não está formulada como pergunta."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "pontuacao-final8-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "pontuacao",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A passagem solicitada e executada é exclusivamente linguística.",
+      "As cinco propostas avaliadas pertencem ao tema Pontuação, ao 3º ano e ao objetivo curricular autorizado.",
+      "A questão 2026t3v2_pt_pontuacao_001 apresenta instrução clara em português, lacuna identificável e linguagem adequada à série.",
+      "A questão 2026t3v2_pt_pontuacao_002 formula uma pergunta direta com clareza, sem revelar textualmente a resposta.",
+      "A questão 2026t3v2_pt_pontuacao_003 relaciona a intenção de alegria ao sinal solicitado com redação clara e adequada.",
+      "A questão 2026t3v2_pt_pontuacao_004 apresenta a enumeração e a lacuna de forma compreensível, sem problema de ortografia, concordância ou pontuação.",
+      "A questão 2026t3v2_pt_pontuacao_005 distingue informação, pergunta e emoção em linguagem clara e adequada ao terceiro ano.",
+      "Enunciados, alternativas, explicações e feedbacks estão em português, são naturais e não contêm resposta reproduzida indevidamente na lacuna.",
+      "Não foram identificados erros linguísticos, ambiguidades de redação ou inadequações etárias nas propostas avaliadas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem pedagógica independente e à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "7f84ee1a-59e8-400d-8946-a77ae9e32feb",
+    "packageSha256": "40a5cfb350a1b6171de1ca9de43739224fd84ff1ae6482e40cb43141c491c2bb",
+    "batchProposalSha256": "80ea5de09d064c3fdd416e5ea5bdcb8e9274ac60bf9825572dbe1e6e4d88026c",
+    "batchQuestionIds": [
+      "2026t3v2_pt_pontuacao_001",
+      "2026t3v2_pt_pontuacao_002",
+      "2026t3v2_pt_pontuacao_003",
+      "2026t3v2_pt_pontuacao_004",
+      "2026t3v2_pt_pontuacao_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T01:36:04.049Z",
+    "testOnly": false
+  }
+}

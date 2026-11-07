@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-002-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-002-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gipe, jeitoso, hoje",
+        "jipe, jeitoso, hoje",
+        "jipe, geitoso, hoje",
+        "jipe, jeitoso, hoge"
+      ],
+      "correctIndex": 1,
+      "explanation": "As grafias corretas são “jipe”, “jeitoso” e “hoje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "2": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "3": "Na opção, “hoge” está escrita com G no lugar do J de “hoje”. A grafia correta é “hoje”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-002-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-002 está vinculada ao 3º ano, ao tema usos-de-je-ji e ao objetivo autorizado de escolher a grafia correta de palavras com JE e JI.",
+      "A alternativa de índice 1 é a única que apresenta as três palavras com grafia correta.",
+      "Cada uma das três alternativas incorretas contém um erro de troca entre J e G, sem duplicidade ou equivalência entre as opções.",
+      "A explicação identifica as três grafias corretas, e cada feedback de erro aponta precisamente a palavra inadequada e sua correção.",
+      "A questão mede diretamente a distinção das grafias com JE e JI, sem depender de habilidade lateral ou de resposta provável."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e, depois, à aprovação pedagógica humana obrigatória."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "4e2cf405-fb44-4146-983d-77d402f4197c",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "1b1c15f846cfcff36b2cef6590c18ffe61f02be87de0fb4ccdd32736c20fd08b",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:23:47.808Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/002-pedagogical-r06-recovery.json",
+    "recoverySha256": "69f42fe26e7b07a97849a5563851592c1a50c25e220d30cdf58b0eb9969125e6"
+  }
+}

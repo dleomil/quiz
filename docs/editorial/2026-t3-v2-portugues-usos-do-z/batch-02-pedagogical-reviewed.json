@@ -1,0 +1,219 @@
+{
+  "scenarioId": "usos-do-z-final3-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-do-z-final3-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-palavras-escritas-com-z",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Usos do Z"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer palavras escritas com Z",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “A equipe é ____ de terminar o desafio.”",
+        "options": [
+          "capás",
+          "capaz",
+          "capass",
+          "capáz"
+        ],
+        "correctIndex": 1,
+        "explanation": "Na frase, a expressão adequada é “capaz de terminar”. A palavra capaz termina com Z.",
+        "wrongExplanations": {
+          "0": "A grafia correta é capaz, com Z.",
+          "2": "Capaz termina com Z, e não com SS como em “capass”.",
+          "3": "A palavra capaz não recebe acento."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra com Z nomeia o som produzido pela fala?",
+        "options": [
+          "vós",
+          "vos",
+          "voz",
+          "vozz"
+        ],
+        "correctIndex": 2,
+        "explanation": "Voz é o som que produzimos quando falamos.",
+        "wrongExplanations": {
+          "0": "“Vós” é um pronome; a palavra que nomeia o som da fala é voz.",
+          "1": "“Vos” é um pronome; a palavra que nomeia o som da fala é voz.",
+          "3": "Voz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual grafia completa corretamente a frase: “O ____ é um cereal muito consumido no Brasil”?",
+        "options": [
+          "aroz",
+          "arróz",
+          "arroz",
+          "arrôs"
+        ],
+        "correctIndex": 2,
+        "explanation": "Arroz é escrito com Z no final e dois R no meio.",
+        "wrongExplanations": {
+          "0": "Arroz é escrito com dois R.",
+          "1": "Arroz não recebe acento.",
+          "3": "A grafia correta é arroz, sem acento."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra nomeia a qualidade do que é belo?",
+        "options": [
+          "beleza",
+          "belesa",
+          "beleça",
+          "belêza"
+        ],
+        "correctIndex": 0,
+        "explanation": "Beleza nomeia uma qualidade e é escrita com Z.",
+        "wrongExplanations": {
+          "1": "Beleza é escrita com Z, não com S.",
+          "2": "Beleza é escrita com Z, não com Ç.",
+          "3": "Beleza não recebe acento."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “Ela sentiu ____ quando o amigo foi embora.”",
+        "options": [
+          "tristesa",
+          "tristeza",
+          "tristteza",
+          "tristessa"
+        ],
+        "correctIndex": 1,
+        "explanation": "Tristeza é escrita com Z.",
+        "wrongExplanations": {
+          "0": "Tristeza é escrita com Z, não com S.",
+          "2": "“Tristteza” duplica o T; tristeza tem apenas um T depois de S.",
+          "3": "Tristeza é escrita com um Z, não com SS."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-do-z-final3-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto informa 3º ano, T3 de 2026, manifesto congelado, fonte autorizada e objetivo curricular rastreável: reconhecer palavras escritas com Z.",
+      "2026t3v2_pt_usos_do_z_006 possui resposta única defensável: “capaz”; os distratores são grafias incorretas e os feedbacks explicam seus erros.",
+      "2026t3v2_pt_usos_do_z_007 possui resposta única defensável: “voz”; as demais alternativas são pronomes ou uma grafia inválida, com feedback específico.",
+      "2026t3v2_pt_usos_do_z_008 possui resposta única defensável: “arroz”; a explicação contempla o Z final e os dois R, e os feedbacks distinguem os distratores.",
+      "2026t3v2_pt_usos_do_z_009 possui resposta única defensável: “beleza”; os distratores diferem por S, Ç ou acento indevido, tratados nos feedbacks.",
+      "2026t3v2_pt_usos_do_z_010 possui resposta única defensável: “tristeza”; os feedbacks identificam S, duplicação de T e SS como grafias inadequadas.",
+      "As cinco questões estão em português, apresentam quatro alternativas, não possuem lacunas sem resposta e não revelam a resposta correta na instrução.",
+      "As propostas medem diretamente o objetivo declarado, sem depender de pegadinha ou habilidade lateral."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote, sem alterações, à passagem linguística independente.",
+      "Manter pendente a aprovação humana pedagógica do hash exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "b76ab56a-1e36-489e-9c04-b2df0bfa8391",
+    "packageSha256": "d68a714178aa5421258d4c3b1e172c2b2e4c54f15181558c2e8d4ca09b0a9841",
+    "batchProposalSha256": "3e940520febfff2d2f4b032bd64dda2f4460f226155b0ab08aa84cec9ce78a2a",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_do_z_006",
+      "2026t3v2_pt_usos_do_z_007",
+      "2026t3v2_pt_usos_do_z_008",
+      "2026t3v2_pt_usos_do_z_009",
+      "2026t3v2_pt_usos_do_z_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-04T01:56:52.395Z",
+    "testOnly": false
+  }
+}

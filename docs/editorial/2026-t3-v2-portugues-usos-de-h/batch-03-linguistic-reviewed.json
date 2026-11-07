@@ -1,0 +1,218 @@
+{
+  "scenarioId": "usos-de-h-r14-03-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-de-h-r14-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Usos de H/h"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer o emprego do H em palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual grafia completa corretamente a frase: “A ____ abriu a porta para a visita.”",
+        "options": [
+          "mulher",
+          "muler",
+          "mullher",
+          "mulherh"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mulher é escrita sem H no início; o H aparece no dígrafo LH.",
+        "wrongExplanations": {
+          "1": "Mulher se escreve com LH.",
+          "2": "Mulher tem um único L antes do H.",
+          "3": "Mulher não recebe H no final."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente: “O ____ é um sanduíche com carne dentro do pão.”",
+        "options": [
+          "hambúrguer",
+          "ambúrguer",
+          "hambúrguerh",
+          "hampúrguer"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hambúrguer começa com H e recebe acento agudo no U.",
+        "wrongExplanations": {
+          "1": "Hambúrguer começa com H.",
+          "2": "Hambúrguer não termina com H.",
+          "3": "A palavra é escrita com B depois de M."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Complete: “O ____ caiu da árvore no quintal.”",
+        "options": [
+          "homem",
+          "omem",
+          "homen",
+          "homemh"
+        ],
+        "correctIndex": 0,
+        "explanation": "Homem começa com H e termina com M.",
+        "wrongExplanations": {
+          "1": "Homem começa com H.",
+          "2": "Homem termina com M, não com N.",
+          "3": "Homem não termina com H."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual é a grafia correta da palavra que nomeia a água que cai das nuvens?",
+        "options": [
+          "chuva",
+          "xuva",
+          "chuba",
+          "chuma"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chuva é escrita com o dígrafo CH.",
+        "wrongExplanations": {
+          "1": "Chuva começa com CH.",
+          "2": "Chuva se escreve com V.",
+          "3": "Chuva se escreve com V, não com M."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente: “Meu ____ ajudou a irmã na tarefa.”",
+        "options": [
+          "filho",
+          "fio",
+          "filu",
+          "fílio"
+        ],
+        "correctIndex": 0,
+        "explanation": "Filho contém o dígrafo LH.",
+        "wrongExplanations": {
+          "1": "Fio é outra palavra; o nome do familiar é filho, com LH.",
+          "2": "Filho termina com O, não U.",
+          "3": "Filho não recebe acento e se escreve com LH."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-de-h-r14-03-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A passagem solicitada e executada é exclusivamente linguistic.",
+      "O contexto declara 3º ano, ano letivo de 2026, T3, manifesto frozen e objetivo curricular rastreável para reconhecer o emprego do H em palavras usuais.",
+      "A proposta 2026t3v2_pt_usos_de_h_011 apresenta instrução clara em português, lacuna bem delimitada, uma única grafia defensável e explicações linguisticamente coerentes.",
+      "A proposta 2026t3v2_pt_usos_de_h_012 apresenta instrução clara em português, lacuna bem delimitada, acentuação correta e nenhuma revelação antecipada da resposta.",
+      "A proposta 2026t3v2_pt_usos_de_h_013 apresenta frase completa e compreensível, alternativas distintas e explicações claras sobre H inicial e M final.",
+      "A proposta 2026t3v2_pt_usos_de_h_014 usa enunciado adequado ao terceiro ano, sem lacuna ambígua nem indicação explícita da alternativa correta.",
+      "A proposta 2026t3v2_pt_usos_de_h_015 apresenta contexto familiar compreensível, lacuna bem delimitada e feedbacks claros para as três grafias incorretas.",
+      "Nas cinco propostas, ortografia, acentuação, concordância e pontuação estão adequadas; as instruções estão em português e não há resposta revelada pelo enunciado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote exato avaliado e encaminhá-lo à aprovação humana e às demais etapas independentes exigidas pelo contrato editorial."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "f866b51f-fcd8-44bd-ad57-1d8de0ab2c5a",
+    "packageSha256": "79758f7c9e66c4c47c121efcd285e9b19f3155ef47e4b8d49d331cf898650527",
+    "batchProposalSha256": "55919da66732ab42fff56170128ea70974e4f8e351452a68be9c35c4e7f87c07",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_de_h_011",
+      "2026t3v2_pt_usos_de_h_012",
+      "2026t3v2_pt_usos_de_h_013",
+      "2026t3v2_pt_usos_de_h_014",
+      "2026t3v2_pt_usos_de_h_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T12:27:44.115Z",
+    "testOnly": false
+  }
+}

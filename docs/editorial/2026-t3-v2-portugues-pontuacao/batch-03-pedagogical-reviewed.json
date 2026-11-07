@@ -1,0 +1,217 @@
+{
+  "scenarioId": "pontuacao-final8-03-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "pontuacao-final8-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "pontuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Pontuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Escolher sinais de pontuação adequados ao sentido e à intenção das frases.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Na frase “Pedro, feche a janela”, por que há uma vírgula depois de “Pedro”?",
+        "options": [
+          "Para separar o nome da pessoa chamada",
+          "Para indicar uma pergunta",
+          "Para encerrar a frase",
+          "Para separar duas palavras de uma lista"
+        ],
+        "correctIndex": 0,
+        "explanation": "A vírgula separa o vocativo, isto é, o nome de quem está sendo chamado.",
+        "wrongExplanations": {
+          "1": "A vírgula não indica pergunta.",
+          "2": "A frase continua depois do nome.",
+          "3": "A frase não apresenta uma enumeração."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "A fala expressa susto: “Que susto___ O gato pulou da cadeira.” Qual sinal deve preencher a lacuna para mostrar o susto?",
+        "options": [
+          "Ponto de exclamação (!)",
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Vírgula (,)"
+        ],
+        "correctIndex": 0,
+        "explanation": "A expressão de susto pode terminar com ponto de exclamação.",
+        "wrongExplanations": {
+          "1": "O ponto final não destaca o susto expresso.",
+          "2": "“Que susto” não é uma pergunta nesse contexto.",
+          "3": "A vírgula não encerra a expressão."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual sinal deve separar os nomes na frase “Convidei Bia___ Caio e Léo”?",
+        "options": [
+          "Vírgula (,)",
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Ponto de exclamação (!)"
+        ],
+        "correctIndex": 0,
+        "explanation": "A vírgula separa nomes numa enumeração.",
+        "wrongExplanations": {
+          "1": "O ponto final encerraria a frase antes dos outros nomes.",
+          "2": "A frase não é uma pergunta.",
+          "3": "O ponto de exclamação não separa itens de uma lista."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "A frase “O ônibus chegou no horário” informa algo. Qual sinal pode encerrá-la?",
+        "options": [
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Vírgula (,)",
+          "Dois-pontos (:)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto final encerra uma declaração.",
+        "wrongExplanations": {
+          "1": "A frase informa, não pergunta.",
+          "2": "A vírgula não encerra a declaração.",
+          "3": "Os dois-pontos normalmente introduzem algo que vem em seguida."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual pontuação mostra que a pessoa está muito animada? “Conseguimos terminar o cartaz___”",
+        "options": [
+          "Ponto de exclamação (!)",
+          "Ponto de interrogação (?)",
+          "Vírgula (,)",
+          "Dois-pontos (:)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto de exclamação pode marcar animação.",
+        "wrongExplanations": {
+          "1": "A frase não faz uma pergunta.",
+          "2": "A vírgula não encerra a frase.",
+          "3": "Os dois-pontos não expressam essa animação no fim da frase."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "pontuacao-final8-03-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "pontuacao",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta 2026t3v2_pt_pontuacao_011 avalia corretamente o uso da vírgula para separar o vocativo, apresenta uma única resposta defensável e oferece feedback coerente para cada distrator.",
+      "A proposta 2026t3v2_pt_pontuacao_012 relaciona corretamente o ponto de exclamação à intenção declarada de expressar susto; as demais alternativas são claramente inadequadas ao contexto.",
+      "A proposta 2026t3v2_pt_pontuacao_013 avalia corretamente o emprego da vírgula em uma enumeração de nomes, com resposta única e explicações coerentes.",
+      "A proposta 2026t3v2_pt_pontuacao_014 relaciona corretamente o ponto final ao encerramento de uma declaração, sem alternativa concorrente no contexto apresentado.",
+      "A proposta 2026t3v2_pt_pontuacao_015 relaciona corretamente o ponto de exclamação à animação expressa pela frase, com resposta única e feedback adequado.",
+      "As cinco propostas estão alinhadas ao objetivo curricular de escolher sinais de pontuação conforme o sentido e a intenção das frases e permanecem com reviewStatus draft."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato a uma passagem linguística independente.",
+      "Manter o lote como draft até a aprovação pedagógica humana e os demais gates de entrega."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "2b641e1d-2576-4c9e-a578-a79e6ace709b",
+    "packageSha256": "40a5cfb350a1b6171de1ca9de43739224fd84ff1ae6482e40cb43141c491c2bb",
+    "batchProposalSha256": "d8f3ef33e47cc00a5696d1c472d45482cee39ef2c3cace3c25ffac06ad6b2d5e",
+    "batchQuestionIds": [
+      "2026t3v2_pt_pontuacao_011",
+      "2026t3v2_pt_pontuacao_012",
+      "2026t3v2_pt_pontuacao_013",
+      "2026t3v2_pt_pontuacao_014",
+      "2026t3v2_pt_pontuacao_015"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-04T01:40:21.335Z",
+    "testOnly": false
+  }
+}

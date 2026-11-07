@@ -1,0 +1,220 @@
+{
+  "scenarioId": "adjetivos-patrios-final4-04-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "adjetivos-patrios-final4-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "relacionar-gentilicos-a-lugares-de-origem",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Adjetivos pátrios"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Relacionar gentílicos a lugares de origem",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce no Pará é…",
+        "options": [
+          "amazonense",
+          "paraense",
+          "amapaense",
+          "maranhense"
+        ],
+        "correctIndex": 1,
+        "explanation": "Paraense é o gentílico de quem nasce no Pará.",
+        "wrongExplanations": {
+          "0": "Amazonense é o gentílico do Amazonas.",
+          "2": "Amapaense é o gentílico do Amapá.",
+          "3": "Maranhense é o gentílico do Maranhão."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasceu no Amazonas é…",
+        "options": [
+          "paraense",
+          "roraimense",
+          "amazonense",
+          "acreana"
+        ],
+        "correctIndex": 2,
+        "explanation": "Amazonense é o gentílico de quem nasce no estado do Amazonas.",
+        "wrongExplanations": {
+          "0": "Paraense é o gentílico do Pará.",
+          "1": "Roraimense é o gentílico de Roraima.",
+          "3": "Acreana é o gentílico feminino do Acre."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce na Argentina é…",
+        "options": [
+          "chileno",
+          "uruguaio",
+          "paraguaio",
+          "argentino"
+        ],
+        "correctIndex": 3,
+        "explanation": "Argentino é o gentílico de quem nasce na Argentina.",
+        "wrongExplanations": {
+          "0": "Chileno é o gentílico do Chile.",
+          "1": "Uruguaio é o gentílico do Uruguai.",
+          "2": "Paraguaio é o gentílico do Paraguai."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce no Japão é…",
+        "options": [
+          "chinês",
+          "japonês",
+          "coreano",
+          "tailandês"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japonês é o gentílico de quem nasce no Japão.",
+        "wrongExplanations": {
+          "0": "Chinês é o gentílico da China.",
+          "2": "Coreano é o gentílico da Coreia.",
+          "3": "Tailandês é o gentílico da Tailândia."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Qual gentílico completa corretamente a frase? “Meu amigo nasceu no Chile. Ele é ____.”",
+        "options": [
+          "chileiro",
+          "chiliense",
+          "chileno",
+          "chilista"
+        ],
+        "correctIndex": 2,
+        "explanation": "Chileno é o gentílico de quem nasce no Chile.",
+        "wrongExplanations": {
+          "0": "Chileno é o gentílico do Chile; “chileiro” não é a forma usada.",
+          "1": "“Chiliense” não é o gentílico usado para o Chile; usa-se chileno ou chilena.",
+          "3": "“Chilista” não é o gentílico usado para o Chile; usa-se chileno ou chilena."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "adjetivos-patrios-final4-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "O contexto declara 3º ano, ano letivo de 2026, T3, manifesto congelado, aprovação humana do congelamento, fonte autorizada e objetivo curricular rastreável.",
+      "A passagem solicitada é exclusivamente linguística e a prova de isolamento informa ferramentas, conectores e MCP desativados.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_016 apresenta enunciado claro em português, alternativas distintas e explicações redigidas com correção e adequação ao 3º ano.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_017 mantém clareza, concordância e vocabulário adequado; o feminino em “acreana” está coerente com “uma pessoa”.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_018 apresenta formulação natural, pontuação correta e alternativas linguisticamente compreensíveis.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_019 apresenta acentuação, concordância e explicações corretas e claras.",
+      "A questão 2026t3v2_pt_adjetivos_patrios_020 traz instrução explícita em português, lacuna compreensível e pontuação adequada; o enunciado não revela antecipadamente a resposta.",
+      "As cinco propostas possuem quatro alternativas, explicação da resposta correta e feedback específico para cada alternativa incorreta, sem lacunas textuais observadas.",
+      "Não foram identificadas ambiguidades linguísticas, linguagem inadequada à série, duplicidades semânticas ou problemas de ortografia, acentuação, concordância e pontuação."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o lote vinculado ao pacote e ao hash exatos avaliados.",
+      "Submeter o pacote à passagem pedagógica independente e à aprovação humana exigida antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "674bd232-150f-4696-9a19-adf88afd0b47",
+    "packageSha256": "3d18f8533a938189d9723d3064f602fb95548ae0739e674e653e16289e9709f9",
+    "batchProposalSha256": "79e5a54d4246f905e205a7e3b046d4ef7d7c7f05eaf3c3b799aec76fb271121b",
+    "batchQuestionIds": [
+      "2026t3v2_pt_adjetivos_patrios_016",
+      "2026t3v2_pt_adjetivos_patrios_017",
+      "2026t3v2_pt_adjetivos_patrios_018",
+      "2026t3v2_pt_adjetivos_patrios_019",
+      "2026t3v2_pt_adjetivos_patrios_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T00:07:09.222Z",
+    "testOnly": false
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "scenarioId": "adjetivos-patrios-final4-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "adjetivos-patrios-final4-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "relacionar-gentilicos-a-lugares-de-origem",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Adjetivos pátrios"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Relacionar gentílicos a lugares de origem",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasce no estado do Rio de Janeiro é…",
+        "options": [
+          "carioca",
+          "fluminense",
+          "mineira",
+          "gaúcha"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fluminense é o gentílico de quem nasce no estado do Rio de Janeiro.",
+        "wrongExplanations": {
+          "0": "Carioca se refere a quem nasce na cidade do Rio de Janeiro.",
+          "2": "Mineira é o gentílico de Minas Gerais.",
+          "3": "Gaúcha é o gentílico do Rio Grande do Sul."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce em Minas Gerais é…",
+        "options": [
+          "mineiro",
+          "goiano",
+          "baiano",
+          "paranaense"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mineiro é o gentílico de quem nasce em Minas Gerais.",
+        "wrongExplanations": {
+          "1": "Goiano é o gentílico de Goiás.",
+          "2": "Baiano é o gentílico da Bahia.",
+          "3": "Paranaense é o gentílico do Paraná."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasceu na Bahia é…",
+        "options": [
+          "cearense",
+          "baiana",
+          "pernambucana",
+          "sergipana"
+        ],
+        "correctIndex": 1,
+        "explanation": "Baiana é a forma feminina de baiano, gentílico da Bahia.",
+        "wrongExplanations": {
+          "0": "Cearense é o gentílico do Ceará.",
+          "2": "Pernambucana é o gentílico de Pernambuco.",
+          "3": "Sergipana é o gentílico de Sergipe."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce no Ceará é…",
+        "options": [
+          "cearense",
+          "baiano",
+          "potiguar",
+          "pernambucano"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cearense é o gentílico de quem nasce no Ceará.",
+        "wrongExplanations": {
+          "1": "Baiano é o gentílico da Bahia.",
+          "2": "Potiguar é o gentílico do Rio Grande do Norte.",
+          "3": "Pernambucano é o gentílico de Pernambuco."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasce no Paraná é…",
+        "options": [
+          "catarinense",
+          "paranaense",
+          "gaúcha",
+          "paulista"
+        ],
+        "correctIndex": 1,
+        "explanation": "Paranaense é o gentílico de quem nasce no Paraná.",
+        "wrongExplanations": {
+          "0": "Catarinense é o gentílico de Santa Catarina.",
+          "2": "Gaúcha é o gentílico do Rio Grande do Sul.",
+          "3": "Paulista é o gentílico do estado de São Paulo."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "adjetivos-patrios-final4-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "2026t3v2_pt_adjetivos_patrios_006 relaciona corretamente o gentílico fluminense ao estado do Rio de Janeiro e distingue carioca, referente à cidade; há uma única resposta defensável.",
+      "2026t3v2_pt_adjetivos_patrios_007 relaciona corretamente mineiro a Minas Gerais; os três distratores correspondem a outros estados e seus feedbacks são coerentes.",
+      "2026t3v2_pt_adjetivos_patrios_008 relaciona corretamente a forma feminina baiana à Bahia; alternativas, explicação e feedbacks mantêm concordância e resposta única.",
+      "2026t3v2_pt_adjetivos_patrios_009 relaciona corretamente cearense ao Ceará e esclarece adequadamente a origem associada a cada distrator.",
+      "2026t3v2_pt_adjetivos_patrios_010 relaciona corretamente paranaense ao Paraná; os distratores são distintos, plausíveis e claramente incorretos.",
+      "As cinco questões medem diretamente o objetivo de relacionar gentílicos a lugares de origem, apresentam quatro alternativas completas e possuem explicação da resposta correta e feedback para cada alternativa incorreta.",
+      "Os enunciados estão em português, são adequados ao 3º ano, não contêm lacunas indevidas e não revelam antecipadamente a resposta correta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato a uma passagem linguística independente.",
+      "Manter a aprovação pedagógica humana do pacote exato como requisito antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "ebc23cc2-1945-4c1f-b2d5-62b7fb56fe3b",
+    "packageSha256": "3d18f8533a938189d9723d3064f602fb95548ae0739e674e653e16289e9709f9",
+    "batchProposalSha256": "b84b6b12c99d0dd063a8c5d15743d3809a136d0eefc84a1ce239a5970208ee5c",
+    "batchQuestionIds": [
+      "2026t3v2_pt_adjetivos_patrios_006",
+      "2026t3v2_pt_adjetivos_patrios_007",
+      "2026t3v2_pt_adjetivos_patrios_008",
+      "2026t3v2_pt_adjetivos_patrios_009",
+      "2026t3v2_pt_adjetivos_patrios_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T23:53:47.113Z",
+    "testOnly": false
+  }
+}

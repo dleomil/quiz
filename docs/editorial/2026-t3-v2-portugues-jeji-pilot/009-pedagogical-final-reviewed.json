@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-009-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-009-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "laranjeira, jipe, jeito",
+        "larangeira, jipe, jeito",
+        "laranjeira, gipe, jeito",
+        "laranjeira, jipe, geito"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “laranjeira”, “jipe” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “larangeira” está escrita com G no lugar do J de “laranjeira”. A grafia correta é “laranjeira”.",
+        "2": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-009-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-009 está completa e vinculada ao objetivo curricular de escolher a grafia correta de palavras com JE e JI para o 3º ano.",
+      "A alternativa de índice 0 é a única em que as três palavras estão grafadas corretamente.",
+      "Cada distrator contém um único erro identificável, sem duplicidade ou concorrência com a resposta correta.",
+      "A explicação apresenta as três grafias corretas, e cada feedback identifica precisamente o erro da alternativa correspondente e informa a forma correta.",
+      "O enunciado está em português, não revela a resposta e mede diretamente a habilidade autorizada, sem exigir conhecimento lateral.",
+      "A proposta permanece com reviewStatus draft e requer aprovação humana."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação pedagógica humana antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "d485fd34-cf4b-410e-b894-8a2bf3008176",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "09eb48a4f90928c28a13f86a57e52391930c4c654b3c89a9052ae6f755afc4d8",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:26:51.631Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/009-pedagogical-r06-recovery.json",
+    "recoverySha256": "53de7652cffec43ae7ee869562180266d676ee2c1490ea43f9a11d489bdb3fcc"
+  }
+}

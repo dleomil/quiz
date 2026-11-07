@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "adjetivos-patrios",
+  "topicName": "Adjetivos pátrios",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 6",
+    "topic": "Adjetivos pátrios"
+  },
+  "status": "draft_pending_reviews",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce no Brasil é…",
+      "options": [
+        "brasileiro",
+        "português",
+        "argentino",
+        "chileno"
+      ],
+      "correctIndex": 0,
+      "explanation": "Brasileiro é o adjetivo pátrio usado para quem nasce no Brasil.",
+      "wrongExplanations": {
+        "1": "Português é o gentílico de Portugal.",
+        "2": "Argentino é o gentílico da Argentina.",
+        "3": "Chileno é o gentílico do Chile."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasce em Portugal é…",
+      "options": [
+        "portuguesa",
+        "espanhola",
+        "italiana",
+        "francesa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Portuguesa é a forma feminina de português, gentílico de Portugal.",
+      "wrongExplanations": {
+        "1": "Espanhola é o gentílico de quem nasce na Espanha.",
+        "2": "Italiana é o gentílico de quem nasce na Itália.",
+        "3": "Francesa é o gentílico de quem nasce na França."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Rafaela nasceu na cidade de São Paulo. Qual gentílico indica com mais precisão o lugar onde ela nasceu?",
+      "options": [
+        "paulistana",
+        "mineira",
+        "baiana",
+        "goiana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Paulistana indica quem nasce na cidade de São Paulo.",
+      "wrongExplanations": {
+        "1": "Mineira é o gentílico de quem nasce em Minas Gerais.",
+        "2": "Baiana é o gentílico de quem nasce na Bahia.",
+        "3": "Goiana é o gentílico de quem nasce em Goiás."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasceu no estado de São Paulo é…",
+      "options": [
+        "carioca",
+        "paulista",
+        "paranaense",
+        "mineira"
+      ],
+      "correctIndex": 1,
+      "explanation": "Paulista é o gentílico de quem nasce no estado de São Paulo.",
+      "wrongExplanations": {
+        "0": "Carioca é o gentílico relacionado à cidade do Rio de Janeiro.",
+        "2": "Paranaense é o gentílico de quem nasce no Paraná.",
+        "3": "Mineira é o gentílico de quem nasce em Minas Gerais."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce na cidade do Rio de Janeiro é…",
+      "options": [
+        "paulista",
+        "carioca",
+        "capixaba",
+        "baiano"
+      ],
+      "correctIndex": 1,
+      "explanation": "Carioca é o gentílico de quem nasce na cidade do Rio de Janeiro.",
+      "wrongExplanations": {
+        "0": "Paulista é o gentílico de quem nasce no estado de São Paulo.",
+        "2": "Capixaba é o gentílico de quem nasce no Espírito Santo.",
+        "3": "Baiano é o gentílico de quem nasce na Bahia."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasce no estado do Rio de Janeiro é…",
+      "options": [
+        "carioca",
+        "fluminense",
+        "mineira",
+        "gaúcha"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fluminense é o gentílico de quem nasce no estado do Rio de Janeiro.",
+      "wrongExplanations": {
+        "0": "Carioca se refere a quem nasce na cidade do Rio de Janeiro.",
+        "2": "Mineira é o gentílico de Minas Gerais.",
+        "3": "Gaúcha é o gentílico do Rio Grande do Sul."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce em Minas Gerais é…",
+      "options": [
+        "mineiro",
+        "goiano",
+        "baiano",
+        "paranaense"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mineiro é o gentílico de quem nasce em Minas Gerais.",
+      "wrongExplanations": {
+        "1": "Goiano é o gentílico de Goiás.",
+        "2": "Baiano é o gentílico da Bahia.",
+        "3": "Paranaense é o gentílico do Paraná."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasceu na Bahia é…",
+      "options": [
+        "cearense",
+        "baiana",
+        "pernambucana",
+        "sergipana"
+      ],
+      "correctIndex": 1,
+      "explanation": "Baiana é a forma feminina de baiano, gentílico da Bahia.",
+      "wrongExplanations": {
+        "0": "Cearense é o gentílico do Ceará.",
+        "2": "Pernambucana é o gentílico de Pernambuco.",
+        "3": "Sergipana é o gentílico de Sergipe."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce no Ceará é…",
+      "options": [
+        "cearense",
+        "baiano",
+        "potiguar",
+        "pernambucano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cearense é o gentílico de quem nasce no Ceará.",
+      "wrongExplanations": {
+        "1": "Baiano é o gentílico da Bahia.",
+        "2": "Potiguar é o gentílico do Rio Grande do Norte.",
+        "3": "Pernambucano é o gentílico de Pernambuco."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasce no Paraná é…",
+      "options": [
+        "catarinense",
+        "paranaense",
+        "gaúcha",
+        "paulista"
+      ],
+      "correctIndex": 1,
+      "explanation": "Paranaense é o gentílico de quem nasce no Paraná.",
+      "wrongExplanations": {
+        "0": "Catarinense é o gentílico de Santa Catarina.",
+        "2": "Gaúcha é o gentílico do Rio Grande do Sul.",
+        "3": "Paulista é o gentílico do estado de São Paulo."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce em Santa Catarina é…",
+      "options": [
+        "catarinense",
+        "capixaba",
+        "paranaense",
+        "goiana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Catarinense é o gentílico de Santa Catarina.",
+      "wrongExplanations": {
+        "1": "Capixaba é o gentílico de quem nasce no Espírito Santo.",
+        "2": "Paranaense é o gentílico do Paraná.",
+        "3": "Goiana é a forma feminina do gentílico de Goiás."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasceu no Rio Grande do Sul é…",
+      "options": [
+        "gaúcha",
+        "baiana",
+        "catarinense",
+        "mineira"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gaúcha é a forma feminina de gaúcho, gentílico do Rio Grande do Sul.",
+      "wrongExplanations": {
+        "1": "Baiana é o gentílico feminino da Bahia.",
+        "2": "Catarinense é o gentílico de Santa Catarina.",
+        "3": "Mineira é o gentílico de Minas Gerais."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Como se chama, no masculino, quem nasce em Goiás?",
+      "options": [
+        "goiano",
+        "baiano",
+        "tocantinense",
+        "paranaense"
+      ],
+      "correctIndex": 0,
+      "explanation": "Goiano é o gentílico de quem nasce em Goiás.",
+      "wrongExplanations": {
+        "1": "Baiano é o gentílico da Bahia.",
+        "2": "Tocantinense é o gentílico de Tocantins.",
+        "3": "Paranaense é o gentílico do Paraná."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasceu no Espírito Santo é…",
+      "options": [
+        "capixaba",
+        "carioca",
+        "fluminense",
+        "baiana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capixaba é o gentílico de quem nasce no Espírito Santo.",
+      "wrongExplanations": {
+        "1": "Carioca se refere à cidade do Rio de Janeiro.",
+        "2": "Fluminense se refere ao estado do Rio de Janeiro.",
+        "3": "Baiana é o gentílico feminino da Bahia."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Lúcia nasceu em Pernambuco. Ela é…",
+      "options": [
+        "pernambucana",
+        "paraibana",
+        "alagoana",
+        "potiguar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pernambucana é a forma feminina do gentílico de Pernambuco.",
+      "wrongExplanations": {
+        "1": "Paraibana é o gentílico feminino da Paraíba.",
+        "2": "Alagoana é o gentílico feminino de Alagoas.",
+        "3": "Potiguar é o gentílico do Rio Grande do Norte."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce no Pará é…",
+      "options": [
+        "amazonense",
+        "paraense",
+        "amapaense",
+        "maranhense"
+      ],
+      "correctIndex": 1,
+      "explanation": "Paraense é o gentílico de quem nasce no Pará.",
+      "wrongExplanations": {
+        "0": "Amazonense é o gentílico do Amazonas.",
+        "2": "Amapaense é o gentílico do Amapá.",
+        "3": "Maranhense é o gentílico do Maranhão."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Uma pessoa que nasceu no Amazonas é…",
+      "options": [
+        "paraense",
+        "roraimense",
+        "amazonense",
+        "acreana"
+      ],
+      "correctIndex": 2,
+      "explanation": "Amazonense é o gentílico de quem nasce no estado do Amazonas.",
+      "wrongExplanations": {
+        "0": "Paraense é o gentílico do Pará.",
+        "1": "Roraimense é o gentílico de Roraima.",
+        "3": "Acreana é o gentílico feminino do Acre."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce na Argentina é…",
+      "options": [
+        "chileno",
+        "uruguaio",
+        "paraguaio",
+        "argentino"
+      ],
+      "correctIndex": 3,
+      "explanation": "Argentino é o gentílico de quem nasce na Argentina.",
+      "wrongExplanations": {
+        "0": "Chileno é o gentílico do Chile.",
+        "1": "Uruguaio é o gentílico do Uruguai.",
+        "2": "Paraguaio é o gentílico do Paraguai."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Quem nasce no Japão é…",
+      "options": [
+        "chinês",
+        "japonês",
+        "coreano",
+        "tailandês"
+      ],
+      "correctIndex": 1,
+      "explanation": "Japonês é o gentílico de quem nasce no Japão.",
+      "wrongExplanations": {
+        "0": "Chinês é o gentílico da China.",
+        "2": "Coreano é o gentílico da Coreia.",
+        "3": "Tailandês é o gentílico da Tailândia."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_adjetivos_patrios_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "adjetivos-patrios",
+      "question": "Qual gentílico completa corretamente a frase? “Meu amigo nasceu no Chile. Ele é ____.”",
+      "options": [
+        "chileiro",
+        "chiliense",
+        "chileno",
+        "chilista"
+      ],
+      "correctIndex": 2,
+      "explanation": "Chileno é o gentílico de quem nasce no Chile.",
+      "wrongExplanations": {
+        "0": "Chileno é o gentílico do Chile; “chileiro” não é a forma usada.",
+        "1": "“Chiliense” não é o gentílico usado para o Chile; usa-se chileno ou chilena.",
+        "3": "“Chilista” não é o gentílico usado para o Chile; usa-se chileno ou chilena."
+      },
+      "skill": "relacionar-gentilicos-a-lugares-de-origem",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 6",
+        "topic": "Adjetivos pátrios"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

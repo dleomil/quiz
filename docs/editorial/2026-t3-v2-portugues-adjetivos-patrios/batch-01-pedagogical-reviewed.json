@@ -1,0 +1,220 @@
+{
+  "scenarioId": "adjetivos-patrios-final4-01-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "adjetivos-patrios-final4-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "relacionar-gentilicos-a-lugares-de-origem",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Adjetivos pátrios"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Relacionar gentílicos a lugares de origem",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce no Brasil é…",
+        "options": [
+          "brasileiro",
+          "português",
+          "argentino",
+          "chileno"
+        ],
+        "correctIndex": 0,
+        "explanation": "Brasileiro é o adjetivo pátrio usado para quem nasce no Brasil.",
+        "wrongExplanations": {
+          "1": "Português é o gentílico de Portugal.",
+          "2": "Argentino é o gentílico da Argentina.",
+          "3": "Chileno é o gentílico do Chile."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasce em Portugal é…",
+        "options": [
+          "portuguesa",
+          "espanhola",
+          "italiana",
+          "francesa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Portuguesa é a forma feminina de português, gentílico de Portugal.",
+        "wrongExplanations": {
+          "1": "Espanhola é o gentílico de quem nasce na Espanha.",
+          "2": "Italiana é o gentílico de quem nasce na Itália.",
+          "3": "Francesa é o gentílico de quem nasce na França."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Rafaela nasceu na cidade de São Paulo. Qual gentílico indica com mais precisão o lugar onde ela nasceu?",
+        "options": [
+          "paulistana",
+          "mineira",
+          "baiana",
+          "goiana"
+        ],
+        "correctIndex": 0,
+        "explanation": "Paulistana indica quem nasce na cidade de São Paulo.",
+        "wrongExplanations": {
+          "1": "Mineira é o gentílico de quem nasce em Minas Gerais.",
+          "2": "Baiana é o gentílico de quem nasce na Bahia.",
+          "3": "Goiana é o gentílico de quem nasce em Goiás."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Uma pessoa que nasceu no estado de São Paulo é…",
+        "options": [
+          "carioca",
+          "paulista",
+          "paranaense",
+          "mineira"
+        ],
+        "correctIndex": 1,
+        "explanation": "Paulista é o gentílico de quem nasce no estado de São Paulo.",
+        "wrongExplanations": {
+          "0": "Carioca é o gentílico relacionado à cidade do Rio de Janeiro.",
+          "2": "Paranaense é o gentílico de quem nasce no Paraná.",
+          "3": "Mineira é o gentílico de quem nasce em Minas Gerais."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_adjetivos_patrios_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "adjetivos-patrios",
+        "question": "Quem nasce na cidade do Rio de Janeiro é…",
+        "options": [
+          "paulista",
+          "carioca",
+          "capixaba",
+          "baiano"
+        ],
+        "correctIndex": 1,
+        "explanation": "Carioca é o gentílico de quem nasce na cidade do Rio de Janeiro.",
+        "wrongExplanations": {
+          "0": "Paulista é o gentílico de quem nasce no estado de São Paulo.",
+          "2": "Capixaba é o gentílico de quem nasce no Espírito Santo.",
+          "3": "Baiano é o gentílico de quem nasce na Bahia."
+        },
+        "skill": "relacionar-gentilicos-a-lugares-de-origem",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Adjetivos pátrios"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "adjetivos-patrios-final4-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "adjetivos-patrios",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto informa 3º ano, ano letivo de 2026, T3, manifesto congelado, aprovação humana do congelamento, fonte autorizada e objetivo curricular rastreável: relacionar gentílicos a lugares de origem.",
+      "A proposta contém cinco questões content-v1 em estado draft, cada uma com quatro alternativas, correctIndex válido, explicação da resposta correta e feedback para as três alternativas incorretas.",
+      "2026t3v2_pt_adjetivos_patrios_001 relaciona corretamente Brasil a brasileiro, apresenta uma única resposta defensável e usa distratores referentes a outros países.",
+      "2026t3v2_pt_adjetivos_patrios_002 relaciona corretamente Portugal a portuguesa, mantém concordância com “uma pessoa” e apresenta uma única resposta defensável.",
+      "2026t3v2_pt_adjetivos_patrios_003 distingue corretamente paulistana, referente à cidade de São Paulo, de gentílicos de outros estados; a indicação de maior precisão elimina possível concorrência com paulista.",
+      "2026t3v2_pt_adjetivos_patrios_004 relaciona corretamente o estado de São Paulo a paulista e diferencia esse gentílico de carioca, paranaense e mineira.",
+      "2026t3v2_pt_adjetivos_patrios_005 relaciona corretamente a cidade do Rio de Janeiro a carioca e diferencia esse gentílico de paulista, capixaba e baiano.",
+      "As cinco questões medem diretamente o objetivo autorizado, têm resposta única defensável e não revelam a resposta correta na instrução.",
+      "As explicações e os feedbacks são coerentes com cada alternativa e oferecem correção breve e adequada ao 3º ano."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato a uma passagem linguística independente.",
+      "Manter o lote como draft até a aprovação pedagógica humana do hash exato e o cumprimento dos demais gates de entrega e publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "1b750734-f72a-40c7-9969-9d3727b0a8d7",
+    "packageSha256": "3d18f8533a938189d9723d3064f602fb95548ae0739e674e653e16289e9709f9",
+    "batchProposalSha256": "63f22592e669491e1726ff9fcf4b9291479ecdd1b09e9bcc62bb1b4b992ea4d4",
+    "batchQuestionIds": [
+      "2026t3v2_pt_adjetivos_patrios_001",
+      "2026t3v2_pt_adjetivos_patrios_002",
+      "2026t3v2_pt_adjetivos_patrios_003",
+      "2026t3v2_pt_adjetivos_patrios_004",
+      "2026t3v2_pt_adjetivos_patrios_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T23:53:01.521Z",
+    "testOnly": false
+  }
+}

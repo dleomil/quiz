@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "testOnly": false,
+  "batch": "2026-t3-v2/portugues/usos-de-je-ji",
+  "sourceSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+  "sourcePackage": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/pilot-package-review-09.json",
+  "reviewCount": 40,
+  "humanApprovalRequired": true,
+  "reviews": [
+    {
+      "questionId": "T3F-PT-JEJI-001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/001-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/001-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/002-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/002-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/003-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/003-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/004-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/004-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/005-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/005-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/006-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/006-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/007-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/007-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/008-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/008-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/009-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/009-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/010-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/010-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/011-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/011-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/012-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/012-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/013-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/013-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/014-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/014-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/015-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/015-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/016-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/016-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/017-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/017-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/018-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/018-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/019-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/019-linguistic-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/020-pedagogical-final-reviewed.json"
+    },
+    {
+      "questionId": "T3F-PT-JEJI-020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/020-linguistic-final-reviewed.json"
+    }
+  ],
+  "recoveryReports": [
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/001-linguistic-r06-recovery.json",
+      "sha256": "1aeeb60464329b5560e379428e3bebabb580a3c05a4e985769ed1c6d9d223140"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/001-pedagogical-r06-recovery.json",
+      "sha256": "832b0da0d0ee266d9ea69ad7078cff42a92751f20088ac0a13c0ff2537eed992"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/002-linguistic-r06-recovery.json",
+      "sha256": "d8b00fdd08b8e40438319578f6045a9da993d763c3b0dd5d1afafc7c1b544b65"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/002-pedagogical-r06-recovery.json",
+      "sha256": "69f42fe26e7b07a97849a5563851592c1a50c25e220d30cdf58b0eb9969125e6"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/003-linguistic-r11-recovery.json",
+      "sha256": "935d5b440587926be1b516f1da3e050e26c94a34a5160372425ba3688e5b97ec"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/003-pedagogical-r11-recovery.json",
+      "sha256": "a0207b00a8d51ae7ce2a1750b47ba2c505927147cccaacee82662e5233450dc4"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/004-linguistic-r06-recovery.json",
+      "sha256": "11f1c40969b885ced3dd425562e1c3b2e4d50f2e39b6fd9e99fdb4ef3d7ea2a3"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/004-pedagogical-r06-recovery.json",
+      "sha256": "7f1e13f6605e9478f37b060c52ae4adce5c31524149e232c714681c739cdb8be"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/005-linguistic-r06-recovery.json",
+      "sha256": "7bc9d3bfccb4d55f549cd1bc8119c28c1c2d6d5b1f0c55a8b8c749c08e5df5a2"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/005-pedagogical-r06-recovery.json",
+      "sha256": "fad352efe98e4cf47f6476f0cdaee921f77a8999e58306dd41091cdcc0d4ba47"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/006-linguistic-r12-recovery.json",
+      "sha256": "d9c8f9456e9fcc5c7571f1fa19c5832210258e735edf65831c44a64bbf37f65b"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/006-pedagogical-r12-recovery.json",
+      "sha256": "67ac9b9034de464fc4211224604c83225d484dc4272de0b4dca7270c4de20531"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/007-linguistic-r06-recovery.json",
+      "sha256": "0530e2b9fff4f0e777440a10a9091b5b127aaef38bb43858e383595b93da6309"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/007-pedagogical-r06-recovery.json",
+      "sha256": "c3853df33021d6fe1a9583dc1e27ae75f802883dd10ca93bef832d5ecf6abd4f"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/008-linguistic-r06-recovery.json",
+      "sha256": "6a89c3565dce635ce35ad6ad46062a4719f428b556cda55e8cf1bb1e5e788eb0"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/008-pedagogical-r06-recovery.json",
+      "sha256": "142e082c056dc89957fdb91524a39d79e34c9d1f456d8e8931389169a9cf2f33"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/009-linguistic-r06-recovery.json",
+      "sha256": "f8e7aa97908f5ae9c5343d218128a49b2c436fcc7f9a77965b190ba134a99373"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/009-pedagogical-r06-recovery.json",
+      "sha256": "53de7652cffec43ae7ee869562180266d676ee2c1490ea43f9a11d489bdb3fcc"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/010-linguistic-r10-recovery.json",
+      "sha256": "dbe9da55ea44aa2bba031533fff26369e166ded91da3f8143e50974206eea12c"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/010-pedagogical-r10-recovery.json",
+      "sha256": "13a0f042030e3d1dc1d9a80ce02d90f9d3ecc53c1cd98e8b2d5c47249e4ecddc"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/011-linguistic-r06-recovery.json",
+      "sha256": "cb3390dd2606cd9cc88e1baa9fc790e88fe713e2bcf24005fd223302023194a9"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/011-pedagogical-r06-recovery.json",
+      "sha256": "5f325428c77aaf3bdedd17d333dc9879982c02bd6c58fe8dfd9934d163a53506"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/012-linguistic-r06-recovery.json",
+      "sha256": "30dd2d8a08a39bc963c33bd4dadf435a3b3f30d68c1741e16d9d2234ccff2bf3"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/012-pedagogical-r06-recovery.json",
+      "sha256": "7f8662652a3622f8f7454e559ebb5e6587ccb06fd38dddd18b29061779d4ba2f"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/013-linguistic-r05-recovery.json",
+      "sha256": "bcce253e527eb6e99a23f8884fdfaedf1975afa4835c132f9dfcb70c4fa3d148"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/013-pedagogical-r05-recovery.json",
+      "sha256": "fac758a2ccef7933789adbcd39e13db38603b36749a46b56c9a11e85a92d9618"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/014-linguistic-r05-recovery.json",
+      "sha256": "13667b2dced204ffcec5e01b08e2955c4f96f7ebc91269bd57e8b1a84d901496"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/014-pedagogical-r05-recovery.json",
+      "sha256": "18b59d9209487d9f93191cbce94c8ad88cdb67848c035d522fa953432a524687"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/015-linguistic-r12-recovery.json",
+      "sha256": "b81ee6a5355ecdd8d61baf847264601ed328cd0194937c6bb4cd291027f8e19a"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/015-pedagogical-r12-recovery.json",
+      "sha256": "ceaefaa59702dfc09bd4f8996c1000dd0c0bb5882f9a024ab986ba193f2a7ad6"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/016-linguistic-r06-recovery.json",
+      "sha256": "a453593617039b17d9f60101af030bf4d04fb6edc33f72a13fee0e8f012ac2fa"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/016-pedagogical-r06-recovery.json",
+      "sha256": "1effd85f4fcfea9d6b9755182d9c1c9b062bbb08d57eb1723cd9a5b02e971369"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/017-linguistic-r05-recovery.json",
+      "sha256": "a9de884e15d209c87603308f4725be5b89175df388af941e9739c4e6d681120c"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/017-pedagogical-r05-recovery.json",
+      "sha256": "fd75de993a2067d8ec766831206a92ce4465189d856fea31b66a212a1caefafc"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/018-linguistic-r12-recovery.json",
+      "sha256": "5198974f48392bc8a4ee39d74f359108339cb6c45e6cee3c97c1c236f63b1b1b"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/018-pedagogical-r12-recovery.json",
+      "sha256": "9ecdbed230ad9a94b2935e0a2cbc7f0693aa2180f3c8d032408cf74818366efb"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/019-linguistic-r06-recovery.json",
+      "sha256": "3aa4271f61db4b650c954f560e2609e2118c8cfa72d8e427fec570423e5e2700"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/019-pedagogical-r06-recovery.json",
+      "sha256": "f95673a27640a0bd284df65c0fa83f1db9588eef7c4c41fe43ed5ce8e5e9b493"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/020-linguistic-r11-recovery.json",
+      "sha256": "38353d06e98d6ed5a28700a2b053a4b9a2cc7a4c6fc70c0d8cd103c5644b1bc2"
+    },
+    {
+      "path": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/020-pedagogical-r11-recovery.json",
+      "sha256": "e27958412fb9649e6b0748991ee15689fef8cacc0acd53e8e653662ac8fffbe3"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "20 questoes content-v1 validadas; IDs unicos; quatro alternativas distintas e tres feedbacks especificos por item."
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "20 listas corretas com palavras JE/JI; cada distrator altera apenas J/G na silaba-alvo; 20 pareceres pedagogicos aprovados."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "20 pareceres linguisticos aprovados sem achados ou duvidas para o hash final."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Feedback individual para cada distrator; 20 pareceres pedagogicos aprovados sem achados."
+    }
+  ],
+  "approval": {
+    "kind": "editorial",
+    "sourceSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "approvedBy": "dleomil",
+    "evidenceRef": "https://github.com/dleomil/quiz/issues/444#issuecomment-6608417754",
+    "recoveryBundleSha256": "564d349184ec57cf7f2d22e8603ea29636e84f8d825f08d5b7b00d13123d9846"
+  }
+}

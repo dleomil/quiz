@@ -1,0 +1,219 @@
+{
+  "scenarioId": "usos-de-h-r14-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-de-h-r14-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Usos de H/h"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer o emprego do H em palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa a frase “O ____ recebe pessoas doentes para tratamento”?",
+        "options": [
+          "ospital",
+          "hospital",
+          "hospitau",
+          "hospitalh"
+        ],
+        "correctIndex": 1,
+        "explanation": "Hospital começa com H e termina com L.",
+        "wrongExplanations": {
+          "0": "Hospital começa com H.",
+          "2": "Hospital termina com L, não U.",
+          "3": "Hospital não termina com H."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa “Em dia de chuva, abrimos o ____ para não nos molhar”?",
+        "options": [
+          "guarda-chuva",
+          "guarda-xuva",
+          "guarda-chuvah",
+          "guarda-chuvaa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Guarda-chuva se escreve com hífen; chuva começa com CH.",
+        "wrongExplanations": {
+          "1": "Chuva começa com CH, não X.",
+          "2": "Chuva não termina com H.",
+          "3": "Chuva termina com A, sem letra extra."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra está escrita corretamente e nomeia o estudo dos fatos do passado?",
+        "options": [
+          "istória",
+          "história",
+          "hestoria",
+          "hestória"
+        ],
+        "correctIndex": 1,
+        "explanation": "História começa com H e recebe acento agudo no O.",
+        "wrongExplanations": {
+          "0": "História começa com H.",
+          "2": "A grafia correta usa I depois do H e leva acento agudo no O.",
+          "3": "A grafia correta usa I depois do H, não E."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa “O ____ das aulas está no mural da escola”?",
+        "options": [
+          "orário",
+          "horário",
+          "horárrio",
+          "horrário"
+        ],
+        "correctIndex": 1,
+        "explanation": "Horário começa com H.",
+        "wrongExplanations": {
+          "0": "Horário começa com H.",
+          "2": "Horário se escreve com um R depois do A.",
+          "3": "Horário se escreve com um R depois do O."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra nomeia um veículo que transporta pessoas pelo ar?",
+        "options": [
+          "helicópterro",
+          "helicóptero",
+          "elicóptero",
+          "helicópteru"
+        ],
+        "correctIndex": 1,
+        "explanation": "Helicóptero começa com H.",
+        "wrongExplanations": {
+          "0": "Helicóptero se escreve com um R antes do O.",
+          "2": "Helicóptero começa com H.",
+          "3": "Helicóptero termina com O."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-de-h-r14-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto declara 3º ano, T3 de 2026, manifesto congelado, fonte autorizada e objetivo curricular rastreável sobre o emprego de H em palavras usuais.",
+      "A questão 2026t3v2_pt_usos_de_h_006 possui resposta única defensável, trabalha a grafia de “hospital” e apresenta explicações coerentes para os três distratores.",
+      "A questão 2026t3v2_pt_usos_de_h_007 possui resposta única defensável, trabalha o H no dígrafo CH de “guarda-chuva” e explica adequadamente os erros de cada distrator.",
+      "A questão 2026t3v2_pt_usos_de_h_008 possui resposta única defensável e apresenta explicações corretas sobre o H inicial, a vogal I e a acentuação de “história”.",
+      "A questão 2026t3v2_pt_usos_de_h_009 possui resposta única defensável e feedback coerente sobre o H inicial e a quantidade de letras R em “horário”.",
+      "A questão 2026t3v2_pt_usos_de_h_010 possui resposta única defensável e feedback coerente sobre o H inicial, a quantidade de letras R e a terminação de “helicóptero”.",
+      "As cinco propostas contêm quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para cada alternativa incorreta.",
+      "Nenhuma questão revela a resposta no enunciado, apresenta lacuna sem solução única ou depende de probabilidade para justificar o gabarito."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato a uma passagem linguística independente.",
+      "Manter pendente a aprovação pedagógica humana do pacote exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "9c55ef28-c1a8-406f-93f6-002f1cb4635b",
+    "packageSha256": "79758f7c9e66c4c47c121efcd285e9b19f3155ef47e4b8d49d331cf898650527",
+    "batchProposalSha256": "689acce5c0b060b98d9e69ef6d2b62319b75bdf21a0bbcd384337d317e7a64f1",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_de_h_006",
+      "2026t3v2_pt_usos_de_h_007",
+      "2026t3v2_pt_usos_de_h_008",
+      "2026t3v2_pt_usos_de_h_009",
+      "2026t3v2_pt_usos_de_h_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-04T12:25:27.877Z",
+    "testOnly": false
+  }
+}

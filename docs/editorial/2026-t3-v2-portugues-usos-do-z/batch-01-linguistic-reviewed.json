@@ -1,0 +1,220 @@
+{
+  "scenarioId": "usos-do-z-final3-01-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-do-z-final3-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-palavras-escritas-com-z",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Usos do Z"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer palavras escritas com Z",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "zebra",
+          "sebra",
+          "zebbra",
+          "cebra"
+        ],
+        "correctIndex": 0,
+        "explanation": "Zebra é escrita com Z no início.",
+        "wrongExplanations": {
+          "1": "A palavra zebra começa com Z.",
+          "2": "Zebra é escrita com um único B.",
+          "3": "A palavra zebra começa com Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “O resultado da conta foi ____.”",
+        "options": [
+          "sero",
+          "zero",
+          "zêro",
+          "cero"
+        ],
+        "correctIndex": 1,
+        "explanation": "Zero é escrito com Z.",
+        "wrongExplanations": {
+          "0": "A palavra zero começa com Z.",
+          "2": "Zero não recebe acento circunflexo.",
+          "3": "A grafia correta é zero, com Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra completa a frase? “O céu ficou ____ ao entardecer.”",
+        "options": [
+          "asul",
+          "azull",
+          "azul",
+          "azou"
+        ],
+        "correctIndex": 2,
+        "explanation": "Azul é escrito com Z.",
+        "wrongExplanations": {
+          "0": "A palavra azul é escrita com Z.",
+          "1": "Azul termina com um único L.",
+          "3": "A palavra que nomeia a cor é azul."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Como se escreve corretamente o nome da parte do rosto usada para sentir cheiros?",
+        "options": [
+          "narís",
+          "narisse",
+          "narizze",
+          "nariz"
+        ],
+        "correctIndex": 3,
+        "explanation": "Nariz é escrito com Z no final.",
+        "wrongExplanations": {
+          "0": "Nariz não recebe acento.",
+          "1": "A grafia correta é nariz, com Z.",
+          "2": "A palavra nariz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra escrita com Z significa contente?",
+        "options": [
+          "feliz",
+          "felis",
+          "felís",
+          "felizz"
+        ],
+        "correctIndex": 0,
+        "explanation": "Feliz significa contente e termina com Z.",
+        "wrongExplanations": {
+          "1": "A palavra feliz termina com Z.",
+          "2": "A palavra feliz não recebe acento.",
+          "3": "Feliz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-do-z-final3-01-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A passagem avaliada é exclusivamente linguística e abrange os cinco IDs autorizados.",
+      "2026t3v2_pt_usos_do_z_001 apresenta enunciado claro em português, alternativas distinguíveis e explicações adequadas ao 3º ano.",
+      "2026t3v2_pt_usos_do_z_002 usa uma lacuna bem delimitada, com concordância e pontuação corretas, sem revelar a resposta no enunciado.",
+      "2026t3v2_pt_usos_do_z_003 apresenta frase natural, instrução clara e feedback coerente com cada grafia incorreta.",
+      "2026t3v2_pt_usos_do_z_004 emprega linguagem infantil compreensível e distingue com clareza as grafias propostas.",
+      "2026t3v2_pt_usos_do_z_005 apresenta instrução clara, significado acessível e explicações coerentes com cada distrator.",
+      "Não foram identificados erros de ortografia, acentuação, concordância ou pontuação nos textos que devem estar corretos.",
+      "Os enunciados e as alternativas não contêm resposta indevidamente revelada; as formas corretas aparecem somente onde o formato da questão exige.",
+      "As cinco propostas estão em português, possuem quatro alternativas e mantêm linguagem adequada ao 3º ano."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter as propostas sem alteração linguística.",
+      "Submeter o pacote exato à aprovação humana e preservar a passagem pedagógica independente antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "1a397dd6-0101-4d2e-9c31-7ac767b4ee48",
+    "packageSha256": "d68a714178aa5421258d4c3b1e172c2b2e4c54f15181558c2e8d4ca09b0a9841",
+    "batchProposalSha256": "07bfa59072f2bceb5446831abfb1b2ba7410dd6c4e65fab719ad141d21653007",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_do_z_001",
+      "2026t3v2_pt_usos_do_z_002",
+      "2026t3v2_pt_usos_do_z_003",
+      "2026t3v2_pt_usos_do_z_004",
+      "2026t3v2_pt_usos_do_z_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T01:56:18.756Z",
+    "testOnly": false
+  }
+}

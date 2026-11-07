@@ -1,0 +1,216 @@
+{
+  "scenarioId": "usos-de-h-r14-04-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-de-h-r14-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Usos de H/h"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer o emprego do H em palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra está escrita corretamente e nomeia o lugar onde os pássaros põem ovos?",
+        "options": [
+          "ninho",
+          "nino",
+          "ninhoo",
+          "ninhho"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ninho é escrito com NH.",
+        "wrongExplanations": {
+          "1": "Ninho é escrito com NH.",
+          "2": "Ninho termina com um O.",
+          "3": "Ninho tem um único H depois do N."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente a frase “A ____ fica junto ao muro”?",
+        "options": [
+          "horta",
+          "orta",
+          "hórta",
+          "hortah"
+        ],
+        "correctIndex": 0,
+        "explanation": "Horta começa com H.",
+        "wrongExplanations": {
+          "1": "Horta começa com H.",
+          "2": "Horta não recebe acento.",
+          "3": "Horta não recebe H no final."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra começa com H?",
+        "options": [
+          "hora",
+          "flor",
+          "mesa",
+          "pato"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hora começa com H.",
+        "wrongExplanations": {
+          "1": "Flor começa com F.",
+          "2": "Mesa começa com M.",
+          "3": "Pato começa com P."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente a frase “O ____ fica no centro da cidade”?",
+        "options": [
+          "hotel",
+          "otel",
+          "hoteu",
+          "hotell"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hotel começa com H.",
+        "wrongExplanations": {
+          "1": "Hotel começa com H.",
+          "2": "A palavra termina com L.",
+          "3": "Hotel termina com um único L."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente a frase “A criança tomou uma xícara de ____ quente”?",
+        "options": [
+          "chocolate",
+          "xocolate",
+          "chocolatte",
+          "chocolateh"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chocolate começa com CH.",
+        "wrongExplanations": {
+          "1": "Chocolate começa com CH, não X.",
+          "2": "Chocolate se escreve com um único T.",
+          "3": "Chocolate não termina com H."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-de-h-r14-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta 2026t3v2_pt_usos_de_h_016 apresenta enunciado claro, quatro alternativas distintas e explicações coerentes com as grafias apresentadas.",
+      "A proposta 2026t3v2_pt_usos_de_h_017 usa instrução em português, frase natural e feedback específico para cada grafia incorreta.",
+      "A proposta 2026t3v2_pt_usos_de_h_018 tem linguagem direta e adequada ao 3º ano, sem lacuna de informação nem resposta concorrente.",
+      "A proposta 2026t3v2_pt_usos_de_h_019 apresenta frase compreensível e distingue claramente as grafias das alternativas.",
+      "A proposta 2026t3v2_pt_usos_de_h_020 apresenta contexto natural, lacuna bem delimitada e explicações claras sobre CH, T e H final.",
+      "Nenhum enunciado revela antecipadamente a resposta, e não foram identificados erros de ortografia, acentuação, concordância ou pontuação nas cinco propostas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote exato e encaminhá-lo à aprovação pedagógica humana, que permanece obrigatória."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "6943628f-87b5-481a-a2a1-3041cf80f610",
+    "packageSha256": "79758f7c9e66c4c47c121efcd285e9b19f3155ef47e4b8d49d331cf898650527",
+    "batchProposalSha256": "d693fa6bd3bb3bed28307978fadc1a1233a5334964c8fea22b758c5af93eb4fa",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_de_h_016",
+      "2026t3v2_pt_usos_de_h_017",
+      "2026t3v2_pt_usos_de_h_018",
+      "2026t3v2_pt_usos_de_h_019",
+      "2026t3v2_pt_usos_de_h_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T12:28:49.755Z",
+    "testOnly": false
+  }
+}

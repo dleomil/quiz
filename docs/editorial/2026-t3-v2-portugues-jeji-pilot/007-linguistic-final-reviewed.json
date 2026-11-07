@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-007-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-007-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "lage, jejum, jiló",
+        "laje, gejum, jiló",
+        "laje, jejum, jiló",
+        "laje, jejum, giló"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “laje”, “jejum” e “jiló”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”.",
+        "1": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "3": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-007-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-007, versão 4, em estado draft.",
+      "O enunciado está em português, é claro, natural e adequado ao 3º ano.",
+      "As alternativas apresentam três palavras cada, sem lacunas, e a instrução não revela a resposta correta.",
+      "As grafias intencionalmente incorretas dos distratores são identificadas como erros, sem serem apresentadas como variantes aceitas.",
+      "A explicação e os três feedbacks possuem ortografia, concordância, pontuação e formulação linguística adequadas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter a proposta vinculada ao hash candidato e submetê-la à aprovação humana e às demais passagens e gates aplicáveis antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "33360fee-cbd0-4d83-ac04-9f2b0a83ed71",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "b8800d29047f5bda1647ccd5cd2b32535416eeabfc2515846710c698d469f6f6",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:26:03.597Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/007-linguistic-r06-recovery.json",
+    "recoverySha256": "0530e2b9fff4f0e777440a10a9091b5b127aaef38bb43858e383595b93da6309"
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "sons-do-x",
+  "topicName": "Sons do X",
+  "status": "draft_pending_reviews",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Português — Apostila 7",
+    "topic": "Sons do X"
+  },
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em qual palavra o X tem som parecido com o de CH?",
+      "options": [
+        "xícara",
+        "exame",
+        "táxi",
+        "exato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em xícara, o X tem som parecido com CH.",
+      "wrongExplanations": {
+        "1": "Em exame, o X tem som de Z.",
+        "2": "Em táxi, o X tem som de KS.",
+        "3": "Em exato, o X tem som de Z."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em qual palavra o X tem som de Z?",
+      "options": [
+        "exame",
+        "xale",
+        "táxi",
+        "enxada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em exame, o X tem som de Z.",
+      "wrongExplanations": {
+        "1": "Em xale, o X tem som de CH.",
+        "2": "Em táxi, o X tem som de KS.",
+        "3": "Em enxada, o X tem som de CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem o X com os sons de K e S juntos?",
+      "options": [
+        "táxi",
+        "xícara",
+        "exame",
+        "enxame"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em táxi, o X representa os sons de K e S juntos.",
+      "wrongExplanations": {
+        "1": "Em xícara, o X tem som de CH.",
+        "2": "Em exame, o X tem som de Z.",
+        "3": "Em enxame, o X tem som de CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em qual palavra o X tem som parecido com o de CH?",
+      "options": [
+        "próximo",
+        "exato",
+        "táxi",
+        "xarope"
+      ],
+      "correctIndex": 3,
+      "explanation": "Em xarope, o X tem som parecido com CH.",
+      "wrongExplanations": {
+        "0": "Em próximo, o X tem som de S.",
+        "1": "Em exato, o X tem som de Z.",
+        "2": "Em táxi, o X tem som de KS."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em “enxada”, o X tem som parecido com o som inicial de qual palavra?",
+      "options": [
+        "chuva",
+        "zebra",
+        "sapo",
+        "táxi"
+      ],
+      "correctIndex": 0,
+      "explanation": "O X de enxada tem som parecido com CH, como em chuva.",
+      "wrongExplanations": {
+        "1": "Zebra começa com som de Z.",
+        "2": "Sapo começa com som de S.",
+        "3": "Táxi começa com som de T, que não é parecido com o som de X em enxada."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em qual palavra a letra X tem som de Z?",
+      "options": [
+        "exemplo",
+        "xale",
+        "lixo",
+        "caixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em exemplo, o X tem som de Z.",
+      "wrongExplanations": {
+        "1": "Em xale, o X tem som de CH.",
+        "2": "Em lixo, o X tem som de CH.",
+        "3": "Em caixa, o X tem som de CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem o X com som de KS?",
+      "options": [
+        "fixo",
+        "xale",
+        "exame",
+        "enxame"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em fixo, o X tem som de KS.",
+      "wrongExplanations": {
+        "1": "Em xale, o X tem som de CH.",
+        "2": "Em exame, o X tem som de Z.",
+        "3": "Em enxame, o X tem som de CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem o X com som de S?",
+      "options": [
+        "explicar",
+        "xícara",
+        "enxada",
+        "exame"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em explicar, o X tem som de S.",
+      "wrongExplanations": {
+        "1": "Em xícara, o X tem som de CH.",
+        "2": "Em enxada, o X tem som de CH.",
+        "3": "Em exame, o X tem som de Z."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem o X com som parecido com CH?",
+      "options": [
+        "bruxa",
+        "exato",
+        "texto",
+        "exame"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em bruxa, o X tem som parecido com CH.",
+      "wrongExplanations": {
+        "1": "Em exato, o X tem som de Z.",
+        "2": "Em texto, o X tem som de KS.",
+        "3": "Em exame, o X tem som de Z."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em “próximo”, o X tem som de…",
+      "options": [
+        "S",
+        "CH",
+        "Z",
+        "KS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em próximo, o X tem som de S.",
+      "wrongExplanations": {
+        "1": "O X de próximo tem som de S.",
+        "2": "O X de próximo não tem som de Z.",
+        "3": "O X de próximo não tem som de KS."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em “exército”, o X tem som parecido com…",
+      "options": [
+        "Z",
+        "CH",
+        "S",
+        "KS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em exército, X tem som de Z.",
+      "wrongExplanations": {
+        "1": "O X de exército tem som de Z.",
+        "2": "O X de exército não tem som de S.",
+        "3": "O X de exército não tem som de KS."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem X com som de CH?",
+      "options": [
+        "abacaxi",
+        "exame",
+        "texto",
+        "táxi"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em abacaxi, X tem som parecido com CH.",
+      "wrongExplanations": {
+        "1": "Em exame, X tem som de Z.",
+        "2": "Em texto, X tem som de KS.",
+        "3": "Em táxi, X tem som de KS."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem X com som de Z?",
+      "options": [
+        "êxito",
+        "xarope",
+        "lixo",
+        "peixe"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em êxito, X tem som de Z.",
+      "wrongExplanations": {
+        "1": "Em xarope, X tem som de CH.",
+        "2": "Em lixo, X tem som de CH.",
+        "3": "Em peixe, X tem som de CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em “máximo”, o X tem som de…",
+      "options": [
+        "KS",
+        "CH",
+        "Z",
+        "S"
+      ],
+      "correctIndex": 3,
+      "explanation": "Em máximo, o X tem som de S.",
+      "wrongExplanations": {
+        "0": "Em máximo, o X tem som de S, não de KS.",
+        "1": "Em máximo, o X tem som de S, não tem som parecido com CH.",
+        "2": "Em máximo, o X tem som de S, não de Z."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem o X com som parecido com CH?",
+      "options": [
+        "caixa",
+        "exato",
+        "texto",
+        "próximo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em caixa, o X tem som parecido com CH.",
+      "wrongExplanations": {
+        "1": "Em exato, o X tem som de Z.",
+        "2": "Em texto, o X tem som de KS.",
+        "3": "Em próximo, o X tem som de S."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem X com som de S?",
+      "options": [
+        "experiência",
+        "xícara",
+        "enxame",
+        "caixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em experiência, X tem som de S.",
+      "wrongExplanations": {
+        "1": "Em xícara, X tem som de CH.",
+        "2": "Em enxame, X tem som de CH.",
+        "3": "Em caixa, X tem som de CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em “enxame”, X tem som parecido com…",
+      "options": [
+        "CH",
+        "Z",
+        "S",
+        "KS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em enxame, X tem som parecido com CH.",
+      "wrongExplanations": {
+        "1": "O X de enxame tem som de CH.",
+        "2": "O X de enxame não tem som de S.",
+        "3": "O X de enxame não tem som de KS."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Qual palavra tem X com som de KS?",
+      "options": [
+        "táxi",
+        "xícara",
+        "exato",
+        "enxada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em táxi, o X representa os sons de K e S juntos.",
+      "wrongExplanations": {
+        "1": "Em xícara, o X tem som parecido com CH.",
+        "2": "Em exato, o X tem som de Z.",
+        "3": "Em enxada, o X tem som parecido com CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em qual palavra X tem som parecido com CH?",
+      "options": [
+        "peixe",
+        "exemplo",
+        "exato",
+        "texto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em peixe, X tem som parecido com CH.",
+      "wrongExplanations": {
+        "1": "Em exemplo, X tem som de Z.",
+        "2": "Em exato, X tem som de Z.",
+        "3": "Em texto, X tem som de KS."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_pt_sons_x_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "sons-do-x",
+      "question": "Em qual palavra X tem som de Z?",
+      "options": [
+        "exato",
+        "próximo",
+        "texto",
+        "xarope"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em exato, X tem som de Z.",
+      "wrongExplanations": {
+        "1": "Em próximo, X tem som de S.",
+        "2": "Em texto, X tem som de KS.",
+        "3": "Em xarope, X tem som parecido com CH."
+      },
+      "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Português — Apostila 7",
+        "topic": "Sons do X"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

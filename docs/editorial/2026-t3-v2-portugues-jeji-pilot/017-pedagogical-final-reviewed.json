@@ -1,0 +1,94 @@
+{
+  "scenarioId": "jeji-017-pedagogical-r05",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-017-pedagogical-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gorjeta, jeito, jejum",
+        "gorgeta, jeito, jejum",
+        "gorjeta, geito, jejum",
+        "gorjeta, jeito, gejum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lista correta reúne gorjeta, jeito, jejum. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "1": "Na opção, “gorgeta” troca a letra J por G em “gorjeta”. A grafia correta é “gorjeta”.",
+        "2": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “gejum” troca a letra J por G em “jejum”. A grafia correta é “jejum”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-017-pedagogical-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-017, versão 3, em estado draft.",
+      "O enunciado está em português e solicita a identificação da única lista com três grafias corretas.",
+      "A alternativa de índice 0 é a única defensável: “gorjeta”, “jeito” e “jejum” estão grafadas corretamente.",
+      "Cada distrator contém exatamente uma troca de J por G e permanece claramente incorreto no contexto.",
+      "A questão mede diretamente a escolha da grafia convencional com JE, parte do objetivo curricular de usos de JE/JI, sem exigir habilidade lateral.",
+      "A explicação evita a generalização falsa de que o som em questão é sempre escrito com J.",
+      "Os três feedbacks identificam corretamente a palavra alterada e apresentam sua grafia convencional."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e, depois, à aprovação humana obrigatória; este parecer não autoriza implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "73a8ac5f-c693-4405-a21b-b04205f24d5f",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "b8c1400b3c6ac62a4756aae71249f948bb158dfd6d59112185af74369beb1ea2",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:22:31.979Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/017-pedagogical-r05-recovery.json",
+    "recoverySha256": "fd75de993a2067d8ec766831206a92ce4465189d856fea31b66a212a1caefafc"
+  }
+}
