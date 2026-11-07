@@ -1,0 +1,209 @@
+{
+  "scenarioId": "dicionario-r54-01-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "dicionario-r54-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Dicionário"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Usar conhecimentos de ordem alfabética e consulta ao dicionário.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "No dicionário, qual palavra aparece primeiro em ordem alfabética?",
+        "options": ["abacate", "banana", "caju", "damasco"],
+        "correctIndex": 0,
+        "explanation": "A vem antes de B, C e D no alfabeto; por isso, abacate aparece primeiro.",
+        "wrongExplanations": {
+          "1": "Banana começa com B, e B vem depois de A no alfabeto.",
+          "2": "Caju começa com C, depois de A e B no alfabeto.",
+          "3": "Damasco começa com D, depois de A, B e C no alfabeto."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual destas palavras vem primeiro no dicionário?",
+        "options": ["casa", "casaco", "casal", "casamento"],
+        "correctIndex": 0,
+        "explanation": "Todas as palavras começam com “casa”. Como “casa” termina nesse ponto, ela vem antes das palavras que continuam com outras letras.",
+        "wrongExplanations": {
+          "1": "Casaco continua depois de “casa” com as letras C e O.",
+          "2": "Casal continua depois de “casa” com a letra L.",
+          "3": "Casamento continua depois de “casa” com mais letras."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual sequência está em ordem alfabética?",
+        "options": [
+          "bola, dado, fada",
+          "dado, bola, fada",
+          "fada, dado, bola",
+          "bola, fada, dado"
+        ],
+        "correctIndex": 0,
+        "explanation": "B vem antes de D, e D vem antes de F.",
+        "wrongExplanations": {
+          "1": "Dado deveria vir depois de bola.",
+          "2": "Fada deveria vir depois de bola e dado.",
+          "3": "Dado deveria vir antes de fada."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual sequência está em ordem alfabética?",
+        "options": [
+          "janela, jardim, joaninha",
+          "jardim, janela, joaninha",
+          "joaninha, janela, jardim",
+          "janela, joaninha, jardim"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em janela, depois de JA vem N; em jardim, depois de JA vem R. N vem antes de R. As duas palavras com JA vêm antes de joaninha, que começa com JO.",
+        "wrongExplanations": {
+          "1": "Janela vem antes de jardim: depois de JA, N vem antes de R. Depois vem joaninha, que começa com JO.",
+          "2": "Joaninha começa com JO, que vem depois de JA nas palavras janela e jardim.",
+          "3": "Depois de JA, N vem antes de R; por isso janela vem antes de jardim. Joaninha, com JO, vem por último."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual palavra apareceria por último em ordem alfabética?",
+        "options": ["casa", "casaco", "casal", "casamento"],
+        "correctIndex": 3,
+        "explanation": "Casamento aparece por último: depois das letras “casa”, M vem depois de C e L no alfabeto.",
+        "wrongExplanations": {
+          "0": "Casa termina nesse ponto e, por isso, vem antes das palavras que continuam com outras letras.",
+          "1": "Casaco vem antes de casamento: depois de “casa”, C vem antes de M.",
+          "2": "Casal vem antes de casamento: depois de “casa”, L vem antes de M."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "dicionario-r54-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "2026t3v2_pt_dicionario_001 mede ordem alfabética pela letra inicial, possui resposta única no índice 0 e apresenta explicações coerentes para os três distratores.",
+      "2026t3v2_pt_dicionario_002 mede a regra de que uma palavra terminada vem antes de palavras que prolongam o mesmo prefixo, possui resposta única no índice 0 e feedback coerente por alternativa.",
+      "2026t3v2_pt_dicionario_003 solicita a identificação de uma sequência alfabética, possui resposta única no índice 0 e explica corretamente a ordem B, D, F.",
+      "2026t3v2_pt_dicionario_004 exige comparar letras após prefixos comuns, possui resposta única no índice 0 e explica corretamente a ordenação de JA antes de JO e de N antes de R.",
+      "2026t3v2_pt_dicionario_005 retoma a ordenação de palavras com o mesmo prefixo, possui resposta única no índice 3 e explica corretamente que M vem depois de C e L.",
+      "As cinco propostas estão em português, contêm instruções adequadas ao 3º ano, quatro alternativas não duplicadas, explicação da resposta correta e feedback para cada alternativa incorreta.",
+      "As questões estão alinhadas ao objetivo autorizado de usar conhecimentos de ordem alfabética e consulta ao dicionário, sem lacunas, resposta revelada no enunciado ou ambiguidade defensável."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e, depois, à aprovação humana pedagógica obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "2c0d1ced-5c46-4400-91ec-d50f31533269",
+    "packageSha256": "d0c8cd09c4efc5d162f01e8282d9c15676dcd196708594164ba7d99c9aab8f18",
+    "questionSha256s": {
+      "2026t3v2_pt_dicionario_001": "eca7c0e4089f6acf34ba5bccd367fa232f76513e71a3430b53711c003ea75b35",
+      "2026t3v2_pt_dicionario_002": "57784bf98f184a42e3ccea221c8354b1638b0a724db3e0d5d9e976317315dbd6",
+      "2026t3v2_pt_dicionario_003": "9bbbd16ec3542d4dfeee311c738dd334522829fe88552aada22ad68efa5d8f79",
+      "2026t3v2_pt_dicionario_004": "a3e9e144c008a6c767d0b896e2aa06c6f209d5009c361d221b9787668f088442",
+      "2026t3v2_pt_dicionario_005": "5861eaff5cdb75a0d25c865542e4f1a9df60ed752036cbf5dca7e413ca5c6a5e"
+    },
+    "batchProposalSha256": "9cafa618781d3f9ef282e02b0dc9ba93c0ef7f255ca2d24b752f4eb78b8d0dd9",
+    "batchQuestionIds": [
+      "2026t3v2_pt_dicionario_001",
+      "2026t3v2_pt_dicionario_002",
+      "2026t3v2_pt_dicionario_003",
+      "2026t3v2_pt_dicionario_004",
+      "2026t3v2_pt_dicionario_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-06T21:54:15.264Z",
+    "testOnly": false
+  }
+}

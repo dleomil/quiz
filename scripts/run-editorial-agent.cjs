@@ -99,6 +99,7 @@ function buildMcpArguments() {
 }
 function buildExecArguments(config, message, workspace, sessionHome, authHome) {
   return [
+    '--no-daemon',
     'exec',
     '--strict-config',
     '--ignore-user-config',
@@ -144,7 +145,7 @@ async function run(cliArguments = process.argv.slice(2)) {
   let evaluation;
   let modelInvocations = 0;
   let transportSchema, wireSha256;
-  let capture, captureInfo, message;
+  let capture, captureInfo, message, captureId;
   try {
     args = argumentsFrom(cliArguments);
     let config = loadAgentConfig(args['--agent']);
@@ -267,15 +268,20 @@ async function run(cliArguments = process.argv.slice(2)) {
       const { questions } = JSON.parse(
         fs.readFileSync(path.resolve(args['--delivery-package']), 'utf8'),
       );
-      const proposal = questions.find(
-        (item) => item.id === document.input.proposal?.id,
-      );
+      const proposals = document.input.proposals || [document.input.proposal];
+      const matches = proposals.every((proposal) => {
+        const packaged = questions.find((item) => item.id === proposal?.id);
+        return (
+          packaged && digest(reviewProjection(packaged)) === digest(proposal)
+        );
+      });
       if (
         args['--agent'] !== 'pedagogical_quality' ||
-        !proposal ||
-        digest(reviewProjection(proposal)) !== digest(document.input.proposal)
+        !matches ||
+        proposals.length < 1 ||
+        proposals.length > 5
       )
-        throw new Error('proposta diverge do pacote editorial');
+        throw new Error('proposta diverge do pacote editorial no lote');
       packageSha256 = packageHash(questions);
     }
     const authHome = validateProfile(args['--auth-home']);
@@ -349,12 +355,24 @@ async function run(cliArguments = process.argv.slice(2)) {
     });
     resultState = 'execution-failed';
     const parserContext = { authHome, preflight: checks };
-    if (evaluation)
-      capture = createCapture(
-        path.resolve(args['--output']),
-        [],
-        parserContext,
-      );
+    let captureOutput = path.resolve(args['--output']);
+    if (!evaluation) {
+      const storage = path.join(authHome, 'quiz-editorial-runs');
+      fs.mkdirSync(storage, { recursive: true, mode: 0o700 });
+      const stat = fs.lstatSync(storage);
+      if (
+        !stat.isDirectory() ||
+        stat.isSymbolicLink() ||
+        stat.mode & 0o077 ||
+        stat.uid !== process.getuid()
+      )
+        throw new Error('diretorio privado de diagnostico invalido');
+      captureId = runId;
+      const runDirectory = path.join(storage, runId);
+      fs.mkdirSync(runDirectory, { mode: 0o700 });
+      captureOutput = path.join(runDirectory, 'result.json');
+    }
+    capture = createCapture(captureOutput, [], parserContext);
     modelInvocations = 1;
     const events = await execute(bin, argv, {
       cwd: workspace,
@@ -364,6 +382,13 @@ async function run(cliArguments = process.argv.slice(2)) {
       capture,
     });
     resultState = 'output-rejected';
+    captureInfo = capture.finish(message);
+    if (
+      captureInfo.truncated ||
+      captureInfo.exitCode !== 0 ||
+      captureInfo.processError
+    )
+      throw new Error('captura incompleta ou falha de processo');
     const eventDiagnosis = analyzeEvents(events, [], parserContext);
     usage = eventDiagnosis.usage;
     assertEvents(eventDiagnosis);
@@ -388,12 +413,26 @@ async function run(cliArguments = process.argv.slice(2)) {
     };
     const errors = validateEditorialScenario(scenario);
     if (errors.length) throw new Error(`saida rejeitada: ${errors.join('; ')}`);
-    if (packageSha256)
+    if (packageSha256 || document.input.proposal || document.input.proposals)
       scenario.execution = {
         kind: 'isolated-editorial',
         runId,
-        packageSha256,
-        proposalSha256: digest(document.input.proposal),
+        ...(packageSha256 ? { packageSha256 } : {}),
+        questionSha256s: Object.fromEntries(
+          (document.input.proposals || [document.input.proposal])
+            .filter(Boolean)
+            .map((proposal) => [proposal.id, digest(proposal)]),
+        ),
+        ...(document.input.proposals
+          ? { batchProposalSha256: digest(document.input.proposals) }
+          : { proposalSha256: digest(document.input.proposal) }),
+        ...(document.input.proposals
+          ? {
+              batchQuestionIds: document.input.proposals.map(
+                (proposal) => proposal.id,
+              ),
+            }
+          : {}),
         agent: args['--agent'],
         pass: document.input.requestedPass,
         completedAt: new Date().toISOString(),
@@ -415,8 +454,12 @@ async function run(cliArguments = process.argv.slice(2)) {
     failureReason =
       error instanceof SyntaxError
         ? 'JSON invalido na entrada ou saida'
-        : error.message;
-    process.stderr.write(`editorial-agent-runner: ${error.message}\n`);
+        : modelInvocations && !error.diagnosis
+          ? resultState === 'output-rejected'
+            ? 'saida rejeitada: consultar captura privada'
+            : 'execucao falhou; consultar captura privada'
+          : error.message;
+    process.stderr.write(`editorial-agent-runner: ${failureReason}\n`);
     process.exitCode = 1;
   } finally {
     try {
@@ -447,6 +490,7 @@ async function run(cliArguments = process.argv.slice(2)) {
           usage,
           modelInvocations,
           wireSha256: wireSha256 || null,
+          captureId: captureId || null,
           captureSha256: captureInfo?.sha256 || null,
           eventDiagnosis: captureInfo?.diagnosis || null,
         });

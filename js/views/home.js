@@ -5,6 +5,22 @@ const HomeView = (function () {
     const subjects = QuestionsDB.getSubjects();
     const contentSets = QuestionsDB.getContentSets();
     const selectedContentSet = Store.get().selectedContentSet;
+    const selectedCatalog = QuestionsDB.getContentSet(selectedContentSet);
+    const availability =
+      selectedCatalog?.publicationMode === 'by-subject'
+        ? `<p class="content-set-availability">Disponível agora: ${escapeHTML(
+            selectedCatalog.publishedSubjects
+              .map(
+                (subject) =>
+                  QuestionsDB.getSubjectInfo(subject, selectedContentSet).name,
+              )
+              .join(', '),
+          )}. ${
+            selectedCatalog.publishedSubjects.length < subjects.length
+              ? 'As demais matérias aguardam conclusão e revisão.'
+              : 'Todas as matérias deste acervo estão disponíveis.'
+          }</p>`
+        : '';
     const contentSetSelector =
       contentSets.length > 1
         ? `<section class="content-set-picker" aria-labelledby="content-set-title">
@@ -34,6 +50,7 @@ const HomeView = (function () {
         <h2>🎓 Quiz Etapa — 3º Ano</h2>
         <p>Escolha a matéria e comece seu quiz!</p>
         ${contentSetSelector}
+        ${availability}
 
         <p class="topic-section-title">Escolha a matéria:</p>
         <div class="subject-grid" id="subject-grid">

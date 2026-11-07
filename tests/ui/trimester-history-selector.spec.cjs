@@ -95,10 +95,10 @@ async function run() {
     await installHistory(page, history);
 
     const options = page.locator('.content-set-option');
-    assert.strictEqual(await options.count(), 3);
+    assert.strictEqual(await options.count(), 4);
     assert.strictEqual(
-      await options
-        .filter({ hasText: '3º trimestre' })
+      await page
+        .locator('[data-content-set="2026-t3-v2"]')
         .getAttribute('aria-pressed'),
       'true',
     );
@@ -106,7 +106,7 @@ async function run() {
     await page.locator('#nav-history').click();
     assert.strictEqual(
       await page.locator('#filter-content-set').inputValue(),
-      '2026-t3-v1',
+      '2026-t3-v2',
     );
     assert.strictEqual(await page.locator('.session-card').count(), 0);
 

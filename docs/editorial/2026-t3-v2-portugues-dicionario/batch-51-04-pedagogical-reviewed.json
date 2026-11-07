@@ -1,0 +1,207 @@
+{
+  "scenarioId": "dicionario-r51-04-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "dicionario-r51-04-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Dicionário"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Usar conhecimentos de ordem alfabética e consulta ao dicionário.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual palavra vem primeiro no dicionário?",
+        "options": ["cama", "cana", "capa", "casa"],
+        "correctIndex": 0,
+        "explanation": "Todas começam com CA; na terceira letra, M vem antes de N, P e S.",
+        "wrongExplanations": {
+          "1": "Cana começa com CAN, depois de CAM.",
+          "2": "Capa começa com CAP, depois de CAM e CAN.",
+          "3": "Casa começa com CAS, depois das demais."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Colocando “pato” e as opções em ordem alfabética, qual opção aparece imediatamente depois de “pato”?",
+        "options": ["pavão", "pedra", "pente", "pipa"],
+        "correctIndex": 0,
+        "explanation": "Pato começa com PAT e pavão com PAV; T vem antes de V. Pavão também vem antes das palavras iniciadas por PE e PI.",
+        "wrongExplanations": {
+          "1": "Pedra começa com PE e vem depois de PA.",
+          "2": "Pente começa com PE e vem depois de PA.",
+          "3": "Pipa começa com PI e vem depois de PA."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "O verbete de “gigante” informa: “muito grande”. Em qual situação essa palavra pode ser usada?",
+        "options": [
+          "A torre é tão alta que se destaca acima dos prédios ao redor.",
+          "O grão cabe na ponta de um dedo.",
+          "O caminho entre as casas é bem curto.",
+          "A música toca em volume baixo."
+        ],
+        "correctIndex": 0,
+        "explanation": "Gigante pode descrever algo muito grande.",
+        "wrongExplanations": {
+          "1": "Essa situação descreve algo pequeno, não muito grande.",
+          "2": "Um caminho curto tem pouca extensão, não é muito grande.",
+          "3": "Volume baixo descreve o som, não algo muito grande."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual sequência está em ordem alfabética?",
+        "options": [
+          "amor, anel, barco",
+          "anel, amor, barco",
+          "barco, anel, amor",
+          "amor, barco, anel"
+        ],
+        "correctIndex": 0,
+        "explanation": "A vem antes de B; entre amor e anel, M vem antes de N.",
+        "wrongExplanations": {
+          "1": "Amor vem antes de anel porque M precede N.",
+          "2": "Barco começa com B e deve vir depois das palavras com A.",
+          "3": "Barco deve vir depois de amor e anel."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual é a estratégia mais adequada para encontrar “janela” em um dicionário impresso?",
+        "options": [
+          "Localizar a seção da letra J e seguir a ordem alfabética",
+          "Procurar apenas no fim do dicionário",
+          "Começar pela seção da letra A",
+          "Abrir em qualquer página e escolher uma palavra parecida"
+        ],
+        "correctIndex": 0,
+        "explanation": "As palavras do dicionário são organizadas em ordem alfabética; localizar a letra inicial ajuda na busca.",
+        "wrongExplanations": {
+          "1": "A última página não indica a seção da letra J.",
+          "2": "Janela começa com J, então a seção A não ajuda.",
+          "3": "É preciso localizar a letra J e seguir a ordem alfabética."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "dicionario-r51-04-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "2026t3v2_pt_dicionario_016 apresenta uma única resposta defensável e aplica corretamente a comparação alfabética pela terceira letra.",
+      "2026t3v2_pt_dicionario_017 identifica corretamente a palavra imediatamente posterior a “pato” e explica a comparação entre as letras relevantes.",
+      "2026t3v2_pt_dicionario_018 avalia a interpretação do verbete de “gigante”, com uma situação compatível com “muito grande” e distratores semanticamente distintos.",
+      "2026t3v2_pt_dicionario_019 apresenta somente uma sequência em ordem alfabética e justifica corretamente a posição das palavras.",
+      "2026t3v2_pt_dicionario_020 apresenta uma estratégia adequada para consulta a dicionário impresso, sem revelar indevidamente a resposta no enunciado.",
+      "As cinco propostas estão em português, possuem quatro alternativas, resposta única, explicação correta e feedback coerente para cada alternativa incorreta.",
+      "As cinco propostas medem o objetivo autorizado de usar ordem alfabética e interpretar verbetes, com linguagem adequada ao 3º ano."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação humana pedagógica antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "8d0c183c-5a4c-418a-bec6-81c94162d2af",
+    "packageSha256": "2e01e4039e6cd123513fbc9af11b063c0302f386417b73f648b7b424846177c1",
+    "batchProposalSha256": "9fc2e92b5dabd85be90a27e622d5a7d890d1ec9a18c541dd00a5ac0e85b1a99a",
+    "batchQuestionIds": [
+      "2026t3v2_pt_dicionario_016",
+      "2026t3v2_pt_dicionario_017",
+      "2026t3v2_pt_dicionario_018",
+      "2026t3v2_pt_dicionario_019",
+      "2026t3v2_pt_dicionario_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-06T14:57:37.051Z",
+    "testOnly": false
+  }
+}

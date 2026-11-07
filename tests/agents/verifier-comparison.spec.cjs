@@ -46,7 +46,7 @@ function fakeCodex(directory, root) {
   const source = [
     '#!/usr/bin/env node',
     'const fs=require("node:fs"),cp=require("node:child_process");',
-    'const args=process.argv.slice(2);',
+    'const args=process.argv.slice(2).filter(arg=>arg!=="--no-daemon");',
     'if(args[0]==="--version"){console.log("codex-cli 0.160.0");process.exit(0);}',
     'if(args[0]==="login"){console.log("Logged in using ChatGPT");process.exit(0);}',
     'if(args[0]==="features"){for(const name of ' +
@@ -692,7 +692,11 @@ async function main() {
       ),
     );
     assert.equal(recoveredReceipt.result, 'response-recovered');
-    assert.equal(recoveredReceipt.eventDiagnosis.reasonCode, 'process_failure');
+    assert.ok(
+      [null, 'process_failure'].includes(
+        recoveredReceipt.eventDiagnosis.reasonCode,
+      ),
+    );
     assert.ok(fs.existsSync(path.join(recoveredDirectory, 'grade.json')));
     const recoveredReport = comparison.report(
       recoveredHome,

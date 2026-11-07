@@ -40,7 +40,7 @@ function fakeCli(directory, root, mode = 'ok') {
   ).cases;
   const program = `#!/usr/bin/env node
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
-const args=process.argv.slice(2), mode=${JSON.stringify(mode)};
+const args=process.argv.slice(2).filter(arg=>arg!=='--no-daemon'), mode=${JSON.stringify(mode)};
 ${SCHEMA_GUARD}
 if(args[0]==='--version'){console.log('codex-cli 0.160.0');process.exit(0);}
 if(args[0]==='login'){console.log('Logged in using ChatGPT');process.exit(mode==='no-login'?1:0);}

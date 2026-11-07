@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/portugues/dicionario",
+  "sourceSha256": "2e01e4039e6cd123513fbc9af11b063c0302f386417b73f648b7b424846177c1",
+  "testOnly": false,
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "npm run validate:delivery aprovou a estrutura das 20 questões e os três feedbacks por questão."
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Quatro lotes passaram sem achados na revisão pedagógica independente da versão atual."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Quatro lotes passaram sem achados na revisão linguística independente da versão atual."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Os feedbacks e distratores foram aprovados nos quatro lotes de revisão pedagógica."
+    }
+  ],
+  "reviews": [
+    {
+      "questionId": "2026t3v2_pt_dicionario_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-01-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-02-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-03-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-pedagogical-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-linguistic-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_pt_dicionario_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-portugues-dicionario/batch-51-04-linguistic-reviewed.json"
+    }
+  ],
+  "approval": {
+    "kind": "editorial",
+    "sourceSha256": "2e01e4039e6cd123513fbc9af11b063c0302f386417b73f648b7b424846177c1",
+    "approvedBy": "dleomil",
+    "evidenceRef": "https://github.com/dleomil/quiz/issues/444#issuecomment-6688991168"
+  }
+}

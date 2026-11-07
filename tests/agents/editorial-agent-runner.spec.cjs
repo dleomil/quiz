@@ -17,7 +17,20 @@ const {
   assertNoEnabledSkills,
 } = require('../../scripts/agent-auth.cjs');
 const { usageFromEvents } = require('../../scripts/agent-run-receipt.cjs');
-const { argumentsFrom } = require('../../scripts/run-editorial-agent.cjs');
+const {
+  argumentsFrom,
+  buildExecArguments,
+} = require('../../scripts/run-editorial-agent.cjs');
+assert.equal(
+  buildExecArguments(
+    { model: 'gpt-5.6-sol', model_reasoning_effort: 'high' },
+    '/tmp/message',
+    '/tmp/work',
+    '/tmp/session',
+    '/tmp/auth',
+  )[0],
+  '--no-daemon',
+);
 const { SCHEMA_GUARD } = require('./transport-test-support.cjs');
 
 const original = path.resolve(__dirname, '../..');
@@ -52,7 +65,7 @@ try {
       bin,
       `#!/usr/bin/env node
 const fs = require('node:fs');
-const args = process.argv.slice(2);
+const args = process.argv.slice(2).filter((arg) => arg !== '--no-daemon');
 const mode = ${JSON.stringify(mode)};
 ${SCHEMA_GUARD}
 if (args[0] === '--version') { console.log('codex-cli 0.160.0'); process.exit(0); }
@@ -69,7 +82,8 @@ if (args[0] !== 'exec') process.exit(2);
 strictSchema(JSON.parse(fs.readFileSync(args[args.indexOf('--output-schema')+1], 'utf8')));
 const prompt = fs.readFileSync(0, 'utf8');
 fs.writeFileSync(${JSON.stringify(recordPath)}, JSON.stringify({argv: args, env: process.env, cwd:process.cwd(), prompt}));
-if (mode === 'failed') process.exit(1);
+if (mode === 'failed') { console.log(JSON.stringify({type:'error',message:'PRIVATE-CANARY'})); process.stderr.write('PRIVATE-STDERR'); process.exit(1); }
+if (mode === 'event-error') console.log(JSON.stringify({type:'error',message:'PRIVATE-CANARY'}));
 const response = prompt.includes('Atue exclusivamente como pedagogical_quality.')
  ? ${JSON.stringify(scenarios[1].output)} : ${JSON.stringify(scenarios[0].output)};
 fs.writeFileSync(args[args.indexOf('--output-last-message')+1], mode === 'bad-output' ? '{}' : JSON.stringify(transportOutput(response)));
@@ -143,6 +157,25 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   assert.equal(success.receipt.subscriptionUsage, null);
   assert.equal(success.receipt.attempts, 1);
   assert.ok(success.receipt.artifactSha256);
+  const successLocation = path.join(
+    authHome,
+    'quiz-editorial-runs',
+    success.receipt.captureId,
+    'result.json',
+  );
+  const successCapture =
+    require('../../scripts/agent-event-capture.cjs').verifyCapture(
+      successLocation,
+      success.receipt.captureSha256,
+    );
+  assert.equal(successCapture.manifest.diagnosis.accepted, true);
+  assert.equal(fs.statSync(successCapture.directory).mode & 0o077, 0);
+  assert.equal(
+    fs.statSync(path.join(successCapture.directory, 'stdout.jsonl')).mode &
+      0o077,
+    0,
+  );
+  assert.ok(success.receipt.eventDiagnosis.accepted);
   const record = JSON.parse(fs.readFileSync(recordPath));
   assert.equal(record.env.CODEX_HOME, authHome);
   assert.notEqual(record.env.HOME, record.env.CODEX_HOME);
@@ -162,7 +195,11 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   );
   assert.ok(record.argv.includes('cli_auth_credentials_store="keyring"'));
   for (const flag of DISABLED_FEATURES)
-    assert.ok(record.argv.includes(`features.${flag}=false`));
+    assert.ok(
+      record.argv.includes(
+        `features.${flag === 'code_mode' ? 'code_mode.enabled' : flag}=false`,
+      ),
+    );
   assert.equal(record.argv.at(-1), '-');
   assert.ok(record.prompt.includes('Contratos autorizados completos'));
   assert.ok(record.prompt.includes('# Instrucoes do projeto Quiz'));
@@ -191,6 +228,7 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
     ['skill-context', /skill ativa no contexto/],
     ['failed', /execucao falhou/],
     ['tool', /ferramenta proibida/],
+    ['event-error', /erro de execucao/],
     ['bad-output', /saida rejeitada/],
   ]) {
     const blocked = invoke(mode);
@@ -199,6 +237,31 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
     assert.equal(fs.existsSync(blocked.output), false, mode);
     assert.equal(blocked.receipt.artifactSha256, null);
     assert.notEqual(blocked.receipt.result, 'completed');
+    assert.ok(!blocked.stderr.includes('PRIVATE-CANARY'));
+    assert.ok(!JSON.stringify(blocked.receipt).includes('PRIVATE-CANARY'));
+    if (blocked.receipt.modelInvocations) {
+      assert.ok(blocked.receipt.captureId);
+      const location = path.join(
+        authHome,
+        'quiz-editorial-runs',
+        blocked.receipt.captureId,
+        'result.json',
+      );
+      const verified =
+        require('../../scripts/agent-event-capture.cjs').verifyCapture(
+          location,
+          blocked.receipt.captureSha256,
+        );
+      assert.ok(verified.manifest.files['stdout.jsonl']);
+      if (mode === 'event-error' || mode === 'failed')
+        assert.match(
+          fs.readFileSync(
+            path.join(verified.directory, 'stdout.jsonl'),
+            'utf8',
+          ),
+          /PRIVATE-CANARY/,
+        );
+    }
   }
   const delivery = path.join(directory, 'delivery.json');
   json(delivery, { questions: [scenarios[1].input.proposal] });

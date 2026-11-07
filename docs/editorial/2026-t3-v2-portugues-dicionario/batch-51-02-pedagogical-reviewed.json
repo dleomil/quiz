@@ -1,0 +1,216 @@
+{
+  "scenarioId": "dicionario-r51-02-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "dicionario-r51-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Dicionário"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Usar conhecimentos de ordem alfabética e consulta ao dicionário.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual palavra vem primeiro no dicionário?",
+        "options": ["gato", "garfo", "gaveta", "gazeta"],
+        "correctIndex": 1,
+        "explanation": "Garfo começa com GAR e gato com GAT. Como R vem antes de T, garfo aparece primeiro.",
+        "wrongExplanations": {
+          "0": "Gato começa com GAT e vem depois de garfo (GAR).",
+          "2": "Gaveta começa com GAV, e V vem depois de R.",
+          "3": "Gazeta começa com GAZ, e Z vem depois de R."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Considerando somente estas opções, qual palavra aparece primeiro depois de “mala” quando elas são colocadas em ordem alfabética?",
+        "options": ["maleta", "manga", "mapa", "mar"],
+        "correctIndex": 0,
+        "explanation": "Maleta começa com MAL e, entre as opções, vem antes de manga (MAN), mapa (MAP) e mar (MAR).",
+        "wrongExplanations": {
+          "1": "Maleta começa com MAL, antes de manga (MAN).",
+          "2": "Maleta começa com MAL, antes de mapa (MAP).",
+          "3": "Maleta começa com MAL, antes de mar (MAR)."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Qual sequência está em ordem alfabética?",
+        "options": [
+          "nuvem, onda, panela",
+          "onda, nuvem, panela",
+          "panela, onda, nuvem",
+          "nuvem, panela, onda"
+        ],
+        "correctIndex": 0,
+        "explanation": "N vem antes de O, e O vem antes de P.",
+        "wrongExplanations": {
+          "1": "Nuvem deve vir antes de onda.",
+          "2": "Panela deve vir depois de nuvem e onda.",
+          "3": "Onda deve vir antes de panela."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Em uma página do dicionário, o que é um verbete?",
+        "options": [
+          "A palavra e informações sobre ela, como significado e classe gramatical",
+          "A capa e o título do dicionário",
+          "Os nomes de quem escreveu o livro",
+          "O número que indica a página"
+        ],
+        "correctIndex": 0,
+        "explanation": "O verbete apresenta uma palavra e informações como significado e classe gramatical.",
+        "wrongExplanations": {
+          "1": "A capa não reúne as informações de cada palavra.",
+          "2": "Os autores não formam o verbete de uma palavra.",
+          "3": "O número localiza uma página, mas não explica a palavra."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_dicionario_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "dicionario",
+        "question": "Se você quer saber o significado de “corajoso”, o que deve procurar no dicionário?",
+        "options": [
+          "A palavra “corajoso” e as informações sobre ela",
+          "A seção de nomes de autores",
+          "A lista de matérias da escola",
+          "A última página do dicionário"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para descobrir o significado, localizamos o verbete da palavra.",
+        "wrongExplanations": {
+          "1": "A seção de nomes de autores informa quem escreveu livros, não o significado de “corajoso”.",
+          "2": "A lista de matérias da escola não informa o significado de “corajoso”.",
+          "3": "A última página não é o verbete da palavra; procure “corajoso” na lista de palavras do dicionário."
+        },
+        "skill": "localizar-palavras-por-ordem-alfabetica-e-interpretar-verbetes",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Dicionário"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "dicionario-r51-02-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "dicionario",
+    "reviewPass": "pedagogical",
+    "decision": "adjustments_required",
+    "facts": [
+      "O contexto informa 3º ano, ano letivo de 2026, T3, tema Dicionário, objetivo curricular autorizado e manifesto congelado com aprovação humana rastreável.",
+      "As cinco propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e feedback para cada alternativa incorreta.",
+      "As questões 2026t3v2_pt_dicionario_006, 2026t3v2_pt_dicionario_007 e 2026t3v2_pt_dicionario_008 apresentam uma única resposta defensável e avaliam ordem alfabética.",
+      "A questão 2026t3v2_pt_dicionario_009 apresenta uma única resposta defensável e avalia o reconhecimento de um verbete.",
+      "A questão 2026t3v2_pt_dicionario_010 possui resposta única e feedback coerente, mas seus distratores não são suficientemente plausíveis para avaliar com qualidade a consulta ao dicionário.",
+      "Nenhuma instrução revela explicitamente o índice correto nem foram identificadas lacunas estruturais nas propostas."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_pt_dicionario_010",
+        "criterion": "Alternativas incorretas plausíveis e coerência com o objetivo curricular",
+        "severity": "major",
+        "evidence": "As alternativas sobre lista de matérias da escola e seção de autores são claramente alheias à busca do significado de uma palavra, permitindo responder por eliminação sem demonstrar conhecimento sobre consulta ao dicionário.",
+        "recommendation": "Substituir os distratores mais óbvios por ações ou elementos plausíveis de uma consulta ao dicionário, mantendo apenas uma resposta correta e sem fornecer pistas sobre o verbete adequado."
+      }
+    ],
+    "recommendations": [
+      "Revisar os distratores de 2026t3v2_pt_dicionario_010 e submeter o pacote exato novamente à passagem pedagógica.",
+      "Manter as demais propostas sem alterações de conteúdo; qualquer alteração textual nelas exige nova revisão do pacote correspondente.",
+      "Realizar posteriormente a passagem linguística independente e obter aprovação humana pedagógica do hash exato antes de implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "b5726652-e504-46cd-91ad-0d0e430aeed2",
+    "packageSha256": "2e01e4039e6cd123513fbc9af11b063c0302f386417b73f648b7b424846177c1",
+    "batchProposalSha256": "0d65fb4eec9c1ef34541a0c67455642d23f5d8f5de5016ca217ec31a5d580bc7",
+    "batchQuestionIds": [
+      "2026t3v2_pt_dicionario_006",
+      "2026t3v2_pt_dicionario_007",
+      "2026t3v2_pt_dicionario_008",
+      "2026t3v2_pt_dicionario_009",
+      "2026t3v2_pt_dicionario_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-06T14:55:47.791Z",
+    "testOnly": false
+  }
+}
