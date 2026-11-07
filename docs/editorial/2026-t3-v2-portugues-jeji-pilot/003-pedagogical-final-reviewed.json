@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-003-pedagogical-r11",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-003-pedagogical-r11",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "hoge, jeito, jiló",
+        "hoje, geito, jiló",
+        "hoje, jeito, jiló",
+        "hoje, jeito, giló"
+      ],
+      "correctIndex": 2,
+      "explanation": "A lista correta reúne hoje, jeito, jiló. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "0": "Na opção, “hoge” troca a letra J por G em “hoje”. A grafia correta é “hoje”.",
+        "1": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “giló” troca a letra J por G em “jiló”. A grafia correta é “jiló”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-003-pedagogical-r11",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-003 avalia o objetivo autorizado de escolher grafias corretas com JE e JI.",
+      "A alternativa de índice 2 é a única defensável: “hoje, jeito, jiló”.",
+      "Cada distrator contém exatamente uma troca plausível entre J e G, sem duplicidade ou alternativa concorrente.",
+      "A explicação evita a generalização falsa de que sons semelhantes antes de E ou I são sempre escritos com J.",
+      "Os três feedbacks identificam corretamente o erro específico e apresentam a grafia convencional correspondente.",
+      "O enunciado está em português, não revela a resposta e não exige habilidade lateral desnecessária."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação humana pedagógica antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "18463228-22a4-4ac2-9c29-f6a3a4eab39f",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "027a10865076c8f5ec2bf834b1baa96c9206c144be7f825386da318cd902384d",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:40:41.609Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/003-pedagogical-r11-recovery.json",
+    "recoverySha256": "a0207b00a8d51ae7ce2a1750b47ba2c505927147cccaacee82662e5233450dc4"
+  }
+}

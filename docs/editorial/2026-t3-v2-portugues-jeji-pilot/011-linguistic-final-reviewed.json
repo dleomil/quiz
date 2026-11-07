@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-011-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-011-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "ceregeira, jipe, laje",
+        "cerejeira, gipe, laje",
+        "cerejeira, jipe, laje",
+        "cerejeira, jipe, lage"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “cerejeira”, “jipe” e “laje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “ceregeira” está escrita com G no lugar do J de “cerejeira”. A grafia correta é “cerejeira”.",
+        "1": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-011-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-011, versão 4, em estado draft.",
+      "O enunciado está em português, é claro, natural e adequado ao 3º ano.",
+      "As quatro alternativas apresentam construção paralela e permitem distinguir visualmente as grafias no contexto do português brasileiro.",
+      "A explicação e os três feedbacks correspondem às alternativas pertinentes e estão corretos quanto a ortografia, concordância e pontuação.",
+      "Nenhum feedback apresenta a grafia incorreta do distrator como forma aceita."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter a proposta vinculada ao hash avaliado e submetê-la à passagem pedagógica independente e à aprovação humana antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "45db0677-e5a9-476b-9b8b-f50cab2cda5d",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "bdc6b01027ae9d43bb51c44ce0e60c0ae799a864b2728d522a842d3c1fc506d2",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:28:32.693Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/011-linguistic-r06-recovery.json",
+    "recoverySha256": "cb3390dd2606cd9cc88e1baa9fc790e88fe713e2bcf24005fd223302023194a9"
+  }
+}

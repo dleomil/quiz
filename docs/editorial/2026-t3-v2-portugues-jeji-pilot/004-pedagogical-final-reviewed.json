@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-004-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-004-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giboia, laje, jeito",
+        "jiboia, lage, jeito",
+        "jiboia, laje, geito",
+        "jiboia, laje, jeito"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jiboia”, “laje” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “giboia” está escrita com G no lugar do J de “jiboia”. A grafia correta é “jiboia”.",
+        "1": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-004-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-004 está vinculada ao objetivo curricular de escolher a grafia correta de palavras com JE e JI para o 3º ano.",
+      "A alternativa de índice 3 é a única que apresenta corretamente as três palavras: “jiboia”, “laje” e “jeito”.",
+      "Cada distrator contém exatamente uma troca de J por G, sem criar outra resposta defensável.",
+      "A explicação identifica as três grafias corretas, e cada feedback aponta a palavra incorreta e apresenta sua forma correta.",
+      "O enunciado está em português, não contém lacunas e não revela antecipadamente a alternativa correta.",
+      "A questão mede diretamente a habilidade autorizada, sem exigir conhecimento lateral desnecessário."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato à passagem linguística independente e à aprovação pedagógica humana antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "6632d166-64eb-4759-9fdd-88af83f136be",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "d2f97781cc9d5fed44c057e24e783a1aefc36c5e2983a88a2da13348654d9db6",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:24:25.559Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/004-pedagogical-r06-recovery.json",
+    "recoverySha256": "7f1e13f6605e9478f37b060c52ae4adce5c31524149e232c714681c739cdb8be"
+  }
+}

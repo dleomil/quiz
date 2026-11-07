@@ -1,0 +1,91 @@
+{
+  "scenarioId": "jeji-014-linguistic-r05",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-014-linguistic-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giboia, jeito, jipe",
+        "jiboia, jeito, jipe",
+        "jiboia, geito, jipe",
+        "jiboia, jeito, gipe"
+      ],
+      "correctIndex": 1,
+      "explanation": "A lista correta reúne jiboia, jeito, jipe. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "0": "Na opção, “giboia” troca a letra J por G em “jiboia”. A grafia correta é “jiboia”.",
+        "2": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “gipe” troca a letra J por G em “jipe”. A grafia correta é “jipe”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-014-linguistic-r05",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-014 apresenta instrução clara em português e adequada ao 3º ano.",
+      "Enunciado, alternativas, explicação e feedbacks estão corretos quanto a ortografia, concordância e pontuação.",
+      "Os feedbacks identificam especificamente a grafia inadequada de cada distrator sem apresentar essas formas como aceitas.",
+      "A explicação revela a resposta somente no feedback posterior à escolha, sem antecipá-la no enunciado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem pedagógica independente e à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "9fa98f63-5d95-4f4d-b50a-c7b16ba44071",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "03d56a249aeb566535e9d5b7cbf01cde058f72fd4c1c6fa3bd209e71451fd2da",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:21:43.067Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/014-linguistic-r05-recovery.json",
+    "recoverySha256": "13667b2dced204ffcec5e01b08e2955c4f96f7ebc91269bd57e8b1a84d901496"
+  }
+}

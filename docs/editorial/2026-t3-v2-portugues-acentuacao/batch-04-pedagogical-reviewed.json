@@ -1,0 +1,220 @@
+{
+  "scenarioId": "acentuacao-r26-04-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "acentuacao-r26-04-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Acentuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer a acentuação de palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra tem acento circunflexo?",
+        "options": [
+          "ônibus",
+          "avó",
+          "café",
+          "sofá"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ônibus começa com ô, que recebe acento circunflexo.",
+        "wrongExplanations": {
+          "1": "Avó tem acento agudo.",
+          "2": "Café tem acento agudo.",
+          "3": "Sofá tem acento agudo."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "também",
+          "tambem",
+          "tãmbem",
+          "tambémm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Também é oxítona terminada em EM e recebe acento agudo.",
+        "wrongExplanations": {
+          "1": "A grafia correta é também, com acento.",
+          "2": "Também não recebe til.",
+          "3": "Também termina com apenas um m."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra completa corretamente a frase “A ____ caiu no chão”?",
+        "options": [
+          "pétala",
+          "petala",
+          "pétalá",
+          "pêtala"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pétala possui acento agudo na letra “e”, na sílaba “pé”; a sílaba final não recebe acento.",
+        "wrongExplanations": {
+          "1": "A grafia correta é pétala, com acento.",
+          "2": "A sílaba tônica é pé, no início da palavra.",
+          "3": "Pétala usa acento agudo, não circunflexo."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "fácil",
+          "facil",
+          "fácíl",
+          "facíl"
+        ],
+        "correctIndex": 0,
+        "explanation": "Fácil é paroxítona terminada em L e recebe acento agudo.",
+        "wrongExplanations": {
+          "1": "Fácil recebe somente acento agudo na letra “a”, na sílaba “fá”.",
+          "2": "Fácil recebe acento agudo na letra “a”, na sílaba “fá”; o “i” não leva acento.",
+          "3": "Fácil leva acento agudo em “fá”; “cil” não recebe acento."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra completa corretamente a frase “O ____ aplaudiu a apresentação”?",
+        "options": [
+          "público",
+          "publico",
+          "públicó",
+          "públíco"
+        ],
+        "correctIndex": 0,
+        "explanation": "Público, como substantivo, recebe acento na antepenúltima sílaba.",
+        "wrongExplanations": {
+          "1": "Como substantivo, público recebe acento na primeira sílaba.",
+          "2": "Público tem acento na primeira sílaba, não na última.",
+          "3": "Público recebe apenas um acento, na primeira sílaba."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "acentuacao-r26-04-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto curricular está completo: 3º ano, 2026, T3, Português, tema Acentuação, manifesto congelado e objetivo autorizado rastreável.",
+      "As cinco propostas estão em português, apresentam quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para cada alternativa incorreta.",
+      "2026t3v2_pt_acentuacao_016 possui resposta única: “ônibus” é a única alternativa com acento circunflexo; as demais usam acento agudo.",
+      "2026t3v2_pt_acentuacao_017 possui resposta única: “também” é a única grafia correta, e a explicação relaciona adequadamente a acentuação à palavra oxítona terminada em EM.",
+      "2026t3v2_pt_acentuacao_018 possui resposta única: “pétala” completa corretamente a frase e apresenta acento agudo na sílaba tônica “pé”.",
+      "2026t3v2_pt_acentuacao_019 possui resposta única: “fácil” é a grafia correta, coerente com a regra de paroxítona terminada em L.",
+      "2026t3v2_pt_acentuacao_020 possui resposta única no contexto da frase: o substantivo “público” é proparoxítono e recebe acento na antepenúltima sílaba.",
+      "Nenhum enunciado contém informação insuficiente, resposta revelada ou lacuna sem alternativa defensável.",
+      "As questões medem o reconhecimento da acentuação de palavras usuais e não dependem de pegadinha ou habilidade lateral."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter as propostas em estado draft até a passagem linguística independente e a aprovação humana do pacote exato.",
+      "Não interpretar este parecer como autorização de implementação, publicação ou release."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "ff0c98c3-809b-4359-acfd-4c1d4ca38455",
+    "packageSha256": "586fcaa7bff38e3027c640a81f2279bf5bda2e6e10084ddceb6c244fff6d3e86",
+    "batchProposalSha256": "ca7bbd75c104545f95c54374c54ce5d613e4e5002673745b7edd51f973b4415a",
+    "batchQuestionIds": [
+      "2026t3v2_pt_acentuacao_016",
+      "2026t3v2_pt_acentuacao_017",
+      "2026t3v2_pt_acentuacao_018",
+      "2026t3v2_pt_acentuacao_019",
+      "2026t3v2_pt_acentuacao_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-05T13:40:16.238Z",
+    "testOnly": false
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "scenarioId": "jeji-011-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-011-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "ceregeira, jipe, laje",
+        "cerejeira, gipe, laje",
+        "cerejeira, jipe, laje",
+        "cerejeira, jipe, lage"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “cerejeira”, “jipe” e “laje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “ceregeira” está escrita com G no lugar do J de “cerejeira”. A grafia correta é “cerejeira”.",
+        "1": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-011-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-011 está vinculada ao 3º ano, ao tema usos-de-je-ji e ao objetivo curricular de escolher a grafia correta de palavras com JE e JI.",
+      "O enunciado solicita identificar a única lista em que as três palavras estão grafadas corretamente.",
+      "A alternativa de índice 2 é a única defensável: “cerejeira”, “jipe” e “laje” estão corretamente grafadas.",
+      "As três alternativas incorretas apresentam erros distintos e identificáveis: “ceregeira”, “gipe” e “lage”.",
+      "A explicação informa as três grafias corretas, e cada alternativa incorreta possui feedback específico e coerente com o erro apresentado.",
+      "A questão mede diretamente a habilidade declarada, sem exigir conhecimento lateral desnecessário nem recorrer a pegadinha.",
+      "Não há lacuna, resposta revelada indevidamente ou generalização falsa sobre o uso de J e G."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a passagem linguística independente e, depois, para a aprovação pedagógica humana obrigatória."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "be3f866e-7f57-4733-943e-c1e0858f2d58",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "bdc6b01027ae9d43bb51c44ce0e60c0ae799a864b2728d522a842d3c1fc506d2",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:28:15.983Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/011-pedagogical-r06-recovery.json",
+    "recoverySha256": "5f325428c77aaf3bdedd17d333dc9879982c02bd6c58fe8dfd9934d163a53506"
+  }
+}

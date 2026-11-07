@@ -1,0 +1,94 @@
+{
+  "scenarioId": "jeji-020-pedagogical-r11",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-020-pedagogical-r11",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giló, jejum, jipe",
+        "jiló, gejum, jipe",
+        "jiló, jejum, gipe",
+        "jiló, jejum, jipe"
+      ],
+      "correctIndex": 3,
+      "explanation": "A lista correta reúne jiló, jejum, jipe. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "0": "Na opção, “giló” troca a letra J por G em “jiló”. A grafia correta é “jiló”.",
+        "1": "Na opção, “gejum” troca a letra J por G em “jejum”. A grafia correta é “jejum”.",
+        "2": "Na opção, “gipe” troca a letra J por G em “jipe”. A grafia correta é “jipe”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-020-pedagogical-r11",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-020, versão 3, em estado draft.",
+      "O enunciado está em português e solicita a identificação da única lista com três grafias corretas.",
+      "A alternativa de índice 3 é a única defensável: “jiló, jejum, jipe”.",
+      "Cada distrator contém exatamente uma troca de J por G, sem duplicidade ou equivalência entre as alternativas.",
+      "A questão mede diretamente o objetivo autorizado de escolher grafias corretas de palavras com JE e JI.",
+      "A explicação não afirma falsamente que sons semelhantes diante de E ou I são sempre escritos com J.",
+      "As três justificativas de erro correspondem aos respectivos distratores e apresentam a grafia convencional correta."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação pedagógica humana antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "d4caf019-6205-4b29-9c16-51620809d61d",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "cd9b118cd0d469fc28aabbd089d8162c22695fa06dc6e7461e7528786dcf8800",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:41:14.265Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/020-pedagogical-r11-recovery.json",
+    "recoverySha256": "e27958412fb9649e6b0748991ee15689fef8cacc0acd53e8e653662ac8fffbe3"
+  }
+}

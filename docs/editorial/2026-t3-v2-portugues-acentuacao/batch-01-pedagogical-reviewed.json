@@ -1,0 +1,220 @@
+{
+  "scenarioId": "acentuacao-r26-01-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "acentuacao-r26-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Acentuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer a acentuação de palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra está escrita com o acento correto?",
+        "options": [
+          "árvore",
+          "arvore",
+          "árvoré",
+          "árvóre"
+        ],
+        "correctIndex": 0,
+        "explanation": "Árvore é proparoxítona e recebe acento na antepenúltima sílaba.",
+        "wrongExplanations": {
+          "1": "A grafia correta de árvore tem acento agudo.",
+          "2": "O acento fica na primeira sílaba: ár-vo-re.",
+          "3": "A sílaba tônica de árvore é ár, não vó."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Como se classifica “café” quanto à posição da sílaba tônica?",
+        "options": [
+          "Oxítona: a última sílaba é tônica",
+          "Paroxítona: a penúltima sílaba é tônica",
+          "Proparoxítona: a antepenúltima sílaba é tônica",
+          "Monossílaba: tem uma sílaba"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em ca-fé, a sílaba tônica é a última; café é oxítona.",
+        "wrongExplanations": {
+          "1": "Café tem duas sílabas e a última, fé, é tônica.",
+          "2": "Café tem duas sílabas, não três ou mais.",
+          "3": "Café tem duas sílabas: ca-fé."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra completa a frase com a acentuação correta? “O ____ está no céu à noite.”",
+        "options": [
+          "satélite",
+          "satelite",
+          "satélíte",
+          "satelíte"
+        ],
+        "correctIndex": 0,
+        "explanation": "Satélite é proparoxítona e recebe acento na antepenúltima sílaba.",
+        "wrongExplanations": {
+          "1": "A grafia correta é satélite, com acento.",
+          "2": "Satélite recebe apenas um acento, na sílaba té.",
+          "3": "O acento fica em té: sa-té-li-te."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual opção apresenta o nome de um animal escrito corretamente?",
+        "options": [
+          "pássaro",
+          "passaro",
+          "passáro",
+          "pássáro"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pássaro é proparoxítona e recebe acento na antepenúltima sílaba.",
+        "wrongExplanations": {
+          "1": "A grafia correta tem acento agudo na primeira sílaba.",
+          "2": "Em “passáro”, o acento ficou na sílaba errada. O correto é “pássaro”, com a sílaba inicial tônica.",
+          "3": "Pássaro recebe apenas um acento: pássaro."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_acentuacao_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "acentuacao",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "lapis",
+          "lápis",
+          "lápís",
+          "lapís"
+        ],
+        "correctIndex": 1,
+        "explanation": "Lápis é uma palavra paroxítona terminada em -is, por isso recebe acento.",
+        "wrongExplanations": {
+          "0": "Lápis recebe acento agudo na primeira sílaba.",
+          "2": "O acento de lápis fica na primeira sílaba, não na última.",
+          "3": "Lápis recebe acento agudo na primeira sílaba."
+        },
+        "skill": "identificar-silaba-tonica-e-acentuacao-de-palavras",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Acentuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "acentuacao-r26-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "acentuacao",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "O contexto está completo e rastreável: 3º ano, 2026, T3, Português, tema Acentuação, manifesto congelado e aprovação humana do congelamento registrada.",
+      "As cinco propostas apresentam quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para cada uma das três alternativas incorretas.",
+      "A questão 2026t3v2_pt_acentuacao_001 possui resposta única: “árvore”; a explicação identifica corretamente a palavra como proparoxítona e localiza a sílaba tônica.",
+      "A questão 2026t3v2_pt_acentuacao_002 classifica corretamente “café” como oxítona e distingue essa classificação das alternativas concorrentes.",
+      "A questão 2026t3v2_pt_acentuacao_003 possui resposta única: “satélite”; a lacuna não revela a resposta e as variantes incorretas apresentam acentuação ausente, excedente ou deslocada.",
+      "A questão 2026t3v2_pt_acentuacao_004 possui resposta única: “pássaro”; a explicação e os feedbacks distinguem corretamente a acentuação inicial das grafias incorretas.",
+      "A questão 2026t3v2_pt_acentuacao_005 possui resposta única: “lápis”; a justificativa aplica corretamente a regra das paroxítonas terminadas em “is”.",
+      "Os enunciados e as instruções estão em português, não apresentam informação curricular ausente, não antecipam a alternativa correta e medem a identificação da sílaba tônica ou da acentuação, sem depender de pegadinha.",
+      "Não foram identificados erros factuais, ambiguidades de resposta, alternativas equivalentes ou feedbacks contraditórios nesta passagem pedagógica."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o mesmo pacote exato a uma passagem linguística independente.",
+      "Manter pendente a aprovação pedagógica humana do pacote exato; este parecer não autoriza implementação, publicação ou release."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "90755a02-3782-4116-90c3-ce6cca5202aa",
+    "packageSha256": "586fcaa7bff38e3027c640a81f2279bf5bda2e6e10084ddceb6c244fff6d3e86",
+    "batchProposalSha256": "cc4da7bfe05bd4c71c5263730368e54257e7d6d2d8c543e013c210dbc6a4ab78",
+    "batchQuestionIds": [
+      "2026t3v2_pt_acentuacao_001",
+      "2026t3v2_pt_acentuacao_002",
+      "2026t3v2_pt_acentuacao_003",
+      "2026t3v2_pt_acentuacao_004",
+      "2026t3v2_pt_acentuacao_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-05T13:37:07.056Z",
+    "testOnly": false
+  }
+}

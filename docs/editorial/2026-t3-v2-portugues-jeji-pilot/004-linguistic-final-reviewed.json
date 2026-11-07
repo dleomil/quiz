@@ -1,0 +1,92 @@
+{
+  "scenarioId": "jeji-004-linguistic-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-004-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giboia, laje, jeito",
+        "jiboia, lage, jeito",
+        "jiboia, laje, geito",
+        "jiboia, laje, jeito"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jiboia”, “laje” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “giboia” está escrita com G no lugar do J de “jiboia”. A grafia correta é “jiboia”.",
+        "1": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-004-linguistic-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão T3F-PT-JEJI-004, versão 4, em estado draft.",
+      "O enunciado está em português, é claro e adequado ao terceiro ano, sem revelar a resposta.",
+      "A alternativa correta apresenta as grafias atuais “jiboia”, “laje” e “jeito”.",
+      "A explicação e os três feedbacks identificam claramente as grafias incorretas dos distratores sem apresentá-las como formas aceitas.",
+      "Não foram encontrados problemas de ortografia, acentuação, concordância, pontuação ou naturalidade nos textos avaliados."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a aprovação humana obrigatória, preservando a separação entre as passagens linguística e pedagógica."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "35745544-834d-406b-a444-875a4942a3ed",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "d2f97781cc9d5fed44c057e24e783a1aefc36c5e2983a88a2da13348654d9db6",
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-03T15:24:38.337Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/004-linguistic-r06-recovery.json",
+    "recoverySha256": "11f1c40969b885ced3dd425562e1c3b2e4d50f2e39b6fd9e99fdb4ef3d7ea2a3"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "scenarioId": "usos-de-h-r14-01-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-de-h-r14-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Usos de H/h"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer o emprego do H em palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente a frase “A ____ produz mel na colmeia”?",
+        "options": [
+          "abelha",
+          "abela",
+          "abeia",
+          "abélha"
+        ],
+        "correctIndex": 0,
+        "explanation": "Abelha é escrita com H entre L e A.",
+        "wrongExplanations": {
+          "1": "Abelha se escreve com LH, não apenas com L.",
+          "2": "A palavra abelha é escrita com LH.",
+          "3": "A palavra abelha não recebe acento."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "hoje",
+          "oje",
+          "hoge",
+          "hojê"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hoje começa com H e termina com E.",
+        "wrongExplanations": {
+          "1": "Hoje começa com H.",
+          "2": "Hoje é escrita com J, não G.",
+          "3": "Hoje não recebe acento."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente a frase “A ____ é um instrumento de cordas”?",
+        "options": [
+          "harpa",
+          "arpa",
+          "hárpa",
+          "harpha"
+        ],
+        "correctIndex": 0,
+        "explanation": "Harpa começa com H.",
+        "wrongExplanations": {
+          "1": "Harpa começa com H.",
+          "2": "Harpa não recebe acento.",
+          "3": "Harpa se escreve com P, e não com PH."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra completa corretamente a frase “O relógio estava com uma ____ de atraso”?",
+        "options": [
+          "hora",
+          "ora",
+          "hóra",
+          "horra"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hora começa com H e completa corretamente a expressão “uma hora de atraso”.",
+        "wrongExplanations": {
+          "1": "Hora começa com H.",
+          "2": "Hora não recebe acento.",
+          "3": "Hora se escreve com um R."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_de_h_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-de-h",
+        "question": "Qual palavra começa com H?",
+        "options": [
+          "hora",
+          "flor",
+          "mesa",
+          "pato"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hora começa com H.",
+        "wrongExplanations": {
+          "1": "Flor começa com F.",
+          "2": "Mesa começa com M.",
+          "3": "Pato começa com P."
+        },
+        "skill": "reconhecer-o-emprego-de-h-em-palavras-usuais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Usos de H/h"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-de-h-r14-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-h",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A entrada apresenta contexto curricular completo e rastreável para o 3º ano, T3 de 2026, com manifesto congelado, aprovação humana do congelamento, fonte autorizada e objetivo de reconhecer o emprego de H em palavras usuais.",
+      "2026t3v2_pt_usos_de_h_001 possui resposta única defensável: “abelha”; a explicação e os três feedbacks distinguem corretamente LH, ausência de H e acentuação indevida.",
+      "2026t3v2_pt_usos_de_h_002 possui resposta única defensável: “hoje”; os feedbacks correspondem especificamente à ausência de H, à troca de J por G e ao acento indevido.",
+      "2026t3v2_pt_usos_de_h_003 possui resposta única defensável: “harpa”; a explicação e os feedbacks tratam corretamente o H inicial, a ausência de acento e a grafia sem PH.",
+      "2026t3v2_pt_usos_de_h_004 possui resposta única defensável no contexto “uma hora de atraso”; os feedbacks distinguem ausência de H, acento indevido e duplicação de R.",
+      "2026t3v2_pt_usos_de_h_005 possui resposta única defensável: somente “hora” começa com H; cada feedback identifica corretamente a letra inicial do distrator correspondente.",
+      "As cinco propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e feedback específico para cada alternativa incorreta.",
+      "As questões medem diretamente o objetivo curricular declarado, sem depender de conhecimento lateral nem apresentar resposta revelada pelo enunciado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para a passagem linguística independente, mantendo as propostas em draft.",
+      "Manter pendente a aprovação pedagógica humana do lote e o aceite editorial do hash exato antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "fafb1c26-83dd-4060-a286-aab54c5bdeee",
+    "packageSha256": "79758f7c9e66c4c47c121efcd285e9b19f3155ef47e4b8d49d331cf898650527",
+    "batchProposalSha256": "d684d35bdf295c802176bd1dc591e8f72c9adbe69aea8911ac207b2ba09ef760",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_de_h_001",
+      "2026t3v2_pt_usos_de_h_002",
+      "2026t3v2_pt_usos_de_h_003",
+      "2026t3v2_pt_usos_de_h_004",
+      "2026t3v2_pt_usos_de_h_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-04T12:24:22.595Z",
+    "testOnly": false
+  }
+}

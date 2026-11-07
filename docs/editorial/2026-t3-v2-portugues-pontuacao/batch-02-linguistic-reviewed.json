@@ -1,0 +1,219 @@
+{
+  "scenarioId": "pontuacao-final8-02-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "pontuacao-final8-02-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "pontuacao",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Pontuação"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Escolher sinais de pontuação adequados ao sentido e à intenção das frases.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "A personagem diz “Que legal___” com muita animação. Escolha o sinal que mostra essa emoção.",
+        "options": [
+          "Ponto de exclamação (!)",
+          "Ponto final (.)",
+          "Ponto de interrogação (?)",
+          "Vírgula (,)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto de exclamação destaca a animação da personagem.",
+        "wrongExplanations": {
+          "1": "O ponto final encerra a frase, mas não destaca a animação.",
+          "2": "A fala não expressa uma pergunta.",
+          "3": "A vírgula não encerra essa fala."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual pontuação combina com uma ordem dita com entusiasmo: “Venham brincar___”?",
+        "options": [
+          "Ponto de exclamação (!)",
+          "Ponto de interrogação (?)",
+          "Vírgula (,)",
+          "Ponto final (.)"
+        ],
+        "correctIndex": 0,
+        "explanation": "O ponto de exclamação pode marcar uma ordem com entusiasmo.",
+        "wrongExplanations": {
+          "1": "A frase dá um convite ou ordem, não faz uma pergunta.",
+          "2": "A vírgula não encerra a frase.",
+          "3": "O ponto final seria possível numa ordem neutra, mas não destaca o entusiasmo indicado."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual sinal deve aparecer no fim de “Você gostaria de uma maçã ou de uma pera___”?",
+        "options": [
+          "Ponto de interrogação (?)",
+          "Ponto final (.)",
+          "Vírgula (,)",
+          "Dois-pontos (:)"
+        ],
+        "correctIndex": 0,
+        "explanation": "A frase pergunta qual fruta a pessoa gostaria de escolher.",
+        "wrongExplanations": {
+          "1": "A intenção da frase é perguntar, por isso cabe o ponto de interrogação.",
+          "2": "A vírgula não encerra essa pergunta.",
+          "3": "Os dois-pontos não são usados para encerrar essa pergunta."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Qual pontuação organiza a enumeração “Trouxe lápis___ borracha e apontador”?",
+        "options": [
+          "Uma vírgula depois de “lápis”",
+          "Um ponto final depois de “lápis”",
+          "Um ponto de interrogação depois de “lápis”",
+          "Um ponto de exclamação depois de “lápis”"
+        ],
+        "correctIndex": 0,
+        "explanation": "A vírgula separa o primeiro item dos demais na enumeração.",
+        "wrongExplanations": {
+          "1": "O ponto final encerraria a frase antes de completar a lista.",
+          "2": "A enumeração não é uma pergunta.",
+          "3": "A enumeração não expressa uma exclamação nesse ponto."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_pontuacao_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "pontuacao",
+        "question": "Rafa quer saber quem trouxe o desenho. Complete a fala: “Quem trouxe este desenho___”",
+        "options": [
+          "Ponto de interrogação (?)",
+          "Ponto final (.)",
+          "Vírgula (,)",
+          "Dois-pontos (:)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Perguntas diretas terminam com ponto de interrogação.",
+        "wrongExplanations": {
+          "1": "A frase é uma pergunta direta.",
+          "2": "A vírgula não encerra a pergunta.",
+          "3": "Os dois-pontos não encerram perguntas diretas."
+        },
+        "skill": "escolher-sinais-adequados-ao-sentido-e-a-intencao-da-frase",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Pontuação"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "pontuacao-final8-02-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "pontuacao",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A passagem solicitada é exclusivamente linguística e o contexto curricular está completo para o 3º ano, T3 de 2026.",
+      "A questão 2026t3v2_pt_pontuacao_006 apresenta instrução clara, linguagem adequada à série e formulação coerente com a emoção indicada.",
+      "A questão 2026t3v2_pt_pontuacao_007 explicita o entusiasmo, usa linguagem natural e não cria ambiguidade linguística entre as alternativas.",
+      "A questão 2026t3v2_pt_pontuacao_008 formula uma pergunta direta com vocabulário adequado e sem revelar a resposta no enunciado.",
+      "A questão 2026t3v2_pt_pontuacao_009 apresenta a enumeração e as alternativas com clareza, correção gramatical e paralelismo suficiente.",
+      "A questão 2026t3v2_pt_pontuacao_010 contextualiza a intenção interrogativa de forma clara e adequada ao terceiro ano.",
+      "As cinco propostas estão em português, possuem instruções compreensíveis, quatro alternativas preenchidas e feedback textual coerente, sem lacunas indevidas ou resposta revelada.",
+      "A prova de isolamento informa ausência de ferramentas, conectores, navegadores e servidores MCP ativos."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote exato submetido a esta passagem; qualquer alteração textual deve reabrir a revisão linguística.",
+      "Submeter o lote à aprovação humana e aos demais gates independentes antes de implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "9d9627de-962d-429e-8fb6-d46d017abb84",
+    "packageSha256": "40a5cfb350a1b6171de1ca9de43739224fd84ff1ae6482e40cb43141c491c2bb",
+    "batchProposalSha256": "5af42f470fb60ba5bdedad372cf0705114a1a63768b8f1c42b633b373b54cafc",
+    "batchQuestionIds": [
+      "2026t3v2_pt_pontuacao_006",
+      "2026t3v2_pt_pontuacao_007",
+      "2026t3v2_pt_pontuacao_008",
+      "2026t3v2_pt_pontuacao_009",
+      "2026t3v2_pt_pontuacao_010"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T01:38:42.077Z",
+    "testOnly": false
+  }
+}

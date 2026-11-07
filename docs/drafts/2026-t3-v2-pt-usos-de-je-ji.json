@@ -1,0 +1,615 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "portugues",
+  "topic": "usos-de-je-ji",
+  "topicName": "Usos de JE/JI",
+  "status": "draft_pending_reviews",
+  "sourceRef": {
+    "referenceId": "escola-2026-t3-final-novembro",
+    "section": "Português",
+    "topic": "usos-de-je-ji"
+  },
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "jeito, jejum, jipe",
+        "geito, jejum, jipe",
+        "jeito, gejum, jipe",
+        "jeito, jejum, gipe"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “jeito”, “jejum” e “jipe”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”.",
+        "2": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "3": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gipe, jeitoso, hoje",
+        "jipe, jeitoso, hoje",
+        "jipe, geitoso, hoje",
+        "jipe, jeitoso, hoge"
+      ],
+      "correctIndex": 1,
+      "explanation": "As grafias corretas são “jipe”, “jeitoso” e “hoje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "2": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "3": "Na opção, “hoge” está escrita com G no lugar do J de “hoje”. A grafia correta é “hoje”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "hoge, jeito, jiló",
+        "hoje, geito, jiló",
+        "hoje, jeito, jiló",
+        "hoje, jeito, giló"
+      ],
+      "correctIndex": 2,
+      "explanation": "A lista correta reúne hoje, jeito, jiló. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "0": "Na opção, “hoge” troca a letra J por G em “hoje”. A grafia correta é “hoje”.",
+        "1": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “giló” troca a letra J por G em “jiló”. A grafia correta é “jiló”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giboia, laje, jeito",
+        "jiboia, lage, jeito",
+        "jiboia, laje, geito",
+        "jiboia, laje, jeito"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jiboia”, “laje” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “giboia” está escrita com G no lugar do J de “jiboia”. A grafia correta é “jiboia”.",
+        "1": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "sujeira, jiló, jipe",
+        "sugeira, jiló, jipe",
+        "sujeira, giló, jipe",
+        "sujeira, jiló, gipe"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “sujeira”, “jiló” e “jipe”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “sugeira” está escrita com G no lugar do J de “sujeira”. A grafia correta é “sujeira”.",
+        "2": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "geito, jiló, jejum",
+        "jeito, jiló, jejum",
+        "jeito, giló, jejum",
+        "jeito, jiló, gejum"
+      ],
+      "correctIndex": 1,
+      "explanation": "As grafias corretas são “jeito”, “jiló” e “jejum”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "0": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”.",
+        "2": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "lage, jejum, jiló",
+        "laje, gejum, jiló",
+        "laje, jejum, jiló",
+        "laje, jejum, giló"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “laje”, “jejum” e “jiló”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”.",
+        "1": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "3": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giló, jeitoso, jejum",
+        "jiló, geitoso, jejum",
+        "jiló, jeitoso, gejum",
+        "jiló, jeitoso, jejum"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jiló”, “jeitoso” e “jejum”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "1": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "2": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "laranjeira, jipe, jeito",
+        "larangeira, jipe, jeito",
+        "laranjeira, gipe, jeito",
+        "laranjeira, jipe, geito"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “laranjeira”, “jipe” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "1": "Na opção, “larangeira” está escrita com G no lugar do J de “laranjeira”. A grafia correta é “laranjeira”.",
+        "2": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente. Uma delas deve nomear quem tem uma loja para vender produtos.",
+      "options": [
+        "logista, jejum, jiboia",
+        "lojista, jejum, jiboia",
+        "lojista, gejum, jiboia",
+        "lojista, jejum, giboia"
+      ],
+      "correctIndex": 1,
+      "explanation": "“Lojista” é quem tem uma loja para vender produtos. “Jejum” e “jiboia” também são palavras escritas com J nas sílabas JE e JI.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 8,
+      "wrongExplanations": {
+        "0": "Neste enunciado, a forma que corresponde ao significado pedido é “lojista”, com J.",
+        "2": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "3": "Na opção, “giboia” está escrita com G no lugar do J de “jiboia”. A grafia correta é “jiboia”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "ceregeira, jipe, laje",
+        "cerejeira, gipe, laje",
+        "cerejeira, jipe, laje",
+        "cerejeira, jipe, lage"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “cerejeira”, “jipe” e “laje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “ceregeira” está escrita com G no lugar do J de “cerejeira”. A grafia correta é “cerejeira”.",
+        "1": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "cangiquinha, hoje, jeito",
+        "canjiquinha, hoge, jeito",
+        "canjiquinha, hoje, geito",
+        "canjiquinha, hoje, jeito"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “canjiquinha”, “hoje” e “jeito”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “cangiquinha” está escrita com G no lugar do J de “canjiquinha”. A grafia correta é “canjiquinha”.",
+        "1": "Na opção, “hoge” está escrita com G no lugar do J de “hoje”. A grafia correta é “hoje”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "jejum, jeito, jiló",
+        "gejum, jeito, jiló",
+        "jejum, geito, jiló",
+        "jejum, jeito, giló"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grafias corretas são “jejum”, “jeito” e “jiló”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "1": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”.",
+        "2": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giboia, jeito, jipe",
+        "jiboia, jeito, jipe",
+        "jiboia, geito, jipe",
+        "jiboia, jeito, gipe"
+      ],
+      "correctIndex": 1,
+      "explanation": "A lista correta reúne jiboia, jeito, jipe. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "0": "Na opção, “giboia” troca a letra J por G em “jiboia”. A grafia correta é “jiboia”.",
+        "2": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “gipe” troca a letra J por G em “jipe”. A grafia correta é “jipe”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "sugeira, jiló, laje",
+        "sujeira, giló, laje",
+        "sujeira, jiló, laje",
+        "sujeira, jiló, lage"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “sujeira”, “jiló” e “laje”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "0": "Na opção, “sugeira” está escrita com G no lugar do J de “sujeira”. A grafia correta é “sujeira”.",
+        "1": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “lage” está escrita com G no lugar do J de “laje”. A grafia correta é “laje”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gipe, jeitoso, jiló",
+        "jipe, geitoso, jiló",
+        "jipe, jeitoso, giló",
+        "jipe, jeitoso, jiló"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jipe”, “jeitoso” e “jiló”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "1": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "2": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gorjeta, jeito, jejum",
+        "gorgeta, jeito, jejum",
+        "gorjeta, geito, jejum",
+        "gorjeta, jeito, gejum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lista correta reúne gorjeta, jeito, jejum. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "1": "Na opção, “gorgeta” troca a letra J por G em “gorjeta”. A grafia correta é “gorjeta”.",
+        "2": "Na opção, “geito” troca a letra J por G em “jeito”. A grafia correta é “jeito”.",
+        "3": "Na opção, “gejum” troca a letra J por G em “jejum”. A grafia correta é “jejum”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "ceregeira, jegue, jejum",
+        "cerejeira, jegue, jejum",
+        "cerejeira, gegue, jejum",
+        "cerejeira, jegue, gejum"
+      ],
+      "correctIndex": 1,
+      "explanation": "As grafias corretas são “cerejeira”, “jegue” e “jejum”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "0": "Na opção, “ceregeira” está escrita com G no lugar do J de “cerejeira”. A grafia correta é “cerejeira”.",
+        "2": "Na opção, “gegue” está escrita com G no lugar do J de “jegue”. A grafia correta é “jegue”.",
+        "3": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "geitoso, jipe, jejum",
+        "jeitoso, gipe, jejum",
+        "jeitoso, jipe, jejum",
+        "jeitoso, jipe, gejum"
+      ],
+      "correctIndex": 2,
+      "explanation": "As grafias corretas são “jeitoso”, “jipe” e “jejum”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "1": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "3": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”."
+      },
+      "topicName": "Usos de JE/JI"
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "giló, jejum, jipe",
+        "jiló, gejum, jipe",
+        "jiló, jejum, gipe",
+        "jiló, jejum, jipe"
+      ],
+      "correctIndex": 3,
+      "explanation": "A lista correta reúne jiló, jejum, jipe. Cada palavra precisa ser escrita do jeito convencional; o som parecido pode aparecer com J em algumas palavras e com G em outras.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 3,
+      "wrongExplanations": {
+        "0": "Na opção, “giló” troca a letra J por G em “jiló”. A grafia correta é “jiló”.",
+        "1": "Na opção, “gejum” troca a letra J por G em “jejum”. A grafia correta é “jejum”.",
+        "2": "Na opção, “gipe” troca a letra J por G em “jipe”. A grafia correta é “jipe”."
+      },
+      "topicName": "Usos de JE/JI"
+    }
+  ]
+}

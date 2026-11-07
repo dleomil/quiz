@@ -1,0 +1,93 @@
+{
+  "scenarioId": "jeji-016-pedagogical-r06",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-016-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "gipe, jeitoso, jiló",
+        "jipe, geitoso, jiló",
+        "jipe, jeitoso, giló",
+        "jipe, jeitoso, jiló"
+      ],
+      "correctIndex": 3,
+      "explanation": "As grafias corretas são “jipe”, “jeitoso” e “jiló”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 4,
+      "wrongExplanations": {
+        "0": "Na opção, “gipe” está escrita com G no lugar do J de “jipe”. A grafia correta é “jipe”.",
+        "1": "Na opção, “geitoso” está escrita com G no lugar do J de “jeitoso”. A grafia correta é “jeitoso”.",
+        "2": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-016-pedagogical-r06",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-016 está completa e vinculada ao objetivo curricular de escolher a grafia correta de palavras com JE e JI para o 3º ano.",
+      "A alternativa de índice 3 é a única em que “jipe”, “jeitoso” e “jiló” estão grafadas corretamente.",
+      "Cada uma das três alternativas incorretas contém um único desvio com G no lugar de J, sem concorrer com a resposta correta.",
+      "A explicação identifica as três grafias corretas, e cada feedback incorreto aponta precisamente a palavra inadequada e sua correção.",
+      "A questão mede diretamente a habilidade autorizada, sem exigir conhecimento lateral ou recorrer a pegadinha.",
+      "A proposta permanece em estado draft e este parecer não substitui a aprovação humana."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e, depois, à aprovação pedagógica humana exigida antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "64ccbda7-6855-4a50-ba3f-eef746323233",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "ec8abad73c7ef0f51ce93dad6f6b5bba2073da124778f62c373b214e693b6829",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:29:18.481Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/016-pedagogical-r06-recovery.json",
+    "recoverySha256": "1effd85f4fcfea9d6b9755182d9c1c9b062bbb08d57eb1723cd9a5b02e971369"
+  }
+}

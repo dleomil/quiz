@@ -1,0 +1,219 @@
+{
+  "scenarioId": "usos-do-z-final3-01-pedagogical",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-do-z-final3-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-palavras-escritas-com-z",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Usos do Z"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer palavras escritas com Z",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "zebra",
+          "sebra",
+          "zebbra",
+          "cebra"
+        ],
+        "correctIndex": 0,
+        "explanation": "Zebra é escrita com Z no início.",
+        "wrongExplanations": {
+          "1": "A palavra zebra começa com Z.",
+          "2": "Zebra é escrita com um único B.",
+          "3": "A palavra zebra começa com Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “O resultado da conta foi ____.”",
+        "options": [
+          "sero",
+          "zero",
+          "zêro",
+          "cero"
+        ],
+        "correctIndex": 1,
+        "explanation": "Zero é escrito com Z.",
+        "wrongExplanations": {
+          "0": "A palavra zero começa com Z.",
+          "2": "Zero não recebe acento circunflexo.",
+          "3": "A grafia correta é zero, com Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra completa a frase? “O céu ficou ____ ao entardecer.”",
+        "options": [
+          "asul",
+          "azull",
+          "azul",
+          "azou"
+        ],
+        "correctIndex": 2,
+        "explanation": "Azul é escrito com Z.",
+        "wrongExplanations": {
+          "0": "A palavra azul é escrita com Z.",
+          "1": "Azul termina com um único L.",
+          "3": "A palavra que nomeia a cor é azul."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Como se escreve corretamente o nome da parte do rosto usada para sentir cheiros?",
+        "options": [
+          "narís",
+          "narisse",
+          "narizze",
+          "nariz"
+        ],
+        "correctIndex": 3,
+        "explanation": "Nariz é escrito com Z no final.",
+        "wrongExplanations": {
+          "0": "Nariz não recebe acento.",
+          "1": "A grafia correta é nariz, com Z.",
+          "2": "A palavra nariz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra escrita com Z significa contente?",
+        "options": [
+          "feliz",
+          "felis",
+          "felís",
+          "felizz"
+        ],
+        "correctIndex": 0,
+        "explanation": "Feliz significa contente e termina com Z.",
+        "wrongExplanations": {
+          "1": "A palavra feliz termina com Z.",
+          "2": "A palavra feliz não recebe acento.",
+          "3": "Feliz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-do-z-final3-01-pedagogical",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara proposta rastreável, objetivo curricular, 3º ano, manifesto congelado com aprovação humana e passagem pedagogical.",
+      "As cinco propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e feedback para cada alternativa incorreta.",
+      "2026t3v2_pt_usos_do_z_001 apresenta uma única resposta defensável: “zebra”.",
+      "2026t3v2_pt_usos_do_z_002 apresenta uma única resposta defensável no contexto da frase: “zero”.",
+      "2026t3v2_pt_usos_do_z_003 apresenta uma única grafia válida entre as alternativas: “azul”.",
+      "2026t3v2_pt_usos_do_z_004 apresenta uma única resposta defensável: “nariz”.",
+      "2026t3v2_pt_usos_do_z_005 apresenta uma única palavra corretamente grafada que significa “contente”: “feliz”.",
+      "Todas as questões medem o objetivo autorizado de reconhecer palavras escritas com Z, sem lacunas indevidas nem resposta revelada pelo enunciado.",
+      "As explicações e os feedbacks distinguem corretamente a resposta dos respectivos distratores."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação humana pedagógica antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "b864967c-2dd0-47ca-a659-5a51d18b0b29",
+    "packageSha256": "d68a714178aa5421258d4c3b1e172c2b2e4c54f15181558c2e8d4ca09b0a9841",
+    "batchProposalSha256": "07bfa59072f2bceb5446831abfb1b2ba7410dd6c4e65fab719ad141d21653007",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_do_z_001",
+      "2026t3v2_pt_usos_do_z_002",
+      "2026t3v2_pt_usos_do_z_003",
+      "2026t3v2_pt_usos_do_z_004",
+      "2026t3v2_pt_usos_do_z_005"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-04T01:55:37.596Z",
+    "testOnly": false
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "scenarioId": "jeji-006-pedagogical-r12",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "444-jeji-006-pedagogical-r12",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-grafias-com-je-ji",
+    "sourceRef": {
+      "referenceId": "escola-2026-t3-final-novembro",
+      "section": "Português",
+      "topic": "usos-de-je-ji"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Escolher a grafia correta de palavras com JE e JI",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposal": {
+      "schemaVersion": "content-v1",
+      "id": "T3F-PT-JEJI-006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "portugues",
+      "topic": "usos-de-je-ji",
+      "question": "No desafio de ortografia, marque a lista em que as três palavras estão escritas corretamente.",
+      "options": [
+        "geito, jiló, jejum",
+        "jeito, jiló, jejum",
+        "jeito, giló, jejum",
+        "jeito, jiló, gejum"
+      ],
+      "correctIndex": 1,
+      "explanation": "As grafias corretas são “jeito”, “jiló” e “jejum”. É preciso observar como cada palavra é escrita.",
+      "skill": "distinguir-grafias-com-je-ji",
+      "sourceRef": {
+        "referenceId": "escola-2026-t3-final-novembro",
+        "section": "Português",
+        "topic": "usos-de-je-ji"
+      },
+      "reviewStatus": "draft",
+      "version": 5,
+      "wrongExplanations": {
+        "0": "Na opção, “geito” está escrita com G no lugar do J de “jeito”. A grafia correta é “jeito”.",
+        "2": "Na opção, “giló” está escrita com G no lugar do J de “jiló”. A grafia correta é “jiló”.",
+        "3": "Na opção, “gejum” está escrita com G no lugar do J de “jejum”. A grafia correta é “jejum”."
+      }
+    }
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "444-jeji-006-pedagogical-r12",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-de-je-ji",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta T3F-PT-JEJI-006 está completa e vinculada ao objetivo curricular de escolher grafias corretas de palavras com JE e JI para o 3º ano.",
+      "A alternativa de índice 1 é a única defensável: “jeito”, “jiló” e “jejum” estão grafadas corretamente.",
+      "Cada distrator contém exatamente uma troca plausível de J por G, sem duplicidade ou alternativa concorrente com a resposta correta.",
+      "A explicação identifica as três grafias corretas, e cada feedback incorreto aponta a palavra específica, explica a troca inadequada e apresenta sua grafia correta.",
+      "A questão mede diretamente a habilidade autorizada, sem exigir conhecimento lateral ou recorrer a pegadinha.",
+      "Esta aprovação refere-se exclusivamente à passagem pedagogical e não substitui a passagem linguistic nem a aprovação humana do pacote exato."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter a proposta inalterada a uma passagem linguistic independente.",
+      "Manter pendente a aprovação humana editorial vinculada ao hash exato do pacote antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial-recovered",
+    "runId": "7a17bdbd-30b1-4c8b-9b88-64f6375f80f3",
+    "packageSha256": "d1667c3adc5cca24ae5b5d2898e485d62a5b4eb57679c520dc305ad050fa7095",
+    "proposalSha256": "79b1570ac4b14bf380d60013d4e4832b0ca4c2c5d2fb818385cad4aa73f11d45",
+    "agent": "pedagogical_quality",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-03T15:43:05.419Z",
+    "testOnly": false,
+    "recoveryEvidencePath": "docs/editorial/2026-t3-v2-portugues-jeji-pilot/006-pedagogical-r12-recovery.json",
+    "recoverySha256": "67ac9b9034de464fc4211224604c83225d484dc4272de0b4dca7270c4de20531"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "scenarioId": "usos-do-z-final3-04-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "usos-do-z-final3-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "reconhecer-palavras-escritas-com-z",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 6",
+      "topic": "Usos do Z"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer palavras escritas com Z",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “A ____ da planta fica no solo.”",
+        "options": [
+          "raís",
+          "raizz",
+          "rais",
+          "raiz"
+        ],
+        "correctIndex": 3,
+        "explanation": "Raiz nomeia a parte da planta que fica no solo e termina com Z.",
+        "wrongExplanations": {
+          "0": "A palavra raiz não recebe acento e termina com Z.",
+          "1": "Raiz termina com um único Z.",
+          "2": "A grafia correta é raiz, com Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra está escrita corretamente?",
+        "options": [
+          "luz",
+          "lus",
+          "lús",
+          "luzz"
+        ],
+        "correctIndex": 0,
+        "explanation": "Luz é escrita com Z no final.",
+        "wrongExplanations": {
+          "1": "A grafia correta de luz termina com Z.",
+          "2": "Luz termina com Z e não recebe acento.",
+          "3": "Luz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Complete: “A ____ está no alto da colina.”",
+        "options": [
+          "crus",
+          "cruz",
+          "crús",
+          "cruzz"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cruz é escrita com Z no final.",
+        "wrongExplanations": {
+          "0": "A forma singular cruz termina com Z.",
+          "2": "“Crús” está incorreta: a palavra cruz termina com Z e não recebe acento.",
+          "3": "Cruz termina com um único Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual palavra contém a letra Z?",
+        "options": [
+          "cidade",
+          "saudade",
+          "amizade",
+          "verdade"
+        ],
+        "correctIndex": 2,
+        "explanation": "Amizade é escrita com Z.",
+        "wrongExplanations": {
+          "0": "Cidade é escrita com D e não contém Z.",
+          "1": "Saudade é escrita com D e não contém Z.",
+          "3": "Verdade é escrita com D e não contém Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_usos_do_z_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "usos-do-z",
+        "question": "Qual grafia completa corretamente a frase “O ____ ajudou a carregar as caixas”?",
+        "options": [
+          "rapas",
+          "rapáz",
+          "rapaiz",
+          "rapaz"
+        ],
+        "correctIndex": 3,
+        "explanation": "No singular, rapaz termina com Z.",
+        "wrongExplanations": {
+          "0": "No singular, a grafia correta termina com Z.",
+          "1": "Rapaz não recebe acento.",
+          "2": "Rapaz não tem I antes do Z."
+        },
+        "skill": "reconhecer-palavras-escritas-com-z",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 6",
+          "topic": "Usos do Z"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "usos-do-z-final3-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "usos-do-z",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A passagem solicitada e executada é exclusivamente linguistic.",
+      "O contexto declara 3º ano, 2026, T3, manifesto congelado, aprovação humana do congelamento, fonte autorizada e objetivo curricular rastreável.",
+      "2026t3v2_pt_usos_do_z_016 apresenta instrução clara em português, concordância adequada, lacuna suficiente e alternativas linguisticamente distinguíveis.",
+      "2026t3v2_pt_usos_do_z_017 apresenta enunciado direto, grafia e pontuação corretas, sem ambiguidade entre as alternativas.",
+      "2026t3v2_pt_usos_do_z_018 apresenta frase natural e adequada à série; explicação e feedbacks estão redigidos com clareza.",
+      "2026t3v2_pt_usos_do_z_019 apresenta instrução objetiva e alternativas sem duplicidade ou equivalência; os feedbacks correspondem a cada distrator.",
+      "2026t3v2_pt_usos_do_z_020 apresenta instrução compreensível, frase bem formada e feedbacks coerentes com os erros gráficos de cada alternativa.",
+      "Nenhum enunciado revela explicitamente a resposta correta antes da escolha.",
+      "As cinco propostas possuem quatro alternativas, explicação da resposta correta e três feedbacks indexados pelas alternativas incorretas.",
+      "As cinco propostas usam linguagem respeitosa, clara e adequada ao terceiro ano."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter as propostas sem alteração linguística.",
+      "Submeter o pacote exato à passagem pedagógica independente e à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "d7bff5ab-8833-4368-9152-2a2ce1fa9018",
+    "packageSha256": "d68a714178aa5421258d4c3b1e172c2b2e4c54f15181558c2e8d4ca09b0a9841",
+    "batchProposalSha256": "964e20ca32827eec18bcaad16396c9580ef0c6d13e73e6b1709cf706af83f2cd",
+    "batchQuestionIds": [
+      "2026t3v2_pt_usos_do_z_016",
+      "2026t3v2_pt_usos_do_z_017",
+      "2026t3v2_pt_usos_do_z_018",
+      "2026t3v2_pt_usos_do_z_019",
+      "2026t3v2_pt_usos_do_z_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-04T01:59:11.008Z",
+    "testOnly": false
+  }
+}

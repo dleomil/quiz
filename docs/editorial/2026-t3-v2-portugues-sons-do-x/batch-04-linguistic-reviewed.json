@@ -1,0 +1,217 @@
+{
+  "scenarioId": "sons-do-x-r34-04-linguistic",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "sons-do-x-r34-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "sons-do-x",
+    "grade": "3-ano",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Português — Apostila 7",
+      "topic": "Sons do X"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer os diferentes sons representados pela letra X em palavras usuais.",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "https://github.com/dleomil/quiz/issues/401#issuecomment-6592047369"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_sons_x_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "sons-do-x",
+        "question": "Qual palavra tem X com som de S?",
+        "options": [
+          "experiência",
+          "xícara",
+          "enxame",
+          "caixa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em experiência, X tem som de S.",
+        "wrongExplanations": {
+          "1": "Em xícara, X tem som de CH.",
+          "2": "Em enxame, X tem som de CH.",
+          "3": "Em caixa, X tem som de CH."
+        },
+        "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Sons do X"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_sons_x_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "sons-do-x",
+        "question": "Em “enxame”, X tem som parecido com…",
+        "options": [
+          "CH",
+          "Z",
+          "S",
+          "KS"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em enxame, X tem som parecido com CH.",
+        "wrongExplanations": {
+          "1": "O X de enxame tem som de CH.",
+          "2": "O X de enxame não tem som de S.",
+          "3": "O X de enxame não tem som de KS."
+        },
+        "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Sons do X"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_sons_x_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "sons-do-x",
+        "question": "Qual palavra tem X com som de KS?",
+        "options": [
+          "táxi",
+          "xícara",
+          "exato",
+          "enxada"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em táxi, o X representa os sons de K e S juntos.",
+        "wrongExplanations": {
+          "1": "Em xícara, o X tem som parecido com CH.",
+          "2": "Em exato, o X tem som de Z.",
+          "3": "Em enxada, o X tem som parecido com CH."
+        },
+        "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Sons do X"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_sons_x_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "sons-do-x",
+        "question": "Em qual palavra X tem som parecido com CH?",
+        "options": [
+          "peixe",
+          "exemplo",
+          "exato",
+          "texto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em peixe, X tem som parecido com CH.",
+        "wrongExplanations": {
+          "1": "Em exemplo, X tem som de Z.",
+          "2": "Em exato, X tem som de Z.",
+          "3": "Em texto, X tem som de KS."
+        },
+        "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Sons do X"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_pt_sons_x_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "portugues",
+        "topic": "sons-do-x",
+        "question": "Em qual palavra X tem som de Z?",
+        "options": [
+          "exato",
+          "próximo",
+          "texto",
+          "xarope"
+        ],
+        "correctIndex": 0,
+        "explanation": "Em exato, X tem som de Z.",
+        "wrongExplanations": {
+          "1": "Em próximo, X tem som de S.",
+          "2": "Em texto, X tem som de KS.",
+          "3": "Em xarope, X tem som parecido com CH."
+        },
+        "skill": "distinguir-sons-do-x-em-palavras-contextualizadas",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Português — Apostila 7",
+          "topic": "Sons do X"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "sons-do-x-r34-04-linguistic",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "portugues",
+    "topicId": "sons-do-x",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada apresenta rastreabilidade completa, objetivo curricular autorizado, 3º ano, manifesto congelado e passagem linguistic declarada.",
+      "As cinco propostas possuem instruções em português, quatro alternativas, resposta definida, explicação e feedback para cada alternativa incorreta.",
+      "A questão 2026t3v2_pt_sons_x_016 apresenta redação clara, ortografia correta e alternativas linguisticamente adequadas.",
+      "A questão 2026t3v2_pt_sons_x_017 usa uma construção de completamento clara; as reticências não criam lacuna indevida nem revelam a resposta.",
+      "A questão 2026t3v2_pt_sons_x_018 explica a combinação dos sons de K e S em linguagem compreensível para o 3º ano.",
+      "As questões 2026t3v2_pt_sons_x_019 e 2026t3v2_pt_sons_x_020 têm enunciados diretos, pontuação correta e vocabulário adequado à série.",
+      "Não foram identificadas lacunas textuais, instruções em idioma inadequado, formulações ambíguas ou revelação antecipada da resposta nas cinco propostas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o pacote exato submetido nesta passagem e encaminhá-lo às demais revisões independentes e à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "isolated-editorial",
+    "runId": "d0542122-a9f3-421c-a225-512bece74830",
+    "packageSha256": "18fd5836c35ad254aee33ef7cead3869f1060dcb86e6a2ba46c01ad628a84cd6",
+    "batchProposalSha256": "beb7bff0740d0ec0944d1f366414e5b1b429a97717c991b82980dd53a2dad1ae",
+    "batchQuestionIds": [
+      "2026t3v2_pt_sons_x_016",
+      "2026t3v2_pt_sons_x_017",
+      "2026t3v2_pt_sons_x_018",
+      "2026t3v2_pt_sons_x_019",
+      "2026t3v2_pt_sons_x_020"
+    ],
+    "agent": "pedagogical_quality",
+    "pass": "linguistic",
+    "completedAt": "2026-11-05T16:51:19.304Z",
+    "testOnly": false
+  }
+}
