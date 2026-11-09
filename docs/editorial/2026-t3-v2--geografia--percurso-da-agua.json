@@ -231,5 +231,11 @@
     "sourceSha256": "f9c618c99b1f8f665e68ca4c27e49cc14edcd62d5668058a37af4b4e98c149a8",
     "test": "content-delivery-ui",
     "evidenceRef": "https://quiz-git-fix-geografia-runtime-20-859623-dleomil-6036s-projects.vercel.app"
+  },
+  "approval": {
+    "kind": "editorial",
+    "sourceSha256": "f9c618c99b1f8f665e68ca4c27e49cc14edcd62d5668058a37af4b4e98c149a8",
+    "approvedBy": "dleomil",
+    "evidenceRef": "https://github.com/dleomil/quiz/pull/457#issuecomment-6754393599"
   }
 }
