@@ -13,6 +13,7 @@
   "humanApprovers": ["dleomil"],
   "repository": "dleomil/quiz",
   "runtimeFiles": [
+    "js/data/t3-geografia-v2-published.js",
     "js/data/t3-matematica-published.js",
     "js/data/t3-portugues-expansion-published.js",
     "js/data/t3-portugues-published.js",
