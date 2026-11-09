@@ -1,6 +1,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
+const os = require('node:os');
 const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
@@ -65,7 +66,7 @@ async function run() {
     assert.ok(homeTitle.includes('Quiz Etapa'));
 
     await page.screenshot({
-      path: '/private/tmp/panel-base.png',
+      path: path.join(os.tmpdir(), 'panel-base.png'),
       fullPage: true,
     });
 

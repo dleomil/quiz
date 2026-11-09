@@ -129,6 +129,11 @@ jobs:
           CONTENT_DELIVERY_ARTIFACTS="$RUNNER_TEMP/content-delivery/pilot" npm run test:ui:content-delivery-pilot
           CONTENT_DELIVERY_RESULT="$RUNNER_TEMP/content-delivery.json" CONTENT_DELIVERY_ARTIFACTS="$RUNNER_TEMP/content-delivery/publication" npm run test:ui:content-delivery
 
+      - name: Executar verificacao local integral
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: npm run verify:local
+
       - name: Preservar evidencias do piloto e do lote publicado
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

@@ -1,6 +1,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
+const os = require('node:os');
 const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
@@ -125,7 +126,7 @@ async function run() {
 
     await page.waitForTimeout(1200);
     await page.screenshot({
-      path: '/private/tmp/quiz-trimester-history-desktop.png',
+      path: path.join(os.tmpdir(), 'quiz-trimester-history-desktop.png'),
       fullPage: true,
     });
 
@@ -149,7 +150,7 @@ async function run() {
       `Horizontal overflow: ${JSON.stringify(mobileWidth)}`,
     );
     await page.screenshot({
-      path: '/private/tmp/quiz-trimester-selector-mobile.png',
+      path: path.join(os.tmpdir(), 'quiz-trimester-selector-mobile.png'),
       fullPage: true,
     });
 

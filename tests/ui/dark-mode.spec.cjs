@@ -1,6 +1,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
+const os = require('node:os');
 const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
@@ -102,7 +103,7 @@ async function run() {
     assert.ok(wrongFeedback.blocks[1].explain.length > 0);
 
     await page.screenshot({
-      path: '/private/tmp/quiz-feedback-wrong.png',
+      path: path.join(os.tmpdir(), 'quiz-feedback-wrong.png'),
       fullPage: true,
     });
 
@@ -132,7 +133,7 @@ async function run() {
     assert.deepStrictEqual(correctFeedback.labels, ['Você acertou']);
 
     await page.screenshot({
-      path: '/private/tmp/quiz-feedback-correct.png',
+      path: path.join(os.tmpdir(), 'quiz-feedback-correct.png'),
       fullPage: true,
     });
 

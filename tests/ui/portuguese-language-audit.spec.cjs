@@ -2,6 +2,7 @@
 const assert = require('assert');
 const { spawn } = require('child_process');
 const path = require('path');
+const os = require('node:os');
 const { chromium } = require('./playwright-browser.cjs');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
@@ -118,7 +119,10 @@ async function run() {
     );
     await page.waitForTimeout(500);
     await page.screenshot({
-      path: '/private/tmp/quiz-portuguese-language-audit-desktop.png',
+      path: path.join(
+        os.tmpdir(),
+        'quiz-portuguese-language-audit-desktop.png',
+      ),
       fullPage: true,
     });
 
@@ -129,7 +133,7 @@ async function run() {
     }));
     assert.ok(viewport.scrollWidth <= viewport.clientWidth);
     await page.screenshot({
-      path: '/private/tmp/quiz-portuguese-language-audit-mobile.png',
+      path: path.join(os.tmpdir(), 'quiz-portuguese-language-audit-mobile.png'),
       fullPage: true,
     });
 
