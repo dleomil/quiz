@@ -226,5 +226,10 @@
       "verification": "pedagogical",
       "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
     }
-  ]
+  ],
+  "visual": {
+    "sourceSha256": "b607890afd303fbfcb5bbaa1ed01eb53b9dbcc56e33d02a53f5794351c358241",
+    "test": "content-delivery-ui",
+    "evidenceRef": "https://quiz-git-fix-geografia-runtime-20-859623-dleomil-6036s-projects.vercel.app"
+  }
 }
