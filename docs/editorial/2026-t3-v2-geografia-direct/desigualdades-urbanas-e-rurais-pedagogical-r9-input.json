@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "desigualdades-urbanas-e-rurais",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "desigualdades-urbanas-e-rurais",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Desigualdades urbanas e rurais"
+  },
+  "questionVersion": 5,
+  "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, a rede ainda não chega às moradias. Que desigualdade a turma está comparando?",
+      "options": [
+        "Diferença no acesso à água segura.",
+        "Diferença no acesso à coleta de lixo.",
+        "Diferença no acesso ao esgotamento sanitário.",
+        "Diferença no acesso à educação."
+      ],
+      "correctIndex": 0,
+      "explanation": "A turma compara o acesso à água segura: em um lugar ela chega às casas, e no outro ainda não.",
+      "wrongExplanations": {
+        "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+        "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+        "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 5
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

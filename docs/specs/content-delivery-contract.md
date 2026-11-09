@@ -208,3 +208,32 @@ a linha `Reconheco recuperacao editorial hash <hash-do-conjunto>` no comentário
 de aceite, vinculada a `approval.recoveryBundleSha256` e à lista ordenada
 `recoveryReports` com caminhos e hashes dos relatórios. A linha de aceite do
 pacote continua obrigatória. Acervos anteriores permanecem no contrato original.
+
+## Delegacao direta para novos lotes de 2026-t3-v2
+
+Para Geografia, Historia, Ingles, Matematica e Ciencias, o coordenador pode
+invocar diretamente instancias novas de `pedagogical_quality`, somente leitura,
+com uma passagem por instancia. As duas passagens de cada ID exigem instancias
+distintas. Nao se exige login dedicado, versao da CLI nem novo aceite de baseline
+para este caminho; o congelamento curricular e o aceite editorial humano seguem
+obrigatorios. O caminho isolado anterior preserva seu contrato e seus gates.
+
+A evidencia `direct-editorial` registra entrada completa com ate 20 propostas,
+objetivo da matriz congelada, serie, referencia autorizada e `checklist` contendo
+`question`, `options`, `answer`, `explanation` e `wrongExplanations`.
+A resposta original deve ser preservada integralmente em `originalResponse`
+no relatorio `direct-editorial-report-v1`, sem reescrita ou aprovacao sintetizada.
+Ela e JSON com `output` no contrato editorial e `results`, uma entrada por ID,
+com `questionId`, `decision`, `findings`, `doubts` e `checks` contendo uma
+justificativa textual para cada item do checklist, inclusive na passagem linguistica.
+
+O relatorio inclui `input`, `agent`, `agentInstanceId`, `runId`, `pass`,
+`completedAt`, `testOnly: false` e `sha256` calculado sobre todos os outros campos
+com JSON canonico. A execucao aponta `originalReportPath` e
+`originalReportSha256`, repete os metadados e registra `questionSha256s` de todas
+as propostas. A evidencia compara entrada, resposta e hashes com as questoes
+atuais. Arquivo ausente, cobertura parcial, instancia repetida entre passagens,
+achado aberto ou proposta divergente bloqueiam a entrega. Revisoes inalteradas
+permanecem validas por hash individual; alteracoes exigem nova revisao dos IDs
+afetados. Estes registros comprovam rastreabilidade documental e nao constituem
+recibos de CLI nem prova de isolamento. Nunca inventar identidade ou resposta.

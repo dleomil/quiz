@@ -1,0 +1,99 @@
+{
+  "scenarioId": "01a1c231-bc8c-7021-bccb-c4ad5645d78b:01a1c231-bcac-7740-9eb1-f9ad0aa041f5",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 6,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, os moradores ainda não têm acesso a água própria para consumo. Que desigualdade a turma está comparando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A turma compara o acesso à água própria para consumo: em um lugar ela chega às casas, e no outro os moradores ainda não têm esse acesso.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+          "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+          "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 6
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta apresenta enunciado, quatro alternativas, resposta, explicação e três feedbacks para alternativas incorretas.",
+      "A linguagem é clara, respeitosa e adequada ao 3º ano.",
+      "Não foram identificados problemas de ortografia, gramática, naturalidade ou ambiguidade linguística."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c231-bc8c-7021-bccb-c4ad5645d78b",
+    "runId": "01a1c231-bc8c-7021-bccb-c4ad5645d78b:01a1c231-bcac-7740-9eb1-f9ad0aa041f5",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T21:23:45.177Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_desigualdades_urbanas_e_rurais_015": "1a34ed9d854b4436f401984ea813fcf80eeb706a15389cbbe6d0b61ab79702b1"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r10-original.json",
+    "originalReportSha256": "7ad3b62b7f314e52e7624ba49a5c0434dd8f6d7be47a7407e2ae7f000d7fc1a1"
+  }
+}

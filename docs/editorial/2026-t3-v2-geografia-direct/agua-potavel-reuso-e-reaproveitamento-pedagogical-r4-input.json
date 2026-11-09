@@ -1,0 +1,92 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "agua-potavel-reuso-e-reaproveitamento",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Água potável, reúso e reaproveitamento"
+  },
+  "questionVersion": 4,
+  "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma caixa-d’água tem uma tampa bem ajustada. Qual é a finalidade dessa tampa?",
+      "options": [
+        "Retirar sujeira já misturada na água.",
+        "Comprovar a potabilidade apenas pela aparência.",
+        "Levar a água do reservatório até as torneiras.",
+        "Evitar a entrada de sujeira na água armazenada."
+      ],
+      "correctIndex": 3,
+      "explanation": "A tampa bem ajustada ajuda a impedir a entrada de sujeira na água armazenada.",
+      "wrongExplanations": {
+        "0": "A tampa impede a entrada de sujeira, mas não retira o que já está misturado na água.",
+        "1": "A aparência não comprova a potabilidade. A tampa protege a água, mas não substitui a verificação de qualidade.",
+        "2": "A distribuição até as torneiras depende de tubulações; a tampa e a limpeza protegem a água armazenada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma pessoa vai preparar uma bebida para a família. Qual deve ser a qualidade da água usada?",
+      "options": [
+        "Própria para consumo humano.",
+        "Transparente, mesmo que sua origem seja desconhecida.",
+        "Adequada apenas para dar descargas.",
+        "Recolhida da chuva, sem avaliação de qualidade."
+      ],
+      "correctIndex": 0,
+      "explanation": "A água usada no preparo de bebidas deve ser potável, isto é, própria para consumo humano.",
+      "wrongExplanations": {
+        "1": "A transparência não comprova que a água seja própria para consumo humano.",
+        "2": "Água destinada apenas a descargas não deve ser usada no preparo de bebidas.",
+        "3": "A água da chuva não deve ser considerada própria para beber sem avaliação de qualidade."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

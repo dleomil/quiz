@@ -92,12 +92,12 @@
     },
     {
       "id": "editorial-agent-output",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "status": "active",
       "type": "contract",
       "owner": "content",
       "sourcePath": "docs/specs/editorial-agent-output-contract.md",
-      "sha256": "654b7c89ff30fc95a5db6a7516b62fa286639f0137e7583e960099fb33a79131",
+      "sha256": "6e9e58532cf9152763ca34eca5792dac4a2d71e6be738851d38af2a31008026e",
       "appliesTo": ["editorial-agents", "editorial-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["validated editorial agent output"]
@@ -184,12 +184,12 @@
     },
     {
       "id": "content-delivery-contract",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "status": "active",
       "type": "contract",
       "owner": "content",
       "sourcePath": "docs/specs/content-delivery-contract.md",
-      "sha256": "0e519a2656eab8e7b67211730b225b22760c68147b4f860a0337b91f1aca9b78",
+      "sha256": "0919eb687494b8c919f3f3af3cf0730f81fac24ab0fd5c0ead1010eea4865074",
       "appliesTo": ["content-updates", "editorial-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": [

@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "tecnologia-no-campo",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "tecnologia-no-campo",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Tecnologia no campo"
+  },
+  "questionVersion": 4,
+  "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Uma família passou a usar uma colheitadeira para recolher grãos. O que mudou nessa etapa do trabalho no campo?",
+      "options": [
+        "A colheita dos grãos passou a ser feita com uma máquina.",
+        "A previsão do tempo passou a medir a umidade da terra.",
+        "O sensor de umidade passou a recolher os grãos.",
+        "O trator passou a informar quando vai chover."
+      ],
+      "correctIndex": 0,
+      "explanation": "A colheitadeira realiza parte da colheita dos grãos com uma máquina, mudando essa etapa do trabalho no campo.",
+      "wrongExplanations": {
+        "1": "A previsão do tempo informa condições como chuva e temperatura; ela não mede a umidade da terra.",
+        "2": "O sensor mede a umidade do solo, mas não recolhe os grãos. Essa tarefa pode ser feita pela colheitadeira.",
+        "3": "O trator pode ajudar em tarefas no campo, mas não informa quando vai chover. A previsão do tempo dá essa informação."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

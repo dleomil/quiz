@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "agua-nos-centros-urbanos",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "agua-nos-centros-urbanos",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Água nos centros urbanos"
+  },
+  "questionVersion": 3,
+  "authorizedObjective": "Reconhecer abastecimento, saneamento e consumo urbano",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Um comércio muda a forma de fazer a limpeza para usar apenas a água necessária. Que atitude está sendo adotada?",
+      "options": [
+        "Consumo urbano responsável.",
+        "Ampliação do acesso ao saneamento.",
+        "Tratamento da água para abastecimento.",
+        "Tratamento de esgoto."
+      ],
+      "correctIndex": 0,
+      "explanation": "Usar apenas a água necessária na limpeza de um comércio ajuda a evitar desperdício.",
+      "wrongExplanations": {
+        "1": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+        "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+        "3": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 3
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

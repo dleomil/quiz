@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 6,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, os moradores ainda não têm acesso a água própria para consumo. Que desigualdade a turma está comparando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A turma compara o acesso à água própria para consumo: em um lugar ela chega às casas, e no outro os moradores ainda não têm esse acesso.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+          "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+          "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 6
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"desigualdades-urbanas-e-rurais\",\"reviewPass\":\"pedagogical\",\"decision\":\"approved\",\"facts\":[\"A proposta mede a comparação do acesso à água entre duas localidades, em coerência com o objetivo curricular autorizado.\",\"A resposta correta é única e defensável pelas informações do enunciado.\",\"O conteúdo evita estereótipos sobre populações urbanas ou rurais e é seguro para o 3º ano.\"],\"doubts\":[],\"findings\":[],\"recommendations\":[\"Submeter o pacote exato à aprovação humana pedagógica, que permanece obrigatória.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Apresenta duas situações contrastantes e oferece informação suficiente para identificar a desigualdade no acesso à água.\",\"options\":\"Os quatro serviços são distintos; as alternativas incorretas são plausíveis, mas não concorrem com a resposta correta.\",\"answer\":\"O índice 0 é a única resposta defensável, pois o contraste descrito trata diretamente do acesso à água segura.\",\"explanation\":\"Retoma corretamente o contraste entre ter e não ter acesso à água própria para consumo, apoiando a aprendizagem.\",\"wrongExplanations\":\"Os três feedbacks distinguem corretamente lixo, esgotamento sanitário e educação do abastecimento de água.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c231-a1f6-73f0-9c56-835d3e5f1e60",
+  "runId": "01a1c231-a1f6-73f0-9c56-835d3e5f1e60:01a1c231-a21b-7f01-9393-65cd7e61425f",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T21:23:38.648Z",
+  "testOnly": false,
+  "sha256": "968d7af613466dab51dd31c8118f0eaa194f7f3e107bc13e2b2f426fe0cfca18"
+}

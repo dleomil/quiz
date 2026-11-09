@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "tecnologia-no-campo",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "tecnologia-no-campo",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Tecnologia no campo"
+  },
+  "questionVersion": 3,
+  "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Antes de comprar uma máquina, uma família verifica quanto ela custa, quais tarefas precisa realizar e como é o terreno. Que cuidado está tomando?",
+      "options": [
+        "Trator.",
+        "Previsão do tempo.",
+        "Colheitadeira.",
+        "Escolha de tecnologia adequada à propriedade."
+      ],
+      "correctIndex": 3,
+      "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+      "wrongExplanations": {
+        "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+        "1": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+        "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 3
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

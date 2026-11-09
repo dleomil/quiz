@@ -1,0 +1,121 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "desigualdades-urbanas-e-rurais",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "desigualdades-urbanas-e-rurais",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Desigualdades urbanas e rurais"
+  },
+  "questionVersion": 4,
+  "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "linguistic",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Uma região tem profissionais de saúde para atender os moradores; em outra, faltam profissionais para as consultas. Que desigualdade aparece?",
+      "options": [
+        "Diferença no acesso à saúde.",
+        "Diferença no acesso à internet.",
+        "Diferença no acesso à coleta de lixo.",
+        "Diferença no acesso à água segura."
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma localidade tem mais profissionais para atender consultas do que a outra. Essa diferença mostra desigualdade no acesso à saúde.",
+      "wrongExplanations": {
+        "1": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Neste caso, o enunciado compara o acesso à saúde.",
+        "2": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Neste caso, o enunciado compara o acesso à saúde.",
+        "3": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara o acesso à saúde."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Em uma região há atendimento de saúde regular; em outra, os moradores têm dificuldade para conseguir consultas. Qual diferença está descrita?",
+      "options": [
+        "Diferença no acesso à água segura.",
+        "Diferença no acesso à saúde.",
+        "Diferença no acesso à internet.",
+        "Diferença no acesso à coleta de lixo."
+      ],
+      "correctIndex": 1,
+      "explanation": "As localidades diferem na facilidade de conseguir consultas; isso mostra uma diferença no acesso à saúde.",
+      "wrongExplanations": {
+        "0": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara o acesso à saúde.",
+        "2": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Neste caso, o enunciado compara o acesso à saúde.",
+        "3": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Neste caso, o enunciado compara o acesso à saúde."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Uma turma compara dois lugares: em um, chega água própria para consumo; no outro, a qualidade da água não foi verificada. Que desigualdade está observando?",
+      "options": [
+        "Diferença no acesso à água segura.",
+        "Diferença no acesso à coleta de lixo.",
+        "Diferença no acesso ao esgotamento sanitário.",
+        "Diferença no acesso à educação."
+      ],
+      "correctIndex": 0,
+      "explanation": "Os lugares diferem na segurança da água que chega aos moradores. Essa é uma diferença de acesso à água segura.",
+      "wrongExplanations": {
+        "1": "A coleta de lixo trata do recolhimento de resíduos, mas a situação compara a qualidade da água.",
+        "2": "O esgotamento sanitário trata da coleta e do tratamento de esgoto, mas a situação compara a água para consumo.",
+        "3": "A educação envolve o acesso à escola e às oportunidades de estudo, não a qualidade da água que chega aos moradores."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

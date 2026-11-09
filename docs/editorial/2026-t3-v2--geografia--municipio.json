@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/municipio",
+  "sourceSha256": "e8fa13153c135092b53926c00e4ce1308f2c95a02e0a801ac5dcdd2e244cce66",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_municipio_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r5-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r5-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_municipio_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r1-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

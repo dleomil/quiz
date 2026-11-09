@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "tecnologia-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Tecnologia no campo"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Antes de comprar uma máquina, uma família verifica quanto ela custa, quais tarefas precisa realizar e como é o terreno. Que cuidado está tomando?",
+        "options": [
+          "Trator.",
+          "Previsão do tempo.",
+          "Colheitadeira.",
+          "Escolha de tecnologia adequada à propriedade."
+        ],
+        "correctIndex": 3,
+        "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+        "wrongExplanations": {
+          "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "1": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"tecnologia-no-campo\",\"reviewPass\":\"linguistic\",\"decision\":\"blocked\",\"facts\":[\"A entrada declara o objetivo curricular, o 3º ano do Ensino Fundamental, a referência autorizada e a passagem linguistic.\",\"A proposta apresenta enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks indexados para as alternativas incorretas.\",\"As alternativas, a explicação e os três feedbacks estão gramaticalmente corretos e usam linguagem adequada ao 3º ano.\"],\"doubts\":[\"O enunciado não explicita se “ela” retoma a máquina ou a família, nem se as tarefas são realizadas pela máquina ou pela família.\"],\"findings\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_020\",\"criterion\":\"clareza e ambiguidade referencial\",\"severity\":\"blocking\",\"evidence\":\"Em “uma família verifica quanto ela custa, quais tarefas precisa realizar”, o pronome “ela” pode retomar “máquina” ou “família”, ambas femininas e singulares, e o sujeito oculto de “precisa realizar” também permanece indefinido. A reformulação ainda exige que a criança deduza os referentes.\",\"recommendation\":\"Explicitar separadamente o preço da máquina e quem precisa realizar as tarefas, evitando pronome e sujeito oculto com mais de um referente possível.\"}],\"recommendations\":[\"Reformular o enunciado para eliminar a ambiguidade dos referentes de custo e tarefas.\",\"Submeter a proposta corrigida a nova passagem linguística independente.\",\"Manter obrigatória a aprovação editorial humana do pacote exato antes de implementação ou publicação.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_020\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_020\",\"criterion\":\"clareza e ambiguidade referencial\",\"severity\":\"blocking\",\"evidence\":\"Em “uma família verifica quanto ela custa, quais tarefas precisa realizar”, o pronome “ela” pode retomar “máquina” ou “família”, ambas femininas e singulares, e o sujeito oculto de “precisa realizar” também permanece indefinido. A reformulação ainda exige que a criança deduza os referentes.\",\"recommendation\":\"Explicitar separadamente o preço da máquina e quem precisa realizar as tarefas, evitando pronome e sujeito oculto com mais de um referente possível.\"}],\"doubts\":[\"O enunciado não explicita se “ela” retoma a máquina ou a família, nem se as tarefas são realizadas pela máquina ou pela família.\"],\"checks\":{\"question\":\"A pergunta final é natural, mas a frase anterior mantém ambiguidade referencial em “ela” e no sujeito oculto de “precisa realizar”, o que prejudica a clareza para o 3º ano.\",\"options\":\"As quatro alternativas são distintas, legíveis, corretamente pontuadas e adequadas à faixa etária.\",\"answer\":\"A alternativa indicada nomeia o cuidado pretendido, mas o enunciado não apresenta com clareza suficiente os referentes usados para descrever esse cuidado.\",\"explanation\":\"A explicação é gramaticalmente correta, curta e acessível, relacionando condições, custos e necessidades à escolha dos equipamentos.\",\"wrongExplanations\":\"Os três feedbacks estão corretamente indexados, são compreensíveis e distinguem as máquinas e a previsão do tempo do cuidado de escolher tecnologia adequada.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c229-e36f-7171-ba41-3b9c8dac86d4",
+  "runId": "01a1c229-e36f-7171-ba41-3b9c8dac86d4:01a1c229-e395-7a93-be27-98af78c3fca4",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T21:15:59.203Z",
+  "testOnly": false,
+  "sha256": "b58c454bc4ba93efdbced89f9db30fde60852d2005d3389d4dd8d3716b85eec0"
+}

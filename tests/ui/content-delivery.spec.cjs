@@ -15,11 +15,16 @@ const {
 const ROOT = path.resolve(__dirname, '../..');
 const pilot = process.argv.includes('--pilot');
 const preview = process.argv.includes('--preview');
+const draftGeografia = process.argv.includes('--draft-geografia');
 const outputDirectory =
   process.env.CONTENT_DELIVERY_ARTIFACTS ||
   fs.mkdtempSync(path.join(os.tmpdir(), 'quiz-content-delivery-ui-'));
 async function run() {
   assert.ok(!(pilot && preview), 'Piloto e preview sao modos distintos.');
+  assert.ok(
+    !draftGeografia || preview,
+    'Candidato de Geografia exige --preview.',
+  );
   let result;
   if (pilot) {
     const questions =
@@ -55,6 +60,19 @@ async function run() {
     return;
   }
   const sources = JSON.parse(JSON.stringify(loadContentSources(ROOT)));
+  if (draftGeografia) {
+    for (const batch of batches) {
+      assert.match(batch.key, /^2026-t3-v2\/geografia\//);
+      const draftPath = path.join(
+        ROOT,
+        'docs/drafts',
+        `2026-t3-v2-geo-${batch.key.split('/')[2]}.json`,
+      );
+      const draft = JSON.parse(fs.readFileSync(draftPath, 'utf8'));
+      assert.ok(draft.questions.every((q) => q.reviewStatus === 'draft'));
+      sources.geografia.questions.push(...draft.questions);
+    }
+  }
   const expected = batches.flatMap((batch) => {
     const [contentSetId, subject, topic] = batch.key.split('/');
     const questions = sources[subject].questions.filter(
@@ -120,15 +138,26 @@ async function run() {
           theme,
         );
         for (const question of expected) {
-          const loaded = await page.evaluate(
+          const runtimeQuestion = await page.evaluate(
             (id) => QuestionsDB.getAll().find((q) => q.id === id),
             question.id,
           );
-          assert.deepEqual(
-            loaded,
-            question,
-            `${question.id}: o destino deve carregar a versao validada`,
-          );
+          let loaded;
+          if (draftGeografia) {
+            assert.equal(
+              runtimeQuestion,
+              undefined,
+              `${question.id}: candidato deve permanecer fora do runtime`,
+            );
+            loaded = question;
+          } else {
+            assert.deepEqual(
+              runtimeQuestion,
+              question,
+              `${question.id}: o destino deve carregar a versao validada`,
+            );
+            loaded = runtimeQuestion;
+          }
           await page.evaluate((q) => {
             Store.set({
               selectedContentSet: q.contentSetId,

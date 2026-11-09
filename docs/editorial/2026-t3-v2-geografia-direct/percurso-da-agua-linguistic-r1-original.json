@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "percurso-da-agua",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "percurso-da-agua",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Percurso da água"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer escoamento e caminhos da água na paisagem",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Após a chuva, a água desce por uma rua inclinada. Que caminho ela faz?",
+        "options": [
+          "Escoamento pela superfície.",
+          "Infiltração no solo.",
+          "Formação de nuvens.",
+          "Afluente."
+        ],
+        "correctIndex": 0,
+        "explanation": "A água corre sobre o chão em direção a lugares mais baixos.",
+        "wrongExplanations": {
+          "1": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Em um terreno inclinado, a água da chuva corre sobre o solo até uma parte mais baixa. O que ocorre?",
+        "options": [
+          "Afluente.",
+          "Escoamento pela superfície.",
+          "Infiltração no solo.",
+          "Formação de nuvens."
+        ],
+        "correctIndex": 1,
+        "explanation": "A água corre sobre o chão em direção a lugares mais baixos.",
+        "wrongExplanations": {
+          "0": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada.",
+          "2": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas. Essa alternativa não descreve a situação apresentada.",
+          "3": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "A água da chuva entra pelos espaços de um solo sem pavimentação. Qual processo ocorre?",
+        "options": [
+          "Precipitação.",
+          "Foz.",
+          "Infiltração no solo.",
+          "Evaporação."
+        ],
+        "correctIndex": 2,
+        "explanation": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas.",
+        "wrongExplanations": {
+          "0": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada.",
+          "1": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar. Essa alternativa não descreve a situação apresentada.",
+          "3": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Em um jardim, parte da chuva penetra na terra, em vez de correr pela calçada. Qual é esse caminho?",
+        "options": [
+          "Evaporação.",
+          "Precipitação.",
+          "Foz.",
+          "Infiltração no solo."
+        ],
+        "correctIndex": 3,
+        "explanation": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas.",
+        "wrongExplanations": {
+          "0": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "1": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada.",
+          "2": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Depois de um dia quente, uma poça fica menor porque parte da água passa para o ar. Qual processo ocorre?",
+        "options": [
+          "Evaporação.",
+          "Formação de nuvens.",
+          "Nascente.",
+          "Leito do rio."
+        ],
+        "correctIndex": 0,
+        "explanation": "Água líquida passa para o ar na forma de vapor.",
+        "wrongExplanations": {
+          "1": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada.",
+          "3": "É o caminho no terreno por onde as águas do rio correm. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Roupas molhadas secam quando a água passa para o ar na forma de vapor. O que acontece com essa água?",
+        "options": [
+          "Leito do rio.",
+          "Evaporação.",
+          "Formação de nuvens.",
+          "Nascente."
+        ],
+        "correctIndex": 1,
+        "explanation": "Água líquida passa para o ar na forma de vapor.",
+        "wrongExplanations": {
+          "0": "É o caminho no terreno por onde as águas do rio correm. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Ao esfriar no alto, o vapor de água pode dar origem a pequenas gotas suspensas no ar. O que elas podem formar?",
+        "options": [
+          "Afluente.",
+          "Dificuldade de infiltração.",
+          "Formação de nuvens.",
+          "Precipitação."
+        ],
+        "correctIndex": 2,
+        "explanation": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens.",
+        "wrongExplanations": {
+          "0": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada.",
+          "1": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "No céu, muitas gotinhas de água se agrupam e ficam suspensas no ar. Qual fenômeno está sendo descrito?",
+        "options": [
+          "Precipitação.",
+          "Afluente.",
+          "Dificuldade de infiltração.",
+          "Formação de nuvens."
+        ],
+        "correctIndex": 3,
+        "explanation": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens.",
+        "wrongExplanations": {
+          "0": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada.",
+          "2": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Gotinhas se juntam nas nuvens e a chuva cai sobre o campo. Como se chama a chegada dessa água ao chão?",
+        "options": [
+          "Precipitação.",
+          "Nascente.",
+          "Foz.",
+          "Escoamento pela superfície."
+        ],
+        "correctIndex": 0,
+        "explanation": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva.",
+        "wrongExplanations": {
+          "1": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada.",
+          "2": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar. Essa alternativa não descreve a situação apresentada.",
+          "3": "A água corre sobre o chão em direção a lugares mais baixos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "A água cai das nuvens sobre uma cidade na forma de chuva. Qual processo está ocorrendo?",
+        "options": [
+          "Escoamento pela superfície.",
+          "Precipitação.",
+          "Nascente.",
+          "Foz."
+        ],
+        "correctIndex": 1,
+        "explanation": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva.",
+        "wrongExplanations": {
+          "0": "A água corre sobre o chão em direção a lugares mais baixos. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada.",
+          "3": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Em uma encosta, a água sai do solo e dá início a um pequeno riacho. Como se chama esse lugar?",
+        "options": [
+          "Leito do rio.",
+          "Infiltração no solo.",
+          "Nascente.",
+          "Afluente."
+        ],
+        "correctIndex": 2,
+        "explanation": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água.",
+        "wrongExplanations": {
+          "0": "É o caminho no terreno por onde as águas do rio correm. Essa alternativa não descreve a situação apresentada.",
+          "1": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Um grupo visita o lugar onde começa um rio. Qual parte do rio o grupo visita?",
+        "options": [
+          "Afluente.",
+          "Leito do rio.",
+          "Infiltração no solo.",
+          "Nascente."
+        ],
+        "correctIndex": 3,
+        "explanation": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água.",
+        "wrongExplanations": {
+          "0": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada.",
+          "1": "É o caminho no terreno por onde as águas do rio correm. Essa alternativa não descreve a situação apresentada.",
+          "2": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Um riacho termina ao encontrar um rio maior. O que esse riacho é em relação ao rio maior?",
+        "options": [
+          "Afluente.",
+          "Foz.",
+          "Dificuldade de infiltração.",
+          "Evaporação."
+        ],
+        "correctIndex": 0,
+        "explanation": "É um curso de água que deságua em outro rio.",
+        "wrongExplanations": {
+          "1": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar. Essa alternativa não descreve a situação apresentada.",
+          "2": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "No mapa, um rio menor leva suas águas para outro rio. Como se chama esse rio menor nessa relação?",
+        "options": [
+          "Evaporação.",
+          "Afluente.",
+          "Foz.",
+          "Dificuldade de infiltração."
+        ],
+        "correctIndex": 1,
+        "explanation": "É um curso de água que deságua em outro rio.",
+        "wrongExplanations": {
+          "0": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "2": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar. Essa alternativa não descreve a situação apresentada.",
+          "3": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Depois de percorrer a paisagem, um rio chega ao mar. Como se chama o lugar desse encontro?",
+        "options": [
+          "Escoamento pela superfície.",
+          "Formação de nuvens.",
+          "Foz.",
+          "Leito do rio."
+        ],
+        "correctIndex": 2,
+        "explanation": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar.",
+        "wrongExplanations": {
+          "0": "A água corre sobre o chão em direção a lugares mais baixos. Essa alternativa não descreve a situação apresentada.",
+          "1": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens. Essa alternativa não descreve a situação apresentada.",
+          "3": "É o caminho no terreno por onde as águas do rio correm. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Um rio termina seu percurso ao desaguar em um lago. Que parte do rio é essa?",
+        "options": [
+          "Leito do rio.",
+          "Escoamento pela superfície.",
+          "Formação de nuvens.",
+          "Foz."
+        ],
+        "correctIndex": 3,
+        "explanation": "É o lugar onde um rio deságua em outro rio, em um lago ou no mar.",
+        "wrongExplanations": {
+          "0": "É o caminho no terreno por onde as águas do rio correm. Essa alternativa não descreve a situação apresentada.",
+          "1": "A água corre sobre o chão em direção a lugares mais baixos. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "As águas de um rio correm por uma faixa do terreno. Como se chama esse caminho?",
+        "options": [
+          "Leito do rio.",
+          "Dificuldade de infiltração.",
+          "Infiltração no solo.",
+          "Precipitação."
+        ],
+        "correctIndex": 0,
+        "explanation": "É o caminho no terreno por onde as águas do rio correm.",
+        "wrongExplanations": {
+          "1": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada.",
+          "2": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas. Essa alternativa não descreve a situação apresentada.",
+          "3": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Mesmo quando há pouca água, é possível ver o caminho do rio no terreno. Qual é o nome desse caminho?",
+        "options": [
+          "Precipitação.",
+          "Leito do rio.",
+          "Dificuldade de infiltração.",
+          "Infiltração no solo."
+        ],
+        "correctIndex": 1,
+        "explanation": "É o caminho no terreno por onde as águas do rio correm.",
+        "wrongExplanations": {
+          "0": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada.",
+          "2": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Parte da água entra nos espaços do solo e pode seguir para camadas mais profundas. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Um quintal de terra foi coberto com concreto. Que mudança pode aumentar a quantidade de água correndo sobre ele na chuva?",
+        "options": [
+          "Evaporação.",
+          "Nascente.",
+          "Dificuldade de infiltração.",
+          "Escoamento pela superfície."
+        ],
+        "correctIndex": 2,
+        "explanation": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo.",
+        "wrongExplanations": {
+          "0": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada.",
+          "3": "A água corre sobre o chão em direção a lugares mais baixos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Em uma área asfaltada, a chuva encontra menos espaços para entrar na terra. Qual situação ajuda a explicar o aumento da água na superfície?",
+        "options": [
+          "Escoamento pela superfície.",
+          "Evaporação.",
+          "Nascente.",
+          "Dificuldade de infiltração."
+        ],
+        "correctIndex": 3,
+        "explanation": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo.",
+        "wrongExplanations": {
+          "0": "A água corre sobre o chão em direção a lugares mais baixos. Essa alternativa não descreve a situação apresentada.",
+          "1": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"percurso-da-agua\",\"reviewPass\":\"linguistic\",\"decision\":\"adjustments_required\",\"facts\":[\"A entrada declara Geografia, tema percurso da água, 3º ano do Ensino Fundamental e objetivo curricular congelado.\",\"Foram avaliadas individualmente as 20 propostas fornecidas.\",\"Todas as propostas apresentam enunciado, quatro opções, resposta indicada, explicação e três feedbacks para alternativas incorretas.\",\"A linguagem geral é respeitosa e compatível com o público infantil.\"],\"doubts\":[],\"findings\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_007\",\"criterion\":\"naturalidade e correspondência gramatical entre enunciado e resposta\",\"severity\":\"minor\",\"evidence\":\"O enunciado pergunta o que as gotas podem formar, mas a opção indicada nomeia o processo \\\"Formação de nuvens\\\", e não o objeto formado.\",\"recommendation\":\"Reformular a pergunta para solicitar o nome do fenômeno ou substituir a opção por \\\"Nuvens\\\", preservando a correspondência gramatical.\"},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_013\",\"criterion\":\"clareza do feedback da alternativa incorreta\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Foz\\\" afirma que a alternativa não descreve a situação, embora a chegada do riacho a outro rio também envolva uma foz; o motivo real da inadequação é que a pergunta pede o nome do riacho nessa relação.\",\"recommendation\":\"Explicar que foz é o lugar do encontro, enquanto o enunciado pede a denominação do curso de água menor.\"},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_014\",\"criterion\":\"clareza do feedback da alternativa incorreta\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Foz\\\" usa a afirmação genérica de que a opção não descreve a situação, embora o encontro entre os rios também determine uma foz; a distinção solicitada pelo enunciado não é explicitada.\",\"recommendation\":\"Dizer que foz nomeia o lugar onde o rio deságua, mas a pergunta solicita o nome do rio menor nessa relação.\"},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_019\",\"criterion\":\"precisão do feedback e distinção entre causa e efeito\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Escoamento pela superfície\\\" afirma que a opção não descreve a situação, mas o enunciado descreve justamente água correndo sobre o concreto; a opção não responde porque nomeia o efeito, enquanto a pergunta busca a condição que o aumenta.\",\"recommendation\":\"Reescrever o feedback para distinguir explicitamente o escoamento observado da dificuldade de infiltração que contribui para seu aumento.\"},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_020\",\"criterion\":\"precisão do feedback e distinção entre causa e efeito\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Escoamento pela superfície\\\" diz que a opção não descreve a situação, embora o aumento de água na superfície seja uma descrição desse escoamento; falta esclarecer que a pergunta procura sua explicação causal.\",\"recommendation\":\"Informar que o escoamento pela superfície é o fenômeno observado, enquanto a dificuldade de infiltração ajuda a explicar seu aumento.\"}],\"recommendations\":[\"Ajustar o enunciado ou a opção indicada da questão 007 para obter correspondência gramatical direta.\",\"Revisar os feedbacks indicados nas questões 013, 014, 019 e 020 para explicar a relação específica com cada enunciado.\",\"Submeter os cinco IDs alterados a nova passagem linguística independente antes da aprovação humana.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_001\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado curto, claro e adequado ao 3º ano.\",\"options\":\"As quatro opções são legíveis, distintas e apresentam terminologia compreensível no contexto.\",\"answer\":\"A opção indicada responde de modo linguisticamente compatível ao caminho descrito.\",\"explanation\":\"A explicação é breve, natural e esclarece o movimento da água.\",\"wrongExplanations\":\"Os três feedbacks são completos, respeitosos e distinguem as opções do cenário apresentado.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_002\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A situação e a pergunta estão redigidas com clareza e sem construção confusa.\",\"options\":\"As quatro opções são distintas e possuem redação uniforme.\",\"answer\":\"A resposta indicada se encaixa linguisticamente na pergunta sobre o que ocorre.\",\"explanation\":\"A frase é curta, correta e adequada à faixa etária.\",\"wrongExplanations\":\"Os três feedbacks definem as alternativas e indicam sua inadequação ao caso.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_003\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado apresenta ação concreta e pergunta direta.\",\"options\":\"As quatro opções são concisas, distintas e legíveis.\",\"answer\":\"A resposta indicada corresponde linguisticamente ao processo solicitado.\",\"explanation\":\"A explicação é clara e usa vocabulário acessível.\",\"wrongExplanations\":\"Os três feedbacks têm frases completas, tom respeitoso e contraste compreensível.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_004\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A oposição entre penetrar na terra e correr pela calçada torna a pergunta clara.\",\"options\":\"As quatro opções são distintas e estão redigidas de forma consistente.\",\"answer\":\"A opção indicada funciona como nome do caminho descrito.\",\"explanation\":\"A explicação é direta e adequada ao 3º ano.\",\"wrongExplanations\":\"Os três feedbacks são legíveis e explicam o significado das opções incorretas.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_005\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado usa exemplo cotidiano e formula pergunta direta.\",\"options\":\"As quatro opções são distintas e possuem redação concisa.\",\"answer\":\"A resposta indicada se encaixa naturalmente na pergunta sobre o processo.\",\"explanation\":\"A explicação é breve e compreensível.\",\"wrongExplanations\":\"Os três feedbacks são completos, respeitosos e linguisticamente claros.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_006\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A relação entre secagem e passagem da água para o ar está expressa com clareza.\",\"options\":\"As quatro opções são distintas e legíveis.\",\"answer\":\"A resposta nominal é compatível com a pergunta sobre o que acontece.\",\"explanation\":\"A frase é curta e usa vocabulário adequado à série.\",\"wrongExplanations\":\"Os três feedbacks são claros e não contêm problemas de ortografia ou concordância.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_007\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_007\",\"criterion\":\"naturalidade e correspondência gramatical entre enunciado e resposta\",\"severity\":\"minor\",\"evidence\":\"O enunciado pergunta o que as gotas podem formar, mas a opção indicada nomeia o processo \\\"Formação de nuvens\\\", e não o objeto formado.\",\"recommendation\":\"Reformular a pergunta para solicitar o nome do fenômeno ou substituir a opção por \\\"Nuvens\\\", preservando a correspondência gramatical.\"}],\"doubts\":[],\"checks\":{\"question\":\"O contexto é compreensível, mas a pergunta pede um objeto formado, não o nome de um fenômeno.\",\"options\":\"As quatro opções são legíveis e distintas, porém a forma nominal da opção indicada não completa naturalmente a pergunta.\",\"answer\":\"A resposta pretendida é identificável, mas apresenta incompatibilidade gramatical com \\\"o que elas podem formar\\\".\",\"explanation\":\"A explicação é clara, breve e adequada à faixa etária.\",\"wrongExplanations\":\"Os três feedbacks são completos, respeitosos e linguisticamente claros.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_008\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve o fenômeno em linguagem simples e pergunta diretamente por seu nome.\",\"options\":\"As quatro opções são distintas e redigidas de forma uniforme.\",\"answer\":\"A resposta indicada se encaixa naturalmente na pergunta.\",\"explanation\":\"A explicação é clara e adequada ao 3º ano.\",\"wrongExplanations\":\"Os três feedbacks são completos e contrastam as opções com a situação descrita.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A sequência descrita e a pergunta sobre a chegada da água ao chão são claras.\",\"options\":\"As quatro opções são concisas e distintas.\",\"answer\":\"A resposta indicada corresponde linguisticamente ao nome solicitado.\",\"explanation\":\"A explicação é breve, correta em sua redação e acessível.\",\"wrongExplanations\":\"Os três feedbacks são claros, respeitosos e completos.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é direto e não contém ambiguidade linguística.\",\"options\":\"As quatro opções são distintas e legíveis.\",\"answer\":\"A opção indicada responde naturalmente à pergunta sobre o processo.\",\"explanation\":\"A frase é curta e compreensível para a série.\",\"wrongExplanations\":\"Os três feedbacks estão completos e usam linguagem adequada.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_011\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A situação concreta conduz a uma pergunta clara sobre o lugar descrito.\",\"options\":\"As quatro opções são distintas e possuem redação concisa.\",\"answer\":\"A resposta indicada se encaixa diretamente na pergunta.\",\"explanation\":\"A explicação é clara e usa vocabulário acessível.\",\"wrongExplanations\":\"Os três feedbacks são completos e linguisticamente bem formados.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_012\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é curto, natural e adequado ao 3º ano.\",\"options\":\"As quatro opções são legíveis e distintas.\",\"answer\":\"A resposta indicada nomeia de forma compatível a parte solicitada.\",\"explanation\":\"A explicação é clara e orientada ao aprendizado.\",\"wrongExplanations\":\"Os três feedbacks apresentam frases completas e tom respeitoso.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_013\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_013\",\"criterion\":\"clareza do feedback da alternativa incorreta\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Foz\\\" afirma que a alternativa não descreve a situação, embora a chegada do riacho a outro rio também envolva uma foz; o motivo real da inadequação é que a pergunta pede o nome do riacho nessa relação.\",\"recommendation\":\"Explicar que foz é o lugar do encontro, enquanto o enunciado pede a denominação do curso de água menor.\"}],\"doubts\":[],\"checks\":{\"question\":\"A pergunta distingue claramente o riacho do rio maior e solicita o nome dessa relação.\",\"options\":\"As quatro opções são distintas; \\\"Foz\\\" exige feedback preciso porque nomeia o lugar do encontro, não o riacho.\",\"answer\":\"A resposta indicada se encaixa naturalmente na estrutura \\\"o que esse riacho é\\\".\",\"explanation\":\"A explicação é curta e linguisticamente adequada.\",\"wrongExplanations\":\"Dois feedbacks são claros; o feedback de \\\"Foz\\\" usa uma justificativa imprecisa e precisa explicitar a diferença entre lugar e curso de água.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_014\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_014\",\"criterion\":\"clareza do feedback da alternativa incorreta\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Foz\\\" usa a afirmação genérica de que a opção não descreve a situação, embora o encontro entre os rios também determine uma foz; a distinção solicitada pelo enunciado não é explicitada.\",\"recommendation\":\"Dizer que foz nomeia o lugar onde o rio deságua, mas a pergunta solicita o nome do rio menor nessa relação.\"}],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é natural e pede explicitamente o nome do rio menor na relação apresentada.\",\"options\":\"As quatro opções são distintas; a presença de \\\"Foz\\\" requer distinção clara entre o rio e o lugar onde ele deságua.\",\"answer\":\"A resposta indicada é linguisticamente compatível com o nome solicitado.\",\"explanation\":\"A explicação é breve e clara.\",\"wrongExplanations\":\"Dois feedbacks são adequados; o feedback de \\\"Foz\\\" não explica com precisão por que a opção não responde ao que foi perguntado.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_015\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A chegada do rio ao mar e a pergunta sobre o lugar do encontro estão claramente formuladas.\",\"options\":\"As quatro opções são distintas e legíveis.\",\"answer\":\"A resposta indicada nomeia diretamente o lugar solicitado.\",\"explanation\":\"A explicação é clara, breve e adequada à série.\",\"wrongExplanations\":\"Os três feedbacks são completos e distinguem adequadamente as opções.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_016\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é direto e pergunta de forma clara pela parte do rio descrita.\",\"options\":\"As quatro opções são distintas e possuem redação consistente.\",\"answer\":\"A opção indicada responde naturalmente à pergunta.\",\"explanation\":\"A explicação é curta e compreensível.\",\"wrongExplanations\":\"Os três feedbacks estão completos e apresentam linguagem respeitosa.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_017\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A descrição da faixa do terreno e a pergunta sobre o nome do caminho são claras.\",\"options\":\"As quatro opções são distintas e legíveis.\",\"answer\":\"A resposta indicada se encaixa diretamente no nome solicitado.\",\"explanation\":\"A explicação é breve e adequada ao público.\",\"wrongExplanations\":\"Os três feedbacks são completos, claros e linguisticamente corretos.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_018\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é compreensível e pergunta diretamente pelo nome do caminho do rio.\",\"options\":\"As quatro opções são distintas e apresentam terminologia consistente.\",\"answer\":\"A resposta indicada é linguisticamente compatível com a pergunta.\",\"explanation\":\"A explicação é simples e clara.\",\"wrongExplanations\":\"Os três feedbacks estão completos e usam linguagem adequada ao 3º ano.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_019\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_019\",\"criterion\":\"precisão do feedback e distinção entre causa e efeito\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Escoamento pela superfície\\\" afirma que a opção não descreve a situação, mas o enunciado descreve justamente água correndo sobre o concreto; a opção não responde porque nomeia o efeito, enquanto a pergunta busca a condição que o aumenta.\",\"recommendation\":\"Reescrever o feedback para distinguir explicitamente o escoamento observado da dificuldade de infiltração que contribui para seu aumento.\"}],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é compreensível e solicita a mudança que contribui para o aumento da água correndo na superfície.\",\"options\":\"As quatro opções são distintas, mas a proximidade entre causa e efeito exige feedback especialmente preciso.\",\"answer\":\"A resposta indicada funciona como condição explicativa para a mudança perguntada.\",\"explanation\":\"A explicação é clara e apresenta a relação em linguagem acessível.\",\"wrongExplanations\":\"Os feedbacks de \\\"Evaporação\\\" e \\\"Nascente\\\" são claros; o de \\\"Escoamento pela superfície\\\" nega incorretamente que a opção descreva o cenário, em vez de explicar que ela nomeia o efeito.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_020\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_020\",\"criterion\":\"precisão do feedback e distinção entre causa e efeito\",\"severity\":\"major\",\"evidence\":\"O feedback de \\\"Escoamento pela superfície\\\" diz que a opção não descreve a situação, embora o aumento de água na superfície seja uma descrição desse escoamento; falta esclarecer que a pergunta procura sua explicação causal.\",\"recommendation\":\"Informar que o escoamento pela superfície é o fenômeno observado, enquanto a dificuldade de infiltração ajuda a explicar seu aumento.\"}],\"doubts\":[],\"checks\":{\"question\":\"O enunciado estabelece a redução de espaços para entrada da água e pergunta pela situação que explica o aumento na superfície.\",\"options\":\"As quatro opções são distintas, mas causa e efeito precisam ser diferenciados claramente no feedback.\",\"answer\":\"A resposta indicada se encaixa linguisticamente como explicação para o aumento mencionado.\",\"explanation\":\"A explicação é breve, clara e apropriada à faixa etária.\",\"wrongExplanations\":\"Os feedbacks de \\\"Evaporação\\\" e \\\"Nascente\\\" são adequados; o de \\\"Escoamento pela superfície\\\" precisa explicar que a opção descreve o efeito, mas não sua causa.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1df-0ced-7a02-ba85-6d81c993d551",
+  "runId": "01a1c1df-0ced-7a02-ba85-6d81c993d551:2026-11-09T19:55:36.990Z",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T19:55:36.990Z",
+  "testOnly": false,
+  "sha256": "bf062ed6c47c1dae525ca303c9a4d0def4deea60d8c8895a028e8c94fb57ee55"
+}

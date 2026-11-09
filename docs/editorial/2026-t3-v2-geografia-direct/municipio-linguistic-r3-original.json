@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+        "options": [
+          "Endereço.",
+          "Município.",
+          "Bairro.",
+          "Espaço público."
+        ],
+        "correctIndex": 3,
+        "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "O endereço usa informações como rua, número e município para localizar um lugar. Ele não é uma categoria de espaço.",
+          "1": "O município é um território com administração local. Pode reunir áreas urbanas e rurais; não é o nome dado a uma praça.",
+          "2": "Um bairro é uma parte da cidade formada por diversas ruas e construções. A pergunta pede a classificação da praça, não da região onde ela fica."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"municipio\",\"reviewPass\":\"linguistic\",\"decision\":\"adjustments_required\",\"facts\":[\"A entrada declara 3º ano, objetivo curricular, referência autorizada, manifesto congelado e passagem linguística.\",\"A proposta contém enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks para alternativas incorretas.\",\"O enunciado, as alternativas, a resposta e a explicação estão claros, corretos e adequados ao público infantil.\"],\"doubts\":[],\"findings\":[{\"questionId\":\"2026t3v2_geo_municipio_016\",\"criterion\":\"naturalidade e adequação infantil de wrongExplanations\",\"severity\":\"minor\",\"evidence\":\"O feedback do índice 0 afirma que “o endereço usa informações” e emprega a expressão abstrata “categoria de espaço”, construções pouco naturais para o 3º ano.\",\"recommendation\":\"Reformular o feedback do índice 0 com linguagem concreta, explicando que um endereço é formado por informações usadas para localizar um lugar e que não classifica a praça.\"}],\"recommendations\":[\"Ajustar somente o feedback da alternativa “Endereço.” e submeter o ID alterado a nova passagem linguística independente.\",\"Manter a aprovação humana obrigatória antes de qualquer implementação ou publicação.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_municipio_016\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_municipio_016\",\"criterion\":\"naturalidade e adequação infantil de wrongExplanations\",\"severity\":\"minor\",\"evidence\":\"O feedback do índice 0 afirma que “o endereço usa informações” e emprega a expressão abstrata “categoria de espaço”, construções pouco naturais para o 3º ano.\",\"recommendation\":\"Reformular o feedback do índice 0 com linguagem concreta, explicando que um endereço é formado por informações usadas para localizar um lugar e que não classifica a praça.\"}],\"doubts\":[],\"checks\":{\"question\":\"Enunciado claro, gramaticalmente correto e compreensível para o 3º ano, sem dupla interpretação linguística.\",\"options\":\"As quatro alternativas são breves, paralelas, corretamente pontuadas e não apresentam duplicidade linguística.\",\"answer\":\"“Espaço público.” responde diretamente ao enunciado e está redigida de modo claro.\",\"explanation\":\"A explicação é curta, respeitosa, gramaticalmente correta e adequada à criança.\",\"wrongExplanations\":\"Os feedbacks dos índices 1 e 2 são claros; o do índice 0 requer ajuste por usar construção pouco natural e vocabulário abstrato para o 3º ano.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1f0-fd5a-7613-9baa-df2c2cadf4c4",
+  "runId": "01a1c1f0-fd5a-7613-9baa-df2c2cadf4c4:01a1c1f0-fd81-7b41-a4ae-807e8c83bd35",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T20:13:14.426Z",
+  "testOnly": false,
+  "sha256": "40beb57cdbae57bd07d20da3fc15fbef3e08f8c904e16be0c2c99cb397086909"
+}

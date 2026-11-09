@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Um bairro recebe água segura todos os dias, mas uma comunidade tem abastecimento irregular e sem qualidade verificada. Que desigualdade aparece?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação.",
+          "Diferença no acesso à coleta de lixo."
+        ],
+        "correctIndex": 0,
+        "explanation": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço.",
+        "wrongExplanations": {
+          "1": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Essa alternativa não descreve a situação apresentada.",
+          "2": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Essa alternativa não descreve a situação apresentada.",
+          "3": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Duas comunidades têm condições diferentes: uma conta com água própria para consumo, e outra ainda não. Que desigualdade está descrita?",
+        "options": [
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 1,
+        "explanation": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço.",
+        "wrongExplanations": {
+          "0": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Essa alternativa não descreve a situação apresentada.",
+          "2": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Essa alternativa não descreve a situação apresentada.",
+          "3": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma região tem coleta e tratamento de esgoto; outra ainda despeja esgoto sem tratamento por falta de atendimento. Que desigualdade aparece?",
+        "options": [
+          "Diferença no acesso ao transporte.",
+          "Melhoria dos serviços onde faltam.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à saúde."
+        ],
+        "correctIndex": 2,
+        "explanation": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades.",
+        "wrongExplanations": {
+          "0": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Essa alternativa não descreve a situação apresentada.",
+          "1": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso. Essa alternativa não descreve a situação apresentada.",
+          "3": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Moradores comparam duas localidades: em uma, o esgoto recebe tratamento; na outra, esse serviço não existe. Qual diferença foi observada?",
+        "options": [
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso ao transporte.",
+          "Melhoria dos serviços onde faltam.",
+          "Diferença no acesso ao esgotamento sanitário."
+        ],
+        "correctIndex": 3,
+        "explanation": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades.",
+        "wrongExplanations": {
+          "0": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde. Essa alternativa não descreve a situação apresentada.",
+          "1": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Essa alternativa não descreve a situação apresentada.",
+          "2": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma família tem posto de saúde próximo; outra precisa viajar muito para conseguir atendimento. Que desigualdade aparece?",
+        "options": [
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à educação.",
+          "Diferença no acesso à internet.",
+          "Comparação das condições de cada lugar."
+        ],
+        "correctIndex": 0,
+        "explanation": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde.",
+        "wrongExplanations": {
+          "1": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Essa alternativa não descreve a situação apresentada.",
+          "2": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Essa alternativa não descreve a situação apresentada.",
+          "3": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma região há atendimento de saúde regular; em outra, os moradores têm dificuldade para conseguir consultas. Qual diferença está descrita?",
+        "options": [
+          "Comparação das condições de cada lugar.",
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à educação.",
+          "Diferença no acesso à internet."
+        ],
+        "correctIndex": 1,
+        "explanation": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde.",
+        "wrongExplanations": {
+          "0": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade. Essa alternativa não descreve a situação apresentada.",
+          "2": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Essa alternativa não descreve a situação apresentada.",
+          "3": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma criança tem escola próxima e transporte disponível; outra mora longe e não tem transporte até a escola. Que desigualdade aparece?",
+        "options": [
+          "Diferença no acesso à coleta de lixo.",
+          "Respeito aos moradores de todos os lugares.",
+          "Diferença no acesso à educação.",
+          "Diferença no acesso ao transporte."
+        ],
+        "correctIndex": 2,
+        "explanation": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar.",
+        "wrongExplanations": {
+          "0": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Essa alternativa não descreve a situação apresentada.",
+          "1": "A falta de serviços não torna os moradores menos capazes ou menos importantes. Essa alternativa não descreve a situação apresentada.",
+          "3": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma escola tem materiais e espaços adequados, enquanto outra precisa dessas melhorias. Que diferença afeta os estudantes?",
+        "options": [
+          "Diferença no acesso ao transporte.",
+          "Diferença no acesso à coleta de lixo.",
+          "Respeito aos moradores de todos os lugares.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 3,
+        "explanation": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar.",
+        "wrongExplanations": {
+          "0": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Essa alternativa não descreve a situação apresentada.",
+          "1": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Essa alternativa não descreve a situação apresentada.",
+          "2": "A falta de serviços não torna os moradores menos capazes ou menos importantes. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Um bairro tem ônibus regulares, mas outra localidade não tem transporte coletivo para seus moradores. Que desigualdade aparece?",
+        "options": [
+          "Diferença no acesso ao transporte.",
+          "Diferença no acesso à internet.",
+          "Melhoria dos serviços onde faltam.",
+          "Diferença no acesso à água segura."
+        ],
+        "correctIndex": 0,
+        "explanation": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos.",
+        "wrongExplanations": {
+          "1": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Essa alternativa não descreve a situação apresentada.",
+          "2": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso. Essa alternativa não descreve a situação apresentada.",
+          "3": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma comunidade conta com caminhos em boas condições e ônibus; outra enfrenta estradas ruins e falta de veículos coletivos. Qual diferença está descrita?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso ao transporte.",
+          "Diferença no acesso à internet.",
+          "Melhoria dos serviços onde faltam."
+        ],
+        "correctIndex": 1,
+        "explanation": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos.",
+        "wrongExplanations": {
+          "0": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Essa alternativa não descreve a situação apresentada.",
+          "2": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma turma consegue fazer pesquisas pela internet; outra não tem conexão disponível em sua comunidade. Que desigualdade aparece?",
+        "options": [
+          "Comparação das condições de cada lugar.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à internet.",
+          "Diferença no acesso à coleta de lixo."
+        ],
+        "correctIndex": 2,
+        "explanation": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos.",
+        "wrongExplanations": {
+          "0": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade. Essa alternativa não descreve a situação apresentada.",
+          "1": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Essa alternativa não descreve a situação apresentada.",
+          "3": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Moradores de uma localidade têm conexão estável, enquanto outra não é atendida por redes de internet. Qual diferença foi observada?",
+        "options": [
+          "Diferença no acesso à coleta de lixo.",
+          "Comparação das condições de cada lugar.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à internet."
+        ],
+        "correctIndex": 3,
+        "explanation": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos.",
+        "wrongExplanations": {
+          "0": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Essa alternativa não descreve a situação apresentada.",
+          "1": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade. Essa alternativa não descreve a situação apresentada.",
+          "2": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma região tem recolhimento regular de lixo; outra ainda não conta com esse serviço. Qual desigualdade aparece?",
+        "options": [
+          "Diferença no acesso à coleta de lixo.",
+          "Melhoria dos serviços onde faltam.",
+          "Respeito aos moradores de todos os lugares.",
+          "Diferença no acesso à saúde."
+        ],
+        "correctIndex": 0,
+        "explanation": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos.",
+        "wrongExplanations": {
+          "1": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso. Essa alternativa não descreve a situação apresentada.",
+          "2": "A falta de serviços não torna os moradores menos capazes ou menos importantes. Essa alternativa não descreve a situação apresentada.",
+          "3": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Moradores de duas localidades comparam a retirada do lixo: em uma há coleta organizada, e na outra ela não chega. Que diferença está descrita?",
+        "options": [
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à coleta de lixo.",
+          "Melhoria dos serviços onde faltam.",
+          "Respeito aos moradores de todos os lugares."
+        ],
+        "correctIndex": 1,
+        "explanation": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos.",
+        "wrongExplanations": {
+          "0": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde. Essa alternativa não descreve a situação apresentada.",
+          "2": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso. Essa alternativa não descreve a situação apresentada.",
+          "3": "A falta de serviços não torna os moradores menos capazes ou menos importantes. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma comunidade não tem água segura e precisa de uma solução. Qual ação ajuda a reduzir essa desigualdade?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à educação.",
+          "Melhoria dos serviços onde faltam.",
+          "Comparação das condições de cada lugar."
+        ],
+        "correctIndex": 2,
+        "explanation": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso.",
+        "wrongExplanations": {
+          "0": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Essa alternativa não descreve a situação apresentada.",
+          "1": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Essa alternativa não descreve a situação apresentada.",
+          "3": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Após ouvir moradores, o município decide ampliar os serviços nas áreas ainda não atendidas. Qual medida pode reduzir diferenças de acesso?",
+        "options": [
+          "Comparação das condições de cada lugar.",
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à educação.",
+          "Melhoria dos serviços onde faltam."
+        ],
+        "correctIndex": 3,
+        "explanation": "Investir nos serviços de que uma comunidade precisa ajuda a reduzir desigualdades de acesso.",
+        "wrongExplanations": {
+          "0": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade. Essa alternativa não descreve a situação apresentada.",
+          "1": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Essa alternativa não descreve a situação apresentada.",
+          "2": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma turma quer saber quais áreas do município têm menos serviços. Qual atitude permite avaliar a situação sem generalizar sobre campo e cidade?",
+        "options": [
+          "Comparação das condições de cada lugar.",
+          "Respeito aos moradores de todos os lugares.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso ao transporte."
+        ],
+        "correctIndex": 0,
+        "explanation": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade.",
+        "wrongExplanations": {
+          "1": "A falta de serviços não torna os moradores menos capazes ou menos importantes. Essa alternativa não descreve a situação apresentada.",
+          "2": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Essa alternativa não descreve a situação apresentada.",
+          "3": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Antes de dizer que todos os bairros têm os mesmos serviços, que cuidado uma turma deve adotar?",
+        "options": [
+          "Diferença no acesso ao transporte.",
+          "Comparação das condições de cada lugar.",
+          "Respeito aos moradores de todos os lugares.",
+          "Diferença no acesso ao esgotamento sanitário."
+        ],
+        "correctIndex": 1,
+        "explanation": "É preciso observar dados e necessidades locais, pois há diferenças dentro do campo e dentro da cidade.",
+        "wrongExplanations": {
+          "0": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Essa alternativa não descreve a situação apresentada.",
+          "2": "A falta de serviços não torna os moradores menos capazes ou menos importantes. Essa alternativa não descreve a situação apresentada.",
+          "3": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma comunidade tem poucos serviços públicos. Que princípio deve orientar a maneira de tratar seus moradores?",
+        "options": [
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à internet.",
+          "Respeito aos moradores de todos os lugares.",
+          "Diferença no acesso à água segura."
+        ],
+        "correctIndex": 2,
+        "explanation": "A falta de serviços não torna os moradores menos capazes ou menos importantes.",
+        "wrongExplanations": {
+          "0": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde. Essa alternativa não descreve a situação apresentada.",
+          "1": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma turma estuda a falta de infraestrutura em alguns lugares. Qual atitude evita diminuir as pessoas que vivem ali?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à internet.",
+          "Respeito aos moradores de todos os lugares."
+        ],
+        "correctIndex": 3,
+        "explanation": "A falta de serviços não torna os moradores menos capazes ou menos importantes.",
+        "wrongExplanations": {
+          "0": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Essa alternativa não descreve a situação apresentada.",
+          "1": "A distância e a disponibilidade de atendimento podem dificultar o cuidado com a saúde. Essa alternativa não descreve a situação apresentada.",
+          "2": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"desigualdades-urbanas-e-rurais\",\"reviewPass\":\"linguistic\",\"decision\":\"blocked\",\"facts\":[\"A entrada declara objetivo curricular, 3º ano, fonte autorizada, manifesto congelado e passagem linguística.\",\"As 20 propostas contêm enunciado, quatro alternativas, resposta, explicação e três feedbacks incorretos.\",\"A proposta 007 admite duas respostas defensáveis: acesso à educação e acesso ao transporte.\"],\"doubts\":[\"Na proposta 007, não está linguisticamente definido se a desigualdade principal é educacional ou de transporte.\"],\"findings\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_007\",\"criterion\":\"Enunciado e alternativas sem dupla interpretação\",\"severity\":\"blocking\",\"evidence\":\"O enunciado informa simultaneamente que a criança mora longe da escola e não tem transporte. Assim, “Diferença no acesso à educação” e “Diferença no acesso ao transporte” são respostas defensáveis; o próprio feedback da opção de transporte confirma sua relação com deslocamentos.\",\"recommendation\":\"Reformular o enunciado para avaliar somente o acesso à educação ou retirar a alternativa de transporte.\"},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_008\",\"criterion\":\"Explicação clara e diretamente relacionada ao enunciado\",\"severity\":\"major\",\"evidence\":\"O enunciado trata de materiais e espaços escolares, mas a explicação introduz a distância da escola, fator não apresentado na situação.\",\"recommendation\":\"Explicar diretamente como a disponibilidade de materiais e espaços adequados afeta as condições de estudo.\"},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_012\",\"criterion\":\"Naturalidade e coesão da comparação\",\"severity\":\"minor\",\"evidence\":\"A construção “Moradores de uma localidade têm conexão estável, enquanto outra não é atendida” compara moradores com outra localidade, produzindo paralelismo pouco natural.\",\"recommendation\":\"Comparar localidades entre si ou escrever “enquanto os moradores de outra não têm esse atendimento”.\"},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_020\",\"criterion\":\"Linguagem clara e adequada ao terceiro ano\",\"severity\":\"major\",\"evidence\":\"A expressão “evita diminuir as pessoas” pode ser entendida literalmente por crianças e não expressa com precisão a ideia de desvalorização.\",\"recommendation\":\"Substituir por formulação concreta, como “evita tratar essas pessoas como menos importantes”.\"}],\"recommendations\":[\"Resolver a ambiguidade bloqueante da proposta 007 antes de novo parecer.\",\"Alinhar a explicação da proposta 008 ao caso apresentado.\",\"Aprimorar a coesão da proposta 012 e a expressão potencialmente confusa da proposta 020.\",\"Submeter o pacote corrigido a nova passagem linguística e à aprovação humana.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_001\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O contraste entre abastecimento regular e irregular está claro e adequado à série.\",\"options\":\"As quatro alternativas são distintas e nomeiam serviços diferentes.\",\"answer\":\"“Diferença no acesso à água segura” responde diretamente ao enunciado.\",\"explanation\":\"A explicação é curta, respeitosa e retoma qualidade e regularidade da água.\",\"wrongExplanations\":\"Os três feedbacks explicam com clareza por que esgoto, educação e lixo não descrevem o caso.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_002\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A comparação entre comunidades está escrita com clareza e sem estereótipos.\",\"options\":\"As alternativas são distintas e têm redação simples.\",\"answer\":\"A opção sobre água segura é a única coerente com a situação.\",\"explanation\":\"O texto explica de modo adequado a diferença de qualidade e regularidade.\",\"wrongExplanations\":\"Os feedbacks de lixo, esgoto e educação são claros e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_003\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado apresenta com clareza a diferença no tratamento de esgoto.\",\"options\":\"As alternativas são legíveis, distintas e não repetem o mesmo sentido.\",\"answer\":\"A resposta sobre esgotamento sanitário é linguisticamente inequívoca.\",\"explanation\":\"A explicação é direta e adequada ao vocabulário do terceiro ano.\",\"wrongExplanations\":\"Os feedbacks distinguem transporte, melhoria de serviços e saúde sem linguagem inadequada.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_004\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A comparação entre as duas localidades é natural e compreensível.\",\"options\":\"As opções são diferentes e estão redigidas de forma consistente.\",\"answer\":\"A alternativa sobre esgotamento sanitário corresponde claramente ao enunciado.\",\"explanation\":\"A explicação é breve e retoma a variação de acesso ao serviço.\",\"wrongExplanations\":\"Os feedbacks de saúde, transporte e melhoria de serviços são claros e específicos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_005\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A diferença de distância até o atendimento de saúde está clara.\",\"options\":\"As alternativas são distintas e adequadas à faixa etária.\",\"answer\":\"A opção sobre acesso à saúde é a única que nomeia a situação.\",\"explanation\":\"A explicação relaciona distância e disponibilidade ao cuidado com a saúde.\",\"wrongExplanations\":\"Os feedbacks diferenciam educação, internet e comparação local de maneira compreensível.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_006\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O contraste entre atendimento regular e dificuldade para obter consultas está compreensível.\",\"options\":\"As quatro opções têm sentidos distintos e redação simples.\",\"answer\":\"A diferença no acesso à saúde responde diretamente à pergunta.\",\"explanation\":\"O texto é curto e explica os fatores de acesso sem culpabilizar moradores.\",\"wrongExplanations\":\"Os feedbacks de comparação, educação e internet são claros e pertinentes.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_007\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_007\",\"criterion\":\"Enunciado e alternativas sem dupla interpretação\",\"severity\":\"blocking\",\"evidence\":\"O enunciado informa simultaneamente que a criança mora longe da escola e não tem transporte. Assim, “Diferença no acesso à educação” e “Diferença no acesso ao transporte” são respostas defensáveis; o próprio feedback da opção de transporte confirma sua relação com deslocamentos.\",\"recommendation\":\"Reformular o enunciado para avaliar somente o acesso à educação ou retirar a alternativa de transporte.\"}],\"doubts\":[\"O enunciado não define se pretende avaliar acesso à educação ou acesso ao transporte.\"],\"checks\":{\"question\":\"O enunciado combina distância escolar e ausência de transporte, criando duas leituras defensáveis.\",\"options\":\"As opções de educação e transporte concorrem entre si no contexto apresentado.\",\"answer\":\"A resposta marcada como educação não é linguisticamente única.\",\"explanation\":\"A explicação sustenta a leitura educacional, mas não elimina a alternativa de transporte.\",\"wrongExplanations\":\"O feedback da opção de transporte reconhece exatamente a dificuldade de deslocamento descrita.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_008\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_008\",\"criterion\":\"Explicação clara e diretamente relacionada ao enunciado\",\"severity\":\"major\",\"evidence\":\"O enunciado trata de materiais e espaços escolares, mas a explicação introduz a distância da escola, fator não apresentado na situação.\",\"recommendation\":\"Explicar diretamente como a disponibilidade de materiais e espaços adequados afeta as condições de estudo.\"}],\"doubts\":[],\"checks\":{\"question\":\"O enunciado sobre materiais e espaços escolares é claro e respeitoso.\",\"options\":\"As opções são distintas e a alternativa educacional não concorre com as demais.\",\"answer\":\"A diferença no acesso à educação é a resposta claramente indicada.\",\"explanation\":\"A explicação perde precisão ao mencionar distância, elemento ausente do enunciado.\",\"wrongExplanations\":\"Os feedbacks de transporte, lixo e respeito são claros e não contêm linguagem inadequada.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O contraste entre presença e ausência de transporte coletivo está claro.\",\"options\":\"As alternativas são distintas e de leitura simples.\",\"answer\":\"A diferença no acesso ao transporte é a única resposta compatível.\",\"explanation\":\"A explicação relaciona a oferta de transporte às possibilidades de deslocamento.\",\"wrongExplanations\":\"Os feedbacks de internet, melhoria de serviços e água diferenciam claramente os conceitos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Estradas e veículos coletivos formam um exemplo compreensível de acesso ao transporte.\",\"options\":\"As opções são diferentes e mantêm estrutura nominal consistente.\",\"answer\":\"A alternativa sobre transporte responde sem concorrência relevante.\",\"explanation\":\"O texto explica de forma simples como condições e veículos afetam deslocamentos.\",\"wrongExplanations\":\"Os feedbacks de água, internet e melhoria de serviços são claros e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_011\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado relaciona pesquisa escolar e disponibilidade de conexão com clareza.\",\"options\":\"As quatro alternativas são distintas e compreensíveis.\",\"answer\":\"A diferença no acesso à internet é a única resposta que nomeia o caso.\",\"explanation\":\"A explicação é curta e liga conexão, comunicação e estudos.\",\"wrongExplanations\":\"Os feedbacks de comparação, esgoto e lixo são claros e específicos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_012\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_012\",\"criterion\":\"Naturalidade e coesão da comparação\",\"severity\":\"minor\",\"evidence\":\"A construção “Moradores de uma localidade têm conexão estável, enquanto outra não é atendida” compara moradores com outra localidade, produzindo paralelismo pouco natural.\",\"recommendation\":\"Comparar localidades entre si ou escrever “enquanto os moradores de outra não têm esse atendimento”.\"}],\"doubts\":[],\"checks\":{\"question\":\"A situação é compreensível, mas a comparação entre moradores e localidade tem paralelismo pouco natural.\",\"options\":\"As alternativas são distintas e adequadas ao vocabulário infantil.\",\"answer\":\"A opção sobre acesso à internet permanece clara e única.\",\"explanation\":\"A explicação é breve e relaciona conexão a comunicação e estudos.\",\"wrongExplanations\":\"Os feedbacks de lixo, comparação local e esgoto estão claros e bem pontuados.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_013\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A comparação sobre recolhimento regular de lixo é clara.\",\"options\":\"As opções são distintas e não criam empate de sentido.\",\"answer\":\"A diferença no acesso à coleta de lixo responde diretamente ao caso.\",\"explanation\":\"A explicação é simples e relaciona recolhimento e cuidado com resíduos.\",\"wrongExplanations\":\"Os feedbacks de melhoria, respeito e saúde são claros e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_014\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A referência de “ela” à coleta é compreensível no contexto.\",\"options\":\"As quatro alternativas têm sentidos diferentes e redação adequada.\",\"answer\":\"A opção sobre coleta de lixo é a única que descreve a comparação.\",\"explanation\":\"A explicação é curta e usa linguagem acessível sobre resíduos.\",\"wrongExplanations\":\"Os feedbacks de saúde, melhoria de serviços e respeito são claros.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado pede uma ação e apresenta a necessidade de água segura com clareza.\",\"options\":\"As opções distinguem problema, ação e observação, sem equivalência linguística.\",\"answer\":\"“Melhoria dos serviços onde faltam” é a única alternativa formulada como ação pertinente.\",\"explanation\":\"A explicação mostra de forma simples como investir em serviços reduz diferenças.\",\"wrongExplanations\":\"Os feedbacks distinguem água, educação e comparação local sem linguagem estereotipada.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_016\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A decisão municipal de ampliar serviços está descrita com linguagem clara.\",\"options\":\"As alternativas são distintas e adequadas à pergunta sobre uma medida.\",\"answer\":\"A melhoria dos serviços é a única opção que expressa a medida apresentada.\",\"explanation\":\"A explicação é objetiva e adequada à série.\",\"wrongExplanations\":\"Os feedbacks de comparação, água e educação são compreensíveis e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_017\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O cuidado de avaliar cada área sem generalizar está formulado com clareza.\",\"options\":\"As opções têm sentidos distintos e não reproduzem estereótipos.\",\"answer\":\"Comparar as condições de cada lugar responde diretamente ao cuidado solicitado.\",\"explanation\":\"A explicação reforça a observação de dados locais em campo e cidade.\",\"wrongExplanations\":\"Os feedbacks de respeito, esgoto e transporte são claros e específicos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_018\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A pergunta sobre verificar condições antes de generalizar é clara para a série.\",\"options\":\"As alternativas são distintas e a comparação local atende ao comando.\",\"answer\":\"A comparação das condições de cada lugar é a única resposta pertinente.\",\"explanation\":\"A explicação esclarece por que não se deve tratar todos os bairros como iguais.\",\"wrongExplanations\":\"Os feedbacks de transporte, respeito e esgoto são claros e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_019\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado pede explicitamente um princípio de tratamento respeitoso.\",\"options\":\"As alternativas são distintas e não atribuem incapacidade aos moradores.\",\"answer\":\"O respeito aos moradores é a única opção que expressa um princípio.\",\"explanation\":\"A explicação combate de forma clara a associação entre poucos serviços e menor valor pessoal.\",\"wrongExplanations\":\"Os feedbacks de saúde, internet e água são claros e não estereotipam comunidades.\"}},{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_020\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_desigualdades_urbanas_e_rurais_020\",\"criterion\":\"Linguagem clara e adequada ao terceiro ano\",\"severity\":\"major\",\"evidence\":\"A expressão “evita diminuir as pessoas” pode ser entendida literalmente por crianças e não expressa com precisão a ideia de desvalorização.\",\"recommendation\":\"Substituir por formulação concreta, como “evita tratar essas pessoas como menos importantes”.\"}],\"doubts\":[],\"checks\":{\"question\":\"A intenção é respeitosa, mas “diminuir as pessoas” pode causar interpretação literal.\",\"options\":\"As opções são distintas e a alternativa de respeito está claramente redigida.\",\"answer\":\"O respeito aos moradores é a resposta única apesar da formulação imprecisa do enunciado.\",\"explanation\":\"A explicação expressa com clareza que falta de serviços não reduz o valor das pessoas.\",\"wrongExplanations\":\"Os feedbacks de água, saúde e internet são claros e não culpabilizam moradores.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1ed-a81d-71c2-8f66-af8f2bebbb4e",
+  "runId": "01a1c1ed-a81d-71c2-8f66-af8f2bebbb4e:2026-11-09T20:11:03.177Z",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T20:11:03.177Z",
+  "testOnly": false,
+  "sha256": "d09dedcee918d00f0c02524fcdd79212f0f8704dfe65cde3eb83ada27c6a4456"
+}

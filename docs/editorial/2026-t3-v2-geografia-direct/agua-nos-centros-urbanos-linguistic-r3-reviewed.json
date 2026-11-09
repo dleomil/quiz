@@ -1,0 +1,100 @@
+{
+  "scenarioId": "01a1c1ed-383d-7ce1-8cfe-b7666e726c06:2026-11-09T20:09:01.496Z",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-nos-centros-urbanos",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-nos-centros-urbanos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água nos centros urbanos"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Reconhecer abastecimento, saneamento e consumo urbano",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-nos-centros-urbanos",
+        "question": "Um comércio muda a forma de fazer a limpeza para usar apenas a água necessária. Que atitude está sendo adotada?",
+        "options": [
+          "Consumo urbano responsável.",
+          "Ampliação do acesso ao saneamento.",
+          "Tratamento da água para abastecimento.",
+          "Tratamento de esgoto."
+        ],
+        "correctIndex": 0,
+        "explanation": "Usar apenas a água necessária na limpeza de um comércio ajuda a evitar desperdício.",
+        "wrongExplanations": {
+          "1": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+          "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+          "3": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-nos-centros-urbanos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água nos centros urbanos"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-nos-centros-urbanos",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara o 3º ano do Ensino Fundamental, o tema Água nos centros urbanos e o objetivo de reconhecer abastecimento, saneamento e consumo urbano.",
+      "A proposta contém enunciado, quatro alternativas, resposta indicada, explicação e três justificativas para as alternativas incorretas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar o pacote exato para aprovação humana antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c1ed-383d-7ce1-8cfe-b7666e726c06",
+    "runId": "01a1c1ed-383d-7ce1-8cfe-b7666e726c06:2026-11-09T20:09:01.496Z",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T20:09:01.496Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_agua_nos_centros_urbanos_017": "699c5cfda18c11ec0733c3113b4e6af45ee739bee9ad7fd31dc80a5d1964bb7c"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r3-original.json",
+    "originalReportSha256": "e0a421d241f46ab661bbc28b3ce3af390d4c016b0937fda9e3bd89bf21585420"
+  }
+}

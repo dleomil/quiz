@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água potável, reúso e reaproveitamento"
+    },
+    "questionVersion": 7,
+    "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma família recolhe água da chuva e a usa para regar as plantas. Como se chama esse uso da água?",
+        "options": [
+          "Consumo de água potável.",
+          "Reaproveitamento da água da chuva.",
+          "Desperdício de água tratada.",
+          "Reúso de água tratada para descarga."
+        ],
+        "correctIndex": 1,
+        "explanation": "A família reaproveita a água da chuva para regar as plantas. Essa água não deve ser considerada própria para beber sem tratamento e verificação.",
+        "wrongExplanations": {
+          "0": "A situação fala de regar plantas, não de beber a água. A água da chuva não é automaticamente potável.",
+          "2": "A família aproveita a água recolhida para regar; ela não está desperdiçando água tratada.",
+          "3": "Essa opção descreve água tratada destinada à descarga, mas o enunciado fala de água da chuva usada para regar plantas."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 7
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"agua-potavel-reuso-e-reaproveitamento\",\"reviewPass\":\"pedagogical\",\"decision\":\"approved\",\"facts\":[\"A entrada declara o 3º ano do Ensino Fundamental, objetivo curricular rastreável, referência autorizada e passagem pedagógica.\",\"A situação de recolher água da chuva para regar plantas caracteriza reaproveitamento e não recomenda consumo dessa água.\",\"A alternativa de índice 1 é a única resposta defensável entre as quatro opções.\",\"A explicação e os três feedbacks incorretos distinguem reaproveitamento, potabilidade, desperdício e reúso, incluindo orientação de segurança sobre o consumo.\"],\"doubts\":[],\"findings\":[],\"recommendations\":[\"Submeter o pacote exato à passagem linguística independente e à aprovação pedagógica humana antes da implementação ou publicação.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado apresenta uma situação concreta e suficiente para identificar o reaproveitamento da água da chuva, alinhada ao objetivo curricular.\",\"options\":\"As quatro alternativas são distintas; somente o reaproveitamento da água da chuva corresponde à origem e ao uso descritos.\",\"answer\":\"O índice 1 aponta para a única resposta defensável e não depende de suposição provável.\",\"explanation\":\"A explicação justifica corretamente o uso para regar e alerta que a água da chuva não deve ser considerada potável sem tratamento e verificação.\",\"wrongExplanations\":\"Os três feedbacks correspondem aos índices incorretos, explicam por que cada opção não atende ao enunciado e mantêm orientação segura e respeitosa.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c221-16d6-7081-8adc-9066a79ae542",
+  "runId": "01a1c221-16d6-7081-8adc-9066a79ae542:01a1c221-16fe-7431-895b-edc90ad27f4a",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T21:05:56.147Z",
+  "testOnly": false,
+  "sha256": "ce62b379a43a8de2876a3df5f97cba136dfdb71117980cbd040a0d2991dd0ef9"
+}
