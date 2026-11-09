@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "municipio",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "municipio",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Município"
+  },
+  "questionVersion": 2,
+  "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_municipio_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "municipio",
+      "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+      "options": [
+        "Endereço.",
+        "Município.",
+        "Bairro.",
+        "Espaço público."
+      ],
+      "correctIndex": 3,
+      "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+      "wrongExplanations": {
+        "0": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+        "1": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+        "2": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "municipio",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Município"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

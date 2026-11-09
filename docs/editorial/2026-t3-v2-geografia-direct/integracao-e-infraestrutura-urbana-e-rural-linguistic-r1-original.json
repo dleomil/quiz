@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "integracao-e-infraestrutura-urbana-e-rural",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "integracao-e-infraestrutura-urbana-e-rural",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Integração e infraestrutura urbana e rural"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Identificar serviços e relações entre campo e cidade",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Um caminhão sai de uma propriedade com verduras e chega à feira da cidade. Qual relação está descrita?",
+        "options": [
+          "Transporte de produtos do campo para a cidade.",
+          "Serviços da cidade utilizados por moradores do campo.",
+          "Transporte escolar.",
+          "Abastecimento de água segura."
+        ],
+        "correctIndex": 0,
+        "explanation": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos.",
+        "wrongExplanations": {
+          "1": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade. Essa alternativa não descreve a situação apresentada.",
+          "2": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa. Essa alternativa não descreve a situação apresentada.",
+          "3": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma cooperativa envia leite produzido no campo para comércios urbanos. Qual ligação entre campo e cidade aparece?",
+        "options": [
+          "Abastecimento de água segura.",
+          "Transporte de produtos do campo para a cidade.",
+          "Serviços da cidade utilizados por moradores do campo.",
+          "Transporte escolar."
+        ],
+        "correctIndex": 1,
+        "explanation": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos.",
+        "wrongExplanations": {
+          "0": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade. Essa alternativa não descreve a situação apresentada.",
+          "3": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma família de uma comunidade rural vai à cidade para uma consulta em um hospital. Qual relação aparece?",
+        "options": [
+          "Rede de energia elétrica.",
+          "Coleta de resíduos.",
+          "Serviços da cidade utilizados por moradores do campo.",
+          "Estradas e pontes."
+        ],
+        "correctIndex": 2,
+        "explanation": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade.",
+        "wrongExplanations": {
+          "0": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada.",
+          "1": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada.",
+          "3": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma pessoa mora no campo e vai a uma agência bancária na cidade. Qual relação entre os espaços está descrita?",
+        "options": [
+          "Estradas e pontes.",
+          "Rede de energia elétrica.",
+          "Coleta de resíduos.",
+          "Serviços da cidade utilizados por moradores do campo."
+        ],
+        "correctIndex": 3,
+        "explanation": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade.",
+        "wrongExplanations": {
+          "0": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada.",
+          "1": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada.",
+          "2": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma ponte reparada permite que o ônibus volte a atravessar o rio entre uma comunidade rural e a cidade. Que infraestrutura foi melhorada?",
+        "options": [
+          "Estradas e pontes.",
+          "Transporte escolar.",
+          "Comunicação por telefone e internet.",
+          "Comércio de equipamentos para o campo."
+        ],
+        "correctIndex": 0,
+        "explanation": "Essas estruturas permitem o deslocamento terrestre entre lugares.",
+        "wrongExplanations": {
+          "1": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa. Essa alternativa não descreve a situação apresentada.",
+          "2": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada.",
+          "3": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "A recuperação de uma estrada facilita a chegada dos produtos rurais ao mercado urbano. Qual infraestrutura está envolvida?",
+        "options": [
+          "Comércio de equipamentos para o campo.",
+          "Estradas e pontes.",
+          "Transporte escolar.",
+          "Comunicação por telefone e internet."
+        ],
+        "correctIndex": 1,
+        "explanation": "Essas estruturas permitem o deslocamento terrestre entre lugares.",
+        "wrongExplanations": {
+          "0": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais. Essa alternativa não descreve a situação apresentada.",
+          "2": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa. Essa alternativa não descreve a situação apresentada.",
+          "3": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Um ônibus leva estudantes de uma comunidade rural até a escola e depois de volta para casa. Qual serviço está descrito?",
+        "options": [
+          "Abastecimento de água segura.",
+          "Serviço de saúde.",
+          "Transporte escolar.",
+          "Rede de energia elétrica."
+        ],
+        "correctIndex": 2,
+        "explanation": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa.",
+        "wrongExplanations": {
+          "0": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada.",
+          "1": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+          "3": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Estudantes que moram longe da escola contam com um veículo próprio para esse trajeto. Qual serviço os atende?",
+        "options": [
+          "Rede de energia elétrica.",
+          "Abastecimento de água segura.",
+          "Serviço de saúde.",
+          "Transporte escolar."
+        ],
+        "correctIndex": 3,
+        "explanation": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa.",
+        "wrongExplanations": {
+          "0": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada.",
+          "1": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada.",
+          "2": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Postes e fios levam eletricidade a casas do campo e da cidade. Que infraestrutura está descrita?",
+        "options": [
+          "Rede de energia elétrica.",
+          "Comunicação por telefone e internet.",
+          "Coleta de resíduos.",
+          "Transporte de produtos do campo para a cidade."
+        ],
+        "correctIndex": 0,
+        "explanation": "Leva eletricidade a moradias, comércios e locais de trabalho.",
+        "wrongExplanations": {
+          "1": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada.",
+          "2": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada.",
+          "3": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma comunidade passa a receber eletricidade por cabos, permitindo usar iluminação e equipamentos. Qual rede foi ampliada?",
+        "options": [
+          "Transporte de produtos do campo para a cidade.",
+          "Rede de energia elétrica.",
+          "Comunicação por telefone e internet.",
+          "Coleta de resíduos."
+        ],
+        "correctIndex": 1,
+        "explanation": "Leva eletricidade a moradias, comércios e locais de trabalho.",
+        "wrongExplanations": {
+          "0": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada.",
+          "2": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada.",
+          "3": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma produtora avisa por telefone a um comprador da cidade que a colheita está pronta. Que serviço aproxima esses lugares?",
+        "options": [
+          "Comércio de equipamentos para o campo.",
+          "Serviços da cidade utilizados por moradores do campo.",
+          "Comunicação por telefone e internet.",
+          "Abastecimento de água segura."
+        ],
+        "correctIndex": 2,
+        "explanation": "Permite trocar informações entre pessoas e lugares, mesmo a distância.",
+        "wrongExplanations": {
+          "0": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais. Essa alternativa não descreve a situação apresentada.",
+          "1": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade. Essa alternativa não descreve a situação apresentada.",
+          "3": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma cooperativa rural recebe pedidos de clientes urbanos pela internet. Qual ligação está sendo utilizada?",
+        "options": [
+          "Abastecimento de água segura.",
+          "Comércio de equipamentos para o campo.",
+          "Serviços da cidade utilizados por moradores do campo.",
+          "Comunicação por telefone e internet."
+        ],
+        "correctIndex": 3,
+        "explanation": "Permite trocar informações entre pessoas e lugares, mesmo a distância.",
+        "wrongExplanations": {
+          "0": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada.",
+          "1": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma comunidade passa a receber água com qualidade verificada por uma rede de canos. Qual serviço foi ampliado?",
+        "options": [
+          "Abastecimento de água segura.",
+          "Coleta de resíduos.",
+          "Serviço de saúde.",
+          "Estradas e pontes."
+        ],
+        "correctIndex": 0,
+        "explanation": "Sistemas adequados levam água com qualidade para atender às necessidades da população.",
+        "wrongExplanations": {
+          "1": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada.",
+          "2": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+          "3": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Casas de uma vila recebem água segura por um sistema de distribuição. Qual necessidade essa infraestrutura atende?",
+        "options": [
+          "Estradas e pontes.",
+          "Abastecimento de água segura.",
+          "Coleta de resíduos.",
+          "Serviço de saúde."
+        ],
+        "correctIndex": 1,
+        "explanation": "Sistemas adequados levam água com qualidade para atender às necessidades da população.",
+        "wrongExplanations": {
+          "0": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada.",
+          "2": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada.",
+          "3": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Um veículo passa pela comunidade rural para recolher o lixo e levá-lo a um destino adequado. Que serviço é esse?",
+        "options": [
+          "Transporte de produtos do campo para a cidade.",
+          "Transporte escolar.",
+          "Coleta de resíduos.",
+          "Comércio de equipamentos para o campo."
+        ],
+        "correctIndex": 2,
+        "explanation": "O serviço recolhe o lixo e o encaminha para um destino adequado.",
+        "wrongExplanations": {
+          "0": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada.",
+          "1": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa. Essa alternativa não descreve a situação apresentada.",
+          "3": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Moradores de um bairro e de uma vila têm dias definidos para o recolhimento do lixo. Qual serviço compartilham?",
+        "options": [
+          "Comércio de equipamentos para o campo.",
+          "Transporte de produtos do campo para a cidade.",
+          "Transporte escolar.",
+          "Coleta de resíduos."
+        ],
+        "correctIndex": 3,
+        "explanation": "O serviço recolhe o lixo e o encaminha para um destino adequado.",
+        "wrongExplanations": {
+          "0": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais. Essa alternativa não descreve a situação apresentada.",
+          "1": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada.",
+          "2": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma agricultora compra ferramentas em uma loja da cidade para usar na plantação. Qual relação aparece?",
+        "options": [
+          "Comércio de equipamentos para o campo.",
+          "Serviço de saúde.",
+          "Serviços da cidade utilizados por moradores do campo.",
+          "Rede de energia elétrica."
+        ],
+        "correctIndex": 0,
+        "explanation": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais.",
+        "wrongExplanations": {
+          "1": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade. Essa alternativa não descreve a situação apresentada.",
+          "3": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma loja urbana vende peças para máquinas utilizadas nas propriedades rurais. Que ligação está descrita?",
+        "options": [
+          "Rede de energia elétrica.",
+          "Comércio de equipamentos para o campo.",
+          "Serviço de saúde.",
+          "Serviços da cidade utilizados por moradores do campo."
+        ],
+        "correctIndex": 1,
+        "explanation": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais.",
+        "wrongExplanations": {
+          "0": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada.",
+          "2": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+          "3": "Pessoas que vivem no campo podem utilizar serviços localizados na cidade. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma equipe atende famílias em uma unidade de saúde de uma comunidade rural. Qual serviço está sendo oferecido?",
+        "options": [
+          "Estradas e pontes.",
+          "Comunicação por telefone e internet.",
+          "Serviço de saúde.",
+          "Transporte de produtos do campo para a cidade."
+        ],
+        "correctIndex": 2,
+        "explanation": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas.",
+        "wrongExplanations": {
+          "0": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada.",
+          "1": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada.",
+          "3": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "integracao-e-infraestrutura-urbana-e-rural",
+        "question": "Uma equipe de vacinação percorre comunidades rurais e bairros urbanos. Qual serviço conecta esses atendimentos?",
+        "options": [
+          "Transporte de produtos do campo para a cidade.",
+          "Estradas e pontes.",
+          "Comunicação por telefone e internet.",
+          "Serviço de saúde."
+        ],
+        "correctIndex": 3,
+        "explanation": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas.",
+        "wrongExplanations": {
+          "0": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada.",
+          "1": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada.",
+          "2": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "integracao-e-infraestrutura-urbana-e-rural",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Integração e infraestrutura urbana e rural"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"integracao-e-infraestrutura-urbana-e-rural\",\"reviewPass\":\"linguistic\",\"decision\":\"blocked\",\"facts\":[\"A entrada identifica Geografia, o tema, o objetivo curricular e o 3º ano do Ensino Fundamental.\",\"A passagem solicitada é exclusivamente linguística e contém 20 propostas com os cinco itens do checklist.\",\"Quinze propostas não apresentam erro linguístico conhecido; uma requer ajuste de linguagem e quatro contêm ambiguidade bloqueante.\"],\"doubts\":[],\"findings\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008\",\"criterion\":\"clareza e ausência de ambiguidade no enunciado\",\"severity\":\"blocking\",\"evidence\":\"A expressão “veículo próprio para esse trajeto” pode significar um veículo particular da família, não necessariamente transporte escolar.\",\"recommendation\":\"Indicar explicitamente que o veículo realiza o transporte de estudantes para a escola.\"},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013\",\"criterion\":\"naturalidade e adequação linguística ao 3º ano\",\"severity\":\"major\",\"evidence\":\"A expressão “água com qualidade verificada” é técnica e pouco natural para crianças do 3º ano.\",\"recommendation\":\"Empregar uma formulação infantil mais direta, como água própria para consumo, preservando o sentido.\"},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017\",\"criterion\":\"resposta única e alternativas semanticamente distintas\",\"severity\":\"blocking\",\"evidence\":\"Comprar ferramentas em uma loja da cidade também pode ser entendido como usar um serviço da cidade; por isso, as opções “Comércio de equipamentos para o campo” e “Serviços da cidade utilizados por moradores do campo” são defensáveis.\",\"recommendation\":\"Restringir o enunciado à relação comercial específica ou substituir a alternativa abrangente por uma opção sem sobreposição.\"},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018\",\"criterion\":\"resposta única e alternativas semanticamente distintas\",\"severity\":\"blocking\",\"evidence\":\"A venda urbana de peças para propriedades rurais também cabe na opção abrangente “Serviços da cidade utilizados por moradores do campo”, concorrendo com “Comércio de equipamentos para o campo”.\",\"recommendation\":\"Eliminar a sobreposição entre as duas alternativas ou explicitar que se pergunta pelo fornecimento de equipamentos ao campo.\"},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020\",\"criterion\":\"clareza, naturalidade e resposta linguisticamente inequívoca\",\"severity\":\"blocking\",\"evidence\":\"A pergunta “Qual serviço conecta esses atendimentos?” usa “conecta” de modo vago; o verbo pode remeter ao deslocamento da equipe, à comunicação ou ao próprio atendimento de saúde.\",\"recommendation\":\"Perguntar diretamente qual serviço a equipe oferece às comunidades e aos bairros.\"}],\"recommendations\":[\"Revisar as propostas 008, 013, 017, 018 e 020 e submetê-las a nova passagem linguística.\",\"Manter as demais propostas inalteradas por hash e encaminhar o lote completo à aprovação humana após o fechamento dos achados.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_001\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado claro e adequado ao 3º ano.\",\"options\":\"Alternativas concisas e sem sobreposição contextual.\",\"answer\":\"A resposta indicada é linguisticamente inequívoca.\",\"explanation\":\"Texto curto, natural e esclarecedor.\",\"wrongExplanations\":\"Os três feedbacks são claros e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_002\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A ligação entre campo e cidade está formulada com clareza.\",\"options\":\"Alternativas bem redigidas e distinguíveis.\",\"answer\":\"O transporte do leite corresponde inequivocamente à resposta.\",\"explanation\":\"Explicação simples e adequada à faixa etária.\",\"wrongExplanations\":\"Os feedbacks explicam as opções sem linguagem inadequada.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_003\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A situação da família rural está clara.\",\"options\":\"Alternativas legíveis e semanticamente separadas.\",\"answer\":\"O uso de serviço urbano é inequívoco no contexto.\",\"explanation\":\"Formulação direta e infantilmente adequada.\",\"wrongExplanations\":\"Os feedbacks são completos, claros e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_004\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado natural e sem dupla interpretação relevante.\",\"options\":\"Alternativas claras e não equivalentes.\",\"answer\":\"A ida à agência bancária sustenta uma resposta única.\",\"explanation\":\"Texto breve e compreensível.\",\"wrongExplanations\":\"Os feedbacks diferenciam corretamente as opções.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_005\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A ponte reparada identifica claramente a infraestrutura.\",\"options\":\"Alternativas concisas e bem diferenciadas.\",\"answer\":\"“Estradas e pontes” é a única resposta compatível.\",\"explanation\":\"Explicação simples e objetiva.\",\"wrongExplanations\":\"Os feedbacks usam linguagem adequada ao 3º ano.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_006\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A recuperação da estrada está descrita com clareza.\",\"options\":\"Alternativas naturais e sem sobreposição.\",\"answer\":\"A infraestrutura indicada é inequívoca.\",\"explanation\":\"Texto curto e compreensível.\",\"wrongExplanations\":\"Os três feedbacks são claros e específicos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_007\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O trajeto dos estudantes caracteriza claramente o serviço.\",\"options\":\"Alternativas simples e distinguíveis.\",\"answer\":\"“Transporte escolar” é resposta única no contexto.\",\"explanation\":\"Explicação adequada à criança.\",\"wrongExplanations\":\"Os feedbacks são claros, completos e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008\",\"criterion\":\"clareza e ausência de ambiguidade no enunciado\",\"severity\":\"blocking\",\"evidence\":\"A expressão “veículo próprio para esse trajeto” pode significar um veículo particular da família, não necessariamente transporte escolar.\",\"recommendation\":\"Indicar explicitamente que o veículo realiza o transporte de estudantes para a escola.\"}],\"doubts\":[],\"checks\":{\"question\":\"“Veículo próprio” torna o enunciado ambíguo.\",\"options\":\"As alternativas são claras quando lidas isoladamente.\",\"answer\":\"A resposta não fica garantida pela redação atual.\",\"explanation\":\"A explicação é clara, mas não resolve a ambiguidade.\",\"wrongExplanations\":\"Os feedbacks estão bem redigidos e completos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Postes, fios e eletricidade formam uma descrição clara.\",\"options\":\"Alternativas concisas e não equivalentes.\",\"answer\":\"A rede de energia elétrica é inequivocamente indicada.\",\"explanation\":\"Texto breve e acessível.\",\"wrongExplanations\":\"Os feedbacks diferenciam as opções com clareza.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A ampliação da rede está descrita de forma natural.\",\"options\":\"Alternativas claras e semanticamente distintas.\",\"answer\":\"A resposta indicada é única no contexto.\",\"explanation\":\"Explicação simples e adequada ao 3º ano.\",\"wrongExplanations\":\"Os feedbacks são completos e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_011\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O aviso por telefone é claro e natural.\",\"options\":\"Alternativas bem redigidas e distinguíveis.\",\"answer\":\"A comunicação por telefone é resposta inequívoca.\",\"explanation\":\"Texto curto e compreensível.\",\"wrongExplanations\":\"Os feedbacks explicam as alternativas com clareza.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_012\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O recebimento de pedidos pela internet está claro.\",\"options\":\"Alternativas concisas e sem equivalência contextual.\",\"answer\":\"A resposta indicada decorre diretamente do enunciado.\",\"explanation\":\"Explicação acessível à faixa etária.\",\"wrongExplanations\":\"Os três feedbacks são claros e completos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013\",\"criterion\":\"naturalidade e adequação linguística ao 3º ano\",\"severity\":\"major\",\"evidence\":\"A expressão “água com qualidade verificada” é técnica e pouco natural para crianças do 3º ano.\",\"recommendation\":\"Empregar uma formulação infantil mais direta, como água própria para consumo, preservando o sentido.\"}],\"doubts\":[],\"checks\":{\"question\":\"O sentido é recuperável, mas a expressão central é técnica.\",\"options\":\"Alternativas claras e bem diferenciadas.\",\"answer\":\"A resposta permanece identificável.\",\"explanation\":\"A explicação é gramatical, mas repete linguagem pouco natural.\",\"wrongExplanations\":\"Os feedbacks são completos e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_014\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A distribuição de água está descrita com clareza.\",\"options\":\"Alternativas simples e distinguíveis.\",\"answer\":\"O abastecimento de água é resposta única.\",\"explanation\":\"Texto curto e adequado à criança.\",\"wrongExplanations\":\"Os feedbacks estão claros e completos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_015\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O recolhimento e o destino do lixo estão claros.\",\"options\":\"Alternativas concisas e sem sobreposição.\",\"answer\":\"“Coleta de resíduos” é resposta inequívoca.\",\"explanation\":\"Explicação direta e compreensível.\",\"wrongExplanations\":\"Os feedbacks diferenciam adequadamente os serviços.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_016\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A referência aos dias de recolhimento é clara.\",\"options\":\"Alternativas bem redigidas e distintas.\",\"answer\":\"A coleta de resíduos é a única resposta compatível.\",\"explanation\":\"Texto simples e objetivo.\",\"wrongExplanations\":\"Os três feedbacks são claros e adequados.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017\",\"criterion\":\"resposta única e alternativas semanticamente distintas\",\"severity\":\"blocking\",\"evidence\":\"Comprar ferramentas em uma loja da cidade também pode ser entendido como usar um serviço da cidade; por isso, as opções “Comércio de equipamentos para o campo” e “Serviços da cidade utilizados por moradores do campo” são defensáveis.\",\"recommendation\":\"Restringir o enunciado à relação comercial específica ou substituir a alternativa abrangente por uma opção sem sobreposição.\"}],\"doubts\":[],\"checks\":{\"question\":\"A pergunta ampla permite duas classificações da situação.\",\"options\":\"Duas alternativas apresentam sobreposição semântica.\",\"answer\":\"A resposta indicada é mais específica, mas não é única.\",\"explanation\":\"A explicação é clara, porém não elimina a concorrência.\",\"wrongExplanations\":\"O feedback da opção 2 contradiz uma leitura defensável.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018\",\"criterion\":\"resposta única e alternativas semanticamente distintas\",\"severity\":\"blocking\",\"evidence\":\"A venda urbana de peças para propriedades rurais também cabe na opção abrangente “Serviços da cidade utilizados por moradores do campo”, concorrendo com “Comércio de equipamentos para o campo”.\",\"recommendation\":\"Eliminar a sobreposição entre as duas alternativas ou explicitar que se pergunta pelo fornecimento de equipamentos ao campo.\"}],\"doubts\":[],\"checks\":{\"question\":\"“Que ligação” é amplo diante das opções oferecidas.\",\"options\":\"As opções 1 e 3 se sobrepõem no contexto.\",\"answer\":\"A alternativa indicada não é linguisticamente exclusiva.\",\"explanation\":\"A explicação é clara, mas sustenta apenas a leitura específica.\",\"wrongExplanations\":\"O feedback da opção 3 rejeita uma interpretação possível.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_019\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O atendimento na unidade rural está claramente descrito.\",\"options\":\"Alternativas simples e não equivalentes.\",\"answer\":\"“Serviço de saúde” é resposta inequívoca.\",\"explanation\":\"Texto respeitoso e adequado à criança.\",\"wrongExplanations\":\"Os feedbacks são claros e completos.\"}},{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020\",\"criterion\":\"clareza, naturalidade e resposta linguisticamente inequívoca\",\"severity\":\"blocking\",\"evidence\":\"A pergunta “Qual serviço conecta esses atendimentos?” usa “conecta” de modo vago; o verbo pode remeter ao deslocamento da equipe, à comunicação ou ao próprio atendimento de saúde.\",\"recommendation\":\"Perguntar diretamente qual serviço a equipe oferece às comunidades e aos bairros.\"}],\"doubts\":[],\"checks\":{\"question\":\"O verbo “conecta” torna a pergunta vaga.\",\"options\":\"As alternativas permitem leituras ligadas a deslocamento e comunicação.\",\"answer\":\"“Serviço de saúde” é pretendido, mas não inequívoco.\",\"explanation\":\"A explicação é clara, porém não corrige o enunciado.\",\"wrongExplanations\":\"Os feedbacks são gramaticais, mas rejeitam leituras favorecidas pela pergunta.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1e8-de1d-74c0-934e-bb73a139f093",
+  "runId": "01a1c1e8-de1d-74c0-934e-bb73a139f093:2026-11-09T20:05:30.685Z",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T20:05:30.685Z",
+  "testOnly": false,
+  "sha256": "372dd55116fb35205fd769310eb48caf0fbfe93c8f34f2a08d6a869bb369eade"
+}

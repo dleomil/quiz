@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/desigualdades-urbanas-e-rurais",
+  "sourceSha256": "de2fb6d7dc01fccbc2c66d4849199c34ab4314d1e75650ff902b67e5e59cf641",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r4-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r4-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r4-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r4-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r8-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r8-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r8-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r8-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r6-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r6-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r6-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r6-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r11-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r10-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r2-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

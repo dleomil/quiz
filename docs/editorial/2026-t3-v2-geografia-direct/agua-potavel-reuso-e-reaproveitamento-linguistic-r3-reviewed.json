@@ -1,0 +1,180 @@
+{
+  "scenarioId": "01a1c1e8-6aee-74c2-8e52-8bfe781cf712:2026-11-09T20:04:13.362Z",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água potável, reúso e reaproveitamento"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Um prédio tem uma rede de água de reúso para descargas e outra de água potável para beber. Qual cuidado evita a mistura dessas águas?",
+        "options": [
+          "Unir os canos antes de chegarem aos bebedouros.",
+          "Manter as redes separadas e identificadas.",
+          "Ligar a rede de reúso aos bebedouros.",
+          "Guardar os dois tipos de água no mesmo reservatório."
+        ],
+        "correctIndex": 1,
+        "explanation": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados.",
+        "wrongExplanations": {
+          "0": "Unir os canos permite a mistura da água de reúso com a água potável. As redes devem permanecer separadas.",
+          "2": "A água de reúso destinada às descargas não deve chegar aos bebedouros.",
+          "3": "O mesmo reservatório misturaria as águas; cada tipo precisa de um sistema separado e identificado."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma caixa-d’água potável tem tampa bem ajustada e recebe limpeza adequada. Qual é a finalidade desse cuidado?",
+        "options": [
+          "Retirar sujeira já misturada na água.",
+          "Comprovar a potabilidade apenas pela aparência.",
+          "Levar a água do reservatório até as torneiras.",
+          "Evitar a entrada de sujeira na água armazenada."
+        ],
+        "correctIndex": 3,
+        "explanation": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada.",
+        "wrongExplanations": {
+          "0": "A tampa impede a entrada de sujeira, mas não retira o que já está misturado na água.",
+          "1": "A aparência não comprova a potabilidade. A tampa protege a água, mas não substitui a verificação de qualidade.",
+          "2": "A distribuição até as torneiras depende de tubulações; a tampa e a limpeza protegem a água armazenada."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma pessoa vai preparar uma bebida para a família. Qual cuidado com a água deve orientar essa tarefa?",
+        "options": [
+          "Uso de água potável no preparo de alimentos e bebidas.",
+          "Reparação de vazamentos.",
+          "Orientação de um adulto responsável.",
+          "Reaproveitamento da água da chuva para limpeza."
+        ],
+        "correctIndex": 0,
+        "explanation": "Alimentos e bebidas devem ser preparados com água própria para consumo humano.",
+        "wrongExplanations": {
+          "1": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pedir orientação pode ajudar quando há dúvida, mas a tarefa pede o cuidado com a água usada na bebida: escolher água potável.",
+          "3": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "reviewPass": "linguistic",
+    "decision": "blocked",
+    "facts": [
+      "A entrada declara o 3º ano do Ensino Fundamental, a passagem linguística e o objetivo curricular autorizado.",
+      "As três propostas apresentam enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks para respostas incorretas.",
+      "A proposta 010 usa linguagem clara, natural e adequada à faixa etária."
+    ],
+    "doubts": [
+      "Na proposta 012, não está claro se a finalidade perguntada se refere à tampa, à limpeza ou aos dois cuidados em conjunto."
+    ],
+    "findings": [
+      {
+        "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "criterion": "ambiguidade e resposta única",
+        "severity": "blocking",
+        "evidence": "O enunciado reúne tampa bem ajustada e limpeza adequada, mas pergunta pela finalidade singular de “desse cuidado”. A alternativa “Retirar sujeira já misturada na água” pode se relacionar à limpeza, enquanto a resposta indicada se relaciona principalmente à tampa.",
+        "recommendation": "Separar os cuidados no enunciado ou perguntar explicitamente pela finalidade da tampa, de modo que apenas uma alternativa responda ao que foi solicitado."
+      },
+      {
+        "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+        "criterion": "clareza e naturalidade do feedback infantil",
+        "severity": "major",
+        "evidence": "O feedback da alternativa 1 diz “Consertar vazamentos evita perder água sem atender a uma necessidade”, construção que deixa pouco clara a relação entre evitar perda de água e a necessidade apresentada.",
+        "recommendation": "Reformular o feedback para dizer diretamente que consertar vazamentos economiza água, mas não define qual água deve ser usada no preparo da bebida."
+      }
+    ],
+    "recommendations": [
+      "Revisar a proposta 012 para eliminar a dupla referência entre tampa e limpeza antes de nova passagem linguística.",
+      "Tornar o feedback da alternativa 1 da proposta 013 mais direto e natural para crianças do 3º ano.",
+      "Submeter os textos alterados a nova revisão linguística e à aprovação humana exigida."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c1e8-6aee-74c2-8e52-8bfe781cf712",
+    "runId": "01a1c1e8-6aee-74c2-8e52-8bfe781cf712:2026-11-09T20:04:13.362Z",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T20:04:13.362Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_010": "bc156807e5e05245a130f511f4d438e1eb624fa08b5495b1d17c19a627396da4",
+      "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012": "f475a8e781fadf89411a4583c62a64f17fc7da4d5538a0125593f13154f36824",
+      "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013": "ec9c63ea737f42d748fc192283c5a472ea377f7d9c4421556cf4f812bf7c0bfe"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r3-original.json",
+    "originalReportSha256": "2422995b6a31c12bbc1496dc32d446f31fac3611e32168cb3b355815f57c5048"
+  }
+}

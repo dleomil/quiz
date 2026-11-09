@@ -1,0 +1,251 @@
+{
+  "scenarioId": "01a1c1de-105c-71c3-b3b9-3ff5439240d5:2026-11-09T19:52:52.502Z",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "usos-da-agua",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "relacionar-atividades-humanas-aos-usos-da-agua",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Usos da água"
+    },
+    "questionVersion": 2,
+    "authorizedObjective": "Relacionar atividades humanas aos usos da água",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Em um hospital, qual tarefa utiliza água para a limpeza?",
+        "options": [
+          "Lavar os pisos seguindo as regras de limpeza do hospital.",
+          "Organizar fichas em ordem alfabética.",
+          "Conferir os horários das consultas.",
+          "Contar as cadeiras da recepção."
+        ],
+        "correctIndex": 0,
+        "explanation": "A limpeza dos pisos é um dos usos da água nos serviços de saúde.",
+        "wrongExplanations": {
+          "1": "Organizar fichas não é uma atividade de lavagem.",
+          "2": "Conferir horários não utiliza água para limpar.",
+          "3": "Contar cadeiras não faz parte da lavagem dos pisos."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Qual atividade escolar usa água para os estudantes beberem?",
+        "options": [
+          "Dar descarga nos banheiros.",
+          "Abastecer os bebedouros com água potável.",
+          "Lavar os panos de limpeza.",
+          "Regar o jardim."
+        ],
+        "correctIndex": 1,
+        "explanation": "O bebedouro oferece água própria para beber.",
+        "wrongExplanations": {
+          "0": "A descarga serve ao uso do banheiro, não fornece água para beber.",
+          "2": "A lavagem dos panos é um uso de limpeza e não fornece água para os estudantes beberem.",
+          "3": "Regar o jardim atende as plantas."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Ao escovar os dentes em casa, uma pessoa usa água para enxaguar a boca. A qual finalidade esse uso está ligado?",
+        "options": [
+          "Irrigação das plantas.",
+          "Limpeza das roupas.",
+          "Higiene pessoal.",
+          "Preparo de alimentos."
+        ],
+        "correctIndex": 2,
+        "explanation": "Enxaguar a boca durante a escovação faz parte dos cuidados com a higiene pessoal.",
+        "wrongExplanations": {
+          "0": "Irrigar é fornecer água às plantas, não cuidar da higiene da boca.",
+          "1": "A lavagem de roupas cuida de peças de vestuário, não da boca.",
+          "3": "Preparar alimentos é cozinhar ou realizar outras etapas da alimentação; a escovação cuida da higiene da boca."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Na escola, uma cozinheira usa água potável para fazer arroz. Qual é a finalidade desse uso?",
+        "options": [
+          "Limpar os pisos.",
+          "Regar o jardim.",
+          "Lavar os uniformes.",
+          "Preparar alimentos."
+        ],
+        "correctIndex": 3,
+        "explanation": "Cozinhar o arroz é um uso da água no preparo de alimentos para a comunidade escolar.",
+        "wrongExplanations": {
+          "0": "Limpar pisos é uma tarefa de limpeza, diferente de cozinhar o arroz.",
+          "1": "Regar o jardim atende as plantas, não o preparo da refeição.",
+          "2": "Lavar uniformes é cuidar das roupas, não preparar alimentos."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Qual atividade usa água para manter um espaço coletivo limpo?",
+        "options": [
+          "Regar os vasos de um cômodo da casa.",
+          "Lavar os banheiros de uma escola.",
+          "Preparar o jantar de uma família.",
+          "Encher a tigela de um gato em casa."
+        ],
+        "correctIndex": 1,
+        "explanation": "Os banheiros da escola são usados pela comunidade escolar e precisam de limpeza.",
+        "wrongExplanations": {
+          "0": "Essa tarefa cuida de plantas em uma residência.",
+          "2": "Essa atividade atende uma família em casa, não a limpeza de um espaço coletivo.",
+          "3": "Essa tarefa cuida do animal de uma casa, não da limpeza de um espaço coletivo."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Uma horta produz verduras para venda, e uma escola lava seus banheiros. Como classificar esses usos da água, nessa ordem?",
+        "options": [
+          "Doméstico e coletivo.",
+          "Agrícola e doméstico.",
+          "Industrial e doméstico.",
+          "Agrícola e coletivo."
+        ],
+        "correctIndex": 3,
+        "explanation": "A horta utiliza água na produção agrícola; a escola utiliza água na limpeza de um espaço coletivo.",
+        "wrongExplanations": {
+          "0": "A limpeza escolar é coletiva, mas a horta descrita produz alimentos para venda e representa um uso agrícola.",
+          "1": "O cultivo é agrícola, mas os banheiros da escola são um espaço coletivo, e não uma casa.",
+          "2": "A horta descrita é uma atividade agrícola, e os banheiros escolares são um espaço coletivo; não são uma fábrica e uma casa."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "usos-da-agua",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara o 3º ano do Ensino Fundamental, o objetivo curricular de relacionar atividades humanas aos usos da água, o tema usos da água e uma referência autorizada vinculada à matriz congelada.",
+      "As seis propostas apresentam quatro alternativas, um correctIndex válido, explicação da resposta correta e três feedbacks indexados pelas alternativas incorretas.",
+      "Na passagem pedagógica, todas as seis propostas possuem uma única resposta defensável, alternativas incorretas plausíveis e explicações coerentes com o objetivo declarado."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação humana aplicável antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c1de-105c-71c3-b3b9-3ff5439240d5",
+    "runId": "01a1c1de-105c-71c3-b3b9-3ff5439240d5:2026-11-09T19:52:52.502Z",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T19:52:52.502Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_usos_da_agua_009": "a1b433d8d5aac19b7fb64c0ae52e83c974c3b99cede8677680ec16df52adf76d",
+      "2026t3v2_geo_usos_da_agua_010": "ddebf5d0c5256c80a1b8305edb37f4b1c7e2bd6dd07401bb3e81810dbceeea70",
+      "2026t3v2_geo_usos_da_agua_015": "c8d43f3826edc957a266692b96c94432e46f1e1c0e890d39b24d1c61531f6d30",
+      "2026t3v2_geo_usos_da_agua_016": "0b8c61aabe199e5f64cf8c2bf6074defe17ec42d54888ee7e2b0bf807ec45cdd",
+      "2026t3v2_geo_usos_da_agua_018": "a6d90119c2813aa80d4b68bfd5846341423b2b03926499b7922d2db96771e923",
+      "2026t3v2_geo_usos_da_agua_020": "fb3d561f49269e6e6e6a19fb154b4a25fd49d47f52708b97cd15fe4933bb7cde"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/usos-da-agua-pedagogical-r2-original.json",
+    "originalReportSha256": "1fd6241f746c751370d37735af4eb44cebf2c15798890b36253c4e1d25ef1e59"
+  }
+}

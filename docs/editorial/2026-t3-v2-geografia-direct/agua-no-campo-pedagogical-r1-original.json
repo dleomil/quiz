@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água no campo"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Relacionar água a atividades rurais e uso responsável",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma produtora leva água até as raízes das hortaliças quando a chuva não é suficiente. Qual atividade realiza?",
+        "options": [
+          "Irrigação das plantações.",
+          "Água para os animais beberem.",
+          "Proteção da vegetação perto de rios.",
+          "Planejamento da irrigação."
+        ],
+        "correctIndex": 0,
+        "explanation": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário.",
+        "wrongExplanations": {
+          "1": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros. Essa alternativa não descreve a situação apresentada.",
+          "2": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios. Essa alternativa não descreve a situação apresentada.",
+          "3": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Um agricultor utiliza um sistema para molhar o cultivo conforme a necessidade das plantas. Qual é esse uso da água?",
+        "options": [
+          "Planejamento da irrigação.",
+          "Irrigação das plantações.",
+          "Água para os animais beberem.",
+          "Proteção da vegetação perto de rios."
+        ],
+        "correctIndex": 1,
+        "explanation": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário.",
+        "wrongExplanations": {
+          "0": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar. Essa alternativa não descreve a situação apresentada.",
+          "2": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros. Essa alternativa não descreve a situação apresentada.",
+          "3": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Um trabalhador enche os bebedouros das vacas com água adequada. Qual necessidade ele atende?",
+        "options": [
+          "Cuidado com nascentes.",
+          "Armazenamento adequado de água da chuva.",
+          "Água para os animais beberem.",
+          "Higiene das instalações rurais."
+        ],
+        "correctIndex": 2,
+        "explanation": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros.",
+        "wrongExplanations": {
+          "0": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso. Essa alternativa não descreve a situação apresentada.",
+          "1": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável. Essa alternativa não descreve a situação apresentada.",
+          "3": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Em uma criação de galinhas, uma pessoa verifica se há água segura nos bebedouros. Qual uso está descrito?",
+        "options": [
+          "Higiene das instalações rurais.",
+          "Cuidado com nascentes.",
+          "Armazenamento adequado de água da chuva.",
+          "Água para os animais beberem."
+        ],
+        "correctIndex": 3,
+        "explanation": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros.",
+        "wrongExplanations": {
+          "0": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação. Essa alternativa não descreve a situação apresentada.",
+          "1": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso. Essa alternativa não descreve a situação apresentada.",
+          "2": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma equipe usa a água necessária para lavar as instalações de criação seguindo cuidados sanitários. Qual uso está descrito?",
+        "options": [
+          "Higiene das instalações rurais.",
+          "Proteção da vegetação perto de rios.",
+          "Irrigação por gotejamento.",
+          "Prevenção da contaminação da água."
+        ],
+        "correctIndex": 0,
+        "explanation": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação.",
+        "wrongExplanations": {
+          "1": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma pessoa limpa com água um local de trabalho da propriedade, seguindo os cuidados necessários. Qual finalidade está sendo atendida?",
+        "options": [
+          "Prevenção da contaminação da água.",
+          "Higiene das instalações rurais.",
+          "Proteção da vegetação perto de rios.",
+          "Irrigação por gotejamento."
+        ],
+        "correctIndex": 1,
+        "explanation": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação.",
+        "wrongExplanations": {
+          "0": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente. Essa alternativa não descreve a situação apresentada.",
+          "2": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios. Essa alternativa não descreve a situação apresentada.",
+          "3": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma comunidade conserva as plantas que crescem nas margens do rio. Qual cuidado com a paisagem ela realiza?",
+        "options": [
+          "Planejamento da irrigação.",
+          "Uso doméstico da água no campo.",
+          "Proteção da vegetação perto de rios.",
+          "Cuidado com nascentes."
+        ],
+        "correctIndex": 2,
+        "explanation": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios.",
+        "wrongExplanations": {
+          "0": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar. Essa alternativa não descreve a situação apresentada.",
+          "1": "Famílias que vivem em áreas rurais também usam água em tarefas da casa. Essa alternativa não descreve a situação apresentada.",
+          "3": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma propriedade mantém árvores e outras plantas junto ao curso de água para proteger suas margens. Qual ação está descrita?",
+        "options": [
+          "Cuidado com nascentes.",
+          "Planejamento da irrigação.",
+          "Uso doméstico da água no campo.",
+          "Proteção da vegetação perto de rios."
+        ],
+        "correctIndex": 3,
+        "explanation": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios.",
+        "wrongExplanations": {
+          "0": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso. Essa alternativa não descreve a situação apresentada.",
+          "1": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar. Essa alternativa não descreve a situação apresentada.",
+          "2": "Famílias que vivem em áreas rurais também usam água em tarefas da casa. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Moradores evitam lixo e danos à vegetação no lugar onde nasce um riacho. Qual cuidado está descrito?",
+        "options": [
+          "Cuidado com nascentes.",
+          "Irrigação por gotejamento.",
+          "Armazenamento adequado de água da chuva.",
+          "Irrigação das plantações."
+        ],
+        "correctIndex": 0,
+        "explanation": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso.",
+        "wrongExplanations": {
+          "1": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo. Essa alternativa não descreve a situação apresentada.",
+          "2": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável. Essa alternativa não descreve a situação apresentada.",
+          "3": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma família protege a área onde a água sai do solo e inicia um curso de água. Qual é o foco desse cuidado?",
+        "options": [
+          "Irrigação das plantações.",
+          "Cuidado com nascentes.",
+          "Irrigação por gotejamento.",
+          "Armazenamento adequado de água da chuva."
+        ],
+        "correctIndex": 1,
+        "explanation": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso.",
+        "wrongExplanations": {
+          "0": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Tubos liberam gotas perto das raízes das plantas. Qual forma de irrigação aparece nessa situação?",
+        "options": [
+          "Prevenção da contaminação da água.",
+          "Água para os animais beberem.",
+          "Irrigação por gotejamento.",
+          "Planejamento da irrigação."
+        ],
+        "correctIndex": 2,
+        "explanation": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo.",
+        "wrongExplanations": {
+          "0": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente. Essa alternativa não descreve a situação apresentada.",
+          "1": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros. Essa alternativa não descreve a situação apresentada.",
+          "3": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma horta recebe água por pequenos pontos que pingam junto às plantas. Qual sistema está sendo usado?",
+        "options": [
+          "Planejamento da irrigação.",
+          "Prevenção da contaminação da água.",
+          "Água para os animais beberem.",
+          "Irrigação por gotejamento."
+        ],
+        "correctIndex": 3,
+        "explanation": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo.",
+        "wrongExplanations": {
+          "0": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar. Essa alternativa não descreve a situação apresentada.",
+          "1": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente. Essa alternativa não descreve a situação apresentada.",
+          "2": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Antes de molhar o cultivo, uma produtora verifica a umidade do solo e a previsão de chuva. Que cuidado ela adota?",
+        "options": [
+          "Planejamento da irrigação.",
+          "Armazenamento adequado de água da chuva.",
+          "Uso doméstico da água no campo.",
+          "Higiene das instalações rurais."
+        ],
+        "correctIndex": 0,
+        "explanation": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar.",
+        "wrongExplanations": {
+          "1": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável. Essa alternativa não descreve a situação apresentada.",
+          "2": "Famílias que vivem em áreas rurais também usam água em tarefas da casa. Essa alternativa não descreve a situação apresentada.",
+          "3": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Um agricultor decide a quantidade de água depois de observar as necessidades das plantas. Que cuidado realiza?",
+        "options": [
+          "Higiene das instalações rurais.",
+          "Planejamento da irrigação.",
+          "Armazenamento adequado de água da chuva.",
+          "Uso doméstico da água no campo."
+        ],
+        "correctIndex": 1,
+        "explanation": "Observar o solo, as plantas e a chuva ajuda a decidir quando e quanto irrigar.",
+        "wrongExplanations": {
+          "0": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação. Essa alternativa não descreve a situação apresentada.",
+          "2": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável. Essa alternativa não descreve a situação apresentada.",
+          "3": "Famílias que vivem em áreas rurais também usam água em tarefas da casa. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma propriedade capta chuva em um reservatório adequado para regar plantas. Qual prática está descrita?",
+        "options": [
+          "Irrigação das plantações.",
+          "Proteção da vegetação perto de rios.",
+          "Armazenamento adequado de água da chuva.",
+          "Prevenção da contaminação da água."
+        ],
+        "correctIndex": 2,
+        "explanation": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável.",
+        "wrongExplanations": {
+          "0": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário. Essa alternativa não descreve a situação apresentada.",
+          "1": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios. Essa alternativa não descreve a situação apresentada.",
+          "3": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma comunidade guarda água da chuva em uma estrutura própria para usá-la em tarefas permitidas. Qual prática é essa?",
+        "options": [
+          "Prevenção da contaminação da água.",
+          "Irrigação das plantações.",
+          "Proteção da vegetação perto de rios.",
+          "Armazenamento adequado de água da chuva."
+        ],
+        "correctIndex": 3,
+        "explanation": "Estruturas próprias podem guardar chuva para usos adequados, sem presumir que essa água seja potável.",
+        "wrongExplanations": {
+          "0": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente. Essa alternativa não descreve a situação apresentada.",
+          "1": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário. Essa alternativa não descreve a situação apresentada.",
+          "2": "A vegetação das margens ajuda a proteger o solo e a reduzir a chegada de terra aos rios. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma propriedade mantém resíduos e produtos poluentes longe dos cursos de água. Qual cuidado está descrito?",
+        "options": [
+          "Prevenção da contaminação da água.",
+          "Uso doméstico da água no campo.",
+          "Água para os animais beberem.",
+          "Cuidado com nascentes."
+        ],
+        "correctIndex": 0,
+        "explanation": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente.",
+        "wrongExplanations": {
+          "1": "Famílias que vivem em áreas rurais também usam água em tarefas da casa. Essa alternativa não descreve a situação apresentada.",
+          "2": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros. Essa alternativa não descreve a situação apresentada.",
+          "3": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Uma equipe dá destino adequado aos resíduos para que não cheguem ao riacho. Que objetivo essa ação atende?",
+        "options": [
+          "Cuidado com nascentes.",
+          "Prevenção da contaminação da água.",
+          "Uso doméstico da água no campo.",
+          "Água para os animais beberem."
+        ],
+        "correctIndex": 1,
+        "explanation": "Impedir que lixo e produtos poluentes cheguem à água protege pessoas, animais e ambiente.",
+        "wrongExplanations": {
+          "0": "Proteger o lugar onde começa um curso de água ajuda a conservar esse recurso. Essa alternativa não descreve a situação apresentada.",
+          "2": "Famílias que vivem em áreas rurais também usam água em tarefas da casa. Essa alternativa não descreve a situação apresentada.",
+          "3": "Animais criados no campo precisam de água adequada à sua saúde nos bebedouros. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Em uma moradia rural, uma família usa água potável para cozinhar. Como classificar esse uso?",
+        "options": [
+          "Higiene das instalações rurais.",
+          "Irrigação por gotejamento.",
+          "Uso doméstico da água no campo.",
+          "Irrigação das plantações."
+        ],
+        "correctIndex": 2,
+        "explanation": "Famílias que vivem em áreas rurais também usam água em tarefas da casa.",
+        "wrongExplanations": {
+          "0": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação. Essa alternativa não descreve a situação apresentada.",
+          "1": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-no-campo",
+        "question": "Em uma casa no campo, uma pessoa usa água para lavar roupas da família. Que uso é esse?",
+        "options": [
+          "Irrigação das plantações.",
+          "Higiene das instalações rurais.",
+          "Irrigação por gotejamento.",
+          "Uso doméstico da água no campo."
+        ],
+        "correctIndex": 3,
+        "explanation": "Famílias que vivem em áreas rurais também usam água em tarefas da casa.",
+        "wrongExplanations": {
+          "0": "Fornecer água às plantas cultivadas ajuda seu desenvolvimento quando necessário. Essa alternativa não descreve a situação apresentada.",
+          "1": "A limpeza de locais de trabalho e criação pode usar água com cuidados para evitar desperdício e contaminação. Essa alternativa não descreve a situação apresentada.",
+          "2": "Pequenas quantidades de água são levadas perto das raízes por gotas, conforme a necessidade do cultivo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"agua-no-campo\",\"reviewPass\":\"pedagogical\",\"decision\":\"blocked\",\"facts\":[\"A entrada registra 3º ano do Ensino Fundamental, objetivo curricular, fonte autorizada, matriz congelada e passagem pedagogical.\",\"As 20 propostas contêm enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks indexados.\",\"Dezenove propostas apresentam alinhamento ao objetivo, resposta única defensável, explicação correta e feedbacks coerentes.\",\"A proposta 2026t3v2_geo_agua_no_campo_015 descreve tanto armazenamento de água da chuva quanto irrigação das plantações.\"],\"doubts\":[\"Na proposta 2026t3v2_geo_agua_no_campo_015, pretende-se avaliar o armazenamento da água da chuva ou seu uso posterior na irrigação?\"],\"findings\":[{\"questionId\":\"2026t3v2_geo_agua_no_campo_015\",\"criterion\":\"resposta_unica\",\"severity\":\"blocking\",\"evidence\":\"O enunciado diz que a propriedade capta chuva em reservatório para regar plantas; assim, tanto \\\"Armazenamento adequado de água da chuva\\\" quanto \\\"Irrigação das plantações\\\" descrevem práticas presentes na situação.\",\"recommendation\":\"Reformular o enunciado para perguntar inequivocamente pelo ato de captar e guardar a água, ou retirar a ação de regar plantas.\"},{\"questionId\":\"2026t3v2_geo_agua_no_campo_015\",\"criterion\":\"wrongExplanations\",\"severity\":\"major\",\"evidence\":\"O feedback da alternativa 0 afirma que irrigação não descreve a situação, embora o enunciado declare que a água será usada para regar plantas.\",\"recommendation\":\"Após desambiguar o enunciado, ajustar o feedback da alternativa 0 para explicar por que ela não responde ao foco específico da pergunta.\"}],\"recommendations\":[\"Corrigir e submeter novamente a proposta 2026t3v2_geo_agua_no_campo_015 à passagem pedagogical.\",\"Manter a aprovação humana obrigatória para o lote exato após a correção.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_agua_no_campo_001\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado mede uso da água na produção rural e descreve claramente a irrigação.\",\"options\":\"Há quatro alternativas temáticas plausíveis; apenas irrigação nomeia a atividade realizada.\",\"answer\":\"O índice 0 é correto e único porque a água é levada às raízes do cultivo.\",\"explanation\":\"Explica corretamente a função da irrigação no desenvolvimento das plantas.\",\"wrongExplanations\":\"Os três feedbacks distinguem animais, vegetação marginal e planejamento da ação descrita.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_002\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve o uso efetivo de água para molhar o cultivo.\",\"options\":\"As quatro alternativas pertencem ao tema; apenas irrigação das plantações responde ao uso perguntado.\",\"answer\":\"O índice 1 é correto e defensável; planejamento não substitui a ação de molhar.\",\"explanation\":\"Relaciona corretamente o fornecimento de água ao desenvolvimento do cultivo.\",\"wrongExplanations\":\"Os três feedbacks explicam por que planejamento, dessedentação animal e proteção marginal não são o uso descrito.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_003\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado identifica uma necessidade concreta dos animais no campo.\",\"options\":\"Há quatro alternativas distintas e plausíveis no tema; só a dessedentação corresponde aos bebedouros.\",\"answer\":\"O índice 2 é correto e único.\",\"explanation\":\"Explica corretamente que os animais precisam de água adequada nos bebedouros.\",\"wrongExplanations\":\"Os três feedbacks diferenciam nascente, armazenamento de chuva e higiene das instalações.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_004\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve água segura disponibilizada às galinhas em bebedouros.\",\"options\":\"As quatro alternativas são distintas; apenas água para os animais beberem atende ao comando.\",\"answer\":\"O índice 3 é correto e único.\",\"explanation\":\"Relaciona corretamente a água dos bebedouros à saúde dos animais.\",\"wrongExplanations\":\"Os três feedbacks afastam higiene, cuidado com nascentes e armazenamento de chuva de modo coerente.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_005\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado pergunta pelo uso da água na lavagem sanitária das instalações de criação.\",\"options\":\"Há quatro alternativas relacionadas ao tema; apenas higiene das instalações nomeia o uso descrito.\",\"answer\":\"O índice 0 é correto e único pelo foco explícito na lavagem das instalações.\",\"explanation\":\"Explica corretamente o uso cuidadoso da água na limpeza rural.\",\"wrongExplanations\":\"Os três feedbacks distinguem proteção marginal, gotejamento e prevenção de poluição do uso de limpeza.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_006\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve limpeza com água em local de trabalho rural.\",\"options\":\"As quatro alternativas são plausíveis no tema; só higiene das instalações responde à finalidade imediata.\",\"answer\":\"O índice 1 é correto e único.\",\"explanation\":\"Relaciona corretamente limpeza, uso cuidadoso da água e prevenção de desperdício.\",\"wrongExplanations\":\"Os três feedbacks diferenciam prevenção de contaminação, proteção marginal e gotejamento.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_007\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado focaliza a conservação da vegetação nas margens de um rio.\",\"options\":\"Há quatro cuidados rurais distintos; apenas proteção da vegetação perto de rios corresponde à situação.\",\"answer\":\"O índice 2 é correto e único; o local descrito são margens, não uma nascente.\",\"explanation\":\"Explica corretamente a proteção do solo e a redução de sedimentos no rio.\",\"wrongExplanations\":\"Os três feedbacks distinguem irrigação, uso doméstico e cuidado específico com nascentes.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_008\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado explicita plantas junto ao curso de água para proteger as margens.\",\"options\":\"As quatro alternativas são temáticas; somente proteção da vegetação perto de rios nomeia a ação.\",\"answer\":\"O índice 3 é correto e único.\",\"explanation\":\"Apresenta corretamente o papel protetor da vegetação marginal.\",\"wrongExplanations\":\"Os três feedbacks afastam nascente, planejamento da irrigação e uso doméstico com justificativas pertinentes.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado localiza o cuidado no ponto onde nasce um riacho.\",\"options\":\"Há quatro práticas rurais distintas; apenas cuidado com nascentes corresponde ao local indicado.\",\"answer\":\"O índice 0 é correto e único entre as alternativas.\",\"explanation\":\"Explica corretamente que proteger o início do curso de água conserva o recurso.\",\"wrongExplanations\":\"Os três feedbacks distinguem gotejamento, armazenamento de chuva e irrigação da proteção da nascente.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado define a área onde a água aflora e inicia um curso de água.\",\"options\":\"As quatro alternativas pertencem ao tema; só cuidado com nascentes responde ao foco.\",\"answer\":\"O índice 1 é correto e único.\",\"explanation\":\"Explica corretamente a conservação do lugar onde começa o curso de água.\",\"wrongExplanations\":\"Os três feedbacks diferenciam irrigação, gotejamento e armazenamento de chuva.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_011\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve tubos liberando gotas perto das raízes.\",\"options\":\"Há quatro alternativas temáticas e distintas; apenas gotejamento nomeia essa forma de irrigação.\",\"answer\":\"O índice 2 é correto e único.\",\"explanation\":\"Explica corretamente a aplicação de pequenas quantidades de água junto às raízes.\",\"wrongExplanations\":\"Os três feedbacks diferenciam contaminação, água para animais e planejamento da irrigação.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_012\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado caracteriza um sistema com pontos que pingam junto às plantas.\",\"options\":\"As quatro alternativas são distintas; somente irrigação por gotejamento identifica o sistema.\",\"answer\":\"O índice 3 é correto e único.\",\"explanation\":\"Descreve corretamente o funcionamento básico do gotejamento.\",\"wrongExplanations\":\"Os três feedbacks afastam planejamento, prevenção de contaminação e água para animais.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_013\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve observação do solo e da chuva antes de irrigar.\",\"options\":\"Há quatro práticas rurais plausíveis; apenas planejamento da irrigação corresponde à decisão prévia.\",\"answer\":\"O índice 0 é correto e único.\",\"explanation\":\"Explica corretamente como observações orientam quando e quanto irrigar.\",\"wrongExplanations\":\"Os três feedbacks distinguem armazenamento, uso doméstico e higiene da decisão de irrigação.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_014\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado focaliza a decisão da quantidade de água conforme as plantas.\",\"options\":\"As quatro alternativas são temáticas; só planejamento da irrigação descreve esse cuidado.\",\"answer\":\"O índice 1 é correto e único.\",\"explanation\":\"Relaciona corretamente a observação das necessidades ao planejamento da irrigação.\",\"wrongExplanations\":\"Os três feedbacks diferenciam higiene, armazenamento de chuva e uso doméstico.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_015\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_agua_no_campo_015\",\"criterion\":\"resposta_unica\",\"severity\":\"blocking\",\"evidence\":\"O enunciado diz que a propriedade capta chuva em reservatório para regar plantas; assim, tanto \\\"Armazenamento adequado de água da chuva\\\" quanto \\\"Irrigação das plantações\\\" descrevem práticas presentes na situação.\",\"recommendation\":\"Reformular o enunciado para perguntar inequivocamente pelo ato de captar e guardar a água, ou retirar a ação de regar plantas.\"},{\"questionId\":\"2026t3v2_geo_agua_no_campo_015\",\"criterion\":\"wrongExplanations\",\"severity\":\"major\",\"evidence\":\"O feedback da alternativa 0 afirma que irrigação não descreve a situação, embora o enunciado declare que a água será usada para regar plantas.\",\"recommendation\":\"Após desambiguar o enunciado, ajustar o feedback da alternativa 0 para explicar por que ela não responde ao foco específico da pergunta.\"}],\"doubts\":[\"O foco avaliado é o armazenamento da chuva ou o uso da água na irrigação?\"],\"checks\":{\"question\":\"O enunciado descreve duas práticas e não define qual delas deve ser classificada.\",\"options\":\"Armazenamento de chuva e irrigação das plantações são alternativas defensáveis na situação apresentada.\",\"answer\":\"O índice 2 descreve uma prática presente, mas não constitui resposta única.\",\"explanation\":\"A explicação sobre armazenamento é correta, porém não resolve a concorrência com irrigação.\",\"wrongExplanations\":\"Os feedbacks 1 e 3 são coerentes; o feedback 0 contradiz a referência explícita a regar plantas.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_016\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado focaliza guardar água da chuva em estrutura própria.\",\"options\":\"Há quatro alternativas temáticas; apenas armazenamento adequado nomeia a prática descrita.\",\"answer\":\"O índice 3 é correto e único.\",\"explanation\":\"Explica corretamente que a chuva pode ser armazenada para usos adequados sem pressupor potabilidade.\",\"wrongExplanations\":\"Os três feedbacks distinguem contaminação, irrigação e proteção marginal do ato de armazenar.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_017\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve impedir que resíduos e poluentes alcancem cursos de água.\",\"options\":\"As quatro alternativas são distintas; só prevenção da contaminação responde diretamente à ação.\",\"answer\":\"O índice 0 é correto e único.\",\"explanation\":\"Explica corretamente a proteção de pessoas, animais e ambiente contra poluentes.\",\"wrongExplanations\":\"Os três feedbacks diferenciam uso doméstico, água para animais e cuidado com nascentes.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_018\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado relaciona destinação de resíduos ao impedimento de chegada ao riacho.\",\"options\":\"Há quatro alternativas temáticas; apenas prevenção da contaminação expressa o objetivo da ação.\",\"answer\":\"O índice 1 é correto e único.\",\"explanation\":\"Explica corretamente que afastar resíduos e poluentes protege a água e os seres vivos.\",\"wrongExplanations\":\"Os três feedbacks distinguem nascente, uso doméstico e água para animais.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_019\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve água potável usada para cozinhar em moradia rural.\",\"options\":\"As quatro alternativas pertencem ao tema; somente uso doméstico classifica a tarefa da família.\",\"answer\":\"O índice 2 é correto e único.\",\"explanation\":\"Relaciona corretamente tarefas da casa ao uso doméstico da água no campo.\",\"wrongExplanations\":\"Os três feedbacks distinguem limpeza de instalações, gotejamento e irrigação agrícola.\"}},{\"questionId\":\"2026t3v2_geo_agua_no_campo_020\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve lavagem de roupas da família em uma casa no campo.\",\"options\":\"Há quatro alternativas temáticas; apenas uso doméstico corresponde à tarefa familiar.\",\"answer\":\"O índice 3 é correto e único; higiene de instalações rurais não abrange roupas da família.\",\"explanation\":\"Explica corretamente que tarefas da casa são usos domésticos da água.\",\"wrongExplanations\":\"Os três feedbacks diferenciam irrigação, higiene de instalações e gotejamento do uso doméstico.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1e3-12d7-70c0-b2b0-9f3d98c02464",
+  "runId": "01a1c1e3-12d7-70c0-b2b0-9f3d98c02464:2026-11-09T19:59:14.505Z",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T19:59:14.505Z",
+  "testOnly": false,
+  "sha256": "0b2577684e9a454757bb253c0daa710730fe8f5df760380f2aacdb2c3f5c1c08"
+}

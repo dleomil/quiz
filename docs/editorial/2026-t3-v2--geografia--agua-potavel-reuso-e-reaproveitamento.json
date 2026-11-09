@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/agua-potavel-reuso-e-reaproveitamento",
+  "sourceSha256": "f505c087df359423a54f07c73f995a4667a110cb81ea7af2902b61340142fcce",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r3-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r3-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r7-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r7-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r4-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r4-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r1-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

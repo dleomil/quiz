@@ -1,0 +1,110 @@
+{
+  "scenarioId": "01a1c21d-5234-7f51-872b-dec0c0ae869f:01a1c21d-5262-7d63-80fd-c1872766e1d0",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+        "options": [
+          "Endereço.",
+          "Município.",
+          "Bairro.",
+          "Espaço público."
+        ],
+        "correctIndex": 3,
+        "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "Um endereço é formado por informações como o nome da rua e o número. A pergunta pede que tipo de lugar é a praça, e não seu endereço.",
+          "1": "O município é um território com administração local. Pode reunir áreas urbanas e rurais; não é o nome dado a uma praça.",
+          "2": "Um bairro é uma parte da cidade formada por diversas ruas e construções. A pergunta pede a classificação da praça, não da região onde ela fica."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "reviewPass": "pedagogical",
+    "decision": "adjustments_required",
+    "facts": [
+      "A entrada declara o 3º ano do Ensino Fundamental, o tema município e o objetivo autorizado de reconhecer o município e seus espaços urbanos e rurais.",
+      "A proposta possui quatro alternativas, correctIndex 3, explicação da resposta correta e feedbacks para os três índices incorretos.",
+      "A alternativa de índice 3, \"Espaço público.\", é a única resposta defensável para a classificação solicitada no enunciado."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_geo_municipio_016",
+        "criterion": "objective_alignment",
+        "severity": "major",
+        "evidence": "A questão pede a classificação da praça como espaço público, mas não solicita reconhecer ou distinguir espaços urbanos e rurais do município, que é o foco explícito do objetivo curricular autorizado.",
+        "recommendation": "Reformular enunciado, alternativas e explicações para avaliar diretamente o reconhecimento de um espaço urbano ou rural do município, mantendo uma única resposta defensável."
+      }
+    ],
+    "recommendations": [
+      "Submeter a proposta reformulada a nova passagem pedagógica e a uma passagem linguística independente.",
+      "Manter a aprovação pedagógica humana como requisito posterior; este parecer não a substitui."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c21d-5234-7f51-872b-dec0c0ae869f",
+    "runId": "01a1c21d-5234-7f51-872b-dec0c0ae869f:01a1c21d-5262-7d63-80fd-c1872766e1d0",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T21:02:03.389Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_municipio_016": "787fd6bc9730f5119ada227497defe7ab9b25adf0f549802f6d2b58ef85f5dcc"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-pedagogical-r4-original.json",
+    "originalReportSha256": "f86245df17af755b152a38a030a86aa88a6d58a5ea0ab2d7c068da865e332cbc"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/agua-nos-centros-urbanos",
+  "sourceSha256": "ccb0dd8b2b24aa237d0973fdc523ee0e4ad9e83e3d94fe30d191c1dfcc6c2ad9",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r3-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r3-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_agua_nos_centros_urbanos_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-linguistic-r1-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

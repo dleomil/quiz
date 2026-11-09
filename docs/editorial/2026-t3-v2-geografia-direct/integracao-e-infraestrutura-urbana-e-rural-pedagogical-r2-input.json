@@ -1,0 +1,179 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "integracao-e-infraestrutura-urbana-e-rural",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "integracao-e-infraestrutura-urbana-e-rural",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Integração e infraestrutura urbana e rural"
+  },
+  "questionVersion": 2,
+  "authorizedObjective": "Identificar serviços e relações entre campo e cidade",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "integracao-e-infraestrutura-urbana-e-rural",
+      "question": "Estudantes que moram longe da escola contam com um ônibus que leva a turma às aulas e de volta para casa. Qual serviço os atende?",
+      "options": [
+        "Rede de energia elétrica.",
+        "Abastecimento de água segura.",
+        "Serviço de saúde.",
+        "Transporte escolar."
+      ],
+      "correctIndex": 3,
+      "explanation": "É o serviço que ajuda estudantes a chegar à escola e retornar para casa.",
+      "wrongExplanations": {
+        "0": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada.",
+        "1": "Sistemas adequados levam água com qualidade para atender às necessidades da população. Essa alternativa não descreve a situação apresentada.",
+        "2": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "integracao-e-infraestrutura-urbana-e-rural",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Integração e infraestrutura urbana e rural"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "integracao-e-infraestrutura-urbana-e-rural",
+      "question": "Uma comunidade passa a receber água própria para consumo por uma rede de canos. Qual serviço foi ampliado?",
+      "options": [
+        "Abastecimento de água segura.",
+        "Coleta de resíduos.",
+        "Serviço de saúde.",
+        "Estradas e pontes."
+      ],
+      "correctIndex": 0,
+      "explanation": "O abastecimento leva água própria para consumo até as moradias e outros locais da comunidade.",
+      "wrongExplanations": {
+        "1": "O serviço recolhe o lixo e o encaminha para um destino adequado. Essa alternativa não descreve a situação apresentada.",
+        "2": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+        "3": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "integracao-e-infraestrutura-urbana-e-rural",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Integração e infraestrutura urbana e rural"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "integracao-e-infraestrutura-urbana-e-rural",
+      "question": "Uma agricultora compra ferramentas em uma loja da cidade para usar na plantação. Qual relação aparece?",
+      "options": [
+        "Comércio de equipamentos para o campo.",
+        "Serviço de saúde.",
+        "Tratamento de esgoto.",
+        "Rede de energia elétrica."
+      ],
+      "correctIndex": 0,
+      "explanation": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais.",
+      "wrongExplanations": {
+        "1": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+        "2": "Tratar esgoto reduz a poluição da água usada. A situação mostra uma loja vendendo ferramentas ou peças para atividades rurais.",
+        "3": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "integracao-e-infraestrutura-urbana-e-rural",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Integração e infraestrutura urbana e rural"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "integracao-e-infraestrutura-urbana-e-rural",
+      "question": "Uma loja urbana vende peças para máquinas utilizadas nas propriedades rurais. Que ligação está descrita?",
+      "options": [
+        "Rede de energia elétrica.",
+        "Comércio de equipamentos para o campo.",
+        "Serviço de saúde.",
+        "Tratamento de esgoto."
+      ],
+      "correctIndex": 1,
+      "explanation": "Estabelecimentos podem fornecer ferramentas e materiais para atividades rurais.",
+      "wrongExplanations": {
+        "2": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas. Essa alternativa não descreve a situação apresentada.",
+        "3": "Tratar esgoto reduz a poluição da água usada. A situação mostra uma loja vendendo ferramentas ou peças para atividades rurais.",
+        "0": "Leva eletricidade a moradias, comércios e locais de trabalho. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "integracao-e-infraestrutura-urbana-e-rural",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Integração e infraestrutura urbana e rural"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "integracao-e-infraestrutura-urbana-e-rural",
+      "question": "Uma equipe de vacinação percorre comunidades rurais e bairros urbanos. Qual serviço essa equipe oferece à população?",
+      "options": [
+        "Transporte de produtos do campo para a cidade.",
+        "Estradas e pontes.",
+        "Comunicação por telefone e internet.",
+        "Serviço de saúde."
+      ],
+      "correctIndex": 3,
+      "explanation": "Atendimentos e ações de saúde devem alcançar moradores de diferentes áreas.",
+      "wrongExplanations": {
+        "0": "Alimentos e outros produtos rurais podem ser levados para consumidores e comércios urbanos. Essa alternativa não descreve a situação apresentada.",
+        "1": "Essas estruturas permitem o deslocamento terrestre entre lugares. Essa alternativa não descreve a situação apresentada.",
+        "2": "Permite trocar informações entre pessoas e lugares, mesmo a distância. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "integracao-e-infraestrutura-urbana-e-rural",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Integração e infraestrutura urbana e rural"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

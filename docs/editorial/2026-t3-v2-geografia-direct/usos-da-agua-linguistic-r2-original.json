@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "usos-da-agua",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "relacionar-atividades-humanas-aos-usos-da-agua",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Usos da água"
+    },
+    "questionVersion": 2,
+    "authorizedObjective": "Relacionar atividades humanas aos usos da água",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Em um hospital, qual tarefa utiliza água para a limpeza?",
+        "options": [
+          "Lavar os pisos seguindo as regras de limpeza do hospital.",
+          "Organizar fichas em ordem alfabética.",
+          "Conferir os horários das consultas.",
+          "Contar as cadeiras da recepção."
+        ],
+        "correctIndex": 0,
+        "explanation": "A limpeza dos pisos é um dos usos da água nos serviços de saúde.",
+        "wrongExplanations": {
+          "1": "Organizar fichas não é uma atividade de lavagem.",
+          "2": "Conferir horários não utiliza água para limpar.",
+          "3": "Contar cadeiras não faz parte da lavagem dos pisos."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Qual atividade escolar usa água para os estudantes beberem?",
+        "options": [
+          "Dar descarga nos banheiros.",
+          "Abastecer os bebedouros com água potável.",
+          "Lavar os panos de limpeza.",
+          "Regar o jardim."
+        ],
+        "correctIndex": 1,
+        "explanation": "O bebedouro oferece água própria para beber.",
+        "wrongExplanations": {
+          "0": "A descarga serve ao uso do banheiro, não fornece água para beber.",
+          "2": "A lavagem dos panos é um uso de limpeza e não fornece água para os estudantes beberem.",
+          "3": "Regar o jardim atende as plantas."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Ao escovar os dentes em casa, uma pessoa usa água para enxaguar a boca. A qual finalidade esse uso está ligado?",
+        "options": [
+          "Irrigação das plantas.",
+          "Limpeza das roupas.",
+          "Higiene pessoal.",
+          "Preparo de alimentos."
+        ],
+        "correctIndex": 2,
+        "explanation": "Enxaguar a boca durante a escovação faz parte dos cuidados com a higiene pessoal.",
+        "wrongExplanations": {
+          "0": "Irrigar é fornecer água às plantas, não cuidar da higiene da boca.",
+          "1": "A lavagem de roupas cuida de peças de vestuário, não da boca.",
+          "3": "Preparar alimentos é cozinhar ou realizar outras etapas da alimentação; a escovação cuida da higiene da boca."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Na escola, uma cozinheira usa água potável para fazer arroz. Qual é a finalidade desse uso?",
+        "options": [
+          "Limpar os pisos.",
+          "Regar o jardim.",
+          "Lavar os uniformes.",
+          "Preparar alimentos."
+        ],
+        "correctIndex": 3,
+        "explanation": "Cozinhar o arroz é um uso da água no preparo de alimentos para a comunidade escolar.",
+        "wrongExplanations": {
+          "0": "Limpar pisos é uma tarefa de limpeza, diferente de cozinhar o arroz.",
+          "1": "Regar o jardim atende as plantas, não o preparo da refeição.",
+          "2": "Lavar uniformes é cuidar das roupas, não preparar alimentos."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Qual atividade usa água para manter um espaço coletivo limpo?",
+        "options": [
+          "Regar os vasos de um cômodo da casa.",
+          "Lavar os banheiros de uma escola.",
+          "Preparar o jantar de uma família.",
+          "Encher a tigela de um gato em casa."
+        ],
+        "correctIndex": 1,
+        "explanation": "Os banheiros da escola são usados pela comunidade escolar e precisam de limpeza.",
+        "wrongExplanations": {
+          "0": "Essa tarefa cuida de plantas em uma residência.",
+          "2": "Essa atividade atende uma família em casa, não a limpeza de um espaço coletivo.",
+          "3": "Essa tarefa cuida do animal de uma casa, não da limpeza de um espaço coletivo."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_usos_da_agua_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "usos-da-agua",
+        "question": "Uma horta produz verduras para venda, e uma escola lava seus banheiros. Como classificar esses usos da água, nessa ordem?",
+        "options": [
+          "Doméstico e coletivo.",
+          "Agrícola e doméstico.",
+          "Industrial e doméstico.",
+          "Agrícola e coletivo."
+        ],
+        "correctIndex": 3,
+        "explanation": "A horta utiliza água na produção agrícola; a escola utiliza água na limpeza de um espaço coletivo.",
+        "wrongExplanations": {
+          "0": "A limpeza escolar é coletiva, mas a horta descrita produz alimentos para venda e representa um uso agrícola.",
+          "1": "O cultivo é agrícola, mas os banheiros da escola são um espaço coletivo, e não uma casa.",
+          "2": "A horta descrita é uma atividade agrícola, e os banheiros escolares são um espaço coletivo; não são uma fábrica e uma casa."
+        },
+        "skill": "relacionar-atividades-humanas-aos-usos-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Usos da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"usos-da-agua\",\"reviewPass\":\"linguistic\",\"decision\":\"approved\",\"facts\":[\"A entrada declara objetivo curricular, 3º ano do Ensino Fundamental, matriz congelada, referência autorizada e passagem linguística.\",\"As seis propostas apresentam enunciado, quatro alternativas, resposta, explicação e três feedbacks para alternativas incorretas.\",\"Os textos avaliados têm ortografia, concordância e pontuação adequadas, linguagem clara para a série e formulações sem ambiguidade linguística identificada.\"],\"doubts\":[],\"findings\":[],\"recommendations\":[],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_usos_da_agua_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado é direto, identifica o contexto hospitalar e pergunta com clareza pelo uso da água na limpeza.\",\"options\":\"As quatro alternativas são completas, distintas, gramaticalmente corretas e adequadas ao vocabulário do 3º ano.\",\"answer\":\"A alternativa indicada está formulada de modo claro e corresponde linguisticamente à tarefa solicitada no enunciado.\",\"explanation\":\"A explicação é curta, natural e relaciona de forma explícita a limpeza dos pisos ao uso da água em serviços de saúde.\",\"wrongExplanations\":\"Os três feedbacks são claros, respeitosos e explicam especificamente por que cada ação não atende ao uso de água para limpeza perguntado.\"}},{\"questionId\":\"2026t3v2_geo_usos_da_agua_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado usa construção simples e compreensível ao perguntar pelo uso da água destinado ao consumo dos estudantes.\",\"options\":\"As alternativas são distintas, paralelas como ações e apresentam vocabulário acessível, incluindo o termo contextualizado \\\"água potável\\\".\",\"answer\":\"A resposta indicada está redigida com clareza e expressa diretamente o abastecimento de água para beber.\",\"explanation\":\"A explicação é breve e esclarece em linguagem infantil a função do bebedouro.\",\"wrongExplanations\":\"Os feedbacks diferenciam com clareza os usos no banheiro, na limpeza e no jardim do fornecimento de água para beber.\"}},{\"questionId\":\"2026t3v2_geo_usos_da_agua_015\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A situação e a pergunta estão encadeadas com clareza, sem excesso de informação ou dupla interpretação linguística.\",\"options\":\"As quatro alternativas são expressões nominais paralelas, distintas e adequadas ao nível de leitura do 3º ano.\",\"answer\":\"A alternativa indicada nomeia de forma direta e linguisticamente precisa a finalidade descrita.\",\"explanation\":\"A explicação é natural, respeitosa e retoma a ação de enxaguar a boca como cuidado de higiene pessoal.\",\"wrongExplanations\":\"Cada feedback contrasta de maneira específica a finalidade incorreta com a higiene da boca, usando frases completas e compreensíveis.\"}},{\"questionId\":\"2026t3v2_geo_usos_da_agua_016\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado apresenta uma situação concreta da escola e pergunta pela finalidade do uso da água em frase simples e clara.\",\"options\":\"As alternativas mantêm estrutura verbal paralela, são distintas e usam vocabulário cotidiano para crianças do 3º ano.\",\"answer\":\"A resposta indicada está formulada de modo objetivo e nomeia claramente a finalidade perguntada.\",\"explanation\":\"A explicação retoma a ação de cozinhar arroz e a relaciona ao preparo de alimentos em linguagem acessível.\",\"wrongExplanations\":\"Os três feedbacks são específicos e distinguem com clareza limpeza, cuidado com plantas e lavagem de roupas do preparo da refeição.\"}},{\"questionId\":\"2026t3v2_geo_usos_da_agua_018\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A pergunta é curta e define com clareza os dois elementos relevantes: uso de água e limpeza de espaço coletivo.\",\"options\":\"As alternativas são ações completas, distintas e contextualizadas em espaços familiares às crianças.\",\"answer\":\"A alternativa indicada corresponde linguisticamente aos termos \\\"espaço coletivo\\\" e \\\"limpo\\\" usados no enunciado.\",\"explanation\":\"A explicação é concisa e esclarece por que os banheiros escolares constituem um espaço de uso coletivo que requer limpeza.\",\"wrongExplanations\":\"Os feedbacks identificam de forma clara a finalidade e o contexto doméstico de cada alternativa incorreta, sem linguagem pejorativa ou confusa.\"}},{\"questionId\":\"2026t3v2_geo_usos_da_agua_020\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado apresenta duas situações em ordem explícita e solicita a classificação correspondente sem ambiguidade linguística.\",\"options\":\"As quatro alternativas têm estrutura paralela, preservam a mesma ordem de classificação e empregam termos consistentes entre si.\",\"answer\":\"A resposta indicada está expressa como um par de classificações na ordem solicitada pelo enunciado.\",\"explanation\":\"A explicação usa duas orações claras para relacionar separadamente a horta ao uso agrícola e a escola ao uso coletivo.\",\"wrongExplanations\":\"Os três feedbacks identificam especificamente qual classificação de cada par não atende às situações descritas e permanecem compreensíveis para a série.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1de-3c1c-7491-8d77-7f53feae5776",
+  "runId": "01a1c1de-3c1c-7491-8d77-7f53feae5776:2026-11-09T19:52:57.547Z",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T19:52:57.547Z",
+  "testOnly": false,
+  "sha256": "851506c9cfa18a3b9fcd8629cf41dd836e06104843bfc42d74b053f380341e52"
+}

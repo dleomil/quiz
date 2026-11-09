@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 2,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+        "options": [
+          "Endereço.",
+          "Município.",
+          "Bairro.",
+          "Espaço público."
+        ],
+        "correctIndex": 3,
+        "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+          "1": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"municipio\",\"reviewPass\":\"pedagogical\",\"decision\":\"approved\",\"facts\":[\"A entrada declara o 3º ano do Ensino Fundamental e o objetivo curricular de reconhecer o município e seus espaços urbanos e rurais.\",\"A proposta contém quatro alternativas distintas, correctIndex 3, explicação da resposta correta e três feedbacks indexados pelas alternativas incorretas.\",\"“Espaço público” é a única classificação defensável entre as alternativas para uma praça municipal destinada ao uso da população.\",\"A questão mobiliza o reconhecimento de um espaço coletivo do município e está alinhada ao objetivo curricular declarado.\"],\"doubts\":[],\"findings\":[],\"recommendations\":[\"Submeter o pacote exato à passagem linguística independente e à aprovação pedagógica humana exigida antes da implementação.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_municipio_016\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado apresenta uma situação suficiente e mede o reconhecimento de um espaço coletivo do município, sem exigir habilidade lateral.\",\"options\":\"Há quatro alternativas distintas; as incorretas são categorias relacionadas ao território, mas não classificam a praça apresentada.\",\"answer\":\"O índice 3 aponta corretamente para “Espaço público”, única resposta defensável no conjunto.\",\"explanation\":\"A explicação relaciona corretamente a praça ao uso coletivo e reforça uma atitude de cuidado adequada ao 3º ano.\",\"wrongExplanations\":\"Os três feedbacks correspondem aos índices incorretos, definem cada conceito e esclarecem que ele não classifica a situação apresentada.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1eb-54ed-7300-b150-67c434a95022",
+  "runId": "01a1c1eb-54ed-7300-b150-67c434a95022:2026-11-09T20:06:53.080Z",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T20:06:53.080Z",
+  "testOnly": false,
+  "sha256": "b73978193fb9681beef422ab9809077a068bcb0dc18becc0be20f22225df2419"
+}

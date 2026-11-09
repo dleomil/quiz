@@ -79,5 +79,9 @@
   ],
   "editorialRecovery": {
     "contentSetIds": ["2026-t3-v2"]
+  },
+  "directEditorial": {
+    "contentSetIds": ["2026-t3-v2"],
+    "subjects": ["geografia", "historia", "ingles", "matematica", "ciencias"]
   }
 }

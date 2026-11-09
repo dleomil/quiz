@@ -1,0 +1,101 @@
+{
+  "scenarioId": "01a1c1ec-b151-7c00-b293-3697defbae87:2026-11-09T20:08:21.485Z",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-nos-centros-urbanos",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-nos-centros-urbanos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água nos centros urbanos"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Reconhecer abastecimento, saneamento e consumo urbano",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-nos-centros-urbanos",
+        "question": "Um comércio muda a forma de fazer a limpeza para usar apenas a água necessária. Que atitude está sendo adotada?",
+        "options": [
+          "Consumo urbano responsável.",
+          "Ampliação do acesso ao saneamento.",
+          "Tratamento da água para abastecimento.",
+          "Tratamento de esgoto."
+        ],
+        "correctIndex": 0,
+        "explanation": "Usar apenas a água necessária na limpeza de um comércio ajuda a evitar desperdício.",
+        "wrongExplanations": {
+          "1": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+          "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+          "3": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-nos-centros-urbanos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água nos centros urbanos"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-nos-centros-urbanos",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A proposta declara o objetivo curricular de reconhecer abastecimento, saneamento e consumo urbano para o 3º ano do Ensino Fundamental.",
+      "A questão avalia consumo urbano responsável por meio de uma situação de redução de desperdício de água.",
+      "A proposta contém quatro alternativas, uma resposta correta e três feedbacks indexados pelas alternativas incorretas."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à passagem linguística independente e à aprovação humana obrigatória antes da implementação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c1ec-b151-7c00-b293-3697defbae87",
+    "runId": "01a1c1ec-b151-7c00-b293-3697defbae87:2026-11-09T20:08:21.485Z",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T20:08:21.485Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_agua_nos_centros_urbanos_017": "699c5cfda18c11ec0733c3113b4e6af45ee739bee9ad7fd31dc80a5d1964bb7c"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r3-original.json",
+    "originalReportSha256": "28d4033d7b5656989e6802827a7e0d87bd052a3d17e0d8b25c95593270c2755b"
+  }
+}

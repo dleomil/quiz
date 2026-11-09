@@ -1,0 +1,102 @@
+{
+  "scenarioId": "01a1c228-721b-7dd1-8213-bb77ddb5bb09:01a1c228-7246-7113-9d66-244275c45ec7",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, a rede ainda não chega às moradias. Que desigualdade a turma está comparando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A turma compara o acesso à água segura: em um lugar ela chega às casas, e no outro ainda não.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+          "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+          "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara proposta rastreável, objetivo curricular, 3º ano do Ensino Fundamental e passagem linguistic.",
+      "O enunciado apresenta com clareza a comparação entre duas localidades, sem linguagem pejorativa, estereótipos ou instrução confusa.",
+      "As alternativas são distintas, paralelas e redigidas com ortografia, acentuação, concordância e pontuação adequadas.",
+      "A explicação e os três feedbacks são concisos, respeitosos e compreensíveis para a série declarada."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Encaminhar a proposta exata para as demais conferências aplicáveis e para a aprovação humana obrigatória, sem tratar este parecer linguístico como autorização de implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c228-721b-7dd1-8213-bb77ddb5bb09",
+    "runId": "01a1c228-721b-7dd1-8213-bb77ddb5bb09:01a1c228-7246-7113-9d66-244275c45ec7",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T21:14:09.262Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_desigualdades_urbanas_e_rurais_015": "cac3892ef9d343257abd38e98fbd1dcc38a90f4bb0c07eab08c73f1893d90855"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-linguistic-r9-original.json",
+    "originalReportSha256": "4fffbdbda530eaa7ce0d62c28d29672f155ef44251921e5032c16dcc9d66d3a2"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "desigualdades-urbanas-e-rurais",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "desigualdades-urbanas-e-rurais",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Desigualdades urbanas e rurais"
+  },
+  "questionVersion": 4,
+  "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "linguistic",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Uma região tem coleta e tratamento de esgoto; em outra, o esgoto é despejado sem tratamento porque falta esse serviço. Que desigualdade aparece?",
+      "options": [
+        "Diferença no acesso à educação.",
+        "Diferença no acesso ao transporte.",
+        "Diferença no acesso ao esgotamento sanitário.",
+        "Diferença no acesso à saúde."
+      ],
+      "correctIndex": 2,
+      "explanation": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades.",
+      "wrongExplanations": {
+        "0": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Neste caso, o enunciado compara a coleta e o tratamento de esgoto.",
+        "1": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Neste caso, o enunciado compara a coleta e o tratamento de esgoto.",
+        "3": "A distância e a falta de atendimento podem dificultar o cuidado com a saúde. Neste caso, o enunciado compara a coleta e o tratamento de esgoto."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Moradores comparam duas localidades: em uma, o esgoto recebe tratamento; na outra, esse serviço não existe. Qual diferença foi observada?",
+      "options": [
+        "Diferença no acesso à saúde.",
+        "Diferença no acesso à educação.",
+        "Diferença no acesso ao transporte.",
+        "Diferença no acesso ao esgotamento sanitário."
+      ],
+      "correctIndex": 3,
+      "explanation": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades.",
+      "wrongExplanations": {
+        "0": "A distância e a falta de atendimento podem dificultar o cuidado com a saúde. Neste caso, o enunciado compara a coleta e o tratamento de esgoto.",
+        "1": "Distância da escola e falta de recursos podem criar dificuldades diferentes para estudar. Neste caso, o enunciado compara a coleta e o tratamento de esgoto.",
+        "2": "A oferta de caminhos e veículos de transporte pode facilitar ou dificultar deslocamentos. Neste caso, o enunciado compara a coleta e o tratamento de esgoto."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Uma região tem recolhimento regular de lixo; outra ainda não conta com esse serviço. Qual desigualdade aparece?",
+      "options": [
+        "Diferença no acesso à coleta de lixo.",
+        "Diferença no acesso à água segura.",
+        "Diferença no acesso ao esgotamento sanitário.",
+        "Diferença no acesso à saúde."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos.",
+      "wrongExplanations": {
+        "1": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara a coleta de lixo.",
+        "2": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Neste caso, o enunciado compara a coleta de lixo.",
+        "3": "A distância e a falta de atendimento podem dificultar o cuidado com a saúde. Neste caso, o enunciado compara a coleta de lixo."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "desigualdades-urbanas-e-rurais",
+      "question": "Moradores de duas localidades comparam a retirada do lixo: em uma há coleta organizada, e na outra ela não chega. Que diferença está descrita?",
+      "options": [
+        "Diferença no acesso à saúde.",
+        "Diferença no acesso à coleta de lixo.",
+        "Diferença no acesso à água segura.",
+        "Diferença no acesso ao esgotamento sanitário."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos.",
+      "wrongExplanations": {
+        "0": "A distância e a falta de atendimento podem dificultar o cuidado com a saúde. Neste caso, o enunciado compara a coleta de lixo.",
+        "2": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara a coleta de lixo.",
+        "3": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Neste caso, o enunciado compara a coleta de lixo."
+      },
+      "skill": "desigualdades-urbanas-e-rurais",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Desigualdades urbanas e rurais"
+      },
+      "reviewStatus": "draft",
+      "version": 4
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

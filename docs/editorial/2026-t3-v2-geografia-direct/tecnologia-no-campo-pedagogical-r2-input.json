@@ -1,0 +1,208 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "tecnologia-no-campo",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "tecnologia-no-campo",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Tecnologia no campo"
+  },
+  "questionVersion": 2,
+  "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Uma pessoa observa em um aparelho se a terra está mais seca ou mais úmida. Que instrumento ajuda nessa observação?",
+      "options": [
+        "Drone de observação.",
+        "Refrigeração de alimentos.",
+        "Escolha de tecnologia adequada à propriedade.",
+        "Sensor de umidade do solo."
+      ],
+      "correctIndex": 3,
+      "explanation": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo.",
+      "wrongExplanations": {
+        "0": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada.",
+        "1": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada.",
+        "2": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Em uma plantação de milho, uma máquina realiza etapas da colheita dos grãos. Qual tecnologia está descrita?",
+      "options": [
+        "Refrigeração de alimentos.",
+        "Capacitação para usar equipamentos.",
+        "Sistema de irrigação.",
+        "Colheitadeira."
+      ],
+      "correctIndex": 3,
+      "explanation": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos.",
+      "wrongExplanations": {
+        "0": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada.",
+        "1": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+        "2": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Uma agricultora envia uma mensagem pelo celular para combinar a entrega das verduras ao comprador. Qual recurso utiliza para organizar a venda?",
+      "options": [
+        "Trator.",
+        "Sensor de umidade do solo.",
+        "Comunicação por celular.",
+        "Capacitação para usar equipamentos."
+      ],
+      "correctIndex": 2,
+      "explanation": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos.",
+      "wrongExplanations": {
+        "3": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+        "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+        "1": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Um produtor usa o celular para ligar à cooperativa e confirmar o horário de retirada dos produtos. Que tecnologia facilita essa combinação?",
+      "options": [
+        "Capacitação para usar equipamentos.",
+        "Trator.",
+        "Sensor de umidade do solo.",
+        "Comunicação por celular."
+      ],
+      "correctIndex": 3,
+      "explanation": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos.",
+      "wrongExplanations": {
+        "0": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+        "1": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+        "2": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Duas propriedades têm tamanhos e cultivos diferentes. Qual cuidado as pessoas devem ter ao escolher os equipamentos?",
+      "options": [
+        "Previsão do tempo.",
+        "Colheitadeira.",
+        "Escolha de tecnologia adequada à propriedade.",
+        "Trator."
+      ],
+      "correctIndex": 2,
+      "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+      "wrongExplanations": {
+        "3": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+        "0": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+        "1": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_tecnologia_no_campo_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "tecnologia-no-campo",
+      "question": "Antes de adotar uma máquina, uma família compara seu custo, suas necessidades e as condições do terreno. Que cuidado está tomando?",
+      "options": [
+        "Trator.",
+        "Previsão do tempo.",
+        "Colheitadeira.",
+        "Escolha de tecnologia adequada à propriedade."
+      ],
+      "correctIndex": 3,
+      "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+      "wrongExplanations": {
+        "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+        "1": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+        "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "tecnologia-no-campo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Tecnologia no campo"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

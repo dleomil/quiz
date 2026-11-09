@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "percurso-da-agua",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "percurso-da-agua",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Percurso da água"
+    },
+    "questionVersion": 2,
+    "authorizedObjective": "Reconhecer escoamento e caminhos da água na paisagem",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Ao esfriar no alto, o vapor de água pode dar origem a pequenas gotas suspensas no ar. Qual fenômeno ocorre quando essas gotas se agrupam?",
+        "options": [
+          "Afluente.",
+          "Dificuldade de infiltração.",
+          "Formação de nuvens.",
+          "Precipitação."
+        ],
+        "correctIndex": 2,
+        "explanation": "Pequenas gotas de água ou cristais de gelo se juntam no ar e formam nuvens.",
+        "wrongExplanations": {
+          "0": "É um curso de água que deságua em outro rio. Essa alternativa não descreve a situação apresentada.",
+          "1": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Água cai das nuvens e chega à superfície, por exemplo na forma de chuva. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Um riacho termina ao encontrar um rio maior. O que esse riacho é em relação ao rio maior?",
+        "options": [
+          "Afluente.",
+          "Foz.",
+          "Dificuldade de infiltração.",
+          "Evaporação."
+        ],
+        "correctIndex": 0,
+        "explanation": "É um curso de água que deságua em outro rio.",
+        "wrongExplanations": {
+          "1": "Foz é o lugar onde o rio deságua. A pergunta pede o nome do curso de água menor em relação ao rio maior: ele é um afluente.",
+          "2": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "No mapa, um rio menor leva suas águas para outro rio. Como se chama esse rio menor nessa relação?",
+        "options": [
+          "Evaporação.",
+          "Afluente.",
+          "Foz.",
+          "Dificuldade de infiltração."
+        ],
+        "correctIndex": 1,
+        "explanation": "É um curso de água que deságua em outro rio.",
+        "wrongExplanations": {
+          "0": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "2": "Foz é o lugar onde o rio deságua. A pergunta pede o nome do curso de água menor em relação ao rio maior: ele é um afluente.",
+          "3": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Um quintal de terra foi coberto com concreto. Que mudança pode aumentar a quantidade de água correndo sobre ele na chuva?",
+        "options": [
+          "Evaporação.",
+          "Nascente.",
+          "Dificuldade de infiltração.",
+          "Escoamento pela superfície."
+        ],
+        "correctIndex": 2,
+        "explanation": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo.",
+        "wrongExplanations": {
+          "0": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada.",
+          "3": "O escoamento pela superfície é a água correndo sobre o chão. A pergunta pede o que favorece seu aumento: o asfalto ou o concreto dificultam a entrada da água no solo."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_percurso_da_agua_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "percurso-da-agua",
+        "question": "Em uma área asfaltada, a chuva encontra menos espaços para entrar na terra. Qual situação ajuda a explicar o aumento da água na superfície?",
+        "options": [
+          "Escoamento pela superfície.",
+          "Evaporação.",
+          "Nascente.",
+          "Dificuldade de infiltração."
+        ],
+        "correctIndex": 3,
+        "explanation": "Em superfícies cobertas por asfalto ou concreto, menos água consegue entrar no solo.",
+        "wrongExplanations": {
+          "0": "O escoamento pela superfície é a água correndo sobre o chão. A pergunta pede o que favorece seu aumento: o asfalto ou o concreto dificultam a entrada da água no solo.",
+          "1": "Água líquida passa para o ar na forma de vapor. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar onde a água aflora ou se reúne e dá início a um curso de água. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "percurso-da-agua",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Percurso da água"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"percurso-da-agua\",\"reviewPass\":\"pedagogical\",\"decision\":\"approved\",\"facts\":[\"A entrada declara Geografia, tema percurso da água, 3º ano do Ensino Fundamental e objetivo curricular de reconhecer escoamento e caminhos da água na paisagem.\",\"O manifesto está declarado como frozen, a fonte está autorizada e a passagem solicitada é pedagogical.\",\"As cinco propostas de versão 2 apresentam enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks indexados para as alternativas incorretas.\",\"As cinco questões têm uma única resposta correta defensável e estão alinhadas ao percurso da água.\"],\"doubts\":[],\"findings\":[],\"recommendations\":[],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_percurso_da_agua_007\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado descreve gotas suspensas que se agrupam e pergunta diretamente pelo fenômeno resultante.\",\"options\":\"As quatro alternativas são distintas; apenas formação de nuvens corresponde ao agrupamento descrito.\",\"answer\":\"O índice 2 está correto: gotas de água ou cristais de gelo agrupados no ar formam nuvens.\",\"explanation\":\"Explica corretamente e de modo breve como as nuvens se formam.\",\"wrongExplanations\":\"Os três feedbacks distinguem precipitação, afluente e dificuldade de infiltração da formação de nuvens.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_013\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado fornece a relação necessária: um riacho deságua em um rio maior.\",\"options\":\"As alternativas são distintas; somente afluente nomeia o curso de água menor nessa relação.\",\"answer\":\"O índice 0 está correto: o riacho que deságua em outro rio é um afluente.\",\"explanation\":\"Define afluente com precisão e responde diretamente ao enunciado.\",\"wrongExplanations\":\"Os três feedbacks diferenciam foz, dificuldade de infiltração e evaporação da relação entre os cursos de água.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_014\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A própria descrição informa que o rio menor leva água para outro rio, permitindo resposta sem informação adicional.\",\"options\":\"As quatro alternativas são distintas; apenas afluente nomeia o rio menor nessa relação.\",\"answer\":\"O índice 1 está correto: um curso de água que deságua em outro é afluente.\",\"explanation\":\"Apresenta a definição factual necessária de forma curta e adequada.\",\"wrongExplanations\":\"Os três feedbacks explicam por que foz, dificuldade de infiltração e evaporação não nomeiam o rio menor.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_019\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado relaciona a cobertura de terra por concreto ao aumento da água que corre durante a chuva.\",\"options\":\"As alternativas são distintas; dificuldade de infiltração é a causa pedida, enquanto escoamento pela superfície é o efeito observado.\",\"answer\":\"O índice 2 está correto: o concreto dificulta a entrada da água no solo.\",\"explanation\":\"Explica corretamente que superfícies impermeabilizadas reduzem a infiltração.\",\"wrongExplanations\":\"Os três feedbacks distinguem o efeito de escoar pela superfície e afastam evaporação e nascente com justificativas corretas.\"}},{\"questionId\":\"2026t3v2_geo_percurso_da_agua_020\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O enunciado explicita que o asfalto reduz os espaços de entrada da chuva no solo e pergunta pela causa do acúmulo superficial.\",\"options\":\"As alternativas são distintas; dificuldade de infiltração explica o aumento, enquanto escoamento pela superfície descreve o movimento resultante.\",\"answer\":\"O índice 3 está correto: menor infiltração deixa mais água disponível na superfície.\",\"explanation\":\"Relaciona corretamente asfalto e concreto à menor entrada de água no solo.\",\"wrongExplanations\":\"Os três feedbacks diferenciam o escoamento resultante e afastam evaporação e nascente de modo factual.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1e2-16a6-71a3-bfd5-1143d5877b34",
+  "runId": "01a1c1e2-16a6-71a3-bfd5-1143d5877b34:2026-11-09T19:57:08.374Z",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T19:57:08.374Z",
+  "testOnly": false,
+  "sha256": "0d7ccdc7b840a0f8046d66d6d3790a33d467045c8f23831339a8f2e67f9ee0e6"
+}

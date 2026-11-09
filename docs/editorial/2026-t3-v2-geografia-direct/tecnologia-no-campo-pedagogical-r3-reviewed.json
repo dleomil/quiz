@@ -1,0 +1,113 @@
+{
+  "scenarioId": "01a1c229-7773-7230-bf24-0a42f4a6e6f4:01a1c229-77ba-7d02-aaa5-8c216c06f2fb",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "tecnologia-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Tecnologia no campo"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Antes de comprar uma máquina, uma família verifica quanto ela custa, quais tarefas precisa realizar e como é o terreno. Que cuidado está tomando?",
+        "options": [
+          "Trator.",
+          "Previsão do tempo.",
+          "Colheitadeira.",
+          "Escolha de tecnologia adequada à propriedade."
+        ],
+        "correctIndex": 3,
+        "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+        "wrongExplanations": {
+          "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "1": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "reviewPass": "pedagogical",
+    "decision": "adjustments_required",
+    "facts": [
+      "A proposta contém quatro alternativas não vazias, correctIndex válido e três feedbacks indexados pelos índices incorretos.",
+      "A alternativa de índice 3 é a única que descreve o cuidado apresentado no enunciado.",
+      "O enunciado e os feedbacks usam linguagem respeitosa e compreensível para o 3º ano.",
+      "A explicação correta relaciona custos, necessidades e condições locais à escolha de equipamentos.",
+      "O objetivo autorizado exige relacionar tecnologias a transformações no trabalho rural, enquanto a questão avalia a escolha de tecnologia adequada à propriedade."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_geo_tecnologia_no_campo_020",
+        "criterion": "objective_alignment",
+        "severity": "major",
+        "evidence": "A criança precisa reconhecer um critério de escolha de equipamento, mas não relaciona uma tecnologia a uma mudança concreta no modo, no tempo ou no esforço do trabalho rural.",
+        "recommendation": "Reformular o enunciado e as alternativas para exigir a relação entre uma tecnologia e uma transformação concreta no trabalho rural, preservando linguagem adequada à série e uma única resposta defensável."
+      }
+    ],
+    "recommendations": [
+      "Revisar a questão para medir diretamente o objetivo curricular declarado.",
+      "Preservar a clareza, a resposta única e os feedbacks individualizados na nova versão.",
+      "Submeter a versão alterada a uma nova passagem pedagógica independente e à aprovação humana aplicável."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c229-7773-7230-bf24-0a42f4a6e6f4",
+    "runId": "01a1c229-7773-7230-bf24-0a42f4a6e6f4:01a1c229-77ba-7d02-aaa5-8c216c06f2fb",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T21:15:15.318Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_tecnologia_no_campo_020": "90b64ed8e6e00bd789a043a07e0b52937ebd28ba94f886ff7b16da9ba0309da8"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r3-original.json",
+    "originalReportSha256": "01fd01c8ba5926b0ecd8b057b943a2927204c96cb1ccac1594c1f81071d3ded2"
+  }
+}

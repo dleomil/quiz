@@ -155,6 +155,9 @@ Antes de gerar conteúdo, executar preflight no acervo de destino após sua decl
 - [x] Concluir o contrato técnico de liberação por matéria completa, com testes de bloqueio e visibilidade.
 - [x] Registrar a decisão explícita de congelar esta versão da matriz.
 
-A matriz está congelada. Antes da invocação editorial, registrar a nova fonte
-no contexto do runner e obter o aceite do baseline documental exato. O piloto
-não possui aprovação editorial e não está liberado para publicação.
+A matriz está congelada. No caminho do runner isolado, registrar a nova fonte
+no contexto do runner e obter o aceite do baseline documental exato. Para novos
+lotes de Geografia, História, Inglês, Matemática e Ciências deste acervo, a
+delegação direta segue o contrato `direct-editorial`, sem login dedicado, versão
+da CLI ou novo aceite de baseline. O aceite do congelamento não aprova questões
+nem autoriza publicação.

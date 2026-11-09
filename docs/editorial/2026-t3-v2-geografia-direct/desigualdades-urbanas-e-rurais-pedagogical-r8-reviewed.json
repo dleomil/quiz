@@ -1,0 +1,175 @@
+{
+  "scenarioId": "01a1c226-e6c8-7ad3-b8a0-6d1aa40ebfa8:01a1c226-e6f7-7032-9cc3-affeb03b7ac9",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma região tem profissionais de saúde para atender os moradores; em outra, faltam profissionais para as consultas. Que desigualdade aparece?",
+        "options": [
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à internet.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso à água segura."
+        ],
+        "correctIndex": 0,
+        "explanation": "Uma localidade tem mais profissionais para atender consultas do que a outra. Essa diferença mostra desigualdade no acesso à saúde.",
+        "wrongExplanations": {
+          "1": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Neste caso, o enunciado compara o acesso à saúde.",
+          "2": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Neste caso, o enunciado compara o acesso à saúde.",
+          "3": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara o acesso à saúde."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma região há atendimento de saúde regular; em outra, os moradores têm dificuldade para conseguir consultas. Qual diferença está descrita?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à internet.",
+          "Diferença no acesso à coleta de lixo."
+        ],
+        "correctIndex": 1,
+        "explanation": "As localidades diferem na facilidade de conseguir consultas; isso mostra uma diferença no acesso à saúde.",
+        "wrongExplanations": {
+          "0": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara o acesso à saúde.",
+          "2": "A disponibilidade de conexão pode variar entre lugares e dificultar comunicação e estudos. Neste caso, o enunciado compara o acesso à saúde.",
+          "3": "Sem recolhimento regular e destino adequado, comunidades enfrentam mais dificuldades para cuidar dos resíduos. Neste caso, o enunciado compara o acesso à saúde."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma turma compara dois lugares: em um, chega água própria para consumo; no outro, a qualidade da água não foi verificada. Que desigualdade está observando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "Os lugares diferem na segurança da água que chega aos moradores. Essa é uma diferença de acesso à água segura.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo trata do recolhimento de resíduos, mas a situação compara a qualidade da água.",
+          "2": "O esgotamento sanitário trata da coleta e do tratamento de esgoto, mas a situação compara a água para consumo.",
+          "3": "A educação envolve o acesso à escola e às oportunidades de estudo, não a qualidade da água que chega aos moradores."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "reviewPass": "pedagogical",
+    "decision": "blocked",
+    "facts": [
+      "A entrada declara o 3º ano do Ensino Fundamental, o objetivo curricular rastreável de comparar o acesso a serviços sem estereótipos, o manifesto congelado e a referência autorizada.",
+      "As três propostas estão completas, com quatro alternativas distintas, correctIndex válido, explicação e três feedbacks indexados pelas alternativas incorretas.",
+      "As questões 005 e 006 comparam diretamente a disponibilidade de atendimento e de consultas entre lugares, medem o acesso à saúde e possuem uma única resposta defensável.",
+      "As explicações e os feedbacks das questões 005 e 006 justificam corretamente as respostas, distinguem os demais serviços e empregam linguagem adequada ao 3º ano.",
+      "Na questão 015, um lugar possui água própria para consumo, mas no outro a qualidade apenas não foi verificada; ausência de verificação não comprova ausência de água segura."
+    ],
+    "doubts": [
+      "O enunciado da questão 015 não permite determinar se a água do segundo lugar é segura ou imprópria para consumo."
+    ],
+    "findings": [
+      {
+        "questionId": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "criterion": "single_defensible_answer",
+        "severity": "blocking",
+        "evidence": "A qualidade não verificada representa falta de informação, não evidência de acesso desigual à água segura. Assim, a alternativa indicada depende de uma suposição sobre a condição da água do segundo lugar.",
+        "recommendation": "Reformular o enunciado para declarar diretamente uma diferença comprovada no acesso à água segura entre os dois lugares, sem orientar o consumo de água insegura, e submeter a proposta alterada a nova revisão pedagógica."
+      }
+    ],
+    "recommendations": [
+      "Preservar as questões 005 e 006.",
+      "Corrigir a insuficiência factual da questão 015 e realizar nova passagem pedagógica sobre o pacote alterado.",
+      "Manter obrigatórias a passagem linguística independente e a aprovação pedagógica humana do pacote exato antes de implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c226-e6c8-7ad3-b8a0-6d1aa40ebfa8",
+    "runId": "01a1c226-e6c8-7ad3-b8a0-6d1aa40ebfa8:01a1c226-e6f7-7032-9cc3-affeb03b7ac9",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T21:12:45.366Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_desigualdades_urbanas_e_rurais_005": "d5e6879c7c9aa4d8af736f3cc310c5fe4437207cbf23b0df59fb0d8ba7a32332",
+      "2026t3v2_geo_desigualdades_urbanas_e_rurais_006": "263a193b3ca5c7814dc6dce931bb0f1e0d00c15537777bbc09ccfeb5cc83bf50",
+      "2026t3v2_geo_desigualdades_urbanas_e_rurais_015": "5eac538acab3d481287c90a2b38074f71de78abde9259c28efdae684dec26d20"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/desigualdades-urbanas-e-rurais-pedagogical-r8-original.json",
+    "originalReportSha256": "6e2d2157010ecfa5a76bc016dfbc026465644ac8bd541fd0e9077966bd6c52e2"
+  }
+}

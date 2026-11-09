@@ -1,0 +1,111 @@
+{
+  "scenarioId": "01a1c21e-ee4c-7a30-a825-ec84886c2753:01a1c21e-ee78-70a3-b81c-01a09808d2de",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água potável, reúso e reaproveitamento"
+    },
+    "questionVersion": 6,
+    "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma família recolhe água da chuva e a usa para regar as plantas. Como se chama esse uso da água?",
+        "options": [
+          "Consumo de água potável.",
+          "Reaproveitamento da água da chuva.",
+          "Desperdício de água tratada.",
+          "Reúso de água tratada para descarga."
+        ],
+        "correctIndex": 1,
+        "explanation": "A família reaproveita a água da chuva para regar as plantas. Essa água não deve ser considerada própria para beber sem tratamento e verificação.",
+        "wrongExplanations": {
+          "0": "A situação fala de regar plantas, não de beber a água. A água da chuva não é automaticamente potável.",
+          "2": "A situação mostra água da chuva usada para regar plantas, não água tratada destinada à descarga.",
+          "3": "A água da chuva pode ser reaproveitada para regar plantas, mas isso não significa que seja segura para beber."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 6
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "reviewPass": "pedagogical",
+    "decision": "adjustments_required",
+    "facts": [
+      "A entrada declara objetivo curricular, 3º ano do Ensino Fundamental, referência autorizada, manifesto congelado e passagem pedagogical.",
+      "A proposta possui quatro alternativas, correctIndex válido, explicação e três feedbacks indexados pelas alternativas incorretas.",
+      "O enunciado distingue reaproveitamento de água da chuva, mantém uma única resposta defensável e não recomenda consumo inseguro.",
+      "Os feedbacks dos índices 2 e 3 não explicam as respectivas alternativas incorretas."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "criterion": "wrong_explanations_alignment",
+        "severity": "major",
+        "evidence": "O feedback do índice 2 menciona água tratada destinada à descarga, conteúdo da alternativa 3, e não explica por que não há desperdício de água tratada. O feedback do índice 3 fala sobre potabilidade da água da chuva, mas não distingue essa situação do reúso de água tratada em descarga.",
+        "recommendation": "Reescrever separadamente os feedbacks dos índices 2 e 3 para explicar diretamente por que cada alternativa não corresponde à água da chuva usada para regar plantas."
+      }
+    ],
+    "recommendations": [
+      "Alinhar os feedbacks dos índices 2 e 3 às respectivas alternativas e submeter o pacote alterado a nova passagem pedagógica.",
+      "Manter a aprovação humana obrigatória antes de implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c21e-ee4c-7a30-a825-ec84886c2753",
+    "runId": "01a1c21e-ee4c-7a30-a825-ec84886c2753:01a1c21e-ee78-70a3-b81c-01a09808d2de",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T21:03:52.031Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012": "fe31637f908ed449e82db04a00268afe2b33713e0f1078e1601e9bb63ed47103"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-pedagogical-r6-original.json",
+    "originalReportSha256": "5f7b46716f46e52057018c404e6b86814f7f215b0e38802ebefb7e77d5b22bcc"
+  }
+}

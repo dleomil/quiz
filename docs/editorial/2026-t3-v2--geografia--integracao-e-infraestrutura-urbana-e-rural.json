@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/integracao-e-infraestrutura-urbana-e-rural",
+  "sourceSha256": "8e179a6a759b59f53ae725779e4336f737d8e2ee3071515f1ef1c94f39595c01",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/integracao-e-infraestrutura-urbana-e-rural-linguistic-r2-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

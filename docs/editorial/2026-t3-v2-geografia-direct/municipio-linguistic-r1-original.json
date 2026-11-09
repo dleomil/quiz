@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma divisão do território reúne a cidade e áreas rurais sob uma administração local. Que divisão é essa?",
+        "options": [
+          "Município.",
+          "Área urbana.",
+          "Bairro.",
+          "Câmara Municipal."
+        ],
+        "correctIndex": 0,
+        "explanation": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais.",
+        "wrongExplanations": {
+          "1": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada.",
+          "3": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma cidade e as comunidades rurais ao redor fazem parte de um território com governo municipal. Que território é esse?",
+        "options": [
+          "Câmara Municipal.",
+          "Município.",
+          "Área urbana.",
+          "Bairro."
+        ],
+        "correctIndex": 1,
+        "explanation": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais.",
+        "wrongExplanations": {
+          "0": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços. Essa alternativa não descreve a situação apresentada.",
+          "3": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Um lugar tem ruas, prédios, lojas e muitas construções próximas. Que tipo de espaço é descrito?",
+        "options": [
+          "Limite entre municípios.",
+          "Espaço público.",
+          "Área urbana.",
+          "Área rural."
+        ],
+        "correctIndex": 2,
+        "explanation": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços.",
+        "wrongExplanations": {
+          "0": "Marca a separação entre os territórios de dois municípios. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "No mapa de um município, uma região reúne quarteirões com moradias, comércio e serviços próximos. Que espaço é esse?",
+        "options": [
+          "Área rural.",
+          "Limite entre municípios.",
+          "Espaço público.",
+          "Área urbana."
+        ],
+        "correctIndex": 3,
+        "explanation": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços.",
+        "wrongExplanations": {
+          "0": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções. Essa alternativa não descreve a situação apresentada.",
+          "1": "Marca a separação entre os territórios de dois municípios. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma parte do município reúne sítios, lavouras e moradias mais afastadas entre si. Que tipo de espaço está descrito?",
+        "options": [
+          "Área rural.",
+          "Bairro.",
+          "Prefeitura.",
+          "Endereço."
+        ],
+        "correctIndex": 0,
+        "explanation": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções.",
+        "wrongExplanations": {
+          "1": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada.",
+          "2": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita. Essa alternativa não descreve a situação apresentada.",
+          "3": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Em uma região do município, há pastagens, plantações e poucas construções próximas. Qual espaço é descrito?",
+        "options": [
+          "Endereço.",
+          "Área rural.",
+          "Bairro.",
+          "Prefeitura."
+        ],
+        "correctIndex": 1,
+        "explanation": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções.",
+        "wrongExplanations": {
+          "0": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada.",
+          "3": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma família mora em uma parte da cidade conhecida por um nome, com ruas, casas e comércio. Como se chama essa parte?",
+        "options": [
+          "Câmara Municipal.",
+          "Mapa do município.",
+          "Bairro.",
+          "Limite entre municípios."
+        ],
+        "correctIndex": 2,
+        "explanation": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços.",
+        "wrongExplanations": {
+          "0": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local. Essa alternativa não descreve a situação apresentada.",
+          "1": "Representa o território municipal e pode indicar áreas, caminhos e limites. Essa alternativa não descreve a situação apresentada.",
+          "3": "Marca a separação entre os territórios de dois municípios. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Várias ruas e quarteirões próximos formam uma parte nomeada da cidade. Qual é essa parte?",
+        "options": [
+          "Limite entre municípios.",
+          "Câmara Municipal.",
+          "Mapa do município.",
+          "Bairro."
+        ],
+        "correctIndex": 3,
+        "explanation": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços.",
+        "wrongExplanations": {
+          "0": "Marca a separação entre os territórios de dois municípios. Essa alternativa não descreve a situação apresentada.",
+          "1": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local. Essa alternativa não descreve a situação apresentada.",
+          "2": "Representa o território municipal e pode indicar áreas, caminhos e limites. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma placa informa que uma estrada está saindo de um município e entrando em outro. O que ela ajuda a indicar?",
+        "options": [
+          "Limite entre municípios.",
+          "Prefeitura.",
+          "Espaço público.",
+          "Município."
+        ],
+        "correctIndex": 0,
+        "explanation": "Marca a separação entre os territórios de dois municípios.",
+        "wrongExplanations": {
+          "1": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos. Essa alternativa não descreve a situação apresentada.",
+          "3": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Em um mapa, uma linha separa dois territórios municipais vizinhos. O que essa linha representa?",
+        "options": [
+          "Município.",
+          "Limite entre municípios.",
+          "Prefeitura.",
+          "Espaço público."
+        ],
+        "correctIndex": 1,
+        "explanation": "Marca a separação entre os territórios de dois municípios.",
+        "wrongExplanations": {
+          "0": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+          "2": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Qual instituição administra o município e organiza ações como a manutenção de espaços públicos municipais?",
+        "options": [
+          "Endereço.",
+          "Área urbana.",
+          "Prefeitura.",
+          "Câmara Municipal."
+        ],
+        "correctIndex": 2,
+        "explanation": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita.",
+        "wrongExplanations": {
+          "0": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços. Essa alternativa não descreve a situação apresentada.",
+          "3": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Moradores procuram a instituição responsável pela administração municipal para pedir reparos em uma praça. Qual instituição procuram?",
+        "options": [
+          "Câmara Municipal.",
+          "Endereço.",
+          "Área urbana.",
+          "Prefeitura."
+        ],
+        "correctIndex": 3,
+        "explanation": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita.",
+        "wrongExplanations": {
+          "0": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local. Essa alternativa não descreve a situação apresentada.",
+          "1": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Em qual instituição vereadores e vereadoras se reúnem para discutir leis do município?",
+        "options": [
+          "Câmara Municipal.",
+          "Espaço público.",
+          "Mapa do município.",
+          "Área rural."
+        ],
+        "correctIndex": 0,
+        "explanation": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local.",
+        "wrongExplanations": {
+          "1": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos. Essa alternativa não descreve a situação apresentada.",
+          "2": "Representa o território municipal e pode indicar áreas, caminhos e limites. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Moradores acompanham uma sessão em que vereadores fiscalizam a administração municipal. Qual instituição realiza essa atividade?",
+        "options": [
+          "Área rural.",
+          "Câmara Municipal.",
+          "Espaço público.",
+          "Mapa do município."
+        ],
+        "correctIndex": 1,
+        "explanation": "É a instituição em que vereadores e vereadoras discutem leis municipais e fiscalizam a administração local.",
+        "wrongExplanations": {
+          "0": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Representa o território municipal e pode indicar áreas, caminhos e limites. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça municipal é utilizada por diferentes moradores para passear e brincar. Como classificar esse lugar?",
+        "options": [
+          "Município.",
+          "Bairro.",
+          "Espaço público.",
+          "Endereço."
+        ],
+        "correctIndex": 2,
+        "explanation": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+          "1": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada.",
+          "3": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma rua e uma praça pública podem ser usadas pela população. Que característica esses lugares compartilham?",
+        "options": [
+          "Endereço.",
+          "Município.",
+          "Bairro.",
+          "Espaço público."
+        ],
+        "correctIndex": 3,
+        "explanation": "É um lugar de uso coletivo, como uma praça pública, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+          "1": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma entrega precisa chegar a uma casa. Qual informação com rua, número e município ajuda a encontrar o local?",
+        "options": [
+          "Endereço.",
+          "Mapa do município.",
+          "Área urbana.",
+          "Limite entre municípios."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ajuda a localizar um lugar por informações como nome da rua, número e município.",
+        "wrongExplanations": {
+          "1": "Representa o território municipal e pode indicar áreas, caminhos e limites. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços. Essa alternativa não descreve a situação apresentada.",
+          "3": "Marca a separação entre os territórios de dois municípios. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Para localizar uma biblioteca, uma pessoa procura o nome da rua e o número do prédio. Que conjunto de informações procura?",
+        "options": [
+          "Limite entre municípios.",
+          "Endereço.",
+          "Mapa do município.",
+          "Área urbana."
+        ],
+        "correctIndex": 1,
+        "explanation": "Ajuda a localizar um lugar por informações como nome da rua, número e município.",
+        "wrongExplanations": {
+          "0": "Marca a separação entre os territórios de dois municípios. Essa alternativa não descreve a situação apresentada.",
+          "2": "Representa o território municipal e pode indicar áreas, caminhos e limites. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um espaço com concentração de construções, ruas e atividades como comércio e serviços. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Para observar a localização da cidade, de comunidades rurais e dos limites municipais, qual representação pode ser consultada?",
+        "options": [
+          "Área rural.",
+          "Prefeitura.",
+          "Mapa do município.",
+          "Município."
+        ],
+        "correctIndex": 2,
+        "explanation": "Representa o território municipal e pode indicar áreas, caminhos e limites.",
+        "wrongExplanations": {
+          "0": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções. Essa alternativa não descreve a situação apresentada.",
+          "1": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita. Essa alternativa não descreve a situação apresentada.",
+          "3": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma turma quer ver, em uma representação do território, onde ficam a área urbana e as áreas rurais do município. O que pode consultar?",
+        "options": [
+          "Município.",
+          "Área rural.",
+          "Prefeitura.",
+          "Mapa do município."
+        ],
+        "correctIndex": 3,
+        "explanation": "Representa o território municipal e pode indicar áreas, caminhos e limites.",
+        "wrongExplanations": {
+          "0": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um espaço onde podem existir plantações, criação de animais, moradias e outras atividades com menor concentração de construções. Essa alternativa não descreve a situação apresentada.",
+          "2": "É a instituição que administra o município, sob responsabilidade do prefeito ou da prefeita. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"municipio\",\"reviewPass\":\"linguistic\",\"decision\":\"adjustments_required\",\"facts\":[\"A entrada declara objetivo curricular, 3º ano, fonte autorizada, manifesto congelado e passagem linguistic.\",\"Foram avaliados os campos linguísticos das 20 propostas e todos os IDs estão representados nos resultados.\",\"As propostas 001 a 015 e 017 a 020 não apresentam erro linguístico conhecido nesta passagem.\"],\"doubts\":[],\"findings\":[{\"questionId\":\"2026t3v2_geo_municipio_016\",\"criterion\":\"clareza e coesão entre enunciado, alternativa correta e explicação\",\"severity\":\"major\",\"evidence\":\"O enunciado pergunta por uma característica compartilhada, mas a alternativa “Espaço público.” apresenta uma classificação nominal; além disso, a explicação usa o singular “É um lugar” para duas referências, “uma rua e uma praça pública”.\",\"recommendation\":\"Reformular o enunciado para pedir a classificação dos lugares ou ajustar a alternativa para responder como característica, e reescrever a explicação no plural.\"}],\"recommendations\":[\"Ajustar somente a proposta 2026t3v2_geo_municipio_016 e submetê-la a nova passagem linguística antes do aceite humano.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_municipio_001\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado claro, bem pontuado e adequado ao 3º ano.\",\"options\":\"Alternativas curtas, distintas e com grafia uniforme.\",\"answer\":\"“Município.” encaixa-se naturalmente na pergunta.\",\"explanation\":\"Frase concisa, coesa e de leitura simples.\",\"wrongExplanations\":\"Textos gramaticais, respeitosos e claros para cada alternativa.\"}},{\"questionId\":\"2026t3v2_geo_municipio_002\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A situação é apresentada em ordem clara e com vocabulário acessível.\",\"options\":\"Alternativas breves, distintas e pontuadas de modo uniforme.\",\"answer\":\"“Município.” responde diretamente a “Que território é esse?”.\",\"explanation\":\"Redação curta, natural e adequada à faixa etária.\",\"wrongExplanations\":\"Justificativas claras, gramaticais e sem linguagem inadequada.\"}},{\"questionId\":\"2026t3v2_geo_municipio_003\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Descrição objetiva, com enumeração clara e pergunta direta.\",\"options\":\"Expressões legíveis, distintas e apresentadas com padrão uniforme.\",\"answer\":\"“Área urbana.” completa adequadamente a classificação pedida.\",\"explanation\":\"Texto conciso e natural, sem dificuldade desnecessária.\",\"wrongExplanations\":\"Feedbacks bem formados e compreensíveis para uma criança.\"}},{\"questionId\":\"2026t3v2_geo_municipio_004\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado claro, bem estruturado e adequado ao 3º ano.\",\"options\":\"Alternativas distintas, curtas e corretamente pontuadas.\",\"answer\":\"“Área urbana.” responde de modo natural a “Que espaço é esse?”.\",\"explanation\":\"Redação simples, coesa e sem erro linguístico.\",\"wrongExplanations\":\"Mensagens gramaticais e claras, com tom respeitoso.\"}},{\"questionId\":\"2026t3v2_geo_municipio_005\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Descrição clara, com vocabulário concreto e apropriado à série.\",\"options\":\"Alternativas breves, distintas e de leitura fácil.\",\"answer\":\"“Área rural.” encaixa-se diretamente na pergunta.\",\"explanation\":\"Texto claro, bem pontuado e adequado à criança.\",\"wrongExplanations\":\"Justificativas compreensíveis e linguisticamente corretas.\"}},{\"questionId\":\"2026t3v2_geo_municipio_006\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado objetivo, natural e sem construção confusa.\",\"options\":\"Alternativas distintas, concisas e com pontuação consistente.\",\"answer\":\"“Área rural.” responde naturalmente ao espaço descrito.\",\"explanation\":\"Frase clara, coesa e apropriada ao 3º ano.\",\"wrongExplanations\":\"Textos corretos, respeitosos e de fácil compreensão.\"}},{\"questionId\":\"2026t3v2_geo_municipio_007\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A situação cotidiana e a pergunta são claras para a faixa etária.\",\"options\":\"Alternativas distintas, legíveis e corretamente grafadas.\",\"answer\":\"“Bairro.” responde diretamente a “Como se chama essa parte?”.\",\"explanation\":\"Redação simples e coesa, sem excesso de tecnicidade.\",\"wrongExplanations\":\"Feedbacks gramaticais e claros para as opções incorretas.\"}},{\"questionId\":\"2026t3v2_geo_municipio_008\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado curto, claro e com referência bem definida a “essa parte”.\",\"options\":\"Alternativas distintas e apresentadas de forma uniforme.\",\"answer\":\"“Bairro.” encaixa-se naturalmente na pergunta.\",\"explanation\":\"Texto conciso, correto e adequado ao público infantil.\",\"wrongExplanations\":\"Justificativas claras, completas e com tom respeitoso.\"}},{\"questionId\":\"2026t3v2_geo_municipio_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A placa e a mudança de território são descritas de forma compreensível.\",\"options\":\"Alternativas curtas, distintas e corretamente pontuadas.\",\"answer\":\"“Limite entre municípios.” responde diretamente ao que a placa indica.\",\"explanation\":\"Frase breve, clara e linguisticamente correta.\",\"wrongExplanations\":\"Textos compreensíveis, gramaticais e adequados à série.\"}},{\"questionId\":\"2026t3v2_geo_municipio_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado direto, com referência clara à linha do mapa.\",\"options\":\"Alternativas distintas, legíveis e de estrutura uniforme.\",\"answer\":\"“Limite entre municípios.” encaixa-se naturalmente na pergunta.\",\"explanation\":\"Redação curta, clara e bem pontuada.\",\"wrongExplanations\":\"Feedbacks corretos e fáceis de compreender.\"}},{\"questionId\":\"2026t3v2_geo_municipio_011\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Pergunta clara, bem pontuada e com vocabulário acessível.\",\"options\":\"Alternativas distintas e apresentadas com consistência.\",\"answer\":\"“Prefeitura.” responde diretamente à instituição solicitada.\",\"explanation\":\"Texto natural, conciso e adequado ao 3º ano.\",\"wrongExplanations\":\"Justificativas gramaticais, claras e respeitosas.\"}},{\"questionId\":\"2026t3v2_geo_municipio_012\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Situação cotidiana clara e pergunta sem construção ambígua.\",\"options\":\"Alternativas breves, distintas e corretamente grafadas.\",\"answer\":\"“Prefeitura.” completa de forma natural a pergunta.\",\"explanation\":\"Frase simples, coesa e de fácil leitura.\",\"wrongExplanations\":\"Feedbacks claros e linguisticamente adequados.\"}},{\"questionId\":\"2026t3v2_geo_municipio_013\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Pergunta direta, gramatical e adequada à faixa etária.\",\"options\":\"Alternativas distintas, curtas e com pontuação uniforme.\",\"answer\":\"“Câmara Municipal.” responde naturalmente a “Em qual instituição”.\",\"explanation\":\"Redação clara, bem articulada e sem tecnicidade excessiva.\",\"wrongExplanations\":\"Textos corretos, compreensíveis e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_municipio_014\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A sessão e a atividade são apresentadas com clareza e boa coesão.\",\"options\":\"Alternativas distintas, legíveis e corretamente pontuadas.\",\"answer\":\"“Câmara Municipal.” responde diretamente à instituição perguntada.\",\"explanation\":\"Frase clara, natural e apropriada ao 3º ano.\",\"wrongExplanations\":\"Justificativas gramaticais e fáceis de compreender.\"}},{\"questionId\":\"2026t3v2_geo_municipio_015\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A praça e seu uso são descritos de modo claro e concreto.\",\"options\":\"Alternativas distintas, curtas e com grafia uniforme.\",\"answer\":\"“Espaço público.” atende naturalmente ao pedido de classificação.\",\"explanation\":\"Texto conciso, respeitoso e de leitura simples.\",\"wrongExplanations\":\"Feedbacks claros, corretos e adequados à criança.\"}},{\"questionId\":\"2026t3v2_geo_municipio_016\",\"decision\":\"adjustments_required\",\"findings\":[{\"questionId\":\"2026t3v2_geo_municipio_016\",\"criterion\":\"clareza e coesão entre enunciado, alternativa correta e explicação\",\"severity\":\"major\",\"evidence\":\"O enunciado pergunta por uma característica compartilhada, mas a alternativa “Espaço público.” apresenta uma classificação nominal; além disso, a explicação usa o singular “É um lugar” para duas referências, “uma rua e uma praça pública”.\",\"recommendation\":\"Reformular o enunciado para pedir a classificação dos lugares ou ajustar a alternativa para responder como característica, e reescrever a explicação no plural.\"}],\"doubts\":[],\"checks\":{\"question\":\"É compreensível, mas pergunta por uma característica enquanto as opções apresentam classificações nominais.\",\"options\":\"São distintas e legíveis, porém “Espaço público.” não responde naturalmente a “Que característica”.\",\"answer\":\"A resposta pretendida é identificável, mas sua forma nominal não se encaixa no enunciado.\",\"explanation\":\"O singular “É um lugar” perde coesão com os dois lugares citados.\",\"wrongExplanations\":\"A redação é gramatical, mas deve acompanhar a reformulação do enunciado para manter coesão.\"}},{\"questionId\":\"2026t3v2_geo_municipio_017\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Situação concreta, vocabulário acessível e pergunta claramente formulada.\",\"options\":\"Alternativas distintas, curtas e corretamente pontuadas.\",\"answer\":\"“Endereço.” responde naturalmente à informação solicitada.\",\"explanation\":\"Texto claro, conciso e adequado ao 3º ano.\",\"wrongExplanations\":\"Justificativas gramaticais e de fácil compreensão.\"}},{\"questionId\":\"2026t3v2_geo_municipio_018\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enunciado claro, com ação e informações apresentadas em ordem natural.\",\"options\":\"Alternativas distintas, legíveis e com padrão uniforme.\",\"answer\":\"“Endereço.” responde diretamente ao conjunto de informações procurado.\",\"explanation\":\"Frase simples, coesa e apropriada à criança.\",\"wrongExplanations\":\"Feedbacks claros, corretos e respeitosos.\"}},{\"questionId\":\"2026t3v2_geo_municipio_019\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Enumeração clara e pergunta bem estruturada para a faixa etária.\",\"options\":\"Alternativas distintas, breves e corretamente grafadas.\",\"answer\":\"“Mapa do município.” responde naturalmente à representação consultada.\",\"explanation\":\"Texto conciso, claro e bem pontuado.\",\"wrongExplanations\":\"Justificativas gramaticais e compreensíveis.\"}},{\"questionId\":\"2026t3v2_geo_municipio_020\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Situação escolar clara, com referência compreensível ao território.\",\"options\":\"Alternativas distintas, curtas e apresentadas uniformemente.\",\"answer\":\"“Mapa do município.” completa de modo natural a pergunta.\",\"explanation\":\"Redação clara, coesa e adequada ao 3º ano.\",\"wrongExplanations\":\"Textos corretos, respeitosos e de leitura simples.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1e7-33d0-7691-aef1-a0c148242529",
+  "runId": "01a1c1e7-33d0-7691-aef1-a0c148242529:2026-11-09T20:03:22.342Z",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T20:03:22.342Z",
+  "testOnly": false,
+  "sha256": "bb8e1c724b3f07e042b17eef9ee51dfdca569c6dbd4b2d24fcfb18cef21988f9"
+}
