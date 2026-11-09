@@ -138,7 +138,7 @@ function validateAgentDirectory(agentDirectory, contracts = AGENT_CONTRACTS) {
   return errors;
 }
 
-function validateEditorialScenario(scenario) {
+function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
   const errors = [];
   const scenarioId = scenario?.scenarioId || 'cenario-sem-id';
   const input = scenario?.input || {};
@@ -346,9 +346,9 @@ function validateEditorialScenario(scenario) {
   if (output.agent === 'pedagogical_quality') {
     if (input.proposal && input.proposals)
       errors.push(`[${scenarioId}] use proposal ou proposals, nao ambos`);
-    if (!batchProposals.length || batchProposals.length > 5)
+    if (!batchProposals.length || batchProposals.length > maxProposals)
       errors.push(
-        `[${scenarioId}] lote editorial deve conter de 1 a 5 propostas`,
+        `[${scenarioId}] lote editorial deve conter de 1 a ${maxProposals} propostas`,
       );
     const ids = new Set();
     batchProposals.forEach((proposal, index) => {

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça fica entre ruas, casas e lojas da cidade. Em que espaço do município ela está?",
+        "options": [
+          "Na área rural do município.",
+          "Na área urbana do município.",
+          "Em outro estado.",
+          "Fora do município."
+        ],
+        "correctIndex": 1,
+        "explanation": "Ruas, casas e lojas da cidade fazem parte da área urbana do município. A praça está nesse espaço urbano.",
+        "wrongExplanations": {
+          "0": "A situação descreve uma praça cercada por ruas, casas e lojas da cidade, e não uma área rural.",
+          "2": "A praça está na cidade do município descrito, não em outro estado.",
+          "3": "O enunciado informa que a praça fica na cidade; ela está dentro do município."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"municipio\",\n    \"reviewPass\": \"linguistic\",\n    \"decision\": \"approved\",\n    \"facts\": [\n      \"A entrada declara proposta rastreável, objetivo curricular, 3º ano do Ensino Fundamental e passagem linguistic.\",\n      \"A questão 2026t3v2_geo_municipio_016 apresenta ortografia, acentuação, concordância e pontuação corretas.\",\n      \"O enunciado e as alternativas usam linguagem clara, direta e adequada à faixa etária.\",\n      \"A explicação e os três feedbacks de erro são compreensíveis, respeitosos e orientados ao aprendizado.\"\n    ],\n    \"doubts\": [],\n    \"findings\": [],\n    \"recommendations\": [\n      \"Encaminhar o pacote exato para a revisão independente e para a aprovação humana obrigatória, sem considerar este parecer como autorização de publicação.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_municipio_016\",\n      \"decision\": \"approved\",\n      \"findings\": [],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"approved\",\n        \"options\": \"approved\",\n        \"answer\": \"approved\",\n        \"explanation\": \"approved\",\n        \"wrongExplanations\": \"approved\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c227-1da2-70f2-b56a-0d2bf9254c7d",
+  "runId": "01a1c227-1da2-70f2-b56a-0d2bf9254c7d:01a1c227-1dc7-7723-9b91-17881aac72f2",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T21:13:04.365Z",
+  "testOnly": false,
+  "sha256": "0f7499e4880dc21b86560565d9b97cf91c0a19b418519d4168bbbc4ed39bdd29"
+}

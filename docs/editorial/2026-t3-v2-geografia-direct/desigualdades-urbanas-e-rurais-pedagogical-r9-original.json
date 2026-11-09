@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, a rede ainda não chega às moradias. Que desigualdade a turma está comparando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A turma compara o acesso à água segura: em um lugar ela chega às casas, e no outro ainda não.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+          "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+          "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"desigualdades-urbanas-e-rurais\",\n    \"reviewPass\": \"pedagogical\",\n    \"decision\": \"blocked\",\n    \"facts\": [\n      \"A entrada declara o 3º ano do Ensino Fundamental, o objetivo curricular de comparar acesso a serviços sem estereótipos, a fonte autorizada, o manifesto congelado e a passagem pedagogical.\",\n      \"A proposta possui quatro alternativas distintas, correctIndex válido, explicação e três feedbacks indexados pelas alternativas incorretas.\",\n      \"O enunciado informa que a rede de abastecimento leva água própria para consumo às casas de uma localidade e que essa rede não chega às moradias da outra.\",\n      \"A ausência da rede nas moradias não informa, por si só, se os moradores têm acesso a água segura por outra forma de abastecimento.\",\n      \"A proposta não atribui a carência a uma característica fixa do espaço urbano ou rural, não desvaloriza seus moradores e não orienta o consumo de água insegura.\"\n    ],\n    \"doubts\": [\n      \"A entrada não esclarece se as moradias sem acesso à rede também não possuem outra fonte de água própria para consumo.\"\n    ],\n    \"findings\": [\n      {\n        \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n        \"criterion\": \"single_defensible_answer\",\n        \"severity\": \"blocking\",\n        \"evidence\": \"O enunciado comprova uma diferença no acesso à rede de abastecimento, mas a alternativa indicada afirma uma diferença no acesso à água segura. Como a segunda localidade pode receber água própria para consumo por outra fonte, a resposta depende de uma suposição não declarada.\",\n        \"recommendation\": \"Declarar diretamente que as moradias da segunda localidade não têm acesso a água própria para consumo ou substituir a resposta por uma alternativa que nomeie especificamente a diferença no acesso à rede de abastecimento; depois, submeter o pacote alterado a nova passagem pedagógica.\"\n      }\n    ],\n    \"recommendations\": [\n      \"Corrigir a insuficiência factual entre o enunciado e a alternativa indicada e realizar nova passagem pedagógica sobre a versão alterada.\",\n      \"Preservar a abordagem sem estereótipos e sem orientação de consumo de água insegura.\",\n      \"Manter obrigatórias a passagem linguística independente e a aprovação pedagógica humana do pacote exato antes de implementação ou publicação.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n      \"decision\": \"blocked\",\n      \"findings\": [\n        {\n          \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n          \"criterion\": \"single_defensible_answer\",\n          \"severity\": \"blocking\",\n          \"evidence\": \"O enunciado comprova uma diferença no acesso à rede de abastecimento, mas a alternativa indicada afirma uma diferença no acesso à água segura. Como a segunda localidade pode receber água própria para consumo por outra fonte, a resposta depende de uma suposição não declarada.\",\n          \"recommendation\": \"Declarar diretamente que as moradias da segunda localidade não têm acesso a água própria para consumo ou substituir a resposta por uma alternativa que nomeie especificamente a diferença no acesso à rede de abastecimento; depois, submeter o pacote alterado a nova passagem pedagógica.\"\n        }\n      ],\n      \"doubts\": [\n        \"Não é possível determinar pelo enunciado se as moradias sem acesso à rede também não possuem outra fonte de água própria para consumo.\"\n      ],\n      \"checks\": {\n        \"question\": \"O enunciado compara a chegada da rede de abastecimento às moradias, mas não estabelece uma diferença comprovada no acesso total à água segura.\",\n        \"options\": \"As quatro alternativas são distintas, porém nenhuma nomeia especificamente o acesso à rede; a opção sobre água segura exige uma informação adicional sobre outras formas de abastecimento.\",\n        \"answer\": \"O índice 0 não é plenamente defensável com os fatos apresentados, pois ausência da rede não equivale necessariamente a ausência de água segura.\",\n        \"explanation\": \"A explicação transforma a diferença de acesso à rede em diferença de acesso à água segura sem excluir outras fontes possíveis de água própria para consumo.\",\n        \"wrongExplanations\": \"Os três feedbacks estão completos, corretamente indexados e distinguem os demais serviços, mas não resolvem a insuficiência factual da alternativa indicada.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c228-5c80-7421-ab3f-b7db1abaf4b0",
+  "runId": "01a1c228-5c80-7421-ab3f-b7db1abaf4b0:01a1c228-5cad-79b0-bb5b-b43dcc9f07e4",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T21:14:16.150Z",
+  "testOnly": false,
+  "sha256": "3e914c35dfcf1f13d58c3f4abf24cac7240d599620daaa3879013f347bf5e6bd"
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "tecnologia-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Tecnologia no campo"
+    },
+    "questionVersion": 3,
+    "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Antes de comprar uma máquina, uma família verifica quanto ela custa, quais tarefas precisa realizar e como é o terreno. Que cuidado está tomando?",
+        "options": [
+          "Trator.",
+          "Previsão do tempo.",
+          "Colheitadeira.",
+          "Escolha de tecnologia adequada à propriedade."
+        ],
+        "correctIndex": 3,
+        "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+        "wrongExplanations": {
+          "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "1": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 3
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"tecnologia-no-campo\",\n    \"reviewPass\": \"pedagogical\",\n    \"decision\": \"adjustments_required\",\n    \"facts\": [\n      \"A proposta contém quatro alternativas não vazias, correctIndex válido e três feedbacks indexados pelos índices incorretos.\",\n      \"A alternativa de índice 3 é a única que descreve o cuidado apresentado no enunciado.\",\n      \"O enunciado e os feedbacks usam linguagem respeitosa e compreensível para o 3º ano.\",\n      \"A explicação correta relaciona custos, necessidades e condições locais à escolha de equipamentos.\",\n      \"O objetivo autorizado exige relacionar tecnologias a transformações no trabalho rural, enquanto a questão avalia a escolha de tecnologia adequada à propriedade.\"\n    ],\n    \"doubts\": [],\n    \"findings\": [\n      {\n        \"questionId\": \"2026t3v2_geo_tecnologia_no_campo_020\",\n        \"criterion\": \"objective_alignment\",\n        \"severity\": \"major\",\n        \"evidence\": \"A criança precisa reconhecer um critério de escolha de equipamento, mas não relaciona uma tecnologia a uma mudança concreta no modo, no tempo ou no esforço do trabalho rural.\",\n        \"recommendation\": \"Reformular o enunciado e as alternativas para exigir a relação entre uma tecnologia e uma transformação concreta no trabalho rural, preservando linguagem adequada à série e uma única resposta defensável.\"\n      }\n    ],\n    \"recommendations\": [\n      \"Revisar a questão para medir diretamente o objetivo curricular declarado.\",\n      \"Preservar a clareza, a resposta única e os feedbacks individualizados na nova versão.\",\n      \"Submeter a versão alterada a uma nova passagem pedagógica independente e à aprovação humana aplicável.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_tecnologia_no_campo_020\",\n      \"decision\": \"adjustments_required\",\n      \"findings\": [\n        {\n          \"questionId\": \"2026t3v2_geo_tecnologia_no_campo_020\",\n          \"criterion\": \"objective_alignment\",\n          \"severity\": \"major\",\n          \"evidence\": \"A criança precisa reconhecer um critério de escolha de equipamento, mas não relaciona uma tecnologia a uma mudança concreta no modo, no tempo ou no esforço do trabalho rural.\",\n          \"recommendation\": \"Reformular o enunciado e as alternativas para exigir a relação entre uma tecnologia e uma transformação concreta no trabalho rural, preservando linguagem adequada à série e uma única resposta defensável.\"\n        }\n      ],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado é claro, contextualizado e adequado ao 3º ano, mas avalia o cuidado na escolha de uma máquina, não a transformação do trabalho rural exigida pelo objetivo autorizado.\",\n        \"options\": \"Há quatro alternativas distintas e não vazias; as três incorretas não concorrem com a resposta correta no contexto apresentado.\",\n        \"answer\": \"A alternativa de índice 3 é a única resposta defensável para o cuidado descrito, sem depender de probabilidade.\",\n        \"explanation\": \"A explicação é factual, curta e compreensível, mas reforça a adequação da escolha do equipamento em vez de explicar uma transformação no trabalho rural.\",\n        \"wrongExplanations\": \"Os três índices incorretos possuem feedback individualizado, factual e respeitoso, explicando que cada alternativa não descreve o cuidado apresentado.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c229-7773-7230-bf24-0a42f4a6e6f4",
+  "runId": "01a1c229-7773-7230-bf24-0a42f4a6e6f4:01a1c229-77ba-7d02-aaa5-8c216c06f2fb",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T21:15:15.318Z",
+  "testOnly": false,
+  "sha256": "01fd01c8ba5926b0ecd8b057b943a2927204c96cb1ccac1594c1f81071d3ded2"
+}

@@ -1,0 +1,591 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "subject": "geografia",
+  "topic": "agua-nos-centros-urbanos",
+  "topicName": "Água nos centros urbanos",
+  "authorizedObjective": "Reconhecer abastecimento, saneamento e consumo urbano",
+  "status": "draft_pending_reviews",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma estrutura retira água de um rio e a encaminha para o sistema de abastecimento da cidade. Qual etapa está descrita?",
+      "options": [
+        "Captação de água.",
+        "Tratamento da água para abastecimento.",
+        "Coleta de esgoto.",
+        "Desobstrução de bueiros."
+      ],
+      "correctIndex": 0,
+      "explanation": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento.",
+      "wrongExplanations": {
+        "1": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+        "2": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado. Essa alternativa não descreve a situação apresentada.",
+        "3": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Antes do tratamento, a água é retirada de um reservatório para abastecer a cidade. Que etapa ocorre?",
+      "options": [
+        "Desobstrução de bueiros.",
+        "Captação de água.",
+        "Tratamento da água para abastecimento.",
+        "Coleta de esgoto."
+      ],
+      "correctIndex": 1,
+      "explanation": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento.",
+      "wrongExplanations": {
+        "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+        "3": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado. Essa alternativa não descreve a situação apresentada.",
+        "0": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Em uma estação, a água recebe cuidados para se tornar própria para o consumo da população. Qual etapa ocorre?",
+      "options": [
+        "Tratamento de esgoto.",
+        "Conserto da rede de abastecimento.",
+        "Tratamento da água para abastecimento.",
+        "Distribuição de água."
+      ],
+      "correctIndex": 2,
+      "explanation": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição.",
+      "wrongExplanations": {
+        "3": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada.",
+        "0": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada.",
+        "1": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma cidade encaminha a água captada a uma estação que a torna adequada ao consumo antes de enviá-la às casas. Que etapa é essa?",
+      "options": [
+        "Distribuição de água.",
+        "Tratamento de esgoto.",
+        "Conserto da rede de abastecimento.",
+        "Tratamento da água para abastecimento."
+      ],
+      "correctIndex": 3,
+      "explanation": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição.",
+      "wrongExplanations": {
+        "0": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada.",
+        "1": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada.",
+        "2": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Depois de tratada, a água segue por canos até as casas. Qual etapa está descrita?",
+      "options": [
+        "Distribuição de água.",
+        "Coleta de esgoto.",
+        "Drenagem da chuva.",
+        "Consumo urbano responsável."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tubulações levam a água tratada até casas, escolas e outros locais.",
+      "wrongExplanations": {
+        "1": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado. Essa alternativa não descreve a situação apresentada.",
+        "2": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades. Essa alternativa não descreve a situação apresentada.",
+        "3": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma rede de tubulações leva água própria para consumo até uma escola. Qual serviço ela realiza?",
+      "options": [
+        "Consumo urbano responsável.",
+        "Distribuição de água.",
+        "Coleta de esgoto.",
+        "Drenagem da chuva."
+      ],
+      "correctIndex": 1,
+      "explanation": "Tubulações levam a água tratada até casas, escolas e outros locais.",
+      "wrongExplanations": {
+        "2": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado. Essa alternativa não descreve a situação apresentada.",
+        "3": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades. Essa alternativa não descreve a situação apresentada.",
+        "0": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "A água usada em pias e banheiros segue por uma rede própria, diferente da água que chega às torneiras. Qual serviço é esse?",
+      "options": [
+        "Desobstrução de bueiros.",
+        "Ampliação do acesso ao saneamento.",
+        "Coleta de esgoto.",
+        "Tratamento de esgoto."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado.",
+      "wrongExplanations": {
+        "3": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada.",
+        "0": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada.",
+        "1": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Canos recolhem a água usada nas casas e a levam para o sistema de saneamento. Qual etapa está descrita?",
+      "options": [
+        "Tratamento de esgoto.",
+        "Desobstrução de bueiros.",
+        "Ampliação do acesso ao saneamento.",
+        "Coleta de esgoto."
+      ],
+      "correctIndex": 3,
+      "explanation": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado.",
+      "wrongExplanations": {
+        "0": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada.",
+        "1": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada.",
+        "2": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 2
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma estação recebe esgoto e reduz seus poluentes antes de devolvê-lo ao ambiente. Qual serviço é realizado?",
+      "options": [
+        "Tratamento de esgoto.",
+        "Drenagem da chuva.",
+        "Conserto da rede de abastecimento.",
+        "Captação de água."
+      ],
+      "correctIndex": 0,
+      "explanation": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente.",
+      "wrongExplanations": {
+        "1": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades. Essa alternativa não descreve a situação apresentada.",
+        "2": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada.",
+        "3": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Após a coleta, a água usada passa por processos para diminuir a contaminação que poderia chegar ao rio. Que etapa é essa?",
+      "options": [
+        "Captação de água.",
+        "Tratamento de esgoto.",
+        "Drenagem da chuva.",
+        "Conserto da rede de abastecimento."
+      ],
+      "correctIndex": 1,
+      "explanation": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente.",
+      "wrongExplanations": {
+        "2": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades. Essa alternativa não descreve a situação apresentada.",
+        "3": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada.",
+        "0": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Durante a chuva, a água da rua entra em bueiros e segue por estruturas próprias. Qual serviço está descrito?",
+      "options": [
+        "Consumo urbano responsável.",
+        "Tratamento da água para abastecimento.",
+        "Drenagem da chuva.",
+        "Desobstrução de bueiros."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades.",
+      "wrongExplanations": {
+        "3": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada.",
+        "0": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios. Essa alternativa não descreve a situação apresentada.",
+        "1": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma praça tem canais que conduzem a água da chuva para evitar seu acúmulo. A que serviço esses canais pertencem?",
+      "options": [
+        "Desobstrução de bueiros.",
+        "Consumo urbano responsável.",
+        "Tratamento da água para abastecimento.",
+        "Drenagem da chuva."
+      ],
+      "correctIndex": 3,
+      "explanation": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades.",
+      "wrongExplanations": {
+        "0": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada.",
+        "1": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios. Essa alternativa não descreve a situação apresentada.",
+        "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma equipe retira folhas e lixo que impediam a entrada de água em um bueiro. Que ação ela realiza?",
+      "options": [
+        "Desobstrução de bueiros.",
+        "Conserto da rede de abastecimento.",
+        "Ampliação do acesso ao saneamento.",
+        "Distribuição de água."
+      ],
+      "correctIndex": 0,
+      "explanation": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho.",
+      "wrongExplanations": {
+        "1": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada.",
+        "2": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+        "3": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Um bueiro está entupido por resíduos. Qual ação permite recuperar a passagem da água da chuva nesse ponto?",
+      "options": [
+        "Distribuição de água.",
+        "Desobstrução de bueiros.",
+        "Conserto da rede de abastecimento.",
+        "Ampliação do acesso ao saneamento."
+      ],
+      "correctIndex": 1,
+      "explanation": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho.",
+      "wrongExplanations": {
+        "2": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada.",
+        "3": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+        "0": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Água tratada está escapando de um cano rompido sob a rua. Qual medida enfrenta diretamente esse problema?",
+      "options": [
+        "Captação de água.",
+        "Coleta de esgoto.",
+        "Conserto da rede de abastecimento.",
+        "Consumo urbano responsável."
+      ],
+      "correctIndex": 2,
+      "explanation": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários.",
+      "wrongExplanations": {
+        "3": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios. Essa alternativa não descreve a situação apresentada.",
+        "0": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento. Essa alternativa não descreve a situação apresentada.",
+        "1": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "A equipe encontra um vazamento na tubulação que leva água às casas. Qual ação evita continuar perdendo essa água?",
+      "options": [
+        "Consumo urbano responsável.",
+        "Captação de água.",
+        "Coleta de esgoto.",
+        "Conserto da rede de abastecimento."
+      ],
+      "correctIndex": 3,
+      "explanation": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários.",
+      "wrongExplanations": {
+        "0": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios. Essa alternativa não descreve a situação apresentada.",
+        "1": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento. Essa alternativa não descreve a situação apresentada.",
+        "2": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Um comércio muda a forma de fazer a limpeza para usar apenas a água necessária. Que atitude está sendo adotada?",
+      "options": [
+        "Consumo urbano responsável.",
+        "Ampliação do acesso ao saneamento.",
+        "Tratamento da água para abastecimento.",
+        "Tratamento de esgoto."
+      ],
+      "correctIndex": 0,
+      "explanation": "Usar apenas a água necessária na limpeza de um comércio ajuda a evitar desperdício.",
+      "wrongExplanations": {
+        "1": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+        "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+        "3": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 3
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Uma escola fecha as torneiras quando a água não está sendo usada. Qual prática está descrita?",
+      "options": [
+        "Tratamento de esgoto.",
+        "Consumo urbano responsável.",
+        "Ampliação do acesso ao saneamento.",
+        "Tratamento da água para abastecimento."
+      ],
+      "correctIndex": 1,
+      "explanation": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios.",
+      "wrongExplanations": {
+        "2": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+        "3": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+        "0": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Um bairro não recebe água segura nem coleta de esgoto. Qual melhoria atende essas necessidades?",
+      "options": [
+        "Distribuição de água.",
+        "Drenagem da chuva.",
+        "Ampliação do acesso ao saneamento.",
+        "Captação de água."
+      ],
+      "correctIndex": 2,
+      "explanation": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida.",
+      "wrongExplanations": {
+        "3": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento. Essa alternativa não descreve a situação apresentada.",
+        "0": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada.",
+        "1": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_nos_centros_urbanos_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-nos-centros-urbanos",
+      "question": "Moradores pedem que redes de água e esgoto cheguem às ruas ainda sem atendimento. Qual objetivo eles buscam?",
+      "options": [
+        "Captação de água.",
+        "Distribuição de água.",
+        "Drenagem da chuva.",
+        "Ampliação do acesso ao saneamento."
+      ],
+      "correctIndex": 3,
+      "explanation": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida.",
+      "wrongExplanations": {
+        "0": "É a retirada de água de uma fonte, como um rio ou reservatório, para o sistema de abastecimento. Essa alternativa não descreve a situação apresentada.",
+        "1": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada.",
+        "2": "Bueiros e outras estruturas ajudam a conduzir a água da chuva nas cidades. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-nos-centros-urbanos",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água nos centros urbanos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

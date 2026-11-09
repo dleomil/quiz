@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água potável, reúso e reaproveitamento"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma caixa-d’água tem uma tampa bem ajustada. Qual é a finalidade dessa tampa?",
+        "options": [
+          "Retirar sujeira já misturada na água.",
+          "Comprovar a potabilidade apenas pela aparência.",
+          "Levar a água do reservatório até as torneiras.",
+          "Evitar a entrada de sujeira na água armazenada."
+        ],
+        "correctIndex": 3,
+        "explanation": "A tampa bem ajustada ajuda a impedir a entrada de sujeira na água armazenada.",
+        "wrongExplanations": {
+          "0": "A tampa impede a entrada de sujeira, mas não retira o que já está misturado na água.",
+          "1": "A aparência não comprova a potabilidade. A tampa protege a água, mas não substitui a verificação de qualidade.",
+          "2": "A distribuição até as torneiras depende de tubulações; a tampa e a limpeza protegem a água armazenada."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma pessoa vai preparar uma bebida para a família. Qual deve ser a qualidade da água usada?",
+        "options": [
+          "Própria para consumo humano.",
+          "Transparente, mesmo que sua origem seja desconhecida.",
+          "Adequada apenas para dar descargas.",
+          "Recolhida da chuva, sem avaliação de qualidade."
+        ],
+        "correctIndex": 0,
+        "explanation": "A água usada no preparo de bebidas deve ser potável, isto é, própria para consumo humano.",
+        "wrongExplanations": {
+          "1": "A transparência não comprova que a água seja própria para consumo humano.",
+          "2": "Água destinada apenas a descargas não deve ser usada no preparo de bebidas.",
+          "3": "A água da chuva não deve ser considerada própria para beber sem avaliação de qualidade."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"agent\": \"pedagogical_quality\",\n  \"workItemId\": \"geografia-direct-20261109\",\n  \"contentSetId\": \"2026-t3-v2\",\n  \"subjectId\": \"geografia\",\n  \"topicId\": \"agua-potavel-reuso-e-reaproveitamento\",\n  \"reviewPass\": \"linguistic\",\n  \"decision\": \"approved\",\n  \"facts\": [\n    \"A entrada declara o 3º ano do Ensino Fundamental, o objetivo curricular autorizado e a passagem linguistic.\",\n    \"As duas propostas apresentam quatro alternativas, resposta indicada, explicação e três feedbacks de erro indexados.\",\n    \"A avaliação desta invocação ficou restrita à clareza, à adequação etária, às alternativas e aos feedbacks.\",\n    \"As propostas foram avaliadas sem alteração de seu conteúdo.\"\n  ],\n  \"doubts\": [],\n  \"findings\": [],\n  \"recommendations\": [\n    \"Submeter o pacote exato à aprovação humana obrigatória antes de qualquer implementação ou publicação.\"\n  ],\n  \"humanApprovalRequired\": true,\n  \"results\": [\n    {\n      \"id\": \"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012\",\n      \"decision\": \"approved\",\n      \"findings\": [],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado é direto, natural, bem pontuado e adequado ao vocabulário do 3º ano.\",\n        \"options\": \"As quatro alternativas são distintas, gramaticalmente corretas e compatíveis com a pergunta, sem duplicidade de sentido.\",\n        \"answer\": \"A alternativa indicada responde de modo direto e linguisticamente inequívoco ao que o enunciado pergunta.\",\n        \"explanation\": \"A explicação é curta, clara, respeitosa e retoma a função da tampa sem construção ambígua.\",\n        \"wrongExplanations\": \"Os três feedbacks são completos, compreensíveis e explicam separadamente por que cada alternativa marcada não atende ao enunciado.\"\n      }\n    },\n    {\n      \"id\": \"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013\",\n      \"decision\": \"approved\",\n      \"findings\": [],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado apresenta uma situação cotidiana e formula a pergunta com clareza e linguagem adequada ao 3º ano.\",\n        \"options\": \"As quatro alternativas são distintas, legíveis e mantêm paralelismo suficiente como respostas à qualidade exigida para a água.\",\n        \"answer\": \"A alternativa indicada completa a pergunta de forma direta, clara e sem ambiguidade linguística.\",\n        \"explanation\": \"A explicação define o termo central em frase curta, correta e acessível à faixa etária.\",\n        \"wrongExplanations\": \"Os três feedbacks são claros, respeitosos e específicos para as alternativas correspondentes, sem linguagem excessivamente técnica.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c219-5f02-7ae2-9c52-81306273b71e",
+  "runId": "01a1c219-5f02-7ae2-9c52-81306273b71e:01a1c219-5f28-7311-8ca5-b17252174cb7",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T20:57:35.589Z",
+  "testOnly": false,
+  "sha256": "def3f122e151c84b7afe45d35899239c4f970432c4e35af2699cbc6ba6262250"
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 6,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, os moradores ainda não têm acesso a água própria para consumo. Que desigualdade a turma está comparando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A turma compara o acesso à água própria para consumo: em um lugar ela chega às casas, e no outro os moradores ainda não têm esse acesso.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+          "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+          "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 6
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"desigualdades-urbanas-e-rurais\",\n    \"reviewPass\": \"pedagogical\",\n    \"decision\": \"blocked\",\n    \"facts\": [\n      \"A entrada declara proposta rastreável, objetivo curricular, 3º ano do Ensino Fundamental, ano letivo de 2026, trimestre T3 e passagem pedagogical.\",\n      \"A proposta contém quatro alternativas distintas, correctIndex válido, explicação da resposta correta e três feedbacks indexados pelas alternativas incorretas.\",\n      \"O enunciado compara o acesso à água própria para consumo entre duas localidades e está alinhado ao objetivo de comparar acesso a serviços sem estereótipos.\",\n      \"A alternativa de índice 0 é a única resposta defensável; coleta de lixo, esgotamento sanitário e educação não correspondem ao serviço descrito.\",\n      \"A formulação é adequada ao 3º ano, apresenta situação respeitosa e não atribui características negativas a populações urbanas ou rurais.\",\n      \"Esta invocação registrou uso efetivo de ferramenta local e não apresentou recibo do runner isolado scripts/run-editorial-agent.cjs.\"\n    ],\n    \"doubts\": [],\n    \"findings\": [\n      {\n        \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n        \"criterion\": \"isolamento obrigatório da execução editorial\",\n        \"severity\": \"blocking\",\n        \"evidence\": \"Houve uso efetivo de ferramenta local nesta invocação, sem evidência ou recibo que a vincule ao runner isolado exigido pelo contrato.\",\n        \"recommendation\": \"Reexecutar a passagem pedagogical por scripts/run-editorial-agent.cjs e validar o parecer somente após o preflight e o recibo de isolamento.\"\n      }\n    ],\n    \"recommendations\": [\n      \"Reexecutar o mesmo pacote exato pelo runner editorial isolado.\",\n      \"Manter a passagem linguistic independente e a aprovação pedagógica humana do pacote exato como requisitos posteriores.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n      \"decision\": \"blocked\",\n      \"findings\": [\n        {\n          \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n          \"criterion\": \"isolamento obrigatório da execução editorial\",\n          \"severity\": \"blocking\",\n          \"evidence\": \"A invocação registrou uso efetivo de ferramenta local, mas não apresentou recibo do runner isolado.\",\n          \"recommendation\": \"Reexecutar esta passagem pelo runner editorial isolado antes de considerar o parecer.\"\n        }\n      ],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": {\n          \"status\": \"passed\",\n          \"evidence\": \"O enunciado mede diretamente a comparação do acesso a um serviço, oferece informação suficiente, evita estereótipos e é adequado ao 3º ano.\"\n        },\n        \"options\": {\n          \"status\": \"passed\",\n          \"evidence\": \"As quatro alternativas são distintas; as três incorretas representam outros serviços e não concorrem com a resposta correta.\"\n        },\n        \"answer\": {\n          \"status\": \"passed\",\n          \"evidence\": \"O índice 0 identifica a única desigualdade descrita: a diferença no acesso à água segura.\"\n        },\n        \"explanation\": {\n          \"status\": \"passed\",\n          \"evidence\": \"A explicação retoma a diferença observável entre as localidades e justifica diretamente a resposta correta.\"\n        },\n        \"wrongExplanations\": {\n          \"status\": \"passed\",\n          \"evidence\": \"Há um feedback específico para cada índice incorreto, distinguindo abastecimento de água de coleta de lixo, esgotamento sanitário e educação.\"\n        }\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c22b-fa5a-7210-8a4c-9625b1b8b86e",
+  "runId": "01a1c22b-fa5a-7210-8a4c-9625b1b8b86e:01a1c22b-fa7c-72f1-b21b-ed335bc24d00",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T21:18:27.733Z",
+  "testOnly": false,
+  "sha256": "d5231d9ec15042833a8f766d4abbbca9e4c324fb7dc21d4ac8790ff8db4de59b"
+}

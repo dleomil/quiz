@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "municipio",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "municipio",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Município"
+  },
+  "questionVersion": 3,
+  "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_municipio_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "municipio",
+      "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+      "options": [
+        "Endereço.",
+        "Município.",
+        "Bairro.",
+        "Espaço público."
+      ],
+      "correctIndex": 3,
+      "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+      "wrongExplanations": {
+        "0": "O endereço usa informações como rua, número e município para localizar um lugar. Ele não é uma categoria de espaço.",
+        "1": "O município é um território com administração local. Pode reunir áreas urbanas e rurais; não é o nome dado a uma praça.",
+        "2": "Um bairro é uma parte da cidade formada por diversas ruas e construções. A pergunta pede a classificação da praça, não da região onde ela fica."
+      },
+      "skill": "municipio",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Município"
+      },
+      "reviewStatus": "draft",
+      "version": 3
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

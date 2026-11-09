@@ -1,0 +1,102 @@
+{
+  "scenarioId": "01a1c21c-5eb0-7161-bfcf-2fe4727b15be:01a1c21c-5ed8-7953-b70d-99d6374e04ab",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+        "options": [
+          "Endereço.",
+          "Município.",
+          "Bairro.",
+          "Espaço público."
+        ],
+        "correctIndex": 3,
+        "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "Um endereço é formado por informações como o nome da rua e o número. A pergunta pede que tipo de lugar é a praça, e não seu endereço.",
+          "1": "O município é um território com administração local. Pode reunir áreas urbanas e rurais; não é o nome dado a uma praça.",
+          "2": "Um bairro é uma parte da cidade formada por diversas ruas e construções. A pergunta pede a classificação da praça, não da região onde ela fica."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara objetivo curricular, série, referência autorizada, versão da questão e passagem linguística.",
+      "A proposta contém enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks indexados para as alternativas incorretas.",
+      "O enunciado e os textos apresentam ortografia, concordância e pontuação adequadas.",
+      "A linguagem é clara, respeitosa e compatível com o 3º ano do Ensino Fundamental."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter a proposta inalterada nesta passagem e submetê-la à aprovação editorial humana obrigatória."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c21c-5eb0-7161-bfcf-2fe4727b15be",
+    "runId": "01a1c21c-5eb0-7161-bfcf-2fe4727b15be:01a1c21c-5ed8-7953-b70d-99d6374e04ab",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T21:00:43.512Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_municipio_016": "787fd6bc9730f5119ada227497defe7ab9b25adf0f549802f6d2b58ef85f5dcc"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r4-original.json",
+    "originalReportSha256": "89cf36949d9326fa9125fd80e4afe8a70b70d4e9295775e7fab51a41415ab840"
+  }
+}

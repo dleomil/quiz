@@ -1,0 +1,614 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "agua-potavel-reuso-e-reaproveitamento",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Água potável, reúso e reaproveitamento"
+  },
+  "questionVersion": 1,
+  "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "pedagogical",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma escola recebe água com qualidade verificada e própria para beber. Como essa água é classificada?",
+      "options": [
+        "Água potável.",
+        "Água sem segurança de consumo comprovada.",
+        "Reúso de água já utilizada.",
+        "Uso de água potável no preparo de alimentos."
+      ],
+      "correctIndex": 0,
+      "explanation": "É água própria para consumo humano, com qualidade verificada.",
+      "wrongExplanations": {
+        "1": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência. Essa alternativa não descreve a situação apresentada.",
+        "2": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários. Essa alternativa não descreve a situação apresentada.",
+        "3": "Alimentos e bebidas devem ser preparados com água própria para consumo humano. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "A água de um bebedouro foi considerada segura para consumo humano após verificação de qualidade. Que tipo de água é essa?",
+      "options": [
+        "Uso de água potável no preparo de alimentos.",
+        "Água potável.",
+        "Água sem segurança de consumo comprovada.",
+        "Reúso de água já utilizada."
+      ],
+      "correctIndex": 1,
+      "explanation": "É água própria para consumo humano, com qualidade verificada.",
+      "wrongExplanations": {
+        "0": "Alimentos e bebidas devem ser preparados com água própria para consumo humano. Essa alternativa não descreve a situação apresentada.",
+        "2": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência. Essa alternativa não descreve a situação apresentada.",
+        "3": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma garrafa contém água de origem desconhecida, embora ela pareça limpa. O que se pode afirmar sobre essa água?",
+      "options": [
+        "Separar a água de usos não potáveis da água de beber.",
+        "Reparação de vazamentos.",
+        "Água sem segurança de consumo comprovada.",
+        "Reaproveitamento da água da chuva para limpeza."
+      ],
+      "correctIndex": 2,
+      "explanation": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência.",
+      "wrongExplanations": {
+        "0": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados. Essa alternativa não descreve a situação apresentada.",
+        "1": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada.",
+        "3": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma nascente tem água transparente, mas sua qualidade não foi avaliada. Qual classificação é mais cuidadosa para essa água?",
+      "options": [
+        "Reaproveitamento da água da chuva para limpeza.",
+        "Separar a água de usos não potáveis da água de beber.",
+        "Reparação de vazamentos.",
+        "Água sem segurança de consumo comprovada."
+      ],
+      "correctIndex": 3,
+      "explanation": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência.",
+      "wrongExplanations": {
+        "0": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada.",
+        "1": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados. Essa alternativa não descreve a situação apresentada.",
+        "2": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Um adulto capta água da chuva em um sistema adequado e a utiliza para lavar o pátio. Qual uso está descrito?",
+      "options": [
+        "Reaproveitamento da água da chuva para limpeza.",
+        "Reúso de água já utilizada.",
+        "Evitar contaminação no armazenamento.",
+        "Redução do gasto durante o uso."
+      ],
+      "correctIndex": 0,
+      "explanation": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber.",
+      "wrongExplanations": {
+        "1": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários. Essa alternativa não descreve a situação apresentada.",
+        "2": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada. Essa alternativa não descreve a situação apresentada.",
+        "3": "Usar apenas a quantidade necessária evita desperdício nas tarefas. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma escola tem um sistema próprio para captar chuva e lavar a área externa. Como descrever essa finalidade?",
+      "options": [
+        "Redução do gasto durante o uso.",
+        "Reaproveitamento da água da chuva para limpeza.",
+        "Reúso de água já utilizada.",
+        "Evitar contaminação no armazenamento."
+      ],
+      "correctIndex": 1,
+      "explanation": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber.",
+      "wrongExplanations": {
+        "0": "Usar apenas a quantidade necessária evita desperdício nas tarefas. Essa alternativa não descreve a situação apresentada.",
+        "2": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários. Essa alternativa não descreve a situação apresentada.",
+        "3": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Um adulto aproveita água que já foi usada na lavagem de roupas para uma descarga adequada a esse uso. Qual prática é essa?",
+      "options": [
+        "Uso de água potável no preparo de alimentos.",
+        "Orientação de um adulto responsável.",
+        "Reúso de água já utilizada.",
+        "Separar a água de usos não potáveis da água de beber."
+      ],
+      "correctIndex": 2,
+      "explanation": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários.",
+      "wrongExplanations": {
+        "0": "Alimentos e bebidas devem ser preparados com água própria para consumo humano. Essa alternativa não descreve a situação apresentada.",
+        "1": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa. Essa alternativa não descreve a situação apresentada.",
+        "3": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma fábrica trata água já usada e a utiliza novamente em uma etapa permitida do trabalho. Qual prática está descrita?",
+      "options": [
+        "Separar a água de usos não potáveis da água de beber.",
+        "Uso de água potável no preparo de alimentos.",
+        "Orientação de um adulto responsável.",
+        "Reúso de água já utilizada."
+      ],
+      "correctIndex": 3,
+      "explanation": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários.",
+      "wrongExplanations": {
+        "0": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados. Essa alternativa não descreve a situação apresentada.",
+        "1": "Alimentos e bebidas devem ser preparados com água própria para consumo humano. Essa alternativa não descreve a situação apresentada.",
+        "2": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma escola tem água captada da chuva e água própria para beber. Qual cuidado evita confundir seus destinos?",
+      "options": [
+        "Separar a água de usos não potáveis da água de beber.",
+        "Evitar contaminação no armazenamento.",
+        "Reparação de vazamentos.",
+        "Água potável."
+      ],
+      "correctIndex": 0,
+      "explanation": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados.",
+      "wrongExplanations": {
+        "1": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada. Essa alternativa não descreve a situação apresentada.",
+        "2": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada.",
+        "3": "É água própria para consumo humano, com qualidade verificada. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Um prédio utiliza água de reúso em descargas e água potável nos bebedouros. Qual cuidado deve orientar essas instalações?",
+      "options": [
+        "Água potável.",
+        "Separar a água de usos não potáveis da água de beber.",
+        "Evitar contaminação no armazenamento.",
+        "Reparação de vazamentos."
+      ],
+      "correctIndex": 1,
+      "explanation": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados.",
+      "wrongExplanations": {
+        "0": "É água própria para consumo humano, com qualidade verificada. Essa alternativa não descreve a situação apresentada.",
+        "2": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada. Essa alternativa não descreve a situação apresentada.",
+        "3": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma família precisa guardar água potável. Para que serve usar um reservatório adequado, limpo e tampado?",
+      "options": [
+        "Redução do gasto durante o uso.",
+        "Água sem segurança de consumo comprovada.",
+        "Evitar contaminação no armazenamento.",
+        "Uso de água potável no preparo de alimentos."
+      ],
+      "correctIndex": 2,
+      "explanation": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada.",
+      "wrongExplanations": {
+        "0": "Usar apenas a quantidade necessária evita desperdício nas tarefas. Essa alternativa não descreve a situação apresentada.",
+        "1": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência. Essa alternativa não descreve a situação apresentada.",
+        "3": "Alimentos e bebidas devem ser preparados com água própria para consumo humano. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma caixa de água potável tem tampa bem ajustada e recebe limpeza adequada. Qual é a finalidade desse cuidado?",
+      "options": [
+        "Uso de água potável no preparo de alimentos.",
+        "Redução do gasto durante o uso.",
+        "Água sem segurança de consumo comprovada.",
+        "Evitar contaminação no armazenamento."
+      ],
+      "correctIndex": 3,
+      "explanation": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada.",
+      "wrongExplanations": {
+        "0": "Alimentos e bebidas devem ser preparados com água própria para consumo humano. Essa alternativa não descreve a situação apresentada.",
+        "1": "Usar apenas a quantidade necessária evita desperdício nas tarefas. Essa alternativa não descreve a situação apresentada.",
+        "2": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma pessoa vai preparar uma bebida para a família. Qual cuidado com a água deve orientar essa tarefa?",
+      "options": [
+        "Uso de água potável no preparo de alimentos.",
+        "Reparação de vazamentos.",
+        "Orientação de um adulto responsável.",
+        "Reaproveitamento da água da chuva para limpeza."
+      ],
+      "correctIndex": 0,
+      "explanation": "Alimentos e bebidas devem ser preparados com água própria para consumo humano.",
+      "wrongExplanations": {
+        "1": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada.",
+        "2": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa. Essa alternativa não descreve a situação apresentada.",
+        "3": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Para cozinhar uma sopa, uma pessoa escolhe água com segurança de consumo verificada. Que cuidado ela está adotando?",
+      "options": [
+        "Reaproveitamento da água da chuva para limpeza.",
+        "Uso de água potável no preparo de alimentos.",
+        "Reparação de vazamentos.",
+        "Orientação de um adulto responsável."
+      ],
+      "correctIndex": 1,
+      "explanation": "Alimentos e bebidas devem ser preparados com água própria para consumo humano.",
+      "wrongExplanations": {
+        "0": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada.",
+        "2": "Consertar vazamentos evita perder água sem atender a uma necessidade. Essa alternativa não descreve a situação apresentada.",
+        "3": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Um adulto conserta uma torneira que pingava sem ninguém a usar. Qual ação de cuidado com a água ele realiza?",
+      "options": [
+        "Água potável.",
+        "Reúso de água já utilizada.",
+        "Reparação de vazamentos.",
+        "Redução do gasto durante o uso."
+      ],
+      "correctIndex": 2,
+      "explanation": "Consertar vazamentos evita perder água sem atender a uma necessidade.",
+      "wrongExplanations": {
+        "0": "É água própria para consumo humano, com qualidade verificada. Essa alternativa não descreve a situação apresentada.",
+        "1": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários. Essa alternativa não descreve a situação apresentada.",
+        "3": "Usar apenas a quantidade necessária evita desperdício nas tarefas. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "A tubulação da escola perde água mesmo com as torneiras fechadas. Qual medida resolve essa perda?",
+      "options": [
+        "Redução do gasto durante o uso.",
+        "Água potável.",
+        "Reúso de água já utilizada.",
+        "Reparação de vazamentos."
+      ],
+      "correctIndex": 3,
+      "explanation": "Consertar vazamentos evita perder água sem atender a uma necessidade.",
+      "wrongExplanations": {
+        "0": "Usar apenas a quantidade necessária evita desperdício nas tarefas. Essa alternativa não descreve a situação apresentada.",
+        "1": "É água própria para consumo humano, com qualidade verificada. Essa alternativa não descreve a situação apresentada.",
+        "2": "Água que já foi usada pode ter nova finalidade adequada, com os cuidados necessários. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma pessoa fecha a torneira enquanto ensaboa as mãos e a abre para enxaguar. Qual cuidado ela adota?",
+      "options": [
+        "Redução do gasto durante o uso.",
+        "Orientação de um adulto responsável.",
+        "Água sem segurança de consumo comprovada.",
+        "Separar a água de usos não potáveis da água de beber."
+      ],
+      "correctIndex": 0,
+      "explanation": "Usar apenas a quantidade necessária evita desperdício nas tarefas.",
+      "wrongExplanations": {
+        "1": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa. Essa alternativa não descreve a situação apresentada.",
+        "2": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência. Essa alternativa não descreve a situação apresentada.",
+        "3": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Na limpeza, uma pessoa usa apenas a água necessária para concluir a tarefa. Que atitude está demonstrando?",
+      "options": [
+        "Separar a água de usos não potáveis da água de beber.",
+        "Redução do gasto durante o uso.",
+        "Orientação de um adulto responsável.",
+        "Água sem segurança de consumo comprovada."
+      ],
+      "correctIndex": 1,
+      "explanation": "Usar apenas a quantidade necessária evita desperdício nas tarefas.",
+      "wrongExplanations": {
+        "0": "Reservatórios e tubulações de água não potável precisam ficar separados e identificados. Essa alternativa não descreve a situação apresentada.",
+        "2": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa. Essa alternativa não descreve a situação apresentada.",
+        "3": "Água sem avaliação de qualidade não deve ser considerada própria para beber apenas pela aparência. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma criança encontra um recipiente com água sem identificação e quer beber. Qual deve ser seu primeiro cuidado?",
+      "options": [
+        "Reaproveitamento da água da chuva para limpeza.",
+        "Evitar contaminação no armazenamento.",
+        "Orientação de um adulto responsável.",
+        "Água potável."
+      ],
+      "correctIndex": 2,
+      "explanation": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa.",
+      "wrongExplanations": {
+        "0": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada.",
+        "1": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada. Essa alternativa não descreve a situação apresentada.",
+        "3": "É água própria para consumo humano, com qualidade verificada. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma criança não sabe se a água disponível é própria para beber. Que cuidado pode ajudá-la a evitar um consumo inseguro?",
+      "options": [
+        "Água potável.",
+        "Reaproveitamento da água da chuva para limpeza.",
+        "Evitar contaminação no armazenamento.",
+        "Orientação de um adulto responsável."
+      ],
+      "correctIndex": 3,
+      "explanation": "Crianças devem pedir ajuda de um adulto para escolher usos seguros de água de origem duvidosa.",
+      "wrongExplanations": {
+        "0": "É água própria para consumo humano, com qualidade verificada. Essa alternativa não descreve a situação apresentada.",
+        "1": "Água da chuva pode ser captada e destinada a usos não potáveis adequados, sem ser oferecida para beber. Essa alternativa não descreve a situação apresentada.",
+        "2": "Recipientes adequados, limpos e fechados ajudam a proteger a água armazenada. Essa alternativa não descreve a situação apresentada."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

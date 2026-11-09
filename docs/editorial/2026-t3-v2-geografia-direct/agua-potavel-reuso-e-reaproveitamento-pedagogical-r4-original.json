@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água potável, reúso e reaproveitamento"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma caixa-d’água tem uma tampa bem ajustada. Qual é a finalidade dessa tampa?",
+        "options": [
+          "Retirar sujeira já misturada na água.",
+          "Comprovar a potabilidade apenas pela aparência.",
+          "Levar a água do reservatório até as torneiras.",
+          "Evitar a entrada de sujeira na água armazenada."
+        ],
+        "correctIndex": 3,
+        "explanation": "A tampa bem ajustada ajuda a impedir a entrada de sujeira na água armazenada.",
+        "wrongExplanations": {
+          "0": "A tampa impede a entrada de sujeira, mas não retira o que já está misturado na água.",
+          "1": "A aparência não comprova a potabilidade. A tampa protege a água, mas não substitui a verificação de qualidade.",
+          "2": "A distribuição até as torneiras depende de tubulações; a tampa e a limpeza protegem a água armazenada."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma pessoa vai preparar uma bebida para a família. Qual deve ser a qualidade da água usada?",
+        "options": [
+          "Própria para consumo humano.",
+          "Transparente, mesmo que sua origem seja desconhecida.",
+          "Adequada apenas para dar descargas.",
+          "Recolhida da chuva, sem avaliação de qualidade."
+        ],
+        "correctIndex": 0,
+        "explanation": "A água usada no preparo de bebidas deve ser potável, isto é, própria para consumo humano.",
+        "wrongExplanations": {
+          "1": "A transparência não comprova que a água seja própria para consumo humano.",
+          "2": "Água destinada apenas a descargas não deve ser usada no preparo de bebidas.",
+          "3": "A água da chuva não deve ser considerada própria para beber sem avaliação de qualidade."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"agent\": \"pedagogical_quality\",\n  \"workItemId\": \"geografia-direct-20261109\",\n  \"contentSetId\": \"2026-t3-v2\",\n  \"subjectId\": \"geografia\",\n  \"topicId\": \"agua-potavel-reuso-e-reaproveitamento\",\n  \"reviewPass\": \"pedagogical\",\n  \"decision\": \"adjustments_required\",\n  \"facts\": [\n    \"O contexto declara o 3º ano do Ensino Fundamental, o ano letivo de 2026, o terceiro trimestre, a matéria Geografia e o tema água potável, reúso e reaproveitamento.\",\n    \"O objetivo curricular autorizado é distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro.\",\n    \"As duas propostas possuem quatro alternativas, correctIndex válido, explicação da resposta correta e três feedbacks indexados para as alternativas incorretas.\",\n    \"A proposta 2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012 possui resposta única e conteúdo factual defensável sobre a finalidade da tampa de uma caixa-d’água.\",\n    \"A proposta 2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013 distingue água própria para consumo humano de águas sem qualidade comprovada ou destinadas a usos não potáveis.\"\n  ],\n  \"doubts\": [],\n  \"findings\": [\n    {\n      \"questionId\": \"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012\",\n      \"criterion\": \"alinhamento-ao-objetivo-curricular\",\n      \"severity\": \"major\",\n      \"evidence\": \"A questão avalia a função protetora da tampa de uma caixa-d’água, mas não exige distinguir potabilidade, reúso ou reaproveitamento, que é a habilidade declarada no objetivo autorizado.\",\n      \"recommendation\": \"Ajustar a proposta preservando seu ID para que a situação avalie diretamente uma distinção entre água potável, água de reúso e água reaproveitada, sem sugerir consumo inseguro.\"\n    }\n  ],\n  \"recommendations\": [\n    \"Revisar somente a proposta 2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012 para medir diretamente o objetivo curricular autorizado.\",\n    \"Manter a proposta 2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013 e submeter o pacote exato à passagem linguística independente e à aprovação humana pedagógica antes de implementação ou publicação.\"\n  ],\n  \"humanApprovalRequired\": true,\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012\",\n      \"decision\": \"adjustments_required\",\n      \"findings\": [\n        {\n          \"questionId\": \"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012\",\n          \"criterion\": \"alinhamento-ao-objetivo-curricular\",\n          \"severity\": \"major\",\n          \"evidence\": \"O enunciado mede conhecimento sobre conservação da água armazenada, não a distinção entre potabilidade, reúso e reaproveitamento.\",\n          \"recommendation\": \"Redirecionar a situação para uma decisão que diferencie os usos autorizados da água e preserve a orientação de não consumir água sem potabilidade comprovada.\"\n        }\n      ],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado é claro e suficiente para identificar a finalidade da tampa, mas mede uma habilidade lateral ao objetivo curricular autorizado.\",\n        \"options\": \"As quatro alternativas são distintas, completas e não apresentam equivalência contextual; somente a alternativa de índice 3 responde corretamente ao enunciado atual.\",\n        \"answer\": \"O correctIndex 3 é factual e pedagogicamente defensável para a pergunta apresentada.\",\n        \"explanation\": \"A explicação confirma corretamente que a tampa bem ajustada dificulta a entrada de sujeira, mas não conecta a aprendizagem à distinção curricular entre potabilidade, reúso e reaproveitamento.\",\n        \"wrongExplanations\": \"Os três feedbacks correspondem aos índices incorretos, explicam adequadamente por que a tampa não remove sujeira já misturada, não comprova potabilidade pela aparência e não realiza a distribuição da água.\"\n      }\n    },\n    {\n      \"questionId\": \"2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013\",\n      \"decision\": \"approved\",\n      \"findings\": [],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado apresenta uma situação concreta e mede diretamente a necessidade de água potável no preparo de bebidas.\",\n        \"options\": \"As quatro alternativas são distintas e permitem uma única resposta defensável; os distratores contrastam aparência, uso não potável e origem sem avaliação de qualidade.\",\n        \"answer\": \"O correctIndex 0 é a única resposta segura e correta: a água usada para preparar bebidas deve ser própria para consumo humano.\",\n        \"explanation\": \"A explicação define água potável de modo curto, correto e suficiente para a faixa escolar.\",\n        \"wrongExplanations\": \"Os três feedbacks correspondem aos índices incorretos, rejeitam critérios inseguros de consumo e explicam por que transparência, destinação a descargas ou coleta da chuva sem avaliação não comprovam potabilidade.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c219-4b1a-7d73-a605-eea620ac52c0",
+  "runId": "01a1c219-4b1a-7d73-a605-eea620ac52c0:01a1c219-4b41-7560-abf8-4821990d71a8",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T20:57:35.199Z",
+  "testOnly": false,
+  "sha256": "b5c414c2ffb3200e1554208805f362ff8a3c743f826a59711734734ae4dc9a38"
+}

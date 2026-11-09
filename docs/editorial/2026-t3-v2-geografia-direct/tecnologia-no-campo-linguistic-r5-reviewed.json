@@ -1,0 +1,105 @@
+{
+  "scenarioId": "01a1c232-da52-7622-98a3-36c1970c18fc:01a1c232-da71-7110-82aa-3a935c63718d",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "tecnologia-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Tecnologia no campo"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma família passou a usar uma colheitadeira para recolher grãos. O que mudou nessa etapa do trabalho no campo?",
+        "options": [
+          "A colheita dos grãos passou a ser feita com uma máquina.",
+          "A previsão do tempo passou a medir a umidade da terra.",
+          "O sensor de umidade passou a recolher os grãos.",
+          "O trator passou a informar quando vai chover."
+        ],
+        "correctIndex": 0,
+        "explanation": "Com a colheitadeira, parte da colheita dos grãos passou a ser feita por uma máquina.",
+        "wrongExplanations": {
+          "1": "A previsão do tempo informa condições como chuva e temperatura; ela não mede a umidade da terra.",
+          "2": "O sensor mede a umidade do solo, mas não recolhe os grãos. Essa tarefa pode ser feita pela colheitadeira.",
+          "3": "O trator pode ajudar em tarefas no campo, mas não informa quando vai chover. A previsão do tempo dá essa informação."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A proposta avaliada é a questão 2026t3v2_geo_tecnologia_no_campo_020, versão 5, em estado draft.",
+      "O enunciado é claro, direto, gramaticalmente correto e adequado ao 3º ano.",
+      "As quatro alternativas são distintas, completas e apresentam construção linguística compreensível.",
+      "A alternativa de índice 0 responde diretamente à mudança descrita no enunciado.",
+      "A explicação é curta, respeitosa e retoma com clareza o uso da colheitadeira.",
+      "Os três feedbacks das alternativas incorretas explicam o erro específico com linguagem clara, correta e orientada ao aprendizado.",
+      "Não foram encontrados problemas de ortografia, acentuação, concordância, pontuação, naturalidade, ambiguidade linguística ou adequação infantil."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à aprovação humana obrigatória e manter separada a passagem pedagógica independente antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c232-da52-7622-98a3-36c1970c18fc",
+    "runId": "01a1c232-da52-7622-98a3-36c1970c18fc:01a1c232-da71-7110-82aa-3a935c63718d",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T21:25:11.674Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_tecnologia_no_campo_020": "0f42a8a95b7dd71ad0ed41d1966fc984382cb63ba28eeda863648d608e3f1161"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r5-original.json",
+    "originalReportSha256": "f861480a3b92171063fef60b623efc38224a17bd0357c781a97c51d7e96edeba"
+  }
+}

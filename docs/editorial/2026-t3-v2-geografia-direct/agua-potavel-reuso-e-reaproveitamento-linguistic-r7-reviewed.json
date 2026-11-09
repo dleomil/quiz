@@ -1,0 +1,102 @@
+{
+  "scenarioId": "01a1c222-5d86-7942-b84d-83490c6fc80d:01a1c222-5db7-7a92-ae98-a394a58c3933",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água potável, reúso e reaproveitamento"
+    },
+    "questionVersion": 7,
+    "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-potavel-reuso-e-reaproveitamento",
+        "question": "Uma família recolhe água da chuva e a usa para regar as plantas. Como se chama esse uso da água?",
+        "options": [
+          "Consumo de água potável.",
+          "Reaproveitamento da água da chuva.",
+          "Desperdício de água tratada.",
+          "Reúso de água tratada para descarga."
+        ],
+        "correctIndex": 1,
+        "explanation": "A família reaproveita a água da chuva para regar as plantas. Essa água não deve ser considerada própria para beber sem tratamento e verificação.",
+        "wrongExplanations": {
+          "0": "A situação fala de regar plantas, não de beber a água. A água da chuva não é automaticamente potável.",
+          "2": "A família aproveita a água recolhida para regar; ela não está desperdiçando água tratada.",
+          "3": "Essa opção descreve água tratada destinada à descarga, mas o enunciado fala de água da chuva usada para regar plantas."
+        },
+        "skill": "agua-potavel-reuso-e-reaproveitamento",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água potável, reúso e reaproveitamento"
+        },
+        "reviewStatus": "draft",
+        "version": 7
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-potavel-reuso-e-reaproveitamento",
+    "reviewPass": "linguistic",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara proposta rastreável, objetivo curricular, 3º ano do Ensino Fundamental e passagem linguistic.",
+      "A proposta 2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012 contém enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks indexados para as alternativas incorretas.",
+      "Enunciado, alternativas, explicação e feedbacks apresentam ortografia, acentuação, concordância e pontuação adequadas.",
+      "A linguagem é clara, respeitosa e adequada à faixa etária, e cada feedback corresponde à alternativa incorreta indicada."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Submeter o pacote exato à aprovação humana obrigatória antes de qualquer implementação ou publicação."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c222-5d86-7942-b84d-83490c6fc80d",
+    "runId": "01a1c222-5d86-7942-b84d-83490c6fc80d:01a1c222-5db7-7a92-ae98-a394a58c3933",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T21:07:17.188Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012": "44c1f4d912510f8b8740560fa9133a8c676b7ffa7b020c0bf2cb155f8a1a7212"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/agua-potavel-reuso-e-reaproveitamento-linguistic-r7-original.json",
+    "originalReportSha256": "da7b4c89b6076e3fdf9ab4fda6675bad9760b02bfaf1bae29b03d75a2a1c3d8a"
+  }
+}

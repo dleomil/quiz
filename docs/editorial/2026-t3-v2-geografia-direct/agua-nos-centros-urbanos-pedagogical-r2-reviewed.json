@@ -1,0 +1,161 @@
+{
+  "scenarioId": "01a1c1e5-d9f3-7590-819c-3eb478a852b2:2026-11-09T20:01:02.380Z",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-nos-centros-urbanos",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "agua-nos-centros-urbanos",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Água nos centros urbanos"
+    },
+    "questionVersion": 2,
+    "authorizedObjective": "Reconhecer abastecimento, saneamento e consumo urbano",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_nos_centros_urbanos_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-nos-centros-urbanos",
+        "question": "Uma cidade encaminha a água captada a uma estação que a torna adequada ao consumo antes de enviá-la às casas. Que etapa é essa?",
+        "options": [
+          "Distribuição de água.",
+          "Tratamento de esgoto.",
+          "Conserto da rede de abastecimento.",
+          "Tratamento da água para abastecimento."
+        ],
+        "correctIndex": 3,
+        "explanation": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição.",
+        "wrongExplanations": {
+          "0": "Tubulações levam a água tratada até casas, escolas e outros locais. Essa alternativa não descreve a situação apresentada.",
+          "1": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada.",
+          "2": "Reparar canos que vazam evita a perda de água tratada no caminho até os usuários. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-nos-centros-urbanos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água nos centros urbanos"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_nos_centros_urbanos_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-nos-centros-urbanos",
+        "question": "Canos recolhem a água usada nas casas e a levam para o sistema de saneamento. Qual etapa está descrita?",
+        "options": [
+          "Tratamento de esgoto.",
+          "Desobstrução de bueiros.",
+          "Ampliação do acesso ao saneamento.",
+          "Coleta de esgoto."
+        ],
+        "correctIndex": 3,
+        "explanation": "Tubulações recolhem a água usada em banheiros, cozinhas e outros locais e a encaminham para destino adequado.",
+        "wrongExplanations": {
+          "0": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada.",
+          "1": "Retirar o lixo que bloqueia bueiros ajuda a água da chuva a seguir seu caminho. Essa alternativa não descreve a situação apresentada.",
+          "2": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-nos-centros-urbanos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água nos centros urbanos"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "agua-nos-centros-urbanos",
+        "question": "Um comércio muda a forma de fazer a limpeza para usar apenas a água necessária. Que atitude está sendo adotada?",
+        "options": [
+          "Consumo urbano responsável.",
+          "Ampliação do acesso ao saneamento.",
+          "Tratamento da água para abastecimento.",
+          "Tratamento de esgoto."
+        ],
+        "correctIndex": 0,
+        "explanation": "Usar a água necessária em tarefas da cidade ajuda a evitar desperdícios.",
+        "wrongExplanations": {
+          "1": "Levar água segura e serviços de esgoto a áreas ainda não atendidas melhora as condições de vida. Essa alternativa não descreve a situação apresentada.",
+          "2": "Processos de tratamento tornam a água adequada ao consumo antes da distribuição. Essa alternativa não descreve a situação apresentada.",
+          "3": "A água usada recebe tratamento para reduzir a poluição antes de retornar ao ambiente. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "agua-nos-centros-urbanos",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Água nos centros urbanos"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "agua-nos-centros-urbanos",
+    "reviewPass": "pedagogical",
+    "decision": "approved",
+    "facts": [
+      "A entrada declara 3º ano do Ensino Fundamental, ano 2026, trimestre t3, matéria Geografia, tema Água nos centros urbanos e objetivo curricular de reconhecer abastecimento, saneamento e consumo urbano.",
+      "O manifesto está declarado como frozen, a fonte está autorizada e as três propostas são content-v1, versão 2, com quatro alternativas, correctIndex válido, explicação e três feedbacks indexados.",
+      "As três questões avaliam aspectos distintos e coerentes com o objetivo: tratamento da água para abastecimento, coleta de esgoto e consumo urbano responsável."
+    ],
+    "doubts": [],
+    "findings": [],
+    "recommendations": [
+      "Manter o lote como draft até a passagem linguística independente e a aprovação pedagógica humana do pacote exato."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c1e5-d9f3-7590-819c-3eb478a852b2",
+    "runId": "01a1c1e5-d9f3-7590-819c-3eb478a852b2:2026-11-09T20:01:02.380Z",
+    "pass": "pedagogical",
+    "completedAt": "2026-11-09T20:01:02.380Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_agua_nos_centros_urbanos_004": "f3699872f327aa3f1225f84801a9a7ab92f9322237c99b73e4add95540254ded",
+      "2026t3v2_geo_agua_nos_centros_urbanos_008": "52b9b5b22e46747612c08bbb241819691e08f48ffb34b3044482f1452e40e2df",
+      "2026t3v2_geo_agua_nos_centros_urbanos_017": "fa501ed16202a62cbf64ac3550243e433acda5eebc4bbab54918b964214581b5"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/agua-nos-centros-urbanos-pedagogical-r2-original.json",
+    "originalReportSha256": "37dd3bbd11661f5e304cca7eeb41f6de390365bc1d7ef4b75cb65f5c98b971aa"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "tecnologia-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Tecnologia no campo"
+    },
+    "questionVersion": 4,
+    "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma família passou a usar uma colheitadeira para recolher grãos. O que mudou nessa etapa do trabalho no campo?",
+        "options": [
+          "A colheita dos grãos passou a ser feita com uma máquina.",
+          "A previsão do tempo passou a medir a umidade da terra.",
+          "O sensor de umidade passou a recolher os grãos.",
+          "O trator passou a informar quando vai chover."
+        ],
+        "correctIndex": 0,
+        "explanation": "A colheitadeira realiza parte da colheita dos grãos com uma máquina, mudando essa etapa do trabalho no campo.",
+        "wrongExplanations": {
+          "1": "A previsão do tempo informa condições como chuva e temperatura; ela não mede a umidade da terra.",
+          "2": "O sensor mede a umidade do solo, mas não recolhe os grãos. Essa tarefa pode ser feita pela colheitadeira.",
+          "3": "O trator pode ajudar em tarefas no campo, mas não informa quando vai chover. A previsão do tempo dá essa informação."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 4
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"tecnologia-no-campo\",\n    \"reviewPass\": \"pedagogical\",\n    \"decision\": \"approved\",\n    \"facts\": [\n      \"A entrada declara o 3º ano do Ensino Fundamental, o objetivo curricular de relacionar tecnologias a transformações no trabalho rural, o tema autorizado e a passagem pedagógica.\",\n      \"A proposta possui quatro alternativas distintas e não vazias, correctIndex válido, explicação da resposta correta e três feedbacks indexados pelas alternativas incorretas.\",\n      \"O enunciado apresenta a adoção de uma colheitadeira e pergunta pela mudança ocorrida na etapa de colheita, medindo diretamente a relação entre tecnologia e transformação do trabalho rural.\",\n      \"A alternativa de índice 0 é a única resposta defensável: a colheita passou a ser realizada com auxílio de uma máquina.\",\n      \"A linguagem, a situação concreta e os feedbacks são respeitosos e adequados ao 3º ano.\"\n    ],\n    \"doubts\": [],\n    \"findings\": [],\n    \"recommendations\": [\n      \"Submeter o pacote exato à aprovação pedagógica humana obrigatória antes de qualquer implementação ou publicação.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_tecnologia_no_campo_020\",\n      \"decision\": \"approved\",\n      \"findings\": [],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado descreve uma mudança concreta na colheita causada pelo uso de uma colheitadeira, alinha-se diretamente ao objetivo curricular e é compreensível para o 3º ano.\",\n        \"options\": \"As quatro alternativas são distintas; somente a primeira descreve a transformação apresentada, enquanto as demais atribuem funções incorretas à previsão do tempo, ao sensor de umidade ou ao trator.\",\n        \"answer\": \"A alternativa de índice 0 é a única resposta correta e defensável, pois identifica que a máquina passou a realizar parte da colheita dos grãos.\",\n        \"explanation\": \"A explicação relaciona corretamente a colheitadeira à mecanização dessa etapa do trabalho rural, de forma curta e adequada à faixa etária.\",\n        \"wrongExplanations\": \"Os três feedbacks estão completos, factualmente corretos e individualizados: distinguem previsão do tempo, medição da umidade do solo e uso do trator da tarefa de recolher grãos.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c22b-2c2f-7503-9449-5253d7d0d79d",
+  "runId": "01a1c22b-2c2f-7503-9449-5253d7d0d79d:01a1c22b-2c5c-7e70-b465-7757ab379758",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T21:16:48.774Z",
+  "testOnly": false,
+  "sha256": "1257d084fa426f5e3530d3155c060b9e6d7eb302aa842bbc48b2b722e14b5666"
+}

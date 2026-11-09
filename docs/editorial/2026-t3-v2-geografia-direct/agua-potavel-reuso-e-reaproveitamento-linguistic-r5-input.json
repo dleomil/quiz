@@ -1,0 +1,63 @@
+{
+  "workItemId": "geografia-direct-20261109",
+  "contentSetId": "2026-t3-v2",
+  "subjectId": "geografia",
+  "topicId": "agua-potavel-reuso-e-reaproveitamento",
+  "grade": "3º ano do Ensino Fundamental",
+  "academicYear": 2026,
+  "term": "t3",
+  "authorizedSkill": "agua-potavel-reuso-e-reaproveitamento",
+  "sourceRef": {
+    "referenceId": "roteiro-av-trimestral-novembro-2026",
+    "section": "Geografia",
+    "topic": "Água potável, reúso e reaproveitamento"
+  },
+  "questionVersion": 4,
+  "authorizedObjective": "Distinguir potabilidade, reúso e reaproveitamento sem recomendar consumo inseguro",
+  "manifestState": "frozen",
+  "humanFreezeApproval": {
+    "approvedBy": "dleomil",
+    "approvedAt": "2026-11-02",
+    "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+  },
+  "requestedPass": "linguistic",
+  "sourceStatus": "authorized",
+  "proposals": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "geografia",
+      "topic": "agua-potavel-reuso-e-reaproveitamento",
+      "question": "Uma família recolhe água da chuva e a usa para regar as plantas. Como se chama esse uso da água?",
+      "options": [
+        "Consumo de água potável.",
+        "Reaproveitamento da água da chuva.",
+        "Desperdício de água tratada.",
+        "Uso de água sem qualidade avaliada para beber."
+      ],
+      "correctIndex": 1,
+      "explanation": "A família reaproveita a água da chuva para regar as plantas. Essa água não deve ser considerada própria para beber sem tratamento e verificação.",
+      "wrongExplanations": {
+        "0": "A situação fala de regar plantas, não de beber a água. A água da chuva não é automaticamente potável.",
+        "2": "A família está usando a água recolhida para uma finalidade, e não a desperdiçando.",
+        "3": "A água da chuva pode ser reaproveitada para regar plantas, mas isso não significa que seja segura para beber."
+      },
+      "skill": "agua-potavel-reuso-e-reaproveitamento",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Geografia",
+        "topic": "Água potável, reúso e reaproveitamento"
+      },
+      "reviewStatus": "draft",
+      "version": 5
+    }
+  ],
+  "checklist": [
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "wrongExplanations"
+  ]
+}

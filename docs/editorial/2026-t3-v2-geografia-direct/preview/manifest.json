@@ -1,0 +1,782 @@
+{
+  "schemaVersion": "geografia-draft-preview-v1",
+  "purpose": "editorial-preview",
+  "published": false,
+  "batches": [
+    {
+      "key": "2026-t3-v2/geografia/usos-da-agua",
+      "sourceSha256": "59e3b92449b8babaf96f8be83f750bb279c13ed61011f51f9361336bd9fc96dc",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_usos_da_agua_001",
+          "sha256": "af3989133e6ae3acfacbb05c3cbe681173addd46998c172e32c4cdbcea5ef4ae"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_002",
+          "sha256": "085ddfb98bfd5941d5a02e63f7813f16bab0d3d2705337a36de6bf11dcf72d80"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_003",
+          "sha256": "6e3d1ca99d0ac0731d860a48cc5e676d0549ccc1cddd8b067a0ab71a086ae98e"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_004",
+          "sha256": "a43611f356f1425fe30eec23069d9b629a19273e0d680c11faebe23c61c468af"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_005",
+          "sha256": "5ba26ae4a7bb84b9da76657b12087649465fc25e8bb29a9fe312a73b33c259dc"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_006",
+          "sha256": "8bb1527b73d5ed45ec95e8aab53110fc07ad445f78d75fa64c9e141af6b0a6e6"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_007",
+          "sha256": "90b31027140a46f012723ca522487e9257653954911e4f00971ee42ba8400f4a"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_008",
+          "sha256": "a3a8440bfcc391ea0bdf8c61cec2a94626f8acf7271e22bb9fcd4c956d8d7e8d"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_009",
+          "sha256": "a1b433d8d5aac19b7fb64c0ae52e83c974c3b99cede8677680ec16df52adf76d"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_010",
+          "sha256": "ddebf5d0c5256c80a1b8305edb37f4b1c7e2bd6dd07401bb3e81810dbceeea70"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_011",
+          "sha256": "1d582f7cde4d32db5c27203f037027deb405fe7d49078ce23a70ace43ffbe43f"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_012",
+          "sha256": "c437c65d0a4742d316d4c37a57644a63d3a155d28bbad2eb66ae28dc21fe40c4"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_013",
+          "sha256": "15165ad0a2b3c30b8dc38e0fa181cfc36e1afecc16b408751e47de213dc72ec6"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_014",
+          "sha256": "e50fee5ed1e7db159e7c81188104a97ea91658d135b14f6585a9f058779117aa"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_015",
+          "sha256": "c8d43f3826edc957a266692b96c94432e46f1e1c0e890d39b24d1c61531f6d30"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_016",
+          "sha256": "0b8c61aabe199e5f64cf8c2bf6074defe17ec42d54888ee7e2b0bf807ec45cdd"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_017",
+          "sha256": "405ec83f1479eeb03d10e3aeed209b3a7fd712d194de2efc37348006046b6816"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_018",
+          "sha256": "a6d90119c2813aa80d4b68bfd5846341423b2b03926499b7922d2db96771e923"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_019",
+          "sha256": "1da6c3d82d785ba2c9526de87b84dc8d17a41ff6c79a7323921460b1a43bd40a"
+        },
+        {
+          "id": "2026t3v2_geo_usos_da_agua_020",
+          "sha256": "fb3d561f49269e6e6e6a19fb154b4a25fd49d47f52708b97cd15fe4933bb7cde"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/percurso-da-agua",
+      "sourceSha256": "f9c618c99b1f8f665e68ca4c27e49cc14edcd62d5668058a37af4b4e98c149a8",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_001",
+          "sha256": "f64bea387cb8754a8f7c2c9cb093f4b491c2ea9d583e7bda03e1859e34ea8cf2"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_002",
+          "sha256": "c92d8bd2965f613d7bafdc5ae75b345a359a18854ec501d2ef9fb5e780782ade"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_003",
+          "sha256": "3b53e1d90cdebc9bf2fb2b05b6823f41ad0b4bf0321b5a31e0c95ea759ec5c4e"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_004",
+          "sha256": "13164820701e87e3601497e40a31fc3a3d66b1335dea3b7edbffc02212a77b0c"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_005",
+          "sha256": "21f0bbcb660f06ee1bb2beacae01a929388e702e599896ad6e8b92fe70ec147f"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_006",
+          "sha256": "9f2c6f935b6253f891960bb404bd48165040d93b16a964102f74376b59c2bd16"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_007",
+          "sha256": "beb3f3c61fb348f689fd89d9accd4dd334a142b2fea80e1e9f34ff02f0630407"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_008",
+          "sha256": "e645b34a9c4d8762cd27807b9dd58fccb05167ba6041aaf4cb09af1128c62e2a"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_009",
+          "sha256": "c23f80841f8a973c13a3673eba716adc65784599f1653d1ac58f31b9273879c2"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_010",
+          "sha256": "d29e4f23e46143ca9a3a52d68ecec286557cd6926b6ef7cd112a686c13cca780"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_011",
+          "sha256": "2db234b7e79a6dec19668d1cf30fc39910a31e2c7911cb50d2197be60be503ef"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_012",
+          "sha256": "21676ee4384d47ebcabd440f62e777ba2f7964345f708156f0105e6dc5c1a00f"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_013",
+          "sha256": "fcc679b171dceec7db04bb757a80e422c05553dfc216833ea89769ebe6011a4a"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_014",
+          "sha256": "4092aedbed3224ae6075b7f13de1b87bfb30d2c8a88be80b602fa31f06c5c4b1"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_015",
+          "sha256": "843e61ea8360d39284b32660a9025beab9038685f3a080806d74152f524a3e85"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_016",
+          "sha256": "b073982ca413b83b601a688311dcfc3ed208963018b197900ad45794f5d4c228"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_017",
+          "sha256": "c5ce2520156df991b1d0ccb8be4922324d6fc68209b4c24164a78a3ed3dfe4dd"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_018",
+          "sha256": "bce280fffbf19d7d411bf736843f1582a6ebf167675815e190fc7b118d1b9c0c"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_019",
+          "sha256": "7a3432566cf54f8223ca3d78909d18523f234425f00a394f03391f7d76c196ff"
+        },
+        {
+          "id": "2026t3v2_geo_percurso_da_agua_020",
+          "sha256": "66eda17412799650cb411033426a0984888f27a2bdd40a252335aaf4a6523394"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/agua-potavel-reuso-e-reaproveitamento",
+      "sourceSha256": "f505c087df359423a54f07c73f995a4667a110cb81ea7af2902b61340142fcce",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_001",
+          "sha256": "d6cb974d455228610405dc988f8cb381ea652fb97dcf6c04076251353ea5f011"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_002",
+          "sha256": "19bb3757f709a921ea20d3fb18dce72ce100ea59945707625019ca8c5ed77a7b"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_003",
+          "sha256": "2161781d97c2ebf232bdc5df7922ab56fb207000874b011cbd1f7e310a78c546"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_004",
+          "sha256": "68c5caddcd0553484729f58ec976faf657d20c170120d629cdc58ddda2a8837f"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_005",
+          "sha256": "833c69371a06cd86d28e6ad0ea8e230dedab49634d3946a23bb211cfb9af08ad"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_006",
+          "sha256": "acc376fc0f3e85cc4caa308bbb6c306c885d3062ec3d922f1144e1dfae39cefb"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_007",
+          "sha256": "fd7ae245a1b4ec7545ee1cdd050e2a290e57e30cab2610546861f207b4690f77"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_008",
+          "sha256": "a2b9cd38b71a9e50c8ef71793eb234482d1492575bd57ecfcb0e9b4e89150fab"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_009",
+          "sha256": "642ec61083c7d2959cb0fe1b7cc716f23b9b89943f45af5695aa8743c6bee538"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_010",
+          "sha256": "bc156807e5e05245a130f511f4d438e1eb624fa08b5495b1d17c19a627396da4"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_011",
+          "sha256": "25ecccaf309894067272e2572f8f6a5c050cd89e15486ed13eddf79608627301"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_012",
+          "sha256": "44c1f4d912510f8b8740560fa9133a8c676b7ffa7b020c0bf2cb155f8a1a7212"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_013",
+          "sha256": "bab90f082fc9704fa3c6f76d6e3b89875c80d604482e6fe6911533c6b05f770b"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_014",
+          "sha256": "2eab8e95dc083d5e71dbd270169b5da77fc0e4e8cce6dc7ebee7ae0042337912"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_015",
+          "sha256": "ca5bfe44aceb3aeadc79de08790f08721e6a65722bf740dc634625a5407b445e"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_016",
+          "sha256": "2d476be333da27db836be26d837dde29186c70a5ce188aafc3f21573c6ba9066"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_017",
+          "sha256": "2c54e1e0c7f7796654e74c7956ae59a1259d171f093df3b12afaf48d8bfe2075"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_018",
+          "sha256": "9014d9ad7f949433adb04316c20cb02d91f3e4e2ebb5b3d2ddb335da060f30fb"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_019",
+          "sha256": "40175230924e57e822fefd768a0a4b8f43991b71e0dea685984608b92f81c000"
+        },
+        {
+          "id": "2026t3v2_geo_agua_potavel_reuso_e_reaproveitamento_020",
+          "sha256": "fdba9c3949363d0c19b0bfd586718a4063f596a2c720f1db378ba81f7a85238f"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/agua-nos-centros-urbanos",
+      "sourceSha256": "ccb0dd8b2b24aa237d0973fdc523ee0e4ad9e83e3d94fe30d191c1dfcc6c2ad9",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_001",
+          "sha256": "13e2c88fa694df742c77114fbb9535f97cdb0c8f22b7363e92874992906e56ce"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_002",
+          "sha256": "d02c2129776f246baf063e93ec7f41470259344d5ff3123a4949fb00a616875a"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_003",
+          "sha256": "d86975e9e900d0b108a014a7475ff3535600f6b4a8ca4515b73bfa19bb13822d"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_004",
+          "sha256": "f3699872f327aa3f1225f84801a9a7ab92f9322237c99b73e4add95540254ded"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_005",
+          "sha256": "0452b0399679d61a359a321f8964b15a0ce893e852ddacced111b5b53c5c784b"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_006",
+          "sha256": "57914cf36b0fa2fe17f067e71ae06b2788b1453726e353dccbeca5022965ee92"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_007",
+          "sha256": "81162c2b200ab8b676b48174f52ccc37a5603f99e2b1d0fdcd092ce7fd789606"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_008",
+          "sha256": "52b9b5b22e46747612c08bbb241819691e08f48ffb34b3044482f1452e40e2df"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_009",
+          "sha256": "c06ea3f56123fc5a6543c2934d36c152da921e6a6d45dcbea4b5c7e2bdd37af0"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_010",
+          "sha256": "d8233633fc7b09f0a6caab566fb20d4816346fd84c9e0b924d1112fccdac5701"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_011",
+          "sha256": "835ab1180e690b41ce0d15802dff609431210d270a118d0949e2bf47e5b61392"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_012",
+          "sha256": "d76a125a8ffe12f804dfd8f17f32c7a262bc3ca48380e9d9c2b3f3b73094d579"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_013",
+          "sha256": "74c9fdb226037a8de86cc7cf25debe3d7c5d8d283788d08bd437edf2c849d0a7"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_014",
+          "sha256": "ae563adf6eb365622e718f79d0abe20b71efdf658d00f22f804d28a3c543e780"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_015",
+          "sha256": "22dd77c248c006b0af71fc2f551857adfba9f34c642c1cbe58e84bf46ff3e334"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_016",
+          "sha256": "d6aabbf5d3e84e531c9b447df7f4574ed9977b0ee52c57090b147c3426f6321d"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_017",
+          "sha256": "699c5cfda18c11ec0733c3113b4e6af45ee739bee9ad7fd31dc80a5d1964bb7c"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_018",
+          "sha256": "a5e2ed2e43c3444741abfb67e7126bf49753561378daaf6801a35ee6f89a1687"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_019",
+          "sha256": "af7a41e2ccec42771c3f4ff4e49895714e76da643213fe4a7642be0e3ceb7cc7"
+        },
+        {
+          "id": "2026t3v2_geo_agua_nos_centros_urbanos_020",
+          "sha256": "5c8982273be1ae19c8438886d3e2b34f2058786afff35c3eac289e56eee42a26"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/agua-no-campo",
+      "sourceSha256": "b607890afd303fbfcb5bbaa1ed01eb53b9dbcc56e33d02a53f5794351c358241",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_agua_no_campo_001",
+          "sha256": "78cf1f25657f16993e4d821debb7e79066f636560b5821bda1e56ce07966ab22"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_002",
+          "sha256": "93645ab600050905a6c70559b80128ea89a3f91cf09f04ffe03c46c9875a4890"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_003",
+          "sha256": "7ffc6330ee224599994f1120a8f5d7ba6900c4e0e494c71d289acc41c512eb5e"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_004",
+          "sha256": "dac94f84e52092fb2ad9c1db5a41a4571df41658f3754a9a380d87705da47d6e"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_005",
+          "sha256": "716fcb39e86ea41e6bf54297b79ea2c4aba085f63b92a115672f2e86b1bdff31"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_006",
+          "sha256": "f4a4ec3a4c103a19388c1944bee7a747adcbc173e61e78fecbcd0fb5fee14531"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_007",
+          "sha256": "265ed4bce289a52228479992bb8b4d1838904dca8276ecae1650c2345050c440"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_008",
+          "sha256": "fbf15fe68876323448b0c0f0a629f835139d049ca2cdc284056e4300485ff273"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_009",
+          "sha256": "000cfc16d34a1bff096105ef99065de331972180009965150b3d870c32968966"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_010",
+          "sha256": "eeeeff51278ecb53970123cf53a7ad2e3afbe26b175059cf84824886b903b586"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_011",
+          "sha256": "f717b43d0b04f46093896f244f821a674de938fc1e18f80dd46cb6419eb7acaf"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_012",
+          "sha256": "093eb3a2b34e24ade535a2e82680cff5559235d3407185ebbd073349b01fc2f3"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_013",
+          "sha256": "2a4095ec8e190ea1c145b6a76c8dd2cee5fa0382e9115cd819b71aba20e08c48"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_014",
+          "sha256": "c5dd0ba283073e3eb358edbcc541210d83cec5d30d39394fb148c49eb19d1b8a"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_015",
+          "sha256": "5748ec07361ea2af1ac5b877b4e056eb097b7d1bef42c0b774fbbd69cb47da6f"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_016",
+          "sha256": "4677c5b944262e4a535ab38facb87f7aea1dec5b0354b50c4441eda19da4820c"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_017",
+          "sha256": "1a7d18c540cab57b1698c250d159a8e525867f9f003b2bd789c7d472d1cf1a5e"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_018",
+          "sha256": "9febd5a5b02b38433c1c7405b67e54448859bd046929a97323e7dc1a3d36ad85"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_019",
+          "sha256": "fbeede3b726694845b1bcceb33eb0ebb036c2fc684e566f54b1836081c0b899f"
+        },
+        {
+          "id": "2026t3v2_geo_agua_no_campo_020",
+          "sha256": "a7ff38647e46db629dd2988b011a306e2b7dba1677b0afffd39cf54be6ca26fd"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/municipio",
+      "sourceSha256": "e8fa13153c135092b53926c00e4ce1308f2c95a02e0a801ac5dcdd2e244cce66",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_municipio_001",
+          "sha256": "9792ea612359bd0950a8ab8d4d02b4c41dc85cd6c3c46f5226ad9c522d41b5fd"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_002",
+          "sha256": "467a21d9982dc447dcd0722fb4c07f150d7bb26de4eca1979b1b27eae59b9077"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_003",
+          "sha256": "c26147ad3c2ed0f9e1a6aac8716ebe63967724482bf2b0bf035a56033af16506"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_004",
+          "sha256": "b91f6e87f549d40c8509aa307b1ac54f0e21283a6f07ad786db506fa56b799bb"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_005",
+          "sha256": "2533e70394ffed6f5e4a68dfd42b64ebaa3517f78dfaae1095b447da067d9ae0"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_006",
+          "sha256": "cb9e3ab3a59018f098bc2b88ec1ab53d84f98151f197a41e0a422e29dce685a4"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_007",
+          "sha256": "03f4949c5f7efdccdf4ab4b3bbcf318834ce80b02f2bb8f4810eb70f1be6ff0e"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_008",
+          "sha256": "f657280f5d18b9cee2766457a52c883ddf87f838512f35ffda351d344987c5ca"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_009",
+          "sha256": "50bcb2e348f51da7eb27dec0af0f46c42720cc468ec5ebd8332f4e4426ec1913"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_010",
+          "sha256": "309f96f42f4fa989f4cf5f88b157670434a293ca2edc86db74a0c9f91e949411"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_011",
+          "sha256": "8a120e658e5d9a708fd63e3ca655cb3ec440fd9c4f1a6003ce32cb55dd6d5298"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_012",
+          "sha256": "7fd69d9d8fa75cd6fd32d11ba4eaa574d47d637925b80191be4febea24e0d1a4"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_013",
+          "sha256": "215d2117075007f963f1918dff5b5fc9b2d509744fe0abcf8242c97b59443dbc"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_014",
+          "sha256": "5de7499e3e9d2183955586ae62c1f6d542c1c3cf333af4c139250f37cb95aa46"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_015",
+          "sha256": "251dbb117d2437bbb3fb85a686197e339ffbb815f971e17dd24f6b986b0b7a67"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_016",
+          "sha256": "7565ef2433cbea8109721fb1675172b04849e56983caf900cd3651657c005916"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_017",
+          "sha256": "02f8182822aba6283d64ef9a6e462c652ade8e0838e2bafadc467985d0dbce54"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_018",
+          "sha256": "bca5f1994da7e34e0cc198c1bf4c0c85cc46dbdd10c56ecbad960364454dc199"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_019",
+          "sha256": "1257745c71182f209cfbb8ab6d4ad8b526dedc4ef2dbd8a97fa1dbe8f7ac6b6a"
+        },
+        {
+          "id": "2026t3v2_geo_municipio_020",
+          "sha256": "a987c2a66af45e02ced9a35e39c62c8e0e2e611a8f1cc6bd99b8696c703e6fe8"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/integracao-e-infraestrutura-urbana-e-rural",
+      "sourceSha256": "8e179a6a759b59f53ae725779e4336f737d8e2ee3071515f1ef1c94f39595c01",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_001",
+          "sha256": "788455e6b4cbd8ff15b5a2206049912d01281cef395c68dcf6e2771c29f9b281"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_002",
+          "sha256": "69a29856a8cb58257529db580e0326e94db8ca4df7879b0db2fac1e391d6410f"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_003",
+          "sha256": "ef1157d273b72c75c2b13ac561518993af336c722306871cfc2c27b3ebb0c7dd"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_004",
+          "sha256": "62764bc0a535710fa01b485c0069ded01a7d80a693f0035ebdb817304c3980f7"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_005",
+          "sha256": "4224b166492f6f08479556b31209f4823fee44ddc4c00387d85b4fa8e8266f36"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_006",
+          "sha256": "da92e509acd32dec9efdecd26fce64a79ecb46a7c29a843f6fc9b773c3296b2f"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_007",
+          "sha256": "84297e5851b3ac9c69ff29439fedabb82e72673b55f8a1a720071d0501d3c367"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_008",
+          "sha256": "0e8b02e8138145551392862af3e530e231b602101718321d2d5ca62d56cd99a7"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_009",
+          "sha256": "ff9fd3da818e00ebb825f03166e19beb5977fd361392f7a018369acc639bee62"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_010",
+          "sha256": "c01e47f80113f4ad2839ea99cdc4fdd4a0421684a16804e5dd03860e7f9d2e3f"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_011",
+          "sha256": "25ccbb64e5d65b102e36770fbcc2d901b7e2002d9a517e6ad3b13eac8fb997cd"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_012",
+          "sha256": "9212c261fb4721d7f84b4411851200609ed55cf756e06aafe8913794ea590855"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_013",
+          "sha256": "bfae7cfd9f3c09ae37f3e4ad957a12112bc62a9eebdfa8bbf4be4d425901a062"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_014",
+          "sha256": "a9077407fc2f94a88b73624fac418d8849f67ea6a5c072ccc15bdf4eb3539ba8"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_015",
+          "sha256": "cc9df09eb5b406f4597666143d56614ddc5e06771b1e92f30293ef6d2a4337a9"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_016",
+          "sha256": "a0ce688077f4d3334cca304315fc417bb6fe37e6bda8ea36c850e33057b5e7b8"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_017",
+          "sha256": "824ee14f22a52b3f47504aad7020c02a189b226df88816c825adcee85d0ee099"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_018",
+          "sha256": "982470594b5b1c65ab9c339241de7268c1824924431ff7a7d0bf7de91d250c81"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_019",
+          "sha256": "b15cefa0fe463ed1f4d18b89aeecd6ebf8aaccca028e964396bc85d4854e67bb"
+        },
+        {
+          "id": "2026t3v2_geo_integracao_e_infraestrutura_urbana_e_rural_020",
+          "sha256": "d3957c19ffbfc4b5afb80fb023bf62a8af7419036f78d22fa236cb6003fa1629"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/desigualdades-urbanas-e-rurais",
+      "sourceSha256": "de2fb6d7dc01fccbc2c66d4849199c34ab4314d1e75650ff902b67e5e59cf641",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_001",
+          "sha256": "24136fa405a17d78a058fe544da3a52037b9d4a68e40bfb271493120256fd44a"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_002",
+          "sha256": "210563a57657a7a0fc7bb0b45bf6882e7b24e7b2aa1f4402f5d2f2434798f6c8"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_003",
+          "sha256": "2f6e532f15bbf6dc653a0fde8634d5e4532f93250c6b1e4a91e5f61499162991"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_004",
+          "sha256": "d34f53a0fcf344c7ce91e916d3440b61029012152163bc3e02ebd36e0ef10804"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_005",
+          "sha256": "d5e6879c7c9aa4d8af736f3cc310c5fe4437207cbf23b0df59fb0d8ba7a32332"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_006",
+          "sha256": "263a193b3ca5c7814dc6dce931bb0f1e0d00c15537777bbc09ccfeb5cc83bf50"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_007",
+          "sha256": "86178f7df17e1f41dec73b5ee21536713d7b17f9c7416b4d2b1290fc1bd2a232"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_008",
+          "sha256": "610c999a0e791be8a2f202d6ef0738bb3ddb182880aecb842e17ec1bdfe95909"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_009",
+          "sha256": "16315fe68d3f3c00e2926d5e90d1746c172002d46654d8336ded4bb5b9104318"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_010",
+          "sha256": "4375a05b6960a0db4d166935d4dae23abb96df1a7cf2e22ed7fc78f2b0b83488"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_011",
+          "sha256": "65dc0ab5c5d99ddb9b8d24fd62fb00f31d47a7c661993c467720d1b69486e09b"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_012",
+          "sha256": "774baae0e82f1e08fd38c89b35d8d4009fe34340ed47f1701ef8e3bc1aff8a7a"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_013",
+          "sha256": "89154d019da1e239d25e3d214aac07e0c4f114d07db2ca7c76ea101d20aad6c7"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_014",
+          "sha256": "a6602caca1c509416ae6d1964bfafc3075e6f7225289f0552dd2f3fef7dbf20b"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+          "sha256": "1a34ed9d854b4436f401984ea813fcf80eeb706a15389cbbe6d0b61ab79702b1"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_016",
+          "sha256": "61c25cdc568077e47ce7029ed008f26d95c8219d54ad072bd2cf827ce4860aae"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_017",
+          "sha256": "66d100cd78b52224b1cb274ec16326c52029d19527490133199c1fd4796d630b"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_018",
+          "sha256": "4515f072aa32fb178f255e96b312b5fe1a782b8e6daff5842169c37a92cd78f9"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_019",
+          "sha256": "f772ea916a0c770a80ec50b6e9872350ea205f6d1de24f0c4f22a5a5f3cbd83d"
+        },
+        {
+          "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_020",
+          "sha256": "f570b31266ee479a1a9d3fce444de36eae7e3f2c87480f9172861517138078d3"
+        }
+      ]
+    },
+    {
+      "key": "2026-t3-v2/geografia/tecnologia-no-campo",
+      "sourceSha256": "02c45686d8a32c86bd34c2b38b94ea24a6244bb73c98f7d1611f4fdb00a2204d",
+      "questions": [
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_001",
+          "sha256": "38d8a4fe6567fc5d04ed9e415f46c3c4c399d621c29ec0d7b5ab5265be01f4c4"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_002",
+          "sha256": "242ee33c27f9fbd4eeba70d5afc56893fbd17c80e72ae55e12e9c62db2790689"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_003",
+          "sha256": "b5e6d5b088463bca63e4565743af171684bb24e9e397032b54b6d93a1ffd3a62"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_004",
+          "sha256": "8200326bf05ac1107e41e5cd03dfee0b2a4dad462f3820001b934d60c4d06bb7"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_005",
+          "sha256": "a2237afe4987a384e94a828d7d7a15b62de65790bf8dcaee5aded198b6773e8e"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_006",
+          "sha256": "4cfd6f7294cd343a044f29e1a62b90e63ea15f9031bada92e98e82da79c7e908"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_007",
+          "sha256": "a8d22671a4644dfed9473b388ed700503726e2ed1ddf6b13ae93d51d55b18a99"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_008",
+          "sha256": "4a134e1b254006ba542677f6178b5a344a5ac6de4bf7dd5e27412d4f8b57edbd"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_009",
+          "sha256": "74a0a36ecd1c118a556e8be642102495876b9d7d569c9e9181eb5a8da1ff8e4b"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_010",
+          "sha256": "cab0dc865ac8a4279e458414458b7e9cb1bce207e1bbb833584ea89cfeda5965"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_011",
+          "sha256": "7728f7e194ccb1ccb0170365ccda451280548fb15940daac98b92e0104a3c177"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_012",
+          "sha256": "1d372be22419ab0e5e043fb585924f77df2b74cbb1c79c895a165f8ee6c92158"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_013",
+          "sha256": "50d5e19870d5366c5af4f4d8c6a11fe1e82ffa396a731b1447dc19bf4c9ff583"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_014",
+          "sha256": "d6cf2daa0c520e0b22701c62309bb59a4c7ebbef232f7713853b18a66cadf400"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_015",
+          "sha256": "0fd76f4b6aae1d025f41b35d2d14c98e43c83848bae38d5d5ca9d2f7885e3e3d"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_016",
+          "sha256": "0158a8d3ba3e53ba7b277e054b60d1cdca6b9966cf67f21329ba9af8bdd6172e"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_017",
+          "sha256": "2f12e010943eb6923b66cb2499a37bd15bd69b16dd15eca7c2cbbac95eb254ec"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_018",
+          "sha256": "ddfbc4db06001a7ada830eb885943ef4c4dc574079178d5f408731df6770c08d"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_019",
+          "sha256": "6d8102385f04370e7ce0316af58aa326301bebb5f2555e255a760e5e5e367aed"
+        },
+        {
+          "id": "2026t3v2_geo_tecnologia_no_campo_020",
+          "sha256": "0f42a8a95b7dd71ad0ed41d1966fc984382cb63ba28eeda863648d608e3f1161"
+        }
+      ]
+    }
+  ],
+  "htmlSha256": "a540aa0b043b409c9688e1a7ba01738c72977fa62538e0bfeb972fe86a9bbd0b"
+}

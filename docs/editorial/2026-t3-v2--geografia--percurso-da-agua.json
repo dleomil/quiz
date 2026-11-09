@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/percurso-da-agua",
+  "sourceSha256": "f9c618c99b1f8f665e68ca4c27e49cc14edcd62d5668058a37af4b4e98c149a8",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_percurso_da_agua_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/percurso-da-agua-linguistic-r2-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Uma região tem recolhimento regular de lixo; outra ainda não conta com esse serviço. Qual desigualdade aparece?",
+        "options": [
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à saúde."
+        ],
+        "correctIndex": 0,
+        "explanation": "As localidades diferem no acesso à coleta regular de lixo: em uma ela acontece com regularidade, e na outra não.",
+        "wrongExplanations": {
+          "1": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara a coleta de lixo.",
+          "2": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Neste caso, o enunciado compara a coleta de lixo.",
+          "3": "A distância e a falta de atendimento podem dificultar o cuidado com a saúde. Neste caso, o enunciado compara a coleta de lixo."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Moradores de duas localidades comparam a retirada do lixo: em uma há coleta organizada, e na outra ela não chega. Que diferença está descrita?",
+        "options": [
+          "Diferença no acesso à saúde.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso ao esgotamento sanitário."
+        ],
+        "correctIndex": 1,
+        "explanation": "As localidades diferem no acesso à coleta regular de lixo: em uma ela acontece com regularidade, e na outra não.",
+        "wrongExplanations": {
+          "0": "A distância e a falta de atendimento podem dificultar o cuidado com a saúde. Neste caso, o enunciado compara a coleta de lixo.",
+          "2": "Algumas comunidades recebem água com qualidade e regularidade, enquanto outras ainda precisam de melhorias nesse serviço. Neste caso, o enunciado compara a coleta de lixo.",
+          "3": "O acesso à coleta e ao tratamento de esgoto pode variar entre localidades. Neste caso, o enunciado compara a coleta de lixo."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"desigualdades-urbanas-e-rurais\",\n    \"reviewPass\": \"linguistic\",\n    \"decision\": \"adjustments_required\",\n    \"facts\": [\n      \"A entrada declara objetivo curricular rastreável, 3º ano do Ensino Fundamental, referência autorizada, manifesto congelado e passagem linguística.\",\n      \"As duas propostas apresentam enunciado, quatro alternativas, resposta indicada, explicação e três feedbacks indexados pelas alternativas incorretas.\",\n      \"Não foram identificados erros de ortografia, acentuação, concordância ou pontuação nos enunciados, nas alternativas ou nos feedbacks.\",\n      \"As alternativas são distintas, respeitosas e adequadas ao público infantil.\",\n      \"A explicação compartilhada pelas duas propostas contém repetição lexical que prejudica sua naturalidade.\"\n    ],\n    \"doubts\": [],\n    \"findings\": [\n      {\n        \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_013\",\n        \"criterion\": \"Naturalidade e concisão da explicação\",\n        \"severity\": \"minor\",\n        \"evidence\": \"A construção “coleta regular de lixo: em uma ela acontece com regularidade” repete a mesma ideia por meio de “regular” e “regularidade”, tornando a explicação pouco natural.\",\n        \"recommendation\": \"Eliminar a repetição e explicar diretamente que uma localidade possui o serviço de coleta de lixo e a outra não.\"\n      },\n      {\n        \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_014\",\n        \"criterion\": \"Naturalidade e concisão da explicação\",\n        \"severity\": \"minor\",\n        \"evidence\": \"A construção “coleta regular de lixo: em uma ela acontece com regularidade” repete a mesma ideia por meio de “regular” e “regularidade”, tornando a explicação pouco natural.\",\n        \"recommendation\": \"Reformular a explicação de modo direto, contrastando a disponibilidade do serviço nas duas localidades sem repetição.\"\n      }\n    ],\n    \"recommendations\": [\n      \"Revisar a explicação dos dois IDs para retirar a repetição entre “regular” e “regularidade”.\",\n      \"Submeter somente os textos alterados a nova passagem linguística independente.\",\n      \"Manter obrigatória a aprovação humana do pacote exato antes de qualquer implementação ou publicação.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_013\",\n      \"decision\": \"adjustments_required\",\n      \"findings\": [\n        {\n          \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_013\",\n          \"criterion\": \"Naturalidade e concisão da explicação\",\n          \"severity\": \"minor\",\n          \"evidence\": \"A construção “coleta regular de lixo: em uma ela acontece com regularidade” repete a mesma ideia por meio de “regular” e “regularidade”, tornando a explicação pouco natural.\",\n          \"recommendation\": \"Eliminar a repetição e explicar diretamente que uma localidade possui o serviço de coleta de lixo e a outra não.\"\n        }\n      ],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado é claro, bem pontuado e adequado ao 3º ano; o contraste entre presença e ausência do serviço é compreensível.\",\n        \"options\": \"As quatro alternativas são distintas, corretamente grafadas e não apresentam linguagem pejorativa ou tecnicismo desnecessário.\",\n        \"answer\": \"A alternativa de índice 0 corresponde diretamente à coleta de lixo mencionada no enunciado e não encontra concorrente linguística entre as demais opções.\",\n        \"explanation\": \"A explicação mantém relação com o enunciado, mas a repetição entre “coleta regular” e “com regularidade” prejudica sua naturalidade e concisão.\",\n        \"wrongExplanations\": \"Os três feedbacks correspondem aos índices incorretos, estão bem escritos e distinguem água, esgotamento sanitário e saúde da coleta de lixo.\"\n      }\n    },\n    {\n      \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_014\",\n      \"decision\": \"adjustments_required\",\n      \"findings\": [\n        {\n          \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_014\",\n          \"criterion\": \"Naturalidade e concisão da explicação\",\n          \"severity\": \"minor\",\n          \"evidence\": \"A construção “coleta regular de lixo: em uma ela acontece com regularidade” repete a mesma ideia por meio de “regular” e “regularidade”, tornando a explicação pouco natural.\",\n          \"recommendation\": \"Reformular a explicação de modo direto, contrastando a disponibilidade do serviço nas duas localidades sem repetição.\"\n        }\n      ],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado é compreensível, bem pontuado e adequado à faixa etária; o pronome “ela” retoma a coleta sem criar disputa de resposta.\",\n        \"options\": \"As quatro alternativas são distintas, corretamente grafadas e usam linguagem respeitosa e acessível.\",\n        \"answer\": \"A alternativa de índice 1 retoma diretamente a coleta de lixo descrita e não possui concorrente linguística entre as demais opções.\",\n        \"explanation\": \"A explicação comunica o contraste pretendido, mas repete desnecessariamente a ideia de regularidade e precisa de redação mais natural.\",\n        \"wrongExplanations\": \"Os feedbacks dos índices 0, 2 e 3 estão completos, claros e coerentes com as alternativas a que se referem.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c222-45f4-7762-a2e2-faba0a925b60",
+  "runId": "01a1c222-45f4-7762-a2e2-faba0a925b60:01a1c222-461d-7123-af1c-099245787c8d",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T21:08:01.899Z",
+  "testOnly": false,
+  "sha256": "519ebc865bfb01909c209431c2683889b297ed0e7ac16995dd1d85408a591563"
+}

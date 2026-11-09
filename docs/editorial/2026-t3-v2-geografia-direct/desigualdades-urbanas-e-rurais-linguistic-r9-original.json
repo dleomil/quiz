@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "desigualdades-urbanas-e-rurais",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "desigualdades-urbanas-e-rurais",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Desigualdades urbanas e rurais"
+    },
+    "questionVersion": 5,
+    "authorizedObjective": "Comparar acesso a serviços sem estereótipos",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_desigualdades_urbanas_e_rurais_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "desigualdades-urbanas-e-rurais",
+        "question": "Em uma localidade, a rede leva água própria para consumo às casas. Na outra, a rede ainda não chega às moradias. Que desigualdade a turma está comparando?",
+        "options": [
+          "Diferença no acesso à água segura.",
+          "Diferença no acesso à coleta de lixo.",
+          "Diferença no acesso ao esgotamento sanitário.",
+          "Diferença no acesso à educação."
+        ],
+        "correctIndex": 0,
+        "explanation": "A turma compara o acesso à água segura: em um lugar ela chega às casas, e no outro ainda não.",
+        "wrongExplanations": {
+          "1": "A coleta de lixo envolve o recolhimento de resíduos, mas a situação compara o abastecimento de água.",
+          "2": "O esgotamento sanitário envolve a coleta e o tratamento de esgoto, não a chegada de água às casas.",
+          "3": "A educação envolve o acesso à escola, enquanto a situação compara o abastecimento de água."
+        },
+        "skill": "desigualdades-urbanas-e-rurais",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Desigualdades urbanas e rurais"
+        },
+        "reviewStatus": "draft",
+        "version": 5
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\n  \"output\": {\n    \"agent\": \"pedagogical_quality\",\n    \"workItemId\": \"geografia-direct-20261109\",\n    \"contentSetId\": \"2026-t3-v2\",\n    \"subjectId\": \"geografia\",\n    \"topicId\": \"desigualdades-urbanas-e-rurais\",\n    \"reviewPass\": \"linguistic\",\n    \"decision\": \"approved\",\n    \"facts\": [\n      \"A entrada declara proposta rastreável, objetivo curricular, 3º ano do Ensino Fundamental e passagem linguistic.\",\n      \"O enunciado apresenta com clareza a comparação entre duas localidades, sem linguagem pejorativa, estereótipos ou instrução confusa.\",\n      \"As alternativas são distintas, paralelas e redigidas com ortografia, acentuação, concordância e pontuação adequadas.\",\n      \"A explicação e os três feedbacks são concisos, respeitosos e compreensíveis para a série declarada.\"\n    ],\n    \"doubts\": [],\n    \"findings\": [],\n    \"recommendations\": [\n      \"Encaminhar a proposta exata para as demais conferências aplicáveis e para a aprovação humana obrigatória, sem tratar este parecer linguístico como autorização de implementação ou publicação.\"\n    ],\n    \"humanApprovalRequired\": true\n  },\n  \"results\": [\n    {\n      \"questionId\": \"2026t3v2_geo_desigualdades_urbanas_e_rurais_015\",\n      \"decision\": \"approved\",\n      \"findings\": [],\n      \"doubts\": [],\n      \"checks\": {\n        \"question\": \"O enunciado é direto, bem pontuado e permite compreender que a turma compara o acesso à água entre duas localidades.\",\n        \"options\": \"As quatro alternativas mantêm estrutura paralela, são linguisticamente distintas e não apresentam duplicidade ou formulação inadequada.\",\n        \"answer\": \"A alternativa indicada corresponde linguisticamente à situação descrita e emprega expressão clara para o público do 3º ano.\",\n        \"explanation\": \"A explicação retoma a comparação de modo breve, natural e coerente, sem acrescentar ambiguidade.\",\n        \"wrongExplanations\": \"Os três feedbacks identificam com clareza o serviço mencionado em cada alternativa e explicam respeitosamente por que ele não corresponde ao enunciado.\"\n      }\n    }\n  ]\n}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c228-721b-7dd1-8213-bb77ddb5bb09",
+  "runId": "01a1c228-721b-7dd1-8213-bb77ddb5bb09:01a1c228-7246-7113-9d66-244275c45ec7",
+  "pass": "linguistic",
+  "completedAt": "2026-11-09T21:14:09.262Z",
+  "testOnly": false,
+  "sha256": "4fffbdbda530eaa7ce0d62c28d29672f155ef44251921e5032c16dcc9d66d3a2"
+}

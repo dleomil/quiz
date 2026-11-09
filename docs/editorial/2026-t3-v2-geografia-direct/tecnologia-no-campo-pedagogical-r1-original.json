@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "direct-editorial-report-v1",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "tecnologia-no-campo",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "tecnologia-no-campo",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Tecnologia no campo"
+    },
+    "questionVersion": 1,
+    "authorizedObjective": "Relacionar tecnologias a transformações no trabalho rural",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "pedagogical",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_001",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma máquina conduzida por um trabalhador puxa um equipamento para preparar o terreno. Qual tecnologia está descrita?",
+        "options": [
+          "Trator.",
+          "Sistema de irrigação.",
+          "Sensor de umidade do solo.",
+          "Refrigeração de alimentos."
+        ],
+        "correctIndex": 0,
+        "explanation": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas.",
+        "wrongExplanations": {
+          "1": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_002",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Um trabalhador usa uma máquina com rodas grandes para puxar uma carreta dentro da propriedade. Qual equipamento é esse?",
+        "options": [
+          "Refrigeração de alimentos.",
+          "Trator.",
+          "Sistema de irrigação.",
+          "Sensor de umidade do solo."
+        ],
+        "correctIndex": 1,
+        "explanation": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas.",
+        "wrongExplanations": {
+          "0": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada.",
+          "2": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada.",
+          "3": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_003",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Tubos e outros equipamentos levam água até uma plantação quando necessário. Qual tecnologia está descrita?",
+        "options": [
+          "Drone de observação.",
+          "Comunicação por celular.",
+          "Sistema de irrigação.",
+          "Previsão do tempo."
+        ],
+        "correctIndex": 2,
+        "explanation": "Equipamentos levam água ao cultivo de forma planejada.",
+        "wrongExplanations": {
+          "0": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada.",
+          "1": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_004",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma produtora controla equipamentos que molham os canteiros conforme a necessidade das plantas. Que sistema utiliza?",
+        "options": [
+          "Previsão do tempo.",
+          "Drone de observação.",
+          "Comunicação por celular.",
+          "Sistema de irrigação."
+        ],
+        "correctIndex": 3,
+        "explanation": "Equipamentos levam água ao cultivo de forma planejada.",
+        "wrongExplanations": {
+          "0": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "1": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada.",
+          "2": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_005",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Antes de colher, um produtor consulta informações sobre a possibilidade de chuva nos próximos dias. Que recurso utiliza?",
+        "options": [
+          "Previsão do tempo.",
+          "Sensor de umidade do solo.",
+          "Colheitadeira.",
+          "Capacitação para usar equipamentos."
+        ],
+        "correctIndex": 0,
+        "explanation": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo.",
+        "wrongExplanations": {
+          "1": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_006",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma agricultora verifica a previsão de temperatura e chuva para planejar seu trabalho. Qual recurso está consultando?",
+        "options": [
+          "Capacitação para usar equipamentos.",
+          "Previsão do tempo.",
+          "Sensor de umidade do solo.",
+          "Colheitadeira."
+        ],
+        "correctIndex": 1,
+        "explanation": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo.",
+        "wrongExplanations": {
+          "0": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada.",
+          "3": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_007",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Um pequeno instrumento no solo fornece uma medida de umidade para orientar a irrigação. Qual tecnologia é essa?",
+        "options": [
+          "Refrigeração de alimentos.",
+          "Escolha de tecnologia adequada à propriedade.",
+          "Sensor de umidade do solo.",
+          "Drone de observação."
+        ],
+        "correctIndex": 2,
+        "explanation": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo.",
+        "wrongExplanations": {
+          "0": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada.",
+          "1": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_008",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma pessoa consulta um aparelho que indica se a terra está mais seca ou mais úmida. Que instrumento ajuda nessa observação?",
+        "options": [
+          "Drone de observação.",
+          "Refrigeração de alimentos.",
+          "Escolha de tecnologia adequada à propriedade.",
+          "Sensor de umidade do solo."
+        ],
+        "correctIndex": 3,
+        "explanation": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo.",
+        "wrongExplanations": {
+          "0": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada.",
+          "1": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada.",
+          "2": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_009",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma pequena aeronave sobrevoa a lavoura e envia imagens para a equipe. Qual tecnologia está sendo utilizada?",
+        "options": [
+          "Drone de observação.",
+          "Colheitadeira.",
+          "Comunicação por celular.",
+          "Trator."
+        ],
+        "correctIndex": 0,
+        "explanation": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo.",
+        "wrongExplanations": {
+          "1": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada.",
+          "2": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos. Essa alternativa não descreve a situação apresentada.",
+          "3": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_010",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Para observar partes de uma plantação do alto, uma equipe utiliza uma aeronave pequena controlada a distância. Que equipamento é esse?",
+        "options": [
+          "Trator.",
+          "Drone de observação.",
+          "Colheitadeira.",
+          "Comunicação por celular."
+        ],
+        "correctIndex": 1,
+        "explanation": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo.",
+        "wrongExplanations": {
+          "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada.",
+          "3": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_011",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma máquina recolhe grãos maduros em uma grande lavoura. Qual equipamento realiza essa tarefa?",
+        "options": [
+          "Capacitação para usar equipamentos.",
+          "Sistema de irrigação.",
+          "Colheitadeira.",
+          "Refrigeração de alimentos."
+        ],
+        "correctIndex": 2,
+        "explanation": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos.",
+        "wrongExplanations": {
+          "0": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+          "1": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada.",
+          "3": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_012",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Em uma plantação de milho, uma máquina faz etapas da retirada dos grãos para a colheita. Qual tecnologia está descrita?",
+        "options": [
+          "Refrigeração de alimentos.",
+          "Capacitação para usar equipamentos.",
+          "Sistema de irrigação.",
+          "Colheitadeira."
+        ],
+        "correctIndex": 3,
+        "explanation": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos.",
+        "wrongExplanations": {
+          "0": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação. Essa alternativa não descreve a situação apresentada.",
+          "1": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_013",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Depois da ordenha, o leite é colocado em um tanque que o mantém frio até o transporte. Qual tecnologia ajuda nessa conservação?",
+        "options": [
+          "Refrigeração de alimentos.",
+          "Comunicação por celular.",
+          "Escolha de tecnologia adequada à propriedade.",
+          "Previsão do tempo."
+        ],
+        "correctIndex": 0,
+        "explanation": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação.",
+        "wrongExplanations": {
+          "1": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos. Essa alternativa não descreve a situação apresentada.",
+          "2": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_014",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Um veículo mantém alimentos frios durante o transporte do campo à cidade. Qual recurso está sendo usado?",
+        "options": [
+          "Previsão do tempo.",
+          "Refrigeração de alimentos.",
+          "Comunicação por celular.",
+          "Escolha de tecnologia adequada à propriedade."
+        ],
+        "correctIndex": 1,
+        "explanation": "Equipamentos mantêm produtos em temperaturas adequadas para ajudar na conservação.",
+        "wrongExplanations": {
+          "0": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos. Essa alternativa não descreve a situação apresentada.",
+          "3": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_015",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma agricultora combina por mensagem a entrega das verduras ao comprador. Qual recurso utiliza para organizar a venda?",
+        "options": [
+          "Trator.",
+          "Sensor de umidade do solo.",
+          "Comunicação por celular.",
+          "Capacitação para usar equipamentos."
+        ],
+        "correctIndex": 2,
+        "explanation": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos.",
+        "wrongExplanations": {
+          "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "1": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada.",
+          "3": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Um produtor liga para a cooperativa e confirma o horário de retirada dos produtos. Que tecnologia facilita essa combinação?",
+        "options": [
+          "Capacitação para usar equipamentos.",
+          "Trator.",
+          "Sensor de umidade do solo.",
+          "Comunicação por celular."
+        ],
+        "correctIndex": 3,
+        "explanation": "A troca de mensagens e ligações ajuda a organizar o trabalho e a venda dos produtos.",
+        "wrongExplanations": {
+          "0": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo. Essa alternativa não descreve a situação apresentada.",
+          "1": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "2": "É um instrumento que mede a quantidade de umidade na terra para ajudar nas decisões de cultivo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_017",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Uma cooperativa oferece treinamento antes de colocar novas máquinas em uso. Qual cuidado está adotando?",
+        "options": [
+          "Capacitação para usar equipamentos.",
+          "Escolha de tecnologia adequada à propriedade.",
+          "Sistema de irrigação.",
+          "Drone de observação."
+        ],
+        "correctIndex": 0,
+        "explanation": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo.",
+        "wrongExplanations": {
+          "1": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada.",
+          "2": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada.",
+          "3": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_018",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Trabalhadores aprendem a operar um equipamento seguindo orientações de segurança. Que ação está descrita?",
+        "options": [
+          "Drone de observação.",
+          "Capacitação para usar equipamentos.",
+          "Escolha de tecnologia adequada à propriedade.",
+          "Sistema de irrigação."
+        ],
+        "correctIndex": 1,
+        "explanation": "Aprender o uso correto e seguro das tecnologias é importante para quem trabalha no campo.",
+        "wrongExplanations": {
+          "0": "Uma pequena aeronave controlada a distância pode produzir imagens para acompanhar o cultivo. Essa alternativa não descreve a situação apresentada.",
+          "2": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos. Essa alternativa não descreve a situação apresentada.",
+          "3": "Equipamentos levam água ao cultivo de forma planejada. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_019",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Duas propriedades têm tamanhos e cultivos diferentes. Que cuidado deve orientar a decisão sobre quais equipamentos comprar?",
+        "options": [
+          "Previsão do tempo.",
+          "Colheitadeira.",
+          "Escolha de tecnologia adequada à propriedade.",
+          "Trator."
+        ],
+        "correctIndex": 2,
+        "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+        "wrongExplanations": {
+          "0": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "1": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada.",
+          "3": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      },
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_tecnologia_no_campo_020",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "tecnologia-no-campo",
+        "question": "Antes de adotar uma máquina, uma família compara seu custo, suas necessidades e as condições do terreno. Que cuidado realiza?",
+        "options": [
+          "Trator.",
+          "Previsão do tempo.",
+          "Colheitadeira.",
+          "Escolha de tecnologia adequada à propriedade."
+        ],
+        "correctIndex": 3,
+        "explanation": "As condições, os custos e as necessidades de cada local devem orientar a escolha dos equipamentos.",
+        "wrongExplanations": {
+          "0": "É uma máquina que pode ajudar a puxar equipamentos e realizar tarefas agrícolas. Essa alternativa não descreve a situação apresentada.",
+          "1": "Informações sobre chuva e temperatura ajudam a planejar atividades no campo. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma máquina que realiza etapas da colheita de certos cultivos, como grãos. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "tecnologia-no-campo",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Tecnologia no campo"
+        },
+        "reviewStatus": "draft",
+        "version": 1
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "originalResponse": "{\"output\":{\"agent\":\"pedagogical_quality\",\"workItemId\":\"geografia-direct-20261109\",\"contentSetId\":\"2026-t3-v2\",\"subjectId\":\"geografia\",\"topicId\":\"tecnologia-no-campo\",\"reviewPass\":\"pedagogical\",\"decision\":\"blocked\",\"facts\":[\"A entrada declara 20 propostas content-v1 para o 3º ano, com objetivo curricular, referência autorizada, quatro alternativas, resposta, explicação e três feedbacks por questão.\",\"As propostas relacionam tecnologias a tarefas de preparo, irrigação, planejamento, observação, colheita, conservação, comunicação, capacitação e escolha de equipamentos no trabalho rural.\",\"Dezoito propostas apresentam resposta única defensável, alternativas distintas e feedbacks coerentes com a situação descrita.\"],\"doubts\":[\"Na questão 015, o enunciado não informa por qual aparelho a mensagem foi enviada; mensagem também pode ser enviada por computador ou outro dispositivo.\",\"Na questão 016, o enunciado não informa que a ligação foi feita por celular; uma ligação por telefone fixo também satisfaz a situação descrita.\"],\"findings\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_015\",\"criterion\":\"single_defensible_answer\",\"severity\":\"blocking\",\"evidence\":\"O enunciado informa apenas que a agricultora combina a entrega por mensagem, mas a resposta especifica comunicação por celular sem identificar o aparelho utilizado.\",\"recommendation\":\"Declarar no enunciado que a mensagem foi enviada pelo celular e submeter a proposta alterada a nova revisão pedagógica.\"},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_016\",\"criterion\":\"single_defensible_answer\",\"severity\":\"blocking\",\"evidence\":\"O ato de ligar para a cooperativa não distingue celular de telefone fixo, embora a resposta correta esteja restrita à comunicação por celular.\",\"recommendation\":\"Informar explicitamente que o produtor usa o celular e submeter a proposta alterada a nova revisão pedagógica.\"}],\"recommendations\":[\"Corrigir somente os enunciados das questões 015 e 016 para que o uso do celular seja informação expressa, não uma suposição provável.\",\"Preservar as demais propostas e exigir nova revisão dos IDs alterados pelo hash individual.\",\"Manter a aprovação pedagógica humana obrigatória antes de qualquer implementação ou publicação.\"],\"humanApprovalRequired\":true},\"results\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_001\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A ação de puxar equipamento para preparar o terreno identifica uma tarefa rural concreta.\",\"options\":\"As quatro opções são tecnologias rurais distintas; apenas o trator realiza a ação descrita.\",\"answer\":\"Trator é a única resposta defensável entre as alternativas.\",\"explanation\":\"Explica corretamente a função do trator no trabalho agrícola.\",\"wrongExplanations\":\"Os três feedbacks distinguem irrigação, medição de umidade e refrigeração da tarefa apresentada.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_002\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Rodas grandes e tração de carreta formam uma situação rural suficiente para a identificação.\",\"options\":\"As alternativas são distintas e somente o trator corresponde ao equipamento descrito.\",\"answer\":\"Trator é a resposta única e factualmente correta.\",\"explanation\":\"Relaciona corretamente o trator ao transporte de equipamentos e às tarefas agrícolas.\",\"wrongExplanations\":\"Os feedbacks explicam adequadamente por que refrigeração, irrigação e sensor não puxam a carreta.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_003\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A condução planejada de água até a plantação descreve claramente irrigação.\",\"options\":\"Drone, celular, irrigação e previsão do tempo são recursos distintos e plausíveis no campo.\",\"answer\":\"Sistema de irrigação é a única opção que leva água ao cultivo.\",\"explanation\":\"Apresenta corretamente a função essencial do sistema de irrigação.\",\"wrongExplanations\":\"Os feedbacks diferenciam observação aérea, comunicação e previsão meteorológica do fornecimento de água.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_004\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Molhar canteiros conforme a necessidade das plantas descreve uma aplicação clara de irrigação.\",\"options\":\"As quatro opções pertencem ao contexto rural e não são equivalentes.\",\"answer\":\"Sistema de irrigação é a única resposta compatível com a ação.\",\"explanation\":\"Explica corretamente que o sistema leva água ao cultivo de forma planejada.\",\"wrongExplanations\":\"Os três feedbacks apresentam funções corretas e incompatíveis com molhar os canteiros.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_005\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Consultar a possibilidade de chuva futura para planejar a colheita caracteriza previsão do tempo.\",\"options\":\"As alternativas são distintas e todas se relacionam ao trabalho rural.\",\"answer\":\"Previsão do tempo é a única resposta defensável.\",\"explanation\":\"Relaciona corretamente chuva e temperatura ao planejamento de atividades.\",\"wrongExplanations\":\"Os feedbacks diferenciam sensor, colheitadeira e capacitação da consulta meteorológica.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_006\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A consulta de temperatura e chuva fornece informação suficiente para identificar o recurso.\",\"options\":\"As quatro alternativas são conceitos rurais distintos, sem duplicidade.\",\"answer\":\"Previsão do tempo é a resposta única e correta.\",\"explanation\":\"Explica de modo factual como informações meteorológicas apoiam o planejamento.\",\"wrongExplanations\":\"Os feedbacks esclarecem por que capacitação, sensor do solo e colheitadeira não correspondem à consulta.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_007\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"O instrumento colocado no solo para medir umidade está descrito de maneira suficiente.\",\"options\":\"As opções são distintas; apenas o sensor mede a umidade do solo.\",\"answer\":\"Sensor de umidade do solo é a resposta única e correta.\",\"explanation\":\"Relaciona corretamente a medição de umidade às decisões de cultivo.\",\"wrongExplanations\":\"Os feedbacks distinguem conservação, escolha de tecnologia e observação aérea da medição no solo.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_008\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Indicar se a terra está seca ou úmida descreve claramente a função do instrumento.\",\"options\":\"As alternativas não são equivalentes e somente o sensor realiza a medição apresentada.\",\"answer\":\"Sensor de umidade do solo é a resposta única e defensável.\",\"explanation\":\"Explica corretamente a medida produzida pelo sensor e seu uso no cultivo.\",\"wrongExplanations\":\"Os feedbacks atribuem funções corretas a drone, refrigeração e escolha de tecnologia.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_009\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A pequena aeronave que sobrevoa a lavoura e envia imagens caracteriza observação por drone no conjunto apresentado.\",\"options\":\"As quatro tecnologias são distintas; somente o drone realiza observação aérea.\",\"answer\":\"Drone de observação é a única resposta compatível com enunciado e alternativas.\",\"explanation\":\"Explica corretamente o uso de imagens aéreas para acompanhar o cultivo.\",\"wrongExplanations\":\"Os feedbacks diferenciam colheita, comunicação e tração agrícola da observação aérea.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_010\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Aeronave pequena controlada a distância é uma descrição suficiente de drone.\",\"options\":\"Trator, drone, colheitadeira e celular são tecnologias distintas e contextualizadas.\",\"answer\":\"Drone de observação é a resposta única e factualmente correta.\",\"explanation\":\"Relaciona corretamente o drone à produção de imagens do cultivo.\",\"wrongExplanations\":\"Os feedbacks explicam funções incompatíveis de trator, colheitadeira e comunicação por celular.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_011\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A máquina que recolhe grãos maduros descreve uma etapa concreta da colheita.\",\"options\":\"As opções são distintas e somente a colheitadeira é máquina destinada à tarefa indicada.\",\"answer\":\"Colheitadeira é a resposta única e correta no contexto.\",\"explanation\":\"Explica corretamente que a máquina realiza etapas da colheita de grãos.\",\"wrongExplanations\":\"Os feedbacks diferenciam capacitação, irrigação e refrigeração da colheita mecanizada.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_012\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"A máquina empregada em etapas da colheita do milho permite identificar o equipamento esperado.\",\"options\":\"As quatro alternativas são distintas e apenas a colheitadeira realiza a operação descrita.\",\"answer\":\"Colheitadeira é a resposta única e defensável entre as opções.\",\"explanation\":\"Apresenta corretamente a atuação da máquina em etapas da colheita de grãos.\",\"wrongExplanations\":\"Os feedbacks atribuem funções corretas e diferentes à refrigeração, capacitação e irrigação.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_013\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Manter o leite frio após a ordenha descreve uma necessidade clara de conservação.\",\"options\":\"As opções são recursos rurais distintos e somente a refrigeração mantém a temperatura adequada.\",\"answer\":\"Refrigeração de alimentos é a resposta única e correta.\",\"explanation\":\"Explica corretamente o papel da temperatura na conservação do produto.\",\"wrongExplanations\":\"Os feedbacks distinguem comunicação, escolha de tecnologia e previsão do tempo da conservação térmica.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_014\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Manter alimentos frios durante o transporte caracteriza diretamente o recurso avaliado.\",\"options\":\"As quatro alternativas são distintas e apenas a refrigeração atende à situação.\",\"answer\":\"Refrigeração de alimentos é a resposta única e factualmente correta.\",\"explanation\":\"Relaciona corretamente equipamentos de temperatura controlada à conservação.\",\"wrongExplanations\":\"Os feedbacks apresentam funções corretas de previsão, comunicação e escolha de tecnologia, sem competir com a resposta.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_015\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_015\",\"criterion\":\"single_defensible_answer\",\"severity\":\"blocking\",\"evidence\":\"O enunciado informa apenas que a agricultora combina a entrega por mensagem, mas a resposta especifica comunicação por celular sem identificar o aparelho utilizado.\",\"recommendation\":\"Declarar no enunciado que a mensagem foi enviada pelo celular e submeter a proposta alterada a nova revisão pedagógica.\"}],\"doubts\":[\"A mensagem pode ter sido enviada por computador ou outro dispositivo, portanto o uso de celular não é informação garantida pelo enunciado.\"],\"checks\":{\"question\":\"A situação mede comunicação na venda, mas não identifica o aparelho usado para enviar a mensagem.\",\"options\":\"As opções são distintas, porém a alternativa correta acrescenta uma especificação ausente no enunciado.\",\"answer\":\"Falha: comunicação por celular é provável, mas não é a única conclusão defensável a partir de mensagem.\",\"explanation\":\"A explicação descreve corretamente o uso de mensagens e ligações, mas não resolve a falta de identificação do aparelho.\",\"wrongExplanations\":\"Os três feedbacks estão presentes e distinguem corretamente trator, sensor e capacitação.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_016\",\"decision\":\"blocked\",\"findings\":[{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_016\",\"criterion\":\"single_defensible_answer\",\"severity\":\"blocking\",\"evidence\":\"O ato de ligar para a cooperativa não distingue celular de telefone fixo, embora a resposta correta esteja restrita à comunicação por celular.\",\"recommendation\":\"Informar explicitamente que o produtor usa o celular e submeter a proposta alterada a nova revisão pedagógica.\"}],\"doubts\":[\"A ligação pode ter sido realizada por telefone fixo, pois o enunciado não declara o uso de celular.\"],\"checks\":{\"question\":\"A situação avalia comunicação no trabalho rural, mas não informa que o produtor usa celular.\",\"options\":\"As opções são distintas, porém a alternativa correta é mais específica do que a informação fornecida.\",\"answer\":\"Falha: comunicação por celular não é conclusão necessária apenas pelo verbo ligar.\",\"explanation\":\"A explicação apresenta uma função válida da comunicação, mas não elimina a ambiguidade sobre o tipo de telefone.\",\"wrongExplanations\":\"Os feedbacks de capacitação, trator e sensor estão completos e coerentes.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_017\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Treinamento antes do uso de máquinas descreve claramente um cuidado de capacitação.\",\"options\":\"As quatro opções são distintas e somente a capacitação corresponde ao cuidado apresentado.\",\"answer\":\"Capacitação para usar equipamentos é a resposta única e correta.\",\"explanation\":\"Explica corretamente a importância do uso seguro das tecnologias.\",\"wrongExplanations\":\"Os feedbacks distinguem escolha de equipamento, irrigação e drone do treinamento.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_018\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Aprender a operar equipamento com orientações de segurança caracteriza capacitação.\",\"options\":\"As opções são distintas e somente a capacitação descreve uma ação de aprendizagem.\",\"answer\":\"Capacitação para usar equipamentos é a resposta única e defensável.\",\"explanation\":\"Relaciona corretamente aprendizado, operação e segurança no trabalho rural.\",\"wrongExplanations\":\"Os feedbacks diferenciam drone, escolha de tecnologia e irrigação da ação formativa.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_019\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Diferenças de tamanho e cultivo justificam avaliar a adequação dos equipamentos a cada propriedade.\",\"options\":\"As alternativas são distintas e apenas a escolha adequada expressa o cuidado solicitado.\",\"answer\":\"Escolha de tecnologia adequada à propriedade é a resposta única e correta.\",\"explanation\":\"Explica corretamente que condições, custos e necessidades orientam a decisão.\",\"wrongExplanations\":\"Os feedbacks diferenciam previsão e máquinas específicas do processo de escolha.\"}},{\"questionId\":\"2026t3v2_geo_tecnologia_no_campo_020\",\"decision\":\"approved\",\"findings\":[],\"doubts\":[],\"checks\":{\"question\":\"Comparar custo, necessidades e terreno descreve critérios claros de escolha tecnológica.\",\"options\":\"As quatro opções são distintas e somente a escolha adequada representa o cuidado realizado.\",\"answer\":\"Escolha de tecnologia adequada à propriedade é a resposta única e defensável.\",\"explanation\":\"Relaciona corretamente as características locais à decisão sobre equipamentos.\",\"wrongExplanations\":\"Os feedbacks explicam por que trator, previsão e colheitadeira são recursos específicos, não o cuidado de escolha.\"}}]}",
+  "agent": "pedagogical_quality",
+  "agentInstanceId": "01a1c1ed-cceb-7ee1-828b-def2a0b2917f",
+  "runId": "01a1c1ed-cceb-7ee1-828b-def2a0b2917f:2026-11-09T20:10:54.980Z",
+  "pass": "pedagogical",
+  "completedAt": "2026-11-09T20:10:54.980Z",
+  "testOnly": false,
+  "sha256": "ae8c3c6df58ebe4aefa34bb4f63f5aed57c4432c758f745363dff97d30fe6b51"
+}

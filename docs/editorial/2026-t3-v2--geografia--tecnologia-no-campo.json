@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "content-delivery-v1",
+  "batch": "2026-t3-v2/geografia/tecnologia-no-campo",
+  "sourceSha256": "02c45686d8a32c86bd34c2b38b94ea24a6244bb73c98f7d1611f4fdb00a2204d",
+  "testOnly": false,
+  "reviews": [
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_001",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_001",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_002",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_002",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_003",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_003",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_004",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_004",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_005",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_005",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_006",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_006",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_007",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_007",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_008",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_008",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_009",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_009",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_010",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_010",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_011",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_011",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_012",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_012",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_013",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_013",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_014",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_014",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_015",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_015",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_016",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_016",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_017",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_017",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_018",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_018",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r1-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_019",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_019",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r2-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_020",
+      "pass": "pedagogical",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-pedagogical-r5-reviewed.json"
+    },
+    {
+      "questionId": "2026t3v2_geo_tecnologia_no_campo_020",
+      "pass": "linguistic",
+      "evidencePath": "docs/editorial/2026-t3-v2-geografia-direct/tecnologia-no-campo-linguistic-r5-reviewed.json"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "structure",
+      "verification": "automatic",
+      "evidence": "Validacao content-v1 e cobertura em scripts/geografia-direct-package.cjs"
+    },
+    {
+      "id": "curriculum",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "language",
+      "verification": "linguistic",
+      "evidence": "Resultados individuais da passagem linguistic nas evidencias referenciadas por ID."
+    },
+    {
+      "id": "feedback",
+      "verification": "pedagogical",
+      "evidence": "Resultados individuais da passagem pedagogical nas evidencias referenciadas por ID."
+    }
+  ]
+}

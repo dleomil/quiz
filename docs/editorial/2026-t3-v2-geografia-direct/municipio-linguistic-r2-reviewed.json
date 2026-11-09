@@ -1,0 +1,108 @@
+{
+  "scenarioId": "01a1c1eb-e4b3-7821-a871-7babde0f2ad5:2026-11-09T20:07:43.656Z",
+  "inputState": "complete",
+  "input": {
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "grade": "3º ano do Ensino Fundamental",
+    "academicYear": 2026,
+    "term": "t3",
+    "authorizedSkill": "municipio",
+    "sourceRef": {
+      "referenceId": "roteiro-av-trimestral-novembro-2026",
+      "section": "Geografia",
+      "topic": "Município"
+    },
+    "questionVersion": 2,
+    "authorizedObjective": "Reconhecer município e seus espaços urbanos e rurais",
+    "manifestState": "frozen",
+    "humanFreezeApproval": {
+      "approvedBy": "dleomil",
+      "approvedAt": "2026-11-02",
+      "evidenceRef": "docs/specs/final-exams-november-2026-intake.md"
+    },
+    "requestedPass": "linguistic",
+    "sourceStatus": "authorized",
+    "proposals": [
+      {
+        "schemaVersion": "content-v1",
+        "id": "2026t3v2_geo_municipio_016",
+        "contentSetId": "2026-t3-v2",
+        "subject": "geografia",
+        "topic": "municipio",
+        "question": "Uma praça municipal pode ser usada pela população. Como classificar esse lugar?",
+        "options": [
+          "Endereço.",
+          "Município.",
+          "Bairro.",
+          "Espaço público."
+        ],
+        "correctIndex": 3,
+        "explanation": "A praça municipal é um espaço de uso coletivo, que deve ser cuidado por todos.",
+        "wrongExplanations": {
+          "0": "Ajuda a localizar um lugar por informações como nome da rua, número e município. Essa alternativa não descreve a situação apresentada.",
+          "1": "É uma divisão do território com administração local e que pode reunir espaços urbanos e rurais. Essa alternativa não descreve a situação apresentada.",
+          "2": "É uma parte da cidade ou de um espaço urbano, onde as pessoas podem morar, trabalhar e usar serviços. Essa alternativa não descreve a situação apresentada."
+        },
+        "skill": "municipio",
+        "sourceRef": {
+          "referenceId": "roteiro-av-trimestral-novembro-2026",
+          "section": "Geografia",
+          "topic": "Município"
+        },
+        "reviewStatus": "draft",
+        "version": 2
+      }
+    ],
+    "checklist": [
+      "question",
+      "options",
+      "answer",
+      "explanation",
+      "wrongExplanations"
+    ]
+  },
+  "output": {
+    "agent": "pedagogical_quality",
+    "workItemId": "geografia-direct-20261109",
+    "contentSetId": "2026-t3-v2",
+    "subjectId": "geografia",
+    "topicId": "municipio",
+    "reviewPass": "linguistic",
+    "decision": "adjustments_required",
+    "facts": [
+      "A entrada declara objetivo curricular, 3º ano, fonte autorizada e proposta completa para o único ID avaliado.",
+      "Enunciado, alternativas, resposta e explicação principal estão claros e adequados à faixa etária."
+    ],
+    "doubts": [],
+    "findings": [
+      {
+        "questionId": "2026t3v2_geo_municipio_016",
+        "criterion": "naturalidade e clareza dos feedbacks das alternativas incorretas",
+        "severity": "major",
+        "evidence": "No feedback do índice 0, a construção “localizar um lugar por informações” é pouco natural; no índice 1, “com administração local e que pode reunir” coordena estruturas de modo truncado.",
+        "recommendation": "Substituir “por informações” por “com informações” ou “usando informações” e reorganizar o feedback do índice 1, por exemplo com verbos coordenados sob o mesmo sujeito."
+      }
+    ],
+    "recommendations": [
+      "Revisar somente as construções pouco naturais dos feedbacks 0 e 1 e submeter o ID alterado a nova passagem linguística."
+    ],
+    "humanApprovalRequired": true
+  },
+  "execution": {
+    "kind": "direct-editorial",
+    "agent": "pedagogical_quality",
+    "agentInstanceId": "01a1c1eb-e4b3-7821-a871-7babde0f2ad5",
+    "runId": "01a1c1eb-e4b3-7821-a871-7babde0f2ad5:2026-11-09T20:07:43.656Z",
+    "pass": "linguistic",
+    "completedAt": "2026-11-09T20:07:43.656Z",
+    "testOnly": false,
+    "questionSha256s": {
+      "2026t3v2_geo_municipio_016": "2135859e8aec2c16e489bd0b2044983b4fa03df0a928847b1aee18ad4d5f0453"
+    },
+    "originalReportPath": "docs/editorial/2026-t3-v2-geografia-direct/municipio-linguistic-r2-original.json",
+    "originalReportSha256": "9e437c4b625fe365d20fa3b09a201ad29cbd3fe6a6426e293f3a0e56dcb3ee5d"
+  }
+}

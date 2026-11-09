@@ -206,6 +206,7 @@ function validateReviews(
   const seen = new Set();
   const runIds = new Set();
   const recoveredEvidence = new Map();
+  const directInstances = new Map();
   for (const entry of record.reviews || []) {
     const pair = `${entry.questionId}:${entry.pass}`;
     if (!expected.has(pair) || seen.has(pair))
@@ -220,8 +221,9 @@ function validateReviews(
       const scenario = readJson(entry.evidencePath);
       const editorialScenario = { ...scenario };
       delete editorialScenario.execution;
-      errors.push(...validateEditorialScenario(editorialScenario));
       const execution = scenario.execution || {};
+      if (execution.kind !== 'direct-editorial')
+        errors.push(...validateEditorialScenario(editorialScenario));
       const question = questions.find((item) => item.id === entry.questionId);
       const reviewedProposal =
         scenario.input?.proposal ||
@@ -253,12 +255,37 @@ function validateReviews(
       )
         errors.push(`hash da execucao diverge: ${pair}`);
       if (
-        !['isolated-editorial', 'isolated-editorial-recovered'].includes(
-          execution.kind,
-        ) ||
+        ![
+          'isolated-editorial',
+          'isolated-editorial-recovered',
+          'direct-editorial',
+        ].includes(execution.kind) ||
         (!allowTestEvidence && execution.testOnly !== false)
       )
         errors.push(`execucao editorial ausente ou ficticia: ${pair}`);
+      if (execution.kind === 'direct-editorial') {
+        errors.push(
+          ...require('./direct-editorial.cjs').validateDirectReview(
+            scenario,
+            question,
+            readJson,
+            { digest, reviewProjection, policy, allowTestEvidence },
+          ),
+        );
+        const previous = directInstances.get(entry.questionId);
+        if (
+          previous &&
+          (previous.instance === execution.agentInstanceId ||
+            previous.runId === execution.runId)
+        )
+          errors.push(
+            `instancia direta repetida entre passagens: ${entry.questionId}`,
+          );
+        directInstances.set(entry.questionId, {
+          instance: execution.agentInstanceId,
+          runId: execution.runId,
+        });
+      }
       if (execution.kind === 'isolated-editorial-recovered') {
         if (
           !policy.editorialRecovery?.contentSetIds?.includes(
@@ -308,9 +335,10 @@ function validateReviews(
       )
         errors.push(`data da execucao invalida: ${pair}`);
       if (
-        scenario.output?.decision !== 'approved' ||
-        scenario.output?.doubts?.length ||
-        scenario.output?.findings?.length
+        execution.kind !== 'direct-editorial' &&
+        (scenario.output?.decision !== 'approved' ||
+          scenario.output?.doubts?.length ||
+          scenario.output?.findings?.length)
       )
         errors.push(`revisao com pendencias: ${pair}`);
       if (!scenario.output?.facts?.length)
