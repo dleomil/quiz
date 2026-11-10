@@ -59,7 +59,10 @@ async function run() {
     console.log('content-delivery-ui: sem lote publicado novo ou alterado');
     return;
   }
-  const sources = JSON.parse(JSON.stringify(loadContentSources(ROOT)));
+  const sources =
+    result.subject && Array.isArray(result.questions)
+      ? { [result.subject]: { questions: result.questions } }
+      : JSON.parse(JSON.stringify(loadContentSources(ROOT)));
   if (draftGeografia) {
     for (const batch of batches) {
       assert.match(batch.key, /^2026-t3-v2\/geografia\//);

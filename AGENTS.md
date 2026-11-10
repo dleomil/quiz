@@ -35,3 +35,19 @@
   release ou deploy por si so.
 - Mudancas para `main` exigem PR, checks obrigatorios e autorizacao explicita
   de release; mantenha o fluxo de reconciliacao documentado.
+
+## Procedimento recorrente por materia
+
+O comando "Atualize a proxima materia e publique em producao" executa o plano
+recorrente aprovado em docs/harness/subject-update-procedure.md. Ele autoriza
+curadoria, integracao, merge, publicacao e reconciliacao somente da materia
+pendente selecionada e condicionado a todos os gates. Nao fabricar aceite
+humano do hash. Registrar a referencia real do comando como autorizacao
+delegada, conforme config/content-delivery-policy.json.
+
+Nao reabrir, reler editorialmente ou testar materias ja publicadas durante
+esta preparacao ou como requisito de uma materia nova. Usar verificacao por
+escopo com npm run verify:local. O caminho rapido exige o descritor
+.github/subject-delivery.json e bloqueia arquivos de outras materias ou
+infraestrutura. Mudancas materiais de objetivo, arquitetura ou release voltam
+a planejamento. Nao iniciar benchmarks ou consertar o runner durante o lote.
