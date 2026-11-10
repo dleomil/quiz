@@ -55,7 +55,7 @@ function loadSyntheticPage(html) {
   };
   const deferred = [];
   for (const match of html.matchAll(
-    /<script([^>]*)src="([^"]+)"[^>]*><\/script>/g,
+    /<script([^>]*)src="([^"]+)"[^>]*><\/script\s*>/g,
   )) {
     const code = scripts[match[2].split('?')[0]];
     assert.ok(code, 'Fixture exige script conhecido');
@@ -83,3 +83,8 @@ assert.throws(check, /mistura/);
 head['js/data/content-catalog.js'] = base['js/data/content-catalog.js'];
 assert.throws(check, /unica materia/);
 console.log('subject-scope: ok');
+
+assert.deepEqual(
+  loadSyntheticPage(validIndex.replaceAll('</script>', '</script >')),
+  ['candidato-sintetico'],
+);
