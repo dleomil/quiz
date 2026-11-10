@@ -84,5 +84,11 @@
   "directEditorial": {
     "contentSetIds": ["2026-t3-v2"],
     "subjects": ["geografia", "historia", "ingles", "matematica", "ciencias"]
+  },
+  "standingDelegation": {
+    "id": "2026-11-10-procedimento-por-materia",
+    "contentSetId": "2026-t3-v2",
+    "subjects": ["historia", "ingles", "matematica", "ciencias"],
+    "authority": "Product Owner: plano aprovado nesta conversa; comando posterior autoriza cada execucao condicionada aos gates"
   }
 }

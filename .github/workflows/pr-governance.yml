@@ -22,6 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -59,75 +60,11 @@ jobs:
           test -f docs/README.md
           test -f docs/github/branching-and-delivery-strategy.md
 
-      - name: Validar avisos locais de tarefas
-        run: npm run test:task-callback
-
-      - name: Validate agent capabilities
-        run: npm run validate:agents
-
-      - name: Validar contexto e runner editorial sem chamadas reais
-        run: |
-          npm run test:agent-context
-          npm run test:editorial-runner
-          npm run test:writer-runner
-          npm run test:agent-evaluation
-
-      - name: Validate agent execution record contract
-        run: |
-          npm run test:agent-records
-          npm run test:record-ledger
-
-      - name: Validate versioned governance guidelines
-        run: |
-          npm run validate:guidelines
-          npm run test:guidelines
-
-      - name: Validar catalogo e mudancas documentais
+      - name: Verificar escopo e qualidade da entrega
         env:
-          BASE_REF: ${{ github.base_ref }}
-        run: |
-          npm run validate:documents -- --base-ref "origin/${BASE_REF}"
-          npm run test:documents
-
-      - name: Validate read-only governance MCP
-        run: |
-          npm run validate:mcp-governance
-          npm run test:mcp-governance
-
-      - name: Validate lint and formatting
-        run: |
-          npm run lint
-          npm run format:check
-
-      - name: Confirmar Chrome preinstalado no runner
-        run: google-chrome --version
-
-      - name: Validar configuracao do navegador Playwright
-        run: node tests/ui/playwright-browser.spec.cjs
-
-      - name: Validate safe frontend rendering
-        run: npm run test:frontend-security
-
-      - name: Validate pedagogical regression corpus
-        run: npm run test:pedagogical-regression
-
-      - name: Validar conteudo, idiomas e apoio bilingue
-        run: |
-          npm run validate:content
-          npm run test:content
-          npm run test:ui:history-language-audit
-          npm run test:ui:english-t3-bilingual
-
-      - name: Validar entrega editorial do lote alterado
-        env:
-          BASE_REF: ${{ github.base_ref }}
           GH_TOKEN: ${{ github.token }}
-        run: |
-          node scripts/content-delivery.cjs --base-ref "origin/${BASE_REF}" --head-ref origin/pr-head > "$RUNNER_TEMP/content-delivery.json"
-          cat "$RUNNER_TEMP/content-delivery.json"
-          npm run test:delivery
-          CONTENT_DELIVERY_ARTIFACTS="$RUNNER_TEMP/content-delivery/pilot" npm run test:ui:content-delivery-pilot
-          CONTENT_DELIVERY_RESULT="$RUNNER_TEMP/content-delivery.json" CONTENT_DELIVERY_ARTIFACTS="$RUNNER_TEMP/content-delivery/publication" npm run test:ui:content-delivery
+          CONTENT_DELIVERY_ARTIFACTS: ${{ runner.temp }}/content-delivery/publication
+        run: npm run verify:local -- --base-ref "origin/${{ github.base_ref }}" --head-ref origin/pr-head
 
       - name: Preservar evidencias do piloto e do lote publicado
         if: always()

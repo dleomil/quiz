@@ -263,11 +263,30 @@ function checkedCall(bin, args, options, includeStderr = false) {
   );
   check(
     result.status === 0 && !result.error,
-    `preflight ${args.slice(0, 2).join(' ')} falhou`,
+    args[0] === 'login' && args[1] === 'status'
+      ? `autenticacao indisponivel: ${classifyAuthStatus(`${result.stdout || ''}\n${result.stderr || ''}`)}; nenhuma chamada de modelo iniciada`
+      : `preflight ${args.slice(0, 2).join(' ')} falhou`,
   );
   return includeStderr
     ? `${result.stdout || ''}${result.stderr || ''}`
     : result.stdout || '';
+}
+function classifyAuthStatus(value) {
+  const lines = String(value)
+    .split(/\r?\n/)
+    .map((line) => line.trim());
+  if (lines.some((line) => /^Logged in using ChatGPT(?:[ .:(]|$)/i.test(line)))
+    return 'chatgpt';
+  if (lines.some((line) => /keyring|keychain|credential store/i.test(line)))
+    return 'keyring-unavailable';
+  if (
+    lines.some((line) =>
+      /not logged in|login required|unauthenticated/i.test(line),
+    )
+  )
+    return 'login-required';
+  if (lines.some((line) => /api key/i.test(line))) return 'different-method';
+  return 'unrecognized';
 }
 function preflight(bin, home, sessionHome, workspace, model) {
   validateProfile(home);
@@ -279,8 +298,8 @@ function preflight(bin, home, sessionHome, workspace, model) {
   );
   const auth = checkedCall(bin, ['login', 'status'], options, true);
   check(
-    auth.trim() === 'Logged in using ChatGPT',
-    'login ChatGPT dedicado ausente; API nao autorizada',
+    classifyAuthStatus(auth) === 'chatgpt',
+    `autenticacao indisponivel: ${classifyAuthStatus(auth)}; nenhuma chamada de modelo iniciada`,
   );
   const features = checkedCall(bin, ['features', 'list'], options);
   for (const name of DISABLED_FEATURES) {
@@ -399,6 +418,7 @@ function runCli() {
 }
 if (require.main === module) runCli();
 module.exports = {
+  classifyAuthStatus,
   CLI_VERSION,
   SYSTEM_SKILLS,
   CONFIG,

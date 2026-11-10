@@ -22,7 +22,11 @@ function capture({
       row.payload.content?.some((c) => c.type === 'output_text'),
   );
   const final = finals.at(-1);
-  if (!session?.id || session.agent_role !== 'pedagogical_quality' || !final)
+  if (
+    !session?.id ||
+    !['pedagogical_quality', 'content_curator'].includes(session.agent_role) ||
+    !final
+  )
     throw new Error('transcricao sem identidade ou resposta final');
   const originalResponse = final.payload.content
     .filter((c) => c.type === 'output_text')
@@ -37,6 +41,37 @@ function capture({
   if (!completion?.payload.turn_id)
     throw new Error('resposta sem conclusao de execucao na transcricao');
   const response = JSON.parse(originalResponse);
+  if (session.agent_role === 'content_curator') {
+    const scenario = {
+      scenarioId: `${session.id}:${completion.payload.turn_id}`,
+      inputState: 'complete',
+      input,
+      output: response.output,
+    };
+    const errors = require('./direct-curation.cjs').validateDirectCuration(
+      scenario,
+      { expectedCount: response.output?.proposals?.length },
+    );
+    if (errors.length) throw new Error(errors.join('\n'));
+    const report = {
+      schemaVersion: 'direct-curation-report-v1',
+      input,
+      originalResponse,
+      agent: 'content_curator',
+      agentInstanceId: session.id,
+      runId: scenario.scenarioId,
+      completedAt: final.timestamp,
+      testOnly: Boolean(testOnly),
+    };
+    report.sha256 = digest(report);
+    const target = `${outputPrefix}-curation.json`;
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.writeFileSync(target, JSON.stringify(report, null, 2) + '\n', {
+      flag: 'wx',
+    });
+    return { evidencePath: target, decision: response.output.decision };
+  }
+
   const normalizedOutput = response.output || {
     agent: response.agent,
     workItemId: response.workItemId,

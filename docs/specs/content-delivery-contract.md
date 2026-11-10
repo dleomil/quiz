@@ -237,3 +237,29 @@ achado aberto ou proposta divergente bloqueiam a entrega. Revisoes inalteradas
 permanecem validas por hash individual; alteracoes exigem nova revisao dos IDs
 afetados. Estes registros comprovam rastreabilidade documental e nao constituem
 recibos de CLI nem prova de isolamento. Nunca inventar identidade ou resposta.
+
+## Procedimento delegado para materias pendentes
+
+A partir da aprovacao do procedimento de 2026-11-10, Historia, Ingles,
+Matematica e Ciencias de 2026-t3-v2 podem usar curadoria direta em lotes de ate
+20 propostas. A primeira curadoria cobre 20 questoes; a unica rodada de
+correcao retorna somente IDs alterados. O contrato individual permanece
+obrigatorio. A saida usa output.proposals e e verificada por direct-curation.
+A captura original de content_curator produz direct-curation-report-v1;
+nao constitui revisao pedagogica ou linguistica.
+
+A autoridade humana e exercida pela delegacao aprovada do procedimento e pelo
+comando que inicia cada materia. O campo humanApprovalRequired continua true:
+pareceres de agentes nao concedem autoridade de publicacao. O gate satisfaz a
+exigencia por record.approval.kind delegated, delegationId cadastrado,
+sourceSha256 exato, executionId e referencia real do comando. Nao registrar
+approvedBy nesse objeto nem simular comentario humano. Lotes recuperados ficam
+fora desse procedimento. O caminho editorial anterior conserva seu contrato.
+
+O pacote completo e descrito em .github/subject-delivery.json e validado por
+scripts/subject-verification.cjs. O mesmo comando verify:local e usado localmente
+e no CI. A selecao por materia bloqueia alteracoes de infraestrutura ou de
+outras disciplinas. Os dados da materia candidata alimentam a verificacao
+visual por IDs, sem carregar o acervo local das outras materias para comparar
+conteudo. Duas passagens independentes continuam obrigatorias; hashes de IDs
+inalterados preservam revisoes. A autoria tambem deve ser distinta da revisao.
