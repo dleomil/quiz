@@ -373,6 +373,13 @@ function validateReviews(
 function validateApproval(questions, record, policy, readComment) {
   const errors = [];
   const approval = record?.approval;
+  if (approval?.kind === 'delegated')
+    return require('./delegated-approval.cjs').validateDelegatedApproval(
+      questions,
+      record,
+      policy,
+      packageHash,
+    );
   const hash = packageHash(questions);
   const statement = `Aprovo editorialmente o lote ${batchKey(questions[0])} hash ${hash}`;
   if (

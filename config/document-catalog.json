@@ -6,11 +6,11 @@
       "path": "AGENTS.md",
       "kind": "instructions",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.0.1",
       "normative": true,
-      "status": "baseline-pending",
-      "sha256": "fd4addcce96c418ff7f944d09cb387f8517a5bfb0752182aaccebc91dcb4b18b"
+      "status": "draft",
+      "sha256": "ec51ff28067fc0a182bc8911ea0483af59c9f5b3ca9ca1523a0b61bb7b21779c"
     },
     {
       "id": "readme",
@@ -677,11 +677,11 @@
       "path": "docs/specs/content-delivery-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 4,
-      "version": "2.1.1",
+      "revision": 5,
+      "version": "2.1.2",
       "normative": true,
       "status": "draft",
-      "sha256": "0919eb687494b8c919f3f3af3cf0730f81fac24ab0fd5c0ead1010eea4865074"
+      "sha256": "09bd65a79226d1a4873c87c10a1c45d6098579098c9fb3716460f7d1bd18a136"
     },
     {
       "id": "docs--specs--content-schema-v1",
@@ -732,11 +732,11 @@
       "path": "docs/specs/editorial-agent-output-contract.md",
       "kind": "contract",
       "owner": "content",
-      "revision": 3,
-      "version": "2.0.1",
+      "revision": 4,
+      "version": "2.0.2",
       "normative": true,
       "status": "draft",
-      "sha256": "6e9e58532cf9152763ca34eca5792dac4a2d71e6be738851d38af2a31008026e"
+      "sha256": "06a69296329c769fdc61512cb9706d3b5d2930aefa587c7cb74f8667d1cde284"
     },
     {
       "id": "docs--specs--english-t2-bilingual-question-support",
@@ -1980,6 +1980,17 @@
       "normative": false,
       "status": "unclassified",
       "sha256": "34279b3313fd8616efdb8b8f44be011e83195405609c7de825563507d52f27e5"
+    },
+    {
+      "id": "docs--harness--subject-update-procedure",
+      "path": "docs/harness/subject-update-procedure.md",
+      "kind": "guide",
+      "owner": "content",
+      "revision": 1,
+      "version": "1.0.0",
+      "normative": true,
+      "status": "draft",
+      "sha256": "c341d66c92c9012ef4da5bb8d1a239136a3cefbf3834f79c00e940ac2c467bd0"
     }
   ]
 }

@@ -10,7 +10,9 @@ Execute somente uma passagem por invocacao e mantenha corretude pedagogica separ
 Bloqueie resposta ambigua, erro factual, linguagem inadequada ou contexto curricular incompleto; nunca trate probabilidade como resposta defensavel.
 Nao edite arquivos, nao publique conteudo, nao faca commit, merge ou movimentacao de board e nao substitua aprovacao humana.
 Use o runner isolado ou, para novos lotes 2026-t3-v2 de Geografia, Historia, Ingles, Matematica e Ciencias, delegacao direta conforme o contrato direct-editorial. Delegacao direta comprova rastreabilidade documental, sem alegar isolamento de ferramentas ou recibo de CLI. Nao exige login dedicado, versao de CLI nem novo aceite de baseline. Em ambos os caminhos mantenha somente leitura e uma passagem por instancia.
+Na rotina direta receba somente o lote, objetivo e regras editoriais aplicaveis; nao releia historico, outras materias, autenticacao ou arquitetura. Nao reproduza propostas na resposta; mantenha justificativas curtas por ID e criterio. Nao consulte o parecer da outra passagem.
 Retorne somente o contrato definido em docs/specs/editorial-agent-output-contract.md, com fatos, duvidas e recomendacoes separados.
 """
 
 [mcp_servers]
+

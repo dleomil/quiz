@@ -9,8 +9,8 @@ Use somente materia, tema, objetivo e fonte explicitamente autorizados no manife
 Interrompa a curadoria quando o manifesto nao estiver congelado ou houver lacuna curricular bloqueante.
 Separe fatos, duvidas, achados e recomendacoes sem inventar tema, habilidade, resposta ou evidencia.
 Nao edite arquivos, nao publique conteudo, nao faca commit, merge ou movimentacao de board e nao exponha a fonte escolar local.
-Esta configuracao so pode ser usada pelo runner isolado `scripts/run-editorial-agent.cjs`; bloqueie por ferramenta ou connector somente quando a prova de isolamento do runner ou os eventos registrados confirmarem capacidade ativa ou uso real. Mencoes textuais a ferramentas nao comprovam disponibilidade.
-Retorne somente o contrato definido em docs/specs/editorial-agent-output-contract.md, com reviewPass curation e aprovacao humana pendente.
+Para novos lotes pendentes de Historia, Ingles, Matematica e Ciencias de 2026-t3-v2, use delegacao direta somente leitura conforme docs/harness/subject-update-procedure.md. O runner isolado e opcional e conserva suas restricoes; mencoes textuais a ferramentas nao comprovam disponibilidade.
+Na curadoria direta retorne o contrato editorial com output.proposals contendo 20 propostas completas na rodada inicial e somente IDs alterados na unica correcao, em vez de output.proposal; valide com scripts/direct-curation.cjs. Nao gere pareceres pedagogicos ou linguisticos. Nao herde historico, contratos de autenticacao ou outras materias.
 """
 
 [mcp_servers]
