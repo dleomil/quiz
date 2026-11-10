@@ -27,13 +27,26 @@ function checkScope(paths, descriptor, readBase, readHead) {
     if (name === 'index.html') {
       const before = readBase(name);
       const after = readHead(name);
-      const tag = `    <script src="js/data/t3-${subject}-v2-published.js"></script>`;
+      const tag = `    <script defer src="js/data/t3-${subject}-v2-published.js"></script>`;
       const lines = after.split('\n');
       if (
         lines.filter((line) => line === tag).length !== 1 ||
         lines.filter((line) => line !== tag).join('\n') !== before
       )
         throw new Error('index exige somente a inclusao do runtime autorizado');
+      const next = lines[lines.indexOf(tag) + 1] || '';
+      if (
+        !/^ {4}<script defer src="js\/data\/content-catalog\.js(?:\?[^"<>]*)?"><\/script>$/.test(
+          next,
+        )
+      )
+        throw new Error('runtime deve preceder imediatamente o catalogo');
+      const previous = lines.slice(0, lines.indexOf(tag)).join('\n');
+      if (
+        !previous.includes(`src="js/data/subjects/${subject}.js`) ||
+        previous.includes('src="js/data/questions.js')
+      )
+        throw new Error('runtime deve seguir a base e anteceder o agregador');
       continue;
     }
     if (name === 'js/data/content-catalog.js') {
