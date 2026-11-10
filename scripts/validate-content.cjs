@@ -478,6 +478,7 @@ function loadContentSources(rootDir) {
 
   [
     't3-published.js',
+    't3-geografia-v2-published.js',
     't3-portugues-published.js',
     't3-matematica-published.js',
     't3-portugues-expansion-published.js',
