@@ -36,7 +36,7 @@ function checkScope(paths, descriptor, readBase, readHead) {
         throw new Error('index exige somente a inclusao do runtime autorizado');
       const next = lines[lines.indexOf(tag) + 1] || '';
       if (
-        !/^    <script defer src="js\/data\/content-catalog\.js(?:\?[^"<>]*)?"><\/script>$/.test(
+        !/^ {4}<script defer src="js\/data\/content-catalog\.js(?:\?[^"<>]*)?"><\/script>$/.test(
           next,
         )
       )
