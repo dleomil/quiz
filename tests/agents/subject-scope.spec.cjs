@@ -54,12 +54,12 @@ function loadSyntheticPage(html) {
     'js/data/questions.js': 'window.result = window.rows.slice()',
   };
   const deferred = [];
-  for (const match of html.matchAll(
-    /<script([^>]*)src="([^"]+)"[^>]*><\/script\s*>/g,
-  )) {
-    const code = scripts[match[2].split('?')[0]];
+  for (const line of html.split('\n')) {
+    if (!line.trim().startsWith('<script ')) continue;
+    const source = line.split('src="')[1]?.split('"')[0];
+    const code = scripts[source?.split('?')[0]];
     assert.ok(code, 'Fixture exige script conhecido');
-    if (/\bdefer\b/.test(match[1])) deferred.push(code);
+    if (line.trim().split(/\s+/).includes('defer')) deferred.push(code);
     else vm.runInContext(code, context);
   }
   for (const code of deferred) vm.runInContext(code, context);
