@@ -36,7 +36,7 @@ try {
       bin,
       `#!/usr/bin/env node
 const fs=require('node:fs'),path=require('node:path');const args=process.argv.slice(2),mode=${JSON.stringify(mode)};
-if(args[0]==='--version'){console.log('codex-cli 0.160.0');process.exit(0);}
+if(args[0]==='--version'){console.log('codex-cli 0.167.1');process.exit(0);}
 if(args[0]==='sandbox'){
  if(mode==='sandbox-failed') process.exit(71);
  if(!args.includes('-P') || !args.some(a=>a.includes('network.enabled=false')) || !args.some(a=>a.includes('":root"="deny"')))process.exit(3);

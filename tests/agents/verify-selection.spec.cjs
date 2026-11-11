@@ -6,6 +6,17 @@ assert.equal(
 );
 assert.equal(
   profileFor([
+    'scripts/agent-auth.cjs',
+    'scripts/run-editorial-agent.cjs',
+    'tests/agents/editorial-agent-runner.spec.cjs',
+    'tests/agents/agent-event-capture.spec.cjs',
+    'config/agent-capabilities.json',
+    'docs/specs/agent-context-and-auth.md',
+  ]),
+  'infrastructure',
+);
+assert.equal(
+  profileFor([
     '.github/subject-delivery.json',
     'js/data/t3-historia-v2-published.js',
   ]),

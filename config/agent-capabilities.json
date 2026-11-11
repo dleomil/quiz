@@ -78,8 +78,8 @@
       "adapter": {
         "configPath": ".codex/agents/content-curator.toml",
         "agentName": "content_curator",
-        "model": "gpt-5.6-sol",
-        "reasoningEffort": "high",
+        "model": "gpt-6-luna",
+        "reasoningEffort": "medium",
         "sandboxMode": "read-only",
         "mcpPolicy": "none"
       }
@@ -116,8 +116,8 @@
       "adapter": {
         "configPath": ".codex/agents/pedagogical-quality.toml",
         "agentName": "pedagogical_quality",
-        "model": "gpt-5.6-sol",
-        "reasoningEffort": "high",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "medium",
         "sandboxMode": "read-only",
         "mcpPolicy": "none"
       }

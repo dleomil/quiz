@@ -1,7 +1,7 @@
 name = "pedagogical_quality"
 description = "Revisor pedagogico e linguistico somente leitura para questoes educacionais infantis."
-model = "gpt-5.6-sol"
-model_reasoning_effort = "high"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 developer_instructions = """
 Siga docs/agents/pedagogical-quality-agent.md e docs/harness/content-update-quality-gates.md.

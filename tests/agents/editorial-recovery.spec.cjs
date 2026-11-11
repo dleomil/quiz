@@ -38,7 +38,7 @@ function build(changes = {}) {
     documents: [{ sourceCommit: 'fixture' }],
   };
   const preflight = {
-    cliVersion: '0.160.0',
+    cliVersion: '0.167.1',
     modelCatalogued: 'fixture-model',
     mcpServerCount: 0,
     auth: 'chatgpt-keyring',

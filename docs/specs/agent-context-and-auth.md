@@ -67,15 +67,19 @@ Uma mudanca nos textos normativos exige novo aceite para os hashes alterados.
 
 ## Preparacao do login
 
-CLI validada: `codex-cli 0.160.0`. Outra versao bloqueia ate nova verificacao.
+CLI validada: `codex-cli 0.167.1`. Outra versao bloqueia ate nova verificacao.
 O diretorio dedicado deve ficar fora do repositorio e do perfil pessoal Codex,
 com pai existente, proprietario atual e permissao 0700. `init` cria somente um
 diretorio novo ou vazio; nunca adapta um perfil existente ou copia credenciais.
+Sem `--auth-home`, todos os comandos usam o caminho estavel
+`~/.codex-quiz-auth`; um caminho personalizado continua disponivel por flag.
+Perfis marcados `0.160.0` permanecem validos porque a configuracao de isolamento
+nao mudou.
 
 ```sh
-node scripts/agent-auth.cjs init --auth-home /caminho/privado/quiz-codex-auth
-node scripts/agent-auth.cjs login --auth-home /caminho/privado/quiz-codex-auth
-node scripts/agent-auth.cjs status --auth-home /caminho/privado/quiz-codex-auth
+node scripts/agent-auth.cjs init
+node scripts/agent-auth.cjs login
+node scripts/agent-auth.cjs status
 ```
 
 `login` usa o fluxo oficial `codex login --device-auth`, com participacao do
@@ -83,15 +87,14 @@ mantenedor. A configuracao fixa `cli_auth_credentials_store="keyring"` e
 `forced_login_method="chatgpt"`. Falha de chaveiro ou login interrompe o fluxo;
 nao ha alternativa automatica por arquivo, token importado ou API.
 
-O perfil dedicado e persistente para permitir renovacao oficial da sessao.
+O perfil dedicado permanece restrito a configuracao, skills aprovadas e recibos.
+Para reutilizar a sessao ja autenticada no chaveiro do mantenedor, o runner
+aponta `CODEX_HOME` para `~/.codex`; isso evita um segundo login. A invocacao
+usa `--ignore-user-config` e `--ignore-rules`, substitui configuracoes de
+seguranca por valores fixos e passa caminhos de skills desabilitadas do perfil
+dedicado. Nenhuma regra ou skill pessoal e carregada no contexto editorial.
 Temporarios, configuracoes XDG e workspace da invocacao sao novos e removidos
-ao terminar. O motor da CLI usa o `HOME` do sistema para localizar o chaveiro
-padrao do macOS; um `HOME` ficticio impede esse acesso. `CODEX_HOME` continua
-fixado no perfil dedicado. O ambiente de comandos recebe somente `HOME` e
-`TMPDIR` temporarios, sem heranca; ferramentas editoriais seguem desabilitadas.
-O runner nao remove o perfil de autenticacao e nao herda variaveis de tokens,
-chaves, proxies ou configuracoes do processo pai. Seu ambiente contem somente
-caminhos de execucao, localidade, terminal e os diretorios isolados.
+ao terminar; tokens, chaves, proxies e demais variaveis nao sao herdados.
 
 ## Execucao protegida
 

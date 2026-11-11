@@ -45,6 +45,8 @@ function fixtureRepository(root, directory) {
     'config/agents/spec.json',
     'config/agents/implementer.json',
     'config/agent-context-policy.json',
+    '.codex/agents/content-curator.toml',
+    '.codex/agents/pedagogical-quality.toml',
   ]) {
     fs.mkdirSync(path.dirname(path.join(target, name)), { recursive: true });
     fs.copyFileSync(path.join(root, name), path.join(target, name));
@@ -69,6 +71,7 @@ function fixtureRepository(root, directory) {
       '--',
       'scripts',
       'config/agent-context-policy.json',
+      '.codex/agents',
       'config/agent-capabilities.json',
       'config/agents',
       'config/agent-evaluation-plan.json',

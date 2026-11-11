@@ -497,6 +497,17 @@
       "sha256": "30572cc579a430c30bf8eccafb15b1670c22e6fe990ae35d460d69aa5d237d95"
     },
     {
+      "id": "docs--harness--subject-update-procedure",
+      "path": "docs/harness/subject-update-procedure.md",
+      "kind": "guide",
+      "owner": "content",
+      "revision": 1,
+      "version": "1.0.0",
+      "normative": true,
+      "status": "draft",
+      "sha256": "c341d66c92c9012ef4da5bb8d1a239136a3cefbf3834f79c00e940ac2c467bd0"
+    },
+    {
       "id": "docs--harness--t2-content-cycle-retrospective",
       "path": "docs/harness/t2-content-cycle-retrospective.md",
       "kind": "guide",
@@ -633,11 +644,11 @@
       "path": "docs/specs/agent-context-and-auth.md",
       "kind": "contract",
       "owner": "architecture",
-      "revision": 1,
-      "version": "1.0.0",
+      "revision": 2,
+      "version": "1.0.1",
       "normative": true,
       "status": "draft",
-      "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e"
+      "sha256": "3cafb73d467895265032cb127f2d8c7e1413669264f5c5c09c84be9cc7f75242"
     },
     {
       "id": "docs--specs--agent-execution-records",
@@ -765,11 +776,11 @@
       "path": "docs/specs/final-exams-november-2026-intake.md",
       "kind": "specification",
       "owner": "content",
-      "revision": 5,
-      "version": "1.0.2",
+      "revision": 6,
+      "version": "1.1.0",
       "normative": true,
       "status": "draft",
-      "sha256": "18f4921e174ef9f40053e87c02e0e4a2e8d856f830e40ba269c4ccb232709324"
+      "sha256": "f81f94210bc839bc17e3be9591758404fa39272cbee17f062dcff540c33c7e6d"
     },
     {
       "id": "docs--specs--first-trimester-content-pilot",
@@ -1980,17 +1991,6 @@
       "normative": false,
       "status": "unclassified",
       "sha256": "34279b3313fd8616efdb8b8f44be011e83195405609c7de825563507d52f27e5"
-    },
-    {
-      "id": "docs--harness--subject-update-procedure",
-      "path": "docs/harness/subject-update-procedure.md",
-      "kind": "guide",
-      "owner": "content",
-      "revision": 1,
-      "version": "1.0.0",
-      "normative": true,
-      "status": "draft",
-      "sha256": "c341d66c92c9012ef4da5bb8d1a239136a3cefbf3834f79c00e940ac2c467bd0"
     }
   ]
 }

@@ -92,12 +92,12 @@
     },
     {
       "id": "editorial-agent-output",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "status": "active",
       "type": "contract",
       "owner": "content",
       "sourcePath": "docs/specs/editorial-agent-output-contract.md",
-      "sha256": "6e9e58532cf9152763ca34eca5792dac4a2d71e6be738851d38af2a31008026e",
+      "sha256": "06a69296329c769fdc61512cb9706d3b5d2930aefa587c7cb74f8667d1cde284",
       "appliesTo": ["editorial-agents", "editorial-workflows"],
       "enforcement": "automated-blocking",
       "evidence": ["validated editorial agent output"]
@@ -184,12 +184,12 @@
     },
     {
       "id": "content-delivery-contract",
-      "version": "2.1.1",
+      "version": "2.1.2",
       "status": "active",
       "type": "contract",
       "owner": "content",
       "sourcePath": "docs/specs/content-delivery-contract.md",
-      "sha256": "0919eb687494b8c919f3f3af3cf0730f81fac24ab0fd5c0ead1010eea4865074",
+      "sha256": "09bd65a79226d1a4873c87c10a1c45d6098579098c9fb3716460f7d1bd18a136",
       "appliesTo": ["content-updates", "editorial-workflows", "pull-requests"],
       "enforcement": "automated-blocking",
       "evidence": [
@@ -217,12 +217,12 @@
     },
     {
       "id": "agent-context-and-auth",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "status": "active",
       "type": "contract",
       "owner": "architecture",
       "sourcePath": "docs/specs/agent-context-and-auth.md",
-      "sha256": "fc42d84c8a97c245ba20bfa868ff2cd2ba2b4575746d63ce1df22206c146756e",
+      "sha256": "3cafb73d467895265032cb127f2d8c7e1413669264f5c5c09c84be9cc7f75242",
       "appliesTo": ["agent-workflows", "editorial-workflows"],
       "enforcement": "automated-blocking",
       "evidence": [
