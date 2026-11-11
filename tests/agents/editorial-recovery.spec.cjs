@@ -150,6 +150,7 @@ try {
     sourceCaptureManifest: accepted.capture.manifest,
     sourceWork: accepted.work,
     scenario: result.scenario,
+    correctedDiagnosis: result.diagnosis,
     responseSha256: result.responseSha256,
   };
   const report = { ...data, sha256: digest(data) };

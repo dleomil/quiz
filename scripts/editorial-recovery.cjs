@@ -34,6 +34,43 @@ function recognizedStartupWarnings(warnings) {
       warnings[1].code === 'startup_config_2')
   );
 }
+function diagnosisMatchesStartupWarnings(previous, current) {
+  if (
+    !current?.accepted ||
+    !current.completed ||
+    current.issues.length !== 0 ||
+    !recognizedStartupWarnings(current.warnings)
+  )
+    return false;
+  if (JSON.stringify(previous) === JSON.stringify(current)) return true;
+  if (
+    previous?.completed !== true ||
+    previous.reasonCode !== 'process_failure' ||
+    previous.usage?.input_tokens !== current.usage?.input_tokens ||
+    previous.usage?.output_tokens !== current.usage?.output_tokens
+  )
+    return false;
+  const events = [
+    ...(previous.warnings || []).map((warning) => ({
+      line: warning.line,
+      valid: /^startup_config_[12]$/.test(warning.code),
+    })),
+    ...(previous.issues || []).map((issue) => ({
+      line: issue.line,
+      valid:
+        issue.code === 'process_failure' &&
+        issue.eventType === 'item.completed' &&
+        issue.itemType === 'error',
+    })),
+  ].sort((a, b) => a.line - b.line);
+  return (
+    events.length === current.warnings.length &&
+    events.every(
+      (event, index) =>
+        event.valid && event.line === current.warnings[index].line,
+    )
+  );
+}
 function inspect({ receipt, capture, input, work, authHome, schema }) {
   sealed(receipt);
   check(
@@ -139,7 +176,7 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
       ?.line;
   check(primaryLine === events.indexOf(bad[0]) + 1, 'outra falha');
   check(
-    JSON.stringify(diagnosis) === JSON.stringify(manifest.diagnosis),
+    diagnosisMatchesStartupWarnings(manifest.diagnosis, diagnosis),
     'diagnostico divergente',
   );
   check(
@@ -152,14 +189,20 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
       manifest.files['response.json'].bytes === raw.length,
     'resposta divergente',
   );
-  const output = transport.decodeEditorial(
-    JSON.parse(raw),
-    schema,
-    receipt.actor,
-  );
+  const wire = JSON.parse(raw);
+  const batchSize = input.input.proposals?.length;
+  const output =
+    receipt.actor === 'content_curator' && Number.isInteger(batchSize)
+      ? transport.decodeEditorialBatch(wire, schema, receipt.actor)
+      : transport.decodeEditorial(wire, schema, receipt.actor);
   const scenario = { ...input, output };
   check(
-    validateEditorialScenario(scenario).length === 0,
+    (output.agent === 'content_curator' && output.proposals
+      ? require('./direct-curation.cjs').validateDirectCuration(scenario, {
+          expectedCount: output.proposals.length,
+        })
+      : validateEditorialScenario(scenario)
+    ).length === 0,
     'resposta editorial invalida',
   );
   check(
@@ -219,11 +262,20 @@ function recover({ receiptFile, inputFile, workFile, authHome, outputFile }) {
   const pinnedSchema = JSON.parse(
     source('config/editorial-agent-output.schema.json'),
   );
-  const schema = transport.editorialSchema(
-    pinnedSchema,
-    receipt.actor,
-    input.input.subjectId,
-  );
+  const batchSize = input.input.proposals?.length;
+  const schema =
+    receipt.actor === 'content_curator' && Number.isInteger(batchSize)
+      ? transport.editorialBatchSchema(
+          pinnedSchema,
+          receipt.actor,
+          input.input.subjectId,
+          batchSize,
+        )
+      : transport.editorialSchema(
+          pinnedSchema,
+          receipt.actor,
+          input.input.subjectId,
+        );
   for (const approval of receipt.approvals || [])
     check(
       baseline(ROOT, approval.sourceCommit).sha256 === approval.baselineSha256,
@@ -287,6 +339,7 @@ function recover({ receiptFile, inputFile, workFile, authHome, outputFile }) {
     inputSha256: receipt.inputSha256,
     workSha256: receipt.workSha256,
     responseSha256: result.responseSha256,
+    correctedDiagnosis: result.diagnosis,
     scenario: result.scenario,
     additionalModelInvocations: 0,
     humanApprovalRequired: true,
@@ -356,7 +409,14 @@ function validateReport(report) {
     'vinculos da recuperacao divergentes',
   );
   check(
-    validateEditorialScenario(report.scenario).length === 0,
+    (report.scenario.output.agent === 'content_curator' &&
+    report.scenario.output.proposals
+      ? require('./direct-curation.cjs').validateDirectCuration(
+          report.scenario,
+          { expectedCount: report.scenario.output.proposals.length },
+        )
+      : validateEditorialScenario(report.scenario)
+    ).length === 0,
     'cenario recuperado invalido',
   );
   check(
@@ -383,13 +443,10 @@ function validateReport(report) {
     'manifesto recuperado divergente',
   );
   check(
-    m.diagnosis.completed &&
-      ((m.diagnosis.issues.length === 1 &&
-        m.diagnosis.issues[0].code === 'process_failure' &&
-        m.diagnosis.issues[0].itemType === 'error' &&
-        m.diagnosis.issues[0].eventType === 'item.completed') ||
-        (m.diagnosis.issues.length === 0 &&
-          recognizedStartupWarnings(m.diagnosis.warnings))),
+    diagnosisMatchesStartupWarnings(
+      m.diagnosis,
+      report.correctedDiagnosis || r.eventDiagnosis,
+    ),
     'diagnostico recuperado divergente',
   );
   check(
