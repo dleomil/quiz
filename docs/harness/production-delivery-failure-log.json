@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "delivery-failure-log-v1",
+  "updatedAt": "2026-11-11",
+  "scope": "Entrega de Ciencias T3 v2; dados publicados de Portugues e Geografia nao foram consultados.",
+  "incidents": [
+    {
+      "id": "runner-policy-value-type-regression",
+      "symptom": "Runner encerrava a etapa de preparacao com erro de JSON antes de chamar o modelo.",
+      "cause": "A politica de entrega foi convertida para objeto, mas os usos posteriores continuaram tentando interpreta-la como texto e calcular hash sobre um objeto.",
+      "fix": "Separar o texto fixado no commit base do objeto parseado: usar o objeto para requisitos e o texto original para hash. Teste do Runner cobre a execucao sintetica completa.",
+      "status": "fixed"
+    },
+    {
+      "id": "runner-auth-prompt-loop",
+      "symptom": "Runner solicitava autenticacao repetidamente apesar de a sessao pessoal estar autenticada.",
+      "cause": "O processo usava um CODEX_HOME isolado para autenticacao junto com o home dedicado a artefatos.",
+      "fix": "PR 468 definiu CODEX_HOME pessoal para o CLI e manteve o home dedicado apenas para artefatos e diagnosticos.",
+      "status": "fixed"
+    },
+    {
+      "id": "cross-subject-validation-contamination",
+      "symptom": "A verificacao ampla misturava testes de Ingles, Geografia e Portugues durante uma entrega de Ciencias.",
+      "cause": "O perfil legado executava a suite completa quando a mudanca continha rascunhos e ferramentas de entrega.",
+      "fix": "O perfil science-drafts limita validacao aos rascunhos de Ciencias e testes sinteticos de infraestrutura; temas publicados ficam fora do escopo.",
+      "status": "fixed"
+    },
+    {
+      "id": "review-path-policy-conflict",
+      "symptom": "O procedimento do projeto permite revisao direta para 2026-t3-v2, mas as instancias de pedagogical_quality bloquearam o caminho direto e exigiram o Runner isolado.",
+      "cause": "A politica de execucao do agente e a excecao documentada no procedimento divergem; o Runner tambem exige baselines documentais mais novos do que os aceites registrados.",
+      "fix": "O Runner reconhece delegacao direta apenas para materias e acervos autorizados pela politica; o contexto valida materia, ciclo, manifesto, fonte, papel e hashes no commit base e registra a delegacao sem fabricar aprovacoes.",
+      "status": "fixed"
+    },
+    {
+      "id": "draft-pr-mistaken-for-release-package",
+      "symptom": "O PR 469 continha os rascunhos e validacao local, mas nao os registros editoriais por tema nem o pacote de promocao para producao.",
+      "cause": "A verificacao de prontidao para promocao ocorreu depois da abertura do PR de rascunhos.",
+      "fix": "Pendente: tornar a preparacao do pacote de materia, as evidencias e verify:subject precondicoes para declarar uma entrega pronta.",
+      "status": "open"
+    },
+    {
+      "id": "late-editorial-findings",
+      "symptom": "Achados linguísticos e pedagogicos foram encontrados depois da preparacao dos rascunhos, gerando varias rodadas de rechecagem.",
+      "cause": "A revisao por tema e a captura de evidencias nao estavam ligadas a uma etapa de prontidao unica antes da implementacao do pacote.",
+      "fix": "Pendente: fazer curadoria, revisao pedagogica e revisao linguistica por hash antes de gerar runtime e descritor de entrega.",
+      "status": "open"
+    }
+  ],
+  "releaseChecklist": [
+    "Confirmar a proxima materia e congelar temas e objetivos por manifesto.",
+    "Executar preflight antes da curadoria e interromper se algum tema ja estiver completo.",
+    "Confirmar autenticacao e politica de contexto dos agentes antes de chamadas com custo.",
+    "Capturar cada evidencia editorial no mesmo passo em que a revisao ocorre.",
+    "Gerar runtime, registros, descritor e execucao operacional antes de abrir o PR de entrega.",
+    "Executar verify:subject e o perfil local restrito da materia candidata.",
+    "Abrir PR de entrega para develop; somente promover para main depois dos gates e do aceite humano do pacote exato.",
+    "Confirmar SHA de deploy e reconciliar main com develop."
+  ]
+}

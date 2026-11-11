@@ -188,6 +188,28 @@ function buildContext(work, options = {}) {
   const catalog = JSON.parse(
     pinnedConfig(root, 'config/document-catalog.json', head),
   );
+  let directEditorial = false;
+  if (options.directEditorial) {
+    const deliveryPolicy = JSON.parse(
+      pinnedConfig(root, 'config/content-delivery-policy.json', head),
+    );
+    const authorization = deliveryPolicy.directEditorial;
+    const request = options.directEditorial;
+    directEditorial = Boolean(
+      authorization?.subjects?.includes(request.subjectId) &&
+      authorization?.contentSetIds?.includes(request.contentSetId) &&
+      ['content-curator', 'pedagogical-quality'].includes(work.role) &&
+      request.subjectId === work.subjectId &&
+      request.contentSetId === '2026-t3-v2' &&
+      work.curriculumCycle === '2026-t3' &&
+      request.manifestState === 'frozen' &&
+      request.sourceStatus === 'authorized',
+    );
+    check(
+      directEditorial,
+      'delegacao direta nao autorizada para contexto, materia ou acervo',
+    );
+  }
   const selected = work.documents.map((pin) =>
     catalog.documents.find((doc) => doc.id === pin.id),
   );
@@ -230,12 +252,16 @@ function buildContext(work, options = {}) {
         'documento nao normativo ou inativo',
       );
       check(
-        accepted &&
-          ['id', 'path', 'version', 'sha256', 'revision'].every(
-            (key) => accepted[key] === doc[key],
-          ) &&
-          pin.version === doc.version &&
-          pin.sha256 === doc.sha256,
+        directEditorial
+          ? pin.sourceCommit === head &&
+              pin.version === doc.version &&
+              pin.sha256 === doc.sha256
+          : accepted &&
+              ['id', 'path', 'version', 'sha256', 'revision'].every(
+                (key) => accepted[key] === doc[key],
+              ) &&
+              pin.version === doc.version &&
+              pin.sha256 === doc.sha256,
         `aceite desatualizado: ${doc.path}`,
       );
       const content = readSource(root, doc.path).toString('utf8');
@@ -255,6 +281,16 @@ function buildContext(work, options = {}) {
     capabilitySha256: sha256(capabilities),
     documents,
     approvals,
+    ...(directEditorial
+      ? {
+          editorialDelegation: {
+            kind: 'direct-editorial',
+            subjectId: options.directEditorial.subjectId,
+            contentSetId: options.directEditorial.contentSetId,
+            sourceCommit: head,
+          },
+        }
+      : {}),
   };
   return { ...payload, sha256: digest(payload) };
 }

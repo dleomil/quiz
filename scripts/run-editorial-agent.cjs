@@ -187,6 +187,26 @@ async function run(cliArguments = process.argv.slice(2)) {
     const work = JSON.parse(
       fs.readFileSync(path.resolve(args['--work']), 'utf8'),
     );
+    const deliveryPolicyPath = 'config/content-delivery-policy.json';
+    const deliveryPolicyText = pinnedConfig(
+      ROOT,
+      deliveryPolicyPath,
+      work.baseCommit,
+    );
+    const deliveryPolicy = JSON.parse(deliveryPolicyText);
+    const directEditorial = {
+      subjectId: document.input.subjectId,
+      contentSetId: document.input.contentSetId,
+      manifestState: document.input.manifestState,
+      sourceStatus: document.input.sourceStatus,
+    };
+    const directAuthorized =
+      deliveryPolicy.directEditorial?.subjects?.includes(
+        directEditorial.subjectId,
+      ) &&
+      deliveryPolicy.directEditorial?.contentSetIds?.includes(
+        directEditorial.contentSetId,
+      );
     const contract = pinnedConfig(
       ROOT,
       path.relative(ROOT, OUTPUT_SCHEMA),
@@ -247,15 +267,14 @@ async function run(cliArguments = process.argv.slice(2)) {
         `${document.input.academicYear}-${document.input.term}`
     )
       throw new Error('ficha diverge da entrada editorial');
-    context = buildContext(
-      work,
-      args['--test-comment']
-        ? {
-            readComment: () =>
-              JSON.parse(fs.readFileSync(args['--test-comment'], 'utf8')),
-          }
-        : {},
-    );
+    const contextOptions = args['--test-comment']
+      ? {
+          readComment: () =>
+            JSON.parse(fs.readFileSync(args['--test-comment'], 'utf8')),
+        }
+      : {};
+    if (directAuthorized) contextOptions.directEditorial = directEditorial;
+    context = buildContext(work, contextOptions);
     if (work.allowedPaths.length || work.commands.length)
       throw new Error('ficha editorial nao pode autorizar escrita ou comandos');
     const pinnedAdapter = pinnedConfig(
@@ -312,12 +331,6 @@ async function run(cliArguments = process.argv.slice(2)) {
       JSON.stringify(transportSchema),
     );
     message = path.join(sessionHome, 'output.json');
-    const deliveryPolicyPath = 'config/content-delivery-policy.json';
-    const deliveryPolicy = pinnedConfig(
-      ROOT,
-      deliveryPolicyPath,
-      work.baseCommit,
-    );
     const prompt = [
       ...(evaluation
         ? [
@@ -331,7 +344,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       transport.INSTRUCTIONS,
       renderContext(context),
       `Ficha delimitada:\n${JSON.stringify(work)}`,
-      `Requisitos especificos da materia:\n${JSON.stringify(requirementsFor(document.input.subjectId, JSON.parse(deliveryPolicy)))}`,
+      `Requisitos especificos da materia:\n${JSON.stringify(requirementsFor(document.input.subjectId, deliveryPolicy))}`,
       'Confira idioma, instrucao em portugues, lacunas e resposta revelada. Registre fatos e achados especificos.',
       `Entrada autorizada:\n${JSON.stringify(document)}`,
     ].join('\n\n');
@@ -352,7 +365,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       schemaSha256: sha256(schema),
       transportSchemaSha256: digest(transportSchema),
       transportVersion: transport.VERSION,
-      deliveryPolicySha256: sha256(deliveryPolicy),
+      deliveryPolicySha256: sha256(deliveryPolicyText),
       checks,
     });
     resultState = 'execution-failed';
