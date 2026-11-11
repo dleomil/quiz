@@ -27,9 +27,9 @@
     {
       "id": "review-path-policy-conflict",
       "symptom": "O procedimento do projeto permite revisao direta para 2026-t3-v2, mas as instancias de pedagogical_quality bloquearam o caminho direto e exigiram o Runner isolado.",
-      "cause": "A politica de execucao do agente e a excecao documentada no procedimento divergem; o Runner tambem exige baselines documentais mais novos do que os aceites registrados.",
-      "fix": "O Runner reconhece delegacao direta apenas para materias e acervos autorizados pela politica; o contexto valida materia, ciclo, manifesto, fonte, papel e hashes no commit base e registra a delegacao sem fabricar aprovacoes.",
-      "status": "fixed"
+      "cause": "O procedimento e o TOML do repositorio autorizam delegacao direta, mas a configuracao do agente da sessao exige o Runner para parecer formal. As respostas diretas dessa configuracao nao geram o formato por ID exigido para captura.",
+      "fix": "Pendente: alinhar a configuracao efetiva do agente com o procedimento ou concluir um Runner que capture o contrato formal em lote. O suporte de contexto direto adicionado ao Runner corrige apenas baselines quando o Runner recebe essa modalidade; nao remove a trava da configuracao efetiva.",
+      "status": "open"
     },
     {
       "id": "draft-pr-mistaken-for-release-package",
@@ -50,6 +50,7 @@
     "Confirmar a proxima materia e congelar temas e objetivos por manifesto.",
     "Executar preflight antes da curadoria e interromper se algum tema ja estiver completo.",
     "Confirmar autenticacao e politica de contexto dos agentes antes de chamadas com custo.",
+    "Fazer um ensaio formal de uma passagem, verificar captura e custo e so entao iniciar os lotes; interromper se o agente bloquear ou o formato de evidencia divergir.",
     "Capturar cada evidencia editorial no mesmo passo em que a revisao ocorre.",
     "Gerar runtime, registros, descritor e execucao operacional antes de abrir o PR de entrega.",
     "Executar verify:subject e o perfil local restrito da materia candidata.",
