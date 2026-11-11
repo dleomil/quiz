@@ -176,21 +176,12 @@ function verifySubject({
           if (!ref.startsWith(`docs/editorial/subject-runs/${subject}/`))
             throw new Error('origem de curadoria fora do escopo');
           const report = readJson(ref);
-          const { sha256, ...payload } = report;
           const {
             digest,
             reviewProjection,
           } = require('./content-delivery.cjs');
-          if (
-            report.schemaVersion !== 'direct-curation-report-v1' ||
-            report.agent !== 'content_curator' ||
-            report.testOnly !== false ||
-            sha256 !== digest(payload) ||
-            !report.agentInstanceId ||
-            !report.runId ||
-            !Number.isFinite(Date.parse(report.completedAt))
-          )
-            throw new Error('curadoria sem identidade ou integridade');
+          const evidence =
+            require('./direct-curation.cjs').readCurationEvidence(report);
           if (
             !descriptor.run.calls.some(
               (c) =>
@@ -198,17 +189,11 @@ function verifySubject({
                 c.pass === 'curation' &&
                 c.status === 'completed' &&
                 c.evidencePath === ref &&
-                c.actor === report.agentInstanceId,
+                c.actor === evidence.agentInstanceId,
             )
           )
             throw new Error('curadoria ausente no registro operacional');
-          const output = JSON.parse(report.originalResponse).output;
-          const scenario = {
-            scenarioId: report.runId,
-            inputState: 'complete',
-            input: report.input,
-            output,
-          };
+          const { scenario, output } = evidence;
           if (output?.decision !== 'approved')
             throw new Error('curadoria com pendencias');
           const findings =
@@ -217,7 +202,7 @@ function verifySubject({
             });
           if (findings.length) throw new Error(findings.join('; '));
           for (const proposal of output.proposals)
-            curated.set(digest(proposal), report.agentInstanceId);
+            curated.set(digest(proposal), evidence.agentInstanceId);
           for (const question of questions) {
             const author = curated.get(digest(reviewProjection(question)));
             if (!author) continue;
