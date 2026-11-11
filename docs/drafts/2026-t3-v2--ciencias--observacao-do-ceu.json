@@ -80,7 +80,7 @@
       "explanation": "A Lua também pode estar visível no céu diurno.",
       "wrongExplanations": {
         "0": "Na pergunta “A Lua só pode ser vista à noite”, a opção “sim, ela só fica visível depois que escurece” não atende ao que se pede: a Lua não aparece apenas à noite; em algumas ocasiões também pode ser vista durante o dia.",
-        "1": "Na pergunta “A Lua só pode ser vista à noite”, a opção “sim, a luz do Sol sempre a esconde” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu.",
+        "1": "A Lua não produz luz própria; vemos a luz do Sol refletida em sua superfície, conforme sua posição e as condições do céu.",
         "2": "A Lua não pode ser vista em todo o céu e a qualquer hora; sua posição e as condições do céu influenciam sua visibilidade."
       },
       "skill": "comparar-observacoes-diurnas-e-noturnas",
@@ -159,7 +159,7 @@
       "subject": "ciencias",
       "topic": "observacao-do-ceu",
       "topicName": "Observação do céu",
-      "question": "Qual astro pode ser visto durante o dia em algumas ocasiões e também à noite?",
+      "question": "Qual astro pode ser visto a olho nu durante o dia, em condições comuns, e também à noite?",
       "options": [
         "a Lua",
         "o Sol",
@@ -429,7 +429,7 @@
       "subject": "ciencias",
       "topic": "observacao-do-ceu",
       "topicName": "Observação do céu",
-      "question": "A Lua não está visível em uma noite. Qual explicação é possível?",
+      "question": "Qual alternativa explica corretamente por que a Lua pode não estar visível em uma noite?",
       "options": [
         "a Lua deixou de existir",
         "ela está sempre escondida atrás da Terra",
@@ -439,9 +439,9 @@
       "correctIndex": 3,
       "explanation": "A posição da Lua e as condições do céu mudam o que conseguimos observar.",
       "wrongExplanations": {
-        "0": "Na pergunta “A Lua não está visível em uma noite. Qual explicação é possível”, a opção “a Lua deixou de existir” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu.",
+        "0": "A Lua continua existindo mesmo quando não está visível; sua posição e as condições do céu afetam sua observação.",
         "1": "Na pergunta “A Lua não está visível em uma noite. Qual explicação é possível”, a opção “ela está sempre escondida atrás da Terra” não atende ao que se pede: a Lua não fica sempre atrás da Terra; ela pode estar abaixo do horizonte ou difícil de observar.",
-        "2": "Na pergunta “A Lua não está visível em uma noite. Qual explicação é possível”, a opção “sua luz foi desligada durante a noite” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu."
+        "2": "A Lua não produz luz própria: ela reflete a luz do Sol. Sua visibilidade depende também de sua posição e das condições do céu."
       },
       "skill": "comparar-observacoes-diurnas-e-noturnas",
       "sourceRef": {
