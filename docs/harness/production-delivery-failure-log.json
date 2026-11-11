@@ -58,6 +58,21 @@
       "cause": "O login pessoal passa sem override, mas isolationArguments forcava cli_auth_credentials_store=keyring. Com esse override, codex login status retornou Not logged in e as requisicoes da inferencia receberam 401 Missing bearer. Cada captura reportou usage null; consumo desconhecido, nao zero.",
       "fix": "Removido o override do armazenamento de credenciais, alinhado o preflight ao metodo ChatGPT e atualizados os validadores de recibo. Teste local confirma login ChatGPT com o armazenamento pessoal intacto; antes de nova inferencia, a autenticacao da chamada precisa passar.",
       "status": "fixed"
+    },
+    {
+      "id": "runner-startup-warning-false-positive",
+      "symptom": "A curadoria de som-e-audicao concluiu e registrou resposta, mas o Runner rejeitou a captura porque tratou dois avisos normais de inicializacao como falhas de execucao.",
+      "cause": "O parser reconhecia apenas um aviso e exigia que o caminho do config.toml coincidisse com o CODEX_HOME isolado, embora o CLI emitisse o aviso apontando para o perfil pessoal autenticado. A resposta nao foi promovida pela ferramenta de recuperacao porque o recibo nao continha aceite documental/baseline aprovado.",
+      "fix": "Parser agora aceita apenas os dois textos exatos de aviso, antes do inicio do turno, com versao compativel e preflight autenticado. A captura original foi reanalisada sem inferencia adicional e passou no parser. O gate de aceite documental continua obrigatorio para recuperar a resposta como evidencia formal.",
+      "runId": "c3578e09-ad5b-42a6-9f54-ea7687af7234",
+      "model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 33821,
+        "cached_input_tokens": 0,
+        "output_tokens": 6625
+      },
+      "additionalModelInvocations": 0,
+      "status": "fixed"
     }
   ],
   "releaseChecklist": [
