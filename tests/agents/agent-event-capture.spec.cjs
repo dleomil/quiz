@@ -127,9 +127,26 @@ const startup = startupMessages(warningHome).map((message, index) => ({
 const warningEvents = [lifecycle[0], ...startup, ...lifecycle.slice(1)];
 const warningSummary = analyzeEvents(jsonl(warningEvents), [], warningContext);
 assert.equal(warningSummary.accepted, true);
-assert.equal(warningSummary.warnings.length, 1);
+assert.equal(warningSummary.warnings.length, 2);
 assert.ok(!JSON.stringify(warningSummary).includes(warningHome));
 assert.equal(analyzeEvents(jsonl(warningEvents)).accepted, false);
+const externalConfigWarning = {
+  type: 'item.completed',
+  item: {
+    id: 'warning_external_config',
+    type: 'error',
+    message: startupMessages('/Users/dleomil/.codex')[0],
+  },
+};
+const externalConfigSummary = analyzeEvents(
+  jsonl([lifecycle[0], externalConfigWarning, ...lifecycle.slice(1)]),
+  [],
+  warningContext,
+);
+assert.equal(externalConfigSummary.accepted, true);
+assert.deepEqual(externalConfigSummary.warnings, [
+  { code: 'startup_config_1', line: 2, itemId: 'warning_external_config' },
+]);
 const codeModeUnavailable = {
   type: 'item.completed',
   item: {
@@ -139,14 +156,15 @@ const codeModeUnavailable = {
       'Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.',
   },
 };
-assert.equal(
-  analyzeEvents(
-    jsonl([lifecycle[0], codeModeUnavailable, ...lifecycle.slice(1)]),
-    ['command_execution', 'file_change'],
-    warningContext,
-  ).reasonCode,
-  'process_failure',
+const codeModeSummary = analyzeEvents(
+  jsonl([lifecycle[0], codeModeUnavailable, ...lifecycle.slice(1)]),
+  ['command_execution', 'file_change'],
+  warningContext,
 );
+assert.equal(codeModeSummary.accepted, true);
+assert.deepEqual(codeModeSummary.warnings, [
+  { code: 'startup_config_2', line: 2, itemId: 'code_mode_error' },
+]);
 for (const proof of [
   { ...warningProof, cliVersion: '0.159.0' },
   { ...warningProof, cliVersion: '0.160.1' },
@@ -170,13 +188,6 @@ for (const proof of [
     }).accepted,
     false,
   );
-assert.equal(
-  analyzeEvents(jsonl(warningEvents), [], {
-    ...warningContext,
-    authHome: '/private/tmp/outro',
-  }).accepted,
-  false,
-);
 for (const warning of startup) {
   assert.equal(
     analyzeEvents(

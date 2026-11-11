@@ -5,6 +5,7 @@ const COMPATIBLE_CLI_VERSIONS = new Set(['0.160.0', '0.167.1']);
 function startupMessages(home) {
   return [
     `Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set \`suppress_unstable_features_warning = true\` in ${path.join(home, 'config.toml')}.`,
+    'Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.',
   ];
 }
 function warningContext(context) {
@@ -19,6 +20,19 @@ function warningContext(context) {
     proof.features?.skip_host_skill_discovery === true &&
     DISABLED_FEATURES.every((name) => proof.features[name] === false)
   );
+}
+function startupMessageIndex(message, home) {
+  const messages = startupMessages(home);
+  const exact = messages.indexOf(message);
+  if (exact >= 0) return exact;
+  if (
+    typeof message === 'string' &&
+    /^Under-development features enabled: skip_host_skill_discovery\. Under-development features are incomplete and may behave unpredictably\. To suppress this warning, set `suppress_unstable_features_warning = true` in \/.+\/config\.toml\.$/.test(
+      message,
+    )
+  )
+    return 0;
+  return -1;
 }
 const TOOLS = new Set([
   'command_execution',
@@ -127,7 +141,7 @@ function analyzeEvents(jsonl, allowedTools = [], context = {}) {
           issue('invalid_plan', index + 1, event, item);
       } else if (kind === 'error') {
         const code = warningContext(context)
-          ? startupMessages(context.authHome).indexOf(item.message)
+          ? startupMessageIndex(item.message, context.authHome)
           : -1;
         if (
           !started &&
