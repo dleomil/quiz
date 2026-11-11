@@ -11,10 +11,10 @@
       "topicName": "Planeta Terra",
       "question": "Como classificamos a Terra?",
       "options": [
-        "estrela",
-        "como um planeta",
-        "satélite natural",
-        "cometa"
+        "uma estrela",
+        "um planeta",
+        "um satélite natural",
+        "um cometa"
       ],
       "correctIndex": 1,
       "explanation": "A Terra é um planeta que orbita o Sol.",
@@ -132,7 +132,7 @@
       "question": "Qual frase descreve a Terra corretamente?",
       "options": [
         "é um planeta sem água ou atmosfera",
-        "A Terra é um planeta com terra, água e ar",
+        "a Terra é um planeta com terra, água e ar",
         "é uma estrela que produz sua própria luz",
         "é feita somente de lava"
       ],
@@ -409,9 +409,9 @@
       "correctIndex": 0,
       "explanation": "A Terra tem superfície sólida rochosa.",
       "wrongExplanations": {
-        "1": "Na pergunta “A Terra é chamada de planeta rochoso porque”, a opção “ela gira em torno de si mesma, mas não orbita o Sol” não atende ao que se pede: “ela gira em torno de si mesma, mas não orbita o Sol” não descreve a condição terrestre perguntada; sua parte sólida é formada por rochas e materiais parecidos é a característica correta.",
-        "2": "Na pergunta “A Terra é chamada de planeta rochoso porque”, a opção “ela permanece parada enquanto o Sol gira ao seu redor” não atende ao que se pede: “ela permanece parada enquanto o Sol gira ao seu redor” não descreve a condição terrestre perguntada; sua parte sólida é formada por rochas e materiais parecidos é a característica correta.",
-        "3": "Na pergunta “A Terra é chamada de planeta rochoso porque”, a opção “ela gira em torno da Lua” não atende ao que se pede: “ela gira em torno da Lua” não descreve a condição terrestre perguntada; sua parte sólida é formada por rochas e materiais parecidos é a característica correta."
+        "1": "A Terra orbita o Sol; sua parte sólida é formada por rochas e materiais parecidos.",
+        "2": "O Sol não gira ao redor da Terra; a parte sólida terrestre é formada por rochas e materiais parecidos.",
+        "3": "A Terra não gira em torno da Lua; sua parte sólida é formada por rochas e materiais parecidos."
       },
       "skill": "reconhecer-caracteristicas-gerais-da-terra",
       "sourceRef": {
@@ -529,9 +529,9 @@
       "correctIndex": 0,
       "explanation": "A Terra possui água e atmosfera, importantes para muitos seres vivos.",
       "wrongExplanations": {
-        "1": "Na pergunta “O que a Terra tem que permite a existência de muitos seres vivos”, a opção “a ausência de água e ar” não atende ao que se pede: “a ausência de água e ar” não descreve a condição terrestre perguntada; condições como água líquida e atmosfera é a característica correta.",
-        "2": "Na pergunta “O que a Terra tem que permite a existência de muitos seres vivos”, a opção “uma superfície coberta apenas por lava” não atende ao que se pede: a Terra não é feita somente de lava; sua superfície inclui rochas sólidas, água e outros ambientes.",
-        "3": "Na pergunta “O que a Terra tem que permite a existência de muitos seres vivos”, a opção “a falta de luz do Sol” não atende ao que se pede: a luz solar chega à Terra; o planeta não é definido pela ausência de luz."
+        "1": "A ausência de água e ar não descreve as condições da Terra, que tem água líquida e atmosfera.",
+        "2": "A Terra não é coberta apenas por lava; ela tem água, atmosfera e muitos ambientes.",
+        "3": "A Terra recebe luz do Sol e tem condições como água líquida e atmosfera."
       },
       "skill": "reconhecer-caracteristicas-gerais-da-terra",
       "sourceRef": {
@@ -589,9 +589,9 @@
       "correctIndex": 2,
       "explanation": "A Terra é o planeta em que vivemos.",
       "wrongExplanations": {
-        "0": "Na pergunta “Qual frase resume melhor onde vivemos”, a opção “vivemos na superfície da Lua” não atende ao que se pede: “vivemos na superfície da Lua” é satélite natural, não o planeta em que vivemos: a Terra.",
-        "1": "Na pergunta “Qual frase resume melhor onde vivemos”, a opção “vivemos dentro do Sol” não atende ao que se pede: “vivemos dentro do Sol” é estrela, não o planeta em que vivemos: a Terra.",
-        "3": "Na pergunta “Qual frase resume melhor onde vivemos”, a opção “vivemos no interior de Júpiter” não atende ao que se pede: “vivemos no interior de Júpiter” é planeta, não o planeta em que vivemos: a Terra."
+        "0": "A Lua é um satélite natural; não é o planeta em que vivemos.",
+        "1": "O Sol é uma estrela; não é o planeta em que vivemos.",
+        "3": "Júpiter é um planeta diferente da Terra; vivemos na superfície da Terra."
       },
       "skill": "reconhecer-caracteristicas-gerais-da-terra",
       "sourceRef": {

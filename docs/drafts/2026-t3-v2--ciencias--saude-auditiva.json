@@ -104,7 +104,7 @@
         "Fazer pausas e usar volume confortável",
         "Usar o volume máximo o dia inteiro",
         "Dormir com o som muito alto nos fones",
-        "Aumentar o volume para cobrir todo ruído"
+        "Aumentar o volume para cobrir todo o ruído"
       ],
       "correctIndex": 0,
       "explanation": "Pausas e volume moderado ajudam a limitar a exposição sonora.",
@@ -492,7 +492,7 @@
       "question": "Antes de voltar a usar os fones, qual cuidado é adequado?",
       "options": [
         "Deixá-los sempre no volume máximo",
-        "Manter o volume baixo antes de voltar a usá-los",
+        "Ajustar os fones para um volume baixo antes de voltar a usá-los",
         "Passá-los a outra pessoa sem verificar o volume",
         "Usá-los perto da caixa de som alta"
       ],
@@ -527,7 +527,7 @@
         "Para transformar música em silêncio para sempre"
       ],
       "correctIndex": 2,
-      "explanation": "Pausas interrompem a exposição contínua e dão descanso dos sons.",
+      "explanation": "Pausas interrompem a exposição contínua e oferecem descanso da exposição aos sons.",
       "wrongExplanations": {
         "0": "Pausas não aumentam o volume; é melhor manter volume moderado.",
         "1": "O ouvido não precisa produzir sons para ouvir.",
@@ -591,7 +591,7 @@
       "wrongExplanations": {
         "1": "Continuar ouvindo pode prolongar a exposição ao som intenso.",
         "2": "Objetos podem causar machucados.",
-        "3": "Dor não deve ser sempre ignorada; conte a um adulto responsável."
+        "3": "A dor não deve ser ignorada; conte a um adulto responsável."
       },
       "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
       "sourceRef": {

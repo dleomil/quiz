@@ -50,7 +50,7 @@
       "explanation": "Libras é uma língua visual usada por muitas pessoas surdas para se comunicar.",
       "wrongExplanations": {
         "0": "Apagar as imagens dificulta a comunicação visual.",
-        "1": "Falar de costas impede a pessoa de ver expressões e leitura labial, se usar.",
+        "1": "Falar de costas impede a pessoa de ver expressões e, caso utilize esse recurso, fazer leitura labial.",
         "3": "Música mais alta não substitui uma forma acessível de comunicação."
       },
       "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
@@ -189,7 +189,7 @@
       "subject": "ciencias",
       "topic": "deficiencia-auditiva",
       "topicName": "Deficiência auditiva",
-      "question": "Qual atitude respeitosa ao conversar com uma pessoa surda?",
+      "question": "Qual atitude é respeitosa ao conversar com uma pessoa surda?",
       "options": [
         "Decidir por ela sem perguntar",
         "Falar com o acompanhante como se a pessoa não estivesse presente",

@@ -189,7 +189,7 @@
       "subject": "ciencias",
       "topic": "propriedades-do-som",
       "topicName": "Propriedades do som",
-      "question": "A mesma pessoa fala a mesma nota, primeiro baixinho e depois mais forte. Qual propriedade mudou?",
+      "question": "A mesma pessoa canta a mesma nota, primeiro baixinho e depois mais forte. Qual propriedade mudou?",
       "options": [
         "Altura",
         "Timbre necessariamente",
@@ -311,9 +311,9 @@
       "topicName": "Propriedades do som",
       "question": "Qual propriedade permite distinguir o som de uma campainha do som de um chocalho?",
       "options": [
-        "Altura sempre",
-        "Intensidade somente",
-        "Tamanho do som",
+        "Altura",
+        "Intensidade",
+        "Duração",
         "Timbre"
       ],
       "correctIndex": 3,

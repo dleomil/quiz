@@ -19,7 +19,7 @@
       "correctIndex": 1,
       "explanation": "A vibração de um objeto pode produzir som.",
       "wrongExplanations": {
-        "0": "Se o objeto não vibra, não produz som por essa vibração.",
+        "0": "Um objeto que produz som apresenta vibração; ficar imóvel não descreve essa situação.",
         "2": "A mudança de cor não explica a produção do som.",
         "3": "O objeto não precisa virar água para produzir som."
       },
@@ -461,7 +461,7 @@
       "topicName": "Produção do som",
       "question": "Um balão faz um som quando o ar escapa pela abertura. O que está em movimento?",
       "options": [
-        "O ar que sai pode vibrar e produzir som",
+        "O ar que sai pela abertura",
         "A cor do balão",
         "A sombra do balão",
         "A parede distante"
@@ -579,7 +579,7 @@
       "subject": "ciencias",
       "topic": "producao-do-som",
       "topicName": "Produção do som",
-      "question": "Qual situação provavelmente produz som por vibração?",
+      "question": "Qual situação mostra uma corda produzindo som por vibração?",
       "options": [
         "Uma corda sendo puxada e solta",
         "Um desenho de corda numa folha parada",

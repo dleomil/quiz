@@ -194,7 +194,7 @@
         "sim; todas liberam a mesma quantidade de lava",
         "sim; toda erupção é explosiva",
         "sim; todas duram o mesmo tempo",
-        "Não; as erupções podem variar em intensidade e nos materiais liberados."
+        "não; as erupções podem variar em intensidade e nos materiais liberados."
       ],
       "correctIndex": 3,
       "explanation": "As erupções vulcânicas podem variar; não são todas iguais.",

@@ -290,7 +290,7 @@
       "explanation": "A legenda ajuda a entender o significado de cores e símbolos do mapa.",
       "wrongExplanations": {
         "1": "Na pergunta “O que é uma legenda em um mapa”, a opção “a escala do mapa” não atende ao que se pede: a escala relaciona distâncias, não explica o significado dos símbolos e cores; isso aparece na legenda.",
-        "2": "Na pergunta “O que é uma legenda em um mapa”, a opção “a rosa dos ventos” não atende ao que se pede: a rosa dos ventos indica direção, não o significado da linha azul; isso é explicado pela legenda.",
+        "2": "A rosa dos ventos indica direções; a legenda explica símbolos e cores.",
         "3": "Na pergunta “O que é uma legenda em um mapa”, a opção “o título do mapa” não atende ao que se pede: o título informa o assunto geral; a legenda explica o significado específico dos símbolos e cores."
       },
       "skill": "comparar-globo-e-representacoes-planas",
@@ -439,9 +439,9 @@
       "correctIndex": 3,
       "explanation": "Mapas podem mostrar uma cidade, país ou o mundo em superfície plana.",
       "wrongExplanations": {
-        "0": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele sempre mostra a Terra sem distorção” não atende ao que se pede: “ele sempre mostra a Terra sem distorção” não é uma afirmação correta sobre mapas: ele pode representar uma parte da terra em uma superfície plana.",
-        "1": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele tem o mesmo formato arredondado do globo” não atende ao que se pede: “ele tem o mesmo formato arredondado do globo” não é uma afirmação correta sobre mapas: ele pode representar uma parte da terra em uma superfície plana.",
-        "2": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele representa somente os oceanos” não atende ao que se pede: “ele representa somente os oceanos” não é uma afirmação correta sobre mapas: ele pode representar uma parte da terra em uma superfície plana."
+        "0": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele sempre mostra a Terra sem distorção” não atende ao que se pede: “ele sempre mostra a Terra sem distorção” não é uma afirmação correta sobre mapas: ele pode representar uma parte da Terra em uma superfície plana.",
+        "1": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele tem o mesmo formato arredondado do globo” não atende ao que se pede: “ele tem o mesmo formato arredondado do globo” não é uma afirmação correta sobre mapas: ele pode representar uma parte da Terra em uma superfície plana.",
+        "2": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele representa somente os oceanos” não atende ao que se pede: “ele representa somente os oceanos” não é uma afirmação correta sobre mapas: ele pode representar uma parte da Terra em uma superfície plana."
       },
       "skill": "comparar-globo-e-representacoes-planas",
       "sourceRef": {
@@ -492,7 +492,7 @@
       "question": "Qual representação é melhor para ver a forma geral da Terra?",
       "options": [
         "um mapa-múndi plano",
-        "globo terrestre",
+        "um globo terrestre",
         "um mapa detalhado de um bairro",
         "um desenho de uma única montanha"
       ],

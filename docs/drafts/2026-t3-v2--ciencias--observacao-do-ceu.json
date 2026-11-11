@@ -73,7 +73,7 @@
       "options": [
         "sim, ela só fica visível depois que escurece",
         "sim, a luz do Sol sempre a esconde",
-        "não, ela pode aparecer em todo céu a qualquer hora",
+        "não, ela também pode ser vista durante o dia",
         "não, às vezes pode ser vista durante o dia"
       ],
       "correctIndex": 3,
@@ -110,7 +110,7 @@
       "explanation": "A luz espalhada na atmosfera torna as estrelas menos visíveis.",
       "wrongExplanations": {
         "0": "Na pergunta “Por que é difícil ver estrelas durante o dia”, a opção “porque deixam de emitir luz durante o dia” não atende ao que se pede: as estrelas continuam emitindo luz durante o dia; a claridade do céu dificulta percebê-las.",
-        "1": "Na pergunta “Por que é difícil ver estrelas durante o dia”, a opção “porque a Terra cobre todas as estrelas” não atende ao que se pede: a Terra não cobre todas as estrelas nem a Lua as recolhe; nuvens ou a claridade podem escondê-las.",
+        "1": "A Terra não cobre todas as estrelas; a claridade do céu durante o dia torna sua luz difícil de perceber.",
         "3": "Na pergunta “Por que é difícil ver estrelas durante o dia”, a opção “porque o Sol apaga as estrelas” não atende ao que se pede: o Sol não apaga as estrelas; a luz espalhada no céu diurno torna sua luz difícil de perceber."
       },
       "skill": "comparar-observacoes-diurnas-e-noturnas",
@@ -159,7 +159,7 @@
       "subject": "ciencias",
       "topic": "observacao-do-ceu",
       "topicName": "Observação do céu",
-      "question": "Qual astro pode ser visto em alguns céus diurnos e também em algumas noites?",
+      "question": "Qual astro pode ser visto no céu durante alguns dias e também em algumas noites?",
       "options": [
         "a Lua",
         "o Sol",

@@ -69,19 +69,19 @@
       "subject": "ciencias",
       "topic": "corpos-celestes",
       "topicName": "Corpos celestes",
-      "question": "A Terra é classificada como...",
+      "question": "Como a Terra é classificada?",
       "options": [
         "uma estrela",
         "um satélite natural",
         "um cometa",
-        "planeta"
+        "um planeta"
       ],
       "correctIndex": 3,
       "explanation": "A Terra é um planeta que orbita o Sol.",
       "wrongExplanations": {
-        "0": "Na pergunta “A Terra é classificada como”, a opção “uma estrela” não atende ao que se pede: “uma estrela” é estrela, não a classe pedida no enunciado.",
-        "1": "Na pergunta “A Terra é classificada como”, a opção “um satélite natural” não atende ao que se pede: “um satélite natural” é satélite natural, não a classe pedida no enunciado.",
-        "2": "Na pergunta “A Terra é classificada como”, a opção “um cometa” não atende ao que se pede: “um cometa” é cometa, não a classe pedida no enunciado."
+        "0": "A Terra não é uma estrela; é um planeta que orbita o Sol.",
+        "1": "A Terra não é um satélite natural; é um planeta que orbita o Sol.",
+        "2": "A Terra não é um cometa; é um planeta que orbita o Sol."
       },
       "skill": "distinguir-estrelas-planetas-e-satelites",
       "sourceRef": {
@@ -351,7 +351,7 @@
       "wrongExplanations": {
         "0": "Na pergunta “Qual par contém uma estrela e um planeta, nessa ordem”, a opção “Terra e Lua” não atende ao que se pede: “Terra e Lua” apresenta planeta e satélite natural; a questão pede uma estrela seguida de um planeta (Sol e Terra).",
         "1": "Na pergunta “Qual par contém uma estrela e um planeta, nessa ordem”, a opção “Lua e Sol” não atende ao que se pede: “Lua e Sol” apresenta satélite natural e estrela; a questão pede uma estrela seguida de um planeta (Sol e Terra).",
-        "3": "Na pergunta “Qual par contém uma estrela e um planeta, nessa ordem”, a opção “Marte e Júpiter” não atende ao que se pede: “Marte e Júpiter” apresenta planeta e planeta; a questão pede uma estrela seguida de um planeta (Sol e Terra)."
+        "3": "Marte e Júpiter são dois planetas; a pergunta pede uma estrela seguida de um planeta."
       },
       "skill": "distinguir-estrelas-planetas-e-satelites",
       "sourceRef": {
@@ -583,15 +583,15 @@
       "options": [
         "um planeta",
         "uma estrela",
-        "satélite natural",
+        "um satélite natural",
         "um satélite artificial"
       ],
       "correctIndex": 2,
       "explanation": "A Lua é o satélite natural da Terra.",
       "wrongExplanations": {
-        "0": "Na pergunta “Que nome damos à Lua em relação à Terra”, a opção “um planeta” não atende ao que se pede: “um planeta” é uma alternativa que não representa essa classe de astro, não satélite natural no enunciado.",
-        "1": "Na pergunta “Que nome damos à Lua em relação à Terra”, a opção “uma estrela” não atende ao que se pede: “uma estrela” é estrela, não satélite natural no enunciado.",
-        "3": "Na pergunta “Que nome damos à Lua em relação à Terra”, a opção “um satélite artificial” não atende ao que se pede: “um satélite artificial” é uma alternativa que não representa essa classe de astro, não satélite natural no enunciado."
+        "0": "A Lua não é um planeta; é o satélite natural da Terra.",
+        "1": "A Lua não é uma estrela; é o satélite natural da Terra.",
+        "3": "A Lua não é um satélite artificial; ela é o satélite natural da Terra."
       },
       "skill": "distinguir-estrelas-planetas-e-satelites",
       "sourceRef": {
