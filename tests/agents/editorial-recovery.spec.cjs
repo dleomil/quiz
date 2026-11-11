@@ -12,6 +12,7 @@ const {
   createCapture,
   verifyCapture,
 } = require('../../scripts/agent-event-capture.cjs');
+const { startupMessages } = require('../../scripts/agent-cli-events.cjs');
 const { digest } = require('../../scripts/document-catalog.cjs');
 const { DISABLED_FEATURES } = require('../../scripts/agent-auth.cjs');
 const { editorialSchema } = require('../../scripts/agent-output-transport.cjs');
@@ -61,6 +62,15 @@ function build(changes = {}) {
     },
     { type: 'turn.completed' },
   ];
+  if (changes.bothWarnings)
+    events.splice(1, 0, {
+      type: 'item.completed',
+      item: {
+        id: 'startup_warning',
+        type: 'error',
+        message: startupMessages('/private/profile')[0],
+      },
+    });
   if (changes.message) events[1].item.message = changes.message;
   if (changes.late) events.splice(3, 0, events.splice(1, 1)[0]);
   if (changes.tool)
@@ -110,7 +120,7 @@ function build(changes = {}) {
 }
 let sequence = 0;
 try {
-  const accepted = build();
+  const accepted = build({ bothWarnings: true });
   assert.equal(
     (
       inspect(accepted).scenario.output.proposal ||

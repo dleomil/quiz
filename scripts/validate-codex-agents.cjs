@@ -682,7 +682,10 @@ function validateEditorialScenario(scenario, { maxProposals = 20 } = {}) {
             input.proposals?.find(
               (proposal) => proposal?.id === finding.questionId,
             )
-          : output.proposal;
+          : output.proposal ||
+            output.proposals?.find(
+              (proposal) => proposal?.id === finding.questionId,
+            );
       unexpectedKeys(finding, findingFields, `output.findings[${index}]`);
       findingFields.forEach((field) => {
         if (typeof finding?.[field] !== 'string' || !finding[field].trim()) {

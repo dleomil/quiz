@@ -26,6 +26,14 @@ function sealed(value) {
   check(hash === digest(payload), 'selo divergente');
   return payload;
 }
+function recognizedStartupWarnings(warnings) {
+  return (
+    (warnings.length === 1 && warnings[0].code === 'startup_config_2') ||
+    (warnings.length === 2 &&
+      warnings[0].code === 'startup_config_1' &&
+      warnings[1].code === 'startup_config_2')
+  );
+}
 function inspect({ receipt, capture, input, work, authHome, schema }) {
   sealed(receipt);
   check(
@@ -92,8 +100,8 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
     diagnosis.completed &&
       ((diagnosis.issues.length === 1 &&
         diagnosis.issues[0].code === 'process_failure') ||
-        (diagnosis.warnings.length === 1 &&
-          diagnosis.warnings[0].code === 'startup_config_2')),
+        (diagnosis.issues.length === 0 &&
+          recognizedStartupWarnings(diagnosis.warnings))),
     'eventos inelegiveis',
   );
   const events = stdout
@@ -125,11 +133,11 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
     'item.completed:agent_message',
   ])
     check(diagnosis.types[kind] === 1, 'ciclo divergente');
-  check(
-    (diagnosis.issues[0] || diagnosis.warnings[0]).line ===
-      events.indexOf(bad[0]) + 1,
-    'outra falha',
-  );
+  const primaryLine =
+    diagnosis.issues[0]?.line ||
+    diagnosis.warnings.find((warning) => warning.itemId === bad[0].item.id)
+      ?.line;
+  check(primaryLine === events.indexOf(bad[0]) + 1, 'outra falha');
   check(
     JSON.stringify(diagnosis) === JSON.stringify(manifest.diagnosis),
     'diagnostico divergente',
@@ -380,8 +388,8 @@ function validateReport(report) {
         m.diagnosis.issues[0].code === 'process_failure' &&
         m.diagnosis.issues[0].itemType === 'error' &&
         m.diagnosis.issues[0].eventType === 'item.completed') ||
-        (m.diagnosis.warnings.length === 1 &&
-          m.diagnosis.warnings[0].code === 'startup_config_2')),
+        (m.diagnosis.issues.length === 0 &&
+          recognizedStartupWarnings(m.diagnosis.warnings))),
     'diagnostico recuperado divergente',
   );
   check(

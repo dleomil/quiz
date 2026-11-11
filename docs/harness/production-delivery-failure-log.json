@@ -62,8 +62,8 @@
     {
       "id": "runner-startup-warning-false-positive",
       "symptom": "A curadoria de som-e-audicao concluiu e registrou resposta, mas o Runner rejeitou a captura porque tratou dois avisos normais de inicializacao como falhas de execucao.",
-      "cause": "O parser reconhecia apenas um aviso e exigia que o caminho do config.toml coincidisse com o CODEX_HOME isolado, embora o CLI emitisse o aviso apontando para o perfil pessoal autenticado. A resposta nao foi promovida pela ferramenta de recuperacao porque o recibo nao continha aceite documental/baseline aprovado.",
-      "fix": "Parser agora aceita apenas os dois textos exatos de aviso, antes do inicio do turno, com versao compativel e preflight autenticado. A captura original foi reanalisada sem inferencia adicional e passou no parser. O gate de aceite documental continua obrigatorio para recuperar a resposta como evidencia formal.",
+      "cause": "O parser reconhecia apenas um aviso e exigia que o caminho do config.toml coincidisse com o CODEX_HOME isolado, embora o CLI emitisse o aviso apontando para o perfil pessoal autenticado. A validacao de curadoria em lote tambem associava os achados a cada proposta incorretamente. A resposta exige ajustes; a recuperacao formal continua condicionada ao baseline documental aprovado.",
+      "fix": "Parser agora aceita apenas os dois textos exatos de aviso, antes do inicio do turno, com versao compativel e preflight autenticado. O validador de lote associa cada achado a sua proposta, e a captura original agora valida offline como 20 propostas com decisao adjustments_required. Nenhuma inferencia adicional foi feita. O baseline documental e a aprovacao editorial continuam obrigatorios antes de promocao.",
       "runId": "c3578e09-ad5b-42a6-9f54-ea7687af7234",
       "model": "gpt-6-luna",
       "usage": {
@@ -71,6 +71,9 @@
         "cached_input_tokens": 0,
         "output_tokens": 6625
       },
+      "proposalCount": 20,
+      "findingCount": 10,
+      "curationDecision": "adjustments_required",
       "additionalModelInvocations": 0,
       "status": "fixed"
     }
