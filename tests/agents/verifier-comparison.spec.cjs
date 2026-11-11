@@ -47,7 +47,7 @@ function fakeCodex(directory, root) {
     '#!/usr/bin/env node',
     'const fs=require("node:fs"),cp=require("node:child_process");',
     'const args=process.argv.slice(2).filter(arg=>arg!=="--no-daemon");',
-    'if(args[0]==="--version"){console.log("codex-cli 0.160.0");process.exit(0);}',
+    'if(args[0]==="--version"){console.log("codex-cli 0.167.1");process.exit(0);}',
     'if(args[0]==="login"){console.log("Logged in using ChatGPT");process.exit(0);}',
     'if(args[0]==="features"){for(const name of ' +
       JSON.stringify(DISABLED_FEATURES) +
@@ -395,7 +395,7 @@ async function main() {
           comparison.verifyPackage(packageFile, root),
           unauthenticated,
         ),
-      /preflight login status falhou/,
+      /autenticacao indisponivel: login-required/,
     );
     assert.throws(
       () =>
@@ -456,7 +456,7 @@ async function main() {
         true,
         root,
       ),
-      /preflight login status falhou/,
+      /autenticacao indisponivel: login-required/,
     );
     assert.equal(fs.readdirSync(path.join(campaign, 'attempts')).length, 0);
     assert.equal(fs.existsSync(lock), false);

@@ -4,7 +4,9 @@ const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const { ROOT } = require('./document-catalog.cjs');
 
-const CLI_VERSION = '0.160.0';
+const CLI_VERSION = '0.167.1';
+const COMPATIBLE_PROFILE_VERSIONS = new Set(['0.160.0', CLI_VERSION]);
+const DEFAULT_AUTH_HOME = path.join(os.homedir(), '.codex-quiz-auth');
 const SYSTEM_SKILLS = [
   'review-agent',
   'skill-creator',
@@ -147,7 +149,8 @@ function validateProfile(value) {
     fs.readFileSync(path.join(home, 'quiz-profile.json'), 'utf8'),
   );
   check(
-    marker.schemaVersion === MARKER && marker.cliVersion === CLI_VERSION,
+    marker.schemaVersion === MARKER &&
+      COMPATIBLE_PROFILE_VERSIONS.has(marker.cliVersion),
     'identidade do perfil invalida',
   );
   return home;
@@ -198,27 +201,32 @@ function assertNoEnabledSkills(raw) {
       messages.length > 0 &&
       messages.every(
         (message) =>
-          message.type === 'message' &&
-          typeof message.role === 'string' &&
-          Array.isArray(message.content) &&
-          message.content.length > 0 &&
-          message.content.every((part) => typeof part.text === 'string'),
+          (message.type === 'message' &&
+            typeof message.role === 'string' &&
+            Array.isArray(message.content) &&
+            message.content.length > 0 &&
+            message.content.every((part) => typeof part.text === 'string')) ||
+          (message.type === 'additional_tools' &&
+            Array.isArray(message.tools) &&
+            message.tools.every((tool) => tool.name === 'functions')),
       ),
     'contexto de preflight invalido',
   );
   for (const message of messages)
-    for (const part of message.content || []) {
-      const value = part.text || '';
-      const marker = '### Available skills';
-      if (!value.includes(marker)) continue;
-      const section = value
-        .slice(value.indexOf(marker) + marker.length)
-        .split(/\n#{1,3} /)[0];
-      check(
-        !/(?:^|\n)[ \t]*-[ \t]+\S/.test(section),
-        'skill ativa no contexto protegido',
-      );
-    }
+    if (message.type !== 'message') continue;
+    else
+      for (const part of message.content || []) {
+        const value = part.text || '';
+        const marker = '### Available skills';
+        if (!value.includes(marker)) continue;
+        const section = value
+          .slice(value.indexOf(marker) + marker.length)
+          .split(/\n#{1,3} /)[0];
+        check(
+          !/(?:^|\n)[ \t]*-[ \t]+\S/.test(section),
+          'skill ativa no contexto protegido',
+        );
+      }
 }
 function environment(authHome, sessionHome) {
   const result = {
@@ -231,6 +239,12 @@ function environment(authHome, sessionHome) {
     if (process.env[key]) result[key] = process.env[key];
   result.TMPDIR = sessionHome;
   return result;
+}
+function runnerEnvironment(authHome, sessionHome) {
+  return {
+    ...environment(authHome, sessionHome),
+    CODEX_HOME: path.join(os.homedir(), '.codex'),
+  };
 }
 function isolationArguments(sessionHome) {
   return [
@@ -251,16 +265,13 @@ function isolationArguments(sessionHome) {
   ].flatMap((value) => ['--config', value]);
 }
 function checkedCall(bin, args, options, includeStderr = false) {
-  const result = spawnSync(
-    bin,
-    [...args, ...skillArguments(options.env.CODEX_HOME)],
-    {
-      ...options,
-      encoding: 'utf8',
-      timeout: 30000,
-      maxBuffer: 16 * 1024 * 1024,
-    },
-  );
+  const { skillHome = options.env.CODEX_HOME, ...spawnOptions } = options;
+  const result = spawnSync(bin, [...args, ...skillArguments(skillHome)], {
+    ...spawnOptions,
+    encoding: 'utf8',
+    timeout: 30000,
+    maxBuffer: 16 * 1024 * 1024,
+  });
   check(
     result.status === 0 && !result.error,
     args[0] === 'login' && args[1] === 'status'
@@ -290,7 +301,11 @@ function classifyAuthStatus(value) {
 }
 function preflight(bin, home, sessionHome, workspace, model) {
   validateProfile(home);
-  const options = { cwd: workspace, env: environment(home, sessionHome) };
+  const options = {
+    cwd: workspace,
+    env: runnerEnvironment(home, sessionHome),
+    skillHome: home,
+  };
   const version = checkedCall(bin, ['--version'], options).trim();
   check(
     version === `codex-cli ${CLI_VERSION}`,
@@ -301,11 +316,16 @@ function preflight(bin, home, sessionHome, workspace, model) {
     classifyAuthStatus(auth) === 'chatgpt',
     `autenticacao indisponivel: ${classifyAuthStatus(auth)}; nenhuma chamada de modelo iniciada`,
   );
-  const features = checkedCall(bin, ['features', 'list'], options);
+  const features = checkedCall(
+    bin,
+    ['features', 'list', ...isolationArguments(sessionHome)],
+    options,
+  );
   for (const name of DISABLED_FEATURES) {
     const match = features
       .split('\n')
       .find((line) => line.split(/\s+/)[0] === name);
+    if (match && /\sremoved\s+true\s*$/.test(match)) continue;
     check(
       match && /\sfalse\s*$/.test(match),
       `isolamento nao confirmado: ${name}`,
@@ -323,7 +343,13 @@ function preflight(bin, home, sessionHome, workspace, model) {
   );
   let mcp;
   try {
-    mcp = JSON.parse(checkedCall(bin, ['mcp', 'list', '--json'], options));
+    mcp = JSON.parse(
+      checkedCall(bin, ['mcp', 'list', '--json'], {
+        cwd: workspace,
+        env: environment(home, sessionHome),
+        skillHome: home,
+      }),
+    );
   } catch {
     throw new Error('preflight MCP retornou resposta invalida');
   }
@@ -352,7 +378,11 @@ function preflight(bin, home, sessionHome, workspace, model) {
         `model=${JSON.stringify(model)}`,
         'Confirme somente o contexto de preflight.',
       ],
-      options,
+      {
+        cwd: workspace,
+        env: environment(home, sessionHome),
+        skillHome: home,
+      },
     ),
   );
   validateProfile(home);
@@ -374,16 +404,21 @@ function runCli() {
   let sessionHome;
   try {
     const command = process.argv[2];
+    check(['init', 'login', 'status'].includes(command), 'comando invalido');
+    const authHome =
+      process.argv.length === 3
+        ? DEFAULT_AUTH_HOME
+        : process.argv.length === 5 && process.argv[3] === '--auth-home'
+          ? process.argv[4]
+          : null;
     check(
-      ['init', 'login', 'status'].includes(command) &&
-        process.argv.length === 5 &&
-        process.argv[3] === '--auth-home',
-      'use init|login|status --auth-home <diretorio>',
+      typeof authHome === 'string',
+      'use init|login|status [--auth-home <diretorio>]',
     );
     const home =
       command === 'init'
-        ? initializeProfile(process.argv[4])
-        : validateProfile(process.argv[4]);
+        ? initializeProfile(authHome)
+        : validateProfile(authHome);
     if (command === 'init') {
       process.stdout.write(
         'Perfil dedicado preparado; execute login com o mesmo --auth-home. Nenhuma credencial foi copiada.\n',
@@ -400,7 +435,7 @@ function runCli() {
       ],
       {
         cwd: sessionHome,
-        env: environment(home, sessionHome),
+        env: runnerEnvironment(home, sessionHome),
         stdio: 'inherit',
       },
     );
@@ -420,10 +455,13 @@ if (require.main === module) runCli();
 module.exports = {
   classifyAuthStatus,
   CLI_VERSION,
+  COMPATIBLE_PROFILE_VERSIONS,
+  DEFAULT_AUTH_HOME,
   SYSTEM_SKILLS,
   CONFIG,
   DISABLED_FEATURES,
   environment,
+  runnerEnvironment,
   initializeProfile,
   isolationArguments,
   preflight,

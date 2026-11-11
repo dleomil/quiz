@@ -10,9 +10,11 @@ const {
 } = require('./context-test-support.cjs');
 const {
   DISABLED_FEATURES,
+  DEFAULT_AUTH_HOME,
   initializeProfile,
   validateProfile,
   environment,
+  runnerEnvironment,
   skillArguments,
   assertNoEnabledSkills,
 } = require('../../scripts/agent-auth.cjs');
@@ -23,7 +25,7 @@ const {
 } = require('../../scripts/run-editorial-agent.cjs');
 assert.equal(
   buildExecArguments(
-    { model: 'gpt-5.6-sol', model_reasoning_effort: 'high' },
+    { model: 'gpt-6.1-sol', model_reasoning_effort: 'medium' },
     '/tmp/message',
     '/tmp/work',
     '/tmp/session',
@@ -32,6 +34,33 @@ assert.equal(
   '--no-daemon',
 );
 const { SCHEMA_GUARD } = require('./transport-test-support.cjs');
+
+const defaultArgs = argumentsFrom([
+  '--agent',
+  'pedagogical_quality',
+  '--input',
+  '/tmp/input.json',
+  '--output',
+  '/tmp/output.json',
+  '--work',
+  '/tmp/work.json',
+]);
+assert.equal(defaultArgs['--auth-home'], DEFAULT_AUTH_HOME);
+assert.equal(
+  argumentsFrom([
+    '--agent',
+    'pedagogical_quality',
+    '--input',
+    '/tmp/input.json',
+    '--output',
+    '/tmp/output.json',
+    '--work',
+    '/tmp/work.json',
+    '--auth-home',
+    '/tmp/custom-auth',
+  ])['--auth-home'],
+  '/tmp/custom-auth',
+);
 
 const original = path.resolve(__dirname, '../..');
 const directory = fs.mkdtempSync(
@@ -44,6 +73,11 @@ try {
   const root = fixtureRepository(original, directory);
   const runner = path.join(root, 'scripts/run-editorial-agent.cjs');
   const authHome = initializeProfile(path.join(directory, 'dedicated-auth'));
+  const profileMarkerPath = path.join(authHome, 'quiz-profile.json');
+  const profileMarker = JSON.parse(fs.readFileSync(profileMarkerPath, 'utf8'));
+  profileMarker.cliVersion = '0.160.0';
+  fs.writeFileSync(profileMarkerPath, `${JSON.stringify(profileMarker)}\n`);
+  assert.equal(validateProfile(authHome), authHome);
   const builtInSkill = path.join(
     authHome,
     'skills',
@@ -68,7 +102,7 @@ const fs = require('node:fs');
 const args = process.argv.slice(2).filter((arg) => arg !== '--no-daemon');
 const mode = ${JSON.stringify(mode)};
 ${SCHEMA_GUARD}
-if (args[0] === '--version') { console.log('codex-cli 0.160.0'); process.exit(0); }
+if (args[0] === '--version') { console.log('codex-cli 0.167.1'); process.exit(0); }
 if (args[0] === 'login') { console.log(mode === 'api' ? 'Logged in using an API key' : 'Logged in using ChatGPT'); process.exit(mode === 'no-login' ? 1 : 0); }
 if (args[0] === 'features') {
  for (const name of ${JSON.stringify(DISABLED_FEATURES)}) console.log(name + ' stable ' + (mode === 'shell' && name === 'shell_tool' ? 'true' : 'false'));
@@ -77,7 +111,7 @@ if (args[0] === 'features') {
 }
 if (args[0] === 'mcp') { console.log(mode === 'mcp' ? '[{"name":"github"}]' : '[]'); process.exit(0); }
 if (args[0] === 'debug' && args[1] === 'prompt-input') { console.log(JSON.stringify([{type:'message',role:'developer',content:[{text:mode === 'skill-context' ? '### Available skills\\n- externa: instrucao indevida\\n### How to use skills' : '### Available skills\\n\\n### How to use skills'}]}])); process.exit(0); }
-if (args[0] === 'debug') { console.log(JSON.stringify({models: mode === 'no-model' ? [] : [{slug:'gpt-5.6-sol'}]})); process.exit(0); }
+if (args[0] === 'debug') { console.log(JSON.stringify({models: mode === 'no-model' ? [] : [{slug:'gpt-6.1-sol'},{slug:'gpt-6-luna'}]})); process.exit(0); }
 if (args[0] !== 'exec') process.exit(2);
 strictSchema(JSON.parse(fs.readFileSync(args[args.indexOf('--output-schema')+1], 'utf8')));
 const prompt = fs.readFileSync(0, 'utf8');
@@ -177,7 +211,8 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   );
   assert.ok(success.receipt.eventDiagnosis.accepted);
   const record = JSON.parse(fs.readFileSync(recordPath));
-  assert.equal(record.env.CODEX_HOME, authHome);
+  assert.equal(record.env.CODEX_HOME, path.join(os.homedir(), '.codex'));
+  assert.notEqual(record.env.CODEX_HOME, authHome);
   assert.notEqual(record.env.HOME, record.env.CODEX_HOME);
   assert.equal(record.env.HOME, os.homedir());
   assert.equal(record.env.XDG_CONFIG_HOME, record.env.TMPDIR);
@@ -219,8 +254,8 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   assert.equal(fs.existsSync(record.cwd), false);
   assert.equal(fs.existsSync(authHome), true);
   for (const [mode, pattern] of [
-    ['no-login', /preflight login/],
-    ['api', /API nao autorizada/],
+    ['no-login', /autenticacao indisponivel/],
+    ['api', /different-method/],
     ['shell', /isolamento nao confirmado/],
     ['host-skills', /skills pessoais/],
     ['mcp', /MCP ou connector/],
@@ -346,6 +381,10 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
   );
   assert.throws(() => argumentsFrom(['--unknown', 'x']), /desconhecido/);
   assert.equal(environment(authHome, directory).OPENAI_API_KEY, undefined);
+  assert.equal(
+    runnerEnvironment(authHome, directory).CODEX_HOME,
+    path.join(os.homedir(), '.codex'),
+  );
   assert.equal(usageFromEvents('{"type":"turn.completed"}'), null);
   assert.throws(() => usageFromEvents('invalid'), /eventos/);
   process.stdout.write(

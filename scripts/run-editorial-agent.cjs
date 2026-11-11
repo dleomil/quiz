@@ -16,11 +16,12 @@ const {
   pinnedConfig,
 } = require('./agent-context.cjs');
 const {
-  environment,
+  runnerEnvironment,
   isolationArguments,
   preflight,
   validateProfile,
   skillArguments,
+  DEFAULT_AUTH_HOME,
 } = require('./agent-auth.cjs');
 const {
   makeReceipt,
@@ -71,6 +72,7 @@ function argumentsFrom(argv) {
       throw new Error('argumento desconhecido, duplicado ou sem valor');
     values[name] = argv[index + 1];
   }
+  values['--auth-home'] ||= DEFAULT_AUTH_HOME;
   if (values['--test-comment'] && !values['--codex-bin'])
     throw new Error('fixture de aceite exige binario de teste');
   return values;
@@ -153,7 +155,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       throw new Error(
         'avaliacao sintetica nao pode produzir evidencia de publicacao',
       );
-    for (const key of ['--input', '--output', '--work', '--auth-home'])
+    for (const key of ['--input', '--output', '--work'])
       if (!args[key]) throw new Error(`use ${key}`);
     receiptPath = `${path.resolve(args['--output'])}.receipt.json`;
     if (
@@ -376,7 +378,7 @@ async function run(cliArguments = process.argv.slice(2)) {
     modelInvocations = 1;
     const events = await execute(bin, argv, {
       cwd: workspace,
-      env: environment(authHome, sessionHome),
+      env: runnerEnvironment(authHome, sessionHome),
       input: prompt,
       timeoutMs: 300000 - (Date.now() - started),
       capture,

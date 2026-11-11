@@ -1,6 +1,7 @@
 const path = require('node:path');
 const { DISABLED_FEATURES } = require('./agent-auth.cjs');
-const VERSION = 'codex-0.160.0-events-v3';
+const VERSION = 'codex-0.167.1-events-v4';
+const COMPATIBLE_CLI_VERSIONS = new Set(['0.160.0', '0.167.1']);
 function startupMessages(home) {
   return [
     `Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set \`suppress_unstable_features_warning = true\` in ${path.join(home, 'config.toml')}.`,
@@ -12,7 +13,7 @@ function warningContext(context) {
     typeof context?.authHome === 'string' &&
     path.isAbsolute(context.authHome) &&
     path.resolve(context.authHome) === context.authHome &&
-    proof?.cliVersion === '0.160.0' &&
+    COMPATIBLE_CLI_VERSIONS.has(proof?.cliVersion) &&
     proof.auth === 'chatgpt-keyring' &&
     proof.skills === 'disabled-and-context-checked' &&
     proof.features?.skip_host_skill_discovery === true &&

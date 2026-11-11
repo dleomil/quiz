@@ -108,7 +108,7 @@ assert.equal(
 );
 const warningHome = '/private/tmp/quiz-profile';
 const warningProof = {
-  cliVersion: '0.160.0',
+  cliVersion: '0.167.1',
   auth: 'chatgpt-keyring',
   skills: 'disabled-and-context-checked',
   features: Object.fromEntries([
@@ -148,6 +148,7 @@ assert.equal(
   'process_failure',
 );
 for (const proof of [
+  { ...warningProof, cliVersion: '0.159.0' },
   { ...warningProof, cliVersion: '0.160.1' },
   {
     ...warningProof,
