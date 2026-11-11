@@ -648,7 +648,7 @@
       "version": "1.0.1",
       "normative": true,
       "status": "draft",
-      "sha256": "3cafb73d467895265032cb127f2d8c7e1413669264f5c5c09c84be9cc7f75242"
+      "sha256": "ada6110de8dd0594002039f259c5b46388b3bb02ad04ba7ef831cb4bdd35ac25"
     },
     {
       "id": "docs--specs--agent-execution-records",

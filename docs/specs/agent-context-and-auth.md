@@ -7,9 +7,10 @@ Os modelos atuais continuam fixados; candidatos economicos ainda nao estao
 ativados. A avaliacao real permanece limitada a 32 invocacoes manuais.
 
 O runner editorial recebe contratos completos, aprovados e conferidos por hash.
-Usa login oficial ChatGPT em perfil dedicado, com chaveiro do sistema. Nao aceita
-chave de API, copia de `auth.json`, configuracao pessoal ou troca silenciosa de
-modelo. O PR #385 continua separado porque usa copia de credenciais.
+Usa o login oficial ChatGPT ja autenticado no perfil pessoal do mantenedor, sem
+copiar credenciais para o repositorio ou pedir login por chamada. Nao aceita
+chave de API, copia de `auth.json` ou troca silenciosa de modelo. O PR #385
+continua separado porque usa copia de credenciais.
 
 ## Ficha e contexto
 
@@ -83,13 +84,15 @@ node scripts/agent-auth.cjs status
 ```
 
 `login` usa o fluxo oficial `codex login --device-auth`, com participacao do
-mantenedor. A configuracao fixa `cli_auth_credentials_store="keyring"` e
-`forced_login_method="chatgpt"`. Falha de chaveiro ou login interrompe o fluxo;
-nao ha alternativa automatica por arquivo, token importado ou API.
+mantenedor somente quando o perfil pessoal ainda nao estiver autenticado. O
+Runner fixa `forced_login_method="chatgpt"`, mas preserva o armazenamento de
+credenciais ja selecionado pelo perfil pessoal. Nao copia `auth.json`, importa
+tokens ou usa chave de API.
 
 O perfil dedicado permanece restrito a configuracao, skills aprovadas e recibos.
-Para reutilizar a sessao ja autenticada no chaveiro do mantenedor, o runner
-aponta `CODEX_HOME` para `~/.codex`; isso evita um segundo login. A invocacao
+Para reutilizar a sessao ja autenticada, o Runner aponta `CODEX_HOME` para
+`~/.codex` e nao sobrescreve `cli_auth_credentials_store`; isso evita um segundo
+login e evita solicitar um chaveiro diferente daquele usado no login. A invocacao
 usa `--ignore-user-config` e `--ignore-rules`, substitui configuracoes de
 seguranca por valores fixos e passa caminhos de skills desabilitadas do perfil
 dedicado. Nenhuma regra ou skill pessoal e carregada no contexto editorial.

@@ -41,7 +41,7 @@ function build(changes = {}) {
     cliVersion: '0.167.1',
     modelCatalogued: 'fixture-model',
     mcpServerCount: 0,
-    auth: 'chatgpt-keyring',
+    auth: 'chatgpt-existing-profile',
     skills: 'disabled-and-context-checked',
     features: Object.fromEntries([
       ...DISABLED_FEATURES.map((n) => [n, false]),

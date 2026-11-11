@@ -50,7 +50,7 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
     'preflight divergente',
   );
   check(
-    receipt.preflight.auth === 'chatgpt-keyring' &&
+    receipt.preflight.auth === 'chatgpt-existing-profile' &&
       receipt.preflight.skills === 'disabled-and-context-checked' &&
       receipt.preflight.features?.skip_host_skill_discovery === true &&
       DISABLED_FEATURES.every(
@@ -359,7 +359,7 @@ function validateReport(report) {
   check(
     /^\d+\.\d+\.\d+$/.test(r.preflight.cliVersion) &&
       r.preflight.mcpServerCount === 0 &&
-      r.preflight.auth === 'chatgpt-keyring' &&
+      r.preflight.auth === 'chatgpt-existing-profile' &&
       r.preflight.skills === 'disabled-and-context-checked' &&
       DISABLED_FEATURES.every((n) => r.preflight.features[n] === false),
     'isolamento recuperado divergente',

@@ -20,8 +20,8 @@
     {
       "id": "runner-auth-prompt-loop",
       "symptom": "Runner solicitava autenticacao repetidamente apesar de a sessao pessoal estar autenticada.",
-      "cause": "O processo usava um CODEX_HOME isolado para autenticacao junto com o home dedicado a artefatos.",
-      "fix": "PR 468 definiu CODEX_HOME pessoal para o CLI e manteve o home dedicado apenas para artefatos e diagnosticos.",
+      "cause": "Apos definir CODEX_HOME pessoal, o Runner ainda forçava cli_auth_credentials_store=keyring. O login existente nao usava esse armazenamento; login status sem override passava, mas a inferencia recebia 401 Missing bearer.",
+      "fix": "Removido o override do armazenamento e alinhado o preflight ao login ChatGPT existente. O Runner reutiliza CODEX_HOME pessoal sem copiar credenciais nem pedir novo login.",
       "status": "fixed"
     },
     {
@@ -53,11 +53,11 @@
       "status": "open"
     },
     {
-      "id": "runner-websocket-connection-failure",
-      "symptom": "A primeira curadoria real de Ciencias (som-e-audicao) falhou antes de produzir uma resposta editorial. Run 52c5ed72-2c2b-4250-8faa-2c0553f32545, modelo gpt-6-luna; uma invocacao registrada.",
-      "cause": "A CLI registrou sete falhas ao conectar ao Responses WebSocket e encerrou com process_failure; a captura nao informou uso de tokens nem conclusao de turno. O recibo de uso permanece null; consumo desconhecido, nao zero.",
-      "fix": "Pendente: preservar a captura privada, contabilizar a chamada como tentativa falha e retomar somente apos a conectividade do servico se recuperar. Nao fazer retry automatico nem tratar uso desconhecido como zero.",
-      "status": "open"
+      "id": "runner-forced-keyring-missing-bearer",
+      "symptom": "Duas execucoes da curadoria de Ciencias (som-e-audicao) pararam antes de produzir parecer. Runs 52c5ed72-2c2b-4250-8faa-2c0553f32545 e 20f05686-0e05-411e-b410-e16b9b2f90ad, modelo gpt-6-luna; uma invocacao registrada em cada recibo.",
+      "cause": "O login pessoal passa sem override, mas isolationArguments forcava cli_auth_credentials_store=keyring. Com esse override, codex login status retornou Not logged in e as requisicoes da inferencia receberam 401 Missing bearer. Cada captura reportou usage null; consumo desconhecido, nao zero.",
+      "fix": "Removido o override do armazenamento de credenciais, alinhado o preflight ao metodo ChatGPT e atualizados os validadores de recibo. Teste local confirma login ChatGPT com o armazenamento pessoal intacto; antes de nova inferencia, a autenticacao da chamada precisa passar.",
+      "status": "fixed"
     }
   ],
   "releaseChecklist": [

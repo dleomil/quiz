@@ -228,7 +228,11 @@ console.log(JSON.stringify({type:'turn.completed',usage:{input_tokens:150,cached
       record.argv.includes('--ignore-rules') &&
       record.argv.includes('--strict-config'),
   );
-  assert.ok(record.argv.includes('cli_auth_credentials_store="keyring"'));
+  assert.ok(record.argv.includes('forced_login_method="chatgpt"'));
+  assert.ok(
+    !record.argv.some((arg) => arg.startsWith('cli_auth_credentials_store=')),
+    'o Runner deve reutilizar o armazenamento de login existente',
+  );
   for (const flag of DISABLED_FEATURES)
     assert.ok(
       record.argv.includes(

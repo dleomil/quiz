@@ -109,7 +109,7 @@ assert.equal(
 const warningHome = '/private/tmp/quiz-profile';
 const warningProof = {
   cliVersion: '0.167.1',
-  auth: 'chatgpt-keyring',
+  auth: 'chatgpt-existing-profile',
   skills: 'disabled-and-context-checked',
   features: Object.fromEntries([
     ...require('../../scripts/agent-auth.cjs').DISABLED_FEATURES.map((name) => [

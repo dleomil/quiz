@@ -14,7 +14,7 @@ function warningContext(context) {
     path.isAbsolute(context.authHome) &&
     path.resolve(context.authHome) === context.authHome &&
     COMPATIBLE_CLI_VERSIONS.has(proof?.cliVersion) &&
-    proof.auth === 'chatgpt-keyring' &&
+    proof.auth === 'chatgpt-existing-profile' &&
     proof.skills === 'disabled-and-context-checked' &&
     proof.features?.skip_host_skill_discovery === true &&
     DISABLED_FEATURES.every((name) => proof.features[name] === false)
