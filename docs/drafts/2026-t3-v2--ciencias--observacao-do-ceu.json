@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "O que geralmente ilumina o céu durante o dia?",
+      "options": [
+        "a luz refletida pela Lua",
+        "a luz do Sol",
+        "a luz de algumas estrelas",
+        "as luzes das cidades"
+      ],
+      "correctIndex": 1,
+      "explanation": "O Sol ilumina o lado da Terra voltado para ele.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que geralmente ilumina o céu durante o dia”, a opção “a luz refletida pela Lua” não atende ao que se pede: a Lua reflete luz solar, mas a luz do Sol é a principal iluminação do céu durante o dia.",
+        "2": "Na pergunta “O que geralmente ilumina o céu durante o dia”, a opção “a luz de algumas estrelas” não atende ao que se pede: a luz das estrelas é muito fraca para iluminar o céu diurno como o Sol.",
+        "3": "Na pergunta “O que geralmente ilumina o céu durante o dia”, a opção “as luzes das cidades” não atende ao que se pede: luzes de cidades iluminam áreas próximas, mas não são a fonte natural que clareia o céu diurno."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Em qual situação é mais fácil observar muitas estrelas?",
+      "options": [
+        "em uma noite escura e com poucas nuvens",
+        "ao meio-dia, com céu claro",
+        "em uma noite muito nublada",
+        "dentro de uma sala iluminada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escuridão e poucas nuvens favorecem observar estrelas.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Em qual situação é mais fácil observar muitas estrelas”, a opção “ao meio-dia, com céu claro” não atende ao que se pede: a claridade do meio-dia dificulta ver muitas estrelas; a noite escura é mais favorável.",
+        "2": "Na pergunta “Em qual situação é mais fácil observar muitas estrelas”, a opção “em uma noite muito nublada” não atende ao que se pede: nuvens escondem parte do céu; uma noite com poucas nuvens facilita observar estrelas.",
+        "3": "Na pergunta “Em qual situação é mais fácil observar muitas estrelas”, a opção “dentro de uma sala iluminada” não atende ao que se pede: dentro de uma sala não se observa diretamente o céu; é melhor procurar um local aberto e escuro."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "A Lua só pode ser vista à noite?",
+      "options": [
+        "sim, ela só fica visível depois que escurece",
+        "sim, a luz do Sol sempre a esconde",
+        "não, ela pode aparecer em todo céu a qualquer hora",
+        "não, às vezes pode ser vista durante o dia"
+      ],
+      "correctIndex": 3,
+      "explanation": "A Lua também pode estar visível no céu diurno.",
+      "wrongExplanations": {
+        "0": "Na pergunta “A Lua só pode ser vista à noite”, a opção “sim, ela só fica visível depois que escurece” não atende ao que se pede: a Lua não aparece apenas à noite; em algumas ocasiões também pode ser vista durante o dia.",
+        "1": "Na pergunta “A Lua só pode ser vista à noite”, a opção “sim, a luz do Sol sempre a esconde” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu.",
+        "2": "Na pergunta “A Lua só pode ser vista à noite”, a opção “não, ela pode aparecer em todo céu a qualquer hora” não atende ao que se pede: a Lua não fica visível em todo lugar e a qualquer hora; sua posição no céu muda."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Por que é difícil ver estrelas durante o dia?",
+      "options": [
+        "porque deixam de emitir luz durante o dia",
+        "porque a Terra cobre todas as estrelas",
+        "a claridade do céu deixa sua luz difícil de perceber",
+        "porque o Sol apaga as estrelas"
+      ],
+      "correctIndex": 2,
+      "explanation": "A luz espalhada na atmosfera torna as estrelas menos visíveis.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que é difícil ver estrelas durante o dia”, a opção “porque deixam de emitir luz durante o dia” não atende ao que se pede: as estrelas continuam emitindo luz durante o dia; a claridade do céu dificulta percebê-las.",
+        "1": "Na pergunta “Por que é difícil ver estrelas durante o dia”, a opção “porque a Terra cobre todas as estrelas” não atende ao que se pede: a Terra não cobre todas as estrelas nem a Lua as recolhe; nuvens ou a claridade podem escondê-las.",
+        "3": "Na pergunta “Por que é difícil ver estrelas durante o dia”, a opção “porque o Sol apaga as estrelas” não atende ao que se pede: o Sol não apaga as estrelas; a luz espalhada no céu diurno torna sua luz difícil de perceber."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Que cuidado devemos ter ao observar o Sol?",
+      "options": [
+        "olhar rapidamente para o disco solar",
+        "nunca olhar diretamente para ele",
+        "usar óculos escuros e encará-lo",
+        "apontar binóculos sem filtro para o Sol"
+      ],
+      "correctIndex": 1,
+      "explanation": "Olhar diretamente para o Sol pode machucar os olhos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Que cuidado devemos ter ao observar o Sol”, a opção “olhar rapidamente para o disco solar” não atende ao que se pede: “olhar rapidamente para o disco solar” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol.",
+        "2": "Na pergunta “Que cuidado devemos ter ao observar o Sol”, a opção “usar óculos escuros e encará-lo” não atende ao que se pede: “usar óculos escuros e encará-lo” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol.",
+        "3": "Na pergunta “Que cuidado devemos ter ao observar o Sol”, a opção “apontar binóculos sem filtro para o Sol” não atende ao que se pede: “apontar binóculos sem filtro para o Sol” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Qual astro pode ser visto em alguns céus diurnos e também em algumas noites?",
+      "options": [
+        "a Lua",
+        "o Sol",
+        "uma estrela distante",
+        "Saturno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lua pode ser vista em diferentes horários, inclusive durante o dia.",
+      "wrongExplanations": {
+        "1": "O Sol pode ser visto durante o dia, mas não é o astro que costuma ser visto em algumas noites; a Lua pode aparecer nos dois períodos.",
+        "2": "Uma estrela distante pode ser observada à noite, mas sua luz é difícil de perceber no céu claro do dia; a Lua pode aparecer de dia e à noite.",
+        "3": "Saturno é um planeta observado em certas noites, mas não é normalmente visível a olho nu durante o dia; a Lua pode ser vista nos dois períodos."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Uma turma observa nuvens claras durante o dia. O que é correto dizer?",
+      "options": [
+        "as nuvens produzem luz própria",
+        "as nuvens são fumaça de incêndios",
+        "as nuvens não podem ser vistas enquanto há Sol",
+        "a luz solar ajuda a enxergar as nuvens"
+      ],
+      "correctIndex": 3,
+      "explanation": "A luz do Sol ilumina as nuvens e o céu diurno.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Uma turma observa nuvens claras durante o dia. O que é correto dizer”, a opção “as nuvens produzem luz própria” não atende ao que se pede: nuvens não produzem luz própria; a luz do Sol as ilumina e ajuda a enxergá-las.",
+        "1": "Na pergunta “Uma turma observa nuvens claras durante o dia. O que é correto dizer”, a opção “as nuvens são fumaça de incêndios” não atende ao que se pede: nuvens são formadas por gotículas de água ou cristais de gelo, não são fumaça de incêndio.",
+        "2": "Na pergunta “Uma turma observa nuvens claras durante o dia. O que é correto dizer”, a opção “as nuvens não podem ser vistas enquanto há Sol” não atende ao que se pede: a claridade do dia não impede ver nuvens; a luz solar ilumina as nuvens no céu."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "O que pode ajudar uma turma a comparar o céu em horários diferentes?",
+      "options": [
+        "tirar uma única foto sem anotar o horário",
+        "confiar apenas na lembrança de outra semana",
+        "registrar o que observa pela manhã e à noite",
+        "observar somente em um horário"
+      ],
+      "correctIndex": 2,
+      "explanation": "Anotar observações em horários distintos permite comparar o céu.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que pode ajudar uma turma a comparar o céu em horários diferentes”, a opção “tirar uma única foto sem anotar o horário” não atende ao que se pede: uma única foto sem horário não permite comparar observações feitas em momentos diferentes.",
+        "1": "Na pergunta “O que pode ajudar uma turma a comparar o céu em horários diferentes”, a opção “confiar apenas na lembrança de outra semana” não atende ao que se pede: a lembrança sem registro de horário não mostra o que foi observado em cada período.",
+        "3": "Na pergunta “O que pode ajudar uma turma a comparar o céu em horários diferentes”, a opção “observar somente em um horário” não atende ao que se pede: observar somente uma vez não compara o céu da manhã com o da noite."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Uma criança vê a Lua antes do jantar, ainda com o céu claro. Isso é...",
+      "options": [
+        "impossível, pois a Lua só aparece quando o céu está escuro",
+        "possível, pois a Lua às vezes aparece de dia",
+        "um sinal certo de que há um eclipse",
+        "um sinal de que o Sol deixou de iluminar a Terra"
+      ],
+      "correctIndex": 1,
+      "explanation": "A Lua pode ser observada de dia quando está visível no céu.",
+      "wrongExplanations": {
+        "0": "A Lua também pode ser vista durante o dia, quando está acima do horizonte e as condições permitem observá-la.",
+        "2": "Ver a Lua durante o dia não significa que ocorreu um eclipse; ela pode estar visível no céu junto com a luz do dia.",
+        "3": "A luz do Sol continua iluminando a Terra; a Lua pode ser vista durante o dia sem que isso mude."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Qual diferença é comum entre o céu diurno e o noturno?",
+      "options": [
+        "o céu diurno costuma estar mais claro por causa do Sol",
+        "o céu fica mais escuro durante o dia porque o Sol se põe",
+        "a Terra deixa de girar à noite",
+        "as estrelas deixam de existir ao amanhecer"
+      ],
+      "correctIndex": 0,
+      "explanation": "A luz solar deixa o céu diurno mais claro.",
+      "wrongExplanations": {
+        "1": "O Sol ilumina o lado da Terra voltado para ele durante o dia; ao anoitecer, essa região deixa de receber luz solar direta.",
+        "2": "Na pergunta “Qual diferença é comum entre o céu diurno e o noturno”, a opção “a Terra deixa de girar à noite” não atende ao que se pede: a Terra continua girando; isso contribui para a alternância entre dia e noite.",
+        "3": "Na pergunta “Qual diferença é comum entre o céu diurno e o noturno”, a opção “as estrelas deixam de existir ao amanhecer” não atende ao que se pede: as estrelas não deixam de existir ao amanhecer; a claridade torna difícil vê-las."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Por que algumas estrelas não são vistas em uma noite nublada?",
+      "options": [
+        "porque a luz das estrelas desaparece quando anoitece",
+        "porque as estrelas se apagam quando chove",
+        "porque a Lua recolhe as estrelas",
+        "as nuvens podem bloquear sua visão"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nuvens entre a pessoa e as estrelas podem escondê-las.",
+      "wrongExplanations": {
+        "0": "As estrelas continuam emitindo luz; numa noite nublada, nuvens podem atrapalhar nossa visão delas.",
+        "1": "A chuva não apaga as estrelas. As nuvens é que podem bloquear a visão do céu.",
+        "2": "A Lua não recolhe as estrelas; nuvens entre nós e elas podem escondê-las."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Que observação pode ser feita com segurança durante o dia?",
+      "options": [
+        "olhar para o Sol com lentes escuras comuns",
+        "observar o reflexo do Sol em um espelho",
+        "observar as nuvens sem olhar diretamente para o Sol",
+        "usar um telescópio sem proteção solar"
+      ],
+      "correctIndex": 2,
+      "explanation": "É possível observar nuvens mantendo os olhos longe do Sol direto.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Que observação pode ser feita com segurança durante o dia”, a opção “olhar para o Sol com lentes escuras comuns” não atende ao que se pede: “olhar para o Sol com lentes escuras comuns” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol.",
+        "1": "Na pergunta “Que observação pode ser feita com segurança durante o dia”, a opção “observar o reflexo do Sol em um espelho” não atende ao que se pede: “observar o reflexo do Sol em um espelho” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol.",
+        "3": "Na pergunta “Que observação pode ser feita com segurança durante o dia”, a opção “usar um telescópio sem proteção solar” não atende ao que se pede: “usar um telescópio sem proteção solar” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Uma pessoa vê o Sol se pôr no horizonte. O que está vendo?",
+      "options": [
+        "o Sol realmente desce e toca o oceano",
+        "o Sol parece descer enquanto a Terra gira",
+        "o Sol dá uma volta ao redor da Terra a cada dia",
+        "a Terra para de girar ao anoitecer"
+      ],
+      "correctIndex": 1,
+      "explanation": "A rotação da Terra faz o Sol parecer mover-se pelo céu.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Uma pessoa vê o Sol se pôr no horizonte. O que está vendo”, a opção “o Sol realmente desce e toca o oceano” não atende ao que se pede: o Sol não toca o oceano; seu aparente pôr ocorre enquanto a Terra gira.",
+        "2": "Na pergunta “Uma pessoa vê o Sol se pôr no horizonte. O que está vendo”, a opção “o Sol dá uma volta ao redor da Terra a cada dia” não atende ao que se pede: o movimento diário aparente do Sol é explicado pela rotação da Terra, não por ele contornar a Terra.",
+        "3": "Na pergunta “Uma pessoa vê o Sol se pôr no horizonte. O que está vendo”, a opção “a Terra para de girar ao anoitecer” não atende ao que se pede: a Terra não para de girar ao anoitecer; sua rotação continua."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "O que pode ser observado no céu noturno em uma noite sem muitas nuvens?",
+      "options": [
+        "a Lua e algumas estrelas",
+        "somente a Lua, pois estrelas não aparecem à noite",
+        "o Sol e as nuvens iluminadas como ao meio-dia",
+        "apenas planetas, nunca estrelas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em noites claras, podemos ver a Lua e estrelas, conforme a posição delas.",
+      "wrongExplanations": {
+        "1": "Na pergunta “O que pode ser observado no céu noturno em uma noite sem muitas nuvens”, a opção “somente a Lua, pois estrelas não aparecem à noite” não atende ao que se pede: uma noite clara pode mostrar tanto a Lua quanto estrelas, conforme estejam visíveis.",
+        "2": "Na pergunta “O que pode ser observado no céu noturno em uma noite sem muitas nuvens”, a opção “o Sol e as nuvens iluminadas como ao meio-dia” não atende ao que se pede: à noite, o céu não está iluminado pelo Sol como ao meio-dia.",
+        "3": "Na pergunta “O que pode ser observado no céu noturno em uma noite sem muitas nuvens”, a opção “apenas planetas, nunca estrelas” não atende ao que se pede: além de planetas, também podemos observar estrelas em uma noite clara."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "A Lua não está visível em uma noite. Qual explicação é possível?",
+      "options": [
+        "a Lua deixou de existir",
+        "ela está sempre escondida atrás da Terra",
+        "sua luz foi desligada durante a noite",
+        "ela pode estar abaixo do horizonte ou pouco visível"
+      ],
+      "correctIndex": 3,
+      "explanation": "A posição da Lua e as condições do céu mudam o que conseguimos observar.",
+      "wrongExplanations": {
+        "0": "Na pergunta “A Lua não está visível em uma noite. Qual explicação é possível”, a opção “a Lua deixou de existir” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu.",
+        "1": "Na pergunta “A Lua não está visível em uma noite. Qual explicação é possível”, a opção “ela está sempre escondida atrás da Terra” não atende ao que se pede: a Lua não fica sempre atrás da Terra; ela pode estar abaixo do horizonte ou difícil de observar.",
+        "2": "Na pergunta “A Lua não está visível em uma noite. Qual explicação é possível”, a opção “sua luz foi desligada durante a noite” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Que registro compara observações diurnas e noturnas?",
+      "options": [
+        "repetir a mesma foto sem registrar o horário",
+        "fazer um desenho sem data ou horário",
+        "uma tabela com horário e o que foi visto",
+        "consultar apenas uma lembrança antiga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Anotar horário e observação ajuda a comparar os dois períodos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Que registro compara observações diurnas e noturnas”, a opção “repetir a mesma foto sem registrar o horário” não atende ao que se pede: uma única foto sem horário não permite comparar observações feitas em momentos diferentes.",
+        "1": "Sem data e horário, fica difícil comparar quando a observação foi feita e o que havia no céu naquele momento.",
+        "3": "Na pergunta “Que registro compara observações diurnas e noturnas”, a opção “consultar apenas uma lembrança antiga” não atende ao que se pede: a lembrança sem registro de horário não mostra o que foi observado em cada período."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Por que o céu pode parecer azul durante o dia?",
+      "options": [
+        "o oceano reflete sua cor azul no céu",
+        "a atmosfera espalha parte da luz solar",
+        "o Sol é uma estrela azul",
+        "a atmosfera é pintada de azul"
+      ],
+      "correctIndex": 1,
+      "explanation": "A atmosfera espalha a luz do Sol e isso contribui para a aparência azul do céu.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que o céu pode parecer azul durante o dia”, a opção “o oceano reflete sua cor azul no céu” não atende ao que se pede: a cor azul do céu não é apenas um reflexo do oceano; a atmosfera espalha parte da luz solar.",
+        "2": "Na pergunta “Por que o céu pode parecer azul durante o dia”, a opção “o Sol é uma estrela azul” não atende ao que se pede: a aparência azul do céu não significa que o Sol seja uma estrela azul.",
+        "3": "Na pergunta “Por que o céu pode parecer azul durante o dia”, a opção “a atmosfera é pintada de azul” não atende ao que se pede: a atmosfera não é pintada; o espalhamento da luz solar contribui para a cor azul percebida."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "O que ajuda a observar a Lua sem risco?",
+      "options": [
+        "olhar para ela sem apontar instrumentos ao Sol",
+        "apontar um telescópio para o Sol antes de olhar a Lua",
+        "olhar para o Sol e depois para a Lua",
+        "usar um filtro improvisado para olhar o Sol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Observar a Lua a olho nu é seguro; o cuidado principal é evitar o Sol direto.",
+      "wrongExplanations": {
+        "1": "Na pergunta “O que ajuda a observar a Lua sem risco”, a opção “apontar um telescópio para o Sol antes de olhar a Lua” não atende ao que se pede: “apontar um telescópio para o Sol antes de olhar a Lua” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol.",
+        "2": "Na pergunta “O que ajuda a observar a Lua sem risco”, a opção “olhar para o Sol e depois para a Lua” não atende ao que se pede: “olhar para o Sol e depois para a Lua” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol.",
+        "3": "Na pergunta “O que ajuda a observar a Lua sem risco”, a opção “usar um filtro improvisado para olhar o Sol” não atende ao que se pede: “usar um filtro improvisado para olhar o Sol” pode expor os olhos à luz solar direta ou concentrada; isso não é uma forma segura de observar o Sol."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Uma turma compara fotos do mesmo céu feitas em dias diferentes. O que pode mudar?",
+      "options": [
+        "o tamanho da Terra muda de um dia para o outro",
+        "o número de estrelas no espaço muda em cada foto",
+        "o Sol fica maior ou menor a cada fotografia",
+        "a posição aparente da Lua e as nuvens"
+      ],
+      "correctIndex": 3,
+      "explanation": "A Lua e as nuvens podem aparecer em posições diferentes em registros distintos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Uma turma compara fotos do mesmo céu feitas em dias diferentes. O que pode mudar”, a opção “o tamanho da Terra muda de um dia para o outro” não atende ao que se pede: o tamanho da Terra não muda de uma foto diária para outra; posições aparentes da Lua e nuvens podem mudar.",
+        "1": "Na pergunta “Uma turma compara fotos do mesmo céu feitas em dias diferentes. O que pode mudar”, a opção “o número de estrelas no espaço muda em cada foto” não atende ao que se pede: a quantidade de estrelas não muda a cada foto; muda o que fica visível e a posição aparente dos astros.",
+        "2": "Na pergunta “Uma turma compara fotos do mesmo céu feitas em dias diferentes. O que pode mudar”, a opção “o Sol fica maior ou menor a cada fotografia” não atende ao que se pede: o Sol não muda de tamanho de uma fotografia para outra; nuvens e posição aparente da Lua podem variar."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_observacao_do_ceu_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "observacao-do-ceu",
+      "topicName": "Observação do céu",
+      "question": "Qual frase descreve corretamente a observação do céu?",
+      "options": [
+        "o céu mostra sempre os mesmos astros do mesmo jeito",
+        "a Lua só pode ser vista depois do pôr do Sol",
+        "o que vemos depende do horário e das condições do céu",
+        "as estrelas desaparecem do espaço durante o dia"
+      ],
+      "correctIndex": 2,
+      "explanation": "Horário, nuvens e claridade afetam os astros que conseguimos observar.",
+      "wrongExplanations": {
+        "0": "O céu não mostra sempre os mesmos astros: a posição aparente e a visibilidade mudam conforme o horário e as condições do céu.",
+        "1": "A Lua também pode ser vista durante o dia em algumas ocasiões; ela não aparece somente depois do pôr do Sol.",
+        "3": "As estrelas continuam no espaço durante o dia; a claridade do céu torna sua luz mais difícil de perceber."
+      },
+      "skill": "comparar-observacoes-diurnas-e-noturnas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "observacao-do-ceu"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

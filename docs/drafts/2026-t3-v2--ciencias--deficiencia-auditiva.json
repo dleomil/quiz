@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "O que uma legenda em um vídeo pode oferecer?",
+      "options": [
+        "Uma mudança na voz da pessoa",
+        "Acesso às falas por meio de texto na tela",
+        "Um som mais alto no alto-falante",
+        "Uma imagem que substitui a conversa"
+      ],
+      "correctIndex": 1,
+      "explanation": "Legendas mostram em texto o que é dito e podem tornar o vídeo mais acessível.",
+      "wrongExplanations": {
+        "0": "A legenda não muda a voz de quem fala.",
+        "2": "Texto na tela não aumenta o volume do alto-falante.",
+        "3": "A legenda acompanha a conversa; não precisa substituir as imagens."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual recurso pode ajudar uma pessoa surda a acompanhar uma conversa?",
+      "options": [
+        "Aumentar a luz da sala até apagar as imagens",
+        "Falar de costas para a pessoa",
+        "Língua Brasileira de Sinais, Libras",
+        "Tocar uma música mais alta"
+      ],
+      "correctIndex": 2,
+      "explanation": "Libras é uma língua visual usada por muitas pessoas surdas para se comunicar.",
+      "wrongExplanations": {
+        "0": "Apagar as imagens dificulta a comunicação visual.",
+        "1": "Falar de costas impede a pessoa de ver expressões e leitura labial, se usar.",
+        "3": "Música mais alta não substitui uma forma acessível de comunicação."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Como ajudar uma pessoa que usa leitura labial durante uma conversa?",
+      "options": [
+        "Falar de costas e muito depressa",
+        "Cobrir a boca enquanto fala",
+        "Falar gritando bem perto do ouvido",
+        "Ficar de frente e falar com clareza, sem cobrir a boca"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ficar de frente e falar claramente facilita a leitura dos lábios para quem usa esse recurso.",
+      "wrongExplanations": {
+        "0": "De costas, a pessoa não vê a boca; falar depressa dificulta acompanhar.",
+        "1": "Cobrir a boca impede ver os movimentos dos lábios.",
+        "2": "Gritar perto do ouvido pode causar desconforto e não é necessário."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual recurso visual pode avisar que alguém está chamando em uma casa?",
+      "options": [
+        "Uma luz que pisca como sinal combinado",
+        "Uma campainha sem som nem sinal visual",
+        "Um cheiro diferente no corredor",
+        "Uma cor escondida dentro de um livro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um sinal luminoso combinado pode avisar visualmente uma pessoa.",
+      "wrongExplanations": {
+        "1": "Uma campainha sem som ou sinal visual não fornece aviso visível.",
+        "2": "Cheiros não são um aviso visual confiável para uma chamada.",
+        "3": "Uma cor dentro de um livro não comunica que alguém está chamando."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "O que é Libras?",
+      "options": [
+        "Um aparelho para aumentar sons",
+        "Uma língua usada por muitas pessoas surdas, com sinais visuais",
+        "Uma legenda automática em todos os vídeos",
+        "Um tipo de campainha"
+      ],
+      "correctIndex": 1,
+      "explanation": "Libras é uma língua visual, com sinais e regras próprias, usada por muitas pessoas surdas.",
+      "wrongExplanations": {
+        "0": "Um aparelho para amplificar som é diferente de uma língua.",
+        "2": "Legendas são texto; não são Libras.",
+        "3": "Uma campainha pode ser um alerta, não uma língua."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Uma escola quer tornar um aviso acessível a mais estudantes. O que pode fazer?",
+      "options": [
+        "Falar o aviso sem olhar para a turma",
+        "Esconder o texto e tocar uma música",
+        "Apresentar o aviso falado e também por escrito",
+        "Dar o aviso só a quem já ouviu"
+      ],
+      "correctIndex": 2,
+      "explanation": "Combinar informação falada e escrita oferece mais de uma forma de acesso.",
+      "wrongExplanations": {
+        "0": "Falar sem olhar para a turma pode dificultar a comunicação visual.",
+        "1": "Esconder o texto elimina uma forma de acesso; música não apresenta o aviso.",
+        "3": "Um aviso deve alcançar toda a turma, não apenas quem o ouviu."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual atitude respeitosa ao conversar com uma pessoa surda?",
+      "options": [
+        "Decidir por ela sem perguntar",
+        "Falar com o acompanhante como se a pessoa não estivesse presente",
+        "Fazer piadas sobre como ela ouve",
+        "Perguntar qual forma de comunicação funciona melhor para ela"
+      ],
+      "correctIndex": 3,
+      "explanation": "Perguntar à própria pessoa respeita suas preferências de comunicação.",
+      "wrongExplanations": {
+        "0": "Cada pessoa pode preferir recursos diferentes; não decida sem perguntar.",
+        "1": "Converse diretamente com a pessoa, não a exclua da conversa.",
+        "2": "Piadas sobre deficiência são desrespeitosas."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "O que um aparelho auditivo pode fazer para algumas pessoas?",
+      "options": [
+        "Ajudar a perceber sons ao amplificá-los",
+        "Transformar Libras em escrita automaticamente",
+        "Fazer todas as pessoas ouvirem da mesma maneira",
+        "Substituir a necessidade de comunicação acessível"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aparelhos auditivos podem ajudar algumas pessoas a perceber sons, mas cada pessoa tem necessidades próprias.",
+      "wrongExplanations": {
+        "1": "Aparelho auditivo não é um tradutor automático de Libras.",
+        "2": "O resultado varia; não faz todos ouvirem da mesma maneira.",
+        "3": "Acessibilidade na comunicação continua importante."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Por que uma legenda pode ser útil mesmo para quem não tem deficiência auditiva?",
+      "options": [
+        "Porque as letras produzem som",
+        "Ela também ajuda quando o lugar está barulhento ou o áudio está baixo",
+        "Porque legenda apaga a imagem",
+        "Porque todos precisam usar o mesmo recurso"
+      ],
+      "correctIndex": 1,
+      "explanation": "Legendas permitem acompanhar as falas quando não é fácil ouvir o áudio.",
+      "wrongExplanations": {
+        "0": "Letras na tela não produzem som.",
+        "2": "Legendas não apagam as imagens do vídeo.",
+        "3": "Pessoas diferentes podem escolher recursos diferentes."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Durante um trabalho em grupo, qual atitude ajuda a incluir um colega que usa Libras?",
+      "options": [
+        "Conversar todos ao mesmo tempo e de costas",
+        "Esconder as mãos durante a conversa",
+        "Organizar turnos para que todos possam ver quem está sinalizando",
+        "Impedir o colega de participar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Boa iluminação e turnos de fala ajudam as pessoas a acompanhar os sinais e a conversa.",
+      "wrongExplanations": {
+        "0": "Falar ao mesmo tempo e de costas dificulta acompanhar a comunicação visual.",
+        "1": "Esconder as mãos impede ver os sinais.",
+        "3": "A deficiência não deve impedir a participação no grupo."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Uma pessoa surda não respondeu a um chamado falado. O que é respeitoso fazer?",
+      "options": [
+        "Repetir o chamado cada vez mais alto perto do ouvido",
+        "Puxar a pessoa sem avisar",
+        "Dizer que ela está ignorando de propósito",
+        "Chamar sua atenção de forma visual ou usar o meio combinado"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um sinal visual combinado pode chamar a atenção sem assustar a pessoa.",
+      "wrongExplanations": {
+        "0": "Aumentar a voz perto do ouvido não é necessário e pode incomodar.",
+        "1": "Puxar alguém pode assustar; aproxime-se de forma respeitosa.",
+        "2": "Não se deve presumir que a pessoa ignorou o chamado."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual alternativa mostra acessibilidade em uma apresentação escolar?",
+      "options": [
+        "Usar intérprete de Libras ou recursos visuais quando necessários",
+        "Falar virado para o quadro o tempo todo",
+        "Deixar todos os avisos apenas no áudio",
+        "Pedir que estudantes com deficiência saiam da sala"
+      ],
+      "correctIndex": 0,
+      "explanation": "Intérprete ou material visual pode facilitar o acesso à apresentação.",
+      "wrongExplanations": {
+        "1": "Falar para o quadro dificulta ver o rosto e a comunicação.",
+        "2": "Avisos só em áudio não são acessíveis a todas as pessoas.",
+        "3": "A inclusão permite que todos participem da aula."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Por que pessoas com deficiência auditiva não devem ser tratadas todas do mesmo jeito?",
+      "options": [
+        "Porque todas usam exatamente o mesmo aparelho",
+        "Porque podem usar formas de comunicação e recursos diferentes",
+        "Porque nenhuma consegue aprender",
+        "Porque a deficiência define o que cada pessoa gosta"
+      ],
+      "correctIndex": 1,
+      "explanation": "As preferências e experiências variam; é respeitoso perguntar de que apoio a pessoa precisa.",
+      "wrongExplanations": {
+        "0": "Nem toda pessoa usa aparelho auditivo ou o usa da mesma forma.",
+        "2": "Deficiência auditiva não impede uma pessoa de aprender.",
+        "3": "Gostos e preferências não são determinados pela deficiência."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual é uma forma respeitosa de oferecer ajuda de comunicação?",
+      "options": [
+        "Tocar em seus objetos sem pedir",
+        "Falar por ela sem consultá-la",
+        "Perguntar à pessoa se ela quer ajuda e qual recurso prefere",
+        "Escolher um aparelho para ela usar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Perguntar antes de ajudar permite que a pessoa escolha o apoio adequado.",
+      "wrongExplanations": {
+        "0": "Não mexa nos pertences de outra pessoa sem permissão.",
+        "1": "A pessoa deve poder se expressar; não fale por ela sem consentimento.",
+        "3": "Recursos e necessidades devem ser escolhidos com a pessoa."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Como um vídeo pode informar que há uma sirene, além de tocar o som?",
+      "options": [
+        "Esconder a cena da sirene",
+        "Diminuir o brilho até a tela ficar preta",
+        "Apresentar somente música",
+        "Mostrar uma legenda ou aviso visual"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um texto na tela ou outro aviso visual comunica que a sirene está tocando.",
+      "wrongExplanations": {
+        "0": "Esconder a cena não informa o que ocorreu.",
+        "1": "Uma tela preta retira pistas visuais.",
+        "2": "Música não explica que uma sirene está tocando."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual recurso pode ajudar a acompanhar uma aula gravada sem som?",
+      "options": [
+        "Legendas das falas",
+        "Uma caixa de som desligada",
+        "Um controle sem pilhas",
+        "Um cartaz sem relação com a aula"
+      ],
+      "correctIndex": 0,
+      "explanation": "As legendas apresentam por escrito o conteúdo falado no vídeo.",
+      "wrongExplanations": {
+        "1": "Uma caixa desligada não oferece informação falada nem escrita.",
+        "2": "Um controle sem pilhas não mostra as falas.",
+        "3": "Um cartaz fora do assunto não substitui as falas da aula."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Uma pessoa usa aparelho auditivo. Como agir em uma conversa?",
+      "options": [
+        "Gritar diretamente no aparelho",
+        "Falar de modo claro e perguntar se ela entendeu bem",
+        "Tirar o aparelho sem pedir",
+        "Mudar de assunto para evitar conversar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Falar claramente e conferir se a comunicação está funcionando é uma atitude respeitosa.",
+      "wrongExplanations": {
+        "0": "Gritar perto do aparelho pode causar desconforto.",
+        "2": "Não toque nem retire um dispositivo de outra pessoa sem permissão.",
+        "3": "A deficiência auditiva não é motivo para excluir alguém da conversa."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "O que significa tornar uma informação acessível?",
+      "options": [
+        "Usar apenas um som muito baixo",
+        "Esconder instruções importantes",
+        "Apresentá-la de um jeito que mais pessoas consigam receber e compreender",
+        "Entregar instruções só a alguns colegas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Acessibilidade oferece formas de acesso para pessoas com necessidades diversas.",
+      "wrongExplanations": {
+        "0": "Som baixo sozinho pode ser difícil de ouvir e não oferece alternativa.",
+        "1": "Esconder instruções impede o acesso à informação.",
+        "3": "A informação importante deve estar disponível a todas as pessoas."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Qual frase respeita a diversidade das pessoas surdas?",
+      "options": [
+        "“Todas as pessoas surdas se comunicam do mesmo jeito.”",
+        "“Ninguém deve conversar com uma pessoa surda.”",
+        "“Uma pessoa surda nunca pode participar de jogos.”",
+        "“Cada pessoa pode escolher os recursos de comunicação que funcionam para ela.”"
+      ],
+      "correctIndex": 3,
+      "explanation": "As pessoas surdas são diversas e podem preferir diferentes línguas e recursos.",
+      "wrongExplanations": {
+        "0": "As preferências de comunicação variam entre pessoas.",
+        "1": "É possível conversar por diferentes meios acessíveis.",
+        "2": "A deficiência auditiva não impede a participação em jogos."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_deficiencia-auditiva_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "deficiencia-auditiva",
+      "topicName": "Deficiência auditiva",
+      "question": "Uma escola anuncia uma mudança de sala. Qual opção torna o aviso acessível para mais estudantes?",
+      "options": [
+        "Dizer o aviso e também colocá-lo em um mural escrito",
+        "Avisar apenas por alto-falante sem alternativa",
+        "Esconder o mural",
+        "Falar sem oferecer texto ou sinais visuais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apresentar o aviso oralmente e por escrito cria mais de uma forma de acesso.",
+      "wrongExplanations": {
+        "1": "Um aviso só pelo alto-falante não oferece alternativa visual.",
+        "2": "Esconder o mural elimina o aviso escrito.",
+        "3": "Sem texto ou recurso visual, o aviso pode não estar acessível a quem não o percebe pela audição."
+      },
+      "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "deficiencia-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

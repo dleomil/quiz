@@ -56,8 +56,58 @@ const INFRA = new Set([
 ]);
 function profileFor(files) {
   if (files.includes('.github/subject-delivery.json')) return 'subject';
+  if (
+    files.some((file) =>
+      /^docs\/drafts\/2026-t3-v2--ciencias--[a-z0-9-]+\.json$/.test(file),
+    ) &&
+    files.every(
+      (file) =>
+        INFRA.has(file) ||
+        /^docs\/drafts\/2026-t3-v2--ciencias--[a-z0-9-]+\.json$/.test(file),
+    )
+  )
+    return 'science-drafts';
   if (files.every((file) => INFRA.has(file))) return 'infrastructure';
   return 'legacy';
+}
+
+function verifyScienceDrafts(root, files) {
+  const { validateBatch } = require('./content-delivery.cjs');
+  const policy = JSON.parse(
+    fs.readFileSync(path.join(root, 'config/content-delivery-policy.json')),
+  );
+  const coverage = JSON.parse(
+    fs.readFileSync(path.join(root, 'config/content-coverage-manifest.json')),
+  );
+  const expectedTopics = Object.keys(
+    coverage.contentSets['2026-t3-v2'].subjects.ciencias,
+  ).sort();
+  const draftFiles = files
+    .filter((name) =>
+      /^docs\/drafts\/2026-t3-v2--ciencias--[a-z0-9-]+\.json$/.test(name),
+    )
+    .sort();
+  const expectedFiles = expectedTopics
+    .map((topic) => `docs/drafts/2026-t3-v2--ciencias--${topic}.json`)
+    .sort();
+  if (JSON.stringify(draftFiles) !== JSON.stringify(expectedFiles))
+    throw new Error('rascunhos de Ciencias nao cobrem a matriz completa');
+  let count = 0;
+  for (const name of draftFiles) {
+    const questions = JSON.parse(
+      fs.readFileSync(path.join(root, name), 'utf8'),
+    ).questions;
+    const checked = validateBatch(questions, { policy, coverage });
+    if (checked.errors.length) throw new Error(checked.errors.join('\n'));
+    if (questions.some((question) => question.reviewStatus !== 'draft'))
+      throw new Error(`${name}: rascunho fora do estado draft`);
+    count += questions.length;
+  }
+  if (count !== expectedTopics.length * 20)
+    throw new Error(`cobertura de Ciencias invalida: ${count} questoes`);
+  console.log(
+    `science-drafts: ${expectedTopics.length} temas, ${count} questoes`,
+  );
 }
 function run(args = process.argv.slice(2)) {
   const root = path.resolve(__dirname, '..');
@@ -106,6 +156,7 @@ function run(args = process.argv.slice(2)) {
     throw new Error('workspace alterado fora do head validado');
   const profile = profileFor(files);
   console.log(`verify:local: ${profile} (${files.length} arquivos)`);
+  if (profile === 'science-drafts') verifyScienceDrafts(root, files);
   const command = (bin, values, env = {}) => {
     const result = spawnSync(bin, values, {
       cwd: root,
@@ -116,6 +167,7 @@ function run(args = process.argv.slice(2)) {
     if (result.error || result.status !== 0)
       throw new Error(`verificacao falhou: ${bin} ${values.join(' ')}`);
   };
+  const dependencyRoot = process.env.QUIZ_DEPENDENCY_ROOT || root;
   if (profile === 'legacy') {
     command('npm', ['test']);
     command('npm', ['run', 'lint']);
@@ -182,13 +234,16 @@ function run(args = process.argv.slice(2)) {
     );
     const code = existing.filter((name) => /\.(?:cjs|js)$/.test(name));
     if (code.length)
-      command(process.execPath, ['node_modules/eslint/bin/eslint.js', ...code]);
+      command(process.execPath, [
+        path.join(dependencyRoot, 'node_modules/eslint/bin/eslint.js'),
+        ...code,
+      ]);
     const formatted = existing.filter((name) =>
       /\.(?:cjs|js|json|md|yml)$/.test(name),
     );
     if (formatted.length)
       command(process.execPath, [
-        'node_modules/prettier/bin/prettier.cjs',
+        path.join(dependencyRoot, 'node_modules/prettier/bin/prettier.cjs'),
         '--check',
         ...formatted,
       ]);
@@ -203,4 +258,4 @@ if (require.main === module) {
     process.exitCode = 1;
   }
 }
-module.exports = { profileFor, run };
+module.exports = { profileFor, run, verifyScienceDrafts };

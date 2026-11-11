@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Quando uma campainha toca, qual estímulo percorre o canal auditivo e faz o tímpano vibrar?",
+      "options": [
+        "A luz refletida pela campainha",
+        "O som produzido pela campainha",
+        "O cheiro do metal",
+        "A cor do objeto"
+      ],
+      "correctIndex": 1,
+      "explanation": "O som produzido pela campainha percorre o canal auditivo e faz o tímpano vibrar.",
+      "wrongExplanations": {
+        "0": "A luz pode ser percebida pelos olhos, mas não é o estímulo que faz o tímpano vibrar.",
+        "2": "O cheiro é percebido pelo nariz e não faz o tímpano vibrar.",
+        "3": "A cor é percebida pelos olhos; o som é que faz o tímpano vibrar."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Qual parte do ouvido recebe o som do ambiente e o conduz para dentro?",
+      "options": [
+        "A pálpebra",
+        "A língua",
+        "O canal auditivo",
+        "O cotovelo"
+      ],
+      "correctIndex": 2,
+      "explanation": "O canal auditivo conduz o som até o tímpano.",
+      "wrongExplanations": {
+        "0": "A pálpebra protege os olhos e não conduz sons ao ouvido.",
+        "1": "A língua ajuda a perceber sabores, não conduz o som ao ouvido.",
+        "3": "O cotovelo não faz parte do caminho da audição."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "O que pode acontecer com o tímpano quando o som chega ao ouvido?",
+      "options": [
+        "Ele muda de cor",
+        "Ele se transforma em ar",
+        "Ele deixa de existir",
+        "Ele vibra"
+      ],
+      "correctIndex": 3,
+      "explanation": "O som faz o tímpano vibrar, iniciando a transmissão das vibrações pelo ouvido.",
+      "wrongExplanations": {
+        "0": "O tímpano não muda de cor ao receber sons.",
+        "1": "O tímpano não vira ar; ele vibra com o som.",
+        "2": "Ouvir não faz o tímpano deixar de existir."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Depois do tímpano, o que ajuda a levar as vibrações para dentro do ouvido?",
+      "options": [
+        "Pequenos ossos do ouvido",
+        "Os dentes",
+        "Os cabelos",
+        "As unhas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pequenos ossos do ouvido transmitem as vibrações adiante.",
+      "wrongExplanations": {
+        "1": "Os dentes ajudam na mastigação e não transmitem o som dentro do ouvido.",
+        "2": "Os cabelos não conduzem as vibrações do tímpano.",
+        "3": "As unhas não participam do caminho da audição."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Qual estrutura do ouvido interno participa da transformação das vibrações em sinais para o cérebro?",
+      "options": [
+        "A íris",
+        "A cóclea",
+        "A narina",
+        "A língua"
+      ],
+      "correctIndex": 1,
+      "explanation": "Na cóclea, vibrações são transformadas em sinais que seguem pelo nervo auditivo.",
+      "wrongExplanations": {
+        "0": "A íris é uma parte do olho, não do ouvido.",
+        "2": "A narina participa do olfato, não da audição.",
+        "3": "A língua percebe sabores; a cóclea participa da audição."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Por onde os sinais da audição seguem até o cérebro?",
+      "options": [
+        "Pelo nervo do braço",
+        "Pelo esôfago",
+        "Pelo nervo auditivo",
+        "Pela pele"
+      ],
+      "correctIndex": 2,
+      "explanation": "O nervo auditivo leva sinais do ouvido ao cérebro, que ajuda a reconhecer os sons.",
+      "wrongExplanations": {
+        "0": "O nervo do braço participa de sensações e movimentos do braço, não leva sinais auditivos.",
+        "1": "O esôfago conduz alimentos, não sinais auditivos.",
+        "3": "A pele não é o caminho dos sinais que saem do ouvido para o cérebro."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Qual ordem simplificada mostra o caminho do som até ser reconhecido?",
+      "options": [
+        "Cérebro, língua, som e nariz",
+        "Olhos, tímpano, cotovelo e cérebro",
+        "Nariz, pulmão, ouvido e pele",
+        "Som, tímpano, estruturas internas do ouvido e cérebro"
+      ],
+      "correctIndex": 3,
+      "explanation": "O som faz o tímpano vibrar; estruturas do ouvido transmitem sinais que o cérebro interpreta.",
+      "wrongExplanations": {
+        "0": "Cérebro, língua, som e nariz não mostram o caminho que as vibrações seguem até serem reconhecidas.",
+        "1": "Olhos e cotovelo não participam do caminho da audição.",
+        "2": "Nariz, pulmão e pele não transmitem as vibrações sonoras ao cérebro."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Por que ouvimos sons diferentes de uma buzina e de um passarinho?",
+      "options": [
+        "O cérebro recebe sinais diferentes dos sons produzidos",
+        "A buzina manda imagens ao cérebro",
+        "O ouvido sente o cheiro dos sons",
+        "O passarinho transforma o som em luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A buzina e o passarinho vibram de maneiras diferentes e produzem sons diferentes. O cérebro ajuda a interpretar os sinais que chegam pelo ouvido.",
+      "wrongExplanations": {
+        "1": "Uma buzina produz som, não envia imagens para o cérebro.",
+        "2": "Cheiros são percebidos pelo olfato, não pelo ouvido.",
+        "3": "O canto não se transforma em luz para ser ouvido."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Quando alguém fala perto de você, o que inicia a audição?",
+      "options": [
+        "A boca envia palavras diretamente ao cérebro da outra pessoa",
+        "A voz produz som que se propaga até os ouvidos",
+        "A luz da fala entra pelo ouvido",
+        "O ar transforma a voz em sabor"
+      ],
+      "correctIndex": 1,
+      "explanation": "A voz produz ondas sonoras que chegam aos ouvidos e iniciam o caminho da audição.",
+      "wrongExplanations": {
+        "0": "A fala não envia palavras diretamente ao cérebro sem passar pela audição.",
+        "2": "A luz é percebida pelos olhos, não inicia a audição.",
+        "3": "Sabores são percebidos pela língua, não são produzidos pelo ar da fala."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Qual parte vibra com o som e separa a entrada do ouvido de suas estruturas internas?",
+      "options": [
+        "A sobrancelha",
+        "A bochecha",
+        "O tímpano",
+        "A ponta do nariz"
+      ],
+      "correctIndex": 2,
+      "explanation": "O tímpano vibra com o som e transmite essas vibrações para dentro do ouvido.",
+      "wrongExplanations": {
+        "0": "A sobrancelha fica acima do olho e não separa partes do ouvido.",
+        "1": "A bochecha não é uma estrutura do caminho interno da audição.",
+        "3": "O nariz participa do olfato, não transmite vibrações do tímpano."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Uma criança escuta um sino e percebe que ele está tocando. Qual órgão participa dessa percepção?",
+      "options": [
+        "O estômago",
+        "O joelho",
+        "O pulmão",
+        "O ouvido"
+      ],
+      "correctIndex": 3,
+      "explanation": "O ouvido recebe os sons e envia sinais que o cérebro interpreta.",
+      "wrongExplanations": {
+        "0": "O estômago participa da digestão, não recebe o som do sino.",
+        "1": "O joelho não é responsável pela audição.",
+        "2": "O pulmão participa da respiração, não reconhece o som."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Por que o cérebro é importante para ouvir?",
+      "options": [
+        "Ele interpreta os sinais que chegam pelo nervo auditivo",
+        "Ele produz a vibração da campainha",
+        "Ele transforma sons em cheiros",
+        "Ele substitui o tímpano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cérebro interpreta os sinais enviados pelo nervo auditivo para reconhecer sons.",
+      "wrongExplanations": {
+        "1": "A campainha vibra para produzir seu som; o cérebro não causa essa vibração.",
+        "2": "Sons não são transformados em cheiros para serem reconhecidos.",
+        "3": "O cérebro não ocupa o lugar do tímpano no ouvido."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "O que leva as vibrações do tímpano em direção ao ouvido interno?",
+      "options": [
+        "As costelas",
+        "Pequenos ossos do ouvido médio",
+        "Os dentes",
+        "Os dedos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Os pequenos ossos do ouvido médio transmitem as vibrações do tímpano adiante.",
+      "wrongExplanations": {
+        "0": "As costelas protegem o tórax e não ficam no ouvido.",
+        "2": "Os dentes ficam na boca e não fazem parte do ouvido médio.",
+        "3": "Os dedos não transmitem vibrações dentro do ouvido."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Que estrutura transforma vibrações em sinais que podem seguir pelo nervo auditivo?",
+      "options": [
+        "A língua",
+        "A pupila",
+        "A cóclea",
+        "A orelha do pé"
+      ],
+      "correctIndex": 2,
+      "explanation": "A cóclea, no ouvido interno, ajuda a transformar vibrações em sinais nervosos.",
+      "wrongExplanations": {
+        "0": "A língua não transforma vibrações sonoras em sinais auditivos.",
+        "1": "A pupila faz parte do olho e regula a entrada de luz.",
+        "3": "Não existe uma orelha no pé que faça parte da audição."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Se o canal auditivo está no caminho do som, qual é uma de suas funções?",
+      "options": [
+        "Produzir a voz",
+        "Enxergar objetos",
+        "Levar alimento ao estômago",
+        "Conduzir o som até o tímpano"
+      ],
+      "correctIndex": 3,
+      "explanation": "O canal auditivo conduz o som que entra no ouvido até o tímpano.",
+      "wrongExplanations": {
+        "0": "A voz é produzida por estruturas da fala, não pelo canal auditivo.",
+        "1": "Enxergar é uma função dos olhos.",
+        "2": "O alimento segue pelo sistema digestório, não pelo canal auditivo."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Como a vibração da campainha pode ser percebida por uma pessoa?",
+      "options": [
+        "O som chega ao ouvido e os sinais são interpretados pelo cérebro",
+        "O som entra pelos olhos e vira imagem",
+        "A campainha encosta no nervo auditivo",
+        "O tímpano envia a campainha até o cérebro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O som se propaga até o ouvido; o cérebro interpreta os sinais enviados pelo sistema auditivo.",
+      "wrongExplanations": {
+        "1": "O som não entra pelos olhos para ser ouvido.",
+        "2": "A campainha não precisa encostar no nervo auditivo; seu som se propaga.",
+        "3": "O tímpano não envia o objeto; ele vibra com o som."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Qual afirmação sobre a audição está correta?",
+      "options": [
+        "Som é percebido somente pela orelha externa",
+        "Várias estruturas do ouvido trabalham juntas para levar sinais ao cérebro",
+        "O tímpano é a única parte envolvida em ouvir",
+        "O cérebro não participa da audição"
+      ],
+      "correctIndex": 1,
+      "explanation": "A audição envolve o ouvido e o cérebro, que interpreta os sinais recebidos.",
+      "wrongExplanations": {
+        "0": "A orelha externa não é a única estrutura da audição.",
+        "2": "O tímpano é importante, mas outras estruturas também participam.",
+        "3": "O cérebro participa ao interpretar os sinais auditivos."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Como a parte externa do ouvido ajuda no início do caminho do som?",
+      "options": [
+        "Capta sons do ambiente e os direciona para o canal auditivo",
+        "Transforma os sons em palavras antes de chegarem ao cérebro",
+        "Envia sinais diretamente ao cérebro sem passar pelo tímpano",
+        "Impede que as vibrações cheguem ao canal auditivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A parte externa do ouvido capta sons do ambiente e os direciona para o canal auditivo.",
+      "wrongExplanations": {
+        "1": "A interpretação dos sons acontece no cérebro, depois que os sinais percorrem o caminho da audição.",
+        "2": "Os sons percorrem o canal auditivo e fazem o tímpano vibrar antes que os sinais cheguem ao cérebro.",
+        "3": "A parte externa ajuda o som a chegar ao canal auditivo; ela não bloqueia as vibrações."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Depois que o tímpano vibra, quais estruturas transmitem essas vibrações em direção ao ouvido interno?",
+      "options": [
+        "Os pequenos ossos do ouvido médio",
+        "A língua e os dentes",
+        "As pálpebras e os cílios",
+        "As narinas e o céu da boca"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os pequenos ossos do ouvido médio vibram e transmitem essas vibrações em direção ao ouvido interno.",
+      "wrongExplanations": {
+        "1": "Língua e dentes participam de outras funções, mas não transmitem as vibrações do tímpano.",
+        "2": "Pálpebras e cílios protegem os olhos; não fazem parte do caminho do som.",
+        "3": "Narinas e céu da boca não transmitem as vibrações do tímpano ao ouvido interno."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_como-ouvimos_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "como-ouvimos",
+      "topicName": "Como ouvimos",
+      "question": "Qual sequência liga o som ao reconhecimento de uma palavra falada?",
+      "options": [
+        "O som chega ao ouvido e o cérebro interpreta os sinais",
+        "A palavra entra pelo nariz e vira som",
+        "O olho recebe o som e envia ao ouvido",
+        "O estômago interpreta as vibrações"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ouvido recebe o som da fala e envia sinais que o cérebro interpreta como palavras.",
+      "wrongExplanations": {
+        "1": "O nariz não recebe palavras faladas para transformá-las em som.",
+        "2": "O olho percebe luz; o ouvido recebe sons.",
+        "3": "O estômago não interpreta sinais auditivos."
+      },
+      "skill": "reconhecer-caminho-do-som-e-estruturas-auditivas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "como-ouvimos"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

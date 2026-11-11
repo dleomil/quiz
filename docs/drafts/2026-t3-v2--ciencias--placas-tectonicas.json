@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "O que são placas tectônicas em um modelo simples da Terra?",
+      "options": [
+        "grandes blocos imóveis da crosta",
+        "grandes partes rígidas da camada externa que se movem devagar",
+        "correntes de rocha derretida do núcleo",
+        "partes do manto que não incluem a crosta"
+      ],
+      "correctIndex": 1,
+      "explanation": "As placas são grandes partes rígidas da camada externa terrestre que se movem lentamente.",
+      "wrongExplanations": {
+        "0": "“grandes blocos imóveis da crosta” não é uma definição adequada: as placas são grandes partes rígidas da camada externa que se movem devagar.",
+        "2": "“correntes de rocha derretida do núcleo” não é uma definição adequada: as placas são grandes partes rígidas da camada externa que se movem devagar.",
+        "3": "“partes do manto que não incluem a crosta” não é uma definição adequada: as placas são grandes partes rígidas da camada externa que se movem devagar."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Como as placas tectônicas se movem?",
+      "options": [
+        "muito lentamente ao longo do tempo",
+        "rapidamente, em poucos segundos",
+        "somente durante um terremoto",
+        "apenas nas bordas, sem movimento no restante da placa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O movimento das placas é lento e ocorre durante muito tempo.",
+      "wrongExplanations": {
+        "1": "As placas não avançam quilômetros em poucos segundos; seu movimento é muito lento.",
+        "2": "As placas se movem continuamente, embora o deslocamento seja pequeno e possa acumular efeitos ao longo do tempo.",
+        "3": "A placa inteira se desloca; o movimento não fica restrito às bordas."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Qual parte da Terra é dividida em grandes placas?",
+      "options": [
+        "o manto e o núcleo interno",
+        "a atmosfera e as nuvens",
+        "os oceanos e o núcleo externo",
+        "a camada externa rígida do planeta"
+      ],
+      "correctIndex": 3,
+      "explanation": "As placas formam partes da camada externa rígida da Terra.",
+      "wrongExplanations": {
+        "0": "A divisão em placas está na camada externa rígida; o manto e o núcleo ficam mais abaixo.",
+        "1": "A atmosfera é gasosa; as placas tectônicas são partes rochosas da camada externa.",
+        "2": "Oceanos ficam sobre a crosta e o núcleo é interno; nenhum dos dois forma essa camada de placas."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Quando as bordas de placas ficam presas e depois deslizam de repente, que fenômeno pode ocorrer?",
+      "options": [
+        "um vulcão entra em erupção em toda borda",
+        "as placas param de se mover para sempre",
+        "um terremoto",
+        "o solo fica imóvel e não pode tremer"
+      ],
+      "correctIndex": 2,
+      "explanation": "O deslizamento repentino de rochas presas em uma falha pode causar um terremoto.",
+      "wrongExplanations": {
+        "0": "Terremotos não acontecem em toda borda por causa de vulcões; eles podem ocorrer quando rochas presas se rompem e deslizam.",
+        "1": "As placas continuam se movendo lentamente; o deslizamento repentino causa um tremor, não uma parada permanente.",
+        "3": "Quando rochas deslizam de repente, o chão pode tremer. Esse tremor é um terremoto."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Quando duas placas se afastam em uma região do fundo do mar, o que pode se formar entre elas?",
+      "options": [
+        "um terremoto, que é um tremor do solo",
+        "nova crosta oceânica",
+        "uma montanha em todas as regiões",
+        "uma camada de ar entre as placas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Em algumas regiões onde placas se afastam, material do interior sobe e esfria, formando nova crosta oceânica.",
+      "wrongExplanations": {
+        "0": "Terremotos podem ocorrer em limites de placas, mas a pergunta pede o material que pode se formar quando elas se afastam.",
+        "2": "O afastamento pode formar nova crosta; montanhas não se formam em todas essas regiões.",
+        "3": "Não há uma camada de ar entre placas rochosas; em alguns limites divergentes forma-se nova crosta."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "O que pode surgir quando placas se aproximam e empurram a crosta?",
+      "options": [
+        "montanhas podem se formar",
+        "pode formar-se uma nova área de crosta oceânica",
+        "as placas deslizam lado a lado sem comprimir a crosta",
+        "a crosta se transforma em magma líquido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O empurrão entre placas pode dobrar e elevar partes da crosta.",
+      "wrongExplanations": {
+        "1": "Nova crosta costuma se formar onde placas se afastam; aqui o enunciado trata de placas que se aproximam e comprimem a crosta.",
+        "2": "Deslizar lado a lado é outro tipo de movimento; a aproximação comprime e pode elevar rochas.",
+        "3": "A compressão pode dobrar e elevar rochas, mas não transforma toda a crosta em magma líquido."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Uma mesma placa tectônica pode incluir áreas continentais e fundo oceânico?",
+      "options": [
+        "Não; cada placa tem somente áreas continentais.",
+        "Não; cada placa tem somente fundo oceânico.",
+        "Sim; uma mesma placa pode incluir continente e fundo oceânico.",
+        "Sim; todas as placas têm exatamente o mesmo tamanho."
+      ],
+      "correctIndex": 2,
+      "explanation": "Uma placa tectônica pode abranger crosta continental, crosta oceânica ou partes de ambas.",
+      "wrongExplanations": {
+        "0": "Algumas placas incluem áreas oceânicas, então não é correto dizer que todas têm somente continente.",
+        "1": "Algumas placas incluem áreas continentais, então não é correto dizer que todas têm somente fundo oceânico.",
+        "3": "As placas não têm todas o mesmo tamanho; o ponto principal é que uma pode incluir continente e fundo oceânico."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Qual comparação ajuda a imaginar as placas da superfície terrestre?",
+      "options": [
+        "uma camada rochosa única, sem divisões",
+        "um oceano de magma líquido sob os continentes",
+        "peças grandes de um quebra-cabeça que se encaixam",
+        "ilhas soltas que boiam na água"
+      ],
+      "correctIndex": 2,
+      "explanation": "A superfície rígida pode ser comparada a peças que se ajustam e se movem devagar.",
+      "wrongExplanations": {
+        "0": "A superfície terrestre não é uma peça única; ela é dividida em placas que se encaixam.",
+        "1": "O manto não é um oceano de magma líquido; as placas são partes rígidas da camada externa.",
+        "3": "As placas não são ilhas soltas boiando na água; são blocos rochosos que formam a camada externa."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "O que pode acontecer quando placas deslizam uma ao lado da outra?",
+      "options": [
+        "pode formar-se nova crosta em algumas bordas",
+        "pode haver movimento e terremotos nas bordas",
+        "todas as placas se fundem imediatamente",
+        "os continentes viram oceanos de repente"
+      ],
+      "correctIndex": 1,
+      "explanation": "O deslizamento de placas pode gerar terremotos em suas bordas.",
+      "wrongExplanations": {
+        "0": "A formação de nova crosta está ligada ao afastamento de placas; o deslizamento lateral pode causar terremotos.",
+        "2": "Placas não se fundem imediatamente quando deslizam; esse movimento pode produzir terremotos nas bordas.",
+        "3": "Continentes não se transformam repentinamente em oceanos; o deslizamento das placas pode causar tremores."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Por que dizemos que as placas se movem devagar?",
+      "options": [
+        "porque seu deslocamento é pequeno durante um ano",
+        "avançam vários quilômetros em um dia",
+        "ficam totalmente paradas entre terremotos",
+        "só se movem quando há erupção"
+      ],
+      "correctIndex": 0,
+      "explanation": "As placas avançam lentamente, em distâncias pequenas em escalas humanas.",
+      "wrongExplanations": {
+        "1": "As placas não avançam vários quilômetros em um dia; seu deslocamento anual é pequeno.",
+        "2": "Elas não ficam paradas entre terremotos; o movimento é lento e contínuo.",
+        "3": "Erupções não iniciam todo movimento das placas; elas se deslocam lentamente ao longo do tempo."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Qual fenômeno é um tremor do solo que pode estar ligado ao movimento das placas?",
+      "options": [
+        "a formação de montanhas",
+        "a erosão de rochas pela água",
+        "a mudança das fases da Lua",
+        "um terremoto"
+      ],
+      "correctIndex": 3,
+      "explanation": "Movimentos e rupturas de rochas nas bordas de placas podem provocar terremotos.",
+      "wrongExplanations": {
+        "0": "“a formação de montanhas” não descreve o tremor do solo; movimentos e rupturas de rochas nas bordas podem causar terremotos.",
+        "1": "“a erosão de rochas pela água” não descreve o tremor do solo; movimentos e rupturas de rochas nas bordas podem causar terremotos.",
+        "2": "“a mudança das fases da Lua” não descreve o tremor do solo; movimentos e rupturas de rochas nas bordas podem causar terremotos."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "O que os limites das placas indicam?",
+      "options": [
+        "regiões no centro das placas, longe das bordas",
+        "lugares onde placas param de se mover para sempre",
+        "regiões onde placas vizinhas se encontram",
+        "fronteiras desenhadas entre países"
+      ],
+      "correctIndex": 2,
+      "explanation": "Os limites são as bordas entre placas tectônicas.",
+      "wrongExplanations": {
+        "0": "“regiões no centro das placas, longe das bordas” não é uma borda entre placas vizinhas; os limites marcam regiões onde elas se encontram ou se movem uma em relação à outra.",
+        "1": "“lugares onde placas param de se mover para sempre” não é uma borda entre placas vizinhas; os limites marcam regiões onde elas se encontram ou se movem uma em relação à outra.",
+        "3": "“fronteiras desenhadas entre países” não é uma borda entre placas vizinhas; os limites marcam regiões onde elas se encontram ou se movem uma em relação à outra."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Uma placa pode ter parte de continente e parte de fundo oceânico?",
+      "options": [
+        "não, cada placa tem somente continente",
+        "sim, uma placa pode incluir os dois tipos de região",
+        "não, placas existem apenas sob os oceanos",
+        "sim, todas as placas contêm exatamente a mesma proporção de continente e oceano"
+      ],
+      "correctIndex": 1,
+      "explanation": "As placas podem conter áreas continentais e oceânicas.",
+      "wrongExplanations": {
+        "0": "“não, cada placa tem somente continente” descreve uma composição incorreta: placas podem incluir áreas continentais e fundo oceânico.",
+        "2": "“não, placas existem apenas sob os oceanos” descreve uma composição incorreta: placas podem incluir áreas continentais e fundo oceânico.",
+        "3": "“sim, todas as placas contêm exatamente a mesma proporção de continente e oceano” descreve uma composição incorreta: placas podem incluir áreas continentais e fundo oceânico."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Qual afirmação sobre as placas tectônicas está incorreta?",
+      "options": [
+        "o vento empurra as placas como folhas",
+        "as placas se deslocam lentamente",
+        "o encontro de placas pode modificar o relevo",
+        "movimentos nas bordas podem provocar terremotos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vento não move blocos rochosos; o movimento tectônico ocorre por processos geológicos internos.",
+      "wrongExplanations": {
+        "1": "“as placas se deslocam lentamente” é uma descrição correta do movimento tectônico; por isso não responde ao pedido de escolher a afirmação incorreta.",
+        "2": "“o encontro de placas pode modificar o relevo” é uma descrição correta do movimento tectônico; por isso não responde ao pedido de escolher a afirmação incorreta.",
+        "3": "“movimentos nas bordas podem provocar terremotos” é uma descrição correta do movimento tectônico; por isso não responde ao pedido de escolher a afirmação incorreta."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Que forma de relevo pode se formar quando placas se chocam e comprimem a crosta?",
+      "options": [
+        "a crosta se afasta e forma uma nova área oceânica",
+        "as placas se separam e abrem uma fenda até o núcleo",
+        "a superfície se torna plana imediatamente",
+        "montanhas podem se formar"
+      ],
+      "correctIndex": 3,
+      "explanation": "A compressão entre placas pode empurrar e elevar rochas, formando montanhas.",
+      "wrongExplanations": {
+        "0": "Afastar placas pode formar crosta oceânica; o enunciado pergunta o que pode surgir quando elas se chocam e comprimem a crosta.",
+        "1": "Uma fenda até o núcleo não se forma quando placas se chocam; a compressão pode elevar rochas e formar montanhas.",
+        "2": "A compressão não torna a superfície plana de imediato; ela pode dobrar e elevar rochas."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Por que terremotos são comuns perto de limites de placas?",
+      "options": [
+        "as placas se encontram, afastam ou deslizam, mas isso nunca rompe rochas",
+        "as marés empurram as placas umas contra as outras",
+        "porque as placas se encontram, afastam ou deslizam nessas regiões",
+        "há rochas somente nos limites das placas"
+      ],
+      "correctIndex": 2,
+      "explanation": "O movimento acumulado e a ruptura de rochas perto das bordas das placas podem gerar terremotos.",
+      "wrongExplanations": {
+        "0": "O movimento das placas pode acumular tensão e romper rochas; por isso terremotos são comuns perto de alguns limites.",
+        "1": "As marés não empurram as placas tectônicas; os terremotos se relacionam ao movimento e à ruptura de rochas.",
+        "3": "Há rochas em muitas partes da crosta, mas perto dos limites as placas interagem e podem provocar terremotos."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Qual frase descreve corretamente o movimento das placas?",
+      "options": [
+        "movem-se todas para o mesmo lado",
+        "elas se movem lentamente em diferentes direções",
+        "movem-se apenas para cima e para baixo",
+        "ficam imóveis sob os oceanos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Placas podem se aproximar, afastar-se ou deslizar lado a lado.",
+      "wrongExplanations": {
+        "0": "Placas diferentes podem seguir direções distintas, aproximando-se, afastando-se ou deslizando.",
+        "2": "O movimento das placas ocorre principalmente na horizontal, não apenas para cima e para baixo.",
+        "3": "Placas sob os oceanos também se movem lentamente."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "O que é mais correto dizer sobre o material abaixo das placas?",
+      "options": [
+        "há rocha muito quente que pode se deformar e fluir lentamente",
+        "o manto é uma camada de água líquida",
+        "todo o manto é magma derretido",
+        "uma camada de ar frio fica sob as placas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O manto é uma camada de rocha quente; ao longo de muito tempo, parte dele pode se deformar e fluir lentamente.",
+      "wrongExplanations": {
+        "1": "“o manto é uma camada de água líquida” não descreve o material abaixo das placas: o manto é rocha quente, não um oceano de líquido ou ar.",
+        "2": "“todo o manto é magma derretido” não descreve o material abaixo das placas: o manto é rocha quente, não um oceano de líquido ou ar.",
+        "3": "“uma camada de ar frio fica sob as placas” não descreve o material abaixo das placas: o manto é rocha quente, não um oceano de líquido ou ar."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Como o movimento tectônico pode mudar a superfície ao longo de muito tempo?",
+      "options": [
+        "todo o relevo muda de um dia para o outro",
+        "os continentes desaparecem rapidamente",
+        "a Terra para de girar",
+        "pode deslocar continentes e formar montanhas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Movimentos lentos acumulados podem deslocar placas e moldar relevos.",
+      "wrongExplanations": {
+        "0": "O movimento das placas é lento; mudanças no relevo se acumulam ao longo de muito tempo.",
+        "1": "Os continentes não desaparecem rapidamente; eles se deslocam lentamente com as placas.",
+        "2": "O movimento tectônico não faz a Terra parar de girar; ele pode alterar a posição dos continentes e o relevo."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_placas_tectonicas_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "placas-tectonicas",
+      "topicName": "Placas tectônicas",
+      "question": "Qual ideia resume o tema das placas tectônicas?",
+      "options": [
+        "a crosta é uma peça única e imóvel",
+        "as placas só se movem durante terremotos",
+        "grandes blocos da superfície terrestre se movem e podem modificar a paisagem",
+        "todas as placas se deslocam na mesma direção"
+      ],
+      "correctIndex": 2,
+      "explanation": "As placas movem-se lentamente e estão associadas a mudanças na superfície.",
+      "wrongExplanations": {
+        "0": "A camada externa é dividida em placas móveis, não uma peça única e imóvel.",
+        "1": "As placas se movem mesmo sem terremotos; terremotos são possíveis efeitos de movimentos e rupturas.",
+        "3": "Placas se movem em direções diferentes, conforme se aproximam, se afastam ou deslizam."
+      },
+      "skill": "relacionar-placas-a-dinamica-da-superficie",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "placas-tectonicas"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

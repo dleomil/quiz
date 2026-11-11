@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual atitude ajuda a proteger a audição ao usar fones?",
+      "options": [
+        "Aumentar o volume até o máximo",
+        "Manter o volume moderado",
+        "Usar fones no máximo por muitas horas",
+        "Compartilhar um fone com volume alto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volume moderado ajuda a reduzir a exposição a sons intensos.",
+      "wrongExplanations": {
+        "0": "O volume máximo pode expor os ouvidos a som muito intenso.",
+        "2": "Muitas horas de som alto aumentam a exposição.",
+        "3": "Compartilhar fones não torna seguro usar volume alto."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Em um evento com caixas de som muito altas, o que pode reduzir a exposição ao som?",
+      "options": [
+        "Colocar o ouvido perto da caixa",
+        "Permanecer junto à caixa o tempo todo",
+        "Ficar mais longe das caixas e fazer pausas",
+        "Aumentar ainda mais o volume"
+      ],
+      "correctIndex": 2,
+      "explanation": "Afastar-se da fonte e fazer pausas reduz o tempo e a intensidade da exposição.",
+      "wrongExplanations": {
+        "0": "Aproximar o ouvido da caixa aumenta a exposição ao som intenso.",
+        "1": "Ficar junto à caixa por muito tempo aumenta a exposição.",
+        "3": "Aumentar o volume torna o som mais intenso."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "O que fazer se um som causar dor ou desconforto no ouvido?",
+      "options": [
+        "Aumentar o som para acostumar o ouvido",
+        "Ignorar sempre e ficar perto da fonte",
+        "Colocar um objeto no ouvido",
+        "Contar a um adulto responsável e afastar-se do som"
+      ],
+      "correctIndex": 3,
+      "explanation": "A dor deve ser comunicada a um adulto; afastar-se reduz a exposição ao som incômodo.",
+      "wrongExplanations": {
+        "0": "Aumentar o som pode piorar o desconforto.",
+        "1": "Permanecer perto mantém a exposição, e a dor não deve ser sempre ignorada.",
+        "2": "Objetos podem machucar o ouvido e não resolvem o desconforto."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual hábito é mais seguro ao ouvir música com fones?",
+      "options": [
+        "Fazer pausas e usar volume confortável",
+        "Usar o volume máximo o dia inteiro",
+        "Dormir com o som muito alto nos fones",
+        "Aumentar o volume para cobrir todo ruído"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pausas e volume moderado ajudam a limitar a exposição sonora.",
+      "wrongExplanations": {
+        "1": "Volume máximo por muitas horas aumenta a exposição.",
+        "2": "Som muito alto durante o sono mantém exposição prolongada.",
+        "3": "Aumentar o volume pode deixar o som intenso demais."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Por que é melhor afastar-se de uma caixa de som muito alta?",
+      "options": [
+        "A distância transforma som em silêncio completo",
+        "A distância ajuda a diminuir a intensidade do som que chega aos ouvidos",
+        "A caixa só funciona quando estamos perto",
+        "A distância faz o ouvido parar de funcionar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Afastar-se ajuda a reduzir a intensidade sonora que alcança os ouvidos.",
+      "wrongExplanations": {
+        "0": "A distância não garante silêncio completo, apenas pode reduzir o som.",
+        "2": "A caixa pode ser ouvida a alguma distância.",
+        "3": "Afastar-se não interrompe o funcionamento do ouvido."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "O que é uma pausa auditiva durante uma atividade barulhenta?",
+      "options": [
+        "Um momento para aumentar o volume",
+        "Ficar ainda mais perto da fonte",
+        "Um período longe do som intenso",
+        "Colocar música alta nos fones"
+      ],
+      "correctIndex": 2,
+      "explanation": "Uma pausa longe do barulho diminui a exposição ao som intenso.",
+      "wrongExplanations": {
+        "0": "Aumentar o volume não é uma pausa para os ouvidos.",
+        "1": "Aproximar-se mantém a exposição ao ruído.",
+        "3": "Música alta nos fones também expõe os ouvidos a som intenso."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual objeto é usado para escrever no papel e não deve ser colocado no ouvido?",
+      "options": [
+        "Uma toalha para secar o corpo",
+        "Um livro para ler",
+        "Um copo para beber água",
+        "Um lápis"
+      ],
+      "correctIndex": 3,
+      "explanation": "O lápis serve para escrever. Objetos não devem ser colocados no ouvido, pois podem machucá-lo.",
+      "wrongExplanations": {
+        "0": "A toalha é usada para secar o corpo, não para escrever.",
+        "1": "O livro é usado para ler; o lápis é o objeto usado para escrever.",
+        "2": "O copo serve para beber água, não para escrever."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual é uma escolha cuidadosa ao assistir a um vídeo com fones?",
+      "options": [
+        "Ajustar para um volume confortável e fazer pausas",
+        "Deixar no máximo para ouvir todos os detalhes",
+        "Usar fones sem pausa durante todo o dia",
+        "Aumentar o som sempre que alguém falar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volume confortável e pausas ajudam a reduzir a exposição sonora.",
+      "wrongExplanations": {
+        "1": "O volume máximo pode ser excessivo.",
+        "2": "Uso prolongado sem pausas aumenta o tempo de exposição.",
+        "3": "Aumentar o som sempre pode deixá-lo intenso demais."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Se um colega pedir para baixar o som porque está incomodado, o que fazer?",
+      "options": [
+        "Aumentar o volume para testar",
+        "Diminuir o volume e respeitar o pedido",
+        "Ignorar e aproximar a caixa do colega",
+        "Gritar para ele não ouvir a música"
+      ],
+      "correctIndex": 1,
+      "explanation": "Diminuir o volume reduz o som e respeita o desconforto da outra pessoa.",
+      "wrongExplanations": {
+        "0": "Aumentar o volume aumenta a exposição sonora.",
+        "2": "Ignorar o pedido e aproximar a caixa pode intensificar o incômodo.",
+        "3": "Gritar perto de alguém também expõe a pessoa a som intenso."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual atitude segura ajuda a prevenir machucados no ouvido?",
+      "options": [
+        "Usar um grampo para alcançar o ouvido",
+        "Pedir a um colega para colocar uma caneta no ouvido",
+        "Pedir ajuda a um adulto se sentir algo preso, sem tentar retirar com objeto",
+        "Introduzir um palito para limpar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Objetos podem ferir o ouvido; conte a um adulto em vez de tentar alcançar algo.",
+      "wrongExplanations": {
+        "0": "Um grampo pode ferir o canal ou outras partes do ouvido.",
+        "1": "Pedir a outra pessoa para colocar uma caneta no ouvido continua sendo inseguro.",
+        "3": "Palitos não são seguros para limpar dentro do ouvido."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Como uma criança pode agir quando o barulho da festa fica muito intenso?",
+      "options": [
+        "Ficar junto à caixa de som",
+        "Aumentar o volume dos fones",
+        "Gritar perto do ouvido de alguém",
+        "Ir para um lugar mais silencioso e avisar um adulto"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um lugar mais silencioso e o apoio de um adulto reduzem a exposição ao barulho.",
+      "wrongExplanations": {
+        "0": "Ficar junto à caixa aumenta a exposição ao som.",
+        "1": "Aumentar o volume dos fones acrescenta outro som intenso.",
+        "2": "Gritar perto do ouvido expõe outra pessoa a som intenso."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual frase mostra cuidado com a audição?",
+      "options": [
+        "“Vou baixar o volume e descansar um pouco dos fones.”",
+        "“Vou usar o volume máximo por horas.”",
+        "“Vou encostar o ouvido na caixa.”",
+        "“Vou limpar o ouvido com um lápis.”"
+      ],
+      "correctIndex": 0,
+      "explanation": "Baixar o volume e fazer pausas são escolhas que reduzem a exposição sonora.",
+      "wrongExplanations": {
+        "1": "Volume máximo por horas pode expor os ouvidos a som intenso por muito tempo.",
+        "2": "Encostar na caixa aproxima o ouvido do som alto.",
+        "3": "Lápis podem machucar o ouvido."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "O que fazer se a sala estiver muito barulhenta e você não conseguir se concentrar?",
+      "options": [
+        "Aumentar o barulho gritando",
+        "Conversar com o professor para buscar um lugar mais tranquilo",
+        "Colocar o ouvido perto de quem fala alto",
+        "Usar fone no máximo para abafar tudo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Buscar ajuda para reduzir o barulho pode diminuir a exposição sonora.",
+      "wrongExplanations": {
+        "0": "Gritar aumenta o barulho em vez de reduzi-lo.",
+        "2": "Aproximar-se de alguém que fala alto pode aumentar o som recebido.",
+        "3": "Fones no máximo podem expor os ouvidos a sons intensos."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Por que devemos evitar gritar muito perto do ouvido de outra pessoa?",
+      "options": [
+        "Porque gritar muda a cor do ouvido",
+        "Porque a voz vira luz",
+        "Porque um som muito intenso pode incomodar e prejudicar a audição",
+        "Porque o ouvido precisa de gritos para funcionar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sons muito intensos perto do ouvido podem causar desconforto e risco à audição.",
+      "wrongExplanations": {
+        "0": "Gritar não muda a cor do ouvido.",
+        "1": "A voz não se transforma em luz.",
+        "3": "O ouvido não precisa de gritos para funcionar."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual é uma boa escolha em uma apresentação musical muito alta?",
+      "options": [
+        "Sentar encostado na caixa",
+        "Ficar perto do alto-falante até o fim",
+        "Colocar fones por cima e aumentar o volume",
+        "Afastar-se das caixas e fazer pausas em local tranquilo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Distância e pausas ajudam a reduzir a exposição ao som intenso.",
+      "wrongExplanations": {
+        "0": "Encostar na caixa aproxima os ouvidos de uma fonte sonora muito alta.",
+        "1": "Permanecer perto durante toda a apresentação prolonga a exposição.",
+        "2": "Fones com volume alto podem adicionar exposição sonora."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Ao conversar em um lugar barulhento, qual atitude evita competir com gritos?",
+      "options": [
+        "Afastar-se do barulho e falar em tom confortável",
+        "Gritar junto ao ouvido da outra pessoa",
+        "Aumentar a música para cobrir a conversa",
+        "Aproximar uma caixa de som"
+      ],
+      "correctIndex": 0,
+      "explanation": "Afastar-se da fonte de ruído pode facilitar a conversa sem gritar.",
+      "wrongExplanations": {
+        "1": "Gritar no ouvido expõe a pessoa a som intenso.",
+        "2": "Aumentar a música deixa o ambiente mais barulhento.",
+        "3": "Aproximar a caixa aumenta o som."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Antes de voltar a usar os fones, qual cuidado é adequado?",
+      "options": [
+        "Deixá-los sempre no volume máximo",
+        "Manter o volume baixo antes de voltar a usá-los",
+        "Passá-los a outra pessoa sem verificar o volume",
+        "Usá-los perto da caixa de som alta"
+      ],
+      "correctIndex": 1,
+      "explanation": "Começar com volume baixo ajuda a evitar que o som fique inesperadamente alto.",
+      "wrongExplanations": {
+        "0": "Volume máximo pode ser intenso demais.",
+        "2": "A outra pessoa também pode receber um som alto se o volume não for conferido.",
+        "3": "Usar fones perto de uma caixa alta soma exposições sonoras."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Por que fazer pausas entre períodos de uso de fones?",
+      "options": [
+        "Para deixar os fones mais barulhentos",
+        "Para fazer o ouvido produzir sons",
+        "Para reduzir o tempo de exposição contínua ao som",
+        "Para transformar música em silêncio para sempre"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pausas interrompem a exposição contínua e dão descanso dos sons.",
+      "wrongExplanations": {
+        "0": "Pausas não aumentam o volume; é melhor manter volume moderado.",
+        "1": "O ouvido não precisa produzir sons para ouvir.",
+        "3": "Uma pausa não transforma a música em silêncio para sempre."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Qual atitude ajuda quando uma máquina faz muito barulho durante uma atividade?",
+      "options": [
+        "Aproximar o ouvido para investigar",
+        "Ficar perto durante todo o funcionamento",
+        "Gritar para competir com o barulho",
+        "Avisar um adulto e afastar-se da máquina se possível"
+      ],
+      "correctIndex": 3,
+      "explanation": "Avisar um adulto e afastar-se pode reduzir a exposição a um ruído intenso.",
+      "wrongExplanations": {
+        "0": "Aproximar o ouvido aumenta a exposição ao ruído.",
+        "1": "Permanecer perto prolonga a exposição.",
+        "2": "Gritar acrescenta outro som intenso."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_saude-auditiva_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "saude-auditiva",
+      "topicName": "Saúde auditiva",
+      "question": "Se uma criança sente dor após um barulho alto, qual passo é seguro?",
+      "options": [
+        "Contar a um adulto responsável",
+        "Continuar ouvindo o som alto",
+        "Colocar um objeto dentro do ouvido",
+        "Mandar a criança ignorar a dor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um adulto pode ajudar a criança diante da dor; não se deve manter o som alto nem colocar objetos no ouvido.",
+      "wrongExplanations": {
+        "1": "Continuar ouvindo pode prolongar a exposição ao som intenso.",
+        "2": "Objetos podem causar machucados.",
+        "3": "Dor não deve ser sempre ignorada; conte a um adulto responsável."
+      },
+      "skill": "identificar-cuidados-seguros-para-proteger-a-audicao",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "saude-auditiva"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}
