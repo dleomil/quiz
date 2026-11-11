@@ -73,7 +73,7 @@
       "options": [
         "sim, ela só fica visível depois que escurece",
         "sim, a luz do Sol sempre a esconde",
-        "não, ela também pode ser vista durante o dia",
+        "não, ela pode ser vista em todo o céu a qualquer hora",
         "não, às vezes pode ser vista durante o dia"
       ],
       "correctIndex": 3,
@@ -81,7 +81,7 @@
       "wrongExplanations": {
         "0": "Na pergunta “A Lua só pode ser vista à noite”, a opção “sim, ela só fica visível depois que escurece” não atende ao que se pede: a Lua não aparece apenas à noite; em algumas ocasiões também pode ser vista durante o dia.",
         "1": "Na pergunta “A Lua só pode ser vista à noite”, a opção “sim, a luz do Sol sempre a esconde” não atende ao que se pede: a Lua não deixa de existir nem apaga a própria luz; sua visibilidade depende da posição e das condições do céu.",
-        "2": "Na pergunta “A Lua só pode ser vista à noite”, a opção “não, ela pode aparecer em todo céu a qualquer hora” não atende ao que se pede: a Lua não fica visível em todo lugar e a qualquer hora; sua posição no céu muda."
+        "2": "A Lua não pode ser vista em todo o céu e a qualquer hora; sua posição e as condições do céu influenciam sua visibilidade."
       },
       "skill": "comparar-observacoes-diurnas-e-noturnas",
       "sourceRef": {
@@ -159,7 +159,7 @@
       "subject": "ciencias",
       "topic": "observacao-do-ceu",
       "topicName": "Observação do céu",
-      "question": "Qual astro pode ser visto no céu durante alguns dias e também em algumas noites?",
+      "question": "Qual astro pode ser visto durante o dia em algumas ocasiões e também à noite?",
       "options": [
         "a Lua",
         "o Sol",

@@ -19,9 +19,9 @@
       "correctIndex": 1,
       "explanation": "A Terra é um planeta que orbita o Sol.",
       "wrongExplanations": {
-        "0": "Na pergunta “Como classificamos a Terra”, a opção “estrela” não atende ao que se pede: “estrela” é estrela, não o planeta em que vivemos: a Terra.",
-        "2": "Na pergunta “Como classificamos a Terra”, a opção “satélite natural” não atende ao que se pede: “satélite natural” é satélite natural, não o planeta em que vivemos: a Terra.",
-        "3": "Na pergunta “Como classificamos a Terra”, a opção “cometa” não atende ao que se pede: “cometa” é cometa, não o planeta em que vivemos: a Terra."
+        "0": "A Terra não é uma estrela; é um planeta que orbita o Sol.",
+        "2": "A Terra não é um satélite natural; é um planeta que orbita o Sol.",
+        "3": "A Terra não é um cometa; é um planeta que orbita o Sol."
       },
       "skill": "reconhecer-caracteristicas-gerais-da-terra",
       "sourceRef": {

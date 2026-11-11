@@ -41,7 +41,7 @@
       "topicName": "Deficiência auditiva",
       "question": "Qual recurso pode ajudar uma pessoa surda a acompanhar uma conversa?",
       "options": [
-        "Aumentar a luz da sala até apagar as imagens",
+        "Apagar as luzes e esconder as imagens",
         "Falar de costas para a pessoa",
         "Língua Brasileira de Sinais, Libras",
         "Tocar uma música mais alta"
@@ -49,8 +49,8 @@
       "correctIndex": 2,
       "explanation": "Libras é uma língua visual usada por muitas pessoas surdas para se comunicar.",
       "wrongExplanations": {
-        "0": "Apagar as imagens dificulta a comunicação visual.",
-        "1": "Falar de costas impede a pessoa de ver expressões e, caso utilize esse recurso, fazer leitura labial.",
+        "0": "Esconder imagens dificulta a comunicação visual.",
+        "1": "Falar de costas impede a pessoa de ver expressões e dificulta a leitura labial, caso ela use esse recurso.",
         "3": "Música mais alta não substitui uma forma acessível de comunicação."
       },
       "skill": "reconhecer-diversidade-e-recursos-de-acessibilidade-auditiva",

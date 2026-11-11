@@ -197,7 +197,7 @@
         "Intensidade"
       ],
       "correctIndex": 3,
-      "explanation": "A diferença entre falar baixinho e falar mais forte é de intensidade.",
+      "explanation": "A diferença entre cantar baixinho e cantar mais forte é de intensidade.",
       "wrongExplanations": {
         "0": "A pergunta informa que a nota é a mesma, então a altura não mudou.",
         "1": "O timbre pode caracterizar a voz, mas a mudança descrita é de intensidade.",
@@ -321,7 +321,7 @@
       "wrongExplanations": {
         "0": "Altura pode variar, mas não é o único aspecto que diferencia as fontes.",
         "1": "Intensidade diz se o som é forte ou fraco e não define sozinha a fonte.",
-        "2": "“Tamanho do som” não é a propriedade pedida."
+        "2": "Duração indica por quanto tempo o som permanece; o timbre ajuda a reconhecer a fonte sonora."
       },
       "skill": "distinguir-intensidade-altura-e-timbre",
       "sourceRef": {
