@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "O que é um terremoto?",
+      "options": [
+        "uma série de ondas no oceano após um grande deslocamento de água",
+        "um tremor do solo causado por movimentos e rupturas de rochas",
+        "a subida e descida regular da maré",
+        "uma erupção vulcânica"
+      ],
+      "correctIndex": 1,
+      "explanation": "Um terremoto é o movimento que provoca tremor na superfície terrestre.",
+      "wrongExplanations": {
+        "0": "Essa descrição corresponde a um tsunami, uma série de ondas no oceano; terremoto é o tremor do solo.",
+        "2": "A maré é a subida e descida regular do nível do mar; terremoto é um tremor do solo.",
+        "3": "Erupção vulcânica e terremoto são fenômenos diferentes; o terremoto envolve tremor do solo."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "O que é um tsunami?",
+      "options": [
+        "uma série de ondas no oceano causada por uma grande perturbação",
+        "um tremor do solo causado por movimento de rochas",
+        "a variação regular da maré",
+        "ondas comuns produzidas pelo vento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tsunami é uma série de ondas grandes geradas por deslocamento rápido da água.",
+      "wrongExplanations": {
+        "1": "Esse é o tremor do solo associado a um terremoto; tsunami é uma série de ondas no oceano.",
+        "2": "A maré é uma variação regular do nível do mar; tsunami é uma série de ondas ligada a uma grande perturbação da água.",
+        "3": "O vento forma ondas comuns; um tsunami está associado a um deslocamento grande e rápido da água."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Todo terremoto causa um tsunami?",
+      "options": [
+        "Sim; qualquer terremoto cria um tsunami.",
+        "Não; somente terremotos em terra causam tsunamis.",
+        "Sim; todo terremoto submarino desloca água o bastante.",
+        "Não; nem todo terremoto desloca água do mar de modo a gerar tsunami."
+      ],
+      "correctIndex": 3,
+      "explanation": "Um terremoto só pode gerar tsunami em certas condições de localização e deslocamento da água.",
+      "wrongExplanations": {
+        "0": "Nem todo terremoto causa tsunami; é preciso haver condições que desloquem água do mar em grande escala.",
+        "1": "Terremotos submarinos também podem gerar tsunami se deslocarem água; não são apenas os terremotos em terra que importam.",
+        "2": "Nem todo terremoto submarino desloca água o bastante para formar um tsunami."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Que movimento do fundo do mar, associado a um terremoto, pode gerar um tsunami?",
+      "options": [
+        "a mudança regular do nível do mar pela maré",
+        "ondas comuns formadas pelo vento",
+        "um grande deslocamento do fundo do mar",
+        "chuva forte sobre a superfície do oceano"
+      ],
+      "correctIndex": 2,
+      "explanation": "Um deslocamento grande e rápido do fundo do mar pode mover muita água e gerar um tsunami.",
+      "wrongExplanations": {
+        "0": "A maré é uma subida e descida regular do mar, não o deslocamento brusco do fundo oceânico ligado ao terremoto.",
+        "1": "O vento pode formar ondas comuns, mas não é o movimento do fundo do mar associado ao terremoto pedido.",
+        "3": "“chuva forte sobre a superfície do oceano” não descreve o deslocamento rápido do fundo do mar que pode iniciar esse tsunami."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual é a diferença principal entre terremoto e tsunami?",
+      "options": [
+        "os dois nomes descrevem a mesma onda",
+        "terremoto é tremor do solo; tsunami é uma série de ondas no mar",
+        "terremoto é uma onda no oceano e tsunami é um tremor do solo",
+        "os dois são fenômenos do tempo atmosférico"
+      ],
+      "correctIndex": 1,
+      "explanation": "Os fenômenos são diferentes, embora alguns terremotos possam causar tsunamis.",
+      "wrongExplanations": {
+        "0": "“os dois nomes descrevem a mesma onda” não diferencia os fenômenos: terremoto é um abalo do solo e tsunami é uma sequência de ondas no oceano.",
+        "2": "Terremoto é tremor do solo; tsunami é uma série de ondas oceânicas, portanto essa alternativa troca os fenômenos.",
+        "3": "“os dois são fenômenos do tempo atmosférico” não diferencia os fenômenos: terremoto é um abalo do solo e tsunami é uma sequência de ondas no oceano."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Um terremoto ocorre longe do oceano. O que podemos afirmar?",
+      "options": [
+        "ele pode acontecer sem formar tsunami",
+        "sempre provoca ondas gigantes em todas as costas",
+        "não pode ser chamado de terremoto se ocorre em terra",
+        "só existe terremoto quando há tsunami"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem um grande deslocamento da água, um terremoto não gera necessariamente tsunami.",
+      "wrongExplanations": {
+        "1": "Nem todo terremoto causa ondas em todas as costas; sem grande deslocamento da água, pode não haver tsunami.",
+        "2": "Um terremoto em terra continua sendo terremoto; o local afastado do oceano torna improvável a formação de tsunami.",
+        "3": "Terremotos podem ocorrer sem tsunami; tsunami é uma consequência possível de alguns deslocamentos da água do mar."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Por que alguns terremotos no fundo do mar podem gerar tsunamis?",
+      "options": [
+        "a maré regular empurra o fundo do mar",
+        "as ondas do vento transformam água em rocha",
+        "a água para de se mover",
+        "porque podem deslocar uma grande quantidade de água rapidamente"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um movimento amplo do fundo do mar pode pôr muita água em movimento.",
+      "wrongExplanations": {
+        "0": "A maré é uma variação regular do nível do mar; alguns terremotos submarinos geram tsunami ao deslocar muita água rapidamente.",
+        "1": "O vento não transforma água em rocha; o movimento do fundo do mar pode deslocar muita água e formar um tsunami.",
+        "2": "A água não precisa parar: o deslocamento rápido de grande quantidade de água pode gerar um tsunami."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual frase sobre um tsunami é correta?",
+      "options": [
+        "um tsunami é sempre uma onda única",
+        "um tsunami é somente uma maré alta",
+        "pode chegar à costa como uma sequência de ondas",
+        "um tsunami é uma onda comum criada pelo vento"
+      ],
+      "correctIndex": 2,
+      "explanation": "Um tsunami pode ser formado por várias ondas, não apenas uma.",
+      "wrongExplanations": {
+        "0": "Um tsunami pode chegar em várias ondas, não necessariamente como uma única onda.",
+        "1": "Tsunami não é simplesmente maré alta; é uma série de ondas ligada a uma perturbação grande da água.",
+        "3": "Ondas comuns podem ser formadas pelo vento; tsunami é uma série de ondas associada a uma perturbação grande da água."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual alternativa diferencia corretamente terremoto e tsunami?",
+      "options": [
+        "terremoto é uma onda do mar; tsunami é um tremor do solo",
+        "terremoto é um tremor do solo; tsunami é uma série de ondas no oceano",
+        "terremoto e tsunami são dois nomes para o mesmo fenômeno",
+        "tsunami é um tremor no fundo do mar que não chega à superfície"
+      ],
+      "correctIndex": 1,
+      "explanation": "Terremoto é um abalo do solo; tsunami é uma série de ondas oceânicas.",
+      "wrongExplanations": {
+        "0": "A alternativa inverte os fenômenos: o terremoto é o tremor do solo e o tsunami é a série de ondas no oceano.",
+        "2": "Os fenômenos têm nomes e características diferentes: um é um tremor do solo; o outro, ondas no oceano.",
+        "3": "Tsunami não é um tremor subterrâneo; é uma série de ondas oceânicas."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual situação cotidiana pode produzir ondas pequenas na superfície do mar sem um grande deslocamento do fundo oceânico?",
+      "options": [
+        "o vento soprando sobre a superfície do mar",
+        "uma série de ondas após um forte deslocamento do fundo do mar",
+        "uma alteração regular do nível do mar causada pelas marés",
+        "um terremoto que desloca rapidamente uma grande área do fundo oceânico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vento pode formar ondas comuns na superfície. Um grande deslocamento do fundo oceânico pode gerar um tsunami.",
+      "wrongExplanations": {
+        "1": "Uma série de ondas após um grande deslocamento do fundo do mar pode ser um tsunami; a pergunta pede uma situação cotidiana.",
+        "2": "A maré é a mudança regular do nível do mar, não o exemplo de ondas pequenas formadas pelo vento.",
+        "3": "Um deslocamento grande e rápido do fundo oceânico pode gerar um tsunami, não apenas ondas pequenas cotidianas."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "O que o nome terremoto descreve?",
+      "options": [
+        "a sequência de ondas oceânicas",
+        "a subida e descida regular do nível do mar",
+        "a erupção de um vulcão",
+        "o tremor da Terra"
+      ],
+      "correctIndex": 3,
+      "explanation": "A palavra descreve o abalo ou tremor do solo.",
+      "wrongExplanations": {
+        "0": "Uma sequência de ondas no oceano é um tsunami; terremoto é o tremor do solo.",
+        "1": "A subida e descida regular do mar é maré, não o abalo do solo chamado terremoto.",
+        "2": "Erupção vulcânica é outro fenômeno geológico; terremoto é o tremor do solo."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual frase evita uma afirmação absoluta sobre tsunamis?",
+      "options": [
+        "Todos os terremotos causam tsunamis.",
+        "Tsunamis acontecem somente durante a maré alta.",
+        "Alguns terremotos submarinos podem gerar tsunamis.",
+        "Somente terremotos em terra podem causar tsunamis."
+      ],
+      "correctIndex": 2,
+      "explanation": "Um terremoto submarino pode gerar tsunami se provocar um deslocamento adequado da água; isso não acontece sempre.",
+      "wrongExplanations": {
+        "0": "Nem todo terremoto causa tsunami; é necessário que haja um deslocamento adequado de grande quantidade de água.",
+        "1": "Tsunamis não dependem apenas de maré alta; alguns terremotos submarinos podem deslocar água e gerar tsunamis.",
+        "3": "Terremotos submarinos, e não somente os que ocorrem em terra, podem gerar tsunamis se deslocarem água o bastante."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual afirmação sobre terremotos e tsunamis está correta?",
+      "options": [
+        "todo terremoto, em qualquer lugar, produz um tsunami",
+        "um terremoto submarino pode gerar tsunami se deslocar água do mar",
+        "nenhum terremoto submarino pode causar um tsunami",
+        "um tsunami acontece sempre que o solo treme, mesmo longe do mar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Alguns terremotos submarinos podem deslocar água e gerar tsunamis, mas isso não acontece em todos os terremotos.",
+      "wrongExplanations": {
+        "0": "Nem todo terremoto causa tsunami; isso pode ocorrer quando certas condições, como o deslocamento de água do mar, estão presentes.",
+        "2": "Alguns terremotos submarinos podem deslocar água do mar e gerar um tsunami.",
+        "3": "O tremor do solo, por si só, não produz sempre um tsunami, especialmente quando ocorre longe do mar."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Como um terremoto pode ser sentido na superfície?",
+      "options": [
+        "o chão pode balançar por causa de ondas que passam pelas rochas",
+        "a maré alta levanta o chão",
+        "um tsunami sempre escurece o céu",
+        "o movimento das placas faz a Lua mudar de órbita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A energia do terremoto se propaga e pode fazer o solo tremer.",
+      "wrongExplanations": {
+        "1": "“a maré alta levanta o chão” não descreve como o solo pode balançar; as ondas sísmicas passam pelas rochas e fazem a superfície tremer.",
+        "2": "“um tsunami sempre escurece o céu” não descreve como o solo pode balançar; as ondas sísmicas passam pelas rochas e fazem a superfície tremer.",
+        "3": "“o movimento das placas faz a Lua mudar de órbita” não descreve como o solo pode balançar; as ondas sísmicas passam pelas rochas e fazem a superfície tremer."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual fenômeno é mais diretamente observado no oceano após um deslocamento grande da água?",
+      "options": [
+        "um terremoto em terra",
+        "uma maré regular",
+        "uma ressaca comum causada pelo vento",
+        "um tsunami"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um tsunami é uma série de ondas causada por perturbação rápida da água.",
+      "wrongExplanations": {
+        "0": "Um terremoto é o tremor do solo; a série de ondas no oceano após uma perturbação grande da água é um tsunami.",
+        "1": "Maré é uma variação regular do nível do mar; a perturbação rápida da água pode produzir um tsunami.",
+        "2": "Ressaca ligada ao vento não é o mesmo que uma série de ondas causada por grande deslocamento da água, como um tsunami."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Por que um terremoto submarino não causa sempre um tsunami?",
+      "options": [
+        "todo terremoto submarino necessariamente vira tsunami",
+        "tsunamis só se formam por vento forte",
+        "porque o movimento pode não deslocar água o bastante ou na direção necessária",
+        "a maré impede qualquer deslocamento de água"
+      ],
+      "correctIndex": 2,
+      "explanation": "Para gerar tsunami, o deslocamento do fundo do mar precisa ter condições adequadas.",
+      "wrongExplanations": {
+        "0": "Nem todo terremoto submarino desloca o fundo do mar de modo suficiente para formar um tsunami.",
+        "1": "Vento forte pode formar ondas comuns, mas não é a única causa de tsunami; deslocamentos rápidos de água também podem gerá-lo.",
+        "3": "A maré não impede todo deslocamento de água; o que importa é se o movimento do fundo do mar desloca água o bastante."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual palavra nomeia o movimento brusco que faz o solo tremer?",
+      "options": [
+        "tsunami",
+        "terremoto",
+        "maré alta",
+        "ressaca provocada pelo vento"
+      ],
+      "correctIndex": 1,
+      "explanation": "Terremoto é o abalo ou tremor do solo.",
+      "wrongExplanations": {
+        "0": "“tsunami” nomeia outro fenômeno, não o que o enunciado descreve.",
+        "2": "Maré alta é uma subida regular do nível do mar; não é o movimento brusco que faz o solo tremer.",
+        "3": "“ressaca provocada pelo vento” nomeia outro fenômeno, não o que o enunciado descreve."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual palavra nomeia uma série de ondas grandes no oceano após um forte deslocamento de água?",
+      "options": [
+        "tsunami",
+        "terremoto",
+        "maré alta",
+        "ressaca comum provocada pelo vento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tsunami é um conjunto de ondas associado a uma perturbação grande da água.",
+      "wrongExplanations": {
+        "1": "“terremoto” nomeia outro fenômeno, não o que o enunciado descreve.",
+        "2": "Maré alta é uma variação regular do nível do mar; não é uma série de ondas grandes causada por um deslocamento rápido da água.",
+        "3": "“ressaca comum provocada pelo vento” nomeia outro fenômeno, não o que o enunciado descreve."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "O que é correto dizer sobre terremotos?",
+      "options": [
+        "só acontecem no fundo dos oceanos",
+        "só acontecem perto de vulcões em erupção",
+        "são provocados por nuvens carregadas",
+        "eles podem ocorrer em diferentes lugares e nem sempre perto do mar"
+      ],
+      "correctIndex": 3,
+      "explanation": "Terremotos podem acontecer em áreas afastadas da costa.",
+      "wrongExplanations": {
+        "0": "Terremotos também podem ocorrer em terra; não ficam restritos ao fundo do oceano.",
+        "1": "Terremotos não dependem de um vulcão em erupção; podem ocorrer em diferentes regiões.",
+        "2": "Nuvens carregadas não provocam terremotos; eles são fenômenos geológicos que podem ocorrer longe do mar."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_terremotos_e_tsunamis_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "terremotos-e-tsunamis",
+      "topicName": "Terremotos e tsunamis",
+      "question": "Qual resumo está correto?",
+      "options": [
+        "todo terremoto produz tsunami",
+        "tsunami é um tremor do solo",
+        "terremotos são tremores do solo; alguns terremotos submarinos podem causar tsunamis",
+        "qualquer onda do mar é um terremoto"
+      ],
+      "correctIndex": 2,
+      "explanation": "A frase diferencia os fenômenos e evita dizer que todo terremoto causa tsunami.",
+      "wrongExplanations": {
+        "0": "Nem todo terremoto causa tsunami; isso pode ocorrer quando certos abalos deslocam água do mar.",
+        "1": "Tsunami é uma série de ondas no oceano, não um tremor do solo; o tremor é o terremoto.",
+        "3": "Uma onda comum não é um terremoto: terremoto é o tremor do solo, e tsunami é uma série de ondas oceânicas."
+      },
+      "skill": "distinguir-terremotos-e-tsunamis",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "terremotos-e-tsunamis"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

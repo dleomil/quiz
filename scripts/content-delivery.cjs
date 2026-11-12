@@ -230,6 +230,16 @@ function validateReviews(
         (scenario.input?.proposals || []).find(
           (item) => item.id === entry.questionId,
         );
+      const batchResult = Array.isArray(scenario.output?.results)
+        ? scenario.output.results.find(
+            (item) => item.questionId === entry.questionId,
+          )
+        : null;
+      if (
+        Array.isArray(scenario.output?.results) &&
+        (!batchResult || batchResult.decision !== entry.decision)
+      )
+        errors.push(`resultado individual diverge: ${pair}`);
       if (
         !question ||
         !reviewedProposal ||
@@ -329,6 +339,12 @@ function validateReviews(
         scenario.output?.reviewPass !== entry.pass
       )
         errors.push(`passagem editorial diverge: ${pair}`);
+      if (
+        scenario.input?.proposals?.length > 1 &&
+        execution.kind === 'isolated-editorial' &&
+        !execution.agentInstanceId
+      )
+        errors.push(`identidade do agente ausente: ${pair}`);
       if (
         !execution.completedAt ||
         !Number.isFinite(Date.parse(execution.completedAt))

@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "O som de uma sirene é mais forte que um sussurro. Qual propriedade está sendo comparada?",
+      "options": [
+        "Altura",
+        "Intensidade",
+        "Timbre",
+        "Cor"
+      ],
+      "correctIndex": 1,
+      "explanation": "A intensidade indica se um som é mais forte ou mais fraco.",
+      "wrongExplanations": {
+        "0": "Altura indica sons mais agudos ou mais graves.",
+        "2": "Timbre ajuda a distinguir fontes sonoras.",
+        "3": "Cor é percebida pela visão, não é propriedade do som."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "O som de um apito é mais agudo que o som grave de um tambor. Qual propriedade muda?",
+      "options": [
+        "Intensidade",
+        "Timbre",
+        "Altura",
+        "Duração"
+      ],
+      "correctIndex": 2,
+      "explanation": "A altura descreve sons agudos e graves.",
+      "wrongExplanations": {
+        "0": "Intensidade descreve sons fortes e fracos.",
+        "1": "Timbre diferencia a qualidade de sons de fontes diferentes.",
+        "3": "Duração é quanto tempo o som permanece, não se é agudo ou grave."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Duas pessoas cantam a mesma nota e no mesmo volume, mas suas vozes são reconhecidas como diferentes. O que ajuda a diferenciá-las?",
+      "options": [
+        "Intensidade",
+        "Altura",
+        "Silêncio",
+        "Timbre"
+      ],
+      "correctIndex": 3,
+      "explanation": "O timbre é a característica que ajuda a distinguir sons de fontes diferentes.",
+      "wrongExplanations": {
+        "0": "Intensidade seria diferente se uma voz fosse mais forte.",
+        "1": "Altura seria diferente se uma voz fosse mais aguda ou grave.",
+        "2": "Silêncio é ausência de som e não distingue as duas vozes."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Uma criança bate no tambor com mais força e o som parece mais forte. O que aumentou?",
+      "options": [
+        "A intensidade",
+        "A altura necessariamente",
+        "A cor",
+        "A duração sempre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bater com mais força pode aumentar a intensidade percebida do som.",
+      "wrongExplanations": {
+        "1": "A altura não precisa mudar só porque o som ficou mais forte.",
+        "2": "Cor não é propriedade auditiva do som.",
+        "3": "O tempo do som não aumenta necessariamente ao bater mais forte."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Qual palavra descreve se uma nota é aguda ou grave?",
+      "options": [
+        "Intensidade",
+        "Altura",
+        "Timbre",
+        "Volume de água"
+      ],
+      "correctIndex": 1,
+      "explanation": "A altura indica se um som é agudo ou grave.",
+      "wrongExplanations": {
+        "0": "A intensidade indica a força do som; a altura é que permite dizer se ele é agudo ou grave.",
+        "2": "Timbre ajuda a reconhecer a fonte sonora.",
+        "3": "Água não descreve uma propriedade do som."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "O que ajuda a reconhecer que um som veio de um violão e não de uma flauta, mesmo com nota parecida?",
+      "options": [
+        "A cor da nota",
+        "A sombra do instrumento",
+        "O timbre",
+        "A distância da música"
+      ],
+      "correctIndex": 2,
+      "explanation": "O timbre diferencia sons de fontes sonoras distintas.",
+      "wrongExplanations": {
+        "0": "A nota não tem cor que identifique o instrumento.",
+        "1": "A sombra não é percebida pela audição.",
+        "3": "A distância pode alterar o volume ouvido, mas não define por si só a fonte."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "A mesma pessoa canta a mesma nota, primeiro baixinho e depois mais forte. Qual propriedade mudou?",
+      "options": [
+        "Altura",
+        "Timbre necessariamente",
+        "Velocidade da luz",
+        "Intensidade"
+      ],
+      "correctIndex": 3,
+      "explanation": "A diferença entre cantar baixinho e cantar mais forte é de intensidade.",
+      "wrongExplanations": {
+        "0": "A pergunta informa que a nota é a mesma, então a altura não mudou.",
+        "1": "O timbre pode caracterizar a voz, mas a mudança descrita é de intensidade.",
+        "2": "A velocidade da luz não é uma propriedade do som."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Uma flauta toca uma nota aguda e depois uma nota grave. O que mudou?",
+      "options": [
+        "A altura da nota",
+        "A cor da flauta",
+        "A intensidade do som necessariamente",
+        "A fonte sonora"
+      ],
+      "correctIndex": 0,
+      "explanation": "Agudo e grave descrevem a altura do som.",
+      "wrongExplanations": {
+        "1": "A cor da flauta não determina se a nota é aguda ou grave.",
+        "2": "A situação não informa mudança de intensidade; ela informa mudança entre nota aguda e grave.",
+        "3": "A flauta continua sendo a fonte sonora."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Qual exemplo descreve uma mudança de timbre?",
+      "options": [
+        "Uma buzina fica mais forte",
+        "A mesma nota soa diferente em um piano e em um violino",
+        "Um sino toca por mais tempo",
+        "Um som fica mais agudo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Piano e violino têm timbres diferentes, mesmo tocando notas parecidas.",
+      "wrongExplanations": {
+        "0": "Mais forte descreve intensidade.",
+        "2": "Mais tempo descreve duração.",
+        "3": "Mais agudo descreve altura."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "O que significa dizer que um som é fraco?",
+      "options": [
+        "Que sua altura é grave",
+        "Que seu timbre é azul",
+        "Que sua intensidade é baixa",
+        "Que sua duração é longa"
+      ],
+      "correctIndex": 2,
+      "explanation": "Som fraco e som forte descrevem a intensidade.",
+      "wrongExplanations": {
+        "0": "Grave descreve altura, não intensidade.",
+        "1": "Azul é uma cor, não descreve timbre.",
+        "3": "Longa duração informa tempo, não intensidade."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Se uma campainha e um chocalho produzem sons de mesma altura, intensidade e duração, qual propriedade ainda ajuda a reconhecer a fonte?",
+      "options": [
+        "Altura",
+        "Intensidade",
+        "Duração",
+        "Timbre"
+      ],
+      "correctIndex": 3,
+      "explanation": "O timbre ajuda a reconhecer qual objeto produziu o som.",
+      "wrongExplanations": {
+        "0": "A altura é a mesma nos dois sons, portanto não permite distingui-los neste exemplo.",
+        "1": "A intensidade é a mesma nos dois sons, portanto não permite distingui-los neste exemplo.",
+        "2": "A duração é a mesma nos dois sons, portanto não permite distingui-los neste exemplo."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Se uma nota fica mais aguda, como mudou sua altura?",
+      "options": [
+        "Aumentou",
+        "Diminuiu a intensidade obrigatoriamente",
+        "Mudou de cor",
+        "Desapareceu o timbre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma nota mais aguda tem maior altura que uma nota mais grave.",
+      "wrongExplanations": {
+        "1": "A intensidade não precisa diminuir quando a altura muda.",
+        "2": "Sons não mudam de cor ao ficarem agudos.",
+        "3": "O timbre não desaparece por a nota ficar aguda."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Qual comparação trata da intensidade do som?",
+      "options": [
+        "Uma flauta soa mais aguda que outra",
+        "Uma campainha soa mais forte que outra",
+        "Duas vozes têm timbres diferentes",
+        "Um sino toca por mais tempo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mais forte ou mais fraco compara a intensidade.",
+      "wrongExplanations": {
+        "0": "Mais agudo compara a altura.",
+        "2": "Timbres diferentes comparam a qualidade das fontes sonoras.",
+        "3": "Mais tempo compara a duração."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Dois instrumentos tocam igualmente forte e a mesma nota, mas ainda parecem diferentes. Qual propriedade explica isso?",
+      "options": [
+        "Intensidade",
+        "Altura",
+        "Timbre",
+        "Eco"
+      ],
+      "correctIndex": 2,
+      "explanation": "O timbre faz com que instrumentos tenham sons reconhecíveis, mesmo com nota e intensidade semelhantes.",
+      "wrongExplanations": {
+        "0": "A intensidade é semelhante segundo a situação.",
+        "1": "A altura é semelhante porque a nota é a mesma.",
+        "3": "Eco é a repetição do som refletido, não a qualidade própria do instrumento."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "O que descreve a diferença entre um som agudo e um som grave?",
+      "options": [
+        "Intensidade",
+        "Timbre",
+        "Volume",
+        "Altura"
+      ],
+      "correctIndex": 3,
+      "explanation": "A altura permite descrever sons como agudos ou graves.",
+      "wrongExplanations": {
+        "0": "Intensidade descreve som forte ou fraco.",
+        "1": "Timbre ajuda a diferenciar fontes sonoras.",
+        "2": "Volume é usado para falar da força sonora, não da distinção agudo/grave."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Um celular toca uma melodia com volume baixo. Se o volume aumenta sem mudar as notas, qual propriedade mudou?",
+      "options": [
+        "Intensidade",
+        "Altura",
+        "Timbre necessariamente",
+        "Ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aumentar o volume torna o som mais forte, mudando a intensidade.",
+      "wrongExplanations": {
+        "1": "As notas mantidas não mudaram de altura.",
+        "2": "O aparelho continua sendo a fonte; o timbre não precisa mudar.",
+        "3": "Ritmo é a organização dos sons no tempo."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Uma nota de violão e uma nota de piano têm a mesma altura. O que pode fazer parecerem diferentes?",
+      "options": [
+        "Sua cor",
+        "Seus timbres",
+        "Sua sombra",
+        "Seu cheiro"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cada instrumento tem timbre próprio, que ajuda a distinguir seus sons.",
+      "wrongExplanations": {
+        "0": "A cor do instrumento é vista, não ouvida.",
+        "2": "Sombras não são ouvidas.",
+        "3": "Cheiros não são propriedades sonoras."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Uma flauta e um violão tocam a mesma nota com intensidade semelhante. Qual propriedade ajuda a distinguir os sons?",
+      "options": [
+        "A intensidade",
+        "O timbre",
+        "A altura",
+        "A cor dos instrumentos"
+      ],
+      "correctIndex": 1,
+      "explanation": "O timbre permite reconhecer sons de fontes diferentes, mesmo quando têm altura e intensidade semelhantes.",
+      "wrongExplanations": {
+        "0": "A questão informa intensidades semelhantes, então essa propriedade não é a principal diferença.",
+        "2": "Os dois instrumentos tocam a mesma nota, portanto a altura foi mantida.",
+        "3": "A cor é percebida pelos olhos e não distingue a qualidade do som."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Um alarme mantém a mesma nota, mas passa a soar mais forte. Qual propriedade mudou?",
+      "options": [
+        "A altura necessariamente diminuiu",
+        "O timbre virou duração",
+        "A cor do som mudou",
+        "A intensidade aumentou"
+      ],
+      "correctIndex": 3,
+      "explanation": "O alarme ficou mais forte, portanto sua intensidade aumentou.",
+      "wrongExplanations": {
+        "0": "A altura não precisa diminuir quando a intensidade aumenta.",
+        "1": "Timbre e duração são propriedades diferentes.",
+        "2": "Som não tem cor literal."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_propriedades-do-som_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "propriedades-do-som",
+      "topicName": "Propriedades do som",
+      "question": "Qual conjunto relaciona corretamente as propriedades do som?",
+      "options": [
+        "Intensidade: forte ou fraco; altura: agudo ou grave; timbre: característica da fonte",
+        "Intensidade: cor; altura: cheiro; timbre: sombra",
+        "Intensidade: agudo ou grave; altura: forte ou fraco; timbre: duração",
+        "Intensidade: duração; altura: cor; timbre: volume de água"
+      ],
+      "correctIndex": 0,
+      "explanation": "Intensidade, altura e timbre descrevem aspectos diferentes do som.",
+      "wrongExplanations": {
+        "1": "Cor, cheiro e sombra não são definições dessas propriedades.",
+        "2": "As definições de intensidade e altura estão trocadas, e timbre não é duração.",
+        "3": "Duração não é intensidade; cor e água não descrevem propriedades sonoras."
+      },
+      "skill": "distinguir-intensidade-altura-e-timbre",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "propriedades-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

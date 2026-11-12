@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Como classificamos a Terra?",
+      "options": [
+        "uma estrela",
+        "um planeta",
+        "um satélite natural",
+        "um cometa"
+      ],
+      "correctIndex": 1,
+      "explanation": "A Terra é um planeta que orbita o Sol.",
+      "wrongExplanations": {
+        "0": "A Terra não é uma estrela; é um planeta que orbita o Sol.",
+        "2": "A Terra não é um satélite natural; é um planeta que orbita o Sol.",
+        "3": "A Terra não é um cometa; é um planeta que orbita o Sol."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual estrela está mais próxima da Terra e fornece luz durante o dia?",
+      "options": [
+        "o Sol",
+        "a Lua",
+        "Marte",
+        "Sirius"
+      ],
+      "correctIndex": 0,
+      "explanation": "A luz solar ilumina a Terra.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Qual estrela está mais próxima da Terra e fornece luz durante o dia”, a opção “a Lua” não atende ao que se pede: “a Lua” não é uma estrela; a pergunta pede a estrela mais próxima da Terra, que fornece luz durante o dia.",
+        "2": "Na pergunta “Qual estrela está mais próxima da Terra e fornece luz durante o dia”, a opção “Marte” não atende ao que se pede: “Marte” não é uma estrela; a pergunta pede a estrela mais próxima da Terra, que fornece luz durante o dia.",
+        "3": "Sirius também é uma estrela, mas está muito mais distante. O Sol é a estrela mais próxima da Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Que materiais e ambientes encontramos na superfície da Terra?",
+      "options": [
+        "somente rochas e nenhum oceano",
+        "apenas água, sem terras",
+        "só nuvens e ar",
+        "continentes e oceanos"
+      ],
+      "correctIndex": 3,
+      "explanation": "A superfície terrestre inclui grandes áreas de terra e oceanos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Que materiais e ambientes encontramos na superfície da Terra”, a opção “somente rochas e nenhum oceano” não atende ao que se pede: “somente rochas e nenhum oceano” deixa de fora a água e o ar, que também são partes importantes da Terra.",
+        "1": "Na pergunta “Que materiais e ambientes encontramos na superfície da Terra”, a opção “apenas água, sem terras” não atende ao que se pede: “apenas água, sem terras” não descreve os ambientes ou componentes naturais da superfície terrestre que o enunciado pede.",
+        "2": "Na pergunta “Que materiais e ambientes encontramos na superfície da Terra”, a opção “só nuvens e ar” não atende ao que se pede: “só nuvens e ar” não descreve os ambientes ou componentes naturais da superfície terrestre que o enunciado pede."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "O que envolve a Terra e contém o ar que respiramos?",
+      "options": [
+        "a crosta terrestre",
+        "o núcleo da Terra",
+        "a atmosfera",
+        "os oceanos"
+      ],
+      "correctIndex": 2,
+      "explanation": "A atmosfera é a camada de gases ao redor da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que envolve a Terra e contém o ar que respiramos”, a opção “a crosta terrestre” não atende ao que se pede: a crosta é uma camada sólida da Terra, não a camada de gases ao redor do planeta.",
+        "1": "Na pergunta “O que envolve a Terra e contém o ar que respiramos”, a opção “o núcleo da Terra” não atende ao que se pede: o núcleo fica no interior profundo; a camada gasosa que contém o ar é a atmosfera.",
+        "3": "Na pergunta “O que envolve a Terra e contém o ar que respiramos”, a opção “os oceanos” não atende ao que se pede: os oceanos são água na superfície, não a camada de gases que envolve a Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual frase descreve a Terra corretamente?",
+      "options": [
+        "é um planeta sem água ou atmosfera",
+        "a Terra é um planeta com terra, água e ar",
+        "é uma estrela que produz sua própria luz",
+        "é feita somente de lava"
+      ],
+      "correctIndex": 1,
+      "explanation": "A Terra é um planeta com continentes, água e atmosfera.",
+      "wrongExplanations": {
+        "0": "A Terra tem água e atmosfera, além de continentes e outros ambientes.",
+        "2": "A Terra não é uma estrela: ela recebe luz do Sol.",
+        "3": "A Terra não é feita somente de lava; sua superfície inclui rochas sólidas, água e outros ambientes."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Em qual planeta vivemos?",
+      "options": [
+        "Terra",
+        "Marte",
+        "a Lua",
+        "o Sol"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Terra é nosso planeta.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Em qual planeta vivemos”, a opção “Marte” não atende ao que se pede: “Marte” é planeta, não o planeta em que vivemos: a Terra.",
+        "2": "Na pergunta “Em qual planeta vivemos”, a opção “a Lua” não atende ao que se pede: “a Lua” é satélite natural, não o planeta em que vivemos: a Terra.",
+        "3": "Na pergunta “Em qual planeta vivemos”, a opção “o Sol” não atende ao que se pede: “o Sol” é estrela, não o planeta em que vivemos: a Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "O que acontece enquanto a Terra gira em torno de si mesma?",
+      "options": [
+        "a Lua deixa de orbitar a Terra",
+        "a Terra fica parada no espaço",
+        "o Sol gira ao redor da Terra causando a noite",
+        "alternam-se dia e noite em diferentes lugares"
+      ],
+      "correctIndex": 3,
+      "explanation": "A rotação faz diferentes partes da Terra ficarem voltadas para o Sol.",
+      "wrongExplanations": {
+        "0": "A rotação da Terra não interrompe a órbita da Lua; enquanto isso, a rotação faz alternarem o dia e a noite em diferentes lugares.",
+        "1": "A Terra não fica parada no espaço: ela gira em torno de si mesma e também percorre sua órbita ao redor do Sol.",
+        "2": "O Sol não gira ao redor da Terra; a rotação terrestre faz diferentes lugares ficarem voltados para o Sol em momentos diferentes."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual é uma característica da superfície terrestre?",
+      "options": [
+        "um satélite natural que recebe luz do Sol",
+        "uma estrela que emite luz própria",
+        "há regiões de terra firme e regiões cobertas por água",
+        "um planeta que recebe luz de uma estrela"
+      ],
+      "correctIndex": 2,
+      "explanation": "A superfície inclui continentes e oceanos.",
+      "wrongExplanations": {
+        "0": "Essa alternativa descreve um satélite natural, mas o enunciado pede uma característica da superfície da Terra.",
+        "1": "Essa alternativa descreve uma estrela, mas a Terra é um planeta e não emite luz própria.",
+        "3": "Essa alternativa descreve a Terra como planeta iluminado por uma estrela, mas não informa como é sua superfície."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual alternativa reúne componentes naturais encontrados na Terra?",
+      "options": [
+        "estrelas, planetas e satélites distantes",
+        "solo, água e ar",
+        "somente rochas, sem água ou gases",
+        "apenas nuvens, sem terra firme"
+      ],
+      "correctIndex": 1,
+      "explanation": "Na Terra encontramos solo, água e ar, além de muitos outros elementos naturais.",
+      "wrongExplanations": {
+        "0": "Estrelas e outros planetas estão fora da Terra; aqui encontramos solo, água e ar.",
+        "2": "A Terra também tem água e gases na atmosfera, não apenas rochas.",
+        "3": "Há nuvens e ar, mas também terra firme e água na superfície."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "A Terra recebe luz do Sol. Isso significa que a Terra é...",
+      "options": [
+        "um planeta iluminado por uma estrela",
+        "um satélite natural iluminado pelo Sol",
+        "uma estrela que produz luz para o Sol",
+        "um planeta que não recebe luz"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Sol é estrela e ilumina a Terra, que é planeta.",
+      "wrongExplanations": {
+        "1": "Na pergunta “A Terra recebe luz do Sol. Isso significa que a Terra é”, a opção “um satélite natural iluminado pelo Sol” não atende ao que se pede: a Terra é um planeta, não um satélite natural; a Lua é que orbita a Terra.",
+        "2": "Na pergunta “A Terra recebe luz do Sol. Isso significa que a Terra é”, a opção “uma estrela que produz luz para o Sol” não atende ao que se pede: a Terra não é uma estrela: ela recebe luz do Sol e possui superfície rochosa.",
+        "3": "Na pergunta “A Terra recebe luz do Sol. Isso significa que a Terra é”, a opção “um planeta que não recebe luz” não atende ao que se pede: “um planeta que não recebe luz” não descreve a condição terrestre perguntada; um planeta iluminado por uma estrela é a característica correta."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual alternativa reúne elementos presentes na Terra?",
+      "options": [
+        "estrelas, planetas e luas distantes",
+        "somente nuvens e fogo",
+        "apenas rochas, sem água nem ar",
+        "solo, água e ar"
+      ],
+      "correctIndex": 3,
+      "explanation": "Encontramos solo, água e atmosfera na Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual alternativa reúne elementos presentes na Terra”, a opção “estrelas, planetas e luas distantes” não atende ao que se pede: “estrelas, planetas e luas distantes” nomeia corpos celestes distantes, não os componentes naturais presentes na superfície terrestre.",
+        "1": "Na pergunta “Qual alternativa reúne elementos presentes na Terra”, a opção “somente nuvens e fogo” não atende ao que se pede: “somente nuvens e fogo” não reúne os componentes naturais da Terra pedidos; a superfície inclui terra, água e ar.",
+        "2": "Na pergunta “Qual alternativa reúne elementos presentes na Terra”, a opção “apenas rochas, sem água nem ar” não atende ao que se pede: “apenas rochas, sem água nem ar” deixa de fora a água e o ar, que também são partes importantes da Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "O que é a atmosfera terrestre?",
+      "options": [
+        "a crosta sólida do planeta",
+        "o núcleo no centro da Terra",
+        "uma camada de gases ao redor do planeta",
+        "os oceanos na superfície"
+      ],
+      "correctIndex": 2,
+      "explanation": "A atmosfera envolve a Terra e contém gases.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que é a atmosfera terrestre”, a opção “a crosta sólida do planeta” não atende ao que se pede: a crosta é uma camada sólida da Terra, não a camada de gases ao redor do planeta.",
+        "1": "Na pergunta “O que é a atmosfera terrestre”, a opção “o núcleo no centro da Terra” não atende ao que se pede: o núcleo fica no interior profundo; a camada gasosa que contém o ar é a atmosfera.",
+        "3": "Na pergunta “O que é a atmosfera terrestre”, a opção “os oceanos na superfície” não atende ao que se pede: os oceanos são água na superfície, não a camada de gases que envolve a Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual frase sobre a água na Terra é correta?",
+      "options": [
+        "a água existe somente nos oceanos",
+        "há água em oceanos, rios, lagos, gelo e outros lugares",
+        "a água existe apenas nas nuvens",
+        "não há água em regiões frias"
+      ],
+      "correctIndex": 1,
+      "explanation": "A água terrestre aparece em diferentes lugares e formas, como oceanos, rios, lagos e gelo.",
+      "wrongExplanations": {
+        "0": "Além dos oceanos, há água em rios, lagos, geleiras, no solo e na atmosfera.",
+        "2": "Há água nas nuvens, mas ela também está em oceanos, rios, lagos, gelo e outros lugares.",
+        "3": "Regiões frias também têm água, muitas vezes congelada."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "A Terra é chamada de planeta rochoso porque...",
+      "options": [
+        "sua parte sólida é formada por rochas e materiais parecidos",
+        "ela gira em torno de si mesma, mas não orbita o Sol",
+        "ela permanece parada enquanto o Sol gira ao seu redor",
+        "ela gira em torno da Lua"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Terra tem superfície sólida rochosa.",
+      "wrongExplanations": {
+        "1": "A Terra orbita o Sol; sua parte sólida é formada por rochas e materiais parecidos.",
+        "2": "O Sol não gira ao redor da Terra; a parte sólida terrestre é formada por rochas e materiais parecidos.",
+        "3": "A Terra não gira em torno da Lua; sua parte sólida é formada por rochas e materiais parecidos."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual objeto representa melhor nosso planeta como uma esfera?",
+      "options": [
+        "um mapa-múndi plano",
+        "uma fotografia de uma estrela",
+        "um desenho de uma rua",
+        "um globo terrestre"
+      ],
+      "correctIndex": 3,
+      "explanation": "O globo é um modelo arredondado da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual objeto representa melhor nosso planeta como uma esfera”, a opção “um mapa-múndi plano” não atende ao que se pede: um mapa plano representa a Terra, mas não é um modelo arredondado como o globo.",
+        "1": "Na pergunta “Qual objeto representa melhor nosso planeta como uma esfera”, a opção “uma fotografia de uma estrela” não atende ao que se pede: uma fotografia de estrela não mostra a forma do planeta Terra.",
+        "2": "Na pergunta “Qual objeto representa melhor nosso planeta como uma esfera”, a opção “um desenho de uma rua” não atende ao que se pede: um desenho de rua representa uma área local, não a forma arredondada da Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual situação mostra que a Terra está em movimento?",
+      "options": [
+        "a Terra só gira quando há vento",
+        "a Terra fica parada e o Sol gira ao seu redor",
+        "ela gira e também percorre uma órbita ao redor do Sol",
+        "a Terra se move apenas quando há terremotos"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Terra gira sobre si e orbita o Sol.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual situação mostra que a Terra está em movimento”, a opção “a Terra só gira quando há vento” não atende ao que se pede: a Terra gira sobre si mesma e também percorre uma órbita ao redor do Sol.",
+        "1": "Na pergunta “Qual situação mostra que a Terra está em movimento”, a opção “a Terra fica parada e o Sol gira ao seu redor” não atende ao que se pede: a Terra não fica parada enquanto o Sol gira ao seu redor; ela gira e orbita o Sol.",
+        "3": "Na pergunta “Qual situação mostra que a Terra está em movimento”, a opção “a Terra se move apenas quando há terremotos” não atende ao que se pede: a Terra não se move apenas durante terremotos; sua rotação e órbita são movimentos contínuos."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Como sabemos que a Terra é arredondada?",
+      "options": [
+        "porque tem quatro cantos",
+        "observações e imagens do espaço mostram sua forma",
+        "porque os mapas são sempre redondos",
+        "porque a Lua tem o mesmo formato"
+      ],
+      "correctIndex": 1,
+      "explanation": "Imagens e medições ajudam a conhecer a forma da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Como sabemos que a Terra é arredondada”, a opção “porque tem quatro cantos” não atende ao que se pede: “porque tem quatro cantos” não é uma observação que demonstre a forma arredondada; imagens e medições do espaço ajudam a mostrá-la.",
+        "2": "Na pergunta “Como sabemos que a Terra é arredondada”, a opção “porque os mapas são sempre redondos” não atende ao que se pede: um mapa plano representa a Terra, mas não é um modelo arredondado como o globo.",
+        "3": "Na pergunta “Como sabemos que a Terra é arredondada”, a opção “porque a Lua tem o mesmo formato” não atende ao que se pede: “porque a Lua tem o mesmo formato” não é uma observação que demonstre a forma arredondada; imagens e medições do espaço ajudam a mostrá-la."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "O que a Terra tem que permite a existência de muitos seres vivos?",
+      "options": [
+        "condições como água líquida e atmosfera",
+        "a ausência de água e ar",
+        "uma superfície coberta apenas por lava",
+        "a falta de luz do Sol"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Terra possui água e atmosfera, importantes para muitos seres vivos.",
+      "wrongExplanations": {
+        "1": "A ausência de água e ar não descreve as condições da Terra, que tem água líquida e atmosfera.",
+        "2": "A Terra não é coberta apenas por lava; ela tem água, atmosfera e muitos ambientes.",
+        "3": "A Terra recebe luz do Sol e tem condições como água líquida e atmosfera."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual lugar faz parte do planeta Terra?",
+      "options": [
+        "a superfície do Sol",
+        "o interior de Saturno",
+        "uma nuvem no espaço",
+        "o fundo de um oceano"
+      ],
+      "correctIndex": 3,
+      "explanation": "Oceanos fazem parte da superfície da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual lugar faz parte do planeta Terra”, a opção “a superfície do Sol” não atende ao que se pede: “a superfície do Sol” não é um lugar da Terra; o fundo de um oceano fica na superfície do nosso planeta.",
+        "1": "Na pergunta “Qual lugar faz parte do planeta Terra”, a opção “o interior de Saturno” não atende ao que se pede: “o interior de Saturno” não é um lugar da Terra; o fundo de um oceano fica na superfície do nosso planeta.",
+        "2": "Na pergunta “Qual lugar faz parte do planeta Terra”, a opção “uma nuvem no espaço” não atende ao que se pede: “uma nuvem no espaço” não é um lugar da Terra; o fundo de um oceano fica na superfície do nosso planeta."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_planeta_terra_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "planeta-terra",
+      "topicName": "Planeta Terra",
+      "question": "Qual frase resume melhor onde vivemos?",
+      "options": [
+        "vivemos na superfície da Lua",
+        "vivemos dentro do Sol",
+        "vivemos na superfície de um planeta chamado Terra",
+        "vivemos no interior de Júpiter"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Terra é o planeta em que vivemos.",
+      "wrongExplanations": {
+        "0": "A Lua é um satélite natural; não é o planeta em que vivemos.",
+        "1": "O Sol é uma estrela; não é o planeta em que vivemos.",
+        "3": "Júpiter é um planeta diferente da Terra; vivemos na superfície da Terra."
+      },
+      "skill": "reconhecer-caracteristicas-gerais-da-terra",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "planeta-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

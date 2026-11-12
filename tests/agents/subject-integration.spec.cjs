@@ -65,24 +65,23 @@ for (const pass of ['pedagogical', 'linguistic']) {
     proposals: questions,
     checklist: FIELDS,
   };
+  const results = questions.map((q) => ({
+    questionId: q.id,
+    decision: 'approved',
+    findings: [],
+    doubts: [],
+    checks: Object.fromEntries(
+      FIELDS.map((f) => [f, 'Criterio conferido no exemplo sintetico.']),
+    ),
+  }));
   const output = {
     ...curation.output,
     agent: 'pedagogical_quality',
     reviewPass: pass,
+    results,
   };
   delete output.proposals;
-  const originalResponse = JSON.stringify({
-    output,
-    results: questions.map((q) => ({
-      questionId: q.id,
-      decision: 'approved',
-      findings: [],
-      doubts: [],
-      checks: Object.fromEntries(
-        FIELDS.map((f) => [f, 'Criterio conferido no exemplo sintetico.']),
-      ),
-    })),
-  });
+  const originalResponse = JSON.stringify({ output, results });
   const report = {
     schemaVersion: 'direct-editorial-report-v1',
     input,
@@ -127,6 +126,7 @@ for (const pass of ['pedagogical', 'linguistic']) {
     ...questions.map((q) => ({
       questionId: q.id,
       pass,
+      decision: 'approved',
       evidencePath: directory + pass + '.json',
     })),
   );

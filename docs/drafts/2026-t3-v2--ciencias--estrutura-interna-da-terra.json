@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual camada fica na parte mais externa da Terra?",
+      "options": [
+        "o manto",
+        "a crosta",
+        "o núcleo",
+        "a parte externa do núcleo"
+      ],
+      "correctIndex": 1,
+      "explanation": "A crosta é a camada externa onde vivemos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual camada fica na parte mais externa da Terra”, a opção “o manto” não atende ao que se pede: o manto fica abaixo da crosta; a faixa mais externa do modelo é a crosta.",
+        "2": "Na pergunta “Qual camada fica na parte mais externa da Terra”, a opção “o núcleo” não atende ao que se pede: o núcleo fica na parte interna, não na faixa fina externa da Terra.",
+        "3": "Na pergunta “Qual camada fica na parte mais externa da Terra”, a opção “a parte externa do núcleo” não atende ao que se pede: o núcleo fica na parte interna, não na faixa fina externa da Terra."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual camada fica abaixo da crosta?",
+      "options": [
+        "o manto",
+        "a crosta",
+        "o núcleo",
+        "o ar da atmosfera"
+      ],
+      "correctIndex": 0,
+      "explanation": "O manto está entre a crosta e o núcleo.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Qual camada fica abaixo da crosta”, a opção “a crosta” não atende ao que se pede: a crosta fica acima do manto; portanto não é a camada situada abaixo dela.",
+        "2": "Na pergunta “Qual camada fica abaixo da crosta”, a opção “o núcleo” não atende ao que se pede: o núcleo fica abaixo do manto, não imediatamente abaixo da crosta.",
+        "3": "Na pergunta “Qual camada fica abaixo da crosta”, a opção “o ar da atmosfera” não atende ao que se pede: a atmosfera envolve o planeta; não fica abaixo da crosta como camada interna."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Onde fica o núcleo da Terra?",
+      "options": [
+        "a atmosfera",
+        "a crosta",
+        "o manto",
+        "na parte mais interna"
+      ],
+      "correctIndex": 3,
+      "explanation": "O núcleo é a região central e mais interna do planeta.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Onde fica o núcleo da Terra”, a opção “a atmosfera” não atende ao que se pede: a atmosfera envolve a parte externa e não fica no interior profundo.",
+        "1": "Na pergunta “Onde fica o núcleo da Terra”, a opção “a crosta” não atende ao que se pede: a crosta é a camada externa, não a parte mais interna da Terra.",
+        "2": "Na pergunta “Onde fica o núcleo da Terra”, a opção “o manto” não atende ao que se pede: o manto fica entre a crosta e o núcleo, não no centro do planeta."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual sequência vai da camada externa para a interna?",
+      "options": [
+        "núcleo, manto e crosta",
+        "crosta, núcleo e manto",
+        "crosta, manto e núcleo",
+        "manto, crosta e núcleo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Essa é a ordem simplificada das camadas principais da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual sequência vai da camada externa para a interna”, a opção “núcleo, manto e crosta” não atende ao que se pede: a sequência “núcleo, manto e crosta” não vai da camada externa à interna; a ordem simplificada correta é crosta, manto e núcleo.",
+        "1": "Na pergunta “Qual sequência vai da camada externa para a interna”, a opção “crosta, núcleo e manto” não atende ao que se pede: a sequência “crosta, núcleo e manto” não vai da camada externa à interna; a ordem simplificada correta é crosta, manto e núcleo.",
+        "3": "Na pergunta “Qual sequência vai da camada externa para a interna”, a opção “manto, crosta e núcleo” não atende ao que se pede: a sequência “manto, crosta e núcleo” não vai da camada externa à interna; a ordem simplificada correta é crosta, manto e núcleo."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Entre crosta, manto e núcleo, qual aparece como faixa fina na parte externa do modelo?",
+      "options": [
+        "o manto",
+        "a crosta",
+        "o núcleo",
+        "o núcleo externo"
+      ],
+      "correctIndex": 1,
+      "explanation": "A crosta é muito fina em comparação com o tamanho do planeta.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Entre crosta, manto e núcleo, qual aparece como faixa fina na parte externa do modelo”, a opção “o manto” não atende ao que se pede: o manto fica abaixo da crosta; a faixa mais externa do modelo é a crosta.",
+        "2": "Na pergunta “Entre crosta, manto e núcleo, qual aparece como faixa fina na parte externa do modelo”, a opção “o núcleo” não atende ao que se pede: o núcleo fica na parte interna, não na faixa fina externa da Terra.",
+        "3": "Na pergunta “Entre crosta, manto e núcleo, qual aparece como faixa fina na parte externa do modelo”, a opção “o núcleo externo” não atende ao que se pede: o núcleo fica na parte interna, não na faixa fina externa da Terra."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Um desenho mostra três camadas: uma fina externa, uma intermediária e uma central. Qual é a camada central?",
+      "options": [
+        "o núcleo",
+        "a crosta",
+        "o manto",
+        "a atmosfera"
+      ],
+      "correctIndex": 0,
+      "explanation": "O núcleo ocupa a parte interna central.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Um desenho mostra três camadas: uma fina externa, uma intermediária e uma central. Qual é a camada central”, a opção “a crosta” não atende ao que se pede: a crosta é a camada externa, não a parte mais interna da Terra.",
+        "2": "Na pergunta “Um desenho mostra três camadas: uma fina externa, uma intermediária e uma central. Qual é a camada central”, a opção “o manto” não atende ao que se pede: o manto fica entre a crosta e o núcleo, não no centro do planeta.",
+        "3": "Na pergunta “Um desenho mostra três camadas: uma fina externa, uma intermediária e uma central. Qual é a camada central”, a opção “a atmosfera” não atende ao que se pede: a atmosfera envolve a parte externa e não fica no interior profundo."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual frase descreve o manto de modo simples e correto?",
+      "options": [
+        "uma camada de ar ao redor do planeta",
+        "uma camada de água dos oceanos",
+        "uma camada fria de gelo no centro",
+        "é uma camada quente de rochas abaixo da crosta"
+      ],
+      "correctIndex": 3,
+      "explanation": "O manto é uma camada profunda e quente de rochas.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual frase descreve o manto de modo simples e correto”, a opção “uma camada de ar ao redor do planeta” não atende ao que se pede: o ar e os gases ficam na atmosfera, não formam o manto rochoso.",
+        "1": "Na pergunta “Qual frase descreve o manto de modo simples e correto”, a opção “uma camada de água dos oceanos” não atende ao que se pede: os oceanos cobrem a crosta; o manto é uma camada de rochas quentes abaixo dela.",
+        "2": "Na pergunta “Qual frase descreve o manto de modo simples e correto”, a opção “uma camada fria de gelo no centro” não atende ao que se pede: a descrição precisa manter o manto como rocha quente abaixo da crosta, não como camada externa."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Por que usamos um modelo para estudar as camadas internas?",
+      "options": [
+        "porque estão perto da superfície",
+        "porque são feitas de nuvens",
+        "porque elas ficam muito profundas e não podemos observá-las diretamente",
+        "porque não existem camadas dentro da Terra"
+      ],
+      "correctIndex": 2,
+      "explanation": "As camadas internas estão muito abaixo da superfície e são estudadas com evidências e modelos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que usamos um modelo para estudar as camadas internas”, a opção “porque estão perto da superfície” não atende ao que se pede: as camadas internas são profundas, por isso usamos modelos para estudá-las.",
+        "1": "Na pergunta “Por que usamos um modelo para estudar as camadas internas”, a opção “porque são feitas de nuvens” não atende ao que se pede: nuvens não formam as camadas internas; crosta, manto e núcleo ficam profundamente dentro da Terra.",
+        "3": "Na pergunta “Por que usamos um modelo para estudar as camadas internas”, a opção “porque não existem camadas dentro da Terra” não atende ao que se pede: a Terra tem estrutura interna, embora não possamos observar diretamente suas camadas profundas."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "No modelo simplificado das três camadas internas da Terra, qual forma a faixa fina mais externa?",
+      "options": [
+        "o manto",
+        "a crosta",
+        "o núcleo",
+        "o núcleo externo"
+      ],
+      "correctIndex": 1,
+      "explanation": "A crosta compõe a superfície sólida da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “No modelo simplificado das três camadas internas da Terra, qual forma a faixa fina mais externa”, a opção “o manto” não atende ao que se pede: o manto fica abaixo da crosta; o solo e as rochas da superfície pertencem principalmente à crosta.",
+        "2": "Na pergunta “No modelo simplificado das três camadas internas da Terra, qual forma a faixa fina mais externa”, a opção “o núcleo” não atende ao que se pede: o núcleo é profundo e não forma a superfície onde caminhamos.",
+        "3": "Na pergunta “No modelo simplificado das três camadas internas da Terra, qual forma a faixa fina mais externa”, a opção “o núcleo externo” não atende ao que se pede: o núcleo é profundo e não forma a superfície onde caminhamos."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual camada fica entre a crosta e o núcleo?",
+      "options": [
+        "o manto",
+        "a crosta",
+        "o núcleo",
+        "a atmosfera"
+      ],
+      "correctIndex": 0,
+      "explanation": "No modelo simplificado, o manto fica entre a crosta e o núcleo.",
+      "wrongExplanations": {
+        "1": "A crosta é a camada externa; abaixo dela fica o manto.",
+        "2": "O núcleo é mais profundo; o manto fica entre ele e a crosta.",
+        "3": "A atmosfera envolve a Terra, mas não é uma das três camadas internas."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "No modelo de três camadas da Terra, qual delas é a mais fina?",
+      "options": [
+        "o manto",
+        "o núcleo",
+        "o manto superior",
+        "a crosta"
+      ],
+      "correctIndex": 3,
+      "explanation": "A crosta aparece como uma camada fina na parte externa.",
+      "wrongExplanations": {
+        "0": "O manto fica abaixo da crosta e é mais espesso; a camada mais fina e externa do modelo simplificado é a crosta.",
+        "1": "O núcleo está no centro da Terra, não na superfície fina e externa indicada no modelo.",
+        "2": "“Manto superior” é uma subdivisão do manto, não a camada mais fina e externa do modelo de três camadas pedido."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual comparação ajuda a entender as camadas da Terra?",
+      "options": [
+        "uma cebola sem camadas",
+        "um mapa plano",
+        "um ovo cozido: casca, parte interna e centro",
+        "uma nuvem ao redor da Terra"
+      ],
+      "correctIndex": 2,
+      "explanation": "A casca, a parte interna e o centro podem ajudar a imaginar camadas, embora não sejam iguais às da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual comparação ajuda a entender as camadas da Terra”, a opção “uma cebola sem camadas” não atende ao que se pede: uma cebola tem camadas, mas a comparação pedida é um ovo cozido com casca, parte interna e centro.",
+        "1": "Na pergunta “Qual comparação ajuda a entender as camadas da Terra”, a opção “um mapa plano” não atende ao que se pede: um mapa plano não ajuda a imaginar camadas internas uma dentro da outra.",
+        "3": "Na pergunta “Qual comparação ajuda a entender as camadas da Terra”, a opção “uma nuvem ao redor da Terra” não atende ao que se pede: uma nuvem ao redor da Terra não representa a sequência de camadas internas do planeta."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "No modelo simplificado, o que vem depois do manto ao seguir para dentro da Terra?",
+      "options": [
+        "a crosta",
+        "o núcleo",
+        "a atmosfera",
+        "a parte externa do manto"
+      ],
+      "correctIndex": 1,
+      "explanation": "O núcleo é a camada central, abaixo do manto.",
+      "wrongExplanations": {
+        "0": "Na pergunta “No modelo simplificado, o que vem depois do manto ao seguir para dentro da Terra”, a opção “a crosta” não atende ao que se pede: a crosta é a camada externa, não a parte mais interna da Terra.",
+        "2": "Na pergunta “No modelo simplificado, o que vem depois do manto ao seguir para dentro da Terra”, a opção “a atmosfera” não atende ao que se pede: a atmosfera envolve a parte externa e não fica no interior profundo.",
+        "3": "Na pergunta “No modelo simplificado, o que vem depois do manto ao seguir para dentro da Terra”, a opção “a parte externa do manto” não atende ao que se pede: o manto fica entre a crosta e o núcleo, não no centro do planeta."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual é uma maneira cuidadosa de falar sobre o manto?",
+      "options": [
+        "é feito principalmente de rochas quentes que podem se mover muito lentamente",
+        "é uma camada líquida de magma",
+        "é a parte mais externa da Terra",
+        "é uma camada de ar respirável"
+      ],
+      "correctIndex": 0,
+      "explanation": "O manto é rochoso e pode fluir devagar ao longo de muito tempo.",
+      "wrongExplanations": {
+        "1": "O manto não é uma camada líquida de magma; é formado principalmente por rochas quentes que podem se mover lentamente.",
+        "2": "A crosta é a camada mais externa; o manto fica abaixo dela e é formado principalmente por rochas quentes.",
+        "3": "O ar respirável fica na atmosfera, acima da crosta, e não forma o manto."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "A crosta terrestre é...",
+      "options": [
+        "o manto",
+        "o núcleo",
+        "a camada interna da crosta",
+        "a camada externa sólida do planeta"
+      ],
+      "correctIndex": 3,
+      "explanation": "A crosta é a camada externa sólida da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “A crosta terrestre é”, a opção “o manto” não atende ao que se pede: o manto fica abaixo da crosta; a faixa mais externa do modelo é a crosta.",
+        "1": "Na pergunta “A crosta terrestre é”, a opção “o núcleo” não atende ao que se pede: o núcleo fica na parte interna, não na faixa fina externa da Terra.",
+        "2": "Na pergunta “A crosta terrestre é”, a opção “a camada interna da crosta” não atende ao que se pede: “a camada interna da crosta” não é a camada externa do modelo interno; essa posição é da crosta."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual camada é a mais profunda entre crosta, manto e núcleo?",
+      "options": [
+        "a crosta",
+        "o manto",
+        "o núcleo",
+        "o núcleo externo"
+      ],
+      "correctIndex": 2,
+      "explanation": "O núcleo fica no interior mais profundo entre essas três camadas.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual camada é a mais profunda entre crosta, manto e núcleo”, a opção “a crosta” não atende ao que se pede: a crosta é a camada externa, não a parte mais interna da Terra.",
+        "1": "Na pergunta “Qual camada é a mais profunda entre crosta, manto e núcleo”, a opção “o manto” não atende ao que se pede: o manto fica entre a crosta e o núcleo, não no centro do planeta.",
+        "3": "Na pergunta “Qual camada é a mais profunda entre crosta, manto e núcleo”, a opção “o núcleo externo” não atende ao que se pede: “o núcleo externo” não ocupa o centro profundo; essa posição corresponde ao núcleo."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Por que um desenho da Terra pode mostrar a crosta exageradamente grossa?",
+      "options": [
+        "porque a crosta é a camada mais espessa",
+        "para facilitar a visualização da camada fina",
+        "porque o modelo está em tamanho real",
+        "porque o núcleo fica na superfície"
+      ],
+      "correctIndex": 1,
+      "explanation": "Modelos podem ampliar uma parte para que seja vista com clareza.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que um desenho da Terra pode mostrar a crosta exageradamente grossa”, a opção “porque a crosta é a camada mais espessa” não atende ao que se pede: a crosta é a camada fina; ampliá-la no desenho ajuda a enxergá-la, não significa que seja a mais espessa.",
+        "2": "Na pergunta “Por que um desenho da Terra pode mostrar a crosta exageradamente grossa”, a opção “porque o modelo está em tamanho real” não atende ao que se pede: o desenho não está em tamanho real; a crosta pode ser ampliada para ficar visível.",
+        "3": "Na pergunta “Por que um desenho da Terra pode mostrar a crosta exageradamente grossa”, a opção “porque o núcleo fica na superfície” não atende ao que se pede: o núcleo não fica na superfície; a crosta externa é que costuma ser ampliada no modelo."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual afirmação sobre as camadas é correta?",
+      "options": [
+        "elas ficam uma abaixo da outra em um modelo simplificado",
+        "a crosta cobre diretamente o núcleo sem camadas intermediárias",
+        "o manto fica fora da crosta",
+        "a atmosfera é o centro do planeta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crosta, manto e núcleo são representados em camadas internas.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Qual afirmação sobre as camadas é correta”, a opção “a crosta cobre diretamente o núcleo sem camadas intermediárias” não atende ao que se pede: o manto fica entre a crosta e o núcleo, então essas camadas não encostam diretamente.",
+        "2": "Na pergunta “Qual afirmação sobre as camadas é correta”, a opção “o manto fica fora da crosta” não atende ao que se pede: o manto está abaixo da crosta, não fora dela.",
+        "3": "Na pergunta “Qual afirmação sobre as camadas é correta”, a opção “a atmosfera é o centro do planeta” não atende ao que se pede: a atmosfera envolve a Terra, mas não é o centro do modelo interno."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Em qual camada fica a superfície onde estão continentes e oceanos?",
+      "options": [
+        "no manto",
+        "no núcleo",
+        "na atmosfera",
+        "na crosta"
+      ],
+      "correctIndex": 3,
+      "explanation": "Continentes e oceanos estão sobre a crosta terrestre.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Em qual camada fica a superfície onde estão continentes e oceanos”, a opção “no manto” não atende ao que se pede: o manto fica abaixo da crosta; a faixa mais externa do modelo é a crosta.",
+        "1": "Na pergunta “Em qual camada fica a superfície onde estão continentes e oceanos”, a opção “no núcleo” não atende ao que se pede: o núcleo fica na parte interna, não na faixa fina externa da Terra.",
+        "2": "Na pergunta “Em qual camada fica a superfície onde estão continentes e oceanos”, a opção “na atmosfera” não atende ao que se pede: a atmosfera é uma camada de gases externa, mas não uma das três camadas internas do modelo."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_estrutura_interna_da_terra_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "estrutura-interna-da-terra",
+      "topicName": "Estrutura interna da Terra",
+      "question": "Qual opção nomeia corretamente as três camadas principais estudadas?",
+      "options": [
+        "crosta, núcleo e atmosfera",
+        "solo, manto e oceanos",
+        "crosta, manto e núcleo",
+        "crosta, atmosfera e núcleo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Essas são as três camadas principais do modelo simplificado.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual opção nomeia corretamente as três camadas principais estudadas”, a opção “crosta, núcleo e atmosfera” não atende ao que se pede: “crosta, núcleo e atmosfera” troca ou omite uma camada; o conjunto estudado é crosta, manto e núcleo.",
+        "1": "Na pergunta “Qual opção nomeia corretamente as três camadas principais estudadas”, a opção “solo, manto e oceanos” não atende ao que se pede: “solo, manto e oceanos” troca ou omite uma camada; o conjunto estudado é crosta, manto e núcleo.",
+        "3": "Na pergunta “Qual opção nomeia corretamente as três camadas principais estudadas”, a opção “crosta, atmosfera e núcleo” não atende ao que se pede: “crosta, atmosfera e núcleo” troca ou omite uma camada; o conjunto estudado é crosta, manto e núcleo."
+      },
+      "skill": "distinguir-crosta-manto-e-nucleo",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "estrutura-interna-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

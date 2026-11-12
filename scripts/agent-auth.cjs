@@ -248,7 +248,6 @@ function runnerEnvironment(authHome, sessionHome) {
 }
 function isolationArguments(sessionHome) {
   return [
-    'cli_auth_credentials_store="keyring"',
     'forced_login_method="chatgpt"',
     'web_search="disabled"',
     'approval_policy="never"',
@@ -311,7 +310,12 @@ function preflight(bin, home, sessionHome, workspace, model) {
     version === `codex-cli ${CLI_VERSION}`,
     'versao da CLI nao validada para o isolamento',
   );
-  const auth = checkedCall(bin, ['login', 'status'], options, true);
+  const auth = checkedCall(
+    bin,
+    ['login', 'status', '--config', 'forced_login_method="chatgpt"'],
+    options,
+    true,
+  );
   check(
     classifyAuthStatus(auth) === 'chatgpt',
     `autenticacao indisponivel: ${classifyAuthStatus(auth)}; nenhuma chamada de modelo iniciada`,
@@ -393,7 +397,7 @@ function preflight(bin, home, sessionHome, workspace, model) {
       ['skip_host_skill_discovery', true],
     ]),
     mcpServerCount: mcp.length,
-    auth: 'chatgpt-keyring',
+    auth: 'chatgpt-existing-profile',
     modelCatalogued: model,
     accountModelAccess: 'not-yet-observed',
     skills: 'disabled-and-context-checked',

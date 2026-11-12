@@ -17,6 +17,22 @@ assert.equal(
 );
 assert.equal(
   profileFor([
+    'docs/drafts/2026-t3-v2--ciencias--som-e-audicao.json',
+    'docs/drafts/2026-t3-v2--ciencias--como-ouvimos.json',
+    'docs/editorial/subject-runs/ciencias/c3578e09-review-only.json',
+    'docs/harness/production-delivery-failure-log.json',
+  ]),
+  'science-drafts',
+);
+assert.equal(
+  profileFor([
+    'docs/drafts/2026-t3-v2--ciencias--som-e-audicao.json',
+    'js/data/t3-portugues-v2-published.js',
+  ]),
+  'legacy',
+);
+assert.equal(
+  profileFor([
     '.github/subject-delivery.json',
     'js/data/t3-historia-v2-published.js',
   ]),

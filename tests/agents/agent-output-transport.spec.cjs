@@ -53,6 +53,134 @@ for (const scenario of scenarios) {
     t.decodeEditorial({ ...wire, extra: true }, schema, scenario.output.agent),
   );
 }
+function curationWireProposal(question) {
+  const wire = JSON.parse(JSON.stringify(question));
+  wire.questionPt ??= null;
+  wire.wrongExplanations = Object.fromEntries(
+    ['0', '1', '2', '3'].map((key) => [
+      key,
+      key === String(wire.correctIndex) ? null : wire.wrongExplanations[key],
+    ]),
+  );
+  return wire;
+}
+const scienceCurator = scenarios[0].output;
+const curatorProposals = [
+  curationWireProposal(scienceCurator.proposal),
+  curationWireProposal({
+    ...scienceCurator.proposal,
+    id: `${scienceCurator.proposal.id}-2`,
+  }),
+];
+const curatorBatchSchema = t.editorialBatchSchema(
+  contract,
+  'content_curator',
+  'ciencias',
+  curatorProposals.length,
+);
+vm.runInNewContext(
+  `${SCHEMA_GUARD};strictSchema(${JSON.stringify(curatorBatchSchema)});`,
+);
+const curatorBatchWire = {
+  ...Object.fromEntries(
+    Object.entries(scienceCurator).filter(([key]) => key !== 'proposal'),
+  ),
+  proposals: curatorProposals,
+};
+const decodedCuratorBatch = t.decodeEditorialBatch(
+  curatorBatchWire,
+  curatorBatchSchema,
+  'content_curator',
+);
+assert.equal(decodedCuratorBatch.proposals.length, 2);
+assert.equal(
+  Object.hasOwn(
+    decodedCuratorBatch.proposals[0].wrongExplanations,
+    String(decodedCuratorBatch.proposals[0].correctIndex),
+  ),
+  false,
+);
+assert.equal(
+  Object.hasOwn(decodedCuratorBatch.proposals[0], 'questionPt'),
+  false,
+);
+assert.throws(() =>
+  t.decodeEditorialBatch(
+    { ...curatorBatchWire, proposals: curatorProposals.slice(0, 1) },
+    curatorBatchSchema,
+    'content_curator',
+  ),
+);
+const badBatchProposal = JSON.parse(JSON.stringify(curatorBatchWire));
+badBatchProposal.proposals[0].correctIndex = 4;
+assert.throws(() =>
+  t.decodeEditorialBatch(
+    badBatchProposal,
+    curatorBatchSchema,
+    'content_curator',
+  ),
+);
+const duplicateCuratorProposal = JSON.parse(JSON.stringify(curatorBatchWire));
+duplicateCuratorProposal.proposals[1].id =
+  duplicateCuratorProposal.proposals[0].id;
+assert.throws(() =>
+  t.decodeEditorialBatch(
+    duplicateCuratorProposal,
+    curatorBatchSchema,
+    'content_curator',
+  ),
+);
+
+const reviewBatchSchema = t.editorialBatchSchema(
+  contract,
+  'pedagogical_quality',
+  'ciencias',
+  2,
+);
+vm.runInNewContext(
+  `${SCHEMA_GUARD};strictSchema(${JSON.stringify(reviewBatchSchema)});`,
+);
+const reviewBatchWire = {
+  ...scenarios[1].output,
+  results: ['QUESTION-1', 'QUESTION-2'].map((questionId) => ({
+    questionId,
+    decision: 'approved',
+    findings: [],
+    doubts: [],
+    checks: {
+      question: 'Enunciado claro.',
+      options: 'Alternativas distintas.',
+      answer: 'Resposta unica defensavel.',
+      explanation: 'Explicacao correta.',
+      wrongExplanations: 'Feedbacks corretos.',
+    },
+  })),
+};
+const decodedReviewBatch = t.decodeEditorialBatch(
+  reviewBatchWire,
+  reviewBatchSchema,
+  'pedagogical_quality',
+);
+assert.equal(decodedReviewBatch.results.length, 2);
+assert.throws(() =>
+  t.decodeEditorialBatch(
+    { ...reviewBatchWire, results: reviewBatchWire.results.slice(0, 1) },
+    reviewBatchSchema,
+    'pedagogical_quality',
+  ),
+);
+const missingReviewCheck = JSON.parse(JSON.stringify(reviewBatchWire));
+delete missingReviewCheck.results[0].checks.answer;
+assert.throws(() =>
+  t.decodeEditorialBatch(
+    missingReviewCheck,
+    reviewBatchSchema,
+    'pedagogical_quality',
+  ),
+);
+assert.throws(() =>
+  t.editorialBatchSchema(contract, 'pedagogical_quality', 'ciencias', 21),
+);
 const curator = scenarios[0];
 const english = t.editorialSchema(contract, 'content_curator', 'ingles');
 const wire = JSON.parse(JSON.stringify(curator.output));

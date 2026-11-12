@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Como se chama a rocha derretida que ainda está abaixo da superfície?",
+      "options": [
+        "lava",
+        "magma",
+        "cinza vulcânica",
+        "rocha vulcânica já solidificada"
+      ],
+      "correctIndex": 1,
+      "explanation": "Magma é rocha derretida que permanece no interior da Terra.",
+      "wrongExplanations": {
+        "0": "Lava é rocha derretida que já chegou à superfície; abaixo dela, esse material é chamado magma.",
+        "2": "Cinzas são partículas sólidas de erupções, não rocha derretida armazenada no interior.",
+        "3": "Rocha já solidificada não está derretida; magma é rocha derretida abaixo da superfície."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Como se chama o magma depois que chega à superfície?",
+      "options": [
+        "lava",
+        "magma ainda abaixo da superfície",
+        "cinzas vulcânicas",
+        "gases vulcânicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando o magma sai para a superfície, recebe o nome de lava.",
+      "wrongExplanations": {
+        "1": "Magma é rocha derretida ainda abaixo da superfície; depois que chega à superfície, recebe o nome de lava.",
+        "2": "Cinzas vulcânicas são partículas sólidas, não rocha derretida que escorre pela superfície.",
+        "3": "Gases vulcânicos podem sair durante uma erupção, mas não são rocha derretida como magma ou lava."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Como se chama a depressão que pode existir no topo de um vulcão?",
+      "options": [
+        "a câmara magmática, onde o magma pode ficar armazenado",
+        "a cratera, uma depressão na parte superior",
+        "um depósito de cinzas no terreno ao redor",
+        "a lava, rocha derretida que chegou à superfície"
+      ],
+      "correctIndex": 1,
+      "explanation": "A cratera é uma depressão na parte superior de muitos vulcões; ela não é a câmara subterrânea onde o magma pode se acumular.",
+      "wrongExplanations": {
+        "0": "A câmara magmática fica abaixo da superfície; a depressão no topo é a cratera.",
+        "2": "Cinzas podem se depositar ao redor do vulcão, mas não formam necessariamente a depressão no topo.",
+        "3": "Lava é rocha derretida na superfície; a depressão no topo do vulcão se chama cratera."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "O que pode sair de um vulcão durante uma erupção?",
+      "options": [
+        "somente magma ainda armazenado no interior",
+        "somente cinzas e rochas, sem gases",
+        "lava, gases e cinzas",
+        "apenas lava, sem gases ou cinzas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Erupções podem liberar diferentes materiais, como lava, gases e cinzas.",
+      "wrongExplanations": {
+        "0": "Esse material ainda está dentro do vulcão; a pergunta pede o que pode ser lançado durante a erupção.",
+        "1": "Essa opção exclui os gases: uma erupção também pode liberar gases junto com partículas e rochas.",
+        "3": "Essa opção exclui as cinzas e os gases, que também podem ser liberados durante uma erupção."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual nome damos à rocha derretida que escorre na superfície após uma erupção?",
+      "options": [
+        "magma que ainda está no interior",
+        "lava",
+        "cinzas vulcânicas",
+        "rocha vulcânica já endurecida"
+      ],
+      "correctIndex": 1,
+      "explanation": "A lava é o material rochoso derretido que chegou à superfície.",
+      "wrongExplanations": {
+        "0": "Magma permanece no interior da Terra; quando chega à superfície, recebe o nome de lava.",
+        "2": "Cinzas são partículas sólidas e não correspondem à rocha derretida que escorre na superfície.",
+        "3": "Depois de endurecer, a rocha já não está derretida nem escorre como lava."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "O que pode acontecer com a lava quando esfria?",
+      "options": [
+        "ela pode endurecer e formar rocha",
+        "permanece líquida para sempre",
+        "transforma-se automaticamente em cinza",
+        "volta ao interior e vira magma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ao esfriar, a lava pode se solidificar e formar rocha.",
+      "wrongExplanations": {
+        "1": "Quando esfria, a lava pode endurecer e formar rocha; ela não permanece líquida para sempre.",
+        "2": "Cinzas são partículas vulcânicas; a lava não se transforma automaticamente em cinza quando esfria.",
+        "3": "A lava esfria na superfície e pode endurecer; não volta automaticamente ao interior para virar magma."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Todas as erupções vulcânicas são iguais?",
+      "options": [
+        "sim; todas liberam a mesma quantidade de lava",
+        "sim; toda erupção é explosiva",
+        "sim; todas duram o mesmo tempo",
+        "não; as erupções podem variar em intensidade e nos materiais liberados"
+      ],
+      "correctIndex": 3,
+      "explanation": "As erupções vulcânicas podem variar; não são todas iguais.",
+      "wrongExplanations": {
+        "0": "A quantidade de lava pode variar entre erupções; nem todas liberam o mesmo volume.",
+        "1": "Há erupções de tipos diferentes; nem todas são explosivas.",
+        "2": "A duração também pode variar, então não é correto dizer que todas as erupções duram o mesmo tempo."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual frase diferencia corretamente magma e lava?",
+      "options": [
+        "magma fica acima do solo e lava permanece no interior",
+        "ambos são nomes para gases vulcânicos",
+        "magma fica abaixo da superfície; lava chegou à superfície",
+        "magma é cinza e lava é rocha sólida"
+      ],
+      "correctIndex": 2,
+      "explanation": "A diferença principal é onde está a rocha derretida.",
+      "wrongExplanations": {
+        "0": "A relação está invertida: magma fica no interior; quando chega à superfície, recebe o nome de lava.",
+        "1": "Magma e lava são rocha derretida em lugares diferentes; gases vulcânicos são outro material.",
+        "3": "Cinza é formada por partículas sólidas, e lava não é necessariamente rocha já solidificada."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Por que uma erupção pode lançar cinzas?",
+      "options": [
+        "porque o vento cria cinzas dentro do vulcão",
+        "algumas erupções fragmentam materiais vulcânicos em partículas",
+        "porque cinzas são vapor de água",
+        "porque lava líquida vira cinza assim que toca o ar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Erupções explosivas podem lançar cinzas e fragmentos para o ar.",
+      "wrongExplanations": {
+        "0": "O vento pode espalhar cinzas depois que saem, mas não as cria dentro do vulcão.",
+        "2": "Vapor de água é gasoso; cinzas são partículas sólidas lançadas em algumas erupções.",
+        "3": "A lava pode esfriar e solidificar, mas não se transforma automaticamente em cinza ao tocar o ar."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual parte da Terra está relacionada à formação do magma?",
+      "options": [
+        "o interior quente e rochoso",
+        "a camada fria da crosta",
+        "a água dos oceanos",
+        "os gases da atmosfera"
+      ],
+      "correctIndex": 0,
+      "explanation": "Magma se forma em partes quentes do interior terrestre.",
+      "wrongExplanations": {
+        "1": "A crosta é a camada externa e mais fria; magma se relaciona a rochas quentes no interior terrestre.",
+        "2": "A água do oceano não é a origem do magma; ele se forma em partes quentes do interior da Terra.",
+        "3": "Gases podem ser liberados por vulcões, mas não são rocha derretida; magma é rocha no interior."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Um vulcão está sem erupção hoje. O que é correto concluir?",
+      "options": [
+        "todo vulcão que não entra em erupção hoje deixou de ser vulcão",
+        "todo vulcão está sempre ativo",
+        "a pausa de hoje prova que ele nunca mais entrará em erupção",
+        "não podemos dizer que todos os vulcões entram em erupção o tempo todo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Vulcões podem permanecer sem erupção por períodos longos.",
+      "wrongExplanations": {
+        "0": "Um vulcão continua sendo um vulcão mesmo durante uma pausa sem erupção.",
+        "1": "Vulcões não estão todos em erupção o tempo todo; muitos passam longos períodos sem atividade observável.",
+        "2": "Uma pausa atual não prova que o vulcão nunca mais entrará em atividade; não é possível concluir isso apenas pela ausência de erupção hoje."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual material mostra rocha derretida que chegou à superfície durante uma erupção?",
+      "options": [
+        "magma armazenado abaixo da superfície",
+        "cinzas vulcânicas depositadas no solo",
+        "lava que saiu de uma abertura",
+        "lava que esfriou e virou rocha"
+      ],
+      "correctIndex": 2,
+      "explanation": "Quando a rocha derretida chega à superfície, recebe o nome de lava.",
+      "wrongExplanations": {
+        "0": "Magma é rocha derretida que ainda está no interior; quando chega à superfície, chama-se lava.",
+        "1": "Cinzas são partículas sólidas; não são rocha derretida que chegou à superfície.",
+        "3": "Rocha endurecida já esfriou; a questão pede rocha derretida na superfície."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Como algumas montanhas vulcânicas crescem?",
+      "options": [
+        "a erosão sempre empilha areia e constrói vulcões",
+        "materiais de erupções podem se acumular ao redor de uma abertura",
+        "terremotos empilham uma montanha em poucos segundos",
+        "o vento transporta uma montanha pronta para perto da abertura"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lava e outros materiais podem se acumular e construir formas vulcânicas.",
+      "wrongExplanations": {
+        "0": "“a erosão sempre empilha areia e constrói vulcões” não explica o acúmulo de materiais vulcânicos perto da abertura que pode construir a forma do vulcão.",
+        "2": "“terremotos empilham uma montanha em poucos segundos” não explica o acúmulo de materiais vulcânicos perto da abertura que pode construir a forma do vulcão.",
+        "3": "“o vento transporta uma montanha pronta para perto da abertura” não explica o acúmulo de materiais vulcânicos perto da abertura que pode construir a forma do vulcão."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "O que é uma erupção vulcânica?",
+      "options": [
+        "a saída de materiais do interior pela abertura do vulcão",
+        "o armazenamento de magma abaixo do solo",
+        "o tremor do chão causado por placas",
+        "o resfriamento da lava depois da erupção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma erupção acontece quando materiais associados ao magma chegam à superfície.",
+      "wrongExplanations": {
+        "1": "O magma fica armazenado no interior; uma erupção envolve a saída de materiais para a superfície.",
+        "2": "O tremor do chão é um terremoto, não uma erupção vulcânica.",
+        "3": "O resfriamento da lava acontece depois que ela chega à superfície; não é a própria erupção."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Como são chamadas as partículas finas de material vulcânico que podem ser lançadas ao ar?",
+      "options": [
+        "lava escorrendo pela superfície",
+        "gases vulcânicos",
+        "fragmentos grandes de rocha",
+        "cinzas vulcânicas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cinzas vulcânicas são partículas finas que algumas erupções podem lançar ao ar.",
+      "wrongExplanations": {
+        "0": "Lava é rocha derretida que escorre na superfície; cinzas são partículas finas lançadas ao ar.",
+        "1": "Gases podem sair do vulcão, mas não são partículas sólidas finas como as cinzas.",
+        "2": "Fragmentos grandes de rocha são maiores; cinzas vulcânicas são partículas muito finas lançadas ao ar."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Por que o vulcão é estudado como parte da dinâmica da Terra?",
+      "options": [
+        "o vulcanismo permite estudar apenas o tempo atmosférico",
+        "todo vulcão controla sozinho o clima do planeta",
+        "porque pode revelar mudanças e materiais do interior terrestre",
+        "erupções sempre permitem prever terremotos com precisão"
+      ],
+      "correctIndex": 2,
+      "explanation": "O vulcanismo mostra processos que ocorrem dentro da Terra e na superfície.",
+      "wrongExplanations": {
+        "0": "O vulcanismo não serve apenas para estudar o tempo; ele ajuda a compreender processos que ocorrem no interior e na superfície da Terra.",
+        "1": "Um vulcão não controla sozinho o clima do planeta; seu estudo ajuda a entender processos geológicos.",
+        "3": "Erupções não permitem prever terremotos com precisão; estudar vulcões revela materiais e mudanças ligados à dinâmica terrestre."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual situação mostra magma, e não lava?",
+      "options": [
+        "lava que já chegou à superfície",
+        "rocha derretida que ainda está debaixo do solo",
+        "cinzas que caíram no chão",
+        "rocha vulcânica que já endureceu"
+      ],
+      "correctIndex": 1,
+      "explanation": "Magma permanece abaixo da superfície da Terra.",
+      "wrongExplanations": {
+        "0": "Lava já chegou à superfície; enquanto a rocha derretida está no interior, chama-se magma.",
+        "2": "Cinzas são partículas, não rocha derretida; magma é rocha quente que permanece no interior.",
+        "3": "Rocha endurecida já esfriou; magma é rocha derretida ainda abaixo da superfície."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "O que pode formar uma rocha vulcânica?",
+      "options": [
+        "o resfriamento e endurecimento da lava",
+        "a compactação de areia sem material vulcânico",
+        "a erosão causada apenas pelo vento",
+        "o aquecimento da rocha pela luz do Sol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lava que esfria pode se solidificar e virar rocha.",
+      "wrongExplanations": {
+        "1": "“a compactação de areia sem material vulcânico” não descreve a solidificação da lava; ao esfriar, ela pode endurecer e formar rocha.",
+        "2": "“a erosão causada apenas pelo vento” não descreve a solidificação da lava; ao esfriar, ela pode endurecer e formar rocha.",
+        "3": "“o aquecimento da rocha pela luz do Sol” não descreve a solidificação da lava; ao esfriar, ela pode endurecer e formar rocha."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual frase evita uma generalização incorreta sobre vulcões?",
+      "options": [
+        "todo vulcão está sempre em erupção",
+        "um vulcão sem erupção nunca mais pode entrar em atividade",
+        "todas as erupções liberam a mesma quantidade de material",
+        "as erupções podem ser diferentes entre si"
+      ],
+      "correctIndex": 3,
+      "explanation": "Vulcões não têm todos o mesmo tipo de erupção.",
+      "wrongExplanations": {
+        "0": "Vulcões podem passar longos períodos sem erupção; não estão todos em atividade contínua.",
+        "1": "A ausência de erupção agora não prova que nunca haverá outra; a atividade pode mudar ao longo do tempo.",
+        "2": "Erupções variam em duração e quantidade de material; não liberam todas a mesma quantidade."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_vulcoes_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "vulcoes",
+      "topicName": "Vulcões",
+      "question": "Qual ideia resume a diferença entre magma e lava?",
+      "options": [
+        "magma fica na superfície e lava fica no interior",
+        "os dois termos significam gases vulcânicos",
+        "magma está no interior; lava é magma que chegou à superfície",
+        "magma é cinza e lava é água"
+      ],
+      "correctIndex": 2,
+      "explanation": "A localização distingue os dois termos.",
+      "wrongExplanations": {
+        "0": "A alternativa troca os lugares: magma está no interior e lava é o material que alcançou a superfície.",
+        "1": "Magma e lava nomeiam rocha derretida; gases podem sair numa erupção, mas não são esses materiais.",
+        "3": "Cinzas são partículas sólidas e água não é magma; magma e lava são rocha derretida em posições diferentes."
+      },
+      "skill": "reconhecer-vulcanismo-e-diferenciar-magma-e-lava",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "vulcoes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

@@ -12,6 +12,7 @@ const {
   createCapture,
   verifyCapture,
 } = require('../../scripts/agent-event-capture.cjs');
+const { startupMessages } = require('../../scripts/agent-cli-events.cjs');
 const { digest } = require('../../scripts/document-catalog.cjs');
 const { DISABLED_FEATURES } = require('../../scripts/agent-auth.cjs');
 const { editorialSchema } = require('../../scripts/agent-output-transport.cjs');
@@ -41,7 +42,7 @@ function build(changes = {}) {
     cliVersion: '0.167.1',
     modelCatalogued: 'fixture-model',
     mcpServerCount: 0,
-    auth: 'chatgpt-keyring',
+    auth: 'chatgpt-existing-profile',
     skills: 'disabled-and-context-checked',
     features: Object.fromEntries([
       ...DISABLED_FEATURES.map((n) => [n, false]),
@@ -61,6 +62,15 @@ function build(changes = {}) {
     },
     { type: 'turn.completed' },
   ];
+  if (changes.bothWarnings)
+    events.splice(1, 0, {
+      type: 'item.completed',
+      item: {
+        id: 'startup_warning',
+        type: 'error',
+        message: startupMessages('/private/profile')[0],
+      },
+    });
   if (changes.message) events[1].item.message = changes.message;
   if (changes.late) events.splice(3, 0, events.splice(1, 1)[0]);
   if (changes.tool)
@@ -97,7 +107,7 @@ function build(changes = {}) {
     requestedModel: 'fixture-model',
     preflight,
     captureSha256: manifest.sha256,
-    approvals: [{ sourceCommit: 'fixture' }],
+    approvals: changes.unapproved ? [] : [{ sourceCommit: 'fixture' }],
   };
   return {
     receipt: { ...body, sha256: digest(body) },
@@ -110,7 +120,7 @@ function build(changes = {}) {
 }
 let sequence = 0;
 try {
-  const accepted = build();
+  const accepted = build({ bothWarnings: true });
   assert.equal(
     (
       inspect(accepted).scenario.output.proposal ||
@@ -129,6 +139,7 @@ try {
   const data = {
     schemaVersion: 'editorial-recovery-v1',
     status: 'response-recovered',
+    recoveryBasis: 'frozen-matrix-review-only',
     originalResult: 'output-rejected',
     additionalModelInvocations: 0,
     publicationEligible: false,
@@ -140,13 +151,25 @@ try {
     sourceCaptureManifest: accepted.capture.manifest,
     sourceWork: accepted.work,
     scenario: result.scenario,
+    correctedDiagnosis: result.diagnosis,
     responseSha256: result.responseSha256,
   };
   const report = { ...data, sha256: digest(data) };
   assert.equal(validateReport(report), true);
+  const unapproved = build({ unapproved: true, bothWarnings: true });
+  assert.throws(() => inspect(unapproved), /aceite documental/);
+  assert.equal(
+    inspect({ ...unapproved, reviewOnly: true }).scenario.output.agent,
+    'content_curator',
+  );
   const changed = JSON.parse(JSON.stringify(report));
   changed.originalRunId = 'outro';
   assert.throws(() => validateReport(changed));
+  const notReviewOnly = JSON.parse(JSON.stringify(report));
+  delete notReviewOnly.sha256;
+  notReviewOnly.publicationEligible = true;
+  notReviewOnly.sha256 = digest(notReviewOnly);
+  assert.throws(() => validateReport(notReviewOnly), /relatorio inelegivel/);
   assert.throws(
     () =>
       reviewScenario(

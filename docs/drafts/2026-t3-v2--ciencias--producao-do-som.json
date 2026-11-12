@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "O que costuma acontecer com um objeto que está produzindo som?",
+      "options": [
+        "Ele fica completamente imóvel",
+        "Ele vibra",
+        "Ele muda de cor",
+        "Ele se transforma em água"
+      ],
+      "correctIndex": 1,
+      "explanation": "A vibração de um objeto pode produzir som.",
+      "wrongExplanations": {
+        "0": "Um objeto que produz som apresenta vibração; ficar imóvel não descreve essa situação.",
+        "2": "A mudança de cor não explica a produção do som.",
+        "3": "O objeto não precisa virar água para produzir som."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Ao tocar uma corda de violão, o que produz o som?",
+      "options": [
+        "A corda desaparece",
+        "A corda muda de cor",
+        "A corda vibra",
+        "A corda congela"
+      ],
+      "correctIndex": 2,
+      "explanation": "Quando é tocada, a corda vibra e produz som.",
+      "wrongExplanations": {
+        "0": "A corda continua no instrumento; ela não desaparece.",
+        "1": "A cor não é a causa do som da corda.",
+        "3": "Congelar a corda não produz o som tocado."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Como um tambor pode produzir som?",
+      "options": [
+        "A pele absorve luz",
+        "O tambor fica parado sem vibrar",
+        "A madeira transforma água em som",
+        "Sua pele esticada vibra quando é golpeada"
+      ],
+      "correctIndex": 3,
+      "explanation": "O golpe faz a pele do tambor vibrar, produzindo som.",
+      "wrongExplanations": {
+        "0": "Absorver luz não explica a produção sonora.",
+        "1": "Se nada vibra, o golpe não produz o som do tambor.",
+        "2": "A madeira não transforma água em som."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Quando uma pessoa bate palmas, qual fonte começa a vibrar para produzir o som?",
+      "options": [
+        "As mãos ao se encontrarem",
+        "A sombra da pessoa",
+        "A cor das mãos",
+        "A luz do teto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ao se encontrarem, as mãos vibram e colocam o ar ao redor em vibração; o som se propaga pelo ar.",
+      "wrongExplanations": {
+        "1": "A sombra é uma região sem luz e não vibra para produzir o som das palmas.",
+        "2": "A cor das mãos não é uma fonte de vibração sonora.",
+        "3": "A luz do teto não participa da produção do som das palmas."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Como o ar pode participar da propagação do som?",
+      "options": [
+        "O ar transforma som em cor",
+        "As vibrações passam de uma parte do ar para outra",
+        "O ar impede qualquer vibração",
+        "O ar vira metal ao ouvir música"
+      ],
+      "correctIndex": 1,
+      "explanation": "As vibrações podem se propagar pelo ar até chegar ao ouvido.",
+      "wrongExplanations": {
+        "0": "O ar não transforma o som em cor.",
+        "2": "O som pode se propagar pelo ar; ele não impede qualquer vibração.",
+        "3": "Ouvir música não transforma o ar em metal."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "O que acontece com uma régua flexível quando é puxada e solta na borda da mesa?",
+      "options": [
+        "Ela deixa de existir",
+        "Ela produz luz colorida",
+        "Ela vibra e pode produzir som",
+        "Ela vira uma sombra"
+      ],
+      "correctIndex": 2,
+      "explanation": "A régua vibra ao ser solta e essa vibração pode produzir som.",
+      "wrongExplanations": {
+        "0": "A régua continua existindo depois de vibrar.",
+        "1": "A vibração produz som, não luz colorida.",
+        "3": "A sombra não explica o som da régua."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Como o ar dentro de um apito comum produz som quando alguém sopra?",
+      "options": [
+        "A cor do apito muda",
+        "A sombra dentro do apito se move",
+        "A água da parede vibra",
+        "O ar no apito oscila e produz som"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ao soprar, o ar no apito oscila e produz o som que ouvimos.",
+      "wrongExplanations": {
+        "0": "A cor do apito não coloca o ar em vibração.",
+        "1": "Uma sombra não produz a vibração sonora do apito.",
+        "2": "A parede não fornece água para o apito; o som vem da vibração do ar."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Como o som pode ser produzido em um copo de vidro tocado de leve?",
+      "options": [
+        "O copo vibra",
+        "O copo muda de tamanho",
+        "A luz dentro do copo vibra",
+        "O copo se transforma em ar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tocar o copo pode fazê-lo vibrar e produzir um som.",
+      "wrongExplanations": {
+        "1": "O som não depende de o copo mudar de tamanho.",
+        "2": "A luz não é a parte que vibra para produzir o som.",
+        "3": "O copo não vira ar ao ser tocado."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Uma caixa de papelão fechada recebe uma batida. Por que pode soar?",
+      "options": [
+        "A caixa reflete uma cor sonora",
+        "A caixa vibra com o impacto",
+        "A caixa deixa de ter peso",
+        "O desenho da caixa começa a falar"
+      ],
+      "correctIndex": 1,
+      "explanation": "A batida faz partes da caixa vibrarem, produzindo som.",
+      "wrongExplanations": {
+        "0": "Cores não são refletidas como som.",
+        "2": "A caixa mantém seu peso ao produzir som.",
+        "3": "Um desenho não fala; a vibração da caixa produz o som."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Qual exemplo mostra som produzido por uma vibração?",
+      "options": [
+        "Uma pedra parada no chão sem ser tocada",
+        "Uma cor pintada na parede",
+        "A corda de um instrumento sendo tocada",
+        "Uma sombra projetada"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ao ser tocada, a corda vibra e produz som.",
+      "wrongExplanations": {
+        "0": "Uma pedra parada e sem vibração não produz som nessa situação.",
+        "1": "Uma cor é percebida pela visão, não é som.",
+        "3": "Uma sombra não vibra para produzir som."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "O que a vibração de uma fonte sonora faz antes de o som chegar ao ouvido?",
+      "options": [
+        "Faz o ouvido produzir luz",
+        "Muda a forma de todas as paredes",
+        "Transforma o som em cheiro",
+        "Produz um som que se propaga pelo ambiente"
+      ],
+      "correctIndex": 3,
+      "explanation": "A vibração da fonte produz som, que pode se propagar pelo ar até o ouvido.",
+      "wrongExplanations": {
+        "0": "O ouvido não produz luz para ouvir.",
+        "1": "A vibração não muda a forma de todas as paredes.",
+        "2": "O som não se transforma em cheiro."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Por que uma corda solta que não está sendo tocada pode parar de soar?",
+      "options": [
+        "Porque sua vibração diminui e para",
+        "Porque a corda se transforma em sombra",
+        "Porque a corda fica sem cor",
+        "Porque o som vira água"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a vibração diminui e para, a corda deixa de produzir aquele som.",
+      "wrongExplanations": {
+        "1": "A corda não se transforma em sombra.",
+        "2": "A cor da corda não determina se ela vibra.",
+        "3": "O som não vira água quando termina."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "O que produz o zumbido de uma abelha?",
+      "options": [
+        "A cor amarela das asas",
+        "O movimento rápido de suas asas pode fazer o ar vibrar",
+        "A sombra da abelha",
+        "O cheiro das flores"
+      ],
+      "correctIndex": 1,
+      "explanation": "O movimento das asas faz o ar vibrar, e isso contribui para o zumbido.",
+      "wrongExplanations": {
+        "0": "A cor das asas não é a causa do som.",
+        "2": "Uma sombra não vibra para produzir o zumbido.",
+        "3": "O cheiro das flores não produz o som da abelha."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Qual objeto pode produzir som ao ser raspado suavemente?",
+      "options": [
+        "Uma fotografia parada",
+        "Uma mancha de tinta",
+        "Uma tábua que vibra ao ser raspada",
+        "Uma sombra na parede"
+      ],
+      "correctIndex": 2,
+      "explanation": "O atrito pode fazer a tábua vibrar, produzindo som.",
+      "wrongExplanations": {
+        "0": "Uma fotografia parada não vibra nessa situação.",
+        "1": "Uma mancha de tinta não vibra para produzir som.",
+        "3": "A sombra não produz o som do atrito."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Por que uma caixa acústica vibra quando toca música?",
+      "options": [
+        "A caixa solta tinta",
+        "A caixa transforma música em cheiro",
+        "O alto-falante fica imóvel e produz som",
+        "O alto-falante se movimenta rapidamente e produz vibrações"
+      ],
+      "correctIndex": 3,
+      "explanation": "O alto-falante se move e vibra para produzir as ondas sonoras.",
+      "wrongExplanations": {
+        "0": "Tinta não é necessária para produzir música.",
+        "1": "Música não vira cheiro.",
+        "2": "Se o alto-falante permanece imóvel, não produz o som dessa forma."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Um balão faz um som quando o ar escapa pela abertura. O que está em movimento?",
+      "options": [
+        "O ar que sai pela abertura",
+        "A cor do balão",
+        "A sombra do balão",
+        "A parede distante"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ar em movimento pode vibrar e gerar o som ouvido.",
+      "wrongExplanations": {
+        "1": "A cor do balão não se move para produzir som.",
+        "2": "A sombra não é a fonte sonora.",
+        "3": "A parede não causa o som do ar escapando."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "O que precisa ocorrer com um sino para que ele toque?",
+      "options": [
+        "Ele precisa mudar de cor",
+        "Ele precisa vibrar após ser golpeado ou movimentado",
+        "Ele precisa ficar sem ar",
+        "Ele precisa virar líquido"
+      ],
+      "correctIndex": 1,
+      "explanation": "O toque põe o sino em vibração, e a vibração produz som.",
+      "wrongExplanations": {
+        "0": "A cor não faz o sino tocar.",
+        "2": "O sino não precisa ficar sem ar para vibrar.",
+        "3": "O sino não vira líquido para tocar."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Qual frase relaciona corretamente uma fonte sonora ao som?",
+      "options": [
+        "A fonte precisa brilhar para produzir som",
+        "A sombra da fonte é que produz som",
+        "A fonte vibra e produz som",
+        "A fonte precisa estar parada para soar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Uma fonte sonora vibra para produzir som.",
+      "wrongExplanations": {
+        "0": "Brilhar não é necessário para produzir som; a vibração é importante.",
+        "1": "A sombra não é a fonte do som.",
+        "3": "A fonte precisa vibrar, não ficar totalmente parada."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Quando uma colher bate em uma panela, por que ouvimos um som?",
+      "options": [
+        "A panela muda de cor",
+        "A colher vira uma luz",
+        "A sombra da panela bate na parede",
+        "A panela e a colher vibram com a batida"
+      ],
+      "correctIndex": 3,
+      "explanation": "A batida faz a panela e a colher vibrarem e produzirem som.",
+      "wrongExplanations": {
+        "0": "A mudança de cor não explica o som da batida.",
+        "1": "A colher não vira luz.",
+        "2": "A sombra não bate na panela para produzir o som."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_producao-do-som_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "producao-do-som",
+      "topicName": "Produção do som",
+      "question": "Qual situação mostra uma corda produzindo som por vibração?",
+      "options": [
+        "Uma corda sendo puxada e solta",
+        "Um desenho de corda numa folha parada",
+        "Uma cor vista no papel",
+        "Uma sombra sem movimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Puxar e soltar a corda a faz vibrar, produzindo som.",
+      "wrongExplanations": {
+        "1": "O desenho parado não vibra como uma corda real.",
+        "2": "Uma cor não é som.",
+        "3": "A sombra sem movimento não produz o som de uma corda."
+      },
+      "skill": "relacionar-producao-do-som-a-vibracoes",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "producao-do-som"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

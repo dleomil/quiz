@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "delivery-failure-log-v1",
+  "updatedAt": "2026-11-11",
+  "scope": "Entrega de Ciencias T3 v2; dados publicados de Portugues e Geografia nao foram consultados.",
+  "incidents": [
+    {
+      "id": "agent-routing-smoke-test-misrouted",
+      "symptom": "Um smoke test do agente configurado foi encaminhado ao buscador de agentes do Notion e bloqueado por plano Business; nenhum agente editorial iniciou.",
+      "cause": "O teste foi iniciado pelo CLI geral, que carregou conectores da sessao em vez de invocar o Runner isolado do projeto. O evento consumiu 144021 tokens de entrada e nao produziu evidencia editorial.",
+      "fix": "O fluxo foi transferido para scripts/run-editorial-agent.cjs, com preflight que confirma zero conectores MCP antes da inferencia. Nenhum smoke test usa o CLI geral.",
+      "status": "fixed"
+    },
+    {
+      "id": "runner-policy-value-type-regression",
+      "symptom": "Runner encerrava a etapa de preparacao com erro de JSON antes de chamar o modelo.",
+      "cause": "A politica de entrega foi convertida para objeto, mas os usos posteriores continuaram tentando interpreta-la como texto e calcular hash sobre um objeto.",
+      "fix": "Separar o texto fixado no commit base do objeto parseado: usar o objeto para requisitos e o texto original para hash. Teste do Runner cobre a execucao sintetica completa.",
+      "status": "fixed"
+    },
+    {
+      "id": "runner-auth-prompt-loop",
+      "symptom": "Runner solicitava autenticacao repetidamente apesar de a sessao pessoal estar autenticada.",
+      "cause": "Apos definir CODEX_HOME pessoal, o Runner ainda forçava cli_auth_credentials_store=keyring. O login existente nao usava esse armazenamento; login status sem override passava, mas a inferencia recebia 401 Missing bearer.",
+      "fix": "Removido o override do armazenamento e alinhado o preflight ao login ChatGPT existente. O Runner reutiliza CODEX_HOME pessoal sem copiar credenciais nem pedir novo login.",
+      "status": "fixed"
+    },
+    {
+      "id": "cross-subject-validation-contamination",
+      "symptom": "A verificacao ampla misturava testes de Ingles, Geografia e Portugues durante uma entrega de Ciencias.",
+      "cause": "O perfil legado executava a suite completa quando a mudanca continha rascunhos e ferramentas de entrega.",
+      "fix": "O perfil science-drafts limita validacao aos rascunhos de Ciencias e testes sinteticos de infraestrutura; temas publicados ficam fora do escopo.",
+      "status": "fixed"
+    },
+    {
+      "id": "review-path-policy-conflict",
+      "symptom": "O procedimento do projeto permite revisao direta para 2026-t3-v2, mas as instancias de pedagogical_quality bloquearam o caminho direto e exigiram o Runner isolado.",
+      "cause": "O procedimento e o TOML do repositorio autorizam delegacao direta, mas a configuracao do agente da sessao exige o Runner para parecer formal. As respostas diretas dessa configuracao nao geram o formato por ID exigido para captura.",
+      "fix": "As instrucoes versionadas de curadoria e revisao agora exigem exclusivamente o Runner isolado. O transporte e os validadores aceitam lotes de ate 20 com cobertura individual e identidade/hash por execucao.",
+      "status": "fixed"
+    },
+    {
+      "id": "draft-pr-mistaken-for-release-package",
+      "symptom": "O PR 469 continha os rascunhos e validacao local, mas nao os registros editoriais por tema nem o pacote de promocao para producao.",
+      "cause": "A verificacao de prontidao para promocao ocorreu depois da abertura do PR de rascunhos.",
+      "fix": "Pendente: tornar a preparacao do pacote de materia, as evidencias e verify:subject precondicoes para declarar uma entrega pronta.",
+      "status": "open"
+    },
+    {
+      "id": "late-editorial-findings",
+      "symptom": "Achados linguísticos e pedagogicos foram encontrados depois da preparacao dos rascunhos, gerando varias rodadas de rechecagem.",
+      "cause": "A revisao por tema e a captura de evidencias nao estavam ligadas a uma etapa de prontidao unica antes da implementacao do pacote.",
+      "fix": "Pendente: fazer curadoria, revisao pedagogica e revisao linguistica por hash antes de gerar runtime e descritor de entrega.",
+      "status": "open"
+    },
+    {
+      "id": "runner-forced-keyring-missing-bearer",
+      "symptom": "Duas execucoes da curadoria de Ciencias (som-e-audicao) pararam antes de produzir parecer. Runs 52c5ed72-2c2b-4250-8faa-2c0553f32545 e 20f05686-0e05-411e-b410-e16b9b2f90ad, modelo gpt-6-luna; uma invocacao registrada em cada recibo.",
+      "cause": "O login pessoal passa sem override, mas isolationArguments forcava cli_auth_credentials_store=keyring. Com esse override, codex login status retornou Not logged in e as requisicoes da inferencia receberam 401 Missing bearer. Cada captura reportou usage null; consumo desconhecido, nao zero.",
+      "fix": "Removido o override do armazenamento de credenciais, alinhado o preflight ao metodo ChatGPT e atualizados os validadores de recibo. Teste local confirma login ChatGPT com o armazenamento pessoal intacto; antes de nova inferencia, a autenticacao da chamada precisa passar.",
+      "status": "fixed"
+    },
+    {
+      "id": "runner-startup-warning-false-positive",
+      "symptom": "A curadoria de som-e-audicao concluiu e registrou resposta, mas o Runner rejeitou a captura porque tratou dois avisos normais de inicializacao como falhas de execucao.",
+      "cause": "O parser reconhecia apenas um aviso e exigia que o caminho do config.toml coincidisse com o CODEX_HOME isolado, embora o CLI emitisse o aviso apontando para o perfil pessoal autenticado. A validacao de curadoria em lote tambem associava os achados a cada proposta incorretamente. A resposta exige ajustes; a recuperacao formal continua condicionada ao baseline documental aprovado.",
+      "fix": "Parser agora aceita apenas os dois textos exatos de aviso, antes do inicio do turno, com versao compativel e preflight autenticado. O validador de lote associa cada achado a sua proposta, e a captura original agora valida offline como 20 propostas com decisao adjustments_required. Nenhuma inferencia adicional foi feita. O baseline documental e a aprovacao editorial continuam obrigatorios antes de promocao.",
+      "runId": "c3578e09-ad5b-42a6-9f54-ea7687af7234",
+      "model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 33821,
+        "cached_input_tokens": 0,
+        "output_tokens": 6625
+      },
+      "proposalCount": 20,
+      "findingCount": 10,
+      "curationDecision": "adjustments_required",
+      "recoveryBasis": "frozen-matrix-review-only",
+      "recoveryStatus": "recovered-for-review",
+      "publicationEligible": false,
+      "additionalModelInvocations": 0,
+      "status": "fixed"
+    }
+  ],
+  "releaseChecklist": [
+    "Confirmar a proxima materia e congelar temas e objetivos por manifesto.",
+    "Executar preflight antes da curadoria e interromper se algum tema ja estiver completo.",
+    "Confirmar autenticacao e politica de contexto dos agentes antes de chamadas com custo.",
+    "Fazer um ensaio formal de uma passagem, verificar captura e custo e so entao iniciar os lotes; interromper se o agente bloquear ou o formato de evidencia divergir.",
+    "Capturar cada evidencia editorial no mesmo passo em que a revisao ocorre.",
+    "Gerar runtime, registros, descritor e execucao operacional antes de abrir o PR de entrega.",
+    "Executar verify:subject e o perfil local restrito da materia candidata.",
+    "Abrir PR de entrega para develop; somente promover para main depois dos gates e do aceite humano do pacote exato.",
+    "Confirmar SHA de deploy e reconciliar main com develop."
+  ]
+}

@@ -5,6 +5,7 @@ const path = require('node:path');
 const {
   AGENT_CONTRACTS,
   validateAgentDirectory,
+  validateEditorialScenario,
   validateEditorialInputDocument,
   validateEditorialScenarios,
 } = require('../../scripts/validate-codex-agents.cjs');
@@ -152,6 +153,168 @@ function run() {
   );
   assert.ok(
     editorialScenarios.some((scenario) => scenario.inputState === 'ambiguous'),
+  );
+
+  const batchCuration = cloneEditorialScenarios()[0];
+  const curatedQuestions = Array.from({ length: 20 }, (_, index) => ({
+    ...batchCuration.output.proposal,
+    id: `FIX-CIE-${String(index + 1).padStart(3, '0')}`,
+    question:
+      index === 0
+        ? batchCuration.output.proposal.question
+        : `Pergunta de ciencias ${index + 1}.`,
+  }));
+  delete batchCuration.output.proposal;
+  batchCuration.input.proposals = JSON.parse(JSON.stringify(curatedQuestions));
+  batchCuration.output.proposals = JSON.parse(JSON.stringify(curatedQuestions));
+  assert.deepStrictEqual(validateEditorialScenario(batchCuration), []);
+
+  const curatedBatchWrongIds = JSON.parse(JSON.stringify(batchCuration));
+  curatedBatchWrongIds.output.proposals[1].id = 'FIX-CIE-003';
+  assert.ok(
+    validateEditorialScenario(curatedBatchWrongIds).some((error) =>
+      error.includes('curadoria mudou IDs do lote'),
+    ),
+  );
+  const curatorBatchSingleOutput = JSON.parse(JSON.stringify(batchCuration));
+  curatorBatchSingleOutput.output.proposal =
+    curatorBatchSingleOutput.output.proposals[0];
+  delete curatorBatchSingleOutput.output.proposals;
+  assert.ok(
+    validateEditorialScenario(curatorBatchSingleOutput).some((error) =>
+      error.includes('curadoria em lote exige output.proposals'),
+    ),
+  );
+
+  function approvedBatchResult(questionId) {
+    return {
+      questionId,
+      decision: 'approved',
+      findings: [],
+      doubts: [],
+      checks: {
+        question: 'O enunciado avalia o objetivo autorizado.',
+        options: 'As quatro alternativas sao distintas e claras.',
+        answer: 'Ha uma unica resposta defensavel.',
+        explanation: 'A explicacao apoia a resposta correta.',
+        wrongExplanations: 'Os tres feedbacks correspondem aos distratores.',
+      },
+    };
+  }
+  const batchReview = cloneEditorialScenarios()[1];
+  const reviewQuestions = Array.from({ length: 20 }, (_, index) => ({
+    ...batchReview.input.proposal,
+    id: `FIX-PT-${String(index + 1).padStart(3, '0')}`,
+    question:
+      index === 0
+        ? batchReview.input.proposal.question
+        : `Pergunta de pontuacao ${index + 1}.`,
+  }));
+  delete batchReview.input.proposal;
+  batchReview.input.proposals = reviewQuestions;
+  batchReview.output.decision = 'approved';
+  batchReview.output.findings = [];
+  batchReview.output.doubts = [];
+  batchReview.output.results = reviewQuestions.map((question) =>
+    approvedBatchResult(question.id),
+  );
+  assert.deepStrictEqual(validateEditorialScenario(batchReview), []);
+
+  const batchReviewMissingId = JSON.parse(JSON.stringify(batchReview));
+  batchReviewMissingId.output.results.pop();
+  assert.ok(
+    validateEditorialScenario(batchReviewMissingId).some((error) =>
+      error.includes('resultados individuais incompletos'),
+    ),
+  );
+  const batchReviewDuplicateResult = JSON.parse(JSON.stringify(batchReview));
+  batchReviewDuplicateResult.output.results[1].questionId =
+    batchReviewDuplicateResult.output.results[0].questionId;
+  assert.ok(
+    validateEditorialScenario(batchReviewDuplicateResult).some((error) =>
+      error.includes('resultados individuais nao cobrem o lote'),
+    ),
+  );
+
+  const batchReviewMissingCheck = JSON.parse(JSON.stringify(batchReview));
+  delete batchReviewMissingCheck.output.results[0].checks.answer;
+  assert.ok(
+    validateEditorialScenario(batchReviewMissingCheck).some((error) =>
+      error.includes('output.results[0] invalido'),
+    ),
+  );
+  const batchReviewExtraCheck = JSON.parse(JSON.stringify(batchReview));
+  batchReviewExtraCheck.output.results[0].checks.extra = 'nao autorizado';
+  assert.ok(
+    validateEditorialScenario(batchReviewExtraCheck).some((error) =>
+      error.includes('output.results[0] invalido'),
+    ),
+  );
+
+  const batchReviewMalformedProposal = JSON.parse(JSON.stringify(batchReview));
+  batchReviewMalformedProposal.input.proposals[0].wrongExplanations = [];
+  assert.ok(
+    validateEditorialScenario(batchReviewMalformedProposal).some((error) =>
+      error.includes('input.proposals[0] incompleta'),
+    ),
+  );
+
+  const batchReviewWrongDecision = JSON.parse(JSON.stringify(batchReview));
+  batchReviewWrongDecision.output.results[0].decision = 'adjustments_required';
+  batchReviewWrongDecision.output.results[0].findings = [
+    {
+      questionId: reviewQuestions[0].id,
+      criterion: 'clareza',
+      severity: 'major',
+      evidence: 'O enunciado permite duas interpretacoes.',
+      recommendation: 'Especificar o contexto no enunciado.',
+    },
+  ];
+  assert.ok(
+    validateEditorialScenario(batchReviewWrongDecision).some((error) =>
+      error.includes('decisao global diverge dos resultados'),
+    ),
+  );
+
+  const batchCurationDocument = {
+    scenarioId: batchCuration.scenarioId,
+    inputState: 'complete',
+    input: {
+      ...batchCuration.input,
+      requestedPass: 'curation',
+    },
+  };
+  assert.deepStrictEqual(
+    validateEditorialInputDocument(batchCurationDocument, 'content_curator'),
+    [],
+  );
+  const batchReviewDocument = {
+    scenarioId: batchReview.scenarioId,
+    inputState: 'complete',
+    input: batchReview.input,
+  };
+  assert.deepStrictEqual(
+    validateEditorialInputDocument(batchReviewDocument, 'pedagogical_quality'),
+    [],
+  );
+  const batchInputConflict = JSON.parse(JSON.stringify(batchReviewDocument));
+  batchInputConflict.input.proposal = reviewQuestions[0];
+  assert.ok(
+    validateEditorialInputDocument(
+      batchInputConflict,
+      'pedagogical_quality',
+    ).some((error) => error.includes('use proposal ou proposals')),
+  );
+  const batchInputTooLarge = JSON.parse(JSON.stringify(batchReviewDocument));
+  batchInputTooLarge.input.proposals = Array.from(
+    { length: 21 },
+    (_, index) => ({ ...reviewQuestions[0], id: `FIX-PT-${index + 1}` }),
+  );
+  assert.ok(
+    validateEditorialInputDocument(
+      batchInputTooLarge,
+      'pedagogical_quality',
+    ).some((error) => error.includes('informe de 1 a 20 propostas')),
   );
 
   const ambiguousApproval = cloneEditorialScenarios();

@@ -4,13 +4,12 @@ model = "gpt-6-luna"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 developer_instructions = """
-Siga docs/agents/content-curator-agent.md e docs/harness/content-update-quality-gates.md.
+Siga docs/agents/content-curator-agent.md, docs/harness/content-update-quality-gates.md e docs/specs/editorial-agent-output-contract.md.
 Use somente materia, tema, objetivo e fonte explicitamente autorizados no manifesto curricular aplicavel.
 Interrompa a curadoria quando o manifesto nao estiver congelado ou houver lacuna curricular bloqueante.
 Separe fatos, duvidas, achados e recomendacoes sem inventar tema, habilidade, resposta ou evidencia.
 Nao edite arquivos, nao publique conteudo, nao faca commit, merge ou movimentacao de board e nao exponha a fonte escolar local.
-Para novos lotes pendentes de Historia, Ingles, Matematica e Ciencias de 2026-t3-v2, use delegacao direta somente leitura conforme docs/harness/subject-update-procedure.md. O runner isolado e opcional e conserva suas restricoes; mencoes textuais a ferramentas nao comprovam disponibilidade.
-Na curadoria direta retorne o contrato editorial com output.proposals contendo 20 propostas completas na rodada inicial e somente IDs alterados na unica correcao, em vez de output.proposal; valide com scripts/direct-curation.cjs. Nao gere pareceres pedagogicos ou linguisticos. Nao herde historico, contratos de autenticacao ou outras materias.
+Para novos lotes pendentes de 2026-t3-v2, use exclusivamente scripts/run-editorial-agent.cjs; a chamada deve permanecer isolada, somente leitura e limitada ao lote autorizado. Retorne o contrato editorial definido em docs/specs/editorial-agent-output-contract.md. Para entrada em lote, preserve todos os IDs e metadados e retorne output.proposals completo; mantenha fatos, duvidas, achados e recomendacoes separados. Nao gere pareceres pedagogicos ou linguisticos. Nao herde historico, contratos de autenticacao ou outras materias.
 """
 
 [mcp_servers]

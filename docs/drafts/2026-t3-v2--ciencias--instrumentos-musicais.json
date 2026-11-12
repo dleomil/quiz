@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "O que vibra para produzir som em um violão?",
+      "options": [
+        "A tinta do instrumento",
+        "As cordas",
+        "A sombra das cordas",
+        "A cadeira do músico"
+      ],
+      "correctIndex": 1,
+      "explanation": "As cordas vibram quando são tocadas e produzem som.",
+      "wrongExplanations": {
+        "0": "A tinta não vibra para produzir a nota do violão.",
+        "2": "A sombra não é a fonte sonora.",
+        "3": "A cadeira não produz o som do violão."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual parte vibra quando uma pessoa bate em um tambor?",
+      "options": [
+        "O desenho pintado no tambor",
+        "O chão distante",
+        "A membrana esticada",
+        "A alça da mochila"
+      ],
+      "correctIndex": 2,
+      "explanation": "A membrana esticada vibra quando é golpeada e produz som.",
+      "wrongExplanations": {
+        "0": "O desenho não vibra para produzir o som do tambor.",
+        "1": "O chão distante não é a parte do instrumento que vibra.",
+        "3": "A alça da mochila não pertence ao tambor."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "No piano, o que vibra para produzir o som das notas?",
+      "options": [
+        "As teclas viram alto-falantes",
+        "A tampa muda de cor",
+        "Os pés do piano batem no chão",
+        "Cordas dentro do piano"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ao tocar uma tecla, mecanismos fazem cordas vibrarem e produzirem som.",
+      "wrongExplanations": {
+        "0": "As teclas acionam mecanismos, mas não viram alto-falantes.",
+        "1": "A cor da tampa não produz notas.",
+        "2": "Os pés do piano não batem no chão para produzir as notas."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Como a flauta produz som?",
+      "options": [
+        "O ar dentro dela vibra quando é soprado",
+        "A madeira precisa mudar de cor",
+        "Os furos produzem sombra sonora",
+        "A flauta precisa ser golpeada no chão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ar que vibra dentro da flauta produz o som.",
+      "wrongExplanations": {
+        "1": "A cor do instrumento não faz o ar vibrar.",
+        "2": "Furos ajudam a mudar as notas, mas não produzem uma sombra sonora.",
+        "3": "A flauta é tocada soprando, não batendo no chão."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual elemento vibra para produzir o som de um pandeiro?",
+      "options": [
+        "A cor do pandeiro",
+        "A pele ou as partes metálicas quando são movimentadas",
+        "A estampa pintada",
+        "O estojo fechado"
+      ],
+      "correctIndex": 1,
+      "explanation": "A pele e as platinelas podem vibrar e produzir os sons do pandeiro.",
+      "wrongExplanations": {
+        "0": "A cor não produz o som.",
+        "2": "A estampa não é a parte vibrante do instrumento.",
+        "3": "O estojo fechado não produz o som do pandeiro."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "O que faz uma corda de violino soar?",
+      "options": [
+        "O arco pinta a corda",
+        "O estojo vibra dentro do armário",
+        "Ela vibra quando é friccionada pelo arco",
+        "A sombra do arco toca a corda"
+      ],
+      "correctIndex": 2,
+      "explanation": "O arco fricciona a corda, que vibra e produz som.",
+      "wrongExplanations": {
+        "0": "O arco não pinta a corda para produzir som.",
+        "1": "O estojo guardado não produz a nota do violino.",
+        "3": "A sombra do arco não faz a corda vibrar."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Em um chocalho, o que pode produzir som quando ele é sacudido?",
+      "options": [
+        "A cor do recipiente",
+        "A imagem desenhada no chocalho",
+        "A mão parada sem movimentar o chocalho",
+        "Pequenas peças batendo umas nas outras e no recipiente"
+      ],
+      "correctIndex": 3,
+      "explanation": "As peças se movimentam e vibram ao bater, produzindo som.",
+      "wrongExplanations": {
+        "0": "A cor não produz o som do chocalho.",
+        "1": "A imagem não bate nem vibra.",
+        "2": "Sem movimento das peças, o chocalho não produz esse som."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual parte de um reco-reco vibra ao ser raspada?",
+      "options": [
+        "O corpo do instrumento",
+        "A roupa de quem toca",
+        "A luz da sala",
+        "A sombra do instrumento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Raspar o instrumento faz seu corpo vibrar e produzir som.",
+      "wrongExplanations": {
+        "1": "A roupa não é a parte raspada do instrumento.",
+        "2": "A luz não vibra para produzir o som do reco-reco.",
+        "3": "A sombra não produz o som ao ser raspada."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "O que vibra quando uma pessoa toca um saxofone soprando?",
+      "options": [
+        "A pintura externa",
+        "O ar dentro do instrumento",
+        "A cadeira do músico",
+        "O estojo fechado"
+      ],
+      "correctIndex": 1,
+      "explanation": "O ar dentro do saxofone vibra e o instrumento ajuda a produzir diferentes notas.",
+      "wrongExplanations": {
+        "0": "A pintura externa não vibra para produzir as notas.",
+        "2": "A cadeira não faz parte do saxofone.",
+        "3": "O estojo fechado não é usado para produzir o som tocado."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Como um xilofone produz som quando uma barra é golpeada?",
+      "options": [
+        "A barra muda de cor",
+        "A sombra da baqueta vibra",
+        "A barra vibra",
+        "A mesa começa a falar"
+      ],
+      "correctIndex": 2,
+      "explanation": "A barra golpeada vibra e produz uma nota.",
+      "wrongExplanations": {
+        "0": "A cor da barra não produz o som.",
+        "1": "Uma sombra não vibra para produzir a nota.",
+        "3": "A mesa não começa a falar; é a barra que vibra."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual instrumento tem cordas que vibram quando são tocadas?",
+      "options": [
+        "Pandeiro",
+        "Flauta",
+        "Triângulo",
+        "Harpa"
+      ],
+      "correctIndex": 3,
+      "explanation": "As cordas da harpa vibram quando são tocadas.",
+      "wrongExplanations": {
+        "0": "O pandeiro produz som com membrana e partes metálicas, não cordas tocadas.",
+        "1": "A flauta usa a vibração do ar em seu interior.",
+        "2": "O triângulo vibra quando é golpeado."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual instrumento depende principalmente do ar vibrando em seu interior?",
+      "options": [
+        "Flauta",
+        "Violão",
+        "Tambor",
+        "Reco-reco"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ar dentro da flauta vibra para produzir o som.",
+      "wrongExplanations": {
+        "1": "No violão, as cordas vibram.",
+        "2": "No tambor, a membrana vibra quando golpeada.",
+        "3": "No reco-reco, seu corpo vibra quando raspado."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual instrumento produz som quando uma peça metálica é golpeada e vibra?",
+      "options": [
+        "Flauta",
+        "Triângulo musical",
+        "Violão",
+        "Chocalho sem movimento"
+      ],
+      "correctIndex": 1,
+      "explanation": "O triângulo vibra depois de ser golpeado e produz som.",
+      "wrongExplanations": {
+        "0": "A flauta produz som com a vibração do ar soprado.",
+        "2": "No violão, são as cordas que vibram ao serem tocadas.",
+        "3": "Sem movimento, o chocalho não produz som nessa situação."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Um músico puxa a corda de um baixo elétrico. O que começa a produzir a nota?",
+      "options": [
+        "A luz do amplificador",
+        "A cor da roupa do músico",
+        "A vibração da corda",
+        "O formato da palheta"
+      ],
+      "correctIndex": 2,
+      "explanation": "A corda vibra e essa vibração inicia a produção da nota.",
+      "wrongExplanations": {
+        "0": "A luz do amplificador não produz a nota da corda.",
+        "1": "A roupa não altera a vibração que gera o som.",
+        "3": "A forma da palheta não substitui a vibração da corda."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Por que um tambor pode soar diferente quando é batido em lugares distintos?",
+      "options": [
+        "A cor do tambor muda a música",
+        "O tambor fica sem vibração em um dos lugares",
+        "A sombra escolhe a nota",
+        "Partes diferentes podem vibrar de modos diferentes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Diferentes regiões podem vibrar de maneiras distintas e mudar o som produzido.",
+      "wrongExplanations": {
+        "0": "A cor não é o que muda a vibração do tambor.",
+        "1": "Para produzir som, o tambor vibra quando é golpeado.",
+        "2": "A sombra não escolhe a nota."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual objeto vibrante faz soar um berimbau?",
+      "options": [
+        "A corda esticada",
+        "A cabaça sem vibração",
+        "A baqueta de outro instrumento",
+        "A pintura do arco"
+      ],
+      "correctIndex": 0,
+      "explanation": "A corda do berimbau vibra quando é tocada e produz som.",
+      "wrongExplanations": {
+        "1": "A cabaça ajuda a ressoar o som, mas sem vibração da corda ela não produz a nota tocada.",
+        "2": "A baqueta de outro instrumento não é a fonte da nota do berimbau.",
+        "3": "A pintura não vibra para produzir o som."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Ao tocar uma trombeta, o que inicia a vibração do ar no instrumento?",
+      "options": [
+        "A campânula muda de cor",
+        "Os lábios vibram contra o bocal",
+        "A válvula parada cria som sozinha",
+        "O estojo bate no chão"
+      ],
+      "correctIndex": 1,
+      "explanation": "Os lábios vibram contra o bocal e colocam o ar da trombeta em vibração.",
+      "wrongExplanations": {
+        "0": "A cor da campânula não inicia a vibração que produz o som.",
+        "2": "As válvulas ajudam a mudar as notas, mas não criam som sozinhas.",
+        "3": "O estojo não participa da produção do som durante a execução."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Em uma bateria musical, o que vibra quando um prato é atingido?",
+      "options": [
+        "A tinta do suporte",
+        "A sombra da baqueta",
+        "O metal do prato",
+        "O banco do músico"
+      ],
+      "correctIndex": 2,
+      "explanation": "O metal do prato vibra quando é golpeado e produz som.",
+      "wrongExplanations": {
+        "0": "A tinta do suporte não vibra para produzir o som do prato.",
+        "1": "A sombra não é a parte que vibra.",
+        "3": "O banco não produz o som do prato."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "O que acontece com a membrana de um atabaque quando é tocada?",
+      "options": [
+        "Ela fica transparente",
+        "Ela se transforma em corda",
+        "Ela para de existir",
+        "Ela vibra e produz som"
+      ],
+      "correctIndex": 3,
+      "explanation": "A membrana esticada vibra quando tocada e produz som.",
+      "wrongExplanations": {
+        "0": "A transparência não explica a produção do som.",
+        "1": "A membrana não se transforma em corda.",
+        "2": "A membrana continua existindo enquanto vibra."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_instrumentos-musicais_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "instrumentos-musicais",
+      "topicName": "Instrumentos musicais",
+      "question": "Qual combinação relaciona corretamente instrumentos e elementos vibrantes?",
+      "options": [
+        "Violão: cordas; flauta: ar; tambor: membrana",
+        "Violão: tinta; flauta: sombra; tambor: cor",
+        "Violão: ar; flauta: corda; tambor: luz",
+        "Violão: sombra; flauta: água; tambor: desenho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cordas, ar e membrana vibram nesses instrumentos para produzir som.",
+      "wrongExplanations": {
+        "1": "Tinta, sombra e cor não são os elementos que produzem as notas.",
+        "2": "As associações estão trocadas e luz não produz o som do tambor.",
+        "3": "Sombra, água e desenho não são as partes vibrantes descritas."
+      },
+      "skill": "relacionar-instrumentos-musicais-a-elementos-que-vibram",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "instrumentos-musicais"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

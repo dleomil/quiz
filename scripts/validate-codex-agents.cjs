@@ -138,7 +138,7 @@ function validateAgentDirectory(agentDirectory, contracts = AGENT_CONTRACTS) {
   return errors;
 }
 
-function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
+function validateEditorialScenario(scenario, { maxProposals = 20 } = {}) {
   const errors = [];
   const scenarioId = scenario?.scenarioId || 'cenario-sem-id';
   const input = scenario?.input || {};
@@ -301,13 +301,13 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
   );
   unexpectedKeys(input.sourceRef, sourceRefFields, 'input.sourceRef');
   const allowedInputFields =
-    output.agent === 'pedagogical_quality'
-      ? [...commonInputFields, 'proposal', 'proposals']
-      : commonInputFields;
+    output.agent === 'content_curator'
+      ? [...commonInputFields, 'proposals']
+      : [...commonInputFields, 'proposal', 'proposals'];
   const allowedOutputFields =
     output.agent === 'content_curator'
-      ? [...outputFields, 'proposal']
-      : outputFields;
+      ? [...outputFields, 'proposal', 'proposals']
+      : [...outputFields, 'results'];
   unexpectedKeys(input, allowedInputFields, 'input');
   unexpectedKeys(output, allowedOutputFields, 'output');
   unexpectedKeys(
@@ -343,19 +343,21 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
     : input.proposal
       ? [input.proposal]
       : [];
-  if (output.agent === 'pedagogical_quality') {
-    if (input.proposal && input.proposals)
-      errors.push(`[${scenarioId}] use proposal ou proposals, nao ambos`);
-    if (!batchProposals.length || batchProposals.length > maxProposals)
-      errors.push(
-        `[${scenarioId}] lote editorial deve conter de 1 a ${maxProposals} propostas`,
-      );
+  if (input.proposal && input.proposals)
+    errors.push(`[${scenarioId}] use proposal ou proposals, nao ambos`);
+  if (output.agent === 'pedagogical_quality' && !batchProposals.length)
+    errors.push(`[${scenarioId}] informe ao menos uma proposta para revisao`);
+  if (batchProposals.length > maxProposals)
+    errors.push(
+      `[${scenarioId}] lote editorial deve conter ate ${maxProposals} propostas`,
+    );
+  if (batchProposals.length) {
     const ids = new Set();
     batchProposals.forEach((proposal, index) => {
       validateProposal(proposal, `input.proposals[${index}]`, true);
-      if (ids.has(proposal.id))
+      if (ids.has(proposal?.id))
         errors.push(`[${scenarioId}] proposta duplicada no lote`);
-      ids.add(proposal.id);
+      ids.add(proposal?.id);
       for (const [field, value] of Object.entries({
         contentSetId: input.contentSetId,
         subject: input.subjectId,
@@ -363,15 +365,149 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
         skill: input.authorizedSkill,
         version: input.questionVersion,
       }))
-        if (proposal[field] !== value)
+        if (proposal?.[field] !== value)
           errors.push(`[${scenarioId}] proposta do lote diverge em ${field}`);
     });
   }
+  if (
+    output.agent === 'pedagogical_quality' &&
+    output.results !== undefined &&
+    (!Array.isArray(output.results) ||
+      output.results.length !== batchProposals.length)
+  )
+    errors.push(`[${scenarioId}] resultados individuais incompletos`);
+  if (
+    output.agent === 'pedagogical_quality' &&
+    batchProposals.length > 1 &&
+    !Array.isArray(output.results)
+  )
+    errors.push(`[${scenarioId}] lote exige resultados individuais`);
   const inputProposalValid =
     output.agent !== 'pedagogical_quality' || batchProposals.length > 0;
   const outputProposalRequired =
     output.agent === 'content_curator' && output.decision !== 'blocked';
-  validateProposal(output.proposal, 'output.proposal', outputProposalRequired);
+  if (output.agent === 'content_curator') {
+    if (output.proposal && output.proposals)
+      errors.push(`[${scenarioId}] use output.proposal ou output.proposals`);
+    if (
+      batchProposals.length &&
+      output.decision !== 'blocked' &&
+      !Array.isArray(output.proposals)
+    )
+      errors.push(`[${scenarioId}] curadoria em lote exige output.proposals`);
+    if (Array.isArray(output.proposals)) {
+      if (
+        !outputProposalRequired ||
+        output.proposals.length !== (batchProposals.length || 20)
+      )
+        errors.push(`[${scenarioId}] lote curado incompleto`);
+      const outputIds = new Set();
+      output.proposals.forEach((proposal, index) => {
+        validateProposal(proposal, `output.proposals[${index}]`, true);
+        if (outputIds.has(proposal?.id))
+          errors.push(`[${scenarioId}] proposta duplicada na curadoria`);
+        outputIds.add(proposal?.id);
+      });
+      if (
+        batchProposals.length &&
+        (outputIds.size !== batchProposals.length ||
+          batchProposals.some((proposal) => !outputIds.has(proposal?.id)))
+      )
+        errors.push(`[${scenarioId}] curadoria mudou IDs do lote`);
+    } else
+      validateProposal(
+        output.proposal,
+        'output.proposal',
+        outputProposalRequired,
+      );
+  }
+  if (output.agent === 'pedagogical_quality' && Array.isArray(output.results)) {
+    const inputIds = batchProposals.map((proposal) => proposal?.id);
+    const resultIds = output.results.map((result) => result?.questionId);
+    if (
+      new Set(resultIds).size !== resultIds.length ||
+      inputIds.length !== resultIds.length ||
+      inputIds.some((id) => !resultIds.includes(id))
+    )
+      errors.push(`[${scenarioId}] resultados individuais nao cobrem o lote`);
+    const checkFields = [
+      'question',
+      'options',
+      'answer',
+      'explanation',
+      'wrongExplanations',
+    ];
+    output.results.forEach((result, index) => {
+      const pathName = `output.results[${index}]`;
+      unexpectedKeys(
+        result,
+        ['questionId', 'decision', 'findings', 'doubts', 'checks'],
+        pathName,
+      );
+      if (
+        !isFilledText(result?.questionId) ||
+        !EDITORIAL_DECISIONS.includes(result?.decision) ||
+        !Array.isArray(result?.findings) ||
+        !Array.isArray(result?.doubts) ||
+        !result.doubts.every(isFilledText) ||
+        !result?.checks ||
+        typeof result.checks !== 'object' ||
+        Array.isArray(result.checks) ||
+        Object.keys(result.checks).length !== checkFields.length ||
+        Object.keys(result.checks).some(
+          (field) => !checkFields.includes(field),
+        ) ||
+        checkFields.some((field) => !isFilledText(result.checks[field]))
+      )
+        errors.push(`[${scenarioId}] ${pathName} invalido`);
+      const resultBlocking = result?.findings?.some(
+        (finding) => finding?.severity === 'blocking',
+      );
+      if (
+        result?.decision === 'approved' &&
+        ((result.findings || []).length || (result.doubts || []).length)
+      )
+        errors.push(
+          `[${scenarioId}] resultado aprovado contem achado ou duvida`,
+        );
+      if (
+        result?.decision === 'adjustments_required' &&
+        (!(result.findings || []).length || resultBlocking)
+      )
+        errors.push(`[${scenarioId}] resultado de ajuste sem achado valido`);
+      if (
+        result?.decision === 'blocked' &&
+        !resultBlocking &&
+        !(result.doubts || []).length
+      )
+        errors.push(`[${scenarioId}] resultado bloqueado sem causa`);
+      (result?.findings || []).forEach((finding, findingIndex) => {
+        const findingPath = `${pathName}.findings[${findingIndex}]`;
+        unexpectedKeys(finding, findingFields, findingPath);
+        if (
+          finding?.questionId !== result.questionId ||
+          !isFilledText(finding?.criterion) ||
+          !FINDING_SEVERITIES.includes(finding?.severity) ||
+          !isFilledText(finding?.evidence) ||
+          !isFilledText(finding?.recommendation)
+        )
+          errors.push(`[${scenarioId}] ${findingPath} invalido`);
+      });
+    });
+    if (output.results.length) {
+      const aggregateDecision = output.results.some(
+        (result) => result?.decision === 'blocked',
+      )
+        ? 'blocked'
+        : output.results.some(
+              (result) => result?.decision === 'adjustments_required',
+            )
+          ? 'adjustments_required'
+          : 'approved';
+      if (output.decision !== aggregateDecision)
+        errors.push(`[${scenarioId}] decisao global diverge dos resultados`);
+    }
+  }
   const approval = input.humanFreezeApproval;
   const approvalValid =
     approval &&
@@ -415,7 +551,15 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
 
   const proposals = [
     ['input.proposal', input.proposal],
+    ...(input.proposals || []).map((proposal, index) => [
+      `input.proposals[${index}]`,
+      proposal,
+    ]),
     ['output.proposal', output.proposal],
+    ...(output.proposals || []).map((proposal, index) => [
+      `output.proposals[${index}]`,
+      proposal,
+    ]),
   ].filter(([, proposal]) => proposal);
   proposals.forEach(([prefix, proposal]) => {
     const expected = {
@@ -426,7 +570,7 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
       version: input.questionVersion,
     };
     Object.entries(expected).forEach(([field, value]) => {
-      if (proposal[field] !== value) {
+      if (proposal?.[field] !== value) {
         errors.push(`[${scenarioId}] ${prefix}.${field} diverge da entrada`);
       }
     });
@@ -478,11 +622,27 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
   if (output.humanApprovalRequired !== true) {
     errors.push(`[${scenarioId}] aprovacao humana deve permanecer obrigatoria`);
   }
-  const findings = Array.isArray(output.findings) ? output.findings : [];
-  const doubts = Array.isArray(output.doubts) ? output.doubts : [];
+  const findings = [
+    ...(Array.isArray(output.findings) ? output.findings : []),
+    ...(Array.isArray(output.results)
+      ? output.results.flatMap((result) => result?.findings || [])
+      : []),
+  ];
+  const doubts = [
+    ...(Array.isArray(output.doubts) ? output.doubts : []),
+    ...(Array.isArray(output.results)
+      ? output.results.flatMap((result) => result?.doubts || [])
+      : []),
+  ];
   const blockingFindings = findings.filter(
     (finding) => finding?.severity === 'blocking',
   );
+  const blockedResultHasDoubt = Array.isArray(output.results)
+    ? output.results.some(
+        (result) =>
+          result?.decision === 'blocked' && result.doubts?.some(isFilledText),
+      )
+    : false;
 
   if (derivedInputState !== 'complete' && output.decision !== 'blocked') {
     errors.push(`[${scenarioId}] contexto incompleto ou ambiguo deve bloquear`);
@@ -504,7 +664,10 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
   if (
     output.decision === 'blocked' &&
     blockingFindings.length === 0 &&
-    !(derivedInputState !== 'complete' && doubts.length > 0)
+    !(
+      (derivedInputState !== 'complete' || blockedResultHasDoubt) &&
+      doubts.length > 0
+    )
   ) {
     errors.push(
       `[${scenarioId}] bloqueio exige contexto invalido com duvida ou achado blocking`,
@@ -517,9 +680,12 @@ function validateEditorialScenario(scenario, { maxProposals = 5 } = {}) {
         output.agent === 'pedagogical_quality'
           ? input.proposal ||
             input.proposals?.find(
-              (proposal) => proposal.id === finding.questionId,
+              (proposal) => proposal?.id === finding.questionId,
             )
-          : output.proposal;
+          : output.proposal ||
+            output.proposals?.find(
+              (proposal) => proposal?.id === finding.questionId,
+            );
       unexpectedKeys(finding, findingFields, `output.findings[${index}]`);
       findingFields.forEach((field) => {
         if (typeof finding?.[field] !== 'string' || !finding[field].trim()) {
@@ -608,9 +774,11 @@ function validateEditorialInputDocument(document, agent) {
     'sourceStatus',
   ];
   const allowed =
-    agent === 'pedagogical_quality'
-      ? [...required, 'proposal', 'proposals']
-      : required;
+    agent === 'content_curator'
+      ? [...required, 'proposals']
+      : agent === 'pedagogical_quality'
+        ? [...required, 'proposal', 'proposals']
+        : required;
   Object.keys(input).forEach((key) => {
     if (!allowed.includes(key))
       errors.push(`[${scenarioId}] campo nao autorizado: input.${key}`);
@@ -669,17 +837,32 @@ function validateEditorialInputDocument(document, agent) {
     : input.proposal
       ? [input.proposal]
       : [];
+  if (input.proposal && input.proposals)
+    errors.push(`[${scenarioId}] use proposal ou proposals, nao ambos`);
   if (
     agent === 'pedagogical_quality' &&
-    (!proposals.length || proposals.length > 5)
+    (!proposals.length || proposals.length > 20)
   )
-    errors.push(`[${scenarioId}] informe de 1 a 5 propostas`);
-  if (agent === 'pedagogical_quality' && input.proposal && input.proposals)
-    errors.push(`[${scenarioId}] use proposal ou proposals, nao ambos`);
-  if (agent === 'pedagogical_quality' && proposals.length) {
+    errors.push(`[${scenarioId}] informe de 1 a 20 propostas`);
+  if (
+    agent === 'content_curator' &&
+    input.proposals &&
+    (!proposals.length || proposals.length > 20)
+  )
+    errors.push(`[${scenarioId}] informe de 1 a 20 propostas para curadoria`);
+  const proposalIds = proposals.map((proposal) => proposal?.id);
+  if (new Set(proposalIds).size !== proposalIds.length)
+    errors.push(`[${scenarioId}] propostas de entrada com IDs duplicados`);
+  if (
+    ['content_curator', 'pedagogical_quality'].includes(agent) &&
+    proposals.length
+  ) {
     proposals.forEach((proposal) => {
-      const proposalInput = { ...input, proposal };
+      const proposalInput = { ...input };
+      delete proposalInput.proposal;
       delete proposalInput.proposals;
+      if (agent === 'content_curator') proposalInput.proposals = [proposal];
+      else proposalInput.proposal = proposal;
       validateEditorialScenario({
         scenarioId,
         inputState: 'complete',
@@ -709,14 +892,14 @@ function validateEditorialInputDocument(document, agent) {
         version: input.questionVersion,
       };
       Object.entries(metadata).forEach(([field, value]) => {
-        if (proposal[field] !== value) {
+        if (proposal?.[field] !== value) {
           errors.push(
             `[${scenarioId}] input.proposal.${field} diverge da entrada`,
           );
         }
       });
       ['referenceId', 'section', 'topic'].forEach((field) => {
-        if (proposal.sourceRef?.[field] !== input.sourceRef?.[field]) {
+        if (proposal?.sourceRef?.[field] !== input.sourceRef?.[field]) {
           errors.push(
             `[${scenarioId}] input.proposal.sourceRef diverge da entrada`,
           );

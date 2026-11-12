@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual astro ilumina o Sistema Solar e é uma estrela?",
+      "options": [
+        "a Terra",
+        "o Sol",
+        "a Lua",
+        "Marte"
+      ],
+      "correctIndex": 1,
+      "explanation": "O Sol é uma estrela que emite luz.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual astro ilumina o Sistema Solar e é uma estrela”, a opção “a Terra” não atende ao que se pede: “a Terra” é planeta, não estrela no enunciado.",
+        "2": "Na pergunta “Qual astro ilumina o Sistema Solar e é uma estrela”, a opção “a Lua” não atende ao que se pede: “a Lua” é satélite natural, não estrela no enunciado.",
+        "3": "Na pergunta “Qual astro ilumina o Sistema Solar e é uma estrela”, a opção “Marte” não atende ao que se pede: “Marte” é planeta, não estrela no enunciado."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual característica ajuda a reconhecer uma estrela?",
+      "options": [
+        "ela emite luz própria",
+        "reflete a luz do Sol",
+        "orbita um planeta",
+        "tem superfície rochosa como a Terra"
+      ],
+      "correctIndex": 0,
+      "explanation": "Estrelas emitem luz; planetas podem ser vistos ao refletir luz.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Qual característica ajuda a reconhecer uma estrela”, a opção “reflete a luz do Sol” não atende ao que se pede: uma estrela não é reconhecida por refletir a luz do Sol: ela emite luz própria.",
+        "2": "Na pergunta “Qual característica ajuda a reconhecer uma estrela”, a opção “orbita um planeta” não atende ao que se pede: orbitar um planeta é uma relação típica de satélite; não é a característica que define uma estrela.",
+        "3": "Na pergunta “Qual característica ajuda a reconhecer uma estrela”, a opção “tem superfície rochosa como a Terra” não atende ao que se pede: uma superfície rochosa é característica de planetas como a Terra, não de uma estrela."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Como a Terra é classificada?",
+      "options": [
+        "uma estrela",
+        "um satélite natural",
+        "um cometa",
+        "um planeta"
+      ],
+      "correctIndex": 3,
+      "explanation": "A Terra é um planeta que orbita o Sol.",
+      "wrongExplanations": {
+        "0": "A Terra não é uma estrela; é um planeta que orbita o Sol.",
+        "1": "A Terra não é um satélite natural; é um planeta que orbita o Sol.",
+        "2": "A Terra não é um cometa; é um planeta que orbita o Sol."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "A Lua é um satélite natural de qual planeta?",
+      "options": [
+        "Marte",
+        "Júpiter",
+        "da Terra",
+        "o Sol"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Lua orbita a Terra e é seu satélite natural.",
+      "wrongExplanations": {
+        "0": "Marte é um planeta, mas a Lua não o orbita; a Lua é satélite natural da Terra.",
+        "1": "Júpiter é um planeta, mas a Lua não o orbita; a Lua é satélite natural da Terra.",
+        "3": "O Sol é uma estrela; a Lua orbita a Terra, que é um planeta."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "O que os planetas do Sistema Solar fazem ao redor do Sol?",
+      "options": [
+        "emitem luz própria",
+        "orbitam o Sol",
+        "orbitam a Terra",
+        "ficam parados no espaço"
+      ],
+      "correctIndex": 1,
+      "explanation": "Os planetas percorrem órbitas ao redor da estrela Sol.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que os planetas do Sistema Solar fazem ao redor do Sol”, a opção “emitem luz própria” não atende ao que se pede: “emitem luz própria” não descreve corretamente a trajetória pedida: os planetas do Sistema Solar orbitam o Sol.",
+        "2": "Na pergunta “O que os planetas do Sistema Solar fazem ao redor do Sol”, a opção “orbitam a Terra” não atende ao que se pede: “orbitam a Terra” não descreve corretamente a trajetória pedida: os planetas do Sistema Solar orbitam o Sol.",
+        "3": "Na pergunta “O que os planetas do Sistema Solar fazem ao redor do Sol”, a opção “ficam parados no espaço” não atende ao que se pede: “ficam parados no espaço” não descreve corretamente a trajetória pedida: os planetas do Sistema Solar orbitam o Sol."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Por que conseguimos ver a Lua?",
+      "options": [
+        "porque ela reflete luz do Sol",
+        "porque emite luz própria",
+        "porque reflete a luz da Terra",
+        "porque recebe luz das estrelas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A luz solar refletida pela superfície da Lua chega aos nossos olhos.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Por que conseguimos ver a Lua”, a opção “porque emite luz própria” não atende ao que se pede: a Lua não produz luz própria como uma estrela; vemos luz solar refletida em sua superfície.",
+        "2": "Na pergunta “Por que conseguimos ver a Lua”, a opção “porque reflete a luz da Terra” não atende ao que se pede: a luz refletida que vemos na Lua vem do Sol, não é produzida pela Terra.",
+        "3": "Na pergunta “Por que conseguimos ver a Lua”, a opção “porque recebe luz das estrelas” não atende ao que se pede: a Lua não recebe sua aparência brilhante das estrelas; ela reflete a luz solar."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual é um exemplo de planeta?",
+      "options": [
+        "o Sol",
+        "a Lua",
+        "Plutão",
+        "Júpiter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Júpiter é um planeta que orbita o Sol.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual é um exemplo de planeta”, a opção “o Sol” não atende ao que se pede: “o Sol” é estrela, não planeta no enunciado.",
+        "1": "Na pergunta “Qual é um exemplo de planeta”, a opção “a Lua” não atende ao que se pede: “a Lua” é satélite natural, não planeta no enunciado.",
+        "2": "Na pergunta “Qual é um exemplo de planeta”, a opção “Plutão” não atende ao que se pede: “Plutão” é planeta anão, não planeta no enunciado."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual astro é uma estrela?",
+      "options": [
+        "Saturno",
+        "a Lua",
+        "o Sol",
+        "Vênus"
+      ],
+      "correctIndex": 2,
+      "explanation": "O Sol é a estrela mais próxima da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual astro é uma estrela”, a opção “Saturno” não atende ao que se pede: “Saturno” é planeta, não estrela no enunciado.",
+        "1": "Na pergunta “Qual astro é uma estrela”, a opção “a Lua” não atende ao que se pede: “a Lua” é satélite natural, não estrela no enunciado.",
+        "3": "Na pergunta “Qual astro é uma estrela”, a opção “Vênus” não atende ao que se pede: “Vênus” é planeta, não estrela no enunciado."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "No caso da Lua, qual tipo de astro ela orbita como satélite natural?",
+      "options": [
+        "uma estrela",
+        "um planeta",
+        "um cometa",
+        "um asteroide"
+      ],
+      "correctIndex": 1,
+      "explanation": "A Lua, por exemplo, orbita a Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “No caso da Lua, qual tipo de astro ela orbita como satélite natural”, a opção “uma estrela” não atende ao que se pede: uma estrela não é o planeta que a Lua orbita; a Lua é satélite natural da Terra.",
+        "2": "Na pergunta “No caso da Lua, qual tipo de astro ela orbita como satélite natural”, a opção “um cometa” não atende ao que se pede: um cometa não é o astro que a Lua acompanha como satélite natural; a Lua orbita um planeta.",
+        "3": "Na pergunta “No caso da Lua, qual tipo de astro ela orbita como satélite natural”, a opção “um asteroide” não atende ao que se pede: um asteroide é outro tipo de corpo celeste, não o planeta que a Lua orbita como satélite."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual frase descreve corretamente a Lua?",
+      "options": [
+        "ela orbita a Terra",
+        "ela emite luz própria",
+        "ela é uma estrela",
+        "ela permanece parada no espaço"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lua é o satélite natural que acompanha a Terra em sua órbita.",
+      "wrongExplanations": {
+        "1": "A Lua não produz a própria luz: vemos principalmente a luz solar refletida por sua superfície.",
+        "2": "A Lua não é uma estrela; é um satélite natural que orbita a Terra e reflete luz do Sol.",
+        "3": "A Lua está em movimento: ela orbita a Terra, que também se move ao redor do Sol."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Uma criança observa Marte no céu. Como Marte é classificado?",
+      "options": [
+        "uma estrela",
+        "um satélite natural",
+        "um planeta anão",
+        "planeta"
+      ],
+      "correctIndex": 3,
+      "explanation": "Marte é um dos planetas que orbitam o Sol.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Uma criança observa Marte no céu. Como Marte é classificado”, a opção “uma estrela” não atende ao que se pede: “uma estrela” é estrela, não a classe pedida no enunciado.",
+        "1": "Na pergunta “Uma criança observa Marte no céu. Como Marte é classificado”, a opção “um satélite natural” não atende ao que se pede: “um satélite natural” é satélite natural, não a classe pedida no enunciado.",
+        "2": "Na pergunta “Uma criança observa Marte no céu. Como Marte é classificado”, a opção “um planeta anão” não atende ao que se pede: “um planeta anão” é uma alternativa que não representa essa classe de astro, não a classe pedida no enunciado."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual par contém uma estrela e um planeta, nessa ordem?",
+      "options": [
+        "Terra e Lua",
+        "Lua e Sol",
+        "Sol e Terra",
+        "Marte e Júpiter"
+      ],
+      "correctIndex": 2,
+      "explanation": "O Sol é uma estrela e a Terra é um planeta.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual par contém uma estrela e um planeta, nessa ordem”, a opção “Terra e Lua” não atende ao que se pede: “Terra e Lua” apresenta planeta e satélite natural; a questão pede uma estrela seguida de um planeta (Sol e Terra).",
+        "1": "Na pergunta “Qual par contém uma estrela e um planeta, nessa ordem”, a opção “Lua e Sol” não atende ao que se pede: “Lua e Sol” apresenta satélite natural e estrela; a questão pede uma estrela seguida de um planeta (Sol e Terra).",
+        "3": "Marte e Júpiter são dois planetas; a pergunta pede uma estrela seguida de um planeta."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "O que diferencia principalmente o Sol da Terra?",
+      "options": [
+        "o Sol é um planeta e a Terra é uma estrela",
+        "o Sol é uma estrela e a Terra é um planeta",
+        "os dois são satélites naturais",
+        "os dois emitem luz própria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Estrelas emitem luz própria; a Terra é um planeta que recebe luz.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que diferencia principalmente o Sol da Terra”, a opção “o Sol é um planeta e a Terra é uma estrela” não atende ao que se pede: a classificação está invertida: o Sol é estrela e a Terra é planeta.",
+        "2": "Na pergunta “O que diferencia principalmente o Sol da Terra”, a opção “os dois são satélites naturais” não atende ao que se pede: o Sol e a Terra não são ambos satélites; o Sol é estrela e a Terra é planeta.",
+        "3": "Na pergunta “O que diferencia principalmente o Sol da Terra”, a opção “os dois emitem luz própria” não atende ao que se pede: a Terra não emite luz própria como o Sol; ela recebe luz da estrela."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual astro natural acompanha a Terra em sua viagem ao redor do Sol?",
+      "options": [
+        "a Lua",
+        "Marte",
+        "o Sol",
+        "Fobos, satélite de Marte"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lua orbita a Terra enquanto a Terra orbita o Sol.",
+      "wrongExplanations": {
+        "1": "Marte é outro planeta do Sistema Solar; quem orbita a Terra é a Lua.",
+        "2": "O Sol é a estrela que a Terra orbita; a Lua é o satélite natural da Terra.",
+        "3": "Fobos é satélite natural de Marte, não da Terra. A Lua é o satélite que acompanha a Terra."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Por que a Lua pode parecer brilhante no céu?",
+      "options": [
+        "porque produz luz própria",
+        "porque reflete a luz da Terra",
+        "porque brilha como uma lâmpada",
+        "porque reflete a luz do Sol"
+      ],
+      "correctIndex": 3,
+      "explanation": "A Lua não produz luz própria; vemos a luz do Sol refletida em sua superfície.",
+      "wrongExplanations": {
+        "0": "A Lua não é uma estrela e não produz luz própria; seu brilho vem da luz solar refletida.",
+        "1": "O brilho que vemos na Lua vem principalmente da luz do Sol refletida, não da luz da Terra.",
+        "2": "A Lua não é uma lâmpada: ela reflete a luz solar que chega à sua superfície."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual astro é um planeta do Sistema Solar?",
+      "options": [
+        "o Sol",
+        "a Lua",
+        "Vênus",
+        "um cometa"
+      ],
+      "correctIndex": 2,
+      "explanation": "Vênus é um planeta que orbita o Sol.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual astro é um planeta do Sistema Solar”, a opção “o Sol” não atende ao que se pede: “o Sol” é estrela, não planeta no enunciado.",
+        "1": "Na pergunta “Qual astro é um planeta do Sistema Solar”, a opção “a Lua” não atende ao que se pede: “a Lua” é satélite natural, não planeta no enunciado.",
+        "3": "Na pergunta “Qual astro é um planeta do Sistema Solar”, a opção “um cometa” não atende ao que se pede: “um cometa” é cometa, não planeta no enunciado."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual sequência vai de estrela a planeta e depois a satélite natural?",
+      "options": [
+        "Sol, Lua, Terra",
+        "Sol, Terra, Lua",
+        "Terra, Sol, Lua",
+        "Lua, Terra, Sol"
+      ],
+      "correctIndex": 1,
+      "explanation": "O Sol é estrela, a Terra é planeta e a Lua é satélite natural da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual sequência vai de estrela a planeta e depois a satélite natural”, a opção “Sol, Lua, Terra” não atende ao que se pede: na sequência “Sol, Lua, Terra”, as classes e a ordem não correspondem a estrela, planeta e satélite natural.",
+        "2": "Na pergunta “Qual sequência vai de estrela a planeta e depois a satélite natural”, a opção “Terra, Sol, Lua” não atende ao que se pede: na sequência “Terra, Sol, Lua”, as classes e a ordem não correspondem a estrela, planeta e satélite natural.",
+        "3": "Na pergunta “Qual sequência vai de estrela a planeta e depois a satélite natural”, a opção “Lua, Terra, Sol” não atende ao que se pede: na sequência “Lua, Terra, Sol”, as classes e a ordem não correspondem a estrela, planeta e satélite natural."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Por que a Terra não é chamada de estrela?",
+      "options": [
+        "porque não emite luz própria como o Sol",
+        "porque é menor que a Lua",
+        "porque gira sobre si mesma",
+        "porque tem superfície rochosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Terra é iluminada pelo Sol e não é uma estrela.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Por que a Terra não é chamada de estrela”, a opção “porque é menor que a Lua” não atende ao que se pede: o tamanho não transforma a Terra em estrela; estrelas emitem luz própria, e a Terra é um planeta.",
+        "2": "Na pergunta “Por que a Terra não é chamada de estrela”, a opção “porque gira sobre si mesma” não atende ao que se pede: girar sobre si mesma não torna a Terra uma estrela; a diferença é que ela não emite luz própria.",
+        "3": "Na pergunta “Por que a Terra não é chamada de estrela”, a opção “porque tem superfície rochosa” não atende ao que se pede: ter uma superfície rochosa não é o motivo; o Sol é estrela e a Terra é planeta."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Qual afirmação sobre os planetas está correta?",
+      "options": [
+        "todos emitem luz própria",
+        "todos têm exatamente uma lua",
+        "orbitam a Terra",
+        "eles orbitam uma estrela"
+      ],
+      "correctIndex": 3,
+      "explanation": "No Sistema Solar, os planetas orbitam o Sol, que é uma estrela.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual afirmação sobre os planetas está correta”, a opção “todos emitem luz própria” não atende ao que se pede: planetas não são classificados como estrelas que emitem luz própria; eles refletem luz de estrelas.",
+        "1": "Na pergunta “Qual afirmação sobre os planetas está correta”, a opção “todos têm exatamente uma lua” não atende ao que se pede: o número de luas varia entre planetas; não é uma característica comum a todos.",
+        "2": "Na pergunta “Qual afirmação sobre os planetas está correta”, a opção “orbitam a Terra” não atende ao que se pede: planetas orbitam estrelas, como a Terra orbita o Sol, e não a Terra."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_corpos_celestes_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "corpos-celestes",
+      "topicName": "Corpos celestes",
+      "question": "Que nome damos à Lua em relação à Terra?",
+      "options": [
+        "um planeta",
+        "uma estrela",
+        "um satélite natural",
+        "um satélite artificial"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Lua é o satélite natural da Terra.",
+      "wrongExplanations": {
+        "0": "A Lua não é um planeta; é o satélite natural da Terra.",
+        "1": "A Lua não é uma estrela; é o satélite natural da Terra.",
+        "3": "A Lua não é um satélite artificial; ela é o satélite natural da Terra."
+      },
+      "skill": "distinguir-estrelas-planetas-e-satelites",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "corpos-celestes"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

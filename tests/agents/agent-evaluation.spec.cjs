@@ -45,7 +45,7 @@ try {
   };
   const isolationEvidence = {
     preflight: {
-      auth: 'chatgpt-keyring',
+      auth: 'chatgpt-existing-profile',
       skills: 'disabled-and-context-checked',
       mcpServerCount: 0,
       features: Object.fromEntries(

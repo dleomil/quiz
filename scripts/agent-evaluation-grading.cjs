@@ -14,7 +14,7 @@ function verifiedIsolation(evidence) {
   return (
     evidence?.eventDiagnosis?.accepted === true &&
     evidence.eventDiagnosis.issues?.length === 0 &&
-    proof?.auth === 'chatgpt-keyring' &&
+    proof?.auth === 'chatgpt-existing-profile' &&
     proof?.skills === 'disabled-and-context-checked' &&
     proof?.mcpServerCount === 0 &&
     DISABLED_FEATURES.every((name) => proof.features?.[name] === false)

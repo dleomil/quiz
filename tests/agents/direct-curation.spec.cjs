@@ -19,4 +19,23 @@ assert.ok(validateDirectCuration(bad).length);
 bad = clone();
 bad.output.proposals[0].wrongExplanations = {};
 assert.ok(validateDirectCuration(bad).length);
+bad = clone();
+bad.output.decision = 'adjustments_required';
+bad.output.findings = [
+  {
+    questionId: bad.output.proposals[0].id,
+    criterion: 'Precisao do enunciado',
+    severity: 'major',
+    evidence: 'O enunciado admite duas leituras.',
+    recommendation: 'Delimitar a situacao descrita.',
+  },
+  {
+    questionId: bad.output.proposals[1].id,
+    criterion: 'Clareza da alternativa',
+    severity: 'minor',
+    evidence: 'Uma alternativa esta ambigua.',
+    recommendation: 'Reescrever a alternativa.',
+  },
+];
+assert.deepEqual(validateDirectCuration(bad), []);
 console.log('direct-curation: ok');

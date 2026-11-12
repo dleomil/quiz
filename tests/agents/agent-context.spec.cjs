@@ -35,6 +35,47 @@ try {
     assert.ok(renderContext(bundle).includes(doc.content));
   assert.ok(bundle.approvals[0].evidenceRef.endsWith('#issuecomment-1'));
   assert.equal(bundle.documents.length, work.documents.length);
+  const directInput = {
+    ...input,
+    subjectId: 'ciencias',
+    contentSetId: '2026-t3-v2',
+    term: 't3',
+    manifestState: 'frozen',
+    sourceStatus: 'authorized',
+  };
+  const directWork = workFor(root, directInput, 'pedagogical-quality');
+  directWork.documents.forEach((doc) => {
+    doc.sourceCommit = directWork.baseCommit;
+  });
+  const directBundle = buildContext(directWork, {
+    root,
+    directEditorial: {
+      subjectId: 'ciencias',
+      contentSetId: '2026-t3-v2',
+      manifestState: 'frozen',
+      sourceStatus: 'authorized',
+    },
+  });
+  assert.equal(directBundle.approvals.length, 0);
+  assert.deepEqual(directBundle.editorialDelegation, {
+    kind: 'direct-editorial',
+    subjectId: 'ciencias',
+    contentSetId: '2026-t3-v2',
+    sourceCommit: directWork.baseCommit,
+  });
+  assert.throws(
+    () =>
+      buildContext(directWork, {
+        root,
+        directEditorial: {
+          subjectId: 'portugues',
+          contentSetId: '2026-t3-v2',
+          manifestState: 'frozen',
+          sourceStatus: 'authorized',
+        },
+      }),
+    /delegacao direta nao autorizada/,
+  );
   const noEnglish = JSON.parse(JSON.stringify(work));
   assert.throws(
     () => requiredPaths({ ...work, curriculumCycle: '2027-t1' }, root),

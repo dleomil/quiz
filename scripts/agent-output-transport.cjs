@@ -204,6 +204,85 @@ function editorialSchema(contract, agent, subject) {
   }
   return validateSchema(object(properties));
 }
+function curatorProposalSchema(contract, subject) {
+  const proposal = { ...contract.$defs.proposal };
+  delete proposal.allOf;
+  const fields = { ...proposal.properties };
+  delete fields.wrongExplanations;
+  const converted = plain(
+    { ...proposal, properties: fields },
+    contract.$defs,
+  ).properties;
+  converted.questionPt =
+    subject === 'ingles' ? text() : { type: ['string', 'null'], minLength: 1 };
+  converted.wrongExplanations = object(
+    Object.fromEntries(
+      ['0', '1', '2', '3'].map((key) => [
+        key,
+        { type: ['string', 'null'], minLength: 1 },
+      ]),
+    ),
+  );
+  return object(converted);
+}
+function editorialBatchSchema(contract, agent, subject, batchSize) {
+  check(
+    ['content_curator', 'pedagogical_quality'].includes(agent),
+    'agente invalido',
+  );
+  check(
+    Number.isInteger(batchSize) && batchSize >= 1 && batchSize <= 20,
+    'lote deve conter de 1 a 20 propostas',
+  );
+  const properties = Object.fromEntries(
+    Object.entries(contract.properties)
+      .filter(([key]) => key !== 'proposal')
+      .map(([key, node]) => [key, plain(node, contract.$defs)]),
+  );
+  properties.agent = { type: 'string', enum: [agent] };
+  properties.findings = {
+    type: 'array',
+    items: object({
+      questionId: text(),
+      criterion: text(),
+      severity: { type: 'string', enum: ['minor', 'major', 'blocking'] },
+      evidence: text(),
+      recommendation: text(),
+    }),
+  };
+  if (agent === 'content_curator') {
+    properties.proposals = {
+      type: 'array',
+      items: curatorProposalSchema(contract, subject),
+      minItems: 0,
+      maxItems: batchSize,
+    };
+  } else {
+    const finding = properties.findings.items;
+    properties.results = {
+      type: 'array',
+      minItems: batchSize,
+      maxItems: batchSize,
+      items: object({
+        questionId: text(),
+        decision: {
+          type: 'string',
+          enum: ['approved', 'adjustments_required', 'blocked'],
+        },
+        findings: { type: 'array', items: finding },
+        doubts: { type: 'array', items: text() },
+        checks: object({
+          question: text(),
+          options: text(),
+          answer: text(),
+          explanation: text(),
+          wrongExplanations: text(),
+        }),
+      }),
+    };
+  }
+  return validateSchema(object(properties));
+}
 function decodeEditorial(raw, schema, agent) {
   validateValue(raw, schema);
   const result = JSON.parse(JSON.stringify(raw));
@@ -233,6 +312,60 @@ function decodeEditorial(raw, schema, agent) {
   }
   return result;
 }
+function decodeEditorialBatch(raw, schema, agent) {
+  validateValue(raw, schema);
+  const result = JSON.parse(JSON.stringify(raw));
+  if (agent === 'content_curator') {
+    check(
+      ['approved', 'adjustments_required', 'blocked'].includes(result.decision),
+      'decisao de curadoria invalida',
+    );
+    if (result.decision === 'blocked') {
+      check(
+        result.proposals.length === 0,
+        'bloqueio nao pode conter propostas',
+      );
+    } else {
+      check(
+        result.proposals.length === schema.properties.proposals.maxItems,
+        'curadoria exige todas as propostas do lote',
+      );
+      const proposalIds = result.proposals.map((proposal) => proposal.id);
+      check(
+        new Set(proposalIds).size === proposalIds.length,
+        'curadoria contem IDs duplicados',
+      );
+      for (const proposal of result.proposals) {
+        for (const key of ['0', '1', '2', '3']) {
+          if (key === String(proposal.correctIndex)) {
+            check(
+              proposal.wrongExplanations[key] === null,
+              'alternativa correta deve ter feedback nulo no transporte',
+            );
+            delete proposal.wrongExplanations[key];
+          } else
+            check(
+              typeof proposal.wrongExplanations[key] === 'string' &&
+                proposal.wrongExplanations[key].trim(),
+              'alternativa incorreta exige explicacao',
+            );
+        }
+        if (proposal.questionPt === null) delete proposal.questionPt;
+      }
+    }
+  } else {
+    check(
+      result.results.length === schema.properties.results.maxItems,
+      'revisao exige um resultado por proposta',
+    );
+    const questionIds = result.results.map((item) => item.questionId);
+    check(
+      new Set(questionIds).size === questionIds.length,
+      'revisao contem IDs duplicados',
+    );
+  }
+  return result;
+}
 function verificationSchema() {
   return validateSchema(
     object({
@@ -255,12 +388,17 @@ function verificationSchema() {
 }
 const INSTRUCTIONS =
   'Formato de transporte: todas as propriedades do schema sao obrigatorias. Na curadoria, proposal deve ser null somente quando decision=blocked. Em wrongExplanations, informe as quatro chaves 0,1,2,3: somente a chave do correctIndex deve ser null; as outras tres exigem explicacoes preenchidas. questionPt e obrigatorio para ingles; use null apenas quando esse campo for opcional e estiver ausente. Nao omita propriedades do schema.';
+const BATCH_INSTRUCTIONS =
+  'Formato de transporte em lote: todas as propriedades do schema sao obrigatorias. Na curadoria, retorne propostas completas para todos os IDs de entrada, preservando IDs; use lista vazia somente em decisao blocked. Em wrongExplanations, inclua as quatro chaves 0,1,2,3 e use null somente na chave correta; as outras tres exigem explicacoes. questionPt e obrigatorio para ingles; use null apenas quando esse campo for opcional e estiver ausente. Na revisao, retorne exatamente um resultado para cada ID, sem duplicatas, e preencha os cinco checks com justificativas especificas. Nao omita propriedades.';
 module.exports = {
   VERSION,
   INSTRUCTIONS,
+  BATCH_INSTRUCTIONS,
   validateSchema,
   validateValue,
   editorialSchema,
+  editorialBatchSchema,
   decodeEditorial,
+  decodeEditorialBatch,
   verificationSchema,
 };

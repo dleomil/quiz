@@ -187,16 +187,43 @@ async function run(cliArguments = process.argv.slice(2)) {
     const work = JSON.parse(
       fs.readFileSync(path.resolve(args['--work']), 'utf8'),
     );
+    const deliveryPolicyPath = 'config/content-delivery-policy.json';
+    const deliveryPolicyText = pinnedConfig(
+      ROOT,
+      deliveryPolicyPath,
+      work.baseCommit,
+    );
+    const deliveryPolicy = JSON.parse(deliveryPolicyText);
+    const directEditorial = {
+      subjectId: document.input.subjectId,
+      contentSetId: document.input.contentSetId,
+      manifestState: document.input.manifestState,
+      sourceStatus: document.input.sourceStatus,
+    };
+    const directAuthorized =
+      deliveryPolicy.directEditorial?.subjects?.includes(
+        directEditorial.subjectId,
+      ) &&
+      deliveryPolicy.directEditorial?.contentSetIds?.includes(
+        directEditorial.contentSetId,
+      );
     const contract = pinnedConfig(
       ROOT,
       path.relative(ROOT, OUTPUT_SCHEMA),
       work.baseCommit,
     );
-    transportSchema = transport.editorialSchema(
-      JSON.parse(contract),
-      args['--agent'],
-      document.input.subjectId,
-    );
+    transportSchema = Array.isArray(document.input.proposals)
+      ? transport.editorialBatchSchema(
+          JSON.parse(contract),
+          args['--agent'],
+          document.input.subjectId,
+          document.input.proposals.length,
+        )
+      : transport.editorialSchema(
+          JSON.parse(contract),
+          args['--agent'],
+          document.input.subjectId,
+        );
     receipt.transportVersion = transport.VERSION;
     receipt.contractSchemaSha256 = sha256(contract);
     receipt.transportSchemaSha256 = digest(transportSchema);
@@ -247,15 +274,14 @@ async function run(cliArguments = process.argv.slice(2)) {
         `${document.input.academicYear}-${document.input.term}`
     )
       throw new Error('ficha diverge da entrada editorial');
-    context = buildContext(
-      work,
-      args['--test-comment']
-        ? {
-            readComment: () =>
-              JSON.parse(fs.readFileSync(args['--test-comment'], 'utf8')),
-          }
-        : {},
-    );
+    const contextOptions = args['--test-comment']
+      ? {
+          readComment: () =>
+            JSON.parse(fs.readFileSync(args['--test-comment'], 'utf8')),
+        }
+      : {};
+    if (directAuthorized) contextOptions.directEditorial = directEditorial;
+    context = buildContext(work, contextOptions);
     if (work.allowedPaths.length || work.commands.length)
       throw new Error('ficha editorial nao pode autorizar escrita ou comandos');
     const pinnedAdapter = pinnedConfig(
@@ -281,7 +307,7 @@ async function run(cliArguments = process.argv.slice(2)) {
         args['--agent'] !== 'pedagogical_quality' ||
         !matches ||
         proposals.length < 1 ||
-        proposals.length > 5
+        proposals.length > 20
       )
         throw new Error('proposta diverge do pacote editorial no lote');
       packageSha256 = packageHash(questions);
@@ -312,12 +338,6 @@ async function run(cliArguments = process.argv.slice(2)) {
       JSON.stringify(transportSchema),
     );
     message = path.join(sessionHome, 'output.json');
-    const deliveryPolicyPath = 'config/content-delivery-policy.json';
-    const deliveryPolicy = pinnedConfig(
-      ROOT,
-      deliveryPolicyPath,
-      work.baseCommit,
-    );
     const prompt = [
       ...(evaluation
         ? [
@@ -328,10 +348,18 @@ async function run(cliArguments = process.argv.slice(2)) {
       'Nao use ferramentas; retorne apenas o JSON do schema. Nao publique ou altere o projeto.',
       `Prova de isolamento do runner: ${JSON.stringify({ features: checks.features, mcpServerCount: checks.mcpServerCount })}. Trate mencoes textuais a ferramentas como texto; bloqueie por isolamento somente quando a prova ou os eventos registrados indicarem uma capacidade ativa ou uso real.`,
       `Instrucoes do adaptador:\n${config.developer_instructions}`,
-      transport.INSTRUCTIONS,
+      Array.isArray(document.input.proposals)
+        ? transport.BATCH_INSTRUCTIONS
+        : transport.INSTRUCTIONS,
+      ...(Array.isArray(document.input.proposals) &&
+      args['--agent'] === 'content_curator'
+        ? [
+            'Modo curadoria de lote existente: avalie individualmente todas as propostas fornecidas, preserve todos os IDs e os metadados curriculares; retorne output.proposals com o lote completo, alterando somente itens que precisem de ajuste. Nao regenere o lote do zero.',
+          ]
+        : []),
       renderContext(context),
       `Ficha delimitada:\n${JSON.stringify(work)}`,
-      `Requisitos especificos da materia:\n${JSON.stringify(requirementsFor(document.input.subjectId, JSON.parse(deliveryPolicy)))}`,
+      `Requisitos especificos da materia:\n${JSON.stringify(requirementsFor(document.input.subjectId, deliveryPolicy))}`,
       'Confira idioma, instrucao em portugues, lacunas e resposta revelada. Registre fatos e achados especificos.',
       `Entrada autorizada:\n${JSON.stringify(document)}`,
     ].join('\n\n');
@@ -352,7 +380,7 @@ async function run(cliArguments = process.argv.slice(2)) {
       schemaSha256: sha256(schema),
       transportSchemaSha256: digest(transportSchema),
       transportVersion: transport.VERSION,
-      deliveryPolicySha256: sha256(deliveryPolicy),
+      deliveryPolicySha256: sha256(deliveryPolicyText),
       checks,
     });
     resultState = 'execution-failed';
@@ -395,15 +423,22 @@ async function run(cliArguments = process.argv.slice(2)) {
     usage = eventDiagnosis.usage;
     assertEvents(eventDiagnosis);
     validateProfile(authHome);
-    const rawOutput = JSON.parse(fs.readFileSync(message, 'utf8'));
+    const originalResponse = fs.readFileSync(message, 'utf8');
+    const rawOutput = JSON.parse(originalResponse);
     wireSha256 = digest(rawOutput);
     let output;
     try {
-      output = transport.decodeEditorial(
-        rawOutput,
-        transportSchema,
-        args['--agent'],
-      );
+      output = Array.isArray(document.input.proposals)
+        ? transport.decodeEditorialBatch(
+            rawOutput,
+            transportSchema,
+            args['--agent'],
+          )
+        : transport.decodeEditorial(
+            rawOutput,
+            transportSchema,
+            args['--agent'],
+          );
     } catch (error) {
       throw new Error(`saida rejeitada: ${error.message}`, { cause: error });
     }
@@ -413,24 +448,39 @@ async function run(cliArguments = process.argv.slice(2)) {
       input: document.input,
       output,
     };
-    const errors = validateEditorialScenario(scenario);
+    const errors =
+      args['--agent'] === 'content_curator' && Array.isArray(output.proposals)
+        ? require('./direct-curation.cjs').validateDirectCuration(scenario, {
+            expectedCount: document.input.proposals?.length || 20,
+          })
+        : validateEditorialScenario(scenario);
     if (errors.length) throw new Error(`saida rejeitada: ${errors.join('; ')}`);
-    if (packageSha256 || document.input.proposal || document.input.proposals)
+    if (
+      packageSha256 ||
+      document.input.proposal ||
+      document.input.proposals ||
+      output.proposals
+    ) {
+      const executionProposals =
+        args['--agent'] === 'content_curator' && output.proposals
+          ? output.proposals
+          : document.input.proposals || [document.input.proposal];
       scenario.execution = {
         kind: 'isolated-editorial',
         runId,
+        agentInstanceId: runId,
         ...(packageSha256 ? { packageSha256 } : {}),
         questionSha256s: Object.fromEntries(
-          (document.input.proposals || [document.input.proposal])
+          executionProposals
             .filter(Boolean)
             .map((proposal) => [proposal.id, digest(proposal)]),
         ),
-        ...(document.input.proposals
-          ? { batchProposalSha256: digest(document.input.proposals) }
-          : { proposalSha256: digest(document.input.proposal) }),
-        ...(document.input.proposals
+        ...(executionProposals.length > 1
+          ? { batchProposalSha256: digest(executionProposals) }
+          : { proposalSha256: digest(executionProposals[0]) }),
+        ...(executionProposals.length > 1
           ? {
-              batchQuestionIds: document.input.proposals.map(
+              batchQuestionIds: executionProposals.map(
                 (proposal) => proposal.id,
               ),
             }
@@ -440,7 +490,25 @@ async function run(cliArguments = process.argv.slice(2)) {
         completedAt: new Date().toISOString(),
         testOnly: Boolean(args['--codex-bin']),
       };
-    const outputText = `${JSON.stringify(scenario, null, 2)}\n`;
+    }
+    let outputArtifact = scenario;
+    if (
+      args['--agent'] === 'content_curator' &&
+      Array.isArray(output.proposals)
+    ) {
+      const report = {
+        schemaVersion: 'isolated-curation-report-v1',
+        scenarioId: scenario.execution.runId,
+        inputState: document.inputState,
+        input: document.input,
+        originalResponse,
+        execution: scenario.execution,
+        wireSha256,
+      };
+      report.sha256 = digest(report);
+      outputArtifact = report;
+    }
+    const outputText = `${JSON.stringify(outputArtifact, null, 2)}\n`;
     fs.mkdirSync(path.dirname(path.resolve(args['--output'])), {
       recursive: true,
     });

@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "content-draft-v1",
+  "contentSetId": "2026-t3-v2",
+  "questions": [
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_001",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual objeto representa a Terra com formato parecido com o de uma esfera?",
+      "options": [
+        "um mapa-múndi plano",
+        "um globo terrestre",
+        "um mapa local de ruas",
+        "uma fotografia de satélite da Terra"
+      ],
+      "correctIndex": 1,
+      "explanation": "O globo mostra a Terra em forma arredondada.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual objeto representa a Terra com formato parecido com o de uma esfera”, a opção “um mapa-múndi plano” não atende ao que se pede: “um mapa-múndi plano” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "2": "Na pergunta “Qual objeto representa a Terra com formato parecido com o de uma esfera”, a opção “um mapa local de ruas” não atende ao que se pede: “um mapa local de ruas” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "3": "Na pergunta “Qual objeto representa a Terra com formato parecido com o de uma esfera”, a opção “uma fotografia de satélite da Terra” não atende ao que se pede: “uma fotografia de satélite da Terra” pode mostrar uma imagem, mas não é um modelo tridimensional arredondado como o globo."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_002",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual representação ajuda mais a encontrar uma rua e escolher um caminho dentro de um bairro?",
+      "options": [
+        "um mapa detalhado do bairro",
+        "um globo terrestre sem nomes de ruas",
+        "um desenho das placas tectônicas",
+        "uma tabela de população sem localização"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um mapa detalhado do bairro mostra ruas e caminhos próximos, ajudando a localizar o trajeto.",
+      "wrongExplanations": {
+        "1": "O globo mostra a forma geral do planeta, mas não traz as ruas de um bairro.",
+        "2": "Um desenho de placas tectônicas representa partes da crosta e seus movimentos, não as ruas do bairro.",
+        "3": "Uma tabela pode apresentar dados, mas sem mapa não mostra onde ficam as ruas nem o caminho."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_003",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual representação é mais adequada para observar a Terra como um corpo arredondado?",
+      "options": [
+        "um mapa-múndi plano",
+        "um mapa de uma cidade",
+        "uma planta baixa de uma casa",
+        "o globo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um globo tridimensional se parece com a forma arredondada da Terra.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual representação é mais adequada para observar a Terra como um corpo arredondado”, a opção “um mapa-múndi plano” não atende ao que se pede: “um mapa-múndi plano” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "1": "Na pergunta “Qual representação é mais adequada para observar a Terra como um corpo arredondado”, a opção “um mapa de uma cidade” não atende ao que se pede: “um mapa de uma cidade” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "2": "Na pergunta “Qual representação é mais adequada para observar a Terra como um corpo arredondado”, a opção “uma planta baixa de uma casa” não atende ao que se pede: “uma planta baixa de uma casa” é uma representação plana; não mostra a forma arredondada da Terra como o globo."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_004",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Por que um mapa plano não mostra a Terra exatamente como um globo?",
+      "options": [
+        "porque o mapa não pode mostrar lugares",
+        "porque os continentes mudam de posição no papel",
+        "porque transforma uma superfície arredondada em uma folha plana",
+        "porque o globo não representa os oceanos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Passar de uma superfície arredondada para uma folha plana causa algumas distorções.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que um mapa plano não mostra a Terra exatamente como um globo”, a opção “porque o mapa não pode mostrar lugares” não atende ao que se pede: “porque o mapa não pode mostrar lugares” não explica a distorção de uma projeção plana; representar uma superfície curva numa folha pode alterar formas ou tamanhos.",
+        "1": "Na pergunta “Por que um mapa plano não mostra a Terra exatamente como um globo”, a opção “porque os continentes mudam de posição no papel” não atende ao que se pede: “porque os continentes mudam de posição no papel” não explica a distorção de uma projeção plana; representar uma superfície curva numa folha pode alterar formas ou tamanhos.",
+        "3": "Na pergunta “Por que um mapa plano não mostra a Terra exatamente como um globo”, a opção “porque o globo não representa os oceanos” não atende ao que se pede: “porque o globo não representa os oceanos” não explica a distorção de uma projeção plana; representar uma superfície curva numa folha pode alterar formas ou tamanhos."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_005",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual é uma vantagem do globo terrestre?",
+      "options": [
+        "mostrar a Terra em tamanho real",
+        "mostrar os continentes e oceanos sobre uma forma arredondada",
+        "mostrar nomes de ruas de um bairro",
+        "mostrar mais detalhes locais que um mapa da cidade"
+      ],
+      "correctIndex": 1,
+      "explanation": "O globo representa a forma arredondada da Terra com continentes e oceanos.",
+      "wrongExplanations": {
+        "0": "O globo é um modelo reduzido da Terra; por isso, não a mostra em tamanho real.",
+        "2": "O globo representa a Terra toda, mas não mostra nomes de ruas de um bairro como pode fazer um mapa local.",
+        "3": "Um mapa local pode mostrar mais detalhes de uma cidade; o globo representa áreas maiores de forma reduzida."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_006",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Uma pessoa quer encontrar uma rua em um bairro. Qual representação pode ajudar mais?",
+      "options": [
+        "um mapa detalhado do bairro",
+        "um globo sem nomes de ruas",
+        "um mapa-múndi sem ruas do bairro",
+        "uma lista de endereços sem mapa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um mapa local pode mostrar ruas e ajudar a encontrar caminhos.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Uma pessoa quer encontrar uma rua em um bairro. Qual representação pode ajudar mais”, a opção “um globo sem nomes de ruas” não atende ao que se pede: “um globo sem nomes de ruas” representa a forma do planeta, mas não mostra ruas e caminhos locais com o detalhe pedido.",
+        "2": "Na pergunta “Uma pessoa quer encontrar uma rua em um bairro. Qual representação pode ajudar mais”, a opção “um mapa-múndi sem ruas do bairro” não atende ao que se pede: “um mapa-múndi sem ruas do bairro” mostra o mundo inteiro, mas não traz os caminhos locais necessários para essa tarefa.",
+        "3": "Na pergunta “Uma pessoa quer encontrar uma rua em um bairro. Qual representação pode ajudar mais”, a opção “uma lista de endereços sem mapa” não atende ao que se pede: “uma lista de endereços sem mapa” lista informação sem representar a posição dos lugares e o percurso em um mapa."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_007",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "O que um mapa-múndi representa?",
+      "options": [
+        "uma representação arredondada em três dimensões",
+        "um mapa de uma cidade",
+        "um corte mostrando as camadas internas da Terra",
+        "uma representação plana de toda a superfície terrestre"
+      ],
+      "correctIndex": 3,
+      "explanation": "O mapa-múndi apresenta a superfície da Terra em uma folha plana.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que um mapa-múndi representa”, a opção “uma representação arredondada em três dimensões” não atende ao que se pede: um globo é arredondado; um mapa-múndi representa toda a superfície em um plano.",
+        "1": "Na pergunta “O que um mapa-múndi representa”, a opção “um mapa de uma cidade” não atende ao que se pede: um mapa de cidade mostra uma área local, não toda a superfície terrestre.",
+        "2": "Na pergunta “O que um mapa-múndi representa”, a opção “um corte mostrando as camadas internas da Terra” não atende ao que se pede: um corte interno mostra camadas, não a superfície inteira representada em mapa-múndi."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_008",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Ao comparar globo e mapa, qual afirmação é correta?",
+      "options": [
+        "o globo e o mapa têm o mesmo formato",
+        "somente o globo pode mostrar oceanos",
+        "ambos representam a Terra, mas de formas diferentes",
+        "o mapa representa a Terra sem qualquer distorção"
+      ],
+      "correctIndex": 2,
+      "explanation": "Globo é arredondado; mapa é plano.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Ao comparar globo e mapa, qual afirmação é correta”, a opção “o globo e o mapa têm o mesmo formato” não atende ao que se pede: “o globo e o mapa têm o mesmo formato” descreve incorretamente o formato ou alcance: o globo é arredondado e o mapa é plano, mas ambos podem mostrar continentes e oceanos.",
+        "1": "Na pergunta “Ao comparar globo e mapa, qual afirmação é correta”, a opção “somente o globo pode mostrar oceanos” não atende ao que se pede: “somente o globo pode mostrar oceanos” descreve incorretamente o formato ou alcance: o globo é arredondado e o mapa é plano, mas ambos podem mostrar continentes e oceanos.",
+        "3": "Na pergunta “Ao comparar globo e mapa, qual afirmação é correta”, a opção “o mapa representa a Terra sem qualquer distorção” não atende ao que se pede: “o mapa representa a Terra sem qualquer distorção” descreve incorretamente o formato ou alcance: o globo é arredondado e o mapa é plano, mas ambos podem mostrar continentes e oceanos."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_009",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual representação facilita observar como os oceanos se distribuem pelo planeta?",
+      "options": [
+        "um mapa de uma única rua",
+        "um globo terrestre",
+        "um desenho de uma montanha",
+        "uma planta baixa de um prédio"
+      ],
+      "correctIndex": 1,
+      "explanation": "O globo permite observar a distribuição dos oceanos na superfície arredondada.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual representação facilita observar como os oceanos se distribuem pelo planeta”, a opção “um mapa de uma única rua” não atende ao que se pede: “um mapa de uma única rua” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "2": "Na pergunta “Qual representação facilita observar como os oceanos se distribuem pelo planeta”, a opção “um desenho de uma montanha” não atende ao que se pede: “um desenho de uma montanha” representa apenas uma área ou aspecto local, não a forma geral arredondada da Terra.",
+        "3": "Na pergunta “Qual representação facilita observar como os oceanos se distribuem pelo planeta”, a opção “uma planta baixa de um prédio” não atende ao que se pede: “uma planta baixa de um prédio” é uma representação plana; não mostra a forma arredondada da Terra como o globo."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_010",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "O que é uma legenda em um mapa?",
+      "options": [
+        "uma explicação dos símbolos usados",
+        "a escala do mapa",
+        "a rosa dos ventos",
+        "o título do mapa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A legenda ajuda a entender o significado de cores e símbolos do mapa.",
+      "wrongExplanations": {
+        "1": "Na pergunta “O que é uma legenda em um mapa”, a opção “a escala do mapa” não atende ao que se pede: a escala relaciona distâncias, não explica o significado dos símbolos e cores; isso aparece na legenda.",
+        "2": "A rosa dos ventos indica direções; a legenda explica símbolos e cores.",
+        "3": "Na pergunta “O que é uma legenda em um mapa”, a opção “o título do mapa” não atende ao que se pede: o título informa o assunto geral; a legenda explica o significado específico dos símbolos e cores."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_011",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Uma criança quer saber onde fica o Brasil no planeta. O que pode consultar?",
+      "options": [
+        "um mapa de ruas do bairro",
+        "uma planta baixa da escola",
+        "um mapa estadual sem indicação de países",
+        "um globo ou mapa-múndi com nomes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Um globo ou mapa-múndi permite localizar países.",
+      "wrongExplanations": {
+        "0": "Um mapa de ruas do bairro mostra uma área pequena e não localiza o Brasil em relação aos demais países.",
+        "1": "A planta da escola mostra espaços do prédio, não a posição do Brasil no planeta.",
+        "2": "Um mapa estadual sem países não permite localizar o Brasil entre os países do mundo."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_012",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Por que alguns mapas mostram a Groenlândia maior do que parece no globo?",
+      "options": [
+        "localizar capitais em um mapa político",
+        "mostrar a distribuição das chuvas na região",
+        "a representação plana pode distorcer tamanhos",
+        "indicar limites entre municípios"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ao projetar a Terra arredondada em uma superfície plana, certas áreas podem parecer maiores ou menores.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que alguns mapas mostram a Groenlândia maior do que parece no globo”, a opção “localizar capitais em um mapa político” não atende ao que se pede: “localizar capitais em um mapa político” não explica a distorção de uma projeção plana; representar uma superfície curva numa folha pode alterar formas ou tamanhos.",
+        "1": "Na pergunta “Por que alguns mapas mostram a Groenlândia maior do que parece no globo”, a opção “mostrar a distribuição das chuvas na região” não atende ao que se pede: “mostrar a distribuição das chuvas na região” não explica a distorção de uma projeção plana; representar uma superfície curva numa folha pode alterar formas ou tamanhos.",
+        "3": "Na pergunta “Por que alguns mapas mostram a Groenlândia maior do que parece no globo”, a opção “indicar limites entre municípios” não atende ao que se pede: “indicar limites entre municípios” não explica a distorção de uma projeção plana; representar uma superfície curva numa folha pode alterar formas ou tamanhos."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_013",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual informação costuma aparecer em um mapa para indicar direções?",
+      "options": [
+        "a escala gráfica",
+        "uma rosa dos ventos ou seta norte",
+        "a legenda",
+        "a grade de coordenadas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Esses símbolos ajudam a indicar direções no mapa.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual informação costuma aparecer em um mapa para indicar direções”, a opção “a escala gráfica” não atende ao que se pede: a escala mostra a relação entre distâncias no papel e no lugar, não a direção norte.",
+        "2": "A legenda explica cores e símbolos; para indicar direções, o mapa pode usar uma rosa dos ventos ou uma seta para o norte.",
+        "3": "Na pergunta “Qual informação costuma aparecer em um mapa para indicar direções”, a opção “a grade de coordenadas” não atende ao que se pede: “a grade de coordenadas” não cumpre a função cartográfica perguntada; uma rosa dos ventos ou seta norte representa essa informação."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_014",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Um mapa de trilha mostra caminhos e pontos de referência. Para que serve?",
+      "options": [
+        "ajudar a planejar e acompanhar o percurso",
+        "indicar a temperatura do caminho",
+        "mostrar a forma arredondada de todo o planeta",
+        "substituir o mapa por uma lista de cidades"
+      ],
+      "correctIndex": 0,
+      "explanation": "O mapa representa caminhos e marcos que auxiliam a orientação.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Um mapa de trilha mostra caminhos e pontos de referência. Para que serve”, a opção “indicar a temperatura do caminho” não atende ao que se pede: “indicar a temperatura do caminho” não mostra o percurso local e os pontos de referência necessários para encontrar a rua ou seguir a trilha.",
+        "2": "Na pergunta “Um mapa de trilha mostra caminhos e pontos de referência. Para que serve”, a opção “mostrar a forma arredondada de todo o planeta” não atende ao que se pede: “mostrar a forma arredondada de todo o planeta” não mostra o percurso local e os pontos de referência necessários para encontrar a rua ou seguir a trilha.",
+        "3": "Na pergunta “Um mapa de trilha mostra caminhos e pontos de referência. Para que serve”, a opção “substituir o mapa por uma lista de cidades” não atende ao que se pede: “substituir o mapa por uma lista de cidades” lista informação sem representar a posição dos lugares e o percurso em um mapa."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_015",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual frase sobre um mapa é verdadeira?",
+      "options": [
+        "ele sempre mostra a Terra sem distorção",
+        "ele tem o mesmo formato arredondado do globo",
+        "ele representa somente os oceanos",
+        "ele pode representar uma parte da Terra em uma superfície plana"
+      ],
+      "correctIndex": 3,
+      "explanation": "Mapas podem mostrar uma cidade, país ou o mundo em superfície plana.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele sempre mostra a Terra sem distorção” não atende ao que se pede: “ele sempre mostra a Terra sem distorção” não é uma afirmação correta sobre mapas: ele pode representar uma parte da Terra em uma superfície plana.",
+        "1": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele tem o mesmo formato arredondado do globo” não atende ao que se pede: “ele tem o mesmo formato arredondado do globo” não é uma afirmação correta sobre mapas: ele pode representar uma parte da Terra em uma superfície plana.",
+        "2": "Na pergunta “Qual frase sobre um mapa é verdadeira”, a opção “ele representa somente os oceanos” não atende ao que se pede: “ele representa somente os oceanos” não é uma afirmação correta sobre mapas: ele pode representar uma parte da Terra em uma superfície plana."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_016",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "O que o globo e o mapa têm em comum?",
+      "options": [
+        "ambos são modelos tridimensionais",
+        "ambos têm formato esférico",
+        "podem mostrar continentes e oceanos",
+        "ambos mostram somente um país"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ambas as representações podem apresentar continentes e oceanos.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que o globo e o mapa têm em comum”, a opção “ambos são modelos tridimensionais” não atende ao que se pede: “ambos são modelos tridimensionais” descreve incorretamente o formato ou alcance: o globo é arredondado e o mapa é plano, mas ambos podem mostrar continentes e oceanos.",
+        "1": "Na pergunta “O que o globo e o mapa têm em comum”, a opção “ambos têm formato esférico” não atende ao que se pede: “ambos têm formato esférico” descreve incorretamente o formato ou alcance: o globo é arredondado e o mapa é plano, mas ambos podem mostrar continentes e oceanos.",
+        "3": "Na pergunta “O que o globo e o mapa têm em comum”, a opção “ambos mostram somente um país” não atende ao que se pede: “ambos mostram somente um país” descreve incorretamente o formato ou alcance: o globo é arredondado e o mapa é plano, mas ambos podem mostrar continentes e oceanos."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_017",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Qual representação é melhor para ver a forma geral da Terra?",
+      "options": [
+        "um mapa-múndi plano",
+        "um globo terrestre",
+        "um mapa detalhado de um bairro",
+        "um desenho de uma única montanha"
+      ],
+      "correctIndex": 1,
+      "explanation": "O globo preserva melhor a forma arredondada geral.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Qual representação é melhor para ver a forma geral da Terra”, a opção “um mapa-múndi plano” não atende ao que se pede: “um mapa-múndi plano” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "2": "Na pergunta “Qual representação é melhor para ver a forma geral da Terra”, a opção “um mapa detalhado de um bairro” não atende ao que se pede: “um mapa detalhado de um bairro” é uma representação plana; não mostra a forma arredondada da Terra como o globo.",
+        "3": "Na pergunta “Qual representação é melhor para ver a forma geral da Terra”, a opção “um desenho de uma única montanha” não atende ao que se pede: “um desenho de uma única montanha” representa apenas uma área ou aspecto local, não a forma geral arredondada da Terra."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_018",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Um mapa usa uma linha azul para indicar um rio. Onde se descobre o que significa a linha?",
+      "options": [
+        "na legenda",
+        "na escala gráfica",
+        "na rosa dos ventos",
+        "no título do mapa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A legenda explica o significado das cores e símbolos.",
+      "wrongExplanations": {
+        "1": "Na pergunta “Um mapa usa uma linha azul para indicar um rio. Onde se descobre o que significa a linha”, a opção “na escala gráfica” não atende ao que se pede: a escala relaciona distâncias, não explica o significado dos símbolos e cores; isso aparece na legenda.",
+        "2": "Na pergunta “Um mapa usa uma linha azul para indicar um rio. Onde se descobre o que significa a linha”, a opção “na rosa dos ventos” não atende ao que se pede: a rosa dos ventos indica direção, não o significado da linha azul; isso é explicado pela legenda.",
+        "3": "Na pergunta “Um mapa usa uma linha azul para indicar um rio. Onde se descobre o que significa a linha”, a opção “no título do mapa” não atende ao que se pede: o título informa o assunto geral; a legenda explica o significado específico dos símbolos e cores."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_019",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "O que a escala de um mapa ajuda a entender?",
+      "options": [
+        "o significado dos símbolos da legenda",
+        "a direção do norte",
+        "os nomes dos países",
+        "a relação entre distâncias no mapa e no lugar"
+      ],
+      "correctIndex": 3,
+      "explanation": "A escala relaciona medidas do desenho com distâncias reais aproximadas.",
+      "wrongExplanations": {
+        "0": "Na pergunta “O que a escala de um mapa ajuda a entender”, a opção “o significado dos símbolos da legenda” não atende ao que se pede: a legenda explica símbolos e cores, não a proporção de distâncias indicada pela escala.",
+        "1": "Na pergunta “O que a escala de um mapa ajuda a entender”, a opção “a direção do norte” não atende ao que se pede: a rosa dos ventos indica direção, mas não a relação proporcional entre distâncias que a escala mostra.",
+        "2": "Na pergunta “O que a escala de um mapa ajuda a entender”, a opção “os nomes dos países” não atende ao que se pede: “os nomes dos países” não cumpre a função cartográfica perguntada; a relação entre distâncias no mapa e no lugar representa essa informação."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    },
+    {
+      "schemaVersion": "content-v1",
+      "id": "2026t3v2_ciencias_representacoes_da_terra_020",
+      "contentSetId": "2026-t3-v2",
+      "subject": "ciencias",
+      "topic": "representacoes-da-terra",
+      "topicName": "Representações da Terra",
+      "question": "Por que usamos modelos como globos e mapas?",
+      "options": [
+        "para substituir todas as observações da paisagem",
+        "para mudar a forma real do planeta",
+        "para representar lugares e compreender sua localização",
+        "para mostrar a Terra em tamanho real"
+      ],
+      "correctIndex": 2,
+      "explanation": "Modelos ajudam a visualizar a Terra e organizar informações sobre lugares.",
+      "wrongExplanations": {
+        "0": "Na pergunta “Por que usamos modelos como globos e mapas”, a opção “para substituir todas as observações da paisagem” não atende ao que se pede: “para substituir todas as observações da paisagem” não é o propósito dos modelos; globos e mapas ajudam a representar lugares e compreender sua localização.",
+        "1": "Na pergunta “Por que usamos modelos como globos e mapas”, a opção “para mudar a forma real do planeta” não atende ao que se pede: “para mudar a forma real do planeta” não é o propósito dos modelos; globos e mapas ajudam a representar lugares e compreender sua localização.",
+        "3": "Na pergunta “Por que usamos modelos como globos e mapas”, a opção “para mostrar a Terra em tamanho real” não atende ao que se pede: “para mostrar a Terra em tamanho real” não é o propósito dos modelos; globos e mapas ajudam a representar lugares e compreender sua localização."
+      },
+      "skill": "comparar-globo-e-representacoes-planas",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "representacoes-da-terra"
+      },
+      "reviewStatus": "draft",
+      "version": 1
+    }
+  ]
+}

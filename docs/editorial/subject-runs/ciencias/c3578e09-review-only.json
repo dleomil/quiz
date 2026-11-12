@@ -1,0 +1,1616 @@
+{
+  "schemaVersion": "editorial-recovery-v1",
+  "status": "response-recovered",
+  "recoveryBasis": "frozen-matrix-review-only",
+  "originalRunId": "c3578e09-ad5b-42a6-9f54-ea7687af7234",
+  "originalResult": "output-rejected",
+  "sourceReceiptSha256": "52038ad060e097ca6d00241e926421b7375ac846b823e3d660fe84b90a407eb4",
+  "sourceReceipt": {
+    "schemaVersion": "agent-run-receipt-v1",
+    "runId": "c3578e09-ad5b-42a6-9f54-ea7687af7234",
+    "actor": "content_curator",
+    "requestedModel": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "startedAt": "2026-11-11T23:01:44.265Z",
+    "testOnly": false,
+    "adapterSha256": "50d89d70606bb51d942510657f0879636cd93516a93049907bd130630ce22ca1",
+    "inputSha256": "8f3ab276fab80594dae5e2f262d3ffb88f82a937724d54b80ed6a5404e888465",
+    "transportVersion": "agent-output-transport-v1",
+    "contractSchemaSha256": "bc3176c18748e5ff2a1e4a093ff7740bb18fc9f23aacca4a2fe1ada979b7359a",
+    "transportSchemaSha256": "b3890f1f721cea8acfda768a1101b39c63b2dc880c311b393ac7f7aed9af344d",
+    "completedAt": "2026-11-11T23:03:48.101Z",
+    "durationMs": 123836,
+    "result": "output-rejected",
+    "failureReason": "erro de execucao informado pela CLI: error, linha 2",
+    "contextSha256": "05d484401fc520a2359eefe91fefdb5577b73a30665dfa762ff9b6c0a9350475",
+    "workSha256": "5814fdd75a99f7503147419b7ea69339a6e307894ca93a6b7e5ded92322bb057",
+    "configurationSha256": "f7012226ed1a34ea010907e4e2372b44844b215fd8b3ba43d3281a781cd02f82",
+    "approvals": [],
+    "preflight": {
+      "cliVersion": "0.167.1",
+      "features": {
+        "shell_tool": false,
+        "shell_snapshot": false,
+        "apps": false,
+        "hooks": false,
+        "multi_agent": false,
+        "multi_agent_v2": false,
+        "plugins": false,
+        "remote_plugin": false,
+        "skill_mcp_dependency_install": false,
+        "skill_search": false,
+        "memories": false,
+        "goals": false,
+        "browser_use": false,
+        "browser_use_external": false,
+        "browser_use_full_cdp_access": false,
+        "computer_use": false,
+        "in_app_browser": false,
+        "in_app_chat": false,
+        "in_app_local_automation": false,
+        "image_generation": false,
+        "view_image": false,
+        "code_mode": false,
+        "code_mode_host": false,
+        "code_mode_only": false,
+        "artifact": false,
+        "workspace_dependencies": false,
+        "tool_suggest": false,
+        "step_model_switching": false,
+        "request_permissions_tool": false,
+        "auth_elicitation": false,
+        "realtime_conversation": false,
+        "daemon_auto_start": false,
+        "sleep_tool": false,
+        "agent_message_board": false,
+        "send_message_to_user_async": false,
+        "external_agent_memory_import": false,
+        "skip_host_skill_discovery": true
+      },
+      "mcpServerCount": 0,
+      "auth": "chatgpt-existing-profile",
+      "modelCatalogued": "gpt-6-luna",
+      "accountModelAccess": "not-yet-observed",
+      "skills": "disabled-and-context-checked"
+    },
+    "artifactSha256": null,
+    "usage": {
+      "input_tokens": 33821,
+      "cached_input_tokens": 0,
+      "output_tokens": 6625
+    },
+    "modelInvocations": 1,
+    "wireSha256": null,
+    "captureId": "c3578e09-ad5b-42a6-9f54-ea7687af7234",
+    "captureSha256": "a60ce90fb451dd5ca27f415e7806bda0b960946d4ac54d0e032eeb82fdfffb1c",
+    "eventDiagnosis": {
+      "version": "codex-0.167.1-events-v4",
+      "accepted": false,
+      "reasonCode": "process_failure",
+      "reason": "erro de execucao informado pela CLI",
+      "completed": true,
+      "usage": {
+        "input_tokens": 33821,
+        "cached_input_tokens": 0,
+        "output_tokens": 6625
+      },
+      "types": {
+        "thread.started": 1,
+        "item.completed:error": 2,
+        "turn.started": 1,
+        "item.completed:agent_message": 1,
+        "turn.completed": 1
+      },
+      "issues": [
+        {
+          "code": "process_failure",
+          "line": 2,
+          "eventType": "item.completed",
+          "itemType": "error",
+          "itemId": "item_0"
+        },
+        {
+          "code": "process_failure",
+          "line": 3,
+          "eventType": "item.completed",
+          "itemType": "error",
+          "itemId": "item_1"
+        }
+      ],
+      "warnings": []
+    },
+    "observedModel": null,
+    "subscriptionUsage": null,
+    "attempts": 1,
+    "corrections": 0,
+    "limitations": [
+      "Modelo e esforco solicitados fixados; identidade remota nao atestada pela CLI.",
+      "Disponibilidade no catalogo nao comprova acesso da conta.",
+      "Consumo da assinatura e cobranca nao informados pela CLI; sem estimativa por preco de API.",
+      "Tentativas contam invocacoes do runner; tentativas internas do servico nao informadas.",
+      "Recibo local e evidencia rastreavel, sem assinatura criptografica de identidade humana."
+    ],
+    "sha256": "52038ad060e097ca6d00241e926421b7375ac846b823e3d660fe84b90a407eb4"
+  },
+  "sourceCaptureManifest": {
+    "schemaVersion": "agent-event-capture-v1",
+    "files": {
+      "response.json": {
+        "sha256": "283a8de8eeecb5e089de6627f68741d646f9ffbbaf99c301ad10be894d272cef",
+        "bytes": 24771
+      },
+      "stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stdout.jsonl": {
+        "sha256": "8b87c7e3b94b97e176b10df3ae8342446a390a77a2b917643666d961873bf9de",
+        "bytes": 27574
+      }
+    },
+    "exitCode": 0,
+    "processError": null,
+    "truncated": false,
+    "diagnosis": {
+      "version": "codex-0.167.1-events-v4",
+      "accepted": false,
+      "reasonCode": "process_failure",
+      "reason": "erro de execucao informado pela CLI",
+      "completed": true,
+      "usage": {
+        "input_tokens": 33821,
+        "cached_input_tokens": 0,
+        "output_tokens": 6625
+      },
+      "types": {
+        "thread.started": 1,
+        "item.completed:error": 2,
+        "turn.started": 1,
+        "item.completed:agent_message": 1,
+        "turn.completed": 1
+      },
+      "issues": [
+        {
+          "code": "process_failure",
+          "line": 2,
+          "eventType": "item.completed",
+          "itemType": "error",
+          "itemId": "item_0"
+        },
+        {
+          "code": "process_failure",
+          "line": 3,
+          "eventType": "item.completed",
+          "itemType": "error",
+          "itemId": "item_1"
+        }
+      ],
+      "warnings": []
+    },
+    "sha256": "a60ce90fb451dd5ca27f415e7806bda0b960946d4ac54d0e032eeb82fdfffb1c"
+  },
+  "sourceWork": {
+    "schemaVersion": "agent-work-v1",
+    "id": "2026-t3-v2/ciencias/som-e-audicao/curation",
+    "objective": "Relacionar sons à percepção auditiva",
+    "baseCommit": "4ad7f9857ca14677623388d5165230a920721d38",
+    "role": "content-curator",
+    "subjectId": "ciencias",
+    "curriculumCycle": "2026-t3",
+    "dependencies": [],
+    "documents": [
+      {
+        "id": "agents",
+        "version": "1.0.1",
+        "sha256": "ec51ff28067fc0a182bc8911ea0483af59c9f5b3ca9ca1523a0b61bb7b21779c",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--agents--content-curator-agent",
+        "version": "1.0.0",
+        "sha256": "9fd68d3c3bbff37e3a531d297fefabf932048a30fbbada4a9363ecb9ece3dbf5",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--architecture--target-architecture",
+        "version": "1.1.0",
+        "sha256": "913f779600d4d52e05e80d5831be2dd5f9dde194f74f41a8bb9dc64d02b37b74",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--harness--content-update-quality-gates",
+        "version": "1.2.0",
+        "sha256": "7a7df410e7e42c6029a5ea9a59f202cc2889d98a54c2552daad181233af61d6b",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--harness--pedagogical-regression-corpus",
+        "version": "1.0.0",
+        "sha256": "afd400c459b6d3d774db56df0346e87f57dba04f1ec561a648fa0aa957c1c5f8",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--product--product-scope-and-principles",
+        "version": "1.1.0",
+        "sha256": "2ca057426622539481ef63d482ff911ad518ffe8e7aae1da8399cd3c8d131e9a",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--specs--agent-context-and-auth",
+        "version": "1.0.1",
+        "sha256": "ada6110de8dd0594002039f259c5b46388b3bb02ad04ba7ef831cb4bdd35ac25",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--specs--content-delivery-contract",
+        "version": "2.1.2",
+        "sha256": "09bd65a79226d1a4873c87c10a1c45d6098579098c9fb3716460f7d1bd18a136",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--specs--editorial-agent-output-contract",
+        "version": "2.0.2",
+        "sha256": "06a69296329c769fdc61512cb9706d3b5d2930aefa587c7cb74f8667d1cde284",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      },
+      {
+        "id": "docs--specs--final-exams-november-2026-intake",
+        "version": "1.1.0",
+        "sha256": "f81f94210bc839bc17e3be9591758404fa39272cbee17f062dcff540c33c7e6d",
+        "sourceCommit": "4ad7f9857ca14677623388d5165230a920721d38"
+      }
+    ],
+    "requirements": [
+      "Cobrir as regras editoriais e requisitos aplicáveis ao lote autorizado."
+    ],
+    "validExamples": [
+      "Questão clara, correta e rastreável ao objetivo."
+    ],
+    "invalidExamples": [
+      "Questão ambígua, incorreta ou fora do tema."
+    ],
+    "allowedPaths": [],
+    "acceptanceCriteria": [
+      "Preservar IDs e metadados; retornar decisão e propostas completas."
+    ],
+    "commands": [],
+    "evidence": [],
+    "independentVerifier": "pedagogical_quality em execução separada",
+    "stopConditions": [
+      "Fonte ou resposta ambígua; bloqueio por requisito."
+    ],
+    "rollback": "Descartar o lote sem publicar."
+  },
+  "sourceCaptureSha256": "a60ce90fb451dd5ca27f415e7806bda0b960946d4ac54d0e032eeb82fdfffb1c",
+  "inputSha256": "8f3ab276fab80594dae5e2f262d3ffb88f82a937724d54b80ed6a5404e888465",
+  "workSha256": "5814fdd75a99f7503147419b7ea69339a6e307894ca93a6b7e5ded92322bb057",
+  "responseSha256": "283a8de8eeecb5e089de6627f68741d646f9ffbbaf99c301ad10be894d272cef",
+  "correctedDiagnosis": {
+    "version": "codex-0.167.1-events-v4",
+    "accepted": true,
+    "reasonCode": null,
+    "reason": null,
+    "completed": true,
+    "usage": {
+      "input_tokens": 33821,
+      "cached_input_tokens": 0,
+      "output_tokens": 6625
+    },
+    "types": {
+      "thread.started": 1,
+      "item.completed:error": 2,
+      "turn.started": 1,
+      "item.completed:agent_message": 1,
+      "turn.completed": 1
+    },
+    "issues": [],
+    "warnings": [
+      {
+        "code": "startup_config_1",
+        "line": 2,
+        "itemId": "item_0"
+      },
+      {
+        "code": "startup_config_2",
+        "line": 3,
+        "itemId": "item_1"
+      }
+    ]
+  },
+  "scenario": {
+    "scenarioId": "2026-t3-v2/ciencias/som-e-audicao/curation",
+    "inputState": "complete",
+    "input": {
+      "workItemId": "2026-t3-v2/ciencias/som-e-audicao/curation",
+      "contentSetId": "2026-t3-v2",
+      "subjectId": "ciencias",
+      "topicId": "som-e-audicao",
+      "grade": "3",
+      "academicYear": 2026,
+      "term": "t3",
+      "authorizedSkill": "relacionar-sons-a-percepcao-auditiva",
+      "sourceRef": {
+        "referenceId": "roteiro-av-trimestral-novembro-2026",
+        "section": "Ciências",
+        "topic": "som-e-audicao"
+      },
+      "questionVersion": 1,
+      "authorizedObjective": "Relacionar sons à percepção auditiva",
+      "manifestState": "frozen",
+      "humanFreezeApproval": {
+        "approvedBy": "dleomil",
+        "approvedAt": "2026-11-02",
+        "evidenceRef": "docs/specs/final-exams-november-2026-intake.md#congelamento-da-matriz"
+      },
+      "requestedPass": "curation",
+      "sourceStatus": "authorized",
+      "proposals": [
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-001",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual alternativa descreve corretamente o som?",
+          "options": [
+            "um estímulo que pode ser percebido pelos ouvidos",
+            "uma imagem percebida pelos olhos",
+            "um cheiro percebido pelo nariz",
+            "uma textura percebida pela pele"
+          ],
+          "correctIndex": 0,
+          "explanation": "O som é um estímulo percebido pela audição, com participação dos ouvidos.",
+          "wrongExplanations": {
+            "1": "Uma imagem é percebida pela visão; ela não é um estímulo sonoro.",
+            "2": "Um cheiro é percebido pelo olfato, não pela audição.",
+            "3": "Uma textura é percebida pelo tato, não pela audição."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-002",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma criança escuta um cachorro latindo atrás de um muro. Que sentido permite perceber esse latido?",
+          "options": [
+            "visão",
+            "audição",
+            "olfato",
+            "tato"
+          ],
+          "correctIndex": 1,
+          "explanation": "É pela audição que a criança percebe o latido mesmo sem ver o cachorro.",
+          "wrongExplanations": {
+            "0": "A visão depende de enxergar o cachorro; o enunciado diz que ele está escondido e a criança escuta o latido.",
+            "2": "O olfato percebe cheiros, não o latido ouvido atrás do muro.",
+            "3": "O tato percebe contato e textura; não permite ouvir o latido à distância."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-003",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Sem olhar para a fonte, uma pessoa ouve o miado de um gato. O que ela reconhece pelo som?",
+          "options": [
+            "a cor do pelo do gato",
+            "o cheiro do ambiente",
+            "o miado de um gato",
+            "o tamanho exato do gato"
+          ],
+          "correctIndex": 2,
+          "explanation": "A audição permite reconhecer o miado, mas não revela a cor do pelo ou o tamanho exato do gato.",
+          "wrongExplanations": {
+            "0": "A audição pode reconhecer o miado, mas não informa a cor do pelo.",
+            "1": "Cheiros são percebidos pelo olfato; o miado é percebido pela audição.",
+            "3": "O miado pode indicar que há um gato, mas não revela seu tamanho exato."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-004",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual órgão ajuda a perceber sons?",
+          "options": [
+            "o cotovelo",
+            "o joelho",
+            "o cabelo",
+            "o ouvido"
+          ],
+          "correctIndex": 3,
+          "explanation": "O ouvido participa da audição.",
+          "wrongExplanations": {
+            "0": "O cotovelo ajuda a dobrar o braço, mas não é o órgão da audição.",
+            "1": "O joelho ajuda a movimentar a perna; quem participa da audição é o ouvido.",
+            "2": "O cabelo não é um órgão que percebe sons; essa função envolve os ouvidos."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-005",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Ao ouvir palmas em uma sala, qual informação chega pela audição?",
+          "options": [
+            "o som das palmas",
+            "a cor das mãos",
+            "o formato da sala",
+            "a textura da parede"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite perceber o som das palmas; as demais características dependem principalmente da visão ou do tato.",
+          "wrongExplanations": {
+            "1": "A cor das mãos é percebida pela visão, não pelo som das palmas.",
+            "2": "O formato da sala é observado pela visão; o som, sozinho, não o mostra com precisão.",
+            "3": "A textura da parede é percebida pelo tato, não pela audição."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-006",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma criança ouve um latido atrás de uma porta. O que pode reconhecer pela audição?",
+          "options": [
+            "que um cachorro está latindo",
+            "a cor da porta",
+            "o cheiro do corredor",
+            "o desenho do tapete"
+          ],
+          "correctIndex": 0,
+          "explanation": "O som permite reconhecer que há um latido, mesmo sem ver o cachorro.",
+          "wrongExplanations": {
+            "1": "A cor da porta depende da visão e não pode ser descoberta pelo som do latido.",
+            "2": "O cheiro é percebido pelo olfato; não é uma informação trazida pelo latido.",
+            "3": "O desenho do tapete é visual e não é revelado pelo som."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-007",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual situação mostra uma pessoa reconhecendo um som pela audição?",
+          "options": [
+            "ouvir o telefone tocar e reconhecer seu toque",
+            "ver uma luz acender e perceber sua cor",
+            "sentir o aroma de uma fruta",
+            "tocar uma pedra e perceber sua superfície"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ao escutar o toque, a pessoa percebe e reconhece um som usando a audição.",
+          "wrongExplanations": {
+            "1": "A cor da luz é percebida pela visão, não pelo ouvido.",
+            "2": "O aroma da fruta é percebido pelo olfato, não é um som.",
+            "3": "A superfície da pedra é percebida pelo tato, não pela audição."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-008",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual exemplo é um som do ambiente?",
+          "options": [
+            "a cor de uma parede",
+            "a sombra de uma árvore",
+            "o cheiro de uma flor",
+            "o canto de um pássaro"
+          ],
+          "correctIndex": 3,
+          "explanation": "O canto de um pássaro é um som produzido por vibrações e percebido pela audição.",
+          "wrongExplanations": {
+            "0": "A cor de uma parede é vista, não ouvida.",
+            "1": "A sombra de uma árvore é percebida pela visão, não é um som.",
+            "2": "O cheiro de uma flor é percebido pelo olfato, não pela audição."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-009",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma campainha toca enquanto a pessoa está de olhos fechados. O que ela pode perceber?",
+          "options": [
+            "o som da campainha",
+            "a cor da campainha",
+            "o desenho impresso nela",
+            "o tamanho exato dela"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mesmo sem enxergar, a pessoa pode ouvir e reconhecer o som da campainha.",
+          "wrongExplanations": {
+            "1": "A cor depende da visão; com os olhos fechados, a pessoa pode perceber o som, não a cor.",
+            "2": "O desenho é percebido pela visão, não pela audição.",
+            "3": "O som pode indicar que a campainha tocou, mas não revela seu tamanho exato."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-010",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual situação permite reconhecer um som usando principalmente a audição?",
+          "options": [
+            "observar uma luz piscando",
+            "escutar o toque de um telefone",
+            "sentir o perfume de uma flor",
+            "tocar uma superfície áspera"
+          ],
+          "correctIndex": 1,
+          "explanation": "O toque do telefone é percebido pelo ouvido; luz, perfume e aspereza correspondem a outros sentidos.",
+          "wrongExplanations": {
+            "0": "A luz piscando é percebida pela visão e não é um som.",
+            "2": "O perfume é percebido pelo olfato, não pela audição.",
+            "3": "A aspereza é percebida pelo tato; não é uma informação sonora."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-011",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Sem ver o instrumento, qual pista pode ajudar a reconhecer que uma flauta está tocando?",
+          "options": [
+            "o som que a pessoa escuta",
+            "a cor da roupa do músico",
+            "o cheiro da sala",
+            "a temperatura do palco"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite reconhecer características do som da flauta mesmo quando o instrumento não está à vista.",
+          "wrongExplanations": {
+            "1": "A cor da roupa é percebida pela visão e não identifica o som da flauta.",
+            "2": "O cheiro é percebido pelo olfato e não permite ouvir o instrumento.",
+            "3": "A temperatura é percebida pelo tato; não é uma pista sonora."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-012",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Ao ouvir uma música, qual ação mostra que a criança está usando a audição?",
+          "options": [
+            "identificar que há uma melodia tocando",
+            "notar a cor do alto-falante",
+            "sentir a textura da cadeira",
+            "perceber o cheiro do lanche"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reconhecer a melodia é perceber um som com a audição.",
+          "wrongExplanations": {
+            "1": "A cor do alto-falante é percebida pela visão, não pela audição.",
+            "2": "A textura da cadeira é percebida pelo tato e não informa o que está tocando.",
+            "3": "O cheiro do lanche é percebido pelo olfato, não é uma percepção sonora."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-013",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "No pátio, uma criança ouve pássaros e passos. O que esses exemplos têm em comum?",
+          "options": [
+            "são sons percebidos pela audição",
+            "são imagens percebidas apenas pela visão",
+            "são cheiros percebidos pelo olfato",
+            "são sabores percebidos pela língua"
+          ],
+          "correctIndex": 0,
+          "explanation": "O canto dos pássaros e os passos podem ser escutados; ambos são percebidos pela audição.",
+          "wrongExplanations": {
+            "1": "Os dois exemplos são sons; não são imagens que dependam apenas da visão.",
+            "2": "O olfato percebe cheiros, não o canto nem os passos.",
+            "3": "A língua percebe sabores; os exemplos são sons."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-014",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Em um momento sem sons, qual sentido deixa de receber estímulos sonoros naquele instante?",
+          "options": [
+            "audição",
+            "visão",
+            "olfato",
+            "paladar"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sem estímulos sonoros, a audição não recebe sons naquele momento; os outros sentidos podem continuar recebendo seus estímulos.",
+          "wrongExplanations": {
+            "1": "A visão pode receber luz mesmo quando não há sons.",
+            "2": "O olfato pode perceber cheiros sem que haja sons.",
+            "3": "O paladar pode perceber sabores independentemente dos sons."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-015",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma pessoa ouve um alarme em outra sala, mas não vê o aparelho. O que ela consegue concluir com mais segurança?",
+          "options": [
+            "que há um som de alarme",
+            "qual é a cor do aparelho",
+            "qual é a marca do aparelho",
+            "qual é o tamanho exato do aparelho"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite reconhecer que um alarme está soando, mas não revela detalhes visuais do aparelho escondido.",
+          "wrongExplanations": {
+            "1": "A cor não pode ser descoberta pelo som; é uma característica visual.",
+            "2": "A marca não é identificada apenas por ouvir o alarme.",
+            "3": "O som não mostra o tamanho exato do aparelho."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-016",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma pessoa escuta um sino tocar do lado de fora. Qual sentido está sendo usado para perceber o toque?",
+          "options": [
+            "audição",
+            "visão",
+            "olfato",
+            "paladar"
+          ],
+          "correctIndex": 0,
+          "explanation": "O toque do sino é um som, percebido pela audição.",
+          "wrongExplanations": {
+            "1": "A visão pode mostrar o sino se ele estiver à vista, mas o toque é percebido pela audição.",
+            "2": "O olfato percebe cheiros, não o toque do sino.",
+            "3": "O paladar percebe sabores, não sons."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-017",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Ao ouvir uma sequência de notas, o que a audição pode ajudar a perceber?",
+          "options": [
+            "a ordem dos sons que foram tocados",
+            "a cor de cada nota",
+            "o cheiro de cada instrumento",
+            "o peso exato do instrumento"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite acompanhar a ordem e a diferença entre os sons ouvidos.",
+          "wrongExplanations": {
+            "1": "Notas musicais não têm cor percebida pela audição; cor é visual.",
+            "2": "O cheiro é percebido pelo olfato, não revela a sequência sonora.",
+            "3": "O peso é percebido ao segurar ou medir o instrumento, não ao escutar as notas."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-018",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual par apresenta duas informações que podem ser percebidas pela audição?",
+          "options": [
+            "o canto de um pássaro e o toque de um telefone",
+            "a cor de uma flor e o brilho de uma lâmpada",
+            "o perfume de uma fruta e o cheiro de uma folha",
+            "a maciez de um tecido e a aspereza de uma pedra"
+          ],
+          "correctIndex": 0,
+          "explanation": "O canto e o toque são sons, percebidos pela audição.",
+          "wrongExplanations": {
+            "1": "Cor e brilho são percebidos pela visão, não pela audição.",
+            "2": "Perfume e cheiro são percebidos pelo olfato.",
+            "3": "Maciez e aspereza são percebidas pelo tato."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-019",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma pessoa ouve alguém chamá-la pelo nome em uma sala. Que informação ela percebe pelo ouvido?",
+          "options": [
+            "uma voz dizendo seu nome",
+            "a cor da roupa de quem chamou",
+            "a expressão do rosto dessa pessoa",
+            "o desenho na parede"
+          ],
+          "correctIndex": 0,
+          "explanation": "A voz e as palavras são percebidas pela audição; detalhes de aparência dependem da visão.",
+          "wrongExplanations": {
+            "1": "A roupa é vista; a voz permite ouvir o chamado, mas não mostra sua cor.",
+            "2": "A expressão facial é percebida pela visão, não pelo som da voz.",
+            "3": "O desenho na parede é visual e não é revelado pelo chamado."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-020",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual resumo explica o papel da audição na percepção dos sons?",
+          "options": [
+            "a audição permite perceber e reconhecer sons",
+            "a audição permite ver cores e formas",
+            "a audição permite sentir cheiros",
+            "a audição permite identificar sabores"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição é o sentido que nos permite perceber sons e reconhecer diferenças entre eles.",
+          "wrongExplanations": {
+            "1": "Cores e formas são percebidas principalmente pela visão, não pela audição.",
+            "2": "Cheiros são percebidos pelo olfato, não pela audição.",
+            "3": "Sabores são percebidos pelo paladar, não pela audição."
+          },
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1
+        }
+      ]
+    },
+    "output": {
+      "agent": "content_curator",
+      "workItemId": "2026-t3-v2/ciencias/som-e-audicao/curation",
+      "contentSetId": "2026-t3-v2",
+      "subjectId": "ciencias",
+      "topicId": "som-e-audicao",
+      "reviewPass": "curation",
+      "decision": "adjustments_required",
+      "facts": [
+        "O manifesto de 2026-t3-v2 está congelado e autoriza o tema som-e-audicao, com objetivo de relacionar sons à percepção auditiva.",
+        "A entrada declara fonte autorizada e identifica o roteiro de novembro de 2026 em sourceRef.",
+        "As 20 propostas preservam IDs únicos, quatro alternativas, correctIndex válido, explicação correta, três feedbacks para alternativas incorretas, skill, sourceRef, versão 1 e reviewStatus draft.",
+        "As questões e instruções estão em português e não há texto em inglês que exija questionPt.",
+        "Não foi usada ferramenta: a prova fornecida declara shell, apps, plugins, MCP e demais capacidades como desativados, e não registra uso real de ferramentas."
+      ],
+      "doubts": [
+        "A entrada não fornece conteúdo das fontes factuais suplementares autorizadas para som-e-audicao; portanto, não é possível confirmar a rastreabilidade factual independente ao NIDCD ou ao Smithsonian a partir do material apresentado.",
+        "A fonte declarada no sourceRef é o roteiro escolar, enquanto o intake determina o uso exclusivo das fontes factuais suplementares listadas para este tema. A relação entre a referência declarada e essas fontes suplementares não está demonstrada nas propostas."
+      ],
+      "findings": [
+        {
+          "questionId": "T3F-CIE-SOM-001",
+          "criterion": "Cobertura curricular e variedade do lote",
+          "severity": "major",
+          "evidence": "A questão define som como estímulo percebido pela audição, conteúdo também central nas questões 005, 007, 010, 012, 016, 018 e 020.",
+          "recommendation": "Rever a distribuição do lote para reduzir repetições e reservar os itens para aspectos distintos do objetivo autorizado."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-002",
+          "criterion": "Resposta única defensável",
+          "severity": "minor",
+          "evidence": "O cenário informa que a criança escuta o latido, o que praticamente fornece a resposta audição no próprio enunciado.",
+          "recommendation": "Reformular o cenário para que o estudante precise relacionar a percepção do latido ao sentido, sem entregar a operação de perceber no enunciado."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-004",
+          "criterion": "Precisão factual e adequação da explicação",
+          "severity": "minor",
+          "evidence": "A alternativa correta é ouvido e a explicação diz que o ouvido participa da audição; a formulação é simplificada, mas aceitável para o nível indicado.",
+          "recommendation": "Manter a explicação cuidadosa sobre participação do ouvido, sem sugerir que a percepção auditiva depende exclusivamente de uma parte isolada."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-006",
+          "criterion": "Resposta única defensável",
+          "severity": "minor",
+          "evidence": "O enunciado já diz que a criança ouve um latido; a opção correta repete que um cachorro está latindo, tornando a resposta muito explícita e próxima da questão 002.",
+          "recommendation": "Ajustar o enunciado e diferenciar o foco deste item dos demais sobre reconhecer sons de animais."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-008",
+          "criterion": "Precisão factual e aderência ao objetivo",
+          "severity": "minor",
+          "evidence": "A explicação afirma que o canto de um pássaro é produzido por vibrações, acrescentando um conteúdo sobre produção do som além do foco declarado neste tema.",
+          "recommendation": "Limitar a explicação à percepção auditiva ou confirmar a afirmação na fonte factual suplementar autorizada."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-011",
+          "criterion": "Cobertura curricular e variedade do lote",
+          "severity": "minor",
+          "evidence": "A referência à flauta e ao instrumento sem ser visto se aproxima de reconhecer o toque do telefone em 007 e 010 e de identificar sons em 017.",
+          "recommendation": "Diferenciar o item por uma habilidade autorizada distinta ou substituir o exemplo repetido por uma situação que amplie a cobertura do tema."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-014",
+          "criterion": "Clareza e adequação ao terceiro ano",
+          "severity": "minor",
+          "evidence": "A expressão “um momento sem sons” pode ser interpretada como silêncio absoluto, e o item avalia ausência de estímulo, não diretamente o reconhecimento de sons.",
+          "recommendation": "Usar uma situação concreta de pausa sonora e manter claro que se trata do instante descrito."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-015",
+          "criterion": "Resposta única defensável",
+          "severity": "minor",
+          "evidence": "A expressão “som de alarme” aparece na situação e é repetida na opção correta, enquanto as demais opções perguntam por atributos visuais do aparelho.",
+          "recommendation": "Evitar repetir a resposta no enunciado e calibrar os distratores para avaliar a habilidade sem revelar a opção."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-017",
+          "criterion": "Rastreabilidade e precisão factual",
+          "severity": "minor",
+          "evidence": "A explicação afirma que a audição permite perceber a ordem e a diferença entre sons; a entrada não inclui evidência da fonte suplementar para essa ampliação.",
+          "recommendation": "Confirmar essa afirmação na fonte factual suplementar autorizada ou restringir a explicação ao que está sustentado pelo material disponível."
+        },
+        {
+          "questionId": "T3F-CIE-SOM-020",
+          "criterion": "Cobertura curricular e variedade do lote",
+          "severity": "major",
+          "evidence": "A questão resume a mesma relação geral entre audição e percepção de sons já testada por diversos itens, especialmente 001, 005, 007, 010, 012 e 016.",
+          "recommendation": "Substituir ou revisar os itens redundantes para que o conjunto cubra aspectos variados do objetivo, preservando a habilidade autorizada."
+        }
+      ],
+      "recommendations": [
+        "Manter os IDs e metadados curriculares ao fazer ajustes, alterando apenas propostas que precisem de mudança.",
+        "Rever o lote como conjunto: há muitas questões de identificação direta do sentido e reconhecimento de sons, com pouca variação de tarefa; garantir cobertura equilibrada sem inventar subtemas ou habilidades.",
+        "Verificar as afirmações factuais adicionais usando exclusivamente as fontes suplementares listadas no manifesto para som-e-audicao. Não transportar trechos ou páginas dessas fontes para as propostas.",
+        "Submeter a versão ajustada às revisões pedagógica e linguística independentes e à aprovação humana aplicável; esta curadoria não aprova publicação."
+      ],
+      "humanApprovalRequired": true,
+      "proposals": [
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-001",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual alternativa descreve corretamente o som?",
+          "options": [
+            "um estímulo que pode ser percebido pelos ouvidos",
+            "uma imagem percebida pelos olhos",
+            "um cheiro percebido pelo nariz",
+            "uma textura percebida pela pele"
+          ],
+          "correctIndex": 0,
+          "explanation": "O som é um estímulo percebido pela audição, com participação dos ouvidos.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "Uma imagem é percebida pela visão; ela não é um estímulo sonoro.",
+            "2": "Um cheiro é percebido pelo olfato, não pela audição.",
+            "3": "Uma textura é percebida pelo tato, não pela audição."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-002",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma criança escuta um cachorro latindo atrás de um muro. Que sentido permite perceber esse latido?",
+          "options": [
+            "visão",
+            "audição",
+            "olfato",
+            "tato"
+          ],
+          "correctIndex": 1,
+          "explanation": "É pela audição que a criança percebe o latido mesmo sem ver o cachorro.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "0": "A visão depende de enxergar o cachorro; o enunciado diz que ele está escondido e a criança escuta o latido.",
+            "2": "O olfato percebe cheiros, não o latido ouvido atrás do muro.",
+            "3": "O tato percebe contato e textura; não permite ouvir o latido à distância."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-003",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Sem olhar para a fonte, uma pessoa ouve o miado de um gato. O que ela reconhece pelo som?",
+          "options": [
+            "a cor do pelo do gato",
+            "o cheiro do ambiente",
+            "o miado de um gato",
+            "o tamanho exato do gato"
+          ],
+          "correctIndex": 2,
+          "explanation": "A audição permite reconhecer o miado, mas não revela a cor do pelo ou o tamanho exato do gato.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "0": "A audição pode reconhecer o miado, mas não informa a cor do pelo.",
+            "1": "Cheiros são percebidos pelo olfato; o miado é percebido pela audição.",
+            "3": "O miado pode indicar que há um gato, mas não revela seu tamanho exato."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-004",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual órgão ajuda a perceber sons?",
+          "options": [
+            "o cotovelo",
+            "o joelho",
+            "o cabelo",
+            "o ouvido"
+          ],
+          "correctIndex": 3,
+          "explanation": "O ouvido participa da audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "0": "O cotovelo ajuda a dobrar o braço, mas não é o órgão da audição.",
+            "1": "O joelho ajuda a movimentar a perna; quem participa da audição é o ouvido.",
+            "2": "O cabelo não é um órgão que percebe sons; essa função envolve os ouvidos."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-005",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Ao ouvir palmas em uma sala, qual informação chega pela audição?",
+          "options": [
+            "o som das palmas",
+            "a cor das mãos",
+            "o formato da sala",
+            "a textura da parede"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite perceber o som das palmas; as demais características dependem principalmente da visão ou do tato.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor das mãos é percebida pela visão, não pelo som das palmas.",
+            "2": "O formato da sala é observado pela visão; o som, sozinho, não o mostra com precisão.",
+            "3": "A textura da parede é percebida pelo tato, não pela audição."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-006",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma criança ouve um latido atrás de uma porta. O que pode reconhecer pela audição?",
+          "options": [
+            "que um cachorro está latindo",
+            "a cor da porta",
+            "o cheiro do corredor",
+            "o desenho do tapete"
+          ],
+          "correctIndex": 0,
+          "explanation": "O som permite reconhecer que há um latido, mesmo sem ver o cachorro.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor da porta depende da visão e não pode ser descoberta pelo som do latido.",
+            "2": "O cheiro é percebido pelo olfato; não é uma informação trazida pelo latido.",
+            "3": "O desenho do tapete é visual e não é revelado pelo som."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-007",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual situação mostra uma pessoa reconhecendo um som pela audição?",
+          "options": [
+            "ouvir o telefone tocar e reconhecer seu toque",
+            "ver uma luz acender e perceber sua cor",
+            "sentir o aroma de uma fruta",
+            "tocar uma pedra e perceber sua superfície"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ao escutar o toque, a pessoa percebe e reconhece um som usando a audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor da luz é percebida pela visão, não pelo ouvido.",
+            "2": "O aroma da fruta é percebido pelo olfato, não é um som.",
+            "3": "A superfície da pedra é percebida pelo tato, não pela audição."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-008",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual exemplo é um som do ambiente?",
+          "options": [
+            "a cor de uma parede",
+            "a sombra de uma árvore",
+            "o cheiro de uma flor",
+            "o canto de um pássaro"
+          ],
+          "correctIndex": 3,
+          "explanation": "O canto de um pássaro é um som produzido por vibrações e percebido pela audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "0": "A cor de uma parede é vista, não ouvida.",
+            "1": "A sombra de uma árvore é percebida pela visão, não é um som.",
+            "2": "O cheiro de uma flor é percebido pelo olfato, não pela audição."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-009",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma campainha toca enquanto a pessoa está de olhos fechados. O que ela pode perceber?",
+          "options": [
+            "o som da campainha",
+            "a cor da campainha",
+            "o desenho impresso nela",
+            "o tamanho exato dela"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mesmo sem enxergar, a pessoa pode ouvir e reconhecer o som da campainha.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor depende da visão; com os olhos fechados, a pessoa pode perceber o som, não a cor.",
+            "2": "O desenho é percebido pela visão, não pela audição.",
+            "3": "O som pode indicar que a campainha tocou, mas não revela seu tamanho exato."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-010",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual situação permite reconhecer um som usando principalmente a audição?",
+          "options": [
+            "observar uma luz piscando",
+            "escutar o toque de um telefone",
+            "sentir o perfume de uma flor",
+            "tocar uma superfície áspera"
+          ],
+          "correctIndex": 1,
+          "explanation": "O toque do telefone é percebido pelo ouvido; luz, perfume e aspereza correspondem a outros sentidos.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "0": "A luz piscando é percebida pela visão e não é um som.",
+            "2": "O perfume é percebido pelo olfato, não pela audição.",
+            "3": "A aspereza é percebida pelo tato; não é uma informação sonora."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-011",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Sem ver o instrumento, qual pista pode ajudar a reconhecer que uma flauta está tocando?",
+          "options": [
+            "o som que a pessoa escuta",
+            "a cor da roupa do músico",
+            "o cheiro da sala",
+            "a temperatura do palco"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite reconhecer características do som da flauta mesmo quando o instrumento não está à vista.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor da roupa é percebida pela visão e não identifica o som da flauta.",
+            "2": "O cheiro é percebido pelo olfato e não permite ouvir o instrumento.",
+            "3": "A temperatura é percebida pelo tato; não é uma pista sonora."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-012",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Ao ouvir uma música, qual ação mostra que a criança está usando a audição?",
+          "options": [
+            "identificar que há uma melodia tocando",
+            "notar a cor do alto-falante",
+            "sentir a textura da cadeira",
+            "perceber o cheiro do lanche"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reconhecer a melodia é perceber um som com a audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor do alto-falante é percebida pela visão, não pela audição.",
+            "2": "A textura da cadeira é percebida pelo tato e não informa o que está tocando.",
+            "3": "O cheiro do lanche é percebido pelo olfato, não é uma percepção sonora."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-013",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "No pátio, uma criança ouve pássaros e passos. O que esses exemplos têm em comum?",
+          "options": [
+            "são sons percebidos pela audição",
+            "são imagens percebidas apenas pela visão",
+            "são cheiros percebidos pelo olfato",
+            "são sabores percebidos pela língua"
+          ],
+          "correctIndex": 0,
+          "explanation": "O canto dos pássaros e os passos podem ser escutados; ambos são percebidos pela audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "Os dois exemplos são sons; não são imagens que dependam apenas da visão.",
+            "2": "O olfato percebe cheiros, não o canto nem os passos.",
+            "3": "A língua percebe sabores; os exemplos são sons."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-014",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Em um momento sem sons, qual sentido deixa de receber estímulos sonoros naquele instante?",
+          "options": [
+            "audição",
+            "visão",
+            "olfato",
+            "paladar"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sem estímulos sonoros, a audição não recebe sons naquele momento; os outros sentidos podem continuar recebendo seus estímulos.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A visão pode receber luz mesmo quando não há sons.",
+            "2": "O olfato pode perceber cheiros sem que haja sons.",
+            "3": "O paladar pode perceber sabores independentemente dos sons."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-015",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma pessoa ouve um alarme em outra sala, mas não vê o aparelho. O que ela consegue concluir com mais segurança?",
+          "options": [
+            "que há um som de alarme",
+            "qual é a cor do aparelho",
+            "qual é a marca do aparelho",
+            "qual é o tamanho exato do aparelho"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite reconhecer que um alarme está soando, mas não revela detalhes visuais do aparelho escondido.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A cor não pode ser descoberta pelo som; é uma característica visual.",
+            "2": "A marca não é identificada apenas por ouvir o alarme.",
+            "3": "O som não mostra o tamanho exato do aparelho."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-016",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma pessoa escuta um sino tocar do lado de fora. Qual sentido está sendo usado para perceber o toque?",
+          "options": [
+            "audição",
+            "visão",
+            "olfato",
+            "paladar"
+          ],
+          "correctIndex": 0,
+          "explanation": "O toque do sino é um som, percebido pela audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A visão pode mostrar o sino se ele estiver à vista, mas o toque é percebido pela audição.",
+            "2": "O olfato percebe cheiros, não o toque do sino.",
+            "3": "O paladar percebe sabores, não sons."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-017",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Ao ouvir uma sequência de notas, o que a audição pode ajudar a perceber?",
+          "options": [
+            "a ordem dos sons que foram tocados",
+            "a cor de cada nota",
+            "o cheiro de cada instrumento",
+            "o peso exato do instrumento"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição permite acompanhar a ordem e a diferença entre os sons ouvidos.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "Notas musicais não têm cor percebida pela audição; cor é visual.",
+            "2": "O cheiro é percebido pelo olfato, não revela a sequência sonora.",
+            "3": "O peso é percebido ao segurar ou medir o instrumento, não ao escutar as notas."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-018",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual par apresenta duas informações que podem ser percebidas pela audição?",
+          "options": [
+            "o canto de um pássaro e o toque de um telefone",
+            "a cor de uma flor e o brilho de uma lâmpada",
+            "o perfume de uma fruta e o cheiro de uma folha",
+            "a maciez de um tecido e a aspereza de uma pedra"
+          ],
+          "correctIndex": 0,
+          "explanation": "O canto e o toque são sons, percebidos pela audição.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "Cor e brilho são percebidos pela visão, não pela audição.",
+            "2": "Perfume e cheiro são percebidos pelo olfato.",
+            "3": "Maciez e aspereza são percebidas pelo tato."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-019",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Uma pessoa ouve alguém chamá-la pelo nome em uma sala. Que informação ela percebe pelo ouvido?",
+          "options": [
+            "uma voz dizendo seu nome",
+            "a cor da roupa de quem chamou",
+            "a expressão do rosto dessa pessoa",
+            "o desenho na parede"
+          ],
+          "correctIndex": 0,
+          "explanation": "A voz e as palavras são percebidas pela audição; detalhes de aparência dependem da visão.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "A roupa é vista; a voz permite ouvir o chamado, mas não mostra sua cor.",
+            "2": "A expressão facial é percebida pela visão, não pelo som da voz.",
+            "3": "O desenho na parede é visual e não é revelado pelo chamado."
+          }
+        },
+        {
+          "schemaVersion": "content-v1",
+          "id": "T3F-CIE-SOM-020",
+          "contentSetId": "2026-t3-v2",
+          "subject": "ciencias",
+          "topic": "som-e-audicao",
+          "question": "Qual resumo explica o papel da audição na percepção dos sons?",
+          "options": [
+            "a audição permite perceber e reconhecer sons",
+            "a audição permite ver cores e formas",
+            "a audição permite sentir cheiros",
+            "a audição permite identificar sabores"
+          ],
+          "correctIndex": 0,
+          "explanation": "A audição é o sentido que nos permite perceber sons e reconhecer diferenças entre eles.",
+          "skill": "relacionar-sons-a-percepcao-auditiva",
+          "sourceRef": {
+            "referenceId": "roteiro-av-trimestral-novembro-2026",
+            "section": "Ciências",
+            "topic": "som-e-audicao"
+          },
+          "reviewStatus": "draft",
+          "version": 1,
+          "wrongExplanations": {
+            "1": "Cores e formas são percebidas principalmente pela visão, não pela audição.",
+            "2": "Cheiros são percebidos pelo olfato, não pela audição.",
+            "3": "Sabores são percebidos pelo paladar, não pela audição."
+          }
+        }
+      ]
+    }
+  },
+  "additionalModelInvocations": 0,
+  "humanApprovalRequired": true,
+  "publicationEligible": false,
+  "sha256": "bc5f1a58c5b2d9bc31dc8f8d962c593509ec03af354aeb18140a10e1f0c7f14f"
+}

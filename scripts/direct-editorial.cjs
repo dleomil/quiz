@@ -102,7 +102,14 @@ function validateDirectReview(
     recommendations: response.recommendations,
     humanApprovalRequired: response.humanApprovalRequired,
   };
-  if (digest(rawOutput) !== digest(output))
+  const rawResults = (response.results || []).map((result) => ({
+    ...result,
+    questionId: result.questionId || result.id,
+  }));
+  const comparableOutput = rawOutput.results
+    ? rawOutput
+    : { ...rawOutput, results: rawResults };
+  if (digest(comparableOutput) !== digest(output))
     errors.push('resposta original diverge do parecer');
   const results = (response.results || []).map((result) => ({
     ...result,

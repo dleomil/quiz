@@ -118,7 +118,7 @@ function makeFixture(root, options = {}) {
         authHome: home,
         preflight: {
           cliVersion: auth.CLI_VERSION,
-          auth: 'chatgpt-keyring',
+          auth: 'chatgpt-existing-profile',
           skills: 'disabled-and-context-checked',
           features: Object.fromEntries(
             auth.DISABLED_FEATURES.map((feature) => [feature, false]),
