@@ -65,16 +65,18 @@ const INFRA = new Set([
   'tests/ui/content-delivery.spec.cjs',
   ...TESTS.map((name) => `tests/agents/${name}.spec.cjs`),
 ]);
+const SCIENCE_DRAFT = /^docs\/drafts\/2026-t3-v2--ciencias--[a-z0-9-]+\.json$/;
+const SCIENCE_REVIEW_ONLY =
+  /^docs\/editorial\/subject-runs\/ciencias\/[a-f0-9-]+-review-only\.json$/;
 function profileFor(files) {
   if (files.includes('.github/subject-delivery.json')) return 'subject';
   if (
-    files.some((file) =>
-      /^docs\/drafts\/2026-t3-v2--ciencias--[a-z0-9-]+\.json$/.test(file),
-    ) &&
+    files.some((file) => SCIENCE_DRAFT.test(file)) &&
     files.every(
       (file) =>
         INFRA.has(file) ||
-        /^docs\/drafts\/2026-t3-v2--ciencias--[a-z0-9-]+\.json$/.test(file),
+        SCIENCE_DRAFT.test(file) ||
+        SCIENCE_REVIEW_ONLY.test(file),
     )
   )
     return 'science-drafts';
@@ -84,6 +86,12 @@ function profileFor(files) {
 
 function verifyScienceDrafts(root, files) {
   const { validateBatch } = require('./content-delivery.cjs');
+  for (const name of files.filter((file) => SCIENCE_REVIEW_ONLY.test(file))) {
+    const report = JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'));
+    require('./editorial-recovery.cjs').validateReport(report);
+    if (report.publicationEligible !== false)
+      throw new Error('evidencia review-only permite publicacao');
+  }
   const policy = JSON.parse(
     fs.readFileSync(path.join(root, 'config/content-delivery-policy.json')),
   );
