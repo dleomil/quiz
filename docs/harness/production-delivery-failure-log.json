@@ -74,6 +74,9 @@
       "proposalCount": 20,
       "findingCount": 10,
       "curationDecision": "adjustments_required",
+      "recoveryBasis": "frozen-matrix-review-only",
+      "recoveryStatus": "recovered-for-review",
+      "publicationEligible": false,
       "additionalModelInvocations": 0,
       "status": "fixed"
     }
