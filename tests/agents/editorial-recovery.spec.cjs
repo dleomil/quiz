@@ -107,7 +107,7 @@ function build(changes = {}) {
     requestedModel: 'fixture-model',
     preflight,
     captureSha256: manifest.sha256,
-    approvals: [{ sourceCommit: 'fixture' }],
+    approvals: changes.unapproved ? [] : [{ sourceCommit: 'fixture' }],
   };
   return {
     receipt: { ...body, sha256: digest(body) },
@@ -139,6 +139,7 @@ try {
   const data = {
     schemaVersion: 'editorial-recovery-v1',
     status: 'response-recovered',
+    recoveryBasis: 'frozen-matrix-review-only',
     originalResult: 'output-rejected',
     additionalModelInvocations: 0,
     publicationEligible: false,
@@ -155,9 +156,20 @@ try {
   };
   const report = { ...data, sha256: digest(data) };
   assert.equal(validateReport(report), true);
+  const unapproved = build({ unapproved: true, bothWarnings: true });
+  assert.throws(() => inspect(unapproved), /aceite documental/);
+  assert.equal(
+    inspect({ ...unapproved, reviewOnly: true }).scenario.output.agent,
+    'content_curator',
+  );
   const changed = JSON.parse(JSON.stringify(report));
   changed.originalRunId = 'outro';
   assert.throws(() => validateReport(changed));
+  const notReviewOnly = JSON.parse(JSON.stringify(report));
+  delete notReviewOnly.sha256;
+  notReviewOnly.publicationEligible = true;
+  notReviewOnly.sha256 = digest(notReviewOnly);
+  assert.throws(() => validateReport(notReviewOnly), /relatorio inelegivel/);
   assert.throws(
     () =>
       reviewScenario(

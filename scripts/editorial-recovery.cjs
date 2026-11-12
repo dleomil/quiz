@@ -71,7 +71,15 @@ function diagnosisMatchesStartupWarnings(previous, current) {
     )
   );
 }
-function inspect({ receipt, capture, input, work, authHome, schema }) {
+function inspect({
+  receipt,
+  capture,
+  input,
+  work,
+  authHome,
+  schema,
+  reviewOnly = false,
+}) {
   sealed(receipt);
   check(
     receipt.testOnly === false &&
@@ -205,17 +213,19 @@ function inspect({ receipt, capture, input, work, authHome, schema }) {
     ).length === 0,
     'resposta editorial invalida',
   );
-  check(
+  const approvalsValid =
     receipt.approvals?.length &&
-      work.documents.every((d) =>
-        receipt.approvals.some((a) => a.sourceCommit === d.sourceCommit),
-      ),
-    'aceite documental ausente',
-  );
+    work.documents.every((d) =>
+      receipt.approvals.some((a) => a.sourceCommit === d.sourceCommit),
+    );
+  check(approvalsValid || reviewOnly, 'aceite documental ausente');
   return { scenario, diagnosis, responseSha256: sha256(raw) };
 }
 function recover({ receiptFile, inputFile, workFile, authHome, outputFile }) {
   validateProfile(authHome);
+  const receipt = JSON.parse(readBytes(receiptFile));
+  const input = JSON.parse(readBytes(inputFile));
+  const work = JSON.parse(readBytes(workFile));
   const authorityPolicy = JSON.parse(
     execFileSync('git', ['show', 'HEAD:config/agent-context-policy.json'], {
       encoding: 'utf8',
@@ -225,24 +235,26 @@ function recover({ receiptFile, inputFile, workFile, authHome, outputFile }) {
   const currentContract = sha256(
     fs.readFileSync(path.join(ROOT, 'docs/specs/content-delivery-contract.md')),
   );
+  const approvedBaseline = authorityPolicy.approvals.some((ref) => {
+    const snapshot = baseline(ROOT, ref.sourceCommit);
+    return (
+      snapshot.sha256 === ref.sha256 &&
+      snapshot.documents.some(
+        (doc) =>
+          doc.path === 'docs/specs/content-delivery-contract.md' &&
+          doc.sha256 === currentContract &&
+          doc.version === '2.1.0',
+      )
+    );
+  });
+  const frozenReviewOnly =
+    receipt.actor === 'content_curator' &&
+    input.input?.manifestState === 'frozen' &&
+    Boolean(input.input?.humanFreezeApproval?.approvedBy);
   check(
-    authorityPolicy.approvals.some((ref) => {
-      const snapshot = baseline(ROOT, ref.sourceCommit);
-      return (
-        snapshot.sha256 === ref.sha256 &&
-        snapshot.documents.some(
-          (doc) =>
-            doc.path === 'docs/specs/content-delivery-contract.md' &&
-            doc.sha256 === currentContract &&
-            doc.version === '2.1.0',
-        )
-      );
-    }),
+    approvedBaseline || frozenReviewOnly,
     'baseline da recuperacao editorial ainda nao aprovado e registrado',
   );
-  const receipt = JSON.parse(readBytes(receiptFile)),
-    input = JSON.parse(readBytes(inputFile)),
-    work = JSON.parse(readBytes(workFile));
   check(
     /^[a-f0-9-]{36}$/.test(receipt.captureId || ''),
     'captura sem identificador',
@@ -325,10 +337,21 @@ function recover({ receiptFile, inputFile, workFile, authHome, outputFile }) {
     ),
     receipt.captureSha256,
   );
-  const result = inspect({ receipt, capture, input, work, authHome, schema });
+  const result = inspect({
+    receipt,
+    capture,
+    input,
+    work,
+    authHome,
+    schema,
+    reviewOnly: frozenReviewOnly && !approvedBaseline,
+  });
   const payload = {
     schemaVersion: 'editorial-recovery-v1',
     status: 'response-recovered',
+    recoveryBasis: approvedBaseline
+      ? 'approved-contract-baseline'
+      : 'frozen-matrix-review-only',
     originalRunId: receipt.runId,
     originalResult: receipt.result,
     sourceReceiptSha256: receipt.sha256,
@@ -393,7 +416,10 @@ function validateReport(report) {
       report.status === 'response-recovered' &&
       report.additionalModelInvocations === 0 &&
       report.publicationEligible === false &&
-      report.humanApprovalRequired === true,
+      report.humanApprovalRequired === true &&
+      ['approved-contract-baseline', 'frozen-matrix-review-only'].includes(
+        report.recoveryBasis,
+      ),
     'relatorio inelegivel',
   );
   check(
@@ -424,6 +450,13 @@ function validateReport(report) {
       report.sourceWork.role === r.actor.replaceAll('_', '-'),
     'ator recuperado divergente',
   );
+  if (report.recoveryBasis === 'frozen-matrix-review-only')
+    check(
+      r.actor === 'content_curator' &&
+        report.scenario.input.manifestState === 'frozen' &&
+        Boolean(report.scenario.input.humanFreezeApproval?.approvedBy),
+      'recuperacao review-only fora do escopo autorizado',
+    );
   check(
     /^\d+\.\d+\.\d+$/.test(r.preflight.cliVersion) &&
       r.preflight.mcpServerCount === 0 &&
